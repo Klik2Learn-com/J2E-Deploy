@@ -1,0 +1,15 @@
+{
+  "exercise": [{
+    "paragraph": "Experts believe that asking people to take vitamin pills won't work. They say that instead it should be added to food at quite a high level - higher than the small amount we used to add to food to prevent rickets. If people had to buy and take pills most people would not do it. </br>If we hadn't fortified table salt, many people would be walking around with goitre.",
+    "prompt": "Find a word meaning 'to make something stronger/better'",
+    "answers": ["fortified",
+    "fortify"],
+    "feedback": ""
+  },
+  {
+    "paragraph": "Professor George Ebers at Oxford University believes the evidence is now good enough to justify dosing the entire population with vitamin D.</br>This month his team published evidence of a link between a lack of vitamin D and MS.",
+    "prompt": "Find a word meaning 'to give a good reason for something'",
+    "answers": ["justify"],
+    "feedback": ""
+  }]
+}

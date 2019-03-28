@@ -1,0 +1,65 @@
+{
+	"exercises": [{
+		"exercise": {
+			"text1": "Zero Conditional",
+			"text2": "first",
+			"first": "Present Simple",
+			"second": "Present Simple",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}, {
+		"exercise": {
+			"text1": "Zero Conditional",
+			"text2": "second",
+			"first": "Present Simple",
+			"second": "Present Simple",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}, {
+		"exercise": {
+			"text1": "First Conditional",
+			"text2": "first",			
+			"first": "Future",
+			"second": "Past Perfect",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}, {
+		"exercise": {
+			"text1": "First Conditional",
+			"text2": "second",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}, {
+		"exercise": {
+			"text1": "Second Conditional",
+			"text2": "first",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}, {
+		"exercise": {
+			"text1": "Second Conditional",
+			"text2": "second",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}, {
+		"exercise": {
+			"text1": "Third Conditional",
+			"text2": "first",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}, {
+		"exercise": {
+			"text1": "Third Conditional",
+			"text2": "second",
+			"correct": "Present Simple",
+			"incorrect": ["Future", "Present Conditional", "Past Perfect", "Past Conditional"]
+		}
+	}]
+}
