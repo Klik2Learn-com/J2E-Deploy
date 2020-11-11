@@ -10,5 +10,9 @@
   "scripts": {
     "heroku-prebuild": "cd bundle/programs/server && npm install -q",
     "start": "cd bundle && node main.js"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^5.0.0"
   }
 }
