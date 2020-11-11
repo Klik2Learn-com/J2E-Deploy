@@ -62,7 +62,7 @@ exports.Promise.prototype.done = function (onFulfilled, onRejected) {
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                           //
-// ../../.0.9.0.353nu1++os+web.browser+web.cordova/npm/node_modules/meteor-p //
+// ../../.0.9.0.rqz434++os+web.browser+web.cordova/npm/node_modules/meteor-p //
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
                                                                              //

@@ -21,291 +21,283 @@ var _storageAdapters;
 
 (function(){
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                                     //
-// packages/cfs_storage-adapter/packages/cfs_storage-adapter.js                                                        //
-//                                                                                                                     //
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                                       //
-(function () {
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                          //
+// packages/cfs_storage-adapter/storageAdapter.server.js                                                    //
+//                                                                                                          //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                                            //
+/* global FS, _storageAdapters:true, EventEmitter */
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                               //
-// packages/cfs:storage-adapter/storageAdapter.server.js                                                         //
-//                                                                                                               //
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                                 //
-/* global FS, _storageAdapters:true, EventEmitter */                                                             // 1
-                                                                                                                 // 2
-// #############################################################################                                 // 3
-//                                                                                                               // 4
-// STORAGE ADAPTER                                                                                               // 5
-//                                                                                                               // 6
-// #############################################################################                                 // 7
-_storageAdapters = {};                                                                                           // 8
-                                                                                                                 // 9
-FS.StorageAdapter = function(storeName, options, api) {                                                          // 10
-  var self = this, fileKeyMaker;                                                                                 // 11
-  options = options || {};                                                                                       // 12
-                                                                                                                 // 13
-  // If storeName is the only argument, a string and the SA already found                                        // 14
-  // we will just return that SA                                                                                 // 15
-  if (arguments.length === 1 && storeName === '' + storeName &&                                                  // 16
-          typeof _storageAdapters[storeName] !== 'undefined')                                                    // 17
-    return _storageAdapters[storeName];                                                                          // 18
-                                                                                                                 // 19
-  // Verify that the storage adapter defines all the necessary API methods                                       // 20
-  if (typeof api === 'undefined') {                                                                              // 21
-    throw new Error('FS.StorageAdapter please define an api');                                                   // 22
-  }                                                                                                              // 23
-                                                                                                                 // 24
-  FS.Utility.each('fileKey,remove,typeName,createReadStream,createWriteStream'.split(','), function(name) {      // 25
-    if (typeof api[name] === 'undefined') {                                                                      // 26
-      throw new Error('FS.StorageAdapter please define an api. "' + name + '" ' + (api.typeName || ''));         // 27
-    }                                                                                                            // 28
-  });                                                                                                            // 29
-                                                                                                                 // 30
-  // Create an internal namespace, starting a name with underscore is only                                       // 31
-  // allowed for stores marked with options.internal === true                                                    // 32
-  if (options.internal !== true && storeName[0] === '_') {                                                       // 33
-    throw new Error('A storage adapter name may not begin with "_"');                                            // 34
-  }                                                                                                              // 35
-                                                                                                                 // 36
-  if (storeName.indexOf('.') !== -1) {                                                                           // 37
-    throw new Error('A storage adapter name may not contain a "."');                                             // 38
-  }                                                                                                              // 39
-                                                                                                                 // 40
-  // store reference for easy lookup by storeName                                                                // 41
-  if (typeof _storageAdapters[storeName] !== 'undefined') {                                                      // 42
-    throw new Error('Storage name already exists: "' + storeName + '"');                                         // 43
-  } else {                                                                                                       // 44
-    _storageAdapters[storeName] = self;                                                                          // 45
-  }                                                                                                              // 46
-                                                                                                                 // 47
-  // User can customize the file key generation function                                                         // 48
-  if (typeof options.fileKeyMaker === "function") {                                                              // 49
-    fileKeyMaker = options.fileKeyMaker;                                                                         // 50
-  } else {                                                                                                       // 51
-    fileKeyMaker = api.fileKey;                                                                                  // 52
-  }                                                                                                              // 53
-                                                                                                                 // 54
-  // User can provide a function to adjust the fileObj                                                           // 55
-  // before it is written to the store.                                                                          // 56
-  var beforeWrite = options.beforeWrite;                                                                         // 57
-                                                                                                                 // 58
-  // extend self with options and other info                                                                     // 59
-  FS.Utility.extend(this, options, {                                                                             // 60
-    name: storeName,                                                                                             // 61
-    typeName: api.typeName                                                                                       // 62
-  });                                                                                                            // 63
-                                                                                                                 // 64
-  // Create a nicer abstracted adapter interface                                                                 // 65
-  self.adapter = {};                                                                                             // 66
-                                                                                                                 // 67
-  self.adapter.fileKey = function(fileObj) {                                                                     // 68
-    return fileKeyMaker(fileObj);                                                                                // 69
-  };                                                                                                             // 70
-                                                                                                                 // 71
-  // Return readable stream for fileKey                                                                          // 72
-  self.adapter.createReadStreamForFileKey = function(fileKey, options) {                                         // 73
-    if (FS.debug) console.log('createReadStreamForFileKey ' + storeName);                                        // 74
-    return FS.Utility.safeStream( api.createReadStream(fileKey, options) );                                      // 75
-  };                                                                                                             // 76
-                                                                                                                 // 77
-  // Return readable stream for fileObj                                                                          // 78
-  self.adapter.createReadStream = function(fileObj, options) {                                                   // 79
-    if (FS.debug) console.log('createReadStream ' + storeName);                                                  // 80
-    if (self.internal) {                                                                                         // 81
-      // Internal stores take a fileKey                                                                          // 82
-      return self.adapter.createReadStreamForFileKey(fileObj, options);                                          // 83
-    }                                                                                                            // 84
-    return FS.Utility.safeStream( self._transform.createReadStream(fileObj, options) );                          // 85
-  };                                                                                                             // 86
-                                                                                                                 // 87
-  function logEventsForStream(stream) {                                                                          // 88
-    if (FS.debug) {                                                                                              // 89
-      stream.on('stored', function() {                                                                           // 90
-        console.log('-----------STORED STREAM', storeName);                                                      // 91
-      });                                                                                                        // 92
-                                                                                                                 // 93
-      stream.on('close', function() {                                                                            // 94
-        console.log('-----------CLOSE STREAM', storeName);                                                       // 95
-      });                                                                                                        // 96
-                                                                                                                 // 97
-      stream.on('end', function() {                                                                              // 98
-        console.log('-----------END STREAM', storeName);                                                         // 99
-      });                                                                                                        // 100
-                                                                                                                 // 101
-      stream.on('finish', function() {                                                                           // 102
-        console.log('-----------FINISH STREAM', storeName);                                                      // 103
-      });                                                                                                        // 104
-                                                                                                                 // 105
-      stream.on('error', function(error) {                                                                       // 106
-        console.log('-----------ERROR STREAM', storeName, error && (error.message || error.code));               // 107
-      });                                                                                                        // 108
-    }                                                                                                            // 109
-  }                                                                                                              // 110
-                                                                                                                 // 111
-  // Return writeable stream for fileKey                                                                         // 112
-  self.adapter.createWriteStreamForFileKey = function(fileKey, options) {                                        // 113
-    if (FS.debug) console.log('createWriteStreamForFileKey ' + storeName);                                       // 114
-    var writeStream = FS.Utility.safeStream( api.createWriteStream(fileKey, options) );                          // 115
-                                                                                                                 // 116
-    logEventsForStream(writeStream);                                                                             // 117
-                                                                                                                 // 118
-    return writeStream;                                                                                          // 119
-  };                                                                                                             // 120
-                                                                                                                 // 121
-  // Return writeable stream for fileObj                                                                         // 122
-  self.adapter.createWriteStream = function(fileObj, options) {                                                  // 123
-    if (FS.debug) console.log('createWriteStream ' + storeName + ', internal: ' + !!self.internal);              // 124
-                                                                                                                 // 125
-    if (self.internal) {                                                                                         // 126
-      // Internal stores take a fileKey                                                                          // 127
-      return self.adapter.createWriteStreamForFileKey(fileObj, options);                                         // 128
-    }                                                                                                            // 129
-                                                                                                                 // 130
-    // If we haven't set name, type, or size for this version yet,                                               // 131
-    // set it to same values as original version. We don't save                                                  // 132
-    // these to the DB right away because they might be changed                                                  // 133
-    // in a transformWrite function.                                                                             // 134
-    if (!fileObj.name({store: storeName})) {                                                                     // 135
-      fileObj.name(fileObj.name(), {store: storeName, save: false});                                             // 136
-    }                                                                                                            // 137
-    if (!fileObj.type({store: storeName})) {                                                                     // 138
-      fileObj.type(fileObj.type(), {store: storeName, save: false});                                             // 139
-    }                                                                                                            // 140
-    if (!fileObj.size({store: storeName})) {                                                                     // 141
-      fileObj.size(fileObj.size(), {store: storeName, save: false});                                             // 142
-    }                                                                                                            // 143
-                                                                                                                 // 144
-    // Call user function to adjust file metadata for this store.                                                // 145
-    // We support updating name, extension, and/or type based on                                                 // 146
-    // info returned in an object. Or `fileObj` could be                                                         // 147
-    // altered directly within the beforeWrite function.                                                         // 148
-    if (beforeWrite) {                                                                                           // 149
-      var fileChanges = beforeWrite(fileObj);                                                                    // 150
-      if (typeof fileChanges === "object") {                                                                     // 151
-        if (fileChanges.extension) {                                                                             // 152
-          fileObj.extension(fileChanges.extension, {store: storeName, save: false});                             // 153
-        } else if (fileChanges.name) {                                                                           // 154
-          fileObj.name(fileChanges.name, {store: storeName, save: false});                                       // 155
-        }                                                                                                        // 156
-        if (fileChanges.type) {                                                                                  // 157
-          fileObj.type(fileChanges.type, {store: storeName, save: false});                                       // 158
-        }                                                                                                        // 159
-      }                                                                                                          // 160
-    }                                                                                                            // 161
-                                                                                                                 // 162
-    var writeStream = FS.Utility.safeStream( self._transform.createWriteStream(fileObj, options) );              // 163
-                                                                                                                 // 164
-    logEventsForStream(writeStream);                                                                             // 165
-                                                                                                                 // 166
-    // Its really only the storage adapter who knows if the file is uploaded                                     // 167
-    //                                                                                                           // 168
-    // We have to use our own event making sure the storage process is completed                                 // 169
-    // this is mainly                                                                                            // 170
-    writeStream.safeOn('stored', function(result) {                                                              // 171
-      if (typeof result.fileKey === 'undefined') {                                                               // 172
-        throw new Error('SA ' + storeName + ' type ' + api.typeName + ' did not return a fileKey');              // 173
-      }                                                                                                          // 174
-      if (FS.debug) console.log('SA', storeName, 'stored', result.fileKey);                                      // 175
-      // Set the fileKey                                                                                         // 176
-      fileObj.copies[storeName].key = result.fileKey;                                                            // 177
-                                                                                                                 // 178
-      // Update the size, as provided by the SA, in case it was changed by stream transformation                 // 179
-      if (typeof result.size === "number") {                                                                     // 180
-        fileObj.copies[storeName].size = result.size;                                                            // 181
-      }                                                                                                          // 182
-                                                                                                                 // 183
-      // Set last updated time, either provided by SA or now                                                     // 184
-      fileObj.copies[storeName].updatedAt = result.storedAt || new Date();                                       // 185
-                                                                                                                 // 186
-      // If the file object copy havent got a createdAt then set this                                            // 187
-      if (typeof fileObj.copies[storeName].createdAt === 'undefined') {                                          // 188
-        fileObj.copies[storeName].createdAt = fileObj.copies[storeName].updatedAt;                               // 189
-      }                                                                                                          // 190
-                                                                                                                 // 191
-      fileObj._saveChanges(storeName);                                                                           // 192
-                                                                                                                 // 193
-      // There is code in transform that may have set the original file size, too.                               // 194
-      fileObj._saveChanges('_original');                                                                         // 195
-    });                                                                                                          // 196
-                                                                                                                 // 197
-    // Emit events from SA                                                                                       // 198
-    writeStream.once('stored', function(/*result*/) {                                                            // 199
-      // XXX Because of the way stores inherit from SA, this will emit on every store.                           // 200
-      // Maybe need to rewrite the way we inherit from SA?                                                       // 201
-      var emitted = self.emit('stored', storeName, fileObj);                                                     // 202
-      if (FS.debug && !emitted) {                                                                                // 203
+// #############################################################################
+//
+// STORAGE ADAPTER
+//
+// #############################################################################
+_storageAdapters = {};
+
+FS.StorageAdapter = function(storeName, options, api) {
+  var self = this, fileKeyMaker;
+  options = options || {};
+
+  // If storeName is the only argument, a string and the SA already found
+  // we will just return that SA
+  if (arguments.length === 1 && storeName === '' + storeName &&
+          typeof _storageAdapters[storeName] !== 'undefined')
+    return _storageAdapters[storeName];
+
+  // Verify that the storage adapter defines all the necessary API methods
+  if (typeof api === 'undefined') {
+    throw new Error('FS.StorageAdapter please define an api');
+  }
+  
+  FS.Utility.each('fileKey,remove,typeName,createReadStream,createWriteStream'.split(','), function(name) {
+    if (typeof api[name] === 'undefined') {
+      throw new Error('FS.StorageAdapter please define an api. "' + name + '" ' + (api.typeName || ''));
+    }
+  });
+
+  // Create an internal namespace, starting a name with underscore is only
+  // allowed for stores marked with options.internal === true
+  if (options.internal !== true && storeName[0] === '_') {
+    throw new Error('A storage adapter name may not begin with "_"');
+  }
+
+  if (storeName.indexOf('.') !== -1) {
+    throw new Error('A storage adapter name may not contain a "."');
+  }
+
+  // store reference for easy lookup by storeName
+  if (typeof _storageAdapters[storeName] !== 'undefined') {
+    throw new Error('Storage name already exists: "' + storeName + '"');
+  } else {
+    _storageAdapters[storeName] = self;
+  }
+
+  // User can customize the file key generation function
+  if (typeof options.fileKeyMaker === "function") {
+    fileKeyMaker = options.fileKeyMaker;
+  } else {
+    fileKeyMaker = api.fileKey;
+  }
+
+  // User can provide a function to adjust the fileObj
+  // before it is written to the store.
+  var beforeWrite = options.beforeWrite;
+
+  // extend self with options and other info
+  FS.Utility.extend(this, options, {
+    name: storeName,
+    typeName: api.typeName
+  });
+
+  // Create a nicer abstracted adapter interface
+  self.adapter = {};
+
+  self.adapter.fileKey = function(fileObj) {
+    return fileKeyMaker(fileObj);
+  };
+
+  // Return readable stream for fileKey
+  self.adapter.createReadStreamForFileKey = function(fileKey, options) {
+    if (FS.debug) console.log('createReadStreamForFileKey ' + storeName);
+    return FS.Utility.safeStream( api.createReadStream(fileKey, options) );
+  };
+
+  // Return readable stream for fileObj
+  self.adapter.createReadStream = function(fileObj, options) {
+    if (FS.debug) console.log('createReadStream ' + storeName);
+    if (self.internal) {
+      // Internal stores take a fileKey
+      return self.adapter.createReadStreamForFileKey(fileObj, options);
+    }
+    return FS.Utility.safeStream( self._transform.createReadStream(fileObj, options) );
+  };
+
+  function logEventsForStream(stream) {
+    if (FS.debug) {
+      stream.on('stored', function() {
+        console.log('-----------STORED STREAM', storeName);
+      });
+
+      stream.on('close', function() {
+        console.log('-----------CLOSE STREAM', storeName);
+      });
+
+      stream.on('end', function() {
+        console.log('-----------END STREAM', storeName);
+      });
+
+      stream.on('finish', function() {
+        console.log('-----------FINISH STREAM', storeName);
+      });
+
+      stream.on('error', function(error) {
+        console.log('-----------ERROR STREAM', storeName, error && (error.message || error.code));
+      });
+    }
+  }
+
+  // Return writeable stream for fileKey
+  self.adapter.createWriteStreamForFileKey = function(fileKey, options) {
+    if (FS.debug) console.log('createWriteStreamForFileKey ' + storeName);
+    var writeStream = FS.Utility.safeStream( api.createWriteStream(fileKey, options) );
+
+    logEventsForStream(writeStream);
+
+    return writeStream;
+  };
+
+  // Return writeable stream for fileObj
+  self.adapter.createWriteStream = function(fileObj, options) {
+    if (FS.debug) console.log('createWriteStream ' + storeName + ', internal: ' + !!self.internal);
+    
+    if (self.internal) {
+      // Internal stores take a fileKey
+      return self.adapter.createWriteStreamForFileKey(fileObj, options);
+    }
+
+    // If we haven't set name, type, or size for this version yet,
+    // set it to same values as original version. We don't save
+    // these to the DB right away because they might be changed
+    // in a transformWrite function.
+    if (!fileObj.name({store: storeName})) {
+      fileObj.name(fileObj.name(), {store: storeName, save: false});
+    }
+    if (!fileObj.type({store: storeName})) {
+      fileObj.type(fileObj.type(), {store: storeName, save: false});
+    }
+    if (!fileObj.size({store: storeName})) {
+      fileObj.size(fileObj.size(), {store: storeName, save: false});
+    }
+
+    // Call user function to adjust file metadata for this store.
+    // We support updating name, extension, and/or type based on
+    // info returned in an object. Or `fileObj` could be
+    // altered directly within the beforeWrite function.
+    if (beforeWrite) {
+      var fileChanges = beforeWrite(fileObj);
+      if (typeof fileChanges === "object") {
+        if (fileChanges.extension) {
+          fileObj.extension(fileChanges.extension, {store: storeName, save: false});
+        } else if (fileChanges.name) {
+          fileObj.name(fileChanges.name, {store: storeName, save: false});
+        }
+        if (fileChanges.type) {
+          fileObj.type(fileChanges.type, {store: storeName, save: false});
+        }
+      }
+    }
+
+    var writeStream = FS.Utility.safeStream( self._transform.createWriteStream(fileObj, options) );
+
+    logEventsForStream(writeStream);
+
+    // Its really only the storage adapter who knows if the file is uploaded
+    //
+    // We have to use our own event making sure the storage process is completed
+    // this is mainly
+    writeStream.safeOn('stored', function(result) {
+      if (typeof result.fileKey === 'undefined') {
+        throw new Error('SA ' + storeName + ' type ' + api.typeName + ' did not return a fileKey');
+      }
+      if (FS.debug) console.log('SA', storeName, 'stored', result.fileKey);
+      // Set the fileKey
+      fileObj.copies[storeName].key = result.fileKey;
+
+      // Update the size, as provided by the SA, in case it was changed by stream transformation
+      if (typeof result.size === "number") {
+        fileObj.copies[storeName].size = result.size;
+      }
+
+      // Set last updated time, either provided by SA or now
+      fileObj.copies[storeName].updatedAt = result.storedAt || new Date();
+
+      // If the file object copy havent got a createdAt then set this
+      if (typeof fileObj.copies[storeName].createdAt === 'undefined') {
+        fileObj.copies[storeName].createdAt = fileObj.copies[storeName].updatedAt;
+      }
+
+      fileObj._saveChanges(storeName);
+
+      // There is code in transform that may have set the original file size, too.
+      fileObj._saveChanges('_original');
+    });
+
+    // Emit events from SA
+    writeStream.once('stored', function(/*result*/) {
+      // XXX Because of the way stores inherit from SA, this will emit on every store.
+      // Maybe need to rewrite the way we inherit from SA?
+      var emitted = self.emit('stored', storeName, fileObj);
+      if (FS.debug && !emitted) {
         console.log(fileObj.name() + ' was successfully stored in the ' + storeName + ' store. You are seeing this informational message because you enabled debugging and you have not defined any listeners for the "stored" event on this store.');
-      }                                                                                                          // 205
-    });                                                                                                          // 206
-                                                                                                                 // 207
-    writeStream.on('error', function(error) {                                                                    // 208
-      // XXX We could wrap and clarify error                                                                     // 209
-      // XXX Because of the way stores inherit from SA, this will emit on every store.                           // 210
-      // Maybe need to rewrite the way we inherit from SA?                                                       // 211
-      var emitted = self.emit('error', storeName, error, fileObj);                                               // 212
-      if (FS.debug && !emitted) {                                                                                // 213
-        console.log(error);                                                                                      // 214
-      }                                                                                                          // 215
-    });                                                                                                          // 216
-                                                                                                                 // 217
-    return writeStream;                                                                                          // 218
-  };                                                                                                             // 219
-                                                                                                                 // 220
-  //internal                                                                                                     // 221
-  self._removeAsync = function(fileKey, callback) {                                                              // 222
-    // Remove the file from the store                                                                            // 223
-    api.remove.call(self, fileKey, callback);                                                                    // 224
-  };                                                                                                             // 225
-                                                                                                                 // 226
-  /**                                                                                                            // 227
-   * @method FS.StorageAdapter.prototype.remove                                                                  // 228
-   * @public                                                                                                     // 229
-   * @param {FS.File} fsFile The FS.File instance to be stored.                                                  // 230
-   * @param {Function} [callback] If not provided, will block and return true or false                           // 231
-   *                                                                                                             // 232
-   * Attempts to remove a file from the store. Returns true if removed or not                                    // 233
-   * found, or false if the file couldn't be removed.                                                            // 234
-   */                                                                                                            // 235
-  self.adapter.remove = function(fileObj, callback) {                                                            // 236
-    if (FS.debug) console.log("---SA REMOVE");                                                                   // 237
-                                                                                                                 // 238
-    // Get the fileKey                                                                                           // 239
-    var fileKey = (fileObj instanceof FS.File) ? self.adapter.fileKey(fileObj) : fileObj;                        // 240
-                                                                                                                 // 241
-    if (callback) {                                                                                              // 242
-      return self._removeAsync(fileKey, FS.Utility.safeCallback(callback));                                      // 243
-    } else {                                                                                                     // 244
-      return Meteor.wrapAsync(self._removeAsync)(fileKey);                                                       // 245
-    }                                                                                                            // 246
-  };                                                                                                             // 247
-                                                                                                                 // 248
-  self.remove = function(fileObj, callback) {                                                                    // 249
-    // Add deprecation note                                                                                      // 250
-    console.warn('Storage.remove is deprecating, use "Storage.adapter.remove"');                                 // 251
-    return self.adapter.remove(fileObj, callback);                                                               // 252
-  };                                                                                                             // 253
-                                                                                                                 // 254
-  if (typeof api.init === 'function') {                                                                          // 255
-    Meteor.wrapAsync(api.init.bind(self))();                                                                     // 256
-  }                                                                                                              // 257
-                                                                                                                 // 258
-  // This supports optional transformWrite and transformRead                                                     // 259
-  self._transform = new FS.Transform({                                                                           // 260
-    adapter: self.adapter,                                                                                       // 261
-    // Optional transformation functions:                                                                        // 262
-    transformWrite: options.transformWrite,                                                                      // 263
-    transformRead: options.transformRead                                                                         // 264
-  });                                                                                                            // 265
-                                                                                                                 // 266
-};                                                                                                               // 267
-                                                                                                                 // 268
-Npm.require('util').inherits(FS.StorageAdapter, EventEmitter);                                                   // 269
-                                                                                                                 // 270
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      }
+    });
+
+    writeStream.on('error', function(error) {
+      // XXX We could wrap and clarify error
+      // XXX Because of the way stores inherit from SA, this will emit on every store.
+      // Maybe need to rewrite the way we inherit from SA?
+      var emitted = self.emit('error', storeName, error, fileObj);
+      if (FS.debug && !emitted) {
+        console.log(error);
+      }
+    });
+
+    return writeStream;
+  };
+
+  //internal
+  self._removeAsync = function(fileKey, callback) {
+    // Remove the file from the store
+    api.remove.call(self, fileKey, callback);
+  };
+
+  /**
+   * @method FS.StorageAdapter.prototype.remove
+   * @public
+   * @param {FS.File} fsFile The FS.File instance to be stored.
+   * @param {Function} [callback] If not provided, will block and return true or false
+   *
+   * Attempts to remove a file from the store. Returns true if removed or not
+   * found, or false if the file couldn't be removed.
+   */
+  self.adapter.remove = function(fileObj, callback) {
+    if (FS.debug) console.log("---SA REMOVE");
+
+    // Get the fileKey
+    var fileKey = (fileObj instanceof FS.File) ? self.adapter.fileKey(fileObj) : fileObj;
+
+    if (callback) {
+      return self._removeAsync(fileKey, FS.Utility.safeCallback(callback));
+    } else {
+      return Meteor.wrapAsync(self._removeAsync)(fileKey);
+    }
+  };
+
+  self.remove = function(fileObj, callback) {
+    // Add deprecation note
+    console.warn('Storage.remove is deprecating, use "Storage.adapter.remove"');
+    return self.adapter.remove(fileObj, callback);
+  };
+
+  if (typeof api.init === 'function') {
+    Meteor.wrapAsync(api.init.bind(self))();
+  }
+
+  // This supports optional transformWrite and transformRead
+  self._transform = new FS.Transform({
+    adapter: self.adapter,
+    // Optional transformation functions:
+    transformWrite: options.transformWrite,
+    transformRead: options.transformRead
+  });
+
+};
+
+Npm.require('util').inherits(FS.StorageAdapter, EventEmitter);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }).call(this);
 
@@ -314,148 +306,135 @@ Npm.require('util').inherits(FS.StorageAdapter, EventEmitter);                  
 
 
 
-(function () {
+(function(){
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                               //
-// packages/cfs:storage-adapter/transform.server.js                                                              //
-//                                                                                                               //
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                                 //
-/* global FS, gm */                                                                                              // 1
-                                                                                                                 // 2
-var PassThrough = Npm.require('stream').PassThrough;                                                             // 3
-var lengthStream = Npm.require('length-stream');                                                                 // 4
-                                                                                                                 // 5
-FS.Transform = function(options) {                                                                               // 6
-  var self = this;                                                                                               // 7
-                                                                                                                 // 8
-  options = options || {};                                                                                       // 9
-                                                                                                                 // 10
-  if (!(self instanceof FS.Transform))                                                                           // 11
-    throw new Error('FS.Transform must be called with the "new" keyword');                                       // 12
-                                                                                                                 // 13
-  if (!options.adapter)                                                                                          // 14
-    throw new Error('Transform expects option.adapter to be a storage adapter');                                 // 15
-                                                                                                                 // 16
-  self.storage = options.adapter;                                                                                // 17
-                                                                                                                 // 18
-  // Fetch the transformation functions if any                                                                   // 19
-  self.transformWrite = options.transformWrite;                                                                  // 20
-  self.transformRead = options.transformRead;                                                                    // 21
-};                                                                                                               // 22
-                                                                                                                 // 23
-// Allow packages to add scope                                                                                   // 24
-FS.Transform.scope = {                                                                                           // 25
-// Deprecate gm scope:                                                                                           // 26
-  gm: function(source, height, color) {                                                                          // 27
-    console.warn('Deprecation notice: `this.gm` is deprecating in favour of the general global `gm` scope');     // 28
-    if (typeof gm !== 'function')                                                                                // 29
-      throw new Error('No graphicsmagick package installed, `gm` not found in scope, eg. `cfs-graphicsmagick`'); // 30
-    return gm(source, height, color);                                                                            // 31
-  }                                                                                                              // 32
-// EO Deprecate gm scope                                                                                         // 33
-};                                                                                                               // 34
-                                                                                                                 // 35
-// The transformation stream triggers an "stored" event when data is stored into                                 // 36
-// the storage adapter                                                                                           // 37
-FS.Transform.prototype.createWriteStream = function(fileObj) {                                                   // 38
-  var self = this;                                                                                               // 39
-                                                                                                                 // 40
-  // Get the file key                                                                                            // 41
-  var fileKey = self.storage.fileKey(fileObj);                                                                   // 42
-                                                                                                                 // 43
-  // Rig write stream                                                                                            // 44
-  var destinationStream = self.storage.createWriteStreamForFileKey(fileKey, {                                    // 45
-    // Not all SA's can set these options and cfs dont depend on setting these                                   // 46
-    // but its nice if other systems are accessing the SA that some of the data                                  // 47
-    // is also available to those                                                                                // 48
-    aliases: [fileObj.name()],                                                                                   // 49
-    contentType: fileObj.type(),                                                                                 // 50
-    metadata: fileObj.metadata                                                                                   // 51
-  });                                                                                                            // 52
-                                                                                                                 // 53
-  // Pass through transformWrite function if provided                                                            // 54
-  if (typeof self.transformWrite === 'function') {                                                               // 55
-                                                                                                                 // 56
-    destinationStream = addPassThrough(destinationStream, function (ptStream, originalStream) {                  // 57
-      // Rig transform                                                                                           // 58
-      try {                                                                                                      // 59
-        self.transformWrite.call(FS.Transform.scope, fileObj, ptStream, originalStream);                         // 60
-        // XXX: If the transform function returns a buffer should we stream that?                                // 61
-      } catch(err) {                                                                                             // 62
-        // We emit an error - should we throw an error?                                                          // 63
-        console.warn('FS.Transform.createWriteStream transform function failed, Error: ');                       // 64
-        throw err;                                                                                               // 65
-      }                                                                                                          // 66
-    });                                                                                                          // 67
-                                                                                                                 // 68
-  }                                                                                                              // 69
-                                                                                                                 // 70
-  // If original doesn't have size, add another PassThrough to get and set the size.                             // 71
-  // This will run on size=0, too, which is OK.                                                                  // 72
-  // NOTE: This must come AFTER the transformWrite code block above. This might seem                             // 73
-  // confusing, but by coming after it, this will actually be executed BEFORE the user's                         // 74
-  // transform, which is what we need in order to be sure we get the original file                               // 75
-  // size and not the transformed file size.                                                                     // 76
-  if (!fileObj.size()) {                                                                                         // 77
-    destinationStream = addPassThrough(destinationStream, function (ptStream, originalStream) {                  // 78
-      var lstream = lengthStream(function (fileSize) {                                                           // 79
-        fileObj.size(fileSize, {save: false});                                                                   // 80
-      });                                                                                                        // 81
-                                                                                                                 // 82
-      ptStream.pipe(lstream).pipe(originalStream);                                                               // 83
-    });                                                                                                          // 84
-  }                                                                                                              // 85
-                                                                                                                 // 86
-  return destinationStream;                                                                                      // 87
-};                                                                                                               // 88
-                                                                                                                 // 89
-FS.Transform.prototype.createReadStream = function(fileObj, options) {                                           // 90
-  var self = this;                                                                                               // 91
-                                                                                                                 // 92
-  // Get the file key                                                                                            // 93
-  var fileKey = self.storage.fileKey(fileObj);                                                                   // 94
-                                                                                                                 // 95
-  // Rig read stream                                                                                             // 96
-  var sourceStream = self.storage.createReadStreamForFileKey(fileKey, options);                                  // 97
-                                                                                                                 // 98
-  // Pass through transformRead function if provided                                                             // 99
-  if (typeof self.transformRead === 'function') {                                                                // 100
-                                                                                                                 // 101
-    sourceStream = addPassThrough(sourceStream, function (ptStream, originalStream) {                            // 102
-      // Rig transform                                                                                           // 103
-      try {                                                                                                      // 104
-        self.transformRead.call(FS.Transform.scope, fileObj, originalStream, ptStream);                          // 105
-      } catch(err) {                                                                                             // 106
-        //throw new Error(err);                                                                                  // 107
-        // We emit an error - should we throw an error?                                                          // 108
-        sourceStream.emit('error', 'FS.Transform.createReadStream transform function failed');                   // 109
-      }                                                                                                          // 110
-    });                                                                                                          // 111
-                                                                                                                 // 112
-  }                                                                                                              // 113
-                                                                                                                 // 114
-  // We dont transform just normal SA interface                                                                  // 115
-  return sourceStream;                                                                                           // 116
-};                                                                                                               // 117
-                                                                                                                 // 118
-// Utility function to simplify adding layers of passthrough                                                     // 119
-function addPassThrough(stream, func) {                                                                          // 120
-  var pts = new PassThrough();                                                                                   // 121
-  // We pass on the special "stored" event for those listening                                                   // 122
-  stream.on('stored', function(result) {                                                                         // 123
-    pts.emit('stored', result);                                                                                  // 124
-  });                                                                                                            // 125
-  func(pts, stream);                                                                                             // 126
-  return pts;                                                                                                    // 127
-}                                                                                                                // 128
-                                                                                                                 // 129
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                          //
+// packages/cfs_storage-adapter/transform.server.js                                                         //
+//                                                                                                          //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                                            //
+/* global FS */
 
-}).call(this);
+var PassThrough = Npm.require('stream').PassThrough;
+var lengthStream = Npm.require('length-stream');
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+FS.Transform = function(options) {
+  var self = this;
+
+  options = options || {};
+
+  if (!(self instanceof FS.Transform))
+    throw new Error('FS.Transform must be called with the "new" keyword');
+
+  if (!options.adapter)
+    throw new Error('Transform expects option.adapter to be a storage adapter');
+
+  self.storage = options.adapter;
+
+  // Fetch the transformation functions if any
+  self.transformWrite = options.transformWrite;
+  self.transformRead = options.transformRead;
+};
+
+// Allow packages to add scope
+FS.Transform.scope = {};
+
+// The transformation stream triggers an "stored" event when data is stored into
+// the storage adapter
+FS.Transform.prototype.createWriteStream = function(fileObj) {
+  var self = this;
+
+  // Get the file key
+  var fileKey = self.storage.fileKey(fileObj);
+
+  // Rig write stream
+  var destinationStream = self.storage.createWriteStreamForFileKey(fileKey, {
+    // Not all SA's can set these options and cfs dont depend on setting these
+    // but its nice if other systems are accessing the SA that some of the data
+    // is also available to those
+    aliases: [fileObj.name()],
+    contentType: fileObj.type(),
+    metadata: fileObj.metadata
+  });
+
+  // Pass through transformWrite function if provided
+  if (typeof self.transformWrite === 'function') {
+
+    destinationStream = addPassThrough(destinationStream, function (ptStream, originalStream) {
+      // Rig transform
+      try {
+        self.transformWrite.call(FS.Transform.scope, fileObj, ptStream, originalStream);
+        // XXX: If the transform function returns a buffer should we stream that?
+      } catch(err) {
+        // We emit an error - should we throw an error?
+        console.warn('FS.Transform.createWriteStream transform function failed, Error: ');
+        throw err;
+      }
+    });
+
+  }
+
+  // If original doesn't have size, add another PassThrough to get and set the size.
+  // This will run on size=0, too, which is OK.
+  // NOTE: This must come AFTER the transformWrite code block above. This might seem
+  // confusing, but by coming after it, this will actually be executed BEFORE the user's
+  // transform, which is what we need in order to be sure we get the original file
+  // size and not the transformed file size.
+  if (!fileObj.size()) {
+    destinationStream = addPassThrough(destinationStream, function (ptStream, originalStream) {
+      var lstream = lengthStream(function (fileSize) {
+        fileObj.size(fileSize, {save: false});
+      });
+
+      ptStream.pipe(lstream).pipe(originalStream);
+    });
+  }
+
+  return destinationStream;
+};
+
+FS.Transform.prototype.createReadStream = function(fileObj, options) {
+  var self = this;
+
+  // Get the file key
+  var fileKey = self.storage.fileKey(fileObj);
+
+  // Rig read stream
+  var sourceStream = self.storage.createReadStreamForFileKey(fileKey, options);
+
+  // Pass through transformRead function if provided
+  if (typeof self.transformRead === 'function') {
+
+    sourceStream = addPassThrough(sourceStream, function (ptStream, originalStream) {
+      // Rig transform
+      try {
+        self.transformRead.call(FS.Transform.scope, fileObj, originalStream, ptStream);
+      } catch(err) {
+        //throw new Error(err);
+        // We emit an error - should we throw an error?
+        sourceStream.emit('error', 'FS.Transform.createReadStream transform function failed');
+      }
+    });
+
+  }
+
+  // We dont transform just normal SA interface
+  return sourceStream;
+};
+
+// Utility function to simplify adding layers of passthrough
+function addPassThrough(stream, func) {
+  var pts = new PassThrough();
+  // We pass on the special "stored" event for those listening
+  stream.on('stored', function(result) {
+    pts.emit('stored', result);
+  });
+  func(pts, stream);
+  return pts;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }).call(this);
 

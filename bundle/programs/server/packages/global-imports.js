@@ -21,6 +21,7 @@ Roles = Package['alanning:roles'].Roles;
 Email = Package.email.Email;
 EmailInternals = Package.email.EmailInternals;
 sitemaps = Package['gadicohen:sitemaps'].sitemaps;
+STRIPEMETEOR = Package['mrgalaxy:stripe'].STRIPEMETEOR;
 BrowserDetect = Package['awatson1978:browser-detection'].BrowserDetect;
 MailChimp = Package['miro:mailchimp'].MailChimp;
 Honeypot = Package['em0ney:honeypot'].Honeypot;

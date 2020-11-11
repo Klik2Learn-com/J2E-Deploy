@@ -8,26 +8,26 @@ var meteorInstall = Package['modules-runtime'].meteorInstall;
 
 var require = meteorInstall({"node_modules":{"meteor":{"modules":{"server.js":function(require){
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// packages/modules/server.js                                                                        //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
+///////////////////////////////////////////////////////////////////////////////////////
+//                                                                                   //
+// packages/modules/server.js                                                        //
+//                                                                                   //
+///////////////////////////////////////////////////////////////////////////////////////
+                                                                                     //
 require("./install-packages.js");
 require("./process.js");
 require("./reify.js");
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
 },"install-packages.js":function(require,exports,module){
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// packages/modules/install-packages.js                                                              //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
+///////////////////////////////////////////////////////////////////////////////////////
+//                                                                                   //
+// packages/modules/install-packages.js                                              //
+//                                                                                   //
+///////////////////////////////////////////////////////////////////////////////////////
+                                                                                     //
 function install(name, mainModule) {
   var meteorDir = {};
 
@@ -154,6 +154,7 @@ install("multiply:iron-router-progress");
 install("gadicohen:robots-txt");
 install("gadicohen:sitemaps");
 install("johnantoni:meteor-unveil");
+install("mrgalaxy:stripe");
 install("autoupdate");
 install("standard-app-packages");
 install("awatson1978:browser-detection");
@@ -200,16 +201,16 @@ install("cfs:collection-filters");
 install("cfs:worker");
 install("service-configuration");
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
 },"process.js":function(require,exports,module){
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// packages/modules/process.js                                                                       //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
+///////////////////////////////////////////////////////////////////////////////////////
+//                                                                                   //
+// packages/modules/process.js                                                       //
+//                                                                                   //
+///////////////////////////////////////////////////////////////////////////////////////
+                                                                                     //
 if (! global.process) {
   try {
     // The application can run `npm install process` to provide its own
@@ -247,32 +248,32 @@ for (var key in meteorEnv) {
   }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
 },"reify.js":function(require,exports,module){
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// packages/modules/reify.js                                                                         //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
+///////////////////////////////////////////////////////////////////////////////////////
+//                                                                                   //
+// packages/modules/reify.js                                                         //
+//                                                                                   //
+///////////////////////////////////////////////////////////////////////////////////////
+                                                                                     //
 var Module = module.constructor;
 var Mp = Module.prototype;
 require("reify/lib/runtime").enable(Mp);
 Mp.importSync = Mp.importSync || Mp.import;
 Mp.import = Mp.import || Mp.importSync;
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
 },"node_modules":{"reify":{"lib":{"runtime":{"index.js":function(require,exports,module){
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/meteor/modules/node_modules/reify/lib/runtime/index.js                               //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
+///////////////////////////////////////////////////////////////////////////////////////
+//                                                                                   //
+// node_modules/meteor/modules/node_modules/reify/lib/runtime/index.js               //
+//                                                                                   //
+///////////////////////////////////////////////////////////////////////////////////////
+                                                                                     //
 "use strict";
 
 // This module should be compatible with PhantomJS v1, just like the other files
@@ -402,266 +403,9 @@ function moduleMakeNsSetter() {
   };
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
-}}}}}}},"babel-runtime":{"regenerator":{"index.js":function(require,exports,module){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/regenerator/index.js                                                   //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-module.exports = require("regenerator-runtime");
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-}},"helpers":{"typeof.js":function(require,exports){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/helpers/typeof.js                                                      //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-"use strict";
-
-exports.__esModule = true;
-
-var _iterator = require("../core-js/symbol/iterator");
-
-var _iterator2 = _interopRequireDefault(_iterator);
-
-var _symbol = require("../core-js/symbol");
-
-var _symbol2 = _interopRequireDefault(_symbol);
-
-var _typeof = typeof _symbol2.default === "function" && typeof _iterator2.default === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj; };
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.default) === "symbol" ? function (obj) {
-  return typeof obj === "undefined" ? "undefined" : _typeof(obj);
-} : function (obj) {
-  return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof(obj);
-};
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"classCallCheck.js":function(require,exports){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/helpers/classCallCheck.js                                              //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-"use strict";
-
-exports.__esModule = true;
-
-exports.default = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"possibleConstructorReturn.js":function(require,exports){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/helpers/possibleConstructorReturn.js                                   //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-"use strict";
-
-exports.__esModule = true;
-
-var _typeof2 = require("../helpers/typeof");
-
-var _typeof3 = _interopRequireDefault(_typeof2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function (self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
-};
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"inherits.js":function(require,exports){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/helpers/inherits.js                                                    //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-"use strict";
-
-exports.__esModule = true;
-
-var _setPrototypeOf = require("../core-js/object/set-prototype-of");
-
-var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
-
-var _create = require("../core-js/object/create");
-
-var _create2 = _interopRequireDefault(_create);
-
-var _typeof2 = require("../helpers/typeof");
-
-var _typeof3 = _interopRequireDefault(_typeof2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function (subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : (0, _typeof3.default)(superClass)));
-  }
-
-  subClass.prototype = (0, _create2.default)(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
-};
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"extends.js":function(require,exports){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/helpers/extends.js                                                     //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-"use strict";
-
-exports.__esModule = true;
-
-var _assign = require("../core-js/object/assign");
-
-var _assign2 = _interopRequireDefault(_assign);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _assign2.default || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"toConsumableArray.js":function(require,exports){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/helpers/toConsumableArray.js                                           //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-"use strict";
-
-exports.__esModule = true;
-
-var _from = require("../core-js/array/from");
-
-var _from2 = _interopRequireDefault(_from);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function (arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
-
-    return arr2;
-  } else {
-    return (0, _from2.default)(arr);
-  }
-};
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"slicedToArray.js":function(require,exports){
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                   //
-// node_modules/babel-runtime/helpers/slicedToArray.js                                               //
-//                                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                     //
-"use strict";
-
-exports.__esModule = true;
-
-var _isIterable2 = require("../core-js/is-iterable");
-
-var _isIterable3 = _interopRequireDefault(_isIterable2);
-
-var _getIterator2 = require("../core-js/get-iterator");
-
-var _getIterator3 = _interopRequireDefault(_getIterator2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function () {
-  function sliceIterator(arr, i) {
-    var _arr = [];
-    var _n = true;
-    var _d = false;
-    var _e = undefined;
-
-    try {
-      for (var _i = (0, _getIterator3.default)(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
-        _arr.push(_s.value);
-
-        if (i && _arr.length === i) break;
-      }
-    } catch (err) {
-      _d = true;
-      _e = err;
-    } finally {
-      try {
-        if (!_n && _i["return"]) _i["return"]();
-      } finally {
-        if (_d) throw _e;
-      }
-    }
-
-    return _arr;
-  }
-
-  return function (arr, i) {
-    if (Array.isArray(arr)) {
-      return arr;
-    } else if ((0, _isIterable3.default)(Object(arr))) {
-      return sliceIterator(arr, i);
-    } else {
-      throw new TypeError("Invalid attempt to destructure non-iterable instance");
-    }
-  };
-}();
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-}}}}},{
+}}}}}}}}},{
   "extensions": [
     ".js",
     ".json"

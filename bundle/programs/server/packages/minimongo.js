@@ -1220,7 +1220,7 @@ function getValueBitmask(value, length) {                                       
                                                                                                                        //
 function insertIntoDocument(document, key, value) {                                                                    // 777
   Object.keys(document).forEach(function (existingKey) {                                                               // 778
-    if (existingKey.length > key.length && existingKey.indexOf(key) === 0 || key.length > existingKey.length && key.indexOf(existingKey) === 0) {
+    if (existingKey.length > key.length && existingKey.indexOf(key + ".") === 0 || key.length > existingKey.length && key.indexOf(existingKey + ".") === 0) {
       throw new Error("cannot infer query fields to set, both paths '" + existingKey + "' and " + ("'" + key + "' are matched"));
     } else if (existingKey === key) {                                                                                  // 787
       throw new Error("cannot infer query fields to set, path '" + key + "' is matched twice");                        // 788
