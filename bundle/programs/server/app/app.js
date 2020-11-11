@@ -8633,13 +8633,13 @@ sitemaps.add('/sitemap.xml', function () {                                      
     // Optional.  https://support.google.com/webmasters/answer/80472?hl=en                                             // 44
     // Again, the base URL is automatically prepended to loc, *_loc                                                    // 45
     videos: [{                                                                                                         // 46
-      content_loc: '/video/course.mp4',                                                                                // 48
-      thumbnail_loc: "/video/course.jpg",                                                                              // 49
+      content_loc: 'https://do9d8j0j2sh3m.cloudfront.net/assets/journey2english/video/course.mp4',                     // 48
+      thumbnail_loc: "https://do9d8j0j2sh3m.cloudfront.net/assets/journey2english/video/course.jpg",                   // 49
       title: "Why choose Journey 2 English",                                                                           // 50
       description: "Why choose Journey 2 English"                                                                      // 51
     }, {                                                                                                               // 47
-      content_loc: '/video/testimonials.mp4',                                                                          // 54
-      thumbnail_loc: "/video/testimonials.jpg",                                                                        // 55
+      content_loc: 'https://do9d8j0j2sh3m.cloudfront.net/assets/journey2english/video/testimonials.mp4',               // 54
+      thumbnail_loc: "https://do9d8j0j2sh3m.cloudfront.net/assets/journey2english/video/testimonials.jpg",             // 55
       title: "Journey 2 English Testimonials",                                                                         // 56
       description: "What people say about Journey 2 English" // ,{                                                     // 57
       //   loc: '/myOtherVideo.jpg',  // Below properties are optional                                                 // 60
