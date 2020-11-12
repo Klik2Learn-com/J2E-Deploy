@@ -62,7 +62,7 @@ Object.keys(methods).forEach(function (key) {
 
 //////////////////////////////////////////////////////////////////////////////
 //                                                                          //
-// ../../.0.9.3.1ywppif.5131i++os+web.browser+web.cordova/npm/node_modules/ //
+// ../../.0.9.3.sivk8x.tbt8++os+web.browser+web.cordova/npm/node_modules/bc //
 //                                                                          //
 //////////////////////////////////////////////////////////////////////////////
                                                                             //

@@ -1,6 +1,6 @@
 {
   "format": "javascript-image-pre1",
-  "arch": "os",
+  "arch": "os.osx.x86_64",
   "load": [
     {
       "node_modules": "npm/node_modules/meteor/meteor/node_modules",
@@ -170,7 +170,6 @@
     },
     {
       "node_modules": "npm/node_modules/meteor/cfs_gridfs/node_modules",
-      "sourceMap": "packages/cfs_gridfs.js.map",
       "path": "packages/cfs_gridfs.js"
     },
     {
@@ -332,10 +331,13 @@
       "path": "packages/mrgalaxy_stripe.js"
     },
     {
+      "path": "packages/standard-app-packages.js"
+    },
+    {
       "path": "packages/autoupdate.js"
     },
     {
-      "path": "packages/standard-app-packages.js"
+      "path": "packages/meteor-platform.js"
     },
     {
       "path": "packages/awatson1978_browser-detection.js"
@@ -417,29 +419,6 @@
       "path": "packages/cfs_ejson-file.js"
     },
     {
-      "path": "packages/jspdf_core.js"
-    },
-    {
-      "path": "packages/ongoworks_pdf.js"
-    },
-    {
-      "node_modules": "npm/node_modules/meteor/pascoual_pdfkit/node_modules",
-      "path": "packages/pascoual_pdfkit.js"
-    },
-    {
-      "node_modules": "npm/node_modules/meteor/pascoual_pdfkitx/node_modules",
-      "path": "packages/pascoual_pdfkitx.js"
-    },
-    {
-      "sourceMap": "packages/ostrio_cookies.js.map",
-      "path": "packages/ostrio_cookies.js"
-    },
-    {
-      "node_modules": "npm/node_modules/meteor/ostrio_files/node_modules",
-      "sourceMap": "packages/ostrio_files.js.map",
-      "path": "packages/ostrio_files.js"
-    },
-    {
       "path": "packages/hot-code-push.js"
     },
     {
@@ -447,7 +426,6 @@
     },
     {
       "node_modules": "npm/node_modules/meteor/cfs_tempstore/node_modules",
-      "sourceMap": "packages/cfs_tempstore.js.map",
       "path": "packages/cfs_tempstore.js"
     },
     {
@@ -481,11 +459,11 @@
       "path": "packages/cfs_worker.js"
     },
     {
-      "node_modules": "npm/templates/node_modules",
+      "node_modules": "npm/node_modules",
       "path": "packages/global-imports.js"
     },
     {
-      "node_modules": "npm/templates/node_modules",
+      "node_modules": "npm/node_modules",
       "path": "app/app.js"
     },
     {

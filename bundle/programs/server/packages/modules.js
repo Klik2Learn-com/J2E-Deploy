@@ -8,37 +8,16 @@ var meteorInstall = Package['modules-runtime'].meteorInstall;
 
 var require = meteorInstall({"node_modules":{"meteor":{"modules":{"server.js":function(require){
 
-<<<<<<< HEAD
-///////////////////////////////////////////////////////////////////////////////////////
-//                                                                                   //
-// packages/modules/server.js                                                        //
-//                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////
-                                                                                     //
-=======
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                                //
 // packages/modules/server.js                                                                                     //
 //                                                                                                                //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                                                                                   //
->>>>>>> parent of 3f98d104... test deploy
 require("./install-packages.js");
 require("./process.js");
 require("./reify.js");
 
-<<<<<<< HEAD
-///////////////////////////////////////////////////////////////////////////////////////
-
-},"install-packages.js":function(require,exports,module){
-
-///////////////////////////////////////////////////////////////////////////////////////
-//                                                                                   //
-// packages/modules/install-packages.js                                              //
-//                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////
-                                                                                     //
-=======
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 },"install-packages.js":function(require,exports,module){
@@ -49,7 +28,6 @@ require("./reify.js");
 //                                                                                                                //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                                                                                   //
->>>>>>> parent of 3f98d104... test deploy
 function install(name, mainModule) {
   var meteorDir = {};
 
@@ -177,8 +155,9 @@ install("gadicohen:robots-txt");
 install("gadicohen:sitemaps");
 install("johnantoni:meteor-unveil");
 install("mrgalaxy:stripe");
-install("autoupdate");
 install("standard-app-packages");
+install("autoupdate");
+install("meteor-platform");
 install("awatson1978:browser-detection");
 install("themeteorchef:jquery-validation");
 install("miro:mailchimp");
@@ -202,12 +181,6 @@ install("accounts-ui");
 install("dynamic-import", "meteor/dynamic-import/server.js");
 install("cfs:filesystem");
 install("cfs:ejson-file");
-install("jspdf:core");
-install("ongoworks:pdf");
-install("pascoual:pdfkit");
-install("pascoual:pdfkitx");
-install("ostrio:cookies", "meteor/ostrio:cookies/cookies.js");
-install("ostrio:files", "meteor/ostrio:files/server.js");
 install("hot-code-push");
 install("launch-screen");
 install("cfs:tempstore");
@@ -223,18 +196,6 @@ install("cfs:collection-filters");
 install("cfs:worker");
 install("service-configuration");
 
-<<<<<<< HEAD
-///////////////////////////////////////////////////////////////////////////////////////
-
-},"process.js":function(require,exports,module){
-
-///////////////////////////////////////////////////////////////////////////////////////
-//                                                                                   //
-// packages/modules/process.js                                                       //
-//                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////
-                                                                                     //
-=======
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 },"process.js":function(require,exports,module){
@@ -245,7 +206,6 @@ install("service-configuration");
 //                                                                                                                //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                                                                                   //
->>>>>>> parent of 3f98d104... test deploy
 if (! global.process) {
   try {
     // The application can run `npm install process` to provide its own
@@ -283,18 +243,6 @@ for (var key in meteorEnv) {
   }
 }
 
-<<<<<<< HEAD
-///////////////////////////////////////////////////////////////////////////////////////
-
-},"reify.js":function(require,exports,module){
-
-///////////////////////////////////////////////////////////////////////////////////////
-//                                                                                   //
-// packages/modules/reify.js                                                         //
-//                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////
-                                                                                     //
-=======
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 },"reify.js":function(require,exports,module){
@@ -305,25 +253,12 @@ for (var key in meteorEnv) {
 //                                                                                                                //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                                                                                   //
->>>>>>> parent of 3f98d104... test deploy
 var Module = module.constructor;
 var Mp = Module.prototype;
 require("reify/lib/runtime").enable(Mp);
 Mp.importSync = Mp.importSync || Mp.import;
 Mp.import = Mp.import || Mp.importSync;
 
-<<<<<<< HEAD
-///////////////////////////////////////////////////////////////////////////////////////
-
-},"node_modules":{"reify":{"lib":{"runtime":{"index.js":function(require,exports,module){
-
-///////////////////////////////////////////////////////////////////////////////////////
-//                                                                                   //
-// node_modules/meteor/modules/node_modules/reify/lib/runtime/index.js               //
-//                                                                                   //
-///////////////////////////////////////////////////////////////////////////////////////
-                                                                                     //
-=======
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 },"node_modules":{"reify":{"lib":{"runtime":{"index.js":function(require,exports,module){
@@ -334,7 +269,6 @@ Mp.import = Mp.import || Mp.importSync;
 //                                                                                                                //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                                                                                   //
->>>>>>> parent of 3f98d104... test deploy
 "use strict";
 
 // This module should be compatible with PhantomJS v1, just like the other files
@@ -464,11 +398,6 @@ function moduleMakeNsSetter() {
   };
 }
 
-<<<<<<< HEAD
-///////////////////////////////////////////////////////////////////////////////////////
-
-}}}}}}}}},{
-=======
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }}}}}}},"babel-runtime":{"regenerator":{"index.js":function(require,exports,module){
@@ -958,7 +887,6 @@ module.exports.getRounds = function getRounds(hash) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }}}},{
->>>>>>> parent of 3f98d104... test deploy
   "extensions": [
     ".js",
     ".json"

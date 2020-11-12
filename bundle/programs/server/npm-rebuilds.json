@@ -1,3 +1,4 @@
 [
-  "npm/templates"
+  "npm/node_modules/meteor/cfs_gridfs",
+  "npm"
 ]
