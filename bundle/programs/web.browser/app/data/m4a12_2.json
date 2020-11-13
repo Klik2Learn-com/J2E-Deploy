@@ -1,0 +1,75 @@
+{
+	"exercises": [{
+		"exercise": {
+			"sound": "audio/module4/a12/Cardiology.m4a",
+			"correct": "heart patients",
+			"incorrect": ["kidney patients","broken bones","accidents/sudden illness","X rays","medicines","children’s department"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Paediatrics.m4a",
+			"correct": "children’s department",
+			"incorrect": ["accidents/sudden illness",	"X rays",	"eye patients",	"medicines",	"cancer patients",	"mothers and babies"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Oncology.m4a",
+			"correct": "cancer patients",
+			"incorrect": ["eye patients",	"heart patients",	"children’s department",	"medicines",	"X rays",	"accidents/sudden illness"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Accident and Emergency (A and E).m4a",
+			"correct": "accidents/sudden illness",
+			"incorrect": ["X rays",	"kidney patients",	"broken bones",	"mothers and babies",	"medicines",	"eye patients"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Maternity.m4a",
+			"correct": "mothers and babies",
+			"incorrect": ["accidents/sudden illness",	"heart patients",	"medicines",	"exercise and massage",	"kidney patients",	"brain patients"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Neurology.m4a",
+			"correct": "brain patients",
+			"incorrect": ["broken bones",	"exercise and massage",	"kidney patients",	"accidents/sudden illness",	"mothers and babies",	"medicines"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Ophthalmology.m4a",
+			"correct": "eye patients",
+			"incorrect": ["X rays",	"mothers and babies",	"exercise and massage",	"brain patients",	"kidney patients",	"broken bones"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Radiotherapy.m4a",
+			"correct": "X rays",
+			"incorrect": ["medicines",	"brain patients",	"kidney patients",	"exercise and massage",	"children’s department",	"heart patients"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Pharmacy.m4a",
+			"correct": "medicines",
+			"incorrect": ["mothers and babies",	"heart patients",	"X rays",	"children’s department",	"kidney patients",	"exercise and massage"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Physiotherapy.m4a",
+			"correct": "exercise and massage",
+			"incorrect": ["cancer patients",	"mothers and babies",	"eye patients",	"children’s department",	"medicines",	"broken bones"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Renal Unit.m4a",
+			"correct": "kidney patients",
+			"incorrect": ["children’s department",	"medicines",	"cancer patients",	"brain patients",	"eye patients",	"broken bones"]
+		}
+	}, {
+		"exercise": {
+			"sound": "audio/module4/a12/Orthopaedics.m4a",
+			"correct": "broken bones",
+			"incorrect": ["exercise and massage",	"heart patients",	"children’s department",	"kidney patients",	"X rays",	"medicines"]
+		}
+	}]
+}

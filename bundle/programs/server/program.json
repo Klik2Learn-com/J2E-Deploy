@@ -464,6 +464,7 @@
     },
     {
       "node_modules": "npm/node_modules",
+      "sourceMap": "app/app.js.map",
       "path": "app/app.js"
     },
     {

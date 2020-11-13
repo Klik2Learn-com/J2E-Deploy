@@ -1,0 +1,94 @@
+{
+	"exercises": [{
+		"exercise": {
+			"text": "A job that requires a long period of training and a formal qualification.",
+			"correct": "Profession",
+			"incorrect": ["Plumber", "Commercial building", "Architect", "Environmental health", "Surveyor"]
+		}
+	}, {
+		"exercise": {
+			"text": "Thinking about long term plans and goals.",
+			"correct": "Strategic",
+			"incorrect": ["Architect", "Catering", "Environmental health", "Decorator", "Surveyor"]
+		}
+	}, {
+		"exercise": {
+			"text": " Energy from natural sources such as wind, tides, sunlight.",
+			"correct": "Renewable energy",
+			"incorrect": ["Commercial building", "Catering", "Innovation", "Environmental health", "Architect"]
+		}
+	}, {
+		"exercise": {
+			"text": "Doing the necessary paperwork for a business or organisation.",
+			"correct": "Administration",
+			"incorrect": ["Decorator", "Profession", "Commercial building", "Architect", "Automated"]
+
+		}
+	}, {
+		"exercise": {
+			"text": "Providing food for an organisation or company.",
+			"correct": "Catering",
+			"incorrect": [ "Environmental health", "Automated", "Architect", "Plumber", "Decorator"]
+		}
+	}, {
+		"exercise": {
+			"text": "Dealing with problems like rubbish, pollution, rats, waste material etc.",
+			"correct": "Environmental health",
+			"incorrect": ["Joiner", "Architect", "Commercial building", "Administration", "Automated"]
+		}
+	}, {
+		"exercise": {
+			"text": "Using machines or computers to do a job.",
+			"correct": "Automated",
+			"incorrect": ["Catering", "Commercial building", "Innovation", "Decorator", "Joiner"]
+		}
+	}, {
+		"exercise": {
+			"text": "An invention or a new way of doing something.",
+			"correct": "Innovation",
+			"incorrect": ["Renewable energy", "Commercial building", "Strategic", "Surveyor", "Plumber"]
+		}
+	}, {
+		"exercise": {
+			"text": "A person skilled in working with wood",
+			"correct": "Joiner",
+			"incorrect": ["Commercial building", "Architect", "Innovation", "Profession", "Administration"]
+		}
+	}, {
+		"exercise": {
+			"text": "A person skilled in installing water supplies to a building.",
+			"correct": "Plumber",
+			"incorrect": ["Innovation", "Commercial building", "Environmental health", "Administration", "Architect"]
+		}
+	}, {
+		"exercise": {
+			"text": " A building used for business not as a home.",
+			"correct": "Commercial building",
+			"incorrect": ["Decorator", "Joiner", "Surveyor", "Catering", "Administration"]
+		}
+	}, {
+		"exercise": {
+			"text": " A person skilled in painting and finishing the interior of a building.",
+			"correct": "Decorator",
+			"incorrect": ["Renewable energy", "Profession", "Joiner", "Commercial building", "Surveyor"]
+		}
+	}, {
+		"exercise": {
+			"text": "A person trained to design buildings.",
+			"correct": "Architect",
+			"incorrect": ["Innovation", "Renewable energy", "Automated", "Commercial building", "Decorator"]
+		}
+	}, {
+		"exercise": {
+			"text": "A person trained to examine buildings for any faults.",
+			"correct": "Surveyor",
+			"incorrect": ["Renewable energy", "Commercial building", "Decorator", "Automated", "Catering"]
+		}
+	}, {
+		"exercise": {
+			"text": "Needing a lot of people to do a job.",
+			"correct": "Labour intensive",
+			"incorrect": ["Strategic", "Renewable energy", "Catering", "Environmental health", "Decorator"]
+		}
+	}]
+}
