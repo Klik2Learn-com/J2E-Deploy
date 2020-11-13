@@ -1,0 +1,284 @@
+<template name="m6a22">
+	<article class="with-tools-sidebar m6a22">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Harrogate');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 22 - {{>m6a22Title}}</div>
+			</header>
+			<section id="m6a22">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a22Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m6a22Intro}}</h3>
+					{{> m6a22Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a22_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a22_1}} {{>m6a22_2}} {{>m6a22_3}} {{>m6a22_4}} {{>EndPage char="k" act="m6a22" nextact="m6a23" place="Harrogate"}}
+		</div>
+	</article>
+
+
+	{{>m6a22_1_modal}} {{>m6a22_4_modal}}
+</template>
+
+<template name="m6a22_1">
+	<section id="m6a22_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Riots in Belfast Part 3</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<h4>President Obama spoke to an audience of young people in Belfast in June 2013 - a month before the troubles described
+							in the 'Riots in Belfast' article. Listen to the speech made by the Belfast teenager who introduced him.</h4>
+					</div>
+					<div class="col-sm-8">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Iz4HLRVc6f0?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="center">
+					<br>
+					<button data-toggle="modal" data-target="#m6a22_1_modal" class="button2">Read the speech</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a22" nexturl="#m6a22_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a22_1_modal">
+	<div class="modal fade" tabindex="-1" id="m6a22_1_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="m6a22_1_modal">Hannah Nelson's speech</h4>
+				</div>
+
+				<div class="content">
+					<div class="row">
+						<figure class="image imgleft-responsive">
+							<div class="ph-w ph-1x1" style="width: 230px">
+								<div class="ph">
+									<img draggable="false" src="images/module6/a22/speech1.jpg" alt="Girl giving speech" />
+								</div>
+							</div>
+						</figure>
+						<p>Good morning. My name is Hannah Nelson. I'm sixteen years old and I'm from Belfast. I've been thinking about an important
+							question ... how do you make peace permanent in Northern Ireland? Permanent peace, in our country, is not just a simple
+							dream for me as a teenager today growing up in Northern Ireland. It's a sincere, genuine aspiration. I believe that
+							enduring peace can only come about through true respect for others. We all have a right to express and celebrate our
+							diverse cultures. We all have an obligation to value each other as individuals.</p>
+						<p>As a sixteen year old I don't want to live in the past. I want to live for the future. I want to live in a country
+							where it is not my religion that is important but my value as a person which is significant.</p>
+						<p>It's important that we all have a unique identity: a choice in life to choose who and what we want to be. We are growing
+							up in a world where we are taught to be tolerant. To live peacefully, we must put this into practice. We must accept
+							our differences if we are to move forward.</p>
+						<p>I think that my age group should be the focus. We are the ones who must build new relationships with people from different
+							communities. Barriers need to be broken down. If we are to take away prejudice from young people's minds, we can create
+							a society that can get on together - a peaceful society.</p>
+						<p>Northern Ireland is my home. The reality is, it has a past. Often in Northern Ireland we hear about our past. People
+							have many genuine stories and they are definitely what make our history so important. But truthfully, we should not
+							let the past pull us apart and stop us from moving forward. Somehow we need to make a brighter future - a future that
+							builds bridges and brings people together. We need to work together not apart. We need to listen to each other and
+							we need to compromise. Most importantly we need to clearly value each other.</p>
+						<p>Peace is not easy and it takes a lot of work to make it happen. I think that it is easy for some to sit back and hold
+							on to the past. For peace to be an actual reality, however, we all need to take responsibility for the present. Our
+							past, our future. It is all about time.</p>
+						<p>It is in the present time that we really need to be responsible, accountable people and live to make a better future
+							for ourselves. There is no time like the present. Now is the time to start to make permanent peace happen in Northern
+							Ireland because we, the young people in this room want and deserve to live in peace. Northern Ireland is my home but
+							the reality is - it has a future.</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template name="m6a22_2">
+	<section id="m6a22_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="hidden-xs" style="height: 4em"></div>
+						<h4>She talks about her hopes for a peaceful future. You'll now see a transcript of parts of the speech with some words
+							missing.
+						</h4>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-1x1" style="max-width: 299px">
+							<div class="ph">
+								<img draggable="false" src="images/module6/a22/speech1.jpg" alt="Girl giving speech" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<br>
+				<button data-toggle="modal" data-target="#m6a22_1_modal" class="button2">Read the speech</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a22_1" nexturl="#m6a22_3" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m6a22_3">
+	<section id="m6a22_3" class="hidden">
+		<div class="content">
+			<h3 class="center">
+				Drag the right words to the spaces.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-12 text-center ">
+						<span class="number">1</span>
+						<div class="parapaper" style="display:inline-block;">
+							<span id="question_text">
+								I've
+								<div class='ddseatedtarget ddwidth10 dd1line' data-destinationid='target1'>&nbsp;</div> about an important question.
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-12 text-center ">
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth10 dd1line ">
+									<div class="m6a22_3_a1 ddsourceseated ddwidth10 dd1line shadow" draggable="false" id="target0">thought</div>
+								</div>
+								<div class="ddseat ddwidth10 dd1line ">
+									<div class="m6a22_3_a2 ddsourceseated ddwidth10 dd1line shadow" draggable="false" id="target1">been thinking</div>
+								</div>
+								<div class="ddseat ddwidth10 dd1line ">
+									<div class="m6a22_3_a3 ddsourceseated ddwidth10 dd1line shadow" draggable="false" id="target2">considered</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+
+				</div>
+				<div class="center">
+					<br>
+					<button data-toggle="modal" data-target="#m6a22_1_modal" class="button2">Read the speech</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a22_2" nexturl="#m6a22_4" prev="disabled" next="hidden"}}
+		</footer>
+
+	</section>
+</template>
+
+
+<template name="m6a22_4">
+	<section id="m6a22_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Riots in Belfast Part 3</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<br>
+						<br>
+						<br>
+						<h4 class="center">Now you can read the newspaper article and read the speech.</h4>
+						<div class="center">
+							<br>
+							<button data-toggle="modal" data-target="#m6a22_4_modal" class="button2">Read the article</button>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-1x1" style="max-width: 299px">
+							<div class="ph">
+								<img draggable="false" src="images/module6/a22/speech1.jpg" alt="Girl giving speech" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-right" style="padding-right: 50px;">
+				<br>
+				<button data-toggle="modal" data-target="#m6a22_1_modal" class="button2">Read the speech</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a22_3" nexturl="#m6a22_end" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+
+<template name="m6a22_4_modal">
+	<div class="modal fade" tabindex="-1" id="m6a22_4_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="m6a22_4_modal">Belfast trouble: Police attacked for second night</h4>
+				</div>
+
+				<div class="content">
+
+
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="width: 230px">
+								<div class="ph">
+									<img draggable="false" src="images/module6/a20/belfastriots1.jpg" alt="Belfast riot police">
+								</div>
+							</div>
+						</figure>
+						<p>The police have been attacked with petrol bombs in north Belfast as trouble flared for the second night. The marching
+							season in Northern Ireland is a period of events from April to August. The high point is the 12th of July when Protestants
+							march to commemorate a Protestant victory in 1690. But many Catholics see the marches as sectarian. Some marches pass
+							through areas occupied mainly by Catholics.</p>
+						<p>There was serious rioting on Friday night when 32 police officers and an MP were injured. Many families with children
+							were caught up in the violence.</p>
+						<p>Petrol bombs, bricks and fireworks were thrown at the police who responded with water cannons and baton rounds.</p>
+						<p>A north Belfast MP was knocked unconscious after he was hit by a missile.</p>
+
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>

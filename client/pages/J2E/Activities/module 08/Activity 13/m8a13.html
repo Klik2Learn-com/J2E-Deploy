@@ -1,0 +1,178 @@
+<template name="m8a13"> 
+<article class="with-tools-sidebar m8a13">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Cardiff');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 13 - {{>m8a13Title}}</div>
+		</header>
+		<section id="m8a13">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a13Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a13Intro}}</h3>
+				{{> m8a13Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a13_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a13_1}}
+		{{>m8a13_2}}
+		{{>m8a13_3}}
+		{{>m8a13_4}}
+		{{>m8a13_5}}
+		{{>EndPage char="k" act="m8a13" nextact="m8a14" place="Cardiff"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a13_1"> 
+	<section id="m8a13_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">Listen to Rahul's account of a difficult day.</h3>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 center">
+						<div class="hidden-xs" style="height:120px"></div>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module8/a13/whole.m4a"></button><br><br>
+						</div>
+						<div class="col-sm-9">
+							<div class="ph-w ph-16x10 trans" style="max-width: 542px"><div class="ph"><img draggable="false" src="images/module8/a13/bad day.png" alt="Man running late for work"></div></div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a13" nexturl="#m8a13_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a13_2"> 
+	<section id="m8a13_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">Now you can read what he said.</h3>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 center">
+						<div class="hidden-xs" style="height:60px"></div>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module8/a13/whole.m4a"></button><br><br>
+						</div>
+						<div class="col-sm-9">
+						<div class="parapaper fold">{{>metametrics level="1" star="yes" align="center"}}
+							<p>I woke up and looked at my alarm clock. Oh no! It was ten to eight already. I’d forgotten to set my alarm. ‘I’m going to miss my bus,’ I thought. I grabbed my bag and rushed out of the house. On the way to the bus stop I decided to check my phone. It wasn’t in my bag. I’d left it on charge in the kitchen. I had to be at work by 8.30. Now I couldn’t even phone to explain the problem. </p>
+							<p>I decided to walk to the nearest taxi rank. Fortunately there were two taxis waiting. I jumped in and we set off. ‘I might make it on time after all.’ Just then the taxi slowed down. We were stuck in a traffic jam. It was going to be a difficult day…</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a13_1" nexturl="#m8a13_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a13_3"> 
+	<section id="m8a13_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right words to the spaces to complete the sentences.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<!-- {{> welldone}} -->
+					<ol class="olcircle">
+						<li>If <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div> set his alarm, he <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div> have slept in.</li>
+						<li>If he <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div> slept in, he <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target4">&nbsp;</div> caught the bus.</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">would have</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">wouldn't</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">he'd</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">hadn't</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a13_2" nexturl="#m8a13_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a13_4"> 
+	<section id="m8a13_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right words to the spaces to complete the sentences.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<!-- {{> welldone}} -->
+					<ol class="olcircle" style="counter-reset: start 2;">
+						<li>If he’d <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div> more time to get ready, he would <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target2">&nbsp;</div> his phone.</li>
+						<li>If <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target3">&nbsp;</div> not left his phone on charge, he <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target4">&nbsp;</div> phoned his boss.</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">could have</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">have remembered</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target3">he'd</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">had</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a13_3" nexturl="#m8a13_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a13_5"> 
+	<section id="m8a13_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right words to the spaces to complete the sentences.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+
+					<ol class="olcircle" style="counter-reset: start 4;">
+						<li>If the taxi <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div> got stuck in a traffic jam, he <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div> arrived on time.</li>
+						<li>If the roads <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div> quieter, the taxi <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target4">&nbsp;</div> got stuck in a traffic jam.</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">had been</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">wouldn't have</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">hadn't</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">might have</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a13_4" nexturl="#m8a13_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

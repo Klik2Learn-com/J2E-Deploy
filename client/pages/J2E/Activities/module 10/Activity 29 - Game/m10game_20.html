@@ -1,0 +1,24 @@
+<template name="m10Game_20">
+
+	<section id="m10Game_20" class="game-section game-legacy hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m10Game-6">
+						{{#if ghost}}<div class="reveal animated fadeIn"></div>{{/if}}
+					</div>
+					{{#if ghost}}
+						<div class="note-wrapper animated fadeIn">
+							<div class="note-top"></div><div class="note">{{>ghostInfo6}}</div><div class="note-bottom"></div>
+						</div>
+					{{else}}
+						<div class="game-story-text">Hmm. We didn't find any ghosts in here.</div>
+					{{/if}}
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10Game_21" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+	</section>
+</template>

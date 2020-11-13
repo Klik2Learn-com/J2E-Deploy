@@ -1,0 +1,178 @@
+<template name="m3a8">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Dunfermline');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 8 - {{>m3a8Title}}</div>
+			</header>
+
+			<section id="m3a8">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a8Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m3a8Intro}}</h3>
+					{{> m3a8Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a8_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m3a8_1}} {{>m3a8_2}} {{>m3a8_3}} {{>m3a8_4}} {{>m3a8_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m3a8_1">
+	<section id="m3a8_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<div class="toolbuttleft">
+				<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a8/report.m4a"></button>
+			</div>
+			<div class="toolbuttright">
+				<h3>Listen to this report on climate change from United Nations scientists.</h3>
+			</div>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-xs-4 col-xxs-12 text-center">
+						<figure>
+							<div class="ph-w ph-3x4 shadow" style="max-width: 292px"><div class="ph"><img draggable="false" src="images/module3/global-warming.jpg" alt="Global Warming"></div></div>
+						</figure>
+						<br>
+					</div>
+					<div class="col-sm-7 col-xs-8 col-xxs-12">
+						<div class="parapaper fold">
+							<b>
+								<p>There are four different ways of talking about the future in this report.</p>
+								<ul style="font-size: 1.2em;">
+									<li>The Present Simple</li>
+									<li>The Present Continuous</li>
+									<li>Going to</li>
+									<li>Will</li>
+								</ul>
+							</b>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a8" nexturl="#m3a8_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a8_2">
+	<section id="m3a8_2" class="hidden">
+		{{#if activeSection}} {{>rightwrong}}
+		<div class="content">
+			<h3>Listen to each sentence then {{>touch yes="tap" no="click"}} on the right future tense. There are 8 sentences.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="hidden-xs" style="height: 5em;"></div>
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a8/1.m4a"></button>
+						<div class="caption">Sentence 1</div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="visible-xs" style="height: 2em;"></div>
+						<span class="avoidwrap">
+							<div class="button1 item-space ddwidth15">The Present Simple</div>
+							<div class="button1 item-space ddwidth15">The Present Continuous</div>
+						</span>
+						<span class="avoidwrap">
+							<div class="button1 item-space ddwidth15">Going to</div>
+							<div class="button1 item-space ddwidth15">Will</div>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Transcript -->
+			<div class="fixed-center hidden" id="transcript">
+				<div class="caption capgreen">“Making preparations will save lives”</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a8_1" nexturl="#" nextID="m3a8_2nextQuestion" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a8_3">
+	<section id="m3a8_3" class="hidden">
+		<div class="content">
+
+			{{> dictionary_page word1="unprecedented" word2="drought" word3="option" word4c="hidden" word5c="hidden" word6c="hidden"
+			word7c="hidden" word8c="hidden" word9c="hidden" word10c="hidden" word11c="hidden" word12c="hidden" }}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a8_2" nexturl="#m3a8_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a8_4">
+	<section id="m3a8_4" class="hidden">
+		<div class="content">
+
+			<div class="parapaper article-text">
+				<div class="container-fluid">
+					<h3 class="center">Now read the article.</h3>
+					<div class="row">
+						<div class="col-sm-7 col-xs-6 col-xxs-12">
+							<p>Top United Nations scientists have warned the world’s political leaders to get ready for more dangerous and unprecedented
+								weather caused by global warming. ‘Making preparations
+								<span class='grammar'>will</span> save lives and money,’ said Chris Field of Stanford University in a news conference. ‘We
+								<span class='grammar'>face</span> many challenges in the future. These include floods, drought, storms and heat waves.’</p>
+
+							<p>Global warming
+								<span class='grammar'>is increasing</span> the risk of disaster in years to come. The risk
+								<span class='grammar'>will become</span> greater as the future
+								<span class='grammar'>gets</span> hotter. Unless the world changes the way it deals with climate change, there
+								<span class='grammar'>’s going to be</span> an increasing number of places where the most sensible option may be to leave.</p>
+
+							<p>In places like the Netherlands, citizens
+								<span class='grammar'>will have to</span> learn how to handle new weather problems like heat waves.</p>
+
+							<p>The panel
+								<span class='grammar'>expects</span> to issue another report when the group meets in Stockholm in 2013.</p>
+						</div>
+						<div class="col-sm-5 col-xs-6 col-xxs-12">
+							<figure>
+								<div class="ph-w shadow" style="max-width: 406px"><div class="ph" style="padding-top: 44.58%"><img draggable="false" src="images/module3/desert.jpg" alt="Desert"></div></div>
+								<br>
+								<br>
+								<div class="ph-w shadow" style="max-width: 406px"><div class="ph" style="padding-top: 44.58%"><img draggable="false" src="images/module3/ice.jpg" alt="Glacier"></div></div>
+								<br>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="articlesrc">Adapted from United Nations report on Climate Change November 2011.</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a8_3" nexturl="#m3a8_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a8_end">
+	{{>EndPage char="tu" act="m3a8" nextact="m3a9" place="Dunfermline"}}
+</template>

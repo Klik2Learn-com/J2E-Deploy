@@ -1,0 +1,116 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="DunveganCastle">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> m1l6}}<em class="titleactcount">{{>m1l6No}}</em></div>
+		</header>
+				
+	<!-- Place -->
+	<section id="DunveganCastle" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m1_satnav}}
+					<!--Module-->
+					{{>mapButtons module="1" location="DunveganCastle" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a23">
+								<div class="actbutton a23 {{completed '1' '23'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">23</div>
+								</div>
+							</a><br>
+							{{> m1a23Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a24">
+								<div class="actbutton a24 {{completed '1' '24'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">24</div>
+								</div>
+							</a><br>
+							{{> m1a24Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a25">
+								<div class="actbutton a25 {{completed '1' '25'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">25</div>
+								</div>
+							</a><br>
+							{{> m1a25Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a26">
+								<div class="actbutton a26 {{completed '1' '26'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">26</div>
+								</div>
+							</a><br>
+							{{> m1a26Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a27">
+								<div class="actbutton a27 {{completed '1' '27'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">27</div>
+								</div>
+							</a><br>
+							{{> m1a27Title}}
+						</div>
+						
+						{{#if notStudent}}
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1Game">
+								<div class="actbutton all {{completed '1' '28'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">28</div>
+								</div>
+							</a><br>
+							<span>{{> m1GameTitle}}</span>
+						</div>
+						{{else}}
+						<div class="actbuttoncont {{isLocked}}">
+							{{> ActLocked pass="15" total="20"}}
+							<a draggable="false" href="/m1Game">
+								<div class="actbutton all {{completed '1' '28'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">28</div>
+								</div>
+							</a><br>
+							<span>{{> m1GameTitle}}</span>							
+						</div>
+						{{/if}}
+						
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="next-mod-button-wrapper"><a href="Braemar" draggable="false" class="shadowsolid">Next module <i class="fas fa-arrow-right"></i></a></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="1" location="DunveganCastle" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

@@ -1,0 +1,84 @@
+<template name="StHelens">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<!-- Unit1 or Unit2 -->
+		<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		<!-- Module--> <!--Module, Location (1-6)--> <!--Module, Location (1-6)-->
+		<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> m5l5}}<em class="titleactcount">{{>m5l5No}}</em></div>
+	</header>
+	
+				
+	<!-- Place -->
+	<section id="StHelens" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m5_satnav}}
+					<!--Module-->
+					{{>mapButtons module="5" location="StHelens" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m5a17">
+								<div class="actbutton a17 {{completed '5' '17'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">17</div>
+								</div>
+							</a><br>
+							{{> m5a17Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m5a18">
+								<div class="actbutton a18 {{completed '5' '18'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">18</div>
+								</div>
+							</a><br>
+							{{> m5a18Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m5a19">
+								<div class="actbutton a19 {{completed '5' '19'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">19</div>
+								</div>
+							</a><br>
+							{{> m5a19Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m5a20">
+								<div class="actbutton a20 {{completed '5' '20'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">20</div>
+								</div>
+							</a><br>
+							{{> m5a20Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="5" location="StHelens" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

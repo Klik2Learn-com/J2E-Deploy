@@ -1,0 +1,88 @@
+<!-- Place -->
+<template name="Scarborough">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<!-- Unit1 or Unit2 -->
+		<a draggable="false" href="ModuleSelectUnit2"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		<!-- Module--> <!-- Module, Place --> <!-- Module, Place (x-y) -->
+		<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> m6l4}}<em class="titleactcount">{{>m6l4No}}</em></div>
+	</header>
+	<!-- Place -->
+	<section id="Scarborough" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m6_satnav}}
+					<!--Module-->
+					{{>mapButtons module="6" location="Scarborough" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m6a15">
+								<div class="actbutton a15 {{completed '6' '15'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">15</div>
+								</div>
+							</a><br>
+							{{> m6a15Title}}
+						</div>							
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m6a16">
+								<div class="actbutton a16 {{completed '6' '16'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">16</div>
+								</div>
+							</a><br>
+							{{> m6a16Title}}
+						</div>
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m6a17">
+								<div class="actbutton a17 {{completed '6' '17'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">17</div>
+								</div>
+							</a><br>
+							{{> m6a17Title}}
+						</div>							
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m6a18">
+								<div class="actbutton a18 {{completed '6' '18'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">18</div>
+								</div>
+							</a><br>
+							{{> m6a18Title}}
+						</div>
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m6a19">
+								<div class="actbutton a19 {{completed '6' '19'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">19</div>
+								</div>
+							</a><br>
+							{{> m6a19Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="6" location="Scarborough" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

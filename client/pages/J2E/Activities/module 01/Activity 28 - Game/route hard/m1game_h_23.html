@@ -1,0 +1,33 @@
+<template name="m1Game_h_23">
+
+	<section id="m1Game_h_23" class="game-section game-dd-simple hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content">
+				<div class="game-dd-simple-bg m1Game-bg-k-garden6">
+					<h3 class="center">Listen to K, then answer the questions below</h3>
+					
+					<div class="text-entry linespace2">
+						<div class="text-center"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Kboatprices.m4a"></button></div>
+
+						<span>Every morning at </span><span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span><span>am and every afternoon at </span><span id="entryanswer1" class="textentry-disabled"></span><span>pm. Sunday trips at </span><span id="entryanswer2" class="textentry-disabled"></span><span>pm.
+						Adult price - £</span><span id="entryanswer3" class="textentry-disabled"></span><span> children £</span><span id="entryanswer4" class="textentry-disabled"></span><span> and a family ticket for four people, £</span><span id="entryanswer5" class="textentry-disabled"></span><span>. Senior citizens £</span><span id="entryanswer6" class="textentry-disabled"></span>.
+
+						{{> rightwrong}}
+						<br>	
+						<br>
+						<div class="center">
+							<button class="button1">Skip</button>	
+						</div>
+					</div>
+					
+				</div>				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_h_24" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>

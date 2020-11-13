@@ -1,0 +1,114 @@
+<template name="m9a4"> 
+<article class="with-tools-sidebar m9a4">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/WestonsuperMare');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>{{> activity}} 4 - {{> m9a4Title}}</div>
+		</header>
+		<section id="m9a4">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a4Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a4Intro}}</h3>
+				{{> m9a4Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a4_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a4_1}}
+		{{>m9a4_2}}
+		{{>EndPage char="k" act="m9a4" nextact="m9a5" place="WestonsuperMare"}}
+	</div>
+</article>
+</template>
+<template name="m9a4_1"> 
+	<section id="m9a4_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3 class="center">See how many words you understand from the article about Employment in Activity 3. {{>touch yes="Tap" no="Click"}} on the right word to match the description</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">Apprenticeship</span></div> </div> 
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">Bullying</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">First Aid Kit</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">Pay Slip</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">Health And Safety</span></div></div> 
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto6 animated flipInX" id="lottoc5"><div><span class="contents">Entitled</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc6"><div><span class="contents">Contract</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc7"><div><span class="contents">Induction</span></div></div>
+					</div> 
+					 <div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto7 animated flipInX" id="lottoc8"><div><span class="contents">Discrimination</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc9"><div><span class="contents">National Insurance Number</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc10"><div><span class="contents">Harassment</span></div></div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc11"><div><span class="contents">Notice</span></div></div> 
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="number">1</div> <h5><span id="questions">A piece of paper which gives details about what you’ve earned and how much tax you pay.</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			{{>welldone}}
+			</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a4" nexturl="#m9a4_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a4_2"> 
+	<section id="m9a4_2" class="hidden"> 
+		<div class="content">  
+      			<h2 class="center">Here are the words again.</h2>
+      			<div class="def-row"><div class="caption">National Insurance Number</div><h5>- A number issued to all British citizens.</h5></div>
+      			<div class="def-row"><div class="caption">Contract</div><h5>- A legal document that explains your rights and duties.</h5></div>
+				<div class="def-row"><div class="caption">Notice</div><h5>- A period of time you must allow before you leave a job.</h5></div>
+				<div class="def-row"><div class="caption">Pay Slip</div><h5>- A piece of paper which gives details about what you’ve earned and how much tax you pay.</h5></div>
+				<div class="def-row"><div class="caption">Induction</div><h5>- An introductory session when you start a new job.</h5></div>
+				<div class="def-row"><div class="caption">Health And Safety</div><h5>- Information about avoiding accidents at work.</h5></div>
+				<div class="def-row"><div class="caption">First Aid Kit</div><h5>- What you need if someone has an accident.</h5></div>
+				<div class="def-row"><div class="caption">Entitled</div><h5>- Something you have a right to do or to have.</h5></div>
+				<div class="def-row"><div class="caption">Apprenticeship</div><h5>- A period of training you follow to learn a new skill or trade.</h5></div>
+				<div class="def-row"><div class="caption">Discrimination</div><h5>- Treating people differently because of race, religion or gender.</h5></div>
+				<div class="def-row"><div class="caption">Bullying</div><h5>- Treating people badly because you want to control them.</h5></div>
+				<div class="def-row"><div class="caption">Harassment</div><h5>- Deliberately annoying people.</h5></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a4_1" nexturl="#m9a4_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

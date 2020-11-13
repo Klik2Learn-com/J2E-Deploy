@@ -1,0 +1,313 @@
+<template name="styleMap">
+	<section id="style-map" class="hidden">
+		<div class="content">
+			<h1>Map Page</h1>
+			<p>Follow the comments in the code to see what to edit</p>
+			<p>Locations on map are numbered in order 1-6, so to reference the first location ({{>m2l1}}) in Module 2 we use <span class="htmlcode">m2l1</span>. Only ever type the location name for IDs and links - when you need to mention the location on the page somewhere, always use <span class="htmlcode">&#123;&#123;&#62;m2l1&#125;&#125;</span>.</p>
+			<p>For a list of all the location links/routes, <a draggable="false" href="#style-new" class="pagination">click here</a>.</p>
+<pre class="htmlcode2" style="height: 300px; overflow: scroll;">&lt;!-- Place --&gt;
+&lt;template name=&quot;Inverness&quot;&gt;
+&lt;article class=&quot;shadow&quot;&gt;
+	&lt;header class=&quot;acttitle&quot; &gt;
+		&lt;a draggable="false" href=&quot;ModuleSelect&quot;&gt;&lt;i class=&quot;titlereturn fa fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+		&#123;&#123;&gt; menu&#125;&#125;
+		&lt;!-- Module--&gt; &lt;!-- Module, Place --&gt; &lt;!-- Module, Place (x-y) --&gt;
+		&lt;em&gt;Module 1&lt;/em&gt;&lt;br&gt;&#123;&#123;&gt; m1l1&#125;&#125;&lt;em class=&quot;titleactcount&quot;&gt;&#123;&#123;&gt; m1l1No&#125;&#125;&lt;/em&gt;
+	&lt;/header&gt;
+	&lt;!-- Place --&gt;
+	&lt;section id=&quot;Inverness&quot; class=&quot;mappagecontent&quot;&gt;
+		&lt;div class=&quot;container-fluid&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				
+				&lt;div class=&quot;col-sm-7 col-sm-push-5&quot;&gt;
+					&#123;&#123;&gt;m1_satnav&#125;&#125;
+					&lt;!--Module--&gt;
+					&#123;&#123;&gt;mapButtons module=&quot;1&quot; location=&quot;Inverness&quot; class=&quot;hidden-xs&quot;&#125;&#125;
+				&lt;/div&gt;
+				
+				&lt;div class=&quot;col-sm-5 col-sm-pull-7&quot;&gt;
+					&lt;div class=&quot;activity-buttons&quot;&gt;
+						&lt;!-- Activity links - class should match act number --&gt;
+						&lt;div class=&quot;actbuttoncont&quot;&gt;
+							&lt;a draggable="false" href=&quot;/m1a1&quot;&gt;
+								&lt;div class=&quot;actbutton a1&quot;&gt;
+									&lt;div class=&quot;number&quot;&gt;1&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/a&gt;&lt;br&gt;
+							&#123;&#123;&gt; m1a1Title&#125;&#125;
+						&lt;/div&gt;							
+						&lt;div class=&quot;actbuttoncont&quot;&gt;
+							&lt;a draggable="false" href=&quot;/m1a2&quot;&gt;
+								&lt;div class=&quot;actbutton a2&quot;&gt;
+									&lt;div class=&quot;number&quot;&gt;2&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/a&gt;&lt;br&gt;
+							&#123;&#123;&gt; m1a2Title&#125;&#125;
+						&lt;/div&gt;
+						&lt;div class=&quot;actbuttoncont&quot;&gt;
+							&lt;a draggable="false" href=&quot;/m1a3&quot;&gt;
+								&lt;div class=&quot;actbutton a3&quot;&gt;
+									&lt;div class=&quot;number&quot;&gt;3&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/a&gt;&lt;br&gt;
+							&#123;&#123;&gt; m1a3Title&#125;&#125;
+						&lt;/div&gt;							
+						&lt;div class=&quot;actbuttoncont&quot;&gt;
+							&lt;a draggable="false" href=&quot;/m1a4&quot;&gt;
+								&lt;div class=&quot;actbutton a4&quot;&gt;
+									&lt;div class=&quot;number&quot;&gt;4&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/a&gt;&lt;br&gt;
+							&#123;&#123;&gt; m1a4Title&#125;&#125;
+						&lt;/div&gt;
+						&lt;div class=&quot;actbuttoncont&quot;&gt;
+							&lt;a draggable="false" href=&quot;/m1a5&quot;&gt;
+								&lt;div class=&quot;actbutton a5&quot;&gt;
+									&lt;div class=&quot;number&quot;&gt;5&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/a&gt;&lt;br&gt;
+							&#123;&#123;&gt; m1a5Title&#125;&#125;
+						&lt;/div&gt;							
+						&lt;div class=&quot;actbuttoncont&quot;&gt;
+							&lt;a draggable="false" href=&quot;/m1a6&quot;&gt;
+								&lt;div class=&quot;actbutton a6&quot;&gt;
+									&lt;div class=&quot;number&quot;&gt;6&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/a&gt;&lt;br&gt;
+							&#123;&#123;&gt; m1a6Title&#125;&#125;
+						&lt;/div&gt;
+						&lt;!-- Keep the empties to ensure there are 10x actbuttoncont in total --&gt;
+						&lt;div class=&quot;actbuttoncont&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;actbuttoncont&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;actbuttoncont&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;actbuttoncont&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+			&lt;/div&gt;
+			&lt;div class=&quot;row&quot;&gt;&lt;!--Module--&gt;&#123;&#123;&gt;mapButtons module=&quot;1&quot; location=&quot;Inverness&quot; class=&quot;visible-xs&quot;&#125;&#125;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+&lt;/article&gt;
+&lt;/template&gt;</pre>
+<br><br>
+<b>Satnav</b>
+<pre class="htmlcode2" style="height: 300px; overflow: scroll;">&lt;template name=&quot;m1_satnav&quot;&gt;
+&lt;div class=&quot;satnav-edge satnav-edge-module&quot;&gt;
+	&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+		&lt;div class=&quot;map1 embed-responsive-item&quot;&gt;
+			&lt;div class=&quot;satnav-contents&quot;&gt;
+				&lt;!-- Position the &quot;maplink&quot; DIV first, then edit the position the &quot;mapname&quot; DIV if needed --&gt;
+				&lt;!-- Change the icon (city, town, country, mountain, loch, landmark) and add the place name and activity range --&gt;
+				&lt;div class=&quot;maplink1&quot; style=&quot;left: 82.2%; top: 33%;&quot;&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;/Inverness&quot;&gt;&lt;div class=&quot;mapicon city&quot;&gt;&lt;span class=&quot;map-number&quot;&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+					&lt;div class=&quot;mapname&quot; style=&quot;top: 0px; right: 4px;&quot;&gt;&lt;span class=&quot;map-place-num&quot;&gt;1) Activities&lt;/span&gt;&lt;div class=&quot;mapactcount&quot;&gt;&#125;&#125;&gt; m1l1No&#123;&#123;&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;maplink2&quot; style=&quot;left: 73.5%; top: 47%;&quot;&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;/LochNess&quot;&gt;&lt;div class=&quot;mapicon loch&quot;&gt;&lt;span class=&quot;map-number&quot;&gt;2&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+					&lt;div class=&quot;mapname&quot; style=&quot;top: 0px; right: 4px;&quot;&gt;&lt;span class=&quot;map-place-num&quot;&gt;2) Activities&lt;/span&gt;&lt;div class=&quot;mapactcount&quot;&gt;&#125;&#125;&gt; m1l2No&#123;&#123;&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;										
+				&lt;div class=&quot;maplink3&quot; style=&quot;left: 66.9%; top: 64.6%;&quot;&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;/FortAugustus&quot;&gt;&lt;div class=&quot;mapicon town&quot;&gt;&lt;span class=&quot;map-number&quot;&gt;3&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+					&lt;div class=&quot;mapname&quot; style=&quot;left: -40px; top: 26px;&quot;&gt;&lt;span class=&quot;map-place-num&quot;&gt;3) Activities &lt;/span&gt;&lt;div class=&quot;mapactcount&quot;&gt;&#125;&#125;&gt; m1l3No&#123;&#123;&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;										
+				&lt;div class=&quot;maplink4&quot; style=&quot;left: 32.7%; top: 53.3%;&quot;&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;/KyleofLochalsh&quot;&gt;&lt;div class=&quot;mapicon town&quot;&gt;&lt;span class=&quot;map-number&quot;&gt;4&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+					&lt;div class=&quot;mapname&quot; style=&quot;right: -75px; top: 26px;&quot;&gt;&lt;span class=&quot;map-place-num&quot;&gt;4) Activities&lt;/span&gt;&lt;div class=&quot;mapactcount&quot;&gt;&#125;&#125;&gt; m1l4No&#123;&#123;&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;										
+				&lt;div class=&quot;maplink5&quot; style=&quot;left: 17.1%; top: 41.2%;&quot;&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;/Portree&quot;&gt;&lt;div class=&quot;mapicon town&quot;&gt;&lt;span class=&quot;map-number&quot;&gt;5&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+					&lt;div class=&quot;mapname&quot; style=&quot;left: -26px; top: 26px;&quot;&gt;&lt;span class=&quot;map-place-num&quot;&gt;5) Activities&lt;/span&gt;&lt;div class=&quot;mapactcount&quot;&gt;&#125;&#125;&gt; m1l5No&#123;&#123;&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;										
+				&lt;div class=&quot;maplink6&quot; style=&quot;left: 4.8%; top: 39%;&quot;&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;/DunveganCastle&quot;&gt;&lt;div class=&quot;mapicon landmark&quot;&gt;&lt;span class=&quot;map-number&quot;&gt;6&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+					&lt;div class=&quot;mapname&quot; style=&quot;left: 0px; top: -26px;&quot;&gt;&lt;span class=&quot;map-place-num&quot;&gt;6) Activities&lt;/span&gt;&lt;div class=&quot;mapactcount&quot;&gt;&#125;&#125;&gt; m1l6No&#123;&#123;&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/template&gt;</pre>
+			<br>
+			<hr>
+			
+			<h2>Place positioning</h2>
+			<p>Position the <b>maplink</b> DIV first (so the icon covers the blue dot on the map), then edit the position the <b>mapname</b> DIV if needed.</p>
+			<p>It's done this way so that any font changes won't affect the position of the icons.</p>
+			<p>We need to use percentages so the map can scale down on small screens. If you're taking coordinates from the images to position the icons, divide the <i><b>x</b></i> coord by <b>416</b> and <i><b>y</b></i> by <b>277</b> and then multiply by <b>100</b> to get the percentage values...</p>
+			<p>e.g. If the place is 120px from the left edge of the image and 40px from the top edge:
+			<br><code>120px, 40px</code> is <code>(120/416)*100 = 28.8</code>, <code>(40/277)*100 = 14.4</code>, so <span class="htmlcode">style="left: 28.8%; top: 14.4%;"</span></p>
+			<p>Try to match the existing map pages. Make sure the name label is clearly linked to only one icon, keep it away from any other icons.</p>
+			<p>Don't let the name labels go outside the map so they overlap the black frame.</p>
+			<p>For the links replace <span class="htmlcode">Location</span> with the route to that location. For a list of all the location links/routes, <a draggable="false" href="#style-new" class="pagination">click here</a>.</p>
+			<p>&nbsp;</p>
+		
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-6">
+						<b>Name right</b><br>
+						<div class="box1 style-map-box">
+							<div class="maplink" style="left: 20px; top: 10px;">
+								<a draggable="false" href="#"><div class="mapicon town"></div></a>
+								<div class="mapname" style="left: 30px; top: 0px;">{{> m2l1}} <div class="mapactcount">{{> m2l1No}}</div></div>
+							</div>
+						</div>
+						<br>
+<textarea class="htmlcode3" style="width: 90%; height: 6em;">&#60;div class="maplink" style="left: 48%; top: 36.1%;"&#62;
+	&#60;a href="Location"&#62;&#60;div class="mapicon town"&#62;&#60;/div&#62;&#60;/a&#62;
+	&#60;div class="mapname" style="left: 30px; top: 0px;"&#62;&#123;&#123;&#62; m2l1&#125;&#125; &#60;div class="mapactcount"&#62;&#123;&#123;&#62; m2l1No&#125;&#125;&#60;/div&#62;&#60;/div&#62;
+&#60;/div&#62;</textarea>
+					</div>
+					
+					<div class="col-xs-6">
+						<b>Name left</b><br>
+						<div class="box1 style-map-box">
+							<div class="maplink" style="left: 100px; top: 10px;">
+								<a draggable="false" href="#"><div class="mapicon town"></div></a>
+								<div class="mapname" style="right: 4px; top: 0px;">{{> m2l1}} <div class="mapactcount">{{> m2l1No}}</div></div>
+							</div>
+						</div>
+						<br>
+<textarea class="htmlcode3" style="width: 90%; height: 6em;">&#60;div class="maplink" style="left: 24%; top: 37%;"&#62;
+	&#60;a href="Location"&#62;&#60;div class="mapicon town"&#62;&#60;/div&#62;&#60;/a&#62;
+	&#60;div class="mapname" style="right: 4px; top: 0px;"&#62;&#123;&#123;&#62; m2l1&#125;&#125; &#60;div class="mapactcount"&#62;&#123;&#123;&#62; m2l1No&#125;&#125;&#60;/div&#62;&#60;/div&#62;
+&#60;/div&#62;</textarea>
+					</div>
+					
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					
+					<div class="col-xs-6">
+						<b>Name top right</b> - adjust "left" value to center the mapname<br>
+						<div class="box1 style-map-box">
+							<div class="maplink" style="left: 20px; top: 30px;">
+								<a draggable="false" href="#"><div class="mapicon town"></div></a>
+								<div class="mapname" style="left: 0px; top: -26px;">{{> m2l1}} <div class="mapactcount">{{> m2l1No}}</div></div>
+							</div>
+						</div>
+						<br>
+<textarea class="htmlcode3" style="width: 90%; height: 6em;">&#60;div class="maplink" style="left: 48.1%; top: 10.8%;"&#62;
+	&#60;a href="Location"&#62;&#60;div class="mapicon town"&#62;&#60;/div&#62;&#60;/a&#62;
+	&#60;div class="mapname" style="left: 0px; top: -26px;"&#62;&#123;&#123;&#62; m2l1&#125;&#125; &#60;div class="mapactcount"&#62;&#123;&#123;&#62; m2l1No&#125;&#125;&#60;/div&#62;&#60;/div&#62;
+&#60;/div&#62;</textarea>
+					</div>
+	
+					<div class="col-xs-6">
+						<b>Name top left</b> - adjust "right" value to center the mapname<br>
+						<div class="box1 style-map-box">
+							<div class="maplink" style="left: 60px; top: 30px;">
+								<a draggable="false" href="#"><div class="mapicon town"></div></a>
+								<div class="mapname" style="right: -26px; top: -26px;">{{> m2l1}} <div class="mapactcount">{{> m2l1No}}</div></div>
+							</div>
+						</div>
+						<br>
+<textarea class="htmlcode3" style="width: 90%; height: 6em;">&#60;div class="maplink" style="left: 14.4%; top: 10.8%;"&#62;
+	&#60;a href="Location"&#62;&#60;div class="mapicon town"&#62;&#60;/div&#62;&#60;/a&#62;
+	&#60;div class="mapname" style="right: -26px; top: -26px;"&#62;&#123;&#123;&#62; m2l1&#125;&#125; &#60;div class="mapactcount"&#62;&#123;&#123;&#62; m2l1No&#125;&#125;&#60;/div&#62;&#60;/div&#62;
+&#60;/div&#62;</textarea>
+					</div>
+					
+					
+				</div>
+				{{>blankrow}}
+				<div class="row">
+			
+					<div class="col-xs-6">
+						<b>Name bottom right</b> - adjust "left" value to center the mapname<br>
+						<div class="box1 style-map-box">
+							<div class="maplink" style="left: 20px; top: 10px;">
+								<a draggable="false" href="#"><div class="mapicon town"></div></a>
+								<div class="mapname" style="left: 0px; top: 26px;">{{> m2l1}} <div class="mapactcount">{{> m2l1No}}</div></div>
+							</div>
+						</div>
+						<br>
+<textarea class="htmlcode3" style="width: 90%; height: 6em;">&#60;div class="maplink" style="left: 48.1%; top: 36.1%;"&#62;
+	&#60;a href="Location"&#62;&#60;div class="mapicon town"&#62;&#60;/div&#62;&#60;/a&#62;
+	&#60;div class="mapname" style="left: 0px; top: 26px;"&#62;&#123;&#123;&#62; m2l1&#125;&#125; &#60;div class="mapactcount"&#62;&#123;&#123;&#62; m2l1No&#125;&#125;&#60;/div&#62;&#60;/div&#62;
+&#60;/div&#62;</textarea>
+					</div>
+					
+					<div class="col-xs-6">
+						<b>Name bottom left</b> - adjust "right" value to center the mapname<br>
+						<div class="box1 style-map-box">
+							<div class="maplink" style="left: 60px; top: 10px;">
+								<a draggable="false" href="#"><div class="mapicon town"></div></a>
+								<div class="mapname" style="right: -26px; top: 26px;">{{> m2l1}} <div class="mapactcount">{{> m2l1No}}</div></div>
+							</div>
+						</div>
+						<br>
+<textarea class="htmlcode3" style="width: 90%; height: 6em;">&#60;div class="maplink" style="left: 14.4%; top: 36.1%;"&#62;
+	&#60;a href="Location"&#62;&#60;div class="mapicon town"&#62;&#60;/div&#62;&#60;/a&#62;
+	&#60;div class="mapname" style="right: -26px; top: 26px;"&#62;&#123;&#123;&#62; m2l1&#125;&#125; &#60;div class="mapactcount"&#62;&#123;&#123;&#62; m2l1No&#125;&#125;&#60;/div&#62;&#60;/div&#62;
+&#60;/div&#62;</textarea>
+					</div>
+					
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						The place you're currently in should be highlighted - add 'active' class and remove the <span class="htmlcode">&#60;a&#62;</span> tag.<br>
+						<div class="box1 style-map-box">
+							<div class="maplink" style="left: 40px; top: 10px;">
+								<div class="mapicon town mapiconactive"></div>
+								<div class="mapname mapnameactive" style="left: -32px; top: 26px;">{{> m2l1}} <div class="mapactcount">{{> m2l1No}}</div></div>
+							</div>
+						</div>
+						<br>
+<pre class="htmlcode3">&#60;div class="maplink <span class="html-red">mapactive</span>" style="left: 9.6%; top: 3.6%;"&#62;
+	&#60;div class="mapicon town"&#62;&#60;/div&#62;
+	&#60;div class="mapname" style="left: -32px; top: 26px;"&#62;&#123;&#123;&#62; m2l1&#125;&#125; &#60;div class="mapactcount"&#62;&#123;&#123;&#62; m2l1No&#125;&#125;&#60;/div&#62;&#60;/div&#62;
+&#60;/div&#62;</pre>
+					</div>
+				</div>
+			</div>
+			
+			<br>
+			<hr>
+			<h2>Icons</h2>
+			<p>Replace in <span class="htmlcode">&#60;div class="mapicon <span class="html-red">town</span>"&#62;&#60;/div&#62;</span></p>
+			<ul>
+				<li><div class="mapicon town" style="position: relative; display: inline-block; margin: 2px;"></div> Town <span class="htmlcode">town</span></li>
+				<li><div class="mapicon city" style="position: relative; display: inline-block; margin: 2px;"></div> City <span class="htmlcode">city</span></li>
+				<li><div class="mapicon loch" style="position: relative; display: inline-block; margin: 2px;"></div> Loch/lake <span class="htmlcode">loch</span></li>
+				<li><div class="mapicon landmark" style="position: relative; display: inline-block; margin: 2px;"></div> Castle/landmark <span class="htmlcode">landmark</span></li>
+				<li><div class="mapicon mountain" style="position: relative; display: inline-block; margin: 2px;"></div> Mountain/hilly <span class="htmlcode">mountain</span></li>
+			</ul>
+			<br>
+			<h2>Change positioning on mobile/XS screens</h2>
+			<p>It may be the case that you need to move the place name to a different position for small screens. This involves changing the inline style to a class, and then setting the values in <i>mappage active places.css</i> - once for regular size and once in the mobile/XS section. See <i>Manchester</i> for an example.</p>
+		
+			<hr>
+		
+			<h1>Games</h1>
+			<p>Two options for the game button:</p>
+			
+			<div style="padding: 2em; margin: 1em; background-image: url('mappage/wood.gif');">
+				<div class="actbuttoncont">
+					<a draggable="false" href="/m1game">
+						<div class="actbutton all">
+							<div class="number-game"></div>
+						</div>
+					</a><br>
+					{{> m1GameTitle}}
+				</div>
+				
+				<div class="actbuttoncont">
+					<a draggable="false" href="/m1game">
+						<div class="actbutton all">
+							<i class="actCompleteTick"></i>
+									<div class="game-star">29</div>
+						</div>
+					</a><br>
+					{{> m1GameTitle}}
+				</div>
+			</div>
+		
+		</div>
+		
+		
+
+	</section>
+</template>
+

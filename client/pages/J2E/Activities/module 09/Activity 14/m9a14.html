@@ -1,0 +1,186 @@
+<template name="m9a14"> 
+<article class="with-tools-sidebar m9a14">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Torquay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 14 - {{>m9a14Title}}</div>
+		</header>
+		<section id="m9a14">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a14Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a14Intro}}</h3>
+				{{> m9a14Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a14_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a14_1}}
+		{{>m9a14_2}}
+		{{>m9a14_3}}
+		{{>m9a14_4}}
+		{{>m9a14_5}}
+		{{>m9a14_6}}
+		{{>EndPage char="tu" act="m9a14" nextact="m9a15" place="Torquay"}}
+	</div>
+</article>
+</template>
+<template name="m9a14_2"> 
+	<section id="m9a14_2" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+				word1="Recession"
+				word2c="hidden"
+				word3c="hidden"
+				word4c="hidden"
+				word5c="hidden"
+				word6c="hidden"
+				word7c="hidden"
+				word8c="hidden"
+				word9c="hidden"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a14_1" nexturl="#m9a14_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a14_1"> 
+	<section id="m9a14_1" class="hidden"> 
+		<div class="content">  
+      			<h3 class="center">Read these three articles about unemployment. Don’t worry if you don’t understand every word. Just try to understand the main ideas.</h3>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed1.jpg" alt="Person"></div></div>
+							<p>&nbsp;</p>
+						</div>
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed2.jpg" alt="Person"></div></div>
+							<p>&nbsp;</p>
+						</div>
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed3.jpg" alt="Person"></div></div>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a14" nexturl="#m9a14_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a14_4"> 
+	<section id="m9a14_4" class="hidden"> {{> popovers}}
+		<div class="content">  
+			<h3 class="center">Read these three articles about unemployment. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.</h3>
+			<div class="parapaper article-text">{{>metametrics level="3" star="no" align="center"}}
+				<div class="article-header">		
+					<h4>I hate being unemployed</h4>
+				</div>
+				
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-2x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed3.jpg" alt="Person"></div></div>
+				</figure>
+				
+				<p>I live in an area that has a high unemployment rate. I was <a draggable="false" href="#" tabindex="0" data-trigger="manual" title="" data-toggle="popover" role="button" data-placement="bottom" data-content="To lose your job because the company has no work for you.">laid off</a> at the end of the summer, just before autumn. I’ve been having a very hard time finding work because jobs are <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Difficult to find.">hard to come by</a> in my town in the winter. I’ve been looking for work outside my city.</p>
+
+				<p>Before I lost my job, I’d been working for the same company for over 4 years. I was laid off because of the recession. I have a ton of skills, went back to school last year, I have a great <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A person’s attitude to work – either good or bad.">work ethic</a>, and would much rather be working. I’ve been improving my computer skills so I hope that helps. I’ve never had trouble finding jobs before. The experience of losing steady employment is tough, especially during <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A time when things are not going well for someone.">a low</a> in the job market. I’m sending out letters daily, in the hope that I’ll find employment soon.</p>
+				
+				<div class="article-header">		
+					<h4>Think yourself lucky...</h4>
+				</div>
+				
+				<figure class="image imgleft-responsive">
+					<div class="ph-w ph-2x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed1.jpg" alt="Person"></div></div>
+				</figure>
+
+				<p>I think if people were actually willing to work they would do anything. There are enough jobs but people don't want to do them. For example, care jobs are <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content=" an expression meaning very plentiful.">ten to the dozen</a>. The hours aren’t great but the money is ok and it will change the way you think about things when you see the lives some people have been living. Your life is really very good by comparison.</p>
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a14_3" nexturl="#m9a14_5" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a14_5"> 
+	<section id="m9a14_5" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+				word1="esteem"
+				word2c="hidden"
+				word3c="hidden"
+				word4c="hidden"
+				word5c="hidden"
+				word6c="hidden"
+				word7c="hidden"
+				word8c="hidden"
+				word9c="hidden"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a14_4" nexturl="#m9a14_6" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a14_6"> 
+	<section id="m9a14_6" class="hidden"> {{> popovers}}
+		<div class="content">  
+<div class="parapaper article-text">{{>metametrics level="3" star="no" align="center"}}
+	<div class="article-header">
+		<h4>Frustrating...</h4>
+	</div>
+	
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-2x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed2.jpg" alt="Person"></div></div>
+	</figure>
+	
+	<p>I’m 23 and have been in education all my life. I’ve just finished my degree but don’t think there’s much chance of finding a job.  It's so frustrating when you realise you’ve spent three years doing a degree and no one wants it. They prefer experience. </p>
+
+	<p>I’ve been making silver jewellery in my spare time while I’ve been looking for a full time job but it’s not going well either. It’s just lowering my <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="The attitude you have to your own abilities and skills.">self esteem</a>. I’ve not even been getting replies from some of the places I have applied to. It’s even worse going into the job centre. People have been wondering what I’m doing there because I've got a degree and am hard working.  I'm not lazy. I'm <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="To register officially as unemployed.">signing on</a> to find work.</p>
+	
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a14_5" nexturl="#m9a14_end" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a14_3"> 
+	<section id="m9a14_3" class="hidden"> 
+		<div class="content">  
+{{>complex_words}}
+<div class="center">
+	<div class="parapaper paradic fold">
+		<ul class="dicwords">
+			<li>To lay someone off – to ask an employee to leave because there’s not enough work for them to do.</li>
+		</ul>
+	</div>
+</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a14_2" nexturl="#m9a14_4" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>

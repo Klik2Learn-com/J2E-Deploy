@@ -1,0 +1,348 @@
+<template name="m7a5">
+	<article class="with-tools-sidebar m7a5">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/PeakDistrict');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 5 - {{>m7a5Title}}</div>
+			</header>
+			<section id="m7a5">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a5Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m7a5Intro}}</h3>
+					{{> m7a5Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a5_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a5_1}} {{>m7a5_2}} {{>m7a5_3}} {{>m7a5_4}} {{>m7a5_5}} {{>m7a5_6}} {{>m7a5_7}} {{>EndPage char="tu" act="m7a5" nextact="m7a6"
+			place="PeakDistrict"}}
+		</div>
+	</article>
+
+</template>
+
+<template name="m7a5_1">
+	<section id="m7a5_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Oxford University</h1>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<h3>{{>touch yes="Tap" no="Click"}} to listen to a short passage about Oxford University</h3>
+					<div class="center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module7/a5/oxbridge-full.m4a"></button>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="ph-w ph-3x2" style="max-width: 500px">
+						<div class="ph">
+							<img draggable="false" src="/images/module7/a5/oxford.jpg" alt="Building at Oxford University" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a5" nexturl="#m7a5_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a5_2">
+	<section id="m7a5_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+
+			<h3 class="center">Read each paragraph and drag the words from the box on the right to fill the spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="6" star="no" align="center"}} {{> rightwrong}} {{> welldone}}
+				<p>1. Most universities have their own sets of
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target1">&nbsp;</div> but Oxford and Cambridge stand out because they have
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div> so many historic and often rather
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target3">&nbsp;</div> traditions. May balls in Cambridge are
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target4">&nbsp;</div> held in June. You can play sports like real tennis and fives which are now
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target5">&nbsp;</div> in most other places. You might be asked
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target6">&nbsp;</div> questions at the interview such as ‘tell me about a banana.’</p>
+
+
+
+
+
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">maintained</Div>
+					</Div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">extinct</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">bizarre</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">actually</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target6">odd</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">traditions</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a5_1" nexturl="#m7a5_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a5_3">
+	<section id="m7a5_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+
+			<h3 class="center">Read each paragraph and drag the words from the box on the right to fill the spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="6" star="no" align="center"}} {{> rightwrong}} {{> welldone}}
+				<p>2. Latin is used at special
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>, such as matriculation (when you officially join the university), graduation, and spoken before formal
+					‘hall’ or dinner. How many students in other universities wear
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> gowns to dinner? Oxbridge students do. They used to be worn all the time but now they’re
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> just for formal occasions. ‘Sub fusc’. is a Latin expression meaning the dark colour of a
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> dress code used in Oxford. This requires students to wear black trousers or skirt, white shirt, and a white
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> or black ribbon.</p>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">formal</Div>
+					</Div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">ceremonies</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">bowtie</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">academic</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">reserved</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a5" nexturl="#m7a5_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a5_4">
+	<section id="m7a5_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+
+			<h3 class="center">Read each paragraph and drag the words from the box on the right to fill the spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="6" star="no" align="center"}} {{> rightwrong}} {{> welldone}}
+				<p>3. Oxford students dress in sub fusc for exams. You’ll also often see them with a flower
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> to their
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> – a white
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> for the first exam, red for the last, and pink for those in
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> .</p>
+
+
+
+
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">between</Div>
+					</Div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">gowns</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">pinned</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">carnation</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a5" nexturl="#m7a5_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a5_5">
+	<section id="m7a5_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+
+			<h3 class="center">Read each paragraph and drag the words from the box on the right to fill the spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="6" star="no" align="center"}} {{> rightwrong}} {{> welldone}}
+				<p>4. Just three years ago, one college used to give people who
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target1">&nbsp;</div> an
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div> exam. They had to open an envelope
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target3">&nbsp;</div> a piece of paper with one word written on it. They then had to write an
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target4">&nbsp;</div> for three hours on that word. Words have
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target5">&nbsp;</div> ‘water,’ ‘innocence’ and ‘miracles.’ </p>
+
+
+
+
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">essay</Div>
+					</Div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">applied</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">unusual</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">included</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">containing</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a5" nexturl="#m7a5_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a5_6">
+	<section id="m7a5_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+
+			<h3 class="center">Read each paragraph and drag the words from the box on the right to fill the spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="6" star="no" align="center"}} {{> rightwrong}} {{> welldone}}
+				<p>5. On the last Sunday in October students at another college walk
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target1">&nbsp;</div> round the
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div> , drinking
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target3">&nbsp;</div> .</p>
+
+
+
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">backwards</Div>
+					</Div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">quadrangle</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">port</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a5" nexturl="#m7a5_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a5_7">
+	<section id="m7a5_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+
+			<h3 class="center">Read each paragraph and drag the words from the box on the right to fill the spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="6" star="no" align="center"}} {{> rightwrong}} {{> welldone}}
+				<p>6. There are lots more Oxbridge traditions – some serious, many
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target1">&nbsp;</div> , and almost all
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div> by special words you won’t hear anywhere
+					<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target3">&nbsp;</div> !</p>
+
+
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">else</Div>
+					</Div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">silly</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">accompanied</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a5" nexturl="#m7a5_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

@@ -1,0 +1,206 @@
+<template name="InfoModule5">
+	<div class="co-container co-module1 mod5color">
+		
+		<div class="co-nav">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			<div class="co-header">
+				<h1>Module 5 - <span class="avoidwrap">{{>m5topic}}</span></h1>
+				<div class="inline-block co-hours">10+ hours</div><br>
+				<a draggable="false" href="Inverness" class="go-to"><div class="button1">Go to this module <i class="fa fa-chevron-right" aria-hidden="true"></i></div></a>
+			</div>
+		</div>
+
+		<div class="content co-content">
+		
+			<div class="container-fluid co-topics-points">
+				<div class="row">
+					<div class="col-sm-6">
+						<h4>Topics</h4>
+						<ul class="ulblank">
+							<li>Using Letters</li>
+							<li>Using Numbers</li>
+							<li>Introducing Yourself</li>
+							<li>Countries and Nationalities</li>
+							<li>Talking about Possessions</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6">
+						<h4>Grammar Points</h4>
+						<ul class="ulblank">
+							<li>Present Tense of ‘to be’ and ‘to have’</li>
+							<li>Statements and Questions</li>
+							<li>Negatives</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--place begin-->
+			<div class="co-act-wrapper mod5color shadowdark">
+				<div class="co-infoheader">
+					<a draggable="false" href="Inverness" class="go-to">{{>m5l1}}</a> <i>{{>m5l1No}}</i>
+				</div>
+				<div class="co-infocontent">
+					<h2>Activity 1: {{>m5a1Title}}</h2>
+					{{>m5a1Intro}} {{>m5a1Time}}
+					<hr>
+					<h2>Activity 2: {{>m5a2Title}}</h2>
+					{{>m5a2Intro}} {{>m5a2Time}}
+					<hr>
+					<h2>Activity 3: {{>m5a3Title}}</h2>
+					{{>m5a3Intro}} {{>m5a3Time}}
+					<hr>
+					<h2>Activity 4: {{>m5a4Title}}</h2>
+					{{>m5a4Intro}} {{>m5a4Time}}
+					<hr>
+					<h2>Activity 5: {{>m5a5Title}}</h2>
+					{{>m5a5Intro}} {{>m5a5Time}}					
+					<hr>
+					<h2>Activity 6: {{>m5a6Title}}</h2>
+					{{>m5a6Intro}} {{>m5a6Time}}
+				</div>
+			</div>
+			<!--place end-->
+			
+			<!--place begin-->
+			<div class="co-act-wrapper mod5color shadowdark">
+				<div class="co-infoheader">
+					<a draggable="false" href="LochNess" class="go-to">{{>m5l2}}</a> <i>{{>m5l2No}}</i>
+				</div>
+				<div class="co-infocontent">
+					<h2>Activity 1: {{>m5a1Title}}</h2>
+					{{>m5a1Intro}} {{>m5a1Time}}
+					<hr>
+					<h2>Activity 2: {{>m5a2Title}}</h2>
+					{{>m5a2Intro}} {{>m5a2Time}}
+					<hr>
+					<h2>Activity 3: {{>m5a3Title}}</h2>
+					{{>m5a3Intro}} {{>m5a3Time}}
+					<hr>
+					<h2>Activity 4: {{>m5a4Title}}</h2>
+					{{>m5a4Intro}} {{>m5a4Time}}
+					<hr>
+					<h2>Activity 5: {{>m5a5Title}}</h2>
+					{{>m5a5Intro}} {{>m5a5Time}}					
+					<hr>
+					<h2>Activity 6: {{>m5a6Title}}</h2>
+					{{>m5a6Intro}} {{>m5a6Time}}
+				</div>
+			</div>
+			<!--place end-->
+			
+			<!--place begin-->
+			<div class="co-act-wrapper mod5color shadowdark">
+				<div class="co-infoheader">
+					<a draggable="false" href="Inverness" class="go-to">{{>m5l3}}</a> <i>{{>m5l3No}}</i>
+				</div>
+				<div class="co-infocontent">
+					<h2>Activity 1: {{>m5a1Title}}</h2>
+					{{>m5a1Intro}} {{>m5a1Time}}
+					<hr>
+					<h2>Activity 2: {{>m5a2Title}}</h2>
+					{{>m5a2Intro}} {{>m5a2Time}}
+					<hr>
+					<h2>Activity 3: {{>m5a3Title}}</h2>
+					{{>m5a3Intro}} {{>m5a3Time}}
+					<hr>
+					<h2>Activity 4: {{>m5a4Title}}</h2>
+					{{>m5a4Intro}} {{>m5a4Time}}
+					<hr>
+					<h2>Activity 5: {{>m5a5Title}}</h2>
+					{{>m5a5Intro}} {{>m5a5Time}}					
+					<hr>
+					<h2>Activity 6: {{>m5a6Title}}</h2>
+					{{>m5a6Intro}} {{>m5a6Time}}
+				</div>
+			</div>
+			<!--place end-->
+			
+			<!--place begin-->
+			<div class="co-act-wrapper mod5color shadowdark">
+				<div class="co-infoheader">
+					<a draggable="false" href="Inverness" class="go-to">{{>m5l4}}</a> <i>{{>m5l4No}}</i>
+				</div>
+				<div class="co-infocontent">
+					<h2>Activity 1: {{>m5a1Title}}</h2>
+					{{>m5a1Intro}} {{>m5a1Time}}
+					<hr>
+					<h2>Activity 2: {{>m5a2Title}}</h2>
+					{{>m5a2Intro}} {{>m5a2Time}}
+					<hr>
+					<h2>Activity 3: {{>m5a3Title}}</h2>
+					{{>m5a3Intro}} {{>m5a3Time}}
+					<hr>
+					<h2>Activity 4: {{>m5a4Title}}</h2>
+					{{>m5a4Intro}} {{>m5a4Time}}
+					<hr>
+					<h2>Activity 5: {{>m5a5Title}}</h2>
+					{{>m5a5Intro}} {{>m5a5Time}}					
+					<hr>
+					<h2>Activity 6: {{>m5a6Title}}</h2>
+					{{>m5a6Intro}} {{>m5a6Time}}
+				</div>
+			</div>
+			<!--place end-->
+			
+			<!--place begin-->
+			<div class="co-act-wrapper mod5color shadowdark">
+				<div class="co-infoheader">
+					<a draggable="false" href="Inverness" class="go-to">{{>m5l5}}</a> <i>{{>m5l5No}}</i>
+				</div>
+				<div class="co-infocontent">
+					<h2>Activity 1: {{>m5a1Title}}</h2>
+					{{>m5a1Intro}} {{>m5a1Time}}
+					<hr>
+					<h2>Activity 2: {{>m5a2Title}}</h2>
+					{{>m5a2Intro}} {{>m5a2Time}}
+					<hr>
+					<h2>Activity 3: {{>m5a3Title}}</h2>
+					{{>m5a3Intro}} {{>m5a3Time}}
+					<hr>
+					<h2>Activity 4: {{>m5a4Title}}</h2>
+					{{>m5a4Intro}} {{>m5a4Time}}
+					<hr>
+					<h2>Activity 5: {{>m5a5Title}}</h2>
+					{{>m5a5Intro}} {{>m5a5Time}}					
+					<hr>
+					<h2>Activity 6: {{>m5a6Title}}</h2>
+					{{>m5a6Intro}} {{>m5a6Time}}
+				</div>
+			</div>
+			<!--place end-->
+			
+			<!--place begin-->
+			<div class="co-act-wrapper mod5color shadowdark">
+				<div class="co-infoheader">
+					<a draggable="false" href="Inverness" class="go-to">{{>m5l6}}</a> <i>{{>m5l6No}}</i>
+				</div>
+				<div class="co-infocontent">
+					<h2>Activity 1: {{>m5a1Title}}</h2>
+					{{>m5a1Intro}} {{>m5a1Time}}
+					<hr>
+					<h2>Activity 2: {{>m5a2Title}}</h2>
+					{{>m5a2Intro}} {{>m5a2Time}}
+					<hr>
+					<h2>Activity 3: {{>m5a3Title}}</h2>
+					{{>m5a3Intro}} {{>m5a3Time}}
+					<hr>
+					<h2>Activity 4: {{>m5a4Title}}</h2>
+					{{>m5a4Intro}} {{>m5a4Time}}
+					<hr>
+					<h2>Activity 5: {{>m5a5Title}}</h2>
+					{{>m5a5Intro}} {{>m5a5Time}}					
+					<hr>
+					<h2>Activity 6: {{>m5a6Title}}</h2>
+					{{>m5a6Intro}} {{>m5a6Time}}
+					<!-- <hr>
+					<h2>Game: {{>m5GameTitle}}</h2>
+					{{>m5GameIntro}} {{>m5GameTime}} -->
+				</div>
+			</div>
+			<!--place end-->
+
+		</div>
+	</div>
+</template>

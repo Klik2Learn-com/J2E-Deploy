@@ -1,0 +1,358 @@
+<template name="m3a13">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Linlithgow');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 13 - {{>m3a13Title}}</div>
+		</header>
+		
+		
+		<section id="m3a13">
+			<div class="content of-vis">
+<h1 class="start-page-header">{{> m3a13Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m3a13Intro}}</h3>
+{{> m3a13Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a13_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a13_1}}
+		{{>m3a13_2}}
+		{{>m3a13_3}}
+		{{>m3a13_4}}
+		{{>m3a13_5}}
+		{{>m3a13_6}}
+		{{>m3a13_7}}
+		{{>m3a13_8}}
+		{{>m3a13_9}}		
+
+		{{>EndPage char="k" act="m3a13" nextact="m3a14" place="Linlithgow"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m3a13_1">
+	<section id="m3a13_1" class="hidden">
+		{{ #if activeSection}}
+		<div class="content of-vis">
+		<div class="container-fluid parapaper">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-4 center">
+						<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/Whole_article.m4a"></button>
+						</div>
+						<div class="col-sm-8">
+							<p>Listen to this account of one person’s experience of moving from London to live in the Black Mountains of South Wales. Rob Penn thinks the sights, sounds and communities of the British countryside are better than the city.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+						<div class="ph-w ph-5x4" style="max-width: 374px"><div class="ph"><img draggable="false" src="/images/module3/countryside.jpg" alt="countryside" class="img-responsive center-block" /></div></div>
+				</div>
+			</div>
+			{{>blankrow}}
+			<div class="row">
+				<div class="col-sm-9 col-sm-offset-1">
+					{{>ToolIconNote}} <p>After you have listened to the article you can read it. There are some words to learn. You will need to understand the main ideas for the next activity. As you listen and read make some notes on the following to help you:</p><br>
+						<ol class="olcircle">
+						<li>the countryside in the past</li>
+						<li>the countryside today</li>
+						<li>differences between living in the country and living in the city</li>
+						<li>advantages of living in the country</li>
+						</ol>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13" nexturl="#m3a13_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+
+<template name="m3a13_2">
+	<section id="m3a13_2" class="hidden">
+	{{ #if activeSection}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para1.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 1</h5>
+							<p> I stood in a field this week listening to the first sounds of spring; birds sang, lambs <span class="grammar">bleated</span>. Spring can be a time when faith in the British countryside is <span class="grammar">renewed</span> again.</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13_1" nexturl="#m3a13_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a13_3">
+	<section id="m3a13_3" class="hidden">
+	{{ #if activeSection}}{{> popovers}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para2.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 2</h5>
+							<p>So I was surprised to read about a national <span class="grammar">campaign</span> to warn <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Someone who has stopped working because he/she is too old.">retirees</a> against moving from the city to the country. Mavis Cheek, leading the campaign described the countryside as ‘tough, a little bit dangerous and not for <span class="grammar">wimps</span>.’</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13_2" nexturl="#m3a13_4" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a13_4">
+	<section id="m3a13_4" class="hidden">
+	{{ #if activeSection}}{{> popovers}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para3.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 3</h5>
+							<p>It might have been all <span class="grammar">pastoral bliss</span> 20 years ago with roses in cottage gardens and dancing round the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A tall wooden pole danced around at folk festivals.">maypole</a>. Today, large <span class="grammar">tracts</span> of the British countryside could be covered in factories, motorways, retail parks and light industrial sites.</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<footer>
+			{{>footer_nav prevurl="#m3a13_3" nexturl="#m3a13_5" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a13_5">
+	<section id="m3a13_5" class="hidden">
+	{{ #if activeSection}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para4.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 4</h5>
+							<p>I moved to a small farmhouse in the Black Mountains eight years ago, so I know a bit about <span class="grammar">rural</span> life.  It wasn’t easy. The fact I rode a bike <span class="grammar">aroused</span> suspicion. Five months after moving in, I was in the pub on a Friday night. An old boy I knew led me gently to a corner of the bar. ‘I see you on the bike boy’ he said. ‘How long you lost your licence for then?’</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13_4" nexturl="#m3a13_6" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a13_6">
+	<section id="m3a13_6" class="hidden">
+	{{ #if activeSection}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para5.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 5</h5>
+							<p>Before the move, I lived in London for a <span class="grammar">decade</span>. There are many things I still miss about <span class="grammar">metropolitan</span> life. In the city you can 	choose your community – it may be through work, clubs, your kid’s school - but it’s unlikely to include your neighbours. You may not know the name of a single person who lives in your street.</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13_5" nexturl="#m3a13_7" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a13_7">
+	<section id="m3a13_7" class="hidden">
+	{{ #if activeSection}}{{> popovers}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para6.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 6</h5>
+							<p>I’m lucky now. I live in a place with a strong sense of community. The local pub and village hall have activities every night of the week: singing, gardening, <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="A type of dance where the dancers stand in a row and all do the same dance moves.">line dancing</a>, films, quizzes and an annual <span class="grammar">pantomime</span>.</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13_6" nexturl="#m3a13_8" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a13_8">
+	<section id="m3a13_8" class="hidden">
+		{{ #if activeSection}}{{> popovers}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para7.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 7</h5>
+							<p>This winter, I’ve spent a lot of time on my own in a wood near my house, filming a video diary for the BBC on British woodlands. The trees have stood here for some 8,000 years. <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="right" data-html="true" data-content="<img draggable='false' src='/images/module3/cavepainting.jpg' /> The Neolithic era is also known as The New Stone age. It was a period in human history beginning about 10,200 BC and ending between 4,500 and 2,000 BC. ">Neolithic</a> man must have stood here 200 generations ago. It was a moving experience.</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+				<br><br><br>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13_7" nexturl="#m3a13_9" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a13_9">
+	<section id="m3a13_9" class="hidden">
+		{{ #if activeSection}}{{> popovers}}
+		<div class="content of-vis">
+			{{>InstructionsDictionary text="Click any red words to find out what they mean. Check out any words in blue in the dictionary."}}
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-8 col-sm-offset-2 parapaper">
+					<div class="row"><div class="col-xs-12">{{>metametrics level="5" star="no" align="center"}}</div></div>
+					<div class="row">
+						<div class="col-sm-3 center">
+							<br>
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/para8.m4a"></button>
+						</div>
+						<div class="col-sm-9"><h5 class="center">Paragraph 8</h5>
+							<p>Standing underneath the <span class="grammar">dome</span> of <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-html="true" data-content="<img draggable='false' src='images/module3/st-pauls.jpg' /> St Paul’s Cathedral, a large church in London. It is one of the most famous buildings in London.">St Paul’s</a> in London might be a great experience but it doesn’t match standing still in an ancient wood.</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p class="text-right"><i>Adapted from ‘The Guardian’ March 2012</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a13_8" nexturl="#m3a13_end" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

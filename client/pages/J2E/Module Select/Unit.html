@@ -1,0 +1,191 @@
+<template name="ModuleSelect">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<a draggable="false" href="Courses"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">Select Module</div>
+		</header>
+					
+
+		<section id="ModuleSelect">
+		
+			<div class="mappagecontent unitmapcontent">
+				<div class="satnav-edge satnav-edge-unit">
+					<div class="embed-responsive embed-responsive-16by9 map-unit-bg">
+								
+						{{>SatNavUnit1 class=""}}
+						{{>SatNavUnit2 class="hidden"}}
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="hidden">
+				<img draggable="false" src="mappage/unit1.png" width="1" height="1">
+				<img draggable="false" src="mappage/unit2.png" width="1" height="1">
+				<img draggable="false" src="mappage/unit1@2x.png" width="1" height="1">
+				<img draggable="false" src="mappage/unit2@2x.png" width="1" height="1">
+			</div>
+			
+		</section>
+
+	</div>
+</article>
+	
+	{{>InfoModule1_modal}}
+	{{>InfoModule2_modal}}
+	{{>InfoModule3_modal}}
+	{{>InfoModule4_modal}}
+	{{>InfoModule5_modal}}
+	{{>InfoModule6_modal}}
+	{{>InfoModule5_modal}}
+	{{>InfoModule6_modal}}
+	{{>InfoModule7_modal}}
+	{{>InfoModule8_modal}}
+	{{>InfoModule9_modal}}
+	{{>InfoModule10_modal}}
+</template>
+	
+	
+	
+<template name="ModuleSelectUnit2">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<a draggable="false" href="Courses"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">Select Module</div>
+		</header>
+					
+
+		<section id="ModuleSelectUnit2">
+		
+			<div class="mappagecontent unitmapcontent">				
+				<div class="satnav-edge satnav-edge-unit">
+					<div class="embed-responsive embed-responsive-16by9 map-unit-bg">
+								
+						{{>SatNavUnit1 class="hidden"}}
+						{{>SatNavUnit2 class=""}}
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="hidden">
+				<img draggable="false" src="mappage/unit1.png" width="1" height="1">
+				<img draggable="false" src="mappage/unit2.png" width="1" height="1">
+				<img draggable="false" src="mappage/unit1@2x.png" width="1" height="1">
+				<img draggable="false" src="mappage/unit2@2x.png" width="1" height="1">
+			</div>
+			
+		</section>
+
+	</div>
+</article>
+	
+	{{>InfoModule1_modal}}
+	{{>InfoModule2_modal}}
+	{{>InfoModule3_modal}}
+	{{>InfoModule4_modal}}
+	{{>InfoModule5_modal}}
+	{{>InfoModule6_modal}}
+	{{>InfoModule5_modal}}
+	{{>InfoModule6_modal}}
+	{{>InfoModule7_modal}}
+	{{>InfoModule8_modal}}
+	{{>InfoModule9_modal}}
+	{{>InfoModule10_modal}}
+</template>
+
+
+
+<template name="SatNavUnit1">
+	<div class="map-unit1 embed-responsive-item {{class}}">
+		<div class="satnav-contents">
+			<div class="container-fluid container-fluid-no-gutter satnav-unit-links">
+				<div class="row">
+					<div class="col-xs-6">
+						{{>Unit1Button status="active"}}
+					</div>
+					<div class="col-xs-6">
+						<a draggable="false" id="unit2-button">{{>Unit2Button status="inactive"}}</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="maplink" style="right: 85%; top: 24%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule1_modal"><div class="unitmapname mod1color shadowsolid">Module 1<span class="satnav-module-title">:<br>{{>m1topic}}</span></div></a>
+			</div>
+			
+			<div class="maplink" style="left: 58%; top: 26%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule2_modal"><div class="unitmapname mod2color shadowsolid">Module 2<span class="satnav-module-title">:<br>{{>m2topic_br}}</span></div></a>
+			</div>
+
+			<div class="maplink" style="left: 58%; top: 52%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule3_modal"><div class="unitmapname mod3color shadowsolid">Module 3<span class="satnav-module-title">:<br>{{>m3topic}}</span></div></a>
+			</div>
+
+			<div class="maplink" style="right: 75%; top: 58%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule4_modal"><div class="unitmapname mod4color shadowsolid">Module 4<span class="satnav-module-title">:<br>{{>m4topic}}</span></div></a>
+			</div>
+
+			<div class="maplink" style="left: 32%; top: 79%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule5_modal"><div class="unitmapname mod5color shadowsolid">Module 5<span class="satnav-module-title">:<br>{{>m5topic}}</span></div></a>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+
+<template name="SatNavUnit2">
+	<div class="map-unit2 embed-responsive-item {{class}}">
+		<div class="satnav-contents">
+			<div class="container-fluid container-fluid-no-gutter satnav-unit-links">
+				<div class="row">
+					<div class="col-xs-6">
+						<a draggable="false" id="unit1-button">{{>Unit1Button status="inactive"}}</a>
+					</div>
+					<div class="col-xs-6">
+						{{>Unit2Button status="active"}}
+					</div>
+				</div>
+			</div>
+
+			<div class="maplink" style="left: 65%; top: 22%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule6_modal"><div class="unitmapname mod1color shadowsolid">Module 6<span class="satnav-module-title">:<br>{{>m6topic}}</span></div></a>
+			</div>
+			
+			<div class="maplink" style="right: 72%; top: 32%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule7_modal"><div class="unitmapname mod2color shadowsolid">Module 7<span class="satnav-module-title">:<br>{{>m7topic}}</span></div></a>
+			</div>
+
+			<div class="maplink" style="right: 60%; top: 55%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule8_modal"><div class="unitmapname mod3color shadowsolid">Module 8<span class="satnav-module-title">:<br>{{>m8topic}}</span></div></a>
+			</div>
+
+			<div class="maplink" style="right: 80%; top: 76%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule9_modal"><div class="unitmapname mod4color shadowsolid">Module 9<span class="satnav-module-title">:<br>{{>m9topic}}</span></div></a>
+			</div>
+
+			<div class="maplink" style="left: 64%; top: 78%;">
+				<a draggable="false" href="#" data-toggle="modal" data-target="#InfoModule10_modal"><div class="unitmapname mod5color shadowsolid">Module 10<span class="satnav-module-title">:<br>{{>m10topic}}</span></div></a>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+	
+<template name="Unit1Button">
+	<div class="unitmapunitlink unit1 unitmapunitlink_{{status}}">Unit 1<span class="hidden-xxs-inline">: English for <span class="avoidwrap">Everyday Use</span></span></div>
+</template>
+
+<template name="Unit2Button">
+	<div class="unitmapunitlink unit2 unitmapunitlink_{{status}}">Unit 2<span class="hidden-xxs-inline">: English for <span class="avoidwrap">Work and Study</span></span></div>
+</template>

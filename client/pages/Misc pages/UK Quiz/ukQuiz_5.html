@@ -1,0 +1,20 @@
+<template name="ukQuiz_5">
+	<section id="ukQuiz_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+		<h1>Language Questions</h1>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the word that’s wrong.</h3>
+
+			<div class="parapaper paraclick center">
+				<p>
+						<span class="wrong">Even if we </span><span class="paraclick-word">will</span><span class="wrong"> take a taxi , we’ll miss the train.</span>
+				</p>
+			</div>
+	
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#ukQuiz_4" nexturl="#ukQuiz_6" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

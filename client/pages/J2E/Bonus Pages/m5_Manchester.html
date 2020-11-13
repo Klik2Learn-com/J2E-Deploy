@@ -1,0 +1,148 @@
+<template name="MoreAboutManchester">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Manchester"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m5l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m5l4}}</div>
+		</header>
+
+		<section id="moreaboutManchester">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Manchester/Manchester1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l4_A">
+						<p>The Bridgewater Canal</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Manchester/Manchester2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l4_B">
+						<p>Alan Turing</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Manchester/Manchester5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l4_E">
+						<p>Victoria Baths</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Manchester/Manchester4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l4_D">
+						<p>Ancoats Conservation Area</p>
+					</div>	
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Manchester/Manchester3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l4_C">
+						<p>Manchester United</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l4_A">The Bridgewater Canal</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Manchester/Manchester1.jpg" alt="The Bridgewater Canal" style="max-width: 250px;">
+					</figure>
+					<p>The Bridgewater Canal was the first industrial canal in Britain. It was built to carry coal from nearby mines to Manchester. Nowadays the canal is used by pleasure boats and the paths beside the canal are used by walkers and cyclists. There are many places of interest to visit along the canal, including parks, museums and  a sea life centre.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bridgewatercanal.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l4_B">Alan Turing</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Manchester/Manchester2.jpg" alt="Alan Turing" style="max-width: 250px;">
+					</figure>
+					<p>Alan Turing worked in Manchester University  towards the end of his life and is considered one of the 100 greatest Britons of all time. Even as a schoolboy he showed a genius for solving maths problems and went on to study at Cambridge. He is described as the father of artificial intelligence and modern computers. During World War Two he played a crucial part in breaking the secret communication code used by the Germans. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.turing.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l4_C">Manchester United</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Manchester/Manchester3.jpg" alt="Manchester United" style="max-width: 250px;">
+					</figure>
+					<p>Manchester United is one of the most popular football clubs in the world with fans in over 24 countries. The club has won a record 20 titles in English football and 3 European cups. Some of the most famous players in the world have played for the club, such as Ronaldo who was sold to Real Madrid for a world record fee of $80 million. The captain for many years, Ryan Giggs is the most decorated player in English history.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.manutd.com/en/History.aspx" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l4_D">Ancoats Conservation Area</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Manchester/Manchester4.jpg" alt="Ancoats Conservation Area" style="max-width: 250px;">
+					</figure>
+					<p>The area of Ancoats is just outside Manchester and was one of the first industrial estates in the world. The invention of the steam engine meant that mills did not need to be built beside rivers and Ancoats was an ideal place to build huge spinning mills. The industrial revolution began in Ancoats.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.ancoatsbpt.co.uk/about_ancoats_buildings.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l4_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l4_E">Victoria Baths</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Manchester/Manchester5.jpg" alt="Victoria Baths" style="max-width: 250px;">
+					</figure>
+					<p>The Victoria baths were opened in 1906 to provide the people of Manchester with facilities for bathing and for leisure. There were three swimming pools, a laundry, a Turkish bath and a sauna. In the winter, a floor was laid over the pool to hold dances. The baths were closed for many years but in 2003 they won a competition by the BBC’s Restoration programme and were opened again five years later.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://victoriabaths.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

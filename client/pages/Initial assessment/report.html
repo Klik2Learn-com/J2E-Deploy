@@ -1,0 +1,179 @@
+<template name="assessmentreport">
+
+	<div class="assessment-report">
+	
+		<img draggable="false" src="/assessment/j2e-logo.png" class="center-block j2e-logo" alt="Journey 2 English">
+		
+		<h1>English Skills Test Results</h1>
+		
+		<div class="container-fluid-no-gutter details">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>Organisation</h4>
+					<div name="organisation">{{organisation}}</div>
+				</div>
+				<div class="col-sm-4" >
+					<h4>Student name</h4>
+					<div name="Student-name">{{studentName}}</div>
+				</div>
+				<div class="col-sm-2">
+					<h4>Date</h4>
+					<div name="date">{{date}}</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<h2>Results</h2>
+		
+		<div class="results-box">
+			{{#if readingScore}}
+				<h3>Reading <span name="reading" class="label-result">Result: <b>{{reading}}</b></span></h3>
+			{{else}}
+				<h3>Reading <span name="reading" class="{{readingClass}}">{{reading}}</span></h3>
+			{{/if}}
+			<table>
+				<tbody>
+					<tr name="A1-reading" class="{{selected 'reading' 'A1'}}">
+						<td>A1</td>
+						<td>Can understand very short, simple texts a single phrase at a time, picking up familiar names, words and basic phrases and rereading as required.</td>
+					</tr>
+					<tr name="A2-reading" class="{{selected 'reading' 'A2'}}">
+						<td>A2</td>
+						<td>Can understand short, simple texts on familiar matters relating to everyday or job-related language.</td>
+					</tr>
+					<tr name="B1-reading" class="{{selected 'reading' 'B1'}}">
+						<td>B1</td>
+						<td>Can read straightforward factual texts on subjects related to his/her field and interest with a satisfactory level of comprehension.</td>
+					</tr>
+					<tr name="B2-reading" class="{{selected 'reading' 'B2'}}">
+						<td>B2</td>
+						<td>Can read with a large degree of independence, adapting style and speed of reading to different texts and purposes, and using appropriate reference sources.</td>
+					</tr>
+					<tr name="C1-reading" class="{{selected 'reading' 'C1'}}">
+						<td>C1</td>
+						<td>Can understand and interpret virtually all forms of the written language.</td>
+					</tr>
+					<tr name="C1+-reading" class="{{selected 'reading' 'C1+'}}">
+						<td>C1+</td>
+						<td>Approaching native speaker fluency.</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			{{#if writingScore}}
+				<h3>Writing <span name="writing" class="label-result">Result: <b>{{writing}}</b></span></h3>
+			{{else}}
+				<h3>Writing <span name="writing" class="{{writingClass}}">{{writing}}</span></h3>
+			{{/if}}
+			<table>
+				<tbody>
+					<tr name="A1-writing" class="{{selected 'writing' 'A1'}}">
+						<td>A1</td>
+						<td>Can write simple isolated phrases and sentences.</td>
+					</tr>
+					<tr name="A2-writing" class="{{selected 'writing' 'A2'}}">
+						<td>A2</td>
+						<td>Can write a series of simple phrases and sentences linked with simple connectors like 'and', 'but' and 'because'.</td>
+					</tr>
+					<tr name="B1-writing" class="{{selected 'writing' 'B1'}}">
+						<td>B1</td>
+						<td>Can write straightforward connected texts on a range of familiar subjects within his field of interest, by linking a series of shorter elements into a linear sequence.</td>
+					</tr>
+					<tr name="B2-writing" class="{{selected 'writing' 'B2'}}">
+						<td>B2</td>
+						<td>Can write clear, detailed texts on a variety of subjects related to his/her field of interest and shows an ability to use different registers within written texts.</td>
+					</tr>
+					<tr name="C1-writing" class="{{selected 'writing' 'C1'}}">
+						<td>C1</td>
+						<td>Can write clear, smoothly flowing, complex texts in an appropriate and effective style and a logical structure which helps the reader to find significant points.</td>
+					</tr>
+					<tr name="C1+-writing" class="{{selected 'writing' 'C1+'}}">
+						<td>C1+</td>
+						<td>Approaching native speaker fluency.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="text-align: center; width: 100%">1</div>
+		<br><br><br><br><br><br>
+		<div class="results-box">
+			{{#if listeningScore}}
+				<h3>Listening <span name="listening" class="label-result">Result: <b>{{listening}}</b></span></h3>
+			{{else}}
+				<h3>Listening <span name="listening" class="{{listeningClass}}">{{listening}}</span></h3>
+			{{/if}}
+			<table>
+				<tbody>
+					<tr name="A1-listening" class="{{selected 'listening' 'A1'}}">
+						<td>A1</td>
+						<td>Can follow speech which is very slow and carefully articulated, with long pauses for him/her to assimilate meaning.</td>
+					</tr>
+					<tr name="A2-listening" class="{{selected 'listening' 'A2'}}">
+						<td>A2</td>
+						<td>Can understand enough to be able to meet basic needs provided speech is clearly and slowly articulated.</td>
+					</tr>
+					<tr name="B1-listening" class="{{selected 'listening' 'B1'}}">
+						<td>B1</td>
+						<td>Can understand enough straightforward factual information about common everyday or job related topics, identifying both general messages and specific details, provided speech is clearly articulated.</td>
+					</tr>
+					<tr name="B2-listening" class="{{selected 'listening' 'B2'}}">
+						<td>B2</td>
+						<td>Can understand the main ideas of linguistically complex speech on both concrete and abstract topics delivered in a standard dialect, including technical discussions in his/her field of specialisation.</td>
+					</tr>
+					<tr name="C1-listening" class="{{selected 'listening' 'C1'}}">
+						<td>C1</td>
+						<td>Has no difficulty in understanding any kind of spoken language, whether live or broadcast, delivered at fast native speed.</td>
+					</tr>
+					<tr name="C1+-listening" class="{{selected 'listening' 'C1+'}}">
+						<td>C1+</td>
+						<td>Approaching native speaker fluency.</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			{{#if speakingScore}}
+				<h3>Speaking <span name="speaking" class="label-result">Result: <b>{{speaking}}</b></span></h3>
+			{{else}}
+				<h3>Speaking <span name="speaking" class="{{speakingClass}}">{{speaking}}</span></h3>
+			{{/if}}
+			<table>
+				<tbody>
+					<tr name="A1-speaking" class="{{selected 'speaking' 'A1'}}">
+						<td>A1</td>
+						<td>Can produce simple descriptions on mainly personal topics.</td>
+					</tr>
+					<tr name="A2-speaking" class="{{selected 'speaking' 'A2'}}">
+						<td>A2</td>
+						<td>Can give a simple description or presentation of people, living or working conditions, daily routines likes/dislikes, etc. as a short series of simple phrases and sentences linked into a list.</td>
+					</tr>
+					<tr name="B1-speaking" class="{{selected 'speaking' 'B1'}}">
+						<td>B1</td>
+						<td>Can reasonably sustain a straightforward description on a variety of subjects within his/her field of interest, presenting it as a linear sequence of points.</td>
+					</tr>
+					<tr name="B2-speaking" class="{{selected 'speaking' 'B2'}}">
+						<td>B2</td>
+						<td>Can give clear, systematically developed descriptions and presentations on a wide range of subjects related to his/her field of interest, with appropriate highlighting of significant points, and relevant supporting detail.</td>
+					</tr>
+					<tr name="C1-speaking" class="{{selected 'speaking' 'C1'}}">
+						<td>C1</td>
+						<td>Can produce clear, smoothly flowing well-structured speech with an effective logical structure which helps the recipient to notice and remember significant points.</td>
+					</tr>
+					<tr name="C1+-speaking" class="{{selected 'speaking' 'C1+'}}">
+						<td>C1+</td>
+						<td>Approaching native speaker fluency.</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h3 class="overall">Overall Result: <b name="overall">{{overall}}</b></h3>
+			
+		</div>
+		
+		<div class="logos-container">
+			<img draggable="false"  src="/assessment/klik2learn-logo.png" alt="Klik2learn" class="klik2learn">
+		</div>
+		
+	</div>
+
+</template>

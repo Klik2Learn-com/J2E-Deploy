@@ -1,0 +1,110 @@
+<template name="adminSubGroupEditor">
+        <article class="with-tools-sidebar">
+            {{>ToolsSidebar}}
+            <div class="main">
+                <header class="acttitle">
+                    <a draggable="false" href="../groupeditor/{{this.group}}"><i class="titlereturn fa fa-arrow-left"></i></a> {{>menu}}
+                    <div class="parent-level">{{orgName this.organisation}} (Organisation)</div>
+                    <div class="acttitle-title">{{this.name}}</div>
+                </header>
+                <section>
+                    <div class="content-user">
+
+                        <h1>Sub-group Editor</h1>
+                    
+                        <h2>Tutor: <u>{{tutor}}</u></h2>
+                        <h2>Students:</h2>
+                        <table class="table table-striped userlist-table" id="subgroupsStudentList">
+                            <thead>
+                                <tr>
+                                    <th>Name <i class="fa fa-caret-down"></i></th>
+
+                                    <th>Email <i class="fa fa-caret-down"></i></th>
+
+                                    {{#if userInCharge this._id}}
+                                        <th>Organisation <i class="fa fa-caret-down"></i></th>
+                                    {{/if}}
+
+                                    <th>Date of Expiry <i class="fa fa-caret-down"></i></th>
+
+                                    <th>Last login <i class="fa fa-caret-down"></i></th>
+
+                                    {{#if userInCharge this._id}}
+                                        <th class="text-center"><span class="avoidwrap"> Remove </span></th>
+                                    {{/if}}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                {{#each user this.students}}
+                                    <tr>
+                                        <td data-function="goUserPage">
+                                            <i class=" {{online this._id}}"></i><span class="a-color">{{profile.firstname}} {{profile.surname}}</span><br>
+                                        </td>
+                                        <td>
+                                            {{emails.[0].address}}
+                                        </td>
+                                        {{#if userInCharge subgroupid}}
+                                            <td>
+                                                {{orgName}}
+                                            </td>
+                                        {{/if}}
+
+                                        <td style="{{expiredStyle}}">
+                                            {{expiryDate}}
+                                        </td>
+
+                                        <td>
+                                            {{lastLoginDate}}
+                                        </td>
+
+                                        {{#if userInCharge subgroupid}}
+                                            <td class="text-center"><a draggable="false" class="student-remove" href="#" data-subgroupid="{{subgroupid}}" data-studentid="{{_id}}">Remove</a></td>
+                                        {{/if}}
+                                    </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                    {{#if userInCharge subgroupid}}
+                        <div style="width: 90%; text-align: center; margin: auto; padding-bottom: 2em;"><button id="students-add-reveal" class="button2">Add students</button></div>
+                    {{/if}}
+                    <!-- popup for adding users to the sub-group  -->
+                        <div id="possible-students" class="hidden animated fadeIn" data-studentlist="{{this._id}}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; background: rgba(165, 165, 165, 0.85); animation-duration: .33s;">
+                            <div class="studentlist-popup dialogue shadow" style="width: 65%; margin: auto; margin-top: 10vh;" data-subgroupid="{{this._id}}">
+                                <table class="table table-striped userlist-table" style="text-align: left;">
+                                    <thead>
+                                        <tr>
+                                            <th>Name <i class="fa fa-caret-down"></i></th>
+                                            <th>Last login <i class="fa fa-caret-down"></i></th>
+                                            {{#if isAdminModOrTutor}}
+                                                <th class="text-center"><span class="avoidwrap"> Add </span></th>
+                                            {{/if}}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {{#each possibleStuddents}}
+                                        <tr>
+                                            <td data-function="goUserPage">
+                                                <span class="a-color">{{profile.firstname}} {{profile.surname}}</span><br>
+                                            </td>
+                                            <td>
+                                                {{lastLoginDate}}
+                                            </td>
+                                            {{#if isAdminModOrTutor}}
+                                                <td class="text-center"><a draggable="false" class="student-add" href="#" data-subgroupid="{{../_id}}" data-studentid="{{_id}}">Add</a></td>
+                                            {{/if}}
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="studentlist-close button1 buttonsmall" data-studentlist="{{this._id}}">Close</button>
+                        </div>
+                    <!-- End of sub-group student list popup  -->
+                    
+                </section>
+            </div>
+        </article>
+    
+    </template>

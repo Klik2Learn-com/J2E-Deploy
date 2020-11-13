@@ -1,0 +1,237 @@
+<template name="m3a9">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Dunfermline');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 9 - {{>m3a9Title}}</div>
+			</header>
+
+			<section id="m3a9">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a9Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m3a9Intro}}</h3>
+					{{> m3a9Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a9_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m3a9_1}} {{>m3a9_2}} {{>m3a9_6}} {{>m3a9_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m3a9_1">
+	<section id="m3a9_1" class="hidden">
+		<div class="content">
+			<h2>What’s the difference between these four ways of talking about the future?</h2>
+			<div class="text-center">
+				<div class="caption fold text-left">
+					<ol class="olcircle" style="padding: 1em;">
+						<li>
+							<h5>The Present Simple</h5>
+						</li>
+						<li>
+							<h5>The Present Continuous</h5>
+						</li>
+						<li>
+							<h5>Going to</h5>
+						</li>
+						<li>
+							<h5>Will</h5>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a9" nexturl="#m3a9_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a9_2">
+	<section id="m3a9_2" class="hidden">
+		<div class="content">
+			<h1>1. The Present Simple</h1>
+			<div class="parapaper paraextract cappad">
+				<h5>Use this to talk about
+					<b>planned</b> or
+					<b>timetabled</b> future events like travel arrangements.</h5>
+			</div>
+			<br>
+			<div class="text-center">
+				<h3>“The bus
+					<b>leaves</b> at 10:30.”</h3>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a9_1" nexturl="#m3a9_3" prev="" next=""}}
+		</footer>
+	</section>
+
+	<section id="m3a9_3" class="hidden">
+		<div class="content">
+			<h1>2. The Present Continuous</h1>
+			<div class="parapaper paraextract cappad">
+				<h5>Use this to talk about
+					<b>future arrangements</b>.</h5>
+			</div>
+			<br>
+			<div class="text-center">
+				<h3>“She
+					<b>’s leaving</b> her job at the end of the month.”</h3>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a9_2" nexturl="#m3a9_4" prev="" next=""}}
+		</footer>
+	</section>
+
+	<section id="m3a9_4" class="hidden">
+		<div class="content">
+			<h1>3. Going to</h1>
+			<div class="parapaper paraextract cappad">
+				<h5>Use ‘going to’ to express
+					<b>certainty</b> about events in the
+					<b>near</b>.</h5>
+			</div>
+			<br>
+			<div class="text-center">
+				<h3>“Look at those clouds – it’s
+					<b>going to</b> rain.”</h3>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a9_3" nexturl="#m3a9_5" prev="" next=""}}
+		</footer>
+	</section>
+
+	<section id="m3a9_5" class="hidden">
+		<div class="content">
+			<h1>4. Will</h1>
+			<div class="parapaper paraextract cappad">
+				<h5>This is the most common way of talking about future events, with or without a time expression.</h5>
+			</div>
+			<br>
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col-xs-6">
+						<div class="caption capgreen block">With a time expression:</div>
+						<h3>“I
+							<b>’ll</b> do that tomorrow.”</h3>
+					</div>
+					<div class="col-xs-6">
+						<div class="caption capgreen block">Without a time expression:</div>
+						<h3>“He
+							<b>won’t</b> change his mind.”</h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a9_4" nexturl="#m3a9_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a9_6">
+	<section id="m3a9_6" class="hidden">
+		{{#if activeSection}}
+		{{> popovers}}
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3>Drag the 4 explanations to the right examples. {{>touch yes="Tap" no="Click"}} on the verb to find out what tense is used.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-sm-8 col-xs-6 col-xxs-12">
+							The train
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="bottom" data-content="Present Simple">arrives</a> in York at 5:15.
+						</div>
+						<div class="col-sm-4 col-xs-6 col-xxs-12">
+							<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target1">&nbsp;</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-8 col-xs-6 col-xxs-12">
+							They
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="bottom" data-content="Present Continuous">’re moving</a> to London to find work.
+						</div>
+						<div class="col-sm-4 col-xs-6 col-xxs-12">
+							<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target2">&nbsp;</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-8 col-xs-6 col-xxs-12">
+							He’s well out in front - he
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"
+							 data-trigger="manual" data-placement="bottom" data-content="Present Continuous of ‘to go’">’s going</a> to win the race.
+						</div>
+						<div class="col-sm-4 col-xs-6 col-xxs-12">
+							<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target3">&nbsp;</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-8 col-xs-6 col-xxs-12">
+							Rain
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="bottom" data-content="Future/will">will</a> be lighter in the north by tomorrow evening.
+						</div>
+						<div class="col-sm-4 col-xs-6 col-xxs-12">
+							<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target4">&nbsp;</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<span class="avoidwrap">
+					<div class="ddseat ddwidth12 dd2line">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target2">Future
+							<br>arrangements</div>
+					</div>
+					<div class="ddseat ddwidth12 dd2lines">
+						<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target4">Will</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddseat ddwidth12 dd2line">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target1">Planned/
+							<br>timetabled events</div>
+					</div>
+					<div class="ddseat ddwidth12 dd2line">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target3">Certain/
+							<br>near future</div>
+					</div>
+				</span>
+			</div>
+</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a9_5" nexturl="#m3a9_end" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m3a9_end">
+	{{>EndPage char="elle" act="m3a9" nextact="m3a10" place="Dunfermline"}}
+</template>

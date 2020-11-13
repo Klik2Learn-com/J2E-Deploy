@@ -1,0 +1,30 @@
+<template name="m10Game_39">
+
+	<section id="m10Game_39" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m10Game-12"></div>
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<button class="button1" id="a">One worker slept for 14 days as a result of lead poisoning.</button>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<button class="button1" id="b">One worker slept for 14 days with the result of lead poisoning.</button>
+							</div>
+							<!-- <div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">Until 1663, coins were made to hand.</button>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+
+</template>

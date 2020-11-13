@@ -1,0 +1,125 @@
+<template name="MoreAboutNewmarket">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Newmarket"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m10l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m10l2}}</div>
+		</header>
+
+		<section id="moreaboutNewmarket">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newmarket/Newmarket1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l2_A">
+						<p>Racecourse</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newmarket/Newmarket2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l2_B">
+						<p>The National Stud</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">				
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newmarket/Newmarket3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l2_C">
+						<p>National Horseracing Museum</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newmarket/Newmarket4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l2_D">
+						<p>Horseracing Trust</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l2_A">Racecourse</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newmarket/Newmarket1.jpg" alt="Racecourse" style="max-width: 250px;">
+					</figure>
+					<p>Horse racing at Newmarket goes back hundreds of years and it is now regarded as the home of British racing. There are a lot of training yards where young people go to learn the skills of the racing industry. Throughout the year, there are many important races at Newmarket. The most famous ones are the 1,000 guineas and the 2,000 guineas where the prize money is £1 million.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://newmarket.thejockeyclub.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l2_B">The National Stud</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newmarket/Newmarket2.jpg" alt="The National Stud" style="max-width: 250px;">
+					</figure>
+					<p>The National Stud is a large, 500 acre farm just outside Newmarket. It has over 200  mares for breeding thoroughbred horses for the racing industry. The Stud has a long history of training people in the skills needed to breed high quality thoroughbred race horses. Students who study there are regarded very highly regarded in the racing industry.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nationalstud.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l2_C">National Horseracing Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newmarket/Newmarket3.jpg" alt="National Horseracing Museum" style="max-width: 250px;">
+					</figure>
+					<p>No visit to Newmarket would be complete without a tour of the museum in the town’s High Street. It traces the history of the sport from its beginnings as a royal sport to modern times. It has a large collection of trophies, paintings of famous horses and uniforms worn by jockeys throughout history. The museum will be moving to a new site in the autumn of 2016.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nhrm.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l2_D">Horseracing Trust</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newmarket/Newmarket4.jpg" alt="Horseracing Trust" style="max-width: 250px;">
+					</figure>
+					<p>The Horseracing Trust are renovating the palace and racing stables built by Charles 11 in the 1660s. The king chose Newmarket as the best place to breed horses for use in the army. It is one of the oldest racing stables in the country. When the project is finished it will be a major attraction for tourists in Newmarket. It is planned to open in the summer of 2016. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.palacehousenewmarket.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

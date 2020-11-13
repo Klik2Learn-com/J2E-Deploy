@@ -1,0 +1,303 @@
+<template name="m3a26">
+	<article class="with-tools-sidebar m3a26">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Edinburgh');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 26 - {{>m3a26Title}}</div>
+			</header>
+
+
+			<section id="m3a26">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a26Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m3a26Intro}}</h3>
+					{{> m3a26Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a26_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m3a26_1}} {{>m3a26_2}} {{>m3a26_3}} {{>m3a26_4}} {{>m3a26_5}} {{>m3a26_6}} {{>m3a26_7}} {{>EndPage char="tu" act="m3a26"
+			nextact="m3a27" place="Edinburgh"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m3a26_1">
+	<section id="m3a26_1" class="hidden">
+		<div class="content">
+			<h1>Phrasal Verbs</h1>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 1 you looked at prepositions which follow the verb ‘
+								<b>to get</b>.’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 2 looked at different meanings when the preposition ‘
+								<b>on</b>’ is used with the verb ‘
+								<b>to go</b>.’</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a26" nexturl="#m3a26_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a26_2">
+	<section id="m3a26_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here’s a selection of five different prepositions you can use with the verb ‘to come.’ Drag the preposition to the right
+				sentence.</h3>
+
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}{{>welldone}}
+				<ol class="olcircle">
+					<li>Why don’t you come
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> with me to the club on Tuesday and see if you enjoy it.</li>
+					<li>It was a very stressful time but she came
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> it remarkably well.</li>
+					<li>I came
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> a photo of my grandmother the other day.</li>
+					<li>It took a lot of persuasion but they came
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> to the idea eventually.</li>
+					<li>When his father died, he came
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> a lot of money.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">into</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">across</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">along</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">round</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">through</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a26_1" nexturl="#m3a26_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a26_3">
+	<section id="m3a26_3" class="hidden">
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} to hear the sentences.</h3>
+			<div class="parapaper article-text fold">
+				<ul class="olblank list-space">
+					<li>
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a26/why-dont.m4a"></button>
+						Why don’t you come along with me to the club on Tuesday and see if you enjoy it.</li>
+					<li>
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a26/it-was.m4a"></button>
+						It was a very stressful time but she came through it remarkably well.</li>
+					<li>
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a26/i-came.m4a"></button>
+						I came across a photo of my grandmother the other day.</li>
+					<li>
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a26/it-took.m4a"></button>
+						It took a lot of persuasion but they came round to the idea eventually.</li>
+					<li>
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a26/when-his.m4a"></button>
+						When his father died, he came into a lot of money.</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a26_2" nexturl="#m3a26_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a26_4">
+	<section id="m3a26_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Now drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To find by accident:</b>
+					<br>
+					<div class="ddseatedtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To accompany:</b>
+					<br>
+					<div class="ddseatedtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To agree finally:</b>
+					<br>
+					<div class="ddseatedtarget dd4lines" data-destinationid="target3">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">He asked me to
+							<b>come along</b> on the trip to Perth but I couldn’t make it.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target3">She finally
+							<b>came round</b> to the idea of moving to the country.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">When you wander through the back streets of any city, you always
+							<b>come across</b> interesting buildings.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a26_3" nexturl="#m3a26_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a26_5">
+	<section id="m3a26_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Now drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To inherit:</b>
+					<br>
+					<div class="ddseatedtarget dd4lines ddwidth20" data-destinationid="target4">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To survive:</b>
+					<br>
+					<div class="ddseatedtarget dd4lines ddwidth20" data-destinationid="target5">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines ddwidth20">
+						<div class="ddsourceseated dd4lines ddwidth20 shadow" draggable="false" data-destination="target5">Although there was a lot of bad weather, they
+							<b>came through</b> their first winter in the country without any problems.</div>
+					</div>
+					<div class="ddseat dd4lines ddwidth20">
+						<div class="ddsourceseated dd4lines ddwidth20 shadow" draggable="false" data-destination="target4">When the business was sold the shareholders
+							<b>came into</b> a lot of money.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a26_4" nexturl="#m3a26_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a26_6">
+	<section id="m3a26_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are two phrasal verbs on Houses and Weather. Drag the preposition to the right space.</h3>
+
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}{{>welldone}}
+				<ol class="olcircle">
+					<li>The house was in such bad condition they had to do it
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> before they moved in.</li>
+					<li>It’s sunny now but it’s going to cloud
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> later.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">over</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">across</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">round</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">up</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">through</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a26_5" nexturl="#m3a26_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a26_7">
+	<section id="m3a26_7" class="hidden">
+		<div class="content">
+			{{> Tu_saved}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a26_6" nexturl="#m3a26_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

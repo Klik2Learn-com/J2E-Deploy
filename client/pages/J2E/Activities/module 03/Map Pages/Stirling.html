@@ -1,0 +1,84 @@
+<template name="Stirling">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<!-- Unit1 or Unit2 -->
+		<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		
+		<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> m3l1}}<em class="titleactcount">{{>m3l1No}}</em></div>
+	</header>
+	
+				
+	<!-- Place -->
+	<section id="Stirling" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m3_satnav}}
+					<!--Module-->
+					{{>mapButtons module="3" location="Stirling" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a1">
+								<div class="actbutton a1 {{completed '3' '1'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">1</div>
+								</div>
+							</a><br>
+							{{> m3a1Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a2">
+								<div class="actbutton a2 {{completed '3' '2'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">2</div>
+								</div>
+							</a><br>
+							{{> m3a2Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a3">
+								<div class="actbutton a3 {{completed '3' '3'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">3</div>
+								</div>
+							</a><br>
+							{{> m3a3Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a4">
+								<div class="actbutton a4 {{completed '3' '4'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">4</div>
+								</div>
+							</a><br>
+							{{> m3a4Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="3" location="Stirling" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

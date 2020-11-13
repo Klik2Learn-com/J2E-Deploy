@@ -1,0 +1,40 @@
+<template name="m1Game_dd">
+
+	<section id="m1Game_dd" class="game-section game-dd hidden">
+		<div class="game-container">
+			<h3 class="center">Arrange the words below to make a sentence. {{>touch yes="Tap" no="Click"}} submit when you're done.</h3>
+			<div class="game-content">
+				<div class="game-image-dd m1Game-bg2"></div>
+				<!-- add k, tu or elle to change bubble colour accordingly -->
+				<div class="game-speech-container k">
+					<div class="game-speech-tail" style="background-position: 20%;"></div>
+					<div class="game-speech">
+						Since he lost his job, he doesn't know how he's going to get <div class="ddseatedtarget ddwidth7 dd1line" id = "target1">&nbsp;</div>.
+						She always gets <div class="ddseatedtarget ddwidth7 dd1line" id = "target2">&nbsp;</div> well with everyone she meets.
+						I don't know how Nelson Mandela got <div class="ddseatedtarget ddwidth7 dd1line" id = "target3">&nbsp;</div> his years of imprisonment.
+						
+						<div class="game-submit-container"><button class="button2">Submit</button></div>
+					</div>
+					
+				</div>
+				
+				
+				<!-- add k, tu or elle to change bubble colour accordingly -->
+					<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1 k">
+					<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target1">by</div></div>
+					<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target2">on</div></div>
+					<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target6">up</div></div>
+					<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target4">down</div></div>
+				</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_audio" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+</template>

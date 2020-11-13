@@ -1,0 +1,269 @@
+<template name="addVoucher" id="addVoucher" >
+	{{>voucherResults}}
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				<a draggable="false" href="../">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{>menu}}
+				<div class="parent-level">Vouchers</div>
+				<div class="acttitle-title">New Voucher</div>
+			</header>
+			<section class="new-voucher">
+				<div class="content">
+					<h1>Add Voucher</h1>
+
+					<fieldset>
+						<legend>Create a voucher for...</legend>
+						<!-- <form> -->
+						<div class="form-group radio-buttons">
+							<input type="radio" id="newStudent" name="new-existing" class="new-existing-student" checked value="new">
+							<label for="newStudent" class="radio-label">New user(s)</label>
+						</div>
+						<div class="form-group radio-buttons">
+							<input type="radio" id="existingStudent" name="new-existing" class="new-existing-student" value="existing">
+							<label for="existingStudent" class="radio-label">An existing user
+								<span class="note existingStudentFormItem hidden">(Select the user in the box below)</span>
+							</label>
+						</div>
+						<!-- </form> -->
+					</fieldset>
+
+					<fieldset>
+						<legend>Voucher type</legend>
+						<!-- <form> -->
+						<div class="form-group radio-buttons">
+							<input type="radio" id="singleVoucher" name="single-multiple" class="single-multiple-voucher" value="single">
+							<label for="singleVoucher" class="radio-label">Generate a single voucher code that can be used multiple times (useful for 'special offer' discounts)</label>
+						</div>
+						<div class="form-group radio-buttons">
+							<input type="radio" id="multipleVouchers" name="single-multiple" class="single-multiple-voucher" value="multiple">
+							<label for="multipleVouchers" class="radio-label">Generate multiple, single-use codes (useful for creating pre-paid user accounts)</label>
+						</div>
+						<!-- </form> -->
+					</fieldset>
+
+					<form id="voucher-form">
+						<!-- Existing Student Selection Starts Here -->
+						<div id="existingStudentForm" class="hidden">
+							<fieldset>
+								<legend>User</legend>
+								<select id="selectedStudent" type="text" style="width: 100%;">
+									<option selected disabled value="">Select a user...</option>
+									{{#each userList}}
+									<option data-uId="{{_id}}">{{profile.firstname}} {{profile.surname}}</option>
+									{{/each}}
+								</select>
+								<div>
+									<p>&nbsp;</p>
+									<p>Please read the following information when creating voucher for this user.</p>
+									<p>The following will be extended for the selected amount of time:</p>
+									<ul>
+										<li>Name:
+											<b id="selectedName"></b>
+										</li>
+										<li>Access to
+											<i>Journey 2 English</i>:
+											<b id="selectedHasCourse"></b>
+										</li>
+										<li>Assessment:
+											<b id="selectedAssessment"></b>
+										</li>
+									</ul>
+								</div>
+							</fieldset>
+						</div>
+						<!-- Existing Student Selection Ends Here -->
+
+						<div id="voucherDetails" class="hidden">
+							<fieldset>
+								<legend>Voucher details</legend>
+								<div class="form-group">
+									<label for="form-field-name">Name
+										<span class="note">(e.g. individual or institution name)</span>
+									</label>
+									<input type="text" class="form-control" id="form-field-name">
+								</div>
+								<div class="form-group">
+									<label for="form-field-description">Description
+										<span class="note">(e.g. user type, duration)</span>
+									</label>
+									<input type="text" class="form-control" id="form-field-description">
+								</div>
+								<!-- <div class="form-group">
+									<label for="form-field-code">Voucher code</label>
+									<input type="text" class="form-control" id="form-field-code">
+								</div> -->
+								<div class="form-group">
+									<label for="form-field-discount">Discount
+										<span class="note">(e.g.
+											<b>20</b> for a 20% discount,
+											<b>100</b> for no charge)</span>
+									</label>
+									<div>
+										<input type="number" class="form-control percent inline-block" id="form-field-discount" value="100" min="0" max="100" maxlength="3">
+										<label for="form-field-description">%</label>
+									</div>
+								</div>
+								<div class="form-group hidden" id="multipleCodes">
+									<label for="form-field-usage">How many voucher codes to generate</label>
+									<input type="number" class="form-control numbers" id="form-field-usage" value="1" min="1">
+								</div>
+								<div class="form-group hidden" id="singleCode">
+									<label for="form-field-usage-amt">How many times can this voucher be used?</label>
+									<input type="number" class="form-control numbers" id="form-field-usage-amt" value="0" min="1">
+								</div>
+								<!-- Uncomment this if you want to work on automated email voucher delivery -->
+								<!-- <div class="form-group">
+									<label for="form-field-email-to">Email to
+										<span class="note">(If the voucher is for multiple users please provide email address to send the codes to)</span>
+									</label>
+									<div>
+										<input type="email" class="form-control inline-block" id="form-field-email-to">
+									</div>
+								</div> -->
+							</fieldset>
+						</div>
+
+						<!-- New Student Form starts here -->
+						<div id="newStudentForm">
+							<fieldset>
+								<legend>Products</legend>
+
+								<div class="form-group radio-buttons">
+									<input type="radio" name="voucherType" id="form-field-course" value="" checked="checked">
+									<label for="form-field-course" class="radio-label">
+										<i>Journey 2 English</i>
+									</label>
+								</div>
+
+								<div class="form-group radio-buttons">
+									<input type="radio" name="voucherType" id="form-field-both" value="">
+									<label for="form-field-both" class="radio-label">
+										<i>Journey 2 English</i> with
+										<i>English Skills Test</i>
+									</label>
+								</div>
+
+								<div class="form-group radio-buttons">
+									<input type="radio" name="voucherType" id="form-field-assessment" value="">
+									<label for="form-field-assessment" class="radio-label">
+										<i>English Skills Test</i> only</label>
+								</div>
+
+								<!--<div class="form-group radio-buttons">
+									<input type="radio" name="voucherType" id="form-field-trial" value="">
+									<label for="form-field-trial" class="radio-label">14 Day Trial (leave user role, organisation and group blank</label>
+								</div>-->
+							</fieldset>
+
+							<fieldset>
+								<legend>Account details</legend>
+								<div class="form-group">
+									<label for="roles">User role:</label>
+									<select name="roles" class="form-control" id="form-field-roles">
+										<option value="student">Student</option>
+										<option value="tutor">Tutor</option>
+										<option value="moderator">Moderator</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="form-field-org">Organisation</label>
+									<a draggable="false" href="/admin/orgcreator" target="_blank">
+										<i class="fa fa-plus add-option"></i>
+									</a>
+									<select name="org" class="form-control" id="form-field-org">
+										<option value="{{publicOrgId}}">Public</option>
+										{{#each organisation}}
+										<option value="{{_id}}">{{orgName _id}}</option>
+										{{/each}}
+									</select>
+								</div>
+
+								<div class="form-group hidden" id="groups-container">
+									<label for="form-field-group">Group (set to "no group" for course-only/self-study)</label>
+									<a draggable="false" href="/admin/groupcreator" target="_blank">
+										<i class="fa fa-plus add-option"></i>
+									</a>
+									{{#if orgSelected}}
+									<select name="group" class="form-control" id="form-field-group">
+										<option value="">(No group)</option>
+										{{#each groupsList}}
+										<option value="{{_id}}">{{groupName _id}}</option>
+										{{/each}}
+									</select>
+									{{else}}
+									<select name="group" disabled class="form-control">
+										<option value="">(No group)</option>
+										{{#each groupsList}}
+										<option value="{{_id}}">{{groupName _id}}</option>
+										{{/each}}
+									</select>
+									{{/if}}
+								</div>
+							</fieldset>
+						</div>
+						<!-- New Student Form ends here -->
+
+						<form>
+							<fieldset>
+							<legend>Payment plans</legend>
+							{{#each paymentPlansList}}
+							<div class="form-group radio-buttons form-field-payment" style="display:inline-block; padding:10px; margin:10px; border:1px solid black; border-radius: 10px;">
+								<div> Name: {{name}}</div>
+								<div> Description: {{description}}</div>
+								<div> Cost: {{cost}}</div>
+								<div> Plan type: {{planType}}</div>
+								<div> Plan Time Amount: {{planTimeAmount}}</div>
+								<input type="radio"  name="paymentType" class="payment-button" value="{{planId}}" required>
+								<label for="form-field-payment" class="radio-label">Select</label>
+							</div>
+							{{/each}} 
+						</fieldset>
+
+						</form>
+
+					
+	
+									<!--<div class="form-group radio-buttons">
+										<input type="radio" name="voucherType" id="form-field-trial" value="">
+										<label for="form-field-trial" class="radio-label">14 Day Trial (leave user role, organisation and group blank</label>
+									</div>-->
+						
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+							<button type="submit" class="btn btn-success">Generate voucher codes</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+	</article>
+
+</template>
+
+
+<template name="voucherResults">
+	<div class="modal fade" id="voucherResultsModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="notificationTitle1">Voucher Codes</h4>
+				</div>
+				<div class="modal-body">
+					<div class="item-space">
+						<div id="resultsContainer"></div>
+						<p>You can find all generated voucher codes again from the <i>Voucher list</i> page</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,80 @@
+<template name="viewOrg">
+    <article class="with-tools-sidebar">
+        {{>ToolsSidebar}}
+        <div class="main">
+            <header class="acttitle">
+                {{>menu}} {{> adminNav}}
+            </header>
+            <section>
+                <div class="content-user">
+                    {{#if isStudent}} Unauthorised access {{else}} {{#if isAdmin}}
+                    <h1>Organisations List</h1>{{/if}} {{#if isMod}}
+                    <h1>My Organisation</h1>{{/if}} {{#if isTutor}}
+                    <h1>My Organisation</h1>{{/if}} {{#if isStudent}}
+                    <h1>My Organisation</h1>{{/if}} {{#if isAdmin}} {{>NewOrgLink}} {{/if}}
+
+                    <div class="table-wrapper scrollbar">
+                        <table class="table1">
+                            <thead>
+                                <tr>
+                                    <th>Organisation Name ({{>touch yes="tap" no="click"}} to see groups)</th>
+                                    <th>Moderators</th>
+                                    {{#if isAdmin}}
+                                    <th>Logo</th>
+                                    <th>Change name</th>
+                                    <th>Delete</th>
+                                    {{/if}}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Each user this user is allowed to see -->
+                                {{#each organisationList}}
+                                <tr>
+                                    <td>
+                                        <a draggable="false" class="org-name">{{this.name}}</a>
+                                    </td>
+                                    <td>
+                                        
+                                        {{#each moderatorsList this._id}}
+                                            |<a draggable="false" class="mod-name">{{this.profile.firstname}} {{this.profile.surname}}</a>|
+                                        {{/each}}
+                                    </td>
+                                    {{#if isAdmin}}
+                                    <td style="text-align: center;">
+                                        <a draggable="false" class="add_logo_button forum-clickable">Add or Edit</a>
+                                        <form class="add_logo_form hidden form-group nowrapnohidetext">
+                                            <input data-id="{{this._id}}" class="form-control add_logo_input" type="file" accept="image/*">
+                                            <span data-id="{{this._id}}" class="add_logo_status hidden"></span>
+                                            <input data-id="{{this._id}}" class="form-control add_logo_alt_input" type="text" placeholder="Alternative Text (Alt)" value="{{this.name}}">
+                                            <button class="button1 buttonsmall item-space no-border add_logo_ok">OK</button>
+                                        </form>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <a draggable="false" class="edit_title_button forum-clickable">
+                                            <i class="fas fa-pencil-alt"> </i> Edit</a>
+                                        <form class="edit_title_form hidden form-group nowrapnohidetext">
+                                            <input required data-id="{{this._id}}" class="form-control edit_title_input" type="text" placeholder="New title…" value="{{this.name}}">
+                                            <button class="button1 buttonsmall item-space no-border edit_title_ok">OK</button>
+                                            <span class="edit_title_status"></span>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <div data-id="{{this._id}}" class="user-edit delete text-center">
+                                            <a draggable="false" href="#">
+                                                <i class="fa fa-trash-alt"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    {{/if}}
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                    {{/if}}
+                </div>
+            </section>
+        </div>
+    </article>
+
+</template>

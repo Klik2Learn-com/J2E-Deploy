@@ -1,0 +1,413 @@
+<template name="m7a9">
+	<article class="with-tools-sidebar m7a9">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/StokeonTrent');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 9 - {{>m7a9Title}}</div>
+			</header>
+			<section id="m7a9">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a9Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m7a9Intro}}</h3>
+					{{> m7a9Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a9_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a9_1}}
+			{{>m7a9_2}}
+			{{>m7a9_3}}
+			{{>m7a9_4}}
+			{{>m7a9_5}}
+			{{>m7a9_6}}
+			{{>m7a9_7}}
+			{{>EndPage char="elle" act="m7a9" nextact="m7a10" place="StokeonTrent"}}
+		</div>
+	</article>
+
+</template>
+
+<template name="m7a9_1">
+	<section id="m7a9_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen to this conversation.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="hidden-xs" style="height:100px;"></div>
+						<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module7/a9/0.m4a"></button><br>
+					</div>
+					<div class="col-sm-8">
+						<div class="ph-w ph-16x10" style="max-width: 513px"><div class="ph"><img draggable="false" src="images/conv-pics/conversation.png" alt="Conversation"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a9" nexturl="#m7a9_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a9_2">
+	<section id="m7a9_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen to the sentence then write the missing words in the spaces.</h3>
+			<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="hidden-xs" style="height:100px;"></div>
+						<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module7/a9/Con_1.m4a"></button>
+					</div>
+					<div class="col-sm-8">
+						<div class="ph-w ph-16x10 item-space" style="max-width: 513px"><div class="ph"><img draggable="false" src="images/conv-pics/conversation.png" alt="Conversation"></div></div>
+					</div>
+
+				</div>
+				<ul class="center" style="list-style-type:none; padding-left:0;">
+					<li>
+						<div class="number">1</div>If you
+						<span id="entryanswer0">
+							<form class="textentry textentry-span-container">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> to, it
+						<span id="entryanswer1" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> stamped on your passport. </li>
+
+					<li class="hidden">
+						<div class="number">2</div>If you
+						<span id="entryanswer2" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> to travel light, you
+						<span id="entryanswer3" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> them in the UK quite cheaply.</li>
+
+					<li class="hidden">
+						<div class="number">3</div>If you
+						<span id="entryanswer4" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> a basic bank account, you
+						<span id="entryanswer5" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> able to get money from cash machines and make payments.</li>
+
+					<li class="hidden">
+						<div class="number">4</div>Your university student union
+						<span id="entryanswer6" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> if you
+						<span id="entryanswer7" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> experiencing difficulties with your course or life in the UK.</li>
+
+					<li class="hidden">
+						<div class="number">5</div>If you
+						<span id="entryanswer8" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> going to study in the UK, you probably
+						<span id="entryanswer9" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> a decent grasp of English already.</li>
+
+					<li class="hidden">
+						<div class="number">6</div>If you
+						<span id="entryanswer10" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> a snivel, you
+						<span id="entryanswer11" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> probably
+						<span id="entryanswer12" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> gripped by a favourite in Britain: the common cold.</li>
+
+					<li class="hidden">
+						<div class="number">7</div>If you
+						<span id="entryanswer13" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> thinking of getting a mobile phone or landline with broadband,
+						<span id="entryanswer14" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> the different rates on offer.</li>
+
+					<li class="hidden">
+						<div class="number">8</div>If you
+						<span id="entryanswer15" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> out, just
+						<span id="entryanswer16" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> sure you lock your doors and windows.</li>
+
+					<li class="hidden">
+						<div class="number">9</div>If you
+						<span id="entryanswer17" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> from a country within the European Economic Area, you
+						<span id="entryanswer18" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> need permission to work in the UK.</li>
+
+					<li class="hidden">
+						<div class="number">10</div>Well, if
+						<span id="entryanswer19" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> in London, an Oyster card
+						<span id="entryanswer20" class="textentry-disabled">
+							<form class="textentry textentry-span-container hidden">
+								<input type="text" name="userText" size="7" autocomplete="off" autofocus>
+								<input type="submit" value="OK">
+							</form>
+						</span> essential.</li>
+
+
+				</ul>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Conditionals under Verbs in the Grammar Guide"}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a9_1" nexturl="#m7a9_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m7a9_3">
+	<section id="m7a9_3" class="hidden">
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">Here are the Conditional Sentences again</h3>
+			<div class="parapaper paraextract article-text fold">
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_1.m4a"></button> If you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">need</a> to, it
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Future">will be</a> stamped on your passport.
+				</p>
+				<br>
+				<br>
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_2.m4a"></button> If you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="Present simple">want</a> to travel light, you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="Modal + Present simple">can buy</a> them in the UK quite cheaply.
+				</p>
+
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Conditionals in the Verbs section in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a9_2" nexturl="#m7a9_4" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a9_4">
+	<section id="m7a9_4" class="hidden">
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">Here are the Conditional Sentences again</h3>
+			<div class="parapaper paraextract article-text fold">
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_3.m4a"></button> If you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">get</a> a basic bank account, you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Future">will be</a> able to get money from cash machines and make payments.
+				</p>
+				<br>
+				<br>
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_4.m4a"></button> Your university student union
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Future">will help</a> if
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present continuous">you're experiencing</a> difficulties with your course or life in the UK.
+				</p>
+
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Conditionals in the Verbs section in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a9_3" nexturl="#m7a9_5" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a9_5">
+	<section id="m7a9_5" class="hidden">
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">Here are the Conditional Sentences again</h3>
+			<div class="parapaper paraextract article-text fold">
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_5.m4a"></button> If
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present continuous">you're</a> going to study in the UK you probably
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">have</a> a decent grasp of English already.
+				</p>
+				<br>
+				<br>
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_6.m4a"></button> If you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">get</a> a snivel,
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present perfect">you've probably been</a> gripped by a favourite in Britain: the common cold.
+				</p>
+
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Conditionals in the Verbs section in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a9_4" nexturl="#m7a9_6" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a9_6">
+	<section id="m7a9_6" class="hidden">
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">Here are the Conditional Sentences again</h3>
+			<div class="parapaper paraextract article-text fold">
+
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_8.m4a"></button> If you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">go</a> out, just
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Imperative">make</a> sure you lock your doors and windows.
+				</p>
+				<br>
+				<br>
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_9.m4a"></button> If
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">you're</a> from a country within the European Economic Area (EEA), you
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">don't</a> need permission to work in the UK.</p>
+				<br>
+				<br>
+				<p>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a9/Con_10.m4a"></button> Well, if
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">you're</a> in London, an Oyster card
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Present simple">is</a> essential.
+				</p>
+
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Conditionals in the Verbs section in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a9_5" nexturl="#m7a9_7" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a9_7">
+	<section id="m7a9_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">You can listen to the whole conversation again.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module7/a9/0.m4a"></button>
+					</div>
+					<div class="col-sm-8">
+						<div class="ph-w ph-16x10 item-space" style="max-width: 513px"><div class="ph"><img draggable="false" src="images/conv-pics/conversation.png" alt="Conversation"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a9_6" nexturl="#m7a9_end" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

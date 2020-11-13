@@ -1,0 +1,114 @@
+<template name="adminAssessmentReport">
+    <article class="with-tools-sidebar">
+        {{>ToolsSidebar}}
+        <div class="main">
+            <header class="acttitle">
+                {{>menu}} {{> adminNav}}
+            </header>
+            <section>
+                <div class="content-user">
+                    {{#if isStudent}} Unauthorised access {{else}}
+                    <h1>Assessments Report</h1>
+                    <!-- <div class="form-group">
+				  <label for="assessmentSelector">Assessment:</label>
+				  <select class="form-control form-control-inline-block" id="assessmentSelector">
+					{{#each assessmentType}}
+						<option value="{{this.type}}">{{this.name}}</option>
+					{{/each}}
+				  </select>
+				</div> 
+				<br>-->
+                    <p class="userlist-table-swipe-text visible-xs">
+                        <i class="fa fa-arrows-alt-h"></i> {{>touch yes="Swipe" no="Scroll"}} left/right to see more</p>
+                    <div class="text-right" style="margin: 15px 0;">
+                        <a draggable="false" href="/admin/assessmentlist">
+                            <b>
+                                <i class="fa fa-chevron-left"></i> Assessment List</b>
+                        </a>
+                    </div>
+                    <div class="table-wrapper scrollbar">
+                        <table class="table4 userlist-table" id="adminUserListTable">
+                            <thead>
+                                <tr>
+                                    <th>Full name</th>
+                                    {{#if isAdmin}}
+                                    <th>Organisation</th>
+                                    {{/if}}
+                                    <th>Date Started</th>
+                                    <th>Date Completed</th>
+                                    <th>Reading</th>
+                                    <th>Writing</th>
+                                    <th>Listening</th>
+                                    <th>Speaking</th>
+                                    <th>Overall Level</th>
+                                    <th class="text-center">
+                                        <div class="selectAllCheckbox">
+                                            <h2>Select All</h2>
+                                            <input type="checkbox" id="selectAll" onClick="userlistSelectAll(this, 'assessmentlistCheckbox')">
+                                            <label for="select-all-wrap"></label>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Each user this user is allowed to see -->
+                                {{#each assessment}}
+                                <tr class="{{#unless isCompleted}}faded{{/unless}}">
+                                    {{#with user}}
+                                    <td data-function="goUserPage" data-target="{{../_id}}">
+                                        <a>{{profile.firstname}} {{profile.surname}}</a>&nbsp;
+                                    </td>
+                                    {{#if isAdmin}}
+                                    <td>{{orgName organisation}}&nbsp;</td>
+                                    {{/if}}
+                                    <td>
+                                        {{#if completed}} {{formatDate dateStart}}&nbsp; {{else}} {{dateCompleted}} {{/if}}
+                                    </td>
+                                    <td>
+                                        {{#if completed}} {{formatDate dateCompleted}}&nbsp; {{else}} {{dateCompleted}} {{/if}}
+                                    </td>
+                                    <td>{{reading}}</td>
+                                    <td>{{writing}}</td>
+                                    <td>{{listening}}</td>
+                                    <td>{{speaking}}</td>
+                                    <td>{{passOrFail}}&nbsp;</td>
+                                    <td class="clearFaded">
+                                        <div class="selectAllCheckbox">
+                                            <input type="checkbox" name="assessmentlistCheckbox" value="{{this._id}}">
+                                        </div>
+                                    </td>
+                                    {{/with}}
+                                </tr>
+                                {{/each}}
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <span class="a-color" style="font-size: 16px;">
+                                            <b>Download selected</b>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <!-- Temporary disabled. Apologies for the inconvenience -->
+                                        <div class="download-multi text-center" style="width: 100%">
+                                            <a class="pdf-svg" draggable="false" href="#"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="example-report">
+                    <h1>PDF Example</h1>
+                    {{> assessmentreport}}
+                </div>
+                <script src="http://www.cloudformatter.com/Resources/Pages/CSS2Pdf/Script/xepOnline.jqPlugin.js"></script>
+            </section>
+        </div>
+    </article>
+
+</template>

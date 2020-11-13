@@ -1,0 +1,310 @@
+<template name="Courses">
+<article class="{{hasCourseSidebar}} ">
+	{{#if hasCourse}}
+		{{>ToolsSidebar}}
+	{{/if}}
+		<div class="main">
+		<header class="acttitle">
+			{{#if hasCourse}}
+				{{>menu}}
+			{{else}}
+				{{>menu_assess}}
+			{{/if}}
+		<div class="parent-level">Journey 2 English</div> <div class="acttitle-title">Home</div>
+	</header>
+
+	<section id="Courses">
+		<div class="content">
+	
+	<!-- {{#if AnnouncementsCount}}		<div class="welcome-header hand-font"> -->
+	<div id="AnnouncementsVisible" class="hidden">
+	
+<div class="container-fluid homepage-first">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="welcome-h hand-font">
+				<span class="avoidwrap">Welcome{{#if hasCourse}} back,{{else}},{{/if}} {{currentUser.profile.firstname}}!</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+	{{#if trial}}
+		<div class="col-sm-4 assessment-divider">
+			{{> HomepageAssess}}
+		</div>
+	
+		<div class="col-sm-4 welcome-divider">
+			{{> HomepageUser progress="Course"}}
+		</div>
+		
+		<div class="col-sm-4 Announcements-divider">
+			<div class="Announcements-wrapper">
+				<h2 class="Announcements-header"><i class="fa fa-bullhorn"></i> Announcements</h2>
+				{{#each Announcements}}
+					{{#if display}}
+						<div class="Announcements-box" data-toggle="modal" data-target="#moreAnnouncementsModal">
+							<div class="Announcements-contents">
+								<div class="Announcements-title">{{title}} <span class="Announcements-date"> - {{formatDate date}}</span></div>
+								<div class="Announcements-preview">{{message}}</div>
+								<div class="Announcements-more a-color">Read more</div>
+							</div>
+						</div>
+					{{/if}}
+				{{/each}}
+				<div class="Announcements-more"><a draggable="false" href="#" data-toggle="modal" data-target="#moreAnnouncementsModal">View more Announcements...</a> </div>
+			</div>
+			
+		</div>
+	{{else}}	
+		<div class="col-sm-6 welcome-divider">
+		{{#if studentHasAssessment}}
+			{{> HomepageAssess}}
+		{{else}}
+		{{#if hasCourse}}
+			{{> HomepageUser progress="Your"}}
+		{{else}}
+			{{> HomepageUser locked="faded"}}
+		{{/if}}
+		{{/if}}
+		</div>
+		
+		<div class="col-sm-6 Announcements-divider">
+			<div class="Announcements-wrapper">
+				<h2 class="Announcements-header"><i class="fa fa-bullhorn"></i> Announcements</h2>
+				{{#each Announcements}}
+					{{#if display}}
+						<div class="Announcements-box" data-toggle="modal" data-target="#moreAnnouncementsModal">
+							<div class="Announcements-contents">
+								<div class="Announcements-title">{{title}} <span class="Announcements-date"> - {{formatDate date}}</span></div>
+								<div class="Announcements-preview">{{message}}</div>
+								<div class="Announcements-more a-color">Read more</div>
+							</div>
+						</div>
+					{{/if}}
+				{{/each}}
+				<div class="Announcements-more"><a draggable="false" href="#" data-toggle="modal" data-target="#moreAnnouncementsModal">View more Announcements...</a> </div>
+			</div>
+			
+		</div>
+	{{/if}}
+	</div>
+</div>
+
+</div>
+<!-- {{else}} -->
+<div id="AnnouncementsHidden" class="">
+	<div class="container-fluid homepage-first">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="welcome-h hand-font">
+				<span class="avoidwrap">Welcome{{#if hasCourse}} back,{{else}},{{/if}} {{currentUser.profile.firstname}}!</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+	{{#if trial}}
+		<div class="col-sm-6 assessment-divider">
+			{{> HomepageAssess}}
+		</div>
+	
+		<div class="col-sm-6 welcome-divider">
+			{{> HomepageUser}}
+		</div>
+	{{else}}
+		<div class="col-sm-12 welcome-divider">
+		{{#if studentHasAssessment}}
+			{{> HomepageAssess}}
+		{{else}}
+		{{#if hasCourse}}
+			{{> HomepageUser}}
+		{{else}}
+			{{> HomepageUser locked="faded"}}
+		{{/if}}
+		{{/if}}
+		</div>
+	{{/if}}
+	</div>
+</div>
+</div>
+
+			{{#if isAdmin}}
+			
+				<!--__________________________________
+							
+						* ADMINISTATOR DASHBOARD *   
+					__________________________________
+													   -->
+				<!-- <h1 class="dashboard">Dashboard</h1> -->
+				<div class="home-admin-links">
+					<ul class="admin-panel-home">
+						<li><a draggable="false" href="/admin" class="admin-nav"><i class="fa fa-cog"></i>Admin Tasks</a></li>
+						<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> Assessment List
+	{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}</a></li>
+						{{#if isAdmin}}<li><a draggable="false" href="#" data-toggle="modal" data-target="#messagesmodal"><i class="icon-email"></i>Inbox {{#if unreadMessages}}<div class="notification mail">{{unreadMessages}}</div>{{/if}}</a></li>{{/if}}
+						<li><a draggable="false" href="/forums" class="admin-nav"><i class="icon-forum"></i>Forums</a></li>
+						<li><a draggable="false" href="/TutorGuide" class="admin-nav"><i class="icon-userguide"></i>User Guide</a></li>
+						<li><a draggable="false" href="/admin/contactFormList" class="admin-nav"><i class="fa fa-server"></i> <span>Contact Form List</span>
+			{{#if unmarkedCountContactForm}}<div class="notification">{{unmarkedCountContactForm}}</div>{{/if}}
+		</a></li><li><a draggable="false" href="/admin/bugReportsList" class="admin-nav"><i class="fa fa-bug"></i> <span>Bug reports</span>
+			{{#if unmarkedCountBug}}<div class="notification">{{unmarkedCountBug}}</div>{{/if}}
+		</a></li>
+						<!-- <li><a draggable="false" href="/admin/bugReportsList" class="admin-nav"><i class="fa fa-bug"></i> <span>Bug Reports List</span>
+						{{#if unmarkedCountBug}}<div class="notification">{{unmarkedCountBug}}</div>{{/if}}</a></li>
+						<li><a draggable="false" href="/admin/contactFormList" class="admin-nav"><i class="fa fa-server"></i> <span>Contact Form List</span>
+						{{#if unmarkedCountContactForm}}<div class="notification">{{unmarkedCountContactForm}}</div>{{/if}}</a></li> -->
+					</ul>
+				</div>
+			{{else}}
+			{{#if isMod}}
+			
+				<!--__________________________________
+							
+						* MODERATOR DASHBOARD *   
+					__________________________________
+													   -->
+				<!-- <h1 class="dashboard">Dashboard</h1> -->
+				<div class="home-admin-links">
+					<ul class="admin-panel-home">
+						<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>User List</span></a></li>
+						<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> Assessment List
+	{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}</a></li>
+						<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>View Groups</span></a></li>
+		<li><a draggable="false" href="/admin/groupcreator" class="admin-nav"><i class="fa icon-group-plus"></i> <span>Add Group</span></a></li>
+						<li><a draggable="false" href="/admin/Announcements" class="admin-nav"><i class="fa fa-bullhorn"></i>Announce-ments</a></li>
+						<li><a draggable="false" href="/TutorGuide" class="admin-nav"><i class="icon-userguide"></i>User Guide</a></li>
+						<li><a draggable="false" href="/bugReporting" class="admin-nav"><i class="fa fa-bug"></i>Report an issue</a></li>
+					</ul>
+				</div>
+			{{else}}
+			{{#if isTutor}}
+			
+				<!--__________________________________
+							
+						   * TUTOR DASHBOARD *   
+					__________________________________
+													   -->
+				<!-- <h1 class="dashboard">Dashboard</h1> -->
+				<div class="home-admin-links">
+					<ul class="admin-panel-home">
+						<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>User List</span></a></li>
+						<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> Assessment List
+{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}</a></li>
+						
+						{{#if hasGroup}}
+							<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>My Groups</span></a></li>
+							<li><a draggable="false" href="/admin/Announcements" class="admin-nav"><i class="fa fa-bullhorn"></i>Announce-ments</a></li>
+						{{/if}}
+						
+						<li><a draggable="false" href="/TutorGuide" class="admin-nav"><i class="icon-userguide"></i>User Guide</a></li>
+					<li><a draggable="false" href="/bugReporting" class="admin-nav"><i class="fa fa-bug"></i>Report an issue</a></li>
+					</ul>
+				</div>
+			{{else}}
+			{{#if isStudent}}
+			
+				<!--__________________________________
+							
+						  * STUDENT DASHBOARD *   
+					__________________________________
+													   -->
+				<!-- <h1 class="dashboard">Dashboard</h1> -->
+				{{#unless studentHasAssessment}}
+				{{#if isExpired}}
+					{{>subscriptionOptions}}
+				{{/if}}
+				{{/unless}}
+				
+				{{#if hasCourse}}
+				<div class="home-admin-links">
+					<ul class="admin-panel-home">
+						<li><a draggable="false" data-target="profile" class=""><i class="fa fa-user"></i>Your Account</a></li>
+						
+						{{#if hasGroup}}
+							<!-- Not used studentHasAssessment as that pass even when the assessment has not been completed yet -->
+							{{#if hasCourse}} 
+								<li><a draggable="false" href="#" data-toggle="modal" data-target="#messagesmodal"><i class="icon-email"></i>Inbox {{#if unreadMessages}}<div class="notification mail">{{unreadMessages}}</div>{{/if}}</a></li>
+								<li><a draggable="false" href="/forums/{{organisation}}" class="admin-nav"><i class="icon-forum"></i>Forums</a></li>
+							{{/if}}
+						{{/if}}
+						<li><a draggable="false" href="/UserGuide" class="admin-nav"><i class="icon-userguide"></i>User Guide</a></li>
+					{{#if hasCourse}} 
+					<li><a draggable="false" href="/bugReporting" class="admin-nav"><i class="fa fa-bug"></i>Report an issue</a></li>
+					{{/if}}
+					</ul>
+				</div>
+				{{/if}}
+				
+				{{/if}}
+				{{/if}}
+				{{/if}}
+			{{/if}}
+			
+			
+		</div>
+	</section>
+</div>
+</article>
+{{>moreAnnouncementsModal}}
+
+</template>
+
+<template name="HomepageUser">
+		
+	<div id="progressWrap" class="progress-peek {{locked}}" data-target="profile">
+		<span class="title">{{progress}} progress</span>
+	</div>
+	<div class="course-begin">		
+		<div class="course-begin-button start button1 no-border {{locked}}" data-function="link" data-target="ModuleSelect">Start</div>
+		<div class="course-begin-button infor button2 no-border {{locked}}" data-function="link" data-target="Overview"><i class="fa fa-info"></i> Overview</div>
+	</div>
+	
+</template>
+
+<template name="HomepageAssess">
+		
+	<div class="assessment-peek">
+		<span class="title"><b>English Skills Test</b></span>
+		<img draggable="false" src="/images/icon-assess2.png" alt="Test">
+		
+	</div>
+	<div class="course-begin">		
+		<div class="course-begin-button button1 no-border" data-function="link" data-target="/assessment/{{getAssessmentId}}">Sit Assessment</div>
+		<div class="course-begin-button infor button2 no-border" data-function="link" data-target="InitialAssessmentHowTo"><i class="fa fa-info"></i> How to</div>
+	</div>
+	
+</template>
+
+<template name="moreAnnouncementsModal">
+	<div class="modal fade" tabindex="-1" id="moreAnnouncementsModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="moreAnnouncementsModal">Announcements</h4>
+				</div>
+				
+				<div class="content">
+
+					{{#each Announcements}}
+					{{#if display}}
+						
+						<div class="Announcements-contents">
+							<div class="Announcements-title">{{title}}</div>
+							<div class="forum-post-content">
+							<pre>{{message}}</pre>
+							</div>
+							<div class="Announcements-by">Posted by {{getFullnameFromId author}} on {{formatDate date}}{{#if notStudent}}<br>Expires on {{formatDate expiry}}{{/if}} {{#if isAdmin}}{{orgName organisation}}{{/if}}</div>
+						</div>
+					{{/if}}
+				{{/each}}
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,148 @@
+<template name="MoreAboutBristol">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Bristol"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m8l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m8l4}}</div>
+		</header>
+
+		<section id="moreaboutBristol">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bristol/Bristol1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l4_A">
+						<p>Blackbeard</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bristol/Bristol2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l4_B">
+						<p>Banksy Street Art</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bristol/Bristol3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l4_C">
+						<p>Queen Square</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bristol/Bristol4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l4_D">
+						<p>Clifton Suspension Bridge</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bristol/Bristol5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l4_E">
+						<p>SS Great Britain</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l4_A">Blackbeard</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bristol/Bristol1.jpg" alt="Blackbeard" style="max-width: 250px;">
+					</figure>
+					<p>In 19th century, Blackbeard was Britain’s most famous pirate. He was born in Bristol but when he was young his family moved to Jamaica. He started his career in the Royal Navy before becoming a pirate. His first success was the capture of a French ship. Other ships followed and he became a powerful force in the area before he was finally captured and killed by British soldiers.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.learnnc.org/lp/editions/nchist-colonial/1669" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l4_B">Banksy Street Art</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bristol/Bristol2.jpg" alt="Banksy Street Art" style="max-width: 250px;">
+					</figure>
+					<p>Banksy is one of the world’s most famous street artists and his paintings have sold for over $1,000,000. He was born in Bristol in 1974 and you can take a tour in the city to see some of his earliest work. His work has appeared in many American cities as well as the UK but to this day, his real name and identity are a secret.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bristol-street-art.co.uk/category/banksy-street-art" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l4_C">Queen Square</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bristol/Bristol3.jpg" alt="Queen Square" style="max-width: 250px;">
+					</figure>
+					<p>Queen Square is named after Queen Anne who was in power when England and Scotland combined to become Great Britain in 1707. The square used to be the most desirable place to live in Bristol and some famous and important people lived there. It is now a large garden square in the centre of the city, used for public events.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://visitbristol.co.uk/things-to-do/queen-square-p38651" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l4_D">Clifton Suspension Bridge</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bristol/Bristol4.jpg" alt="Clifton Suspension Bridge" style="max-width: 250px;">
+					</figure>
+					<p>The Clifton Suspension Bridge has been described as one of the world’s greatest bridges. It took the famous British engineer, Brunel, 33 years to build and was finally opened in 1864. You can take a tour of the bridge and see the spectacular  illuminations which are switched every evening until midnight.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.brunel200.com/suspension_bridge.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l4_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l4_E">SS Great Britain</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bristol/Bristol5.jpg" alt="SS Great Britain" style="max-width: 250px;">
+					</figure>
+					<p>For almost ten years SS Britain was the longest passenger steamship in the world. She had a crew of 120 and could carry 360 passengers. In the 19th century, she carried hundreds of people from Britain to start a new life in Australia. Later she was damaged by a fire and ran aground. She was restored in the 1970s and is now a museum ship in the docks in Bristol.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://visitbristol.co.uk/things-to-do/brunels-ss-great-britain-p25861" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

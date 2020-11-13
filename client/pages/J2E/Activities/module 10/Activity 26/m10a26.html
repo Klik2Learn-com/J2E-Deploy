@@ -1,0 +1,60 @@
+<template name="m10a26"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/London');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 26 - {{> m10a26Title}}</div>
+		</header>
+		<section id="m10a26">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a26Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m10a26Intro}}</h3>
+				{{> m10a26Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a26_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a26_1}}
+		{{>EndPage char="tu" act="m10a26" nextact="m10a27" place="London"}}
+	</div>
+</article>
+</template>
+<template name="m10a26_1"> 
+	<section id="m10a26_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right idiom to the sentence.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>If he gets another 100,000 votes, that's the <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target1">&nbsp;</div>. He will win the election.</li>
+						<li>I’m afraid the <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target2">&nbsp;</div> in that family: the children do whatever they like.</li>
+						<li>Don’t <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target3">&nbsp;</div>, he’s already feeling bad about losing his wallet.</li>
+						<li>My father earned very little so we lived <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target4">&nbsp;</div> when we were kids.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth12 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target1">tipping point</div></div>
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target4">from hand to mouth</div></div>
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target2">tail wags the dog</div></div>
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target3">rub salt in the wound</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a26" nexturl="#m10a26_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

@@ -1,0 +1,28 @@
+<template name="ukQuiz_scores">
+	<section id="ukQuiz_scores" class="hidden">
+		<div class="content UKquiz-end">
+			<h1>Results</h1>
+			
+			<div class="results-wrapper">
+				<div class="results-container">
+					<div class="medal-container {{medal}}"><p>You scored</p> <span class="animated flipInY">{{percentage}}%</span></div>
+					<p>You got {{correct}}/26 questions right.</p>
+					{{#if goodScore}}
+						<p>Good effort. Want to get smarter?</p>
+						{{else}}
+					<p>Great score, well done! Want to get even smarter?</p>
+					{{/if}}
+					<div>						
+						<button class="join" href="/Register">Start learning today</button>
+						<Br><br>
+						<button class="fbShareButton button2 ddwidth15">Share your result on FB</button>
+					</div>
+				</div>
+				<div class="clear-float"></div>
+				<img src="/images/startend/act_end_all.png" class="visible-xs img-responsive center-block">
+			</div>
+			
+		</div>
+
+	</section>
+</template>

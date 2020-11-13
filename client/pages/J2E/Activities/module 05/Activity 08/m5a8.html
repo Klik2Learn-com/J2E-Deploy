@@ -1,0 +1,472 @@
+<template name="m5a8">
+	<article class="with-tools-sidebar m5a8">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Blackpool');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 8 - {{>m5a8Title}}</div>
+			</header>
+
+
+			<section id="m5a8">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a8Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m5a8Intro}}</h3>
+					{{> m5a8Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a8_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a8_1}} {{>m5a8_2}} {{>m5a8_3}} {{>m5a8_4}} {{>m5a8_5}} {{>m5a8_6}} {{>EndPage char="tu" act="m5a8" nextact="m5a9" place="Blackpool"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a8_1">
+	<section id="m5a8_1" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+
+			{{> rightwrong}} {{> welldone}}
+			<h3>Here are all the verbs from the article on flooding. See if you can sort them into Past and Present tenses.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="box2 ddtarget2  box2dd1 target" style="min-height: 160px; margin: 0 0 10px 0;" data-destinationid="target1">
+							<h4>Present tense</h4>
+
+						</div>
+					</div>
+
+					<div class="col-xs-6">
+						<div class="box2 ddtarget2  box2dd1 target" style="min-height: 160px; margin: 0 0 10px 0" data-destinationid="target2">
+							<h4>Past tense</h4>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1" style="margin-top: 20px;">
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">is</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">waded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">pounded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">sailed</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">reached</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">proved</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">remain</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">was covered</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were trying</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were flooded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">continues</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">is putting</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a8_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a8_2">
+	<section id="m5a8_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+
+			{{> rightwrong}} {{> welldone}}
+			<h3 class="text-center">Can you find the verbs in the Past Simple tense?
+				<span class="avoidwrap">Drag them to the box.</span>
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="box2 ddtarget2  box2dd1 target" style="min-height: 160px; padding-bottom: 5em; margin: 0 0 10px 0;" data-destinationid="target1">
+							<h4>Past simple</h4>
+						</div>
+						<br>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">waded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">pounded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">sailed</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were flooded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">proved</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">remain</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">was covered</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were trying</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">reached</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">continues</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is putting</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a8_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a8_3">
+	<section id="m5a8_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+
+			{{> rightwrong}} {{> welldone}}
+			<h3 class="text-center">Can you find the Passive Verbs?
+				<span class="avoidwrap">Drag them to the box.</span>
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="box2 ddtarget2  box2dd1 target" style="min-height: 160px; padding-bottom: 5em; margin: 0 0 10px 0;" data-destinationid="target1">
+							<h4>Passive verbs</h4>
+						</div>
+						<br>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">waded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">pounded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">sailed</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target1">were flooded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">proved</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">remain</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target1">was covered</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were trying</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">reached</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">continues</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is putting</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a8_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a8_4">
+	<section id="m5a8_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+
+			{{> rightwrong}} {{> welldone}}
+			<h3 class="text-center">Can you find the verbs in the Present Simple tense?
+				<span class="avoidwrap">Drag them to the box.</span>
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="box2 ddtarget2  box2dd1 target" style="min-height: 160px; padding-bottom: 5em; margin: 0 0 10px 0;" data-destinationid="target1">
+							<h4>Present Simple</h4>
+						</div>
+						<br>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">is</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">waded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">pounded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">sailed</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were flooded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">proved</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">remain</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">was covered</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were trying</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">reached</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">continues</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is putting</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a8_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a8_5">
+	<section id="m5a8_5" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+
+			{{> rightwrong}} {{> welldone}}
+			<h3 class="text-center">Can you find the verbs in the Present Continuous tense?
+				<span class="avoidwrap">Drag them to the box.</span>
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="box2 ddtarget2  box2dd1 target" style="min-height: 160px; padding-bottom: 5em; margin: 0 0 10px 0;" data-destinationid="target1">
+							<h4>Present Continuous</h4>
+						</div>
+						<br>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">waded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">pounded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">sailed</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were flooded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">proved</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">remain</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">was covered</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were trying</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">reached</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">continues</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target1">is putting</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a8_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a8_6">
+	<section id="m5a8_6" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+
+			{{> rightwrong}} {{> welldone}}
+			<h3 class="text-center">Can you find the verbs in the Past Continuous tense?
+				<span class="avoidwrap">Drag them to the box.</span>
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="box2 ddtarget2  box2dd1 target" style="min-height: 160px; padding-bottom: 5em; margin: 0 0 10px 0;" data-destinationid="target1">
+							<h4>Past Continuous</h4>
+						</div>
+						<br>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">waded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">pounded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">sailed</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">were flooded</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">proved</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">remain</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target2">was covered</div>
+								</div>
+								<div class="ddseat ddwidth6 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth6" draggable="false" data-destination="target1">were trying</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">reached</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">continues</div>
+								</div>
+								<div class="ddseat ddwidth6 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth6" draggable="false" data-destination="target2">is putting</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a8_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

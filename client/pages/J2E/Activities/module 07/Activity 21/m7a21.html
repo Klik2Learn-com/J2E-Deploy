@@ -1,0 +1,181 @@
+<template name="m7a21"> 
+<article class="with-tools-sidebar m7a21">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/ColwynBay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 21 - {{>m7a21Title}}</div>
+		</header>
+		<section id="m7a21">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a21Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m7a21Intro}}</h3>
+				{{> m7a21Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a21_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a21_1}}
+		{{>m7a21_scores}}
+		{{>m7a21_3}}
+		{{>m7a21_4}}
+		{{>EndPage char="elle" act="m7a21" nextact="m7a22" place="ColwynBay"}}
+	</div>
+</article>
+
+</template>
+<template name="m7a21_1"> 
+	<section id="m7a21_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Listen to these sentences and decide whether they express emotion or not. 
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-8 col-sm-offset-2 text-center">		
+					<div class=" parapaper">				
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module7/a21/sentence1.m4a"></button> <h5><span id="question_text">Sentence 1</span></h5>
+						</div>
+							<div class="row">
+								<div class="col-xs-6 col-xxs-12">
+									<div class="ph-w ph-5x4" style="max-width: 244px"><div class="ph"><img  src="images/emotion.png" alt="Expresses surprise or shock"></div></div>
+									<button id="true" class="button2 item-space ddwidth12">Expresses surprise or shock</button>
+								</div>
+								<div class="col-xs-6 col-xxs-12">
+									<div class="ph-w ph-5x4" style="max-width: 244px"><div class="ph"><img draggable="false" src="images/neutral.png" alt="Doesn't express emotion"></div></div>
+									<button id="false" class="button2 item-space ddwidth12">Doesn't express emotion</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m7a21RightScore" wrongSession="m7a21WrongScore"}}
+					</div>
+				</div>
+			</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a21" nexturl="#m7a21_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a21_3"> 
+	<section id="m7a21_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>These sentences express emotion</h1>
+      			<div class="container-fluid">
+				
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="ph-w ph-5x4" style="max-width: 244px"><div class="ph"><img draggable="false" src="images/emotion.png" alt="Expresses surprise or shock"></div></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 center">
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence2.m4a">Sentence 2</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence3.m4a">Sentence 3</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence7.m4a">Sentence 7</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence8.m4a">Sentence 8</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence9.m4a">Sentence 9</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence10.m4a">Sentence 10</button>
+								</div>
+							</div>					
+					</div>					
+		
+				
+			</div>
+		<footer> 
+			{{>footer_nav prevurl="m7a21_2" nexturl="#m7a21_4" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a21_4"> 
+	<section id="m7a21_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>These sentences don't express emotion</h1>
+      			<div class="container-fluid">
+				
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="ph-w ph-5x4" style="max-width: 244px"><div class="ph"><img draggable="false" src="images/neutral.png" alt="Doesn't express emotion"></div></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 center">
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence1.m4a">Sentence 1</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence4.m4a">Sentence 4</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence5.m4a">Sentence 5</button>
+									<button class="button1 button-icon audio item-space ddwidth11" data-audiosrc="/audio/module7/a21/sentence6.m4a">Sentence 6</button>
+								</div>
+							</div>					
+					</div>					
+		
+				
+			</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a21_3" nexturl="#m7a21_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a21_scores">	
+
+	<section id="m7a21_bad" class="hidden">
+
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m7a21RightScore" wrongSession="m7a21WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m7a21_1" id="m7a21restart" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+
+		<footer>
+			{{>footer_nav nexturl="#m7a21_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m7a21_good" class="hidden">
+
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m7a21RightScore" wrongSession="m7a21WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+
+		<footer>
+			{{>footer_nav nexturl="#m7a21_3" prev="hidden" next=""}}
+		</footer>
+		
+	</section>
+</template>

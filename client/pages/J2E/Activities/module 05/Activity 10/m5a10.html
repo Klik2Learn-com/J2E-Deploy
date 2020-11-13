@@ -1,0 +1,225 @@
+<template name="m5a10">
+<article class="with-tools-sidebar m5a10">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Bolton');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 10 - {{>m5a10Title}}</div>
+		</header>
+		
+		
+		<section id="m5a10">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a10Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m5a10Intro}}</h3>
+{{> m5a10Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a10_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a10_1}}
+		{{>m5a10_2}}
+		{{>m5a10_3}}
+		{{>m5a10_4}}
+
+		{{>EndPage char="k" act="m5a10" nextact="m5a11" place="Bolton"}}
+
+		
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="m5a10_articles_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m5a10_articles_modal">Articles</h4>
+				</div>
+				
+				<div class="content m5a10-modal">
+
+					{{>m5a10_articles}}
+					
+					
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m5a10_1">
+	<section id="m5a10_1" class="hidden">
+		<div class="content">
+			<h4>These short articles about TV personalities and programmes have examples of the <b class="avoidwrap">Present Perfect tense</b>.</h4>
+			<br>
+			{{>m5a10_articles}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a10" nexturl="#m5a10_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a10_articles">
+	<div class="parapaper paraextract">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<div class="ph-w ph-1x1 border2" style="width: 90px"><div class="ph"><img draggable="false" src="images/module5/a10/byrne.jpg" alt="Jason Byrne"></div></div>
+				</div>
+				<div class="col-sm-9">
+					Jason Byrne <b><u>has signed up</u></b> to present <i>Jason Byrne's Photoshop</i>, a TV comedy panel show pilot loosely based on the timeline of the guests' lives.
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="parapaper paraextract">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<div class="ph-w ph-1x1 border2" style="width: 90px"><div class="ph"><img draggable="false" src="images/module5/a10/merchant.jpg" alt="Stephen Merchant"></div></div>
+				</div>
+				<div class="col-sm-9">
+					American network HBO <b><u>has ordered</u></b> an 8-part series of <i>Hello Ladies</i>, a sitcom in which Stephen Merchant will play an awkward version of himself.
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="parapaper paraextract">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<div class="ph-w ph-1x1 border2" style="width: 90px"><div class="ph"><img draggable="false" src="images/module5/a10/davies.jpg" alt="Greg Davies"></div></div>
+				</div>
+				<div class="col-sm-9">
+					Channel 4 directors <b><u>have ordered</u></b> a series of <i>Man Down</i>, a sitcom written by and starring Greg Davies as a frustrated teacher.
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m5a10_2">
+	<section id="m5a10_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the <b>Present Perfect</b> tense in the space.</h3>
+			
+			<div class="parapaper paraextract">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<div class="ph-w ph-1x1 border2" style="width: 90px"><div class="ph"><img draggable="false" src="images/module5/a10/byrne.jpg" alt="Jason Byrne"></div></div>
+						</div>
+						<div class="col-sm-9 text-center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a10/byrne.m4a"></button>
+							<span id="entryanswer0"><form class="textentry textentry-big"><input type="text" name="userText" size="12" autocomplete="off"><input type="submit" value="OK"></form></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="parapaper paraextract">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<div class="ph-w ph-1x1 border2" style="width: 90px"><div class="ph"><img draggable="false" src="images/module5/a10/merchant.jpg" alt="Stephen Merchant"></div></div>
+						</div>
+						<div class="col-sm-9 text-center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a10/hbo.m4a"></button>
+							<span id="entryanswer1" class="textentry-disabled textentry-disabled-big"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="parapaper paraextract">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<div class="ph-w ph-1x1 border2" style="width: 90px"><div class="ph"><img draggable="false" src="images/module5/a10/davies.jpg" alt="Greg Davies"></div></div>
+						</div>
+						<div class="col-sm-9 text-center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a10/channel4.m4a"></button>
+							<span id="entryanswer2" class="textentry-disabled textentry-disabled-big"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a10_articles_modal" class="button2">Read the articles</button></div>
+			
+			{{>rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a10_1" nexturl="#m5a10_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+	{{/if}}
+		</section>
+			</template>
+
+<template name="m5a10_3">
+	<section id="m5a10_3" class="hidden">
+		<div class="content">
+			<h4 class="text-center">The Present Perfect is used here because they all connect:</h4>
+			<br>
+			<div class="container-fluid" style="max-width: 760px;">
+				<div class="row">
+					<div class="col-sm-5"><div class="caption text-left block">something that happened in the past</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive_big direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption text-left block">something that is still happening now or has not yet happened</div></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a10_2" nexturl="#m5a10_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a10_4">
+	<section id="m5a10_4" class="hidden">
+		<div class="content">
+			<h4 class="text-center">The Present Perfect is used here because they all connect the PAST to the PRESENT and the FUTURE:</h4>
+			<br>
+			<div class="container-fluid" style="max-width: 760px;">
+				<div class="row">
+					<div class="col-sm-2 text-center"><div class="ph-w ph-1x1 border2" style="width: 90px; margin-bottom: 10px;"><div class="ph"><img draggable="false" src="images/module5/a10/byrne.jpg" alt="Jason Byrne" style="margin-bottom: 10px;"></div></div></div>
+					<div class="col-sm-4"><div class="caption text-left block">Jason Byrne <b><u>has signed</u></b> up to present...</div></div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive_big direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption text-left block">'The TV comedy panel show is still being shown or will be shown in the future.'</div></div>
+				</div>
+				<div class="row" style="padding: 1em 0;"><hr class="visible-xs" style="margin: 2em 0;"></div>
+				<div class="row">
+					<div class="col-sm-2 text-center"><div class="ph-w ph-1x1 border2" style="width: 90px; margin-bottom: 10px;"><div class="ph"><img draggable="false" src="images/module5/a10/merchant.jpg" alt="Stephen Merchant" style="margin-bottom: 10px;"></div></div></div>
+					<div class="col-sm-4"><div class="caption text-left block">HBO <b><u>has ordered</u></b> a series...</div></div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive_big direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption text-left block">'The sitcom will be shown in the future.'</div></div>
+				</div>
+				<div class="row" style="padding: 1em 0;"><hr class="visible-xs" style="margin: 2em 0;"></div>
+				<div class="row">
+					<div class="col-sm-2 text-center"><div class="ph-w ph-1x1 border2" style="width: 90px; margin-bottom: 10px;"><div class="ph"><img draggable="false" src="images/module5/a10/davies.jpg" alt="Greg Davies" style="margin-bottom: 10px;"></div></div></div>
+					<div class="col-sm-4"><div class="caption text-left block">Channel 4 directors <b><u>have ordered</u></b> a series...</div></div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive_big direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption text-left block">'The sitcom will be shown in the future.'</div></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a10_3" nexturl="#m5a10_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

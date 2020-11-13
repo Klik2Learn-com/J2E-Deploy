@@ -1,0 +1,91 @@
+<template name="Stonehaven">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> m2l5}}<em class="titleactcount">{{>m2l5No}}</em></div>
+		</header>
+				
+	<!-- Place -->
+	<section id="Stonehaven" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m2_satnav}}
+					<!--Module-->
+					{{>mapButtons module="2" location="Stonehaven" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m2a20">
+								<div class="actbutton a20 {{completed '2' '20'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">20</div>
+								</div>
+							</a><br>
+							{{> m2a20Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m2a21">
+								<div class="actbutton a21 {{completed '2' '21'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">21</div>
+								</div>
+							</a><br>
+							{{> m2a21Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m2a22">
+								<div class="actbutton a22 {{completed '2' '22'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">22</div>
+								</div>
+							</a><br>
+							{{> m2a22Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m2a23">
+								<div class="actbutton a23 {{completed '2' '23'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">23</div>
+								</div>
+							</a><br>
+							{{> m2a23Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m2a24">
+								<div class="actbutton a24 {{completed '2' '24'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">24</div>
+								</div>
+							</a><br>
+							{{> m2a24Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="2" location="Stonehaven" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

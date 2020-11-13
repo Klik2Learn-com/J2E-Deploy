@@ -1,0 +1,148 @@
+<template name="MoreAboutNorthBerwick">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="NorthBerwick"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m3l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m3l5}}</div>
+		</header>
+
+		<section id="moreaboutNorthBerwick">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1 col-xs-6 bonus-image" style="background-image: url('images/bonus/NorthBerwick/NorthBerwick1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l5_A">
+						<p>Tantallon Castle</p>
+					</div>
+					<div class="col-sm-5 col-xs-6 bonus-image" style="background-image: url('images/bonus/NorthBerwick/NorthBerwick2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l5_B">
+						<p>The Museum Of Flight</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/NorthBerwick/NorthBerwick3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l5_C">
+						<p>Scottish Seabird Centre</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-7 col-sm-offset-1 col-xs-6 bonus-image" style="background-image: url('images/bonus/NorthBerwick/NorthBerwick5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l5_E">
+						<p>North Berwick Law Race</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/NorthBerwick/NorthBerwick4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l5_D">
+						<p>History of North Berwick</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l5_A">Tantallon Castle</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/NorthBerwick/NorthBerwick1.jpg" alt="Tantallon Castle" style="max-width: 250px;">
+					</figure>
+					<p>Tantallon was the last great castle to be built in Scotland and was involved in many battles over the years between the English armies and the Scots. It sits at the top of a cliff overlooking the North Sea and has some of the best architecture left in Scotland from the 14th century. Its dramatic setting on the coast has been used as the setting for many films.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.historicenvironment.scot/visit-a-place/places/tantallon-castle/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l5_B">The Museum Of Flight</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/NorthBerwick/NorthBerwick2.jpg" alt="The Museum Of Flight" style="max-width: 250px;">
+					</figure>
+					<p>Scotland’s national aviation museum is at an airfield close to North Berwick. It tells the story of aviation from the First World War to the present day and has one of Europe’s best collections of aircraft. One of the highlights is the chance to climb on board Scotland’s Concorde - the world’s first and only supersonic aircraft and the most advanced passenger plane of its time.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nms.ac.uk/national-museum-of-flight/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l5_C">Scottish Seabird Centre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/NorthBerwick/NorthBerwick3.jpg" alt="Scottish Seabird Centre" style="max-width: 250px;">
+					</figure>
+					<p>This five star visitor attraction has an interactive discovery centre where you can control close up cameras on the nearby seabird colonies. There is a wildlife theatre which shows short films about seabirds and other animals. The centre also has three tanks which display a great variety of small sea creatures and fish that the birds feed on. During the summer, the centre offers a range of boat trips.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.seabird.org/index.php" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l5_D">History of North Berwick</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/NorthBerwick/NorthBerwick4.jpg" alt="History of North Berwick" style="max-width: 250px;">
+					</figure>
+					<p>About twenty five miles north of Edinburgh lies the seaside town of North Berwick. In  the 19th century it was a fashionable holiday resort thanks to the beaches and two golf courses. Nowadays visitors can take a boat trip to the islands in the Forth estuary including the Bass Rock - one of the largest colonies of seabirds in Britain. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visionofbritain.org.uk/place/16373" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l5_E">North Berwick Law Race</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/NorthBerwick/NorthBerwick5.jpg" alt="North Berwick Law Race" style="max-width: 250px;">
+					</figure>
+					<p>This race takes place every year at the beginning of August and  is one of the most challenging hill races in Britain. It starts at North Berwick harbour and climbs over 200 feet to the top of the hill above the town. It attracts serious runners as well as local families. The record for the three mile circular route is 17 minutes 53 seconds. It has lasted for 17 years.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=vfxLUj1tCsU" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

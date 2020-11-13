@@ -1,0 +1,26 @@
+<template name="Yeti_d3_e1">
+	<section id="Yeti_d3_e1">
+		{{#if activeSection}}
+		<div class="journalbg">
+			<div class="content">
+				<div class="gameInfo text-center">
+				  There are three words missing words in this journal entry. For each one, write the missing word and {{>touch yes="tap" no="click"}} ‘OK’. If you get stuck, {{>touch yes="tap" no="click"}} ‘Skip’ to move onto the next one.
+				</div>
+				<div class="yetiText">					
+					Our expedition leader is worried <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="4"><input type="submit" value="OK"></form></span> the weather. It changed <span id="entryanswer1" class="blank"></span> the night. We could hear the wind howling. He needs to work out  the safest route to take <span id="entryanswer2" class="blank"></span> the ice fall. The ice blocks are massive and could kill you.
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-12 text-right">
+							<div id="skip" class="button1 buttonsmall">Skip</div>
+				  		</div>
+					</div>
+					<div class="text-center"><span class="incorrectbig hidden"><i class="fa fa-close"></i></span></div>
+				</div>	
+			</div>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+	
+	

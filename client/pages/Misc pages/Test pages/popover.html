@@ -1,0 +1,28 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="popover-test">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle" >
+				{{#if endPageSect}}
+					<a draggable="false" href="/DunveganCastle"><i class="titlereturn fa fa-arrow-left"></i></a>
+				{{/if}}
+				{{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 25 - {{>m1a25Title}}</div>
+			</header>
+					
+					
+			<section id="popover">
+				<div class="content">
+					<a draggable="false" href="#" title="Header" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Content">{{>touch yes="Tap" no="Click"}}</a>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Content">{{>touch yes="Tap" no="Click"}}</a>
+					<a draggable="false" href="#" title="Header" data-toggle="popover" data-trigger="manual" data-placement="left" data-content="Content">{{>touch yes="Tap" no="Click"}}</a>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="right" data-content="Content">{{>touch yes="Tap" no="Click"}}</a>
+				</div>
+			</section>
+
+		</div>
+	</article>
+
+</template>

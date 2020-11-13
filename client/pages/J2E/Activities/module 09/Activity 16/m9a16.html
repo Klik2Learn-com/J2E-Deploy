@@ -1,0 +1,222 @@
+<template name="m9a16"> 
+<article class="with-tools-sidebar m9a16">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Torquay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 16 - {{>m9a16Title}}</div>
+		</header>
+		<section id="m9a16">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a16Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a16Intro}}</h3>
+				{{> m9a16Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a16_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a16_1}}
+		{{>m9a16_2}}
+		{{>m9a16_3}}
+		{{>m9a16_4}}
+		{{>m9a16_5}}
+		{{>m9a16_6}}
+		{{>m9a16_7}}
+		{{>EndPage char="k" act="m9a16" nextact="m9a17" place="Torquay"}}
+	</div>
+</article>
+</template>
+<template name="m9a16_4"> 
+	<section id="m9a16_4" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Here's the difference between the <b>Present Perfect Continuous</b> and the <b>Present Perfect Simple</b></h4><br>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 center">
+							<h5>Present Perfect Simple</h5>
+							<div class="ph-w ph-16x10" style="max-width: 315px"><div class="ph"><img draggable="false" src="images/module9/a16/house1.jpg" alt="House"></div></div>
+							<br>
+							<div class="caption"><u>He's worked</u> on his house for the last three years.</div>
+							<h4>He's not still working on it because it's finished.</h4>
+						</div>
+						<div class="col-sm-6 center">
+							<h5>Present Perfect Continuous</h5>
+							<div class="ph-w ph-16x10" style="max-width: 315px"><div class="ph"><img draggable="false" src="images/module9/a16/house2.jpg" alt="A house being built"></div></div>
+							<br>
+							<div class="caption"><u>He's been working</u> on his house for the last three years.</div>
+							<h4>He's still working on it because it's not finished.</h4>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about the Present Perfect Continuous, the Present Perfect Simple and the Past Perfect Continuous under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a16_3" nexturl="#m9a16_5" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a16_7"> 
+	<section id="m9a16_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Fill in the spaces with the <b>Present Perfect Continuous</b> tense. Use the <b>verb</b> beside each sentence.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>I usually drive to work but this week I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span> by train. <span id="explain0">(travel)</span></li>
+					<li>He <span id="entryanswer1" class="textentry-disabled"></span> in London for a month. <span id="explain1">(live)</span></li>
+					<li>She has not even started the work,  she <span id="entryanswer2" class="textentry-disabled"></span> on Facebook for  two hours. <span id="explain2">(chat)</span></li>
+					<li>He <span id="entryanswer3" class="textentry-disabled"></span> too hard recently, he needs to take a break. <span id="explain3">(work)</span></li>
+					<li>She <span id="entryanswer4" class="textentry-disabled"></span> Mandarin since she went to University. <span id="explain4">(learn)</span></li>
+				</ol>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a16_6" nexturl="#m9a16_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a16_3"> 
+	<section id="m9a16_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">	
+			<h3>{{>touch yes="Tap" no="Click"}} on the verbs. If it's the <b>Present Perfect Continuous</b> it'll turn <span class="correctword">green</span>.</h3>
+
+			<div class="parapaper paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed2.jpg" alt="Person"></div></div></figure>
+				<p><span class="wrong">I’m 23 and have been in education all my life. I’ve just finished my degree but don’t think there’s much chance of finding a job. It's so frustrating when you realise you’ve spent three years doing a degree and no one wants it. They prefer experience.</span></p><br>
+
+				<p><span class="paraclick-word">I’ve been making</span><span class="wrong"> silver jewellery in my spare time while </span><span class="paraclick-word">I’ve been looking</span><span class="wrong"> for a full time job but it’s not going well either. It’s just lowering my self esteem. </span><span class="paraclick-word">I’ve not even been getting replies</span><span class="wrong"> from some of the places I have applied to. It’s even worse going into the job centre. </span><span class="paraclick-word">People have been wondering</span><span class="wrong"> what I’m doing there because I've got a degree and am hard working.  I'm not lazy. I'm signing on to find work.</span></p>
+			</div>
+			<div class="counterleft">Verbs left to find: <u id="startClock1">4</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+			{{>gg_button gg_text="Click here to find out more about the Present Perfect Continuous, the Present Perfect Simple and the Past Perfect Continuous under Verbs in the Grammar Guide"}}
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a16_2" nexturl="#m9a16_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a16_1"> 
+	<section id="m9a16_1" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">The people in Activity 14 used the <b>Present Perfect Continuous</b> to talk about their experiences of being unemployed.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed1.jpg" alt="Person"></div></div>
+							<p>&nbsp;</p>
+						</div>
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed2.jpg" alt="Person"></div></div>
+							<p>&nbsp;</p>
+						</div>
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed3.jpg" alt="Person"></div></div>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about the Present Perfect Continuous, the Present Perfect Simple and the Past Perfect Continuous under Verbs in the Grammar Guide"}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a16" nexturl="#m9a16_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a16_6"> 
+	<section id="m9a16_6" class="hidden"> {{> popovers}}
+		{{#if activeSection}} 
+				<div class="content">  
+      			<h1>Present Perfect Continuous</h1>
+      			<h4 class="center">The <b>Present Perfect</b> and <b>Present Perfect Continuous</b> describe a situation where the <b>past</b> is connected to the present.</h4>
+      			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words to see how to form the tense.</h3>
+
+      			<div class="container-fluid">
+					<div class="row">
+					{{>popovers}}
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="parapaper paraextract text-center"><h4><a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Subject">He</a><a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Present Perfect of ‘to be’">'s been</a> <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Present Participle">working</a> for an oil company for the last two years.</h4></div>
+							<div class="ph-w ph-3x1 border1" style="width: 595px"><div class="ph"><img draggable="false" src="images/module9/a16/oil.png" alt="Man working on an oil well"></div></div>
+							<h4 class="center">He's still working for the oil company now.</h4>
+						</div>
+					</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a16_5" nexturl="#m9a16_7" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a16_2"> 
+	<section id="m9a16_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">	
+			<h3>{{>touch yes="Tap" no="Click"}} on the verbs. If it's the <b>Present Perfect Continuous</b> it'll turn <span class="correctword">green</span>. If it's the <b>Past Perfect Continuous</b> it'll turn <span class="grammar">blue</span>.</h3>
+
+			<div class="parapaper paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a14/unemployed3.jpg" alt="Person"></div></div></figure><p><span class="wrong">I live in an area that has a high unemployment rate. I was laid off at the end of the summer, just before autumn. </span><span class="paraclick-word">I’ve been having</span><span class="wrong"> a very hard time finding work because jobs are hard to come by in my town in the winter. </span><span class="paraclick-word">I’ve been looking</span><span class="wrong"> for work outside my city.</span></p>
+				<br><br>
+
+				<p><span class="wrong">Before I lost my job, </span><span class="paraclick-word2">I’d been working</span><span class="wrong"> for the same company for over 4 years. I was laid off because of the recession. I have a ton of skills, went back to school last year, I have a great work ethic, and would much rather be working. </span><span class="paraclick-word">I’ve been improving</span><span class="wrong"> my computer skills so I hope that helps. I’ve never had trouble finding jobs before. The experience of losing steady employment is tough, especially during a low in the job market. I’m sending out letters daily, in the hope that I’ll find employment soon.</span></p>
+			</div>
+			<div class="counterleft">Verbs left to find: <u id="startClock1">4</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+			{{>gg_button gg_text="Click here to find out more about the Present Perfect Continuous, the Present Perfect Simple and the Past Perfect Continuous under Verbs in the Grammar Guide"}}
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a16_1" nexturl="#m9a16_3" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="k"}} 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a16_5"> 
+	<section id="m9a16_5" class="hidden"> {{> popovers}}
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h1>Present Perfect</h1>
+      			<h4 class="center">The <b>Present Perfect</b> and <b>Present Perfect Continuous</b> describe a situation where the <b>past</b> is connected to the present.</h4>
+      			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words to see how to form the tense.</h3>
+
+      			<div class="container-fluid">
+					<div class="row">
+					{{>popovers}}
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="parapaper paraextract text-center"><h4><a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Subject">He</a> <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Short for 'has'">'s</a> <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past Particple">worked</a> for several big oil companies.</h4></div>
+							<div class="ph-w ph-3x1 border1" style="width: 595px"><div class="ph"><img draggable="false" src="images/module9/a16/cv.png" alt="CV"></div></div>
+							<h4 class="center">The experience is still relevant.</h4>
+						</div>
+					</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a16_4" nexturl="#m9a16_6" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

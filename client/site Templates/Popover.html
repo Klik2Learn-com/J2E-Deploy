@@ -1,0 +1,13 @@
+<template name="popovers"> </template>
+
+<template name="popover">
+	<span class="link" title="{{title}}" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="{{placement}}" data-content="{{content}}">{{word}}</span>
+</template>
+
+<template name="popoverImageLink">
+	<span class="link" title="{{title}}" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="{{placement}}" data-html="true" data-content="{{content}}"><img draggable="false" src="{{src}}" style="width: {{width}}; height: {{height}};" alt="{{alt}}" /></span>
+</template>
+
+<template name="popoverImageContent">
+	<span class="link" title="{{title}}" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="{{placement}}" data-html="true" data-content="<img draggable='false' src='{{src}}' style='width: {{width}}; height: {{height}}; display: block; margin: 2px auto;' /> {{content}}">{{word}}</span>
+</template>

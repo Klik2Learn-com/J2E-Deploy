@@ -1,0 +1,134 @@
+.pagination {
+	margin: 0;
+}
+
+.popover {
+  color: #fff;
+  background-color: #42B677;
+  border-color: #42B677;
+}
+.popover-title {
+  color: #fff !important;
+  background-color: #42B677;
+  border-bottom: none;
+  /* font set in templates.css */
+  font-weight: bold;
+  font-size: medium;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 0;
+}
+.popover.right>.arrow:after {
+  border-right-color: #42B677;
+}
+.popover.left>.arrow:after {
+  border-left-color: #42B677;
+}
+.popover.top>.arrow:after {
+  border-top-color: #42B677;
+}
+.popover.bottom>.arrow:after {
+  border-bottom-color: #42B677;
+}
+.popover-content {
+  background-color: #42B677;
+}
+
+.popover-content>.grammar {
+  color: #86C1FF;
+}
+
+[role=button]:focus {
+    outline: none;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.dropdown-menu {
+	border: 2px solid #42B677;
+	border-radius: 6px;
+}
+
+.dropdown-menu-scroll {
+	overflow-y: scroll;
+	max-height: 19.5em;
+}
+
+.dropdown-header {
+	font-weight: bold;
+	color: #42B677;
+}
+
+.acttitle .dropdown-menu {
+	border-color: #425bda;
+}
+
+.acttitle .dropdown-menu > li > a {
+	color: #333;
+}
+
+.acttitle .dropdown-header {
+	color: #425bda;
+}
+
+.btn-2 {
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+
+.dropdown-menu-center {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+.dropdown-menu-center li {
+  text-align: left;
+}
+
+.dropdown-menu .audio-icon {
+	width: 30px;
+	height: auto;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.container-fluid-no-gutter {
+	padding: 0;
+}
+
+.container-fluid-no-gutter .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-fluid-no-gutter .row [class*='col-']:not(:first-child),
+.container-fluid-no-gutter .row [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}

@@ -1,0 +1,52 @@
+<template name="admin">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div>
+			{{#if isAdmin}}
+			<div class="acttitle-title">Admin Panel</div>
+			{{else}}
+			{{#if isMod}}
+			<div class="acttitle-title">Moderator Panel</div>
+			{{else}}
+			{{#if isTutor}}
+			<div class="acttitle-title">Tutor Panel</div>
+			{{else}}
+			{{#if isStudent}}
+			<div class="acttitle-title">Student Panel</div>
+			{{/if}}
+			{{/if}}
+			{{/if}}
+			{{/if}}
+		</header>
+		<section>
+			<div class="content-user text-center">
+			{{#if isAdmin}}
+			<h1>Admin Tasks</h1>
+			{{else}}
+			{{#if isMod}}
+			<h1>Moderator tools</h1>
+			{{else}}
+			{{#if isTutor}}
+			<h1>Tutor tools</h1>
+			{{else}}
+			{{#if isStudent}}
+			<h1>Student Tasks</h1>
+			{{/if}}
+			{{/if}}
+			{{/if}}
+			{{/if}}
+
+				<ul class="admin-panel-home">
+					{{>adminNavItems}}
+				</ul>
+
+			</div>
+		</section>
+	</div>
+</article>
+
+</template>

@@ -1,0 +1,28 @@
+#srchdict {
+    padding-top: 5px;
+}
+
+.entry {
+    padding: 10px;
+}
+h1.hwd {
+margin-top: 5px;
+}
+
+h1.hw {
+    margin-bottom: 10px;
+}
+
+div#response {
+    margin-top: -20px;
+}
+#dictionary_table > article > footer {
+    padding-top: 10px;
+}
+.borderless{
+	border:none;
+}
+
+#btnsearchdictionary {
+	margin: 10px;
+}

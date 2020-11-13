@@ -1,0 +1,118 @@
+<template name="m4a28">
+	<article class="with-tools-sidebar m4a28">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Glasgow');"><i class="titlereturn fa fa-arrow-left"></i></a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 28 - {{>m4a28Title}}</div>
+			</header>
+
+
+			<section id="m4a28">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a28Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m4a28Intro}}</h3>
+					{{> m4a28Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a28_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a28_1}} {{>m4a28_2}} {{>m4a28_3}} {{>m4a28_4}} {{>EndPage char="k" act="m4a28" nextact="m4a29" place="Glasgow"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a28_1">
+	<section id="m4a28_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod4_idioms_GH}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#idiomsSG" nexturl="#m4a28_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a28_2">
+	<section id="m4a28_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod4_idioms}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a28_1" nexturl="#m4a28_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a28_3">
+	<section id="m4a28_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Idioms</h1>
+			<h3 class="center">Drag the right idiom into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>He’s having a couple of days off work – he’s been feeling
+						<div class="ddseatedtarget ddwidth11 dd1line" data-destinationid="target1">&nbsp;</div> recently.</li>
+					<li> Everyone hopes they can
+						<div class="ddseatedtarget ddwidth11 dd1line" data-destinationid="target2">&nbsp;</div> a deal and call off the strike.</li>
+					<li>You should be
+						<div class="ddseatedtarget ddwidth11 dd1line" data-destinationid="target3">&nbsp;</div> after climbing those stairs every day.</li>
+					<li>He’d make a good salesman – he’s got the
+						<div class="ddseatedtarget ddwidth11 dd1line" data-destinationid="target4">&nbsp;</div>.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target3">as fit as a fiddle</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">gift of the gab</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">under the weather</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">hammer out</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a28_3" nexturl="#m4a28_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a28_4">
+	<section id="m4a28_4" class="hidden">
+		<div class="content">
+			{{> K_saved module="4"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a28_3" nexturl="#m4a28_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>

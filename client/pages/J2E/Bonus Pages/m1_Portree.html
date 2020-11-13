@@ -1,0 +1,147 @@
+<template name="MoreAboutPortree">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Portree"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m1l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m1l5}}</div>
+		</header>
+
+		<section id="moreaboutPortree">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Portree/Portree1.jpg'); background-position: left center;" data-toggle="modal" data-target="#bonus_modal_m1l5_A">
+						<p>Scotland's Basking Sharks</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Portree/Portree2.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l5_B">
+						<p>Seaweed and Shell Fish</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Portree/Portree3.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l5_C">
+						<p>The Quiraing</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-6 bonus-image" style="background-image: url('images/bonus/Portree/Portree4.jpg'); background-position: right top;" data-toggle="modal" data-target="#bonus_modal_m1l5_D">
+						<p>The Curious Seadog</p>
+					</div>
+					<div class="col-sm-7 col-xs-6 bonus-image" style="background-image: url('images/bonus/Portree/Portree5.jpg'); background-position: left bottom" data-toggle="modal" data-target="#bonus_modal_m1l5_E">
+						<p>White-Tailed Eagle</p>
+					</div>				
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l5_A">Scotland's Basking Sharks</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Portree/Portree1.jpg" alt="Shark" style="max-width: 250px;">
+					</figure>
+					<p>Basking sharks - the second largest fish alive today - can be found in the sea around Scotland in the summer. They have no teeth, and feed on plankton. They swim near the surface of the water, and there are tours available to see these sharks up close.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=aX6xEjOMxys" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l5_B">Seaweed and Shell Fish</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Portree/Portree2.jpg" alt="Crab" style="max-width: 250px;">
+					</figure>
+					<p>The coasts of Scotland offer an abundance of food, from seaweed to shellfish.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.theseafoodtrail.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l5_C">The Quiraing</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Portree/Portree3.jpg" alt="The Quiraing" style="max-width: 250px;">
+					</figure>
+					<p>The Quiraing is a landslip north of Portree, Scotland. The area was formed by a great series of landslips and the Quiraing is the only part of the slip still moving. The road at its base requires repairs each year.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.theskyeguide.com/walking-mainmenu-32/13-moderate-walks/128-quiraing" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l5_D">The Curious Seadog</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Portree/Portree4.jpg" alt="Seal" style="max-width: 250px;">
+					</figure>
+					<p>Seadogs - also known as harbour seals or common seals - are found in coastal waters of the northern Atlantic and Pacific oceans, the Baltic and North Seas - so they can be found on the Scottish coasts.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://wild-scotland.org.uk/species/63/common-seal/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l5_E">White-Tailed Eagle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Portree/Portree5.jpg" alt="Eagle" style="max-width: 250px;">
+					</figure>
+					<p>The white-tailed eagle is the largest bird of prey in the UK. Due to illegal killing it became extinct in the UK during the early 20th century but it has since been reintroduced. Portree is one of the places in Scotland where you might be able to spot one.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.rspb.org.uk/discoverandenjoynature/discoverandlearn/birdguide/name/w/whitetailedeagle/index.aspx" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

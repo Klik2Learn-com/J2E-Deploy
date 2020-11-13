@@ -1,0 +1,666 @@
+<template name="m4a1">
+	<article class="with-tools-sidebar m4a1">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/FortWilliam');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 1 - {{>m4a1Title}}</div>
+			</header>
+
+
+			<section id="m4a1">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a1Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m4a1Intro}}</h3>
+					{{> m4a1Time}}
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a1_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a1_1}} {{>m4a1_2}} {{>m4a1_3}} {{>m4a1_4}} {{>m4a1_5}} {{>m4a1_6}} {{>m4a1_7}} {{>m4a1_8}} {{>m4a1_9}} {{>m4a1_10}}
+			{{>m4a1_11}} {{>m4a1_12}} {{>m4a1_13}} {{>m4a1_14}} {{>m4a1_15}} {{>m4a1_16}} {{>m4a1_17}} {{>m4a1_18}} {{>m4a1_19}} {{>EndPage
+			char="k" act="m4a1" nextact="m4a2" place="FortWilliam"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a1_input">
+	<input type="text" autofocus="autofocus" name="userText" autocomplete="off">
+</template>
+
+<template name="m4a1_input_initial">
+	<input type="text" name="userText" placeholder="How much free time do you have?" value="How much free time do you have?"
+	 autocomplete="off">
+</template>
+
+
+<template name="m4a1_19">
+	<section id="m4a1_19" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q16="selected"}}{{> rightwrong}}{{> welldone}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">16</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_end" prevurl="#m4a1_18" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_1">
+	<section id="m4a1_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag the words to the spaces.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-sm-5 text-center">
+						<figure>
+							<div class="ph-w ph-3x2 shadow" style="max-width: 319px;">
+								<div class="ph">
+									<img draggable="false" src="images/module4/couch.png" alt="Man watching TV">
+								</div>
+							</div>
+							<br>&nbsp;</figure>
+					</div>
+
+					<div class="col-sm-7">
+						<div style="height: 2em;" class="hidden-xs"></div>
+						<div class="parapaper parapaperdd1 fold text-center">
+							{{> rightwrong}}
+							<div class="inline-block text-left">
+								How many hours
+								<div class="ddseatedtarget ddwidth5 dd1line" data-destinationid="target1">&nbsp;</div>
+								<div class="ddseatedtarget ddwidth5 dd1line" data-destinationid="target2">&nbsp;</div>
+								<div class="ddseatedtarget ddwidth5 dd1line" data-destinationid="target3">&nbsp;</div>
+								watching TV?
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth5 dd1line">
+									<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target3">spend</div>
+								</div>
+								<div class="ddseat ddwidth5 dd1line">
+									<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target2">you</div>
+								</div>
+								<div class="ddseat ddwidth5 dd1line">
+									<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">do</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a1" nexturl="#m4a1_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_8">
+	<section id="m4a1_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q5="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">5</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_9" prevurl="#m4a1_7" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_18">
+	<section id="m4a1_18" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q15="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">15</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_19" prevurl="#m4a1_17" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_10">
+	<section id="m4a1_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q7="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">7</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_11" prevurl="#m4a1_9" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_13">
+	<section id="m4a1_13" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q10="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">10</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_14" prevurl="#m4a1_12" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_2">
+	<section id="m4a1_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag the words to the spaces.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 text-center">
+						<figure>
+							<div class="ph-w ph-3x2 shadow" style="max-width: 319px;">
+								<div class="ph">
+									<img draggable="false" src="images/module4/runner.png" class="shadow" alt="Woman running">
+								</div>
+							</div>
+							<br>&nbsp;</figure>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="hidden-xs" style="height: 2em;"></div>
+						<div class="parapaper parapaperdd1 fold text-center">
+							{{> rightwrong}}{{>welldone}}
+							<div class="inline-block text-left">
+								How much exercise
+								<div class="ddseatedtarget ddwidth5 dd1line" data-destinationid="target1">&nbsp;</div>
+								<div class="ddseatedtarget ddwidth5 dd1line" data-destinationid="target2">&nbsp;</div>
+								<div class="ddseatedtarget ddwidth5 dd1line" data-destinationid="target3">&nbsp;</div>
+								?
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+
+					<div class="col-sm-12">
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth5 dd1line">
+									<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">do</div>
+								</div>
+								<div class="ddseat ddwidth5 dd1line">
+									<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target3">get</div>
+								</div>
+								<div class="ddseat ddwidth5 dd1line">
+									<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target2">you</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a1_1" nexturl="#m4a1_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_11">
+	<section id="m4a1_11" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q8="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">8</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_12" prevurl="#m4a1_10" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_4">
+	<section id="m4a1_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q1="selected"}}{{>wrongonly}}
+			<div class="text-center">
+				<h3>The first one has been done for you:</h3>
+				<div class="number">1</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input_initial}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_5" prevurl="#m4a1_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_6">
+	<section id="m4a1_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q3="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">3</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_7" prevurl="#m4a1_5" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_12">
+	<section id="m4a1_12" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q9="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">9</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_13" prevurl="#m4a1_11" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_7">
+	<section id="m4a1_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q4="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">4</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_8" prevurl="#m4a1_6" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1Intro1">
+	<h3>Use Box 1 and Box 2 to help you write the 16 questions. Don’t forget to use a capital letter for the first word and a question
+		mark (?) at the end.</h3>
+	<div class="container-fluid-no-gutter">
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-1 col-xs-5">
+				<table class="table2">
+					<tr>
+						<th>Box 1</th>
+					</tr>
+					<tr>
+						<td style="padding: 0.75em; font-weight: bold;">How much...</td>
+					</tr>
+					<tr>
+						<td style="padding: 0.75em; font-weight: bold;">How many...</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-sm-6 col-xs-7">
+				<table class="table2">
+					<tr>
+						<th>Box 2</th>
+					</tr>
+					<tr>
+						<td>
+							<ol>
+								<li class="m4a1-li{{q1}}">free time / have</li>
+								<li class="m4a1-li{{q2}}">chocolate / eat</li>
+								<li class="m4a1-li{{q3}}">music / download</li>
+								<li class="m4a1-li{{q4}}">water / drink a day</li>
+								<li class="m4a1-li{{q5}}">English speakers / know</li>
+								<li class="m4a1-li{{q6}}">exercise / do</li>
+								<li class="m4a1-li{{q7}}">novels / read a year</li>
+								<li class="m4a1-li{{q8}}">close friends / have</li>
+							</ol>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m4a1Intro2">
+<h3>Use Box 1 and Box 2 to help you write the 16 questions. Don’t forget to use a capital letter for the first word and a question mark (?) at the end.</h3>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-1 col-xs-5">
+			<table class="table2">
+				<tr><th>Box 1</th></tr>
+				<tr><td style="padding: 0.75em; font-weight: bold;">How much...</td></tr>
+				<tr><td style="padding: 0.75em; font-weight: bold;">How many...</td></tr>
+			</table>
+		</div>
+		<div class="col-sm-6 col-xs-7">
+			<table class="table2">
+				<tr><th>Box 2</th></tr>
+				<tr><td>
+					<ol start="9">
+						<li class="m4a1-li{{q9}}">Hours a week / spend studying</li>
+						<li class="m4a1-li{{q10}}">Pairs of shoes / have</li>
+						<li class="m4a1-li{{q11}}">Brothers and sisters / have</li>
+						<li class="m4a1-li{{q12}}">Fast food / eat</li>
+						<li class="m4a1-li{{q13}}">Time / spend on the Internet</li>
+						<li class="m4a1-li{{q14}}">Hours / spend watching TV</li>
+						<li class="m4a1-li{{q15}}">Coffees / drink a day</li>
+						<li class="m4a1-li{{q16}}">Sleep / get</li>
+					</ol>
+				</td></tr>
+			</table>
+		</div></div>
+	</div>
+</template>
+
+<template name="m4a1_3">
+	<section id="m4a1_3" class="hidden">
+		<div class="content">
+			<h2 class="text-center">You can make 16 questions from these phrases:</h2>
+			<div class="text-center">
+				<div class="caption cappad item-space">How much...</div>
+				<div class="caption cappad item-space">How many...</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_4" prevurl="#m4a1_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a1_16">
+	<section id="m4a1_16" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q13="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">13</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_17" prevurl="#m4a1_15" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_17">
+	<section id="m4a1_17" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q14="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">14</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_18" prevurl="#m4a1_16" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_5">
+	<section id="m4a1_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q2="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">2</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_6" prevurl="#m4a1_4" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_9">
+	<section id="m4a1_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro1 q6="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">6</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_10" prevurl="#m4a1_8" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_15">
+	<section id="m4a1_15" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q12="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">12</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_16" prevurl="#m4a1_14" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a1_14">
+	<section id="m4a1_14" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{>m4a1Intro2 q11="selected"}}{{> rightwrong}}
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<div class="number">11</div>
+				<div class="text-center">
+					<form id="0" class="textentry text-center">
+						{{>m4a1_input}}
+						<br>
+						<input type="submit" value="OK">
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a1_15" prevurl="#m4a1_13" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>

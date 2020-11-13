@@ -1,0 +1,39 @@
+<template name="A1r">
+	<section id="A1r">
+	{{#if activeSection}}
+			<div class="content">
+			<h3 class="center">Read the text and answer each question with up to four words.</h3>
+				<div class="parapaper paraextract article-text noselect">
+					<p>
+						&emsp;After 1870, Italians began to arrive in Scotland. They came from poor parts of Italy. Most of them sold ice cream in the streets of Glasgow and the other cities. Ice cream was new to Scotland and it was very popular. They worked many hours every day and didn't make much money, but some of them opened cafes. Later, their children and grandchildren opened Italian restaurants. Some Scottish Italians today still work in the food and drink business, but most have other jobs. Many have a holiday home in Italy and they see Scotland as their home.
+					</p>
+				</div>
+				<br>
+				<hr>
+				<h3 class="center"> Type your answers in the boxes. Look back at the text before you answer.</h3>
+				<div class="parapaper linespace paraextract parasegment para-ol-space fold">
+					<ol class="olcircle">
+						<li><b><span data-questionFor="answer1">When did the Italians begin to arrive in Scotland?</span></b><br>
+						<form class="textentry"><input id="answer1" type="text" name="userText" data-function="answerBox" size="9" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer2">What work did most of them do?</span></b><br>
+						They <form class="textentry"><input id="answer2" type="text" name="userText" data-function="answerBox" size="14" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer3">What did some do when they made money?</span></b><br>
+						They <form class="textentry"><input id="answer3" type="text" name="userText" data-function="answerBox" size="12" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer4">What did their children and grandchildren do?</span></b><br>
+						They <form class="textentry"><input id="answer4" type="text" name="userText" data-function="answerBox" size="26" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer5">Do all Scottish Italians still work in the food and drink business?</span></b><br>
+						<form class="textentry"><input id="answer5" type="text" name="userText" data-function="answerBox" size="2" autocomplete="off"></form></li>
+					</ol>
+				</div>
+				<div class="assess-finish">
+					<span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+				</div>
+				{{>finishBtn}}
+			</div>
+	{{/if}}
+	</section>
+</template>

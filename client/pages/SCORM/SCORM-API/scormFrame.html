@@ -1,0 +1,24 @@
+<template name="scormFrame">
+    <div style="font-size: 20pt; font-weight: bolder;">
+            <button id="handshakeBtn" value="Handshake">Handshake</button>
+            <br>
+            <label style="color: white; font-size: 16pt;">First Name: </label><input type="text" size="7" id="fName" />
+            <br>
+            <label style="color: white; font-size: 16pt;">Last Name: </label><input type="text" size="8" id="lName" />
+            <br>
+            <label style="color: white; font-size: 16pt;">User email address: </label><input type="email" size="12" id="userEmail" />
+            <br>
+            <label style="color: white; font-size: 16pt;">ScormId (unique string(just a number for testing) associated with this user): </label><br><input type="text" min="1" id="scormId"/>
+            <br>
+            <button id="loginBtn" value="Login">Login</button><button id="logoutBtn" value="Logout">Logout</button>
+    </div>
+    <div id="debugConsole" style="color: white; font-size: 16pt; position: absolute; top: 100; left: 0;" ></div>
+    <iframe height="400" src="/scormAPI" id="myFrame" style="position: absolute; top: 0; right: 0; border: solid 1px silver;width: 40%; margin: auto;"></iframe>
+    
+    <!-- TESTING CODE FOR SCORM IE STUFF -->
+     <!-- <span id="console" style="color: white; font-size: 1.3em"></span>
+     <button id="test-btn">Test JS</button>
+     <div id="test-1">Test Div with ID test-1</div>
+     <div id="test-2" data-test="1">Test div with ID test-2 and data-test="1"</div> -->
+</template>
+

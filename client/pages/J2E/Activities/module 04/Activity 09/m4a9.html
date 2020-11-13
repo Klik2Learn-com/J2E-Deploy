@@ -1,0 +1,929 @@
+<template name="m4a9">
+	<article class="with-tools-sidebar m4a9">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/GlenCoe');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 9 - {{>m4a9Title}}</div>
+			</header>
+
+
+			<section id="m4a9">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a9Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m4a9Intro}}</h3>
+					{{> m4a9Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a9_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a9_1}} {{>m4a9_2}} {{>m4a9_3}} {{>m4a9_4}} {{>m4a9_5}} {{>m4a9_6}} {{>m4a9_7}} {{>m4a9_8}} {{>m4a9_9}} {{>m4a9_10}}
+			{{>m4a9_11}} {{>m4a9_12}} {{>m4a9_13}} {{>EndPage char="elle" act="m4a9" nextact="m4a10" place="GlenCoe"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a9_1">
+	<section id="m4a9_1" class="hidden">
+		<div class="content">
+			<h2>Here are four people who work in the health industry. Each of them uses special equipment.</h2>
+
+			<div class="snapshots">
+				<span class="avoidwrap">
+					<figure>
+						<div class="ph-w 5x4" style="max-width: 283px">
+							<img draggable="false" src="images/module4/a9/doctor.jpg" alt="Doctor">
+						</div>
+						<figcaption>Doctor</figcaption>
+					</figure>
+					<figure>
+						<div class="ph-w 5x4" style="max-width: 283px">
+							<img draggable="false" src="images/module4/a9/dentist.jpg" alt="Dentist">
+						</div>
+						<figcaption>Dentist</figcaption>
+					</figure>
+				</span>
+				<span class="avoidwrap">
+					<figure>
+						<div class="ph-w 5x4" style="max-width: 283px">
+							<img draggable="false" src="images/module4/a9/nurse.jpg" alt="Nurse">
+						</div>
+						<figcaption>Nurse</figcaption>
+					</figure>
+					<figure>
+						<div class="ph-w 5x4" style="max-width: 283px">
+							<img draggable="false" src="images/module4/a9/paramedic.jpg" alt="Paramedic">
+						</div>
+						<figcaption>Paramedic</figcaption>
+					</figure>
+				</span>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9" nexturl="#m4a9_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a9_10">
+	<section id="m4a9_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen again and write the word next to each picture.</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/nurse.jpg" alt="Nurse">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item7.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item7.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="10" autocomplete="off" autofocus>
+											<input type="submit" value="OK">
+										</form>
+									</span>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item3.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item3.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer1" class="textentry-disabled ddwidth10"></span>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item9.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item9.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer2" class="textentry-disabled ddwidth10"></span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_9" nexturl="#m4a9_11" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a9_11">
+	<section id="m4a9_11" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">
+				<span class="avoidwrap">{{>touch yes="Tap" no="Click"}} to hear what they need.</span>
+				<span class="avoidwrap">Then drag the picture of that item into the box.</span>
+			</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/paramedic.m4a"></button>
+									<img draggable="false" src="images/module4/a9/paramedic.jpg" alt="Paramedic">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="box2 ddtarget2 box2dd1 target" data-destinationid="target1">
+							<h4>Items</h4>
+						</div>
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item1.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item2.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item3.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item4.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item5.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+											<img draggable="false" src="images/module4/a9/item6.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item7.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item8.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item9.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_10" nexturl="#m4a9_12" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a9_12">
+	<section id="m4a9_12" class="hidden">
+		<div class="content">
+			<h3 class="text-center invisible">Listen again and write the word next to each picture.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/paramedic.jpg" alt="Paramedic">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item6.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item6.jpg" class="border2" alt="Stretcher" width="100" height="100">
+									</div>
+									<h5>stretcher</h5>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_11" nexturl="#m4a9_13" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a9_13">
+	<section id="m4a9_13" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen again and write the word next to each picture.</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/paramedic.jpg" alt="Paramedic">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item6.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item6.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="10" autocomplete="off" autofocus>
+											<input type="submit" value="OK">
+										</form>
+									</span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_12" nexturl="#m4a9_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a9_2">
+	<section id="m4a9_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">
+				<span class="avoidwrap">{{>touch yes="Tap" no="Click"}} to hear what they need.</span>
+				<span class="avoidwrap">Then drag the picture of that item into the box.</span>
+			</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/doctor.m4a"></button>
+									<img draggable="false" src="images/module4/a9/doctor.jpg" alt="Doctor">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="box2 ddtarget2 box2dd1 target" data-destinationid="target1">
+							<h4>Items</h4>
+						</div>
+
+						<!-- <div class="dd-fixed-source-container animated slideInUp"> -->
+						<div class="box1 box1dd1">
+
+							<span class="avoidwrap">
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+										<img draggable="false" src="images/module4/a9/item1.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+										<img draggable="false" src="images/module4/a9/item2.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+										<img draggable="false" src="images/module4/a9/item3.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+							</span>
+							<span class="avoidwrap">
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+										<img draggable="false" src="images/module4/a9/item4.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+										<img draggable="false" src="images/module4/a9/item5.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+										<img draggable="false" src="images/module4/a9/item6.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+							</span>
+							<span class="avoidwrap">
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+										<img draggable="false" src="images/module4/a9/item7.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+										<img draggable="false" src="images/module4/a9/item8.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+								<div class="ddseat">
+									<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+										<img draggable="false" src="images/module4/a9/item9.jpg" class="dd-img" alt="Item">
+									</div>
+								</div>
+							</span>
+						</div>
+						<!-- </div> -->
+						<!-- <div class="dd-fixed-fade animated slideInUp"></div> -->
+						<!-- <div class="dd-fixed-pad"></div> -->
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_1" nexturl="#m4a9_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a9_3">
+	<section id="m4a9_3" class="hidden">
+		<div class="content">
+			<h3 class="text-center invisible">Listen again and write the word next to each picture.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/doctor.jpg" alt="Doctor">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item8.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item8.jpg" class="border2" alt="Plaster" width="100" height="100">
+									</div>
+									<h5>plaster</h5>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item2.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item2.jpg" class="border2" alt="Stethoscope" width="100" height="100">
+									</div>
+									<h5>stethoscope</h5>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item5.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item5.jpg" class="border2" alt="Syringe" width="100" height="100">
+									</div>
+									<h5>syringe</h5>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_2" nexturl="#m4a9_4" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a9_4">
+	<section id="m4a9_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen again and write the word next to each picture.</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/doctor.jpg" alt="Doctor">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item8.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item8.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="10" autocomplete="off" autofocus>
+											<input type="submit" value="OK">
+										</form>
+									</span>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item5.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item5.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer1" class="textentry-disabled ddwidth10"></span>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item2.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item2.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer2" class="textentry-disabled ddwidth10"></span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_3" nexturl="#m4a9_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a9_5">
+	<section id="m4a9_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">
+				<span class="avoidwrap">{{>touch yes="Tap" no="Click"}} to hear what they need.</span>
+				<span class="avoidwrap">Then drag the picture of that item into the box.</span>
+			</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/dentist.m4a"></button>
+									<img draggable="false" src="images/module4/a9/dentist.jpg" alt="Dentist">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="box2 ddtarget2 box2dd1 target" data-destinationid="target1">
+							<h4>Items</h4>
+						</div>
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+											<img draggable="false" src="images/module4/a9/item1.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item2.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item3.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+											<img draggable="false" src="images/module4/a9/item4.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item5.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item6.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item7.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item8.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item9.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_4" nexturl="#m4a9_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a9_6">
+	<section id="m4a9_6" class="hidden">
+		<div class="content">
+			<h3 class="text-center invisible">Listen again and write the word next to each picture.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/dentist.jpg" alt="Dentist">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item1.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item1.jpg" class="border2" alt="Filling" width="100" height="100">
+									</div>
+									<h5>filling</h5>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item4.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item4.jpg" class="border2" alt="Drill" width="100" height="100">
+									</div>
+									<h5>drill</h5>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_5" nexturl="#m4a9_7" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a9_7">
+	<section id="m4a9_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen again and write the word next to each picture.</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/dentist.jpg" alt="Dentist">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item1.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item1.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="10" autocomplete="off" autofocus>
+											<input type="submit" value="OK">
+										</form>
+									</span>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item4.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item4.jpg" class="border2" alt="Item" width="100" height="100">
+									</div>
+									<span id="entryanswer1" class="textentry-disabled ddwidth10"></span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_6" nexturl="#m4a9_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a9_8">
+	<section id="m4a9_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">
+				<span class="avoidwrap">{{>touch yes="Tap" no="Click"}} to hear what they need.</span>
+				<span class="avoidwrap">Then drag the picture of that item into the box.</span>
+			</h3>
+			{{>rightwrong}}{{>welldone}}
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/nurse.m4a"></button>
+									<img draggable="false" src="images/module4/a9/nurse.jpg" alt="Nurse">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="box2 ddtarget2 box2dd1 target" data-destinationid="target1">
+							<h4>Items</h4>
+						</div>
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item1.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item2.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+											<img draggable="false" src="images/module4/a9/item3.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item4.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item5.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item6.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+								<span class="avoidwrap">
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+											<img draggable="false" src="images/module4/a9/item7.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target2">
+											<img draggable="false" src="images/module4/a9/item8.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+									<div class="ddseat">
+										<div class="dd-img-wrapper shadow" draggable="false" data-destination="target1">
+											<img draggable="false" src="images/module4/a9/item9.jpg" class="dd-img" alt="Item">
+										</div>
+									</div>
+								</span>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_7" nexturl="#m4a9_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a9_9">
+	<section id="m4a9_9" class="hidden">
+		<div class="content">
+			<h3 class="text-center invisible">Listen again and write the word next to each picture.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-5 col-sm-4 text-center">
+						<div class="m4a9-profession">
+							<div class="ph-w ph-4x5 shadow" style="max-width: 283px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/a9/nurse.jpg" alt="Nurse">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-sm-8">
+
+						<div class="parapaper paraextract">
+							<ul class="olblank">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item7.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item7.jpg" class="border2" alt="Sling" width="100" height="100">
+									</div>
+									<h5>sling</h5>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item3.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item3.jpg" class="border2" alt="Bandage" width="100" height="100">
+									</div>
+									<h5>bandage</h5>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a9/item9.m4a"></button>
+									<div class="ph-w">
+										<img draggable="false" src="images/module4/a9/item9.jpg" class="border2" alt="Drip" width="100" height="100">
+									</div>
+									<h5>drip</h5>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a9_8" nexturl="#m4a9_10" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

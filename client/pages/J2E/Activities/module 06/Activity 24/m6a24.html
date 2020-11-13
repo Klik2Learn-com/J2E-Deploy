@@ -1,0 +1,147 @@
+<template name="m6a24">
+	<article class="with-tools-sidebar m6a24">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/York');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 24 - {{>m6a24Title}}</div>
+			</header>
+			<section id="m6a24">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a24Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m6a24Intro}}</h3>
+					{{> m6a24Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a24_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a24_1}} {{>m6a24_2}} {{>m6a24_3}} {{>EndPage char="elle" act="m6a24" nextact="m6a25" place="York"}}
+		</div>
+	</article>
+
+</template>
+<template name="m6a24_1">
+	<section id="m6a24_1" class="hidden">
+		<div class="content">
+			<h1>Phrasal Verbs</h1>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 1 you looked at prepositions which follow the verb ‘
+								<b>to get</b>.’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 2 looked at different meanings when the preposition ‘
+								<b>on</b>’ is used with the verb ‘
+								<b>to go</b>.’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 3 you looked at five different prepositions you can use with the verb ‘
+								<b>to come</b>’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 4 you looked at different prepositions with the verb ‘
+								<b>to bring</b>’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 5 you looked at five different prepositions you can use with the verb ‘
+								<b>to give</b>’</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a24" nexturl="#m6a24_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a24_2">
+	<section id="m6a24_2" class="hidden">
+		<div class="content noselect">
+			<h3 class="center">Here are five different prepositions you can use with the verb 'to carry.' Drag the right preposition to the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+
+				<ol class="olcircle">
+					<li>Despite the mistake, she just carried
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> as if nothing had happened.</li>
+					<li>The company never carries
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> tests on animals.</li>
+					<li>She carried
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> the prize for the Young Musician of the Year.</li>
+					<li>The coach warned his team not to get carried
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> with their success in the second half.</li>
+					<li>His survival instinct carried him
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> the dangers of the journey.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">away</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">off</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">through</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">out</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">on</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a24_1" nexturl="#m6a24_3" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a24_3">
+	<section id="m6a24_3" class="hidden">
+		<div class="content">
+			{{> Tu_saved module="6"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a24_2" nexturl="#m6a24_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

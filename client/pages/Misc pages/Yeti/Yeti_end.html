@@ -1,0 +1,54 @@
+<!-- change template name to activity end -->
+<template name="Yeti_end">
+				<!-- Change id to represent module_activity_page, all end pages must be finished with end. (m1a1_end") -->
+	<section id="Yeti_end" class="hidden">
+		<div class="endslide">
+	<div class="speechend endspeech">You have<br>completed this<br>activity.</div>
+
+	<!-- Avatar kEnd, tuEnd, elleEnd -->
+	{{> elleEnd}}
+	
+	<div class="endsigncontainer">
+	<!--  Restart activity to be set to first slide of activity -->
+		<a draggable="false" href="#Yeti" class="pagination">
+			<div class="endsign endsign1">
+				<div class="endsign1a">
+				
+					<!-- Activity number -->
+					27
+					
+				</div>
+				<div class="endsign1b">
+				
+					<!-- Activity title -->
+					{{> YetiTitle}}
+					
+				</div>
+				<div class="endsign1c"></div>
+			</div>
+		</a>
+		<!-- Next activity number to go here, set as route not anchor -->
+		<a draggable="false" href="">
+			<div class="endsign endsign2">
+				
+				<!-- Should read "Next Activity" or "Continue to Module #" if it's a game activity -->
+				End of demo
+				
+				<div class="endsignspacer"></div>
+			</div>
+		</a>
+		
+		<!-- Set to return location, set up route link -->
+		<a draggable="false" href="DunveganCastle">
+			<div class="endsign endsign3">
+			
+				<!-- return button -->
+				Dunvegan Castle
+				
+			</div>
+		</a>
+
+	</div>
+</div>
+	</section>
+	</template>

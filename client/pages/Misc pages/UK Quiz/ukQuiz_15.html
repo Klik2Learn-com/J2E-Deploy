@@ -1,0 +1,53 @@
+<template name="ukQuiz_15">
+   <section id="ukQuiz_15" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1 class="center">UK Questions</h1>
+			<h3 class="center">
+				How many cups of tea are drunk each day in Britain?
+			</h3>
+				<div class="container-fluid">
+				<!-- {{>rightwrong}} {{>welldone}} -->
+					<!-- <div class="row">
+						<div class="col-sm-1 center">
+							<div class="numberBig">1</div>
+						</div>
+						<div class="col-sm-10 text-center">	
+							<div class="caption item-space">always</div> <div class="caption item-space">frequently</div> <div class="caption item-space">usually</div> <div class="caption item-space">sometimes</div> <div class="caption item-space">occasionally</div> <div class="caption item-space">seldom</div> <div class="caption item-space">never</div>
+						</div>
+						<div class="col-sm-1"></div>
+					</div> -->
+					
+			<!-- 	<br>
+						<hr>
+					<br> -->
+					<img src="../images/uk-quiz/tea.jpg"  width="50%" draggable="false" class="img-responsive border1 center-block">
+					<br>
+					<div class="row">
+						
+						<div class="col-sm-3 center">
+						<!-- <img src="/images/uk-quiz/Churchill.jpg" class="img-responsive center-block pointer" id="1"> -->
+							<button class="button2" id="1">220 million</button>
+						</div>											
+						<div class="col-sm-3 center">
+						<!-- <img src="/images/uk-quiz/Darwin.jpg" class="img-responsive center-block pointer" id="3"> -->
+							<button class="button2" id="2">165 million</button>
+						</div>
+						<div class="col-sm-3 center">
+						<!-- <img src="/images/uk-quiz/Henry.jpg" class="img-responsive center-block pointer" id="2"> -->
+							<button class="button2" id="3">153 million</button>
+						</div>	
+						<div class="col-sm-3 center">
+							<!-- <img src="/images/uk-quiz/Shakespeare.jpg" class="img-responsive center-block pointer" id="4"> -->
+								<button class="button2" id="4">124 million</button>
+						</div>
+					</div>
+					
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#ukQuiz_14" nexturl="#ukQuiz_16" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>

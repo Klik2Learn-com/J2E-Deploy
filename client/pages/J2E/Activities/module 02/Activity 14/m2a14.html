@@ -1,0 +1,297 @@
+<!-- Change template name to activity number m2a12, m1a2 etc -->
+<template name="m2a14">
+<article class="with-tools-sidebar m2a14">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Arbroath');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 14 - {{>m2a14Title}}</div>
+		</header>
+			
+		<section id="m2a14">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a14Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m2a14Intro}}</h3>
+{{> m2a14Time}} <!--{{> resumePopUp}}-->
+		</div>
+	  	<footer>
+			{{>footer_nav nexturl="#m2a14_1" prev="hidden" next="" next_text="Start"}}
+		</footer>
+		</section>
+		{{> m2a14_1}}
+		{{> m2a14_2}}
+		{{> m2a14_end}}
+	</div>
+</article>
+
+</template>
+	
+<template name="m2a14_1">
+	<section id="m2a14_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Type the plural in the box underneath the picture.</h3>
+			
+			{{>gg_button gg_text="Click here to find out more about Plurals in Nouns in the Grammar Guide"}}
+			<br>
+			
+			<div class="container-fluid2">
+			
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/tomato1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">tomato</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/tomato2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off"><input type="submit" value="OK"></form></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/leaf1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">leaf</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/leaf2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer1" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/house1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">house</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/house2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer2" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/church1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">church</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/church2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer3" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/baby1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">baby</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/baby2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer4" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+				
+				{{> rightwrong}}
+				{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a14_2" prevurl="#m2a14" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a14_2">
+	<section id="m2a14_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Type the plural in the box underneath the picture.</h3>
+			
+			{{>gg_button gg_text="Click here to find out more about Plurals in Nouns in the Grammar Guide"}}
+			<br>
+			
+			<div class="container-fluid2">
+			
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/half1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">half</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/half2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off"><input type="submit" value="OK"></form></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/penny1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">penny</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/penny2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer1" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/watch1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">watch</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/watch2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer2" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/knife1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">knife</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/knife2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer3" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 col-sm-offset-2 text-center">
+						<div class="ddpic shadow">
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/fish1.jpeg" width="147" height="116"></div>
+							</figure>
+							<figcaption class="m2a14correct">fish</figcaption>
+						</div>
+					</div>
+					<div class="col-xs-2 text-center" style="padding-top: 4em;">{{>arrow direction="right"}}</div>
+					<div class="col-sm-3 col-xs-5 text-center">
+						<div class="ddpic shadow">
+							
+							<figure>
+								<div class="ph-w"><img draggable="false" src="images/module2/a14/fish2.jpeg" width="147" height="116"></div>
+							</figure>
+							<span id="entryanswer4" class="textentry-disabled"></span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+				
+				{{> rightwrong}}
+				{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a14_end" prevurl="#m2a14_1" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a14_end">
+{{>EndPage char="tu" act="m2a14" nextact="m2a15" place="Arbroath"}}
+</template>

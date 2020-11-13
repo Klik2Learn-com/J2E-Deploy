@@ -1,0 +1,444 @@
+<template name="m9a18"> 
+<article class="with-tools-sidebar m9a18">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Torquay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>{{> activity}} 18 - {{> m9a18Title}}</div>
+		</header>
+		<section id="m9a18">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a18Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m9a18Intro}}</h3>
+				{{> m9a18Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a18_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a18_1}}
+		{{>m9a18_2}}
+		{{>m9a18_3}}
+		{{>m9a18_4}}
+		{{>m9a18_5}}
+		{{>m9a18_6}}
+		{{>EndPage char="elle" act="m9a18" nextact="m9a19" place="Torquay"}}
+	</div>
+</article>
+</template>
+<template name="m9a18_2"> 
+	<section id="m9a18_2" class="hidden"> 
+		<div class="content">  
+		<h4 class="center">Here are the top five jobs with other ten favourites children would like to have.</h4>
+		<p>&nbsp;</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">1</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Astronaut.jpg" draggable="false" alt="Astronaut"></div></div>
+						<div class="caption item-space">Astronaut</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">2</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Musician.jpg" draggable="false" alt="Musician"></div></div>
+						<div class="caption item-space">Musician</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">3</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Actors.jpg" draggable="false" alt="Actor"></div></div>
+						<div class="caption item-space">Actor</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">4</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Dancers.jpg" draggable="false" alt="Dancers"></div></div>
+						<div class="caption item-space">Dancer</div><p>&nbsp;</p>
+					</div>
+				<div class="row">
+				</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">5</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Teacher.jpg" draggable="false" alt="Teacher"></div></div>
+						<div class="caption item-space">Teacher</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">6</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Firefighters.jpg" draggable="false" alt="Fire fighters"></div></div>
+						<div class="caption item-space">Firefighter</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">7</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Policeman.jpg" draggable="false" alt="Policeman"></div></div>
+						<div class="caption item-space">Police Officer</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">8</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Writer.jpg" draggable="false" alt="Wrtier"></div></div>
+						<div class="caption item-space">Writer</div><p>&nbsp;</p>
+					</div>
+				<div class="row">
+				</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">9</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Detective.jpg" draggable="false" alt="Detective"></div></div>
+						<div class="caption item-space">Detective</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">10</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Athlete.jpg" draggable="false" alt="Athelete"></div></div>
+						<div class="caption item-space">Athlete</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">11</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Vet.jpg" draggable="false" alt="Vet"></div></div>
+						<div class="caption item-space">Vet</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">12</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Scientist.jpg" draggable="false" alt="Scientist"></div></div>
+						<div class="caption item-space">Scientist</div><p>&nbsp;</p>
+					</div>
+				<div class="row">
+				</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">13</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Pilot.jpg" draggable="false" alt="Pilot"></div></div>
+						<div class="caption item-space">Pilot</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">14</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Lawyer.jpg" draggable="false" alt="Lawyer"></div></div>
+						<div class="caption item-space">Lawyer</div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 center">
+						<div class="number">15</div><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Doctor.jpg" draggable="false" alt="Doctor"></div></div>
+						<div class="caption item-space">Doctor</div><p>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a18_1" nexturl="#m9a18_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a18_4"> 
+	<section id="m9a18_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the job name to the right description.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+					<ol class="olcircle">
+						<li>An expert in a science subject. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li> 
+						<li>Someone who has a career in music. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div></li> 
+						<li>A person qualified to practise medicine. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div></li> 
+						<li>A person trained to deal with fires. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div></li> 
+						<li>Someone who travels into space. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div></li> 
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">Scientist</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">Astronaut</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">Firefighter</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">Musician</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">Doctor</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a18_3" nexturl="#m9a18_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a18_6"> 
+	<section id="m9a18_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the job name to the right description.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle" style="counter-reset: start 10;">
+						<li>Someone who writes books for a living. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li> 
+						<li>Someone qualified to fly planes. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div></li> 
+						<li>A person qualified to practise law. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div></li> 
+						<li>A professional sports person. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div></li> 
+						<li>Someone whose job is to solve crimes. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div></li> 
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">Pilot</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">Lawyer</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">Writer</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">Athlete</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">Detective</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a18_5" nexturl="#m9a18_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a18_3"> 
+	<section id="m9a18_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">Now {{>touch yes="tap" no="click"}} on the job names to see descriptions about them.</h3>
+  			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="m9a18 flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Astronaut.jpg" draggable="false" alt="Astroanut"></div></div>
+									<h5>Astronaut</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone who travels into space.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Musician.jpg" draggable="false" alt="Musician"></div></div>
+									<h5>Musician</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone who has a career in music.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Actors.jpg" draggable="false" alt="Actors"></div></div>
+									<h5>Actor</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone who acts on stage or screen.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Dancers.jpg" draggable="false" alt="Dancers"></div></div>
+									<h5>Dancer</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">A person who has a career in dance.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Teacher.jpg" draggable="false" alt="Teacher"></div></div>
+									<h5>Teacher</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone who teaches -often in a school.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Firefighters.jpg" draggable="false" alt="Fire fighters"></div></div>
+									<h5>Firefighter</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">A person trained to deal with fires.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Policeman.jpg" draggable="false" alt="Policeman"></div></div>
+									<h5>Police Officer</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone who enforces the law.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Writer.jpg" draggable="false" alt="Writer"></div></div>
+									<h5>Writer</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone who writes books for a living.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Detective.jpg" draggable="false" alt="Detective"></div></div>
+									<h5>Detective</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone whose job is to solve crimes.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Athlete.jpg" draggable="false" alt="Athlete"></div></div>
+									<h5>Athlete</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">A professional sports person.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Vet.jpg" draggable="false" alt="Vet"></div></div>
+									<h5>Vet</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">A person qualified to treat animals.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Scientist.jpg" draggable="false" alt="Scientist"></div></div>
+									<h5>Scientist</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">An expert in a science subject.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content">
+									<div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Pilot.jpg" draggable="false" alt="Pilot"></div></div>
+									<h5>Pilot</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">Someone qualified to fly planes.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Lawyer.jpg" draggable="false" alt="Lawyer"></div></div>
+									<h5>Lawyer</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">A person qualified to practise law.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="m9a18 front-content"><div class="ph-w ph-3x2" style="max-width: 150px"><div class="ph"><img src="images/module9/a18/Doctor.jpg" draggable="false" alt="Doctor"></div></div>
+									<h5>Doctor</h5></div>
+							</div>
+							<div class="back noselect">
+								<div class="m9a18 back-content">A person qualified to practise medicine.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a18_2" nexturl="#m9a18_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a18_1"> 
+	<section id="m9a18_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Adults often ask children what they want to do when they grow up. See if you can guess the top five jobs children would like to have.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-4">
+						<div class="parapaper parapaperdd1 fold">
+						{{> rightwrong}}
+						{{> welldone}}
+							<ol class="olcircle">
+								<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">Teacher</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">Dancer</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">Astronaut</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">Musician</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">Actor</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a18" nexturl="#m9a18_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a18_5"> 
+	<section id="m9a18_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the job name to the right description.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+					<ol class="olcircle" style="counter-reset: start 5;">
+						<li>Someone who enforces the law. <div class="ddseatedtarget ddwidth10 dd1line" data-destinationid = "target1">&nbsp;</div></li> 
+						<li>Someone who teaches - often in a school. <div class="ddseatedtarget ddwidth10 dd1line" data-destinationid = "target2">&nbsp;</div></li> 
+						<li>A person qualified to treat animals. <div class="ddseatedtarget ddwidth10 dd1line" data-destinationid = "target3">&nbsp;</div></li> 
+						<li>Someone who acts on stage or screen. <div class="ddseatedtarget ddwidth10 dd1line" data-destinationid = "target4">&nbsp;</div></li> 
+						<li>A person who has a career in dance. <div class="ddseatedtarget ddwidth10 dd1line" data-destinationid = "target5">&nbsp;</div></li> 
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth10 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target2">Teacher</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target3">Vet</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target1">Police Officer</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target4">Actor</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target5">Dancer</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a18_4" nexturl="#m9a18_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

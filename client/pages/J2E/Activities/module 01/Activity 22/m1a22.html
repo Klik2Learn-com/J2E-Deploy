@@ -1,0 +1,150 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a22">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Portree');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 22 - {{>m1a22Title}}</div>
+		</header>
+				
+		<section id="m1a22">
+			<div class="content">
+			<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m1a22Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m1a22Intro}}</h3>
+{{> m1a22Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav nexturl="#m1a22_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{> m1a22_1}}
+		{{> m1a22_2}}
+		{{> m1a22_3}}
+		<!--{{> m1a22_end}}-->
+		{{>EndPage char="k" act="m1a22" nextact="m1a23" place="Inverness"}}
+	</div>
+</article>
+
+</template>
+<template name="m1a22_1">
+	<section id="m1a22_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3>Listen to the telephone conversation of a customer making a complaint about a supermarket in Wales.</h3>
+			
+			<div class="parapaper fold center">
+				<p>
+					<video class="videoplayer shadow" style="width: 100%; height: auto; max-width: 610px;" controls poster="/video/module1/a22.png">
+						<source src="video/module1/a22.mp4" type="video/mp4">
+						Please update your browser to view this video.
+					</video>
+				</p>
+			</div>
+			
+		</div>
+
+		<footer>
+		{{>footer_nav prevurl="#m1a22" nexturl="#m1a22_2" prev="hidden" next=""}}
+	  </footer>
+	  {{/if}}
+	</section>
+</template>
+
+<template name="m1a22_2">
+	<section id="m1a22_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			
+			<h1>Notebook Questions</h1>
+			
+			{{>InstructionsNotebook text="Answer these 6 questions in your Notebook then check the answers at the end. You can go back if you want to listen again."}}
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="parapaper fold">
+							<ol class="olcircle2">
+								<li><b>What was the customer complaining about?</b></li>
+								
+								<li><b>What did the Asda employee offer to send?</b></li>
+								
+								<li><b>Why did the customer not want to go back to the store?</b></li>
+								
+								<li><b>What did the customer discover during the conversation?</b></li>
+								
+								<li><b>How did the Asda employee react to this?</b></li>
+								
+								<li><b>How do you think the customer felt at the end of the conversation?</b></li>
+							</ol>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<h3>Continue when you're ready to see the answers.</h3>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a22_1" nexturl="#m1a22_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a22_3">
+	<section id="m1a22_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<h1>Notebook Answers</h1>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="parapaper fold">
+							 <p><b>1)  What was the customer complaining about?</b></p>
+							 <p>He was complaining that his pizza had no topping on it.</p>
+							 <br>
+							 <p><b>2)  What did the Asda employee offer to send?</b></p>
+							 <p>The Asda employee offered to send a letter of apology.</p>
+							 <br>
+							 <p><b>3)	Why did the customer not want to go back to the store?</b></p>
+							 <p>He didn't want to go back to the store because it was a long way from his house.</p>
+							 <br>
+							 <p><b>4)  What did the customer discover during the conversation?</b></p>
+							 <p>He discovered that he had opened the pizza upside down.</p>
+							 <br>
+							 <p><b>5)  How did the Asda employee react to this?</b></p>
+							 <p>The Asda employee laughed.</p>
+							 <br>
+							 <p><b>6)  How do you think the customer felt at the end of the conversation?</b></p>
+							 <p>The customer probably felt very foolish because he had made a silly mistake.</p>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a22_2" nexturl="#m1a22_end" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a22_end">
+{{>EndPage char="k" act="m1a22" nextact="m1a23" place="Portree"}}
+</template>

@@ -1,0 +1,30 @@
+<template name="m9Game_21">
+
+	<section id="m9Game_21" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m9Game-q3c">{{>m9Game_seeds}}</div>
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<button class="button1" id="a">The person who collects the most seeds gets a ride on the zip wire.</button>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<button class="button1" id="b">The person who collects the most seeds would get a ride on the zip wire.</button>
+							</div>
+							<!-- <div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">They would have had often problems.</button>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+
+</template>

@@ -1,0 +1,77 @@
+<template name="ssgame_textentry">
+	<section id="ssgame_textentry" class="game-section hidden">
+		<div class="game-container m1Game-bg1">
+			<h3 class="center">Type in the missing words.</h3>
+			<div class="game-content">
+
+				<div class="game-phone-screen">
+					{{>GamePhoneHeader app="sms" icon="envelope" contact="Dunvegan Castle Security" time="4:19pm" battery="three-quarters"}}
+					<div class="game-phone-content linespace2">
+
+						<ul class="speech center-block">
+							<li>
+								<div class="speech1">
+									This semi-detached house has everything you need – all the windows have
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="7" autocomplete="off">
+											<input type="submit" value="OK">
+										</form>
+									</span> and you could park two cars in the
+									<span id="entryanswer1" class="textentry-disabled"></span>. There’s a very
+									<span id="entryanswer2" class="textentry-disabled"></span> living room and all floor
+									<span id="entryanswer3" class="textentry-disabled"></span> are included.
+								</div>
+							</li>
+
+							<li>
+								<div class="speech2">
+									Second person's dialogue.
+								</div>
+							</li>
+						</ul>
+						{{> rightwrong}}
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="content">
+			<h4>HTML</h4>
+			<pre class="htmlcode2">
+&lt;template name=&quot;m1Game_textentry&quot;&gt;
+	&lt;section id=&quot;m1Game_textentry&quot; class=&quot;game-section hidden&quot;&gt;
+		&lt;div class=&quot;game-container m1Game-bg1&quot;&gt;
+			&lt;h3 class=&quot;center&quot;&gt;Type in the missing words.&lt;/h3&gt;
+			&lt;div class=&quot;game-content&quot;&gt;
+				&lt;div class=&quot;game-phone-screen&quot;&gt;
+					&#123;&#123;&gt;GamePhoneHeader app=&quot;sms&quot; icon=&quot;envelope&quot; contact=&quot;Dunvegan Castle Security&quot; time=&quot;4:19pm&quot; battery=&quot;3&quot;&#125;&#125;
+					&lt;div class=&quot;game-phone-content linespace2&quot;&gt;
+						&lt;ul class=&quot;speech center-block&quot;&gt;
+							&lt;li&gt;&lt;div class=&quot;speech1&quot;&gt;
+								This semi-detached house has everything you need – all the windows have &lt;span id=&quot;entryanswer0&quot;&gt;&lt;form class=&quot;textentry&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;userText&quot; size=&quot;7&quot; autocomplete=&quot;off&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;OK&quot;&gt;&lt;/form&gt;&lt;/span&gt; and you could park two cars in the &lt;span id=&quot;entryanswer1&quot; class=&quot;textentry-disabled&quot;&gt;&lt;/span&gt;. There’s a very &lt;span id=&quot;entryanswer2&quot; class=&quot;textentry-disabled&quot;&gt;&lt;/span&gt; living room and all floor &lt;span id=&quot;entryanswer3&quot; class=&quot;textentry-disabled&quot;&gt;&lt;/span&gt; are included.
+							&lt;/div&gt;&lt;/li&gt;							
+							&lt;li&gt;&lt;div class=&quot;speech2&quot;&gt;
+								Second person&#39;s dialogue.
+							&lt;/div&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+						&#123;&#123;&gt; rightwrong&#125;&#125;
+					&lt;/div&gt;
+					&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;footer&gt;
+				&#123;&#123;&gt;footer_nav prevurl=&quot;#&quot; nexturl=&quot;#m1Game_dd&quot; prev=&quot;hidden&quot; next=&quot;&quot;&#125;&#125;
+			&lt;/footer&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+&lt;/template&gt;
+				</pre>
+			<h4>Javascript</h4>
+			<pre class="htmlcode2">
+				Code goes here
+				</pre>
+		</div>
+	</section>
+</template>

@@ -1,0 +1,232 @@
+<template name="Courses">
+	<article class="{{hasCourseSidebar}} ">
+		{{#if hasCourse}} {{>ToolsSidebar}} {{/if}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if hasCourse}} {{>menu}} {{else}} {{>menu_assess}} {{/if}}
+				<div class="parent-level">Journey 2 English</div>
+				<div class="acttitle-title">Home</div>
+			</header>
+			<section id="Courses">
+				<div class="content">
+				
+					{{#if isExpired}}
+						<div id="expired" class="animated fadeIn">
+							<div class="welcome-h hand-font">
+								<p>Your subscription has expired.</p>
+								<p>We hope you've enjoyed your journey.</p>
+								<!-- <br>
+								<span class="avoidwrap">If you want to continue ...</span> -->
+							</div>
+							<!-- {{>subscriptionOptions}}  -->
+						</div>
+					{{else}}
+						
+						{{#if hasLastActivity}}
+							<div class="welcome-h last-activity">
+								<span class="avoidwrap">Welcome back, {{currentUser.profile.firstname}}!</span>
+								<span class="avoidwrap">Continue where you left off? <button id="last-activityBtn" class="course-begin-button button1 no-border" data-target="{{lastActivity}}">Go</button></span>
+							</div>
+						{{else}}
+							<div class="welcome-h">
+								<span class="avoidwrap">Welcome{{#if hasCourse}} back,{{else}},{{/if}} {{currentUser.profile.firstname}}!</span>
+							</div>
+						{{/if}}
+						
+						<div class="course-container">
+							{{#if hasAssessment}}
+								<div class="course-row skills-test">
+									<div>
+										<img draggable="false" src="/est_logo.png" class="logo-img" alt="English Skills Test">
+									</div>
+									<div></div>
+									<div>
+										<div class="begin-buttons">
+											<button class="course-begin-button button2 no-border" data-function="link" data-target="ugtest"><i class="fa fa-info"></i> How to</button>
+											<button class="course-begin-button button1 no-border start" data-function="link" data-target="/assessment/{{getAssessmentId}}">Sit Test</button>
+										</div>
+									</div>
+								</div>
+
+							{{/if}}
+							{{#if hasCourse}}
+								<div class="course-row j2e">
+
+									<div>
+										<img draggable="false" src="/journey-to-english.png" class="logo-img" alt="Journey 2 English">
+									</div>
+									<div>
+										<div id="progressWrap" class="progress-peek" data-target="profile"></div>
+										{{#if isScormSession}} {{> scormAPI}} {{/if}}
+									</div>
+									<div>
+										<div class="begin-buttons">
+											<button class="course-begin-button button2 no-border" data-function="link" data-target="Overview"><i class="fa fa-info"></i> Overview</button>
+											<button class="course-begin-button start button1 no-border" data-function="link" data-target="ModuleSelect">Start</button>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="course-row skills-test locked">
+									<div>
+										<img draggable="false" src="/est_logo.png" class="logo-img" alt="English Skills Test">
+									</div>
+									<div></div>
+									<div>
+										<div class="begin-buttons">
+											<button class="course-begin-button button2 no-border" data-target="underDev"><i class="fa fa-info"></i> How to</button>
+											<button class="course-begin-button button1 no-border start" data-target="underDev">Sit Test 2</button>
+										</div>
+									</div>
+								</div>
+							{{/if}}
+						</div>
+						
+						{{> Template.dynamic template=courseDashboard data=this}}
+					{{/if}}
+					
+				</div>
+			</section>
+			{{>MainFooterXs}}
+
+		</div>
+	</article>
+</template>
+
+
+<template name="AdminDashboard">
+	<div class="home-admin-links">
+		<ul class="admin-panel-home">
+			<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> English Skills Test
+			{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}</a></li>
+			<li><a draggable="false" href="MarkingGuidelines" class="admin-nav"><i class="fa fa-graduation-cap"></i> Marking guidelines</a></li>
+			<li><a draggable="false" href="#" data-toggle="modal" data-target="#messagesmodal"><i class="icon-email"></i>Inbox {{#if unreadMessages}}<div class="notification mail">{{unreadMessages}}</div>{{/if}}</a></li>
+			<li><a draggable="false" href="/forums" class="admin-nav"><i class="icon-forum"></i>Forums</a></li>
+			<li><a draggable="false" href="/UserGuide" class="admin-nav"><i class="icon-userguide"></i>User Guide</a></li>
+			<li><a draggable="false" id="achievementsButton"><i class="fas fa-award"></i>Achievements{{#if getAchievementsCount}}<div class="notification">{{getAchievementsCount}}</div>{{/if}}</a> </li>
+			{{#if certificateEligible}}
+			<li><a draggable="false" id="certificateDetailsButton" class="admin-nav"><i class="fas fa-certificate"></i>Completion Certificate{{#if modalIgnored}}<div class="notification">!</div>{{/if}}</a></li>
+			{{/if}}
+			<!-- <li><a draggable="false" href="/reportingDashboard" class="admin-nav"><i class="icon-forum"></i>Reporting Dashboard</a></li> -->
+			<hr>
+			<p class="text-center"><b>Administrator tasks</b></p>
+			<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>Users</span></a></li>
+			<li><a draggable="false" href="/admin/addVoucher" class="admin-nav"><i class="fa icon-voucher-plus"></i> <span>Add voucher</span></a></li>
+			<li><a draggable="false" href="/admin/voucherList" class="admin-nav"><i class="fa icon-voucher-list"></i> <span>Voucher list</span></a></li>
+			<li><a draggable="false" href="/admin/feedbackList" class="admin-nav"><i class="fa fa-comment-alt"></i> <span>User feedback</span></a></li>
+
+			{{#unless isScormSession}}
+			<li><a draggable="false" href="/admin/bugReportsList" class="admin-nav"><i class="fa fa-bug"></i> <span>Bug reports</span>
+			{{#if unmarkedCountBug}}<div class="notification">{{unmarkedCountBug}}</div>{{/if}}</a></li>
+			{{/unless}}
+			<!-- <li><a draggable="false" href="/admin/bugReportsList" class="admin-nav"><i class="fa fa-bug"></i> <span>Bug Reports List</span>
+			{{#if unmarkedCountBug}}<div class="notification">{{unmarkedCountBug}}</div>{{/if}}</a></li>
+			<li><a draggable="false" href="/admin/contactFormList" class="admin-nav"><i class="fa fa-server"></i> <span>Contact Form List</span>
+			{{#if unmarkedCountContactForm}}<div class="notification">{{unmarkedCountContactForm}}</div>{{/if}}</a></li> -->
+			<li><a draggable="false" href="/admin" class="admin-nav"><i class="fa fa-th"></i>See all...</a></li>
+		</ul>
+		<div class="text-center" style="margin: 1em 0 2em">
+			<a draggable="false" href="#" class="button4 buttonsmall no-border item-space" data-toggle="modal" data-target="#notificationModal2">Call achievement modal</a>
+			<a draggable="false" href="#" class="button4 buttonsmall no-border item-space" data-toggle="modal" data-target="#feedbackUnit1Modal">Call Unit 1 feedback form</a>
+			<a draggable="false" href="#" class="button4 buttonsmall no-border item-space" data-toggle="modal" data-target="#feedbackUnit2Modal">Call Unit 2 feedback form</a>
+		</div>
+	</div>
+</template>
+
+<template name="ModeratorDashboard">
+	<div class="home-admin-links">
+		<ul class="admin-panel-home">
+			<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>Users</span></a></li>
+			<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>Groups</span></a></li>
+			<li><a draggable="false" href="/admin/groupcreator" class="admin-nav"><i class="fa icon-group-plus"></i> <span>Add group</span></a></li>
+			<li><a draggable="false" href="/admin/subgroupcreator" class="admin-nav"><i class="fa icon-sub-group-plus"></i> <span>Create<br>sub-group</span></a></li>
+			<li><a draggable="false" href="/admin/viewOrg" class="admin-nav"><i class="fa icon-building"></i> <span>Organisations</span></a></li>
+			<li><a draggable="false" href="/admin/Announcements" class="admin-nav"><i class="fa fa-bullhorn"></i>Announce-ments</a></li>
+			<li><a draggable="false" href="/UserGuide" class="admin-nav"><i class="icon-userguide"></i>User guide</a></li>
+			{{#unless isScormSession}}
+			<li><a draggable="false" href="/bugReporting" class="admin-nav"><i class="fa fa-bug"></i>Report an issue</a></li>
+			{{/unless}}
+			<li><a draggable="false" href="/" class="admin-nav hidden" id="resetAssessment"><i class="fa fa-repeat"></i>Reset Skills Test</a></li>
+			<li><a draggable="false" id="achievementsButton"><i class="fas fa-award"></i>Achievements{{#if getAchievementsCount}}<div class="notification">{{getAchievementsCount}}</div>{{/if}}</a> </li>
+		</ul>
+	</div>
+</template>
+
+<template name="TutorDashboard">
+	<div class="home-admin-links">
+		<ul class="admin-panel-home">
+			<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> English Skills Test
+			{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}</a></li>
+			<li><a draggable="false" href="MarkingGuidelines" class="admin-nav"><i class="fa fa-graduation-cap"></i> Marking guidelines</a></li>
+			<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span> Users</span></a></li>
+			<!-- {{#if hasGroup}} -->
+			<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>Groups</span></a></li>
+			<li><a draggable="false" href="/admin/subgroupcreator" class="admin-nav"><i class="fa icon-sub-group-plus"></i> <span>Create<br>sub-group</span></a></li>
+			<li><a draggable="false" href="/admin/Announcements" class="admin-nav"><i class="fa fa-bullhorn"></i>Announce-ments</a></li>
+			<!-- {{/if}} -->
+			<li><a draggable="false" href="/UserGuide" class="admin-nav"><i class="icon-userguide"></i>User guide</a></li>
+			{{#unless isScormSession}}
+			<li><a draggable="false" href="/bugReporting" class="admin-nav"><i class="fa fa-bug"></i>Report an issue</a></li>
+			{{/unless}}
+			<li><a draggable="false" id="achievementsButton"><i class="fas fa-award"></i>Achievements{{#if getAchievementsCount}}<div class="notification">{{getAchievementsCount}}</div>{{/if}}</a> </li>
+		</ul>
+	</div>
+</template>
+
+<template name="StudentDashboard">
+	<div class="home-admin-links">
+		<ul class="admin-panel-home">
+			<li><a draggable="false" data-target="profile" class=""><i class="fas fa-chart-line"></i>Your progress</a></li>
+			<li><a draggable="false" id="achievementsButton"><i class="fas fa-award"></i>Achievements{{#if getAchievementsCount}}<div class="notification">{{getAchievementsCount}}</div>{{/if}}</a> </li>
+			
+			{{#if certificateEligible}}
+			<li><a draggable="false" id="certificateDetailsButton" class="admin-nav"><i class="fas fa-certificate"></i>Completion Certificate{{#if modalIgnored}}<div class="notification">!</div>{{/if}}</a></li>
+			{{/if}}
+
+			{{#if hasGroup}}
+			<!-- Not used studentHasAssessment as that pass even when the assessment has not been completed yet -->
+			{{#if hasCourse}}
+			<li><a draggable="false" href="#" data-toggle="modal" data-target="#messagesmodal"><i class="icon-email"></i>Inbox {{#if unreadMessages}}<div class="notification mail">{{unreadMessages}}</div>{{/if}}</a></li>
+			<li><a draggable="false" href="/forums/{{organisation}}" class="admin-nav"><i class="icon-forum"></i>Forums</a></li>
+			{{/if}} {{/if}}
+			<li><a draggable="false" href="/UserGuide" class="admin-nav"><i class="icon-userguide"></i>User guide</a></li>
+			{{#unless isScormSession}}
+			{{#if hasCourse}}
+			<li><a draggable="false" href="/bugReporting" class="admin-nav"><i class="fa fa-bug"></i>Report an issue</a></li>
+			{{/if}}
+			{{/unless}}
+			<!--<li class="hidden"><a draggable="false" href="#" class="admin-nav" data-toggle="modal" data-target="#resit_modal"><i class="fa fa-repeat"></i>Resit English Skills Test</a></li>-->
+		</ul>
+	</div>
+</template>
+
+<template name="resit_modal">
+	<div class="modal fade" tabindex="-1" id="resit_modal" role="dialog" style="display: initial; position:unset">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<!-- <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="resit_modal">Resit English Skills Test</h4>
+				</div>
+				
+				<div class="content">
+					
+					
+				</div> -->
+				<div class="course-row skills-test">
+					<div>
+						<img draggable="false" src="/est_logo.png" class="logo-img" alt="English Skills Test">
+					</div>
+					<div></div>
+					<div>
+						<div class="begin-buttons">
+							<button class="course-begin-button button1 no-border start" data-function="link" data-target="/assessment/{{getAssessmentId}}">Resit Test</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

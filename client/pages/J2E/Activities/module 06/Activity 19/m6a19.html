@@ -1,0 +1,151 @@
+<template name="m6a19"> 
+<article class="with-tools-sidebar m6a19">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Scarborough');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 19 - {{>m6a19Title}}</div>
+		</header>
+		<section id="m6a19">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a19Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m6a19Intro}}</h3>
+				{{> m6a19Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a19_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a19_1}}
+		{{>m6a19_2}}
+		{{>m6a19_3}}
+		{{>EndPage char="k" act="m6a19" nextact="m6a20" place="Scarborough"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a19_1">
+	<section id="m6a19_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+    	<h1>The Scottish Parliament</h1>
+			<div class="caption fold parapaper">Both Scotland and Wales have their own parliaments which can make decisions on some issues like education and transport. The Scottish Parliament was opened by Queen Elizabeth in 2004.</div>
+
+			<div class="ph-w" style="max-width: 722px"><div class="ph" style="padding-top: 24.1%"><img draggable="false" src="/images/module6/a19/debatingchamber.jpg" alt="Scottish Parliament Debating Chamber"></div></div>
+			<h3>{{>touch yes="Tap" no="Click"}} next to read a blog by someone who visited the Scottish Parliament in Edinburgh. {{>touch yes="Tap" no="Click"}} on any adverbs of time or adverb phrases of time you find.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a19" nexturl="#m6a19_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m6a19_2">
+	<section id="m6a19_2" class="hidden">
+		{{#if activeSection}}{{> popovers}}
+		<div class="content">
+      	<h3 class="center">
+					<div>{{>touch yes="Tap" no="Click"}} the <b>adverbs of time</b> or <b>adverb phrases of time</b></div>
+				  <div>{{>touch yes="Tap" no="Click"}} on the <span class="a-color">red</span> words for more information.</div>
+			  </h3>
+				<div class="parapaper paraclick">
+				{{>metametrics level="2" star="no" align="center"}}
+
+					<p><span class="wrong">Good afternoon everyone! A real</span>
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Dreich - a Scottish word to describe dull, grey weather.">dreich</a>
+						<span class="wrong"> day here - just </span>
+						<span class="paraclick-word">recently</span>
+						<span class="wrong"> back from the gym. Anyway I'm off with a few folks for a guided tour of the </span>
+						<a draggable="false" href="#" title="" data-toggle="popover" data-html="true" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="<div class='ph-w ph-16x9' style='max-width: 250px'><div class='ph'><img draggable='false' src='images/module6/a19/Scottish Parliament.jpg' alt='Scottish Parliament'></div></div> The Scottish Parliament opened in 1999 and moved to the building described here in 2004 - designed by the Spanish architect Miralles.">Scottish Parliament</a>
+						<span class="paraclick-word"> this afternoon</span>.
+					</p>
+					<br><br>
+					<p><span class="wrong">Well I arrived at the Scottish Parliament building </span>
+						<span class="paraclick-word">well before 4.00pm</span>
+						<span class="wrong">. I was first to arrive - the rest came </span>
+						<span class="paraclick-word">later</span>
+						<span class="wrong"> - but this is because this is the </span>
+						<span class="paraclick-word">first time</span>
+						<span class="wrong"> I've been inside, I wanted to wander round taking pictures. </span>
+						<span class="paraclick-word">Then</span>
+						<span class="wrong"> my camera refused to work - it </span>
+						<span class="paraclick-word">sometimes</span>
+						<span class="wrong"> does that. A message came up on the screen - Blocked! So frustrating! No matter what I tried, nothing worked. Grrr!</span>
+					</p>
+
+				</div>
+
+				<div class="counterleft">Adverbs left to find: <u id="startClock1">7</u></div>
+				<div class="clearfix"></div>
+
+				{{>rightwrong}}
+				{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a19_1" nexturl="#m6a19_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m6a19_3">
+	<section id="m6a19_3" class="hidden">
+		{{#if activeSection}}{{> popovers}}
+		<div class="content">
+    	<h3 class="center">
+				<div>{{>touch yes="Tap" no="Click"}} the <b>adverbs of time</b> or <b>adverb phrases of time</b></div>
+			  <div>{{>touch yes="Tap" no="Click"}} on the <span class="a-color">red</span> words for more information.</div>
+		  </h3>
+			<div class="parapaper paraclick">
+				{{>metametrics level="2" star="no" align="center"}}
+				<p><span class="wrong">Architecturally it's not my favourite building. Mind you they say the Sydney Opera House wasn't well received </span>
+					<span class="paraclick-word">initially</span>
+					<span class="wrong">. </span>
+					<span class="paraclick-word">Now</span>
+					<span class="wrong"> it's </span>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="iconic - an image that everyone knows.">iconic</a>
+					<span class="wrong">. </span>
+					<span class="paraclick-word">For the last ten years or so</span>
+					<span class="wrong">, Edinburgh's run into problems with big projects such as the Scottish Parliament. </span>
+					<span class="paraclick-word">In 2009</span>
+					<span class="wrong">, it was supposed to cost about £40 million. Final bill? Somewhere in the region of £400 million! They're </span>
+					<span class="paraclick-word">currently</span>
+					<span class="wrong"> laying a tram system through Princes Street. It's </span>
+					<span class="paraclick-word">still</span>
+					<span class="wrong"> not finished and the cost has grown from £70 million to - would you believe - £750 million.</span>
+				</p>
+				<br><br>
+				<p>
+					<span class="wrong">Well anyway, I wandered around inside the building. It's just beautiful. You'll have to come </span>
+					<span class="paraclick-word">one day</span>
+					<span class="wrong"> and see it for yourselves.</span>
+				</p>
+			</div>
+
+							<div class="counterleft">Adverbs left to find: <u id="startClock1">7</u></div>
+							<div class="clearfix">
+								<div class="center hidden" id="m6a19article">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a19/m6a19article.m4a"></button> {{>touch yes="Tap" no="Click"}} to listen to the article.
+								</div>
+
+							</div>
+
+							{{>rightwrong}}
+							{{> welldone}}
+					</div>
+					<footer>
+						{{>footer_nav prevurl="m6a19_2" nexturl="#m6a19_end" prev="disabled" next="hidden"}}
+					</footer>
+					{{> stuck stuckchar="k"}}
+					{{/if}}
+				</section>
+			 </template>
+

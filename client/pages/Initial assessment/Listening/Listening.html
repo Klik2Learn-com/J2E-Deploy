@@ -1,0 +1,39 @@
+<template name="InitialListening"> 
+<article class="">
+		<div class="main">
+		<header class="acttitle" >
+			{{#unless assessmentStarted}}
+				<a draggable="false" data-function="return"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/unless}}	
+			{{> menu_assess}}
+			<div class="parent-level">English Skills Test</div>
+			<div class="acttitle-title">Listening</div>
+		</header>
+		<section id="InitialListening">
+			<div class="content">
+				<h1>Section 3: Listening</h1>
+				<div class="assess-intro">
+					{{> StartPageAvatarSmall char="elle"}}
+					{{#if sectionComplete}}
+						You have already attempted this section and it is now completed.
+					{{else}}
+						{{>assess_warning}}
+						<h4>This section will test your English listening skills. When you're ready to start, {{>touch yes="tap" no="click"}} begin.</h4>
+						<div class="assess-begin"><a draggable="false" href="#A2l" class="pagination"><button class="button1 buttonbig">Begin</button></a></div>
+						<div class="clear-float"></div>
+					{{/if}}
+				</div>
+			</div>
+		</section>
+		
+		<div class="sectionStartDialog hidden animated">
+			<div class="dialogue shadow fadeInUp animated dialogue-assess-level-complete">
+				Well done! Now try the next level.<br>
+			</div>
+		</div>
+
+		{{> Template.dynamic template=activeSection}}
+	</div>
+</article>
+
+</template>

@@ -1,0 +1,148 @@
+<template name="MoreAboutCambridge">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Cambridge"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m10l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m10l1}}</div>
+		</header>
+
+		<section id="moreaboutCambridge">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Cambridge/Cambridge1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l1_A">
+						<p>Cambridge University</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Cambridge/Cambridge2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l1_B">
+						<p>King's College Chapel</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Cambridge/Cambridge3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l1_C">
+						<p>The Bridge of Sighs</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Cambridge/Cambridge4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l1_D">
+						<p>Museums and Collections</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Cambridge/Cambridge5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l1_E">
+						<p>The Fitzwilliam Museum</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l1_A">Cambridge University</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cambridge/Cambridge1.jpg" alt="Cambridge University" style="max-width: 250px;">
+					</figure>
+					<p>Cambridge University is ranked in the top 5 universities in the world and has had some very famous students studying in its colleges. These include famous scientists like Charles Darwin,  88 Nobel prizewinners and 14 Prime Ministers. Over 21,000 students from 65 countries study in Cambridge and most stay in college accommodation for the three years of their course. You can study 65 different subjects from architecture to veterinary medicine.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.cam.ac.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l1_B">King's College Chapel</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cambridge/Cambridge2.jpg" alt="King's College Chapel" style="max-width: 250px;">
+					</figure>
+					<p>King’s College is one of the most impressive and beautiful buildings in Cambridge and the chapel and its choir are world famous. It was built in the middle of the 15th century and has the largest fan vaulted ceiling in the world. During term time the choir sing evensong in the chapel everyday and at Christmas time, they perform a traditional service of carols and lessons which is broadcast on BBC television and watched by millions of people round the world.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.kings.cam.ac.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l1_C">The Bridge of Sighs</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cambridge/Cambridge3.jpg" alt="The Bridge of Sighs" style="max-width: 250px;">
+					</figure>
+					<p>The Bridge of Sighs is one of the most famous bridges crossing the River Cam in Cambridge. It was built in the 19th century and links the New Court of St John’s College with older part of the building. The design is based on the Bridge of Sighs in Venice. The name comes from the fact that the bridge was used to take prisoners to their cells and they would sigh as they crossed it.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.joh.cam.ac.uk/bridge-sighs" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l1_D">Museums and Collections</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cambridge/Cambridge4.jpg" alt="Museums and Collections" style="max-width: 250px;">
+					</figure>
+					<p>Although Cambridge is quite a small town, there are nine different museums in Cambridge. There are science museums, art galleries and one or two more unusual ones like the Polar museum. The museum is a research centre attached to the university and named after the famous explorer, Captain Robert Scott. He died with his team after reaching the South Pole in 1912.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.cam.ac.uk/museums-and-collections" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l1_E">The Fitzwilliam Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cambridge/Cambridge5.jpg" alt="The Fitzwilliam Museum" style="max-width: 250px;">
+					</figure>
+					<p>The museum has been described as the finest small museum in Europe. It has a great range of paintings, manuscripts and music from the Middle Ages to the 20th century. You can see collections from Asia, Europe and the Middle East and over 470,000 visitors go to the museum every year.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.fitzmuseum.cam.ac.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

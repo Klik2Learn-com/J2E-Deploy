@@ -1,0 +1,147 @@
+<template name="MoreAboutStAustell">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="StAustell"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m9l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m9l6}}</div>
+		</header>
+
+		<section id="moreaboutStAustell">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/StAustell/StAustell1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l6_A">
+						<p>Eden Project</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/StAustell/StAustell2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l6_B">
+						<p>The Lost Gardens of Heligan</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/StAustell/StAustell3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l6_C">
+						<p>Shipwreck and Heritage Centre</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/StAustell/StAustell4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l6_D">
+						<p>St Austell Brewery</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/StAustell/StAustell5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l6_E">
+						<p>Square Sail</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l6_A">Eden Project</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StAustell/StAustell1.jpg" alt="Eden Project" style="max-width: 250px;">
+					</figure>
+					<p>The Eden Project is one of the most popular places to visit in England.  It has a number of large domes which contain thousands of plants from many different countries and climates. Visitors can experience a Rainforest, a Mediterranean climate and see some huge sculptures of animals and insects made from recycled materials.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.edenproject.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l6_B">The Lost Gardens of Heligan</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StAustell/StAustell2.jpg" alt="The Lost Gardens of Heligan" style="max-width: 250px;">
+					</figure>
+					<p>These gardens are one of the most popular botanical gardens in England. The name comes from an old Cornish word meaning ‘willow tree.’ The gardens were created by a Cornish family over 150 years and were restored after the 1st World War. They have the only ‘pineapple pit’ in Europe which can grow pineapples in colder climates.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://heligan.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l6_C">Shipwreck and Heritage Centre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StAustell/StAustell3.jpg" alt="Shipwreck and Heritage Centre" style="max-width: 250px;">
+					</figure>
+					<p>The Shipwreck and Heritage Centre is a museum where you can see a gallery of famous shipwrecks including warships from the 1st and 2nd World Wars and the Titanic. You can also find out what life was like in the 19th century port of Charlestown by walking down a reconstruction of an Victorian street.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.shipwreckcharlestown.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l6_D">St Austell Brewery</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StAustell/StAustell4.jpg" alt="St Austell Brewery" style="max-width: 250px;">
+					</figure>
+					<p>St. Austell Brewery is more than a place where beer is made. It is a museum where you can see the history of brewing over the last 150 years. You can see a 1940s delivery van and taste beer based on Victorian recipes. The Brewery also experiments with new recipes and supplies beer to British Airways.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.staustellbrewery.co.uk/visitor-centre" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l6_E">Square Sail</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StAustell/StAustell5.jpg" alt="Square Sail" style="max-width: 250px;">
+					</figure>
+					<p>Square Sail provides a unique service to the film industry. They have a period harbour and a wide range of ships from Greek warships, fishing boats and rowing boats to an 18th century warship. Over the years, they have been involved in over 100 major films and TV programmes.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.square-sail.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

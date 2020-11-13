@@ -1,0 +1,297 @@
+<template name="adminUserList">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{>menu}} {{#if isAdmin}} {{> adminNav}} {{else}}
+				<a draggable="false" href="/">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}}
+			</header>
+			<section>
+				<div class="content-user">
+					{{#if isStudent}} Unauthorised access {{else}}
+					<h1>User List</h1>
+					{{#if isAdmin}} {{>NewUserLink}} {{/if}}
+
+					<div class="container-fluid-no-gutter">
+						<div class="row">
+							<div class="col-sm-7">
+
+								{{#if isAdmin}}
+
+								<!-- <h4 style="margin-top: 0px; margin-bottom: 1em;">Below is a list of all users across every organisation and group.</h4> -->
+
+								<!-- Used for the "Streamline User List" task -->
+
+								<h4 style="margin-top: 0px; margin-bottom: 1em;">Select an organisation</h4>
+								<select class="form-control" id="organisation-select">
+									<option disabled="disabled" selected="selected" value="defaultVal">Organisation...</option>
+									{{#each organisationsDrop}}
+									<option value="{{this._id}}">{{this.name}}</option>
+									{{/each}}
+								</select>
+								<div class="text-center"><br><input type="button" class="button2 buttonsmall no-border item-space" id="showAllUsers" value="Show All Users"></div>
+								{{/if}}
+								
+								{{#if isMod}}
+
+								<!-- <h4 style="margin-top: 0px; margin-bottom: 1em;">Below is a list of all users in the organisation you are moderating.</h4> -->
+
+								<!-- Used for the "Streamline User List" task -->
+
+								<h4 style="margin-top: 0px; margin-bottom: 1em;">Select an organisation from the drop-down list.</h4>
+								<select class="form-control" id="organisation-select">
+									<option disabled="disabled" selected="selected">Pick an organisation</option>
+									{{#each organisationsDrop}}
+									<option value="{{this._id}}">{{this.name}}</option>
+									{{/each}}
+								</select>
+								<div class="text-center"><br><input type="button" id="showAllUsers" class="button2 buttonsmall no-border item-space" value="Show All Users"></div>
+								{{/if}}
+								
+								{{#if isTutor}}
+								<h4 style="margin-top: 0px; margin-bottom: 1em;">Below is a list of all users in your organisation.</h4>
+								{{/if}}
+
+								<p>&nbsp;</p>
+							</div>
+
+							<div class="col-sm-offset-1 col-sm-4">
+								<h4 style="margin-top: 0px; margin-bottom: 1em;">Search</h4>
+								{{#if isAdmin}}
+								<div class="form-group has-feedback">
+									<input type="text" class="form-control" id="userSearch" placeholder="User or organisation">
+									<i class="glyphicon glyphicon-search form-control-feedback"></i>
+									<input type="button" class="userSearchButton button2 buttonsmall no-border item-space" value="Search">
+								</div>
+								{{else}}
+								<div class="form-group has-feedback">
+									<input type="text" class="form-control" id="userSearch" placeholder="Search for a user">
+									<i class="glyphicon glyphicon-search form-control-feedback"></i>
+									<input type="button" class="userSearchButton button2 buttonsmall no-border item-space" value="Search">
+								</div>
+								{{/if}}
+
+								<p>&nbsp;</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 text-left sm-center">
+								<p><span class="avoidwrap">Registered Users: {{userCount}}</span> | <span class="avoidwrap">Online Users: {{onlineCount}}</span></p>
+							</div>
+							{{#if showOrgUsers}}
+								<div class="col-sm-7 text-left sm-center">
+									<p><span class="avoidwrap">Users in {{selectedOrg}}: {{numUsers}}</span> </p>
+								</div>
+							{{/if}}
+							<div class="col-sm-4 col-sm-offset-1 text-right sm-center hidden-with-user-table hidden">	
+								<span>Users per page: </span>
+								<select id="user-per-page-select">
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-with-user-table hidden"><h4 class="visible-xs item-space text-center" style="margin-top: 0px; margin-bottom: 0em; font-size:90%;"><br>
+						<i class="fa fa-arrows-alt-h"></i> {{>touch yes="Swipe" no="Scroll"}} left/right to see more.
+					</h4><br></div>
+					
+
+					<table class="table table-striped userlist-table hidden table-fixed-header" id="adminUserListTable">
+						<thead>
+							<tr>
+								<th>User
+									<i class="fa fa-caret-down"></i>
+								</th>
+
+								<th>Email
+									<i class="fa fa-caret-down"></i>
+								</th>
+								{{#if isAdmin}}
+								<th>Organisation
+									<i class="fa fa-caret-down"></i>
+								</th>
+								{{/if}}
+								<!-- <th>Date created</th> -->
+								<th>Date of Expiry
+									<i class="fa fa-caret-down"></i>
+								</th>
+								<th>Last login
+									<i class="fa fa-caret-down"></i>
+								</th>
+								<th style="min-width: 94px;">Role</th>
+								{{#if isAdminOrMod}}
+								<th colspan="2" class="text-center">
+									<span class="avoidwrap">Edit</span>
+									{{#if isAdmin}}
+									<span class="avoidwrap">/Delete</span>
+									{{/if}}
+								</th>
+								<th class="text-center">
+									<div class="selectAllCheckbox">
+										<input type="checkbox" id="selectAll" onClick="userlistSelectAll(this, 'userlistCheckbox')">
+										<label for="select-all-wrap"></label>
+									</div>
+								</th>
+								{{/if}}
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Each user this user is allowed to see -->
+							<!-- {{#if trial}} -->
+							{{#each users}}
+							<tr>
+								<td data-function="goUserPage">
+									<i class=" {{online _id}}"></i>
+									<span class="a-color">{{profile.firstname}} {{profile.surname}}</span>
+									<br>
+								</td>
+								<td>
+									{{emails.[0].address}}
+								</td>
+								{{#if isAdmin}}
+								<td>
+									{{orgName organisation}}
+								</td>
+								{{/if}}
+								<td style="{{expiredStyle}}">
+									{{expiryDate}}
+								</td>
+								<td>
+									{{lastLoginDate}}
+								</td>
+								<td>
+									{{#if isAdmin}}
+									<select {{disableIfAdmin _id}} name="userRole" class="form-control">
+										<option selected="{{selected roles.[0] 'admin'}}" value="admin">Admin</option>
+										<option selected="{{selected roles.[0] 'moderator'}}" value="moderator">Moderator</option>
+										<option selected="{{selected roles.[0] 'tutor'}}" value="tutor">Tutor</option>
+										<option selected="{{selected roles.[0] 'student'}}" value="student">Student</option>
+									</select>
+									{{/if}} {{#if isMod}} {{roles.[0]}} {{/if}} {{#if isTutor}} {{roles.[0]}} {{/if}} {{#if isStudent}} {{roles.[0]}} {{/if}}
+								</td>
+								{{#if isAdminOrMod}}
+								<td>
+									<!--<button class="edit btn btn-success" data-toggle="modal" data-target="#edit-user-modal">Edit</button>-->
+									<div class="user-edit edit text-center">
+										<a draggable="false" href="/admin/user/{{this._id}}">
+											<i class="fas fa-pencil-alt"></i>
+										</a>
+									</div>
+								</td>
+								{{#if isAdmin}}
+								<td>
+									<div {{disableIfAdmin _id}} class="user-edit delete text-center">
+										<a draggable="false" href="#">
+											<i class="fa fa-trash-alt"></i>
+										</a>
+									</div>
+								</td>
+								{{else}}
+								<td></td>
+								{{/if}}
+								<td>
+									<div class="selectAllCheckbox">
+										<input type="checkbox" name="userlistCheckbox" value="{{this._id}}">
+									</div>
+								</td>
+								{{/if}}
+							</tr>
+							{{/each}} {{#if isAdmin}}
+							<tr>
+								<td colspan="6" class="text-right">
+									<b>Edit/Delete selected</b>
+								</td>
+								<td>
+									<!--<button class="edit btn btn-success" data-toggle="modal" data-target="#edit-user-modal">Edit</button>-->
+									<div class="user-edit editMulti text-center" style="width: 100%">
+										<a draggable="false" href="#">
+											<i class="fas fa-pencil-alt"></i>
+										</a>
+									</div>
+								</td>
+								{{#if isAdmin}}
+								<td>
+									<div class="user-edit deleteMulti text-center" style="width: 100%">
+										<a draggable="false" href="#">
+											<i class="fa fa-trash-alt"></i>
+										</a>
+									</div>
+								</td>
+								{{else}}
+								<td></td>
+								{{/if}}
+							</tr>
+							{{/if}}
+							<!-- {{else}}
+					{{#each usersTrial}}
+						<tr>
+						<td data-function="goUserPage">
+							<span class="a-color">{{username}}</span><br>
+							({{profile.surname}}, {{profile.firstname}})
+						</td>
+						<td>
+							{{emails.[0].address}}
+						</td>
+						{{#if isAdmin}}
+						<td>
+							{{orgName organisation}}
+						</td>
+						{{/if}}
+						<td>
+							{{formatDate}}
+						</td>
+						<td style="{{expiredStyle}}">
+							{{expiryDate}}
+						</td>
+						<td>
+							{{lastLoginDate}}
+						</td>
+						<td>
+						{{#if isAdmin}}
+							<select {{disableIfAdmin _id}} name="userRole" class="form-control">
+									<option selected="{{selected roles.[0] 'admin'}}" value="admin">Admin</option>
+								<option selected="{{selected roles.[0] 'moderator'}}" value="moderator">Moderator</option>
+								<option selected="{{selected roles.[0] 'tutor'}}" value="tutor">Tutor</option>
+								<option selected="{{selected roles.[0] 'student'}}" value="student">Student</option>
+							</select>
+						{{/if}}
+						{{#if isMod}}
+							{{roles.[0]}}
+						{{/if}}
+						{{#if isTutor}}
+							{{roles.[0]}}
+						{{/if}}
+						{{#if isStudent}}
+							{{roles.[0]}}
+						{{/if}}
+						</td>
+						{{#if isAdmin}}
+						<td>
+							<button class="edit btn btn-success" data-toggle="modal" data-target="#edit-user-modal">Edit</button>
+							<div class="user-edit edit text-center"><a draggable="false" href="/admin/user/{{this._id}}"><i class="fas fa-pencil-alt"></i></a></div>
+						</td>
+						<td>
+							<div {{disableIfAdmin _id}} class="user-edit delete text-center"><a draggable="false" href="#"><i class="fa fa-trash-alt"></i></a></div>
+						</td>
+						{{/if}}
+						</tr>
+					{{/each}}
+					{{/if}}  -->
+						</tbody>
+					</table>
+					<div id="pages-buttons-container">
+						<!-- <button class="user-pagination" data-page="1">1</button>
+						<button class="user-pagination" data-page="2">2</button> -->
+					</div>
+					{{/if}}
+				</div>
+			</section>
+		</div>
+	</article>
+</template>

@@ -1,0 +1,294 @@
+<template name="styleNew">
+<section id="style-new" class="hidden">
+	<div class="content">
+		<h1>New Activity Template</h1>
+
+			
+<pre class="htmlcode2" style="line-height: 1.2em;">
+&#00060;template name="<span class="html-red">m1a1</span>"&#00062;
+	&#00060;article class="shadow m1a1"&#00062;
+	
+		&#00060;header class="acttitle" &#00062;
+			&#123;&#123;#if endPageSect&#125;&#125;
+				&lt;a draggable=&quot;false&quot; href=&quot;/<span class="html-red">York</span>&quot;&gt;&lt;i class=&quot;titlereturn fa fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+			&#123;&#123;/if&#125;&#125;
+			&#123;&#123;&gt; menu&#125;&#125;
+			&lt;div class=&quot;parent-level&quot;&gt;Module <span class="html-red">1</span>&lt;/div&gt;
+			&lt;div class=&quot;acttitle-title&quot;&gt;&#123;&#123;&gt; activity&#125;&#125; <span class="html-red">1</span> - &#123;&#123;&gt;<span class="html-red">m1a1</span>Title&#125;&#125;&lt;/div&gt;
+		&#00060;/header&#00062;
+		
+		&#00060;section id="<span class="html-red">m1a1</span>"&#00062;
+			&#00060;div class="content"&#00062;
+				&#00060;h1 class="start-page-header"&#00062;&#00123;&#00123;&#00062;<span class="html-red">m1a1</span>Title&#00125;&#00125;&#00060;/h1&#00062;
+				&#00123;&#00123;&#00062; StartPageAvatar char="<span class="html-red">elle</span>"&#00125;&#00125;
+				&#00060;h3&#00062;&#00123;&#00123;&#00062; <span class="html-red">m1a1</span>Intro&#00125;&#00125;&#00060;/h3&#00062;
+				&#00123;&#00123;&#00062; <span class="html-red">m1a1</span>Time&#00125;&#00125;
+			&#00060;/div&#00062;
+			&#00060;footer&#00062;
+				&#00123;&#00123;&#00062;footer_nav prevurl="#" nexturl="<span class="html-red">#m1a1_1</span>" prev="disabled" next=""&#00125;&#00125;
+			&#00060;/footer&#00062;
+		&#00060;/section&#00062;
+		
+		<b>&#123;&#123;>m1a1_1&#125;&#125;</b>
+		&#123;&#123;&gt;EndPage char=&quot;<span class="html-red">elle</span>&quot; act=&quot;<span class="html-red">m1a1</span>&quot; nextact=&quot;<span class="html-red">m1a2</span>&quot; place=&quot;<span class="html-red">York</span>&quot;&#125;&#125;
+		
+	&#00060;/article&#00062;
+&#00060;/template&#00062;</pre><br>
+
+		<h1>New Section &#00040;Page&#00041;</h1>
+		<p>To create a new section in an activity</p>
+<pre class="htmlcode2">
+&#00060;template name="<span class="html-red">m1a1_1</span>"&#00062;
+	&#00060;section id="<span class="html-red">m1a1_1</span>" class="hidden"&#00062;
+		&#00060;div class="content"&#00062;
+			
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+			&#00123;&#00123;&#00062;footer_nav prevurl="<span class="html-red">#m1a1</span>" nexturl="<span class="html-red">#m1a1_2</span>" prev="<span class="html-red">hidden</span>" next="<span class="html-red">hidden</span>"&#00125;&#00125;
+		&#00060;/footer&#00062;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;
+</pre><br>
+
+		<h1>New Section with activeSection&#00040;Page&#00041;</h1>
+		<p>To create a new section in an activity with activeSection for functionality needs</p>
+		<h4>HTML</h4>
+<pre class="htmlcode2">
+&#00060;template name="<span class="html-red">m1a1_1</span>"&#00062;
+	&#00060;section id="<span class="html-red">m1a1_1</span>" class="hidden"&#00062;
+	&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&#00060;div class="content"&#00062;
+			
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+			&#00123;&#00123;&#00062;footer_nav prevurl="<span class="html-red">#m1a1</span>" nexturl="<span class="html-red">#m1a1_2</span>" prev="<span class="html-red">hidden</span>" next="<span class="html-red">hidden</span>"&#00125;&#00125;
+		&#00060;/footer&#00062;
+	&#00123;&#00123;/if&#00125;&#00125;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;
+</pre>
+<h4>JAVASCRIPT</h4>
+<pre class="htmlcode2">
+Template.m1a1_1.helpers&#00040;&#00123;
+	activeSection: function&#00040;&#00041;&#00123;
+		var activeSection = Session.get&#00040;"activeSection"&#00041;;
+		return &#00040;activeSection == "#m1a1_1"&#00041;;
+	&#00125;
+&#00125;&#00041;;
+</pre><br>
+
+	<h1>Routes</h1>
+	<div class="container-fluid">
+	
+		<div class="row">
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 1</p>
+<pre class="htmlcode2">{{>m1l1Link}}
+{{>m1l2Link}}
+{{>m1l3Link}}
+{{>m1l4Link}}
+{{>m1l5Link}}
+{{>m1l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 2</p>
+<pre class="htmlcode2">{{>m2l1Link}}
+{{>m2l2Link}}
+{{>m2l3Link}}
+{{>m2l4Link}}
+{{>m2l5Link}}
+{{>m2l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 3</p>
+<pre class="htmlcode2">{{>m3l1Link}}
+{{>m3l2Link}}
+{{>m3l3Link}}
+{{>m3l4Link}}
+{{>m3l5Link}}
+{{>m3l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 4</p>
+<pre class="htmlcode2">{{>m4l1Link}}
+{{>m4l2Link}}
+{{>m4l3Link}}
+{{>m4l4Link}}
+{{>m4l5Link}}
+{{>m4l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 5</p>
+<pre class="htmlcode2">{{>m5l1Link}}
+{{>m5l2Link}}
+{{>m5l3Link}}
+{{>m5l4Link}}
+{{>m5l5Link}}
+{{>m5l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 6</p>
+<pre class="htmlcode2">{{>m6l1Link}}
+{{>m6l2Link}}
+{{>m6l3Link}}
+{{>m6l4Link}}
+{{>m6l5Link}}
+{{>m6l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 7</p>
+<pre class="htmlcode2">{{>m7l1Link}}
+{{>m7l2Link}}
+{{>m7l3Link}}
+{{>m7l4Link}}
+{{>m7l5Link}}
+{{>m7l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 8</p>
+<pre class="htmlcode2">{{>m8l1Link}}
+{{>m8l2Link}}
+{{>m8l3Link}}
+{{>m8l4Link}}
+{{>m8l5Link}}
+{{>m8l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 9</p>
+<pre class="htmlcode2">{{>m9l1Link}}
+{{>m9l2Link}}
+{{>m9l3Link}}
+{{>m9l4Link}}
+{{>m9l5Link}}
+{{>m9l6Link}}
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 10</p>
+<pre class="htmlcode2">{{>m10l1Link}}
+{{>m10l2Link}}
+{{>m10l3Link}}
+{{>m10l4Link}}
+{{>m10l5Link}}
+{{>m10l6Link}}
+</pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<br>
+		<h1>Back to Map Links</h1>
+	<div class="container-fluid">
+	
+		<div class="row">
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 1</p>
+<pre class="htmlcode3">
+
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 2</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m2l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m2l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 3</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m3l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m3l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m3l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m3l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m3l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m3l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 4</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m4l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m4l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m4l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m4l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m4l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m4l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 5</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m5l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m5l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m5l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m5l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m5l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m5l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 6</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m6l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m6l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m6l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m6l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m6l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m6l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 7</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m7l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m7l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m7l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m7l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m7l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m7l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 8</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m8l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m8l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m8l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m8l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m8l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m8l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 9</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m9l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m9l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m9l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m9l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m9l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m9l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+			<div class="col-sm-3 col-xs-4">
+				<p>Module 10</p>
+<pre class="htmlcode3">&#00123;&#00123;&#00062;Back{{>m10l1Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m10l2Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m10l3Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m10l4Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m10l5Link}}&#00125;&#00125;
+&#00123;&#00123;&#00062;Back{{>m10l6Link}}&#00125;&#00125;
+</pre>
+			</div>
+		</div>
+
+		
+	</div>
+
+
+	</div>
+	</div>
+</section>
+</template>

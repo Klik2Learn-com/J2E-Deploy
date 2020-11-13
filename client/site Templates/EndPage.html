@@ -1,0 +1,185 @@
+<!-- finish activity -->
+<template name="EndPage">
+<section id="{{act}}_end" class="hidden section-end-page">
+	<div class="end-page-content">
+		<div class="end-page-scene">
+			<div class="container-fluid end-avatar-{{char}}">
+				<div class="row">
+					<div class="col-sm-5 text-center">
+					
+						<div class="container-fluid visible-xs" style="max-width: 340px;">
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="avatar-end-small-{{char}} shadow"></div>
+								</div>
+								<div class="col-xs-7">
+									<div class="speech-end-page-small">You have<br>completed this<br>activity.</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="speech-end-page hidden-xs">You have<br>completed this<br>activity.</div>
+						
+					</div>
+					<div class="col-sm-7 text-center ">
+						
+						<div class="roadsign-container">
+							<a draggable="false" href="{{nextact}}"><div class="roadsign-right">
+								<div class="roadsign-cap-l"></div><!--
+								--><div class="roadsign-content" data-function="saveProgress" data-activity="{{act}}" >Save &amp; go to next activity</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+							
+							<a draggable="false" href="#" class="pagination restart" data-function="restart"><div class="roadsign">
+								<div class="roadsign-cap-l"></div><!--
+								--><div class="roadsign-content" data-function="saveProgress" data-activity="{{act}}">Save &amp; redo this activity</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+							
+							<a draggable="false" href="{{place}}"><div class="roadsign-left">
+								<div class="roadsign-cap-l"></div><!--
+								--><div class="roadsign-content" data-function="saveProgress" data-activity="{{act}}">Save &amp; return to menu</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="end-page-bushes visible-xs"></div>
+		</div>
+	</div>
+</section>
+</template>
+
+<!-- Finish game -->
+<template name="EndPage2">
+<section id="{{act}}_end" class="hidden section-end-page">
+	<div class="end-page-content">
+		<div class="end-page-scene">
+			<div class="container-fluid end-avatar-{{char}}">
+				<div class="row">
+					<div class="col-sm-5 text-center">
+					
+						<div class="container-fluid visible-xs" style="max-width: 340px;">
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="avatar-end-small-{{char}} shadow"></div>
+								</div>
+								<div class="col-xs-7">
+									<div class="speech-end-page-small">You have<br>{{end}} this<br>module.</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="speech-end-page hidden-xs">You have<br>{{end}} this<br>module.</div>
+						
+					</div>
+					<div class="col-sm-7 text-center ">
+						
+						<div class="roadsign-container">
+							<a draggable="false" href="{{nextplace}}" class="alternate {{altSign}}"><div class="roadsign-right">
+								<div class="roadsign-cap-l roadsign-cap-l-game"></div><!--
+								--><div class="roadsign-content roadsign-content-game" data-function="saveProgress" data-activity="{{act}}">Save and go to Module {{nextmod}}</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+							
+							<div class="roadsign white alternate {{altSign}}">
+								<div class="roadsign-cap-l roadsign-cap-l-game"></div><!--
+								--><div class="roadsign-content roadsign-content-game"><span style="font-size: .8em">(Get a higher score to continue)</span></div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div>
+							
+							<a draggable="false" href="#{{act}}" class="pagination restart"><div class="roadsign">
+								<div class="roadsign-cap-l"></div><!--
+								--><div class="roadsign-content" data-function="saveProgress" data-activity="{{act}}">Save &amp; redo this activity</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+							
+							<a draggable="false" href="{{place}}"><div class="roadsign-left">
+								<div class="roadsign-cap-l"></div><!--
+								--><div class="roadsign-content" data-function="saveProgress" data-activity="{{act}}">Save &amp; return to menu</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="end-page-bushes visible-xs"></div>
+		</div>
+	</div>
+</section>
+</template>
+
+<!-- End of final game -->
+<template name="EndPage3">
+<section id="{{act}}_end" class="hidden section-end-page">
+	<div class="end-page-content">
+		<div class="end-page-scene">
+			<div class="container-fluid end-avatar-{{char}}">
+				<div class="row">
+					<div class="col-sm-5 text-center">
+					
+						<div class="container-fluid visible-xs" style="max-width: 340px;">
+							<div class="row">
+								<div class="col-xs-5">
+									<div class="avatar-end-small-{{char}} shadow"></div>
+								</div>
+								<div class="col-xs-7">
+									<div class="speech-end-page-small">You have<br>completed this<br>module.</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="speech-end-page hidden-xs">You have<br>completed this<br>module.</div>
+						
+					</div>
+					<div class="col-sm-7 text-center ">
+						
+						<div class="roadsign-container">
+							<a draggable="false" href="{{nextplace}}"><div class="roadsign-right">
+								<div class="roadsign-cap-l roadsign-cap-l-game"></div><!--
+								--><div class="roadsign-content roadsign-content-game" data-function="saveProgress" data-activity="{{act}}">Save and Continue</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+							
+							<a draggable="false" href="#{{act}}" class="pagination restart"><div class="roadsign">
+								<div class="roadsign-cap-l"></div><!--
+								--><div class="roadsign-content" data-function="saveProgress" data-activity="{{act}}">Save &amp; redo this activity</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+							
+							<a draggable="false" href="{{place}}"><div class="roadsign-left">
+								<div class="roadsign-cap-l"></div><!--
+								--><div class="roadsign-content" data-function="saveProgress" data-activity="{{act}}">Save &amp; return to menu</div><!--
+								--><div class="roadsign-cap-r"></div>
+							</div></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="end-page-bushes visible-xs"></div>
+		</div>
+	</div>
+</section>
+</template>
+
+<template name="kEnd">
+	<figure class="endavatar">
+  			<img draggable="false" src="/images/startend/act_end_k.png" alt="K">
+	</figure>
+</template>
+
+<template name="tuEnd">
+	<figure class="endavatar">
+  			<img draggable="false" src="/images/startend/act_end_tu.png" alt="Tu">
+	</figure>
+</template>
+
+<template name="elleEnd">
+	<figure class="endavatar">
+  			<img draggable="false" src="/images/startend/act_end_elle.png" alt="Elle">
+	</figure>
+</template>

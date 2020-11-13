@@ -1,0 +1,79 @@
+<template name="notifications">
+    <div class="modal fade" id="notificationModal1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                    <h4 class="modal-title" id="notificationTitle1">Progress update</h4>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center item-space" style="font-weight: bold">Congratulations!</h3>
+                    <div class="text-center item-space">
+                        <div class="ph-w ph-16x9 shadow" style="max-width: 400px">
+                            <div class="ph">
+                                <img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-left">{{completionNotification}}</p>
+                   <!-- p<div class="progress-update item-space">
+                        <div class="progress-icon-wrapper"><i class="fas fa-space-shuttle" style="left: {{progressCompletion}}%"></i></div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: {{progressCompletion}}%">{{progressCompletion}}%</div>
+                        </div>
+                    </div> -->
+                    <div class="text-center">
+                            <button id="fillInForm" class="button4 no-border item-space">YES <i class="fas fa-check"></i></button>
+                            <button id="notificationRead" class="button1 no-border item-space">NO <i class="fas fa-times"></i>
+
+                            </button>
+                    </div>
+                    <br>
+                    <p>You can do this later by clicking "Home" and selecting "Completion Certificate"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="finishedModule">
+    <div class="modal fade" id="notificationModal2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content modal-achievement">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="notificationTitle1">Achievement Unlocked</h4>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center item-space" style="font-weight: bold">Congratulations! You have unlocked an achievement!</h3>
+                    <div class="text-center">
+                        <div class="trophy trophy-lg mod{{trophyNumber}}"></div>
+                        <br>
+                        <div class="trophy-label">Completed Module {{moduleFinished}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="trophyEarned">
+    <div class="modal fade" id="notificationModal3" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content  modal-achievement">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="notificationTitle1">Achievement Unlocked</h4>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center item-space" style="font-weight: bold">Congratulations! You have unlocked an achievement! </h3>
+                    <div class="text-center">
+                        <div class="trophy trophy-lg per{{trophyNumber}}"></div>
+                        <br>
+                        <div class="trophy-label">Completed {{trophyNumber}}% of the course</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

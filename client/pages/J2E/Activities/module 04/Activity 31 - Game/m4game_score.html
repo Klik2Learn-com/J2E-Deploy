@@ -1,0 +1,122 @@
+<template name="m4Game_Score">
+	<section id="m4Game_Score" class="game-section hidden">
+		{{#if activeSection}}
+			{{#if perfectScore}}
+
+					<div class="game-container">
+						<div class="game-content width">
+							<div class="game-story">
+								<div class="game-image" style="background-image: url('/images/game/module4/result1.jpg');"></div>	
+								<div class="game-story-text">
+									<h1>Perfect!</h1>			
+									<div class="score-container {{medal}}">You scored <span>{{percentage}}%</span></div>
+									<p>Continue to see your answers.</p>
+								</div>
+								<div class="outcome-buttons">
+									<div class="item-space inline-block continue"><a draggable="false" href="#m4Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+									<div class="item-space inline-block start-again"><a draggable="false" href="#m4Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+						</div>
+					</div>
+					<footer>
+						{{>footer_nav prevurl="#" nexturl="#m4Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+					</footer>
+
+			{{/if}}
+
+			{{#if excellentScore}}
+					<div class="game-container">
+						<div class="game-content width">
+							<div class="game-story">
+								<div class="game-image" style="background-image: url('/images/game/module4/result1.jpg');"></div>	
+								<div class="game-story-text">
+									<h1>Excellent!</h1>			
+									<div class="score-container {{medal}}">You scored <span>{{percentage}}%</span></div>
+									<p>Continue to see the correct answers.</p>
+								</div>
+								<div class="outcome-buttons">
+									<div class="item-space inline-block continue"><a draggable="false" href="#m4Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+									<div class="item-space inline-block start-again"><a draggable="false" href="#m4Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+						</div>
+					</div>
+					<footer>
+						{{>footer_nav prevurl="#" nexturl="#m4Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+					</footer>
+			{{/if}}
+
+			{{#if goodScore}}
+					<div class="game-container">
+						<div class="game-content width">
+							<div class="game-story">
+								<div class="game-image" style="background-image: url('/images/game/module4/result2.jpg');"></div>	
+								<div class="game-story-text">
+									<h1>Well done!</h1>			
+									<div class="score-container {{medal}}">You scored <span>{{percentage}}%</span></div>
+									<p>Continue to see the answers, or start again to try and improve your score.</p>
+								</div>
+								<div class="outcome-buttons">
+									<div class="item-space inline-block continue"><a draggable="false" href="#m4Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+									<div class="item-space inline-block start-again"><a draggable="false" href="#m4Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+						</div>
+					</div>
+					<footer>
+						{{>footer_nav prevurl="#" nexturl="#m4Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+					</footer>
+			{{/if}}
+
+			{{#if okayScore}}
+						<div class="game-container">
+							<div class="game-content width">
+								<div class="game-story">
+									<div class="game-image" style="background-image: url('/images/game/module4/result2.jpg');"></div>	
+									<div class="game-story-text">
+										<h1>Good try.</h1>			
+										<div class="score-container {{medal}}">You scored <span>{{percentage}}%</span></div>
+										<p>Continue to see the answers, or start again to try and improve your score.</p>
+									</div>
+									<div class="outcome-buttons">
+										<div class="item-space inline-block continue"><a draggable="false" href="#m4Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+										<div class="item-space inline-block start-again"><a draggable="false" href="#m4Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+									</div>
+									<div class="clear-float"></div>
+								</div>
+							</div>
+						</div>
+						<footer>
+							{{>footer_nav prevurl="#" nexturl="#m4Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+						</footer>
+			{{/if}}
+
+			{{#if badScore}}
+					<div class="game-container">
+						<div class="game-content width">
+							<div class="game-story">
+								<div class="game-image" style="background-image: url('/images/game/module4/result3.jpg');"></div>	
+								<div class="game-story-text">
+									<h1>Try again.</h1>			
+									<div class="score-container {{medal}}">You scored <span>{{percentage}}%</span></div>
+									<p>Continue to see the answers, or start again to try and improve your score.</p>
+								</div>
+								<div class="outcome-buttons">
+									<div class="item-space inline-block continue"><a draggable="false" href="#m4Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+									<div class="item-space inline-block start-again"><a draggable="false" href="#m4Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+						</div>
+					</div>
+					<footer>
+						{{>footer_nav prevurl="#" nexturl="#m4Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+					</footer>
+			{{/if}}
+		{{/if}}
+	</section>
+</template>

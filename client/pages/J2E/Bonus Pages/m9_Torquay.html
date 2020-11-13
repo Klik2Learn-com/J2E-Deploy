@@ -1,0 +1,148 @@
+<template name="MoreAboutTorquay">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Torquay"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m9l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m9l4}}</div>
+		</header>
+
+		<section id="moreaboutTorquay">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Torquay/Torquay1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l4_A">
+						<p>Land Train</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Torquay/Torquay2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l4_B">
+						<p>Cockington Village and Country Park</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Torquay/Torquay3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l4_C">
+						<p>Agatha Christie</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Torquay/Torquay4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l4_D">
+						<p>Bygones</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Torquay/Torquay5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l4_E">
+						<p>Kents Cavern</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l4_A">Land Train</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Torquay/Torquay1.jpg" alt="Land Train" style="max-width: 250px;">
+					</figure>
+					<p>The land train is an ideal way to see the town at a leisurely pace. It takes visitors on a 40 minute journey round interesting sites in Torquay, including the sea front and the main shopping streets.You can get on and off where you like and it can also drop you off at your hotel.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.torquaylandtrain.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l4_B">Cockington Village and Country Park</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Torquay/Torquay2.jpg" alt="Cockington Village and Country Park" style="max-width: 250px;">
+					</figure>
+					<p>A mile from the seafront in Torquay, you can explore an award- winning country park and an old village which dates back to 11th century. In the park you can see a historic manor house, over twenty studios producing arts and crafts, an art gallery, a rose garden and an Agatha Christie Murder Mystery Trail.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.englishriviera.co.uk/things-to-do/cockington-village-and-country-park-p140183" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l4_C">Agatha Christie</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Torquay/Torquay3.jpg" alt="Agatha Christie" style="max-width: 250px;">
+					</figure>
+					<p>Dame Agatha Christie is one of England’s most famous crime writers. She was born into a wealthy family in Torquay in 1890.  She worked as a nurse in the 1st World War and went on to write 66 crime novels. She created the famous fictional detectives, Hercule Poirot and Miss Marples. Over thirty films have been made from her stories along with many TV and radio programmes.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.agathachristie.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l4_D">Bygones</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Torquay/Torquay4.jpg" alt="Bygones" style="max-width: 250px;">
+					</figure>
+					<p>This privately run museum gives visitors a fascinating insight into the lives of ordinary people in the town. It has a reconstruction of a street as it would have been in Victorian times and from the 20th century, you can see a 1950s shopping arcade and the kind of shelter people used during the 2nd World War.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://bygones.co.uk/pages/whats-on" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l4_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l4_E">Kents Cavern</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Torquay/Torquay5.jpg" alt="Kents Cavern" style="max-width: 250px;">
+					</figure>
+					<p>This cave system claims to be the warmest in Britain at a constant 14 degrees. You can see spectacular rock formations dating back 400 million years. It is one of the most important Stone Age sites in Europe. People have lived in the caves for centuries and some of the earliest tools found in Britain were found here along with the bones of Ice Age animals.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=f9LNn93hr7M" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

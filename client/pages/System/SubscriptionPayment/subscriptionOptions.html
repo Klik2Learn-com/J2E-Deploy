@@ -1,0 +1,24 @@
+<template name="subscriptionOptions">
+	<div id="subscriptionBlocks" >
+		<div id="subscriptionTitle" class="{{registered}}"><h2>Please select a subscription plan.</h2></div>	
+		<div id="subscriptionTitle" class="hidden">
+			Plan options:
+			<label class="form-check-inline">
+				<input class="form-check-input" type="radio" id="checkboxMonths"  name="inlineRadioOptions" checked> Months
+			</label>
+			<label class="form-check-inline">
+				<input class="form-check-input" type="radio" id="checkboxDaily"  name="inlineRadioOptions"> Days
+			</label>
+		</div>
+		
+			<div id="subscriptionBlocksOptions"></div>	
+			<div class="stripeOutput"></div>	
+
+		<div id="voucherBlock" class="">
+			<label>Have a voucher?</label>
+			<input name="voucher" id="voucher" type="text"><button id="applyVoucher">Apply Voucher</button><br class="visible-xxs">
+			<br><div class="voucherOutput"></div><br>
+			Voucher codes are case sensitive
+		</div>
+	</div>
+</template>

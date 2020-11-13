@@ -1,0 +1,96 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a23">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/DunveganCastle');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 23 - {{>m1a23Title}}</div>
+			</header>
+
+			<section id="m1a23">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m1a23Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m1a23Intro}}</h3>
+					{{> m1a23Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a23_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{> m1a23_1}} {{> m1a23_end}}
+		</div>
+	</article>
+
+</template>
+
+
+<template name="m1a23_1">
+	<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m1a23_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the right preposition into the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="parapaper parapaperdd1 fold">
+						{{> rightwrong}}
+						<ol class="olcircle">
+							<li>The survey found national myths
+								<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> almost every country.</li>
+							<li>The researchers tried to find
+								<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> if the national stereotypes matched the real people.</li>
+							<li>They then asked people to do the same thing
+								<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> people they actually knew from these countries.</li>
+							<li>People need
+								<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> remember...</li>
+							<li>Often a group will promote themselves
+								<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> choosing a few characteristics that are positive.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			{{> welldone}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">in</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">for</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">out</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">to</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">by</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a23" nexturl="#m1a23_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m1a23_end">
+	{{>EndPage char="tu" act="m1a23" nextact="m1a24" place="DunveganCastle"}}
+</template>

@@ -1,0 +1,17 @@
+<template name="Yeti_d2_result">
+	<section id="Yeti_d2_result">
+		{{#if activeSection}}
+			{{#if highScore}}
+				{{> Yeti_d2_good}}
+			{{/if}}
+		
+			{{#if mediumScore}}
+				{{> Yeti_d2_ok}}
+			{{/if}}
+		
+			{{#if badScore}}
+				{{>Yeti_d2_bad}}
+			{{/if}}
+		{{/if}}
+	</section>
+</template>

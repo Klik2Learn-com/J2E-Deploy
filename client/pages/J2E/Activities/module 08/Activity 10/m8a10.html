@@ -1,0 +1,287 @@
+<template name="m8a10"> 
+<article class="with-tools-sidebar m8a10 para-select">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Gloucester');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 10 - {{>m8a10Title}}</div>
+		</header>
+		<section id="m8a10">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a10Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a10Intro}}</h3>
+				{{> m8a10Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a10_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a10_1}}
+		{{>m8a10_2}}
+		{{>m8a10_3}}
+		{{>m8a10_4}}
+		{{>m8a10_5}}
+		{{>m8a10_6}}
+		{{>EndPage char="k" act="m8a10" nextact="m8a11" place="Gloucester"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a10_1"> 
+	<section id="m8a10_1" class="hidden"> 
+		{{#if activeSection}} 
+			<div class="content">
+			{{>m8a10paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a10Q" class="number pull-right">1</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a10Quest" class="caption">
+							<p>Choose one of the unusual jobs from paragraph 1. What does this person do?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a10P" class="captionsmall capgreen">
+							Paragraph 1				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a10" nexturl="#m8a10_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m8a10paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+	{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+	<br>
+	<div class="container-fluid">
+		{{> blankrow}}
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div id="m8a10textDisplay" class="parapaper fold">
+					<p><b>1.</b> The number of unusual jobs is increasing, from badger consultants to dog psychologists. One insurance company said there had been a steady increase in the number of firms wanting insurance cover for unusual occupations such as preparing kitchens for celebrity chef programmes on TV and checking for noise problems on construction sites. If people doing those jobs make mistakes, the company could face an expensive court case.</p>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 text-right">
+				<span class="paragraph-label">Select a paragraph:</span>
+				<a><div id="0" class="numbutt">1</div></a>
+				<a><div id="1" class="numbutt">2</div></a>
+				<a><div id="2" class="numbutt">3</div></a>
+				<a><div id="3" class="numbutt">4</div></a>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+</div>
+</template>
+
+<template name="m8a10_2"> 
+	<section id="m8a10_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a10paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a10Q" class="number pull-right">2</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a10Quest" class="caption">
+							<p>Which statement is true:<Br>A: People are more likely to sue a company nowadays.<br>B: People are less likely to sue a company nowadays.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a10P" class="captionsmall capgreen">
+							Paragraph 2				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a10_1" nexturl="#m8a10_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a10_3"> 
+	<section id="m8a10_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a10paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a10Q" class="number pull-right">3</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a10Quest" class="caption">
+							<p>Find two disadvantages of Derek’s job.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a10P" class="captionsmall capgreen">
+							Paragraph 3				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a10_2" nexturl="#m8a10_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a10_4"> 
+	<section id="m8a10_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a10paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a10Q" class="number pull-right">4</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a10Quest" class="caption">
+							<p>Find one advantage of Derek’s job.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a10P" class="captionsmall capgreen">
+							Paragraph 3				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a10_3" nexturl="#m8a10_5" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a10_5"> 
+	<section id="m8a10_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a10paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a10Q" class="number pull-right">5</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a10Quest" class="caption">
+							<p>Complete this sentence:<br>People in the UK don’t seem very happy with their jobs because...</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a10P" class="captionsmall capgreen">
+							Paragraph 4				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					<div class="col-xs-12">
+						<h3 class="center">Continue when you’re ready to see the answers.</h3>
+					</div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a10_4" nexturl="#m8a10_6" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a10_6"> 
+	<section id="m8a10_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			<h1>Notebook Answers</h1>		
+				<div class="parapaper fold notebook-answers">
+					<ol class="olcircle">
+						<li>
+							<p><b> Choose one of the unusual jobs from paragraph 1. What does this person do?</b></p>
+							<p>A badger consultant advises people on controlling the number of badgers. <br>
+	    					 	A dog psychologist advises people on how to train their dogs.</p>
+						</li>
+						<li>
+							<p><b> Which statement is true:<br>
+					        </b></p>
+							<p><b>A: People are more likely to sue a company nowadays.</b><br>
+					         B: People are less likely to sue a company nowadays.</p>
+						</li>
+						<li>
+							<p><b> Find two disadvantages of Derek’s job.</b></p>
+							<p>He gets up very early in the morning and he doesn’t have a social life. </p>
+						</li>
+						<li>
+							<p><b>Find one advantage of Derek’s job.</b></p>
+							<p> He has a job that no one else in the world has.</p>
+						</li>
+						<li>
+							<p><b>Complete this sentence:<br>
+							People in the UK don’t seem very happy with their jobs because...</b></p>
+							<p>People in the UK don’t seem very happy with their jobs because almost half of them are looking for another job.</p>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a10_5" nexturl="#m8a10_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

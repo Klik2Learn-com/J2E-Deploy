@@ -1,0 +1,624 @@
+<!-- Page templates -->
+<template name="partnersJ2e">
+	{{> partnersHeader}}
+	{{> partnersBody product="Journey 2 English" productClass="product-j2e"}}
+</template>
+
+<template name="partnersEst">
+	{{> partnersHeader}}
+	{{> partnersBody product="English Skills Test" productClass="product-est"}}
+</template>
+
+<template name="partnersJ2eEst">
+	{{> partnersHeader}}
+	{{> partnersBody product="Journey 2 English with the English Skills Test" productClass="product-all"}}
+</template>
+
+<!-- Header for people not logged in -->
+<template name="partnersHeader">
+	{{>loginBox}}
+	{{#if currentUser}}
+	{{else}}
+	<header class="course-header hidden-xs">
+		<nav>
+
+			<a draggable="false" href="/" class="logos">
+				<img draggable="false" src="/images/logo-normal.png" alt="Klik2learn">				
+				<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+			</a>
+
+			<div class="links">
+				<ul class="user-links">
+					<li><a draggable="false" href="/signup"><i class="fas fa-user-plus"></i> New account</a></li>		
+					<li><a draggable="false" class="call-login-box"><i class="fas fa-sign-in-alt"></i> Sign in</a></li>	
+				</ul>
+			</div>
+		</nav>
+	</header>
+	{{/if}}
+</template>
+
+<!-- Page navigation -->
+<template name="partnersNav">	
+	<nav class="marking-guide-links">
+		<ul class="nav nav-tabs nav-justified">
+			<li class="{{section1}}">
+				<a draggable="false" href="#partners1" class="pagination">Welcome</a>
+			</li>
+			<li class="{{section2}}">
+				<a draggable="false" href="#partners2" class="pagination">Training video</a>
+			</li>
+			<li class="{{section3}}">
+				<a draggable="false" href="#partners3" class="pagination">Contact list</a>
+			</li>
+			<li class="{{section4}}">
+				<a draggable="false" href="#partners4" class="pagination">Customisation guidelines</a>
+			</li>
+			<li class="{{section5}}">
+				<a draggable="false" href="#partners5" class="pagination">Student <span class="no-wrap">learner journey</span></a>
+			</li>
+			<li class="{{section8}}">
+				<a draggable="false" href="#partners8" class="pagination">User roles</a>
+			</li>
+			<li class="{{section6}} j2e-content all-content">
+				<a draggable="false" href="#partners6" class="pagination">Klik2learn texts</a>
+			</li>
+			<li class="{{section7}}">
+				<a draggable="false" href="#partners7" class="pagination">Videos</a>
+			</li>
+		</ul>
+	</nav>
+</template>
+
+<!-- Main page content -->
+<template name="partnersBody">
+	<article class="marking-guidelines partners-article {{productClass}}">
+	
+		<header class="acttitle">
+			<div class="parent-level">Partner</div> <div class="acttitle-title">Onboarding</div>
+		</header>
+		
+		<section id="partners1" class="of-vis">
+			<div class="content">
+				{{>partnersNav section1="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Welcome and thank you for partnering with Klik2Learn&trade;</h2>
+						<p>The product you have agreed to market, and sell is <b>{{{product}}}</b></p>
+						<p>To ensure you can get started as soon as possible we have created a checklist that you will though with your Key Account Manager.</p>
+						<p>Click the tabs above to get started.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="partners2" class="of-vis hidden">
+			<div class="content">
+				{{>partnersNav section2="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Learn what you need to know with our training video</h2>
+						<div class="videoplayer" style="max-width: 640px">
+							<div class="embed-responsive embed-responsive-16by9">
+								<video class="embed-responsive-item" id="trainingVideo" controls poster="/video/poster.png">
+									<source src="video/module1/video.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="partners3" class="of-vis hidden">
+			<div class="content">
+				{{>partnersNav section3="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Contact the Klik2learn<sup>&trade;</sup> Team</h2>
+						<ul class="ulblank partners-contact">
+							<li>
+								<div class="role-icon"><i class="fas fa-user-graduate"></i></div>
+								<h3>Director/<wbr>Head of Learning</h3>
+								<div><b>Ann Attridge</b></div>
+								<div><a draggable="false" href="mailto: info@klik2learn.com">info@klik2learn.com</a></div>
+							</li>
+							<li>
+								<div class="role-icon"><i class="fas fa-palette"></i></div>
+								<h3>Creative Director</h3>
+								<div><b>Mark Haldane</b></div>
+								<div><a draggable="false" href="mailto: mark@klik2learn.coma">Mark@klik2learn.com</a></div>
+							</li>
+							<li>
+								<div class="role-icon"><i class="fas fa-bullhorn"></i></div>
+								<h3>Key Account Manager/<wbr>Head of Marketing</h3>
+								<div><b>Rosy Banwait</b></div>
+								<div><a draggable="false" href="mailto: rosy@klik2learn.com">rosy@klik2learn.com</a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="partners4" class="of-vis hidden">
+			<div class="content">
+				{{>partnersNav section4="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Guidelines for Customisation and White-labeling</h2>
+						<p>Journey 2 English can be customised with your own branding if required. Customised versions will have your logo in the page header, and your own landing page for users with your logo and contact information. Your users will also receive a custom 'welcome email' when they sign up.</p>
+						<h3>What we require for custom branding</h3>
+						<ol>
+							<li>
+								<p>One or more versions of your logo suitable for both light and dark backgrounds. Logos should be provided in EPS, PDF or PNG format if possible, and be a minimum of 100px in width and height.</p>
+								<figure style="display: block; margin: 1em auto; text-align: center">
+									<span style="display: inline-block; padding: 20px; background-color: #eee"><img draggable="false" src="/images/ug/partners/your-logo-lightbg.png" alt="Your logo for a light background" width="132" height="52" style="display: inline-block"></span>
+									<span style="display: inline-block; padding: 20px; background-color: #222"><img draggable="false" src="/images/ug/partners/your-logo-darkbg.png" alt="Your logo for a dark background" width="132" height="52" style="display: inline-block"></span><br>
+									<figcaption>Examples of logos suitable for light and dark backgrounds.</figcaption>
+								</figure>
+							</li>
+							<li><p>Contact information for your users, such as an email address or web address.</p></li>
+							<li><p>Any additional information you would like on your landing page and welcome email.</p></li>
+						</ol>
+						<h3>Examples</h3>
+						<h4>Landing page:</h4>
+						<div class="ph-w shadow" style="max-width: 1618px; margin: 0"><div class="ph" style="padding-top: 73.49%"><img draggable="false" src="/images/ug/partners/landing-page.jpg" alt="Screenshot"></div></div>
+						
+						<h4>Welcome email sent to users:</h4>
+						<div class="ph-w shadow" style="max-width: 640px; margin: 0"><div class="ph" style="padding-top: 111.56%"><img draggable="false" src="/images/ug/partners/welcome-email.png" alt="Screenshot"></div></div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="partners5" class="of-vis hidden">
+			<div class="content">
+				{{>partnersNav section5="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Student learner journeys</h2>
+						
+						<div class="j2e-content all-content">
+							<ul class="ug-jump-links-long">
+								<li><a draggable="false" href="#studentLearnerJourney1">1. Self-study – leading to FE College certificate</a></li>							
+								<li><a draggable="false" href="#studentLearnerJourney2">2. Self-study – leading to City &amp; Guilds certificate</a></li>							
+								<li><a draggable="false" href="#studentLearnerJourney3">3. Tutor supported – leading to an accredited FE College certificate via online, centre-based assessment</a></li>
+								<li><a draggable="false" href="#studentLearnerJourney4">4. Tutor supported – leading to City &amp; Guilds Certification via online, centre-based assessment</a></li>
+							</ul>
+							
+							<h3 class="student-learner-heading" id="studentLearnerJourney1">1. Self-study – leading to FE College certificate</h3>
+							<img draggable="false" src="/images/ug/partners/learner-journey/1-self-study.svg" class="center-block img-responsive" alt="Diagram">
+							
+							<h3 class="student-learner-heading" id="studentLearnerJourney2">2. Self-study – leading to City &amp; Guilds certificate</h3>
+							<img draggable="false" src="/images/ug/partners/learner-journey/2-self-study.svg" class="center-block img-responsive" alt="Diagram">
+							
+							<h3 class="student-learner-heading" id="studentLearnerJourney3">3. Tutor supported – leading to an accredited FE College certificate via online, centre-based assessment</h3>
+							<img draggable="false" src="/images/ug/partners/learner-journey/3-tutor-supported.svg" class="center-block img-responsive" alt="Diagram">
+							
+							<h3 class="student-learner-heading" id="studentLearnerJourney4">4. Tutor supported – leading to City &amp; Guilds Certification via online, centre-based assessment</h3>
+							<img draggable="false" src="/images/ug/partners/learner-journey/4-tutor-supported.svg" class="center-block img-responsive" alt="Diagram">
+						</div>
+						
+						<div class="est-content">
+							<ul class="ug-jump-links-long">
+								<li><a draggable="false" href="#studentLearnerJourney1">1. English Skills Test - software only</a></li>							
+								<li><a draggable="false" href="#studentLearnerJourney2">2. English Skills Test - fully managed service</a></li>
+								<h3 class="student-learner-heading" id="studentLearnerJourney1">1. English Skills Test - software only</h3>
+								<img draggable="false" src="/images/ug/partners/learner-journey/1-est.svg" class="center-block img-responsive" alt="Diagram">
+								<h3 class="student-learner-heading" id="studentLearnerJourney2">2. English Skills Test - fully managed service</h3>
+								<img draggable="false" src="/images/ug/partners/learner-journey/2-est.svg" class="center-block img-responsive" alt="Diagram">
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="partners6" class="of-vis hidden">
+			<div class="content">
+				{{>partnersNav section6="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Benchmark for Klik2learn Texts</h2>
+						<h3>Metametrics Lexile measurement compared to CEFR levels</h3>
+						<p>This table represents the raw scores as measured by the MetaMetrics Lexile Measurement system for the passages in the <i>Journey 2 English</i> course. The online scale used in the course is a simplified version of these scores using a 1-10 scale to represent the relative difficulty of the passages where 1= easy and 10 = difficult.</p>
+						<div class="mobile-table-wrapper" style="margin-right: auto; margin-left: auto; display: block">
+							<table class="table2 k2l-texts" style="width: auto">
+								<thead>
+									<tr>
+										<th>Klik2learn passage</th><th>Module, activity</th><th>Metametrics Lexile<br>measurement</th><th>CEFR level</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="level-a2">
+										<td>A Difficult Day</td><td><a draggable="false" href="/m8a13">M8 A13</a></td><td>460L</td><td>A2</td>
+									</tr>
+									<tr class="level-b2">
+										<td>A Good CV</td><td><a draggable="false" href="/m8a6">M8 A6</a></td><td>1070L</td><td>B2</td>
+									</tr>
+									<tr class="level-a2">
+										<td>A Science Teacher&rsquo;s Day</td><td><a draggable="false" href="/m7a1">M7 A1</a></td><td>740L</td><td>A2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>A Visit to Google</td><td><a draggable="false" href="/m9a8">M9 A8</a></td><td>920L</td><td>B1</td>
+									</tr>
+									<tr class="level-a2">
+										<td>An Argument between Neighbours</td><td><a draggable="false" href="/m10a3">M10 A3</a></td><td>490L</td><td>A2</td>
+									</tr>
+									<tr class="level-c1">
+										<td>An Ideal Job</td><td><a draggable="false" href="/m8a5">M8 A5</a></td><td>1470L</td><td>C1</td>
+									</tr>
+									<tr class="level-a2">
+										<td>Bad Interviews</td><td><a draggable="false" href="/m8a8">M8 A8</a></td><td>620L</td><td>A2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Being Unemployed</td><td><a draggable="false" href="/m9a14">M9 A14</a></td><td>790L</td><td>B1</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Britain&rsquo;s Most Influential Man</td><td><a draggable="false" href="/m6a5">M6 A5</a></td><td>1160L</td><td>B2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Britain&rsquo;s Most Influential Woman</td><td><a draggable="false" href="/m6a4">M6 A4</a></td><td>890L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Bullies</td><td><a draggable="false" href="/m7a12">M7 A12</a></td><td>900L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Choosing a Job</td><td><a draggable="false" href="/m8a1">M8 A1</a></td><td>940L</td><td>B1</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Doctor Who</td><td><a draggable="false" href="/m5a11">M5 A11</a></td><td>1120L</td><td>B2</td>
+									</tr>
+									<tr class="level-a2">
+										<td>Future Plans</td><td><a draggable="false" href="/m9a19">M9 A19</a></td><td>610L</td><td>A2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Getting Fit</td><td><a draggable="false" href="/m4a20">M4 A20</a></td><td>800L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Global Issues</td><td><a draggable="false" href="/m10a10">M10 A10</a></td><td>950L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>How Laws are Made</td><td><a draggable="false" href="/m6a10">M6 A10</a></td><td>790L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Local Problems</td><td><a draggable="false" href="/m10a1">M10 A1</a></td><td>970L</td><td>B1</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Mobile Phones</td><td><a draggable="false" href="/m3a2">M3 A2</a></td><td>1160L</td><td>B2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>National Stereotypes</td><td><a draggable="false" href="/m1a18">M1 A18</a></td><td>980L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Newspapers are Doomed</td><td><a draggable="false" href="/m5a14">M5 A14</a></td><td>780L</td><td>B1</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Oxford University</td><td><a draggable="false" href="/m7a5">M7 A5</a></td><td>1040L</td><td>B2</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Riots in Belfast</td><td><a draggable="false" href="/m6a20">M6 A20</a></td><td>1020L</td><td>B2</td>
+									</tr>
+									<tr class="level-a2">
+										<td>Script for The Office video</td><td><a draggable="false" href="/m9a13">M9 A13</a></td><td>510L</td><td>A2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Shopping</td><td><a draggable="false" href="/m2a5">M2 A5</a></td><td>980L</td><td>B1</td>
+									</tr>
+									<tr class="level-c1">
+										<td>Shops</td><td><a draggable="false" href="/m2a1">M2 A1</a></td><td>1200L</td><td>C1</td>
+									</tr>
+									<tr class="level-c1">
+										<td>Storms across Italy</td><td><a draggable="false" href="/m5a6">M5 A6</a></td><td>1250L</td><td>C1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>The Best Cities</td><td><a draggable="false" href="/m3a19">M3 A19</a></td><td>920L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>The City or the Country</td><td><a draggable="false" href="/m3a13">M3 A13</a></td><td>960L</td><td>B1</td>
+									</tr>
+									<tr class="level-a2">
+										<td>The Scottish Parliament</td><td><a draggable="false" href="/m6a19">M6 A19</a></td><td>670L</td><td>A2</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Top Health Trends</td><td><a draggable="false" href="/m4a2">M4 A2</a></td><td>1150L</td><td>B2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Travel and Transport</td><td><a draggable="false" href="/m2a20">M2 A20</a></td><td>940L</td><td>B1</td>
+									</tr>
+									<tr class="level-b2">
+										<td>TV programmes</td><td><a draggable="false" href="/m5a4">M5 A4</a></td><td>1090L</td><td>B2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Twenty Years from now</td><td><a draggable="false" href="/m10a9">M10 A9</a></td><td>880L</td><td>B1</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Unusual Jobs</td><td><a draggable="false" href="/m8a9">M8 A9</a></td><td>1150L</td><td>B2</td>
+									</tr>
+									<tr class="level-b2">
+										<td>Unusual Sports</td><td><a draggable="false" href="/m5a9">M5 A9</a></td><td>1070L</td><td>B2</td>
+									</tr>
+									<tr class="level-c1">
+										<td>Vitamin D</td><td><a draggable="false" href="/m4a6">M4 A6</a></td><td>1220L</td><td>C1</td>
+									</tr>
+									<tr class="level-a2">
+										<td>When I Grow Up</td><td><a draggable="false" href="/m9a18">M9 A18</a></td><td>630L</td><td>A2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Working at Amazon</td><td><a draggable="false" href="/m8a10">M8 A10</a></td><td>940L</td><td>B1</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Working Life &ndash; Then and Now</td><td><a draggable="false" href="/m8a26">M8 A26</a></td><td>900L</td><td>B1</td>
+									</tr>
+									<tr class="level-a2">
+										<td>Working Mothers</td><td><a draggable="false" href="/m9a7">M9 A7</a></td><td>630L</td><td>A2</td>
+									</tr>
+									<tr class="level-b1">
+										<td>Your First Job</td><td><a draggable="false" href="/m9a1">M9 A1</a></td><td>770L</td><td>B1</td>
+									</tr>
+								</tbody>
+							</table>
+							
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-sm-6">
+										<h3>Key</h3>
+										<table class="table2 k2l-texts" style="width: auto; margin-left: 0; margin-right: 0">
+											<tr>
+												<td class="level-a2" style="padding: 6px 12px; font-weight: bold">A2</td><td style="padding: 6px 12px;">460L - 740L</td>
+											</tr>
+											<tr>
+												<td class="level-b1" style="padding: 6px 12px; font-weight: bold">B1</td><td style="padding: 6px 12px;">750L - 1,000L</td>
+											</tr>
+											<tr>
+												<td class="level-b2" style="padding: 6px 12px; font-weight: bold">B2</td><td style="padding: 6px 12px;">1,010L - 1,190L</td>
+											</tr>
+											<tr>
+												<td class="level-c1" style="padding: 6px 12px; font-weight: bold">C1</td><td style="padding: 6px 12px;">1,200L - 1,500L</td>
+											</tr>
+										</table>
+									</div>
+									
+									<div class="col-sm-6">
+										<h3>CEFR comparison</h3>
+										
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xs-6 col-xxs-12">
+													<table class="table1" style="width: auto; margin-left: auto; margin-right: auto">
+														<thead>
+															<th>
+																<td>B1</td>
+															</th>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<p>Cambridge English Preliminary (PET)</p>
+																	<p>BEC Prelim</p>
+																	<p>IELTS 4-4.5</p>
+																	<p>TOEFL iBT 57-86</p>
+																	<p>TOEIC Listening &amp; Reading 550</p>
+																	<p>TOEIC SPeaking &amp; Writing 240</p>
+																	<p>PTE General Level 2 <span class="avoid-wrap">43-58</span></p>
+																	<p>Trinity ISE I</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												
+												<div class="col-xs-6 col-xxs-12">
+													<table class="table1" style="width: auto; margin-left: auto; margin-right: auto">
+														<thead>
+															<th>
+																<td>B2</td>
+															</th>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<p>Cambridge English First (FCE)</p>
+																	<p>BEC Vantage</p>
+																	<p>IELTS 5-6.5</p>
+																	<p>TOEFL iBT 87-109</p>
+																	<p>TOEIC Listening &amp; Reading 785</p>
+																	<p>TOEIC SPeaking &amp; Writing 310</p>
+																	<p>Michigan ECCE</p>
+																	<p>PTE General Level 3 <span class="avoid-wrap">59-75</span></p>
+																	<p>Trinity ISE II</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="partners7" class="of-vis hidden">
+			<div class="content">
+				{{>partnersNav section7="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Additional videos</h2>
+						<div class="j2e-content all-content">
+							<h3>A closer look at the course</h3>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/B3tx3zp3_m8" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+							<p>&nbsp;</p>
+						</div>
+						<div class="est-content all-content">
+							<h3>A closer look at the English Skills Test</h3>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rXgwR-wO_jo" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="partners8" class="of-vis hidden">
+			<div class="content">
+				{{>partnersNav section8="active"}}
+					
+				<div class="guide-wrapper">
+					<div>
+						<h2>Journey 2 English user system</h2>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-6">
+									<p>The <i>Journey 2</i> English platform has four user levels.</p>
+									<p><b>Students</b> can access the course, view their progress
+									and communicate with other students and tutors
+									within the same group as them.</p>
+									<p><b>Tutors</b> can manage the students within their group.
+									This includes being able to see the progress reports
+									for each student.</p>
+									<p><b>Moderators</b> can manage all users and groups within
+									their organisation. Moderators can also be memebers of more than one organisation.</p>
+									<p><b>Administrators</b> at Klik2learn™ can manage
+									organisations and assign moderators.</p>
+									<p>The level of super moderator will be introduced
+									soon. Like administrators, super moderators will be
+									able to manage organisations.</p>
+									<p>&nbsp;</p>
+								</div>
+								<div class="col-sm-6">
+									<img draggable="false" src="/images/ug/partners/user-roles.svg" class="img-repsonsive center-block" alt="Diagram">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<table class="user-roles-table">
+										<thead>
+                                            <tr class="user-role-header">
+                                                <th>&nbsp;</th>
+                                                <th colspan="4">User role</th>
+                                            </tr>
+                                            <tr>
+                                                <th>&nbsp;</th>
+                                                <th title="Administrator" data-small-title="Admin" data-x-small-title="A"></th>
+                                                <!--<th class="disabled" title="Super- moderator" data-small-title="S Mod" data-x-small-title="SM"></th>-->
+                                                <th title="Moderator" data-small-title="Mod" data-x-small-title="M"></th>
+                                                <th title="Tutor" data-small-title="Tutor" data-x-small-title="T"></th>
+                                                <th title="Student" data-small-title="Stu…" data-x-small-title="S"></th>
+                                            </tr>
+                                        </thead>
+										<tbody>
+											<tr>
+												<td>Access course</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td><i class="fas fa-check"></i></td>
+												<!--tutor--><td><i class="fas fa-check"></i></td>
+												<!--student--><td><i class="fas fa-check"></i></td>
+											</tr>
+											<tr>
+												<td>Access English Skills Test</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td></td>
+												<!--tutor--><td></td>
+												<!--student--><td><i class="fas fa-check"></i></td>
+											</tr>
+											<tr>
+												<td>Mark English Skills Test</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td></td>
+												<!--tutor--><td><i class="fas fa-check"></i></td>
+												<!--student--><td></td>
+											</tr>
+											<tr>
+												<td>Create access codes</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td></td>
+												<!--tutor--><td></td>
+												<!--student--><td></td>
+											</tr>
+											<tr>
+												<td>Manage organisations</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td></td>
+												<!--tutor--><td></td>
+												<!--student--><td></td>
+											</tr>
+											<tr>
+												<td>Monitor organisations</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td><i class="fas fa-check"></i></td>
+												<!--tutor--><td></td>
+												<!--student--><td></td>
+											</tr>
+											<tr>
+												<td>Manage moderators</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td></td>
+												<!--tutor--><td></td>
+												<!--student--><td></td>
+											</tr>
+											<tr>
+												<td>Manage groups</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td><i class="fas fa-check"></i></td>
+												<!--tutor--><td></td>
+												<!--student--><td></td>
+											</tr>
+											<tr>
+												<td>Manage tutors</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td><i class="fas fa-check"></i></td>
+												<!--tutor--><td></td>
+												<!--student--><td></td>
+											</tr>
+											<tr>
+												<td>Manage students</td>
+												<!--admin--><td><i class="fas fa-check"></i></td>
+												<!--supermod--><!--<td class="disabled"><i class="fas fa-check"></i></td>-->
+												<!--mod--><td><i class="fas fa-check"></i></td>
+												<!--tutor--><td><i class="fas fa-check"></i></td>
+												<!--student--><td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</article>
+</template>

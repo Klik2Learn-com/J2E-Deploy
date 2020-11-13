@@ -1,0 +1,291 @@
+<!-- Change template name to activity number m2a12, m1a2 etc -->
+<template name="m2a16">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Kirriemuir');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 16 - {{>m2a16Title}}</div>
+			</header>
+
+			<section id="m2a16">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m2a16Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m2a16Intro}}</h3>
+					{{> m2a16Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m2a16_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{> m2a16_1}} {{> m2a16_2}} {{> m2a16_3}} {{> m2a16_end}}
+		</div>
+	</article>
+
+</template>
+
+<template name="m2a16_1">
+	<section id="m2a16_1" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="center">
+							Some
+							<b>uncountable</b> nouns are connected to words that are
+							<b>countable</b>.
+						</h3>
+						<h3>
+							Here's an example:
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-1"></div>
+					<div class="col-md-3 col-sm-4">
+						<div class="parapaper fold center">
+							<h4>Countable</h4>
+							<div class="caption capgreen">
+								Bottle
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2"></div>
+					<div class="col-md-3 col-sm-4">
+						<div class="parapaper fold center">
+							<h4>Uncountable</h4>
+							<div class="caption capgreen">
+								Wine
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a16_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a16_2">
+	<section id="m2a16_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Drag and drop these pairs of words into the COUNTABLE or the UNCOUNTABLE column. </h3>
+			<div class="container-fluid">
+				<div class=" parapaperdd1 fold center" style="padding: 10px 0; vertical-align: top;">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="box2 ddtarget2 box2dd1 target" style="height:160px" data-destinationid="target1">
+								<h4>Countable</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="box2 ddtarget2 box2dd1 target" style="height:160px" data-destinationid="target2">
+								<h4>Uncountable</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- No need to set widths for these words as they do not have to match specific boxes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">Suitcase</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth10" draggable="true" data-destination="target2">Accommodation</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target2">Music</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">View</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">Battery</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target2">Electricity</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">Job</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target2">Luggage</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">Bed</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target2">Scenery</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">Opera</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target2">Work</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target2">Furniture</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">Journey</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target2">Travel</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated shadow dd1line ddwidth7" draggable="true" data-destination="target1">Hotel</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a16_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a16_3">
+	<section id="m2a16_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">These pairs of words are connected. Write the UNCOUNTABLE word which goes with the COUNTABLE one.</h3>
+			{{> rightwrong}} {{> welldone}}
+
+			<div class="container-fluid">
+				<table class="table1 table-center" style="padding: 10px 0; vertical-align: top;">
+					<tr class="">
+						<th class="col-sm-4 col-sm-offset-2 col-xs-6">
+							<h4>Countable</h4>
+						</th>
+
+						<th class="col-sm-4 col-xs-6">
+							<h4>Uncountable</h4>
+						</th>
+					</tr>
+
+					<tr class="">
+						<td height="35">
+							Suitcase
+						</td>
+
+						<td height="35">
+							<span id="entryanswer0">
+								<form class="textentry">
+									<input type="text" name="userText" size="7" autocomplete="off">
+									<input type="submit" value="OK">
+								</form>
+							</span>
+						</td>
+					</tr>
+
+
+					<tr class="">
+						<td height="35">
+							<span id="entryanswer1" class="textentry-disabled"></span>
+						</td>
+
+						<td height="35">
+							Scenery
+						</td>
+					</tr>
+
+
+					<tr class="">
+						<td height="35">
+							Bed
+						</td>
+
+						<td height="35">
+							<span id="entryanswer2" class="textentry-disabled"></span>
+						</td>
+					</tr>
+
+
+					<tr class="">
+						<td height="35">
+							Opera
+						</td>
+
+						<td height="35">
+							<span id="entryanswer3" class="textentry-disabled"></span>
+						</td>
+					</tr>
+
+
+					<tr class="">
+						<td height="35">
+							Journey
+						</td>
+
+						<td height="35">
+							<span id="entryanswer4" class="textentry-disabled"></span>
+						</td>
+					</tr>
+
+
+					<tr class="">
+						<td height="35">
+							<span id="entryanswer5" class="textentry-disabled"></span>
+						</td>
+
+						<td height="35">
+							Electricity
+						</td>
+					</tr>
+
+
+					<tr class="">
+						<td height="35">
+							<span id="entryanswer6" class="textentry-disabled"></span>
+						</td>
+
+						<td height="35">
+							Accommodation
+						</td>
+					</tr>
+
+
+					<tr class="">
+						<td height="35">
+							Job
+						</td>
+
+						<td height="35">
+							<span id="entryanswer7" class="textentry-disabled"></span>
+						</td>
+					</tr>
+
+
+				</table>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a16" nexturl="#m2a16_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a16_end">
+	{{>EndPage char="k" act="m2a16" nextact="m2a17" place="Kirriemuir"}}
+</template>

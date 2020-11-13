@@ -1,0 +1,262 @@
+<template name="m4a18">
+	<article class="with-tools-sidebar m4a18">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Helensburgh');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 18 - {{>m4a18Title}}</div>
+			</header>
+
+
+			<section id="m4a18">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a18Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m4a18Intro}}</h3>
+					{{> m4a18Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a18_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a18_1}} {{>m4a18_2}} {{>m4a18_3}} {{>EndPage char="elle" act="m4a18" nextact="m4a19" place="Helensburgh"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a18_1">
+	<section id="m4a18_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Cooking has its own special vocabulary. Drag the cooking term underneath the right picture.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/boiling.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/baking.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/stirring.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/roasting.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target1">boiling</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target4">roasting</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target2">baking</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target3">stirring</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a18" nexturl="#m4a18_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a18_2">
+	<section id="m4a18_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Cooking has its own special vocabulary. Drag the cooking term underneath the right picture.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/steaming.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/chopping.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/beating.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/grilling.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target3">beating</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target2">chopping</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target1">steaming</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target4">grilling</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a18" nexturl="#m4a18_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a18_3">
+	<section id="m4a18_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Cooking has its own special vocabulary. Drag the cooking term underneath the right picture.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/frying.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/rolling.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/kneading.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 285px">
+							<div class="ph">
+								<img draggable="false" src="../images/module4/a18/slicing.jpg" alt="Cooking method">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd1line ddwidth10">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target3">kneading</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target2">rolling</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target1">frying</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated shadow ddwidth10 dd1line" draggable="false" data-destination="target4">slicing</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a18" nexturl="#m4a18_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

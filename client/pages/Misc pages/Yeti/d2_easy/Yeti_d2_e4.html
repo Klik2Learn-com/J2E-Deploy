@@ -1,0 +1,28 @@
+<template name="Yeti_d2_e4">
+	<section id="Yeti_d2_e4" class="hidden">
+		{{#if activeSection}}
+		<div class="phone1bbg">
+			<div class="content container-fluid">
+				<div class="gameInfo text-center">
+				 A poor signal has scrambled some messages. Drag the words to fix the message and then {{>touch yes="tap" no="click"}} ‘OK’.
+				</div>
+				<div class="yetiScramble">
+					<div class="speech1"><div class="scramble dragitem" draggable="true">a mile.</div> <div class="scramble dragitem" draggable="true">mountaineer</div> <div class="scramble dragitem" draggable="true">British</div> <div class="scramble dragitem" draggable="true">footprints</div> <div class="scramble dragitem" draggable="true">followed</div> <div class="scramble dragitem" draggable="true">large</div> <div class="scramble dragitem" draggable="true">for over</div> <div class="scramble dragitem" draggable="true">A famous</div></div>
+				
+				{{> blankrow}}
+				<div class="speech2"><div class="ddtarget ddwidth6" id="target1">&nbsp;</div> <div class="ddtarget ddwidth6" id="target2">&nbsp;</div> <div class="ddtarget ddwidth6" id="target3">&nbsp;</div> <div class="ddtarget ddwidth6" id="target4">&nbsp;</div> <div class="ddtarget ddwidth6" id="target5">&nbsp;</div> <div class="ddtarget ddwidth6" id="target6">&nbsp;</div> <div class="ddtarget ddwidth6" id="target7">&nbsp;</div> <div class="ddtarget ddwidth6" id="target8">&nbsp;</div></div>
+				
+				<div class="row">
+					<div class="col-sm-12 text-right">
+						<span class="incorrect hidden"><i class="fa fa-close"></i></span> <span class="correct hidden"><i class="fa fa-check"></i></span> <div id="submitButton" class="button2 buttonsmall">OK</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+	
+	

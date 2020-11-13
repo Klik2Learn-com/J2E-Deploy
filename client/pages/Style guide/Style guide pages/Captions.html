@@ -1,0 +1,165 @@
+<template name="styleCaptions">
+<section id="style-captions" class="hidden">
+		<div class="content">
+			<h1>Captions</h1>
+			<div>
+				<h5>Background-less caption <pre class="htmlcode4">&#60;h5&#62;</pre></h5><br>
+				<div class="caption fold" style="margin: 5px;">Usual caption </div> <pre class="htmlcode4">&#60;div class="caption fold"&#62;</pre><br>
+				<div class="caption" style="margin: 5px;">Alternate caption</div> <pre class="htmlcode4">&#60;div class="caption"&#62;</pre><br>
+				<div class="caption capgreen" style="margin: 5px;">Info caption</div> <pre class="htmlcode4">&#60;div class="caption capgreen"&#62;</pre><br>
+				<div class="caption capgreen faded" style="margin: 5px;">Info caption faded</div> <pre class="htmlcode4">&#60;div class="caption capgreen faded"&#62;</pre><br>
+				<div class="caption capred" style="margin: 5px;">Captions that needs attention (use sparingly)</div> <pre class="htmlcode4">&#60;div class="caption capred"&#62;</pre>
+				<br><br>
+				<hr>
+				
+					<p>When you have multiple captions together, it's a good idea to give them <span class="htmlcode">.item-space</span> so they won't touch when side by side or stacked.</p>
+					<div class="caption item-space">Caption</div><div class="caption item-space">Caption</div><div class="caption item-space">Caption</div><br>
+					<div class="caption item-space">Caption</div>
+				
+				<br><br>
+			</div>
+			<hr>
+			
+			<h1>Information Boxes</h1>
+			<div class="center">
+				<div class="info shadow fold">This is an info box.<br>Change its position/alignment to suit the activity.<br>Remove the fold class if it's a small box, i.e. a single word</div><br>
+				<pre class="htmlcode4">&lt;div class=&quot;info shadow fold&quot;&gt;Your text&lt;/div&gt;</pre>
+			</div>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="info top shadow">Info box with callout, top</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info top shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+					<div class="col-xs-6">
+						<pre class="htmlcode4">&lt;div class=&quot;info bottom shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+						<div class="info bottom shadow">Info box with callout, bottom</div><br>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="info top-left shadow">Info box with callout, top, arrow-left</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info top-left shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="info top-right shadow">Info box with callout, top, arrow-right</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info top-right shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<pre class="htmlcode4">&lt;div class=&quot;info bottom-left shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+						<div class="info bottom-left shadow">Info box with callout, bottom, arrow-left</div><br>						
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<pre class="htmlcode4">&lt;div class=&quot;info bottom-right shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+						<div class="info bottom-right shadow">Info box with callout, bottom, arrow-right</div><br>						
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="info right shadow">Here we have an info box (with callout) on the right, arrow at the top</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info right shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+					<div class="col-xs-4">
+						<div class="info right2 shadow">Here we have an info box (with callout) on the right, arrow in the middle</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info right2 shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+					<div class="col-xs-4">
+						<div class="info right3 shadow">Here we have an info box (with callout) on the right, arrow at the bottom</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info right3 shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">	
+					<div class="col-xs-4">
+						<div class="info left shadow">Here we have an info box (with callout) on the right, arrow at the top</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info left shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+					<div class="col-xs-4">
+						<div class="info left2 shadow">Here we have an info box (with callout) on the right, arrow in the middle</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info left2 shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+					<div class="col-xs-4">
+						<div class="info left3 shadow">Here we have an info box (with callout) on the right, arrow at the bottom</div><br>
+						<pre class="htmlcode4">&lt;div class=&quot;info left3 shadow&quot;&gt;Your text&lt;/div&gt;</pre>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="text-center">
+				{{>infochar char="elle" text="Here we have an info box with an avatar."}}
+				<br>
+<pre class="htmlcode4">&#123;&#123;&gt;infochar char=&quot;elle&quot; text=&quot;Your text here&quot;&#125;&#125;</pre>
+			<p>If you want the info box to start off hidden, use <span class="htmlcode4">&#123;&#123;&gt;infochar_hidden char=&quot;elle&quot; text=&quot;Your text here&quot;&#125;&#125;</span></p>
+			</div>
+			<br><br>
+			
+			<h1>Hint/help</h1>
+				<div class="text-center">
+					{{>hint hintchar="k" hint="This phrase contains 3 words"}}
+					<br>
+<pre class="htmlcode4">&#123;&#123;&gt;hint hintchar=&quot;k&quot; hint=&quot;Your text here&quot;&#125;&#125;</pre>
+				</div>
+			<br>
+			<br>
+			
+			<div>
+				<h1>Feedback</h1>
+				<!-- right and wrong captions -->
+				{{>capcorrect}} {{>capcorrectbig}} <br>
+				<pre class="htmlcode4">&#123;&#123;&#62;capcorrect&#125;&#125;</pre> <pre class="htmlcode4">&#123;&#123;&#62;capcorrectbig&#125;&#125;</pre> <br><br>
+				
+				{{>capincorrect}} {{>capincorrectbig}} <br>
+				<pre class="htmlcode4">&#123;&#123;&#62;capincorrect&#125;&#125;</pre> <pre class="htmlcode4">&#123;&#123;&#62;capincorrectbig&#125;&#125;</pre> <br><br>
+				
+				{{>boxcorrect text="blah blah blah"}}<br>
+				<pre class="htmlcode4">&#123;&#123;&#62;boxcorrect text="blah blah blah"&#125;&#125;</pre><br><br>
+				
+				{{>boxincorrect text="blah blah blah"}}<br>
+				<pre class="htmlcode4">&#123;&#123;&#62;boxincorrect text="blah blah blah"&#125;&#125;</pre><br><br>
+				
+				<div class="scorebox">
+					<div class="correct noshadow" alt="correct"><i class="fa fa-check"></i></div>
+					<b>
+						<!-- Total correct answers -->
+						<span>6</span>
+					</b>
+					<div class="scoreboxspace"></div>
+					<div class="incorrect noshadow" alt="incorrect"><i class="fa fa-close"></i></div>
+					<b>
+						<!-- Total incorrect answers -->
+						<span>2</span>
+					</b>
+				</div>
+				<br>
+				<pre class="htmlcode4">&#123;&#123;&#62;scorebox1&#125;&#125;</pre><br><br>
+				
+				<div class="scorebox">
+					<ol class="olblank">
+						<li>
+							<div class="correct noshadow"><i class="fa fa-check"></i></div>
+							<b>
+								<!-- Total correct answers -->
+								<span>6</span>
+							</b>
+						</li>
+						<li><div class="scoreboxvspace"></div></li>
+						<li>
+							<div class="incorrect noshadow"><i class="fa fa-close"></i></div>
+							<b>
+								<!-- Total incorrect answers -->
+								<span>2</span>
+							</b>
+						</li>
+					</ol>
+				</div>
+				<br>
+				<pre class="htmlcode4">&#123;&#123;&#62;scorebox2&#125;&#125;</pre><br><br>
+				
+			</div>
+		</div>
+	</section>
+</template>

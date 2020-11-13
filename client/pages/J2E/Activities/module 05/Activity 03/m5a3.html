@@ -1,0 +1,1199 @@
+<template name="m5a3">
+<article class="with-tools-sidebar m5a3">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Belfast');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 3 - {{>m5a3Title}}</div>
+		</header>
+		
+		
+		<section id="m5a3">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a3Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m5a3Intro}}</h3>
+{{> m5a3Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a3_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a3_1}}
+		{{>m5a3_2}}
+		{{>m5a3_3}}
+		{{>m5a3_4}}
+		{{>m5a3_5}}
+		{{>m5a3_6}}
+		{{>m5a3_7}}
+		{{>m5a3_8}}
+		{{>m5a3_9}}
+		{{>m5a3_10}}
+		{{>m5a3_11}}
+		{{>m5a3_12}}
+		{{>m5a3_13}}
+		{{>m5a3_14}}
+		{{>m5a3_15}}
+		{{>m5a3_15b}}
+		{{>m5a3_16}}
+		{{>m5a3_17}}
+		{{>m5a3_18}}
+		{{>m5a3_19}}
+		{{>m5a3_20}}
+		{{>m5a3_21}}
+		{{>m5a3_22}}
+		{{>m5a3_23}}
+		{{>m5a3_24}}
+		{{>m5a3_25}}
+		{{>m5a3_26}}
+		{{>m5a3_27}}
+		{{>m5a3_28}}
+		{{>m5a3_29}}
+
+		{{>EndPage char="elle" act="m5a3" nextact="m5a4" place="Belfast"}}
+
+		
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="m5a3_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m5a3_modal">TV Categories</h4>
+				</div>
+				
+				<div class="content">
+
+					<table class="table1">
+						<tr> <th>TV Show</th> <th>Category</th> </tr>
+						<tr> <td>Emmerdale</td> <td>Soap</td> </tr>
+						<tr> <td>University Challenge</td> <td>Game Show</td> </tr>
+						<tr> <td>Holby City</td> <td>Drama</td> </tr>
+						<tr> <td>The X Factor</td> <td>Reality TV</td> </tr>
+						<tr> <td>The Simpsons</td> <td>Cartoon</td> </tr>
+						<tr> <td>Live at the Apollo</td> <td>Comedy</td> </tr>
+						<tr> <td>Alan Carr Chatty Man / <span class="avoidwrap">Graham Norton</span></td> <td>Chat Show</td> </tr>
+						<tr> <td>Gok's Fashion Fix</td> <td>Makeover</td> </tr>
+						<tr> <td>Dad's Army</td> <td>Sitcom</td> </tr>
+						<tr> <td>Life on Earth</td> <td>Documentary</td> </tr>
+						<tr> <td>Mock the Week</td> <td>Comedy</td> </tr>
+						<tr> <td>Game of Thrones</td> <td>Drama</td> </tr>
+						<tr> <td>Football</td> <td>Sport</td> </tr>
+					</table>
+					
+					
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</template>
+<template name="m5a3_1">
+	<section id="m5a3_1" class="hidden">
+		<div class="content">
+			<h2 class="text-center">K and Elle are deciding what to watch on TV</h2>
+			<div class="ph-w shadow" style="max-width: 700px"><div class="ph" style="padding-top: 51%"><img draggable="false" src="images/module5/a3-tv.jpg" alt="K and Elle looking at the TV"></div></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3" nexturl="#m5a3_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_10">
+	<section id="m5a3_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Wednesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/5.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Comedy</button>
+							<button class="button1 ddwidth9 item-space" id="2">Chat show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Cartoon</button>
+							<button class="button1 ddwidth9 item-space" id="4">Sitcom</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_9" nexturl="#m5a3_11" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_11">
+	<section id="m5a3_11" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Wednesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/5.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>The Simpsons</h4>
+
+							<p>The characters from this American adult cartoon series have become famous all over the world for making fun of American middle class society.</p>
+
+							<p>However the series pokes fun not just at American culture and lifestyle but at the human condition in general.</p>
+
+							<p>Some people consider it to be one of the greatest TV shows ever made.</p>
+
+							<p>The catchphrase ‘d’oh’ from Homer Simpson has found its way into English as an expression people use when they realise they’ve done something stupid.</p>
+
+							<p>There are over 500 episodes of The Simpsons, some including cartoon versions of famous people like the scientist Stephen Hawking, and the Harry Potter author, JK Rowling.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_10" nexturl="#m5a3_12" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_12">
+	<section id="m5a3_12" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Wednesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/6.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Comedy</button>
+							<button class="button1 ddwidth9 item-space" id="2">Chat show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Cartoon</button>
+							<button class="button1 ddwidth9 item-space" id="4">Sitcom</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_11" nexturl="#m5a3_13" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_13">
+	<section id="m5a3_13" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Wednesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/6.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Live at the Apollo</h4>
+
+							<p>This stand up comedy programme is named after the theatre in London where it is based. It lasts 30 minutes and features some of the top comedians in Britain performing to audiences of over 3,000 people.</p>
+
+							<p>The series has been nominated for a BAFTA award and is the most successful comedy show in Britain. It’s hosted by a well known comedian like Michael MacIntyre or Dara O’Briain who introduce three acts per show.</p>
+
+							<p>If you manage to get a ticket, you might find yourself on TV. Some comedians invite members of the audience on stage to be part of their act.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_12" nexturl="#m5a3_14" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_14">
+	<section id="m5a3_14" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Thursday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/7.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Chat show</button>
+							<button class="button1 ddwidth9 item-space" id="2">Makeover</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Comedy</button>
+							<button class="button1 ddwidth9 item-space" id="4">Reality TV</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_13" nexturl="#m5a3_15" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_15">
+	<section id="m5a3_15" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Thursday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/7.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Alan Carr Chatty Man</h4>
+
+							<p>At the age of 25, Alan Carr won the BBC’s New Comedy Award and spent several years on the Manchester comedy circuit before getting a show on TV.</p>
+
+							<p>Since 2009, he has been the host of the comedy chat show – <i>Alan Carr Chatty Man</i>.</p>
+
+							<p>Some guests do not appreciate his style of comedy. John Cleese, the star of <i>Monty Python</i> and <i>Fawlty Towers</i> once threw two drinks over him during the show.</p>
+
+							<p>In real life, Alan Carr helped to save a man who was about to fall from the pier in Blackpool. The man was holding on by his fingertips and Alan helped to pull him to safety.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_14" nexturl="#m5a3_15b" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_15b">
+	<section id="m5a3_15b" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Thursday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/7.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Graham Norton</h4>
+
+							<p>Graham Norton’s talent as a comedy chat show host has won him the top slot on TV – a show on Friday night after 10pm. </p>
+
+							<p>A typical show includes two or more famous guests like Tom Cruise, Dustin Hoffman and Kylie Minogue and a well known musical act.</p> 
+
+							<p>Members of the public are also invited to sit in a red chair and tell a funny story. If Graham gets bored, he pulls a lever and the chair falls backwards with the story teller.</p>
+
+							<p>Graham has won five BAFTA awards and now commentates on the Eurovision song contest. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_15" nexturl="#m5a3_16" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_16">
+	<section id="m5a3_16" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Thursday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/8.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Sitcom</button>
+							<button class="button1 ddwidth9 item-space" id="2">Soap</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Drama</button>
+							<button class="button1 ddwidth9 item-space" id="4">Makeover</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_15" nexturl="#m5a3_17" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_17">
+	<section id="m5a3_17" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Thursday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/8.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Gok’s Fashion Fix</h4>
+
+							<p>Gok Wan is an English fashion consultant and TV presenter. He has an English mother and a Chinese father. In his teenage years he was very overweight and later confessed ‘I was really fat.’ </p>
+
+							<p>He went on a crash diet at the age of twenty and lost over 10 stone. His shows are a mixture of fashion advice and self help for women who feel they are not the ideal shape or size. </p>
+
+							<p>As well as giving fashion advice to celebrities, he also works with young people who have issues with their weight or who experience bullying at school. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_16" nexturl="#m5a3_18" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_18">
+	<section id="m5a3_18" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Friday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/9.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Documentary</button>
+							<button class="button1 ddwidth9 item-space" id="2">Chat show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Sitcom</button>
+							<button class="button1 ddwidth9 item-space" id="4">Soap</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_17" nexturl="#m5a3_19" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_19">
+	<section id="m5a3_19" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Friday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/9.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Dad’s Army</h4>
+
+							<p>This sitcom was voted the 4th most popular in Britain. It used to attract audiences of about 18 million viewers. It’s set during the Second World War in a fictional English sea side town. </p>
+
+							<p>The characters are part of the Home Guard – men who were not eligible to fight because of their age or their occupation. Their job was to protect their community if the Germans landed in Britain.</p>
+
+							<p>The comedy came from the relationships between the characters – from the pompous bank manager, Captain Mainwaring to Frank, the youngest member who always wears a thick scarf with his uniform because his mother is afraid he might catch a cold. </p>
+
+							<p>The show has produced several well known catchphrases – ‘You stupid boy!’ and ‘Don’t panic.’</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_18" nexturl="#m5a3_20" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_2">
+	<section id="m5a3_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Monday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/1.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Drama</button>
+							<button class="button1 ddwidth9 item-space" id="2">Reality TV</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Sitcom</button>
+							<button class="button1 ddwidth9 item-space" id="4">Soap</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_1" nexturl="#m5a3_3" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_20">
+	<section id="m5a3_20" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Friday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/10.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Documentary</button>
+							<button class="button1 ddwidth9 item-space" id="2">Game show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Sitcom</button>
+							<button class="button1 ddwidth9 item-space" id="4">Chat show</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_19" nexturl="#m5a3_21" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_21">
+	<section id="m5a3_21" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Friday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/10.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Life on Earth</h4>
+
+							<p>The BBC made this documentary series with Warner Brothers. Over the 13 episodes, the famous British naturalist, David Attenborough travelled all over the world to trace the story of how life developed on the planet. </p>
+
+							<p>The camera work on the series produced some of the best and most colourful filming of wildlife that had ever been seen. </p>
+
+							<p>In Rwanda, David Attenborough was accepted by a group of mountain gorillas who began to groom him and play with him.</p>
+
+							<p>This was ranked 12th in the list of 100 Greatest TV Moments.  Attenborough said, ‘It seems really very unfair that man should choose the gorilla to symbolise everything that is aggressive and violent, when that is the one thing the gorilla is not — we are.’</p>
+
+							<p>The series was a major international success watched by 500 million people worldwide.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_20" nexturl="#m5a3_22" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_22">
+	<section id="m5a3_22" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Saturday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/11.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Game show</button>
+							<button class="button1 ddwidth9 item-space" id="2">Makeover</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Sport</button>
+							<button class="button1 ddwidth9 item-space" id="4">Reality TV</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_21" nexturl="#m5a3_23" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_23">
+	<section id="m5a3_23" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Saturday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/11.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							{{>TheXFactor}}
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_22" nexturl="#m5a3_24" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_24">
+	<section id="m5a3_24" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Saturday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/12.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Comedy</button>
+							<button class="button1 ddwidth9 item-space" id="2">Game show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Sitcom</button>
+							<button class="button1 ddwidth9 item-space" id="4">Soap</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_23" nexturl="#m5a3_25" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_25">
+	<section id="m5a3_25" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Saturday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/12.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Mock the Week</h4>
+
+							<p>This weekly show is hosted by the Irish comedian Dara O’Briain. It’s a panel game with two teams of three - a mixture of celebrities and stand up comedians.</p>
+
+							<p>The players are often expected to give answers on unusual subjects without any preparation.</p> 
+
+							<p>It’s not a serious quiz show and the scores are awarded by Dara O’Briain depending on who he thinks is the funniest team.</p>
+
+							<p>Its main purpose is to give the players a chance to do stand up comedy based on topical events in the news that week.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_24" nexturl="#m5a3_26" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_26">
+	<section id="m5a3_26" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Sunday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/13.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Sitcom</button>
+							<button class="button1 ddwidth9 item-space" id="2">Period</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Drama</button>
+							<button class="button1 ddwidth9 item-space" id="4">Soap</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_25" nexturl="#m5a3_27" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_27">
+	<section id="m5a3_27" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Sunday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/13.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Game of Thrones</h4>
+
+							<p>This very popular fantasy drama series is based on a series of novels by George R.R. Martin. There are usually several plot lines based on the struggle between noble houses to rule the kingdom. </p>
+
+							<p>The plot includes elements from many sources: the English Wars of the Roses, The fall of the Roman Empire, the legend of Atlantis and the Viking Sagas.</p>
+
+							<p>The characters are a mixture of good and bad and the series explores issues such as civil war, religion, loyalty, crime and punishment. </p>
+
+							<p>It has one of the largest cast lists in TV with over 250 actors and has won many awards including a nomination for ‘Outstanding Drama.’</p> 
+
+							<p>Most of the series was filmed in Scotland and Ireland.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_26" nexturl="#m5a3_28" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_28">
+	<section id="m5a3_28" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Sunday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/14.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Documentary</button>
+							<button class="button1 ddwidth9 item-space" id="2">Game show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Chat show</button>
+							<button class="button1 ddwidth9 item-space" id="4">Sport</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}{{>welldone}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_27" nexturl="#m5a3_29" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_29">
+	<section id="m5a3_29" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Sunday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/14.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Sunday Night Football</h4>
+
+							<p>This sports programme runs from 6:45 to 10:30 every week and features highlights from European football – the German, French and Italian leagues. A short version is repeated on Monday evenings. </p>
+
+							<p>The programme is divided into three parts: a discussion between the show’s experts, highlights from the weekend’s games and a live match from France or Italy.</p> 
+
+							<p>Viewers are encouraged to send in questions and comments via twitter while the show is on. The programme always finishes by showing the top five goals from that week.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_28" nexturl="#m5a3_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_3">
+	<section id="m5a3_3" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Monday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/1.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Emmerdale</h4>
+							
+							<p>This soap used to be called <i>Emmerdale Farm</i>. It’s set in a fictional village in the Yorkshire Dales and has been running for over 40 years. Each episode attracts between 6 million and 9 million viewers.</p>
+							
+							<p>Like most soaps, the story follows the lives of two or three families and the people who live nearby.</p>
+							
+							<p>Dramatic events happen from time to time. <i>Emmerdale</i> characters have had to cope with car crashes, fires and storms. The most dramatic of all happened in 1993 when a plane crashed into the village killing four people.</p>
+							
+							<p>Actors play the same character for many years and two have been on the programme for over 30 years.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_2" nexturl="#m5a3_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_4">
+	<section id="m5a3_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Monday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/2.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Sport</button>
+							<button class="button1 ddwidth9 item-space" id="2">Game show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Documentary</button>
+							<button class="button1 ddwidth9 item-space" id="4">Makeover</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_3" nexturl="#m5a3_5" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_5">
+	<section id="m5a3_5" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Monday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/2.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>University Challenge</h4>
+
+							<p><i>University Challenge</i> has been running on British TV for over 50 years and
+							is now hosted by Jeremy Paxman. It’s a knockout challenge with teams of
+							four students from two universities competing against each other.</p>
+
+							<p>The first or starter round has questions for students to answer individually
+							by sounding a buzzer. A correct answer gets 10 points. This led to the
+							phrase now used in English – ‘your starter for 10.’</p>
+
+							<p>There are always music rounds and picture rounds where the teams can confer to choose the answer. Towards the end of the quiz, the pace quickens until a gong sounds and the show stops. The winners in 2014 were Trinity College, Cambridge.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_4" nexturl="#m5a3_6" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_6">
+	<section id="m5a3_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Tuesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/3.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Chat show</button>
+							<button class="button1 ddwidth9 item-space" id="2">Game show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Drama</button>
+							<button class="button1 ddwidth9 item-space" id="4">Reality TV</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_5" nexturl="#m5a3_7" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_7">
+	<section id="m5a3_7" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Tuesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-k">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/3.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							<h4>Holby City</h4>
+
+							<p>Holby is name of the fictional city in the medical drama TV series. It’s set in the same hospital as another well known medical drama – <i>Casualty</i>.</p>
+
+							<p>The programme employs people to check that the stories are accurate from a medical point of view and different surgeons are asked to check the scripts.</p>
+
+							<p>Actors spend time in hospitals to experience real life situations and are taught some basic medical procedures.</p>
+
+							<p>Despite this, the British Medical Association has sometimes accused the programme of being ‘unrealistic.’</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_6" nexturl="#m5a3_8" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a3_8">
+	<section id="m5a3_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Tuesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/4.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="1">Chat show</button>
+							<button class="button1 ddwidth9 item-space" id="2">Game show</button>
+						</span>
+						<span class="avoidwrap">
+							<button class="button1 ddwidth9 item-space" id="3">Drama</button>
+							<button class="button1 ddwidth9 item-space" id="4">Reality TV</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_7" nexturl="#m5a3_9" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a3_9">
+	<section id="m5a3_9" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to the conversation then choose the right category.</h3>
+			<h2 class="text-center">Tuesday</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="m5a3-audio m5a3-elle">
+							<div class="speech6"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module5/a3/4.m4a"></button></div>
+						</div>
+						<div class="parent-expander"></div>
+					</div>
+					<div class="col-sm-7 text-center">
+						<div class="parapaper fold text-left">
+							{{>TheXFactor}}
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a3_8" nexturl="#m5a3_10" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="TheXFactor">
+<h4>The X-Factor</h4>
+
+<p><i>The X Factor</i> was started by music producer Simon Cowell in 2004 and is now the most popular talent show in Europe. There’s a similar show in the USA.</p>
+
+<p>Around 200,000 aspiring singers enter the show hoping to start a new career in the music industry.</p>
+
+<p>As well as singing ability, the judges are looking for the ‘X factor’ - that special quality which could make someone an international star.</p>
+
+<p>The show finishes in December in time for the Christmas number one single. So far, the show has produced 33 hit singles and a range of new talent including artists who didn’t win such as <i>One Direction</i>.</p>
+
+<p>Up to 20 million viewers select the winner who gets a recording contract worth £1million. After the show, all the finalists go on a live tour round the UK.</p>
+</template>

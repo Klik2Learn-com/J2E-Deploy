@@ -1,0 +1,65 @@
+<template name="ssgame_opening">
+	<section id="ssgame_opening" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<h1>Introduction</h1>
+					<div class="videoplayer">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video class="embed-responsive-item" id="game-intro" controls poster="/video/poster.png">
+								<source src="video/module2/a24.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+					<h4>HTML</h4>
+						<pre class="htmlcode2">
+&lt;template name=&quot;m1Game_1&quot;&gt;
+
+	&lt;section id=&quot;m1Game_1&quot; class=&quot;game-section hidden&quot;&gt;
+	&#123;&#123;#if activeSection&#125;&#125;
+		&lt;div class=&quot;game-container&quot;&gt;
+			&lt;div class=&quot;game-content width&quot;&gt;
+				&lt;div class=&quot;game-story&quot;&gt;
+					&lt;h1&gt;Introduction&lt;/h1&gt;
+					&lt;div class=&quot;videoplayer&quot;&gt;
+						&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+							&lt;video class=&quot;embed-responsive-item&quot; id=&quot;game-intro&quot; autoplay controls poster=&quot;/video/poster.png&quot;&gt;
+								&lt;source src=&quot;video/module2/a24.mp4&quot; type=&quot;video/mp4&quot;&gt;
+							&lt;/video&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;		
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav prevurl=&quot;#&quot; nexturl=&quot;#m1Game_2&quot; prev=&quot;hidden&quot; next=&quot;&quot;&#125;&#125;
+		&lt;/footer&gt;
+	&#123;&#123;/if&#125;&#125;
+	&lt;/section&gt;
+&lt;/template&gt;
+						</pre>
+					<h4>Javascript</h4>
+						<pre class="htmlcode2">
+Template.m1Game_1.helpers(&#123;
+	activeSection: function()&#123;
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		return (activeSection == &quot;#m1Game_1&quot;);
+	&#125;
+&#125;);
+
+Template.m1Game_1.events(&#123;
+	
+	&quot;click .pagination&quot;: function(evt)&#123;
+		$(&#39;#game-intro&#39;).get(0).pause();
+		$(&#39;#game-intro&#39;).get(0).currentTime = 0;
+	&#125;
+&#125;);
+						</pre>
+				</div>
+	</section>
+</template>

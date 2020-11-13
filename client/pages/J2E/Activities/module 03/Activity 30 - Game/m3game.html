@@ -1,0 +1,62 @@
+<template name="m3Game">
+<article class="with-tools-sidebar game m3Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Edinburgh');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 30 - {{>m3GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m3Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m3Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m3Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m3Game_1}}
+	 	{{>m3Game_2}}<!-- hotspot -->
+		{{>m3Game_3}}
+		{{>m3Game_4}}
+		{{>m3Game_4r}} <!-- reward -->
+		{{>m3Game_4h}}<!-- hotspot -->
+		{{>m3Game_5}}
+		{{>m3Game_6}}
+		{{>m3Game_6r}}<!-- reward -->
+		{{>m3Game_6h}}<!-- hotspot -->
+		{{>m3Game_7}}
+		{{>m3Game_8}}
+		{{>m3Game_8r}}<!-- reward -->
+		{{>m3Game_9}} <!-- hotspot -->
+		{{>m3Game_10}}
+		{{>m3Game_11}}
+		{{>m3Game_11r}}<!-- reward -->
+		{{>m3Game_11h}}<!-- hotspot -->
+		{{>m3Game_12}}
+		{{>m3Game_13}}
+		{{>m3Game_13r}}<!-- reward -->
+		{{>m3Game_13h}}<!-- hotspot -->
+		{{>m3Game_14}}
+		{{>m3Game_15}}
+		{{>m3Game_15r}}<!-- reward -->
+		{{>m3Game_16}}<!-- hotspot -->
+		{{>m3Game_17}}
+		{{>m3Game_17r}}<!-- reward -->
+		{{>m3Game_18}}
+		{{>m3Game_18r}}<!-- reward -->
+		{{>m3Game_19}}
+		{{>m3Game_19r}}<!-- reward -->
+		{{>m3Game_Score}}
+		{{>m3Game_ans}} 
+		{{>EndPage2 char="all" act="m3Game" nextplace="FortWilliam" nextmod="4" place="Edinburgh"  end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

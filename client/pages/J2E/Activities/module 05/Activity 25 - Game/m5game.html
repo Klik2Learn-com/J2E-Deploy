@@ -1,0 +1,82 @@
+<template name="m5Game">
+<article class="with-tools-sidebar game m5Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Liverpool');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 25 - {{>m5GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m5Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m5Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m5Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m5Game_1}}
+		
+		
+		{{>m5Game_1h}} <!-- hotspot -->
+	 	{{>m5Game_2}}
+		{{>m5Game_3}}
+		{{>m5Game_3r}} <!-- reward -->
+		{{>m5Game_3h}} <!-- hotspot -->
+		{{>m5Game_4}}
+		{{>m5Game_5}}
+		{{>m5Game_5r}} <!-- reward -->
+		{{>m5Game_5h}} <!-- hotspot -->
+		{{>m5Game_6}}
+		{{>m5Game_7}}
+		{{>m5Game_8}}
+		{{>m5Game_8r}} <!-- reward -->
+		
+		
+		{{>m5Game_9}}<!-- hotspot -->
+		{{>m5Game_9b}} 
+		{{>m5Game_10}}
+		{{>m5Game_11}}
+		{{>m5Game_11r}} <!-- reward -->
+		{{>m5Game_11h}}<!-- hotspot -->
+		{{>m5Game_12}}
+		{{>m5Game_13}}
+		{{>m5Game_13r}} <!-- reward -->
+		{{>m5Game_13h}}<!-- hotspot -->
+		{{>m5Game_14}}
+		{{>m5Game_15}}
+		{{>m5Game_16}}
+		{{>m5Game_16r}} <!-- reward -->
+		
+		{{>m5Game_16r2}} <!-- reward -->
+		
+		
+		{{>m5Game_17}}
+		{{>m5Game_18}}
+		{{>m5Game_19}}
+		{{>m5Game_19r}} <!-- reward -->
+		{{>m5Game_19h}}<!-- hotspot -->
+		{{>m5Game_20}}
+		{{>m5Game_21}}
+		{{>m5Game_21r}} <!-- reward -->
+		{{>m5Game_21h}}<!-- hotspot -->
+		{{>m5Game_22}}
+		{{>m5Game_23}}
+		{{>m5Game_23r}} <!-- reward -->
+		
+		{{>m5Game_23r2}} <!-- reward -->
+		
+		
+		{{>m5Game_Score}}
+		{{>m5Game_ans}} 
+		{{>EndPage2 char="all" act="m5Game" nextplace="Newcastle" nextmod="6" place="Liverpool"  end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

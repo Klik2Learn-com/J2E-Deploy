@@ -1,0 +1,147 @@
+<template name="MoreAboutScarborough">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Scarborough"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m6l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m6l4}}</div>
+		</header>
+
+		<section id="moreaboutScarborough">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1 col-xs-6 bonus-image" style="background-image: url('images/bonus/Scarborough/Scarborough1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l4_A">
+						<p>Alan Ayckbourn</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Scarborough/Scarborough2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l4_B">
+						<p>The Hispaniola</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Scarborough/Scarborough3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l4_C">
+						<p>Scarborough Naval Warfare</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/Scarborough/Scarborough4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l4_D">
+						<p>Open Air Theatre</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Scarborough/Scarborough5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l4_E">
+						<p>South Bay Beach</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l4_A">Alan Ayckbourn</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Scarborough/Scarborough1.jpg" alt="Alan Ayckbourn" style="max-width: 250px;">
+					</figure>
+					<p>Sir Alan Ayckbourn has written over seventy plays. Most of them had their first performance in Scarborough’s theatre where he started work when he left school. He later became the director of the theatre. Apart from Shakespeare, Ayckbourn’s plays are the most popular plays for performance in the UK. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://alanayckbourn.net/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l4_B">The Hispaniola</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Scarborough/Scarborough2.jpg" alt="The Hispaniola" style="max-width: 250px;">
+					</figure>
+					<p>Scarborough has its own pirate ship called the Hispaniola. The ship has been carrying tourists around the coast on pirate- themed trips for nearly 50 years. Nowadays you can sail round the south bay on the ship during the summer months.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=5TTiQivTzfU" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l4_C">Scarborough Naval Warfare</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Scarborough/Scarborough3.jpg" alt="Scarborough Naval Warfare" style="max-width: 250px;">
+					</figure>
+					<p>Peasholm Park in Scarborough is one of the top ten parks in the UK. It is built round a natural lake and during the summer you can watch an amazing 30 minute show - a naval battle with small replica ships re-creating a battle scene on the First or Second World War.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.scarborough-yorkshire.co.uk/scarborough-naval-warfare.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l4_D">Open Air Theatre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Scarborough/Scarborough4.jpg" alt="Open Air Theatre" style="max-width: 250px;">
+					</figure>
+					<p>During the summer the theatre is a popular venue for some of the UK’s biggest names in popular music : Elton John, Cliff Richard and the Beach Boys. It also has operas and community events. During major sporting events involving England, the theatre broadcasts the event free, on a large screen. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.scarboroughopenairtheatre.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l4_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l4_E">South Bay Beach</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Scarborough/Scarborough5.jpg" alt="South Bay Beach" style="max-width: 250px;">
+					</figure>
+					<p>Scarborough has two main beaches: north bay and south bay. South Bay is a typical English seaside resort with stalls selling food and gifts, fairground rides, cafes, donkey rides and shops. North bay is quieter with a Sea Life centre and beach huts.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitscarborough.com/scarborough/beaches/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

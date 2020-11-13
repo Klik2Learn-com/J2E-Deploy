@@ -1,0 +1,107 @@
+<template name="loading">
+	<div class="page-loading"></div>
+</template>
+
+<template name="notFound">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+		<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		<div class="parent-level">Journey 2 English</div> <div class="acttitle-title">Page not found</div>
+	</header>
+	
+	<section>
+		<div class="content">
+			<img draggable="false" src="/images/module8/a7/sensitive.png" class="center-block img-responsive" style="margin-bottom: 1em;">
+			<h4 class="text-center" style="margin: 0 0 4em 0;">Oops! This page could not be found. <a href="/">{{>touch yes="Tap" no="Click"}} here</a> to return to the home page.</h4>
+			<div class="parapaper paraextract shadow-dialogue" style="background-color: #e4e4e4;">
+				<p>
+					<figure class="imgleft"><i class="fa fa-sign-in-alt" style="font-size: 3.3em; margin-bottom: 1.2em; margin-right: 10px; color: #ff9d00;"></i></figure>
+					Having trouble logging in? Your internet browser may be out of date. <i>Journey 2 English</i> is designed to work in <a draggable="false" href="https://www.google.co.uk/chrome/" class="avoidwrap" style="font-weight: normal;">Google Chrome</a>, <a draggable="false" href="https://www.mozilla.org/en-GB/firefox/new/" class="avoidwrap" style="font-weight: normal;">Mozilla Firefox</a>, <a draggable="false" href="https://support.apple.com/en-us/HT204416" class="avoidwrap" style="font-weight: normal;">Safari</a> and <a draggable="false" href="https://www.microsoft.com/en-us/download/details.aspx?id=48126" class="avoidwrap" style="font-weight: normal;">Microsoft Edge</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+	
+</div>
+</article>
+</template>
+
+<template name="layout">
+	<div id="scrollUp" style="top:0; left: 10%; width: 80%; height: 10px; position: fixed; z-index: 1030;"></div>
+	
+	{{#if currentUser}}
+		<img src="image.svg" height="1" width="1" style="position: absolute;"><img src="hourglass-half.svg" height="1" width="1" style="position: absolute;">
+		{{> Template.dynamic template=header}}
+	<!-- {{else}}
+		<button class="header-login call-login-box button1 buttonsmall no-border"><i class="fa fa-sign-in-alt"></i>&nbsp;&nbsp;Sign in</button> -->
+	{{/if}}
+	
+	
+	
+	{{>yield}}
+	
+	{{#if currentUser}}
+		{{>MainFooter sqa_a_color="inverted"}}
+	{{/if}}
+	
+	{{> GrammarGuide}}
+	{{> dictionary}}
+	{{> notebook}}
+	{{> voicerecorder}}
+	{{> messages}}
+	
+	{{>moreAnnouncementsModal}}
+	{{>notifications}}
+	{{>finishedModule}}
+	{{>trophyEarned}}
+	{{>achievementsModal}}
+	{{>feedbackUnit1Modal}}
+	{{>feedbackUnit2Modal}}
+	
+	{{#if currentUser}}
+	<div id="preloader">
+		.
+		<b>.</b>
+		<i>.</i>
+		<b><i>.</i></b>
+		<b class="bold-black">.</b>
+		<b class="bold-black"><i>.</i></b>
+		<span class="mapnamefont">.</span>
+		<span class="hand-font">.</span>
+		<i class="fa fa-close"></i>
+		<i class="fa fa-check"></i>
+		<img draggable="false" width="1" height="1" src="/mappage/game-star.png">
+		<img draggable="false" width="1" height="1" src="/mappage/k.png">
+		<img draggable="false" width="1" height="1" src="/mappage/tu.png">
+		<img draggable="false" width="1" height="1" src="/mappage/elle.png">
+		<img draggable="false" width="1" height="1" src="/mappage/all.png">
+		<img draggable="false" width="1" height="1" src="/mappage/k@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/tu@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/elle@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/all@2x.png">
+		<img draggable="false" width="1" height="1" src="/images/startend/act_start_k.png">
+		<img draggable="false" width="1" height="1" src="/images/startend/act_start_tu.png">
+		<img draggable="false" width="1" height="1" src="/images/startend/act_start_elle.png">
+		<img draggable="false" width="1" height="1" src="/images/startend/act_start_speaking.png">
+		<img draggable="false" width="1" height="1" src="/images/icons/audio.svg">
+		<img draggable="false" width="1" height="1" src="/mappage/unit1@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/unit2@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod1@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod2@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod3@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod4@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod5@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod6@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod7@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod8@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod9@2x.png">
+		<img draggable="false" width="1" height="1" src="/mappage/mod10@2x.png">
+	</div>
+	{{/if}}<!--
+	
+	--><div id="scrollDown" style="bottom:0; left: 12%; width: 70%; height: 10px; position: fixed; z-index: 1030;"></div><!--
+	
+--></template>

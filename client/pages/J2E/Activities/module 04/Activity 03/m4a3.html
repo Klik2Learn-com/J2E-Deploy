@@ -1,0 +1,159 @@
+<template name="m4a3">
+<article class="with-tools-sidebar m4a3">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/FortWilliam');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 3 - {{>m4a3Title}}</div>
+		</header>
+		
+		
+		<section id="m4a3">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a3Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m4a3Intro}}</h3>
+{{> m4a3Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a3_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m4a3_1}}
+		{{>m4a3_2}}
+		{{>m4a3_3}}
+		{{>m4a3_4}}
+
+		{{>EndPage char="elle" act="m4a3" nextact="m4a4" place="FortWilliam"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name ="health_trends_article">
+<div class="parapaper">
+				{{>metametrics level="7" star="no" align="center"}}
+				
+				<h4><figure class="image imgright-responsive"><div class="ph-w ph-3x2 shadow" style="width: 230px;"><div class="ph"><img draggable="false" src="images/module4/a3/energy-drinks.jpg" alt="Energy drinks"></div></div></figure>Energy Drinks</h4>
+				<p>Over the <span class="grammar">last</span> few years there has been an increase in the popularity of <span class="grammar">energy</span> drinks. These drinks are increasingly <span class="grammar">popular</span> not just with <span class="grammar">young</span> people but among seniors. However, there might be a backlash as more <span class="grammar">health-conscious</span> individuals want to get the same boost from drinks that contain 100% <span class="grammar">natural</span> ingredients, such as, whole grains, tea extract, bananas, and dates.</p>
+				<div class="clearfix"></div>
+				
+				
+				<h4><figure class="image imgleft-responsive"><div class="ph-w ph-3x2 shadow" style="width: 230px;"><div class="ph"><img draggable="false" src="images/module4/a3/sleep.jpg" alt="Person sleeping"></div></div></figure>Sleep</h4>
+				<p>Studies have shown that not getting enough sleep is associated with <span class="grammar">high blood</span> pressure, <span class="grammar">weight</span> gain, <span class="grammar">lowered</span> immunity and depression. In 2013, more people will associate sleep with health. 76% of individuals in the U.S.A. would like to enhance the quality and quantity of sleep they get. In addition, the <span class="grammar">National Sleep</span> Foundation says that two-thirds of women have <span class="grammar">regular</span> sleep problems. According to the <span class="grammar">World</span> Association of <span class="grammar">Sleep</span> Medicine, 45% of people in the world suffer from <span class="grammar">sleep</span> deprivation.</p>
+				<div class="clearfix"></div>
+				
+				
+				<h4><figure class="image imgright-responsive"><div class="ph-w ph-3x2 shadow" style="width: 230px;"><div class="ph"><img draggable="false" src="images/module4/a3/veg.jpg" alt="Vegetables"></div></div></figure>‘Flexitarians’</h4>
+				<p>Although the ratio of vegetarians and vegans remains <span class="grammar">small</span>, in 2013 more individuals will become ‘Flexitarians,’ - individuals who lower their intake of meat for <span class="grammar">health</span> reasons, but still consume <span class="grammar">animal</span> protein on occasion. Evidence of this trend is the increasing popularity of Facebook campaigns such as ‘<span class="grammar">Meatless</span> Monday’.</p>
+				<div class="clearfix"></div>
+				
+				
+				<h4><figure class="image imgleft-responsive"><div class="ph-w ph-3x2 shadow" style="width: 230px;"><div class="ph"><img draggable="false" src="images/module4/a3/health-website.jpg" alt="Website for giving up smoking"></div></div></figure>Online Motivation </h4>
+				<p>Although many individuals understand the importance of exercise, they are seldom motivated enough to make it part of their <span class="grammar">everyday</span> routine. However, <span class="grammar">social media</span> networks can provide this motivation. Reebok’s ‘Promise Keep’ rewards users with a Twitter or Facebook ‘call-out’ when they complete a <span class="grammar">scheduled</span> workout.  Stickk.com allows users to create ‘Commitment Contracts’ to quit smoking, lose weight, or exercise regularly. In 2013, more products will allow users to track their progress and <span class="grammar">physical</span> activity online. <span class="grammar">Computer</span> games are now offering players the chance to get up and exercise or dance.</p>
+				<div class="clearfix"></div>
+				
+				
+				<h4><figure class="image imgright-responsive"><div class="ph-w ph-3x2 shadow" style="width: 230px;"><div class="ph"><img draggable="false" src="images/module4/a3/health-app.jpg" alt="Health app"></div></div></figure>DIY Health Apps</h4>
+				<p>This began as a backlash to <span class="grammar">expensive medical</span> costs and <span class="grammar">poor</span> service. Now, the <span class="grammar">DIY health</span> movement allows users to track their health 365 days a year with a <span class="grammar">smartphone</span> app. Examples include the ‘Skin Scan’, which scans and monitors moles over time, and  a <span class="grammar">blood pressure</span> monitor, which takes the user’s blood pressure and sends it directly to a doctor.</p>
+				
+				<p>By the end of 2013, the number of <span class="grammar">health-related</span> apps in the Apple App Store is expected to increase to 13,000.</p>
+				
+				<p>It’s not an exaggeration to say that health is the new <span class="grammar">prestige</span> barometer. The <span class="grammar">great</span> majority of people would rather be considered <span class="grammar">healthy</span> than <span class="grammar">wealthy</span>.</p>
+			</div>
+</template>
+
+<template name="m4a3_1">
+	<section id="m4a3_1" class="hidden">
+		<div class="content">
+			<h1>Top Health Trends</h1>
+			<h3 class="text-center">Read these short articles written in 2013 about modern health trends. All the adjectives are highlighted.</h3>
+				{{> health_trends_article}}
+			{{>gg_button gg_text="You can get more information about Adjectives in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a3" nexturl="#m4a3_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a3_2">
+	<section id="m4a3_2" class="hidden">
+		<div class="content">
+			<h2>The main purpose of an <span class="grammar">adjective</span> is to tell you something about a <span class="grammar">noun</span>. <span class="grammar">Adjectives</span> normally go in front of the <span class="grammar">noun</span> they are describing.</h2>
+			<p>&nbsp;</p>
+			<div class="text-center"><div class="caption paraextract text-left cappad fold">‘Studies have shown that not getting enough sleep is associated with <span class="grammar">high blood</span> pressure.’</div></div>
+			<p>&nbsp;</p>
+			{{>gg_button gg_text="You can get more information about Adjectives in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a3_1" nexturl="#m4a3_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a3_3">
+	<section id="m4a3_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+			<h3>There are 11 <span class="grammar">adjectives</span> in this paragraph. {{>touch yes="Tap" no="Click"}} on a word if you think it's an <span class="grammar">adjective</span>.</h3>
+
+			<div class="parapaper paraclick">
+
+				<h2>Sleep</h2>
+				<figure class="image imgright-responsive"><div class="ph-w ph-3x2 shadow" style="width: 230px;"><div class="ph"><img draggable="false" src="/images/module4/a3/sleep.jpg"></div></div></figure><p>
+						<span class="wrong">Studies have shown that not getting enough sleep is associated with</span><span class="paraclick-word"> high </span><span class="paraclick-word">blood </span><span class="wrong">pressure,</span><span class="paraclick-word"> weight </span><span class="wrong">gain,</span><span class="paraclick-word"> lowered </span><span class="wrong">immunity and depression. In 2013, more people will associate sleep with health. 76% of individuals in the U.S.A. would like to enhance the quality and quantity of sleep they get. In addition, the</span> <span class="paraclick-word">National </span><span class="paraclick-word">Sleep </span><span class="wrong">Foundation says that two-thirds of women have</span><span class="paraclick-word"> regular </span><span class="paraclick-word">sleep </span><span class="wrong">problems. According to the</span><span class="paraclick-word"> World </span><span class="wrong">Association of</span><span class="paraclick-word"> Sleep </span><span class="wrong">Medicine, 45% of people in the world suffer from</span><span class="paraclick-word"> sleep </span><span class="wrong">deprivation.</span>
+				</p>
+			</div>
+			<div class="counterleft">Adjectives left to find: <u id="startClock1">11</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+
+			{{>gg_button gg_text="You can get more information about Adjectives in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a3_2" nexturl="#m4a3_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a3_4">
+	<section id="m4a3_4" class="hidden">
+		<div class="content">
+			<h2>Here are all of the adjectives in the paragraph.</h2>
+			
+			<div class="text-center">
+			
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center">
+							<div class="caption cappad item-space ddwidth8 text-center">sleep</div>
+							<div class="caption cappad item-space ddwidth8 text-center">lowered</div>
+							<div class="caption cappad item-space ddwidth8 text-center">national</div>
+							<div class="caption cappad item-space ddwidth8 text-center">blood</div>
+							<div class="caption cappad item-space ddwidth8 text-center">world</div>
+							<div class="caption cappad item-space ddwidth8 text-center">regular</div>
+							<div class="caption cappad item-space ddwidth8 text-center">high</div>
+							<div class="caption cappad item-space ddwidth8 text-center">weight</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a3_3" nexturl="#m4a3_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

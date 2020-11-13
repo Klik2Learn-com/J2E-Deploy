@@ -1,0 +1,148 @@
+<template name="MoreAboutPeakDistrict">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="PeakDistrict"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m7l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m7l2}}</div>
+		</header>
+
+		<section id="moreaboutPeakDistrict">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/PeakDistrict/PeakDistrict1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l2_A">
+						<p>Haddon Hall</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/PeakDistrict/PeakDistrict2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l2_B">
+						<p>The Heights of Abraham</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/PeakDistrict/PeakDistrict3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l2_C">
+						<p>The National Brewery Centre</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/PeakDistrict/PeakDistrict4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l2_D">
+						<p>Peak Rail</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/PeakDistrict/PeakDistrict5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l2_E">
+						<p>Poole’s Cavern</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l2_A">Haddon Hall</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/PeakDistrict/PeakDistrict1.jpg" alt="Haddon Hall" style="max-width: 250px;">
+					</figure>
+					<p>Haddon Hall is one of the most popular places to visit in the Peak District.   Parts of the house have survived from the 12th century and it is surrounded by beautiful terraced gardens overlooking the River Wye. It has been used many times by film and TV producers and is used for special events such as  weddings.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.haddonhall.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l2_B">The Heights of Abraham</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/PeakDistrict/PeakDistrict2.jpg" alt="The Heights of Abraham" style="max-width: 250px;">
+					</figure>
+					<p>This is an amazing place to visit near Matlock in the Peak District. You can ride in a gondola and get wonderful views of the Derwent Valley and you can also explore spectacular underground cave systems which go back millions of years. In more recent times, lead mining was popular in the area and you can experience the miner’s world for yourself.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.heightsofabraham.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l2_C">The National Brewery Centre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/PeakDistrict/PeakDistrict3.jpg" alt="The National Brewery Centre" style="max-width: 250px;">
+					</figure>
+					<p>If you want to find out about the history of brewing beer in England, this is the place to go. It’s the largest collection in Britain of equipment, vehicles, objects and advertising used in the industry. You can learn all about making beer, see old steam engines and admire two large shire horses who were used to deliver the beer in days gone by.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nationalbrewerycentre.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l2_D">Peak Rail</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/PeakDistrict/PeakDistrict4.jpg" alt="Peak Rail" style="max-width: 250px;">
+					</figure>
+					<p>The Peak Railway is a historic railway line, operated by volunteers just for tourists and visitors. You can experience what rail travel used to be like in the mid 19th century by travelling on a steam or diesel train. The journey only lasts for four miles but it goes through some of the most beautiful scenery in central England. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.peakrail.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l2_E">Poole’s Cavern</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/PeakDistrict/PeakDistrict5.jpg" alt="Poole’s Cavern" style="max-width: 250px;">
+					</figure>
+					<p>Buxton is a famous spa town in the Peak District and Poole’s Cavern is an ancient limestone cave nearby. Guides will take you round one of the finest underground systems in the UK. The rocks are beautifully lit in a variety of colours so you can see the detail on the rock crystals.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.poolescavern.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

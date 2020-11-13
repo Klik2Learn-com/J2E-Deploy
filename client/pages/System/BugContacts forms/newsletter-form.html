@@ -1,0 +1,35 @@
+<template name="newsletterForm">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<!-- <a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a> -->
+			<!-- {{> menu_assess}} -->
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">Newsletter Signup</div>
+		</header>
+		<section>
+			<div class="content-user text-center">
+				<h1>Sign up for our newsletter below</h1>
+
+
+				<div class="jumbotron text-center">
+				    <img width="250" src="https://images.unsplash.com/1/apple-gear-looking-pretty.jpg" alt="Startup Starter Kit">
+				    <h2>Stealth</h2>
+				    <p>We're a new startup that's going to revolutionize how you do stuff. Seriously. Remember email? This is like that but better. Join our mailing list to get more details when we launch!</p>
+				    <form id="mailing-list" class="form-inline">
+				   	  {{> honeypot }}
+				      <div class="form-group">
+				        <label hidden for="emailAddress">Email</label>
+				        <input type="email" name="emailAddress" class="form-control" id="emailAddress" placeholder="awesome.person@gmail.com">
+				      </div>
+				      <button type="submit" class="btn btn-success">Sign Me Up!</button>
+				      <label class="error-message"></label>
+				    </form>
+				</div>
+			</div>
+		</section>
+	</div>
+</article>
+
+</template>

@@ -1,0 +1,148 @@
+<template name="MoreAboutStokeonTrent">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="StokeonTrent"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m7l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m7l3}}</div>
+		</header>
+
+		<section id="moreaboutStokeonTrent">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-1 col-xs-6 bonus-image" style="background-image: url('images/bonus/StokeonTrent/StokeonTrent1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l3_A">
+						<p>Alton Towers</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/StokeonTrent/StokeonTrent2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l3_B">
+						<p>The Potteries</p>
+					</div>
+					<div class="col-sm-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/StokeonTrent/StokeonTrent3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l3_C">
+						<p>Trentham Gardens</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/StokeonTrent/StokeonTrent4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l3_D">
+						<p>New Vic</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/StokeonTrent/StokeonTrent5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l3_E">
+						<p>Water World</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l3_A">Alton Towers</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StokeonTrent/StokeonTrent1.jpg" alt="Alton Towers" style="max-width: 250px;">
+					</figure>
+					<p>Alton Towers is probably the most famous theme park in the UK. It has nine spectacular roller coasters. One of them, Galactica, is the world’s first roller coaster  to use virtual reality. Oblivion is a roller coaster which has a unique vertical dive and is not for the faint- hearted. You can travel round the park by monorail and cable car and visit other attractions such as the aquarium.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://en.wikipedia.org/wiki/Alton_Towers_Resort" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l3_B">The Potteries</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StokeonTrent/StokeonTrent2.jpg" alt="The Potteries" style="max-width: 250px;">
+					</figure>
+					<p>Stoke-on-Trent is officially described as the world capital for ceramics. You can go on a factory tour, meet the skilled people who make the pottery and even try making something yourself. Some of the world famous brands and designs in ceramics were created in Stoke-on-Trent, including Wedgwood and Aynsley.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=OWROkVc5MAI" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l3_C">Trentham Gardens</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StokeonTrent/StokeonTrent3.jpg" alt="Trentham Gardens" style="max-width: 250px;">
+					</figure>
+					<p>In 2015, these gardens were voted ‘Garden of the Year,’ by BBC viewers. You can explore woodland trails and walk round a lake a mile long or take a trip on the electric boat, ‘Miss Elizabeth.’ For the more active, there’s an adventure playground with an assault course and a maze.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.trentham.co.uk/trentham-gardens" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l3_D">New Vic</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StokeonTrent/StokeonTrent4.jpg" alt="New Vic" style="max-width: 250px;">
+					</figure>
+					<p>The New Vic Theatre Company was the first company in Britain to put on performances ‘in the round’ with the audience sitting on all sides of the stage.It was famous for creating musical documentaries which reflected life in the area where most people were employed in the pottery, coal or steel industries. The theatre company now travels abroad and has links to the National Shakespeare company.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.newvictheatre.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l3_E">Water World</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StokeonTrent/StokeonTrent5.jpg" alt="Water World" style="max-width: 250px;">
+					</figure>
+					<p>For a really fun day out, the Water World near Stoke -on -Trent is a great place to go. Over 400,000 people visit it each year and it is the UK’s Number 1 indoor water park.  It has a tropical theme with exciting rides and flumes or you can just relax in a hot tub or a lounger by the cafe.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.waterworld.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

@@ -1,0 +1,105 @@
+<template name="recorderlisten">
+   <section id="recorder_listen" class="recorder_listen hidden">
+      <nav class="notebooknav"><!--
+         --><span class="vrTab notebook-spanlink" data-target="#recorder_save"><!--
+            --><div class="tooltab tooltab-rec"><i class="fa fa-circle"></i> New<span> Recording</span></div><!--
+         --></span><!--
+		--><div class="tooltab_active tooltab-rec"><i class="fa fa-play"></i> Saved<span> Recordings</span></div><!--
+      --></nav>
+		<div class="notebookmain">
+			<div class="content">
+				<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on a recording name to see details and comments</h3>
+				{{#each userRecordings}}
+					<div class="parapaper fold note-container">
+
+						<div class="note-titlebar">
+							<button class="buttonround buttonplay" data-audiosrc="{{this.url}}"></button>
+							<div class="rec-title open-note" data-toggle="collapse" data-target="#{{_id}}">
+								
+								<div class="note-title">{{this.name}}&nbsp;</div>								
+								<div class="note-date">{{this.metadata.duration}}s</div>
+								{{#if notStudent}}
+									<div class="">{{getFullnameFromId this.audioAuthor}}</div>
+								{{/if}}
+								<div class="parent_expander"></div>
+							</div>
+						</div>
+
+						<div id="{{_id}}" class="collapse">
+							<div class="spacer2"></div>
+							<div class="text-center">
+								<div class="inline-block text-left">
+									Length: <b>{{this.metadata.duration}}</b> sec<br>
+									Recorded on: <b>{{dateFormat this.uploadedAt}}</b>
+									{{#if notStudent}}
+										{{#if noComments}}
+											{{> voiceRecorderComment}}
+										{{/if}}
+									{{/if}}
+								</div>
+							</div>
+
+							 {{#if comments}}
+				               <div class="comments-header">Comments</div>
+				              {{/if}}
+
+							<div class="comments">
+							{{#each this.comments}}
+							  {{#if typeAudio}}		
+								{{#if isTutorComment}}
+								  {{#with commentRecording}}								 
+									<div class="notebook-comment tutor shadow" data-identifier="{{this._id}}">
+									<b>{{getFullnameFromId this.audioAuthor}}</b>
+									<div class="note-content">
+										<p style="white-space: pre-wrap; word-wrap: break-word;">{{this.comment}}</p>
+									</div>
+									  <button class="buttonround buttonroundbig buttonplay" data-audiosrc="{{this.url}}"></button>
+									</div>
+								  {{/with}}
+								{{else}}
+								  {{#with commentRecording}}
+									<div class="notebook-comment student shadow" data-identifier="{{this._id}}">
+									<div class="note-content">
+										<p style="white-space: pre-wrap; word-wrap: break-word;">{{this.comment}}</p>
+									</div>
+									  <button class="buttonround buttonroundbig buttonplay" data-audiosrc="{{this.url}}"></button>
+									</div>
+								  {{/with}}
+								{{/if}}
+							  {{else}}
+								{{#if isTutorComment}}
+								  <div class="notebook-comment tutor shadow">
+								  <b>{{getFullnameFromId this.commenter}}</b>
+									<div class="note-content">
+									  <p style="white-space: pre-wrap; word-wrap: break-word;">{{{this.comment}}}</p>
+									</div>
+								  </div>
+								{{else}}
+								  <div class="notebook-comment student shadow">
+									<!--  <div class="note-titlebar">
+										<div class="note-date">{{datePosted}}</div>
+										<div class="parent_expander"></div>
+									 </div> -->
+									 <div class="note-content">
+										<p style="white-space: pre-wrap; word-wrap: break-word;">{{{this.comment}}}</p>
+									 </div>
+								  </div>
+								{{/if}}
+							  {{/if}}
+							{{/each}}
+							{{#if lastCommentIsTutor}}
+							  {{> voiceRecorderComment}}
+							{{/if}}
+							{{#if notStudent}}
+							  {{> voiceRecorderComment}}
+							{{/if}}
+							</div>
+							<div class="spacer"></div>
+						</div>
+				  </div>
+				{{/each}}
+
+			</div>
+		</div>
+   </section>
+</template>

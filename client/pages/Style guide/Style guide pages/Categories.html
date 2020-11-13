@@ -1,0 +1,97 @@
+<template name="CategoryTest">
+
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		{{#if endPageSect}}
+		<a draggable="false" href="/Linlithgow"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{/if}}
+		{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 14 - {{>m3a14Title}}</div>
+		</header>
+		
+		
+		<section>
+			<div class="content">
+
+				<h3>The article uses a number of words to link ideas together.</h3>
+				<h3>Select the right option for each each. The first ones have been done for you.</h3>
+				
+				<div class="container-fluid categories">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="">And</div>
+						</div>
+						<div class="col-sm-10 text-center">
+							<form>
+								<span class="avoid-wrap">
+									<input type="radio" name="q1" value="1a" id="1a" disabled="disabled" checked> <label for="1a">Agreeing/adding</label>
+									<input type="radio" name="q1" value="1b" id="1b" disabled="disabled"> <label for="1b">Agreeing/adding</label>
+								</span>
+								<span class="avoid-wrap">
+									<input type="radio" name="q1" value="1c" id="1c" disabled="disabled"> <label for="1c">Result</label>
+									<input type="radio" name="q1" value="1d" id="1d" disabled="disabled"> <label for="1d">Reason</label>
+								</span>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="">And</div>
+						</div>
+						<div class="col-sm-10 text-center">
+							<form>
+								<span class="avoid-wrap">
+									<input type="radio" name="q2" value="2a" id="2a" disabled="disabled"> <label for="2a">Agreeing/adding</label>
+									<input type="radio" name="q2" value="2b" id="2b" disabled="disabled" checked> <label for="2b">Agreeing/adding</label>
+								</span>
+								<span class="avoid-wrap">
+									<input type="radio" name="q2" value="2c" id="2c" disabled="disabled"> <label for="2c">Result</label>
+									<input type="radio" name="q2" value="2d" id="2d" disabled="disabled"> <label for="2d">Reason</label>
+								</span>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="">And</div>
+						</div>
+						<div class="col-sm-10 text-center">
+							<form>
+								<span class="avoid-wrap">
+									<input type="radio" name="q3" value="3a" id="3a" disabled="disabled"> <label for="3a">Agreeing/adding</label>
+									<input type="radio" name="q3" value="3b" id="3b" disabled="disabled"> <label for="3b">Agreeing/adding</label>
+								</span>
+								<span class="avoid-wrap">
+									<input type="radio" name="q3" value="3c" id="3c" disabled="disabled" checked> <label for="3c">Result</label>
+									<input type="radio" name="q3" value="3d" id="3d" disabled="disabled"> <label for="3d">Reason</label>
+								</span>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="">And</div>
+						</div>
+						<div class="col-sm-10 text-center">
+							<form>
+								<span class="avoid-wrap">
+									<input type="radio" name="q4" value="4a" id="4a" disabled="disabled"> <label for="4a">Agreeing/adding</label>
+									<input type="radio" name="q4" value="4b" id="4b" disabled="disabled"> <label for="4b">Agreeing/adding</label>
+								</span>
+								<span class="avoid-wrap">
+									<input type="radio" name="q4" value="4c" id="4c" disabled="disabled"> <label for="4c">Result</label>
+									<input type="radio" name="q4" value="4d" id="4d" disabled="disabled" checked> <label for="4d">Reason</label>
+								</span>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</article>
+
+
+</template>

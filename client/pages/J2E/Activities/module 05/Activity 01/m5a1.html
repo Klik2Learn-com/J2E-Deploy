@@ -1,0 +1,161 @@
+<template name="m5a1">
+	<article class="with-tools-sidebar m5a1">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Belfast');"><i class="titlereturn fa fa-arrow-left"></i></a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 1 - {{>m5a1Title}}</div>
+			</header>
+
+
+			<section id="m5a1">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a1Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m5a1Intro}}</h3>
+					{{> m5a1Time}}
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a1_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a1_1}} {{>m5a1_2}} {{>EndPage char="k" act="m5a1" nextact="m5a2" place="Belfast"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a1_1">
+	<section id="m5a1_1" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h4 class="center">Every day there are hundreds of different programmes on TV. Here’s a list of programmes.</h4>
+			<h3 class="center">Drag the programmes to the explanations.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>A programme that investigates real life events.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target1">&nbsp;</div>
+					</li>
+					<li>A serious programme with realistic characters.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div>
+					</li>
+					<li>An amusing series about the lives of fictional characters.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target3">&nbsp;</div>
+					</li>
+					<li>A programme or competition which observes how real people behave.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target4">&nbsp;</div>
+					</li>
+					<li>A programme where a presenter interviews people.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target5">&nbsp;</div>
+					</li>
+					<li>A programme with stand up comedians or sketches.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target6">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Drama</Div>
+					</Div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Reality TV</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target6">Comedy</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Documentary</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Sitcom</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">Chat Show</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a1_1" nexturl="#m5a1_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a1_2">
+	<section id="m5a1_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h4 class="center">Every day there are hundreds of different programmes on TV. Here’s a list of programmes.</h4>
+			<h3 class="center">Drag the programmes to the explanations.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<!-- {{> welldone}} -->
+				<ol class="olcircle" style="counter-reset: start 6;">
+					<li>A programme which helps people change their image or their surroundings.
+						<div class="ddseatedtarget ddwidth8 dd1line"
+						 data-destinationid="target1">&nbsp;</div>
+					</li>
+					<li>A programme where people compete or answer questions to win prizes.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div>
+					</li>
+					<li>A fictional TV story featuring actors which is on every day or every week.
+						<div class="ddseatedtarget ddwidth8 dd1line"
+						 data-destinationid="target3">&nbsp;</div>
+					</li>
+					<li>A programme with animated characters.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target4">&nbsp;</div>
+					</li>
+					<li>An adaptation of a novel or play set in the past.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target5">&nbsp;</div>
+					</li>
+					<li>A programme which features highlights of football matches.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target6">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">Period Drama</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target6">Sports</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Soap</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Cartoon</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Makeover</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Game Show</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a1_1" nexturl="#m5a1_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

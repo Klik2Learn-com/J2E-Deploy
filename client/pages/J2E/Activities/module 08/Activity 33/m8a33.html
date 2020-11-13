@@ -1,0 +1,175 @@
+<template name="m8a33"> 
+<article class="with-tools-sidebar m8a33">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Stonehenge');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 33 - {{>m8a33Title}}</div>
+		</header>
+		<section id="m8a33">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a33Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a33Intro}}</h3>
+				{{> m8a33Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a33_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a33_1}}
+		{{>m8a33_2}}		
+		{{>EndPage char="elle" act="m8a33" nextact="m8a34" place="Stonehenge"}}
+	</div>
+</article>
+
+	{{>m8a33_bios}}
+</template>
+
+<template name="m8a33_bios">
+	<div class="modal fade" id="m8a33_bio1" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Jamie Oliver</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m8_oliver.jpg" alt="Photo" style="max-height:300px;"></figure>
+					Jamie Oliver developed a love of cooking as a boy, working in the kitchen of in his dad’s pub in Essex. He came to public attention in 1997 with his BBC Show – ‘The Naked Chef.’  That year his first cookbook became a number one best seller. Since then he has become a huge media personality and was awarded an MBE (an award given by the Queen for outstanding achievement.) He is famous not just for his books, merchandise and Sainsbury's adverts but for campaigning against processed foods and poor quality school dinners. He has tried to revolutionise unhealthy diets and poor cooking habits in the UK and USA. His speciality is Italian cuisine and he has a chain of restaurants called ‘Jamie’s Italian.’
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="m8a33_bio2" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Jeremy Paxman</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m8_paxman.jpg" alt="Photo" style="max-height:300px;"></figure>
+					Jeremy Paxman is one of the best known interviewers on BBC. He has a reputation as a very tough interviewer, not afraid to ask difficult and challenging questions especially to politicians. One or two have been so annoyed they walked out of the interview. However he was still awarded the title ‘Interviewer of the Year’ in 1998. He began his career making tea at radio Brighton, then joined the BBC, working on news programmes like ‘Tonight’ and ‘Panorama.’ For the last two decades he has been the presenter of ‘Newsnight,’  a current affairs programme on BBC 2. He is also the quizmaster on ‘University Challenge.’
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m8a33_1"> 
+	<section id="m8a33_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m8_oliver.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Jamie Oliver</h2>
+											Born 1975
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m8a33_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m8_jo.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“Many kids can tell you about drugs but don’t know what celery and courgettes taste like.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m8_jovid" src="https://www.youtube.com/embed/1wLH_gECZNk?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a33" nexturl="#m8a33_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a33_2"> 
+	<section id="m8a33_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m8_paxman.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Jeremy Paxman</h2>
+											Born 1950
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m8a33_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m8_jp.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“I've spent my whole life being told I have a face like a horse. You are just what you are, aren't you?”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m8_jpvid" src="https://www.youtube.com/embed/ugFock3p2xE?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a33_1" nexturl="#m8a33_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

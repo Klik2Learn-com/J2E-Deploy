@@ -1,0 +1,455 @@
+<!-- Change template name to activity number m2a12, m1a2 etc -->
+<template name="m2a12">
+<article class="with-tools-sidebar m2a12">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Arbroath');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 12 - {{>m2a12Title}}</div>
+		</header>
+				
+			<section id="m2a12">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a12Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m2a12Intro}}</h3>
+{{> m2a12Time}} <!--{{> resumePopUp}}-->
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a12_1" prev="hidden" next="" next_text="Start"}}
+	</footer>
+		</section>
+		
+		{{> m2a12_1}}
+		 {{> m2a12_2}}
+		{{> m2a12_3}}
+		{{> m2a12_4}}
+		{{> m2a12_5}}
+		{{> m2a12_6}} 
+		{{> m2a12_7}}
+		{{> m2a12_8}}
+		{{> m2a12_9}}
+		{{> m2a12_end}}
+	</div>
+</article>
+
+	{{> Example_modal}}
+	{{> suggestion_modal}}
+	</template>
+	
+<template name="Example_modal">
+		<div class="modal fade" id="Example_modal" tabindex="-1" role="dialog" aria-labelledby="Example_modallabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Example</h4>
+      </div>
+      <div class="modal-body">
+        {{> commands_table}}
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+	
+<template name="suggestion_modal">
+		<div class="modal fade" id="suggestion_modal" tabindex="-1" role="dialog" aria-labelledby="suggestion_modallabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Example</h4>
+      </div>
+      <div class="modal-body">
+        {{> suggestion_example}}
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+	
+<template name="m2a12_1">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_1" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="ph-w ph-1x1" style="max-width: 358px"><div class="ph"><img draggable="false" src="../images/module2/go.png" alt="Angry father telling son to go" /></div></div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="hidden-xs" style="height: 6em;"></div>
+						<div class="parapaper fold text-left">
+							<p>Giving a <b>first person</b> command in English is easy. You simply remove <b>‘to’</b> from the <b>infinitive</b>, so…</p>
+							<p>‘to go’ becomes...</p>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 center">
+								<div class="caption capgreen text-center">
+									"GO!"
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>{{>gg_button gg_text="Click here to find out more about Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a12_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a12_2">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_2" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="ph-w ph-1x1" style="max-width: 358px"><div class="ph"><img draggable="false" src="../images/module2/dontgo.png" alt="Father asking son not to go" /></div></div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="hidden-xs" style="height: 6em;"></div>
+						<div class="parapaper fold text-left">
+						<p>For a <b>negative</b>, just add <b>do not</b> or <b>don’t</b>.</p>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 center">
+								<div class="caption capgreen text-center">
+									"Don't go!"
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>{{>gg_button gg_text="Click here to find out more about Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+				{{>footer_nav prevurl="#m2a10_1" nexturl="#m2a12_3" prev="hidden" next=""}}
+			</footer>
+	</section>
+</template>
+
+<template name="m2a12_3">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_3" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="ph-w ph-1x1" style="max-width: 358px"><div class="ph"><img draggable="false" src="../images/module2/lethimgo.png" alt="Mother holding back concerned father" /></div></div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="hidden-xs" style="height: 6em;"></div>
+						<div class="parapaper fold text-left">
+							<p>For a <b>third person</b> command,  add a <b>pronoun</b> between ‘Let’ and the <b>verb</b>.</p>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 center">
+								<div class="caption capgreen text-center">
+									"Let him go!"
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>{{>gg_button gg_text="Click here to find out more about Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a12_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a12_4">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_4" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<h2 class="text-center">This table shows examples of the 3 types of <b>commands</b></h2>
+					{{> commands_table}}
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a10_3" nexturl="#m2a12_5" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="commands_table">
+<div class="container-fluid container-fluid-no-gutter">
+	<div class="row">
+		<div class="col-sm-4 text-center">
+			<div class="th">First Person Command</div>
+			<div class="td">Go</div>
+			<div class="td-blank">
+				<div class="ph-w ph-1x1" style="max-width: 358px"><div class="ph"><img draggable="false" src="../images/module2/go.png" alt="Father telling son to go"></div></div>
+			</div>
+		</div>
+		<div class="col-sm-4 text-center">
+			<div class="th">Negative</div>
+			<div class="td">Don't go</div>
+			<div class="td-blank">
+				<div class="ph-w ph-1x1" style="max-width: 358px"><div class="ph"><img draggable="false" src="../images/module2/dontgo.png" alt="Father asking son not to go"></div></div>
+			</div>
+		</div>
+		<div class="col-sm-4 text-center">
+			<div class="th">Third Person Command</div>
+			<div class="td">Let him go</div>
+			<div class="td-blank">
+				<div class="ph-w ph-1x1" style="max-width: 358px"><div class="ph"><img draggable="false" src="../images/module2/lethimgo.png" alt="Mother holding back concerned father"></div></div>
+			</div>
+		</div>
+	</div>
+</div>
+</template>
+
+<template name="m2a12_5">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_5" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Now look at the picture below and try to fill in the table with <b>'run'</b>.</h3>
+			{{>rightwrong}}
+			<div class="container-fluid col-table">
+				<div class="row">
+					<div class="col-sm-4 text-center">
+						<div class="th">First Person Command</div>
+						<div class="td td-textentry"><span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="th">Negative</div>
+						<div class="td td-textentry"><span id="entryanswer1" class="textentry-disabled"></span></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="th">Third Person Command</div>
+						<div class="td td-textentry"><span id="entryanswer2" class="textentry-disabled"></span> (him) </div>
+					</div>
+				</div>
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="ph-w" style="max-width: 720px"><div class="ph" style="padding-top: 25.97%"><img draggable="false" src="../images/module2/run.png" alt="Marathon" /></div></div>
+					</div>
+				</div>
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<button type="button" class="button1" data-toggle="modal" data-target="#Example_modal">Examples</button>
+					</div>
+				</div>
+			</div>
+			
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a10_3" nexturl="#m2a12_6" prev="hidden" next="hidden" nextID="btnNext"}}
+		</footer>	  
+		{{> stuck stuckchar="elle"}} 
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a12_6">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_6" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Now look at the picture below and try to fill in the table with <b>‘jump’</b>.</h3>
+			<div class="container-fluid col-table">
+				<div class="row">
+					<div class="col-sm-4 text-center">
+						<div class="th">First Person Command</div>
+						<div class="td td-textentry"><span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="th">Negative</div>
+						<div class="td td-textentry"><span id="entryanswer1" class="textentry-disabled"></span></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="th">Third Person Command</div>
+						<div class="td td-textentry"><span id="entryanswer2" class="textentry-disabled"></span> (him) </div>
+					</div>
+				</div>
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="ph-w" style="max-width: 720px"><div class="ph" style="padding-top: 25.97%"><img draggable="false" src="../images/module2/jump.png" alt="Skydiving" /></div></div>
+					</div>
+				</div>
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<button type="button" class="button1" data-toggle="modal" data-target="#Example_modal">Examples</button>
+					</div>
+				</div>
+			</div>
+
+				{{> rightwrong}}
+				  {{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a10_5" nexturl="#m2a12_7" prev="hidden" next="hidden" nextID="btnNext"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a12_7">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_7" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Now look at the picture below and try to fill in the table with <b>'listen'</b>.</h3>
+			{{> rightwrong}}
+			<div class="container-fluid col-table">
+				<div class="row">
+					<div class="col-sm-4 text-center">
+						<div class="th">First Person Command</div>
+						<div class="td td-textentry"><span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="th">Negative</div>
+						<div class="td td-textentry"><span id="entryanswer1" class="textentry-disabled"></span></div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="th">Third Person Command</div>
+						<div class="td td-textentry"><span id="entryanswer2" class="textentry-disabled"></span> (her) </div>
+					</div>
+				</div>
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="ph-w" style="max-width: 720px"><div class="ph" style="padding-top: 25.97%"><img draggable="false" src="../images/module2/listen2.png" alt="Listening to music on headphones" /></div></div>
+					</div>
+				</div>
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<button type="button" class="button1" data-toggle="modal" data-target="#Example_modal">Examples</button>
+					</div>
+				</div>
+			</div>
+				  
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a10_6" nexturl="#m2a12_8" prev="hidden" next="hidden" nextID="btnNext"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a12_8">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_8" class="hidden">
+		<div class="content">
+			{{> suggestion_example}}
+			{{>gg_button gg_text="Click here to find out more about Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a12_9" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="suggestion_example">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 text-center">
+				<div class="ph-w ph-1x1" style="max-width: 358px"><div class="ph"><img draggable="false" src="../images/module2/letsgo.png" alt="Excited family"></div></div>
+			</div>
+			<div class="col-sm-6 text-center">
+				<div class="parapaper fold text-left">
+					<p>When you want to suggest rather than command, you also remove <b>‘to’</b> from the <b>infinitive</b> and shorten ’Let us’ to ‘Let’s’</p>
+				</div>
+				<div class="caption capgreen text-center">
+					“Let’s go to the cinema.”
+				</div>
+				<br>
+				<br>
+				<div class="caption capgreen text-center">
+					“Let’s go for a pizza.”
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m2a12_9">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a12_9" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Now fill in the <b>suggestion</b> column of the table. Use the short form and include the apostrophe (eg: Let’s)</h3>
+			{{> rightwrong}}
+			
+
+				<table class="table1 table1 table-responsive table-responsive-inline table-center">
+				<thead>
+				  <tr>
+					<th class="text-center">First Person Command</th>
+					<th class="text-center">Negative</th>
+					<th class="text-center">Third Person Command</th>
+					<th class="text-center">Suggestion</th>
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-title="First Person Command">Go</td>
+						<td data-title="Negative">Don't go</td>
+						<td data-title="Third Person Command">Let him go</td>
+						<td data-title="Suggestion"><span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+					</tr>
+					<tr>
+						<td data-title="First Person Command">Run</td>
+						<td data-title="Negative">Don't run</td>
+						<td data-title="Third Person Command">Let him run</td>
+						<td data-title="Suggestion"><span id="entryanswer1" class="textentry-disabled"></span></td>
+					</tr>
+					<tr>
+						<td data-title="First Person Command">Jump</td>
+						<td data-title="Negative">Don't jump</td>
+						<td data-title="Third Person Command">Let him jump</td>
+						<td data-title="Suggestion"><span id="entryanswer2" class="textentry-disabled"></span></td>
+					</tr>
+					<tr>
+						<td data-title="First Person Command">Listen</td>
+						<td data-title="Negative">Don't listen</td>
+						<td data-title="Third Person Command">Let her listen</td>
+						<td data-title="Suggestion"><span id="entryanswer3" class="textentry-disabled"></span></td>
+					</tr>
+					
+				</tbody>
+			  </table>
+
+				<div class="text-center">
+					<button type="button" class="button1 item-space" data-toggle="modal" data-target="#suggestion_modal">Examples</button>
+				</div>
+			  
+			  {{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a12_8" nexturl="#m2a12_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a12_end">
+{{>EndPage char="elle" act="m2a12" nextact="m2a13" place="Arbroath"}}
+</template>

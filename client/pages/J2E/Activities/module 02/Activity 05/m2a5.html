@@ -1,0 +1,250 @@
+<template name="m2a5">
+	<article class="with-tools-sidebar m2a5 para-select">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Dundee');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 5 - {{>m2a5Title}}</div>
+			</header>
+
+
+			<section id="m2a5">
+				<div class="content">
+					<h1 class="start-page-header">{{> m2a5Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m2a5Intro}}</h3>
+					{{> m2a5Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m2a5_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m2a5_1}} {{>m2a5_2}} {{>m2a5_3}} {{>m2a5_4}} {{>EndPage char="k" act="m2a5" nextact="m2a6" place="Dundee"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m2a5_1">
+	<section id="m2a5_1" class="hidden">
+		<div class="content">
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Click the paragraph number you want to read. Check the answers at the end."}} {{> blankrow}} {{>m2a5_paragraph}} {{>m2a5_questions}}
+		</div>
+	</section>
+</template>
+
+<template name="m2a5_2">
+	<section id="m2a5_2" class="hidden">
+		<div class="content">
+			<h1>Notebook Answers</h1>
+
+			<div class="parapaper fold notebook-answers">
+				<ol class="olcircle">
+					<li>
+						<p>
+							<b>Why did the women decide to buy their fruit and vegetables this way?</b>
+						</p>
+						<p>They decided to buy their fruit and vegetables this way because it was cheaper than buying it in supermarkets.</p>
+					</li>
+					<li>
+						<p>
+							<b>What advantages does the co-operative have for their families?</b>
+						</p>
+						<p>They get good quality and they have no waste.</p>
+					</li>
+					<li>
+						<p>
+							<b>Find three jobs they have to do for the co-operative group.</b>
+						</p>
+						<p>They have to order the food/pick it up/divide it into bags/deliver it.</p>
+					</li>
+					<li>
+						<p>
+							<b>What costs do they have apart from the cost of the food?</b>
+						</p>
+						<p>They have the cost of the journey and the bags to put the food in.</p>
+					</li>
+					<li>
+						<p>
+							<b>What mistakes did they make at first?</b>
+						</p>
+						<p>They ordered some strange things at first.</p>
+					</li>
+				</ol>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a5_1" nexturl="#m2a5_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a5_3">
+	<section id="m2a5_3" class="hidden">
+		<div class="content">
+			<h1>Notebook Answers</h1>
+
+			<div class="parapaper fold notebook-answers">
+
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a5_2" nexturl="#m2a5_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a5_4">
+	<section id="m2a5_4" class="hidden">
+		<div class="content">
+			<h1>Notebook Answers</h1>
+			<div class="parapaper fold notebook-answers">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="number">6</div>
+						<b>What are the advantages and disadvantages of co-operatives?</b>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6">
+							<h4>Advantages</h4>
+							<ul>
+								<li>They are cheaper.</li>
+								<li>They get a lot of variety.</li>
+								<li>They get good quality.</li>
+							</ul>
+						</div>
+						<div class="col-xs-6">
+							<h4>Disadvantages</h4>
+							<ul>
+								<li>They have to travel further</li>
+								<li>They have to plan ahead</li>
+								<li>They have to pack it themselves</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a5_2" nexturl="#m2a5_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a5_paragraph">
+	<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div class="parapaper fold">
+						{{>metametrics level="5" star="no" align="center"}}
+						<div id="m2a5_paragraphtextDisplay">
+							<p>
+								<b>1.</b> Sue Brown and Sylvia Jones pause for a few moments to admire their morning’s work; eight large boxes overflowing
+								with delicious oranges, green beans, bananas, grapes, potatoes and apples. They’ve got quite a bargain. The two women
+								and their friends have pooled their money to buy all this produce from wholesale fruit and vegetable stores for only
+								£35.90 – a cost far below the retail prices being charged in all the supermarkets in town.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> blankrow}}
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 text-right">
+					<span class="paragraph-label">Select a paragraph:</span>
+					<a draggable="false" id="0">
+						<div class="numbutt">1</div>
+					</a>
+					<a draggable="false" id="1">
+						<div class="numbutt">2</div>
+					</a>
+					<a draggable="false" id="2">
+						<div class="numbutt">3</div>
+					</a>
+					<a draggable="false" id="3">
+						<div class="numbutt">4</div>
+					</a>
+					<a draggable="false" id="4">
+						<div class="numbutt">5</div>
+					</a>
+					<a draggable="false" id="5">
+						<div class="numbutt">6</div>
+					</a>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m2a5_questions">
+	<div class="container-fluid">
+		{{> blankrow}} {{> blankrow}}
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-1">
+				<div class="number">
+					{{activeQuestionNumber}}
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="caption">
+						<p>{{activeQuestion}}</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div id="m2a5P" class="captionsmall capgreen">
+							{{requiredParagraphs}}
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		{{>blankrow}}
+	</div>
+	<footer>
+
+		{{#if revealNext}} {{>footer_nav prevurl="#m2a5" nexturl="#m2a5_2" prev="hidden" next=""}} {{else}}
+		<nav class="navfooter" id="m2a5QuestionFooter">
+			<ul>
+				<li id="prevQ" class="first" style="float: left;">
+					<a draggable="false" href="#">
+						<i class="fa fa-chevron-circle-left"></i>
+					</a>
+				</li>
+				<li id="nextQ" style="float: right;">
+					<a draggable="false" href="#">
+						<i class="fa fa-chevron-circle-right"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		{{/if}}
+	</footer>
+</template>

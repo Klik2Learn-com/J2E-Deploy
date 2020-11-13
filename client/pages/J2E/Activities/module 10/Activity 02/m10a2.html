@@ -1,0 +1,653 @@
+<template name="m10a2"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Cambridge');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 2 - {{> m10a2Title}}</div>
+		</header>
+		<section id="m10a2">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a2Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m10a2Intro}}</h3>
+				{{> m10a2Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a2_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a2_1}}
+		{{>m10a2_2}}
+		{{>m10a2_3}}
+		{{>m10a2_4}}
+		{{>m10a2_5}}
+		{{>m10a2_6}}
+		{{>m10a2_7}}
+		{{>m10a2_8}}
+		{{>m10a2_9}}
+		{{>m10a2_10}}
+		{{>m10a2_11}}
+		{{>m10a2_12}}
+		{{>m10a2_13}}
+		{{>m10a2_14}}
+		{{>m10a2_15}}
+		{{>m10a2_16}}
+		{{>EndPage char="tu" act="m10a2" nextact="m10a3" place="Cambridge"}}
+	</div>
+</article>
+	{{>m10a1strikes_modal}}
+	{{>m10a1playground_modal}}
+	{{>m10a1neighbours_modal}}
+</template>
+<template name="m10a2_9"> 
+	<section id="m10a2_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Second article</h1>
+      			<h3 class="center">Read this sentence from the second article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 3;">
+						<li id="sentence"> We think there is a national <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">“We think there is a national <div class="ddsourceseated ddwidth7 dd1line">crisis</div>.  Our children can’t get out and play.”</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1playground_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">obesity</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">axed</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">freedom</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">cuts</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">access</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">crisis</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">courses</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_8" nexturl="#m10a2_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_13"> 
+	<section id="m10a2_13" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Third article</h1>
+      			<h3 class="center">Read this sentence from the third article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 1;">
+						<li id="sentence"> Noise can make you <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">It can be difficult to relax and it can make you <div class="ddsourceseated ddwidth7 dd1line">irritable</div>, nervous and stressed.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1neighbours_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">put up with</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">tolerance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">irritable</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">nuisance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">impact</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_12" nexturl="#m10a2_14" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_8"> 
+	<section id="m10a2_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Second article</h1>
+      			<h3 class="center">Read this sentence from the second article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 2;">
+						<li id="sentence"> There is a problem with childhood <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">“There is a problem with childhood <div class="ddsourceseated ddwidth7 dd1line">obesity</div>” said the secretary.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1playground_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">obesity</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">axed</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">freedom</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">cuts</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">access</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">crisis</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">courses</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_7" nexturl="#m10a2_9" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_5"> 
+	<section id="m10a2_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>First article</h1>
+      			<h3 class="center">Read this sentence from the first article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 4;">
+						<li id="sentence"> They are keeping everyone <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">“We have issued a notice to staff to keep them <div class="ddsourceseated ddwidth7 dd1line">up to date</div>.” </li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1strikes_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">up to date</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">cancelled</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">shortages</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">productive</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">overtime</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">compensate</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_4" nexturl="#m10a2_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_4"> 
+	<section id="m10a2_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>First article</h1>
+      			<h3 class="center">Read this sentence from the first article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 3;">
+						<li id="sentence"> The meeting between the two sides was <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">A spokeswoman for the bus company said on Wednesday night: “Today’s meeting with the trade union was <div class="ddsourceseated ddwidth7 dd1line">productive</div> and we will continue to talk over the coming weeks.”</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1strikes_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">up to date</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">cancelled</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">shortages</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">productive</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">overtime</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">compensate</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_3" nexturl="#m10a2_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_3"> 
+	<section id="m10a2_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>First article</h1>
+      			<h3 class="center">Read this sentence from the first article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 2;">
+						<li id="sentence"> Passengers are worried that services will be <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">Passengers are worried that more services will be <div class="ddsourceseated ddwidth7 dd1line">cancelled</div> on Friday.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1strikes_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">up to date</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">cancelled</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">shortages</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">productive</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">overtime</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">compensate</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_2" nexturl="#m10a2_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_6"> 
+	<section id="m10a2_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Second article</h1>
+      			<h3 class="center">Read this sentence from the second article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 0;">
+						<li id="sentence"> When they choose how to spend money, councils have <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">The government says councils are getting more <div class="ddsourceseated ddwidth7 dd1line">freedom</div> to choose how they spend money but the group’s secretary said there was a risk that councils pushed children and play areas to the bottom of the list. </li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1playground_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">obesity</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">axed</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">freedom</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">cuts</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">access</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">crisis</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">courses</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_5" nexturl="#m10a2_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_11"> 
+	<section id="m10a2_11" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Second article</h1>
+      			<h3 class="center">Read this sentence from the second article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 5;">
+						<li id="sentence"> There have been a lot of spending <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">Councils said that plans to build 279 playgrounds across England had to be axed because of spending <div class="ddsourceseated ddwidth7 dd1line">cuts</div>.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1playground_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">obesity</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">axed</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">freedom</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">cuts</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">access</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">crisis</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">courses</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_10" nexturl="#m10a2_12" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_14"> 
+	<section id="m10a2_14" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Third article</h1>
+      			<h3 class="center">Read this sentence from the third article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 2;">
+						<li id="sentence"> We often have a high <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">We can have a very high <div class="ddsourceseated ddwidth7 dd1line">tolerance</div> for noise but the truth is, if the noise disturbs you, then it’s a nuisance, and you should not have to put up with it.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1neighbours_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">put up with</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">tolerance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">irritable</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">nuisance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">impact</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_13" nexturl="#m10a2_15" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_1"> 
+	<section id="m10a2_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>First article</h1>
+      			<h3 class="center">Read this sentence from the first article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle">
+						<li id="sentence">Drivers refused to work  <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">More than 100 buses were cancelled in Dundee on Monday after drivers refused to work <div class="ddsourceseated ddwidth7 dd1line">overtime</div> to compensate for staff shortages.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1strikes_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">up to date</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">cancelled</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">shortages</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">productive</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">overtime</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">compensate</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a2" nexturl="#m10a2_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_12"> 
+	<section id="m10a2_12" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Third article</h1>
+      			<h3 class="center">Read this sentence from the third article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 0;">
+						<li id="sentence"> Noisy neighbours can have a serious <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">Neighbours who make lots of noise can have a serious <div class="ddsourceseated ddwidth7 dd1line">impact</div> on your life.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1neighbours_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">put up with</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">tolerance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">irritable</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">nuisance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">impact</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_11" nexturl="#m10a2_13" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_10"> 
+	<section id="m10a2_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Second article</h1>
+      			<h3 class="center">Read this sentence from the second article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 4;">
+						<li id="sentence"> Plans to build playgrounds had to be <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">Councils said that plans to build 279 playgrounds across England had to be <div class="ddsourceseated ddwidth7 dd1line">axed</div> because of spending cuts.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1playground_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">obesity</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">axed</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">freedom</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">cuts</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">access</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">crisis</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">courses</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_9" nexturl="#m10a2_11" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_7"> 
+	<section id="m10a2_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Second article</h1>
+      			<h3 class="center">Read this sentence from the second article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 1;">
+						<li id="sentence"> Golfers have better access to golf <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">They pointed out that 3.5 million golfers enjoyed much better golf  <div class="ddsourceseated ddwidth7 dd1line">courses</div>. </li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1playground_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">obesity</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">axed</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">freedom</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">cuts</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">access</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">crisis</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">courses</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_6" nexturl="#m10a2_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_16"> 
+	<section id="m10a2_16" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Third article</h1>
+      			<h3 class="center">Read this sentence from the third article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 4;">
+						<li id="sentence"> Noise is something you should not have to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">We can have a very high tolerance for noise but the truth is, if the noise disturbs you, then it’s a nuisance, and you should not have to <div class="ddsourceseated ddwidth7 dd1line">put up with</div> it. </li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1neighbours_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">put up with</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">tolerance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">irritable</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">nuisance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">impact</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_15" nexturl="#m10a2_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_2"> 
+	<section id="m10a2_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>First article</h1>
+      			<h3 class="center">Read this sentence from the first article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 1;">
+						<li id="sentence">Drivers refused to compensate for staff <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">More than 100 buses were cancelled in Dundee on Monday after drivers refused to work overtime to compensate for staff <div class="ddsourceseated ddwidth7 dd1line">shortages</div>.</li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1strikes_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">up to date</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">cancelled</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">shortages</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">productive</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">overtime</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">compensate</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_1" nexturl="#m10a2_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a2_15"> 
+	<section id="m10a2_15" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h1>Third article</h1>
+      			<h3 class="center">Read this sentence from the third article in Activity 1. Choose the missing word from the list. If you’re right you’ll see the whole sentence. </h3>
+      			{{> rightwrong}}
+				{{> welldone}}
+				<div class="parapaper parapaperdd1 fold">				
+					<ol class="olcircle" style="counter-reset: start 3;">
+						<li id="sentence"> If noise is loud and sustained it can be a <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+						<li id="answer" class="hidden">We can have a very high tolerance for noise but the truth is, if the noise disturbs you, then it’s a <div class="ddsourceseated ddwidth7 dd1line">nuisance</div>, and you should not have to put up with it.  </li>
+
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m10a1neighbours_modal" class="button2">Read the article</button>
+				</div>
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">put up with</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">tolerance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">irritable</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">nuisance</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">impact</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a2_14" nexturl="#m10a2_16" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

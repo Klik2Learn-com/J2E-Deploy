@@ -1,0 +1,81 @@
+<template name="styleVideo">
+<section id="style-video" class="hidden">
+	<div class="content">
+		<h1>Responsive video</h1>
+		<h3 class="center">Listen to this conversation.</h3>
+		<div class="parapaper fold center">
+			<p>
+				<div class="videoplayer" style="max-width: 506px">
+					<div class="embed-responsive embed-responsive-4by3">
+						<video class="embed-responsive-item" controls poster="/video/poster.png">
+							<source src="video/module1/a7_garden_conversation.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</p>
+		</div>
+		<br>
+		<p>Set the maximum width <b class="html-red">16px wider</b> than the original video width, and set the video ratio to either <b>16b9</b> or <b>4by3</b></p>
+		<p>You can get rid of the <span class="htmlcode">max-width</span> style if the video is in a container that keeps the video at a good size anyway - just bare in mind that if a video is too big it might be too tall for the user's screen - especially if it's 4x3 ratio. Also some small videos won't look great if they're scaled up too big.</p>
+<br>	
+Video with header and paper background:
+<pre class="htmlcode2">&#60;h3 class="center"&#62;Listen to this conversation.&#60;/h3&#62;
+&#60;div class="parapaper fold center"&#62;
+	&#60;p&#62;
+		&#60;div class="videoplayer" style="max-width: <span class="html-red">506</span>px"&#62;
+			&#60;div class="embed-responsive embed-responsive-<span class="html-red">4by3</span>"&#62;
+				&#60;video class="embed-responsive-item" id="<span class="html-red">video-id</span>" controls poster=&quot;/video/poster.png&quot;&#62;
+					&#60;source src="<span class="html-red">video/module1/video.mp4</span>" type="video/mp4"&#62;
+				&#60;/video&#62;
+			&#60;/div&#62;
+		&#60;/div&#62;
+	&#60;/p&#62;
+&#60;/div&#62;</pre>
+<br>
+Video player on its own:
+<pre class="htmlcode2">&#60;div class="videoplayer" style="max-width: <span class="html-red">506</span>px"&#62;
+	&#60;div class="embed-responsive embed-responsive-<span class="html-red">4by3</span>"&#62;
+		&#60;video class="embed-responsive-item" id="<span class="html-red">video-id</span>" controls poster=&quot;/video/poster.png&quot;&#62;
+			&#60;source src="<span class="html-red">video/module1/video.mp4</span>" type="video/mp4"&#62;
+		&#60;/video&#62;
+	&#60;/div&#62;
+&#60;/div&#62;</pre>
+<br>
+If you have a video that is an irregular ratio, pick the closest ratio class and divide the height of the video by the width, multiply by 100 and enter the value as a percentage in the video's <span class="htmlcode">padding-bottom</span> - e.g. this video is 640 x 240, so <code>240 / 640 = 0.375, x 100% = 37.5%</code>
+<pre class="htmlcode2">&lt;div class=&quot;videoplayer&quot; style=&quot;max-width: 656px;&quot;&gt;
+	&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot; <span class="html-red">style=&quot;padding-bottom: 37.5%;&quot;</span>&gt;
+		&lt;video class=&quot;embed-responsive-item&quot; id=&quot;video-id&quot; controls&gt;
+			&lt;source src=&quot;video/module4/a13/Conversation2.mp4&quot; type=&quot;video/mp4&quot;&gt;
+		&lt;/video&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+<br>
+<h1>Stop video playback when you leave the page</h1>
+<p>JS</p>
+<pre class="htmlcode2">Template.<span class="html-red">styleVideo</span>.events({
+	
+	"click .pagination": function(evt){
+		$('#<span class="html-red">video-id</span>').get(0).pause();
+		$('#<span class="html-red">video-id</span>').get(0).currentTime = 0;
+	}
+});</pre>
+<hr>
+<br>
+
+<h1>Responsive embedded video</h1>
+<p>It's best if using this video to not make it the full width of the page as (particularly in case of 4:3 videos) it might be too tall for the user's screen. Put it in a max-width div or a Bootstrap col. Or you can set a width as with the hosted video above.</p>
+<p>Choose your video ratio - either <b>16b9</b> or <b>4by3</b></p>
+<br>
+<div class="videoplayer">
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ndMKTnSRsKM" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
+<pre class="htmlcode2">&#60;div class="videoplayer"&#62;
+	&#60;div class="embed-responsive embed-responsive-<span class="html-red">16by9</span>"&#62;
+		&#60;iframe class="embed-responsive-item" src="<span class="html-red">https://www.youtube.com/embed/ndMKTnSRsKM</span>" frameborder="0" allowfullscreen&#62;&#60;/iframe&#62;
+	&#60;/div&#62;
+&#60;/div&#62;</pre>
+	</div>
+</section>
+</template>

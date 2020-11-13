@@ -1,0 +1,164 @@
+<template name="m2a17">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Kirriemuir');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 17 - {{>m2a17Title}}</div>
+			</header>
+
+			<section id="m2a17">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m2a17Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m2a17Intro}}</h3>
+					{{> m2a17Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m2a17_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m2a17_1}} {{>m2a17_2}} {{>m2a17_3}} {{>m2a17_4}} {{>m2a17_5}} {{>m2a17_6}} {{>m2a17_7}} {{>m2a17_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m2a17_1">
+	<section id="m2a17_1" class="hidden">
+		<div class="content">
+
+			{{>PrepIntro1}}
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a17_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a17_2">
+	<section id="m2a17_2" class="hidden">
+		<div class="content">
+
+			{{>PrepIntro2}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a17_1" nexturl="#m2a17_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a17_3">
+	<section id="m2a17_3" class="hidden">
+		<div class="content">
+
+			{{>PrepIntro3}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a17_2" nexturl="#m2a17_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a17_4">
+	<section id="m2a17_4" class="hidden">
+		<div class="content">
+
+			{{>PrepIntro4}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a17_3" nexturl="#m2a17_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a17_5">
+	<section id="m2a17_5" class="hidden">
+		<div class="content">
+
+			{{>PrepIntro5}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a17_4" nexturl="#m2a17_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a17_6">
+	<section id="m2a17_6" class="hidden">
+		<div class="content">
+
+			{{>PrepIntro6}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a17_5" nexturl="#m2a17_7" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a17_7">
+	<section id="m2a17_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Prepositions</h1>
+			<h3>Here are six prepositions from the article about buying fruit and vegetables in Activity 6. Drag them into the right sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{>welldone}}
+				<ol class="olcircle">
+					<li>They pause
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> a few moments.</li>
+					<li>...overflowing
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> delicious oranges...</li>
+					<li>...a cost far
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> the retail prices...</li>
+					<li>...being charged
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> all the supermarkets.</li>
+					<li>Sue is enthusiastic
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> their success...</li>
+					<li>Having so much cheap produce
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div> has changed my family's eating habits.</li>
+				</ol>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">below</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">around</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">in</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">for</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">about</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">with</div>
+				</div>
+
+			</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a17_6" nexturl="#m2a17_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m2a17_end">
+	{{>EndPage char="tu" act="m2a17" nextact="m2a18" place="Kirriemuir"}}
+</template>

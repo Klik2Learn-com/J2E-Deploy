@@ -1,0 +1,126 @@
+<template name="Edinburgh">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<!-- Unit1 or Unit2 -->
+		<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		
+		<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> m3l6}}<em class="titleactcount">{{>m3l6No}}</em></div>
+	</header>
+	
+				
+	<!-- Place -->
+	<section id="Edinburgh" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m3_satnav}}
+					<!--Module-->
+					{{>mapButtons module="3" location="Edinburgh" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a24">
+								<div class="actbutton a24 {{completed '3' '24'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">24</div>
+								</div>
+							</a><br>
+							{{> m3a24Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a25">
+								<div class="actbutton a25 {{completed '3' '25'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">25</div>
+								</div>
+							</a><br>
+							{{> m3a25Title}}
+						</div>	
+					
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a26">
+								<div class="actbutton a26 {{completed '3' '26'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">26</div>
+								</div>
+							</a><br>
+							{{> m3a26Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a27">
+								<div class="actbutton a27 {{completed '3' '27'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">27</div>
+								</div>
+							</a><br>
+							{{> m3a27Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a28">
+								<div class="actbutton a28 {{completed '3' '28'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">28</div>
+								</div>
+							</a><br>
+							{{> m3a28Title}}
+						</div>	
+					
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3a29">
+								<div class="actbutton a29 {{completed '3' '29'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">29</div>
+								</div>
+							</a><br>
+							{{> m3a29Title}}
+						</div>
+						
+						{{#if notStudent}}
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m3Game">
+								<div class="actbutton all {{completed '3' '30'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">30</div>
+								</div>
+							</a><br>
+							<span>{{> m3GameTitle}}</span>
+						</div>
+						{{else}}
+						<div class="actbuttoncont {{isLocked}}">
+							{{> ActLocked pass="10" total="13"}}
+							<a draggable="false" href="/m3Game">
+								<div class="actbutton all {{completed '3' '30'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">30</div>
+								</div>
+							</a><br>
+							<span>{{> m3GameTitle}}</span>							
+						</div>
+						{{/if}}
+						
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="next-mod-button-wrapper"><a href="FortWilliam" draggable="false" class="shadowsolid">Next module <i class="fas fa-arrow-right"></i></a></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="3" location="Edinburgh" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

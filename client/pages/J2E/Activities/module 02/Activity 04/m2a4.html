@@ -1,0 +1,731 @@
+<template name="m2a4">
+<article class="with-tools-sidebar m2a4">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Braemar');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 4 - {{>m2a4Title}}</div>
+		</header>
+				
+		<section id="m2a4">
+			<div class="content">
+				<!-- Change avatar here - k, tu, elle -->
+				<h1 class="start-page-header">{{> m2a4Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m2a4Intro}}</h3>
+				{{> m2a4Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav nexturl="#m2a4_intro" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m2a4_intro}}
+		{{>m2a4_1}}
+		{{>m2a4_2}}
+		{{>m2a4_3}}
+		{{>m2a4_4}}
+		{{>m2a4_5}}
+		{{>m2a4_6}}
+		{{>m2a4_7}}
+		{{>m2a4_8}}
+		{{>m2a4_85}}
+		{{>m2a4_9}}
+		{{>m2a4_10}}
+		{{>m2a4_end}}
+		{{>m2a4_good}}
+		{{>m2a4_bad}}
+		<audio src="audio/module2/a4/Shopping.m4a" preload="auto" id="m2a4shopping"></audio>
+	</div>
+</article>
+
+</template>
+<template name="m2a4_1">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 1</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<button type="button" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h3>What did the women do that morning?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">A</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block" data-function="answer-button">Work at a fruit and vegetable farm.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">B</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block" data-function="answer-button">Go shopping in town for fruit and vegetables.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">C</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block" data-function="answer-button">Buy fruit and vegetables from a wholesale store.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+					{{>footer_nav prevurl="#m2a4_intro" nexturl="#m2a4_2" prev="" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_10">
+<section id="m2a4_10" class="hidden">
+	<div class="content">
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="parapaper fold just">
+					<p>4. They are astonished at how interested the children are; they often want to go on the early morning trips to the wholesaler and help to divide the produce afterwards.</p>
+
+<p>5. The savings they make are reduced a bit of course, by the cost of the 20 mile journey to pick up the food and the small bags they need to divide it into eight shares. However, they all take turns to order, collect and deliver the food and are getting more efficient at buying.</p>
+
+<p>6. ‘We made some mistakes at first,’ admitted Sue. ‘We ordered some very strange things and had a ‘freak of the week’ award!’ Overall, though, they wouldn’t go back to buying their fruit and vegetables from supermarkets. ‘Our lives have changed,’ says Sue. ‘It’s unusual, but we all eat more healthily and it’s always fun to get a bargain.’ </p>
+					</div>
+				</div>
+				<div class="col-sm-5 text-center">
+					<div class="ph-w ph-4x5" style="max-width: 274px"><div class="ph"><img draggable="false" src="images/module2/veg.png"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		{{>footer_nav prevurl="#m2a4_9" nexturl="#m2a4_end" prev="" next=""}}
+	</footer>
+</section>
+</template>
+
+<template name="m2a4_2">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 2</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>What surprised them most about their success?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">A</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block" data-function="answer-button">The price of the food.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">B</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block" data-function="answer-button">The quality of the food.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">C</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block" data-function="answer-button">The reaction of their children.	</div>
+						</div>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m2a4_3" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_3">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 3</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>How do they organise the work?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">A</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block" data-function="answer-button">Sue does most of the work.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">B</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block" data-function="answer-button">They all share the work.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">C</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block" data-function="answer-button">The food is delivered to them.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m2a4_4" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_4">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 4</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>Why do they not want to buy fruit and vegetables from supermarkets?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">A</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block" data-function="answer-button">They eat better for less money.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">B</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block" data-function="answer-button">They enjoy eating more unusual fruit and vegetables.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">C</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block" data-function="answer-button">They like to be different.</div>
+						</div>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m2a4_4" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_5">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Answer 1</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>What did the women do that morning?</h3>
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+				<div class="container-fluid">				
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							A
+							</div>
+						</div>
+						<div id="1" class="col-sm-7 col-xs-8 faded">
+							<div class="caption capgreen block text-center">Work at a fruit and vegetable farm.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							B
+							</div>
+							</div>
+						<div id="2" class="col-sm-7 col-xs-8 text-center faded">						
+								<div class="caption capgreen block text-center">Go shopping in town for fruit and vegetables.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							C
+							</div>
+							</div>
+						<div id="3" class="col-sm-7 col-xs-8 text-center">
+								<div class="caption capgreen block text-center">Buy fruit and vegetables from a wholesale store.</div>								
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+		</div>
+		<footer>
+				{{>footer_nav prevurl="#m2a4" nexturl="#m2a4_6" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_6">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_6" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Answer 2</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>What surprised them most about their success?</h3>
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							A
+							</div>
+						</div>
+						<div id="1" class="col-sm-7 col-xs-8 text-center faded">
+									<div class="caption capgreen block text-center">The price of the food.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2"></div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							B
+							</div>
+						</div>
+						<div id="2" class="col-sm-7 col-xs-8 text-center faded">						
+								<div class="caption capgreen block text-center">The quality of the food.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							C
+							</div>
+							</div>
+						<div id="3" class="col-sm-7 col-xs-8 text-center">
+							<div class="caption capgreen block text-center">The reaction of their children.	</div>							
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+
+				</div>
+			</div>
+		</div>
+		<footer>
+					{{>footer_nav prevurl="#m2a4_5" nexturl="#m2a4_7" prev="" next=""}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_7">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_7" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Answer 3</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>How do they organise the work?</h3>
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							A
+							</div>
+						</div>
+						<div id="1" class="col-sm-7 col-xs-8 text-center faded">
+							<div class="caption capgreen block text-center">Sue does most of the work.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							B
+							</div>
+						</div>
+						<div id="2" class="col-sm-7 col-xs-8 text-center">						
+								<div class="caption capgreen block text-center">They all share the work.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							C
+							</div>
+							</div>
+						<div id="3" class="col-sm-7 col-xs-8 text-center faded">
+							<div class="caption capgreen block text-center">The food is delivered to them.</div>								
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+
+				</div>
+			</div>
+		</div>
+		<footer>
+					{{>footer_nav prevurl="#m2a4_6" nexturl="#m2a4_8" prev="" next=""}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_85">
+	<section id="m2a4_85" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+							<div class="caption capgreen">
+								You can now read the article.
+							</div><br><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div class="ph-w ph-4x3" style="max-width: 439px"><div class="ph"><img draggable="false" src="/images/module2/ladies.png" alt="Women with boxes of fruit"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a4_8" nexturl="#m2a4_9" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a4_8">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a4_8" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Answer 4</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>Why do they not want to buy fruit and vegetables from supermarkets?</h3>
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							A
+							</div>
+						</div>
+						<div id="1" class="col-sm-7 col-xs-8 text-center">
+							<div class="caption capgreen block text-center">They eat better for less money.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							B
+							</div>
+							</div>
+						<div id="2" class="col-sm-7 col-xs-8 text-center faded">						
+								<div class="caption capgreen block text-center">They enjoy eating more unusual fruit and vegetables.</div>
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir faded">
+							C
+							</div>
+							</div>
+						<div id="3" class="col-sm-7 col-xs-8 text-center faded">
+								<div class="caption capgreen block text-center">They like to be different.</div>						
+						</div>
+						<div class="col-sm-2 col-xs-2">
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+							<span class="incorrect hidden"><i class="fa fa-close"></i></span>
+						</div>
+					</div>
+					{{>blankrow}}
+
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+					{{>footer_nav prevurl="#m2a4_7" nexturl="#m2a4_85" prev="" next=""}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_9">
+<section id="m2a4_9" class="hidden">
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="parapaper fold just">
+						<p>1. Sue Brown and Sylvia Jones pause for a few moments to admire their morning’s work; eight large boxes overflowing with delicious oranges, green beans, bananas, grapes, potatoes and apples. They’ve got quite a bargain. The two women and their friends have pooled their money to buy all this produce from wholesale fruit and vegetable stores for only £35.90 – a cost far below the retail prices being charged in all the supermarkets in town.</p>
+
+						<p>2. Sue leads the small co-operative food-buying group of eight families and is enthusiastic about their success. ‘The quality is fantastic and we have almost no waste.’  The group has discovered other advantages too.</p>
+
+						<p>3. ‘Having so much cheap produce around has changed my family’s eating habits. The children enjoy trying out all kinds of different fruit and vegetables.’</p>					
+					</div>
+				</div>
+				<div class="col-sm-5 text-center">
+					<div class="ph-w ph-3x4" style="max-width: 274px"><div class="ph"><img draggable="false" src="images/module2/kids.png" alt="Excited children"></div></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<footer>
+			{{>footer_nav prevurl="#m2a4_85" nexturl="#m2a4_10" prev="" next=""}}
+		</footer>
+</section>
+</template>
+
+<template name="m2a4_bad">
+	<section id="m2a4_bad" class="hidden">
+		<div class="content">
+		<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m2a4_rightScore" wrongSession="m2a4_wrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" data-function="retry">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+			</div>
+			<footer>
+			{{>footer_nav nexturl="#m2a4_5" prev="hidden" next=""}}
+		  </footer>
+	</section>
+</template>
+
+
+<template name="m2a4_end">
+{{>EndPage char="k" act="m2a4" nextact="m2a5" place="Braemar"}}
+</template>
+
+<template name="m2a4_good">
+	<section id="m2a4_good" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m2a4_rightScore" wrongSession="m2a4_wrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a4_5" prev="hidden" next=""}}
+		 </footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m2a4_intro">
+	<section id="m2a4_intro" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Listen to this article about some women shopping for food.</h3>
+			<div class="parapaper paraextract" style="padding-top: 1em;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2 col-xs-3 col-xxs-12 text-center">
+							 <button type="button" class="buttonround buttonroundbig buttonaudio center-block"></button><br><br>
+						</div>
+						<div class="col-sm-10 col-xs-9 col-xxs-12">
+							<div class="ph-w ph-4x3" style="max-width: 439px"><div class="ph"><img draggable="false" src="images/module2/ladies.png" alt="Woman with boxes of fruit"></div></div>
+						</div>
+					</div>
+					<div class="row">
+						<h3>When you’re ready, read the questions, then pick an answer. You’ll find out your score at the end.</h3>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a4" nexturl="#m2a4_1" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>

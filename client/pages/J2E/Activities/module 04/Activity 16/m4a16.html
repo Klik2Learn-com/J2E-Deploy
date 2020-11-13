@@ -1,0 +1,295 @@
+<template name="m4a16">
+<article class="with-tools-sidebar m4a16">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Crianlarich');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 16 - {{>m4a16Title}}</div>
+		</header>
+		
+		
+		<section id="m4a16">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a16Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m4a16Intro}}</h3>
+{{> m4a16Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a16_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m4a16_1}}
+		{{>m4a16_2}}
+		{{>m4a16_3}}
+		{{>m4a16_4}}
+		{{>m4a16_5}}
+
+		{{>EndPage char="k" act="m4a16" nextact="m4a17" place="Crianlarich"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m4a16_1">
+	<section id="m4a16_1" class="hidden">
+		<div class="content">
+			<h2 class="text-center">K and Elle are choosing a restaurant for <span class="avoidwrap">Tu’s Birthday</span></h2>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 658px"><div class="ph"><img draggable="false" src="images/module4/a16/restaurant-reviews.jpg" alt="K and Elle looking at a computer"></div></div>
+		</div>
+		<footer>	
+			{{>footer_nav prevurl="#m4a16" nexturl="#m4a16_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a16_2">
+	<section id="m4a16_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+		
+			<h3 class="center">Type the right <b>comparative</b> or <b>superlative</b> in the spaces. Use the words in the box at the bottom to help you.</h3>
+			
+			<div class="parapaper linespace2 fold">
+			
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/conv-pics/k.png" alt="K" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/1.m4a"></button>
+					</div>
+					<div class="iconright">
+						It’s Tu’s birthday tomorrow. How about going out for dinner?
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/conv-pics/elle2.png" alt="Elle" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/2.m4a"></button>
+					</div>
+					<div class="iconright">
+						Great idea. He loves Indian food. I’ve heard that place on the High Street is under new management. It does the <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> curry in town.
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/conv-pics/k.png" alt="K" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/3.m4a"></button>
+					</div>
+					<div class="iconright">
+						Is it <span id="entryanswer1" class="textentry-disabled"></span> expensive than the ‘Taj Mahal?’
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/conv-pics/elle2.png" alt="Elle" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/4.m4a"></button>
+					</div>
+					<div class="iconright">
+						I doubt it. That’s the <span id="entryanswer2" class="textentry-disabled"></span> expensive restaurant in town.
+					</div>
+				</div>
+
+			</div>
+			
+			{{> rightwrong}} {{> welldone}} 
+
+			<div class="box1 block">
+				<span class="word">hottest</span>
+				<span class="word">busier</span>
+				<span class="word">better</span>
+				<span class="word">best</span>
+				<span class="word">mildest</span>
+				<span class="word">more</span>
+				<span class="word">driest</span>
+				<span class="word">biggest</span>
+				<span class="word">most</span>
+				<span class="word">strongest</span>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a16_1" nexturl="#m4a16_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a16_3">
+	<section id="m4a16_3" class="hidden">
+		<div class="content">
+			<h2 class="text-center">In this next conversation, K and Elle are discussing what they’ll order at the restaurant.</h2>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 658px"><div class="ph"><img draggable="false" src="images/module4/a16/ordering-in-restaurant.jpg" alt="K, Tu and Elle in a restaurant"></div></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a16_2" nexturl="#m4a16_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a16_4">
+	<section id="m4a16_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+		
+			<h3 class="center">Type the right <b>comparative</b> or <b>superlative</b> in the spaces. Use the words in the box at the bottom to help you.</h3>
+			
+			<div class="parapaper linespace2 fold">
+			
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/k.png" alt="K" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/5.m4a"></button>
+					</div>
+					<div class="iconright">
+						The décor’s a lot <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> than it used to be.
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/elle.png" alt="Elle" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/6.m4a"></button>
+					</div>
+					<div class="iconright">
+						Yeah, and lucky we booked a table. It’s a lot <span id="entryanswer1" class="textentry-disabled"></span> than I expected.
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/k.png" alt="K" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/7.m4a"></button>
+					</div>
+					<div class="iconright">
+						I’m feeling brave. I’m going to have the <span id="entryanswer2" class="textentry-disabled"></span> curry on the menu.
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/elle.png" alt="Elle" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/8.m4a"></button>
+					</div>
+					<div class="iconright">
+						Tu won’t, will you? He’ll choose the <span id="entryanswer3" class="textentry-disabled"></span>.
+					</div>
+				</div>
+
+			</div>
+			
+			{{> rightwrong}} {{> welldone}} 
+
+			<div class="box1 block">
+				<span class="word">hottest</span>
+				<span class="word">busier</span>
+				<span class="word">better</span>
+				<span class="word">best</span>
+				<span class="word">mildest</span>
+				<span class="word">more</span>
+				<span class="word">driest</span>
+				<span class="word">biggest</span>
+				<span class="word">most</span>
+				<span class="word">strongest</span>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a16_3" nexturl="#m4a16_5" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a16_5">
+	<section id="m4a16_5" class="hidden">
+		<div class="content"> 
+			{{#if activeSection}}
+			<h3 class="center">Type the right <b>comparative</b> or <b>superlative</b> in the spaces. Use the words in the box at the bottom to help you.</h3>
+			
+			<div class="parapaper linespace2 fold">
+			
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/waiter.png" alt="Waiter" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/9.m4a"></button>
+					</div>
+					<div class="iconright">
+						Would you like to see the wine list sir?
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/k.png" alt="K" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/10.m4a"></button>
+					</div>
+					<div class="iconright">
+						I’m the expert here. We’ll have a white wine – the <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> on the list.
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/waiter.png" alt="Waiter" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/11.m4a"></button>
+					</div>
+					<div class="iconright">
+						The dessert menu sir?
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/elle.png" alt="Elle" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/12.m4a"></button>
+					</div>
+					<div class="iconright">
+						Let me guess, Tu? Your usual? The <span id="entryanswer1" class="textentry-disabled"></span> ice cream they’ve got? 
+						<span class="avoidwrap">K? The <span id="entryanswer2" class="textentry-disabled"></span> coffee?</span>
+					</div>
+				</div>
+				
+				<div class="m4a16-row">
+					<div class="iconleft">
+						<img draggable="false" src="images/module4/a16/k.png" alt="K" class="conv-avatar">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a16/13.m4a"></button>
+					</div>
+					<div class="iconright">
+						It’s only £49!  Much <span id="entryanswer3" class="textentry-disabled"></span> value than that Italian place we went to last time.
+					</div>
+				</div>
+
+			</div>
+			
+			{{> rightwrong}} {{> welldone}}
+
+			<div class="box1 block">
+				<span class="word">hottest</span>
+				<span class="word">busier</span>
+				<span class="word">better</span>
+				<span class="word">best</span>
+				<span class="word">mildest</span>
+				<span class="word">more</span>
+				<span class="word">driest</span>
+				<span class="word">biggest</span>
+				<span class="word">most</span>
+				<span class="word">strongest</span>
+			</div>
+			{{/if}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a16_4" nexturl="#m4a16_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+	</section>
+</template>

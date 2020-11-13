@@ -1,0 +1,324 @@
+<template name="m8a18"> 
+<article class="with-tools-sidebar m8a18">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bristol');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 18 - {{>m8a18Title}}</div>
+		</header>
+		<section id="m8a18">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a18Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a18Intro}}</h3>
+				{{> m8a18Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a18_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a18_1}}
+		{{>m8a18_2}}
+		{{>m8a18_3}}
+		{{>EndPage char="elle" act="m8a18" nextact="m8a19" place="Bristol"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a18_3">
+	<section id="m8a18_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+		{{>InstructionsRecord text="Now try these yourself. Record your voice and play it back. Your intonation doesn't have to be exactly the same but try to match the native speaker."}}
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“You’re not going this evening.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-your_not_going.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-youre_not_going.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“She didn’t leave a message.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-she_didnt_leave.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-she_didnt_leave.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“You didn’t tell them anything.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-you_didnt_tell_them.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-you_didnt_tell.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“He never turned up.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-he_never_turned_up.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-he_never_turned.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“She said that.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-she_said_that.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-she_said_that.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“They were late again.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-they_were_late_again.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-they_were_late_again.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“That’s his house.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-thats_his_house.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-thats_his_house.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“She’s going to Venezuela.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-shes_going_to_ven.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-shes_going_to_Venezuela.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“He got the job.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-he_got_the_job.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-he_got_the_job.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“No-one’s heard anything from him.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-no_ones_heard_anything.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-noones_heard_anything.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“The show was cancelled.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-the_show_was_canceled.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-the_show_was_cancelled.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+							<h4>“She went out with him.”</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/q-she_went_out.m4a">Question</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button class="button1 button-icon audio" data-audiosrc="/audio/module8/a18/s-she_went_out_with_him.m4a">Statement</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a18_2" nexturl="#m8a18_end" prev="disabled" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m8a18_2"> 
+	<section id="m8a18_bad" class="hidden"> 
+		<!-- {{#if activeSection}}  -->
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a18_RightScore" wrongSession="m8a18_WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m8a18_1" id="m8a18restart" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		
+		<footer>
+			{{>footer_nav nexturl="#m8a18_3" prev="hidden" next=""}}
+		</footer>
+		<!-- {{/if}} -->
+	</section>
+	<section id="m8a18_good" class="hidden">
+	<!-- {{#if activeSection}}  -->
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a18_RightScore" wrongSession="m8a18_WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a18_1" nexturl="#m8a18_3" prev="disabled" next=""}} 
+		</footer> 
+		<!-- {{/if}}  -->
+	</section> 
+ </template>
+
+<template name="m8a18_1"> 
+	<section id="m8a18_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Listen to these sentences then decide if they are <b>statements</b> or <b>questions</b> 
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} 
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">						
+						<div class="number">1</div><button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module8/a18/q-your_not_going.m4a"></button>
+						<!-- <div class="number">1</div><span id="question_text">Grain can be an ingredient for energy drinks</span> -->
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="q" class="button2 item-space ddwidth9">Question</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="s" class="button2 item-space ddwidth9">Statement</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m8a18_RightScore" wrongSession="m8a18_WrongScore"}}
+					</div>
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a18" nexturl="#m8a18_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

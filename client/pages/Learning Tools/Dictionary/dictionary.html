@@ -1,0 +1,33 @@
+<template name="dictionary">
+   <div class="modal fade" id="dictionarymodal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Dictionary</h4>
+            </div>
+            {{> dictionary_holder}}
+            
+         </div>
+      </div>
+   </div>
+</template>
+
+
+<template name="dictionary_holder">
+   <div style="text-align:center">
+      <form id="srchdict" name="srchdict" method="post">
+         <label>Word or Phrase</label><br/>
+         <input type="text" name="wordorphrase" id="wordorphrase" size="28" />
+<!--     <input type="radio" name="srchtype" id="srchtype" checked="checked" value="gbm" />Get best match
+         <input type="radio" name="srchtype" id="srchtype"  value="mas" />Search-->
+         <br>
+         <button type="submit" class="button1 buttonsmall" name="btnsubmit" id="btnsearchdictionary" value="Search" title="Search">Search</button>
+      </form>
+   </div>
+   <div id="response" name="response">
+      <div class="dictionary_table" id="dictionary_table">
+      </div>
+      <div class="single_dictionary_result" id="dictionary_result"></div>
+   </div>
+</template>

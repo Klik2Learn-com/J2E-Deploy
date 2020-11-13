@@ -1,0 +1,36 @@
+<template name="stylePopovers">
+	<section id="style-popovers" class="hidden">
+		<div class="content">
+			<h1>Popovers</h1>
+			{{> popovers}}
+			<p><a draggable="false" href="#" title="Title" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Popover content here. La de da. Woop. Poopypants.">Popover</a>. Leave <span class="htmlcode">title=""</span> empty if you don't want a header in your popover.</p>
+<pre class="htmlcode2">&#60;a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="<span class="html-red">bottom</span>" data-content="<span class="html-red">definition</span>"&#62;<span class="html-red">word</span>&#60;/a&#62;</pre>
+			<br>
+			<br>
+			<p>If you want to put html inside a popover such as styling or an image like so: <a draggable="false" href="#" title="St Paul's" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-html="true" data-content="<img draggable='false' src='images/module3/st-pauls.jpg' /> St Paul’s Cathedral, a large church in London. It is one of the most famous buildings in London.">St Paul’s</a> use </p>
+<pre class="htmlcode2">&lt;a draggable="false" href=&quot;#&quot; title=&quot;<span class="html-red">Title</span>&quot; data-toggle=&quot;popover&quot; role=&quot;button&quot; tabindex=&quot;0&quot;  data-trigger=&quot;focus&quot; data-placement=&quot;<span class="html-red">top</span>&quot; data-html=&quot;true&quot; data-content=&quot;<span class="html-red">&lt;img draggable='false' src='images/module3/st-pauls.jpg' /&gt; St Paul’s Cathedral, a large church in London. It is one of the most famous buildings in London.</span>&quot;&gt;St Paul’s&lt;/a&gt;</pre>
+			<br>
+			<p>Until we get a global script working every <span class="htmlcode">section</span> that contains popovers must have <span class="htmlcode">&#123;&#123;&gt; popovers&#125;&#125;</span> inserted somewhere. This is the only way to get them working nicely in activeSections. If an activity contained no activeSections then technically you could just call this template once in the main activity template, but it's probably best practice to include it in every section in case the activity is ever changed.</p>
+			<p>If the popovers are in a modal, make sure <span class="htmlcode">{{> popovers}}</span> is called somewhere inside the modal/modal template as it may be used in other activities too.</p>
+			
+			
+		</div>
+	</section>
+	
+	<section id="style-popovers2" class="hidden">
+		<div class="content">
+			<p>These are good for words that need a definition, like {{> popover word="dog" title="" content="Not a cat" placement="bottom"}} or {{> popover word="sea" title="Sea" content="big blue wobbly thing that mermaids live in" placement="bottom"}}</p>
+			
+			<p><b>HTML - leave title empty if you don't want a header on your popover. The default placement is <i>bottom</i>.</b></p>
+<pre class="htmlcode2">&#123;&#123;&gt; popover word=&quot;Click here&quot; title=&quot;&quot; content=&quot;popover content&quot; placement=&quot;bottom&quot;&#125;&#125;</pre>
+			
+			<h2>If you need to click an image to open a popover</h2>
+			<p>{{> popoverImageLink src="images/conv-pics/tu.png" width="150x" height="150px" alt="Click here" title="" content="This is tu." placement="top"}}</p><br>
+<pre class="htmlcode2">&#123;&#123;&gt; popoverImageLink src=&quot;image.jpg&quot; width=&quot;300px&quot; height=&quot;auto&quot; alt=&quot;Click here&quot; title=&quot;&quot; content=&quot;Text under the picture&quot; placement=&quot;top&quot;&#125;&#125;</pre>
+			
+			<h2>If you want an image inside your popover</h2>
+			<p>Like {{> popoverImageContent word="this" content="Here is a photo of Tu." src="images/conv-pics/tu.png" width="150x" height="150px" title="Tu"  placement="right"}}</p><br>
+<pre class="htmlcode2">&#123;&#123;&gt; popoverImageContent word=&quot;Click here&quot; content=&quot;Any text you want under the image&quot; src=&quot;image.jpg&quot; title=&quot;Title&quot; width=&quot;200px&quot; height=&quot;auto&quot; placement=&quot;right&quot;&#125;&#125;</pre>
+		</div>
+	</section>
+</template>

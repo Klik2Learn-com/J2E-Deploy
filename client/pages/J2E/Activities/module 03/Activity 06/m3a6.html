@@ -1,0 +1,226 @@
+<template name="m3a6">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Dunfermline');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 6 - {{>m3a6Title}}</div>
+			</header>
+
+			<section id="m3a6">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a6Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m3a6Intro}}</h3>
+					{{> m3a6Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a6_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m3a6_1}} {{>m3a6_2}} {{>m3a6_3}} {{>m3a6_4}} {{>m3a6_5}} {{>m3a6_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m3a6_1">
+	<section id="m3a6_1" class="hidden">
+		<div class="content">
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="caption">‘the’ is the most common word in English</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="caption">There are two basic reasons for using ‘the’</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a6" nexturl="#m3a6_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a6_2">
+	<section id="m3a6_2" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Use 'the' when you are talking about one particular thing:</h3>
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="ph-w ph-3x4" style="max-width: 200px">
+							<div class="ph">
+								<img draggable="false" src="/images/module3/Intel_Survey.png" alt="Intel Survey" />
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<br>
+						<br>
+						<div class="row">
+							<div class="caption">“
+								<i>The</i> survey by Intel....”</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="caption">“And
+								<i>the</i> results....”</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="caption">“
+								<i>The</i> research suggests....”</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a6" nexturl="#m3a6_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a6_3">
+	<section id="m3a6_3" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Use ‘the’ when you want one noun to represent all nouns:</h3>
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="ph-w ph-3x2" style="max-width: 640px">
+							<div class="ph">
+								<img draggable="false" src="/images/module3/table.png" alt="dinner table" />
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<br>
+						<br>
+						<div class="row center">
+							<div class="caption">“Bringing a laptop to
+								<i>the</i> dinner table.”</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="caption capgreen">This doesn’t refer to a particular table - it represents the idea of all dinner tables.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a6" nexturl="#m3a6_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a6_4">
+	<section id="m3a6_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect center">
+			<div class="caption capgreen">We don’t use ‘a’ with PLURALS.</div>
+			<h3 class="center">Drag ‘a’ or ‘the’ to the right spaces. If you don’t need an article, use the blank box.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}} {{>welldone}}
+
+							<div class="ddseatedtarget ddwidth4 dd1line " data-destinationid="target1">&nbsp;</div> survey by Intel found major no-nos of
+							<div class="ddseatedtarget ddwidth4 dd1line " data-destinationid="target2">&nbsp;</div> mobile etiquette included logging into someone else’s account to post
+							<div class="ddseatedtarget ddwidth4 dd1line " data-destinationid="target3">&nbsp;</div> joke, sharing too much
+							<div class="ddseatedtarget ddwidth4 dd1line " data-destinationid="target4">&nbsp;</div> personal information and tagging an unflattering photo of your friends.
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth4 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth4 dd1line">
+						<div class="ddsourceseated ddwidth4 dd1line shadow " draggable="false" data-destination="target3">a</div>
+					</div>
+					<div class="ddseat ddwidth4 dd1line">
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target1">the</div>
+					</div>
+					<div class="ddseat ddwidth4 dd1line">										<!-- Same as m3a5 - not supported -->
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target2 target4">&nbsp;</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a6" nexturl="#m3a6_5" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a6_5">
+	<section id="m3a6_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect center">
+			<div class="caption capgreen">We don’t use ‘a’ with PLURALS.</div>
+			<h3 class="center">Drag ‘a’ or ‘the’ to the right spaces. If you don’t need an article, use the blank box.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}} {{>welldone}} Bringing
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target1">&nbsp;</div> laptop to
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target2">&nbsp;</div> dinner table was top of
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target3">&nbsp;</div> list for
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target4">&nbsp;</div> bad manners. They were also worried about creating
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target5">&nbsp;</div> dangerous situation such as texting while driving.
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth4 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth4 dd1line">
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target1 target5">a</div>
+					</div>
+					<div class="ddseat ddwidth4 dd1line">
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target2 target3">the</div>
+					</div>
+					<div class="ddseat ddwidth4 dd1line">
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target4">&nbsp;</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a6" nexturl="#m3a6_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a6_end">
+	{{>EndPage char="elle" act="m3a6" nextact="m3a7" place="Dunfermline"}}
+</template>

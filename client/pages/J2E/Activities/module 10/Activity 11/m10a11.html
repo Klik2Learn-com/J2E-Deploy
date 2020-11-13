@@ -1,0 +1,128 @@
+<template name="m10a11"> 
+<article class="with-tools-sidebar m10a11">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Felixstowe');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 11 - {{> m10a11Title}}</div>
+		</header>
+		<section id="m10a11">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a11Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m10a11Intro}}</h3>
+				{{> m10a11Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a11_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a11_1}}
+		{{>m10a11_2}}
+		{{>EndPage char="tu" act="m10a11" nextact="m10a12" place="Felixstowe"}}
+	</div>
+</article>
+	{{>gobalissues_modal}}
+</template>
+
+<template name="m10a11_1"> 
+	<section id="m10a11_1" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">All the articles in activity 10 contained an ‘if’ sentence.<br> Here are examples of the three types of conditional sentences you learned earlier:</h4><br><br>
+
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">First Conditional</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption">Scientists also believe that if we <span class="correctword">take</span> no action against global warming it <span class="correctword">will alter</span> the chemical structure of our planet. </div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">Second Conditional</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption">If these conditions <span class="correctword">changed</span> it <span class="correctword">would be</span> a disaster.</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">Third Conditional</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption">If <span class="correctword">we hadn’t polluted</span> our rivers and lakes so much and made them toxic to humans, we <span class="correctword">wouldn’t be</span> in this situation.</div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a11" nexturl="#m10a11_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a11_2"> 
+	<section id="m10a11_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Now try these sentences yourself. Write the correct tense in the spaces.</h3>
+				<div class="center">
+					<div class="caption capgreen" id="words">1 word</div><br><br>
+				</div>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>Scientists also <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> <span class="verb">(believe)</span> that if we <span id="entryanswer1" class="textentry-disabled"></span> <span id="verb0" class="verb hidden">(take)</span> no action against global warming it <span id="entryanswer2" class="textentry-disabled"></span> <span id="verb1" class="verb hidden">(alter)</span> the chemical structure of our planet. </li>
+					<li> If these conditions <span id="entryanswer3" class="textentry-disabled"></span> <span id="verb2" class="verb hidden">(change)</span> it <span id="entryanswer4" class="textentry-disabled"></span> <span id="verb3" class="verb hidden">(be)</span> a disaster.</li>
+					<li>If we <span id="entryanswer5" class="textentry-disabled"></span> <span id="verb4" class="verb hidden">(pollute)</span> our rivers and lakes so much and made them toxic to humans, we <span id="entryanswer6" class="textentry-disabled"></span> <span id="verb5" class="verb hidden">(be)</span> in this situation.</li>
+				</ol>
+			</div>
+			<div class="center">
+				<button data-toggle="modal" data-target="#globalissues_modal" class="button2">Read the articles</button>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a11_1" nexturl="#m10a11_end" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu"}}		
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="gobalissues_modal">
+	<div class="modal fade" tabindex="-1" id="globalissues_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="globalissues_modal">Global Issues</h4>
+				</div>
+				
+				<div class="content noselect">
+
+					{{>globalWarmingArticle}}
+					{{>globalEconomyArticle}}
+					{{>energyConsumptionArticle}}
+					{{>globalPopulationGrowthArticle}}
+					{{>globalWaterCrisisArticle}}
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>

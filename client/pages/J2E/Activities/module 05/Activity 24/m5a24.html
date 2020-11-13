@@ -1,0 +1,536 @@
+<template name="m5a24">
+	<article class="with-tools-sidebar m5a24">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Liverpool');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 24 - {{>m5a24Title}}</div>
+			</header>
+
+
+			<section id="m5a24">
+				<div class="content">
+					<h1 class="start-page-header">1 - {{>m5a24Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m5a24Intro}}</h3>
+					{{> m5a24Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a24_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a24_1}} {{>m5a24_2}} {{>m5a24_3}} {{>m5a24_4}} {{>m5a24_5}} {{>m5a24_6}} {{>m5a24_7}} {{>m5a24_scores}} {{>m5a24_8}}
+			{{>m5a24_9}} {{>m5a24_10}} {{#if gameAccess}} {{>EndPage char="elle" act="m5a24" nextact="m5Game" place="Liverpool"}}
+			{{else}} {{>EndPage2 char="all" act="m5a24" nextplace="Newcastle" nextmod="6" place="Liverpool" end="finished"}} {{/if}}
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a24_1">
+	<section id="m5a24_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 0;">
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> through something that makes it difficult to walk, usually water or mud, you walk through it.</li>
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> something, it gets faster and faster.</li>
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> something, you cut it into pieces with strong downward movements of a knife or an axe.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> are a section of a river where the water moves very fast, often over rocks.</li>
+					<li>If something is <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div>, it is given a name or description.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="rapids">rapids</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="accelerate">accelerate</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="chop">chop</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="wade">wade</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="dubbed">dubbed</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_1" nexturl="#m5a24_1" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a24_2">
+	<section id="m5a24_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>If you describe someone as <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div>, you mean that they are able to express their thoughts and ideas easily and well.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is an area of calm sea water that is separated from the ocean by a line of rock or sand.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is a desert or other area of natural land which is not used by people.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> of someone is cruel and violent treatment of them.</li>
+					<li>If you describe something as <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div>, it's good for you.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="wilderness">wilderness</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="articulate">articulate</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="lagoon">lagoon</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="wholesome">wholesome</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="abuse">abuse</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_2" nexturl="#m5a24_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a24_3">
+	<section id="m5a24_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>To <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is to give up because of stress.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a small folding chair on wheels for a child or a small vehicle used in golf.</li>
+					<li>The <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> of something such as a belief or way of life is the thing it’s based on.</li>
+					<li>An <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> object is one that you fill with air when you want to use it.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is a hill of sand near the sea or in a desert.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="foundation">foundation</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="buckle">buckle</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="dune">dune</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="buggy">buggy</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="inflatable">inflatable</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_3" nexturl="#m5a24_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a24_4">
+	<section id="m5a24_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 15;">
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> a problem or a feeling, you successfully deal with it and control it.</li>
+					<li>If you describe something as <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div>, you are critical of it because it is very small or not enough.</li>
+					<li>You can use <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> to refer to someone who is very interested in a particular activity, especially when they spend a lot of time
+						on it.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is a strange or interesting sight.</li>
+					<li>The <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> of things involves delivering them to a number of people or places.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="spectacle">spectacle</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="meagre">meagre</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="overcome">overcome</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="junkie">junkie</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="distribution">distribution</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_4" nexturl="#m5a24_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a24_5">
+	<section id="m5a24_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 20;">
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> illness or disease cannot be cured.</li>
+					<li>Something that is <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is very odd and strange.</li>
+					<li>An <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is a person from whom you are descended.</li>
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> something into or out of an awkward position, you skilfully move it there.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is uncritical admiration and praise of someone or something.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="terminal">terminal</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="ancestor">ancestor</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="adulation">adulation</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="bizarre">bizarre</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="manoeuvre">manoeuvre</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_5" nexturl="#m5a24_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a24_6">
+	<section id="m5a24_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 25;">
+					<li>If something <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div>, it becomes less in quantity, importance, or strength.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a substance which your body produces when you are angry, scared, or excited. It makes your heart beat faster
+						and gives you more energy.</li>
+					<li>If a person or thing is <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> of something, they deserve it.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is a medical condition in which someone has too much sugar in their blood.</li>
+					<li>Something that is <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is very large in size, quantity, or extent.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="adrenalin">adrenalin</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="diabetes">diabetes</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="declines">declines</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="massive">massive</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="worthy">worthy</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_6" nexturl="#m5a24_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a24_7">
+	<section id="m5a24_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 30;">
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> an event, you say that it will happen.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is the skills and knowledge to survive outdoors in the natural environment.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="predict">predict</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="bushcraft">bushcraft</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_7" nexturl="#m5a24_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a24_scores">
+	<section id="m5a24_bad" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m5a24_Correct" wrongSession="m5a24_Incorrect"}}
+				<h2>You didn't get enough right answers to unlock the game</h2>
+				<h4 class="text-left">Get 24 or more right answers and the game will be unlocked!
+					<a draggable="false" href="#m5a24_1" class="pagination restart">Try again</a> and see if you can improve your score.</h4>
+				<div class="game-locked-gif shadow"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a24_8" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m5a24_good" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m5a24_Correct" wrongSession="m5a24_Incorrect"}}
+				<h2>Well done! You got a good score! You can now play the game in this module!</h2>
+				<div class="game-unlocked-gif shadow"></div>
+				<h4>Click continue to see the answers and finish this activity.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a24_8" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a24_8">
+	<section id="m5a24_8" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="wade">wade</div>
+						</div> through something that makes it difficult to walk, usually water or mud, you walk through it.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="accelerate">accelerate</div>
+						</div> something, it gets faster and faster.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="chop">chop</div>
+						</div> something, you cut it into pieces with strong downward movements of a knife or an axe.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="rapids">rapids</div>
+						</div> are a section of a river where the water moves very fast, often over rocks.</li>
+					<li>If something is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="dubbed">dubbed</div>
+						</div>, it is given a name or description.</li>
+					<li>If you describe someone as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="articulate">articulate</div>
+						</div>, you mean that they are able to express their thoughts and ideas easily and well.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="lagoon">lagoon</div>
+						</div> is an area of calm sea water that is separated from the ocean by a line of rock or sand.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="wilderness">wilderness</div>
+						</div> is a desert or other area of natural land which is not used by people.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="abuse">abuse</div>
+						</div> of someone is cruel and violent treatment of them.</li>
+					<li>If you describe something as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="wholesome">wholesome</div>
+						</div>, it's good for you.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_8" nexturl="#m5a24_9" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m5a24_9">
+	<section id="m5a24_9" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>To
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="buckle">buckle</div>
+						</div> is to give up because of stress.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="buggy">buggy</div>
+						</div> is a small folding chair on wheels for a child or a small vehicle used in golf.</li>
+					<li>The
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="foundation">foundation</div>
+						</div> of something such as a belief or way of life is the thing it’s based on.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="inflatable">inflatable</div>
+						</div> object is one that you fill with air when you want to use it.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="dune">dune</div>
+						</div> is a hill of sand near the sea or in a desert.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="overcome">overcome</div>
+						</div> a problem or a feeling, you successfully deal with it and control it.</li>
+					<li>If you describe something as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="meagre">meagre</div>
+						</div>, you are critical of it because it is very small or not enough.</li>
+					<li>You can use
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="junkie">junkie</div>
+						</div> to refer to someone who is very interested in a particular activity, especially when they spend a lot of time on it.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="spectacle">spectacle</div>
+						</div> is a strange or interesting sight.</li>
+					<li>The
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="distribution">distribution</div>
+						</div> of things involves delivering them to a number of people or places.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_8" nexturl="#m5a24_10" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m5a24_10">
+	<section id="m5a24_10" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 20;">
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="terminal">terminal</div>
+						</div> illness or disease cannot be cured.</li>
+					<li>Something that is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="bizarre">bizarre</div>
+						</div> is very odd and strange.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="ancestor">ancestor</div>
+						</div> is a person from whom you are descended.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="manoeuvre">manoeuvre</div>
+						</div> something into or out of an awkward position, you skilfully move it there.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="adulation">adulation</div>
+						</div> is uncritical admiration and praise of someone or something.</li>
+					<li>If something
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="declines">declines</div>
+						</div>, it becomes less in quantity, importance, or strength.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="adrenalin">adrenalin</div>
+						</div> is a substance which your body produces when you are angry, scared, or excited. It makes your heart beat faster and
+						gives you more energy.</li>
+					<li>If a person or thing is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="worthy">worthy</div>
+						</div> of something, they deserve it.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="diabetes">diabetes</div>
+						</div> is a medical condition in which someone has too much sugar in their blood.</li>
+					<li>Something that is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="massive">massive</div>
+						</div> is very large in size, quantity, or extent.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="predict">predict</div>
+						</div> an event, you say that it will happen.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="bushcraft">bushcraft</div>
+						</div> is the skills and knowledge to survive outdoors in the natural environment.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a24_9" nexturl="#m5a24_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

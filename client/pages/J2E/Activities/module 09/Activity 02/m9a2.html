@@ -1,0 +1,746 @@
+<template name="m9a2"> 
+<article class="with-tools-sidebar m9a2">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/WestonsuperMare');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 2 - {{>m9a2Title}}</div>
+		</header>
+		<section id="m9a2">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a2Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a2Intro}}</h3>
+				{{> m9a2Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a2_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a2_1}}
+		{{>m9a2_2}}
+		{{>m9a2_3}}
+		{{>m9a2_4}}
+		{{>m9a2_5}}
+		{{>m9a2_6}}
+		{{>m9a2_7}}
+		{{>m9a2_8}}
+		{{>m9a2_9}}
+		{{>m9a2_10}}
+		{{>m9a2_11}}
+		{{>m9a2_12}}
+		{{>EndPage char="tu" act="m9a2" nextact="m9a3" place="WestonsuperMare"}}
+	</div>
+</article>
+
+		{{>m9a2_modal}}
+</template>
+
+<template name="m9a2_modal">
+{{> popovers}}
+	<div class="modal fade" tabindex="-1" id="m9a2_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m9a2_modal">Your First Job</h4>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper article-text">
+	
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x2 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a1/Apprenticeship.jpg" alt="3 coworkers"></div></div>
+						</figure>
+						
+						<p><b>1.</b> When you're just out of college, it's easy to get a <b>big head</b> about what you can do in the workplace. Unfortunately, you'll need to start at the bottom before you're given any real responsibility. This means you need to show off your <b>work ethic</b> even if you're stuck doing tasks you don't like. It's easy to get a little <b>full of yourself</b> when you first start a job.</p>
+
+						<p><b>2.</b> When you do the boring work and you do it well, you’ll get to do the <b>fun stuff</b> later. You’ll get to solve a problem. If you do that well you’ll get to do a few more. At first, you have to put up with the <b>drudgery</b>, the stuff that's not fun or <b>glamorous</b>... No one comes out of college or school knowing everything.</p>
+						
+						<figure class="image imgleft-responsive">
+							<div class="ph-w ph-4x5 shadow" style="width: 200px"><div class="ph"><img draggable="false" src="images/module9/a1/bad boss.jpg" alt="Angry football manager"></div></div>
+						</figure>
+						
+						<p><b>3.</b> Sometimes you have the pleasure of working with a manager you really like and respect, and who respects you too. Other times, you really wish you didn’t have to see that person every day. You need <b>to grow a thick skin</b> and <b>learn to deal with it</b>. </p>
+
+						<p><b>4.</b> Your new career is probably nothing like school, or any other job you've ever had. That means what you did in the past may not be any good to you now. Being on time and getting your work done is <b>incredibly</b> important in a new job.</p>
+
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x2 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a1/banking.jpg" alt="Two women at computers in an office"></div></div>
+						</figure>
+
+						<p><b>5.</b> One of the best things about a new job is the learning experience it provides. Every person you work with in your new position - from the receptionist to the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="right" data-content="Chief Executive Officer - the person in charge of running a company.">CEO</a> can teach you something valuable, and each of them can be a friend and <b>mentor</b> for your career... Your workplace is full of intelligent, thoughtful, and experienced people. Get to know them. Treat them with respect. Ask them questions. Learn from them. And have fun <b>in the process</b>!</p>
+						
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m9a2_4"> 
+	<section id="m9a2_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q3.m4a"></button> <h5>Paragraph 2</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>3)</b> Find an informal expression that means ‘interesting work.’ (2 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_3" nexturl="#m9a2_5" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_6"> 
+	<section id="m9a2_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q4-5.m4a"></button> <h5>Paragraph 2</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>5)</b> Find a word that means attractive and exciting.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_5" nexturl="#m9a2_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_2"> 
+	<section id="m9a2_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q1.m4a"></button> <h5>Paragraph 1</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1b)</b> ‘There are two expressions in this paragraph which describe someone who has a high opinion of their own abilities. Find the second one: (3 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<h4 class="correctword" style="font-size:1.5em; line-height:2.5em">to get a big head</h4> 
+						<h5 style="font-size:1.5em; line-height:2.5em">to get a little </h5><form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_1" nexturl="#m9a2_3" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}} 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_7"> 
+	<section id="m9a2_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q6.m4a"></button> <h5>Paragraph 3</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>6a)</b> There are two expressions in this paragraph which mean ‘to cope with criticism and complaints about yourself’. Find the first one. (5 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_6" nexturl="#m9a2_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_5"> 
+	<section id="m9a2_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q4-5.m4a"></button> <h5>Paragraph 2</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>4)</b> Find a word to describe work that is boring and unexciting.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_4" nexturl="#m9a2_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_3"> 
+	<section id="m9a2_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q2.m4a"></button> <h5>Paragraph 1</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>2)</b> Find an expression that describes your attitude to work. (2 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_2" nexturl="#m9a2_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_11"> 
+	<section id="m9a2_11" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q9.m4a"></button> <h5>Paragraph 5</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>9)</b> Find an expression that means ‘at the same time.’ (3 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_10" nexturl="#m9a2_12" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_8"> 
+	<section id="m9a2_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q6.m4a"></button> <h5>Paragraph 3</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>6b)</b> There are two expressions in this paragraph which mean ‘to cope with criticism and complaints about yourself’. Find the second one. (5 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<h4 class="correctword" style="font-size:1.5em; line-height:2.5em">to grow a thick skin</h4> 
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_7" nexturl="#m9a2_9" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_1"> 
+	<section id="m9a2_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q1.m4a"></button> <h5>Paragraph 1</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1a)</b> ‘There are two expressions in this paragraph which describe someone who has a high opinion of their own abilities. Find the first one: (2 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<h5 style="font-size:1.5em; line-height:2.5em">to get a</h5> <form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a2" nexturl="#m9a2_12" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_12"> 
+	<section id="m9a2_12" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Words and Phrases</h4>
+      			<div class="answer-blocks">
+					<ol class="olcircle">
+						<li>
+							<div class="info block shadow">To get a little full of yourself.  To get a big head.</div>
+							<div class="caption block">Arrogant and over confident.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Work ethic</div>
+							<div class="caption block">A good attitude to work.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Fun stuff</div>
+							<div class="caption block">Interesting work.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Drudgery</div>
+							<div class="caption block">Work that's boring and unexciting.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Glamorous</div>
+							<div class="caption block">Exciting and fun.</div>
+						</li>
+						<li>
+							<div class="info block shadow">To grow a thick skin.  Learn to deal with it.</div>
+							<div class="caption block">To stop getting upset easily.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Incredibly</div>
+							<div class="caption block">Similar to 'very' but stronger.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Mentor</div>
+							<div class="caption block">An experienced person who advises and helps someone.</div>
+						</li>
+						<li>
+							<div class="info block shadow">In the process.</div>
+							<div class="caption block">At the same time.</div>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_11" nexturl="#m9a2_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a2_9"> 
+	<section id="m9a2_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q7.m4a"></button> <h5>Paragraph 4</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>7)</b> Find a word that is similar to ‘very’ but stronger.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_8" nexturl="#m9a2_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a2_10"> 
+	<section id="m9a2_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Listen to the paragraph from Activity 1 again and write the answers in the spaces.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						<div class="parapaper paraextract fold">		
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a2/Q8.m4a"></button> <h5>Paragraph 5</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>8)</b> Find a word for an experienced person who advises and helps someone.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a2_9" nexturl="#m9a2_11" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu" stuckId="stuckanswer"}}
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck? Click to read the article" stuckId="stuckhint"}}
+		{{/if}} 
+	</section> 
+ </template>

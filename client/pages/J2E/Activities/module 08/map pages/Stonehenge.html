@@ -1,0 +1,121 @@
+<!-- Place -->
+<template name="Stonehenge">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<!-- Unit1 or Unit2 -->
+		<a draggable="false" href="ModuleSelectUnit2"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		<!-- Module--> <!-- Module, Place --> <!-- Module, Place (x-y) -->
+		<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> m8l6}}<em class="titleactcount">{{>m8l6No}}</em></div>
+	</header>
+	<!-- Place -->
+	<section id="Stonehenge" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m8_satnav}}
+					<!--Module-->
+					{{>mapButtons module="8" location="Stonehenge" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m8a29">
+								<div class="actbutton a29 {{completed '8' '29'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">29</div>
+								</div>
+							</a><br>
+							{{> m8a29Title}}
+						</div>							
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m8a30">
+								<div class="actbutton a30 {{completed '8' '30'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">30</div>
+								</div>
+							</a><br>
+							{{> m8a30Title}}
+						</div>
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m8a31">
+								<div class="actbutton a31 {{completed '8' '31'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">31</div>
+								</div>
+							</a><br>
+							{{> m8a31Title}}
+						</div>							
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m8a32">
+								<div class="actbutton a32 {{completed '8' '32'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">32</div>
+								</div>
+							</a><br>
+							{{> m8a32Title}}
+						</div>							
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m8a33">
+								<div class="actbutton a33 {{completed '8' '33'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">33</div>
+								</div>
+							</a><br>
+							{{> m8a33Title}}
+						</div>							
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m8a34">
+								<div class="actbutton a34 {{completed '8' '34'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">34</div>
+								</div>
+							</a><br>
+							{{> m8a34Title}}
+						</div>
+						
+						{{#if notStudent}}
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m8Game">
+								<div class="actbutton all {{completed '8' '35'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">35</div>
+								</div>
+							</a><br>
+							<span>{{> m8GameTitle}}</span>
+						</div>
+						{{else}}
+						<div class="actbuttoncont {{isLocked}}">
+							{{> ActLocked pass="37" total="49"}}
+							<a draggable="false" href="/m8Game">
+								<div class="actbutton all {{completed '8' '35'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">35</div>
+								</div>
+							</a><br>
+							<span>{{> m8GameTitle}}</span>							
+						</div>
+						{{/if}}
+						
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="next-mod-button-wrapper"><a href="WestonsuperMare" draggable="false" class="shadowsolid">Next module <i class="fas fa-arrow-right"></i></a></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="8" location="Stonehenge" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

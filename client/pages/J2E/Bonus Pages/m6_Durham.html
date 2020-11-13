@@ -1,0 +1,148 @@
+<template name="MoreAboutDurham">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Durham"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m6l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m6l2}}</div>
+		</header>
+
+		<section id="moreaboutDurham">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Durham/Durham1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l2_A">
+						<p>Sporting Heritage</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Durham/Durham2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l2_B">
+						<p>Beamish</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Durham/Durham3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l2_C">
+						<p>Durham Cathedral</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Durham/Durham4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l2_D">
+						<p>Durham Castle</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Durham/Durham5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l2_E">
+						<p>Crook Hall and Gardens</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l2_A">Sporting Heritage</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Durham/Durham1.jpg" alt="Sporting Heritage" style="max-width: 250px;">
+					</figure>
+					<p>Durham cricket club is one of the top eighteen first-class clubs in England. Some famous Durham players have been important players for the English team. The cricket ground has held a number of Test matches over the years with matches between England, Bangladesh, Australia and the West Indies.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.thisisdurham.com/heritage/sporting-heritage/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l2_B">Beamish</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Durham/Durham2.jpg" alt="Beamish" style="max-width: 250px;">
+					</figure>
+					<p>Beamish in not an ordinary museum. It is a ‘living museum’ all in the open air and as you walk around, you can experience what life was like in England in the 1820s and 30s and the 1900s. You can ride on old trams, trains and buses, go down a coal mine, visit a farm and buy sweets from an old sweet shop. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.beamish.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l2_C">Durham Cathedral</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Durham/Durham3.jpg" alt="Durham Cathedral" style="max-width: 250px;">
+					</figure>
+					<p>Durham cathedral is one of the great cathedrals of Europe. It sits on top of a rocky hill and can be seen for miles around. It has some of the best examples of buildings that have lasted since the time of the monks in the 11th century. Over 700,000 visitors come to the cathedral every year.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.durhamcathedral.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l2_D">Durham Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Durham/Durham4.jpg" alt="Durham Castle" style="max-width: 250px;">
+					</figure>
+					<p>Since 1840, Durham castle has been part of Durham University. It was originally built in 1072 by William the Conqueror as a defence against the Scots and rebel English lords. It’s now home to students but visitors can take a guided tour of this World Heritage site.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.durhamworldheritagesite.com/architecture/castle" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l2_E">Crook Hall and Gardens</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Durham/Durham5.jpg" alt="Crook Hall and Gardens" style="max-width: 250px;">
+					</figure>
+					<p>Crook Hall is the perfect place to see a typical English garden and visitors from all over the world come to enjoy an English afternoon tea on the lawns. The first part of the manor house was built in the 13th century with later additions in the 17th and 18th century. It is owned privately and open to the public most days.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.crookhallgardens.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

@@ -1,0 +1,25 @@
+<template name="m1Game_e_18">
+
+	<section id="m1Game_e_18" class="game-section game-audio hidden">
+	{{#if activeSection}}
+		<div class="game-container game-image-audio m1Game-bg-k-garden2">
+			<h3 class="center">Listen to the messages and then click 'next'</h3>
+			<div class="game-content from-phone">
+				<div class="game-image-audio-xs m1Game-bg-k-garden2"><div class="game-audio-box2-tail-top"></div></div>
+				<div class="game-audio-box2 single">
+					
+					<div class="game-audio-box2-tail-left"></div>
+					<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module1/Game/Security.m4a"></button>
+					
+				</div>
+				<div class="parent_expander"></div>
+				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_e_19" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	{{/if}}
+	</section>
+
+</template>

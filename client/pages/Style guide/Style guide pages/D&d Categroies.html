@@ -1,0 +1,242 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="DDcategoriesSG">
+<section id="DDcategoriesSG" class="hidden">
+   		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Drag and drop these pairs of words into the <b>countable</b> or the <b>uncountable</b> column.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">		
+						<div class="box2 ddtarget2 box2dd1 target" style="height:160px" id="target1">
+							<h4>Countable</h4>	
+						</div>
+					</div>
+					 
+					<div class="col-sm-6">								
+						<div class="box2 ddtarget2 box2dd1 target" style="height:160px" id="target2">
+							<h4>Uncountable</h4>
+						</div>
+					 </div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth4 dd1line"><div class="ddsourceseated shadow dd1line ddwidth4" draggable="true" data-destination="target1">1</div></div>
+								<div class="ddseat ddwidth4 dd1line"><div class="ddsourceseated shadow dd1line ddwidth4" draggable="true" data-destination="target1">1</div></div>
+								<div class="ddseat ddwidth4 dd1line"><div class="ddsourceseated shadow dd1line ddwidth4" draggable="true" data-destination="target1">1</div></div>
+								<div class="ddseat ddwidth4 dd1line"><div class="ddsourceseated shadow dd1line ddwidth4" draggable="true" data-destination="target2">2</div></div>
+								<div class="ddseat ddwidth4 dd1line"><div class="ddsourceseated shadow dd1line ddwidth4" draggable="true" data-destination="target2">2</div></div>
+								<div class="ddseat ddwidth4 dd1line"><div class="ddsourceseated shadow dd1line ddwidth4" draggable="true" data-destination="target2">2</div></div>
+								<div class="ddseat ddwidth4 dd1line"><div class="ddsourceseated shadow dd1line ddwidth4" draggable="true" data-destination="target1 target 2">3</div></div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+	    </div>
+		<footer>
+			{{>footer_nav nexturl="#" prev="hidden" next="hidden"}}
+		</footer>
+		<div class="content">
+		<h4>HTML</h4>
+<pre class="htmlcode2">&lt;template name=&quot;DDcategoriesSG&quot;&gt;
+	&lt;section id=&quot;DDcategoriesSG&quot; class=&quot;hidden&quot;&gt;
+   &#123;&#123;#if activeSection&#125;&#125;
+		&lt;div class=&quot;content noselect&quot;&gt;
+			&#123;&#123;&gt; rightwrong&#125;&#125; &#123;&#123;&gt; welldone&#125;&#125;
+			&lt;h3&gt;Drag and drop these pairs of words into the &lt;b&gt;countable&lt;/b&gt; or the &lt;b&gt;uncountable&lt;/b&gt; column.&lt;/h3&gt;
+			&lt;div class=&quot;container-fluid&quot;&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-sm-6&quot;&gt;		
+						&lt;div class=&quot;box2 ddtarget2 box2dd1 target&quot; style=&quot;height:160px&quot; id=&quot;target1&quot;&gt;
+							&lt;h4&gt;Countable&lt;/h4&gt;	
+						&lt;/div&gt;
+					&lt;/div&gt;
+					 
+					&lt;div class=&quot;col-sm-6&quot;&gt;								
+						&lt;div class=&quot;box2 ddtarget2 box2dd1 target&quot; style=&quot;height:160px&quot; id=&quot;target2&quot;&gt;
+							&lt;h4&gt;Uncountable&lt;/h4&gt;
+						&lt;/div&gt;
+					 &lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-xs-12&quot;&gt;
+						&lt;div class=&quot;dd-fixed-source-container animated slideInUp&quot;&gt;
+							&lt;div class=&quot;box1 box1dd1&quot;&gt;
+								&lt;div class=&quot;ddseat ddwidth4 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated shadow dd1line ddwidth4&quot; draggable=&quot;true&quot; data-destination=&quot;target1&quot;&gt;1&lt;/div&gt;&lt;/div&gt;
+								&lt;div class=&quot;ddseat ddwidth4 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated shadow dd1line ddwidth4&quot; draggable=&quot;true&quot; data-destination=&quot;target1&quot;&gt;1&lt;/div&gt;&lt;/div&gt;
+								&lt;div class=&quot;ddseat ddwidth4 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated shadow dd1line ddwidth4&quot; draggable=&quot;true&quot; data-destination=&quot;target1&quot;&gt;1&lt;/div&gt;&lt;/div&gt;
+								&lt;div class=&quot;ddseat ddwidth4 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated shadow dd1line ddwidth4&quot; draggable=&quot;true&quot; data-destination=&quot;target2&quot;&gt;2&lt;/div&gt;&lt;/div&gt;
+								&lt;div class=&quot;ddseat ddwidth4 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated shadow dd1line ddwidth4&quot; draggable=&quot;true&quot; data-destination=&quot;target2&quot;&gt;2&lt;/div&gt;&lt;/div&gt;
+								&lt;div class=&quot;ddseat ddwidth4 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated shadow dd1line ddwidth4&quot; draggable=&quot;true&quot; data-destination=&quot;target2&quot;&gt;2&lt;/div&gt;&lt;/div&gt;
+								&lt;div class=&quot;ddseat ddwidth4 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated shadow dd1line ddwidth4&quot; draggable=&quot;true&quot; data-destination=&quot;target1 target 2&quot;&gt;3&lt;/div&gt;&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+	    &lt;/div&gt;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav nexturl=&quot;#&quot; prev=&quot;hidden&quot; next=&quot;hidden&quot;&#125;&#125;
+		&lt;/footer&gt;		
+	&#123;&#123;/if&#125;&#125;
+	&lt;/section&gt;
+&lt;/template&gt;</pre>
+		
+		<h4>JAVASCRIPT</h4><pre class="htmlcode2">
+		Template.DDcategoriesSG.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#DDcategoriesSG");
+	&#00125;
+&#00125;);
+
+
+Template.DDcategoriesSG.events(&#00123;
+	"dragstart .ddsourceseated": function(evt) &#00123;
+		evt.currentTarget.style.opacity = '1.0';
+		evt.originalEvent.dataTransfer.effectAllowed = 'move';
+		evt.originalEvent.dataTransfer.setData('text/html', $(evt.currentTarget).html());
+		
+		$.k2l.DDcategoriesSG.draggedElement = evt.currentTarget;
+	&#00125;,
+	
+	"dragend .ddsourceseated": function(evt) &#00123;
+		
+	&#00125;,
+	
+	"dragenter .target": function(evt) &#00123;
+		if (evt.preventDefault) &#00123;
+			evt.preventDefault();
+		&#00125;
+	&#00125;,
+	
+	"dragover .ddtarget2": function(evt) &#00123;
+		if (evt.preventDefault) &#00123;
+			evt.preventDefault();
+		&#00125;
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	&#00125;,
+	
+	"dragleave .target": function(evt) &#00123;
+		
+	&#00125;,
+	
+	"drop .ddtarget2": function(evt) &#00123;
+		
+		if (evt.stopPropagation) &#00123;
+			evt.stopPropagation();
+		&#00125;;
+
+		var destination = $.k2l.DDcategoriesSG.draggedElement.dataset.destination;
+		var targets = destination.split(" ");
+		var targetDestination = false;
+
+		for (var i = 0; i &#00060; targets.length; i++) &#00123;
+			if (targets[i] == $(evt.currentTarget).attr('id')) &#00123;
+				targetDestination = true;
+			&#00125;
+		&#00125;
+
+		if (targetDestination) &#00123;
+			$.k2l.DDcategoriesSG.counter++;
+			var parentSection = $(evt.currentTarget).parents('section');
+			$('.correctscreen').removeClass('hidden');
+			setTimeout( function() &#00123;
+				$('.correctscreen').addClass('hidden');
+			&#00125;, 1000);
+
+			if (targets.length &#00060; 2) &#00123;
+				$.k2l.DDcategoriesSG.draggedElement.draggable = false;
+				$($.k2l.DDcategoriesSG.draggedElement).html('');
+				$($.k2l.DDcategoriesSG.draggedElement).removeClass('shadow');
+				$($.k2l.DDcategoriesSG.draggedElement).removeClass('ddsourceseated');
+				$($.k2l.DDcategoriesSG.draggedElement).addClass('ddsourceseated2');
+			&#00125;
+			
+			var newDestinations = [];
+			for (var j = 0; j &#00060; targets.length; j++) &#00123;
+				if (targets[j] != $(evt.currentTarget).attr('id')) &#00123;
+					newDestinations.push(targets[j]);
+				&#00125;
+			&#00125;
+
+			$($.k2l.DDcategoriesSG.draggedElement).attr('data-destination', newDestinations.join(" "));
+			
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated ddsourceseated2');
+			$(listItem).addClass('ddwidth4 dd1line');
+			
+			/*if($($.k2l.DDcategoriesSG.draggedElement).hasClass("ddwidth10"))&#00123;
+				$(listItem).addClass('ddwidth10 dd1line');
+				&#00125; else &#00123;
+				$(listItem).addClass('ddwidth4 dd1line');
+				&#00125;;*/
+			$(evt.currentTarget).append(listItem);
+
+			if ($.k2l.DDcategoriesSG.counter == $.k2l.DDcategoriesSG.max) &#00123;
+				
+				// Load the next page automatically
+				setTimeout( function() &#00123;
+				$('#welldonecap').removeClass('hidden');
+				&#00125;, 1000);
+			setTimeout( function() &#00123;
+				$('#welldonecap').addClass('hidden');
+			&#00125;, 2000);
+				setTimeout(function() &#00123;
+					$.k2l.DDcategoriesSG.counter = 0;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					&#00125;, 2000);
+			  // $('.pagination').removeClass('hidden');
+			&#00125;;
+		&#00125; else &#00123;
+		$('.incorrectscreen').removeClass('hidden');
+		setTimeout( function() &#00123;
+			$('.incorrectscreen').addClass('hidden');
+		&#00125;, 1000);
+		&#00125;;
+	&#00125;,
+	
+	"dragend .target": function(evt) &#00123;
+	&#00125;,
+	
+	"click .pagination": function(evt)&#00123;
+		$.k2l.DDcategoriesSG.draggedElement = &#00123;&#00125;;
+		$.k2l.DDcategoriesSG.counter = 0;
+	&#00125;
+&#00125;);
+
+Template.DDcategoriesSG.rendered = function() &#00123;
+	
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.DDcategoriesSG == 'undefined') &#00123;
+		$.k2l.DDcategoriesSG = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.DDcategoriesSG.draggedElement = &#00123;&#00125;;
+	$.k2l.DDcategoriesSG.counter = 0;
+
+	$.k2l.DDcategoriesSG.max = 7; // number of drag spaces on this page.
+&#00125;
+
+		</pre>
+		</div>
+
+	</section>
+	</template>

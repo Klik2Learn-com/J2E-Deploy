@@ -1,0 +1,171 @@
+<template name="MoreAboutLondon">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="London"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m10l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m10l6}}</div>
+		</header>
+
+		<section id="moreaboutLondon">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/London/London1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l6_A">
+						<p>Natural History Museum</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/London/London2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l6_B">
+						<p>Houses of Parliament</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/London/London3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l6_C">
+						<p>The London Eye</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/London/London4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l6_D">
+						<p>Buckingham Palace</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/London/London5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l6_E">
+						<p>Tate Modern</p>
+					</div>				
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/London/London6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l6_F">
+						<p>The Monarchy</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l6_A">Natural History Museum</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/London/London1.jpg" alt="Natural History Museum" style="max-width: 250px;">
+					</figure>
+					<p>The Natural History Museum is one of London’s top attractions and has a world famous dinosaur gallery where you can come face to face with a life size model of a T Rex. There are 36 different galleries to visit including an underwater virtual reality trip. Children can take part in  lots of activities: for example they can find out how animals see the world. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nhm.ac.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l6_B">Houses of Parliament</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/London/London2.jpg" alt="Houses of Parliament" style="max-width: 250px;">
+					</figure>
+					<p>The House of Commons and the House of Lords are also known as the Palace of Westminster. They are situated on the north bank of the river Thames and have been at the centre of British politics for over 1,000 years. One of the towers of the Palace of Westminster contains Big Ben,  a massive bell which weighs 13 tons and is one of the most famous landmarks in London. Visitors can take a tour of the Houses of Parliament which combines architecture, art and modern day politics.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.londonnet.co.uk/ln/guide/about/gallbigb.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l6_C">The London Eye</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/London/London3.jpg" alt="The London Eye" style="max-width: 250px;">
+					</figure>
+					<p>The London Eye is a giant wheel owned by British Airways. It opened in 1999 and was at that time the tallest wheel in the world. It’s now the most popular paid tourist attraction in the world with over 3.75 million visitors a year. It has 32 capsules each holding 25 people and goes so slowly that you can walk on and off at ground level. The views across London on a clear day are spectacular.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.londoneye.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l6_D">Buckingham Palace</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/London/London4.jpg" alt="Buckingham Palace" style="max-width: 250px;">
+					</figure>
+					<p>The palace is the official residence of the Queen when she is in London and is often at the centre of state occasions. The Palace has 775 rooms and visitors can see some of the State rooms during the summer. During the visit you can also see the Queen’s horses and carriages, including the famous Gold State Coach which needs eight horses to pull it. People also gather every day to see the changing of the guard outside the Palace. The tall hats worn by the guardsmen are made from the fur of Canadian black bears. You can try one on in the museum.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.royal.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l6_E">Tate Modern</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/London/London5.jpg" alt="Tate Modern" style="max-width: 250px;">
+					</figure>
+					<p>The Tate is one of the largest museums of modern art in the world. It has  British art from the beginning of the 20th century and international art from all over the world. Over 5 million people come to the Tate each year to see displays in eight different areas. Each of the areas has a theme such as ‘Living Cities’ and there is no charge to visit these.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.tate.org.uk/visit/tate-modern" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l6_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l6_F">The Monarchy</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/London/London6.jpg" alt="The Monarchy" style="max-width: 250px;">
+					</figure>
+					<p>The British monarchy can trace its origins back to the 11th century and the present monarch, Queen Elizabeth 11 is the longest serving monarch in British history. The monarch does not have a role in politics apart from state duties such as opening the parliament and appointing a new Prime Minister. The queen’s picture appears on British coins, stamps and banknotes. The British National Anthem is ‘God Save the Queen’ and around 80% of British people are in favour of the monarchy.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.britroyals.com/royalfamily.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

@@ -1,0 +1,62 @@
+<template name="ukQuiz_13">
+	<section id="ukQuiz_13" class="hidden">
+	{{#if activeSection}}
+		<div class="content noselect">
+		<h1 class="center">UK Questions</h1>
+			<h3 class="center">Drag the name of the British author to the right book. {{>touch yes="Tap" no="Click"}} submit when you are finished.</h3>
+			<div class="center">
+				<div class="ddpic shadow ddwidth13" >
+					<figure>
+						<img draggable="false" src="../images/uk-quiz/book-harry-potter.jpg" class="img-responsive border1">
+						<br>
+						<h4>Harry Potter</h4>
+					</figure>
+					<div id="target1" class="ddseatedtarget dd1line ddwidth11">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth13" >
+					<figure>
+						<img draggable="false" src="../images/uk-quiz/book-lord-rings.jpg" class="img-responsive border1">
+						<br>
+						<h4>Lord of the Rings</h4>
+					</figure>
+					<div id="target2" class="ddseatedtarget dd1line ddwidth11">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth13" >
+					<figure>
+						<img draggable="false" src="../images/uk-quiz/book-brief-history.jpg" class="img-responsive border1">
+						<h4>A Brief History of Time</h4>
+					</figure>
+					<div id="target3" class="ddseatedtarget dd1line ddwidth11">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth13" >
+					<figure>
+						<img draggable="false" src="../images/uk-quiz/book-christmas-carol.jpg" class="img-responsive border1">
+						<Br>
+						<h4>A Christmas Carol</h4>
+					</figure>
+					<div id="target4" class="ddseatedtarget dd1line ddwidth11">&nbsp;</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4 center">
+					<div id="submitButton" class="button1 buttonsmall">Submit</div>
+				</div>
+			</div>
+<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+			<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+			<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated shadow ddwidth11 dd1line" draggable="true"  data-destination="target3">Stephen Hawking</div></div>
+			<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated shadow ddwidth11 dd1line" draggable="true"  data-destination="target4">Charles Dickens</div></div>
+			<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated shadow ddwidth11 dd1line" draggable="true"  data-destination="target1">JK Rowling</div></div>
+			<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated shadow ddwidth11 dd1line" draggable="true"  data-destination="target2">JRR Tolkien</div></div>
+		</div>
+		</div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#ukQuiz_12" nexturl="#ukQuiz_14" prev="hidden" next="hidden"}}
+	  </footer>
+	  {{/if}}
+	</section>
+</template>

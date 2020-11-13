@@ -1,0 +1,148 @@
+<template name="MoreAboutGloucester">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Gloucester"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m8l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m8l2}}</div>
+		</header>
+
+		<section id="moreaboutGloucester">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Gloucester/Gloucester1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l2_A">
+						<p>Air Tattoo</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Gloucester/Gloucester2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l2_B">
+						<p>Surfing</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Gloucester/Gloucester3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l2_C">
+						<p>Gloucester Docks</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Gloucester/Gloucester4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l2_D">
+						<p>Birthplace of Simon Pegg</p>
+					</div>
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Gloucester/Gloucester5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l2_E">
+						<p>The Tailor of Gloucester</p>
+					</div>		
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l2_A">Air Tattoo</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Gloucester/Gloucester1.jpg" alt="Air Tattoo" style="max-width: 250px;">
+					</figure>
+					<p>The world’s largest military air show is held in Gloucestershire. For two days in July, you can see over 7 hours of flying displays by over 200 different types of planes from fast jets and transport planes to old aircraft. You can see the planes on the ground and meet the crews. Over 24 countries take part in the show every year. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.airtattoo.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l2_B">Surfing</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Gloucester/Gloucester2.jpg" alt="Surfing" style="max-width: 250px;">
+					</figure>
+					<p>The river Severn is 220 miles long and is the longest river in England. When there is a high tide, the water in the Severn estuary creates large waves which reach the town of Gloucester. It is popular with surfers who compete to see who can travel the longest distance on the waves. The record is 9.25 miles.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.thesevernbore.co.uk/home/4579550154" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l2_C">Gloucester Docks</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Gloucester/Gloucester3.jpg" alt="Gloucester Docks" style="max-width: 250px;">
+					</figure>
+					<p>This is the site of an ancient port which dates back to the 16th century when Elizabeth 1 was Queen of England. In the 19th century, cargoes of grain, wood, wine and fruit were exchanged for salt. Nowadays the boats are mainly pleasure boats and visitors can hire a narrowboat for a day.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.gloucesterdocks.me.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l2_D">Birthplace of Simon Pegg</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Gloucester/Gloucester4.jpg" alt="Birthplace of Simon Pegg" style="max-width: 250px;">
+					</figure>
+					<p>Simon Pegg is an actor and producer who was born near Gloucester . His acting roles are mainly comedy ones although he has also appeared in action movies such as Mission Impossible. He also played the Scottish engineer, ‘Scotty’ in the latest Star Trek films and has done voiceover parts for Disney films such as ‘Ice Age.’</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://simonpegg.net/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l2_E">The Tailor of Gloucester</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Gloucester/Gloucester5.jpg" alt="The Tailor of Gloucester" style="max-width: 250px;">
+					</figure>
+					<p>The tailor of Gloucester is a famous children’s book written by Beatrix Potter in the early 20th century. She was a scientist and illustrator as well as a full time children’s writer and there are Beatrix Potter museums in Scotland and the English Lake District where she wrote. The Tailor of Gloucester was her favourite book.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.tailor-of-gloucester.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

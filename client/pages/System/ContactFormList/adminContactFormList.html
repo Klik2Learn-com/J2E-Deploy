@@ -1,0 +1,54 @@
+<template name="adminContactFormList">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/admin/"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">Contact Form list</div>
+		</header>
+		<section>
+			{{#if isAdmin}}
+			<div class="content-user">
+			    <h1>Contact Form</h1>
+
+				<div class="table-wrapper scrollbar">
+					<table class="table4 userlist-table" id="adminContactFormListTable">
+					  <thead>
+						<tr>
+						  <th>Contact Form Type ({{>touch yes="Tap" no="Click"}} to see details)</th>
+						  <th>Submitted by</th>
+						  <th>Date</th>
+						  <th>Status</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						{{#each contact_form}}
+						  <tr>
+							<td data-function="goUserPage">
+								<a draggable="false" href="/contactForm/{{_id}}">{{formType}}</a>
+							</td>
+							<td>
+								{{name}} ({{email}})
+							</td>
+							<td>
+								{{date}}
+							</td>
+							<td>
+								{{status}}
+							</td>
+						  </tr>
+						{{/each}}
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			{{else}}
+				Unauthorised access.
+			{{/if}}
+		</section>
+	</div>
+</article>
+
+</template>

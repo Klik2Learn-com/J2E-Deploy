@@ -1,0 +1,247 @@
+<template name="m9a8"> 
+<article class="with-tools-sidebar m9a8">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Taunton');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 8 - {{>m9a8Title}}</div>
+		</header>
+		<section id="m9a8">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a8Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a8Intro}}</h3>
+				{{> m9a8Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a8_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a8_1}}
+		{{>m9a8_2}}
+		{{>m9a8_3}}
+		{{>m9a8_4}}
+		{{>m9a8_5}}
+		{{>EndPage char="tu" act="m9a8" nextact="m9a9" place="Taunton"}}
+	</div>
+</article>
+	{{>m9a8_modal}}
+</template>
+<template name="m9a8_2"> 
+	<section id="m9a8_2" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+		<h3 class="center">Read one person's account of a visit to a Google office. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.</h3>
+			<div class="parapaper article-text">
+
+
+				{{>metametrics level="5" star="no" align="center"}}
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a8/Art1.m4a"></button>
+				</div>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-4x1 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a8/google exterior.jpg" alt="Google exterior"></div></div>
+				</figure>
+				
+				<p>Google tries to create the happiest, most productive workplace in the world. Is it really like that? I was led through a <a draggable="false" href="#" title="Labyrinth" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-html="true" data-content="<div class='ph-w ph-3x2 trans' style='width: 230px'><div class='ph'><img draggable='false' src='images/module9/a8/labyrinth.png' alt='Maze' /></div></div> A complex network of connected tunnels or corridors where it’s difficult to find your way.">labyrinth</a> of play areas; cafes, coffee bars and open kitchens; sunny outdoor terraces and gourmet cafeterias that serve free breakfast, lunch and dinner. Conference rooms look like film sets with velvet curtains and areas designed to look like old subway carriages.</p>
+				
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a8/Art2.m4a"></button>
+				</div>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-4x1 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a8/google library.jpg" alt="Google library"></div></div>
+				</figure>
+				
+				<p>The library looks as if Miss Scarlet (from the board game <a draggable="false" href="#" title="Cluedo" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-html="true" data-content="<div class='ph-w ph-1x1 shadow' style='width: 230px'><div class='ph'><img draggable='false' src='images/module9/a8/cludeo.jpg' alt='Cluedo board' /></div></div> A murder mystery board game where the players try to work out who the killer is.">Cluedo</a>) has just stepped out, leaving her rope over the back of a chair. A bookcase opens to reveal a secret room and even more private reading areas. Next to the Lego play station, employees can climb up a ladder that connects the fourth and fifth floors, where a really challenging treasure hunt is in progress. Dogs stroll the corridors alongside their owners, and one is sleeping outside one of the dining areas.</p>
+
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a8/Art3.m4a"></button>
+				</div>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-4x1 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/a8/google office.jpg" alt="Google office"></div></div>
+				</figure>
+
+				<p> Google lets its employees design their own desks. Some have standing desks - a few even have treadmills so they can walk while working. Employees express themselves by scribbling on walls. The result looks chaotic, but Google says that’s how people like it. ‘We’re trying to push the boundaries of the workplace,’ I was told. </p>
+				
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a8_1" nexturl="#m9a8_3" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a8_1"> 
+	<section id="m9a8_1" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+				word1="gourmet"
+				word2="treadmill"
+				word3="scribble"
+				word4="chaotic"
+				word5c="hidden"
+				word6c="hidden"
+				word7c="hidden"
+				word8c="hidden"
+				word9c="hidden"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a8" nexturl="#m9a8_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a8_3"> 
+	<section id="m9a8_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h4 class="center">This sentence is <b>Active</b></h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="caption">A Google employee <span class="correctword">led</span> me through a labyrinth of play areas.</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h4 class="center">This sentence from the article is <b>Passive</b></h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a8/I_was_lead_through.m4a"></button></div>
+						<div class="iconright"><div class="caption">I <span class="correctword">was led</span> through a labyrinth of play areas.</div></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h4 class="center">This sentence is <b>Active</b></h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="caption">A Google employee <span class="correctword">told</span> me "We're trying to push the boundaries of the workplace."</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h4 class="center">This sentence from the article is <b>Passive</b></h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a8/Were_trying_to_push.m4a"></button></div>
+						<div class="iconright"> <div class="caption" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;">"We're trying to push the boundaries of the workplace", I <span class="correctword">was told</span>.</div></div>
+					</div>
+				</div>
+				{{>blankrow}}
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a8_2" nexturl="#m9a8_4" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a8_4"> 
+	<section id="m9a8_4" class="hidden"> {{> popovers}}
+		<div class="content">  
+      			{{>InstructionsNotebook text="In your Notebook complete the four Active sentences and add a Passive sentence for each one. Use the Past Tense."}}
+      			<div class="parapaper paraextract">
+      				<ul>
+      				<li>She/me/accident      (tell)</li>
+					<li>He/glass      (break)</li>
+					<li>They/me/station      (drive)</li>
+					<li>Young boy/phone      (find) </li>
+					</ul>
+      			</div>
+      			<div class="center">
+      				<button data-toggle="modal" data-target="#m9a8_modal" class="button2">{{>touch yes="Tap" no="Click"}} to see an example</button>
+      			</div>
+      			<h3 class="center">Continue when you're ready to see the answers.</h3>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a8_3" nexturl="#m9a8_5" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+ <template name="m9a8_modal">
+	<div class="modal fade" tabindex="-1" id="m9a8_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m9a8_modal">Example</h4>
+				</div>
+				
+				<div class="content">
+				<h4 class="center">Here's an example:</h4>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="caption">Active</div> <h5>Her uncle met her at the airport.</h5>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="caption">Passive</div> <h5><a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Subject">She</a> <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="'to be'">was</a> <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past Participle">met</a> at the airport by her uncle.</h5>
+						</div>
+					</div>
+				</div>									
+				</div>				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m9a8_5"> 
+	<section id="m9a8_5" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+					<div class="parapaper fold notebook-answers">
+						<ol class="olcircle">
+							<li>
+								<p>She told me about the accident. <span class="correctword">Active</span></p>
+								<p>I was told about the accident. <span class="correctword">Passive</span></p>
+							</li>
+							<li>
+								<p>He broke the glass. <span class="correctword">Active</span></p>
+								<p>The glass was broken. <span class="correctword">Passive</span></p>
+							</li>
+							<li>
+								<p>They drove me to the station. <span class="correctword">Active</span></p>
+								<p>I was driven to the station. <span class="correctword">Passive</span></p>
+							</li>
+							<li>
+								<p>A young boy found my phone. <span class="correctword">Active</span></p>
+								<p>My phone was found by a young boy. <span class="correctword">Passive</span></p>
+							</li>
+						</ol>
+					</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a8_4" nexturl="#m9a8_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

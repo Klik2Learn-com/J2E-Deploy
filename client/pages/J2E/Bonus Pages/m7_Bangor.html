@@ -1,0 +1,148 @@
+<template name="MoreAboutBangor">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Bangor"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m7l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m7l6}}</div>
+		</header>
+
+		<section id="moreaboutBangor">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bangor/Bangor1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l6_A">
+						<p>Penrhyn Castle</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bangor/Bangor2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l6_B">
+						<p>Cathedral Church of Saint Deiniol</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bangor/Bangor3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l6_C">
+						<p>Menai Suspension Bridge</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bangor/Bangor4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l6_D">
+						<p>Garth Pier</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bangor/Bangor5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l6_E">
+						<p>Longest Zipline in Europe</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l6_A">Penrhyn Castle</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bangor/Bangor1.jpg" alt="Penrhyn Castle" style="max-width: 250px;">
+					</figure>
+					<p>The castle was built in the 19th century in 60 acres of parkland. It has some unusual items to see such as a slate bed made for Queen Victoria which weighs one ton. It was owned by the Pennant family who made their fortune from Welsh slate and sugar. The splendid rooms and paintings reveal the wealth they had.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nationaltrust.org.uk/penrhyn-castle" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l6_B">Cathedral Church of Saint Deiniol</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bangor/Bangor2.jpg" alt="Cathedral Church of Saint Deiniol" style="max-width: 250px;">
+					</figure>
+					<p>Bangor Cathedral is unusual because it is built on a low lying area. Historians think it was to hide the cathedral from the Vikings who invaded parts of Britain from the sea. Services and music there often use the Welsh language. Welsh is an ancient Celtic language similar to Irish and Scottish Gaelic.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://bangor.churchinwales.org.uk/cathedral/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l6_C">Menai Suspension Bridge</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bangor/Bangor3.jpg" alt="Menai Suspension Bridge" style="max-width: 250px;">
+					</figure>
+					<p>The Menai bridge was built by the famous British engineer, Thomas Telford, in 1826 to carry traffic between the island of Anglesey and the Welsh mainland. Before that, the islanders had to use a ferry to take their animals to market even in bad weather. In 2005, the bridge became a World Heritage Site.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://menaibridges.co.uk/mbhistory.php" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l6_D">Garth Pier</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bangor/Bangor4.jpg" alt="Garth Pier" style="max-width: 250px;">
+					</figure>
+					<p>The pier at Bangor is one of the longest in the UK. It’s worth walking along for the amazing views of the Welsh mountains and the island of Anglesey. There are some market stalls and a traditional tearoom at the end of the pier. In the summer, you can also arrange to go fishing at night from the pier.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://historypoints.org/index.php?page=garth-pier" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l6_E">Longest Zipline in Europe</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bangor/Bangor5.jpg" alt="Longest Zipline in Europe" style="max-width: 250px;">
+					</figure>
+					<p>The  slate quarry at Penrhyn gives you the chance to find out what it’s like to fly.  You can fly over the area on the fastest zip line in the world and the longest in Europe. You can also tour the quarry in a red truck. It used to be the biggest quarry in Britain with over 3,000 people working there. It still quarries slate but there are only 200 workers now.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=7Gs54j050P8" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

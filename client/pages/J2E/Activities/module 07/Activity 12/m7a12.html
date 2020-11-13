@@ -1,0 +1,162 @@
+<template name="m7a12"> 
+<article class="with-tools-sidebar m7a12">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StokeonTrent');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 12 - {{>m7a12Title}}</div>
+		</header>
+		<section id="m7a12">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a12Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m7a12Intro}}</h3>
+				{{> m7a12Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a12_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a12_1}}
+		{{>m7a12_2}}
+		{{>m7a12_3}}
+		{{>m7a12_4}}
+		{{>m7a12_5}}
+		{{>EndPage char="elle" act="m7a12" nextact="m7a13" place="StokeonTrent"}}
+	</div>
+</article>
+
+</template>
+<template name="m7a12_1"> 
+	<section id="m7a12_1" class="hidden"> 
+		<div class="content">  
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 center">
+						<h4>Use the Past Continuous for an action that took place over a period of time.</h4>
+						<div class="ph-w ph-4x3 border2" style="max-width: 255px"><div class="ph"><img draggable="false" src="images/module7/a12/Guy In Shower.jpg" alt="Man in shower"></div></div>
+						<br>
+						<div class="caption capgreen">While he was having a shower in the hotel…</div>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-6 center">
+						<h4>Use the Past Simple for an action that’s finished.</h4>
+						<div class="ph-w ph-4x3 border2" style="max-width: 255px"><div class="ph"><img draggable="false" src="images/module7/a12/Fire Alarm.jpg" alt="Fire alarm"></div></div>
+						<br>
+						<div class="caption capgreen">...the fire alarm went off.</div>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			{{>InstructionsGrammar text="See the Grammar Guide to find out more about these tenses. Often the Past Continuous tense is used in the same sentence as the Past Simple. "}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m7a12" nexturl="#m7a12_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m7a12_2"> 
+	<section id="m7a12_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		{{>rightwrong}}{{>welldone}}
+      			<h3 class="center">Write the correct Past Continuous of '<span id="paraword">grow up</span>' in the space. (<span id="wordlength">3</span> words)</h3>
+      			<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}					
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-3x4 shadow" style="width: 195px"><div class="ph"><img draggable="false" src="images/module7/a12/Ranulph Fiennes.jpg" alt="Sir Ranulph Fiennes"></div></div>
+						<figcaption>Sir Ranulph Fiennes</figcaption>
+					</figure>
+					
+					<p class="linespace">According to the <i>Guinness Book of World Records</i>, Sir Ranulph Fiennes is the world’s greatest living explorer. But before he climbed Mount Everest — at the age of 65, he had to face a different kind of challenge: bullies at Eton College. When he <span id="entryanswer0" class=""><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off" autofocus><input type="submit" value="OK"></form></span>, Fiennes was a good looking boy. At the time, it was considered normal to tease good looking boys and they taunted Fiennes.</p>
+
+					<p class="linespace">Fiennes <span id="entryanswer1" class="textentry-disabled"></span> Oman in 1992 when his team discovered the lost city of Ubar. When he <span id="entryanswer2" class="textentry-disabled"></span> to the North Pole in 2000 he got frostbite. In 2003, he <span id="entryanswer3" class="textentry-disabled"></span> for take off from Bristol airport when he suffered a heart attack. Just four months later, he ran seven marathons in seven days on seven continents. His good looks worked for him in a positive way: Fiennes was once chosen for the role of James Bond.</p>
+					<div class="parent_expander"></div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a12_1" nexturl="#m7a12_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a12_3"> 
+	<section id="m7a12_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		{{>rightwrong}}{{>welldone}}
+      			<h3 class="center">Write the correct Past Continuous of '<span id="paraword">train</span>' in the space. (<span id="wordlength">2</span> words)</h3>
+      			<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-3x4 shadow" style="width: 195px"><div class="ph"><img draggable="false" src="images/module7/a12/Michael Phelps.jpg" alt="Michael Phelps"></div></div>
+						<figcaption>Michael Phelps</figcaption>
+					</figure>
+					
+					<p class="linespace">In 2008, the swimmer, Michael Phelps, became the greatest Olympian with a total of nine gold medals.  He was called “amazing,” “incredible,” and even “Sportsman of the Year.” As a kid however he was taunted for his “sticky-out ears” and lisp. When the swimmers <span id="entryanswer0" class=""><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> some even teased him about his long arms which ultimately helped him to greatness. His coach Bob Bowman said, “Michael is the motivation machine — bad moods, good moods, nothing stops him.” While he <span id="entryanswer1" class="textentry-disabled"></span> for his first Olympics, Michael even went into the pool on Christmas Day. His story is an inspiration to bullied kids everywhere.</p>
+					<div class="parent_expander"></div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a12_2" nexturl="#m7a12_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a12_4"> 
+	<section id="m7a12_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		{{>rightwrong}}{{>welldone}}
+      			<h3 class="center">Write the correct Past Continuous of '<span id="paraword">do</span>' in the space. (<span id="wordlength">2</span> words)</h3>
+      			<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-3x4 shadow" style="width: 195px"><div class="ph"><img draggable="false" src="images/module7/a12/Prince Harry.jpg" alt="Prince Harry"></div></div>
+						<figcaption>Prince Harry</figcaption>
+					</figure>
+
+					<p class="linespace">Most people imagine that the life of a prince is very privileged but Harry has had his fair share of taunting. The reason? His red hair. In America, red hair does not carry a stigma, but in the UK, “gingers” like Harry are sometimes picked on for their coloured hair and fair skin. When he <span id="entryanswer0" class=""><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> his army training Harry’s pals called him the “Ginger Bullet Magnet.” His army career was a success.</p>
+
+					<p class="linespace">While he <span id="entryanswer1" class="textentry-disabled"></span> as a captain in the army he was awarded appointments in the navy and the air force as well. In 2003 he <span id="entryanswer2" class="textentry-disabled"></span> as a volunteer in Lesotho. He was so concerned about the orphans he met that he founded a charity to help the children.</p>
+					<div class="parent_expander"></div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a12_3" nexturl="#m7a12_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a12_5"> 
+	<section id="m7a12_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		{{>rightwrong}}{{>welldone}}
+      			<h3 class="center">Write the correct Past Continuous of '<span id="paraword">constantly uproot</span>' in the space. (<span id="wordlength">3</span> words)</h3>
+      			<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-3x4 shadow" style="width: 195px"><div class="ph"><img draggable="false" src="images/module7/a12/Tom Cruise.jpg" alt="Tom Cruise"></div></div>
+						<figcaption>Tom Cruise</figcaption>
+					</figure>
+
+					<p class="linespace">Tom Cruise, the star of Top Gun and Mission Impossible is well known for his talent and looks but as a kid, things were different. His father <span id="entryanswer0" class=""><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> the family to find new work. As a result, Tom <span id="entryanswer1" class="textentry-disabled"></span> himself at new schools: “I was always the new kid with the wrong shoes, the wrong accent. I didn’t have a friend to confide in.”</p>
+
+					<p class="linespace">He was small for his age and easily pushed around. Eventually, he learned to stand up for himself. “I decided to do something. My heart <span id="entryanswer2" class="textentry-disabled"></span>, I <span id="entryanswer3" class="textentry-disabled"></span>, and I felt as if I <span id="entryanswer4" class="textentry-disabled"></span>  to be sick. I’m not the biggest guy, I never liked hitting anyone, but I knew if I didn’t deal with this, he <span id="entryanswer5" class="textentry-disabled"></span> to pick on me all year.” </p>
+					<div class="parent_expander"></div>
+				</div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="m7a12_4" nexturl="#m7a12_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>

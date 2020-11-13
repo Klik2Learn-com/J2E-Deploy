@@ -1,0 +1,169 @@
+<template name="MoreAboutBraemar">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Braemar"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m2l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m2l1}}</div>
+		</header>
+
+		<section id="moreaboutBraemar">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Braemar/Braemar1.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m2l1_A">
+						<p>Mountain Sports</p>
+					</div>
+					<div class="col-sm-5 col-xs-6 bonus-image" style="background-image: url('images/bonus/Braemar/Braemar2.jpg'); background-position: right top;" data-toggle="modal" data-target="#bonus_modal_m2l1_B">
+						<p>Balmoral Castle</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Braemar/braemar6.jpg'); background-position: left center;" data-toggle="modal" data-target="#bonus_modal_m2l1_F">
+						<p>Cairngorms</p>
+					</div>										
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Braemar/Braemar3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l1_C">
+						<p>Haggis</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Braemar/Braemar4.jpg'); background-position: right top;" data-toggle="modal" data-target="#bonus_modal_m2l1_D">
+						<p>Wildlife</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Braemar/Braemar5.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m2l1_E">
+						<p>Highlanders</p>
+					</div>				
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l1_A">Mountain Sports</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Braemar/Braemar1.jpg" alt="Skiing" style="max-width: 250px;">
+					</figure>
+					<p>Braemar is a popular destination for skiing and visitors can take part in all kinds of winter sports here.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.braemarmountainsports.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l1_B">Balmoral Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Braemar/Braemar2.jpg" alt="Balmoral Castle" style="max-width: 250px;">
+					</figure>
+					<p>Balmoral Castle is a large estate house in Royal Deeside, Aberdeenshire, Scotland, 6.8 miles east of Braemar. Balmoral has been one of the residences for members of the British Royal Family since 1852, when the estate and its original castle were purchased privately by Prince Albert, consort to Queen Victoria.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.balmoralcastle.com/about.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l1_C">Haggis</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Braemar/Braemar3.jpg" alt="Haggis" style="max-width: 300px;">
+					</figure>
+					<p>Haggis is a traditional Scottish type of food made from sheep's organs, onion, oatmeal, suet, spices, and salt, mixed with stock. It is traditionally encased in the animal's stomach, though now it often comes in an artificial casing instead. It is usually served with neeps and tatties (turnips and mashed potato). According to the 2001 English edition of the Larousse Gastronomique: "Although its description is not immediately appealing, haggis has an excellent nutty texture and delicious savoury flavour".</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=84pkIXuFvSg" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l1_D">Wildlife</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Braemar/Braemar4.jpg" alt="Ptarmigan" style="max-width: 250px;">
+					</figure>
+					<p>There is lots of wildlife to be seen around Braemar, including acrobatic red squirrels, red deer, snow buntings and ptarmigans.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://braemarscotland.co.uk/things-to-do/wildlife-ranger-service/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l1_E">Highlanders</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Braemar/Braemar5.jpg" alt="Highlander" style="max-width: 250px;">
+					</figure>
+					<p>"Highlander" is the term for a person from the Highlands of Scotland, a historic region with a culture and language quite different from that of the Lowlands. Not all Highlanders wear kilts however. Highland dress is only worn on special occasions.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=-fxkITT07iI" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l1_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l1_F">Cairngorms</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Braemar/braemar6.jpg" alt="Cairngorms" style="max-width: 250px;">
+					</figure>
+					<p>The Cairngorms are a range of mountains in Scotland, including the mountain Cairn Gorm itself. The area also has a national park and offers many activities for visitors, including skiing, snowboarding and hill walking. There is also a castle, a beach and a mountain railway.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://cairngorms.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

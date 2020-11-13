@@ -1,0 +1,88 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m2a8">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Dundee');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 8 - {{>m2a8Title}}</div>
+		</header>
+				
+			<section id="m2a8">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a8Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m2a8Intro}}</h3>
+{{> m2a8Time}} <!--{{> resumePopUp}}-->
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a8_1" prev="hidden" next="" next_text="Start"}}
+	</footer>
+		</section>
+		{{> m2a8_1}}
+		{{> m2a8_end}}
+	</div>
+</article>
+
+	</template>
+	
+	
+<template name="m2a8_1">
+	<section id="m2a8_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3>Find 6 more examples of the <b>Present Simple</b> from the article (Activity 6)</h3>
+			{{>rightwrong}}
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="parapaper">
+							<p id="textDisplay"><b>1)</b> Sue Brown and Sylvia Jones pause for a few moments to admire their morning’s work; eight large boxes overflowing with delicious oranges, green beans, bananas, grapes, potatoes and apples. <br><br>They’ve got quite a bargain. The two women and their friends have pooled their money to buy all this produce from wholesale fruit and vegetable stores for only £35.90 – a cost far below the retail prices being charged in all the supermarkets in town.</p>
+						</div>
+						<div class="text-right">
+							<span class="paragraph-label">Select a paragraph:</span>
+							<div id="0" class="numbutt">1</div>
+							<div id="1" class="numbutt">2</div>
+							<div id="2" class="numbutt">3</div>
+							<div id="3" class="numbutt">4</div>
+							<div id="4" class="numbutt">5</div>
+							<div id="5" class="numbutt">6</div>
+							<div class="visible-xs" style="height: 2em;"></div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6">
+						<div class="parapaper paraextract fold">
+							<ol class="olcircle">
+								<li>Sue <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7"><input type="submit" value="OK"></form></span>. (paragraph 2)</li>
+								<li>The children <span id="entryanswer1" class="textentry-disabled"></span>. (paragraph 2)</li>
+								<li>They often <span id="entryanswer2" class="textentry-disabled"></span>. (paragraph 3)</li>
+								<li>The savings they <span id="entryanswer3" class="textentry-disabled"></span>.(paragraph 4)</li>
+								<li>The small bags they <span id="entryanswer4" class="textentry-disabled"></span>. (paragraph 4)</li>
+								<li>However, they all <span id="entryanswer5" class="textentry-disabled"></span> turns. (paragraph 4)</li>
+							</ol>
+						</div>
+					</div>
+					
+				</div>	
+				{{>welldone}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a8_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a8_end">
+{{>EndPage char="tu" act="m2a8" nextact="m2a9" place="Dundee"}}
+</template>

@@ -1,0 +1,137 @@
+<template name="m7a23">
+	<article class="with-tools-sidebar m7a23">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Bangor');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 23 - {{>m7a23Title}}</div>
+			</header>
+			<section id="m7a23">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a23Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m7a23Intro}}</h3>
+					{{> m7a23Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a23_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a23_1}} {{>m7a23_2}} {{>m7a23_3}} {{>EndPage char="tu" act="m7a23" nextact="m7a24" place="Bangor"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a23_1">
+	<section id="m7a23_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To see/read something:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To read and understand:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To escape with:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target3">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target3">Someone broke into the Halls of Residence and
+							<span class="grammar">made off</span> with money and laptops.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">She wasn’t sure what to
+							<span class="grammar">make of</span> that exam question – it wasn’t what she expected.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">I can’t
+							<span class="grammar">make out</span> your handwriting - type it for me.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a23" nexturl="#m7a23_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a23_2">
+	<section id="m7a23_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To be on good terms again:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To say something that isn’t right or true:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">She couldn’t think what to say in the speaking test so she just
+							<span class="grammar">made something up</span>.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">He fell out with his flatmates over cleaning the kitchen but they
+							<span class="grammar">made up</span> after talking it over.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a23_1" nexturl="#m7a23_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a23_3">
+	<section id="m7a23_3" class="hidden">
+		<div class="content">
+			{{> Tu_saved module="7"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a23_2" nexturl="#m7a23_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

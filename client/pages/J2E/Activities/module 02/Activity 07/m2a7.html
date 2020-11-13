@@ -1,0 +1,158 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m2a7">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Dundee');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 7 - {{>m2a7Title}}</div>
+		</header>
+				
+			<section id="m2a7">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a7Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m2a7Intro}}</h3>
+{{> m2a7Time}} <!--{{> resumePopUp}}-->
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a7_1" prev="hidden" next="" next_text="Start"}}
+	</footer>
+		</section>
+		{{> m2a7_1}}
+		{{> m2a7_2}}
+		{{> m2a7_3}}
+		{{> m2a7_4}}
+		{{> m2a7_end}}
+	</div>
+</article>
+
+	</template>
+	
+	
+<template name="m2a7_1">
+	<section id="m2a7_1" class="hidden">
+		<div class="content">
+			<div class="parapaper text-center">
+				<h2>This module looks at two Present Tenses:</h2>
+				<span class="caption capgreen">The PRESENT SIMPLE</span> and <span class="caption capgreen">The PRESENT CONTINUOUS</span>
+				<br>
+				<br>
+			</div>	
+			{{> gg_button gg_ulr="#" gg_text="You can find out more about these tenses under Verbs in the Grammar Guide"}}
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a7_2" prev="hidden" next=""}}
+	</footer>
+	</section>
+
+	</template>
+	
+	
+
+<template name="m2a7_2">
+	<section id="m2a7_2" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 center">
+						<h2 class="text-left">Here’s an example of the PRESENT SIMPLE from the the article in <span class="avoidwrap">Activity 6:</span></h2>
+						<p><span class="caption capgreen text-left">
+							This is the basic way to use the PRESENT SIMPLE - talking about HABITS/REGULAR EVENTS
+						</span></p>
+						<p>							
+								<div class="ph-w trans" style="max-width: 311px;">
+										<div class="ph" style="padding-top: 83.6%;">
+									<img draggable="false" src="images/module2/Shop.png">
+								</div>
+							</div>
+						</p>
+						<h3>“We shop every week.”</h3>
+					</div>
+					<div class="visible-xs"><hr></div>
+					<div class="col-sm-6 center">
+						<h2 class="text-left">Here’s an example of the PRESENT CONTINUOUS:</h2>
+						<p><span class="caption capgreen text-left">
+							If you want to describe something that’s happening or not happening AT A PARTICULAR MOMENT use the PRESENT CONTINUOUS
+						</span></p>
+						<p>
+							<div class="ph-w trans" style="max-width: 311px;">
+								<div class="ph" style="padding-top: 83.6%;">
+									<img draggable="false" src="images/module2/Rain1.png">
+								</div>
+							</div>
+						</p>
+						<h3>“It’s raining heavily.”</h3>
+					</div>
+				</div>
+			</div>
+		</div>	
+  	<footer>
+		{{>footer_nav prevurl="#m2a7_1" nexturl="#m2a7_3" prev="" next=""}}
+	</footer>
+	</section>
+
+	</template>
+	
+	
+
+<template name="m2a7_3">
+	<section id="m2a7_3" class="hidden">
+		<div class="content">
+			<h2 class="text-center">Here's an example with both tenses:</h2>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="hidden-xs" style="height: 50px;"></div>
+						<h3 class="text-left">“It <span class="grammar">rains</span> a lot in Scotland, but it’s not <span class="grammar">raining</span> just now!”</h3>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="ph-w trans" style="max-width: 311px;"><div class="ph" style="padding-top: 112.33%;"><img draggable="false" src="images/module2/Rain.png"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+  	<footer>
+		{{>footer_nav prevurl="#m2a7_2" nexturl="#m2a7_4" prev="" next=""}}
+	</footer>
+	</section>
+
+	</template>
+	
+	
+
+<template name="m2a7_4">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a7_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			{{>rightwrong}}
+			{{> welldone}}
+			<h1>Statements</h1>
+			<h3 class="center">Fill in the spaces with the right tense.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+					<ol class="olcircle">
+						<li>She usually <b>works</b> in the office but she’s <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7"><input type="submit" value="OK"></form></span> from home today.</li>
+						<li>They often <b>go</b> on holiday to Spain but they’re not <span id="entryanswer1" class="textentry-disabled"></span> this year.</li>
+						<li>He <b>eats</b> a lot of chocolate but he’s not <span id="entryanswer2" class="textentry-disabled"></span> any for the next month.</li>
+						<li>Andy Murray <span id="entryanswer3" class="textentry-disabled"></span> every day but due to injury he’s not <b>training</b> at the moment.</li>
+						<li>He normally <b>travels</b> by car but he’s <span id="entryanswer4" class="textentry-disabled"></span> by train this week.</li>
+					</ol>
+				</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a7_3" nexturl="#m2a7_end" prev="disabled" next="hidden"}}
+			</footer>
+		</div>
+		{{> stuck stuckchar="k"}}
+	{{/if}}
+	</section>
+</template>
+
+<template name="m2a7_end">
+{{>EndPage char="k" act="m2a7" nextact="m2a8" place="Dundee"}}
+</template>

@@ -1,0 +1,148 @@
+<template name="MoreAboutColwynBay">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="ColwynBay"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m7l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m7l5}}</div>
+		</header>
+
+		<section id="moreaboutColwynBay">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/ColwynBay/ColwynBay1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l5_A">
+						<p>Theatre Colwyn</p>
+					</div>
+					<div class="col-sm-5 col-xs-6 bonus-image" style="background-image: url('images/bonus/ColwynBay/ColwynBay2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l5_B">
+						<p>Colwyn Bay Beach</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/ColwynBay/ColwynBay3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l5_C">
+						<p>Timothy Dalton</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/ColwynBay/ColwynBay4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l5_D">
+						<p>Eirias Park</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/ColwynBay/ColwynBay5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l5_E">
+						<p>Welsh Mountain Zoo</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l5_A">Theatre Colwyn</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/ColwynBay/ColwynBay1.jpg" alt="Theatre Colwyn" style="max-width: 250px;">
+					</figure>
+					<p>This grand Art Deco building began showing films at the beginning of the 20th century. It is still the oldest working cinema in the UK. The theatre is associated with some famous British actors and  now puts on drama, musicals, concerts and of course a pantomime at Christmas. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.theatrcolwyn.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l5_B">Colwyn Bay Beach</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/ColwynBay/ColwynBay2.jpg" alt="Colwyn Bay Beach" style="max-width: 250px;">
+					</figure>
+					<p>Colwyn bay is a typical Victorian seaside town. It was based on the three miles of wonderful white sand beside the sea wall and promenade. The beach has achieved the standard of  European Blue Flag for its water quality.  Nowadays, you can also do a range of watersports including sailing, canoeing,  wind -surfing and jet skiing.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.thebeachguide.co.uk/north-wales/clwyd/colwyn-bay.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l5_C">Timothy Dalton</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/ColwynBay/ColwynBay3.jpg" alt="Timothy Dalton" style="max-width: 250px;">
+					</figure>
+					<p>Timothy Dalton was born in Colwyn Bay and is best known for playing the character of James Bond in two Bond movies. He also starred as the romantic lead in several films based on the novels of Jane Austen. His career in America continued for many years and he worked in Disney films as a voiceover artist in the Toy Story films.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.biography.com/people/timothy-dalton-20702697#awesm=~oAQMwSkYKyaThW" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l5_D">Eirias Park</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/ColwynBay/ColwynBay4.jpg" alt="Eirias Park" style="max-width: 250px;">
+					</figure>
+					<p>This large park has a great range of things to do for sports and leisure. There’s an indoor swimming pool, tennis courts and a boating lake. The athletics track and the rugby/football pitch are of international standard and the International Rugby Board often choose the stadium for Test matches.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.dayoutwiththekids.co.uk/eirias-park-and-waterpark" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l5_E">Welsh Mountain Zoo</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/ColwynBay/ColwynBay5.jpg" alt="Welsh Mountain Zoo" style="max-width: 250px;">
+					</figure>
+					<p>The zoo is situated on the hills overlooking Colwyn Bay. You can see a large variety of animals including the rare snow leopard. There are chimpanzees, otters, sea lions and the zoo can claim to have produced the first camel to be born in Wales. No Welsh zoo of course would be complete without the Welsh mountain goat.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.welshmountainzoo.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

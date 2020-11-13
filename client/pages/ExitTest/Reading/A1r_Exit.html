@@ -1,0 +1,82 @@
+<template name="A1r_Exit">
+	<section id="A1r_Exit">
+	{{#if activeSection}}
+			<div class="content">
+			<h3 class="center">Read the text and answer each question with up to four words.</h3>
+				<div class="parapaper paraextract article-text noselect">                        
+                        <p>Dear Lucy,</p>
+                        <p>&emsp;I’m on holiday in Florida with my friends Suri and Eva. The hotel is very busy
+                        but relaxing. The other guests are very happy and the food is tasty. I like the
+                        city but the shops are too expensive. There are many tall buildings.</p>
+                        <p>The weather is nice. It is sunny most days.</p>
+                        <p>See you next week.</p>
+                        <p>Sophie</p>
+				</div>
+				<br>
+
+				<form class="assess-form-listening">
+					<div class="parapaper paraextract parasegment fold">
+						<ol class="olcircle">
+							<li><span><b><span data-questionFor="q1">Who is the postcard from?</span></b></span><br>
+								<label for="q1a"><input type="radio" name="q1" value="eva" id="q1a" class="listeningInput"> Eva</label>
+								<label for="q1b"><input type="radio" name="q1" value="lucy" id="q1b" class="listeningInput"> Lucy</label>
+								<label for="q1c"><input type="radio" name="q1" value="sophie" id="q1c" class="listeningInput"> Sophie</label>	
+								<label for="q1d"><input type="radio" name="q1" value="suri" id="q1d" class="listeningInput"> Suri</label>	
+							</li>
+							<li><span><b><span data-questionFor="q2">Why are they in Florida?</span></b></span><br>
+								<label for="q2a"><input type="radio" name="q2" value="business" id="q1a" class="listeningInput"> They are on business</label>
+								<label for="q2b"><input type="radio" name="q2" value="holiday" id="q1b" class="listeningInput"> They are on holiday</label>
+								<label for="q2c"><input type="radio" name="q2" value="shopping" id="q1c" class="listeningInput"> They are shopping</label>
+							</li>
+							<li><span><b><span data-questionFor="q3">The hotel is quiet.</span></b></span><br>
+								<label for="q3a"><input type="radio" name="q3" value="True" id="q3a" class="listeningInput"> True</label>
+								<label for="q3b"><input type="radio" name="q3" value="False" id="q3b" class="listeningInput"> False</label>
+							</li>
+							<li><span><b><span data-questionFor="q4">The food is good.</span></b></span><br>
+								<label for="q4a"><input type="radio" name="q4" value="True" id="q4a" class="listeningInput"> True</label>
+								<label for="q4b"><input type="radio" name="q4" value="False" id="q4b" class="listeningInput"> False</label>
+							</li>
+							<li><span><b><span data-questionFor="q5">Shopping is cheap.</span></b></span><br>
+								<label for="q5a"><input type="radio" name="q5" value="True" id="q5a" class="listeningInput"> True</label>
+								<label for="q5b"><input type="radio" name="q5" value="False" id="q5b" class="listeningInput"> False</label>
+							</li>
+							<li><span><b><span data-questionFor="q6">The guests like the hotel.</span></b></span><br>
+								<label for="q6a"><input type="radio" name="q6" value="True" id="q6a" class="listeningInput"> True</label>
+								<label for="q6b"><input type="radio" name="q6" value="False" id="q6b" class="listeningInput"> False</label>
+							</li>
+
+							<li>
+								<p data-questionFor="q7"> The weather is 
+									<select name="q7">
+										<option selected value></option>
+										<option id="q7a" value="tasty">tasty</option>
+										<option id="q7b" value="busy">busy</option>
+										<option id="q7c" value="sunny">sunny</option>
+										<option id="q7d" value="relaxing">relaxing</option>
+									</select>
+								</p>
+							</li>
+							<li>
+								<p data-questionFor="q8"> The buildings are  
+									<select name="q8">
+										<option selected value></option>
+										<option id="q8a" value="good">good</option>
+										<option id="q8b" value="happy">happy</option>
+										<option id="q8c" value="expensive">expensive</option>
+										<option id="q8d" value="tall">tall</option>
+									</select>
+								</p>
+							</li>
+						</ol>
+					</div>
+					
+					<div class="assess-finish">
+						<span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+					</div>
+					{{>finishBtnExit}}
+				</form>
+
+			</div>
+	{{/if}}
+	</section>
+</template>

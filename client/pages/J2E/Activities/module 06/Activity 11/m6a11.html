@@ -1,0 +1,255 @@
+<template name="m6a11"> 
+<article class="with-tools-sidebar m6a11">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Whitby');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 11 - {{>m6a11Title}}</div>
+		</header>
+		<section id="m6a11">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a11Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m6a11Intro}}</h3>
+				{{> m6a11Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a11_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a11_1}}
+		{{>m6a11_2}}
+		{{>EndPage char="tu" act="m6a11" nextact="m6a12" place="Whitby"}}
+	</div>
+</article>
+
+	{{>m6a11_paras_modal}}
+</template>
+<template name="m6a11_1"> 
+	<section id="m6a11_1" class="hidden"> 
+		<div class="content">  
+		<h1>How Laws are Made</h1>
+      	<h3 class="center">Here's a quiz about the article (Activity 10) on How Laws are Made.</h3>
+      	<div class="ph-w ph-16x9" style="max-width: 640px"><div class="ph"><img draggable="false" src="images/module6/a10/Houses of parliament.jpg" alt="House of Parliament"></div></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a11" nexturl="#m6a11_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a11_2"> 
+	<section id="m6a11_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<div class="content">
+			<h3 class="text-center"><span class="avoidwrap">Are these statements True or False?</span> <span class="avoidwrap">Listen to find the answer. You must click the right answer to continue.</span></h3>
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}} {{>welldone}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">1</div></div> 
+						<div class="iconright">A new idea for a law is called a 'Bill'.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">2</div></div>
+						<div class="iconright">It always takes years for a new idea to become a law in the UK.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">3</div></div> 
+						<div class="iconright">A new law has to start in the House of Commons</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">4</div></div> 
+						<div class="iconright">Both Houses have to agree before a new law can be passed.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="4" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">5</div></div> 
+						<div class="iconright">The House of Lords has fewer members than the House of Commons.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="5" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">6</div></div> 
+						<div class="iconright">People have to be elected to the House of Lords.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="6" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">7</div></div> 
+						<div class="iconright">There are bishops in the House of Commons.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="7" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">8</div></div> 
+						<div class="iconright">People are elected to the House of Commons</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="8" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">9</div></div> 
+						<div class="iconright">A new law has to go through three readings.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="9" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">10</div></div> 
+						<div class="iconright">Two different groups examine the new law before it is passed.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+
+				<div id="10" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">11</div></div> 
+						<div class="iconright">When a Bill is finally passed it is called an 'Act of Parliament.'</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+
+				<div id="11" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">12</div></div> 
+						<div class="iconright">The queen has to give her approval for a new law.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				<div class="center">
+				<button data-toggle="modal" data-target="#m6a11_paras_modal" class="button1">Read Article</button>
+				</div>
+			</div>
+			
+		</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m6a11_1" nexturl="#m6a11_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m6a11_paras_modal">
+	<div class="modal fade" tabindex="-1" id="m6a11_paras_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m6a11_paras_modal">How Laws are Made</h4>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper paraextract article-text">
+						
+					<h4 class="center">Paragraph 1</h4>
+					<br>
+					{{>m6a10_para1}}
+
+					<h4 class="center">Paragraph 2</h4>
+					<br>
+					{{>m6a10_para2}}
+
+					<h4 class="center">Paragraph 3</h4>
+					<br>
+					{{>m6a10_para3}}
+						
+					<h4 class="center">Paragraph 4</h4>
+					<br>
+					{{>m6a10_para4}}
+						
+					<h4 class="center">Paragraph 5</h4>
+					<br>
+					{{>m6a10_para5}}
+
+					<h4 class="center">Paragraph 6</h4>
+					<br>
+					{{>m6a10_para6}}
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+ </template>
+

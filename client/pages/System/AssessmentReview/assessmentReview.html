@@ -1,0 +1,252 @@
+<template name="AssessmentReview"> 
+<article class="with-tools-sidebar ">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<a draggable="false" href="/admin/assessmentlist"><i class="titlereturn fa fa-arrow-left"></i></a>
+			
+			{{>menu}}
+			<div class="parent-level">{{assessmentUsername}}</div> <div class="acttitle-title">{{assessmentTitle}}</div>
+		</header>
+		<section>
+  			{{#if Template.subscriptionsReady}}
+				{{#with assessmentDoc}}
+					{{#if authorised}}
+						<div class="content">
+							<h1>Review Assessment</h1>
+							{{#each this.sections}}
+								<div class="parapaper">
+									<h4 class="est-review-section-title">{{this.name}}</h4>
+									
+									{{#if readingSection}}
+
+										<div class="container-fluid-no-gutter">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="est-review-mark score">
+														{{#if scoreNeeded}}Total score: {{this.score}} out of {{totalNumberOfQuestions this.name}}{{/if}}					
+													</div>
+												</div>
+												<div class="col-sm-6">									
+													{{#if notMarked}}
+														<div class="est-review-mark not-marked">Level: Not yet marked</div>
+													{{else}}         
+														<div class="est-review-mark marked">Level: {{{passOrFail}}}</div>
+													{{/if}}
+												</div>
+											</div>
+										</div>
+
+										<hr>
+										<br>
+										{{#each readingGrade this}} 
+											<div class="{{readingGradeName this}}r"></div>
+											{{readingGradeSection this}}
+										{{/each}}
+										
+										{{#if notMarked}}
+											<div class="assign-mark">Click to mark this section:</div>
+											<form class="asess-review-form">
+												<input type="radio" data-function="mark-section" name="score" value="Not Attempted"><label>Not Attempted</label>
+												<input type="radio" data-function="mark-section" name="score" value="Not Achieved"><label>Not Achieved</label>
+												<input type="radio" data-function="mark-section" name="score" value="A1"><label>A1</label>
+												<input type="radio" data-function="mark-section" name="score" value="A2"><label>A2</label>
+												<input type="radio" data-function="mark-section" name="score" value="B1"><label>B1</label>
+												<input type="radio" data-function="mark-section" name="score" value="B2"><label>B2</label>
+												<input type="radio" data-function="mark-section" name="score" value="C1"><label>C1</label>
+												<input type="radio" data-function="mark-section" name="score" value="C1+"><label>C1+</label>
+											</form>
+										{{else}}
+											<div class="change-mark">Click to change this section's mark:</div>
+											<form class="asess-review-form">
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="Not Attempted"><label>Not Attempted</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="Not Achieved"><label>Not Achieved</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="A1"><label>A1</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="A2"><label>A2</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="B1"><label>B1</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="B2"><label>B2</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="C1"><label>C1</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="C1+"><label>C1+</label>
+											</form>
+										{{/if}}
+
+
+
+									{{else}}
+
+
+										{{#if listeningSection }}
+
+											<div class="container-fluid-no-gutter">
+												<div class="row">
+													<div class="col-sm-6">
+														<div class="est-review-mark score">
+															{{#if scoreNeeded}}Total score: {{this.score}} out of {{totalNumberOfQuestions this.name}}{{/if}}					
+														</div>
+													</div>
+													<div class="col-sm-6">									
+														{{#if notMarked}}
+															<div class="est-review-mark not-marked">Level: Not yet marked</div>
+														{{else}}         
+															<div class="est-review-mark marked">Level: {{{passOrFail}}}</div>
+														{{/if}}
+													</div>
+												</div>
+											</div>
+
+											<hr>
+											<br>
+
+											{{#each listeningGrade this}}
+												<div class="{{listeningGradeName this}}l"></div>
+												{{listeningGradeSection this}}
+
+											{{/each}}
+											
+
+										{{else}}
+
+											<div class="container-fluid-no-gutter">
+												<div class="row">
+													<div class="col-sm-6">
+														<div class="est-review-mark score">
+															{{#if scoreNeeded}}
+																Total score: {{this.score}} out of {{totalNumberOfQuestions}}
+															{{else}}
+																Total score: N/A
+															{{/if}}					
+														</div>
+													</div>
+													<div class="col-sm-6">									
+														{{#if notMarked}}
+															<div class="est-review-mark not-marked">Level: Not yet marked</div>
+														{{else}}         
+															<div class="est-review-mark marked">
+																Level:
+																{{#if notMarked}}
+																	Not yet marked
+																{{else}}
+																	{{{passOrFail}}}
+																{{/if}}
+															</div>
+														{{/if}}
+													</div>
+												</div>
+											</div>
+											
+											<hr>
+											<br>
+											{{#each this.answer}}
+												{{#if recordedAnswer}}
+												<!-- Speaking Section -->
+													<span class="est-review-q">Q{{addOneToIndex @index}}) {{{this.question}}}</span>
+													{{#with recordingDoc}}
+														<div style="padding: 20px 0;">
+															<!-- <button data-source="{{this.url}}" class="buttonround buttonroundsmall buttonaudio"></button> -->
+															<audio controls style="width: 100%;">
+																<source src="{{this.url}}" type="audio/mpeg">
+																Your browser does not support the audio element.
+															</audio>
+														</div>
+													{{/with}}
+													<br>
+												{{else}}
+												<!-- Writing Section -->
+													<span class="est-review-q">Q{{writingQnum}}) {{{writingQuestion}}}</span>
+													<div style="background-color: #fff; padding: 6px 12px ; margin: 5px 0 2em 0; border-radius: 6px;">{{{printAnswer}}}</div>
+												{{/if}}
+											{{/each}}
+										{{/if}}
+									
+										{{#if notMarked}}
+											<div class="assign-mark">Click to mark this section:</div>
+											<form class="asess-review-form">
+												<input type="radio" data-function="mark-section" name="score" value="Not Attempted"><label>Not Attempted</label>
+												<input type="radio" data-function="mark-section" name="score" value="Not Achieved"><label>Not Achieved</label>
+												<input type="radio" data-function="mark-section" name="score" value="A1"><label>A1</label>
+												<input type="radio" data-function="mark-section" name="score" value="A2"><label>A2</label>
+												<input type="radio" data-function="mark-section" name="score" value="B1"><label>B1</label>
+												<input type="radio" data-function="mark-section" name="score" value="B2"><label>B2</label>
+												<input type="radio" data-function="mark-section" name="score" value="C1"><label>C1</label>
+												<input type="radio" data-function="mark-section" name="score" value="C1+"><label>C1+</label>
+											</form>
+										{{else}}
+											<!-- <div class="text-center">
+												<button data-sectionNo="{{@index}}" class="button2 buttonSectionChange buttonsmall item-space">Click to change this section's mark</uuttbn>
+											</div> -->
+											<div class="change-mark">Click to change this section's mark:</div>
+											<form class="asess-review-form">
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="Not Attempted"><label>Not Attempted</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="Not Achieved"><label>Not Achieved</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="A1"><label>A1</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="A2"><label>A2</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="B1"><label>B1</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="B2"><label>B2</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="C1"><label>C1</label>
+												<input data-sectionNo="{{@index}}" type="radio" data-function="buttonSectionChange" name="score" value="C1+"><label>C1+</label>
+											</form>
+										{{/if}}
+									{{/if}}
+								</div>
+								<p>&nbsp;</p>
+							{{/each}}
+							<hr>
+							<h2>Overall Assessment Mark</h2>
+							{{#if notMarked}}
+								{{#if sectionUnmarked}}
+									<h4>Status: <span class="no-bold">Some sections unmarked</span></h4>
+									Please make sure each section has a level before marking the overall assessment.
+								{{else}}
+									<h4>Status: <span class="no-bold">All sections marked</span></h4>
+									<div class="assign-mark">Click to mark the overall assessment:</div>
+									<form class="asess-review-form">
+										<input type="radio" data-function="mark-assessment" name="score" value="Not Attempted"><label>Not Attempted</label>
+										<input type="radio" data-function="mark-assessment" name="score" value="Not Achieved"><label>Not Achieved</label>
+										<input type="radio" data-function="mark-assessment" name="score" value="A1"><label>A1</label>
+										<input type="radio" data-function="mark-assessment" name="score" value="A2"><label>A2</label>
+										<input type="radio" data-function="mark-assessment" name="score" value="B1"><label>B1</label>
+										<input type="radio" data-function="mark-assessment" name="score" value="B2"><label>B2</label>
+										<input type="radio" data-function="mark-assessment" name="score" value="C1"><label>C1</label>
+										<input type="radio" data-function="mark-assessment" name="score" value="C1+"><label>C1+</label>
+									</form>
+								{{/if}}
+							{{else}}
+								<!-- <div class="text-center">
+									<button class="button2 buttonOverallChange buttonsmall item-space">Change overall mark</button>
+								</div> -->
+								
+								{{#if passValue}} 
+									<h4 class="est-review-overall-mark">Level: <span class="correctword bold-black">{{this.pass}}</span><span class="no-bold"><br><br></span></h4>
+								{{else}}
+									<h4 class="est-review-overall-mark">Level: <span class="incorrectword bold-black">{{this.pass}}</span><span class="no-bold"><br><br></span></h4>
+								{{/if}}
+								<div class="change-mark">Click to change the overall assessment mark:</div>
+									<form class="asess-review-form">
+										<input type="radio" data-function="buttonOverallChange" name="score" value="Not Attempted"><label>Not Attempted</label>
+										<input type="radio" data-function="buttonOverallChange" name="score" value="Not Achieved"><label>Not Achieved</label>
+										<input type="radio" data-function="buttonOverallChange" name="score" value="A1"><label>A1</label>
+										<input type="radio" data-function="buttonOverallChange" name="score" value="A2"><label>A2</label>
+										<input type="radio" data-function="buttonOverallChange" name="score" value="B1"><label>B1</label>
+										<input type="radio" data-function="buttonOverallChange" name="score" value="B2"><label>B2</label>
+										<input type="radio" data-function="buttonOverallChange" name="score" value="C1"><label>C1</label>
+										<input type="radio" data-function="buttonOverallChange" name="score" value="C1+"><label>C1+</label>
+									</form>
+									<br>
+							{{/if}}
+							<div style="text-align: center; margin-top: 3em;"><a draggable="false" href="/admin/assessmentlist"><div class="button1 buttonsmall no-border"><i class="fa fa-arrow-left"></i> Back</div></a></div>
+						</div>
+						<footer>
+							{{>footer_nav prevurl="#" nexturl="#InitialAssessment_1" prev="disabled" next="disabled"}}
+						</footer>
+					{{else}}
+						<div class="content">
+							You are not authorised to mark this students assessment.
+						</div>
+					{{/if}}
+				{{/with}}
+			{{/if}}
+		</section>
+	</div>
+</article>
+
+</template>

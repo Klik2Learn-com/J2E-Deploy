@@ -1,0 +1,860 @@
+<template name="m1Game_ans">
+
+
+	<section id="m1Game_ans1" class="game-section game-answers hidden">
+		{{#if hardpath}}
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>1 - Main Hall</h2>
+
+			<ol class="olcircle">
+				<li>
+					<div class="sub-question">
+						<div class="instruction center lastQ">Where is Elle going?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-xs-4 col-xxs-12 ">
+									<button class="button1style">Downstairs</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">Upstairs</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">The Garden</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction center lastQ">Where is Tu going?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">The kitchen</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12">
+									<button class="button1style">The music room</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">Outside</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction center lastQ">Where is K going?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-xs-4 col-xxs-12">
+									<button class="button1style">The garden</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">The kitchen</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">Upstairs</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans2h" prev="hidden" next="" next_text="Next"}}
+		</footer>
+
+		{{else}}
+
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>1 - Main Hall</h2>
+
+			<ol class="olcircle">
+				<li>
+					<div class="sub-question">
+						<div class="instruction center lastQ">Where is Elle going?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">Upstairs</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">The Garden</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12">
+									<button class="button1style">The kitchen</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction center lastQ">Where is Tu going?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-xs-4 col-xxs-12">
+									<button class="button1style">The music room</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">Outside</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">The kitchen</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction center lastQ">Where is K going?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">The kitchen</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12 faded">
+									<button class="button1style">Upstairs</button>
+								</div>
+								<div class="col-xs-4 col-xxs-12">
+									<button class="button1style">The garden</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans2" prev="hidden" next="" next_text="Next"}}
+		</footer>
+
+		{{/if}}
+	</section>
+
+	<section id="m1Game_ans2" class="game-section game-answers hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>2 - The kitchen</h2>
+
+			<ol class="olcircle" style="counter-reset: start 3;">
+				<li>
+					<div class="game-speech-container elle">
+						<div class="game-speech center">
+							<div class="ddseatedtarget2">
+								<div class="ddsourceseated ddwidth7 dd1line">I am looking</div>
+							</div> in all the cupboards.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Elle_E_1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>There’s nothing here.</div>{{>capcorrect}}
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Elle_E_3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>There’s not anything here.</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Elle_E_2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>There’s anything here</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke2.1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Look to the window.</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke2.3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Look on the window.</div> {{>capcorrect}}
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke2.2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Look through the window.</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+						<ul class="speech center-block">
+							<li>
+								<div class="speech2">
+									I’m taking a picture
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									I take a picture
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									I do take a picture
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans3" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m1Game_ans3" class="game-section game-answers hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>3 - The music room</h2>
+
+			<ol class="olcircle" style="counter-reset: start 7;">
+
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke3.3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>How getting you on?</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke3.1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>How are you getting on?</div> {{>capcorrect}}
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke3.2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>How do you get on?</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+						<ul class="speech center-block">
+							<li>
+								<div class="speech1">
+									The flag is
+									<span class="correctword">over</span> 1700 years old. It’s made
+									<span class="correctword">of</span> silk and comes
+									<span class="correctword">from</span> the Middle East.
+									<span class="correctword">There</span> are many stories
+									<span class="correctword">about</span> the flag. It helps
+									<span class="correctword">in</span> times of danger. Some soldiers carried photos
+									<span class="correctword">of</span> the flag
+									<span class="correctword">in</span> the Second World War. People come
+									<span class="correctword">from</span> all
+									<span class="correctword">over</span> the world to see the flag.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+
+
+						<ul class="speech center-block">
+							<li>
+								<div class="speech2 faded">
+									They’re is something on the rug.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									Their’s something on the rug.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2">
+									There’s something on the rug.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+						<ul class="speech center-block">
+							<li>
+								<div class="speech1 faded">
+									Pick it off.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1 faded">
+									Pick up it.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1">
+									Pick it up.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans4" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m1Game_ans4" class="game-section game-answers hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>4 - The garden</h2>
+
+			<ol class="olcircle" style="counter-reset: start 11;">
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke4.3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>6392</div> {{>capcorrect}}
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke4.1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>6592</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/ke4.2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>6397</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-speech-container k">
+						<div class="game-speech">
+							<span>Every morning at </span>
+							<div class="ddwidth7 dd1line ddseatedtarget2" id="target1">
+								<div class="ddsourceseated ddwidth7 dd1line">10.30 am</div>
+							</div>
+							<span>. Every afternoon at </span>
+							<div class="ddwidth7 dd1line ddseatedtarget2" id="target2">
+								<div class="ddsourceseated ddwidth7 dd1line">2 pm</div>
+							</div>
+							<span>. Sunday trips at </span>
+							<div class="ddwidth7 dd1line ddseatedtarget2" id="target3">
+								<div class="ddsourceseated ddwidth7 dd1line">12 pm</div>
+							</div>
+							<span>. Adult price - </span>
+							<div class="ddwidth7 dd1line ddseatedtarget2" id="target4">
+								<div class="ddsourceseated ddwidth7 dd1line">£5</div>
+							</div>
+							<span> children </span>
+							<div class="ddwidth7 dd1line ddseatedtarget2" id="target5">
+								<div class="ddsourceseated ddwidth7 dd1line">£2.50</div>
+							</div>
+							<span> Family ticket for four people, </span>
+							<div class="ddwidth7 dd1line ddseatedtarget2" id="target6">
+								<div class="ddsourceseated ddwidth7 dd1line">£12</div>
+							</div>
+							<span>. Senior citizens </span>
+							<div class="ddwidth7 dd1line ddseatedtarget2" id="target7">
+								<div class="ddsourceseated ddwidth7 dd1line">£3.50</div>
+							</div>
+							<span>.</span>
+
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+
+						<ul class="speech center-block">
+							<li>
+								<div class="speech1">
+									Can the thief escape by boat?
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1 faded">
+									Is the thief escape by boat?
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1 faded">
+									Is the thief escaping by boat?
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+
+						<ul class="speech center-block">
+							<li>
+								<div class="speech2 faded">
+									No, the engine not works.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2">
+									No, the engine isn’t working.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									No, the engine do not work.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_end" prev="hidden" next="" next_text="Finish"}}
+		</footer>
+	</section>
+
+
+
+	<!-- HARD ROUTE ANSWERS -->
+
+
+
+	<section id="m1Game_ans2h" class="game-section game-answers hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>2 - The kitchen</h2>
+
+			<ol class="olcircle" style="counter-reset: start 3;">
+				<li>
+					<div class="game-speech-container elle">
+						<div class="game-speech center">
+							<div class="ddseatedtarget2">
+								<div class="ddsourceseated ddwidth7 dd1line">I'm looking</div>
+							</div> in all the cupboards.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Elle_H_2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>I’m not finding anything here.</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Elle_H_3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>I can’t find nothing here.</div>
+								</div>
+							</div>
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Elle_H_1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>I can’t find anything here.</div>{{>capcorrect}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh2_1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Is there anything through the window?</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh2_2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Is there anything at the window?</div>
+								</div>
+							</div>
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh2_3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Is there anything on the window?</div>{{>capcorrect}}
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+						<ul class="speech center-block">
+							<li>
+								<div class="speech2 faded">
+									I get a picture
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 ">
+									I've got a picture
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									I do get a picture
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans3h" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m1Game_ans3h" class="game-section game-answers hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>3 - The music room</h2>
+
+			<ol class="olcircle" style="counter-reset: start 7;">
+
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh3.1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Hi Tu. How are you getting on?</div> {{>capcorrect}}
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh3.2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Hi Tu. How do you get on?</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh3.3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Hi Tu. How do you getting on?</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+						<ul class="speech center-block">
+							<li>
+								<div class="speech1">
+									The flag is
+									<span class="correctword">over</span> 1700 years old. It’s made
+									<span class="correctword">of</span> silk and comes
+									<span class="correctword">from</span> the Middle East.
+									<span class="correctword">There</span> are many stories
+									<span class="correctword">about</span> the flag. People believe it can protect the clan MacLeod
+									<span class="correctword">in</span> times of danger. Some soldiers believe they got
+									<span class="correctword">through</span> the second world war
+									<span class="correctword">by</span> carrying photos of the flag. Although it’s ripped and torn, it’s the most precious object in the castle
+									and people come
+									<span class="correctword">from</span> all
+									<span class="correctword">over</span> the world to see it.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+
+
+						<ul class="speech center-block">
+							<li>
+								<div class="speech2 ">
+									There’s a small piece of cloth on the rug.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									Their’s a small piece of cloth on the rug.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									They’re is a small piece of cloth on the rug.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+						<ul class="speech center-block">
+							<li>
+								<div class="speech1 faded">
+									Pick it off.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1 ">
+									Pick it up.
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1 faded">
+									Pick up it.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans4h" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m1Game_ans4h" class="game-section game-answers hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>4 - The garden</h2>
+
+			<ol class="olcircle" style="counter-reset: start 11;">
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh4.1.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>63592</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh4.2.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>65397</div>
+								</div>
+							</div>
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh4.3.m4a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>65392</div> {{>capcorrect}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-speech-container k">
+						<div class="game-speech">
+							<span>Every morning at </span>
+							<span class="correctword">10.30 am</span>
+							<span>. Every afternoon at </span>
+							<span class="correctword">2 pm</span>
+							<span>. Sunday trips at </span>
+							<span class="correctword">12 pm</span>
+							<span>. Adult price - </span>
+							<span class="correctword">£5</span>
+							<span> children </span>
+							<span class="correctword">£2.50</span>
+							<span> Family ticket for four people, </span>
+							<span class="correctword">£12</span>
+							<span>. Senior citizens </span>
+							<span class="correctword">£3.50</span>
+							<span>.</span>
+
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+
+						<ul class="speech center-block">
+							<li>
+								<div class="speech1 faded">
+									Is the thief escaping by boat?
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1 ">
+									Could the thief escape by boat?
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech1 faded">
+									Is escaping the thief by boat?
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+
+						<ul class="speech center-block">
+							<li>
+								<div class="speech2 faded">
+									No, the engine repairs
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 faded">
+									No, the engine is repairing
+								</div>
+							</li>
+							<li></li>
+							<li>
+								<div class="speech2 ">
+									No, the engine’s being repaired.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+
+		</div>
+		<footer>
+			<div class="skip-answers">
+				<a draggable="false" href="#m1Game_end" class="pagination">Skip answers</a>
+			</div>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_end" prev="hidden" next="" next_text="Finish"}}
+		</footer>
+	</section>
+
+</template>

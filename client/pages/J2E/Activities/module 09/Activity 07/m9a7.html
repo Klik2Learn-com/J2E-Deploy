@@ -1,0 +1,392 @@
+<template name="m9a7"> 
+<article class="with-tools-sidebar m9a7">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Taunton');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 7 - {{>m9a7Title}}</div>
+		</header>
+		<section id="m9a7">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a7Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a7Intro}}</h3>
+				{{> m9a7Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a7_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a7_1}}
+		{{>m9a7_2}}
+		{{>m9a7_3}}
+		{{>m9a7_4}}
+		{{>m9a7_5}}
+		{{>m9a7_6}}
+		{{>m9a7_7}}
+		{{>m9a7_8}}
+		{{>EndPage char="k" act="m9a7" nextact="m9a8" place="Taunton"}}
+	</div>
+</article>
+</template>
+<template name="m9a7_3"> 
+	<section id="m9a7_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center" id="m9a7instructions">Write the active tense in the space. (1 word)</h3>
+      		<div class="container-fluid">
+      		{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>						
+						<div class="caption" style="line-height: 2em;">Scottish people <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span> Irn Bru. (drink)</div>							
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/irnbru1.png" alt=""></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>						
+						<div class="caption" style="line-height: 2em;">Irn Bru <span id="entryanswer1" class="textentry-disabled"></span> in Scotland. (drink)</div>							
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/irnbru2.png" alt=""></div></div>
+					</div>
+
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a7_2" nexturl="#m9a7_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a7_6"> 
+	<section id="m9a7_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center" id="m9a7instructions">Write the active tense in the space. (1 word)</h3>
+      		<div class="container-fluid">
+      		{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>						
+						<div class="caption" style="line-height: 2em;">The headmaster <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span> the school because of bad weather. (close)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/closed1.png" alt=""></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>						
+						<div class="caption" style="line-height: 2em;">The school <span id="entryanswer1" class="textentry-disabled"></span> because of bad weather. (close)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/closed2.png" alt=""></div></div>
+					</div>
+
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a7_5" nexturl="#m9a7_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a7_7"> 
+	<section id="m9a7_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center" id="m9a7instructions">Write the active tense in the space. (1 word)</h3>
+      		<div class="container-fluid">
+      		{{>rightwrong}} {{>welldone}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>						
+						<div class="caption" style="line-height: 2em;">A friend <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span> just <span id="entryanswer1" class="textentry-disabled"></span> me the news. (tell)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/news1.png" alt=""></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>						
+						<div class="caption" style="line-height: 2em;">I <span id="entryanswer2" class="textentry-disabled"></span> just <span id="entryanswer3" class="textentry-disabled"></span> the news. (tell)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/news2.png" alt=""></div></div>
+					</div>
+
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a7_6" nexturl="#m9a7_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a7_4"> 
+	<section id="m9a7_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center" id="m9a7instructions">Write the active tense in the space. (2 words)</h3>
+      		<div class="container-fluid">
+      		{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>						
+						<div class="caption" style="line-height: 2em;">Thieves <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span> his flat yesterday. (break into)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/broken1.png" alt=""></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>						
+						<div class="caption" style="line-height: 2em;">His flat <span id="entryanswer1" class="textentry-disabled"></span> by thieves yesterday. (break into)</div>		
+										
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/broken2.png" alt=""></div></div>
+					</div>
+
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a7_3" nexturl="#m9a7_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a7_5"> 
+	<section id="m9a7_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center" id="m9a7instructions">Write the active tense in the space. (1 word)</h3>
+      		<div class="container-fluid">
+      		{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>						
+						<div class="caption" style="line-height: 2em;">France <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span> more wine than any other country. (produce)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/wine1.png" alt=""></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>						
+						<div class="caption" style="line-height: 2em;">More wine <span id="entryanswer1" class="textentry-disabled"></span> in France than any other country. (produce)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/wine2.png" alt=""></div></div>
+					</div>
+
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a7_4" nexturl="#m9a7_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a7_2"> 
+	<section id="m9a7_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center" id="m9a7instructions">Write the active tense in the space. (1 word)</h3>
+      		<div class="container-fluid">
+      		{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>						
+						<div class="caption" style="line-height: 2em;">Shakespeare <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span> Romeo and Juliet in 1594. (write)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/shakespeare1.png" alt=""></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>						
+						<div class="caption" style="line-height: 2em;">Romeo and Juliet <span id="entryanswer1" class="textentry-disabled"></span> by Shakespeare in 1594. (write)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/shakespeare2.png" alt=""></div></div>
+					</div>
+
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a7_1" nexturl="#m9a7_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a7_8"> 
+	<section id="m9a7_8" class="hidden"> 
+		<div class="content"> 
+		<h4 class="center">Here are the sentences again.</h4>
+			<div class="container-fluid" style="max-width: 760px;">
+				<div class="row">
+					<div class="col-sm-5 center">
+						<h1>Active</h1>
+					</div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5 center">
+						<h1>Passive</h1>
+					</div>
+				</div>
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5"><div class="caption">I'm <b>painting</b> my kitchen this weekend.</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption">My kitchen <b>is being painted</b> this weekend.</div></div>
+				</div>
+				{{>blankrow}}
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5"><div class="caption">Shakespeare <b>wrote</b> Romeo and Juliet in 1594.</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption">Romeo and Juliet <b>was written</b> by Shakespeare in 1594.</div></div>
+				</div>
+				{{>blankrow}}
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5"><div class="caption">Scottish people <b>drink</b> Irn Bru.</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption">Irn Bru is <b>drunk</b> in Scotland.</div></div>
+				</div>
+				{{>blankrow}}
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5"><div class="caption">Thieves <b>broke into</b> his flat yesterday.</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption">His flat <b>was broken into</b> yesterday.</div></div>
+				</div>
+				{{>blankrow}}
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5"><div class="caption">France <b>produces</b> more wine than any other country.</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption">More wine <b>is produced</b> in France than any other country.</div></div>
+				</div>
+				{{>blankrow}}
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5"><div class="caption">The headmaster <b>closed</b> the school because of bad weather.</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption">The school <b>was closed</b> because of bad weather.</div></div>
+				</div>
+				{{>blankrow}}
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5"><div class="caption">A friend <b>has</b> just <b>told</b> me the news.</div></div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5"><div class="caption"><b>I've</b> just <b>been told</b> the news.</div></div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a7_7" nexturl="#m9a7_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a7_1"> 
+	<section id="m9a7_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center" id="m9a7instructions">Write the active and passive tense in the space. Remember to use the short form. (2 words)</h3>
+      		<div class="container-fluid">
+      		{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>						
+						<div class="caption" style="line-height: 2em;">I<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span> my kitchen this weekend. (paint)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/painting1.png" alt=""></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>						
+						<div class="caption" style="line-height: 2em;">My kitchen <span id="entryanswer1" class="textentry-disabled"></span> this weekend. (paint)</div>							
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a7/painting2.png" alt=""></div></div>
+					</div>
+
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a7" nexturl="#m9a7_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>

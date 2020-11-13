@@ -1,0 +1,21 @@
+<template name="ActLocked">
+	<a draggable="false" class="locked" href="#" title="" data-toggle="popover" data-html="true" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="<b>Score {{pass}} out of {{total}} in this<br>module's Test yourself<br>activity to unlock this.</b>"><i class="fa fa-lock"></i></a>
+	{{>popovers}}
+</template>
+
+<template name="mapButtons">
+	<div class="bonus-container {{class}}">
+		<a draggable="false" href="MoreAbout{{location}}"><div class="bonusbutton shadowsolid">{{>BonusText}} this part of the UK</div></a>
+		<a draggable="false" href="/MyWordsM{{module}}"><div class="mywordsbutton shadowsolid">{{>MyWordsTitle}}</div></a>
+	</div>
+</template>
+
+<template name="BonusText">Find out more about</template>
+
+<template name ="MyWordsTitle">My Words</template>
+
+<!-- This hides certain parts of the title of 'more about' pages on small screesn -->
+<template name="BonusTitle">
+	<span class="hidden-xxs-inline">{{>BonusText}}</span>
+	<span class="visible-xxs-inline">More about</span>
+</template>

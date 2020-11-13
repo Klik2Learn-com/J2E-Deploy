@@ -1,0 +1,50 @@
+<template name="noteViewer">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/user/{{this.noteAuthor}}" id="btnReturn"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">{{getFullnameFromId noteAuthor}}</div>
+			<div class="acttitle-title">View Note</div>
+		</header>
+		<section>
+			<div class="content-user">
+			   <div class="notebookmain">
+
+					{{> studentNoteHolder}}
+					<div class="comments-header">Comments</div>
+					{{#each this.comments}}
+					   {{> commentHolder}}
+					{{/each}}
+					{{#if addComment}}
+					   <a draggable="false" href="#" class="invisible" data-function="add-comment"><i class="fas fa-pencil-alt"></i>Add Comment</a>
+					   <div class="color-picker">
+							<span>Highlight the original note:</span><br>
+							<div class="color-picker-clear" data-color="rgba(255,255,255,0)" title="None"><i class="fa fa-times"></i></div>
+							<div class="color-picker-color1" data-color="#F44336" title="Red"></div>
+							<div class="color-picker-color2" data-color="#FFFF7B" title="Yellow"></div>
+							<div class="color-picker-color3" data-color="#8BC34A" title="Green"></div>
+							<div class="color-picker-color4" data-color="#29B6F6" title="Blue"></div>
+					   </div>
+					   
+					  <textarea id="comment-body" style="margin: 0px; height: 180px; width: 100%;" placeholder="Type your comment here..."></textarea>
+					  <!-- <div class="note-footer">
+						<a draggable="false" href="#" data-function="confirm-highlight-comment"><i class="fas fa-pencil-alt"></i> Confirm</a>
+						<a draggable="false" href="#" data-function="cancel-comment"><i class="fa fa-times"></i> Cancel</a>
+					  </div> -->
+						<div class="submit-cancel">
+							<button class="button2 buttonsmall" data-function="confirm-highlight-comment"><i class="fas fa-pencil-alt"></i> Submit</button>
+							<button class="button1 buttonsmall" data-function="cancel-comment"><i class="fa fa-times"></i> Cancel</button>
+						</div>
+					{{else}}
+					   {{#if isTutor}}<div class="text-center item-space" style="margin-top: 20px;"><a draggable="false" href="#" data-function="add-comment"><i class="fas fa-pencil-alt"></i> Add Comment</a></div>{{/if}}
+					{{/if}}
+				 </div>
+
+			</div>
+		</section>
+	</div>
+</article>
+
+</template>

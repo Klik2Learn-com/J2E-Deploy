@@ -1,0 +1,388 @@
+<template name="m8a2"> 
+<article class="with-tools-sidebar m8a2">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Oxford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 2 - {{>m8a2Title}}</div>
+		</header>
+		<section id="m8a2">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a2Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a2Intro}}</h3>
+				{{> m8a2Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a2_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a2_1}}
+		{{>m8a2_2}}
+		{{>m8a2_3}}
+		{{>m8a2_4}}
+		{{>m8a2_5}}
+		{{>m8a2_6}}
+		{{>EndPage char="tu" act="m8a2" nextact="m8a3" place="Oxford"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a2_1"> 
+	<section id="m8a2_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h4 class="center">All these words appeared in the short articles you read in Activity 1.</h4>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-md-4 col-sm-6">
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Profession.m4a"></button></div> <div class="iconright">Profession</div></div>	
+						</div>
+						<div class="col-md-4 col-sm-6">				
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Catering.m4a"></button></div> <div class="iconright">Catering</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Decorator.m4a"></button></div> <div class="iconright">Decorator</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Strategic.m4a"></button></div> <div class="iconright">Strategic</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Automated.m4a"></button></div> <div class="iconright">Automated</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Architect.m4a"></button></div> <div class="iconright">Architect</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Innovation.m4a"></button></div> <div class="iconright">Innovation</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Surveyor.m4a"></button></div> <div class="iconright">Surveyor</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Plumber.m4a"></button></div> <div class="iconright">Plumber</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Administration.m4a"></button></div> <div class="iconright">Administration</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Joiner.m4a"></button></div> <div class="iconright">Joiner</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Renewable_energy.m4a"></button></div> <div class="iconright">Renewable <br>energy</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Environmental_health.m4a"></button></div> <div class="iconright">Environmental <br>health</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Labour_intensive.m4a"></button></div> <div class="iconright">Labour <br>intensive</div></div>
+						</div>
+						<div class="col-md-4 col-sm-6">	
+						<div class="caption item-space"><div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a2/Commercial_building.m4a"></button></div> <div class="iconright">Commercial <br>building</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a2" nexturl="#m8a2_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a2_2"> 
+	<section id="m8a2_2" class="hidden"> 
+		<div class="content"> 
+<h3 class="center">{{>touch yes="Tap" no="Click"}} on the word or phrase that matches the definition below.</h3>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">Labour intensive</span></div> </div> 
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">Surveyor</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">Plumber</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">Environmental health</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">Decorator</span></div></div> 
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto6 animated flipInX" id="lottoc5"><div><span class="contents">Commercial building</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto8 animated flipInX" id="lottoc6"><div><span class="contents">Catering</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto1 animated flipInX" id="lottoc7"><div><span class="contents">Profession</span></div></div>
+		</div> 
+		 <div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto7 animated flipInX" id="lottoc8"><div><span class="contents">Joiner</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto8 animated flipInX" id="lottoc9"><div><span class="contents">Strategic</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto5 animated flipInX" id="lottoc10"><div><span class="contents">Renewable energy</span></div></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto2 animated flipInX" id="lottoc11"><div><span class="contents">Architect</span></div></div> 
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto5 animated flipInX" id="lottoc12"><div><span class="contents">Automated</span></div></div> 
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto1 animated flipInX" id="lottoc13"><div><span class="contents">Administration</span></div></div> 
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-4 col-xxs-6 center">
+			<div class="lotto-button lotto8 animated flipInX" id="lottoc14"><div><span class="contents">Innovation</span></div></div> 
+		</div>
+	</div>
+</div>
+<div class="parapaper lottocaption">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-7 audio text-center">
+			<div class="number">1</div> <b id="questions">A job that requires a long period of training and a formal qualification.</b>
+			</div>
+			<div class="col-sm-5 text-center">
+				{{>scorebox1 rightSession="m8a2_2RightScore" wrongSession="m8a2_2WrongScore"}}
+			</div>
+		</div>
+	</div>
+</div>
+{{>rightwrong}}
+</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a2_1" nexturl="#m8a2_4" prev="disabled" next="hidden"}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a2_3"> 
+	<section id="m8a2_bad" class="hidden"> 
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a2_2RightScore" wrongSession="m8a2_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m8a2_2" id="m8a2restart" class="pagination">
+						<div id="try-again" class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a2_2" nexturl="#m8a2_4" prev="disabled" next=""}} 
+		</footer> 
+	</section>
+	<section id="m8a2_good" class="hidden"> 
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a2_2RightScore" wrongSession="m8a2_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a2_2" nexturl="#m8a2_4" nextid="m8a2next" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a2_4"> 
+	<section id="m8a2_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h1>Answers</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">A job that requires a long period of training and a formal qualification.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Profession.m4a">Profession</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">Thinking about long term plans and goals.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Strategic.m4a">Strategic</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">Energy from natural sources such as wind, tides, sunlight.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Renewable_energy.m4a">Renewable energy</button>
+						</div>
+					</div>					
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">Doing the necessary paperwork for a business or organisation.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Administration.m4a">Administration</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">Providing food for an organisation or company.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Catering.m4a">Catering</button>
+						</div>
+					</div>
+					
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a2_3" nexturl="#m8a2_5" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a2_5"> 
+	<section id="m8a2_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h1>Answers</h1>
+      			<div class="container-fluid">					
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">Dealing with problems like rubbish, pollution, rats, waste material etc.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Environmental_health.m4a">Environmental health</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">Using machines or computers to do a job.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Automated.m4a">Automated</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">An invention or a new way of doing something.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Innovation.m4a">Innovation</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">A person skilled in working with wood</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Joiner.m4a">Joiner</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">A person skilled in installing water supplies to a building.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Plumber.m4a">Plumber</button>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a2_4" nexturl="#m8a2_6" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a2_6"> 
+	<section id="m8a2_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h1>Answers</h1>
+      			<div class="container-fluid">					
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">A building used for business not as a home.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Commercial_building.m4a">Commercial building</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">A person skilled in painting and finishing the interior of a building.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Decorator.m4a">Decorator</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">A person trained to design buildings.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Architect.m4a">Architect</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">A person trained to examine buildings for any faults.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Surveyor.m4a">Surveyor</button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<div class="caption">Needing a lot of people to do a job.</div>
+						</div>
+						<div class="col-md-4 col-sm-5 col-xs-12 center">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module8/a2/Labour_intensive.m4a">Labour intensive</button>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a2_5" nexturl="#m8a2_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

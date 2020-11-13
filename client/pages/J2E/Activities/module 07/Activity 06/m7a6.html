@@ -1,0 +1,110 @@
+<template name="m7a6"> 
+<article class="with-tools-sidebar m7a6">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/PeakDistrict');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 6 - {{>m7a6Title}}</div>
+		</header>
+		<section id="m7a6">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a6Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m7a6Intro}}</h3>
+				{{> m7a6Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a6_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a6_1}}
+{{>m7a6_scores}}
+		{{>EndPage char="elle" act="m7a6" nextact="m7a7" place="PeakDistrict"}}
+	</div>
+</article>
+
+</template>
+
+<template name="m7a6_1"> 
+	<section id="m7a6_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Read these statements and choose <b>True</b> or <b>False</b></h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">						
+						<div class="center"> <button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module7/a6/q1.m4a"></button>
+						</div><div class="number">1</div>
+<span id="question_text">
+Oxford and Cambridge have kept a lot of unusual traditions.
+</span>
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="true" class="button2 item-space ddwidth9">True</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="false" class="button2 item-space ddwidth9">False</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m7a6_1RightScore" wrongSession="m7a6_1WrongScore"}}
+					</div>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a6" nexturl="#m7a6_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a6_scores">
+	<section id="m7a6_bad" class="hidden">
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+						{{>scorebox2 rightSession="m7a6_1RightScore" wrongSession="m7a6_1WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m7a6_1" class="pagination restart">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m7a6_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m7a6_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+						{{>scorebox2 rightSession="m7a6_1RightScore" wrongSession="m7a6_1WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m7a6_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+

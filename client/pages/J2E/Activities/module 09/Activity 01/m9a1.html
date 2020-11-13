@@ -1,0 +1,375 @@
+<template name="m9a1"> 
+<article class="with-tools-sidebar m9a1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/WestonsuperMare');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 1 - {{>m9a1Title}}</div>
+		</header>
+		<section id="m9a1">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a1Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a1Intro}}</h3>
+				{{> m9a1Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a1_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a1_1}}
+		{{>m9a1_2}}
+		{{>m9a1_3}}
+		{{>m9a1_4}}
+		{{>m9a1_5}}
+		{{>m9a1_6}}
+		{{>m9a1_7}}
+		{{>m9a1_8}}
+		{{>EndPage char="k" act="m9a1" nextact="m9a2" place="WestonsuperMare"}}
+	</div>
+</article>
+
+</template>
+<template name="m9a1_8"> 
+	<section id="m9a1_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Now decide whether these sentences are <b>true</b> or <b>false</b>.<br> Don’t worry if you don’t understand everything. Just try to understand the main ideas.</h3>
+
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}} {{>welldone}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a1/part5.m4a"></button> Part 5</div> <h4>{{>touch yes="Tap" no="Click"}} to hear again.</h4>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">1</div></div> 
+						<div class="iconright">You can only learn from some people in a company.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">2</div></div>
+						<div class="iconright">It’s a good idea to get to know everyone.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">3</div></div>
+						<div class="iconright">Everyone in your workplace has valuable experience. </div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>				
+	  	</div>  
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a1_7" nexturl="#m9a1_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a1_1"> 
+	<section id="m9a1_1" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="drudgery"
+					word2="glamorous"
+					word3="incredibly"
+					word4="deadline"
+					word5="mentor"
+					word6c="hidden"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a1" nexturl="#m9a1_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a1_7"> 
+	<section id="m9a1_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Now decide whether these sentences are <b>true</b> or <b>false</b>.<br> Don’t worry if you don’t understand everything. Just try to understand the main ideas.</h3>
+
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a1/part4.m4a"></button> Part 4</div> <h4>{{>touch yes="Tap" no="Click"}} to hear again.</h4>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">1</div></div> 
+						<div class="iconright">What you did at school is always good preparation for your first job.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">2</div></div>
+						<div class="iconright">Punctuality is very important in a job.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">3</div></div>
+						<div class="iconright">It’s very important that you meet deadlines.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>				
+	  	</div>  
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a1_6" nexturl="#m9a1_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a1_6"> 
+	<section id="m9a1_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Now decide whether these sentences are <b>true</b> or <b>false</b>.<br> Don’t worry if you don’t understand everything. Just try to understand the main ideas.</h3>
+
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a1/part3.m4a"></button> Part 3</div> <h4>{{>touch yes="Tap" no="Click"}} to hear again.</h4>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">1</div></div> 
+						<div class="iconright">It’s always a pleasure to work with a manager.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">2</div></div>
+						<div class="iconright">If you don’t like your manager you should leave the job.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">3</div></div>
+						<div class="iconright">Being over sensitive can cause problems.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>				
+	  	</div>  
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a1_5" nexturl="#m9a1_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a1_5"> 
+	<section id="m9a1_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Now decide whether these sentences are <b>true</b> or <b>false</b>.<br> Don’t worry if you don’t understand everything. Just try to understand the main ideas.</h3>
+
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a1/part2.m4a"></button> Part 2</div> <h4>{{>touch yes="Tap" no="Click"}} to hear again.</h4>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">1</div></div> 
+						<div class="iconright">As a college leaver you won’t be given boring work to  	    	     do.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">2</div></div>
+						<div class="iconright">You will be rewarded if you do the boring work well.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>				
+	  	</div> 
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a1_4" nexturl="#m9a1_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a1_2"> 
+	<section id="m9a1_2" class="hidden"> 
+		<div class="content">  
+      			{{>complex_words}}
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>Work ethic: the attitude a person has to work - are they hard working or lazy?</li>
+						<li>To be full of yourself: to think you are better than you really are.</li>
+						<li>To grow a thick skin: to stop getting upset easily.</li>
+					</ul>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a1_1" nexturl="#m9a1_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a1_4"> 
+	<section id="m9a1_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Now decide whether these sentences are <b>true</b> or <b>false</b>.<br> Don’t worry if you don’t understand everything. Just try to understand the main ideas.</h3>
+
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a1/part1.m4a"></button> Part 1</div> <h4>{{>touch yes="Tap" no="Click"}} to hear again.</h4>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">1</div></div> 
+						<div class="iconright">College leavers sometimes have unrealistic ideas about what their first job will be like.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">2</div></div>
+						<div class="iconright">You are likely to be given real responsibilities straight away.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">3</div></div> 
+						<div class="iconright">The best thing to do is be full of yourself.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><div class="number">4</div></div> 
+						<div class="iconright">The best thing to do is to work hard.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+	  	</div> 
+	  	</div>
+
+		<footer> 
+			{{>footer_nav prevurl="#m9a1_3" nexturl="#m9a1_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a1_3"> 
+	<section id="m9a1_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">Now listen to this advice about starting your first job.</h3>
+		{{>metametrics level="3" star="no" align="center"}}
+		<div class="videoplayer" style="max-width: 496px">
+			<div class="embed-responsive embed-responsive-4by3">
+				<video class="embed-responsive-item" id="video-id" controls poster="/video/module9/m9a1.jpg">
+					<source src="video/module9/m9a1.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a1_2" nexturl="#m9a1_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

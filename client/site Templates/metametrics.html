@@ -1,0 +1,14 @@
+<template name="metametrics">
+<div class="metametrics-wrapper {{align}}">
+	<div class="metametrics-container level-{{level}} star-{{star}}" title="" data-toggle="popover" data-html="true" role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="<p>This number gives you a scientific measure from MetaMetrics<sup>®</sup> of how difficult a passage is.</p><p><b>1</b> is easy and <b>10</b> is advanced. The complete scale goes from 0 to 16.</p><p>If a passage has a <i class='fa fa-star'></i> it is more challenging.</p><p class='logo'><img draggable='false' src='/images/logos/metametrics-normal.png' alt='MetaMetrics'>">
+		<div class="key">
+			Level {{level}} 
+			<span class="star"><i class="fa fa-star"></i><i class="far fa-star"></i></span>
+		</div>
+		<div class="metametrics-bar">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+	</div>
+</div>
+{{>popovers}}
+</template>

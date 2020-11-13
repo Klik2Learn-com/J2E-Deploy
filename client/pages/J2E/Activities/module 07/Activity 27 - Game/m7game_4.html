@@ -1,0 +1,66 @@
+<template name="m7Game_4">
+
+	<section id="m7Game_4" class="game-section game-legacy hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg1">
+						<div class="hotspot"><img draggable="false" src="/images/game/module7/letters/T.png" alt="T" class="img-responsive animated flipInX"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_4k1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+	</section>
+</template>
+
+<template name="m7Game_4k1">
+	<section id="m7Game_4k1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg9"></div>
+					<div class="game-story-text">
+						K: "When I was planning our journey I didn't include North Wales."
+
+						<audio autoplay class="hidden" id="k1">
+						  <source src="/audio/module7/Game/When_I_was_planning_our_journey_I_didn_t_include_North_Wales.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_4k2" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>
+
+<template name="m7Game_4k2">
+	<section id="m7Game_4k2" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg9"></div>
+					<div class="game-story-text">
+						K: "If you tell me the story, I might change my mind."
+						<audio autoplay class="hidden" id="k2">
+						  <source src="/audio/module7/Game/If_you_tell_me_the_story_I_might_change_my_mind.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_5" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>

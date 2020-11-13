@@ -1,0 +1,297 @@
+<template name="m7a14"> 
+<article class="with-tools-sidebar m7a14">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Chester');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 14 - {{>m7a14Title}}</div>
+		</header>
+		<section id="m7a14">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a14Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m7a14Intro}}</h3>
+				{{> m7a14Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a14_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a14_1}}
+		{{>m7a14_2}}
+		{{>m7a14_3}}
+		{{>m7a14_4}}
+		{{>m7a14_5}}
+		{{>m7a14_6}}
+		{{>m7a14_7}}
+		{{>m7a14_8}}
+		{{>m7a14_9}}
+		{{>m7a14_10}}
+		{{>EndPage char="tu" act="m7a14" nextact="m7a15" place="Chester"}}
+	</div>
+</article>
+
+</template>
+<template name="m7a14_1"> 
+	<section id="m7a14_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m7a14instructions text="1: Want to study in the UK?" audio="1"}}
+      			<!-- <h3>Listen to this advice about studying in the UK. After you've listened to each section, fill in the missing preposition.</h3>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 center">
+			<div class="caption capgreen"><button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module7/a14/1.m4a"></button> text </div>
+		</div>
+	</div>
+</div> -->
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a14" nexturl="#m7a14_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m7a14instructions">
+<h3>Listen to this advice about studying in the UK. After you've listened to each section, fill in the missing preposition.</h3>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 center">
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module7/a14/{{audio}}.m4a"></button> <h5>{{text}}</h5>
+		</div>
+	</div>
+</div>
+ </template>
+
+<template name="m7a14_10"> 
+	<section id="m7a14_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Listen to this advice about studying in the UK. After you've listened to each section, fill in the missing preposition.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center caption capgreen">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a14/5.m4a"></button> 5: Things to do
+					</div>
+				</div>	
+				{{>blankrow}}			
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace para-ol-space fold">
+							{{> rightwrong}} {{> welldone}}
+								<ol class="olcircle">
+									<li>You can follow the national passion <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> sport.</li>
+									<li>If you fancy a meal <span id="entryanswer1" class="textentry-disabled"></span> it’s no longer ‘chips’
+									 <span id="entryanswer2" class="textentry-disabled"></span> everything.</li>
+									<li>British cuisine has improved a lot <span id="entryanswer3" class="textentry-disabled"></span> recent years.</li>
+								</ol>							
+						</div>
+					</div>
+				</div>
+	  		</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a14_9" nexturl="#m7a14_end" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_2"> 
+	<section id="m7a14_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Listen to this advice about studying in the UK. After you've listened to each section, fill in the missing preposition.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center caption capgreen">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a14/1.m4a"></button> 1: Want to study in the UK?
+					</div>
+				</div>	
+				{{>blankrow}}			
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace para-ol-space fold">
+							{{> rightwrong}} {{> welldone}}
+								<ol class="olcircle">
+									<li>The UK is popular <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> international students.</li>
+									<li>The UK takes second place only <span id="entryanswer1" class="textentry-disabled"></span> the USA.</li>
+									<li>What exactly is the appeal <span id="entryanswer2" class="textentry-disabled"></span> studying in the UK?</li>
+								</ol>
+						</div>
+					</div>
+				</div>
+	  		</div> 
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="m7a14_1" nexturl="#m7a14_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_3"> 
+	<section id="m7a14_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		{{>m7a14instructions text="2: UK Universities" audio="2"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a14_2" nexturl="#m7a14_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_4"> 
+	<section id="m7a14_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Listen to this advice about studying in the UK. After you've listened to each section, fill in the missing preposition.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center caption capgreen">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a14/2.m4a"></button> 2: UK Universities
+					</div>
+				</div>	
+				{{>blankrow}}			
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace para-ol-space fold">
+							{{> rightwrong}} {{> welldone}}
+								<ol class="olcircle">
+									<li>It’s the second best university <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> the world.</li>
+									<li>There’s a lot more <span id="entryanswer1" class="textentry-disabled"></span> UK universities than just Oxford or Cambridge.</li>
+									<li>Four UK universities rank <span id="entryanswer2" class="textentry-disabled"></span> the world’s top ten.</li>
+								</ol>							
+						</div>
+					</div>
+				</div>
+	  		</div> 
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="m7a14_3" nexturl="#m7a14_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_5"> 
+	<section id="m7a14_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m7a14instructions text="3: Living in the UK?" audio="3"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a14_4" nexturl="#m7a14_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_6"> 
+	<section id="m7a14_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Listen to this advice about studying in the UK. After you've listened to each section, fill in the missing preposition.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center caption capgreen">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a14/3.m4a"></button> 3: Living in the UK?
+					</div>
+				</div>	
+				{{>blankrow}}			
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace para-ol-space fold">
+							{{> rightwrong}} {{> welldone}}
+								<ol class="olcircle">
+									<li>All four UK countries have areas <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> outstanding natural beauty.</li>
+									<li>You can easily hop <span id="entryanswer1" class="textentry-disabled"></span> a train.</li>
+									<li>You can be somewhere completely different <span id="entryanswer2" class="textentry-disabled"></span> less than an hour.</li>
+								</ol>							
+						</div>
+					</div>
+				</div>
+	  		</div> 
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="m7a14_5" nexturl="#m7a14_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_7"> 
+	<section id="m7a14_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m7a14instructions text="4: Culture in the UK" audio="4"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a14_6" nexturl="#m7a14_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_8"> 
+	<section id="m7a14_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Listen to this advice about studying in the UK. After you've listened to each section, fill in the missing preposition.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center caption capgreen">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a14/4.m4a"></button> 4: Culture in the UK
+					</div>
+				</div>	
+				{{>blankrow}}			
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace para-ol-space fold">
+							{{> rightwrong}} {{> welldone}}
+							<ol class="olcircle">
+								<li>There’s plenty going <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> culturally.</li>
+								<li>There are dozens of unusual customs and traditions <span id="entryanswer1" class="textentry-disabled"></span> cheese rolling <span id="entryanswer2" class="textentry-disabled"></span> nettle eating.</li>
+							</ol>							
+						</div>
+					</div>
+				</div>
+	  		</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a14_7" nexturl="#m7a14_9" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu"}} 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a14_9"> 
+	<section id="m7a14_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m7a14instructions text="5: Things to do" audio="5"}} 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a14_8" nexturl="#m7a14_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

@@ -1,0 +1,100 @@
+<template name="bugReporting">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+	<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div> <div class="acttitle-title">Report a bug</div>
+		</header>
+		<section>
+			<div class="content">
+				<h1>Report a bug</h1>
+
+				<div class="container-fluid report-form">
+					<div class="row">
+						<div class="col-xs-12">
+							<h3>Please give as much information as possible about what happened when the problem occurred.</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<label>What device were you using?</label>
+						</div>
+						<div class="col-sm-8 col-xs-12">
+							<div class="dropdown">
+							  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Device...<span class="caret"></span></button>
+								<ul class="device dropdown-menu dropdown-menu-scroll">
+									<li class="dropdown-header">Desktop computer/laptop</li>
+									<li><a draggable="false" href="#">Windows<span class="show-this"> computer</span></a></li>
+									<li><a draggable="false" href="#">Mac</a></li>
+									<li><a draggable="false" href="#">Linux<span class="show-this"> computer</span></a></li>
+									<li><a draggable="false" href="#">Other<span class="show-this"> computer</span> / don't know</a></li>
+									<li class="divider"></li>
+									<li class="dropdown-header">Tablet</li>
+									<li><a draggable="false" href="#">Android tablet</a></li>
+									<li><a draggable="false" href="#">iPad</a></li>
+									<li><a draggable="false" href="#">Windows tablet</a></li>
+									<li><a draggable="false" href="#">Other<span class="show-this"> tablet</span> / don't know</a></li>
+									<li class="divider"></li>
+									<li class="dropdown-header">Phone</li>
+									<li><a draggable="false" href="#">Android phone</a></li>
+									<li><a draggable="false" href="#">iPhone</a></li>
+									<li><a draggable="false" href="#">Windows phone</a></li>
+									<li><a draggable="false" href="#">Other<span class="show-this"> phone</span> / don't know</a></li>
+								</ul>
+								<h5 id="form-device" class="faded">Select from the list</h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<label>What browser were you using?</label>
+						</div>
+						<div class="col-sm-8 col-xs-12">
+							<div class="dropdown">
+							  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Browser...<span class="caret"></span></button>
+								<ul class="browser dropdown-menu dropdown-menu-scroll">
+									<li><a draggable="false" href="#">Chrome</a></li>
+									<li><a draggable="false" href="#">Firefox</a></li>
+									<li><a draggable="false" href="#">Safari</a></li>
+									<li><a draggable="false" href="#">Edge</a></li>
+									<li><a draggable="false" href="#">Internet Explorer</a></li>
+									<li><a draggable="false" href="#">Opera</a></li>
+									<li><a draggable="false" href="#">Other / don't know</a></li>
+								</ul>
+								<h5 id="form-browser" class="faded">Select from the list</h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<label>Where did the problem occur?</label>
+						</div>
+						<div class="col-sm-8 col-xs-12 form-group">
+							<input class="form-control" type="text" id="form-location" placeholder="e.g. Module 1 Activity 22">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<label>Please describe the problem<span class="asterisk">*</span></label>
+						</div>
+						<div class="col-sm-8 col-xs-12 form-group">
+							<textarea class="form-control" rows="5" id="form-description"></textarea>
+							<div class="required text-right"><span class="asterisk">*</span> required</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<button id="submitReportButton" class="button2 item-space no-border">Submit</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+</article>
+
+</template>

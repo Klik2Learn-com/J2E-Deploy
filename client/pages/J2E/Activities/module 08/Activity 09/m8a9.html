@@ -1,0 +1,105 @@
+<template name="m8a9"> 
+<article class="with-tools-sidebar m8a9">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Gloucester');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 9 - {{>m8a9Title}}</div>
+		</header>
+		<section id="m8a9">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a9Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a9Intro}}</h3>
+				{{> m8a9Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a9_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a9_1}}
+		{{>m8a9_2}}
+		{{>EndPage char="elle" act="m8a9" nextact="m8a10" place="Gloucester"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a9_1"> 
+	<section id="m8a9_1" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="conventional/unconventional"
+					word2="compensation"
+					word3="sue/suing"
+					word4="raven"
+					word5="boost"
+					word6="peculiar"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a9" nexturl="#m8a9_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a9_2"> 
+	<section id="m8a9_2" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+		<h3 class="center">Read this article about Unusual Jobs.</h3>
+      			<div class="parapaper article-text">{{>metametrics level="7" star="no" align="center"}}
+	<div class="article-header">
+		<h4>Unusual Jobs</h4>
+	</div>
+	
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-5x4 trans" style="width: 240px"><div class="ph"><img draggable="false" src="images/module8/a9/dogshrink.png" alt="A dog on a psychiatrist's couch"></div></div>
+	</figure>
+	
+	<p>The number of unusual jobs is increasing, from <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-html="true" data-content="<div class='ph-w ph-5x4' style='max-width: 240px'><div class='ph'><img draggable='false' src='images/module8/a9/badger.png' alt='A badger' /></div></div> Someone who advises people how to control the number of badgers.">badger consultants</a> to <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="right" data-content=" Someone who studies the behaviour of dogs and helps dog owners if they have problems.">dog psychologists</a>. One insurance company said there had been a steady increase in the number of firms wanting insurance cover for unusual occupations such as preparing kitchens for celebrity chef programmes on TV and checking for noise problems on construction sites. If people doing those jobs make mistakes, the company could face an expensive court case.</p>
+
+	<!-- <figure class="image imgleft-responsive">
+		<img draggable="false" src="images/module8/a9/badger.png" alt="badger" class="" style="max-width: 250px;">
+	</figure> -->
+
+	<p>One director said, “The difficulty with unusual jobs is that they don’t fit the normal rules. The more unconventional the job, the more you need to think about the hidden risks. In today’s <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content=" People today are more likely to try to claim money from someone if something goes wrong.">compensation culture</a>, it’s very easy to imagine a customer suing their dog psychologist if their dog continues to eat their slippers.”</p>
+	
+	<figure class="image imgleft-responsive">
+		<div class="ph-w ph-5x4 trans" style="width: 240px"><div class="ph"><img draggable="false" src="images/module8/a9/compensation.png" alt="A man in wheelchair holding lots of money"></div></div>
+	</figure>
+	
+	<p>One of the UK’s most peculiar jobs is the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-html="true" data-placement="top" data-content="<div class='ph-w ph-5x4' style='max-width: 240px'><div class='ph'><img draggable='false' src='images/module8/a9/ravenmaster.png' alt='A man in uniform next to a raven' class='img-responsive'></div></div> Ravens are protected by law in the Tower of London.
+">Ravenmaster</a>, the man who looks after the famous ravens at the <a draggable="false" href="#" title="" data-toggle="popover" data-html="true" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="<div class='ph-w ph-5x4' style='max-width: 240px'><div class='ph'><img draggable='false' src='images/module8/a9/tower.png' alt='Tower of London'></div></div>The place where the Queen’s Crown Jewels are kept and where famous people were held in prison and executed.">Tower of London</a>.
+Derrick Coyle, 64, starts each day at dawn. He greets each of the ravens by name and lets them out of the cages where they spend the night.
+He said in a recent interview: “Getting up in the morning is the worst part and I don’t have a social life. Even in the summer I always have to get back to put the ravens to bed. The fact it’s an unusual job does give me a bit of a boost. There’s no one else in the world who can say ‘I’m a Ravenmaster <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-html="true" data-placement="top" data-content="<div class='ph-w ph-5x4' style='max-width: 240px'><div class='ph'><img draggable='false' src='images/module8/a9/yeoman.png' alt='A man in a Yeoman's uniform'>A servant in a royal household -an old fashioned word for a person with a particular job for the Royal Family.">Yeoman</a>.’</p>
+
+	<!-- <figure class="image imgright-responsive">
+		<img draggable="false" src="images/module8/a9/ravenmaster.png" alt="raven master" class="" style="max-width: 250px;">
+	</figure> -->
+
+	<p>So are workers in the UK a happy bunch on the whole? Almost half the workers in the UK are actively looking for a new job. A survey of 300 adults showed that one in five were trying to move from their current job.</p>
+
+	<!-- <figure class="image imgright-responsive">
+		data-html="true" class="" style="max-width: 250px;">
+	</figure>
+	<p>Paragraph 5</p> -->
+	
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a9_1" nexturl="#m8a9_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

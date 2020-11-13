@@ -1,0 +1,206 @@
+<template name="m7a20"> 
+<article class="with-tools-sidebar m7a2">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/ColwynBay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 20 - {{>m7a20Title}}</div>
+		</header>
+		<section id="m7a20">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a20Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m7a20Intro}}</h3>
+				{{> m7a20Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a20_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a20_1}}
+		{{>m7a20_2}}
+		{{>m7a20_3}}
+		{{>m7a20_4}}
+		{{>m7a20_5}}
+		{{>m7a20_6}}
+		{{>m7a20_7}}
+		{{>EndPage char="tu" act="m7a20" nextact="m7a21" place="ColwynBay"}}
+	</div>
+</article>
+
+</template>
+<template name="m7a20_1"> 
+	<section id="m7a20_1" class="hidden"> 
+		<div class="content center">  
+      			<h1>Using the Past Perfect</h1>
+      			<h4>If you're telling someone about past events, you need to change from the <u>Present Simple</u> 'I think' to the <u>Past Simple</u> 'I thought.'<br><br>
+      			And from the:<br>
+      			<u>Present Perfect</u> 'I've forgotten' to the <u>Past Perfect</u> 'I had forgotten.'</h4>
+      			<br>
+      			<div class="caption">'I think I've forgotten my passport.' Becomes...</div>
+      			<br><br>
+      			<div class="caption">'I <u>thought</u> I'd <u>forgotten</u> my passport.'</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m7a20" nexturl="#m7a20_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m7a20_2"> 
+	<section id="m7a20_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Using the Past Perfect</h1>
+			<h3 class="center">Write the correct tense in the space. (1 word)</h3>
+			<div class="parapaper paraextract linespace para-ol-space fold">
+			{{> rightwrong}}
+				<ol class="olcircle">
+					<li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/01.m4a"></button> 'I've never met him.'</li>
+						<br>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/02.m4a"></button> 'I said I  <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> never <span id="entryanswer1" class="textentry-disabled"></span> him.'</li>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m7a20_1" nexturl="#m7a20_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<!--  <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span>
+
+ <span id="entryanswer1" class="textentry-disabled"></span> -->
+
+<template name="m7a20_3"> 
+	<section id="m7a20_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Using the Past Perfect</h1>
+			<h3 class="center">Write the correct tense in the space. (<span id="wordcount">2 words</span>)</h3>
+			<div class="parapaper paraextract linespace para-ol-space fold">
+			{{> rightwrong}} 
+				<ol class="olcircle" style="counter-reset: start 1;">
+					<li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/03.m4a"></button> 'She's not had any experience of working in a kitchen.'</li>
+						<br>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/04.m4a"></button> 'She said she <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="12" autocomplete="off"><input type="submit" value="OK"></form></span> no experience of working in a kitchen.'</li>
+					</li>
+				</ol>
+			</div>
+
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a20_2" nexturl="#m7a20_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a20_4"> 
+	<section id="m7a20_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Using the Past Perfect</h1>
+			<h3 class="center">Write the correct tense in the space. (<span id="wordcount">2 words</span>)</h3>
+			<div class="parapaper paraextract linespace para-ol-space fold">
+			{{> rightwrong}} 
+				<ol class="olcircle" style="counter-reset: start 2;">
+					<li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/05.m4a"></button> 'I'm intending to visit the Globe Theatre when I'm in London.'</li>
+						<br>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/06.m4a"></button> 'I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="12" autocomplete="off"><input type="submit" value="OK"></form></span> to visit the Globe Theatre but it was closed for repairs.'</li>
+					</li>
+				</ol>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a20_3" nexturl="#m7a20_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a20_5"> 
+	<section id="m7a20_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Using the Past Perfect</h1>
+			<h3 class="center">Write the correct tense in the space. (<span id="wordcount">2 words</span>)</h3>
+			<div class="parapaper paraextract linespace para-ol-space fold">
+			{{> rightwrong}} 
+				<ol class="olcircle" style="counter-reset: start 3;">
+					<li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/07.m4a"></button> 'I'm expecting to meet them at 9pm at the airport.'</li>
+						<br>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/08.m4a"></button> 'I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="12" autocomplete="off"><input type="submit" value="OK"></form></span> to meet them at 9pm but the flight was delayed'</li>
+					</li>
+				</ol>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="m7a20_4" nexturl="#m7a20_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a20_6"> 
+	<section id="m7a20_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Using the Past Perfect</h1>
+			<h3 class="center">Write the correct tense in the space. (<span id="wordcount">3 words</span>) <b>You must use the short form.</b></h3>
+			<div class="parapaper paraextract linespace para-ol-space fold">
+			{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 4;">
+					<li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/09.m4a"></button> 'He's been writing songs for years. He recently got a record deal.'</li>
+						<br>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/10.m4a"></button> '<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span> songs for years before he got a record deal.'</li>
+					</li>
+				</ol>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a20_5" nexturl="#m7a20_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a20_7"> 
+	<section id="m7a20_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Using the Past Perfect</h1>
+			<h3 class="center">Write the correct tense in the space. (<span id="wordcount">2 words</span>)</h3>
+				<div class="parapaper paraextract linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/11.m4a"></button> 'We think we've found a cure for the common cold.'</li>
+						<br>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a20/12.m4a"></button> 'They thought they <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="10" autocomplete="off"><input type="submit" value="OK"></form></span> a cure for the common cold.'</li>
+					</li>
+				</ol>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="m7a20_6" nexturl="#m7a20_end" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>

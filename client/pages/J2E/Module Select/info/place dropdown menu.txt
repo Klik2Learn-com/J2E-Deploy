@@ -1,0 +1,11 @@
+<nav class="dropdown">
+  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Activity info<span class="caret-fa"></span></button>
+	<ul class="dropdown-menu dropdown-menu-center">
+		<li><a draggable="false" href="#"><b>{{>m1l1}}</b> (Activities {{>m1l1No}})</a></li>	
+		<li><a draggable="false" href="#"><b>{{>m1l2}}</b> (Activities {{>m1l2No}})</a></li>
+		<li><a draggable="false" href="#"><b>{{>m1l3}}</b> (Activities {{>m1l3No}})</a></li>
+		<li><a draggable="false" href="#"><b>{{>m1l4}}</b> (Activities {{>m1l4No}})</a></li>	
+		<li><a draggable="false" href="#"><b>{{>m1l5}}</b> (Activities {{>m1l5No}})</a></li>
+		<li><a draggable="false" href="#"><b>{{>m1l6}}</b> (Activities {{>m1l6No}})</a></li>							
+	</ul>
+</nav>

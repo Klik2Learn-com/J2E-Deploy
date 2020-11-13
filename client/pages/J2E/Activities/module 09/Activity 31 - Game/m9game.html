@@ -1,0 +1,56 @@
+<template name="m9Game">
+<article class="with-tools-sidebar game m9Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StAustell');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 31 - {{>m9GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m9Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m9Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m9Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m9Game_1}}
+		{{>m9Game_2}}
+		{{>m9Game_3}}
+		{{>m9Game_4}}
+		{{>m9Game_5}}
+		{{>m9Game_6}}
+		{{>m9Game_7}}
+		{{>m9Game_8}}
+		{{>m9Game_9}}
+		{{>m9Game_10}}
+		{{>m9Game_11}}
+		{{>m9Game_12}}
+		{{>m9Game_13}}
+		{{>m9Game_14}}
+		{{>m9Game_15}}
+		{{>m9Game_16}}
+		{{>m9Game_17}}
+		{{>m9Game_18}}
+		{{>m9Game_19}}
+		{{>m9Game_20}}
+		{{>m9Game_21}}
+		{{>m9Game_22}}
+		{{>m9Game_23}}
+		{{>m9Game_24}}
+		{{>m9Game_25}}
+		{{>m9Game_26}}
+		{{>m9Game_Score}}
+		{{>m9Game_ans}} 
+		{{>EndPage2 char="all" act="m9Game" nextplace="Cambridge" nextmod="10" place="StAustell"  end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

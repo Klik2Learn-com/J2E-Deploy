@@ -1,0 +1,276 @@
+<template name="feedbackUnit1Modal">
+	<div class="modal fade" tabindex="-1" id="feedbackUnit1Modal" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" aria-label="Close" id="closeUnit1ModalWarning"><span aria-hidden="true">×</span></button>
+					<button type="button" class="close hidden" data-dismiss="modal" aria-label="Close" id="closeUnit1Modal"></button>
+					<h4 class="modal-title" id="feedbackUnit1ModalTitle">Feedback</h4>
+				</div>
+				
+				<div class="content">
+
+					<form class="feedback-form" id="unit1-form">
+
+						<fieldset>
+							<legend>1) How would you rate your learning journey in Unit 1?</legend>
+							<div class="score-selection">
+								<label for="unit1Q1Score1">
+									<input type="radio" name="unit1Q1" id="unit1Q1Score1" value="1" required> <span></span>
+								</label>
+								<label for="unit1Q1Score2">
+									<input type="radio" name="unit1Q1" id="unit1Q1Score2" value="2" required> <span></span>
+								</label>
+								<label for="unit1Q1Score3">
+									<input type="radio" name="unit1Q1" id="unit1Q1Score3" value="3" required> <span></span>
+								</label>
+								<label for="unit1Q1Score4">
+									<input type="radio" name="unit1Q1" id="unit1Q1Score4" value="4" required> <span></span>
+								</label>
+								<label for="unit1Q1Score5">
+									<input type="radio" name="unit1Q1" id="unit1Q1Score5" value="5" required> <span></span>
+								</label>
+							</div>
+							<!--<label for="unit1Q1Comment">Comment</label><br>-->
+							<textarea id="unit1Q1Comment" placeholder="Comment (optional)" rows="3"></textarea>
+						</fieldset>
+
+						<fieldset>
+							<legend>2) How would you rate the end-of-module games?</legend>
+							<div class="score-selection">
+								<label for="unit1Q2Score1">
+									<input type="radio" name="unit1Q2" id="unit1Q2Score1" value="1" required> <span></span>
+								</label>
+								<label for="unit1Q2Score2">
+									<input type="radio" name="unit1Q2" id="unit1Q2Score2" value="2" required> <span></span>
+								</label>
+								<label for="unit1Q2Score3">
+									<input type="radio" name="unit1Q2" id="unit1Q2Score3" value="3" required> <span></span>
+								</label>
+								<label for="unit1Q2Score4">
+									<input type="radio" name="unit1Q2" id="unit1Q2Score4" value="4" required> <span></span>
+								</label>
+								<label for="unit1Q2Score5">
+									<input type="radio" name="unit1Q2" id="unit1Q2Score5" value="5" required> <span></span>
+								</label>
+							</div>
+							<!--<label for="unit1Q2Comment">Comment</label><br>-->
+							<textarea id="unit1Q2Comment" placeholder="Comment (optional)" rows="3"></textarea>
+						</fieldset>
+
+						<fieldset>
+							<legend>3) How would you rate the idioms/phrasal verbs?</legend>
+							<div class="score-selection">
+								<label for="unit1Q3Score1">
+									<input type="radio" name="unit1Q3" id="unit1Q3Score1" value="1" required> <span></span>
+								</label>
+								<label for="unit1Q3Score2">
+									<input type="radio" name="unit1Q3" id="unit1Q3Score2" value="2" required> <span></span>
+								</label>
+								<label for="unit1Q3Score3">
+									<input type="radio" name="unit1Q3" id="unit1Q3Score3" value="3" required> <span></span>
+								</label>
+								<label for="unit1Q3Score4">
+									<input type="radio" name="unit1Q3" id="unit1Q3Score4" value="4" required> <span></span>
+								</label>
+								<label for="unit1Q3Score5">
+									<input type="radio" name="unit1Q3" id="unit1Q3Score5" value="5" required> <span></span>
+								</label>
+							</div>
+							<!--<label for="unit1Q3Comment">Comment</label><br>-->
+							<textarea id="unit1Q3Comment" placeholder="Comment (optional)" rows="3"></textarea>
+						</fieldset>
+
+						<fieldset>
+							<legend>4) How would you rate the achievement badges/trophies?</legend>
+							<div class="score-selection">
+								<label for="unit1Q4Score1">
+									<input type="radio" name="unit1Q4" id="unit1Q4Score1" value="1" required> <span></span>
+								</label>
+								<label for="unit1Q4Score2">
+									<input type="radio" name="unit1Q4" id="unit1Q4Score2" value="2" required> <span></span>
+								</label>
+								<label for="unit1Q4Score3">
+									<input type="radio" name="unit1Q4" id="unit1Q4Score3" value="3" required> <span></span>
+								</label>
+								<label for="unit1Q4Score4">
+									<input type="radio" name="unit1Q4" id="unit1Q4Score4" value="4" required> <span></span>
+								</label>
+								<label for="unit1Q4Score5">
+									<input type="radio" name="unit1Q4" id="unit1Q4Score5" value="5" required> <span></span>
+								</label>
+							</div>
+							<!--<label for="unit1Q4Comment">Comment</label><br>-->
+							<textarea id="unit1Q4Comment" placeholder="Comment (optional)" rows="3"></textarea>
+						</fieldset>
+
+						<fieldset>
+							<legend>5) Did you find the learning tools (dictionary, notebook, voice recorder &amp; grammar guide) helpful?</legend>
+							<div class="yes-no">
+								<input type="radio" name="unit1Q5" id="unit1Q5Yes" value="yes" required><label for="unit1Q5Yes">Yes</label>
+								<input type="radio" name="unit1Q5" id="unit1Q5No" value="no" required><label for="unit1Q5No">No</label>
+							</div>
+							<!--<label for="unit1Q5No">Comment</label><br>-->
+							<textarea id="unit1Q5Comment" placeholder="Comment (optional)" rows="3"></textarea>
+						</fieldset>
+
+						<div class="text-right">
+							<input type="reset" class="button5 no-border item-space" value="Reset">
+							<input type="submit" class="button4 no-border item-space" value="Submit">
+						</div>
+
+					</form>
+					<p>&nbsp;</p>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="feedbackUnit2Modal">
+		<div class="modal fade" tabindex="-1" id="feedbackUnit2Modal" role="dialog" data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" id="closeUnit2ModalWarning"><span aria-hidden="true">×</span></button>
+						<button type="button" class="close hidden" data-dismiss="modal" aria-label="Close" id="closeUnit2Modal"></button>
+						<h4 class="modal-title" id="feedbackUnit2ModalTitle">Feedback</h4>
+					</div>
+					
+					<div class="content">
+	
+						<form class="feedback-form" id="unit2-form">
+
+							<fieldset>
+								<legend>1) How would you rate your learning journey in Unit 2?</legend>
+								<div class="score-selection">
+									<label for="unit2Q1Score1">
+										<input type="radio" name="unit2Q1" id="unit2Q1Score1" value="1" required> <span></span>
+									</label>
+									<label for="unit2Q1Score2">
+										<input type="radio" name="unit2Q1" id="unit2Q1Score2" value="2" required> <span></span>
+									</label>
+									<label for="unit2Q1Score3">
+										<input type="radio" name="unit2Q1" id="unit2Q1Score3" value="3" required> <span></span>
+									</label>
+									<label for="unit2Q1Score4">
+										<input type="radio" name="unit2Q1" id="unit2Q1Score4" value="4" required> <span></span>
+									</label>
+									<label for="unit2Q1Score5">
+										<input type="radio" name="unit2Q1" id="unit2Q1Score5" value="5" required> <span></span>
+									</label>
+								</div>
+								<!--<label for="unit2Q1Comment">Comment</label><br>-->
+								<textarea id="unit2Q1Comment" placeholder="Comment (optional)" rows="3"></textarea>
+							</fieldset>
+	
+							<fieldset>
+								<legend>2) How would you rate the end-of-module games?</legend>
+								<div class="score-selection">
+									<label for="unit2Q2Score1">
+										<input type="radio" name="unit2Q2" id="unit2Q2Score1" value="1" required> <span></span>
+									</label>
+									<label for="unit2Q2Score2">
+										<input type="radio" name="unit2Q2" id="unit2Q2Score2" value="2" required> <span></span>
+									</label>
+									<label for="unit2Q2Score3">
+										<input type="radio" name="unit2Q2" id="unit2Q2Score3" value="3" required> <span></span>
+									</label>
+									<label for="unit2Q2Score4">
+										<input type="radio" name="unit2Q2" id="unit2Q2Score4" value="4" required> <span></span>
+									</label>
+									<label for="unit2Q2Score5">
+										<input type="radio" name="unit2Q2" id="unit2Q2Score5" value="5" required> <span></span>
+									</label>
+								</div>
+								<!--<label for="unit2Q2Comment">Comment</label><br>-->
+								<textarea id="unit2Q2Comment" placeholder="Comment (optional)" rows="3"></textarea>
+							</fieldset>
+	
+							<fieldset>
+								<legend>3) How would you rate the stress and intonation activities?</legend>
+								<div class="score-selection">
+									<label for="unit2Q3Score1">
+										<input type="radio" name="unit2Q3" id="unit2Q3Score1" value="1" required> <span></span>
+									</label>
+									<label for="unit2Q3Score2">
+										<input type="radio" name="unit2Q3" id="unit2Q3Score2" value="2" required> <span></span>
+									</label>
+									<label for="unit2Q3Score3">
+										<input type="radio" name="unit2Q3" id="unit2Q3Score3" value="3" required> <span></span>
+									</label>
+									<label for="unit2Q3Score4">
+										<input type="radio" name="unit2Q3" id="unit2Q3Score4" value="4" required> <span></span>
+									</label>
+									<label for="unit2Q3Score5">
+										<input type="radio" name="unit2Q3" id="unit2Q3Score5" value="5" required> <span></span>
+									</label>
+								</div>
+								<!--<label for="unit2Q3Comment">Comment</label><br>-->
+								<textarea id="unit2Q3Comment" placeholder="Comment (optional)" rows="3"></textarea>
+							</fieldset>
+	
+							<fieldset>
+								<legend>4) Has your grammar improved?</legend>
+								<div class="score-selection">
+									<label for="unit2Q4Score1">
+										<input type="radio" name="unit2Q4" id="unit2Q4Score1" value="1" required> <span></span>
+									</label>
+									<label for="unit2Q4Score2">
+										<input type="radio" name="unit2Q4" id="unit2Q4Score2" value="2" required> <span></span>
+									</label>
+									<label for="unit2Q4Score3">
+										<input type="radio" name="unit2Q4" id="unit2Q4Score3" value="3" required> <span></span>
+									</label>
+									<label for="unit2Q4Score4">
+										<input type="radio" name="unit2Q4" id="unit2Q4Score4" value="4" required> <span></span>
+									</label>
+									<label for="unit2Q4Score5">
+										<input type="radio" name="unit2Q4" id="unit2Q4Score5" value="5" required> <span></span>
+									</label>
+								</div>
+								<!--<label for="unit2Q4Comment">Comment</label><br>-->
+								<textarea id="unit2Q4Comment" placeholder="Comment (optional)" rows="3"></textarea>
+							</fieldset>
+	
+							<fieldset>
+								<legend>5) Has your vocabulary improved?</legend>
+								<div class="score-selection">
+									<label for="unit2Q5Score1">
+										<input type="radio" name="unit2Q5" id="unit2Q5Score1" value="1" required> <span></span>
+									</label>
+									<label for="unit2Q5Score2">
+										<input type="radio" name="unit2Q5" id="unit2Q5Score2" value="2" required> <span></span>
+									</label>
+									<label for="unit2Q5Score3">
+										<input type="radio" name="unit2Q5" id="unit2Q5Score3" value="3" required> <span></span>
+									</label>
+									<label for="unit2Q5Score4">
+										<input type="radio" name="unit2Q5" id="unit2Q5Score4" value="4" required> <span></span>
+									</label>
+									<label for="unit2Q5Score5">
+										<input type="radio" name="unit2Q5" id="unit2Q5Score5" value="5" required> <span></span>
+									</label>
+								</div>
+								<!--<label for="unit2Q5Comment">Comment</label><br>-->
+								<textarea id="unit2Q5Comment" placeholder="Comment (optional)" rows="3"></textarea>
+							</fieldset>
+	
+							<div class="text-right">
+								<input type="reset" class="button5 no-border item-space" value="Reset">
+								<input type="submit" class="button4 no-border item-space" value="Submit">
+							</div>
+	
+						</form>
+						<p>&nbsp;</p>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</template>

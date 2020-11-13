@@ -1,0 +1,125 @@
+<template name="MoreAboutStonehenge">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Stonehenge"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m8l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m8l6}}</div>
+		</header>
+
+		<section id="moreaboutStonehenge">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stonehenge/Stonehenge1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l6_A">
+						<p>Stonehenge</p>
+					</div>
+					<div class="col-sm-6 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stonehenge/Stonehenge2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l6_B">
+						<p>The Amesbury Archer</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">				
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Stonehenge/Stonehenge3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l6_C">
+						<p>Stonehenge Landscape</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Stonehenge/Stonehenge4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l6_D">
+						<p>Neolithic Houses</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l6_A">Stonehenge</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehenge/Stonehenge1.jpg" alt="Stonehenge" style="max-width: 250px;">
+					</figure>
+					<p>Stonehenge is one of the wonders of the world and one of the most famous prehistoric sites in Europe. As well as the stone circle, the visitor centre has over 250 objects from the ancient world.  You can also see a reconstruction from the bones of a man who lived there 5,500 years ago and neolithic houses which show what life was like at that time.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=_n2QNHN72wA" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l6_B">The Amesbury Archer</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehenge/Stonehenge2.jpg" alt="The Amesbury Archer" style="max-width: 250px;">
+					</figure>
+					<p>In 2002, the grave of a Bronze Age man was found at Amesbury near Stonehenge. Scientists have calculated that he lived over 4,400 years ago. The grave contained a large number of objects including stone arrowheads. They also found gold ornaments - the oldest ever found in England.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/history/ancient/archaeology/king_stonehenge_01.shtml" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l6_C">Stonehenge Landscape</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehenge/Stonehenge3.jpg" alt="Stonehenge Landscape" style="max-width: 250px;">
+					</figure>
+					<p>The Stonehenge Landscape is  large area of over 2,000 acres around the famous stone circle. A walking tour across the area includes ancient burial mounds and the remains of a neolithic village. You can see where the builders of Stonehenge lived and in more modern times, the airfield where fighter pilots were trained in the 20th century.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nationaltrust.org.uk/stonehenge-landscape" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l6_D">Neolithic Houses</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehenge/Stonehenge4.jpg" alt="Neolithic Houses" style="max-width: 250px;">
+					</figure>
+					<p>These houses were built by the first farmers in Europe. They were rectangular and made from tree trunks or branches covered in mud. The roof was also made from wood covered with thatch. At Stonehenge, there are five replica Neolithic houses, furnished with typical pottery and furniture from the period.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.english-heritage.org.uk/visit/places/stonehenge/things-to-see-and-do/neolithic-houses/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

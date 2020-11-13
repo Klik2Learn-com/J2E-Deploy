@@ -1,0 +1,148 @@
+<template name="MoreAboutPlymouth">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Plymouth"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m9l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m9l5}}</div>
+		</header>
+
+		<section id="moreaboutPlymouth">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Plymouth/Plymouth1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l5_A">
+						<p>Smeaton’s Tower</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Plymouth/Plymouth2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l5_B">
+						<p>Sir Francis Chichester</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Plymouth/Plymouth3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l5_C">
+						<p>The Mayflower Steps</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-8 col-xs-12 bonus-image" style="background-image: url('images/bonus/Plymouth/Plymouth4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l5_D">
+						<p>National Marine Aquarium</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Plymouth/Plymouth5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l5_E">
+						<p>Tinside Lido</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l5_A">Smeaton’s Tower</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Plymouth/Plymouth1.jpg" alt="Smeaton’s Tower" style="max-width: 250px;">
+					</figure>
+					<p>John Smeaton was a civil  engineer who developed new designs for Britain’s lighthouses. Smeaton’s Tower is one of his most famous buildings. It was used as a lighthouse for over a hundred years until the middle of the 19th century. It was then dismantled and rebuilt in Plymouth.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://plymhearts.org/smeatons-tower/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l5_B">Sir Francis Chichester</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Plymouth/Plymouth2.jpg" alt="Sir Francis Chichester" style="max-width: 250px;">
+					</figure>
+					<p>In 1967, at the age of 65, Sir Francis Chichester set sail in his yacht, Gipsy Moth, from Plymouth to circumnavigate the world. Nine months and one day later, he arrived back in Plymouth. He was the first person to complete a voyage round the world on his own and only stopped once in Australia. Thousands of small boats joined in the celebrations when he sailed into the port.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://news.bbc.co.uk/onthisday/hi/dates/stories/may/28/newsid_2495000/2495799.stm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l5_C">The Mayflower Steps</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Plymouth/Plymouth3.jpg" alt="The Mayflower Steps" style="max-width: 250px;">
+					</figure>
+					<p>These steps mark the place where a group of people seeking religious freedom set sail in 1620 in a ship called the Mayflower. The wanted to start a new life in North America. They landed in Massachusetts and established a new town there, also called Plymouth.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitplymouth.co.uk/things-to-do/the-mayflower-steps-p1398993" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l5_D">National Marine Aquarium</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Plymouth/Plymouth4.jpg" alt="National Marine Aquarium" style="max-width: 250px;">
+					</figure>
+					<p>The National Maritime Aquarium in Torquay was opened in 1998 and is the largest in Britain. There are four different areas to explore from local waters to the Great Barrier Reef in Australia. The largest tank has over 1,000 fish from the Caribbean including sharks and stingrays. The aquarium is also an important site for breeding and research.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.national-aquarium.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l5_E">Tinside Lido</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Plymouth/Plymouth5.jpg" alt="Tinside Lido" style="max-width: 250px;">
+					</figure>
+					<p>Beside Smeaton’s Tower, you can find a large outdoor, salt water swimming pool which has been voted one of the top ten best outdoor pools in Europe. You can experience what a British seaside resort was like last century as Tinside Lido dates back to 1935. Non swimmers can enjoy the sunbathing terrace.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitplymouth.co.uk/things-to-do/tinside-lido-p1096383" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

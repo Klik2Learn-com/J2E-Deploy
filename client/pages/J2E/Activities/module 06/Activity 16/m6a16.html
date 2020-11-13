@@ -1,0 +1,361 @@
+<template name="m6a16">
+	<article class="with-tools-sidebar m6a16">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Scarborough');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 16 - {{>m6a16Title}}</div>
+			</header>
+			<section id="m6a16">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a16Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m6a16Intro}}</h3>
+					{{> m6a16Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a16_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a16_1}} {{>m6a16_2}} {{>m6a16_3}} {{>m6a16_4}} {{>m6a16_5}} {{>EndPage char="k" act="m6a16" nextact="m6a17" place="Scarborough"}}
+		</div>
+	</article>
+
+</template>
+<template name="m6a16_1">
+	<section id="m6a16_1" class="hidden">
+		<div class="content">
+			<h2 class="center">We use adverbs and adverb phrases of time for three reasons:</h2>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center">
+						<div class="caption">
+							<h4>To say
+								<span class="grammar">when</span> something happened.</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center">
+						<div class="caption">
+							<h4>To say
+								<span class="grammar">how long</span> it took.</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center">
+						<div class="caption">
+							<h4>To say
+								<span class="grammar">how often</span> it happened.</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a16" nexturl="#m6a16_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a16_2">
+	<section id="m6a16_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose the right explanation for the adverb or phrase.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}}
+							<ol class="olcircle">
+								<li>Last week
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>All night
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+								</li>
+								<li>Tomorrow
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+								</li>
+								<li>Sometimes
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+								</li>
+								<li>Usually
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+								</li>
+								<li>Occasionally
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target3">when</div>
+								</div>
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">how long</div>
+								</div>
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4 target5 target6">how often</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a16_1" nexturl="#m6a16_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a16_3">
+	<section id="m6a16_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose the right explanation for the adverb or phrase.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}}
+							<ol class="olcircle" style="counter-reset: start 6;">
+								<li>In 1973
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>Next summer
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+								</li>
+								<li>From May to October
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+								</li>
+								<li>No longer
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+								</li>
+								<li>Not yet
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+								</li>
+								<li>Already
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2 target5 target6">when</div>
+								</div>
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">how long</div>
+								</div>
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">how often</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a16_2" nexturl="#m6a16_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a16_4">
+	<section id="m6a16_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose the right explanation for the adverb or phrase.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}} {{> welldone}}
+							<ol class="olcircle" style="counter-reset: start 12;">
+								<li>Still
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>Never
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+								</li>
+								<li>Recently
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+								</li>
+								<li>Seldom
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+								</li>
+								<li>For over three hours
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">when</div>
+								</div>
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target5">how long</div>
+								</div>
+								<div class="ddseat ddwidth7 dd1line">
+									<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2 target4">how often</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a16_3" nexturl="#m6a16_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a16_5">
+	<section id="m6a16_5" class="hidden">
+		<div class="content">
+			<h2 class="center">Here are the adverbs and phrases again</h2>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 center">
+						<div class="box1">
+							<h4>When</h4>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Last week
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Tomorrow
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								In 1973
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Next summer
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Not yet
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Already
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Recently
+							</div>
+							<br>
+							<br>
+						</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="box1">
+							<h4>How long</h4>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								All night
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								From May to October
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Still
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								For over three hours
+							</div>
+							<br>
+							<br>
+						</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="box1">
+							<h4>How often</h4>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Sometimes
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Usually
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Occasionally
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								No longer
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Never
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								Seldom
+							</div>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a16_4" nexturl="#m6a16_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

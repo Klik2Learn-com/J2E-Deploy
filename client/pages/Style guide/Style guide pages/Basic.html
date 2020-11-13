@@ -1,0 +1,146 @@
+<template name="styleBasic">
+<section id="style-basic">{{> popovers}}
+	<div class="content">
+
+		<h1>Basics</h1>
+		<h2>Bootstrap columns starter kit</h2>
+		
+		<div class="container-fluid">
+			<div class="row"><div class="col-sm-12"><p><b>For copy and paste convenience.</b></p> </div></div>
+			<div class="row">
+				<div class="col-xs-6 col-xxs-12">
+					<p>1 row, 2 columns becoming 2 rows 1 column on xs screens.</p>
+<pre class="htmlcode2">&#60;div class="container-fluid"&#62;
+	&#60;div class="row"&#62;
+		&#60;div class="col-<span class="html-red">sm-6</span>"&#62;
+			
+		&#60;/div&#62;
+		&#60;div class="col-<span class="html-red">sm-6</span>"&#62;
+			
+		&#60;/div&#62;
+	&#60;/div&#62;
+&#60;/div&#62;</pre>
+				</div>
+				<div class="col-xs-6 col-xxs-12">
+					<p>1 row, 2 columns becoming 2 rows 1 column on xxs screens.</p>
+<pre class="htmlcode2">&#60;div class="container-fluid"&#62;
+	&#60;div class="row"&#62;
+		&#60;div class="<span class="html-red">col-xs-6 col-xxs-12</span>"&#62;
+			
+		&#60;/div&#62;
+		&#60;div class="<span class="html-red">col-xs-6 col-xxs-12</span>"&#62;
+			
+		&#60;/div&#62;
+	&#60;/div&#62;
+&#60;/div&#62;</pre>
+				</div>
+				<div class="col-xs-6 col-xxs-12">
+					<p>1 row, 2 columns on all sizes. Good for having a pic next to an article.</p>
+<pre class="htmlcode2">&lt;div class=&quot;container-fluid&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-<span class="html-red">8</span> col-xs-<span class="html-red">9</span>&quot;&gt;
+			
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-<span class="html-red">4</span> col-xs-<span class="html-red">3</span>&quot;&gt;
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+				<div class="col-xs-6 col-xxs-12">
+					<p>One centred box - handy for content that doesn't need to be the full width of the page</p>
+<pre class="htmlcode2">&#60;div class="container-fluid"&#62;
+	&#60;div class="row"&#62;
+		&#60;div class="col-sm-<span class="html-red">8</span> col-sm-offset-<span class="html-red">2</span>"&#62;
+			
+		&#60;/div&#62;
+	&#60;/div&#62;
+&#60;/div&#62;</pre>
+				</div>
+			</div>
+		</div>
+
+		<p>&nbsp;</p>
+		<h1> Style basics (this, <span class="htmlcode">&#60;h1&#62;</span>, is a standard page title)</h1>
+		(The <span class="htmlcode">&#60;h1&#62;</span> tag above replaces the green box headers in the Flash version of the activities.)
+		<h2><span class="htmlcode">&#60;h2&#62;</span> - Heading</h2>
+		<h3><span class="htmlcode">&#60;h3&#62;</span> - Instructions, e.g. read the following paragraphs and take notes in your notebook.</h3>
+
+		{{>InstructionsNotebook text="Clickable icons next to instruction text - use these templates to get a linked icon next to your instructions. It also ensures that the icon is nicely placed if the text goes over several lines."}}
+		
+		<p>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsNotebook text="Notebook instruction text goes here"&#125;&#125;</pre><br>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsDictionary text="Check any words you don't know in the Dictionary"&#125;&#125;</pre><br>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsRecord text="Voice recorder instruction text goes here"&#125;&#125;</pre><br>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsForum text="Forum instruction text goes here"&#125;&#125;</pre><br>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsEmail text="Email instruction text goes here"&#125;&#125;</pre><br>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsGrammar text="Grammar guide instruction text goes here"&#125;&#125;</pre><br>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsEPortfolio text="E-portfolio instruction text goes here"&#125;&#125;</pre><br>
+			<pre class="htmlcode4">&#123;&#123;&#62;InstructionsUserGuide text="User guide instruction text goes here"&#125;&#125;</pre><br>
+		</p>
+
+		<ul>
+			<li>Put words that need emphasis in <b>bold</b>.</li>
+			<li>Titles of things should be in <em>italic</em>.</li>
+			<li>Click for more info/definition in <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Popover definition">pink red</a>. This is the default link colour. <a draggable="false" href="#style-popovers" class="pagination">Click here</a> to get the code for definition popovers.</li>
+			<li><span class="correctword">Green</span> for a word found by the user in paragraph click. <span class="htmlcode">&#60;span class="correctword"&#62;</span></li> 
+			<li><span class="incorrectword">Orange</span> for a word/phrase that is wrong. <span class="htmlcode">&#60;span class="incorrectword"&#62;</span></li>
+			<li><span class="grammar">Blue</span> to highlight grammar or words to look up in dictionary. <span class="htmlcode">&#60;span class="grammar"&#62;</span></li>
+			<li><span class="noselect">This text is non selectable, which means you cannot see the select but you can still copy/paste it into a text entry. Just add </span><span class="htmlcode">.noselect</span><span class="noselect"> to a section to make it un-selectable .</span></li>
+		</ul>
+		<h4><span class="htmlcode">&#60;h4&#62;</span> - A subheading</h4>
+		<p>This is standard paragraph text. Always put it in <span class="htmlcode">&#60;p&#62;</span> tags for correct spacing. Mauris sed nibh ut orci <b>idioms</b>. Duis non iaculis erat, quis scelerisque mauris. Nam fringilla ligula eu erat gravida sodales. Nulla suscipit vulputate porttitor. Donec mi lorem, molestie quis ultricies eget, cursus id purus. Click this <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Popover definition">word</a> for more info. Risus non scelerisque. Nulla facilisi. Cras ac semper mauris, id laoreet quam. Donec suscipit convallis rhoncus. Praesent mattis massa eu pellentesque lobortis. Morbi mollis ipsum arcu, nec dictum sapien <span class="grammar">verb</span> molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+		<p class="text-justify">
+		Use <span class="htmlcode">class="text-justify"</span> to justify a paragraph. Mauris sed nibh ut orci <b>phrasal verbs</b>. Duis non iaculis erat, quis scelerisque mauris. Nam fringilla ligula eu erat gravida sodales. Nulla suscipit vulputate porttitor. Donec mi lorem, molestie quis ultricies eget, cursus id purus. Cras cursus semper risus non scelerisque. Nulla facilisi. Cras ac <span class="correctword">semper mauris</span>, id laoreet quam. Donec suscipit convallis rhoncus. Praesent mattis massa eu pellentesque lobortis. Morbi mollis ipsum arcu, nec dictum sapien iaculis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Nulla facilisi. semper mauris, id laoreet quam. Donec suscipit convallis rhoncus. Praesent mattis massa eu pellentesque lobortis. Morbi mollis ipsum arcu, nec dictum sapien iaculis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Nulla facilisi. semper mauris, id laoreet quam. Donec suscipit convallis rhoncus. Praesent mattis massa eu pellentesque lobortis. Morbi mollis ipsum arcu, nec dictum sapien iaculis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+		</p>
+		
+		
+		<hr>
+		<p>Use <span class="htmlcode">&#60;hr&#62;</span> to get a dotted separator like this ^</p>
+			
+			
+			
+		<div class="parapaper fold">
+			<p>This is paragraph text on paper. Contain it in <span class="htmlcode">&#60;div class="parapaper fold"&#62;</span>. You can add/remove the <span class="htmlcode">fold</span> class to/from elements to add/remove the page fold in the top left. Most orange paper should have the fold, only remove it if there's too many on screen and you want some variation.
+			<br>
+			<div class="caption capgreen fold2" style="margin: 10px; font-size: 1em; display: float; width: 40%;">If the element wants a fold but is on paper like this instead of a white background, use the <span class="htmlcode">fold2</span> class.</div>
+			</p>
+			<p class="just">
+			Use <span class="htmlcode">&#60;p class="just"&#62;</span> to justify a paragraph. Mauris sed nibh ut orci Duis non iaculis erat, quis scelerisque mauris. Nam fringilla ligula eu erat gravida sodales. Nulla suscipit vulputate porttitor. Donec mi lorem, molestie quis ultricies eget, cursus id purus. Cras cursus semper risus non scelerisque. Nulla facilisi. semper mauris, id laoreet quam. Donec suscipit convallis rhoncus. Praesent mattis massa eu pellentesque lobortis. Morbi mollis ipsum arcu, nec dictum sapien iaculis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+			</p>
+			<br>
+			<h2><span class="htmlcode">&#60;h2&#62;</span> A heading on paper, if needed - usually not</h2>
+			<h4><span class="htmlcode">&#60;h4&#62;</span> You'll probably want to use subheadings on paper backgrounds instead</h4>
+			<h3><span class="htmlcode">&#60;h3&#62;</span> Instruction text doesn't usually go on a paper background; avoid where possible</h3>
+			
+			
+		</div>
+		<div class="articlesrc"><span class="htmlcode">&#60;div class="articlesrc"&#62;</span>Adapted from United Nations report on Climate Change November 2011.</div>
+		<br>
+		
+		<div class="parapaper paraextract">
+			<br>
+			<h5>If you want a paper box that's not the full width of the screen, add the <span class="htmlcode">.paraextract</span> class to give it a maximum width rather than doing it with the bootstrap grid.</h5>
+			<br><br>
+		</div>
+		
+		<br><br>
+		
+		<h1>Alignment classes</h1>
+		<p class="text-left">Left aligned text.</p>
+		<p class="text-center">Center aligned text.</p>
+		<p class="text-right">Right aligned text.</p>
+		<p class="text-justify">Justified text. Nulla facilisi. Cras ac semper mauris, id laoreet quam. Donec suscipit convallis rhoncus. Praesent mattis massa eu pellentesque lobortis. Morbi mollis ipsum arcu, nec dictum sapien iaculis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Nulla facilisi.</p>
+		<p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. </p>
+		<code class="htmlcode">
+		&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;<br />
+		&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;<br />
+		&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;<br />
+		&lt;p class="text-justify"&gt;Justified text.&lt;/p&gt;<br />
+		&lt;p class="text-nowrap"&gt;No wrap text.&lt;/p&gt;
+		</code>
+
+	</div>
+
+</section>
+</template>

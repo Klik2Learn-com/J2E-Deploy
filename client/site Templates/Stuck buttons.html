@@ -1,0 +1,21 @@
+<template name="stuck">
+	<div id={{stuckId}} class="stuck hidden">
+		<div class="stuck-enter animated slideInLeft2">
+			<div class="stuck-button animated bounce-left shadow">
+				<div class="stuck_{{stuckchar}}"></div>
+				<span>Stuck? {{>touch yes="Tap" no="Click"}} to see the answer</span>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="stuck_custom">
+	<div id={{stuckId}} class="stuck hidden">
+		<div class="stuck-enter animated slideInLeft2">
+			<div class="stuck-button animated bounce-left shadow">
+				<div class="stuck_{{stuckchar}}"></div>
+				<span>{{stucktext}}</span>
+			</div>
+		</div>
+	</div>
+</template>

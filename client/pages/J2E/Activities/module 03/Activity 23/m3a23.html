@@ -1,0 +1,441 @@
+<template name="m3a23">
+<article class="with-tools-sidebar m3a23">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/NorthBerwick');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 23 - {{>m3a23Title}}</div>
+		</header>
+		
+		
+		<section id="m3a23">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a23Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m3a23Intro}}</h3>
+{{> m3a23Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a23_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a23_1}}
+		{{>m3a23_2}}
+		{{>m3a23_3}}
+		{{>m3a23_4}}
+
+		{{>EndPage char="tu" act="m3a23" nextact="m3a24" place="NorthBerwick"}}
+
+		
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="m3a23-map" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="content">
+
+					<div class="ph-w" style="max-width:934px;"><div class="ph" style="padding-top: 101.73%;"><img draggable="false" src="/images/module3/a23/perth-map.png" alt="Map of Perth"></div></div>
+					
+					
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m3a23_1">
+	<section id="m3a23_1" class="hidden">
+		<div class="content">
+			<h1>A Day in Perth</h1>
+			<h2>This map shows the city of Perth - Scotland’s ancient capital - and marks the attractions and facilities that residents and visitors can enjoy.</h2>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="ph-w" style="max-width:934px;"><div class="ph" style="padding-top: 101.73%;"><img draggable="false" src="/images/module3/a23/perth-map.png" alt="Map of Perth"></div></div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="snapshots">
+							<figure>
+								<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a23/museum.jpg" alt="Museum"></div></div>
+								<figcaption>Perth Museum</figcaption>
+							</figure>
+							<figure>
+								<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a23/bridge.jpg" alt="Bridge"></div></div>
+								<figcaption>Queens Bridge</figcaption>
+							</figure>
+							<figure>
+								<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a23/golf.jpg" alt="Golf course"></div></div>
+								<figcaption>North Inch Golf Course</figcaption>
+							</figure>
+							<figure>
+								<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a23/concert.jpg" alt="Concert hall"></div></div>
+								<figcaption>Perth Concert Hall</figcaption>
+							</figure>
+							<figure>
+								<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a23/market.jpg" alt="Farmer's market"></div></div>
+								<figcaption>Farmers' Market</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a23" nexturl="#m3a23_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a23_2">
+	<section id="m3a23_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>A Day in Perth</h1>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the name of a place to hear some information about it.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 text-center">
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/leisure-pool.m4a">Leisure pool</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/ice-rink.m4a">Ice rink</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/public-library.m4a">Public library</button>	
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/golf-course.m4a">Golf course</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/public-parks.m4a">Public parks</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/putting-green.m4a">Putting green</button>		
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/skatepark.m4a">Skatepark</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/tennis-courts.m4a">Tennis courts</button>	
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/riverside-walks.m4a">Riverside walks</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/museum-art-gallery.m4a">Museum/Art gallery</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/theatre.m4a">Theatre</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/concert-hall.m4a">Concert hall</button>
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space ddwidth14" data-audiosrc="/audio/module3/a23/farmers-market.m4a">Farmers’ market</button>
+					</div>
+					<div class="col-sm-8">
+						<div class="ph-w" style="max-width:934px;"><div class="ph" style="padding-top: 101.73%;"><img draggable="false" src="/images/module3/a23/perth-map.png" alt="Map of Perth"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a23_1" nexturl="#m3a23_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a23_3">
+	<section id="m3a23_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content" style="overflow: initial;">
+			<h1>A Day in Perth</h1>
+			
+			<div style="max-width: 600px; margin: 0 auto;">
+				<div style="float: right; margin-left: 20px; margin-bottom: 20px;">
+					<div class="dropdown">
+					  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Places in Perth<span class="caret-fa"></span></button>
+						<ul class="dropdown-menu">
+							<li><a draggable="false" href="#" class="m3a23-link" id="0">Leisure pool</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="1">Ice rink</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="2">Public library</a></li>	
+							<li><a draggable="false" href="#" class="m3a23-link" id="3">Golf course</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="4">Public parks</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="5">Putting green</a></li>		
+							<li><a draggable="false" href="#" class="m3a23-link" id="6">Skatepark</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="7">Tennis courts</a></li>	
+							<li><a draggable="false" href="#" class="m3a23-link" id="8">Riverside walks</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="9">Museum/Art gallery</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="10">Theatre</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="11">Concert hall</a></li>
+							<li><a draggable="false" href="#" class="m3a23-link" id="12">Farmers’ market</a></li>
+						</ul>
+					</div>
+				</div>
+				<h3 class="center">Now select a place to <span class="avoidwrap">find out more:</span></h3>
+				
+				<div class="parapaper">
+					<div id="m3a23textDisplay">
+						<h4>Leisure Pool</h4>
+						<p>Perth Leisure Pool is one of Scotland’s top aquatic attractions. Opened in 1988, it caters for all ages with flumes, fun features and an outdoor lagoon.</p>
+						<p>The under fives go free and have their own pool with slides and fountains.</p> 
+						<p>More serious swimmers can use the training pool. There’s also a sauna, steam room and gym facilities.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a23_2" nexturl="#m3a23_4" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a23_4">
+	<section id="m3a23_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center"><span class="avoidwrap">Are these statements True or False?</span> <span class="avoidwrap">Listen or look at the map to find the answers.</span></h3>
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}} {{>welldone}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/leisure-pool.m4a"></button>
+						<div class="number">1</div></div> 
+						<div class="iconright">The Leisure pool is free for children under five.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/ice-rink.m4a"></button>
+						<div class="number">2</div></div>
+						<div class="iconright">The ice rink was built by a famous local whisky family.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/public-library.m4a"></button>
+						<div class="number">3</div></div> 
+						<div class="iconright">Visitors are welcome in the Perth library.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/golf-course.m4a"></button>
+						<div class="number">4</div></div> 
+						<div class="iconright">Perth was the capital of Scotland in the 14th century.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="4" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/public-parks.m4a"></button>
+						<div class="number">5</div></div> 
+						<div class="iconright">Perth regularly wins the ‘Britain in Bloom’ competition.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="5" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/golf-course.m4a"></button>
+						<div class="number">6</div></div> 
+						<div class="iconright">The North Inch park has a crazy golf course.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="6" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/skatepark.m4a"></button>
+						<div class="number">7</div></div> 
+						<div class="iconright">The skatepark was built two years ago.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="7" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/tennis-courts.m4a"></button>
+						<div class="number">8</div></div> 
+						<div class="iconright">Perth Tennis Club has four grass courts.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="8" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/riverside-walks.m4a"></button>
+						<div class="number">9</div></div> 
+						<div class="iconright">The River Tay has a larger volume of flow than any other British river.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="9" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/museum-art-gallery.m4a"></button>
+						<div class="number">10</div></div> 
+						<div class="iconright">Perth Art Gallery is one of the oldest in Scotland.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="10" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/theatre.m4a"></button>
+						<div class="number">11</div></div> 
+						<div class="iconright">Perth theatre is in the middle of the High Street.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="11" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/concert-hall.m4a"></button>
+						<div class="number">12</div></div> 
+						<div class="iconright">The Concert Hall in Perth is over 100 years old.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="12" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/farmers-market.m4a"></button>
+						<div class="number">13</div></div> 
+						<div class="iconright">The Farmers’ market is held on the last Saturday of every month.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="13" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround" style="margin-right: 0.5em;" data-toggle="modal" data-target="#m3a23-map"><i class="fa fa-map"></i></button>
+						<div class="number">14</div></div> 
+						<div class="iconright">The bus station and railway station are at opposite ends of the city.</div>	
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="14" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround" style="margin-right: 0.5em;" data-toggle="modal" data-target="#m3a23-map"><i class="fa fa-map"></i></button>
+						<div class="number">15</div></div> 
+						<div class="iconright">The Leisure Pool is close to the North Inch park.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="15" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround" style="margin-right: 0.5em;" data-toggle="modal" data-target="#m3a23-map"><i class="fa fa-map"></i></button>
+						<div class="number">16</div></div> 
+						<div class="iconright">The Concert Hall is a short distance from the  Museum and Art Gallery.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="16" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround" style="margin-right: 0.5em;" data-toggle="modal" data-target="#m3a23-map"><i class="fa fa-map"></i></button>
+						<div class="number">17</div></div> 
+						<div class="iconright">If you walk along by the river, you’ll pass the Courthouse.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="17" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround" style="margin-right: 0.5em;" data-toggle="modal" data-target="#m3a23-map"><i class="fa fa-map"></i></button>
+						<div class="number">18</div></div> 
+						<div class="iconright">If you walk up King Street from the South Inch and take the first left you’ll find the Library.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="18" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround" style="margin-right: 0.5em;" data-toggle="modal" data-target="#m3a23-map"><i class="fa fa-map"></i></button>
+						<div class="number">19</div></div> 
+						<div class="iconright">The main road that crosses the river is beside the swimming pool.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="19" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround" style="margin-right: 0.5em;" data-toggle="modal" data-target="#m3a23-map"><i class="fa fa-map"></i></button>
+						<div class="number">20</div></div> 
+						<div class="iconright">Traffic is allowed outside the Theatre in the High Street.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a23_3" nexturl="#m3a23_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

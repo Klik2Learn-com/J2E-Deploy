@@ -1,0 +1,34 @@
+<template name="wordClick">
+<section id="wordClick" class="hidden">
+<div class="content">
+			<header id="header" class="">
+				<h2 id = "intro">There are 8 <span class = "red_highlight">ADJECTIVEs</span> in this paragraph. Click on a word if you think it is an <span class = "red_highlight">ADJECTIVE</span></h2>
+				<img draggable="false" src="../well_done.png" alt="Well done!" class = "center disabled" id = "well_done">
+			</header><!-- /header -->
+			
+				<h3>Sleep</h3>
+				<p>Studies have shown that not getting enough sleep is associated with <span class = "adjective">high blood</span> pressure, <span class = "adjective">weight</span> gain, <span class = "adjective">lowered</span> immunity and depression. In 2013, more people will associate sleep with health. 76% of individuals in the U.S.A. would like to enhance the quality and quantity of sleep they get. In addition, the <span class = "adjective">National Sleep</span> Foundation says that two-thirds of women have <span class = "adjective">regular sleep</span> problems. According to the <span class = "adjective">World</span> Association of <span class = "adjective">Sleep</span> Medicine, 45% of people in the world suffer from <span class = "adjective">sleep</span> deprivation.</p> 
+
+  			<span class = "red_highlight">ADJECTIVEs</span> to find <span id = "adjective_count" class = "heavy black">8</span>
+				
+			<div class="center">
+				<a draggable="false" href="">
+					<div class="stuck disabled shadow"><div class="stuck_elle"></div>Stuck? Click to see the answer</div>
+				</a>
+			</div>
+			
+		<footer>
+				<nav class="navfooter">
+					<ul>
+						<li style="float: right;">
+						<!-- Set to second page of activity -->
+							<a draggable="false" href="#wordClick2" title="next" rel="next" class="disabled next">
+								{{> next}}
+							</a>
+						</li>
+					</ul>
+				</nav>
+		</footer>
+			</div>
+		</section>
+</template>

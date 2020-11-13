@@ -1,0 +1,76 @@
+<template name="footer_nav">
+<nav class="navfooter {{class}}">
+    <ul>
+      <li class="first" style="float: left;">
+        <a draggable="false" href="{{prevurl}}" title="previous" rel="prev" class="pagination previous {{prev}}" id="{{prevID}}">
+          <i class="fa fa-chevron-circle-left"></i>
+		  <span>{{prev_text}}</span>
+        </a>
+      </li>
+      <li style="float: right;">
+        <a draggable="false" href="{{nexturl}}" title="next" rel="next" class="pagination next {{next}}" id="{{nextID}}">
+          <span>{{next_text}}</span>
+		  <i class="fa fa-chevron-circle-right"></i>
+        </a>
+      </li>
+    </ul>
+</nav>
+</template>
+
+<template name="return">
+	<nav class="navfooter">
+		<a draggable="false" href="{{returnurl}}" class="pagination">
+			<i class="fa fa-reply" style="vertical-align: middle;"></i><span class="return-span">back</span>
+		</a>
+	</nav>
+</template>
+
+<template name="footer_nav2">
+  <nav class="navfooter">
+    <ul class="pager">
+      <li class="previous" style="float: left;">
+        <a draggable="false" href="{{prevurl}}" title="previous" rel="prev" class="pagination {{prev}}" id="{{prevID}}">
+          <i class="fa fa-chevron-circle-left"></i>
+        </a>
+      </li>
+      <li class="next">
+        <a draggable="false" href="{{nexturl}}" title="next" rel="next" class="pagination {{next}}" id="{{nextID}}">
+          <i class="fa fa-chevron-circle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<template name="game_footer_nav">
+<footer class="navfootergame">
+  <nav class="navfooter">
+    <ul>
+      <li class="first" style="float: left;">
+        <a draggable="false" href="{{prevurl}}" title="previous" rel="prev" class="pagination {{prev}}" id="{{prevID}}">
+          <i class="fa fa-chevron-circle-left"></i>
+        </a>
+      </li>
+      <li style="float: right;">
+        <a draggable="false" href="{{nexturl}}" title="next" rel="next" class="pagination {{next}}" id="{{nextID}}">
+          <i class="fa fa-chevron-circle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+</template>
+
+<!-- Footer-Nav for loading the next section in the document tree -->
+<template name="next_section_nav">
+  <nav class="Yeti_ans_navfooter">
+	<ul>
+	  <li id="prev_section" class="first" style="float: left;">
+		  <i class="fa fa-chevron-circle-left"></i>
+	  </li>
+	  <li id="next_section" style="float: right;">
+		  <i class="fa fa-chevron-circle-right"></i>
+	  </li>
+	</ul>
+  </nav>
+</template>

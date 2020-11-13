@@ -1,0 +1,27 @@
+<template name="m1Game_intro">
+
+	<section id="m1Game_intro" class="game-section hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<h1>Introduction</h1>
+					<div class="videoplayer">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video class="embed-responsive-item" id="m1game-intro"  controls poster="/video/games/m1intro.jpg">
+								<source src="/video/games/m1intro.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_map" prev="hidden" next="" next_text="Skip intro"}}
+		</footer>
+	{{/if}}
+	</section>
+
+</template>

@@ -1,0 +1,227 @@
+<template name="m5a6">
+<article class="with-tools-sidebar m5a6">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Blackpool');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 6 - {{>m5a6Title}}</div>
+		</header>
+		
+		
+		<section id="m5a6">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a6Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m5a6Intro}}</h3>
+{{> m5a6Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a6_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a6_1}}
+		{{>m5a6_2}}
+		{{>m5a6_3}}
+		{{>m5a6_4}}
+		{{>m5a6_5}}
+		{{>m5a6_6}}
+
+		{{>EndPage char="tu" act="m5a6" nextact="m5a7" place="Blackpool"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m5a6_1">
+	<section id="m5a6_1" class="hidden">
+		<div class="content">
+			<h1>Storms Sweep Across Italy</h1>
+			<h3>Read this article about a flood in Venice. There are 7 examples of the Past Simple Tense in this short article.</h3>
+			<div class="ph-w ph-3x2 shadow" style="max-width: 331px"><div class="ph"><img draggable="false" src="images/module5/flooded-venice.jpg" alt="Storm in Venice"></div></div>
+			<br>
+			<h3 class="text-center">Continue to read the article</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a6" nexturl="#m5a6_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a6_2">
+	<section id="m5a6_2" class="hidden">
+		<div class="content">
+			<h1>Storms Sweep Across Italy</h1>
+			{{> dictionary_page
+				word1="lagoon"
+				word2="bizarre"
+				word3="spectacle"
+				word4c="hidden"
+				word5c="hidden"
+				word6c="hidden"
+				word7="massive"
+				word8="wade"
+				word9="foundation"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a6_1" nexturl="#m5a6_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a6_3">
+	<section id="m5a6_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Storms Sweep Across Italy</h1>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the verbs in the <b>Past Simple Tense</b></h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper paraclick">
+							<div class="container-fluid-no-gutter">
+								<div class="row">
+									<div class="col-xs-5">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a6/1.m4a"></button>
+									</div>
+									<div class="col-xs-7">
+										{{>metametrics level="8" star="no" align="right"}}
+									</div>
+								</div>
+							</div>
+							<p>
+								<span class="wrong">The lagoon city of Venice continues to suffer from high waters which </span><span class="paraclick-word">reached</span><span class="wrong"> five feet above sea level on Sunday after continuous rain </span><span class="paraclick-word">pounded</span><span class="wrong"> many regions of Italy over the weekend. Some 70 percent of the city </span><span class="paraclick-word">was covered</span><span class="wrong"> by the flood waters and </span><span class="paraclick-word">proved</span><span class="wrong"> a bizarre spectacle for tourists on the massive Concordia cruise ship as it </span><span class="paraclick-word">sailed</span><span class="wrong"> past the city on Sunday.</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 331px"><div class="ph"><img draggable="false" src="images/module5/flooded-venice.jpg" alt="Storm in Venice"></div></div>
+						<br class="hidden-xs">
+						<div class="counterleft">Past Simple Tense left to find: <u>5</u></div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a6_2" nexturl="#m5a6_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a6_4">
+	<section id="m5a6_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Storms Sweep Across Italy</h1>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the verbs in the <b>Past Simple Tense</b></h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper paraclick">
+							<div class="container-fluid-no-gutter">
+								<div class="row">
+									<div class="col-xs-5">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a6/2.m4a"></button>
+									</div>
+									<div class="col-xs-7">
+										{{>metametrics level="8" star="no" align="right"}}
+									</div>
+								</div>
+							</div>
+							<p>
+								<span class="wrong">Tourists </span><span class="paraclick-word">waded</span><span class="wrong"> through almost waist-deep water, desperately trying to keep themselves and their belongings dry. Many shops, houses and other buildings </span><span class="paraclick-word">were flooded</span><span class="wrong"> and remain closed. While the canal city is used to the high waters, the flood is putting the foundations under heavy stress. According to Ansa news agency this is one of the worst floods in Venice since 1872.</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 331px"><div class="ph"><img draggable="false" src="images/module5/flooded-venice.jpg" alt="Storm in Venice"></div></div>
+						<br class="hidden-xs">
+						<div class="counterleft">Past Simple Tense left to find: <u>2</u></div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}{{>welldone}} 
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a6_3" nexturl="#m5a6_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a6_5">
+	<section id="m5a6_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+		
+			<h3 class="center">Choose the verb and type the <b>Past Simple Tense</b> in the space.</h3>
+			
+			<div class="parapaper linespace2 fold">
+				The lagoon city of Venice continues to suffer from high waters which <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> five feet above sea level on Sunday after continuous rain <span id="entryanswer1" class="textentry-disabled"></span> many regions of Italy over the weekend. Some 70 percent of the city was <span id="entryanswer2" class="textentry-disabled"></span> by the flood waters and <span id="entryanswer3" class="textentry-disabled"></span> a bizarre spectacle for tourists on the massive Concordia cruise ship as it <span id="entryanswer4" class="textentry-disabled"></span> past the city on Sunday.
+				
+				{{> rightwrong}}
+			</div>
+
+			<div class="box1 block">
+				<span class="word">sail</span>
+				<span class="word">flood</span>
+				<span class="word">pound</span>
+				<span class="word">prove</span>
+				<span class="word">cover</span>
+				<span class="word">wade</span>
+				<span class="word">reach</span>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} 
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a6_6">
+	<section id="m5a6_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+		
+			<h3 class="center">Choose the verb and type the <b>Past Simple Tense</b> in the space.</h3>
+			
+			<div class="parapaper linespace2 fold">
+				Tourists <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> through almost waist-deep water, desperately trying to keep themselves and their belongings dry. Many shops, houses and other buildings were <span id="entryanswer1" class="textentry-disabled"></span> and remain closed. While the canal city is used to the high waters, the flood is putting the foundations under heavy stress. According to Ansa news agency this is one of the worst floods in Venice since 1872.
+				
+				{{> rightwrong}} {{> welldone}}
+			</div>
+
+			<div class="box1 block">
+				<span class="word">sail</span>
+				<span class="word">flood</span>
+				<span class="word">pound</span>
+				<span class="word">prove</span>
+				<span class="word">cover</span>
+				<span class="word">wade</span>
+				<span class="word">reach</span>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+		{{/if}}
+	</section>
+</template>

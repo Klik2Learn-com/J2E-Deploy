@@ -1,0 +1,32 @@
+<template name="m10Game_43">
+
+	<section id="m10Game_43" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m10Game-13">
+						{{#if ghost}}<div class="reveal animated fadeIn"></div>{{/if}}
+					</div>
+					{{#if ghost}}
+						<div class="note-wrapper animated fadeIn">
+							<div class="note-top"></div><div class="note">{{>ghostInfo13}}</div><div class="note-bottom"></div>
+						</div>
+					{{else}}
+						<div class="game-story-text">Hmm. We didn't find any ghosts in here.</div>
+					{{/if}}
+				</div>
+			</div>
+		</div>		
+			<footer>
+				<!-- Both links are the same because m10Game_44 has not been created yet. top link should be replaced with
+				_44 page once it has been created. -->
+			{{#if allGhosts}}
+				{{>footer_nav prevurl="#" nexturl="#m10Game_Score" prev="hidden" next="" next_text="Continue"}}
+			{{else}}
+				{{>footer_nav prevurl="#" nexturl="#m10Game_Score" prev="hidden" next="" next_text="Continue"}}
+			{{/if}}
+			</footer>
+	{{/if}}
+	</section>
+</template>

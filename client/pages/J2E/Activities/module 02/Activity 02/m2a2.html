@@ -1,0 +1,846 @@
+<template name="m2a2">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Braemar');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 2 - {{>m2a2Title}}</div>
+			</header>
+
+
+			<section id="m2a2">
+				<div class="content">
+					<h1 class="start-page-header">{{> m2a2Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m2a2Intro}}</h3>
+					{{> m2a2Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m2a2_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{> m2a2_1}} {{> m2a2_2}} {{> m2a2_3}} {{> m2a2_4}} {{> m2a2_5}} {{> m2a2_6}} {{> m2a2_7}} {{> m2a2_8}} {{> m2a2_9}} {{>
+			m2a2_10}} {{> m2a2_11}} {{> m2a2_12}} {{> m2a2_13}} {{> m2a2_14}} {{> m2a2_15}} {{>EndPage char="tu" act="m2a2" nextact="m2a3"
+			place="Braemar"}}
+
+
+			<!--image preloader-->
+			<div class="hidden">
+				<img draggable="false" src="images/module2/street/small/ebay.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/bakers.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/butcher.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/centre.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/charity.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/chem.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/corner.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/dept.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/diy.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/ebay.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/fashion.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/florist.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/grocers.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/jewel.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/news.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/amazon.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/sky.png" width="1" height="1">
+				<img draggable="false" src="images/module2/street/small/super.png" width="1" height="1">
+			</div>
+
+		</div>
+	</article>
+
+</template>
+<template name="m2a2_1">
+	<section id="m2a2_1" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">1</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/soup.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Soup.jpg" alt="Tin of soup"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">3</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Grocers</div>
+						<div class="correctword hidden">Corner Shop</div>
+						<div class="correctword hidden">Supermarket</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_10">
+	<section id="m2a2_10" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">10</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/jeans.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Jeans.jpg" alt="Pair of jeans"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">7</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Department Store</div>
+						<div class="correctword hidden">Charity Shop</div>
+						<div class="correctword hidden">Fashion Store</div>
+						<div class="correctword hidden">Supermarket</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">eBay</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_11" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_11">
+	<section id="m2a2_11" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">11</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/hammer.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Hammer.jpg" alt="Hammer"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">2</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">DIY Shop</div>
+						<div class="correctword hidden">Amazon</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_12" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_12">
+	<section id="m2a2_12" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">12</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/flowers.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Flowers.jpg" alt="Bouquet of flowers"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">4</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">Supermarket</div>
+						<div class="correctword hidden">Florist</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_13" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_13">
+	<section id="m2a2_13" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">13</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/dvd.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/dvd.jpg" alt="DVD"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">6</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Department Store</div>
+						<div class="correctword hidden">Charity Shop</div>
+						<div class="correctword hidden">Supermarket</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">eBay</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_14" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_14">
+	<section id="m2a2_14" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">14</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/bread.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Bread.jpg" alt="Loaf of bread"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">3</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Bakers</div>
+						<div class="correctword hidden">Corner Shop</div>
+						<div class="correctword hidden">Supermarket</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_15" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_15">
+	<section id="m2a2_15" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">15</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/banana.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Banana.jpg" alt="Bananas"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">2</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Grocers</div>
+						<div class="correctword hidden">Supermarket</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_2">
+	<section id="m2a2_2" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">2</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/tv magazine.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Magazine2.jpg" alt="TV magazine"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">4</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Newsagents</div>
+						<div class="correctword hidden">Corner Shop</div>
+						<div class="correctword hidden">Supermarket</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_3">
+	<section id="m2a2_3" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">3</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/beef.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Beef.jpg" alt="Joint of beef"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">2</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Butcher</div>
+						<div class="correctword hidden">Supermarket</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_4">
+	<section id="m2a2_4" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">4</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/handbag.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Handbag.jpg" alt="Handbag"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">6</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Department Store</div>
+						<div class="correctword hidden">Charity Shop</div>
+						<div class="correctword hidden">Fashion Store</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">eBay</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_5">
+	<section id="m2a2_5" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">5</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/painkill.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Painkillers.jpg" alt="Packet of painkillers"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">4</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Corner Shop</div>
+						<div class="correctword hidden">Chemist</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<div class="correctword hidden">Supermarket</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_6">
+	<section id="m2a2_6" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">6</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/watch.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Watch.jpg" alt="Watch"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">6</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Department Store</div>
+						<div class="correctword hidden">Jewellers</div>
+						<div class="correctword hidden">Fashion Store</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">eBay</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_7">
+	<section id="m2a2_7" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">7</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/toothbrush.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Toothbrush.jpg" alt="Toothbrush"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">4</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Chemist</div>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">Supermarket</div>
+						<div class="correctword hidden">Department Store</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_8">
+	<section id="m2a2_8" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">8</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/plates.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Plate.jpg" alt="Six dinner plates"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">7</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Department Store</div>
+						<div class="correctword hidden">Charity Shop</div>
+						<div class="correctword hidden">DIY Shop</div>
+						<div class="correctword hidden">Supermarket</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">eBay</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2_9">
+	<section id="m2a2_9" class="hidden m2a2">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>{{>touch yes="Tap" no="Click"}} to hear the items that K, Tu and Elle want to buy, then select the stores where they can
+				buy the item.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{> welldone}}
+					<div class="col-md-3 col-sm-4 text-center">
+						<div class="text-left">
+							<div class="number">9</div>
+						</div>
+						<span class="avoid-wrap" style="vertical-align: middle;">
+							<button class="buttonround buttonroundbig buttonaudio m2a2item" data-audiosrc="/audio/module2/a2/lamp.m4a"></button>
+							<div class="m2a2item"><div class="ph-w ph-5x4" style="max-width: 192px"><div class="ph"><img draggable="false" src="images/module2/Lamp.jpg" alt="Table lamp"></div></div></div>
+						</span>
+						<div class="counterleft">Shops to find:
+							<u id="startClock1">6</u>
+						</div>
+						<br>
+						<br>
+						<div class="correctword hidden">Department Store</div>
+						<div class="correctword hidden">DIY Shop</div>
+						<div class="correctword hidden">Supermarket</div>
+						<div class="correctword hidden">Shopping Centre</div>
+						<div class="correctword hidden">Amazon</div>
+						<div class="correctword hidden">eBay</div>
+						<br>
+						<br>
+					</div>
+					<div class="col-md-9 col-sm-8">
+
+						{{>m2a2Shops}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="hidden-xxs">
+			{{>footer_nav prevurl="#m2a2_1" nexturl="#m2a2_10" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck_custom stuckchar="tu" stucktext="Stuck?"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a2Shops">
+	<!-- shops at 80% scale -->
+	<div class="m2a2_street shadow">
+		<div class="m2a2_shop-online">
+			<a draggable="false" href="#" class="storeImage" id="Amazon">
+				<img draggable="false" src="images/module2/street/small/amazon.png" style="margin-bottom: -24px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Online.m4a" alt="Amazon">
+				<img draggable="false" src="images/module2/street/small/amazon.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Online.m4a" alt="Amazon">
+			</a>
+			<span class="hidden-xs">
+				<br>
+			</span>
+			<a draggable="false" href="#" class="storeImage" id="eBay">
+				<img draggable="false" src="images/module2/street/small/ebay.png" class="hidden-xs" data-audiosrc="audio/module2/a1/Ebay.m4a" alt="eBay">
+				<img draggable="false" src="images/module2/street/small/ebay.png" class="visible-xs-inline" data-audiosrc="audio/module2/a1/Ebay.m4a" alt="eBay">
+			</a>
+		</div>
+		<span class="m2a2_avoidwrap">
+			<div class="m2a2_shop-top">
+				<a draggable="false" href="#" class="storeImage" id="Shopping Centre">
+					<img draggable="false" src="images/module2/street/small/centre.png" class="hidden-xs" data-audiosrc="/audio/module2/a1/Centre.m4a" alt="Shopping centre">
+					<img draggable="false" src="images/module2/street/small/centre.png" class="visible-xs-inline" style="margin-right: -20px;"
+					 data-audiosrc="/audio/module2/a1/Centre.m4a" alt="Shopping centre">
+				</a>
+			</div>
+			<div class="m2a2_shop-top">
+				<a draggable="false" href="#" class="storeImage" id="Supermarket">
+					<img draggable="false" src="images/module2/street/small/super.png" style="margin-right: -56px; margin-bottom: -40px;" class="hidden-xs"
+					 data-audiosrc="/audio/module2/a1/Supermarket.m4a" alt="Supermarket">
+					<img draggable="false" src="images/module2/street/small/super.png" style="margin-right: -30px;" class="visible-xs-inline"
+					 data-audiosrc="/audio/module2/a1/Supermarket.m4a" alt="Supermarket">
+				</a>
+			</div>
+		</span>
+		<br>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Butcher">
+				<img draggable="false" src="images/module2/street/small/butcher.png" style="margin-right: -35px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Butcher.m4a" alt="Butcher">
+				<img draggable="false" src="images/module2/street/small/butcher.png" style="margin-right: -7px;" class="visible-xs-inline"
+				 data-audiosrc="/audio/module2/a1/Butcher.m4a" alt="Butcher">
+			</a>
+		</div>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Florist">
+				<img draggable="false" src="images/module2/street/small/florist.png" style="margin-right: -28px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Florist.m4a" alt="Florist">
+				<img draggable="false" src="images/module2/street/small/florist.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Florist.m4a" alt="Florist">
+			</a>
+		</div>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Bakers">
+				<img draggable="false" src="images/module2/street/small/bakers.png" style="margin-right: -26px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Bakers.m4a" alt="Bakers">
+				<img draggable="false" src="images/module2/street/small/bakers.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Bakers.m4a" alt="Bakers">
+			</a>
+		</div>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Grocers">
+				<img draggable="false" src="images/module2/street/small/grocers.png" style="margin-right: -20px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Grocers.m4a" alt="Grocers">
+				<img draggable="false" src="images/module2/street/small/grocers.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Grocers.m4a" alt="Grocers">
+			</a>
+		</div>
+		<div class="m2a2_shop m2a2_avoidwrap">
+			<a draggable="false" href="#" class="storeImage" id="Newsagents">
+				<img draggable="false" src="images/module2/street/small/news.png" style="margin-right: -28px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Newsagents.m4a" alt="Newsagents">
+				<img draggable="false" src="images/module2/street/small/news.png" style="margin-right: -23px" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Newsagents.m4a" alt="Newsagents">
+			</a>
+			<a draggable="false" href="#" class="storeImage" id="Corner Shop">
+				<img draggable="false" src="images/module2/street/small/corner.png" style="margin-right: 16px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Corner.m4a" alt="Corner shop">
+				<img draggable="false" src="images/module2/street/small/corner.png" style="margin-right: 10px" class="visible-xs-inline"
+				 data-audiosrc="/audio/module2/a1/Corner.m4a" alt="Corner shop">
+			</a>
+		</div>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Chemist">
+				<img draggable="false" src="images/module2/street/small/chem.png" style="margin-right: -26px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Chemist.m4a" alt="Chemist">
+				<img draggable="false" src="images/module2/street/small/chem.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Chemist.m4a" alt="Chemist">
+			</a>
+		</div>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Jewellers">
+				<img draggable="false" src="images/module2/street/small/jewel.png" style="margin-right: -20px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Jewellery.m4a" alt="Jewellers">
+				<img draggable="false" src="images/module2/street/small/jewel.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Jewellery.m4a" alt="Jewellers">
+			</a>
+		</div>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Fashion Store">
+				<img draggable="false" src="images/module2/street/small/fashion.png" style="margin-right: -30px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Fashion.m4a" alt="Fashion store">
+				<img draggable="false" src="images/module2/street/small/fashion.png" style="margin-right: -26px;" class="visible-xs-inline"
+				 data-audiosrc="/audio/module2/a1/Fashion.m4a" alt="Fashion store">
+			</a>
+			<a draggable="false" href="#" class="storeImage" id="DIY Shop">
+				<img draggable="false" src="images/module2/street/small/diy.png" style="margin-right: -21px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Diy.m4a" alt="DIY shop">
+				<img draggable="false" src="images/module2/street/small/diy.png" style="margin-right: -18px;" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Diy.m4a" alt="DIY shop">
+			</a>
+			<a draggable="false" href="#" class="storeImage" id="Charity Shop">
+				<img draggable="false" src="images/module2/street/small/charity.png" style="margin-right: -20px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Charity.m4a" alt="Charity shop">
+				<img draggable="false" src="images/module2/street/small/charity.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Charity.m4a" alt="Charity shop">
+			</a>
+		</div>
+		<div class="m2a2_shop">
+			<a draggable="false" href="#" class="storeImage" id="Department Store">
+				<img draggable="false" src="images/module2/street/small/dept.png" style="margin-right: -56px;" class="hidden-xs" data-audiosrc="/audio/module2/a1/Department.m4a" alt="Department store">
+				<img draggable="false" src="images/module2/street/small/dept.png" style="" class="visible-xs-inline" data-audiosrc="/audio/module2/a1/Department.m4a" alt="Department store">
+			</a>
+		</div>
+	</div>
+</template>

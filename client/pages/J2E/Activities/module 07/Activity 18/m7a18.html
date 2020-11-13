@@ -1,0 +1,316 @@
+<template name="m7a18">
+	<article class="with-tools-sidebar m7a18">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/ColwynBay');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 18 - {{>m7a18Title}}</div>
+			</header>
+			<section id="m7a18">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a18Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m7a18Intro}}</h3>
+					{{> m7a18Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a18_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a18_1}} {{>m7a18_2}} {{>m7a18_3}} {{>m7a18_4}} {{>m7a18_5}} {{>m7a18_6}} {{>EndPage char="elle" act="m7a18" nextact="m7a19"
+			place="ColwynBay"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a18_1">
+	<section id="m7a18_1" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row center">
+					<div class="col-sm-6">
+						<h4>The Past Perfect goes further back in time. It tells you what happened...</h4>
+						<div class="ph-w ph-5x4 border2" style="max-width: 238px">
+							<div class="ph">
+								<img draggable="false" src="images/module7/a18/mandarin.png" alt="Aeroplane">
+							</div>
+						</div>
+						<br>
+						<div class="caption">"She
+							<u>had</u>
+							<u>studied</u> Mandarin for five years..."</div>
+					</div>
+					<div class="col-sm-6">
+						<br>
+						<h4>...before an event in the past.</h4>
+						<div class="ph-w ph-5x4 border2" style="max-width: 238px">
+							<div class="ph">
+								<img draggable="false" src="images/module7/a18/china.png" alt="Woman reading book">
+							</div>
+						</div>
+						<br>
+						<div class="caption">"...before she
+							<u>went</u> to China."</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about the Past Perfect tense in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a18" nexturl="#m7a18_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m7a18_2">
+	<section id="m7a18_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Seamus Heaney</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 ">
+						<h3>Listen to this short article about Seamus Heaney, the famous Irish poet who won the Nobel Prize for Literature.</h3>
+						<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module7/a18/complete_article.m4a"></button>
+						<br>
+					</div>
+					<div class="col-sm-4 ">
+						<div class="ph-w ph-3x4 border1" style="max-width: 260px">
+							<div class="ph">
+								<img draggable="false" src="images/module7/a18/Seamus Heaney.jpg" alt="Seamus Heaney">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a18_1" nexturl="#m7a18_3" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a18_3">
+	<section id="m7a18_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Seamus Heaney</h1>
+			<h3 class="center">Now decide the order these events happened in. Drag the first event to box 1, the second to box 2 and so on.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold text-center">
+							{{> rightwrong}}
+							<ol class="olcircle inline-block text-left">
+								<li>
+									<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target2">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target3">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div id="pasttext" class="col-md-4 col-sm-3 hidden">
+						<div class="parapaper fold">
+							<h4>Look for the Past Perfect tense in the article.</h4>
+							Seamus Heaney was born in 1939 in his family’s farmhouse, Mossbawn, a few miles from Lough Neagh in Northern Ireland. His
+							family
+							<span class="grammar">had lived</span> there for generations. All he ever wanted to do is go back.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a18/pt1.m4a"></button>
+				<h5>{{>touch yes="Tap" no="Click"}} to listen to the article</h5>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth12 dd2lines">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target2">Heaney was born in 1939</div>
+					</div>
+					<div class="ddseat ddwidth12 dd2lines">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target3">He wanted to go back</div>
+					</div>
+					<div class="ddseat ddwidth12 dd2lines">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target1">Heaney's family lived in Mossbawn</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a18_2" nexturl="#m7a18_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a18_4">
+	<section id="m7a18_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Seamus Heaney</h1>
+			<h3 class="center">Now decide the order these events happened in. Drag the first event to box 1, the second to box 2 and so on.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold text-center">
+							{{> rightwrong}}
+							<ol class="olcircle inline-block text-left">
+								<li>
+									<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target2">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div id="pasttext" class="col-md-4 col-sm-3 hidden">
+						<div class="parapaper fold">
+							<h4>Look for the Past Perfect tense in the article.</h4>
+							The Irish Troubles
+							<span class="grammar">had begun</span> before the publication of his second book.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a18/pt2.m4a"></button>
+				<h5>{{>touch yes="Tap" no="Click"}} to listen to the article</h5>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth12 dd2lines">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target2">He published his second book</div>
+					</div>
+					<div class="ddseat ddwidth12 dd2lines">
+						<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target1">The Irish Troubles began</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a18_3" nexturl="#m7a18_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a18_5">
+	<section id="m7a18_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Seamus Heaney</h1>
+			<h3 class="center">Now decide the order these events happened in. Drag the first event to box 1, the second to box 2 and so on.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold text-center">
+							{{> rightwrong}}{{>welldone}}
+							<ol class="olcircle inline-block text-left">
+								<li>
+									<div class="ddseatedtarget ddwidth13 dd3lines" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth13 dd3lines" data-destinationid="target2">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth13 dd3lines" data-destinationid="target3">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div id="pasttext" class="col-md-4 col-sm-3 hidden">
+						<div class="parapaper fold">
+							<h4>Look for the Past Perfect tense in the article.</h4>
+							He behaved with great kindness. He once met a woman in the U.S. - she was not academic - who was writing an article about
+							him. And yet she said that Seamus Heaney
+							<span class="grammar">had met</span> her frequently to talk about her work.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a18/pt3.m4a"></button>
+				<h5>{{>touch yes="Tap" no="Click"}} to listen to the article</h5>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth13 dd3lines">
+						<div class="ddsourceseated ddwidth13 dd3lines shadow" draggable="false" data-destination="target1">Heaney met an American woman</div>
+					</div>
+					<div class="ddseat ddwidth13 dd3lines">
+						<div class="ddsourceseated ddwidth13 dd3lines shadow" draggable="false" data-destination="target3">The woman told her friends how kind Heaney was to her</div>
+					</div>
+					<div class="ddseat ddwidth13 dd3lines">
+						<div class="ddsourceseated ddwidth13 dd3lines shadow" draggable="false" data-destination="target2">Heaney often talked to the American woman about her work</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a18_4" nexturl="#m7a18_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a18_6">
+	<section id="m7a18_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Seamus Heaney</h1>
+			<h3>Now you can read the article. The Past Perfect tense is highlighted in
+				<span class="grammar">blue</span>.</h3>
+			<div class="parapaper article-text">
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-3x4 shadow" style="width: 230px">
+						<div class="ph">
+							<img draggable="false" src="images/module7/a18/Seamus Heaney.jpg" alt="Seamus Heaney">
+						</div>
+					</div>
+				</figure>
+
+				<p>Seamus Heaney was born in 1939 in his family’s farmhouse, Mossbawn, a few miles from Lough Neagh in Northern Ireland.
+					His family
+					<span class="grammar">had lived</span> there for generations. It was a rural landscape. In an interview in 2009, his wife Marie said, “It’s
+					his paradise. All he ever wanted to do is go back.”</p>
+
+				<p>The Irish Troubles
+					<span class="grammar">had begun</span> before the publication of his second book. Conflict, hatred and violence came to the small town. They
+					would remain there for almost thirty years.</p>
+
+				<p>He behaved with great kindness to the outsider, the shy reader. He once met a woman in the U.S. - she was not academic
+					- who was writing an article about him. And yet she said that Seamus Heaney
+					<span class="grammar">had met</span> her frequently to talk about her work. She told everyone how much that meant to her. There are countless
+					stories like this.</p>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a18_5" nexturl="#m7a18_end" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

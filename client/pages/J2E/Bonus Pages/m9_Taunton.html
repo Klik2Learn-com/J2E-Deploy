@@ -1,0 +1,148 @@
+<template name="MoreAboutTaunton">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Taunton"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m9l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m9l2}}</div>
+		</header>
+
+		<section id="moreaboutTaunton">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Taunton/Taunton1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l2_A">
+						<p>St Mary Magdalene</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Taunton/Taunton2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l2_B">
+						<p>The Castle Hotel</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Taunton/Taunton3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l2_C">
+						<p>Somerset Cricket Museum</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Taunton/Taunton4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l2_D">
+						<p>Vivary Park</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Taunton/Taunton5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l2_E">
+						<p>Racecourse</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l2_A">St Mary Magdalene</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Taunton/Taunton1.jpg" alt="St Mary Magdalene" style="max-width: 250px;">
+					</figure>
+					<p>St Mary’s has been the town church in Taunton since the early 14th century. The tower was added in the 15th century and is one of the tallest in the area at over 50 metres high. The tower has a clock and 12 bells. Over the years, the weather has damaged the sandstone and the stonework has to be repaired from time to time.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.stmarymagdalenetaunton.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l2_B">The Castle Hotel</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Taunton/Taunton2.jpg" alt="The Castle Hotel" style="max-width: 250px;">
+					</figure>
+					<p>If you want to experience what it’s like to stay in an English castle, then the Castle Hotel in Taunton can offer you a room in a building that has been welcoming visitors since the 12th century. The castle is one of Taunton’s most famous landmarks and is now a luxury hotel with world class chefs.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.the-castle-hotel.com/about-the-castle/history/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l2_C">Somerset Cricket Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Taunton/Taunton3.jpg" alt="Somerset Cricket Museum" style="max-width: 250px;">
+					</figure>
+					<p>This small museum is said to be one of the best cricket museums in England. It has displays about the history of the game as well as the local Somerset Cricket Club. The building itself is interesting. It is the last remaining part of Taunton Abbey and is over 500 years old.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.indv.dreamhosters.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l2_D">Vivary Park</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Taunton/Taunton4.jpg" alt="Vivary Park" style="max-width: 250px;">
+					</figure>
+					<p>Near the centre of Taunton, Vivary Park provides a large open space for people to enjoy. It has a river, a lake and a wide range of activities for all ages. Children will enjoy the adventure playground and model railway and sports fans have an 18 hole golf course and tennis courts. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.tauntondeane.gov.uk/irj/public/services/directory/location?rid=/wpccontent/Sites/TDBC/Web+Pages/Services/Locations/Vivary+Park+Location+Profile" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l2_E">Racecourse</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Taunton/Taunton5.jpg" alt="Racecourse" style="max-width: 250px;">
+					</figure>
+					<p>Horse racing has been taking place in the area for over 200 years but Taunton is one of England’s newest racecourses. It is just over a mile long and holds around 15 jump races a year. When there are no races, the racecourse is used for concerts, conferences and special events.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.tauntonracecourse.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

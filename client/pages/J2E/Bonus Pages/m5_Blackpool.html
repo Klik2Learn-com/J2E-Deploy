@@ -1,0 +1,148 @@
+<template name="MoreAboutBlackpool">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Blackpool"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m5l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m5l2}}</div>
+		</header>
+
+		<section id="moreaboutBlackpool">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent ">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-6 bonus-image" style="background-image: url('images/bonus/Blackpool/Blackpool1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l2_A">
+						<p>Pleasure Beach</p>
+					</div>
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Blackpool/Blackpool2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l2_B">
+						<p>Blackpool Tower</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Blackpool/Blackpool3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l2_C">
+						<p>Illuminations</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Blackpool/Blackpool4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l2_D">
+						<p>The Grand Theatre</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Blackpool/Blackpool5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l2_E">
+						<p>Blackpool Zoo</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l2_A">Pleasure Beach</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Blackpool/Blackpool1.jpg" alt="Pleasure Beach" style="max-width: 250px;">
+					</figure>
+					<p>This is really one of Britain’s biggest amusement parks with over 120 rides and shows. When the park opened in 1994, one the the rides, The Big One was the tallest and fastest roller coaster in the world.  In 2014 it was voted the best theme park in the UK.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.visitblackpool.com/detail/blackpool-pleasure-beach-5886/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l2_B">Blackpool Tower</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Blackpool/Blackpool2.jpg" alt="Blackpool Tower" style="max-width: 250px;">
+					</figure>
+					<p>The Blackpool tower is a copy of the Eiffel tower in Paris and is one of England’s most popular tourist attractions. There is a lift which goes to the top of the tower where you can enjoy wonderful views of the area.There is a range of entertainment in the tower building - a ballroom, a circus, an aquarium and a fish and chip restaurant.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.theblackpooltower.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l2_C">Illuminations</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Blackpool/Blackpool3.jpg" alt="Illuminations" style="max-width: 250px;">
+					</figure>
+					<p>This is an annual light festival which has  taken place every year in the autumn since 1879. People travel from all over the country to see over 10 kilometres of lights with over one million bulbs. As well as different kinds of lights: lasers, floodlights, there are over 500 scenes and characters that are illuminated. There is usually a big  celebration concert to switch on the lights. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.blackpool-illuminations.net/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l2_D">The Grand Theatre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Blackpool/Blackpool4.jpg" alt="The Grand Theatre" style="max-width: 250px;">
+					</figure>
+					<p>The theatre is now famous for  variety shows in the summer season but when it opened at the end of the 19th century, Shakespeare plays were performed. Over the years, many famous actors and musicians have performed there. Visitors can take a tour of the theatre, see all the dressing rooms backstage and stand on the stage itself.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.blackpoolgrand.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l2_E">Blackpool Zoo</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Blackpool/Blackpool5.jpg" alt="Blackpool Zoo" style="max-width: 250px;">
+					</figure>
+					<p>The zoo is home to 1,500 animals from all over the world, including elephants, giraffes, orangutans, lions and tigers. There is a children’s farm and a new exhibition of  32 life -size dinosaurs. Visitors can tour the zoo in the miniature train.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.blackpoolzoo.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

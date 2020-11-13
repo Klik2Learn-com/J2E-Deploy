@@ -1,0 +1,79 @@
+<!-- Place -->
+<template name="Chelmsford">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<a draggable="false" href="ModuleSelectUnit2"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		<div class="parent-level">Module 10</div>
+		<div class="acttitle-title">{{> m10l4}}<em class="titleactcount">{{> m10l4No}}</em></div>
+	</header>
+	<!-- Place -->
+	<section id="Chelmsford" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m10_satnav}}
+					<!--Module-->
+					{{>mapButtons module="10" location="Chelmsford" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m10a15">
+								<div class="actbutton a15 {{completed '10' '15'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">15</div>
+								</div>
+							</a><br>
+							{{> m10a15Title}}
+						</div>
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m10a16">
+								<div class="actbutton a16 {{completed '10' '16'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">16</div>
+								</div>
+							</a><br>
+							{{> m10a16Title}}
+						</div>							
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m10a17">
+								<div class="actbutton a17 {{completed '10' '17'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">17</div>
+								</div>
+							</a><br>
+							{{> m10a17Title}}
+						</div>						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m10a18">
+								<div class="actbutton a18 {{completed '10' '18'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">18</div>
+								</div>
+							</a><br>
+							{{> m10a18Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="10" location="Chelmsford" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

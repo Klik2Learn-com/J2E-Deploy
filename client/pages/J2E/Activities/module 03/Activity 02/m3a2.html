@@ -1,0 +1,359 @@
+<template name="m3a2">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Stirling');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 2 - {{>m3a2Title}}</div>
+		</header>
+		
+		<section id="m3a2">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a2Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m3a2Intro}}</h3>
+{{> m3a2Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a2_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m3a2_1}}
+		{{>m3a2_2}}
+		{{>m3a2_3}}
+		{{>m3a2_4}}
+		{{>m3a2_7}}
+		{{>m3a2_8}}
+		{{>m3a2_end}}
+	</div>
+</article>
+
+	{{>m3a2modals}}
+</template>
+<template name="m3a2_1">
+	<section id="m3a2_1" class="hidden">
+		<div class="content">
+			{{> dictionary_page
+				word1="etiquette"
+				word2="unflattering"
+				word3="tolerance"
+				word4="pervasive"
+				word5c="hidden"
+				word6c="hidden"
+				word7="poll"
+				word8="sacrifice"
+				word9="norm"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2" nexturl="#m3a2_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a2_2">
+	<section id="m3a2_2" class="hidden">
+		<div class="content">
+			{{>complex_words}}
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>nattering: an informal word meaning to chat about unimportant things.</li>
+						<li>tweeting: an informal word meaning to send a short message via the social media website twitter.</li>
+						<li>tagging: to attach keywords to something so that other people can find it on the internet.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2_1" nexturl="#m3a2_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a2_3">
+	<section id="m3a2_3" class="hidden">
+		<div class="content text-center">
+			<h3>{{>touch yes="Tap" no="Click"}} to read the article on mobile manners</h3>
+			<a draggable="false" href="#m3a2_4" class="pagination"><div class="button1 buttonbig">Mind Your Mobile Manners</div></a>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2_2" nexturl="#m3a2_4" prev="" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a2_4">
+	<section id="m3a2_4" class="hidden">
+		<div class="content">
+		
+			<h1>Mind Your Mobile Manners</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper article-text">{{>m3a2art1}}</div>
+					</div>
+					<div class="col-sm-4 col-xs-3 hidden-xxs">
+						<figure>
+							<div class="ph-w" style="max-width: 243px"><div class="ph" style="padding-top: 141.15%"><img draggable="false" src="/images/module3/phone.png" alt="Woman using a mobile phone"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2_2" nexturl="#m3a2_5" prev="" next=""}}
+		</footer>
+	</section>
+
+	<section id="m3a2_5" class="hidden">
+		<div class="content">
+		
+			<h1>Mind Your Mobile Manners</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper article-text">{{>m3a2art2}}</div>
+					</div>
+					<div class="col-sm-4 col-xs-3 hidden-xxs">
+						<figure>
+							<div class="ph-w" style="max-width: 243px"><div class="ph" style="padding-top: 141.15%"><img draggable="false" src="/images/module3/phone.png" alt="Woman using a mobile phone"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2_4" nexturl="#m3a2_6" prev="" next=""}}
+		</footer>
+	</section>
+
+	<section id="m3a2_6" class="hidden">
+		<div class="content">
+		
+			<h1>Mind Your Mobile Manners</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper article-text">{{>m3a2art3}}</div>
+					</div>
+					<div class="col-sm-4 col-xs-3 hidden-xxs">
+						<figure>
+							<div class="ph-w" style="max-width: 243px"><div class="ph" style="padding-top: 141.15%"><img draggable="false" src="/images/module3/phone.png" alt="Woman using a mobile phone"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2_5" nexturl="#m3a2_7" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a2_7">
+	<section id="m3a2_7" class="hidden">
+		<div class="content">
+		
+			<h1>Mind Your Mobile Manners</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Read the paragraph you need and check your answers at the end."}}
+						<div class="parapaper">
+							<ol class="olcircle2">
+								<li><b>Find two examples of irritating behaviour.</b> (Paragraph 1)</li>
+								<li><b>What should we do about the use of mobile phones in public?</b> (Paragraph 2)</li>
+								<li><b>Mobile technology has advantages. Find two.</b> (Paragraph 5)</li>
+								
+								<li><b>Find two examples to show that people are very attached to their mobile phones.</b> (Paragraph 9)</li>
+								<li><b>Misusing mobile phones can be rude. Find an example.</b> (Paragraph 10)</li>
+								<li><b>Misusing mobile phones can be dangerous. Find an example.</b> (Paragraph 10)</li>
+								
+								<li>
+									<p><b>Complete both of these sentences:</b></p>
+									<p><b>a) The thing I most dislike about mobile devices is...</b></p>
+									<p><b>b) I would hate to lose my my mobile phone because...</b></p>
+								
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-3 hidden-xxs">
+						<figure>
+							<div class="ph-w" style="max-width: 243px"><div class="ph" style="padding-top: 141.15%"><img draggable="false" src="/images/module3/phone.png" alt="Woman using a mobile phone"></div></div>
+						</figure>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+				<b>Paragraphs</b> 
+					<button class="button2 item-space ddwidth6" data-toggle="modal" data-target="#m3a2_modal1">1-4</button>
+					<button class="button2 item-space ddwidth6" data-toggle="modal" data-target="#m3a2_modal2">5-9</button>
+					<button class="button2 item-space ddwidth6" data-toggle="modal" data-target="#m3a2_modal3">10-11</button>
+				</div>
+			</div>
+
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2_6" nexturl="#m3a2_8" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a2_8">
+	<section id="m3a2_8" class="hidden">
+		<div class="content">
+		
+			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+				<ol class="olcircle2">
+					<li>
+						<p><b>Find two examples of irritating behaviour.</b></p>
+						<p>Some people just keep talking on their phones and other people use twitter while they are having dinner.</p>
+					</li>
+					<li>
+						<p><b>What should we do about the use of mobile phones in public?</b></p>
+						<p> We should have some rules about using mobile phones in public.</p>
+					</li>
+					<li>
+						<p><b>Mobile technology has advantages. Find two.</b></p>
+						<p>We like to be connected to other people and keep up to date with things.</p>
+					</li>
+					
+					<li>
+						<p><b>Find two examples to show that people are very attached to their mobile phones.</b></p>
+						<p>People check their phones before leaving the house and going to work. Some people check their phones before getting out of bed.</p>
+					</li>
+					<li>
+						<p><b>Misusing mobile phones can be rude. Find an example.</b></p>
+						<p>Using a laptop at the dinner table is rude.</p>
+					</li>
+					<li>
+						<p><b>Misusing mobile phones can be dangerous. Find an example.</b></p>
+						<p>Sending a text while you are driving is dangerous.</p>
+					</li>
+					
+					<li>
+						<p><b>a) The thing I most dislike about mobile devices is...</b></p>
+						<p>listening to other people's conversations<br>
+						people using them at mealtimes</p>
+						<p><b>b) I would hate to lose my my mobile phone because...</b></p>
+						<p>I have a lot of information on it.<br>
+						I need to keep in touch with all my friends.<br>
+						It cost a lot of money.</p>
+					
+					</li>
+				</ol>
+			</div>
+
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a2_7" nexturl="#m3a2_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a2art1">
+	{{>metametrics level="7" star="no" align="center"}}
+	
+	<p>A new mobile survey has suggested there should be a set of rules about the use of mobile phones in public.</p>
+
+	<p>1. You know the type. She won’t stop nattering on her cell phone and he can’t resist tweeting while having dinner.</p>
+
+	<p>2. And we’re all irritated by them, so much so that a new mobile survey has found that there should be a set of rules about the use of mobile phones in public.</p>
+
+	<p>3. The survey by Intel, found major no-nos of mobile etiquette included logging into someone else’s account to post a joke, sharing too much personal information and tagging an unflattering photo of your friends.</p>
+
+	<p>4. Surprisingly, the survey found that checking Facebook while out for coffee, bringing your laptop on a weekend break and using mobile devices in the bedroom were all acceptable. ‘People’s tolerance levels are rising and the use of mobile technology is now so pervasive that we need a new code of conduct,’ said Intel’s spokesperson.</p>
+</template>
+
+<template name="m3a2art2">
+	{{>metametrics level="7" star="no" align="center"}}
+	
+	<p>5. ‘We all see the appeal of being constantly connected to a lively, virtual community and of always being up to date and up to speed.’</p>
+
+	<p>6. The survey polled more than 12,000 people in 16 countries, including South Africa.</p>
+
+	<p>7. And the results indicated that smartphones, tablets and other mobile devices were re-shaping our behaviour.</p>
+
+	<p>8. More than half said they would prefer to sacrifice their favourite sweet treat for a week, than be separated from their mobile device.</p>
+
+	<p>9. ‘The research suggests that most of us check our emails or post our first tweet before we even leave the house in the mornings. Two thirds of people check their mobile before going to work. Almost a quarter, do that before they get out of bed. It’s the new norm.’</p>
+</template>
+
+<template name="m3a2art3">
+	{{>metametrics level="7" star="no" align="center"}}
+	
+	<p>10. People said there were limits to where mobile devices should be used. Bringing a laptop to the dinner table was top of the list for bad manners.  They were also worried about creating a dangerous situation such as texting while driving.  South African drivers were most concerned about this.</p>
+
+	<p>11. A third said they would like mobile devices banned in public places, because they disliked hearing other people’s loud phone conversations.</p>
+</template>
+
+<template name="m3a2_end">
+{{>EndPage char="tu" act="m3a2" nextact="m3a3" place="Stirling"}}
+</template>
+
+<template name="m3a2modals">
+   <div class="modal fade" tabindex="-1" id="m3a2_modal1" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m3a2_modal1">Mind Your Mobile Manners</h4>
+            </div>
+            <div class="content">
+				{{>m3a2art1}}
+				<div class="modal-footer borderless">
+				   <button type="button" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+      </div>
+   </div>
+   </div>
+
+   <div class="modal fade" tabindex="-1" id="m3a2_modal2" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m3a2_modal2">Mind Your Mobile Manners</h4>
+            </div>
+            <div class="content">
+				{{>m3a2art2}}
+				<div class="modal-footer borderless">
+				   <button type="button" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+      </div>
+   </div>
+   </div>
+
+   <div class="modal fade" tabindex="-1" id="m3a2_modal3" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m3a2_modal3">Mind Your Mobile Manners</h4>
+            </div>
+            <div class="content">
+				{{>m3a2art3}}
+				<div class="modal-footer borderless">
+				   <button type="button" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+      </div>
+   </div>
+   </div>
+</template>

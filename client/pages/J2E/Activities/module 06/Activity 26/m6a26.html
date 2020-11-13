@@ -1,0 +1,112 @@
+<template name="m6a26">
+	<article class="with-tools-sidebar m6a26">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/York');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 26 - {{>m6a26Title}}</div>
+			</header>
+			<section id="m6a26">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a26Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m6a26Intro}}</h3>
+					{{> m6a26Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a26_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a26_1}} {{>m6a26_2}} {{>m6a26_3}} {{>m6a26_4}} {{>EndPage char="tu" act="m6a26" nextact="m6a27" place="York"}}
+		</div>
+	</article>
+
+</template>
+<template name="m6a26_1">
+	<section id="m6a26_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod6_idioms_KL}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a26" nexturl="#m6a26_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a26_2">
+	<section id="m6a26_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod6_idioms}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a26_1" nexturl="#m6a26_3" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a26_3">
+	<section id="m6a26_3" class="hidden">
+		<div class="content noselect">
+			<h1>Idioms</h1>
+			<h3 class="center">Drag the right idiom into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>He says he's not working so hard now but I don't believe him. A leopard can't
+						<div class="ddseatedtarget ddwidth12 dd1line" data-destinationid="target1">&nbsp;</div>.</li>
+					<li>It can be difficult to find a politician who
+						<div class="ddseatedtarget ddwidth12 dd1line" data-destinationid="target2">&nbsp;</div>.</li>
+					<li>From an early age, David Beckham was
+						<div class="ddseatedtarget ddwidth12 dd1line" data-destinationid="target3">&nbsp;</div>.</li>
+					<li>He could have
+						<div class="ddseatedtarget ddwidth12 dd1line" data-destinationid="target4">&nbsp;</div> for throwing out his winning lottery ticket.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth12 dd1line">
+						<div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target4">kicked himself</div>
+					</div>
+					<div class="ddseat ddwidth12 dd1line">
+						<div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target1">change its spots</div>
+					</div>
+					<div class="ddseat ddwidth12 dd1line">
+						<div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target2">calls a spade a spade</div>
+					</div>
+					<div class="ddseat ddwidth12 dd1line">
+						<div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target3">a class act</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a26_2" nexturl="#m6a26_4" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a26_4">
+	<section id="m6a26_4" class="hidden">
+		<div class="content">
+			{{> K_saved module="6"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a26_3" nexturl="#m6a26_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

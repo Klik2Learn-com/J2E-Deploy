@@ -1,0 +1,28 @@
+<template name="expired">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<!-- <a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a> -->
+			{{> menu_assess}}
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">Expired subscription</div>
+		</header>
+		<section>
+			<div class="content content-user text-center">
+				<h1>Your subscription has expired on {{routeData}}.</h1>
+
+				<h4>Your user ID is: {{userId}}</h4>
+
+				<h4>Contact us to renew your subscription quoting the ID above.</h4>
+
+				<h4>Email: contact@klik2learn.com</h4>
+
+				<h4>You will not have access to our course or learning tools until your renew your subscription.</h4>
+				{{>subscriptionOptions}}
+			</div>
+		</section>
+	</div>
+</article>
+
+</template>

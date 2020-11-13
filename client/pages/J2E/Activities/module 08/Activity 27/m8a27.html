@@ -1,0 +1,459 @@
+<template name="m8a27"> 
+<article class="with-tools-sidebar m8a27 para-select">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bath');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 27 - {{>m8a27Title}}</div>
+		</header>
+		<section id="m8a27">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a27Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a27Intro}}</h3>
+				{{> m8a27Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a27_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a27_1}}
+		{{>m8a27_2}}
+		{{>m8a27_3}}
+		{{>m8a27_4}}
+		{{>m8a27_5}}
+		{{>m8a27_6}}
+		{{>m8a27_7}}
+		{{>m8a27_8}}
+		{{>m8a27_9}}
+		{{>m8a27_10}}
+		{{>m8a27_11}}
+		{{>EndPage char="elle" act="m8a27" nextact="m8a28" place="Bath"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a27_7"> 
+	<section id="m8a27_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">5</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>What types of jobs are disappearing in modern life?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 5				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_6" nexturl="#m8a27_8" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a27_5"> 
+	<section id="m8a27_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">3</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>What’s the main difference in working life now?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 3				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_4" nexturl="#m8a27_6" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a27_10"> 
+	<section id="m8a27_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">8</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>Find two things that are worse about working life today.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 7					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					<div class="col-xs-12">
+						<h3 class="center">Continue when you’re ready to see the answers.</h3>
+					</div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_9" nexturl="#m8a27_11" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a27_11"> 
+	<section id="m8a27_11" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+				<ol class="olcircle">
+					<li>
+						<p><b>Four main things have changed since the 1950s. What are they?</b></p>
+							<p>Women stayed at home.</p>
+							<p>People had 9-5 jobs.</p>
+							<p>People had jobs for life.</p>
+							<p>No-one had a smartphone.</p>
+					</li>
+					<li>
+						<p><b>Technology has some disadvantages. Choose two that you agree with.</b></p>
+						 	<p>Technology puts more pressure on people.</p>
+							<p>There is too much information.</p>
+							<p>People are under more surveillance.</p>
+							<p>There are fewer boundaries between work and home.</p>
+					</li>
+					<li>
+						<p><b>What’s the main difference in working life now?</b></p>
+						<p>More people work part time now.</p>
+					</li>
+					<li>
+						<p><b>Who has the best reason to complain – workers in the 50’s or nowadays?</b></p>
+						<p> Workers in the 1950s have more reason to complain, they worked longer hours.</p>
+					</li>
+					<li>
+						<p><b>What types of jobs are disappearing in modern life?</b></p>
+						<p>Jobs in mining, forestry, agriculture and fishing are disappearing.</p>
+					</li>
+					<li>
+						<p><b>Find an example of a type of job that’s much more common today.</b></p>
+						<p>Jobs in personnel are much more common now.</p>
+					</li>
+					<li>
+						<p><b>How have women’s lives changed nowadays?</b></p>
+						<p>More women are working today.</p>
+					</li>
+					<li>
+						<p><b>Find two things that are worse about working life today.</b></p>
+							<p>Fewer men are working now.</p>
+							<p>More people are claiming unemployment benefit.</p>
+							<p>It is more difficult for young people to get a job.</p>
+					</li>
+				</ol>
+			</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_10" nexturl="#m8a27_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a27_8"> 
+	<section id="m8a27_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">6</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>Find an example of a type of job that’s much more common today.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 6				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_7" nexturl="#m8a27_9" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a27_2"> 
+	<section id="m8a27_2" class="hidden"> 
+		<div class="content">  
+      			{{>complex_words}}
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>to balloon: to increase suddenly</li>
+					</ul>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_1" nexturl="#m8a27_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a27_6"> 
+	<section id="m8a27_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">4</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>Who has the best reason to complain – workers in the 50’s or nowadays?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 4				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_5" nexturl="#m8a27_7" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a27_4"> 
+	<section id="m8a27_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">2</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>Technology has some disadvantages. Choose two that you agree with.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 2				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_3" nexturl="#m8a27_5" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a27_3"> 
+	<section id="m8a27_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">1</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>Four main things have changed since the 1950s. What are they?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 1				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_2" nexturl="#m8a27_4" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m8a27paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+	{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+	<br>
+	<div class="container-fluid">
+		{{> blankrow}}
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div id="m8a27textDisplay" class="parapaper fold">
+					<p><b>1.</b> It was an era when women stayed at home, a 9-to-5 job meant just that, workers had a job for life and nobody had a smartphone to ruin their holidays. But were the 1950s exactly like that? What is it like for workers in this country 60 years later? The world of work has fundamentally changed, but it is not a change which is making us happy, according to the Chartered Institute of Personnel.</p>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 text-right">
+				<span class="paragraph-label">Select a paragraph:</span>
+				<a><div id="0" class="numbutt">1</div></a>
+				<a><div id="1" class="numbutt">2</div></a>
+				<a><div id="2" class="numbutt">3</div></a>
+				<a><div id="3" class="numbutt">4</div></a>
+				<a><div id="4" class="numbutt">5</div></a>
+				<a><div id="5" class="numbutt">6</div></a>
+				<a><div id="6" class="numbutt">7</div></a>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+</div>
+</template>
+
+<template name="m8a27_1"> 
+	<section id="m8a27_1" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="era"
+					word2="fundamental"
+					word3="impose"
+					word4="surveillance"
+					word5="blurred"
+					word6="astonishing"
+					word7="whinge"
+					word8="dramatically"
+					word9="tumble"
+					word10="significant"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+				</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a27" nexturl="#m8a27_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a27_9"> 
+	<section id="m8a27_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m8a27paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m8a27Q" class="number pull-right">7</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m8a27Quest" class="caption">
+							<p>How have women’s lives changed nowadays?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m8a27P" class="captionsmall capgreen">
+							Paragraph 6				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a27_8" nexturl="#m8a27_10" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

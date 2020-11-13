@@ -1,0 +1,183 @@
+<template name="m6a20"> 
+<article class="with-tools-sidebar m6a2">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Harrogate');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 20 - {{>m6a20Title}}</div>
+		</header>
+		<section id="m6a20">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a20Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m6a20Intro}}</h3>
+				{{> m6a20Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a20_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a20_1}}
+		{{>m6a20_2}}
+		{{>m6a20_3}}
+		{{>m6a20_4}}
+		{{>m6a20_5}}
+		{{>EndPage char="tu" act="m6a20" nextact="m6a21" place="Harrogate"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a20_1">
+	<section id="m6a20_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{> dictionary_page
+					word1="protestant"
+					word2="commemorate"
+					word3="sectarian"
+					word4="riot"
+					word5="baton"
+					word6="missile"
+					word7="reckless"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+			}}
+	  	</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a20" nexturl="#m6a20_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m6a20_2">
+	<section id="m6a20_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content center">
+      			<h3 class="text-center">Read this article about trouble in Northern Ireland in July 2013</h3>
+				<div class="ph-w ph-7x3" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/module6/a20/belfastriots2.jpg" alt="Belfast riots" /></div></div>
+	  	</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a20_1" nexturl="#m6a20_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m6a20_3">
+	<section id="m6a20_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+      			<h1>Belfast trouble: Police attacked for second night</h1>
+						<div class="parapaper article-text">
+						
+							<div class="container-fluid-no-gutter">
+								<div class="row">
+									<div class="col-xs-5">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a20/belfast1.m4a"></button>
+									</div>
+									<div class="col-xs-7">
+										{{>metametrics level="6" star="no" align="right"}}
+									</div>
+								</div>
+							</div>
+							<figure class="image imgright-responsive">
+								<div class="ph-w ph-3x4 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module6/a20/belfastriots1.jpg" alt="Belfast riot police"></div></div>
+							</figure>
+							<p>The police have been attacked with petrol bombs in north Belfast as trouble flared for the second night. The marching season in Northern Ireland is a period of events from April to August. The high point is the 12th of July when Protestants march to commemorate a Protestant victory in 1690. But many Catholics see the marches as sectarian. Some marches pass through areas occupied mainly by Catholics.</p>
+							<p>There was serious rioting on Friday night when 32 police officers and an MP were injured. Many families with children were caught up in the violence.</p>
+
+							<!-- fixes image floats -->
+							<div class="parent_expander"></div>
+						</div>
+	  	</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a20_2" nexturl="#m6a20_4" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m6a20_4">
+	<section id="m6a20_4" class="hidden">
+		{{#if activeSection}}
+	
+		<div class="content">
+      			<h1>Belfast trouble: Police attacked for second night</h1>
+						<div class="parapaper article-text">
+						
+							<div class="container-fluid-no-gutter">
+								<div class="row">
+									<div class="col-xs-5">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a20/belfast2.m4a"></button>
+									</div>
+									<div class="col-xs-7">
+										{{>metametrics level="6" star="no" align="right"}}
+									</div>
+								</div>
+							</div>
+						
+							<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module6/a20/belfastriots1.jpg" alt="Belfast riot police"></div></div>							
+							</figure>
+							<p>Petrol bombs, bricks and fireworks were thrown at the police who responded with water cannons and baton rounds.</p>
+							<p>A north Belfast MP was knocked unconscious after he was hit by a missile.</p>
+							<!-- fixes image floats -->
+							<div class="parent_expander"></div>
+						</div>
+	  	</div>
+
+		<footer>
+			{{>footer_nav prevurl="#m6a20_3" nexturl="#m6a20_5" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m6a20_5">
+	<section id="m6a20_5" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content">
+      			<h1>Belfast trouble: Police attacked for second night</h1>
+						<div class="parapaper article-text">
+						
+							<div class="container-fluid-no-gutter">
+								<div class="row">
+									<div class="col-xs-5">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a20/belfast3.m4a"></button>
+									</div>
+									<div class="col-xs-7">
+										{{>metametrics level="6" star="no" align="right"}}
+									</div>
+								</div>
+							</div>
+						
+							<figure class="image imgright-responsive">
+								<div class="ph-w ph-3x4 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module6/a20/belfastriots1.jpg" alt="Belfast riot police"></div></div>
+							</figure>
+							<p>Mr Baggott, the Chief Constable, said the Twelfth of July had been a "day of celebration" for many people and that the majority of parades had passed off "peacefully".</p>
+							<p>"But I think some leaders need to reflect on whether they provided responsible leadership," he said.</p>
+							<p>"I think they had no plan and no control, and the word for that is reckless."</p>
+							<p>However they defended their actions. "There were thousands of people from other organisations all over Northern Ireland yesterday so to blame some leaders is totally wrong," a spokesman said.</p>
+							<!-- fixes image floats -->
+							<div class="parent_expander"></div>
+						</div>
+	  	</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a20_4" nexturl="#m6a20_end" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+ </template>
+

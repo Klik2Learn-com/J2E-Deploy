@@ -1,0 +1,53 @@
+<template name="B1r">
+	<section id="B1r">
+	{{#if activeSection}}
+			<div class="content">
+			<h3 class="center">Read the text and answer each question in no more than four words.</h3>
+				<div class="parapaper paraextract article-text noselect">
+					<p>
+						&emsp;The first Chinese who settled in Britain were sailors. They entered through port cities such as London, Cardiff and Liverpool. This began to happen in the early 1800s. Around a hundred years later, Chinese people began to move into the restaurant business. Now there are over 7600 Chinese restaurants in Britain. However, this may not increase as restaurants serving other types of food move into an already crowded market. Today, the British Chinese community is the largest in Europe and many families have been here for a long time. 
+						<br><br>
+						&emsp;Compared to other ethnic groups, the Chinese are quite spread out. Although some cities, like London and Manchester, have a ‘Chinatown’, this is just an area with many Chinese shops and restaurants. It isn't where most Chinese people live. The Chinese also have a high rate of marriage outside their own community. Many are still employed in the restaurant business but a significant number have gone on to work in the professional jobs.
+					</p>
+				</div>
+				<br>
+				<hr>
+				<h3 class="center"> Type your answers in the boxes. Look back at the text before you answer.</h3>
+				<div class="parapaper linespace paraextract parasegment para-ol-space fold">
+					<ol class="olcircle">
+						<li><b><span data-questionFor="answer1">Which job did the first Chinese in Britain do?</span></b><br>
+						<form class="textentry"><input id="answer1" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer2">Which cities did they arrive in?</span></b><br>
+						They arrived in <form class="textentry"><input id="answer2" type="text" name="userText" data-function="answerBox" size="28" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer3">When did this begin to happen?</span></b><br>
+						In the <form class="textentry"><input id="answer3" type="text" name="userText" data-function="answerBox" size="11" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer4">In which century did the first Chinese restaurants open in London?</span></b><br>
+						The <form class="textentry"><input id="answer4" type="text" name="userText" data-function="answerBox" size="4" autocomplete="off"></form> century</li>
+						
+						<li><b><span data-questionFor="answer5">Are many new Chinese restaurants expected to open in the future?</span></b><br>
+						<form class="textentry"><input id="answer5" type="text" name="userText" data-function="answerBox" size="2" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer6">Do Chinese families usually live close to each other?</span></b><br>
+						<form class="textentry"><input id="answer6" type="text" name="userText" data-function="answerBox" size="2" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer7">What can you find in a Chinatown?</span></b><br>
+						<form class="textentry"><input id="answer7" type="text" name="userText" data-function="answerBox" size="20" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer8">Do Chinese people often marry people who are not Chinese?</span></b><br>
+						<form class="textentry"><input id="answer8" type="text" name="userText" data-function="answerBox" size="3" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer9">Do a lot of British Chinese work in the restaurant business today?</span></b><br>
+						<form class="textentry"><input id="answer9" type="text" name="userText" data-function="answerBox" size="3" autocomplete="off"></form></li>
+					</ol>
+				</div>
+				<div class="assess-finish">
+					<span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+				</div>
+				{{>finishBtn}}
+			</div>
+	{{/if}}
+	</section>
+</template>

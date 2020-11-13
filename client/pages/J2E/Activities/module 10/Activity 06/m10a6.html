@@ -1,0 +1,556 @@
+<template name="m10a6"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Newmarket');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 6 - {{> m10a6Title}}</div>
+		</header>
+		<section id="m10a6">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a6Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a6Intro}}</h3>
+				{{> m10a6Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a6_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a6_1}}
+		{{>m10a6_2}}
+		{{>m10a6_3}}
+		{{>m10a6_4}}
+		{{>m10a6_5}}
+		{{>m10a6_6}}
+		{{>m10a6_7}}
+		{{>m10a6_8}}
+		{{>m10a6_9}}
+		{{>m10a6_10}}
+		{{>EndPage char="elle" act="m10a6" nextact="m10a7" place="Newmarket"}}
+	</div>
+</article>
+</template>
+<template name="m10a6_6"> 
+	<section id="m10a6_6" class="hidden"> 
+		<div class="content">  
+      			<h1>Here are the phrases again.</h1>
+      			<div class="answer-blocks">
+					<ol class="olblank">
+						<li>
+							<div class="info block shadow">Catch a cold</div>
+							<div class="caption block">Become ill with  a cold.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Go out of business</div>
+							<div class="caption block">Close your business.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Go crazy</div>
+							<div class="caption block">Become over excited or angry.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Come into view</div>
+							<div class="caption block">Become visible.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Catch the bus</div>
+							<div class="caption block">Get the bus before it leaves.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Go abroad</div>
+							<div class="caption block">Travel to another country.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Go bald</div>
+							<div class="caption block">Lose the hair on the top of your head.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Catch sight of</div>
+							<div class="caption block">Suddenly see something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Come close to doing something</div>
+							<div class="caption block">Almost do something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Come to a standstill</div>
+							<div class="caption block">Stop making progress.</div>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_5" nexturl="#m10a6_7" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+
+
+
+
+
+
+
+
+
+
+
+<template name="m10a6_9"> 
+	<section id="m10a6_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				English has lots of phrases where certain words go together - <B>collocations</B>. Choose one of these <span class="grammar">verbs</span> to go with the following.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center caption">	
+							<span id="m10a6text">in touch</span>
+						</div>
+						
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 center">
+							<button id="1" class="button2 item-space ddwidth8 dd2lines">Pay</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth8 dd2lines">Keep</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="3" class="button2 item-space ddwidth8 dd2lines">Play</button>
+						</div>
+					</div>
+					{{>gg_button gg_text="You can get more information about collocations in the Grammar Guide."}}
+				</div>
+      </div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_8" nexturl="#m10a6_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a6_1"> 
+	<section id="m10a6_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				English has lots of phrases where certain words go together - <B>collocations</B>. Choose one of these <span class="grammar">verbs</span> to go with the following.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center caption">	
+							<span id="m10a6text">your best</span>
+						</div>
+						
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 center">
+							<button id="1" class="button2 item-space ddwidth8 dd2lines">Do</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth8 dd2lines">Have</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="3" class="button2 item-space ddwidth8 dd2lines">Get</button>
+						</div>
+					</div>
+					{{>gg_button gg_text="You can get more information about collocations in the Grammar Guide."}}
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6" nexturl="#m10a6_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a6_4"> 
+	<section id="m10a6_4" class="hidden"> 
+		<div class="content">  
+      			<h1>Here are the phrases again.</h1>
+      			<div class="answer-blocks">
+					<ol class="olblank">
+						<li>
+							<div class="info block shadow">Break someone's heart</div>
+							<div class="caption block">Hurt the feelings of someone who loves you.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Break the rules</div>
+							<div class="caption block">Don’t follow the rules.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Make the rules</div>
+							<div class="caption block">Create the rules.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Take an exam</div>
+							<div class="caption block">Sit an exam.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Take a chance</div>
+							<div class="caption block">Do something risky.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Take a look</div>
+							<div class="caption block">Look at something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Make someone happy</div>
+							<div class="caption block">Help someone to feel happy.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Make room</div>
+							<div class="caption block">Create space for something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Break the law</div>
+							<div class="caption block">Do something that isn’t legal.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Make a mess</div>
+							<div class="caption block">Make something dirty or untidy.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Make a mistake</div>
+							<div class="caption block">Do something wrong.</div>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_3" nexturl="#m10a6_5" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template name="m10a6_10"> 
+	<section id="m10a6_10" class="hidden"> 
+		<div class="content">  
+      			<h1>Here are the phrases again.</h1>
+      			<div class="answer-blocks">
+					<ol class="olblank">
+						<li>
+							<div class="info block shadow">Keep in touch</div>
+							<div class="caption block">Stay in contact with someone.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Pay someone a visit</div>
+							<div class="caption block">Go to see someone.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Pay respect</div>
+							<div class="caption block">Show respect for someone.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Keep a promise</div>
+							<div class="caption block">Do something that you promised to do.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Play it safe</div>
+							<div class="caption block">Avoid taking any risks.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Pay attention</div>
+							<div class="caption block">Focus your attention on something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Play games with someone</div>
+							<div class="caption block">Deliberately confuse someone.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Keep an eye on something</div>
+							<div class="caption block">Frequently check something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Pay by credit card</div>
+							<div class="caption block">Pay for something using a credit card.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Keep quiet</div>
+							<div class="caption block">Avoid saying anything.</div>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_9" nexturl="#m10a6_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+
+
+
+
+
+
+
+
+
+
+
+<template name="m10a6_2"> 
+	<section id="m10a6_2" class="hidden"> 
+		<div class="content">  
+      			<h1>Here are the phrases again.</h1>
+      			<div class="answer-blocks">
+					<ol class="olblank">
+						<li>
+							<div class="info block shadow">Do your best</div>
+							<div class="caption block">Try your hardest.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Do the washing up</div>
+							<div class="caption block">Wash the dishes.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Get upset</div>
+							<div class="caption block">Become unhappy about something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Get excited</div>
+							<div class="caption block">Become enthusiastic and eager.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Get the sack</div>
+							<div class="caption block">Become unemployed.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Have some sympathy</div>
+							<div class="caption block">Care about how someone feels.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Have a haircut / Get a haircut</div>
+							<div class="caption block">Cut your hair.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Have a good time</div>
+							<div class="caption block">Do something you enjoy.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Do her a favour</div>
+							<div class="caption block">Help her without expecting  something in return.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Get ready</div>
+							<div class="caption block">Prepare yourself.</div>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_1" nexturl="#m10a6_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a6_5"> 
+	<section id="m10a6_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				English has lots of phrases where certain words go together - <B>collocations</B>. Choose one of these <span class="grammar">verbs</span> to go with the following.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center caption">	
+							<span id="m10a6text">a cold</span>
+						</div>
+						
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 center">
+							<button id="1" class="button2 item-space ddwidth8 dd2lines">Catch</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth8 dd2lines">Come</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="3" class="button2 item-space ddwidth8 dd2lines">Go</button>
+						</div>
+					</div>
+					{{>gg_button gg_text="You can get more information about collocations in the Grammar Guide."}}
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_4" nexturl="#m10a6_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a6_8"> 
+	<section id="m10a6_8" class="hidden"> 
+		<div class="content">  
+      			<h1>Here are the phrases again.</h1>
+      			<div class="answer-blocks">
+					<ol class="olblank">
+						<li>
+							<div class="info block shadow">Save time</div>
+							<div class="caption block">Use your time well.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Give way</div>
+							<div class="caption block">To let something or someone pass.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Put something on hold</div>
+							<div class="caption block">Stop doing something for a while.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Save money</div>
+							<div class="caption block">Avoid spending money.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Give money</div>
+							<div class="caption block">EASY!</div>
+						</li>
+						<li>
+							<div class="info block shadow">Give permission</div>
+							<div class="caption block">Allow someone to do something.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Give it time</div>
+							<div class="caption block">Allow something to happen slowly.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Save energy</div>
+							<div class="caption block">Not wasting energy.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Give someone grief</div>
+							<div class="caption block">Deliberately make someone upset.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Save someone grief</div>
+							<div class="caption block">To prevent someone becoming upset.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Put something behind you</div>
+							<div class="caption block">To forget something unpleasant.</div>
+						</li>
+						<li>
+							<div class="info block shadow">Put your back into something</div>
+							<div class="caption block">Make an effort to do something difficult.</div>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_7" nexturl="#m10a6_9" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a6_7"> 
+	<section id="m10a6_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				English has lots of phrases where certain words go together - <B>collocations</B>. Choose one of these <span class="grammar">verbs</span> to go with the following.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center caption">	
+							<span id="m10a6text">time</span>
+						</div>
+						
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 center">
+							<button id="1" class="button2 item-space ddwidth8 dd2lines">Give</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth8 dd2lines">Save</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="3" class="button2 item-space ddwidth8 dd2lines">Put</button>
+						</div>
+					</div>
+					{{>gg_button gg_text="You can get more information about collocations in the Grammar Guide."}}
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_6" nexturl="#m10a6_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a6_3"> 
+	<section id="m10a6_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				English has lots of phrases where certain words go together - <B>collocations</B>. Choose one of these <span class="grammar">verbs</span> to go with the following.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center caption">	
+							<span id="m10a6text">someone's heart</span>
+						</div>	
+					</div>
+					<br><hr><br>
+					<div class="row">
+						<div class="col-sm-4 center">
+							<button id="1" class="button2 item-space ddwidth8 dd2lines">Break</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth8 dd2lines">Take</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="3" class="button2 item-space ddwidth8 dd2lines">Make</button>
+						</div>
+					</div>
+					{{>gg_button gg_text="You can get more information about collocations in the Grammar Guide."}}
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a6_2" nexturl="#m10a6_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

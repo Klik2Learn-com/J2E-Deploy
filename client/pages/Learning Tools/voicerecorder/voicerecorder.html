@@ -1,0 +1,28 @@
+<template name="voicerecorder">
+   <div class="modal fade" id="voicerecordermodal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Voice Recorder</h4>
+            </div>
+            {{> recordersave}}
+            {{> recorderlisten}}
+         </div>
+      </div>
+   </div>
+   
+   <!-- <div class="modal fade" id="voicerecordermodalios" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="voicerecordermodalios">Voice Recorder</h4>
+            </div>
+           <div class="content" style="min-height: initial;">
+			<p>Due to restrictions by Apple, the voice recorder is currently unavailable for iPhone and iPad. We are working to resolve this.</p>
+		   </div>
+         </div>
+      </div>
+   </div> -->
+</template>

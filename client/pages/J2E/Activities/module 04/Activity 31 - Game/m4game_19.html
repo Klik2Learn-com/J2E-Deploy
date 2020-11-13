@@ -1,0 +1,34 @@
+<template name="m4Game_19">
+
+	<section id="m4Game_19" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m4Game-bg18"></div>
+				
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="a">The goods they sold were expensive than necessary.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="b">The goods they sold were more expensive than necessary.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">The goods they sold were at poorer quality.</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <footer>
+			{{>footer_nav prevurl="#" nexturl="#m4Game_e_19" prev="hidden" next="hidden"}}
+		</footer> -->
+		{{/if}}
+	</section>
+
+</template>

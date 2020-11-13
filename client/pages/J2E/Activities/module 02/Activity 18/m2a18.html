@@ -1,0 +1,304 @@
+<template name="m2a18">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Kirriemuir');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 18 - {{>m2a18Title}}</div>
+			</header>
+
+			<section id="m2a18">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m2a18Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m2a18Intro}}</h3>
+					{{> m2a18Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m2a18_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m2a18_1}} {{>m2a18_2}} {{>m2a18_scores}} {{>m2a18_summary}} {{>m2a18_end}}
+
+		</div>
+	</article>
+
+</template>
+<template name="m2a18_1">
+	<section id="m2a18_1" class="hidden">
+		<div class="content">
+			<h1>Can you count up to eight syllables?</h1>
+			{{>InstructionsDictionary text="Check any words you don't know in the Dictionary"}}
+			<div class="parapaper paraextract" style="padding-top: 1em;">
+				<ul class="ul-dic">
+					<li>bottle</li>
+					<li>offence</li>
+					<li>station</li>
+					<li>reply</li>
+					<li>department</li>
+					<li>basketball</li>
+					<li>understand</li>
+					<li>prisoner</li>
+					<li>explosives</li>
+					<li>lemonade</li>
+					<li>professional</li>
+					<li>parliament</li>
+					<li>economics</li>
+					<li>identical</li>
+					<li>bureaucratic</li>
+					<li>obviously</li>
+					<li>international</li>
+					<li>humiliation</li>
+					<li>electricity</li>
+					<li>observatory</li>
+					<li>capitalism</li>
+					<li>appreciation</li>
+					<li>refrigerator</li>
+					<li>incomprehensible</li>
+					<li>indefatigable</li>
+					<li>autobiographical</li>
+					<li>totalitarianism</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a18" nexturl="#m2a18_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a18_2">
+	<section id="m2a18_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Counting syllables</h1>
+			<h3>Listen to each word, then choose how many syllables it has. There are 27 words in total.</h3>
+			<div class="parapaper paraextract" style="padding-top: 1em;">
+				{{>rightwrong}} {{>boxincorrectscreen text=''}}
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-4">
+							<div class="numberBig" style="float: left;">1</div>
+						</div>
+						<div class="col-xs-8 text-right">
+							{{>scorebox1 rightSession="m2a18_2RightScore" wrongSession="m2a18_2WrongScore" }}
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row text-center">
+						<button type="button" id="audioBtn" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/syllables/bottle.m4a'></button>
+					</div>
+					<div class="row text-center" style="margin-top: 3em;">
+						<b>Syllables: </b>
+						<span class="avoidwrap">
+							<span class="avoidwrap">
+								<button type="button" class="button1 button-number">2</button>
+								<button type="button" class="button1 button-number">3</button>
+								<button type="button" class="button1 button-number">4</button>
+								<button type="button" class="button1 button-number">5</button>
+							</span>
+							<span class="avoidwrap">
+								<button type="button" class="button1 button-number">6</button>
+								<button type="button" class="button1 button-number">7</button>
+								<button type="button" class="button1 button-number">8</button>
+							</span>
+						</span>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+			{{>dic_button}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a18_1" nexturl="#m2a18_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m2a18_end">
+	{{>EndPage char="elle" act="m2a18" nextact="m2a19" place="Kirriemuir"}}
+</template>
+
+<template name="m2a18_scores">
+	<section id="m2a18_bad" class="hidden">
+		<div class="content">
+
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m2a18_2RightScore" wrongSession="m2a18_2WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m2a18" class="pagination">
+						<div class="button1 try-again">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a18_summary" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m2a18_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m2a18_2RightScore" wrongSession="m2a18_2WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a18_summary" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a18_summary">
+	<section id="m2a18_summary" class="hidden">
+		<div class="content">
+			<h1>Words</h1>
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-sm-4">
+						<div class="parapaper fold">
+							<h4>2 syllable words</h4>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/bottle.m4a"></button>
+								bo/ttle</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/offence.m4a"></button>
+								o/ffence</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/station.m4a"></button>
+								sta/tion</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/reply.m4a"></button>
+								re/ply</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="parapaper fold">
+							<h4>3 syllable words</h4>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/department.m4a"></button>
+								de/part/ment</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/basketball.m4a"></button>
+								ba/sket/ball</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/understand.m4a"></button>
+								un/der/stand</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/prisoner.m4a"></button>
+								pri/son/er</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/explosives.m4a"></button>
+								ex/plo/sives</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/lemonade.m4a"></button>
+								le/mon/ade</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/parliament.m4a"></button>
+								par/lia/ment</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="parapaper fold">
+							<h4>4 syllable words</h4>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/professional.m4a"></button>
+								pro/fess/ion/al</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/economics.m4a"></button>
+								ec/on/om/ics</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/identical.m4a"></button>
+								i/dent/ic/al</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/bureaucratic.m4a"></button>
+								bu/reau/cra/tic</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/obviously.m4a"></button>
+								ob/vi/ous/ly</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/observatory.m4a"></button>
+								ob/ser/va/tory</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="parapaper fold">
+							<h4>5 syllable words</h4>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/international.m4a"></button>
+								in/ter/nat/ion/al</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/humiliation.m4a"></button>
+								hu/mi/li/a/tion</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/electricity.m4a"></button>
+								el/ec/tri/cit/y</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/capitalism.m4a"></button>
+								ca/pi/tal/is/m</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/appreciation.m4a"></button>
+								a/ppre/ci/a/tion</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/refrigerator.m4a"></button>
+								re/fri/ger/at/or</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="parapaper fold">
+							<h4>6 syllable words</h4>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/incomprehensible.m4a"></button>
+								in/com/pre/hen/si/ble</p>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/indefatigable.m4a"></button>
+								in/de/fa/tig/ab/le</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="parapaper fold">
+							<h4>7 syllable words</h4>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/autobiographical.m4a"></button>
+								aut/o/bi/o/gra/phic/al</p>
+						</div>
+						<div class="parapaper fold">
+							<h4>8 syllable words</h4>
+							<p>
+								<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/syllables/totalitarianism.m4a"></button>
+								to/ta/i/ta/ri/an/is/m</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a18_1" nexturl="#m2a18_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>

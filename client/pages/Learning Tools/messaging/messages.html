@@ -1,0 +1,149 @@
+<template name="messages">
+   <div class="modal fade" id="messagesmodal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Messages</h4>
+            </div>
+            {{> messages_holder}}
+            
+         </div>
+      </div>
+   </div>
+</template>
+
+<template name="messages_holder">
+	{{> messageswrite}}
+	{{> messagesread}}
+</template>
+
+<template name="messageswrite">
+   <section id="messages_write" class="hidden">
+   <nav class="notebooknav">
+      <div class="tooltab_active tooltab-note"><i class="fas fa-pencil-alt"></i> Write</div><!--
+      --><div class="tooltab tooltab-note nbTab" data-target="#messages_read"><i class="fa fa-inbox"></i>Inbox</div>
+      <!-- <div class="tooltab tooltab-note nbTab" data-target="#messages_sent"><i class="fa fa-inbox"></i> Sent</div> -->
+   </nav>
+
+      <div class="notebookmain">
+         <form id="formmessageswrite">
+            <div class="content">
+               <div class="row">
+                  <div class="col-sm-2">
+                     <span class="notebooklabel">Send to</span>
+                  </div>
+                  <div class="col-sm-10 notebookbox">
+                     <select id="message-to" type="text" style="width: 100%;">
+						<option selected disabled value="">Select a user...</option>
+                  <!-- {{#if trail}} -->
+   						{{#each userList}}
+   							<option data-uId="{{_id}}">{{profile.firstname}} {{profile.surname}} {{isTutor}}</option>
+   						{{/each}}
+                 <!--  {{else}}
+                     {{#each userListTrial}}
+                        <option data-uId="{{_id}}">{{profile.firstname}} {{profile.surname}}</option>
+                     {{/each}}
+                  {{/if}} -->
+					 </select>
+                  </div>
+               </div>
+			   <div class="row">
+                  <div class="col-sm-2">
+                     <span class="notebooklabel">Subject</span>
+                  </div>
+                  <div class="col-sm-10 notebookbox">
+                     <input id="msgsubject" type="text" style="width: 100%;" placeholder="Enter a subject..." required="">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-2">
+                     <span class="notebooklabel">Message</span>
+                  </div>
+                  <div class="col-sm-10 notebookbox">
+                     <textarea id="msgbody" style="margin: 0px; height: 180px; width: 100%;" placeholder="Type your message here..." required=""></textarea>
+			      </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-12 notebookbox text-right">
+                     <button class="button2 buttonsmall">Send <i class="fa fas fa-paper-plane"></i></button>
+				   </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </section>
+</template>
+
+
+<!-- ********************************************* -->
+<!-- *************** MESSAGES READ *************** -->
+<!-- ********************************************* -->
+<template name="messagesread">
+   <section id="messages_read" class="">
+      <nav class="notebooknav">
+         <div class="tooltab tooltab-note nbTab" data-target="#messages_write"><i class="fas fa-pencil-alt"></i> Write</div><!--
+         --><div class="tooltab_active tooltab-note"><i class="fa fa-inbox"></i>Inbox</div>
+<!--          <div class="tooltab tooltab-note nbTab" data-target="#messages_sent"><i class="fa fa-inbox"></i>Sent</div>
+ -->      </nav>
+      <div class="notebookmain">
+         <div class="content">
+		 
+			<div class="msg-inbox">
+			{{#if messagesFetch}}
+			{{#each messagesFetch}}
+               <div class="msg-row closed {{#if isUnread}}unread{{/if}}" data-conversationId="{{_id}}">
+						<div class="msg-details">
+							<div style="float:right;"><a class="msg-delete"><i class="fa fa-trash-alt"></i></a></div>
+							<div class="subject"><span>{{title}}</span><i class="msg-expand"></i></div>
+						</div>
+                  {{#each messages}}
+						<div class="body">
+							<div class="date">{{date}}</div>
+							<div class="from">{{userIdToName sender}}: </div>
+							<div class="message">{{message}}</div>
+						</div>
+                  {{/each}}
+
+                  {{#if otherVisible}}
+                  <div class="reply">
+                     <div class="actions" style="text-align:center;" >
+                        <div class="button2 buttonsmall no-border msg-reply">Reply</div>
+                     </div>
+                     <form class="msg-reply-form hidden">
+                        <h4>Reply</h4>
+                        <textarea style="width: 100%;" placeholder="Type your message here..." rows="5"></textarea>
+                        <div class="text-center">
+                           <button class="button2 buttonsmall no-border item-space">Send <i class="fa fas fa-paper-plane"></i></button>
+                           <button class="button1 buttonsmall no-border item-space msg-reply-cancel">Cancel <i class="fa fa-times"></i></button>
+                        </div>
+                     </form>
+                  </div>
+                  {{else}}
+                  <div class="reply">
+                     <div class="actions" style="text-align:center;" >
+                        <div class="button2 buttonsmall no-border msg-reply">Reply</div>
+                     </div>
+                     <form class="msg-reply-form hidden">
+                        <h4>Reply</h4>
+                        <textarea style="width: 100%;" placeholder="Type your message here..." rows="5"></textarea>
+                           <div style="text-align:center;" >
+                              The other party has deleted this conversation.
+                           </div>
+                           <div style="text-align:center; font-size:90%;" >
+                              You cannot reply anymore. 
+                           </div>
+                     </form>
+                  </div>
+                  {{/if}}
+
+					</div>
+				{{/each}}
+			{{else}}
+				Your inbox is empty.
+			{{/if}}
+			 </div>
+         </div>
+      </div>
+   </section>
+</template>

@@ -1,0 +1,568 @@
+<template name="m8a1"> 
+<article class="with-tools-sidebar m8a1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Oxford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 1 - {{>m8a1Title}}</div>
+		</header>
+		<section id="m8a1">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a1Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a1Intro}}</h3>
+				{{> m8a1Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a1_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a1_1}}
+		{{>m8a1_2}}
+		{{>m8a1_3}}
+		{{>m8a1_4}}
+		{{>m8a1_5}}
+		{{>m8a1_6}}
+		{{>m8a1_7}}
+		{{>m8a1_8}}
+		{{>m8a1_9}}
+		{{>m8a1_10}}
+		{{>m8a1_11}}
+		{{>m8a1_12}}
+		{{>m8a1_13}}
+		{{>m8a1_14}}
+		{{>m8a1_15}}
+		{{>m8a1_16}}
+		{{>m8a1_17}}
+		{{>m8a1_18}}
+		{{>EndPage char="k" act="m8a1" nextact="m8a2" place="Oxford"}}
+	</div>
+</article>
+</template>
+
+<template name="m8a1_1"> 
+	<section id="m8a1_1" class="hidden"> 
+		<div class="content">  
+			<h3 class="center">Here are some short articles about jobs. Below are images of the jobs mentioned in the articles.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1 center">
+						<div class="avoidwrap item-space">
+							<div class="ph-w ph-4x3 item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Receptionists.jpg" alt="Hospitality staff"></div></div><h5>Hospitality</h5>
+						</div>
+
+						<div class="avoidwrap item-space">
+							<div class="ph-w ph-4x3 item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Scientists.jpg" alt="Scientist at a microscope"></div></div><h5>Scientists</h5>
+						</div>
+
+						<div class="avoidwrap item-space">
+							<div class="ph-w ph-4x3 item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Manufacturing.jpg" alt="Person welding"></div></div><h5>Manufacturing</h5>
+						</div>
+
+						<div class="avoidwrap item-space">
+							<div class="ph-w ph-4x3 item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Construction.jpg" alt="Building under construction"></div></div><h5>Construction</h5>
+						</div>
+
+						<div class="avoidwrap item-space">
+							<div class="ph-w ph-4x3 item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Accountant.jpg" alt="Accountant with calculator and laptop"></div></div><h5>Accountants</h5>
+						</div>
+
+						<div class="avoidwrap item-space">
+							<div class="ph-w ph-4x3 item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Local Government.jpg" alt="Local government meeting"></div></div><h5>Local Government</h5>
+						</div>
+
+						<div class="avoidwrap item-space">
+							<div class="ph-w ph-4x3 item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Engineer.jpg" alt="Engineers"></div></div><h5>Engineers</h5>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a1" nexturl="#m8a1_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_2"> 
+	<section id="m8a1_2" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="Strategic"
+					word2="Sector"
+					word3c="hidden"
+					word4c="hidden"
+					word5c="hidden"
+					word6c="hidden"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_1" nexturl="#m8a1_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_3"> 
+	<section id="m8a1_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h1>Article 1</h1>
+			{{>InstructionsDictionary text="Drag the correct word into the spaces. Check any words you don't know in the Dictionary"}}
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="5" star="no" align="center"}}
+			{{> rightwrong}}
+			 
+				<p class="linespace">The Institute of Chartered <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div> of Scotland (ICAS) was the first in the world. Even today it is one of the most important organisations in the profession. <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target2">&nbsp;</div> can work in private practice, the public sector or for large companies. They are always in demand. As businesses grow, <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target3">&nbsp;</div> are required to take on more strategic roles and to have more technical knowledge.</p>
+			</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth11 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Construction</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1 target2 target3">Accountants</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Local Government</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Engineers</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Hospitality</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Scientists</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Manufacturing</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m8a1_2" nexturl="#m8a1_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a1_4"> 
+	<section id="m8a1_4" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="Renewable"
+					word2="Flourish(ing)"
+					word3c="hidden"
+					word4c="hidden"
+					word5c="hidden"
+					word6c="hidden"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_3" nexturl="#m8a1_5" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_5"> 
+	<section id="m8a1_5" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content noselect">
+			<h1>Article 2</h1>
+			{{>InstructionsDictionary text="Drag the correct word into the spaces. Check any words you don't know in the Dictionary"}}
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="5" star="no" align="center"}}
+			{{> rightwrong}}
+			 
+				<p class="linespace">The <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Steam engines use boiling water to produce movement. They were used for railway engines and for powering machines in factories in the Industrial Revolution.">steam engine</a>, designed by <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="The Scotsman James Watt developed the steam engine in 1781.">James Watt</a> and the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A bridge over the river Forth near Edinburgh.">Forth Rail Bridge</a> near Edinburgh are two of Scotland’s most famous achievements. Every part of our daily life is affected by the work of <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div> , past and present. There are at least 7,800 companies in the country, employing over 220,000 people with a wide range of skills.</p>
+
+				<p class="linespace">The <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="The river which runs through Glasgow.">River Clyde</a> in Glasgow was once the world's most important shipbuilding centre. Now industries such as aerospace, electronic and renewable energy industries are flourishing. Most <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target2">&nbsp;</div> are men but women are catching up.</p>
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for their meanings.</h3>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth11 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Construction</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Accountants</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Local Government</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1 target2">Engineers</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Hospitality</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Scientists</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Manufacturing</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m8a1_4" nexturl="#m8a1_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+ 
+ <template name="m8a1_6"> 
+	<section id="m8a1_6" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="Vital"
+					word2c="hidden"
+					word3c="hidden"
+					word4c="hidden"
+					word5c="hidden"
+					word6c="hidden"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_5" nexturl="#m8a1_7" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+ 
+<template name="m8a1_7"> 
+	<section id="m8a1_7" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content noselect">
+			<h1>Article 3</h1>
+			{{>InstructionsDictionary text="Drag the correct word into the spaces. Check any words you don't know in the Dictionary"}}
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="5" star="no" align="center"}}
+			{{> rightwrong}}
+			 
+				<p class="linespace">The <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div>, leisure and tourism industry is vital to the Scottish economy. It employs 9% of the working population. There are more jobs for younger people and more part- time opportunities for skilled and unskilled jobs. Scotland has 17,000 hotels; famous country hotels like <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A famous 5 star hotel with sporting facilities in Perthshire.">Gleneagles</a> and the most expensive hotel in Scotland – <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="An exclusive luxury hotel where you have your own wine cellar and chef.">The Atholl</a> in Edinburgh.</p>
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for their meanings.</h3>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth11 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Construction</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Accountants</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Local Government</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Engineers</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">Hospitality</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Scientists</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Manufacturing</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m8a1_6" nexturl="#m8a1_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a1_8"> 
+	<section id="m8a1_8" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="Administration"
+					word2="Catering"
+					word3="Environmental"
+					word4="Impact"
+					word5c="hidden"
+					word6c="hidden"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}} 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_7" nexturl="#m8a1_9" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_9"> 
+	<section id="m8a1_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h1>Article 4</h1>
+			{{>InstructionsDictionary text="Drag the correct word into the spaces. Check any words you don't know in the Dictionary"}}
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="5" star="no" align="center"}}
+			{{> rightwrong}}
+			 
+				<p class="linespace">Working for <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div> in Scotland could be a great career move. There are a huge variety of jobs: administration, catering, finance, legal, transport, environmental health and housing. You have the chance to make a real impact on your community. </p>
+			</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth11 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Construction</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Accountants</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">Local Government</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Engineers</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Hospitality</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Scientists</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Manufacturing</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m8a1_8" nexturl="#m8a1_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a1_10"> 
+	<section id="m8a1_10" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+					word1="Intensive"
+					word2="Automated"
+					word3c="hidden"
+					word4c="hidden"
+					word5c="hidden"
+					word6c="hidden"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_9" nexturl="#m8a1_11" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_11"> 
+	<section id="m8a1_11" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content noselect">
+			<h1>Article 5</h1>
+			{{>InstructionsDictionary text="Drag the correct word into the spaces. Check any words you don't know in the Dictionary"}}
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="5" star="no" align="center"}}
+			{{> rightwrong}}
+			 
+				<p class="linespace">The <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div> industry employs around 10% of the Scottish workforce. The <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target2">&nbsp;</div> sector used to be very labour intensive with huge factories, <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="There used to be 5 large shipbuilding yards in Scotland on the banks of the River Clyde.">shipyards</a> and <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Scotland used to be the largest producer of hot strip steel in Europe but the plant closed in 1991.">steel plants</a>. Now, most things are automated. The food and drink industry is important for Scotland. Scotch whisky is exported all over the world.</p>
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for their meanings.</h3>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth11 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Construction</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Accountants</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Local Government</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Engineers</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Hospitality</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Scientists</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1 target2">Manufacturing</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m8a1_10" nexturl="#m8a1_12" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a1_12"> 
+	<section id="m8a1_12" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+					word1="Innovation"
+					word2="Diabetes"
+					word3="hidden"
+					word4c="hidden"
+					word5c="hidden"
+					word6c="hidden"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_11" nexturl="#m8a1_13" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_13"> 
+	<section id="m8a1_13" class="hidden"> 
+		<div class="content">  
+			{{>complex_words}}
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>Stem cells: master cells that can develop into any kind of cell in the human body.</li>
+						<li>Cardiovascular: relating to heart, blood and blood vessels.</li>
+					</ul>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_12" nexturl="#m8a1_14" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_14"> 
+	<section id="m8a1_14" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content noselect">
+			<h1>Article 6</h1>
+			{{>InstructionsDictionary text="Drag the correct word into the spaces. Check any words you don't know in the Dictionary"}}
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="5" star="no" align="center"}}
+			{{> rightwrong}}
+			 
+				<p class="linespace">Scotland has a long history of innovation in science and medicine. <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div> in Scotland developed the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="The Magnetic Resonance Imaging machine was first used on a patient by scientists and doctors in Aberdeen in 1980.">MRI scan</a> and created <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="This sheep caused a sensation in 1997. She was the first mammal to be cloned from an adult cell by scientists at Edinburgh University.">Dolly the Sheep</a>.  Research <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target2">&nbsp;</div> in Scotland are specialising in stem cells, cardiovascular disease, diabetes and cancer. In total <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target3">&nbsp;</div> contribute £2.8 billion per year to the Scottish economy. </p>
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for their meanings.</h3>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth11 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Construction</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Accountants</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Local Government</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Engineers</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Hospitality</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1 target2 target3">Scientists</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Manufacturing</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m8a1_13" nexturl="#m8a1_15" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a1_15"> 
+	<section id="m8a1_15" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+					word1="Commercial"
+					word2="Labourer"
+					word3="Plumber"
+					word4="Decorator"
+					word5="Professional"
+					word6="Architect"
+					word7="Surveyor"
+					word8="Carpenter"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}} 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_14" nexturl="#m8a1_16" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_16"> 
+	<section id="m8a1_16" class="hidden"> 
+		<div class="content">  
+			{{>complex_words}}
+				<div class="center">
+					<div class="parapaper paradic fold">
+						<ul class="dicwords">
+							<li>Joiner: a type of carpenter that cuts and fits joints into wood without the use of nails, screws, or other metal fasteners. Joiners usually work in a workshop.</li>
+						</ul>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a1_15" nexturl="#m8a1_17" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a1_17"> 
+	<section id="m8a1_17" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content noselect">
+			<h1>Article 7</h1>
+			{{>InstructionsDictionary text="Drag the correct word into the spaces. Check any words you don't know in the Dictionary"}}
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="5" star="no" align="center"}}
+			{{> rightwrong}}
+			{{> welldone}}
+			 
+				<p class="linespace">The <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target1">&nbsp;</div> industry in Scotland is large and varied. Employers range from small family businesses to global property companies like <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content=" A global construction company founded in Scotland.">Balfour Beatty</a>. <div class="ddseatedtarget ddwidth11 dd1line" data-destinationid = "target2">&nbsp;</div> workers are required throughout the whole country building private houses, commercial buildings and roads, railways and airports. There are jobs for unskilled labourers, and jobs for skilled tradesmen such as joiners, plumbers, electricians and decorators. There are also professional jobs for architects, surveyors and engineers. 
+</p>
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for their meanings.</h3>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth11 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1 target2">Construction</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Accountants</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Local Government</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Engineers</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Hospitality</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Scientists</div></div>
+				<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target4">Manufacturing</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m8a1_16" nexturl="#m8a1_18" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a1_18"> 
+	<section id="m8a1_18" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content text-center">  
+			<h3>Now {{>touch yes="tap" no="click"}} to hear the articles.</h3>
+			<div class="avoidwrap item-space">
+				<div class="ph-w ph-4x3 inline-block item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Receptionists.jpg" alt="Hospitality staff"></div></div><br><button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module8/a1/Hospitality.m4a">Hospitality</button>
+			</div>
+			<div class="avoidwrap item-space">
+				<div class="ph-w ph-4x3 inline-block item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Scientists.jpg" alt="Scientist at a microscope"></div></div><br><button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module8/a1/Scientists.m4a">Scientists</button>
+			</div>
+			<div class="avoidwrap item-space">
+				<div class="ph-w ph-4x3 inline-block item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Manufacturing.jpg" alt="Person welding"></div></div><br><button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module8/a1/Manufacturing.m4a">Manufacturing</button>
+			</div>
+			<div class="avoidwrap item-space">
+				<div class="ph-w ph-4x3 inline-block item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Construction.jpg" alt="Building under construction"></div></div><br><button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module8/a1/Construction.m4a">Construction</button>
+			</div>
+			<div class="avoidwrap item-space">
+				<div class="ph-w ph-4x3 inline-block item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Accountant.jpg" alt="Accountant with calculator and laptop"></div></div><br><button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module8/a1/Accountants.m4a">Accountants</button>
+			</div>
+			<div class="avoidwrap item-space">
+				<div class="ph-w ph-4x3 inline-block item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Local Government.jpg" alt="Local government meeting"></div></div><br><button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module8/a1/LocalGovernment.m4a">Local Government</button>
+			</div>
+			<div class="avoidwrap item-space">
+				<div class="ph-w ph-4x3 inline-block item-space shadow" style="width: 150px"><div class="ph"><img draggable="false" src="images/module8/a1/Engineer.jpg" alt="Engineers"></div></div><br><button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module8/a1/Engineers.m4a">Engineers</button>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m8a1_17" nexturl="#m8a1_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

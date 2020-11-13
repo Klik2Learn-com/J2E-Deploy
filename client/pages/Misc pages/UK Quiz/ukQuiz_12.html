@@ -1,0 +1,52 @@
+<template name="ukQuiz_12">
+   <section id="ukQuiz_12" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1 class="center">UK Questions</h1>
+			<h3 class="center">
+				Which of these famous British people is William Shakespeare?
+			</h3>
+				<div class="container-fluid">
+				<!-- {{>rightwrong}} {{>welldone}} -->
+					<!-- <div class="row">
+						<div class="col-sm-1 center">
+							<div class="numberBig">1</div>
+						</div>
+						<div class="col-sm-10 text-center">	
+							<div class="caption item-space">always</div> <div class="caption item-space">frequently</div> <div class="caption item-space">usually</div> <div class="caption item-space">sometimes</div> <div class="caption item-space">occasionally</div> <div class="caption item-space">seldom</div> <div class="caption item-space">never</div>
+						</div>
+						<div class="col-sm-1"></div>
+					</div> -->
+					
+			<!-- 	<br>
+						<hr>
+					<br> -->
+					
+					<div class="row">
+						
+						<div class="col-sm-3 center">
+						<img src="/images/uk-quiz/Churchill.jpg" class="img-responsive center-block pointer" id="1">
+							<!-- <div class="caption dd2lines">Manchester</div> -->
+						</div>
+						<div class="col-sm-3 center">
+						<img src="/images/uk-quiz/Henry.jpg" class="img-responsive center-block pointer" id="2">
+							<!-- <div class="caption dd2lines">London</div> -->
+						</div>						
+						<div class="col-sm-3 center">
+						<img src="/images/uk-quiz/Darwin.jpg" class="img-responsive center-block pointer" id="3">
+							<!-- <div class="caption dd2lines">Cambridge</div> -->
+						</div>
+						<div class="col-sm-3 center">
+							<img src="/images/uk-quiz/Shakespeare.jpg" class="img-responsive center-block pointer" id="4">
+								<!-- <div class="caption dd1line2high">Liverpool</div> -->
+						</div>
+					</div>
+					
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#ukQuiz_11" nexturl="#ukQuiz_13" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>

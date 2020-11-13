@@ -1,0 +1,366 @@
+<template name="SGlottery">
+	<section id="SGlottery" class="hidden">
+	<div class="content">  
+      		<h3 class="center">Click on the number when you hear it.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">twenty two</span></div> </div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">three</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">one</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">nine</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">fourteen</span></div></div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto6 animated flipInX" id="lottoc5"><div><span class="contents">sixteen</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc6"><div><span class="contents">seven</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc7"><div><span class="contents">eight</span></div></div>
+					</div> 
+					 <div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto7 animated flipInX" id="lottoc8"><div><span class="contents">thirty</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc9"><div><span class="contents">eighty six</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc10"><div><span class="contents">twenty nine</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc11"><div><span class="contents">two</span></div></div> 
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-7 audio text-center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a4/29.m4a"></button>
+							<b class="avoidwrap">Click to hear the audio again</b>
+						</div>
+						<div class="col-sm-5 text-center">
+							{{>scorebox1 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+	  	</div> 
+		<!-- <div class="content container-fluid noselect">
+			<h3 class="center">Now click the audio button to hear the name of a department. Click the explanation when it appears on screen. <button id="beginGame" class="button2">Begin</button></h3>
+			  {{> rightwrong}}
+			  <div id = "game_canvas" class="boxlotto"></div>
+			  <div class="parapaper lottocaption " style="text-align: left;">
+				 <div style="float: left; padding-top: 0.5em;">
+					<button type="button" class="buttonround buttonaudio" id="play"></button>
+					<strong> Click to hear the audio again</strong>
+				 </div>
+				 <div style="text-align: right;">
+					{{>scorebox1}}
+				 </div>
+			  </div>			   
+		   </div>
+		    <footer>
+				{{>footer_nav prevurl="#SGlottery_1" nexturl="#SGlottery_3" prev="invisible"  next="invisible" nextID="complete"}}
+			</footer> -->
+			
+<div class="content">
+			<h4>HTML</h4>
+				<pre class="htmlcode2">
+&lt;div class=&quot;content&quot;&gt; 
+&lt;h3 class=&quot;center&quot;&gt;Click on the number when you hear it.&lt;/h3&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto5 animated flipInX&quot; id=&quot;lottoc0&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;twenty two&lt;/span&gt;&lt;/div&gt; &lt;/div&gt; 
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto2 animated flipInX&quot; id=&quot;lottoc1&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;three&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto4 animated flipInX&quot; id=&quot;lottoc2&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;one&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto1 animated flipInX&quot; id=&quot;lottoc3&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;nine&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto3 animated flipInX&quot; id=&quot;lottoc4&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;fourteen&lt;/span&gt;&lt;/div&gt;&lt;/div&gt; 
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto6 animated flipInX&quot; id=&quot;lottoc5&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;sixteen&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto8 animated flipInX&quot; id=&quot;lottoc6&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;seven&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto1 animated flipInX&quot; id=&quot;lottoc7&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;eight&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt; 
+		 &lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto7 animated flipInX&quot; id=&quot;lottoc8&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;thirty&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto8 animated flipInX&quot; id=&quot;lottoc9&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;eighty six&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto5 animated flipInX&quot; id=&quot;lottoc10&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;twenty nine&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 col-xxs-6 center&quot;&gt;
+			&lt;div class=&quot;lotto-button lotto2 animated flipInX&quot; id=&quot;lottoc11&quot;&gt;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;two&lt;/span&gt;&lt;/div&gt;&lt;/div&gt; 
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;parapaper lottocaption&quot;&gt;
+	&lt;div class=&quot;container-fluid&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-7 audio text-center&quot;&gt;
+				&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module1/a4/29.m4a&quot;&gt;&lt;/button&gt;
+				&lt;b class=&quot;avoidwrap&quot;&gt;Click to hear the audio again&lt;/b&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-5 text-center&quot;&gt;
+				&#123;&#123;&gt;scorebox1 rightSession=&quot;m1a4RightScore&quot; wrongSession=&quot;m1a4WrongScore&quot;&#125;&#125;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&#123;&#123;&gt;rightwrong&#125;&#125;
+&lt;/div&gt; 
+				</pre>
+			<h4>Javascript</h4>
+				<pre class="htmlcode2">
+Template.m1a4_1.helpers({ 
+	activeSection: function(){ 
+		var activeSection = Session.get(&quot;activeSection&quot;); 
+		return (activeSection == &quot;#m1a4_1&quot;); 
+	}
+}); 
+ 
+Template.m1a4_1.events({
+	
+	&quot;click .lotto-button&quot;: function(evt){
+		
+		if ($.k2l.m1a4_1.allowClick == true) {
+			$.k2l.m1a4_1.allowClick = false;
+			var answer = &#39;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;&#39;+$.k2l.m1a4_1.answer_index[$.k2l.m1a4_1.index]+&quot;&lt;/span&gt;&lt;/div&gt;&quot;;
+			if ($(evt.currentTarget).html() == answer) {
+				var parentSection = $(evt.currentTarget).parents(&#39;section&#39;);
+				$.k2l.m1a4_1.index++
+				$.k2l.m1a4_1.rightscore++
+				Session.set(&#39;m1a4RightScore&#39;, $.k2l.m1a4_1.rightscore);
+				$(&#39;.correctscreen&#39;).removeClass(&#39;hidden&#39;);
+				$(&#39;.lotto-button&#39;).addClass(&#39;flipOutX&#39;);
+
+				if($.k2l.m1a4_1.index &gt; $.k2l.m1a4_1.answer_index.length-1){
+
+				setTimeout( function() {
+					$(&#39;.correctscreen&#39;).addClass(&#39;hidden&#39;);
+				}, 1000);
+
+
+				setTimeout(function() {
+					$.k2l.m1a4_1.index = 0;
+					$(&#39;.buttonaudio&#39;).attr(&quot;data-audiosrc&quot;,&quot;/audio/module1/a4/&quot;+$.k2l.m1a4_1.audio[$.k2l.m1a4_1.index]+&quot;.m4a&quot;);
+					setTimeout( function() {
+					 	shuffle($.k2l.m1a4_1.choices[$.k2l.m1a4_1.index]);
+						for(var i=0; i &lt; $.k2l.m1a4_1.choices[$.k2l.m1a4_1.index].length+1; i++){
+							$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+							var color = Math.floor(Math.random() * 8) + 1 ;
+							$(&#39;#lottoc&#39; +i).addClass(&#39;flipInX lotto&#39;+color);
+							$(&#39;#lottoc&#39; +i).html(&#39;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;&#39;+$.k2l.m1a4_1.choices[$.k2l.m1a4_1.index][i]+&quot;&lt;/span&gt;&lt;/div&gt;&quot;);					
+							}
+						 },1);
+					$(parentSection).addClass(&#39;hidden&#39;); // hide this page
+					if($.k2l.m1a4_1.wrongscore &gt;5){
+						$(&#39;#m1a4_bad&#39;).removeClass(&#39;hidden&#39;);// reveal next page.
+						$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+					} else {
+						$(&#39;#m1a4_good&#39;).removeClass(&#39;hidden&#39;);
+						$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+					};
+				}, 2000);
+
+				} else {
+
+				setTimeout( function() {
+					$(&#39;.correctscreen&#39;).addClass(&#39;hidden&#39;);
+					$.k2l.m1a4_1.allowClick = true; // Make the buttons clickable again
+					$(&#39;.lotto-button&#39;).removeClass(&#39;lotto1 lotto2 lotto3 lotto4 lotto5 lotto6 lotto7 lotto8 flipInX&#39;);
+
+				
+					 setTimeout( function() {
+					 	shuffle($.k2l.m1a4_1.choices[$.k2l.m1a4_1.index]);
+						for(var i=0; i &lt; $.k2l.m1a4_1.choices[$.k2l.m1a4_1.index].length+1; i++){
+							$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+							var color = Math.floor(Math.random() * 8) + 1 ;
+							$(&#39;#lottoc&#39; +i).addClass(&#39;flipInX lotto&#39;+color);
+							$(&#39;#lottoc&#39; +i).html(&#39;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;&#39;+$.k2l.m1a4_1.choices[$.k2l.m1a4_1.index][i]+&quot;&lt;/span&gt;&lt;/div&gt;&quot;);
+
+							}
+						 },1);
+					}, 1000);
+				$(&#39;.buttonaudio&#39;).attr(&quot;data-audiosrc&quot;,&quot;/audio/module1/a4/&quot;+$.k2l.m1a4_1.audio[$.k2l.m1a4_1.index]+&quot;.m4a&quot;);
+						setTimeout(function() {
+							$.k2l.m1a4_1.sound.src = $(&#39;.buttonaudio&#39;).attr(&quot;data-audiosrc&quot;);
+							$.k2l.m1a4_1.sound.play();
+						}, 1000);
+				}				
+				} else {				
+				var parentSection = $(evt.currentTarget).parents(&#39;section&#39;);
+				$.k2l.m1a4_1.index++
+				$.k2l.m1a4_1.wrongscore++
+				Session.set(&#39;m1a4WrongScore&#39;, $.k2l.m1a4_1.wrongscore);
+				$(&#39;.incorrectscreen&#39;).removeClass(&#39;hidden&#39;);
+				$(&#39;.lotto-button&#39;).addClass(&#39;flipOutX&#39;);
+
+				if($.k2l.m1a4_1.index &gt; $.k2l.m1a4_1.answer_index.length-1){
+
+				setTimeout( function() {
+					$(&#39;.incorrectscreen&#39;).addClass(&#39;hidden&#39;);
+				}, 1000);
+
+				setTimeout(function() {
+					$.k2l.m1a4_1.index = 0;
+					$(&#39;.buttonaudio&#39;).attr(&quot;data-audiosrc&quot;,&quot;/audio/module1/a4/&quot;+$.k2l.m1a4_1.audio[$.k2l.m1a4_1.index]+&quot;.m4a&quot;);
+					setTimeout( function() {
+					 	shuffle($.k2l.m1a4_1.choices[$.k2l.m1a4_1.index]);
+						for(var i=0; i &lt; $.k2l.m1a4_1.choices[$.k2l.m1a4_1.index].length+1; i++){
+							$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+							var color = Math.floor(Math.random() * 8) + 1 ;
+							$(&#39;#lottoc&#39; +i).addClass(&#39;flipInX lotto&#39;+color);
+							$(&#39;#lottoc&#39; +i).html(&#39;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;&#39;+$.k2l.m1a4_1.choices[$.k2l.m1a4_1.index][i]+&quot;&lt;/span&gt;&lt;/div&gt;&quot;);					
+							}
+						 },1);
+					$(parentSection).addClass(&#39;hidden&#39;); // hide this page
+					if($.k2l.m1a4_1.wrongscore &gt;5){
+						$(&#39;#m1a4_bad&#39;).removeClass(&#39;hidden&#39;);// reveal next page.
+						$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+					} else {
+						$(&#39;#m1a4_good&#39;).removeClass(&#39;hidden&#39;);
+						$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+					};
+				}, 2000);
+
+				} else {
+
+				setTimeout( function() {
+					$(&#39;.incorrectscreen&#39;).addClass(&#39;hidden&#39;);
+					$.k2l.m1a4_1.allowClick = true; // Make the buttons clickable again
+					$(&#39;.lotto-button&#39;).removeClass(&#39;lotto1 lotto2 lotto3 lotto4 lotto5 lotto6 lotto7 lotto8 flipInX&#39;);
+				
+					 setTimeout( function() {
+					 	shuffle($.k2l.m1a4_1.choices[$.k2l.m1a4_1.index]);
+						for(var i=0; i &lt; $.k2l.m1a4_1.choices[$.k2l.m1a4_1.index].length+1; i++){
+							$(&#39;.lotto-button&#39;).removeClass(&#39;flipOutX&#39;);
+							var color = Math.floor(Math.random() * 8) + 1 ;
+							$(&#39;#lottoc&#39; +i).addClass(&#39;flipInX lotto&#39;+color);
+							$(&#39;#lottoc&#39; +i).html(&#39;&lt;div&gt;&lt;span class=&quot;contents&quot;&gt;&#39;+$.k2l.m1a4_1.choices[$.k2l.m1a4_1.index][i]+&quot;&lt;/span&gt;&lt;/div&gt;&quot;);					
+							}
+						 },1);
+					}, 1000);
+				$(&#39;.buttonaudio&#39;).attr(&quot;data-audiosrc&quot;,&quot;/audio/module1/a4/&quot;+$.k2l.m1a4_1.audio[$.k2l.m1a4_1.index]+&quot;.m4a&quot;);
+						setTimeout(function() {
+							$.k2l.m1a4_1.sound.src = $(&#39;.buttonaudio&#39;).attr(&quot;data-audiosrc&quot;);
+							$.k2l.m1a4_1.sound.play();
+						}, 1000);
+				}
+		}
+		}
+			
+	},
+
+	&#39;click .buttonaudio&#39;: function(evt) {
+		;
+		$.k2l.m1a4_1.sound.src = $(evt.currentTarget).attr(&#39;data-audiosrc&#39;);
+		$.k2l.m1a4_1.sound.play();
+	},
+	
+	&#39;click .pagination&#39;: function(evt) {
+		$.k2l.m1a4_1.index = 0;
+		$.k2l.m1a4_1.allowClick = true;
+		$.k2l.m1a4_1.sound.src = {};
+	}
+
+});
+
+Template.m1a4_1.rendered = function() {
+
+	if(typeof $.k2l == &#39;undefined&#39;){
+		$.k2l = {};
+	};
+	
+	if (typeof $.k2l.m1a4_1 == &#39;undefined&#39;) {
+		$.k2l.m1a4_1 = {};
+	};
+	
+	 var answer_index = [&quot;twenty nine&quot;,&quot;sixteen&quot;,&quot;forty nine&quot;,&quot;eleven&quot;,&quot;ninety two&quot;,&quot;fifty four&quot;,&quot;thirty&quot;,&quot;nine&quot;,&quot;seventy&quot;,&quot;fifty five&quot;,&quot;ninety one&quot;,&quot;thirty one&quot;,&quot;twenty six&quot;,&quot;thirty three&quot;,&quot;eighty&quot;,];
+
+	var choices = [
+	[&quot;twenty nine&quot;, &quot;seventy three&quot;, &quot;twelve&quot;, &quot;five&quot;, &quot;forty two&quot;, &quot;seventeen&quot;, &quot;four&quot;, &quot;one&quot;, &quot;twenty eight&quot;, &quot;ten&quot;, &quot;twenty three&quot;, &quot;ninety four&quot;],
+	[&quot;sixteen&quot;, &quot;eighty three&quot;, &quot;thirty two&quot;, &quot;five&quot;, &quot;twenty&quot;, &quot;fifty&quot;, &quot;ninety six&quot;, &quot;sixty two&quot;, &quot;ninety eight&quot;,&quot;forty&quot;, &quot;thirty three&quot;, &quot;seventeen&quot;],
+	[&quot;forty nine&quot;, &quot;sixty two&quot;, &quot;seventy one&quot;, &quot;fifty nine&quot;, &quot;three&quot;, &quot;ninety six&quot;, &quot;thirteen&quot;, &quot;ninety one&quot;, &quot;forty three&quot;, &quot;twenty two&quot;, &quot;twelve&quot;, &quot;thirty three&quot;],
+	[&quot;eleven&quot;, &quot;sixty six&quot;, &quot;forty eight&quot;, &quot;fifty&quot;, &quot;seventy three&quot;, &quot;twelve&quot;, &quot;one hundred&quot;, &quot;thirty two&quot;, &quot;nineteen&quot;, &quot;twenty six&quot;, &quot;eighty four&quot;, &quot;ninety four&quot;],
+	[&quot;ninety two&quot;, &quot;seventy three&quot;, &quot;twelve&quot;, &quot;eighteen&quot;, &quot;forty two&quot;, &quot;four&quot;, &quot;eighty&quot;, &quot;twenty eight&quot;, &quot;one&quot;, &quot;ninety three&quot;, &quot;sixty four&quot;, &quot;seven&quot;],
+	[&quot;fifty four&quot;, &quot;five&quot;, &quot;twenty&quot;, &quot;sixteen&quot;, &quot;fifty&quot;, &quot;ninety six&quot;, &quot;ninety eight&quot;, &quot;sixty two&quot;, &quot;thirty two&quot;, &quot;fifty five&quot;, &quot;eighty three&quot;, &quot;sixty nine&quot;],
+	[&quot;thirty&quot;, &quot;thirty two&quot;, &quot;sixty two&quot;, &quot;thirteen&quot;, &quot;ninety one&quot;, &quot;three&quot;, &quot;ninety six&quot;, &quot;forty nine&quot;, &quot;nineteen&quot;, &quot;forty three&quot;, &quot;ninety one&quot;, &quot;twenty&quot;],
+	[&quot;nine&quot;, &quot;twenty five&quot;, &quot;sixty seven&quot;, &quot;nineteen&quot;, &quot;seventy&quot;, &quot;three&quot;, &quot;twelve&quot;, &quot;one hundred&quot;, &quot;thirty two&quot;, &quot;eleven&quot;, &quot;ten&quot;, &quot;forty&quot;],
+	[&quot;seventy&quot;, &quot;seven&quot;, &quot;seventy three&quot;, &quot;twelve&quot;, &quot;thirty two&quot;, &quot;forty nine&quot;, &quot;two&quot;, &quot;forty four&quot;, &quot;twenty six&quot;, &quot;seventy one&quot;, &quot;sixty&quot;, &quot;four&quot;],
+	[&quot;fifty five&quot;, &quot;seven&quot;, &quot;seventy three&quot;, &quot;twelve&quot;, &quot;thirty two&quot;, &quot;forty nine&quot;, &quot;two&quot;, &quot;forty four&quot;, &quot;twenty six&quot;, &quot;sixty five&quot;, &quot;ninety five&quot;, &quot;forty five&quot;],
+	[&quot;ninety one&quot;, &quot;thirty two&quot;, &quot;eighty three&quot;, &quot;five&quot;, &quot;twenty&quot;, &quot;nine&quot;, &quot;six&quot;, &quot;thirteen&quot;, &quot;sixty two&quot;, &quot;sixty one&quot;, &quot;ninety three&quot;, &quot;eleven&quot;],
+	[&quot;thirty one&quot;, &quot;seventy one&quot;, &quot;sixty two&quot;, &quot;fifty nine&quot;, &quot;ninety one&quot;, &quot;three&quot;, &quot;ninety six&quot;, &quot;forty four&quot;, &quot;nineteen&quot;, &quot;twenty one&quot;, &quot;seventy one&quot;, &quot;seven&quot;],
+	[&quot;twenty six&quot;, &quot;sixty six&quot;, &quot;forty eight&quot;, &quot;fifty&quot;, &quot;seventy&quot;, &quot;eleven&quot;, &quot;three&quot;, &quot;one hundred&quot;, &quot;thirty two&quot;, &quot;thirty six&quot;, &quot;ninety one&quot;, &quot;twenty nine&quot;],
+	[&quot;thirty three&quot;, &quot;seventeen&quot;, &quot;twelve&quot;, &quot;eighteen&quot;, &quot;forty two&quot;, &quot;four&quot;, &quot;eighty&quot;, &quot;twenty eight&quot;, &quot;one&quot;, &quot;forty three&quot;, &quot;seven&quot;, &quot;eleven&quot;],
+	[&quot;eighty&quot;, &quot;thirty two&quot;, &quot;fifty four&quot;, &quot;five&quot;, &quot;twenty&quot;, &quot;sixteen&quot;, &quot;ninety six&quot;, &quot;ninety eight&quot;, &quot;sixty two&quot;, &quot;ninety&quot;, &quot;twelve&quot;, &quot;sixty six&quot;]
+	 ];
+
+	 var audio = [&quot;29&quot;,&quot;16&quot;,&quot;49&quot;,&quot;11&quot;,&quot;92&quot;,&quot;54&quot;,&quot;30&quot;,&quot;9&quot;,&quot;70&quot;,&quot;55&quot;,&quot;91&quot;,&quot;31&quot;,&quot;26&quot;,&quot;33&quot;,&quot;80&quot;]
+
+	$.k2l.m1a4_1.answer_index = answer_index;
+	$.k2l.m1a4_1.choices = choices;
+	$.k2l.m1a4_1.index = 0;
+	$.k2l.m1a4_1.rightscore = 0;
+	$.k2l.m1a4_1.wrongscore = 0;
+	$.k2l.m1a4_1.audio = audio;
+	$.k2l.m1a4_1.sound = new Audio();
+
+	$.k2l.m1a4_1.allowClick = true;
+	Session.set(&#39;m1a4RightScore&#39;, 0);
+	Session.set(&#39;m1a4WrongScore&#39;, 0);
+
+
+}
+
+function shuffle(array) {
+  var m = array.length, t, i;
+
+  // While there remain elements to shuffle…
+  while (m) {
+
+    // Pick a remaining element…
+    i = Math.floor(Math.random() * m--);
+
+    // And swap it with the current element.
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+
+  return array;
+}
+
+
+				</pre>
+				
+				
+			</div>
+	</section>
+</template>

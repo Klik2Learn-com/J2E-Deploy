@@ -1,0 +1,366 @@
+<template name="m1a1">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+					<a draggable="false" onclick="safeLeave('/Inverness');"><i class="titlereturn fa fa-arrow-left"></i></a>
+				{{/if}}
+				{{>menu}}
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 1 - {{>m1a1Title}}</div>
+			</header>
+		
+	<section id="m1a1">
+		
+      <div class="content">
+<h1 class="start-page-header">{{> m1a1Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m1a1Intro}}</h3>
+{{> m1a1Time}} <!--{{> resumePopUp}}-->
+      </div>
+      <footer>
+        {{>footer_nav nexturl="#act_1_mon_2" prev="hidden" next="" next_text="Start"}}
+      </footer>
+    </section>
+	
+    <section id="act_1_mon_2" class="hidden">
+      <div class="content">
+	  <h1>Monday</h1>
+        <figure class="slide_figure">
+          <img draggable="false" src="images/module1/m1a1_inverness1.jpg" alt="Inverness" class="slide_image border2 img-responsive  shadow">
+          <br>
+          <h3 class="center">K, Tu and Elle are lost in Inverness. What should they do?</h3>
+        </figure>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#m1a1" nexturl="#act_1_mon_3" prev="hidden" next=""}}
+      </footer>
+    </section>
+	
+    <section id="act_1_mon_3" class="hidden">
+      <div class="content">
+	  <h1>Monday</h1>
+	  <h3>{{>touch yes="Tap" no="Click"}} the audio buttons <button class="buttonround buttonaudio"></button> to hear what K, Tu and Elle would do, then {{>touch yes="tap" no="click"}} on the person you agree with.</h3>
+		<div class="center">
+          <figure class="avatar_option">
+            <a draggable="false" href="#act_1_tue_1" title="K" rel="next" data-character="kay" class="pagination">
+                <img draggable="false" src="images/module1/k.png" alt="K" class="m1a1img">
+              </a>
+              <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_mon_kay.m4a"></button>K</div>
+          </figure>
+		  
+          <figure class="avatar_option">
+            <a draggable="false" href="#act_1_tue_1" title="Tu" rel="next" data-character="tu" class="pagination">
+                <img draggable="false" src="images/module1/tu.png" alt="Tu" class="m1a1img">
+              </a>
+              <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_mon_tu.m4a"></button>Tu</div>
+          </figure>
+		  
+          <figure class="avatar_option">
+            <a draggable="false" href="#act_1_tue_1" title="Elle" rel="next" data-character="elle" class="pagination">
+                <img draggable="false" src="images/module1/elle.png" alt="Elle" class="m1a1img">
+              </a>
+              <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_mon_elle.m4a"></button>Elle</div>
+          </figure>
+		</div>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#act_1_mon_2" nexturl="#act_1_mon_4" prev="hidden" next="hidden"}}
+      </footer>
+    </section>
+	
+    <section id="act_1_tue_1" class="hidden">
+      <div class="content">
+	  <h1>Tuesday</h1>
+        <img draggable="false" src="images/module1/m1a1_kitchen.jpg" class="slide_image border2  img-responsive  shadow">
+		<h3 class="center">K, Tu and Elle want to cook Scotch Broth. How do they do it?</h3>
+        <div class="center">
+			<div class="info shadow">
+			  Scotch Broth is a traditional Scottish soup made from lamb, barley, carrots, onions, leeks and turnips.
+			</div>
+		</div>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="" nexturl="#act_1_tue_2" prev="hidden" next=""}}
+      </footer>
+    </section>
+	
+    <section id="act_1_tue_2" class="hidden">
+		<div class="content">
+		  <h1>Tuesday</h1>
+		  <h3>{{>touch yes="Tap" no="Click"}} the audio buttons <button class="buttonround buttonaudio"></button> to hear what K, Tu and Elle would do, then {{>touch yes="tap" no="click"}} on the person you agree with.</h3>
+			<div class="center">
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_wed_1" title="K" rel="next" data-character="kay" class="pagination">
+					<img draggable="false" src="images/module1/k.png" alt="K" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_tue_kay.m4a"></button>K</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_wed_1" title="Tu" rel="next" data-character="tu" class="pagination">
+					<img draggable="false" src="images/module1/tu.png" alt="Tu" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_tue_tu.m4a"></button>Tu</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_wed_1" title="Elle" rel="next" data-character="elle" class="pagination">
+					<img draggable="false" src="images/module1/elle.png" alt="Elle" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_tue_elle.m4a"></button>Elle</div>
+			  </figure>
+			</div>
+		  </div>
+		  
+		  <footer>
+			{{>footer_nav prevurl="#act_1_tue_1" nexturl="" prev="hidden" next="hidden"}}
+		  </footer>
+    </section>
+	
+    <section id="act_1_wed_1" class="hidden">
+      <div class="content">
+		<h1>Wednesday</h1>
+            <img draggable="false" src="images/module1/m1a1_shop.jpg" alt="Phone shop" class="slide_image border2 img-responsive  shadow">
+            <h3 class="center">Tu wants to buy a new smartphone. How should he choose one?</h3>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#act_1_tue_2" nexturl="#act_1_wed_2" prev="hidden" next=""}}
+      </footer>
+    </section>
+	
+    <section id="act_1_wed_2" class="hidden">
+      <div class="content">
+		<h1>Wednesday</h1>
+		<h3>{{>touch yes="Tap" no="Click"}} the audio buttons <button class="buttonround buttonaudio"></button> to hear what K, Tu and Elle would do, then {{>touch yes="tap" no="click"}} on the person you agree with.</h3>
+			<div class="center">
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_thur_1" title="K" rel="next" data-character="kay" class="pagination">
+					<img draggable="false" src="images/module1/k.png" alt="K" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_wed_kay.m4a"></button>K</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_thur_1" title="Tu" rel="next" data-character="tu" class="pagination">
+					<img draggable="false" src="images/module1/tu.png" alt="Tu" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_wed_tu.m4a"></button>Tu</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_thur_1" title="Elle" rel="next" data-character="elle" class="pagination">
+					<img draggable="false" src="images/module1/elle.png" alt="Elle" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_wed_elle.m4a"></button>Elle</div>
+			  </figure>
+			</div>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#act_1_wed_1" nexturl="" prev="hidden" next="hidden"}}
+      </footer>
+    </section>
+	
+    <section id="act_1_thur_1" class="hidden">
+      <div class="content">
+	  <h1>Thursday</h1>
+            <img draggable="false" src="images/module1/m1a1_phonelearn.jpg" alt="Mobile phone" class="slide_image border2 img-responsive  shadow">
+            <h3 class="center">How should he learn to use it?</h3>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#act_1_wed_1" nexturl="#act_1_thur_2" prev="hidden" next=""}}
+      </footer>
+    </section>
+	
+    <section id="act_1_thur_2" class="hidden">
+      <div class="content">
+	  <h1>Thursday</h1>
+	  <h3>{{>touch yes="Tap" no="Click"}} the audio buttons <button class="buttonround buttonaudio"></button> to hear what K, Tu and Elle would do, then {{>touch yes="tap" no="click"}} on the person you agree with.</h3>
+        <div class="center">
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_fri_1" title="K" rel="next" data-character="kay" class="pagination">
+					<img draggable="false" src="images/module1/k.png" alt="K" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_thur_kay.m4a"></button>K</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_fri_1" title="Tu" rel="next" data-character="tu" class="pagination">
+					<img draggable="false" src="images/module1/tu.png" alt="Tu" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_thur_tu.m4a"></button>Tu</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_fri_1" title="Elle" rel="next" data-character="elle" class="pagination">
+					<img draggable="false" src="images/module1/elle.png" alt="Elle" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_thur_elle.m4a"></button>Elle</div>
+			  </figure>
+			</div>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#act_1_thur_1" nexturl="" prev="hidden" next="hidden"}}
+      </footer>
+    </section>
+	
+    <section id="act_1_fri_1" class="hidden">
+		<div class="content">
+		<h1>Friday</h1>
+            <img draggable="false" src="images/module1/m1a1_tv.jpg" alt="TV" class="slide_image border2 img-responsive   shadow">
+            <h3 class="center">A new TV is delivered but one of the cables is missing. What should they do?</h3>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#act_1_thur_1" nexturl="#act_1_fri_2" prev="hidden" next=""}}
+      </footer>
+    </section>
+	
+    <section id="act_1_fri_2" class="hidden">
+      <div class="content">
+	  <h1>Friday</h1>
+	  <h3>{{>touch yes="Tap" no="Click"}} the audio buttons <button class="buttonround buttonaudio"></button> to hear what K, Tu and Elle would do, then {{>touch yes="tap" no="click"}} on the person you agree with.</h3>
+        <div class="center">
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_sat_1" title="K" rel="next" data-character="kay" class="pagination">
+					<img draggable="false" src="images/module1/k.png" alt="K" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_fri_kay.m4a"></button>K</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_sat_1" title="Tu" rel="next" data-character="tu" class="pagination">
+					<img draggable="false" src="images/module1/tu.png" alt="Tu" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_fri_tu.m4a"></button>Tu</div>
+			  </figure>
+			  
+			  <figure class="avatar_option">
+				<a draggable="false" href="#act_1_sat_1" title="Elle" rel="next" data-character="elle" class="pagination">
+					<img draggable="false" src="images/module1/elle.png" alt="Elle" class="m1a1img">
+				  </a>
+				  <div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_fri_elle.m4a"></button>Elle</div>
+			  </figure>
+		</div>
+      </div>
+      <footer>
+        {{>footer_nav prevurl="#act_1_fri_1" nexturl="" prev="hidden" next="hidden"}}
+      </footer>
+    </section>
+	
+    <section id="act_1_sat_1" class="hidden">
+		<div class="content">
+			<h1>Saturday</h1>
+			<img draggable="false" src="images/module1/m1a1_magazine.jpg" alt="magazine" class="slide_image border2 img-responsive  shadow">
+			<h3 class="center">They want to have an evening out. What do they decide?</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#act_1_fri_1" nexturl="#act_1_sat_2" prev="hidden" next=""}}
+		</footer>
+    </section>
+	
+	<section id="act_1_sat_2" class="hidden">
+		<div class="content">
+			<h1>Saturday</h1>
+			<h3>{{>touch yes="Tap" no="Click"}} the audio buttons <button class="buttonround buttonaudio"></button> to hear what K, Tu and Elle would do, then {{>touch yes="tap" no="click"}} on the person you agree with.</h3>
+			<div class="center">
+				<figure class="avatar_option">
+					<a draggable="false" href="#act_1_sun_1" title="K" rel="next" data-character="kay" class="pagination">
+						<img draggable="false" src="images/module1/k.png" alt="K" class="m1a1img">
+					</a>
+					<div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_sat_kay.m4a"></button>K</div>
+				</figure>
+
+				<figure class="avatar_option">
+					<a draggable="false" href="#act_1_sun_1" title="Tu" rel="next" data-character="tu" class="pagination">
+						<img draggable="false" src="images/module1/tu.png" alt="Tu" class="m1a1img">
+					</a>
+					<div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_sat_tu.m4a"></button>Tu</div>
+				</figure>
+
+				<figure class="avatar_option">
+					<a draggable="false" href="#act_1_sun_1" title="Elle" rel="next" data-character="elle" class="pagination">
+						<img draggable="false" src="images/module1/elle.png" alt="Elle" class="m1a1img">
+					</a>
+					<div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_sat_elle.m4a"></button>Elle</div>
+				</figure>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#act_1_sat_1" nexturl="" prev="hidden" next="hidden"}}
+		</footer>
+	</section>
+	
+    <section id="act_1_sun_1" class="hidden">
+		<div class="content">
+			<h1>Sunday</h1>
+			<img draggable="false" src="images/module1/m1a1_nonet.jpg" alt="No internet" class="slide_image border2 img-responsive  shadow ">
+			<h3 class="center">The internet stops working and the phone company is not helpful. How do they feel?</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#act_1_sat_1" nexturl="#act_1_sun_2" prev="hidden" next=""}}
+		</footer>
+    </section>
+	
+    <section id="act_1_sun_2" class="hidden">
+		<div class="content">
+			<h1>Sunday</h1>
+			<h3>{{>touch yes="Tap" no="Click"}} the audio buttons <button class="buttonround buttonaudio"></button> to hear what K, Tu and Elle would do, then {{>touch yes="tap" no="click"}} on the person you agree with.</h3>
+			<div class="center">
+				<figure class="avatar_option">
+					<a draggable="false" href="#act_1_score" title="K" rel="next" data-character="kay" class="pagination">
+						<img draggable="false" src="images/module1/k.png" alt="K" class="m1a1img">
+					</a>
+					<div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_sun_kay.m4a"></button>K</div>
+				</figure>
+				  
+				<figure class="avatar_option">
+					<a draggable="false" href="#act_1_score" title="Tu" rel="next" data-character="tu" class="pagination">
+						<img draggable="false" src="images/module1/tu.png" alt="Tu" class="m1a1img">
+					</a>
+					<div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_sun_tu.m4a"></button>Tu</div>
+				</figure>
+				  
+				<figure class="avatar_option">
+					<a draggable="false" href="#act_1_score" title="Elle" rel="next" data-character="elle" class="pagination">
+						<img draggable="false" src="images/module1/elle.png" alt="Elle" class="m1a1img">
+					</a>
+					<div class="caption shadow" style="display: block;"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a1/act1_sun_elle.m4a"></button>Elle</div>
+				</figure>
+			</div>
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#act_1_sun_1" nexturl="#act_1_score" prev="hidden" next="hidden"}}
+		</footer>
+    </section>
+    <section id="act_1_score" class="hidden">
+		<div class="content center">
+			<h1>Results</h1>
+			<p><div class="caption">You picked K {{getKCount}} times.</div></p>
+			<p><div class="caption">You picked Tu {{getTuCount}} times.</div></p>
+			<p><div class="caption">You picked Elle {{getElleCount}} times.</div></p>
+		</div>
+		<footer>
+		{{>footer_nav prevurl="" nexturl="#act_1_you_1" prev="hidden" next=""}}
+		</footer>
+    </section>
+    <section id="act_1_you_1" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<h2 class="center">You are more like...</h2>
+			<div class="center">
+				{{{getFinalResult}}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="#m1a1_end" prev="hidden" next=""}}
+		</footer>
+    </section>
+
+	{{>EndPage char="k" act="m1a1" nextact="m1a2" place="Inverness"}}
+	</div>
+</article>
+
+</template>
+
+<!-- test comment for test commit only -->

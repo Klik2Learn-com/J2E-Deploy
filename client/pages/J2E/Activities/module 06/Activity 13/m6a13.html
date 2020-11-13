@@ -1,0 +1,235 @@
+<template name="m6a13">
+	<article class="with-tools-sidebar m6a13">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Whitby');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 13 - {{>m6a13Title}}</div>
+			</header>
+			<section id="m6a13">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a13Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m6a13Intro}}</h3>
+					{{> m6a13Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a13_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a13_1}} {{>m6a13_2}} {{>m6a13_3}} {{>m6a13_4}} {{>EndPage char="k" act="m6a13" nextact="m6a14" place="Whitby"}}
+		</div>
+	</article>
+
+	{{>m6a13video_modal}}
+</template>
+
+
+<template name="m6a13video_modal">
+	<div class="modal fade" tabindex="-1" id="m6a13video_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" id="modalButton">×</span>
+					</button>
+					<h4 class="modal-title" id="m6a13video_modal">Welcome to the Houses of Parliament</h4>
+				</div>
+
+				<div class="content">
+
+					<div class="videoplayer">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qbjEd430EKM?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m6a13_1">
+	<section id="m6a13_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>Watch this video about the Houses of Parliament (UK Parliament Tour - Welcome to the Houses of Parliament: www.parliament.uk)</h3>
+			<div class="videoplayer">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qbjEd430EKM?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a13" nexturl="#m6a13_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a13_2">
+	<section id="m6a13_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Here are some sentences and phrases about the Houses of Parliament. Drag the right description to each one.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+
+
+				<ol class="olcircle">
+					<li>‘Parliament’ comes from the French word ‘parler’ to speak or discuss.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target1">&nbsp;</div>
+					<li>Members of parliament examine the work the government does and ask questions.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target2">&nbsp;</div>
+					<li>The House of Commons.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target3">&nbsp;</div>
+					<li>A fire destroyed the palace of Westminster in 1864.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target4">&nbsp;</div>
+				</ol>
+			</div>
+			<div class=" visible-xs center">
+				<button data-toggle="modal" data-target="#m6a13video_modal" class="button2">{{>touch yes="Tap" no="Click"}} to watch the video again</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth15 dd2lines">
+						<div class="ddsourceseated ddwidth15 dd2lines shadow" draggable="false" data-destination="target3">One of the three different parts of Parliament</div>
+					</div>
+					<div class="ddseat ddwidth15 dd1line2high">
+						<div class="ddsourceseated ddwidth15 dd1line2high shadow" draggable="false" data-destination="target2">What Parliament does</div>
+					</div>
+					<div class="ddseat ddwidth15 dd2lines">
+						<div class="ddsourceseated ddwidth15 dd2lines shadow" draggable="false" data-destination="target1">How Parliament developed over the centuries</div>
+					</div>
+					<div class="ddseat ddwidth15 dd1line2high">
+						<div class="ddsourceseated ddwidth15 dd1line2high shadow" draggable="false" data-destination="target4">The history of the building</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br>
+			<div class=" hidden-xs center">
+				<button data-toggle="modal" data-target="#m6a13video_modal" class="button2">{{>touch yes="Tap" no="Click"}} to watch the video again</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a13_1" nexturl="#m6a13_3" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a13_3">
+	<section id="m6a13_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Here are some sentences and phrases about the Houses of Parliament. Drag the right description to each one.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+
+
+				<ol class="olcircle" style="counter-reset: start 4;">
+					<li>There was a competition to design the UK parliament.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target1">&nbsp;</div>
+					<li>The House of Lords.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target2">&nbsp;</div>
+					<li>Members of parliament used to be wealthy landowners.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target3">&nbsp;</div>
+					<li>New laws are created.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target4">&nbsp;</div>
+				</ol>
+			</div>
+			<div class=" visible-xs center">
+				<button data-toggle="modal" data-target="#m6a13video_modal" class="button2">{{>touch yes="Tap" no="Click"}} to watch the video again</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth15 dd2lines">
+						<div class="ddsourceseated ddwidth15 dd2lines shadow" draggable="false" data-destination="target2">One of the three different parts of Parliament</div>
+					</div>
+					<div class="ddseat ddwidth15 dd1line2high">
+						<div class="ddsourceseated ddwidth15 dd1line2high shadow" draggable="false" data-destination="target4">What Parliament does</div>
+					</div>
+					<div class="ddseat ddwidth15 dd2lines">
+						<div class="ddsourceseated ddwidth15 dd2lines shadow" draggable="false" data-destination="target3">How Parliament developed over the centuries</div>
+					</div>
+					<div class="ddseat ddwidth15 dd1line2high">
+						<div class="ddsourceseated ddwidth15 dd1line2high shadow" draggable="false" data-destination="target1">The history of the building</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br>
+			<div class=" hidden-xs center">
+				<button data-toggle="modal" data-target="#m6a13video_modal" class="button2">{{>touch yes="Tap" no="Click"}} to watch the video again</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a13_2" nexturl="#m6a13_4" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a13_4">
+	<section id="m6a13_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Here are some sentences and phrases about the Houses of Parliament. Drag the right description to each one.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+
+				<ol class="olcircle" style="counter-reset: start 7;">
+					<li>The Monarch.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target1">&nbsp;</div>
+					<li>Parliament grew from the King’s Counsel.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target2">&nbsp;</div>
+					<li>Queen Victoria was the first monarch to open the new parliament.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target3">&nbsp;</div>
+					<li>Taxes and budgets are discussed.</li>
+					<div class="ddseatedtarget ddwidth15 dd2lines" data-destinationid="target4">&nbsp;</div>
+				</ol>
+			</div>
+			<div class=" visible-xs center">
+				<button data-toggle="modal" data-target="#m6a13video_modal" class="button2">{{>touch yes="Tap" no="Click"}} to watch the video again</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth15 dd2lines">
+						<div class="ddsourceseated ddwidth15 dd2lines shadow" draggable="false" data-destination="target1">One of the three different parts of Parliament</div>
+					</div>
+					<div class="ddseat ddwidth15 dd1line2high">
+						<div class="ddsourceseated ddwidth15 dd1line2high shadow" draggable="false" data-destination="target4">What Parliament does</div>
+					</div>
+					<div class="ddseat ddwidth15 dd2lines">
+						<div class="ddsourceseated ddwidth15 dd2lines shadow" draggable="false" data-destination="target2">How Parliament developed over the centuries</div>
+					</div>
+					<div class="ddseat ddwidth15 dd1line2high">
+						<div class="ddsourceseated ddwidth15 dd1line2high shadow" draggable="false" data-destination="target3">The history of the building</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br>
+			<div class=" hidden-xs center">
+				<button data-toggle="modal" data-target="#m6a13video_modal" class="button2">{{>touch yes="Tap" no="Click"}} to watch the video again</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a13_3" nexturl="#m6a13_end" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

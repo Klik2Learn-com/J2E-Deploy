@@ -1,0 +1,506 @@
+<template name="m9a19"> 
+<article class="with-tools-sidebar m9a19">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Torquay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 19 - {{> m9a19Title}}</div>
+		</header>
+		<section id="m9a19">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a19Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a19Intro}}</h3>
+				{{> m9a19Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a19_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a19_1}}
+		{{>m9a19_2}}
+		{{>m9a19_3}}
+		{{>m9a19_4}}
+		{{>m9a19_5}}
+		{{>m9a19_6}}
+		{{>m9a19_7}}
+		{{>EndPage char="k" act="m9a19" nextact="m9a20" place="Torquay"}}
+	</div>
+</article>
+	{{>m9a19Mike_modal}}
+	{{>m9a19Robert_modal}}
+	{{>m9a19Tracy_modal}}
+
+</template>
+<template name="m9a19_4"> 
+	<section id="m9a19_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}}
+				<div class="row">
+				<div class="col-sm-2 center">
+					<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/girl3.jpg" alt="Person"></div></div>
+			<div class="caption capgreen">Tracy</div>
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Tracy.m4a"></button>
+				</div>
+				<div class="col-sm-10">
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">1</div></div> 
+						<div class="iconright">Tracy left school early because she didn’t like it.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">2</div></div>
+						<div class="iconright">Tracy isn’t looking forward to life as an adult.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+				<div class="row" style="margin-left:0;">
+					<div class="col-sm-8 ">
+						<div class="iconleft">
+						<div class="number">3</div></div> 
+						<div class="iconright">By the time she is 25, Tracy...</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 ">
+						<button class="button2 item-space" style="width:100%" data-value="1">wants to be married with children.</button>
+						<button class="button2 item-space" style="width:100%" data-value="2">wants to be living in a small town.</button>
+						<button class="button2 item-space" style="width:100%" data-value="3">wants to become famous for something.</button>
+					</div>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+				<div class="row" style="margin-left:0;">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">4</div></div> 
+						<div class="iconright">One of these statements is false. Which one?</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-10 col-sm-offset-1 text-center ">
+						<button class="button2 item-space" style="width:100%"  data-value="1">Tracy admires Steve Jobs because he followed his dream.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="2">Tracy admires Steve Jobs because he was successful.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="4">Tracy admires Steve Jobs because he had a big impact on the world.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="3">Tracy admires Steve Jobs because he made a lot of money.</button>
+					</div>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Phrasal Verbs in Verbs in the Grammar Guide"}}
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a19_3" nexturl="#m9a19_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a19_3"> 
+	<section id="m9a19_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+<h3 class="center">Listen to the students talking about their plans for the future. Answer the questions after you’ve listened to each one.</h3>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 center">
+			<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/girl3.jpg" alt="Person"></div></div>
+			<div class="caption capgreen">Tracy</div>
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Tracy.m4a"></button><p>&nbsp;</p>
+		</div>
+		<div class="col-sm-4 center">
+			<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy1.jpg" alt="Person"></div></div>
+			<div class="caption capgreen">Robert</div>
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Robert.m4a"></button><p>&nbsp;</p>
+		</div>
+		<div class="col-sm-4 center">
+			<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy2.jpg" alt="Person"></div></div>
+			<div class="caption capgreen">Mike</div>
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Mike.m4a"></button><p>&nbsp;</p>
+		</div>
+	</div>
+</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a19_2" nexturl="#m9a19_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a19_7"> 
+	<section id="m9a19_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			<h3 class="center">Now you can read what they say</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/girl3.jpg" alt="Person"></div></div>
+						<div class="caption capgreen">Tracy</div><Br>
+						<button data-toggle="modal" data-target="#m9a19Tracy_modal" class="button2">{{>touch yes="Tap" no="Click"}} to read</button>
+						<Br>
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Tracy.m4a"></button><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy1.jpg" alt="Person"></div></div>
+						<div class="caption capgreen">Robert</div><br>
+						<button data-toggle="modal" data-target="#m9a19Robert_modal" class="button2">{{>touch yes="Tap" no="Click"}} to read</button>
+					<br>
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Robert.m4a"></button><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy2.jpg" alt="Person"></div></div>
+						<div class="caption capgreen">Mike</div><br>
+						<button data-toggle="modal" data-target="#m9a19Mike_modal" class="button2">{{>touch yes="Tap" no="Click"}} to read</button>
+						<br>
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Mike.m4a"></button><p>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Phrasal Verbs in Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a19_6" nexturl="#m9a19_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m9a19Tracy_modal">
+	<div class="modal fade" tabindex="-1" id="m9a19Tracy_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper article-text">{{>metametrics level="2" star="yes" align="center"}}
+
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-3x4 shadow" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/girl3.jpg" alt="Person"></div></div>
+	</figure>
+	
+	<p>I’m seventeen years old. I’ve no idea what I want to be. I dropped out of high school after losing a member of my family. All I wanted to do was be alone in my room. Now some time has passed and I feel a lot better. I regret leaving school. </p>
+
+	<p>I'm scared to grow up and become an adult. I turn 18 in about two months, but I want to change the world, discover something and share it with the world. That probably sounds really crazy.  I don't want to be 25 years old in a small town, married with three kids and regret the things I didn't do. I want everyone to remember my name when I'm gone and cherish the things I’ve accomplished. Like Steve Jobs.  He had a dream and he made it happen. He wanted to change the world and he did. He created something and will always be remembered.</p>	
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div>
+
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m9a19Robert_modal">
+	<div class="modal fade" tabindex="-1" id="m9a19Robert_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper article-text">{{>metametrics level="2" star="yes" align="center"}}
+	
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-3x4 shadow" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy1.jpg" alt="Person"></div></div>
+	</figure>
+	
+	<p>I'm thirteen years old and I live in the city. I have taken career tests and all of them have led to something with animals. I know I want to work with them, especially horses. My dad is a doctor and he wants me to become a vet. Problem is, I want to be a farmer. I’ve been surrounded by skyscrapers and gas fumes for thirteen years and I can't stand it. I plan on moving to the country when I'm older and starting a dairy farm, cows, chickens, horses, and maybe a few pigs. I would never be able to work in an office, or a hospital. It's too... clean. I need to get dirty for my money, milk the cows, plant the corn and all that. I just need to be able to break away from my family when I'm eighteen.</p>
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div>
+
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m9a19Mike_modal">
+	<div class="modal fade" tabindex="-1" id="m9a19Mike_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper article-text">{{>metametrics level="2" star="yes" align="center"}}
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-3x4 shadow" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy2.jpg" alt="Person"></div></div>
+	</figure>
+	
+	<p>I'm 16 and I want to do way too many things! Sometimes I want to be an Occupational Therapist or specialise in Sports Medicine. I've played sports my whole life. But sometimes I want to be an interpreter.  And then other times I want to be a chef or a pastry chef. And I just saw someone else's post about being a book publisher or something and I love reading too! College is just around the corner, and I need help!</p>
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m9a19_1"> 
+	<section id="m9a19_1" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+				word1="entrepreneur"
+				word2="chairman"
+				word3="skyscraper"
+				word4="therapist"
+				word5="interpreter"
+				word6c="hidden"
+				word7c="hidden"
+				word8c="hidden"
+				word9c="hidden"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a19" nexturl="#m9a19_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a19_5"> 
+	<section id="m9a19_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}}
+				<div class="row">
+				<div class="col-sm-2 center">
+					<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy1.jpg" alt="Person"></div></div>
+			<div class="caption capgreen">Robert</div>
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Robert.m4a"></button>
+				</div>
+				<div class="col-sm-10">
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">1</div></div> 
+						<div class="iconright">Robert just wants to work with horses.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">2</div></div>
+						<div class="iconright">Robert has grown up in a city.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+				<div class="row" style="margin-left:0;">
+					<div class="col-sm-8 ">
+						<div class="iconleft">
+						<div class="number">3</div></div> 
+						<div class="iconright">When Robert grows up he wants...</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 ">
+						<button class="button2 item-space" style="width:100%" data-value="1">to follow the same career as his dad.</button>
+						<button class="button2 item-space" style="width:100%" data-value="2">to work in an office or hospital.</button>
+						<button class="button2 item-space" style="width:100%" data-value="3">to work on the land.</button>
+					</div>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+				<div class="row" style="margin-left:0;">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">4</div></div> 
+						<div class="iconright">One of these statements is false. Which one?</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-10 col-sm-offset-1 text-center ">
+						<button class="button2 item-space" style="width:100%"  data-value="1">Robert wants to leave home when he’s eighteen.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="2">Robert wants to be a farmer.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="3">Robert’s career tests have given different results.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="4">Robert prefers to work outdoors.</button>
+					</div>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Phrasal Verbs in Verbs in the Grammar Guide"}}
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a19_4" nexturl="#m9a19_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a19_2"> 
+	<section id="m9a19_2" class="hidden"> 
+		<div class="content">  
+			<h4 class="center">You’ll now hear three high school students talking about their plans for the future. The first article uses a <b>Phrasal Verb</b>:</h4>
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>To drop out: to leave school/college/university before you finish your course.</li>
+					</ul>
+				</div>
+			</div>  
+			<br>
+			<h4 class="center">The first article also mentions the name of a  famous person:</h4>
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>Steve Jobs - a famous American entrepreneur. He was the co-founder and Chairman of Apple computers.</li>
+					</ul>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a19_1" nexturl="#m9a19_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a19_6"> 
+	<section id="m9a19_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}}
+				<div class="row">
+				<div class="col-sm-2 center">
+					<div class="ph-w ph-3x4 border1" style="max-width: 116px"><div class="ph"><img draggable="false" src="images/module9/a19/boy2.jpg" alt="Person"></div></div>
+			<div class="caption capgreen">Mike</div>
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a19/Mike.m4a"></button>
+				</div>
+				<div class="col-sm-10">
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">1</div></div> 
+						<div class="iconright">Mike is a sportsman.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">2</div></div>
+						<div class="iconright">Mike’s only ambition is to be a chef.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+				<div class="row" style="margin-left:0;">
+					<div class="col-sm-8 ">
+						<div class="iconleft">
+						<div class="number">3</div></div> 
+						<div class="iconright">Choose the right answer;</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 ">
+						<button class="button2 item-space" style="width:100%" data-value="1">Mike can’t decide what he wants to do.</button>
+						<button class="button2 item-space" style="width:100%" data-value="2">Mike is only interested in a career which involves sport.</button>
+						<button class="button2 item-space" style="width:100%" data-value="3">Mike doesn’t like reading books.</button>
+					</div>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+				<div class="row" style="margin-left:0;">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">4</div></div> 
+						<div class="iconright">One of these statements is false. Which one?</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-10 col-sm-offset-1 text-center ">
+						<button class="button2 item-space" style="width:100%"  data-value="1">Mike changes his mind quite often.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="2">Mike has a variety of different interests.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="3">Mike will soon be going to college.</button>
+						<button class="button2 item-space" style="width:100%"  data-value="4">Mike isn’t influenced by other people.</button>
+					</div>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Phrasal Verbs in Verbs in the Grammar Guide"}}
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a19_5" nexturl="#m9a19_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

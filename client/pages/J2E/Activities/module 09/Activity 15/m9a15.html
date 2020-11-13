@@ -1,0 +1,102 @@
+<template name="m9a15"> 
+<article class="with-tools-sidebar m9a15">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Torquay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>{{> activity}} 15 - {{> m9a15Title}}</div>
+		</header>
+		<section id="m9a15">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a15Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m9a15Intro}}</h3>
+				{{> m9a15Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a15_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a15_1}}
+		{{>m9a15_2}}
+		{{>EndPage char="elle" act="m9a15" nextact="m9a16" place="Torquay"}}
+	</div>
+</article>
+</template>
+<template name="m9a15_2"> 
+	<section id="m9a15_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h4 class="center">Here are some more suffixes.</h4>
+      			<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/Work_Ethic.m4a"></button> <div class="caption">Work ethic</div> <h5>A person’s attitude to work – either good or bad.</h5></p>
+      			<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/Ten_To_The_Dozen.m4a"></button> <div class="caption">Ten to the dozen</div> <h5>- Easily available /lots of something.</h5></p>
+				<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/Hard_To_Come_By.m4a"></button> <div class="caption">Hard to come by</div> <h5>- Difficult to find.</h5></p>
+				<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/Recession.m4a"></button> <div class="caption">Recession</div> <h5>- A period of time when the economy is doing badly.</h5></p>
+				<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/A_Low.m4a"></button> <div class="caption">A low</div> <h5>- A time when things are not going well for someone.</h5></p>
+				<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/Sign_On.m4a"></button> <div class="caption">Sign on</div> <h5>- To register officially as unemployed.</h5></p>
+				<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/Laid_Off.m4a"></button> <div class="caption">Laid off</div> <h5>- To lose your job because the company has no work for you.</h5></p>
+				<p><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a15/Self_Esteem.m4a"></button> <div class="caption">Self-esteem</div> <h5>- The attitude you have to your own abilities and skills.</h5></p>
+      			
+      			{{>gg_button gg_text="Click here to find out more about suffixes in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a15_1" nexturl="#m9a15_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a15_1"> 
+	<section id="m9a15_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3 class="center">See how many words you understand from the article about unemployment in Activity 14. {{>touch yes="Tap" no="Click"}} on the right word to match the explanation.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">Self-esteem</span></div> </div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">A low</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">Laid off</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">Hard to come by</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">Sign on</span></div></div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto6 animated flipInX" id="lottoc5"><div><span class="contents">Work ethic</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc6"><div><span class="contents">Recession</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc7"><div><span class="contents">Ten to the dozen</span></div></div>
+					</div> 
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="number">1</div> <h5><span id="questions">A person’s attitude to work – either good or bad.</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+			{{>welldone}}
+			</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a15" nexturl="#m9a15_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

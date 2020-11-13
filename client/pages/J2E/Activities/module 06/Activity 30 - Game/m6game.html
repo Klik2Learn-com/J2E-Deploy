@@ -1,0 +1,70 @@
+<template name="m6Game">
+<article class="with-tools-sidebar game m6Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/York');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 30 - {{>m6GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m6Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m6Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m6Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m6Game_1}}
+		{{>m6Game_1h}} <!-- hotspot -->
+	 	{{>m6Game_2}}
+		{{>m6Game_3}}
+		{{>m6Game_4}} <!-- object -->
+		{{>m6Game_4h}}<!-- hotspot -->
+		{{>m6Game_5}}
+		{{>m6Game_6}}
+		{{>m6Game_7}} <!-- object -->
+		{{>m6Game_7h}}<!-- hotspot -->
+		{{>m6Game_8}}
+		{{>m6Game_9}}
+		{{>m6Game_10}} <!-- object -->
+		{{>m6Game_10h}}<!-- hotspot -->
+		{{>m6Game_11}}
+		{{>m6Game_12}}
+		{{>m6Game_13}}
+		{{>m6Game_14}} <!-- object -->
+		{{>m6Game_14h}}<!-- hotspot -->
+		{{>m6Game_15}}
+		{{>m6Game_16}}
+		{{>m6Game_17}} <!-- object -->
+		{{>m6Game_17h}}<!-- hotspot -->
+		{{>m6Game_18}}
+		{{>m6Game_19}}
+		{{>m6Game_20}} <!-- object -->
+		{{>m6Game_20h}}<!-- hotspot -->
+		{{>m6Game_21}}
+		{{>m6Game_22}}
+		{{>m6Game_23}}
+		{{>m6Game_24}} <!-- object -->
+		{{>m6Game_24h}}<!-- hotspot -->
+		{{>m6Game_25}}
+		{{>m6Game_26}}
+		{{>m6Game_27}}
+		{{>m6Game_28}} <!-- object -->
+		{{>m6Game_28h}}<!-- hotspot -->
+		{{>m6Game_29}}
+		{{>m6Game_30}}
+		{{>m6Game_31}} <!-- key -->
+		{{>m6Game_Score}}
+		{{>m6Game_ans}} 
+		{{>EndPage2 char="all" act="m6Game" nextplace="Sheffield" nextmod="7" place="York"  end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

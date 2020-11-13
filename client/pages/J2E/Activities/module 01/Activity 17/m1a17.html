@@ -1,0 +1,451 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a17">
+    <article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+            {{#if endPageSect}}
+            <a draggable="false" onclick="safeLeave('/KyleofLochalsh');"><i class="titlereturn fa fa-arrow-left"></i></a>
+            {{/if}}
+           {{>menu}}
+            <!-- Change module, activity number and name here -->
+            <div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 17 - {{>m1a17Title}}</div>
+        </header>
+        <section id="m1a17">
+            <div class="content">
+                <!-- Change avatar here - k, tu, elle -->
+                <h1 class="start-page-header">{{> m1a17Title}}</h1>
+                {{> StartPageAvatar char="tu"}}
+                <h3>{{> m1a17Intro}}</h3>
+                {{> m1a17Time}} <!--{{> resumePopUp}}-->
+            </div>
+            <footer>
+                {{>footer_nav nexturl="#m1a17_1" prev="hidden" next="" next_text="Start"}}
+            </footer>
+        </section>
+        {{>m1a17_1}}
+        {{>m1a17_2}}
+        {{>m1a17_3}}
+        {{>m1a17_4}}
+        {{>m1a17_5}}
+        {{>m1a17_6}}
+        {{>m1a17_end}}
+    </div>
+</article>
+    
+</template>
+<template name="m1a17_1">
+    <section id="m1a17_1" class="hidden noselect">
+        <div class="content">
+            {{>dic_intro}}
+        </div>
+        <footer>
+            {{>footer_nav nexturl="#m1a17_2" prev="hidden" next=""}}
+        </footer>
+    </section>
+</template>
+<template name="m1a17_2">
+    <section id="m1a17_2" class="hidden noselect">
+        <div class="content">
+            <h4>Some words in English are <span class="grammar">homophones</span> - they sound the same but have different spellings and different meanings.</h4>
+            <br>
+            <h3 class="center">{{>touch yes="Tap" no="Click"}} to hear the words.</h3>
+            <div class="container-fluid">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/rain.m4a"></button>
+                        <b>Rain/Rein/Reign</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/soul.m4a"></button>
+                        <b>Sole/Soul</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/heal.m4a"></button>
+                        <b>Heal/Heel</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/steal.m4a"></button>
+                        <b>Steal/Steel</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/red.m4a"></button>
+                        <b>Red/Read</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/there.m4a"></button>
+                        <b>Their/There/They're</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/here.m4a"></button>
+                        <b>Hear/Here</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/allowed.m4a"></button>
+                        <b>Allowed/Aloud</b>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="caption captionsmall nowrapnohidetext m1a17-caption">
+                        <button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a17/sight.m4a"></button>
+                        <b>Sight/Site</b>
+                    </div>
+                </div>
+                {{>blankrow}}
+                {{>dic_button}}
+                <h3 class="center">Continue when you understand the words.</h3>
+            </div>
+            
+        </div>
+        <footer>
+                {{>footer_nav nexturl="#m1a17_3" prev="hidden" next=""}}
+            </footer>
+    </section>
+</template>
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a17_3">
+    <!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+    <section id="m1a17_3" class="hidden noselect">
+        {{#if activeSection}}
+        <div class="content">
+            <h3 class="center">Drag and drop from the words below</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsource', 'ddeasted', 'ddseats' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">1</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target1" >&nbsp;</div>
+                        is her favourite colour.
+
+                    </li>
+                    <li>
+                        <span class="number">2</span>The heavy 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target2">&nbsp;</div>
+                        caused a flood in the village.
+                    </li>
+                    <li>
+                        <span class="number">3</span>You’re not 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target3">&nbsp;</div>
+                        to smoke in public buildings in Scotland.
+                    </li>
+                    <li>
+                        <span class="number">4</span>You have to wear a hard hat when you visit a building 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target4">&nbsp;</div>
+                        .
+                    </li>
+                    <li>
+                        <span class="number">5</span>The sink was made of stainless 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target5">&nbsp;</div>
+                        .
+                    </li>
+                </ol>
+                {{> rightwrong}}
+            </div>
+          
+          <div class="dd-fixed-source-container animated slideInUp">
+            <div class="box1 box1dd1" id="source_list">
+                <!-- Ensure all 'ddsource', 'ddeasted', 'ddseats' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target2">rain</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target1">red</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target6">read</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target4">site</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target3">allowed</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target7">aloud</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target5">steel</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target8">sight</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target9">steal</div>
+                </div>
+            </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>            
+        </div>
+        <footer>
+                {{>footer_nav prevurl="#m1a17_2" nexturl="#m1a17_4" prev="disabled" next="hidden"}}
+            </footer>
+        {{/if}}
+    </section>
+</template>
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a17_4">
+    <!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+    <section id="m1a17_4" class="hidden noselect">
+        {{#if activeSection}}
+        <div class="content">
+            <h3 class="center">Drag and drop from the words below</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">6</span>All children like to have stories 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid="target1" >&nbsp;</div>
+                        to them.
+                    </li>
+                    <li>
+                        <span class="number">7</span>You control the direction of a horse with the 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid="target2">&nbsp;</div>
+                        .
+                    </li>
+                    <li>
+                        <span class="number">8</span>Speak up, I can't 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target3">&nbsp;</div>
+                        you.
+                    </li>
+                    <li>
+                        <span class="number">9</span>He was the 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target4">&nbsp;</div>
+                        survivor of the crash.
+                    </li>
+                    <li>
+                        <span class="number">10</span>Mary Queen of Scots was killed during the 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target5">&nbsp;</div>
+                        of Elizabeth I.
+                    </li>
+                </ol>
+                {{> rightwrong}}
+            </div>
+           
+          <div class="dd-fixed-source-container animated slideInUp">
+            <div class="box1 box1dd1" id="source_list">
+                <!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target8">rain</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target1">read</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target5">reign</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target4">sole</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target7">red</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target6">soul</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target3">hear</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target9">here</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target2">rein</div>
+                </div>  
+                </div>
+            </div>              
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+            
+            <!-- Drag and drop end -->
+           
+        </div>
+         <footer>
+                {{>footer_nav prevurl="#m1a17_3" nexturl="#m1a17_5" prev="disabled" next="hidden"}}
+            </footer>
+        {{/if}}
+    </section>
+</template>
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a17_5">
+    <!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+    <section id="m1a17_5" class="hidden noselect">
+        {{#if activeSection}}
+        <div class="content">
+            <h3 class="center">Drag and drop from the words below</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">11</span>He has a large collection of 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target1" >&nbsp;</div>
+                        music.
+                    </li>
+                    <li>
+                        <span class="number">12</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target2">&nbsp;</div>
+                        usually at least five minutes late.
+                    </li>
+                    <li>
+                        <span class="number">13</span>Due to his age, the injury took a long time to 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target3">&nbsp;</div>
+                        .
+                    </li>
+                    <li>
+                        <span class="number">14</span>Her 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target4">&nbsp;</div>
+                        improved after she got glasses.
+                    </li>
+                    <li>
+                        <span class="number">15</span>According to legend, Achilles' weak spot was his 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target5">&nbsp;</div>
+                        .
+                    </li>
+                </ol>
+                {{> rightwrong}}
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+            <div class="box1 box1dd1" id="source_list">               
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target6">sole</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target7">their</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target1">soul</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target8">site</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target2">they're</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target3">heal</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target9">there</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target10">here</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target4">sight</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target5">heel</div>
+                </div>
+            </div>
+            </div>            
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+            <!-- Drag and drop end -->
+            
+        </div>
+        <footer>
+                {{>footer_nav prevurl="#m1a17_4" nexturl="#m1a17_6" prev="disabled" next="hidden"}}
+            </footer>
+        {{/if}}
+    </section>
+</template>
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a17_6">
+    <!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+    <section id="m1a17_6" class="hidden noselect">
+        {{#if activeSection}}
+        <div class="content">
+            <h3 class="center">Drag and drop from the words below</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">16</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target1" >&nbsp;</div>
+                        are only a small number of pandas left in the world.
+                    </li>
+                    <li>
+                        <span class="number">17</span>Thanks to new technology, it's much more difficult to 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target2">&nbsp;</div>
+                        a modern car.
+                    </li>
+                    <li>
+                        <span class="number">18</span>Stop whispering, say it 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target3">&nbsp;</div>
+                        .
+                    </li>
+                    <li>
+                        <span class="number">19</span>Is anyone sitting 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target4">&nbsp;</div>
+                        ?
+                    </li>
+                    <li>
+                        <span class="number">20</span>The fans cheered when 
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a174" data-destinationid = "target5">&nbsp;</div>
+                        team scored a goal.
+                    </li>
+                </ol>
+                {{> rightwrong}}
+            </div>
+
+            <div class="dd-fixed-source-container animated slideInUp">
+            <div class="box1 box1dd1" id="source_list">
+                <!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+               
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target2">steal</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target7">allowed</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target3">aloud</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target5">their</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target1">there</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target4">here</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target6">steel</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target8">hear</div>
+                </div>
+                <div class="ddseat ddwidth7 dd1line">
+                    <div class="ddsourceseated shadow ddwidth7 dd1line" draggable="false" data-destination="target9">heel</div>
+                </div>
+            </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+            <!-- Drag and drop end -->
+           
+        </div>
+         <footer>
+                {{>footer_nav prevurl="#m1a17_5" nexturl="#m1a17_end" prev="disabled" next="hidden"}}
+            </footer>
+        {{/if}}
+    </section>
+</template>
+<template name="m1a17_end">
+    {{>EndPage char="tu" act="m1a17" nextact="m1a18" place="KyleofLochalsh"}}
+</template>

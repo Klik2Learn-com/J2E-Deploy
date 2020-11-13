@@ -1,0 +1,258 @@
+<template name="m2a19">
+<article class="with-tools-sidebar m2a19">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Kirriemuir');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 19 - {{>m2a19Title}}</div>
+		</header>
+		
+		<section id="m2a19">
+			<div class="content">
+			<h1 class="start-page-header">{{> m2a19Title}}</h1>
+			{{> StartPageAvatar char="k"}}
+			<h3>{{> m2a19Intro}}</h3>
+			{{> m2a19Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m2a19_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+
+		{{> m2a19_1}}
+		{{> m2a19_good}}
+		{{> m2a19_bad}}
+		{{> m2a19_2}}
+
+		{{> m2a19_end}}
+
+	</div>
+</article>
+
+</template>
+
+<template name="m2a19_1">
+	<section id="m2a19_1" class="hidden">
+		<div class="content">
+		{{#if activeSection}}
+		<h1>Stress and Intonation</h1>
+		<h3>Listen again. This time try to identify which syllable has the <b>STRESS</b> – which one is most important. Use the number buttons again to show which syllable is the most important. There are 35 words in total. The words have been chosen to show that stress in English changes. For example, two syllable words can have the stress on the 1st or 2nd syllable.</h3>
+			<div class="parapaper paraextract" style="padding-top: 1em;">
+				{{>rightwrong}}
+				{{>boxcorrectscreen text=""}}
+				{{>boxincorrectscreen text=""}}
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-4">
+							<div class="numberBig" style="float: left;">1</div>
+						</div>
+						<div class="col-xs-8 text-right">
+							{{> scorebox1 rightSession="m2a19_1RightScore" wrongSession="m2a19_1WrongScore"}}
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row text-center">
+						<button type="button" class="buttonround buttonroundbig buttonaudio" id="m2a19Audio" data-audiosrc='audio/syllables/bottle.m4a'></button>
+					</div>
+					<div class="row text-center" style="margin-top: 3em;">
+						<b>Syllable: </b>
+						<span class="avoidwrap">
+							<span class="avoidwrap">
+								<button type="button" class="button1 button-number">1</button>
+								<button type="button" class="button1 button-number">2</button>
+								<button type="button" class="button1 button-number">3</button>
+								<button type="button" class="button1 button-number">4</button>
+							</span>
+							<span class="avoidwrap">
+								<button type="button" class="button1 button-number">5</button>
+								<button type="button" class="button1 button-number">6</button>
+								<button type="button" class="button1 button-number">7</button>
+							</span>
+						</span>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+			{{/if}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a19_2" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a19_2">
+	<section id="m2a19_2" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="parapaper fold">
+						<h4>words with the stress on the first syllable</h4>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/bottle.m4a'></button>
+							<span class="h5"><span class="correctword">bo</span>ttle</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/parliament.m4a'></button>
+							<span class="h5"><span class="correctword">par</span>liament</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/station.m4a'></button>
+							<span class="h5"><span class="correctword">sta</span>tion </span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/obviously.m4a'></button>
+							<span class="h5"><span class="correctword">ob</span>viously</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/basketball.m4a'></button>
+							<span class="h5"><span class="correctword">ba</span>sketball</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/prisoner.m4a'></button>
+							<span class="h5"><span class="correctword">pri</span>soner</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/capitalism.m4a'></button>
+							<span class="h5"><span class="correctword">ca</span>pitalism</span></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+					<div class="parapaper fold">
+						<h4>words with the stress on the second syllable</h4>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/department.m4a'></button>
+							<span class="h5">de<span class="correctword">part</span>ment</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/observatory.m4a'></button>
+							<span class="h5">ob<span class="correctword">ser</span>vatory</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/reply.m4a'></button>
+							<span class="h5">re<span class="correctword">ply</span></span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/offence.m4a'></button>
+							<span class="h5">o<span class="correctword">ffence</span> </span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/refrigerator.m4a'></button>
+							<span class="h5">re<span class="correctword">fri</span>gerator</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/identical.m4a'></button>
+							<span class="h5">i<span class="correctword">dent</span>ical</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/professional.m4a'></button>
+							<span class="h5">pro<span class="correctword">fess</span>ional</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/explosives.m4a'></button>
+							<span class="h5">ex<span class="correctword">plo</span>sives</span></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+					<div class="parapaper fold">
+						<h4>words with the stress on the third syllable</h4>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/economics.m4a'></button>
+							<span class="h5">eco<span class="correctword">no</span>mics</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/lemonade.m4a'></button>
+							<span class="h5">lemon<span class="correctword">ade</span></span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/international.m4a'></button>
+							<span class="h5">inter<span class="correctword">nat</span>ional</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/understand.m4a'></button>
+							<span class="h5">under<span class="correctword">stand</span></span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/indefatigable.m4a'></button>
+							<span class="h5">inde<span class="correctword">fa</span>tigable</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/supernumerary.m4a'></button>
+							<span class="h5">super<span class="correctword">nu</span>merary</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/electricity.m4a'></button>
+							<span class="h5">elec<span class="correctword">tri</span>city</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/bureaucratic.m4a'></button>
+							<span class="h5">bureau<span class="correctword">cra</span>tic</span></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="parapaper fold">
+						<h4>words with the stress on the fourth syllable</h4>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/discriminatory.m4a'></button>
+							<span class="h5">discrimi<span class="correctword">na</span>tory </span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/appreciation.m4a'></button>
+							<span class="h5">appreci<span class="correctword">a</span>tion</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/humiliation.m4a'></button>
+							<span class="h5">humili<span class="correctword">a</span>tion</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/totalitarianism.m4a'></button>
+							<span class="h5">totali<span class="correctword">ta</span>rianism</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/incomprehensible.m4a'></button>
+							<span class="h5">incompre<span class="correctword">hen</span>sible</span></p>						
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+					<div class="parapaper fold">
+						<h4>words with the stress on the fifth syllable</h4>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/autobiographical.m4a'></button>
+							<span class="h5">autobio<span class="correctword">gra</span>phical</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/superficiality.m4a'></button>
+							<span class="h5">superfici<span class="correctword">a</span>lity</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/circumnavigation.m4a'></button>
+							<span class="h5">circumnavi<span class="correctword">ga</span>tion</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/revitalisation.m4a'></button>
+							<span class="h5">revitalis<span class="correctword">a</span>tion</span></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+					<div class="parapaper fold">
+						<h4>words with the stress on the sixth syllable</h4>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/oversimplification.m4a'></button>
+							<span class="h5">oversimplifi<span class="correctword">ca</span>tion</span></p>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/telecommunication.m4a'></button>
+							<span class="h5">telecommuni<span class="correctword">ca</span>tion</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-md-offset-4 ">
+						<div class="parapaper fold">
+						<h4>words with the stress on the seventh syllable</h4>
+						<p><button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc='audio/syllables/internationalisation.m4a'></button>
+							<span class="h5">internationalis<span class="correctword">a</span>tion </span></p>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a19_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a19_bad">
+	<section id="m2a19_bad" class="hidden">
+		<div class="content">
+		<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m2a19_1RightScore" wrongSession="m2a19_1WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="" class="reTry">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+			</div>
+			<footer>
+			{{>footer_nav nexturl="#m2a19_2" prev="hidden" next=""}}
+		  </footer>
+	</section>
+</template>
+
+
+<template name="m2a19_end">
+{{>EndPage char="k" act="m2a19" nextact="m2a20" place="Kirriemuir"}}
+</template>
+
+
+<template name="m2a19_good">
+	<section id="m2a19_good" class="hidden">
+	<!-- {{#if activeSection}} -->
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m2a19_1RightScore" wrongSession="m2a19_1WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a19_2" prev="hidden" next=""}}
+		 </footer>
+<!--	{{/if}} -->
+	</section>
+</template>
+

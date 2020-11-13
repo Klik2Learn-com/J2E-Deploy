@@ -1,0 +1,76 @@
+<template name="adminGroupCreator">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			{{>menu}}
+			{{#if isAdmin}}
+			{{> adminNav}}
+			{{else}}
+			<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+		</header>
+		<section>
+			{{#if isAdmin}}
+			<div class="content-user">
+				<h1>Add Group</h1>
+				<p>Use this panel to create a New Group of Users. To be grouped, users must be from the same organisation.</p>
+				<br>
+				<div class="form-group">
+				  <label for="adminOrgSelector">Organisation:</label>
+				  <select class="form-control orgSelector" id="adminOrgSelector">
+				  	    <option disabled selected value> -- select an option -- </option>
+					{{#each organisation}}
+						<option value="{{this._id}}">{{this.name}}</option>
+					{{/each}}
+				  </select>
+				</div>
+				{{#if orgIsSelected}}
+					<br>
+					<label for="groupName">Group name:</label>
+					<input id="groupName" type="text" class="form-control" placeholder="Enter new name...">
+					
+					<br>
+					<div class="text-center">
+						<button class="button2 buttonsmall item-space" data-function="createGroup">Create Group</button>
+					</div>
+				{{/if}}
+			</div>
+			{{/if}}
+			{{#if isMod}}
+			<div class="content-user">
+				<h1>Add Group</h1>
+				<p>Use this panel to create a New Group. Users can then be added to this group from the '<a href="../admin/viewGroups">View groups</a>' page.</p>
+				<br>
+				<label for="modOrgSelector">Organisation:</label>
+				<select class="form-control orgSelector" id="modOrgSelector">
+						<option disabled selected value> -- select an option -- </option>
+				  {{#each organisation}}
+					  <option value="{{this._id}}">{{this.name}}</option>
+				  {{/each}}
+				</select>
+				
+				{{#if orgIsSelected}}
+					<br>
+					<label for="groupName">Group name:</label>
+					<input id="groupName" type="text" class="form-control" placeholder="Enter new name...">
+					
+					<br>
+					<div class="text-center">
+						<button class="button2 buttonsmall item-space" data-function="createGroup">Create Group</button>
+					</div>
+				{{/if}}
+			</div>
+			{{/if}}
+			{{#if isTutor}}
+				Unauthorised access.
+			{{/if}}
+			{{#if isStudent}}
+				Unauthorised access.
+			{{/if}}
+
+		</section>
+	</div>
+</article>
+
+</template>

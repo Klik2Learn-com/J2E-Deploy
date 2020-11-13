@@ -1,0 +1,714 @@
+<template name="m8a16">
+	<article class="with-tools-sidebar m8a16">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Cardiff');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 8</div>
+				<div class="acttitle-title">{{> activity}} 16 - {{>m8a16Title}}</div>
+			</header>
+			<section id="m8a16">
+				<div class="content">
+					<h1 class="start-page-header">{{>m8a16Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m8a16Intro}}</h3>
+					{{> m8a16Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m8a16_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m8a16_1}} {{>m8a16_2}} {{>m8a16_3}} {{>EndPage char="k" act="m8a16" nextact="m8a17" place="Cardiff"}}
+		</div>
+	</article>
+
+	{{>m8a16_modal}}
+</template>
+
+<template name="m8a16_1">
+	<section id="m8a16_1" class="hidden">
+		{{#if activeSection}} {{> popovers}}
+		<div class="content noselect">
+			<h3>See if you can guess what jobs these people had
+				<b>before</b> they were famous. {{>touch yes="Tap" no="Click"}} on the people to find out more about them.</h3>
+			<!-- {{>welldone}} {{>rightwrong}} -->
+			<div class="center">
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Hugh Jackman is an Australian film and stage actor. He is perhaps best known for playing Wolverine in the X-Men films.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Hugh Jackman.jpg" alt="Hugh Jackman">
+								</div>
+							</div>
+							<h4>Hugh Jackman
+								<span class="correctword hidden"> - Clown</span>
+							</h4>
+
+						</figure>
+					</a>
+					<div id="target1" class="ddseatedtarget dd1line ddwidth8"></div>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Sean Connery is a Scottish actor best known for playing James Bond. He has starred in seven Bond films.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/SeanConnery.jpg" alt="Sean Connery">
+								</div>
+							</div>
+							<h4>Sean
+								<br>Connery
+								<span class="correctword hidden"> - Milkman</span>
+							</h4>
+
+						</figure>
+					</a>
+					<div id="target2" class="ddseatedtarget dd1line ddwidth8"></div>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Robin Williams was an American actor and stand-up comedian. His film roles range from comedies to serious dramas.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Robin Williams.jpg" alt="Robin Williams">
+								</div>
+							</div>
+							<h4>Robin Williams
+								<span class="correctword hidden"> - Mime artist</span>
+							</h4>
+						</figure>
+					</a>
+					<div id="target3" class="ddseatedtarget dd1line ddwidth8"></div>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Rod Stewart is a British-born rock singer-songwriter. His hit songs include ‘Maggie May’ and ‘Do Ya Think I’m Sexy?’">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Rod Stewart.jpg" alt="Rod Stewart">
+								</div>
+							</div>
+							<h4>Rod
+								<br>Stewart
+								<span class="correctword hidden"> - Gravedigger</span>
+							</h4>
+						</figure>
+					</a>
+					<div id="target4" class="ddseatedtarget dd1line ddwidth8"></div>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Harrison Ford is an American actor best known for his roles as Han Solo in Star Wars and Indiana Jones in the Indiana Jones films.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Harrison Ford.jpg" alt="Harrison Ford">
+								</div>
+							</div>
+							<h4>Harrison
+								<Br>Ford
+								<span class="correctword hidden"> - Carpenter</span>
+							</h4>
+						</figure>
+					</a>
+					<div id="target4" class="ddseatedtarget dd1line ddwidth8"></div>
+				</div>
+			</div>
+			<h3 class="center hidden" id="extra">The right answers are in
+				<span class="correctword">green</span>. How did you do?</h3>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated shadow ddwidth8 dd1line" draggable="false" data-destination="target1 target2 target3 target4 target5">Gravedigger</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated shadow ddwidth8 dd1line" draggable="false" data-destination="target1 target2 target3 target4 target5">Milkman</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated shadow ddwidth8 dd1line" draggable="false" data-destination="target1 target2 target3 target4 target5">Clown</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated shadow ddwidth8 dd1line" draggable="false" data-destination="target1 target2 target3 target4 target5">Carpenter</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated shadow ddwidth8 dd1line" draggable="false" data-destination="target1 target2 target3 target4 target5">Mime artist</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a16" nexturl="#m8a16_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m8a16_2">
+	<section id="m8a16_2">
+		{{#if activeSection}} {{> popovers}}
+		<div class="content noselect">
+			<h3>See if you can guess what jobs these people had
+				<b>before</b> they were famous. {{>touch yes="Tap" no="Click"}} on the people to find out more about them.</h3>
+			<!-- {{>welldone}} {{>rightwrong}} -->
+			<div class="center">
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Danny DeVito is an American actor and comedian. His roles include Louie in ‘Taxi’ and The Penguin in ‘Batman Returns’.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Danny DeVito.jpg" alt="Danny DeVito">
+								</div>
+							</div>
+							<h4>Danny
+								<br>DeVito
+								<span class="correctword hidden"> - Hairdresser</span>
+							</h4>
+
+						</figure>
+					</a>
+					<div data-destinationid="target1 target2 target3 target4" class="ddseatedtarget dd2lines ddwidth8"></div>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Madonna is a American singer-songwriter, considered to be a prominent cultural icon who pushed the boundaries of pop music.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Madonna.jpg" alt="Madonna">
+								</div>
+							</div> 
+							<h4 class="m8a16-shown">
+								<br>Madonna
+							</h4>
+							<h4 class="m8a16-hidden hidden">
+								Madonna
+								<span class="correctword"> - Fast food salesperson</span>
+							</h4>
+
+
+						</figure>
+					</a>
+					<div data-destinationid="target1 target2 target3 target4" class="ddseatedtarget dd2lines ddwidth8"></div>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Christopher Walken is an American actor who has appeared in over 100 films and TV shows. He is known for his deadpan and off-beat way of speaking.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Christopher Walken.jpg" alt="Christopher Walken">
+								</div>
+							</div>
+							<h4>Christopher Walken
+								<span class="correctword hidden"> - Lion tamer</span>
+							</h4>
+						</figure>
+					</a>
+					<div data-destinationid="target1 target2 target3 target4" class="ddseatedtarget dd2lines ddwidth8"></div>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+					 data-content="Johnny Depp is an American actor known for his “larger-than-life” film roles including Edward Scissorhands and Captain Jack Sparrow in ‘Pirates of the Caribbean’.">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Johnny Depp.jpg" alt="Johnny Depp">
+								</div>
+							</div>
+							<h4>Johnny
+								<br>Depp
+								<span class="correctword hidden"> - Pen salesman</span>
+							</h4>
+						</figure>
+					</a>
+					<div data-destinationid="target1 target2 target3 target4" class="ddseatedtarget dd2lines ddwidth8"></div>
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth8 dd1line2high">
+						<div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false" data-destination="target1">Lion tamer</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line2high">
+						<div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false" data-destination="target2">Hairdresser</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false" data-destination="target3">Pen salesman</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false" data-destination="target4">Fast food salesperson</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<h3 class="center hidden" id="extra">The right answers are in
+				<span class="correctword">green</span>. How did you do?</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a16_1" nexturl="#m8a16_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m8a16_3">
+	<section id="m8a16_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>Now {{>touch yes="tap" no="click"}} the names to read articles about them. All the articles have the same word missing.
+				Type the word in the space below.</h3>
+			<div class="center">
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#hughjackman_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Hugh Jackman.jpg" alt="Hugh Jackman">
+								</div>
+							</div>
+							<br>
+							<h4>Hugh Jackman</h4>
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#seanconnery_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/SeanConnery.jpg" alt="Sean Connery">
+								</div>
+							</div>
+							<br>
+							<h4>Sean
+								<br>Connery</h4>
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#robinwilliams_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Robin Williams.jpg" alt="Robin Williams">
+								</div>
+							</div>
+							<br>
+							<h4>Robin Williams</h4>
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#rodstewart_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Rod Stewart.jpg" alt="Rod Stewart">
+								</div>
+							</div>
+							<br>
+							<h4>Rod
+								<br>Stewart</h4>
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#harrisonford_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Harrison Ford.jpg" alt="Harrison Ford">
+								</div>
+							</div>
+							<br>
+							<h4>Harrison
+								<Br>Ford</h4>
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#dannydevito_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Danny DeVito.jpg" alt="Danny DeVito">
+								</div>
+							</div>
+							<br>
+							<h4>Danny
+								<br>DeVito</h4>
+
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#madonna_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Madonna.jpg" alt="Madonna">
+								</div>
+							</div>
+							<br>
+							<h4>Madonna
+								<br>
+								<br>
+							</h4>
+
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#chriswalken_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Christopher Walken.jpg" alt="Christopher Walken">
+								</div>
+							</div>
+							<br>
+							<h4>Christopher Walken</h4>
+						</figure>
+					</a>
+				</div>
+				<div class="ddpic shadow ddwidth10">
+					<a draggable="false" href="#" title="" data-toggle="modal" data-target="#johnnydepp_modal" role="button">
+						<figure>
+							<div class="ph-w ph-3x4 border1" style="max-width: 88px">
+								<div class="ph">
+									<img draggable="false" src="../images/module8/a17/Johnny Depp.jpg" alt="Johnny Depp">
+								</div>
+							</div>
+							<br>
+							<h4>Johnny
+								<Br>Depp</h4>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<Br>
+			<div class="center" id="entryanswer">
+				<form id="userTextEntryForm" class="textentry textentry-big text-center">
+					<input type="text" name="userText" size="14" autocomplete="off">
+					<input type="submit" value="OK">
+				</form>
+			</div>
+			{{>rightwrong}} {{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a16_2" nexturl="#m8a16_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m8a16_modal">
+	<div class="modal fade" tabindex="-1" id="hughjackman_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="hughjackman_modal">Hugh Jackman</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Hugh Jackman.jpg" alt="Hugh Jackman">
+								</div>
+							</div>
+						</figure>
+
+						<h4>Now famous for playing Wolverine in the X-Men, Hugh was asked
+							<span class="textentry-disabled missing-word"></span> be a clown for children’s birthday parties. </h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="seanconnery_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="seanconnery_modal">Sean Connery</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/SeanConnery.jpg" alt="Sean Connery">
+								</div>
+							</div>
+						</figure>
+
+						<h4>It may be difficult
+							<span class="textentry-disabled missing-word"></span> imagine that the job doesn’t exist anymore but in his earlier days Sean Connery worked hard as a milkman.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="chriswalken_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="chriswalken_modal">Christopher Walken</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Christopher Walken.jpg" alt="Christopher Walken">
+								</div>
+							</div>
+						</figure>
+
+						<h4>It’s impossible
+							<span class="textentry-disabled missing-word"></span> be cooler than him but in his youth Christopher learned
+							<span class="textentry-disabled missing-word"></span> be a lion tamer at a circus.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="rodstewart_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="rodstewart_modal">Rod Stewart</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Rod Stewart.jpg" alt="Rod Stewart">
+								</div>
+							</div>
+						</figure>
+
+						<h4>Although he always intended
+							<span class="textentry-disabled missing-word"></span> be a singer, Rod Stewart worked as a gravedigger at a local cemetery.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="harrisonford_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="harrisonford_modal">Harrison Ford</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Harrison Ford.jpg" alt="Harrison Ford">
+								</div>
+							</div>
+						</figure>
+
+						<h4>Every Star Wars fan knows the story of how George Lucas needed someone
+							<span class="textentry-disabled missing-word"></span> read lines during the auditions. A carpenter on the set called Harrison Ford was chosen
+							<span class="textentry-disabled missing-word"></span> do it and the rest is history.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="dannydevito_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="dannydevito_modal">Danny deVito</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Danny DeVito.jpg" alt="Danny deVito">
+								</div>
+							</div>
+						</figure>
+
+						<h4>In the days before he became a famous comedy actor, Danny DeVito chose
+							<span class="textentry-disabled missing-word"></span> cut hair
+							<span class="textentry-disabled missing-word"></span> make ends meet.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="madonna_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="madonna_modal">Madonna</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Madonna.jpg" alt="Madonna">
+								</div>
+							</div>
+						</figure>
+
+						<h4>While she was dreaming about being a pop star, Madonna decided
+							<span class="textentry-disabled missing-word"></span> work at Dunkin’ Donuts.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="robinwilliams_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="robinwilliams_modal">Robin Williams</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Robin Williams.jpg" alt="Robin Williams">
+								</div>
+							</div>
+						</figure>
+
+						<h4>In order
+							<span class="textentry-disabled missing-word"></span> make ends meet Robin Williams worked as a street mime artist.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="johnnydepp_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="johnnydepp_modal">Johnny Depp</h4>
+				</div>
+
+				<div class="content">
+					<div class="parapaper article-text">
+						<figure class="image imgright-responsive">
+							<div class="ph-w ph-3x4 shadow" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module8/a17/Johnny Depp.jpg" alt="Johnny Depp">
+								</div>
+							</div>
+						</figure>
+
+						<h4>A strange job for a strange man? Before he became famous Johnny Depp decided
+							<span class="textentry-disabled missing-word"></span> sell pens for a living.</h4>
+						<!-- fixes image floats -->
+						<div class="parent_expander"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>

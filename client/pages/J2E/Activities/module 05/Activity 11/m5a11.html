@@ -1,0 +1,321 @@
+<template name="m5a11">
+<article class="with-tools-sidebar m5a11 para-select">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Bolton');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 11 - {{>m5a11Title}}</div>
+		</header>
+		
+		
+		<section id="m5a11">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a11Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m5a11Intro}}</h3>
+{{> m5a11Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a11_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a11_1}}
+		{{>m5a11_2}}
+		{{>m5a11_3}}
+		{{>m5a11_4}}
+		{{>m5a11_5}}
+		{{>m5a11_6}}
+		{{>m5a11_7}}
+
+		{{>EndPage char="tu" act="m5a11" nextact="m5a12" place="Bolton"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="DrWhoArticle">{{> popovers}}
+<h3 class="center">‘Click on the <span class="a-color">red</span> words to find out more.’</h3>
+<div class="parapaper article-text">
+	{{>metametrics level="7" star="no" align="center"}}
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-1x1 border2" style="width: 200px"><div class="ph"><img draggable="false" src="images/module5/a11/drwho-mag.jpg" alt="Doctor Who on the cover of Entertainment Weekly"></div></div>
+	</figure>
+	<p><b>1)</b> <i>Doctor Who</i> has made history by becoming the first British TV show ever to <b>feature</b> on the front cover of US magazine <i>Entertainment Weekly</i>. Matt Smith - who portrays the Time Lord in the BBC One programme - is pictured on the front cover in front of the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-html="true" data-content="<img draggable='false' src='images/module5/a11/tardis.jpg' alt='Tarids' width='150' height='150' class='center-block' /> The Tardis looks like a blue telephone box which the Doctor uses as a time travel machine.">TARDIS</a>, and <b>scriptwriter</b> Steven Moffat insists the show is no longer considered to be a "British import".</p>
+	<p><b>2)</b> Speaking in the latest version of <i>Entertainment Weekly</i> - which is released tomorrow - he said: "It's not an <b>obscure</b> show anymore. It's not even ‘a British import' - it's just <i>Doctor Who</i>. Everyone who works at <i>Doctor Who</i> is a <b>devotee</b>, somebody who grew up loving it.”</p>
+	<p><b>3)</b> The show has even attracted praise from the famous American director Shonda Rhimes, who admits she would love to build a TARDIS in her home. She explained: "I keep trying <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="To understand or solve something.">to figure out</a> a way of building a TARDIS in my house, and live in it.”</p>
+	<figure class="image imgleft-responsive">
+		<div class="ph-w ph-3x2 border2" style="width: 200px"><div class="ph"><img draggable="false" src="images/module5/a11/drwho-50.jpg" alt="All the Doctors"></div></div>
+	</figure>
+	<p><b>4)</b> <i>Doctor Who's</i> <b>prominence</b> in the US has gradually increased, and the show's latest series, season six, became the most watched series ever on BBC America. The same episodes made the programme the most downloaded show on US iTunes last year.</p>
+	<p><b>5)</b> Earlier this year, Steven opted to shoot the final <i>Doctor Who</i> episode in New York, which saw them battle with monsters - the Weeping Angels.</p>
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div>
+</template>
+
+<template name="m5a11_1">
+	<section id="m5a11_1" class="hidden">
+		<div class="content">
+			<h2>Doctor Who makes history as first British TV show on 'Entertainment Weekly' cover</h2>
+			{{>DrWhoArticle}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a11" nexturl="#m5a11_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a11_2">
+	<section id="m5a11_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+		{{>m5a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m5a11Q" class="number pull-right">1</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m5a11Quest" class="caption">
+							<p>What makes Doctor Who different from any other British TV show?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m5a11P" class="captionsmall capgreen">
+							Paragraph 1				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a11_1" nexturl="#m5a11_3" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a11_3">
+	<section id="m5a11_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+		{{>m5a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m5a11Q" class="number pull-right">2</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m5a11Quest" class="caption">
+							<p>How do we know that Doctor Who has been around for a long time?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m5a11P" class="captionsmall capgreen">
+							Paragraph 2				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a11_2" nexturl="#m5a11_4" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a11_4">
+	<section id="m5a11_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+		{{>m5a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m5a11Q" class="number pull-right">3</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m5a11Quest" class="caption">
+							<p>Adults also like Doctor Who. What is one woman planning to do?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m5a11P" class="captionsmall capgreen">
+							Paragraph 3				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a11_3" nexturl="#m5a11_5" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a11_5">
+	<section id="m5a11_5" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+		{{>m5a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m5a11Q" class="number pull-right">4</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m5a11Quest" class="caption">
+							<p>Doctor Who is very popular in America. Find two examples of this.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m5a11P" class="captionsmall capgreen">
+							Paragraph 4				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a11_4" nexturl="#m5a11_6" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a11_6">
+	<section id="m5a11_6" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			{{>m5a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m5a11Q" class="number pull-right">5</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m5a11Quest" class="caption">
+							<p>What added to the American connection?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m5a11P" class="captionsmall capgreen">
+							Paragraph 5					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					<div class="col-xs-12">
+						<h3 class="center">Continue when you’re ready to see the answers.</h3>
+					</div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a11_5" nexturl="#m5a11_7" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a11_7">
+	<section id="m5a11_7" class="hidden">
+		<div class="content">
+			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+				<ol class="olcircle">
+					<li>
+						<p><b>What makes Doctor Who different from any other British TV show?</b></p>
+						<p>It was the first British TV show to be featured on the front cover of the US magazine 'Entertainment Weekly.'</p>
+					</li>
+					<li>
+						<p><b>How do we know that Doctor Who has been around for a long time?</b></p>
+						<p>Everyone who works at Doctor Who has grown up loving the show.</p>
+					</li>
+					<li>
+						<p><b>Adults also like Doctor Who. What is one woman planning to do?</b></p>
+						<p>She would like to build a TARDIS in her house and live in it.</p>
+					</li>
+					<li>
+						<p><b>Doctor Who is very popular in America. Find two examples of this.</b></p>
+						<p>It was the most watched show on American TV and had the most downloads on iTunes.</p>
+					</li>
+					<li>
+						<p><b>What added to the American connection?</b></p>
+						<p>The final episode of Doctor Who was shot in New York.</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a11_6" nexturl="#m5a11_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a11paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+		{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+		<br>
+		<div class="container-fluid">
+			{{> blankrow}}
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div id="m5a11textDisplay" class="parapaper fold">
+						<p><b>1.</b> <i>Doctor Who</i> has made history by becoming the first British TV show ever to feature on the front cover of US magazine <i>Entertainment Weekly</i>. Matt Smith - who portrays the Time Lord in the BBC One programme - is pictured on the front cover in front of the TARDIS, and scriptwriter Steven Moffat insists the show is no longer considered to be a "British import".</p>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 text-right">
+					<span class="paragraph-label">Select a paragraph:</span>
+					<a><div id="0" class="numbutt">1</div></a>
+					<a><div id="1" class="numbutt">2</div></a>
+					<a><div id="2" class="numbutt">3</div></a>
+					<a><div id="3" class="numbutt">4</div></a>
+					<a><div id="4" class="numbutt">5</div></a>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+</div>
+</template>

@@ -1,0 +1,46 @@
+<template name="A2l">
+	<section id="A2l">
+        <div class="content">
+            <h3>Joan and Peter are students. Listen to their conversation and then answer the questions afterwards. <b>You can only listen to the conversation twice and you cannot pause it</b>.<br> Listen to the conversation again, take notes if you like, then answer the questions.</h3>
+
+            <button class="buttonroundc buttonroundbig buttonaudioc center-block" data-function="playAudio"></button>
+            <h4 class="center">Plays remaining: {{remainingPlays}}</h4>
+            <br>
+            <form class="assess-form-listening">
+                <div class="parapaper paraextract parasegment fold">
+                    <ol class="olcircle">
+                        <li><span><b><span data-questionFor="q1">Peter lives in a busy road.</span></b></span><br>
+                            <label for="q1a"><input type="radio" name="q1" value="True" id="q1a" class="listeningInput"> True</label>
+                            <label for="q1b"><input type="radio" name="q1" value="False" id="q1b" class="listeningInput"> False</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q2">Peter doesn't like his house.</span></b></span><br>
+                            <label for="q2a"><input type="radio" name="q2" value="True" id="q2a" class="listeningInput"> True</label>
+                            <label for="q2b"><input type="radio" name="q2" value="False" id="q2b" class="listeningInput"> False</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q3">Joan lives in a house.</span></b></span><br>
+                            <label for="q3a"><input type="radio" name="q3" value="True" id="q3a" class="listeningInput"> True</label>
+                            <label for="q3b"><input type="radio" name="q3" value="False" id="q3b" class="listeningInput"> False</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q4">Joan lives near a school.</span></b></span><br>
+                            <label for="q4a"><input type="radio" name="q4" value="True" id="q4a" class="listeningInput"> True</label>
+                            <label for="q4b"><input type="radio" name="q4" value="False" id="q4b" class="listeningInput"> False</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q5">There's a post office near Peter's house</span></b></span><br>
+                            <label for="q5a"><input type="radio" name="q5" value="True" id="q5a" class="listeningInput"> True</label>
+                            <label for="q5b"><input type="radio" name="q5" value="False" id="q5b" class="listeningInput"> False</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q6">Peter lives near a park.</span></b></span><br>
+                            <label for="q6a"><input type="radio" name="q6" value="True" id="q6a" class="listeningInput"> True</label>
+                            <label for="q6b"><input type="radio" name="q6" value="False" id="q6b" class="listeningInput"> False</label>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="assess-finish">
+                    <span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+                </div>
+                {{>finishBtn}}
+            </form>
+        </div>
+	</section>
+</template>

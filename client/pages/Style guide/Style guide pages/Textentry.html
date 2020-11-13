@@ -1,0 +1,200 @@
+<template name="textEntrySG">
+		<section id="textEntrySG" class="hidden">
+		<div class="content">
+			<h1>Statements</h1>
+			<h3 class="center">Write the <b>Preposition</b> in the space to go with the <b>Verb</b> ‘to get’.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}}
+					<ol class="olcircle">
+						<li>He left the job because he didn't get <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> with his boss.</li>
+						<li>Many people have to get <span id="entryanswer1" class="textentry-disabled"></span> on a dollar a day. </li>
+						<li>Despite doing very little work, he got <span id="entryanswer2" class="textentry-disabled"></span> the exam. </li>
+						<li>The problem won't seem so difficult if you just get <span id="entryanswer3" class="textentry-disabled"></span> to it. </li>
+						<li>She knows she smokes too much, but she finds it hard to get <span id="entryanswer4" class="textentry-disabled"></span> of the habit. </li>
+					</ol>
+				</div>
+		
+			<h5>HTML</h5>
+			<pre class="htmlcode2">
+			&#00060;template name="textEntrySG"&#00062;
+			&#00060;section id="textEntrySG" class="hidden"&#00062;
+					&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&#00060;div class="content"&#00062;
+			&#00060;h1&#00062;Statements&#00060;/h1&#00062;
+			&#00060;h3 class="center"&#00062;Write the &#00060;b&#00062;Preposition&#00060;/b&#00062; in the space to go with the &#00060;b&#00062;Verb&#00060;/b&#00062; ‘to get’.&#00060;/h3&#00062;
+				&#00060;div class="parapaper linespace para-ol-space fold"&#00062;
+				&#00123;&#00123;&#00062; rightwrong&#00125;&#00125; &#00123;&#00123;&#00062; welldone&#00125;&#00125;
+					&#00060;ol class="olcircle"&#00062;
+						&#00060;li&#00062;He left the job because he didn't get &#00060;span id="entryanswer0"&#00062;&#00060;form class="textentry"&#00062;&#00060;input type="text" name="userText" size="7" autocomplete="off"&#00062;&#00060;input type="submit" value="OK"&#00062;&#00060;/form&#00062;&#00060;/span&#00062; with his boss.&#00060;/li&#00062;
+						&#00060;li&#00062;Many people have to get &#00060;span id="entryanswer1" class="textentry-disabled"&#00062;&#00060;/span&#00062; on a dollar a day. &#00060;/li&#00062;
+						&#00060;li&#00062;Despite doing very little work, he got &#00060;span id="entryanswer2" class="textentry-disabled"&#00062;&#00060;/span&#00062; the exam. &#00060;/li&#00062;
+						&#00060;li&#00062;The problem won't seem so difficult if you just get &#00060;span id="entryanswer3" class="textentry-disabled"&#00062;&#00060;/span&#00062; to it. &#00060;/li&#00062;
+						&#00060;li&#00062;She knows she smokes too much, but she finds it hard to get &#00060;span id="entryanswer4" class="textentry-disabled"&#00062;&#00060;/span&#00062; of the habit. &#00060;/li&#00062;
+					&#00060;/ol&#00062;
+				&#00060;/div&#00062;
+
+		&#00060;/div&#00062;
+			&#00060;footer&#00062;
+				
+			&#00060;/footer&#00062;
+			&#00123;&#00123;&#00062; stuck stuckchar="tu"&#00125;&#00125;
+	&#00123;&#00123;/if&#00125;&#00125;
+		&#00060;/section&#00062;
+			&#00060;/template&#00062;</pre>
+		<h5>JAVASCRIPT</h5>
+		<pre class="htmlcode2">Template.textEntrySG.helpers(&#00123;
+	
+	activeSection: function()&#00123;
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#textEntrySG");
+	&#00125;
+&#00125;);
+
+Template.textEntrySG.events(&#00123;
+	
+	"submit form" : function(evt) &#00123;
+		
+		if (evt.preventDefault)&#00123;
+			evt.preventDefault();
+		&#00125;
+		var isCorrect = false;
+		
+		// Tidy the user input
+		var userText = evt.target.userText.value;
+		if (userText.charAt(userText.length - 1) == '.') &#00123;
+			userText = userText.substr(0, userText.length - 1);
+		&#00125;
+		userText = $.trim(userText);
+		userText = userText.toLowerCase();
+		
+		for (var i = 0; i &#00060; $.k2l.textEntrySG.correctAnswers[$.k2l.textEntrySG.index].length; i++) &#00123;
+			if (userText == $.k2l.textEntrySG.correctAnswers[$.k2l.textEntrySG.index][i])&#00123; 
+				isCorrect = true;
+				// $.k2l.textEntrySG.correctAnswerIndex = i; // use this if there are multiple possible answers
+				break;
+			&#00125;
+		&#00125;
+		
+		if (isCorrect)&#00123;
+			//correct
+			$('.correctscreen').removeClass('hidden');
+			setTimeout( function() &#00123;
+				$('.correctscreen').addClass('hidden');
+			&#00125;, 1000);
+			var parentSection = $(evt.currentTarget).parents('section');
+			$.k2l.textEntrySG.wrongcount = 0;
+			$('.stuck').addClass('hidden'); //hide stuck button if visible
+			$(evt.currentTarget).parent().html($.k2l.textEntrySG.correctAnswers[$.k2l.textEntrySG.index]);
+			// $(evt.currentTarget).parent().html($.k2l.textEntrySG.displayAnswers[$.k2l.textEntrySG.index]); // use this if there are multiple possible answers
+			$('#entryanswer'+$.k2l.textEntrySG.index).addClass('correctword');
+			
+			if ($.k2l.textEntrySG.index &#00060; $.k2l.textEntrySG.correctAnswers.length - 1) &#00123;
+				$.k2l.textEntrySG.index++;
+				$('#entryanswer'+$.k2l.textEntrySG.index).removeClass('textentry-disabled');
+				$('#entryanswer'+$.k2l.textEntrySG.index).html('&#00060;form class="textentry"&#00062;&#00060;input type="text" name="userText" size="7" autocomplete="off"&#00062;&#00060;input type="submit" value="OK"&#00062;&#00060;/form&#00062;');
+				// Need to get the cursor to focus on the next attempt
+				$('input[name=userText]').focus();
+			&#00125; else &#00123;
+				$.k2l.textEntrySG.index = 0;
+				$.k2l.textEntrySG.wrongcount = 0;
+				setTimeout( function() &#00123;
+				$('#welldonecap').removeClass('hidden');
+				&#00125;, 1000);
+			setTimeout( function() &#00123;
+				$('#welldonecap').addClass('hidden');
+			&#00125;, 2000);
+				setTimeout(function() &#00123;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					&#00125;, 2000);
+				// $('.pagination').removeClass('hidden');
+			&#00125;
+		&#00125; else &#00123;
+			$.k2l.textEntrySG.wrongcount++;
+			if ($.k2l.textEntrySG.wrongcount &#00062;= 3) &#00123;
+				$('.stuck').removeClass('hidden');
+			&#00125;
+			$('.incorrectscreen').removeClass('hidden');
+		setTimeout( function() &#00123;
+			$('.incorrectscreen').addClass('hidden');
+		&#00125;, 1000);
+			evt.target.userText.value = "";
+		&#00125;
+	&#00125;,
+	
+	"click .stuck-button": function(evt) &#00123;
+		$('.incorrectscreen').addClass('hidden');
+		var parentSection = $(evt.currentTarget).parents('section');
+		$('.stuck').addClass('hidden'); //hide stuck button if visible
+		$.k2l.textEntrySG.wrongcount = 0;
+		$('#entryanswer'+$.k2l.textEntrySG.index).html($.k2l.textEntrySG.correctAnswers[$.k2l.textEntrySG.index]);
+		// $('#entryanswer'+$.k2l.textEntrySG.index).html($.k2l.textEntrySG.displayAnswers[$.k2l.textEntrySG.index][0]); // use this if there are multiple possible answers and you only want to show the first correct answer on the list
+		$('#entryanswer'+$.k2l.textEntrySG.index).addClass('correctword');
+		
+		if ($.k2l.textEntrySG.index &#00060; $.k2l.textEntrySG.correctAnswers.length - 1) &#00123;
+			$.k2l.textEntrySG.index++;
+			$('#entryanswer'+$.k2l.textEntrySG.index).removeClass('textentry-disabled');
+			$('#entryanswer'+$.k2l.textEntrySG.index).html('&#00060;form class="textentry"&#00062;&#00060;input type="text" name="userText" size="7" autocomplete="off"&#00062;&#00060;input type="submit" value="OK"&#00062;&#00060;/form&#00062;');
+			// Need to get the cursor to focus on the next attempt
+				$('input[name=userText]').focus();
+		&#00125; else &#00123;
+			$.k2l.textEntrySG.index = 0;
+			$.k2l.textEntrySG.wrongcount = 0;
+				setTimeout(function() &#00123;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					&#00125;, 1000);
+			//$('.pagination').removeClass('hidden');
+		&#00125;
+	&#00125;,
+	
+	"click .pagination": function(evt)&#00123;
+		$.k2l.textEntrySG.index = 0;
+		$.k2l.textEntrySG.wrongcount = 0;
+	&#00125;
+	
+&#00125;);
+
+Template.textEntrySG.rendered = function() &#00123;
+	
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.textEntrySG == 'undefined') &#00123;
+		$.k2l.textEntrySG = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.textEntrySG.index = 0;
+	$.k2l.textEntrySG.wrongcount = 0;
+	// $.k2l.textEntrySG.correctAnswerIndex = 0; // for multiple answers
+
+	var correctAnswers = [
+			["on"], // Possible answers for Q1.
+			["by"],   // Possible answers for Q2.
+			["through"], // etc.
+			["down"],
+			//["answer1", "answer2"], // Use this for multiple possible answers
+			["out"]
+		];
+		
+		/* var displayAnswers = [
+			["on"], // Possible answers for Q1.
+			["by"],   // Possible answers for Q2.
+			["through"], // etc.
+			["down"],
+			["out"]
+		]; 
+		
+	$.k2l.textEntrySG.displayAnswers = displayAnswers; */
+	$.k2l.textEntrySG.correctAnswers = correctAnswers;
+	
+&#00125;</pre>
+</div>
+	
+		</section>
+</template>

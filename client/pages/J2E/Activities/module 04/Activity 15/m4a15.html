@@ -1,0 +1,345 @@
+<template name="m4a15">
+	<article class="with-tools-sidebar m4a15">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Crianlarich');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 15 - {{>m4a15Title}}</div>
+			</header>
+
+
+			<section id="m4a15">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a15Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m4a15Intro}}</h3>
+					{{> m4a15Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a15_1" prev="disabled" next="" nextID="m4a15Next" next_text="Start"}}
+				</footer>
+			</section>
+
+			<!-- preload -->
+			<div class="hidden">
+				<img draggable="false" src="images/module4/high.png" width="1" height="1">
+				<img draggable="false" src="images/module4/higher.png" width="1" height="1">
+				<img draggable="false" src="images/module4/highest.png" width="1" height="1">
+			</div>
+
+			{{>m4a15_1}} {{>m4a15_2}} {{>m4a15_3}} {{>m4a15_4}} {{>m4a15_5}} {{>EndPage char="elle" act="m4a15" nextact="m4a16" place="Crianlarich"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a15_1">
+	<section id="m4a15_1" class="hidden">
+		<!-- {{#if activeSection}} -->
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col-xs-4">
+						<figure style="display:none">
+							<div class="ph-w ph-2x3 shadow" style="max-width: 289px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/high.png" alt="High building">
+								</div>
+							</div>
+							<figcaption style="font-size: 1em; font-style: normal;">
+								<br>
+								<h5>High</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-4">
+						<figure style="display:none">
+							<div class="ph-w ph-2x3 shadow" style="max-width: 289px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/higher.png" alt="Higher building">
+								</div>
+							</div>
+							<figcaption style="font-size: 1em; font-style: normal;">
+								<br>
+								<h5>Higher</h5>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-4">
+						<figure style="display:none">
+							<div class="ph-w ph-2x3 shadow" style="max-width: 289px">
+								<div class="ph">
+									<img draggable="false" src="images/module4/highest.png" alt="Highest building">
+								</div>
+							</div>
+							<figcaption style="font-size: 1em; font-style: normal;">
+								<br>
+								<h5>Highest</h5>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a15" nexturl="#m4a15_2" prev="disabled" next="" nextID="m4a15_1Next"}}
+		</footer>
+		<!-- {{/if}} -->
+	</section>
+</template>
+
+
+<template name="m4a15_2">
+	<section id="m4a15_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3>
+				<i>Adding Vitamin D to Scotland’s Food</i> (Activity 9) used these words. Drag ‘high,’ ‘higher’, ‘highest’ and 'than' to
+				the right space in these sentences.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li> Scotland has a
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> number of people with Multiple Sclerosis – one of the
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> levels in the world.</li>
+					<li>Food fortification is needed, he says, at
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> levels
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> the small amounts already added to food in North America to combat rickets in the past. </li>
+				</ol>
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">highest</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">higher</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">high</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">than</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a15_1" nexturl="#m4a15_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a15_3">
+	<section id="m4a15_3" class="hidden">
+		<div class="content">
+			<h2 class="text-center">This is how you compare things.</h2>
+			<div class="container-fluid-no-gutter">
+				{{>blankrow}}
+				<div class="row text-center">
+					<div class="col-xs-4">
+						<h5>Adjective</h5>
+						<br>
+						<br>
+						<div class="caption capgreen">high</div>
+					</div>
+					<div class="col-xs-4">
+						<h5>Comparative</h5>
+						<br>
+						<br>
+						<div class="caption capgreen">higher</div>
+					</div>
+					<div class="col-xs-4">
+						<h5>Superlative</h5>
+						<br>
+						<br>
+						<div class="caption capgreen">highest</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a15_2" nexturl="#m4a15_4" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a15_4">
+	<section id="m4a15_4" class="hidden">
+		<div class="content">
+			<h4 class="text-center">If you have
+				<b>one</b> syllable -
+				<span class="avoidwrap">add 'er' or 'est'.</span>
+			</h4>
+			<table class="table1 table-center">
+				<tr>
+					<th>Adjective</th>
+					<th>Comparative</th>
+					<th>Superlative</th>
+				</tr>
+				<tr>
+					<td>high</td>
+					<td>higher</td>
+					<td>highest</td>
+				</tr>
+				<tr>
+					<td>strong</td>
+					<td>stronger</td>
+					<td>strongest</td>
+				</tr>
+				<tr>
+					<td>big</td>
+					<td>bi
+						<b>gg</b>er</td>
+					<td>bi
+						<b>gg</b>est</td>
+				</tr>
+			</table>
+			<div class="center">
+				<div class="info bottom">Sometimes you need to
+					<br>double the last letter.</div>
+			</div>
+			<br>
+			<hr>
+
+			<h4 class="text-center">If the word already ends in 'e',
+				<span class="avoidwrap">just add 'r' or 'st'.</span>
+			</h4>
+			<table class="table1 table-center">
+				<tr>
+					<th>Adjective</th>
+					<th>Comparative</th>
+					<th>Superlative</th>
+				</tr>
+				<tr>
+					<td>fine</td>
+					<td>finer</td>
+					<td>finest</td>
+				</tr>
+				<tr>
+					<td>brave</td>
+					<td>braver</td>
+					<td>bravest</td>
+				</tr>
+				<tr>
+					<td>large</td>
+					<td>larger</td>
+					<td>largest</td>
+				</tr>
+			</table>
+			<br>
+			<hr>
+
+			<h4 class="text-center">If you have
+				<b>two</b> syllables ending in 'y',
+				<span class="avoidwrap">change 'y' to 'i'.</span>
+			</h4>
+			<table class="table1 table-center">
+				<tr>
+					<th>Adjective</th>
+					<th>Comparative</th>
+					<th>Superlative</th>
+				</tr>
+				<tr>
+					<td>happy</td>
+					<td>happier</td>
+					<td>happiest</td>
+				</tr>
+				<tr>
+					<td>funny</td>
+					<td>funnier</td>
+					<td>funniest</td>
+				</tr>
+				<tr>
+					<td>early</td>
+					<td>earlier</td>
+					<td>earliest</td>
+				</tr>
+			</table>
+			<br>
+			<hr>
+
+			<h4 class="text-center">If you have
+				<b>two</b> or
+				<b>more</b> syllables, use 'more' or 'most',
+				<span class="avoidwrap">or 'less' and 'least'.</span>
+			</h4>
+			<table class="table1 table-center">
+				<tr>
+					<th>Adjective</th>
+					<th>Comparative</th>
+					<th>Superlative</th>
+				</tr>
+				<tr>
+					<td>expensive</td>
+					<td>more expensive</td>
+					<td>most expensive</td>
+				</tr>
+				<tr>
+					<td>attractive</td>
+					<td>more attractive</td>
+					<td>most attractive</td>
+				</tr>
+				<tr>
+					<td>dangerous</td>
+					<td>less dangerous</td>
+					<td>least dangerous</td>
+				</tr>
+			</table>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a15_3" nexturl="#m4a15_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a15_5">
+	<section id="m4a15_5" class="hidden">
+		<div class="content">
+			<h2 class="text-center">There are two very common adjectives which don't follow these rules:</h2>
+
+			<div class="text-center">
+				<div class="caption capred item-space">good</div> and
+				<div class="caption capred item-space">bad</div>
+			</div>
+			<br>
+			<br>
+			<table class="table2 table-center">
+				<tr>
+					<th>Adjective</th>
+					<th>Comparative</th>
+					<th>Superlative</th>
+				</tr>
+				<tr>
+					<td>good</td>
+					<td>better</td>
+					<td>best</td>
+				</tr>
+				<tr>
+					<td>bad</td>
+					<td>worse</td>
+					<td>worst</td>
+				</tr>
+			</table>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a15_4" nexturl="#m4a15_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

@@ -1,0 +1,116 @@
+<template name="m9a23"> 
+<article class="with-tools-sidebar m9a23">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Plymouth');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 23 - {{> m9a23Title}}</div>
+		</header>
+		<section id="m9a23">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a23Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a23Intro}}</h3>
+				{{> m9a23Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a23_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a23_1}}
+		{{>m9a23_2}}
+		{{>EndPage char="tu" act="m9a23" nextact="m9a24" place="Plymouth"}}
+	</div>
+</article>
+	{{>m9a23_modal}}
+</template>
+<template name="m9a23_1"> 
+	<section id="m9a23_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Write the missing question tags in the spaces. Remember to use the short form.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+					<div class="center">
+						<div class="caption capgreen">Example: Great day today, isn't it?</div>
+					</div>
+					<br>
+					<ol class="olcircle">
+						<li>You didn't tell him, <span id="entryanswer0" style="margin-right: 0.25em;"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span>?</li>
+						<li>You're not going out like that, <span id="entryanswer1" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+						<li>He's never been to America, <span id="entryanswer2" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+						<li>She'd go out with him if he asked her, <span id="entryanswer3" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+						<li>He can't swim very well, <span id="entryanswer4" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+						<li>It's going to rain later, <span id="entryanswer5" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+						<li>They haven't seen each other for years, <span id="entryanswer6" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+						<li>We don't want to be late, <span id="entryanswer7" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+						<li>She doesn't drive, <span id="entryanswer8" class="textentry-disabled" style="margin-right: 0.25em;"></span>?</li>
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m9a23_modal" class="button2">More examples</button>
+				</div>
+
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a23" nexturl="#m9a23_2" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu"}} 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m9a23_modal">
+	<div class="modal fade" tabindex="-1" id="m9a23_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m9a23_modal">Examples</h4>
+				</div>
+				
+				<div class="content center">
+
+					<div class="caption">She didn't say that, did she?</div>
+					<br><br>
+					<div class="caption">He could help, couldn't he?</div>
+					<br><br>
+					<div class="caption">You should have remembered her birthday, shouldn't you?</div>
+					<br><br>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m9a23_2"> 
+	<section id="m9a23_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h4 class="center">Here are the sentences again.</h4>
+				<div class="parapaper linespace para-ol-space fold">
+					<ol class="olcircle">
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/1.m4a"></button> You didn't tell him, did you?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/2.m4a"></button> You're not going out like that, are you?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/3.m4a"></button> He's never been to America, has he?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/4.m4a"></button> She'd go out with him if he asked her, wouldn't she?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/5.m4a"></button> He can't swim very well, can he?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/6.m4a"></button> It's going to rain later, isn't it?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/7.m4a"></button> They haven't seen each other for years, have they?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/8.m4a"></button> We don't want to be late, do we?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/9.m4a"></button> She doesn't drive, does she?</li>
+					</ol>
+				</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a23_1" nexturl="#m9a23_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

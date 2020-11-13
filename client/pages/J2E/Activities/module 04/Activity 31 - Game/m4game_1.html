@@ -1,0 +1,24 @@
+<template name="m4Game_1">
+
+	<section id="m4Game_1" class="game-section hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<h1>Introduction</h1>
+					<div class="videoplayer">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video class="embed-responsive-item" id="m4game-intro" autoplay controls poster="/video/games/m4intro.jpg">
+								<source src="/video/games/m4intro.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m4Game_2" prev="hidden" next="" next_text="Skip intro"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

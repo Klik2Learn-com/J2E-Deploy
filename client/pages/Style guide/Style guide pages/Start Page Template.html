@@ -1,0 +1,32 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="startpage">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" href="/Inverness"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 1 - {{>m1a1Title}}</div>
+		</header>
+				
+			<section id="m1a1_1">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m1a1Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m1a1Intro}}</h3>
+{{> m1a1Time}}
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m1a1_1" prev="hidden" next="" next_text="Start"}}
+	</footer>
+		</section>
+	</div>
+</article>
+
+	</template>
+	
+	

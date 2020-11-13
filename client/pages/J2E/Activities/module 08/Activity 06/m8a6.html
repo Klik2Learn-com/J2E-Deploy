@@ -1,0 +1,660 @@
+<template name="m8a6">
+	<article class="with-tools-sidebar m8a6">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Gloucester');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class='parent-level'>Module 8</div>
+				<div class='acttitle-title'>{{> activity}} 6 - {{> m8a6Title}}</div>
+			</header>
+			<section id="m8a6">
+				<div class="content">
+					<h1 class="start-page-header">{{>m8a6Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m8a6Intro}}</h3>
+					{{> m8a6Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m8a6_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m8a6_1}} {{>m8a6_2}} {{>m8a6_3}} {{>m8a6_4}} {{>m8a6_5}} {{>m8a6_6}} {{>m8a6_7}} {{>m8a6_8}} {{>m8a6_9}} {{>m8a6_10}}
+			{{>EndPage char="elle" act="m8a6" nextact="m8a7" place="Gloucester"}}
+		</div>
+	</article>
+
+	<div class="modal fade" tabindex="-1" id="m8a6_modal1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content" style="overflow: visible;">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">First CV</h4>
+				</div>
+				<div class="content">
+					{{> m8a6FirstCV}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" tabindex="-1" id="m8a6_modal2" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content" style="overflow: visible;">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">Second CV</h4>
+				</div>
+				<div class="content">
+					{{> m8a6SecondCV}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+</template>
+
+<template name="m8a6_1">
+	<section id="m8a6_1" class="hidden">
+		<div class="content">
+			<h4>Most employers will ask you for a CV - Curriculum Vitae. Here’s a list of good features.</h4>
+			<br>
+			<div class="parapaper paraextract article-text fold">
+				<ol class="olcircle">
+					<li>Include ALL relevant qualifications and work experience.</li>
+					<li>Use bullet points when you can.</li>
+					<li>No spelling mistakes.</li>
+					<li>No grammar mistakes.</li>
+					<li>Keep it simple and short.</li>
+					<li>Make it relevant to the job you want.</li>
+					<li>Be positive about yourself.</li>
+					<li>Don’t make claims about yourself that you can’t prove.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6" nexturl="#m8a6_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m8a6_2">
+	<section id="m8a6_2" class="hidden">
+		<div class="content">
+			<h2>You’ll now see two different CVs. Try to find as many good features as you can in each one.</h2>
+			<div class="container-fluid" style="max-width: 500px; margin-right: auto; margin-left: auto;">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="ph-w ph-3x4" style="max-width: 414px"><div class="ph"><img src="/images/module8/a6/cv1.png" draggable="false" alt="CV"></div></div>
+					</div>
+					<div class="col-xs-6">
+						<div class="ph-w ph-3x4" style="max-width: 414px"><div class="ph"><img src="/images/module8/a6/cv2.png" draggable="false" alt="CV"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_1" nexturl="#m8a6_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m8a6_3">
+	<section id="m8a6_3" class="hidden">
+		<div class="content">
+			<h1>First CV</h1>
+			{{> m8a6FirstCV}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_2" nexturl="#m8a6_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m8a6_4">
+	<section id="m8a6_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>If the first CV has a feature listed below, {{>touch yes="tap" no="click"}} the box beside it. If it doesn’t have it,
+				leave the box blank.</h3>
+
+			<div class="text-center">
+				<button data-toggle="modal" data-target="#m8a6_modal1" class="button2">See the first CV again</button>
+			</div>
+			<br>
+
+			<h4 class="text-center">Good features in the first CV:</h4>
+			<br>
+			<form>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature1" id="feature1" value="1">
+							<label for="feature1">1) Include ALL relevant qualifications and work experience.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature2" id="feature2" value="2">
+							<label for="feature2">2) Use bullet points when you can.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature3" id="feature3" value="3">
+							<label for="feature3">3) No spelling mistakes.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature4" id="feature4" value="4">
+							<label for="feature4">4) No grammar mistakes.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature5" id="feature5" value="5">
+							<label for="feature5">5) Keep it simple and short.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature6" id="feature6" value="6">
+							<label for="feature6">6) Make it relevant to the job you want.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature7" id="feature7" value="7">
+							<label for="feature7">7) Be positive about yourself.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature8" id="feature8" value="8">
+							<label for="feature8">8) Don’t make claims about yourself that you can’t back up.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature9" id="feature9" value="9">
+							<label for="feature9">9) Include names and contact details for references.</label>
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_3" nexturl="#m8a6_5" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m8a6_5">
+	<section id="m8a6_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{> rightwrong}}
+			<h3 class="center">Now give the first CV a score out of 9</h3>
+			<h4 class="text-center">Score for the first CV:</h4>
+			<form>
+				<div class="out-of-x">
+					<div class="caption">
+						<select class="cv-select-score-0">
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+						</select>
+						/9
+					</div>
+					<br>
+					<button class="button2 cv-select buttonsmall">OK</button>
+				</div>
+			</form>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_4" nexturl="#m8a6_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m8a6_6">
+	<section id="m8a6_6" class="hidden">
+		<div class="content">
+			<h4 class="text-center">This CV should score 0/9 because it did not have any of these features:</h4>
+			<br>
+			<div class="container-fluid cv-features">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						1) Include ALL relevant qualifications and work experience.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						2) Use bullet points when you can.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						3) No spelling mistakes.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						4) No grammar mistakes.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						5) Keep it simple and short.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						6) Make it relevant to the job you want.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						7) Be positive about yourself.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						8) Don’t make claims about yourself that you can’t back up.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						9) Include names and contact details for references.
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_5" nexturl="#m8a6_7" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m8a6_7">
+	<section id="m8a6_7" class="hidden">
+		<div class="content">
+			<h1>Second CV</h1>
+			{{> m8a6SecondCV}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_6" nexturl="#m8a6_8" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m8a6_8">
+	<section id="m8a6_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>If the second CV has a feature listed below, {{>touch yes="tap" no="click"}} the box beside it. If it doesn’t have it,
+				leave the box blank.</h3>
+
+			<div class="text-center">
+				<button data-toggle="modal" data-target="#m8a6_modal2" class="button2">See the second CV again</button>
+			</div>
+			<br>
+
+			<h4 class="text-center">Good features in the second CV:</h4>
+			<br>
+			<form>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature1" id="feature1" value="1">
+							<label for="feature1">1) Include ALL relevant qualifications and work experience.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature2" id="feature2" value="2">
+							<label for="feature2">2) Use bullet points when you can.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature3" id="feature3" value="3">
+							<label for="feature3">3) No spelling mistakes.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature4" id="feature4" value="4">
+							<label for="feature4">4) No grammar mistakes.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature5" id="feature5" value="5">
+							<label for="feature5">5) Keep it simple and short.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature6" id="feature6" value="6">
+							<label for="feature6">6) Make it relevant to the job you want.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature7" id="feature7" value="7">
+							<label for="feature7">7) Be positive about yourself.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature8" id="feature8" value="8">
+							<label for="feature8">8) Don’t make claims about yourself that you can’t back up.</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input type="checkbox" name="feature9" id="feature9" value="9">
+							<label for="feature9">9) Include names and contact details for references.</label>
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_7" nexturl="#m8a6_9" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m8a6_9">
+	<section id="m8a6_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			{{> rightwrong}}
+			<h3 class="center">Now give the second CV a score out of 9</h3>
+			<h4 class="text-center">Score for the second CV:</h4>
+			<form>
+				<div class="out-of-x">
+					<div class="caption">
+						<select class="cv-select-score-1">
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+						</select>
+						/9
+					</div>
+					<br>
+					<button class="button2 cv-select buttonsmall">OK</button>
+				</div>
+			</form>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_8" nexturl="#m8a6_10" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m8a6_10">
+	<section id="m8a6_10" class="hidden">
+		<div class="content">
+			<h4 class="text-center">This CV should have a score of 8/9 because it has all the features here except references.</h4>
+			<br>
+			<div class="container-fluid cv-features">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						1) Include ALL relevant qualifications and work experience.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						2) Use bullet points when you can.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						3) No spelling mistakes.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						4) No grammar mistakes.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						5) Keep it simple and short.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						6) Make it relevant to the job you want.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						7) Be positive about yourself.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2 faded">
+						8) Don’t make claims about yourself that you can’t back up.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-2">
+						9) Include names and contact details for references.
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a6_9" nexturl="#m8a6_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m8a6FirstCV">
+	<div class="m8a6">
+		{{> popovers}}
+		<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the
+			<span class="highlighted">highlighted</span> words to see a comment.</h3>
+		<div class="parapaper cv cv1 fold">{{>metametrics level="6" star="no" align="right"}}
+			<h4 class="text-center">
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="The spelling is wrong! It should be Curriculum Vitae.">Curriculum Vita</a>
+				<br>Lisa Brown
+			</h4>
+			<br>
+			<p>
+				<b>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="You don't need to use the word 'address'. Just write your address.">Address</a>
+				</b>
+				<br> 19 South Street
+				<br> Edinburgh
+				<br> EH1 4DP
+				<br>
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="An email address like this suggests you're more interested in going to parties than getting a job. Remember - a lot of employers will check your Facebook and Twitter accounts to see what you post about yourself.">partygirl@hotmail.com</a>
+				<br>
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="If you're British you don't need to state your nationality.">Nationality</a>
+			</p>
+
+			<p>
+				<b>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="This is the wrong word - 'personnel' means the people who work for a company. You are writing a personal statement.">Personnel Statement</a>
+				</b>
+				<br> I have very good teamworking and
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="You don't have very accurate writing skills if you can't spell 'communication'!">comunication skills</a>. I am good at working with people. I would like a
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="This is very vague. There are lots of different types of careers in the business world. It suggests you haven't realised that or thought about it.">career in business</a>.
+			</p>
+			<p>
+				<b>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="This section needs to be set out with dates and bullet points.">Education</a>
+				</b>
+				<br>
+				<u>St Francis School Edinburgh</u>
+				<br> I sat 5 Standard Grades in 2002 and got a B in English and a C in maths I sat 3 Highers in 2003 and got two Cs and a
+				B in English
+				<br>
+				<br>
+				<u>Edinburgh College</u>
+				<br> I did an HNC in business studies
+			</p>
+			<p>
+				<b>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="This suggests a gap in employment in 2007 since there are no start and finish dates. It’s good also to give a reason for moving on. If you don’t it might look suspicious. There should be a full stop after ‘assistant’ It’s important to show an employer you have basic literacy skills.">Work experience</a>
+				</b>
+				<br> In 2006 I worked in Tosca as a store assistant I was responsible for stocking the shelves and working on the tills In
+				2008 I worked as a bar person in the Caledonia Hotel, Edinburgh.
+			</p>
+			<p>
+				<b>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="If possible try to select interests which are relevant in some way to the job you’re applying for. Just putting everything down is not very helpful.">Interests</a>
+				</b>
+				<br> I am very sporty. I enjoy a whole range of sports and my speciality is modern dance. I go regularly to the gym and also
+				enjoy swimming. I
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="Wrong past tense. The qualification is still valid up to the present. It’s not completely in the past so you need the Present Perfect – ‘I have done'.">done</a> life saving tests. I have an interest also in fashion and in my spare time I like to play computer games.
+			</p>
+			<p>
+				<b>Skills</b>
+				<br> Computer games
+				<br> Life saving qualification
+				<br> I can speak French
+			</p>
+			<p>
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="It’s good to give names and contact details if you can.">References</a> are available on request.
+			</p>
+		</div>
+	</div>
+</template>
+
+<template name="m8a6SecondCV">
+	<div class="m8a6">
+		{{> popovers}}
+		<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the
+			<span class="highlighted2">highlighted</span> words to see a comment.</h3>
+		<div class="parapaper cv cv2">{{>metametrics level="6" star="no" align="right"}}
+			<h4 class="text-center" style="font-size: 2em;">
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="The name stands out well. It’s in bold and bigger font.">JIM THOMAS</a>
+			</h4>
+			<p class="text-center">
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="The address is neatly laid out">Flat 2, Merchant Quarter, Bristol B8 5XD</a>
+			</p>
+			<p class="text-center">
+				Mobile 07743 564 326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j.thomas1@yahoo.co.uk
+			</p>
+
+			<hr>
+			<br>
+
+			<h4>
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="The statement is short, to the point and targeted at the skills needed for the job.">PERSONAL STATEMENT</a>
+			</h4>
+			<p>
+				A Business Administration graduate from the University of Bristol, I have the skills and knowledge necessary to manage the
+				key areas of an organisation including finance. I have strong creative skills and problem solving skills and am looking
+				for a graduate trainee post in marketing.
+			</p>
+
+			<h4>
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="Jim’s given dates and has listed his qualifications in reverse order – starting with the most recent. He’s picked out the parts of his course that are most relevant to his career and given an example of a relevant piece of work he did at University.">EDUCATION</a>
+			</h4>
+			<h6>2003-2006 University of Bristol</h6>
+			<p>
+				B.A. Hons in Business Administration 2:1
+				<br>
+				<br>
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="He’s picked out modules that are particularly relevant.">Modules included:</a>
+				<ul>
+					<li>Human Resource Management</li>
+					<li>E –Commerce Internationalisation</li>
+					<li>Marketing</li>
+					<li>Accounting and Finance</li>
+					<li>Strategic Planning</li>
+				</ul>
+				<br>
+			</p>
+			<h6>Bristol Metropolitan Academy</h6>
+			<p>
+				<b>
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+					 data-content="The A levels and grades are set out clearly and he just summarises the GCSEs.">A Levels 2002</a>
+				</b>
+				<br>
+				<table>
+					<tr>
+						<td>English</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td style="padding-right: 2em;">Graphic Design</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>Computing</td>
+						<td>A</td>
+					</tr>
+				</table>
+				<br>
+				<b>GCSEs 2000</b>
+				<br> 8 GCSEs including English Grade A and Mathematics Grade B
+			</p>
+
+			<h4>
+				<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+				 data-content="He’s highlighted a skill 'project management' as well as describing what he did.">RELEVANT SKILLS</a>
+			</h4>
+			<p>
+				In my final year of University I developed a marketing strategy for a travel company focusing on activity holidays. This
+				included developing a website, creating promotional material and pitching to potential customers. I was awarded the highest
+				grade possible for this work and obtained valuable experience in project management.
+			</p>
+		</div>
+	</div>
+</template>

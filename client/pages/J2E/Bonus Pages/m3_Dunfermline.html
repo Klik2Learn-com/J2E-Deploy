@@ -1,0 +1,148 @@
+<template name="MoreAboutDunfermline">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Dunfermline"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m3l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m3l2}}</div>
+		</header>
+
+		<section id="moreaboutDunfermline">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent ">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Dunfermline/Dunfermline1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l2_A">
+						<p>Dunfermline Abbey</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Dunfermline/Dunfermline4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l2_D">
+						<p>Rob Roy MacGregor</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Dunfermline/Dunfermline5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l2_E">
+						<p>Rock bands</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Dunfermline/Dunfermline3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l2_C">
+						<p>Andrew Carnegie</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Dunfermline/Dunfermline2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l2_B">
+						<p>Charles 1</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l2_A">Dunfermline Abbey</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dunfermline/Dunfermline1.jpg" alt="Dunfermline Abbey" style="max-width: 250px;">
+					</figure>
+					<p>The abbey dates back over eight centuries and survives today as a Church of Scotland. It started life as a monastery in the 12th century. Over the next four hundred years later, it was attacked and re-built several times. Finally, in the 19th century, the modern church was built on the site of the medieval building. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.dunfermlineabbey.co.uk/wwp/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l2_B">Charles 1</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dunfermline/Dunfermline2.jpg" alt="Charles 1" style="max-width: 250px;">
+					</figure>
+					<p>Charles 1 was born in Dunfermline Palace in 1600 and was king of England, Scotland and Ireland from 1625  until his death in London in 1649. He became unpopular as a ruler because he believed in the divine right of kings to rule as they wished. People opposed him because he wanted to impose taxes without the permission of parliament. He fought both the English and Scottish parliaments in 1642 and after his death the monarchy was abolished for nearly 20 years.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.royal.uk/charles-i-r-1625-1649" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l2_C">Andrew Carnegie</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dunfermline/Dunfermline3.jpg" alt="Andrew Carnegie" style="max-width: 250px;">
+					</figure>
+					<p>Andrew Carnegie was born in Dunfermline in 1835 into a poor family. When he died in 1919, he was one of the richest men in the world. His family emigrated to America when he was a boy and he gradually built his wealth from steel businesses and oil.  He gave most of his money away to good causes and is responsible for creating a large number of libraries, several universities and public buildings in the USA , the UK , Australia and New Zealand.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.carnegie.org/interactives/foundersstory/#!/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l2_D">Rob Roy MacGregor</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dunfermline/Dunfermline4.jpg" alt="Rob Roy MacGregor" style="max-width: 250px;">
+					</figure>
+					<p>In the 17th century, Dunfermline was the royal capital of Scotland, associated with such famous characters from Scottish history as  William Wallace, Robery the Bruce and Rob Roy MacGregor. Rob Roy was badly wounded in one of the many battles fought between the Scots and the English. He recovered and later became a well known cattle dealer. His life story was the inspiration for Sir Walter Scott’s novel, ‘Rob Roy.’</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://en.wikipedia.org/wiki/Rob_Roy_MacGregor" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l2_E">Rock bands</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dunfermline/Dunfermline5.jpg" alt="Rock bands" style="max-width: 250px;">
+					</figure>
+					<p>Several famous rock bands have come from Dunfermline. In the 60s, and 70s Jethro Tull became famous for combining folk music with heavy rock. They were one of the few rock bands to use a flute as a main instrument. They even beat the band Metallica in 1989 to win a Grammy award for the best heavy metal band. Another famous Dunfermline band is the hard rock band Nazareth. They had several major hit singles and toured extensively in the 80s.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://jethrotull.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

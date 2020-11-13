@@ -1,0 +1,465 @@
+<template name="vocab">
+	<section id="vocab" class="hidden">
+		<div class="content">
+					<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle">
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target1">&nbsp;</div> person has the ability to invent and develop original ideas, especially in the arts.</li>
+						<li>Someone who is <div class="ddseatedtarget ddwidth10 dd1line" id = "target2">&nbsp;</div>, talks a lot.</li>
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target3">&nbsp;</div> is a situation in which something or someone is affected by one or more very serious problems.</li>
+						<li><div class="ddseatedtarget ddwidth10 dd1line" id = "target4">&nbsp;</div> actions or decisions are good because they are based on reasons rather than emotions.</li>
+						<li>Someone who is <div class="ddseatedtarget ddwidth10 dd1line" id = "target5">&nbsp;</div> is able to make sensible decisions quickly.</li>
+					</ol>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4 center">
+								<div id="submitButton" class="button1 buttonsmall">Submit</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+		<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" >quick-thinking</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" >talkative</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" >creative</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" >crisis</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" >sensible</div></div>
+			</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		</div>
+		</div>
+		
+		<div class="content">
+					<h4>HTML</h4>
+						<pre class="htmlcode2">
+&lt;template name=&quot;vocab&quot;&gt;
+	&lt;section id=&quot;vocab&quot; class=&quot;hidden&quot;&gt;
+		&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&lt;div class=&quot;content noselect&quot;&gt;
+			&lt;h3 class=&quot;center&quot;&gt;Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.&lt;/h3&gt;
+				&lt;div class=&quot;parapaper parapaperdd1 fold&quot;&gt;
+					&lt;ol class=&quot;olcircle&quot; style=&quot;counter-reset: start 0;&quot;&gt;
+						&lt;li&gt;A &lt;div class=&quot;ddseatedtarget ddwidth10 dd1line&quot; id = &quot;target1&quot;&gt;&amp;nbsp;&lt;/div&gt; person has the ability to invent and develop original ideas, especially in the arts.&lt;/li&gt;
+						&lt;li&gt;Someone who is &lt;div class=&quot;ddseatedtarget ddwidth10 dd1line&quot; id = &quot;target2&quot;&gt;&amp;nbsp;&lt;/div&gt;, talks a lot.&lt;/li&gt;
+						&lt;li&gt;A &lt;div class=&quot;ddseatedtarget ddwidth10 dd1line&quot; id = &quot;target3&quot;&gt;&amp;nbsp;&lt;/div&gt; is a situation in which something or someone is affected by one or more very serious problems.&lt;/li&gt;
+						&lt;li&gt;&lt;div class=&quot;ddseatedtarget ddwidth10 dd1line&quot; id = &quot;target4&quot;&gt;&amp;nbsp;&lt;/div&gt; actions or decisions are good because they are based on reasons rather than emotions.&lt;/li&gt;
+						&lt;li&gt;Someone who is &lt;div class=&quot;ddseatedtarget ddwidth10 dd1line&quot; id = &quot;target5&quot;&gt;&amp;nbsp;&lt;/div&gt; is able to make sensible decisions quickly.&lt;/li&gt;
+					&lt;/ol&gt;
+					&lt;div class=&quot;container-fluid&quot;&gt;
+						&lt;div class=&quot;row&quot;&gt;
+							&lt;div class=&quot;col-sm-4 col-sm-offset-4 center&quot;&gt;
+								&lt;div id=&quot;submitButton&quot; class=&quot;button1 buttonsmall&quot;&gt;Submit&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					
+				&lt;/div&gt;
+
+			&lt;div class=&quot;dd-fixed-source-container animated slideInUp&quot;&gt;
+			&lt;div class=&quot;box1 box1dd1&quot;&gt;
+				&lt;div class=&quot;ddseat ddwidth10 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated ddwidth10 dd1line shadow&quot; draggable=&quot;true&quot; &gt;quick-thinking&lt;/div&gt;&lt;/div&gt;
+				&lt;div class=&quot;ddseat ddwidth10 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated ddwidth10 dd1line shadow&quot; draggable=&quot;true&quot; &gt;talkative&lt;/div&gt;&lt;/div&gt;
+				&lt;div class=&quot;ddseat ddwidth10 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated ddwidth10 dd1line shadow&quot; draggable=&quot;true&quot; &gt;creative&lt;/div&gt;&lt;/div&gt;
+				&lt;div class=&quot;ddseat ddwidth10 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated ddwidth10 dd1line shadow&quot; draggable=&quot;true&quot; &gt;crisis&lt;/div&gt;&lt;/div&gt;
+				&lt;div class=&quot;ddseat ddwidth10 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated ddwidth10 dd1line shadow&quot; draggable=&quot;true&quot; &gt;sensible&lt;/div&gt;&lt;/div&gt;
+			&lt;/div&gt;&lt;/div&gt;
+		&lt;div class=&quot;dd-fixed-fade animated slideInUp&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;dd-fixed-pad&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;footer&gt;
+				&#00123;&#00123;&gt;footer_nav prevurl=&quot;#vocab&quot; nexturl=&quot;#vocab_2&quot; prev=&quot;disabled&quot; next=&quot;hidden&quot;&#00125;&#00125;
+		&lt;/footer&gt;
+	&#00123;&#00123;/if&#00125;&#00125;
+	&lt;/section&gt;
+&lt;/template&gt;
+						</pre>
+					<h4>Javascript</h4>
+						<pre class="htmlcode2">
+Template.vocab.helpers({
+	activeSection: function(){
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		return (activeSection == &quot;#vocab&quot;);
+	}
+});
+
+
+Template.vocab.events({
+	&quot;dragstart .ddsourceseated&quot;: function(evt) {
+		evt.currentTarget.style.opacity = '1.0';
+		evt.originalEvent.dataTransfer.effectAllowed = 'move';
+		evt.originalEvent.dataTransfer.setData('text/html', $(evt.currentTarget).html());
+		
+		$.k2l.vocab.draggedElement = evt.currentTarget;
+	},
+	
+	&quot;dragend .ddsourceseated&quot;: function(evt) {
+		
+	},
+	
+	&quot;dragenter .ddseatedtarget&quot;: function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+	},
+	
+	&quot;dragover .ddseatedtarget&quot;: function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	},
+	
+		&quot;dragover .ddseat&quot;: function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	},
+	
+	&quot;dragleave .ddseatedtarget&quot;: function(evt) {
+		
+	},
+	
+	&quot;drop .ddseatedtarget&quot;: function(evt) {
+		
+		if (evt.stopPropagation) {
+			evt.stopPropagation();
+		};
+
+		var destination = $.k2l.vocab.draggedElement.dataset.destination;
+			
+			if ($($.k2l.vocab.draggedElement).parent().hasClass('ddseat')) {
+			$.k2l.vocab.draggedElement.draggable = false;
+			
+			$($.k2l.vocab.draggedElement).html('');
+			$($.k2l.vocab.draggedElement).removeClass('shadow');	
+			$($.k2l.vocab.draggedElement).removeClass('ddsourceseated');
+			$($.k2l.vocab.draggedElement).addClass('ddsourceseated2');
+			}else {
+			$.k2l.vocab.draggedElement.draggable = false;
+			$($.k2l.vocab.draggedElement).parent().removeClass('ddsourceseated2');
+			$($.k2l.vocab.draggedElement).parent().removeClass('ddseatedtarget2');
+			$($.k2l.vocab.draggedElement).parent().addClass('ddseatedtarget');
+			$($.k2l.vocab.draggedElement).parent().html('&amp;nbsp;');
+			}
+			
+			//$(evt.currentTarget).removeClass('ddwidth10 dd1line');
+			$(evt.currentTarget).removeClass('ddseatedtarget');
+			$(evt.currentTarget).addClass('ddseatedtarget2');
+			$(evt.currentTarget).html('');
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated');
+			$(listItem).addClass('ddwidth10 dd1line');
+			$(listItem).attr(&quot;draggable&quot;, &quot;True&quot;);
+			$(evt.currentTarget).append(listItem);
+	},
+	
+		// Code for moving a filled-in answer back to the bank of potential answers
+	&quot;drop .ddseat&quot;: function(evt) {
+		
+		if (evt.stopPropagation) {
+			evt.stopPropagation();
+		};
+			
+			if ($($.k2l.vocab.draggedElement).parent().hasClass('ddseatedtarget2')) {
+			$.k2l.vocab.draggedElement.draggable = false;
+			$($.k2l.vocab.draggedElement).parent().addClass('ddseatedtarget');
+			$($.k2l.vocab.draggedElement).parent().removeClass('ddseatedtarget2');
+			$($.k2l.vocab.draggedElement).parent().html('&amp;nbsp;');
+			}else {
+			$($.k2l.vocab.draggedElement).parent().html('&amp;nbsp;');
+			}
+			 $(evt.currentTarget).html('');
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated');
+			$(listItem).addClass('ddwidth10 dd1line shadow');
+			$(listItem).attr(&quot;draggable&quot;, &quot;True&quot;);
+			$(evt.currentTarget).append(listItem);
+
+	},
+	
+	
+	&quot;dragend .target&quot;: function(evt) {
+	},
+	
+	&quot;click .pagination&quot;: function(evt){
+		$.k2l.vocab.draggedElement = {};
+		$.k2l.vocab.counter = 0;
+	},
+	
+	&quot;click #submitButton&quot;: function(evt){
+		var scoreCorrect = Session.get('vocab_Correct');
+		var scoreIncorrect = Session.get('vocab_Incorrect');
+
+		if ($('#target1').children().html() != 'creative'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target2').children().html() != 'talkative'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target3').children().html() != 'crisis'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target4').children().html() != 'sensible'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target5').children().html() != 'quick-thinking'){
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		Session.set('vocab_Correct', scoreCorrect);
+		Session.set('vocab_Incorrect', scoreIncorrect);
+		
+		$.k2l.vocab.draggedElement = {};
+				var parentSection = $(evt.currentTarget).parents('section');
+				$(parentSection).addClass('hidden'); // hide this page
+				$(parentSection).next('section').removeClass('hidden');// reveal next page.
+				document.location.hash = $(parentSection).next('section').attr('id');
+				Session.set(&quot;activeSection&quot;, '#'+$(parentSection).next('section').attr('id'));
+			
+	}
+	
+});
+
+Template.vocab.rendered = function() {
+	
+	if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	};
+	
+	if (typeof $.k2l.vocab == 'undefined') {
+		$.k2l.vocab = {};
+	};
+	
+	$.k2l.vocab.draggedElement = {};
+}
+
+						</pre>
+						<h3>Use this blob on the opening page to initialise the counters</h3>
+						<h4>Javascript</h4>
+						<pre class="htmlcode2">
+Template.vocab.rendered = function() {
+	
+	if (Session.get('vocab_Correct') == undefined){
+		Session.set('vocab_Correct', 0);
+	};
+	if (Session.get('vocab_Incorrect') == undefined){
+		Session.set('vocab_Incorrect', 0);
+	};
+}
+						</pre>
+						<h3>Use this second javascript blob for the final page of drag and drops to get to the answer pages.</h3>
+						<h4>Javascript</h4>
+						<pre class="htmlcode2">
+Template.vocab.helpers({
+	activeSection: function(){
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		return (activeSection == &quot;#vocab&quot;);
+	}
+});
+
+
+Template.vocab.events({
+	&quot;dragstart .ddsourceseated&quot;: function(evt) {
+		evt.currentTarget.style.opacity = '1.0';
+		evt.originalEvent.dataTransfer.effectAllowed = 'move';
+		evt.originalEvent.dataTransfer.setData('text/html', $(evt.currentTarget).html());
+		
+		$.k2l.vocab.draggedElement = evt.currentTarget;
+	},
+	
+	&quot;dragend .ddsourceseated&quot;: function(evt) {
+		
+	},
+	
+	&quot;dragenter .ddseatedtarget&quot;: function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+	},
+	
+	&quot;dragover .ddseatedtarget&quot;: function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	},
+	
+		&quot;dragover .ddseat&quot;: function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	},
+	
+	&quot;dragleave .ddseatedtarget&quot;: function(evt) {
+		
+	},
+	
+	&quot;drop .ddseatedtarget&quot;: function(evt) {
+		
+		if (evt.stopPropagation) {
+			evt.stopPropagation();
+		};
+
+		var destination = $.k2l.vocab.draggedElement.dataset.destination;
+			
+			if ($($.k2l.vocab.draggedElement).parent().hasClass('ddseat')) {
+			$.k2l.vocab.draggedElement.draggable = false;
+			
+			$($.k2l.vocab.draggedElement).html('');
+			$($.k2l.vocab.draggedElement).removeClass('shadow');	
+			$($.k2l.vocab.draggedElement).removeClass('ddsourceseated');
+			$($.k2l.vocab.draggedElement).addClass('ddsourceseated2');
+			}else {
+			$.k2l.vocab.draggedElement.draggable = false;
+			$($.k2l.vocab.draggedElement).parent().removeClass('ddsourceseated2');
+			$($.k2l.vocab.draggedElement).parent().removeClass('ddseatedtarget2');
+			$($.k2l.vocab.draggedElement).parent().addClass('ddseatedtarget');
+			$($.k2l.vocab.draggedElement).parent().html('&amp;nbsp;');
+			}
+			
+			//$(evt.currentTarget).removeClass('ddwidth10 dd1line');
+			$(evt.currentTarget).removeClass('ddseatedtarget');
+			$(evt.currentTarget).addClass('ddseatedtarget2');
+			$(evt.currentTarget).html('');
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated');
+			$(listItem).addClass('ddwidth10 dd1line');
+			$(listItem).attr(&quot;draggable&quot;, &quot;True&quot;);
+			$(evt.currentTarget).append(listItem);
+	},
+	
+		// Code for moving a filled-in answer back to the bank of potential answers
+	&quot;drop .ddseat&quot;: function(evt) {
+		
+		if (evt.stopPropagation) {
+			evt.stopPropagation();
+		};
+			
+			if ($($.k2l.vocab.draggedElement).parent().hasClass('ddseatedtarget2')) {
+			$.k2l.vocab.draggedElement.draggable = false;
+			$($.k2l.vocab.draggedElement).parent().addClass('ddseatedtarget');
+			$($.k2l.vocab.draggedElement).parent().removeClass('ddseatedtarget2');
+			$($.k2l.vocab.draggedElement).parent().html('&amp;nbsp;');
+			}else {
+			$($.k2l.vocab.draggedElement).parent().html('&amp;nbsp;');
+			}
+			 $(evt.currentTarget).html('');
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated');
+			$(listItem).addClass('ddwidth10 dd1line shadow');
+			$(listItem).attr(&quot;draggable&quot;, &quot;True&quot;);
+			$(evt.currentTarget).append(listItem);
+
+	},
+	
+	
+	&quot;dragend .target&quot;: function(evt) {
+	},
+	
+	&quot;click .pagination&quot;: function(evt){
+		$.k2l.vocab.draggedElement = {};
+		$.k2l.vocab.counter = 0;
+	},
+	
+	&quot;click #submitButton&quot;: function(evt){
+		var scoreCorrect = Session.get('vocab_Correct');
+		var scoreIncorrect = Session.get('vocab_Incorrect');
+
+		if ($('#target1').children().html() != 'serious'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target2').children().html() != 'typical'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target3').children().html() != 'brash'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target4').children().html() != 'exaggerate'){			
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		if ($('#target5').children().html() != 'kind'){
+			scoreIncorrect++;
+		} else {			
+			scoreCorrect++;
+		}
+		
+		Session.set('vocab_Correct', scoreCorrect);
+		Session.set('vocab_Incorrect', scoreIncorrect);
+		
+		$.k2l.vocab.draggedElement = {};
+				var parentSection = $(evt.currentTarget).parents('section');
+				$(parentSection).addClass('hidden'); // hide this page
+				if (Session.get('vocab_Incorrect') &lt; 8) {
+						$(&quot;#vocab_good&quot;).removeClass('hidden');
+						Session.set(&quot;activeSection&quot;, &quot;#vocab_good&quot;);
+					} else {
+						$(&quot;#vocab_bad&quot;).removeClass('hidden');
+						Session.set(&quot;activeSection&quot;, &quot;#vocab_bad&quot;);
+					}
+			
+	}
+	
+});
+
+Template.vocab.rendered = function() {
+	
+	if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	};
+	
+	if (typeof $.k2l.vocab == 'undefined') {
+		$.k2l.vocab = {};
+	};
+	
+	$.k2l.vocab.draggedElement = {};
+}
+
+						</pre>
+				</div>
+	</section>
+</template>

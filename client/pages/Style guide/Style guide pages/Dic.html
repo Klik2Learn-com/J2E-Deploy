@@ -1,0 +1,56 @@
+<template name="styleDic">
+<section id="style-dic" class="hidden">
+	<div class="content">
+
+
+		<h1>Check words in the Dictionary page</h1>
+		{{> dictionary_page word1="word" word2="word" word3="word" word4="word" word5="word" word6="word" word7="word" word8="word" word9="word" word10c="hidden" word11c="hidden" word12c="hidden"}}
+
+<pre class="htmlcode2">&#123;&#123;&gt; dictionary_page
+	word1="word"
+	word2="word"
+	word3="word"
+	word4="word"
+	word5="word"
+	word6="word"
+	word7="word"
+	word8="word"
+	word9="word"
+	word10c="hidden"
+	word11c="hidden"
+	word12c="hidden"
+&#125;&#125;</pre>
+		To recreate the dictionary check page copy the above template include. If needing less than 12 words change what words aren't being shown to word#c and enter hidden. This will add the hidden class and remove an empty dot in the list.
+		<br><br><br><br>
+		
+		
+		<h1>More complex words page</h1>
+		<p>Because of potential styling required, the 'more complex' words page can't be as easily templated.</p>
+		
+		{{>complex_words}}
+		<div class="center">
+			<div class="parapaper paradic fold">
+				<ul class="dicwords">
+					<li>Quick-thinking: Able to make sensible decisions quickly.</li>
+					<li>Fun-loving: Enjoys the good or fun things in life.</li>
+					<li>Kind: Friendly, Generous. The <u>opposite</u> of Cruel.</li>
+				</ul>
+			</div>
+		</div>
+		
+<pre class="htmlcode2">
+&#123;&#123;&gt;complex_words&#125;&#125;
+&lt;div class="center"&gt;
+	&lt;div class="parapaper paradic fold"&gt;
+		&lt;ul class="dicwords"&gt;
+			&lt;li&gt;Quick-thinking: Able to make sensible decisions quickly.&lt;/li&gt;
+			&lt;li&gt;Fun-loving: Enjoys the good or fun things in life.&lt;/li&gt;
+			&lt;li&gt;Kind: Friendly, Generous. The &lt;u&gt;opposite&lt;/u&gt; of Cruel.&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+	</div>
+</section>
+</template>

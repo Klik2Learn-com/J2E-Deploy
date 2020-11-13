@@ -1,0 +1,203 @@
+<template name="textEntryPara">
+	<section id="textEntryPara" class="hidden">
+		<div class="content">
+		
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			<div class="parapaper linespace2 fold">
+				<h4>Semi-detached house</h4>		
+				This semi-detached house has everything you need – all the windows have <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> and you could park two cars in the <span id="entryanswer1" class="textentry-disabled"></span>. There’s a very <span id="entryanswer2" class="textentry-disabled"></span> living room and all floor <span id="entryanswer3" class="textentry-disabled"></span> are included.
+				
+				{{> rightwrong}} {{> welldone}}
+			</div>
+
+			<div class="box1 block">
+				<span class="word">spacious</span>
+				<span class="word">coverings</span>
+				<span class="word">double glazing</span>
+				<span class="word">driveway</span>
+			</div>
+
+		<br>
+<b>HTML</b>
+<pre class="htmlcode2">&#60;template name="textEntryPara"&#62;
+	&#60;section id="textEntryPara" class="hidden"&#62;
+		&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&#60;div class="content"&#62; 
+		
+			&#60;h3 class="center"&#62;Type the missing words from the list below.&#60;/h3&#62;
+			
+			&#60;div class="parapaper linespace2 fold"&#62;
+				&#60;h4&#62;Semi-detached house&#60;/h4&#62;		
+				This semi-detached house has everything you need – all the windows have &#60;span id="entryanswer0"&#62;&#60;form class="textentry"&#62;&#60;input type="text" name="userText" size="7" autocomplete="off"&#62;&#60;input type="submit" value="OK"&#62;&#60;/form&#62;&#60;/span&#62; and you could park two cars in the &#60;span id="entryanswer1" class="textentry-disabled"&#62;&#60;/span&#62;. There’s a very &#60;span id="entryanswer2" class="textentry-disabled"&#62;&#60;/span&#62; living room and all floor &#60;span id="entryanswer3" class="textentry-disabled"&#62;&#60;/span&#62; are included.
+				
+				&#123;&#123;&#62; rightwrong&#125;&#125; &#123;&#123;&#62; welldone&#125;&#125;
+			&#60;/div&#62;
+
+			&#60;div class="box1 block"&#62;
+				&#60;span class="word"&#62;spacious&#60;/span&#62;
+				&#60;span class="word"&#62;coverings&#60;/span&#62;
+				&#60;span class="word"&#62;double glazing&#60;/span&#62;
+				&#60;span class="word"&#62;driveway&#60;/span&#62;
+			&#60;/div&#62;
+
+		&#60;/div&#62;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"&#125;&#125;
+		&lt;/footer&gt;
+		&#123;&#123;&#62; stuck stuckchar="elle"&#125;&#125;
+		&#00123;&#00123;/if&#00125;&#00125;
+	&#60;/section&#62;
+&#60;/template&#62;</pre>
+
+<b>JS</b>
+<pre class="htmlcode2">Template.textEntryPara.helpers(&#123;
+	
+	activeSection: function()&#123;
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#textEntryPara");
+	&#125;
+&#125;);
+
+Template.textEntryPara.events(&#123;
+	
+	"submit form" : function(evt) &#123;
+		
+		if (evt.preventDefault)&#123;
+			evt.preventDefault();
+		&#125;
+		var isCorrect = false;
+		
+		// Tidy the user input
+		var userText = evt.target.userText.value;
+		if (userText.charAt(userText.length - 1) == '.') &#123;
+			userText = userText.substr(0, userText.length - 1);
+		&#125;
+		userText = $.trim(userText);
+		userText = userText.toLowerCase();
+		
+		for (var i = 0; i &#60; $.k2l.textEntryPara.correctAnswers[$.k2l.textEntryPara.index].length; i++) &#123;
+			if (userText == $.k2l.textEntryPara.correctAnswers[$.k2l.textEntryPara.index][i])&#123; 
+				isCorrect = true;
+				break;
+			&#125;
+		&#125;
+		
+		if (isCorrect)&#123;
+			//correct
+			$('.correctscreen').removeClass('hidden');
+			setTimeout( function() &#123;
+				$('.correctscreen').addClass('hidden');
+			&#125;, 1000);
+			var parentSection = $(evt.currentTarget).parents('section');
+			$.k2l.textEntryPara.wrongcount = 0;
+			$('.stuck').addClass('hidden'); //hide stuck button if visible
+			$(evt.currentTarget).parent().html($.k2l.textEntryPara.correctAnswers[$.k2l.textEntryPara.index]);
+			// $(evt.currentTarget).parent().html($.k2l.textEntryPara.displayAnswers[$.k2l.textEntryPara.index]); // use this is there is multiple possible answers
+			$('#entryanswer'+$.k2l.textEntryPara.index).addClass('correctword');
+			
+			if ($.k2l.textEntryPara.index &#60; $.k2l.textEntryPara.correctAnswers.length - 1) &#123;
+				$.k2l.textEntryPara.index++;
+				$('#entryanswer'+$.k2l.textEntryPara.index).removeClass('textentry-disabled');
+				$('#entryanswer'+$.k2l.textEntryPara.index).html('&#60;form class="textentry"&#62;&#60;input type="text" name="userText" size="7" autocomplete="off"&#62;&#60;input type="submit" value="OK"&#62;&#60;/form&#62;');
+				// Need to get the cursor to focus on the next attempt
+				$('input[name=userText]').focus();
+			&#125; else &#123;
+				$.k2l.textEntryPara.index = 0;
+				$.k2l.textEntryPara.wrongcount = 0;
+				setTimeout( function() &#123;
+				$('#welldonecap').removeClass('hidden');
+				&#125;, 1000);
+			setTimeout( function() &#123;
+				$('#welldonecap').addClass('hidden');
+			&#125;, 2000);
+				setTimeout(function() &#123;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					&#125;, 2000);
+				// $('.pagination').removeClass('hidden');
+			&#125;
+		&#125; else &#123;
+			$.k2l.textEntryPara.wrongcount++;
+			if ($.k2l.textEntryPara.wrongcount &#62;= 3) &#123;
+				$('.stuck').removeClass('hidden');
+			&#125;
+			$('.incorrectscreen').removeClass('hidden');
+		setTimeout( function() &#123;
+			$('.incorrectscreen').addClass('hidden');
+		&#125;, 1000);
+			evt.target.userText.value = "";
+		&#125;
+	&#125;,
+	
+	"click .stuck-button": function(evt) &#123;
+		$('.incorrectscreen').addClass('hidden');
+		var parentSection = $(evt.currentTarget).parents('section');
+		$('.stuck').addClass('hidden'); //hide stuck button if visible
+		$.k2l.textEntryPara.wrongcount = 0;
+		$('#entryanswer'+$.k2l.textEntryPara.index).html($.k2l.textEntryPara.correctAnswers[$.k2l.textEntryPara.index]);
+		// $('#entryanswer'+$.k2l.textEntryPara.index).html($.k2l.textEntryPara.displayAnswers[$.k2l.textEntryPara.index]); // use this is there is multiple possible answers
+		$('#entryanswer'+$.k2l.textEntryPara.index).addClass('correctword');
+		
+		if ($.k2l.textEntryPara.index &#60; $.k2l.textEntryPara.correctAnswers.length - 1) &#123;
+			$.k2l.textEntryPara.index++;
+			$('#entryanswer'+$.k2l.textEntryPara.index).removeClass('textentry-disabled');
+			$('#entryanswer'+$.k2l.textEntryPara.index).html('&#60;form class="textentry"&#62;&#60;input type="text" name="userText" size="7" autocomplete="off"&#62;&#60;input type="submit" value="OK"&#62;&#60;/form&#62;');
+			// Need to get the cursor to focus on the next attempt
+				$('input[name=userText]').focus();
+		&#125; else &#123;
+			$.k2l.textEntryPara.index = 0;
+			$.k2l.textEntryPara.wrongcount = 0;
+				setTimeout(function() &#123;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					&#125;, 1000);
+			//$('.pagination').removeClass('hidden');
+		&#125;
+	&#125;,
+	
+	"click .pagination": function(evt)&#123;
+		$.k2l.textEntryPara.index = 0;
+		$.k2l.textEntryPara.wrongcount = 0;
+	&#125;
+	
+&#125;);
+
+Template.textEntryPara.rendered = function() &#123;
+	
+	if(typeof $.k2l == 'undefined')&#123;
+		$.k2l = &#123;&#125;;
+	&#125;;
+	
+	if (typeof $.k2l.textEntryPara == 'undefined') &#123;
+		$.k2l.textEntryPara = &#123;&#125;;
+	&#125;;
+	
+	$.k2l.textEntryPara.index = 0;
+	$.k2l.textEntryPara.wrongcount = 0;
+	
+	var correctAnswers = [
+			["double glazing"],
+			["driveway"],
+			["spacious"],
+			["coverings"]
+		];
+		
+		/* var displayAnswers = [
+			["double glazing"],
+			["driveway"],
+			["spacious"],
+			["coverings"]
+		]; 
+		
+	$.k2l.textEntryPara.displayAnswers = displayAnswers; */
+	$.k2l.textEntryPara.correctAnswers = correctAnswers;
+	
+&#125;</pre>
+		</div>
+	</section>
+</template>

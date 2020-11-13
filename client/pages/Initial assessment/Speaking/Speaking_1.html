@@ -1,0 +1,85 @@
+<template name="InitialSpeaking_1">
+	<section id="InitialSpeaking_1" class="hidden">
+	{{#if activeSection}}
+		{{#if isComplete}}
+			<div class="content">
+				This section is now complete.
+			</div>	
+		{{else}}
+			<div class="content">
+				<h3>We need to check your level of spoken English, so you are going to answer some questions about yourself. Don't worry if you make mistakes. After each question, {{>touch yes="tap" no="click"}} the record button and speak clearly. You will have a maximum of 2 minutes to answer each question.</h3>
+				<br>
+				<div class="container-fluid">
+					{{#if sectionComplete}}
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2 text-center">
+								<h3>This section is now complete and your responses have been submitted.</h3>
+								<button id="btnReturn" class="button2"><i class="fa fa-chevron-left" style="margin-left: .5em;"></i> Return to the English Skills Test Menu</button>
+							</div>
+						</div>
+					{{else}}
+						{{#if listenAudio}}
+							<div class="row">
+								<div class="col-sm-4 text-center">
+									<div class="instruction nowrapnohidetext" style="padding-top: 20px;">Listen to the question:</div>
+								</div>
+								<audio id="test"></audio>
+								<div class="col-sm-4 text-center">
+									<button id="listen-question" class="button2 button-icon audio item-space pulse animated" data-audiosrc="audio/Initial/1N2a.m4a">Question {{questionNumber}}</button>
+								</div>
+							</div>
+							{{>blankrow}}
+								{{#if listenedOnce}}
+									{{#if recording}}
+										<h4 class="center">{{recordingTimeRemaining}}</h4>
+										<button id="btnStop" class="buttonround buttonroundbig buttonstop animated" ></button>
+									{{else}}
+										<div class="row">
+											<div class="col-sm-4 text-center">
+												<div class="instruction nowrapnohidetext" style="padding-top: 30px;">Record your answer:</div>
+											</div>
+											<div class="col-sm-4 text-center">
+												<!-- to change to stop button while recording add class 'buttonstop animated' -->
+												<button id="record-response" class="buttonround buttonroundbig item-space buttonrec {{recordButtonState}}"></button>
+											</div>
+										</div>
+									{{/if}}
+								{{/if}}
+						{{else}}
+							<!-- <div class="row">
+								<div class="col-sm-4 text-center">
+									<div class="instruction nowrapnohidetext" style="padding-top: 20px;">Listen to the question:</div>
+								</div>
+								<div class="col-sm-4 text-center">
+									<button id="listen-question" class="button2 button-icon audio item-space pulse animated fade" data-audiosrc="/audio/module2/a23/RPart1.m4a">Question {{questionNumber}}</button>
+								</div>
+							</div>
+							{{>blankrow}} -->
+							{{#if recording}}
+							<div class="row">
+								<div class="col-sm-12 center">
+								<button id="btnStop" class="buttonround buttonroundbig buttonstop animated" ></button>
+								<h4 class="center">Time remaining: {{recordingTimeRemaining}}</h4>
+								</div>
+								</div>
+							{{else}}
+								<div class="row">
+									<div class="col-sm-4 text-center">
+										<div class="instruction nowrapnohidetext" style="padding-top: 30px;">Record your answer:</div>
+									</div>
+									<div class="col-sm-4 text-center">
+										<!-- to change to stop button while recording add class 'buttonstop animated' -->
+										<button id="record-response" class="buttonround buttonroundbig item-space buttonrec"></button>
+									</div>
+								</div>
+							{{/if}}
+						{{/if}}
+					{{/if}}
+				</div>
+				<!-- remove class 'invisible' when 30 seconds of recording time remain -->
+				<h4 class="text-center invisible" style="color: #ff1105; margin-bottom: 20px;">You have <span>30</span> seconds left.</h4>
+			</div>
+		{{/if}}
+	{{/if}}
+	</section>
+</template>

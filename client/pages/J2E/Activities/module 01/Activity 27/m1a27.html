@@ -1,0 +1,370 @@
+<template name="m1a27">
+	<article class="with-tools-sidebar m1a27">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/DunveganCastle');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 27 - {{>m1a27Title}}</div>
+			</header>
+
+
+			<section id="m1a27">
+				<div class="content">
+					<h1 class="start-page-header">{{> m1a27Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m1a27Intro}}</h3>
+					{{> m1a27Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m1a27_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m1a27_1}} {{>m1a27_2}} {{>m1a27_3}} {{>m1a27_4}} {{>m1a27_scores}} {{>m1a27_5}} {{>m1a27_6}} {{#if gameAccess}} {{>EndPage
+			char="elle" act="m1a27" nextact="m1Game" place="DunveganCastle"}} {{else}} {{>EndPage2 char="all" act="m1a27" nextplace="Braemar"
+			nextmod="2" place="DunveganCastle" end="finished"}} {{/if}}
+
+		</div>
+	</article>
+
+</template>
+<template name="m1a27_1">
+	<section id="m1a27_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> person has the ability to invent and develop original ideas, especially in the arts.</li>
+					<li>Someone who is
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div>, talks a lot.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is a situation which is very serious.</li>
+					<li>
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> actions or decisions are good because they are based on reasons rather than emotions.</li>
+					<li>Someone who is
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is able to make sensible decisions quickly.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="quick-thinking">quick-thinking</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="talkative">talkative</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="creative">creative</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="crisis">crisis</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="sensible">sensible</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_1" nexturl="#m1a27_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a27_2">
+	<section id="m1a27_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>If you describe someone as
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div>, you mean that they help you in some way, for example by giving you advice or information.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a well-known story which was made up in the past to explain natural events or social customs.</li>
+					<li>If you describe something as
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> , you mean that it is wrong and is not based on facts or evidence.</li>
+					<li>
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is used to refer to the amount that a person produces.</li>
+					<li>Someone who is
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> has a strong desire to be successful, rich, or powerful.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="myth">myth</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="unfounded">unfounded</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="helpful">helpful</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="ambitious">ambitious</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="output">output</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_2" nexturl="#m1a27_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a27_3">
+	<section id="m1a27_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>Someone who is
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is willing to take risks and to try new methods.</li>
+					<li> An
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> activity involves a number of people doing something together in a structured way.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is a fixed general image or set of characteristics that a lot of people believe represent a particular
+						type of person.</li>
+					<li>Someone who is
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> enjoys the good or fun things in life.</li>
+					<li>An
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> situation is embarrassing and difficult to deal with. </li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="awkward">awkward</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="stereotype">stereotype</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="organised">organised</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="fun-loving">fun-loving</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="adventurous">adventurous</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_3" nexturl="#m1a27_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a27_4">
+	<section id="m1a27_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 15;">
+					<li>
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> problems or situations are very bad and cause people to be worried or afraid.</li>
+					<li>You describe something as
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> if it shows all the characteristics you would normally expect to find.</li>
+					<li>If you describe someone or their behaviour as
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div>, you disapprove of them because you think that they are too confident and aggressive.</li>
+					<li>If you
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div>, you indicate that something is, for example, worse or more important than it really is.</li>
+					<li>Someone who is
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is friendly, generous. The opposite of cruel. </li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="serious">serious</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="brash">brash</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="exaggerate">exaggerate</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="typical">typical</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="kind">kind</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_4" nexturl="#m1a27_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a27_scores">
+	<section id="m1a27_bad" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m1a27_Correct" wrongSession="m1a27_Incorrect"}}
+				<h2>You didn't get enough right answers to unlock the game</h2>
+				<h4 class="text-left">Get 15 or more right answers and the game will be unlocked!
+					<a draggable="false" href="#" class="pagination restart">Try again</a> and see if you can improve your score.</h4>
+				<div class="game-locked-gif shadow"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_1" nexturl="#m1a27_5" prev="restart" next="" prev_text="Try again" next_text="Continue"}}
+		</footer>
+	</section>
+	<section id="m1a27_good" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m1a27_Correct" wrongSession="m1a27_Incorrect"}}
+				<h2>Well done! You got a good score! You can now play the game in this module!</h2>
+				<div class="game-unlocked-gif shadow"></div>
+				<h4>Click continue to see the answers and finish this activity.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_1" nexturl="#m1a27_5" prev="hidden restart" next="" prev_text="Try again" next_text="Continue"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a27_5">
+	<section id="m1a27_5" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="creative">creative</div>
+						</div> person has the ability to invent and develop original ideas, especially in the arts.</li>
+					<li>Someone who is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="talkative">talkative</div>
+						</div>, talks a lot.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="crisis">crisis</div>
+						</div> is a situation which is very serious.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="sensible">sensible</div>
+						</div> actions or decisions are good because they are based on reasons rather than emotions.</li>
+					<li>Someone who is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="quick-thinking">quick-thinking</div>
+						</div> is able to make sensible decisions quickly.</li>
+					<li>If you describe someone as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="helpful">helpful</div>
+						</div>, you mean that they help you in some way, for example by giving you advice or information.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="myth">myth</div>
+						</div> is a well-known story which was made up in the past to explain natural events or to justify religious beliefs or social
+						customs.</li>
+					<li>If you describe something as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="unfounded">unfounded</div>
+						</div> , you mean that it is wrong and is not based on facts or evidence.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="output">output</div>
+						</div> is used to refer to the amount that a person produces.</li>
+					<li>Someone who is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="ambitious">ambitious</div>
+						</div> has a strong desire to be successful, rich, or powerful.</li>
+				</ol>
+
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_5" nexturl="#m1a27_6" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a27_6">
+	<section id="m1a27_6" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>Someone who is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="adventurous">adventurous</div>
+						</div> is willing to take risks and to try new methods.</li>
+					<li> An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="organised">organised</div>
+						</div> activity involves a number of people doing something together in a structured way.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="stereotype">stereotype</div>
+						</div> is a fixed general image or set of characteristics that a lot of people believe represent a particular type of person
+						or thing.</li>
+					<li>Someone who is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="fun-loving">fun-loving</div>
+						</div> enjoys the good or fun things in life.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="awkward">awkward</div>
+						</div> situation is embarrassing and difficult to deal with. </li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="serious">serious</div>
+						</div> problems or situations are very bad and cause people to be worried or afraid.</li>
+					<li>You describe something as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="typical">typical</div>
+						</div> if it shows all the characteristics you would normally expect to find.</li>
+					<li>If you describe someone or their behaviour as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="brash">brash</div>
+						</div>, you disapprove of them because you think that they are too confident and aggressive.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="exaggerate">exaggerate</div>
+						</div>, you indicate that something is, for example, worse or more important than it really is.</li>
+					<li>Someone who is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="kind">kind</div>
+						</div> is friendly, generous. The opposite of cruel. </li>
+
+				</ol>
+
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a27_5" nexturl="#m1a27_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

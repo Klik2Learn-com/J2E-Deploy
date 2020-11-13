@@ -1,0 +1,323 @@
+<template name="m6a29">
+	<article class="with-tools-sidebar m6a29">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/York');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 29 - {{>m6a29Title}}</div>
+			</header>
+			<section id="m6a29">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a29Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m6a29Intro}}</h3>
+					{{> m6a29Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a29_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a29_1}} {{>m6a29_2}} {{>m6a29_3}} {{>m6a29_4}} {{>m6a29_scores}} {{>m6a29_5}} {{>m6a29_6}} {{#if gameAccess}} {{>EndPage
+			char="tu" act="m6a29" nextact="m6Game" place="York"}} {{else}} {{>EndPage2 char="all" act="m6a29" nextact="m7a1" nextplace="Sheffield"
+			nextmod="7" place="York" end="finished"}} {{/if}}
+		</div>
+	</article>
+
+</template>
+<template name="m6a29_1">
+	<section id="m6a29_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 0;">
+					<li>If someone is in the <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> , a lot of attention is being paid to them.</li>
+					<li>Anything that is thrown as a weapon can be called a <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div>.</li>
+					<li>If you describe something as <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div>, it creates a lot of disagreement.</li>
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> something, you’re suggesting it’s good.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is a discussion about a subject on which people have different views.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">missile</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">debate</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">controversial</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">limelight</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">recommend</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a29" nexturl="#m6a29_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a29_2">
+	<section id="m6a29_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is a Christian who belongs to the branch of the Christian church which separated from the Catholic church
+						in the sixteenth century.</li>
+					<li>If you say someone is <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div>, they act without thinking about the consequences.</li>
+					<li>You use <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> to join two opposite ideas together.</li>
+					<li>To <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> a situation is to control it.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> differences are differences based on religion.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">dominate</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">reckless</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">sectarian</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">whereas</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">protestant</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a29_1" nexturl="#m6a29_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a29_3">
+	<section id="m6a29_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>If someone gives their <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> to something, they formally agree to it.</li>
+					<li>When there is a <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div>, a crowd of people behave badly in a public place.</li>
+					<li>When people <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> someone, they choose that person to represent them, by voting for them.</li>
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> something, you examine it very carefully.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is a short heavy stick which is sometimes used as a weapon by the police.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">riot</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">elect</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">baton</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">assent</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">scrutinise</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a29_2" nexturl="#m6a29_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a29_4">
+	<section id="m6a29_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 15;">
+					<li>If a person receives <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> they receive approval and admiration from other people.</li>
+					<li>To <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> an important event or person means to remember them at a special ceremony.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">plaudits</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">commemorate</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a29_3" nexturl="#m6a29_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a29_scores">
+	<section id="m6a29_bad" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m6a29CorrectScore" wrongSession="m6a29IncorrectScore"}}
+				<h2>You didn't get enough right answers to unlock the game</h2>
+				<h4 class="text-left">Get 13 or more right answers and the game will be unlocked!
+					<a draggable="false" href="#m6a29_1" class="pagination restart">Try again</a> and see if you can improve your score.</h4>
+				<div class="game-locked-gif shadow"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m6a29_5" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m6a29_good" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m6a29CorrectScore" wrongSession="m6a29IncorrectScore"}}
+				<h2>Well done! You got a good score! You can now play the game in this module!</h2>
+				<div class="game-unlocked-gif shadow"></div>
+				<h4>Click continue to see the answers and finish this activity.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m6a29_5" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m6a29_5">
+	<section id="m6a29_5" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>If someone is in the
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">limelight</div>
+						</div> , a lot of attention is being paid to them.</li>
+					<li>Anything that is thrown as a weapon can be called a
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">missile</div>
+						</div>.</li>
+					<li>If you describe something
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">controversial</div>
+						</div>, it creates a lot of disagreement.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">recommend</div>
+						</div> something, you’re suggesting it’s good.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">debate</div>
+						</div> is a discussion about a subject on which people have different views.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">protestant</div>
+						</div> is a Christian who belongs to the branch of the Christian church which separated from the Catholic church in the sixteenth
+						century.</li>
+					<li>If you say someone is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">reckless</div>
+						</div>, they act without thinking about the consequences.</li>
+					<li>You use
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">whereas</div>
+						</div> to join two opposite ideas together.</li>
+					<li>To
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">dominate</div>
+						</div> a situation is to control it.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">sectarian</div>
+						</div> differences are differences based on religion.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a29_5" nexturl="#m6a29_6" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m6a29_6">
+	<section id="m6a29_6" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>If someone gives their
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">assent</div>
+						</div> to something, they formally agree to it.</li>
+					<li>When there is a
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">riot</div>
+						</div>, a crowd of people behave badly in a public place.</li>
+					<li>When people
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">elect</div>
+						</div> someone, they choose that person to represent them, by voting for them.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">scrutinise</div>
+						</div> something, you examine it very carefully.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">baton</div>
+						</div> is a short heavy stick which is sometimes used as a weapon by the police.</li>
+					<li>If a person receives
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">plaudits</div>
+						</div> they receive approval and admiration from other people.</li>
+					<li>To
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">commemorate</div>
+						</div> an important event or person means to remember them at a special ceremony.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a29_5" nexturl="#m6a29_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

@@ -1,0 +1,30 @@
+<template name="m5Game_12">
+
+	<section id="m5Game_12" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m5Game-q2b"></div>
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="a">‘Elle, listen to this Beatles song from Paul on my MP3 player,’ said Tu.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="b">‘Elle, listen to this Beatles song by Paul on my MP3 player,’ said Tu.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">‘Elle, listen for this Beatles song by Paul with my MP3 player,’</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+
+</template>

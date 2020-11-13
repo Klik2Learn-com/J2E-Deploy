@@ -1,0 +1,182 @@
+<template name="m9a29"> 
+<article class="with-tools-sidebar m9a29">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StAustell');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 29 - {{> m9a29Title}}</div>
+		</header>
+		<section id="m9a29">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a29Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a29Intro}}</h3>
+				{{> m9a29Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a29_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a29_1}}
+		{{>m9a29_2}}
+		{{>EndPage char="tu" act="m9a29" nextact="m9a30" place="StAustell"}}
+	</div>
+</article>
+	{{>m9a29_bio1}}
+	{{>m9a29_bio2}}
+</template>
+<template name="m9a29_2"> 
+	<section id="m9a29_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">	
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m9_russell.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Bertrand Russell</h2>
+											(1872 - 1970)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m9a29_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m9_br.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“To fear love is to fear life and those who fear life are already three parts dead.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-4by3">
+									<iframe class="embed-responsive-item" id="m2_cdvid" src="https://www.youtube.com/embed/1bZv3pSaLtY?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a29_1" nexturl="#m9a29_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+  <template name="m9a29_bio2">
+	<div class="modal fade" id="m9a29_bio2" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Bertrand Russell</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m9_russell.jpg" alt="Photo"></figure>
+					Bertrand Russell was born into an aristocratic family in England and quickly showed ability in mathematics and logic. After studying in Cambridge, he became a lecturer there and wrote ‘The Principles of Mathematics.’ He became known in later life as one of Britain’s leading philosophers. When the First World War came along, he refused to fight and lost his job as a result.  During the Second World War, he was also a pacifist but spoke out strongly against Hitler. He was always interested in politics and travelled widely, meeting Lenin while touring Russia.  At the age of eighty nine, he spent seven days in prison for taking part in an anti nuclear demonstration and causing a ‘breach of the peace.’ He survived a plane crash in Norway only to die of influenza in 1970 at the age of ninety eight.
+				</div>
+				
+				<div class="modal-footer">
+          			<button type="button" data-dismiss="modal">Close</button>
+          		</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m9a29_1"> 
+	<section id="m9a29_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">	
+		<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m9_queen.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Queen</h2>
+											Formed 1970
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m9a29_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m9_fm.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“It’s strange how the mind changes time and time again. Things once important, now pale in comparison.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m2_bcvid" src="https://www.youtube.com/embed/guDDPXcdmUI?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a29" nexturl="#m9a29_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m9a29_bio1">
+	<div class="modal fade" id="m9a29_bio1" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Queen</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m9_queen.jpg" alt="Photo"></figure>
+					The British rock band Queen were formed in London in 1970 by lead singer Freddie Mercury, guitarist , Brian May, bass guitarist, John Deacon and drummer, Roger Taylor. They became internationally famous in 1975 with their album ‘A Night at the Opera. ’ Their most famous single ‘Bohemian Rhapsody’ stayed at the top of the UK charts for nine weeks.  They were one of the biggest stadium bands in the world with singles like ‘ We Will Rock You’ and ‘ We are the Champions’ and their performance  at the Charity concert ‘Live Aid’ in 1985 is reckoned to be one of the best rock performances of  all time. During their lifetime as a band they sold around 300 million records and received an award for Outstanding Contribution to British Music.
+				</div>
+				
+				<div class="modal-footer">
+          			<button type="button" data-dismiss="modal">Close</button>
+          		</div>
+			</div>
+		</div>
+	</div>
+</template>

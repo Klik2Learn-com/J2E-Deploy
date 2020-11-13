@@ -1,0 +1,102 @@
+<!--<head>
+  <title>Meteor Dynamic Template</title>
+</head>
+
+<body>
+<h1>Meteor Dynamic Template</h1>
+{{> selectFrame}}
+</body>-->
+
+<template name="dynamicTemplate">
+    <div class="container">
+        <div class="frameCarousel">
+            {{> Template.dynamic template=active data=this}}
+        </div>
+    </div>
+</template>
+
+<template name="adminTEST"> 
+	<section id="m1a4_bad" class="hidden">
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m1a4_1" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a4_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m1a4_good" class="">
+		<div class="content">
+			<h2 class="center">THIS IS THE ADMIN TEMPLATE</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a4_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+ </template>
+
+<template name="tutorTEST"> 
+	<section id="m1a4_bad" class="">
+		<div class="content">
+			
+			<h2 class="center">THIS IS THE TUTOR TEMPLATE</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m1a4_1" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a4_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m1a4_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a4_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+ </template>
+
+<template name="studentTEST">
+ <b style="color:white">THIS IS THE STUDENT TEMPLATE</b>
+</template>

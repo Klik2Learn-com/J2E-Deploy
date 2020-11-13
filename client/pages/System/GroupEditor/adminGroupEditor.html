@@ -1,0 +1,318 @@
+<template name="adminGroupEditor">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				<a draggable="false" href="../viewGroups">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{>menu}}
+				<div class="parent-level">{{orgName this.organisation}} (Organisation)</div>
+				<div class="acttitle-title">{{this.name}}&nbsp;(Group)</div>
+			</header>
+			<section>
+				<div class="content-user">
+
+					{{#if isTutor}}
+					<h1>Group Viewer</h1>
+					{{else}}
+					<h1>Group Editor</h1>
+					{{/if}}
+					
+					<fieldset class="table-fieldset">
+						<legend>Sub-groups within this group</legend>
+						<div class="table-wrapper scrollbar">
+							<table class="table1">
+								<thead>
+									<tr>
+
+										<th>Sub-group Name</th>
+										<th>Tutor</th>
+										<th>No. of Students</th>
+
+										{{#if userInCharge ""}}
+										<th>Manage / Edit</th>
+										<th style="width: 20px;">Delete</th>
+										{{/if}}
+									</tr>
+								</thead>
+								<tbody>
+
+									<!-- Each sub-group this user is allowed to see -->
+									{{#each subGroups}}
+									<tr>
+										<td>
+											<a draggable="false" class="subgroup-name" href="/admin/subgroupeditor/{{this._id}}">{{this.name}}</a>
+										</td>
+										<td style="text-align: center;">
+											<a draggable="false" href="/user/{{tutorId}}">{{tutor}}</a>
+										</td>
+										<td style="text-align: center;">
+											<b>{{numberStudents}} </b> -
+											<a draggable="false" href="#" class="subgroup-list" data-subgroupid="{{this._id}}"> View </a>
+										</td>
+
+										{{#if userInCharge this.tutor}}
+										<td style="text-align: center;">
+											<div class="user-edit subgroup-edit text-center" data-subgroupid="{{this._id}}">
+												<a draggable="false" href="/admin/subgroupeditor/{{this._id}}">
+													<i class="fas fa-pencil-alt"> </i> Edit</a>
+											</div>
+										</td>
+
+										<td>
+											<div class="user-edit subgroup-delete text-center" data-subgroupid="{{this._id}}">
+												<a draggable="false" href="#">
+													<i class="fa fa-trash-alt"></i>
+												</a>
+											</div>
+										</td>
+										{{else}}
+										<td style="text-align: center;">
+											<div class="user-edit subgroup-edit text-center faded" data-subgroupid="{{this._id}}">
+												<a draggable="false">
+													<i class="fas fa-pencil-alt" href="/admin/subgroupeditor/{{this._id}}"> </i> Edit</a>
+											</div>
+										</td>
+
+										<td>
+											<div class="user-edit subgroup-delete text-center faded" data-subgroupid="{{this._id}}">
+												<a draggable="false" href="#">
+													<i class="fa fa-trash-alt"></i>
+												</a>
+											</div>
+										</td>
+										{{/if}}
+
+									</tr>
+
+									{{/each}}
+								</tbody>
+							</table>
+						</div>
+						{{#if isAdminModOrTutor}}
+							<br>
+							<p class="text-center"><a draggable="false" href="/admin/subgroupcreator"><i class="fas fa-plus"></i> Create a new sub-group</a></p>
+						{{/if}}
+					</fieldset>
+					<!-- Sub-group Student list pop-up  -->
+					{{#each subGroups}}
+					<div class="studentlist-wrap hidden animated fadeInUp" data-studentlist="{{this._id}}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; background: rgba(0,0,0, 0.5);">
+						<div class="studentlist-popup dialogue shadow fadeInUp animated" style="width: 65%; margin: auto; margin-top: 10vh;" data-subgroupid="{{this._id}}">
+							<table class="table table-striped userlist-table" style="text-align: left;">
+								<thead>
+									<tr>
+										<th>Name
+											<i class="fa fa-caret-down"></i>
+										</th>
+										<th>Last login
+											<i class="fa fa-caret-down"></i>
+										</th>
+										{{#if isAdminModOrTutor}}
+										<th class="text-center">
+											<span class="avoidwrap"> Remove </span>
+										</th>
+										{{/if}}
+									</tr>
+								</thead>
+								<tbody>
+									{{#each subgroupstudents this._id}}
+									<tr>
+										<td data-function="goUserPage">
+											<span class="a-color">{{profile.firstname}} {{profile.surname}}</span>
+											<br>
+										</td>
+										<td>
+											{{lastLoginDate}}
+										</td>
+										{{#if isAdminModOrTutor}}
+										<td style="text-align: center;">
+											<a draggable="false" class="student-remove" href="#" data-subgroupid="{{../_id}}" data-studentid="{{_id}}">Remove</a>
+										</td>
+										{{/if}}
+									</tr>
+									{{/each}}
+								</tbody>
+							</table>
+						</div>
+						<button class="studentlist-close" data-studentlist="{{this._id}}">Close</button>
+					</div>
+					{{/each}}
+					<!-- End of sub-group student list popup  -->
+
+					<br>
+					<br>
+					<hr>
+					<br>
+					<h4 class="text-center">Tutors in this group</h4>
+					<div class="table-wrapper scrollbar">
+						<table class="table1">
+							<thead>
+								<tr>
+									<th>User Name</th>
+									<th>Email</th>
+									<th>Full Name</th>
+									{{#if isAdminOrMod}}
+									<th>Remove from this group</th>
+									{{/if}}
+								</tr>
+							</thead>
+							<tbody>
+								{{#each users "tutor"}}
+								<tr>
+									<td>
+										<a>{{username}}</a>
+									</td>
+									<td class="td-email">
+										{{emails.[0].address}}
+									</td>
+									<td>
+										{{profile.firstname}} {{profile.surname}}
+									</td>
+									{{#if isAdminOrMod}}
+									<td style="text-align: center;">
+										<button data-userId="{{_id}}" data-groupId="{{../_id}}" data-role="{{roles.[0]}}" type="submit" class="removeFromGroup button2 buttonsmall">Remove</button>
+									</td>
+									{{/if}}
+								</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</div>
+					<br>
+					<br>
+					<hr>
+					<br>
+					<h4 class="text-center">Students in this group</h4>
+					<div class="table-wrapper scrollbar">
+						<table class="table1">
+							<thead>
+								<tr>
+									<th>User Name</th>
+									<th>Email</th>
+									<th>Full Name</th>
+									{{#if isAdminModOrTutor}}
+									<th>Remove from this group</th>
+									{{/if}}
+								</tr>
+							</thead>
+							<tbody>
+								{{#each users "student"}}
+								<tr>
+
+									<td>
+										<a>{{username}}</a>
+									</td>
+									<td class="td-email">
+										{{emails.[0].address}}
+									</td>
+									<td>
+										{{profile.firstname}} {{profile.surname}}
+									</td>
+									{{#if isAdminModOrTutor}}
+									<td style="text-align: center;">
+										<button data-userId="{{_id}}" data-groupId="{{../_id}}" data-role="{{roles.[0]}}" type="submit" class="removeFromGroup button2 buttonsmall">Remove</button>
+									</td>
+									{{/if}}
+
+
+								</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</div>
+
+					{{#if isAdmin}}
+					
+					<br>
+					<br>
+					<hr>
+					<br>
+					
+					<h4 class="text-center">Users that can be added to this group </h4>
+					<h4 class="text-center" style="font-size: 80%">If not appearing, change their organisation in the Edit User page, or check if they belong to a different group</h4>
+
+					<div class="table-wrapper scrollbar">
+						<table class="table1">
+							<thead>
+								<tr>
+									<th>User Name</th>
+									<th>Email</th>
+									<th>Full Name</th>
+									<th>User role</th>
+									<th>Add to this group</th>
+								</tr>
+							</thead>
+							<tbody>
+								{{#each usersThatCanBeAdded}}
+								<tr>
+
+									<td>
+										<a>{{username}}</a>
+									</td>
+									<td class="td-email">
+										{{emails.[0].address}}
+									</td>
+									<td>
+										{{profile.firstname}} {{profile.surname}}
+									</td>
+									<td>
+										{{roles.[0]}}
+									</td>
+									<td style="text-align: center;">
+										<button data-userId="{{_id}}" data-groupId="{{../_id}}" data-role="{{roles.[0]}}" type="submit" class="addToGroup button2 buttonsmall">Add</button>
+									</td>
+								</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</div>{{/if}} {{#if isMod}}
+					
+					<br>
+					<br>
+					<hr>
+					<br>
+					<h4 class="text-center">Users that can be added to this group </h4>
+					<h4 class="text-center" style="font-size: 80%">If not appearing, change their organisation in the Edit User page, or check if they belong to a different group</h4>
+
+					<div class="table-wrapper scrollbar">
+						<table class="table1">
+							<thead>
+								<tr>
+									<th>User Name</th>
+									<th>Email</th>
+									<th>Full Name</th>
+									<th>User role</th>
+									<th>Add to this group</th>
+								</tr>
+							</thead>
+							<tbody>
+								{{#each usersThatCanBeAdded}}
+								<tr>
+
+									<td>
+										<a>{{username}}</a>
+									</td>
+									<td class="td-email">
+										{{emails.[0].address}}
+									</td>
+									<td>
+										{{profile.firstname}} {{profile.surname}}
+									</td>
+									<td>
+										{{roles.[0]}}
+									</td>
+									<td style="text-align: center;">
+										<button data-userId="{{_id}}" data-groupId="{{../_id}}" data-role="{{roles.[0]}}" type="submit" class="addToGroup button2 buttonsmall">Add</button>
+									</td>
+								</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</div>{{/if}}
+					<br><br>
+				</div>
+			</section>
+		</div>
+	</article>
+
+</template>

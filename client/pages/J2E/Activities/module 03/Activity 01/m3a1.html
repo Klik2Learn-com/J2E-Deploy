@@ -1,0 +1,474 @@
+<template name="m3a1">
+<article class="with-tools-sidebar m3a1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Stirling');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 1 - {{>m3a1Title}}</div>
+		</header>
+		
+		<section id="m3a1">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a1Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m3a1Intro}}</h3>
+{{> m3a1Time}}
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a1_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a1_1}}
+		{{>m3a1_2}}		
+		{{>m3a1_3}}
+		{{>m3a1_4}}
+		{{>m3a1_5}}
+		{{>m3a1_6}}
+		{{>m3a1_good}}
+		{{>m3a1_bad}}
+		{{>m3a1_end}}
+		</div>
+</article>
+
+</template>
+<template name="m3a1_2">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m3a1_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 1</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" data-audiosrc="/audio/module3/a1/Q1.m4a" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>What annoys one third of people about mobile devices?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							A
+							</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block">Taking your laptop on holiday.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							B
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block">					
+								People having loud conversations in public places.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							C
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block">
+								Checking your Facebook page while having coffee.								</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+			</div>
+		</div>
+			
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m3a1_3" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a1_4">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m3a1_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 3</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" data-audiosrc="/audio/module3/a1/Q3.m4a" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>Which one of these statements is false?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							A
+							</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block"> People are becoming more tolerant about the use of mobile devices.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							B
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block">					
+								People enjoy keeping up to date with things by using mobile devices.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							C
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block">
+								People in sixteen countries took part in the survey.								</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+			</div>
+		</div>
+			
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m3a1_5" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a1_end">
+{{>EndPage char="k" act="m3a1" nextact="m3a2" place="Stirling"}}
+</template>
+
+<template name="m3a1_1">
+	<section id="m3a1_1" class="hidden">
+		<!-- {{#if activeSection}} -->
+		<div class="content">
+			
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 center">
+						<h3 class="center">Listen to the article about using mobile phones in public places.</h3><br><br>
+							<div class="parapaper">
+								<div class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a1/full_talk.m4a"></div><h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="ph-w" style="max-width: 243px"><div class="ph" style="padding-top: 141.15%"><img draggable="false" src="/images/module3/phone.png" alt="Woman using a mobile phone"></div></div>
+						</div>
+					</div>
+				</div>
+			<h3>When you’re ready, read the questions, then pick an answer. You’ll find out your score at the end.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a1" nexturl="#m3a1_2" prev="hidden" next=""}}
+		</footer>
+		<!-- {{/if}} -->
+	</section>
+</template>
+
+<template name="m3a1_good">
+	<section id="m3a1_good" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m3a1_rightScore" wrongSession="m3a1_wrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m3a1_end" prev="hidden" next=""}}
+		 </footer>
+	{{/if}}
+	</section>
+</template>
+
+
+<template name="m3a1_5">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m3a1_5" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 4</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" data-audiosrc="/audio/module3/a1/Q4.m4a" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>Which one of these statements is true?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							A
+							</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block">  Our behaviour is being changed by mobile devices.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							B
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block">					
+								Most of us still prefer sweets and chocolates to mobile phones.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							C
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block">
+								Most of us don’t check our mobiles until we leave the house.								</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+			</div>
+		</div>
+			
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m3a1_6" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a1_6">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m3a1_6" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 5</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" data-audiosrc="/audio/module3/a1/Q5.m4a" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>What did the survey conclude?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							A
+							</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block">  Most people want mobile devices banned in public places.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							B
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block">					
+								Most people think there should be limits on the use of mobile devices.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							C
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block">
+								Most people just accept things as they are.								</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+			</div>
+		</div>
+			
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m3a1_7" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a1_3">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m3a1_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Question 2</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="button" data-audiosrc="/audio/module3/a1/Q2.m4a" class="buttonround buttonaudio"></button>
+						<b>{{>touch yes="Tap" no="Click"}} to listen to the article again.</b><br>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="parapaper" style="padding-left: 0; padding-right: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3> Which one of these did not annoy people?</h3>
+					</div>
+				</div>
+					{{>blankrow}}
+					{{> rightwrong}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							A
+							</div>
+						</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="1" class="button1 block">Using a mobile phone in the bedroom.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							B
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="2" class="button1 block">					
+								Sharing personal information about other people.</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-xs-2 text-right">
+							<div class="lettercir">
+							C
+							</div>
+							</div>
+						<div class="col-sm-7 col-xs-10">
+							<div id="3" class="button1 block">
+								Logging into someone else’s account.								</div>
+						
+						</div>
+					</div>
+					{{>blankrow}}
+			</div>
+		</div>
+			
+		</div>
+		<footer>
+					{{>footer_nav prevurl="" nexturl="#m3a1_4" prev="hidden" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a1_bad">
+	<section id="m3a1_bad" class="hidden">
+		<div class="content">
+		<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m3a1_rightScore" wrongSession="m3a1_wrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m3a1_1" class="reTry">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+			</div>
+			<footer>
+			{{>footer_nav nexturl="#m3a1_end" prev="hidden" next=""}}
+		  </footer>
+	</section>
+</template>
+

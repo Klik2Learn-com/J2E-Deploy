@@ -1,0 +1,199 @@
+<template name="m3a15">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Peebles');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 15 - {{>m3a15Title}}</div>
+			</header>
+
+
+			<section id="m3a15">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a15Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m3a15Intro}}</h3>
+					{{> m3a15Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a15_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m3a15_1}} {{>m3a15_2}} {{>m3a15_3}} {{>EndPage char="elle" act="m3a15" nextact="m3a16" place="Peebles"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m3a15_1">
+	<section id="m3a15_1" class="hidden">{{> popovers}}
+		<div class="content">
+			<h1>Introducing Modal Verbs</h1>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="<b>Would</b> you like to live in the country?">
+							<div class="button1 ddwidth10 dd1line2high item-space">Would</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="When we lived in London we <b>could</b> go to a different restaurant every week.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Could</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="You <b>should</b> think carefully before moving there – it’s a busy street.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Should</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="They <b>might</b> not like country life after a few winters.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Might</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="You <b>may</b> not know the name of a single person in your street.">
+							<div class="button1 ddwidth10 dd1line2high item-space">May</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="You <b>must</b> remember to re-direct your mail when you move house.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Must</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-sm-offset-2 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="She <b>ought</b> to ask the locals for advice.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Ought to</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="He <b>had to</b> get up at 6 am every morning to travel to London.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Had to</div>
+						</a>
+					</div>
+				</div>
+				<h3>{{>touch yes="Tap" no="Click"}} the verb to see an example.</h3>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a15" nexturl="#m3a15_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a15_2">
+	<section id="m3a15_2" class="hidden">{{> popovers}}
+		<div class="content">
+			<h1>Introducing Modal Verbs</h1>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="I <b>might</b> phone him tomorrow.">
+							<div class="button1 ddwidth10 dd2lines">Possibility/ Probability</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="I <b>would</b> love to visit New Zealand.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Desire</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="He <b>can</b> speak four languages.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Ability</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="<b>May</b> I join you?">
+							<div class="button1 ddwidth10 dd1line2high item-space">Permission</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="They <b>had to</b> leave their house when the flood warning came.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Necessity</div>
+						</a>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-html="true" data-content="You <b>must</b> have your passport with you.">
+							<div class="button1 ddwidth10 dd1line2high item-space">Obligation</div>
+						</a>
+					</div>
+				</div>
+				<h3>{{>touch yes="Tap" no="Click"}} the category to see an example.</h3>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a15_1" nexturl="#m3a15_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a15_3">
+	<section id="m3a15_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Introducing Modal Verbs</h1>
+			<h3 class="center">Write the correct modal verb in the space.</h3>
+			<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{>welldone}}
+				<ol class="olcircle">
+					<li>You
+						<span id="entryanswer0">
+							<form class="textentry">
+								<input type="text" name="userText" size="7" autocomplete="off">
+								<input type="submit" value="OK">
+							</form>
+						</span> have your passport with you.
+						<b>(obligation)</b>
+					</li>
+					<li>
+						<span id="entryanswer1" class="textentry-disabled"></span> I join you? <!-- /
+						<span id="entryanswer2" class="textentry-disabled"></span> I join you? -->
+						<b>(permission)</b>
+					</li>
+					<li>They
+						<span id="entryanswer2" class="textentry-disabled"></span> leave their house when the flood warning came.
+						<b>(necessity)</b>
+					</li>
+					<li>He
+						<span id="entryanswer3" class="textentry-disabled"></span> speak four languages.
+						<b>(ability)</b>
+					</li>
+					<li>I
+						<span id="entryanswer4" class="textentry-disabled"></span> phone him tomorrow.
+						<b>(possibility/probability)</b>
+					</li>
+					<li>I
+						<span id="entryanswer5" class="textentry-disabled"></span> love to visit New Zealand.
+						<b>(desire)</b>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a15" nexturl="#m3a15_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>

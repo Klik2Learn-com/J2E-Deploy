@@ -1,0 +1,117 @@
+<template name="m6a23"> 
+<article class="with-tools-sidebar m6a23">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Harrogate');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 23 - {{>m6a23Title}}</div>
+		</header>
+		<section id="m6a23">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a23Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m6a23Intro}}</h3>
+				{{> m6a23Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a23_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a23_1}}
+		{{>m6a23_scores}}
+		{{>EndPage char="tu" act="m6a23" nextact="m6a24" place="Harrogate"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a23_1"> 
+	<section id="m6a23_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Listen to these sentences and decide whether they express emotion or not. 
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}}
+					<div class="col-sm-8 col-sm-offset-2 text-center">		
+					<div class=" parapaper">				
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module6/a23/q1.m4a"></button> <h5><span id="question_text">Sentence 1</span></h5>
+						</div>
+							<div class="row">
+								<div class="col-xs-6 col-xxs-12">
+									<div class="ph-w ph-5x4" style="max-width: 244px"><div class="ph"><img draggable="false" src="images/emotion.png" alt="Expresses surprise or shock"></div></div>
+									<button id="true" class="button2 item-space ddwidth12">Expresses surprise or shock</button>
+									<p>&nbsp;</p>
+								</div>
+								<div class="col-xs-6 col-xxs-12">
+									<div class="ph-w ph-5x4" style="max-width: 244px"><div class="ph"><img draggable="false" src="images/neutral.png" alt="Doesn't express emotion"></div></div>
+									<button id="false" class="button2 item-space ddwidth12">Doesn't express emotion</button>
+									<p>&nbsp;</p>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m6a23RightScore" wrongSession="m6a23WrongScore"}}
+					</div>
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="m6a23" nexturl="#m6a23_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a23_scores">	
+
+	<section id="m6a23_bad" class="hidden">
+
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m6a23RightScore" wrongSession="m6a23WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m6a23_1" class="pagination restart">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+
+		<footer>
+			{{>footer_nav nexturl="#m6a23_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m6a23_good" class="hidden">
+
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m6a23RightScore" wrongSession="m6a23WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+
+		<footer>
+			{{>footer_nav nexturl="#m6a23_end" prev="hidden" next=""}}
+		</footer>
+		
+	</section>
+</template>

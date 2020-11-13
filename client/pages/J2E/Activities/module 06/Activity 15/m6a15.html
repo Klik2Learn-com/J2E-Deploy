@@ -1,0 +1,400 @@
+<template name="m6a15"> 
+<article class="with-tools-sidebar m6a15">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Scarborough');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 15 - {{>m6a15Title}}</div>
+		</header>
+		<section id="m6a15">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a15Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m6a15Intro}}</h3>
+				{{> m6a15Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a15_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a15_1}}
+		{{>m6a15_2}}
+		{{>m6a15_scores}}
+		{{>m6a15_3}}
+		{{>m6a15_4}}
+		{{>EndPage char="elle" act="m6a15" nextact="m6a16" place="Scarborough"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a15_1"> 
+	<section id="m6a15_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+				<br>
+				<br>
+				<br>
+					<div class="parapaper fold">
+					<div class="iconleft">
+					<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module6/a15/visit_parliament.m4a"></button> 
+					</div>
+					<div class="iconright">
+					 <h4>{{>touch yes="Tap" no="Click"}} to hear K, Tu and Elle talking about visiting the Houses of Parliament in London.</h4>
+					</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="ph-w ph-16x9" style="max-width: 640px"><div class="ph"><img draggable="false" src="images/module6/a10/Houses of parliament.jpg" alt="House of Parliament"></div></div>
+				</div>
+			</div>
+		</div>
+      			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a15" nexturl="#m6a15_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a15_2"> 
+	<section id="m6a15_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Sometimes 'will' and 'won't' are in the right place. Sometimes they aren't. If you think it's right, {{>touch yes="tap" no="click"}} 'yes'. If it's wrong, {{>touch yes="tap" no="click"}} 'no'.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">						
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module6/a15/1a.m4a"></button>
+						<div class="caption capgreen"><span id="question_text">Sentence 1a</span></div>
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="yes" class="button2 item-space ddwidth9">Yes</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="no" class="button2 item-space ddwidth9">No</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m6a15CorrectScore" wrongSession="m6a15IncorrectScore"}}
+					</div>
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m6a15_1" nexturl="#m6a15_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a15_3"> 
+	<section id="m6a15_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			<h3>Here are the answers. The mistakes are in <u class="a-color">red</u>. {{>touch yes="Tap" no="Click"}} them to reveal the right answer.</h3>
+			<div class="container-fluid m6a15-answers">
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">1a</div>
+						</div>
+						<div class="iconright wrong-sentence">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/1a.m4a"></button> If we <u class="link">will</u> have time in London, {{>capincorrect}}
+							</div>								
+							{{>boxcorrecthtml 
+								class="item-space" 
+								text="<button class='buttonround buttonaudio' data-audiosrc='/audio/module6/a15/if_we_have_time.m4a'></button> If we have time in London"
+							}}
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">1b</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space"><button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/if_we_have_time_2.m4a"></button> 
+							we'll visit the Houses of Parliament. {{>capcorrect}}</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">2a</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space"><button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/2a.m4a"></button> 
+							We won't learn so much about Britain... {{>capcorrect}}</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">2b</div>
+						</div>
+						<div class="iconright wrong-sentence">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/2b.m4a"></button> If we <u class="link">will</u> miss that.  {{>capincorrect}}
+							</div>								
+							{{>boxcorrecthtml 
+								class="item-space" 
+								text="<button class='buttonround buttonaudio' data-audiosrc='/audio/module6/a15/we_wont_learn_2.m4a'></button> If we miss that."
+							}}
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">3a</div>
+						</div>
+						<div class="iconright wrong-sentence">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/3a.m4a"></button> But if you <u class="link">will</u> take your camera Tu, {{>capincorrect}}
+							</div>								
+							{{>boxcorrecthtml 
+								class="item-space" 
+								text="<button class='buttonround buttonaudio' data-audiosrc='/audio/module6/a15/but_if_you_take_camera.m4a'></button> But if you take your camera Tu,"
+							}}
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">3b</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space"><button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/3b.m4a"></button> 
+							 You will have to leave it in your bag. {{>capcorrect}}</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">4a</div>
+						</div>
+						<div class="iconright wrong-sentence">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/4a.m4a"></button> Yeah, when you <u class="link">will</u> go there, {{>capincorrect}}
+							</div>								
+							{{>boxcorrecthtml 
+								class="item-space" 
+								text="<button class='buttonround buttonaudio' data-audiosrc='/audio/module6/a15/yeah_when_you_go.m4a'></button> Yeah, when you go there,"
+							}}
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">4b</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space"><button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/yeah_when_you_go_2.m4a"></button>
+							you'll go through security like in an airport. {{>capcorrect}}</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">5</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space"><button class="buttonround buttonaudio" data-audiosrc='/audio/module6/a15/and_you_will_have_to_turn_your_phone_off.m4a'></button> 
+							and you'll have to turn your mobile phone off. {{>capcorrect}}</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">6a</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space"><button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/oh_no_I_wont.m4a"></button>
+							Oh no! I won't be able to listen to music... {{>capcorrect}}</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">6b</div>
+						</div>
+						<div class="iconright wrong-sentence">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/6b.m4a"></button> If I <u class="link">will</u> get bored.  {{>capincorrect}}
+							</div>								
+							{{>boxcorrecthtml 
+								class="item-space" 
+								text="<button class='buttonround buttonaudio' data-audiosrc='/audio/module6/a15/oh_no_I_wont_2.m4a'></button> If I get bored."
+							}}
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">7a</div>
+						</div>
+						<div class="iconright wrong-sentence">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/7a.m4a"></button> And if you <u class="link">will</u> want afternoon tea... {{>capincorrect}}
+							</div>								
+							{{>boxcorrecthtml 
+								class="item-space" 
+								text="<button class='buttonround buttonaudio' data-audiosrc='/audio/module6/a15/and_if_you_want.m4a'></button> And if you want afternoon tea..."
+							}}
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">7b</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space"><button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/and_if_you_want_2.m4a"></button> 
+							it'll cost you an extra £20. {{>capcorrect}}</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">8a</div>
+						</div>
+						<div class="iconright">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/i_will_take_some.m4a"></button>
+								I'll take some chocolate... {{>capcorrect}}
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="iconleft">
+							<div class="number">8b</div>
+						</div>
+						<div class="iconright wrong-sentence">
+							<div class="caption-no-bg item-space">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a15/8b.m4a"></button> in case I <u class="link">will</u> get hungry. {{>capincorrect}}
+							</div>								
+							{{>boxcorrecthtml 
+								class="item-space" 
+								text="<button class='buttonround buttonaudio' data-audiosrc='/audio/module6/a15/i_will_take_2.m4a'></button> in case I get hungry."
+							}}
+						</div>
+					</div>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a15_2" nexturl="#m6a15_4" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a15_4"> 
+	<section id="m6a15_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="parapaper fold">
+							<div class="iconleft">
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module6/a15/whole_conversation.m4a"></button> 
+							</div>
+							<div class="iconright">
+							 <h4>Now {{>touch yes="tap" no="click"}} to listen to the conversation as it should be.</h4>
+							</div>
+					</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a15_3" nexturl="#m6a15_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a15_scores">
+	<section id="m6a15_bad" class="hidden">
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m6a15CorrectScore" wrongSession="m6a15IncorrectScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m6a15_2" id="m6a15restart" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m6a15_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m6a15_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m6a15CorrectScore" wrongSession="m6a15IncorrectScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m6a15_3" nextid="m6a15next" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>

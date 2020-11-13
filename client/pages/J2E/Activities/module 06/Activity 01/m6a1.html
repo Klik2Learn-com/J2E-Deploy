@@ -1,0 +1,241 @@
+<template name="m6a1">
+	<article class="with-tools-sidebar m6a1">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Newcastle');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 1 - {{>m6a1Title}}</div>
+			</header>
+			<section id="m6a1">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a1Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m6a1Intro}}</h3>
+					{{> m6a1Time}}
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a1_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m6a1_1}} {{>m6a1_2}} {{>m6a1_3}} {{>m6a1_4}} {{>m6a1_5}} {{>m6a1_6}} {{>m6a1_7}} {{>EndPage char="k" act="m6a1" nextact="m6a2"
+			place="Newcastle"}}
+
+		</div>
+	</article>
+
+</template>
+<template name="m6a1_5">
+	<section id="m6a1_5" class="hidden">{{> popovers}}
+		<div class="content">
+			<h1>Who are the most important people in Britain?</h1>
+			<div class="parapaper article-text">
+				{{> importantPeople para3="show-block"}}
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the
+				<span class="a-color">red</span> words for the meaning.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a1_4" nexturl="#m6a1_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a1_7">
+	<section id="m6a1_7" class="hidden">{{> popovers}}
+		<div class="content">
+			<h1>Who are the most important people in Britain?</h1>
+			<div class="parapaper article-text">
+				{{> importantPeople para5="show-block"}}
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the
+				<span class="a-color">red</span> words for the meaning.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a1_6" nexturl="#m6a1_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a1_2">
+	<section id="m6a1_2" class="hidden">
+		<div class="content">
+			<h3 class="center">Now read this article to find out what children think.</h3>
+			<h5 class="text-center center-block">Who are the most important people in Britain?</h5>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1 center">
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Ant And Dec.jpg" alt="Ant and Dec">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Boris Johnson.jpg" alt="Boris Johnson">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Daniel Radcliffe.jpg" alt="Daniel Radcliffe">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/David Beckham.jpg" alt="David Beckham">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/David Cameron.jpg" alt="David Cameron">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Duke Of Cambridge.jpg" alt="Duke Of Cambridge">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Elizabeth.jpg" alt="The Queen">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Harry Styles.jpg" alt="Harry Styles">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Prince Charles.jpg" alt="Prince Charles">
+							</div>
+						</div>
+						<div class="ph-w ph-2x3 inline-block" style="width: 100px">
+							<div class="ph">
+								<img draggable="false" src="/images/module6/a1/Simon Cowell.jpg" alt="Simon Cowell">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a1_1" nexturl="#m6a1_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a1_4">
+	<section id="m6a1_4" class="hidden">{{> popovers}}
+		<div class="content">
+			<h1>Who are the most important people in Britain?</h1>
+			<div class="parapaper article-text">
+				{{> importantPeople para2="show-block"}}
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the
+				<span class="a-color">red</span> words for the meaning.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a1_3" nexturl="#m6a1_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a1_3">
+	<section id="m6a1_3" class="hidden">{{> popovers}}
+		<div class="content">
+			<h1>Who are the most important people in Britain?</h1>
+			<div class="parapaper article-text">
+				{{> importantPeople para1="show-block"}}
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the
+				<span class="a-color">red</span> words for the meaning.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a1_2" nexturl="#m6a1_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a1_1">
+	<section id="m6a1_1" class="hidden">
+		<div class="content noselect">
+			<h3 class="center">Children voted for the five most important people in Britain. Try to guess who they voted for. Drag the people to the
+				spaces.</h3>
+
+			{{> rightwrong}} {{> welldone}}
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-4">
+						<div class="parapaper parapaperdd1 fold">
+							<ol class="olcircle">
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target2">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target3">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target4">&nbsp;</div>
+								</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target5">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd2lines' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd2lines">
+						<div class="ddsourceseated ddwidth7 dd2lines shadow" draggable="false" data-destination="target3">Duchess of Cambridge</div>
+					</div>
+					<div class="ddseat ddwidth7 dd2lines">
+						<div class="ddsourceseated ddwidth7 dd2lines shadow" draggable="false" data-destination="target4">The Prime Minister</div>
+					</div>
+					<div class="ddseat ddwidth7 dd2lines">
+						<div class="ddsourceseated ddwidth7 dd2lines shadow" draggable="false" data-destination="target5">Prince Charles</div>
+					</div>
+					<div class="ddseat ddwidth7 dd2lines">
+						<div class="ddsourceseated ddwidth7 dd2lines shadow" draggable="false" data-destination="target2">Prince William</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target1">The Queen</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a1_1" nexturl="#m6a1_2" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a1_6">
+	<section id="m6a1_6" class="hidden">{{> popovers}}
+		<div class="content">
+			<h1>Who are the most important people in Britain?</h1>
+			<div class="parapaper article-text">
+				{{> importantPeople para4="show-block"}}
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the
+				<span class="a-color">red</span> words for the meaning.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a1_5" nexturl="#m6a1_7" prev="" next=""}}
+		</footer>
+	</section>
+</template>

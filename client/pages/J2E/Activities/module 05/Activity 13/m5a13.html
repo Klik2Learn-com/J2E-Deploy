@@ -1,0 +1,573 @@
+<template name="m5a13">
+	<article class="with-tools-sidebar m5a13">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Manchester');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 13 - {{>m5a13Title}}</div>
+			</header>
+
+
+			<section id="m5a13">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a13Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m5a13Intro}}</h3>
+					{{> m5a13Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a13_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a13_1}} {{>m5a13_2}} {{>m5a13_3}} {{>m5a13_4}} {{>m5a13_5}} {{>m5a13_6}} {{>m5a13_7}} {{>m5a13_8}} {{>m5a13_9}} {{>EndPage
+			char="k" act="m5a13" nextact="m5a14" place="Manchester"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a13_1">
+	<section id="m5a13_1" class="hidden">
+		<div class="content">
+			<h1>Remember you can divide adverbs into different groups</h1>
+			<div class="container-fluid">
+				<div class="row center">
+					<div class="col-sm-4">
+						<div class="caption">Time</div>
+						<br>
+						<br>
+						<div class="ph-w" style="max-width: 147px">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/time.png" alt="Time">
+							</div>
+						</div>
+						<br>
+						<h4>He arranged to meet her
+							<span class="grammar">before</span> the film started.</h4>
+					</div>
+					<div class="col-sm-4">
+						<div class="caption">Place</div>
+						<br>
+						<br>
+						<div class="ph-w" style="max-width: 147px">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/place.png" alt="Place">
+							</div>
+						</div>
+						<br>
+						<h4>She wasn't
+							<span class="grammar">there</span>.</h4>
+					</div>
+					<div class="col-sm-4">
+						<div class="caption">Manner - 'How'</div>
+						<br>
+						<br>
+						<div class="ph-w" style="max-width: 147px">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/manner.png" alt="Manner">
+							</div>
+						</div>
+						<br>
+						<h4>He waited
+							<span class="grammar">impatiently</span>.</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13" nexturl="#m5a13_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a13_2">
+	<section id="m5a13_2" class="hidden">
+		<div class="content">
+			<h1>Remember you can divide adverbs into different groups</h1>
+			<div class="container-fluid">
+				<div class="row center">
+					<div class="col-sm-4">
+						<div class="caption">Frequency - 'How often'</div>
+						<br>
+						<br>
+						<div class="ph-w" style="max-width: 147px">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/frequency.png" alt="Frequently">
+							</div>
+						</div>
+						<br>
+						<h4>She was
+							<span class="grammar">often</span> late.</h4>
+					</div>
+					<div class="col-sm-4">
+						<div class="caption">Degree - 'How Much'</div>
+						<br>
+						<br>
+						<div class="ph-w" style="max-width: 147px">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/degree.png" alt="Degree">
+							</div>
+						</div>
+						<br>
+						<h4>He was
+							<span class="grammar">really</span> annoyed.</h4>
+					</div>
+					<div class="col-sm-4">
+						<div class="caption">Probability</div>
+						<br>
+						<br>
+						<div class="ph-w" style="max-width: 147px">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/probability.png" alt="Probability">
+							</div>
+						</div>
+						<br>
+						<h4>That's
+							<span class="grammar">possibly</span> the end of the friendship.</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_1" nexturl="#m5a13_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a13_3">
+	<section id="m5a13_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">What kind of adverbs are these? Drag them to the right space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 center">
+							<div class="row">
+								<div class="col-sm-4 col-xs-6">
+									<div class="dd1line2high">Time</div>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="dd1line2high">Probability</div>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="dd2lines">Degree/How Much</div>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="dd1line2high">Manner/How</div>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="dd1line2high">Place</div>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="dd1line2high">Frequency</div>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">Almost</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">Never</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">Locally</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">Recently</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">Maybe</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">Well</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_2" nexturl="#m5a13_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a13_4">
+	<section id="m5a13_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Three of these adverbs are Time adverbs. Three are not. Find the three Time adverbs and drag them to the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-3 col-xs-6 col-xxs-12 text-center">
+						<div class="ph-w" style="max-width: 147px">
+							<div class="ph" style="padding-top: 164.63%; margin-bottom: .75em;">
+								<img draggable="false" src="/images/prepositions/time.png" alt="Time">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6 col-xxs-12 text-center">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:240px;width:160px;" data-destinationid="target1">
+							<h4>Time</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Perhaps</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Certainly</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Immediately</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Soon</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Still</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Probably</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_3" nexturl="#m5a13_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a13_5">
+	<section id="m5a13_5" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Three of these adverbs are Place adverbs. Three are not. Find the three Place adverbs and drag them to the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-3">
+						<div class="ph-w" style="max-width: 147px; margin-bottom: .75em;">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/place.png" alt="Place">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 ">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:240px;width:160px;" data-destinationid="target1">
+							<h4>Place</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Frequently</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Nowhere</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">There</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Sometimes</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Seldom</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Everywhere</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_4" nexturl="#m5a13_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a13_6">
+	<section id="m5a13_6" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Three of these adverbs are Manner adverbs. Three are not. Find the three Manner adverbs and drag them to the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-3">
+						<div class="ph-w" style="max-width: 147px; margin-bottom: .75em;">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/manner.png" alt="Manner">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 ">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:240px;width:160px;" data-destinationid="target1">
+							<h4>Manner - 'How'</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Totally</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Too</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Slowly</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Carefully</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Hard</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Little</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_5" nexturl="#m5a13_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a13_7">
+	<section id="m5a13_7" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Three of these adverbs are Frequency adverbs. Three are not. Find the three Frequency adverbs and drag them to the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-3">
+						<div class="ph-w" style="max-width: 147px; margin-bottom: .75em;">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/frequency.png" alt="Frequency">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 ">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:240px;width:160px;" data-destinationid="target1">
+							<h4>Frequency - 'How Often'</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Away</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Always</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Sometimes</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Everywhere</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Seldom</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Here</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_6" nexturl="#m5a13_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a13_8">
+	<section id="m5a13_8" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Three of these adverbs are Degree adverbs. Three are not. Find the three Degree adverbs and drag them to the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-3">
+						<div class="ph-w" style="max-width: 147px; margin-bottom: .75em;">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/degree.png" alt="Degree">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 ">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:240px;width:160px;" data-destinationid="target1">
+							<h4>Degree - 'How Much'</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Quickly</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Totally</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Carefully</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Too</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Completely</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Slowly</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_7" nexturl="#m5a13_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a13_9">
+	<section id="m5a13_9" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Three of these adverbs are Probability adverbs. Three are not. Find the three Probability adverbs and drag them to the
+				space.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-3">
+						<div class="ph-w" style="max-width: 147px; margin-bottom: .75em;">
+							<div class="ph" style="padding-top: 164.63%">
+								<img draggable="false" src="/images/prepositions/probability.png" alt="Probability">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 ">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:240px;width:160px;" data-destinationid="target1">
+							<h4>Probability</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Perhaps</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Certainly</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Immediately</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Soon</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">Still</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">Probably</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a13_8" nexturl="#m5a13_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

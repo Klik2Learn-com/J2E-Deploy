@@ -1,0 +1,663 @@
+<template name="m6a7"> 
+<article class="with-tools-sidebar m6a7">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Durham');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 7 - {{>m6a7Title}}</div>
+		</header>
+		<section id="m6a7">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a7Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m6a7Intro}}</h3>
+				{{> m6a7Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a7_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a7_1}}
+		{{>m6a7_2}}
+		{{>m6a7_3}}
+		{{>m6a7_4}}
+		{{>m6a7_5}}
+		{{>m6a7_6}}
+		{{>m6a7_7}}
+		{{>m6a7_8}}
+		{{>m6a7_9}}
+		{{>m6a7_10}}
+		{{>m6a7_11}}
+		{{>m6a7_12}}
+		{{>m6a7_13}}
+		{{>m6a7_14}}
+		{{>EndPage char="k" act="m6a7" nextact="m6a8" place="Durham"}}
+	</div>
+</article>
+
+	{{>flappers_modal}}
+	{{>teddyboys_modal}}
+	{{>mods_modal}}
+	{{>skinheads_modal}}
+	{{>hippies_modal}}
+	{{>punk_modal}}
+	{{>goth_modal}}
+</template>
+<template name="m6a7_1"> 
+	<section id="m6a7_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			{{>m6a7_instruct1}}
+			<h1>Dandies and Flappers</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="ph-w ph-3x4" style="max-width: 249px"><div class="ph"><img draggable="false" src="images/module6/a7/flapper.jpg" alt="Flapper"></div></div><br>
+					</div>
+					<div class="col-sm-8">
+						
+						<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module6/a7/Flappers.m4a"></button>
+						{{>InstructionsNotebook text="Write in your Notebook and check your answers at the end."}}
+						<ol class="olcircle2">
+							<li>How music changed in the 1920s.</li>
+							<li>One new thing women did in the 1920s.</li>
+						</ol>
+					</div>
+				</div>
+				<br>
+				<div class="center">
+				<button data-toggle="modal" data-target="#flappers_modal" class="button2">Read the article</button>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7" nexturl="#m6a7_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m6a7_instruct1">
+<h3 class="center">{{>touch yes="Tap" no="Click"}} to hear information about each topic</h3>
+ </template>
+
+<template name="m6a7_10"> 
+	<section id="m6a7_10" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+			<div class="center">
+				<div class="center-block caption capgreen">Mods</div>
+				</div>
+				<ol class="olcircle">
+					<li>
+						<p><b>The kind of clothes male Mods wore.</b></p>
+						<p>Mods wore mohair suits and skinny trousers, parka jackets and polo shirts.</p>
+					</li>
+					<li>
+						<p><b>The kind of transport they liked.</b></p>
+						<p>They rode Vespa scooters.</p>
+					</li>
+				</ol>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_9" nexturl="#m6a7_11" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a7_11"> 
+	<section id="m6a7_11" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+			<div class="center">
+				<div class="center-block caption capgreen">Skinheads</div>
+				</div>
+				<ol class="olcircle">
+					<li>
+						<p><b>The kind of hairstyles skinheads have.</b></p>
+						<p>Skinheads shaved their heads.</p>
+					</li>
+					<li>
+						<p><b>Who copied their style.</b></p>
+						<p>Their style was copied by right wing racists.</p>
+					</li>
+				</ol>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_10" nexturl="#m6a7_12" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a7_12"> 
+	<section id="m6a7_12" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+			<div class="center">
+				<div class="center-block caption capgreen">Hippies</div>
+				</div>
+				<ol class="olcircle">
+					<li>
+						<p><b>Where hippies bought their clothes.</b></p>
+						<p>Hippies bought their clothes in jumble sales and charity shops.</p>
+					</li>
+					<li>
+						<p><b>What kind of music they liked.</b></p>
+						<p>They liked folk music.</p>
+					</li>
+				</ol>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_11" nexturl="#m6a7_13" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a7_13"> 
+	<section id="m6a7_13" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+			<div class="center">
+				<div class="center-block caption capgreen">Punks</div>
+				</div>
+				<ol class="olcircle">
+					<li>
+						<p><b>The first thing people noticed about punks.</b></p>
+						<p>The first thing people noticed about punks was their outrageous hairstyles.</p>
+					</li>
+					<li>
+						<p><b>The difference in their music.</b></p>
+						<p>Their music was loud, aggressive and challenging. People in bands had no experience of playing instruments.</p>
+					</li>
+				</ol>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_12" nexturl="#m6a7_14" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a7_14"> 
+	<section id="m6a7_14" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+			<div class="center">
+				<div class="center-block caption capgreen">Goth</div>
+				</div>
+				<ol class="olcircle">
+					<li>
+						<p><b>Two features of Goth style.</b></p>
+						<p>Goths have pale faces and black clothes.</p>
+					</li>
+					<li>
+						<p><b>The main message Goths want to communicate.</b></p>
+						<p>They want to send the message that they don’t conform.</p>
+					</li>
+				</ol>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_13" nexturl="#m6a7_end" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a7_2"> 
+	<section id="m6a7_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m6a7_instruct1}}
+				  <h1>Teddy Boys</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3" style="max-width: 250px"><div class="ph"><img draggable="false" src="images/module6/a7/teddyboys.jpg" alt="Teddy boy clothes"></div></div><br>					
+						</div>
+						<div class="col-sm-8">
+							<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module6/a7/TeddyBoys.m4a"></button>
+							{{>InstructionsNotebook text="Write in your Notebook and check your answers at the end."}}
+							<ol class="olcircle2">
+								<li>The music Teddy Boys listened to.</li>
+								<li>What Teddy Boys wore.</li>
+							</ol>
+						</div>
+					</div>
+					<br>
+					<div class="center">
+					<button data-toggle="modal" data-target="#teddyboys_modal" class="button2">Read the article</button>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_1" nexturl="#m6a7_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a7_3"> 
+	<section id="m6a7_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m6a7_instruct1}}
+				  <h1>Mods</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+								<div class="ph-w ph-1x1" style="max-width: 286px"><div class="ph"><img draggable="false" src="images/module6/a7/Old Mods.jpg" alt="Mods"></div></div><br>
+						</div>
+						<div class="col-sm-8">
+							<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module6/a7/Mods.m4a"></button>
+							{{>InstructionsNotebook text="Write in your Notebook and check your answers at the end."}}
+							<ol class="olcircle2">
+								<li>The kind of clothes male Mods wore.</li>
+								<li>The kind of transport they liked.</li>
+							</ol>
+						</div>
+					</div>
+					<br>
+					<div class="center">
+					<button data-toggle="modal" data-target="#mods_modal" class="button2">Read the article</button>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_2" nexturl="#m6a7_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a7_4"> 
+	<section id="m6a7_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m6a7_instruct1}}
+				  <h1>Skinheads</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-3x2" style="max-width: 240px"><div class="ph"><img draggable="false" src="images/module6/a7/Skinheads.jpg" alt="Skinheads"></div></div><br>
+						</div>
+						<div class="col-sm-8">
+							<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module6/a7/Skinheads.m4a"></button>
+							{{>InstructionsNotebook text="Write in your Notebook and check your answers at the end."}}
+							<ol class="olcircle2">
+								<li>The kind of hairstyles skinheads have.</li>
+								<li>Who copied their style.</li>
+							</ol>
+						</div>
+					</div>
+					<br>
+					<div class="center">
+					<button data-toggle="modal" data-target="#skinheads_modal" class="button2">Read the article</button>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_3" nexturl="#m6a7_5" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a7_5"> 
+	<section id="m6a7_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m6a7_instruct1}}
+				  <h1>Hippies</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3" style="max-width: 230px"><div class="ph"><img draggable="false" src="images/module6/a7/RussianRainbow.jpg" alt="Hippie"></div></div><br>
+						</div>
+						<div class="col-sm-8">
+							<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module6/a7/Hippies.m4a"></button>
+							{{>InstructionsNotebook text="Write in your Notebook and check your answers at the end."}}
+							<ol class="olcircle2">
+								<li>Where hippies bought their clothes.</li>
+								<li>What kind of music they liked.</li>
+							</ol>
+						</div>
+					</div>
+					<br>
+					<div class="center">
+					<button data-toggle="modal" data-target="#hippies_modal" class="button2">Read the article</button>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_4" nexturl="#m6a7_6" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a7_6"> 
+	<section id="m6a7_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m6a7_instruct1}}
+				  <h1>Punk</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-1x1" style="max-width: 275px"><div class="ph"><img draggable="false" src="images/module6/a7/Punk.jpg" alt="Punks"></div></div><br>
+						</div>
+						<div class="col-sm-8">
+							<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module6/a7/Punk.m4a"></button>
+							{{>InstructionsNotebook text="Write in your Notebook and check your answers at the end."}}
+							<ol class="olcircle2">
+								<li>The first thing people noticed about punks.</li>
+								<li>The difference in their music.</li>
+							</ol>
+						</div>
+					</div>
+					<br>
+					<div class="center">
+					<button data-toggle="modal" data-target="#punk_modal" class="button2">Read the article</button>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_5" nexturl="#m6a7_7" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a7_7"> 
+	<section id="m6a7_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>m6a7_instruct1}}
+				  <h1>Goths</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+								<div class="ph-w ph-4x5" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module6/a7/goths1.jpg" alt="Goths"></div></div><br>
+						</div>
+						<div class="col-sm-8">
+							<button class="buttonroundc buttonroundbig buttonaudioc center-block" data-audiosrc="/audio/module6/a7/Goths.m4a"></button>
+							{{>InstructionsNotebook text="Write in your Notebook and check your answers at the end."}}
+							<ol class="olcircle2">
+								<li>Two features of Goth style.</li>
+								<li>The main message Goths want to communicate.</li>
+							</ol>
+						</div>
+					</div>
+					<br>
+					<div class="center">
+					<button data-toggle="modal" data-target="#goth_modal" class="button2">Read the article</button>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_6" nexturl="#m6a7_8" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a7_8"> 
+	<section id="m6a7_8" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+			<div class="center">
+				<div class="center-block caption capgreen">Dandies and Flapper</div>
+				</div>
+				<ol class="olcircle">
+					<li>
+						<p><b>How music changed.</b></p>
+						<p>Music became faster.</p>
+					</li>
+					<li>
+						<p><b>One new thing women did in the 1920s.</b></p>
+						<p>Women began smoking and drinking in public and they wanted to look fashionable.</p>
+					</li>
+				</ol>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_7" nexturl="#m6a7_9" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>       
+
+
+<template name="m6a7_9"> 
+	<section id="m6a7_9" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+			<div class="center">
+				<div class="center-block caption capgreen">Teddy Boys</div>
+				</div>
+				<ol class="olcircle">
+					<li>
+						<p><b>The music Teddy Boys listened to.</b></p>
+						<p>Teddy boys listened to rock and roll.</p>
+					</li>
+					<li>
+						<p><b>What Teddy Boys wore.</b></p>
+						<p>They wore drainpipe trousers, drape jackets and creepers.</p>
+					</li>
+				</ol>
+			</div>
+			</div>
+		<footer> 
+			{{>footer_nav prevurl="#m6a7_8" nexturl="#m6a7_10" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="flappers_modal">
+	<div class="modal fade" tabindex="-1" id="flappers_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="flappers_modal">Dandies and Flappers</h4>
+				</div>
+				
+				<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-2x3" style="max-width: 250px"><div class="ph"><img draggable="false" src="images/module6/a7/dandy.jpg" alt="Oscar Wilde - dandy fashion"></div></div>
+						</div>
+						<div class="col-sm-8">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a7/Flappers.m4a"></button>
+					<br><br>
+					It’s not clear whether fashion influenced music or vice versa in the 1920s. It was an era of “bright young things.” Clothing became more daring. Music became faster and dancing became almost acrobatic. Activities for trendy females during the decade were smoking in public, drinking and a desire to look fashionable and fabulous. The male dandy demanded anything exotic, in particular fashion with African, Oriental or Aztec influences.	
+					</div>		
+					</div>
+					</div>		
+				</div>				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="teddyboys_modal">
+	<div class="modal fade" tabindex="-1" id="teddyboys_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="teddyboys_modal">Teddy Boys</h4>
+				</div>
+				
+				<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 271px"><div class="ph"><img draggable="false" src="images/module6/a7/Creepers shoes.jpg" alt="Creepers shoes"></div></div>						
+						</div>
+						<div class="col-sm-8">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a7/TeddyBoys.m4a"></button>
+					<br><br>
+					Teddy boys adopted a look inspired by the bands of the 1950s. There was a new sound – rock ’n’ roll. Teddy Boys had a reputation for being troublesome and violent. They clashed frequently with authority and ripped out seats at concerts. They wore drape jackets, drainpipe trousers, skinny ties and creepers. Teddy girls are not as famous but they were just as enthusiastic, wearing denim, blazers and pencil skirts. These must have been a nightmare on the back of a greasy motorbike.					
+				</div>		
+				</div>
+				</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="mods_modal">
+	<div class="modal fade" tabindex="-1" id="mods_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="mods_modal">Mods</h4>
+				</div>
+				
+				<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-3x2" style="max-width: 250px"><div class="ph"><img draggable="false" src="images/module6/a7/mod2.jpg" alt="Mod's bike"></div></div>						
+						</div>
+						<div class="col-sm-8">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a7/Mods.m4a"></button>
+					<br><br>
+					The Mods of the late 1950s and early 60s were influenced by Italian fashion. More young people had jobs so spending rose. Mods tended to congregate in cafes and nightclubs. They were obsessed with clean–cut fashion and American Rhythm and Blues bands. British bands such as the Small Faces and the Who also influenced them. Their typical clothing was a 3 buttoned mohair suit with skinny trousers. They also wore fishtail parka jackets and Fred Perry polo shirts. What every male Mod dreamed of having however, was a Vespa scooter with at least 20 mirrors and a girlfriend who wore false eyelashes, a twin set and cropped trousers.
+				</div>			
+				</div>
+				</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="skinheads_modal">
+	<div class="modal fade" tabindex="-1" id="skinheads_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="skinheads_modal">Skinheads</h4>
+				</div>
+				
+				<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 209px"><div class="ph"><img draggable="false" src="images/module6/a7/Dr martens boots.jpg" alt="Dr Marten boots"></div></div>						
+						</div>
+						<div class="col-sm-8">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a7/Skinheads.m4a"></button>
+					<br><br>
+					By the mid 1960s, fashion was already under the influence of a new type of music called ska. Skinhead culture was fascinated by Jamaican style. They shaved their heads, wore tight denim jeans, checked shirts and white T shirts with braces. Bright red boots made by Doc Marten were particularly important to skinheads. They were immaculately dressed even at football matches. However in the 1970s right wing racists copied their style and skinheads became associated with prejudice and violence.
+				</div>	
+				</div>
+				</div>		
+				</div>	
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="hippies_modal">
+	<div class="modal fade" tabindex="-1" id="hippies_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="hippies_modal">Hippies</h4>
+				</div>
+				
+				<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w" style="max-width: 275px"><div class="ph" style="padding-top: 188.64%"><img draggable="false" src="images/module6/a7/Hippie girl.jpg" alt="Hippie"></div></div>					
+						</div>
+						<div class="col-sm-8">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a7/Hippies.m4a"></button>
+					<br><br>
+					The hippies in the 1960s didn’t conform to normal patterns of behaviour. They liked to rebel in a gentle way against authority. Unlike other youth cultures there was no strict dress code. They preferred second hand clothing and shopped at jumble sales and charity shops. Old military uniforms were particular favourites along with ethnic dresses for the girls. They created a unique and individual style. Their music was inspired by folk music and often contained messages promoting peace and love. Early albums by the Beatles showed these influences quite clearly.
+				</div>			
+				</div>
+				</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="punk_modal">
+	<div class="modal fade" tabindex="-1" id="punk_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="punk_modal">Punk</h4>
+				</div>
+				
+				<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-1x1" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module6/a7/punk2.jpg" alt="Punk"></div></div>				
+						</div>
+						<div class="col-sm-8">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a7/Punk.m4a"></button>
+					<br><br>
+					In the late 1970s, punk changed everything. Fashion designers created a DIY revolution that allowed a generation to express themselves. Outrageous hairstyles were the first thing that people noticed. It was the very opposite of Glam Rock. Punks cut and dyed their own hair, ripped up T-shirts, made jewellery from safety pins and added chains to charity shop trousers. When they sold music, they photocopied record covers and produced their own posters on photo copying machines. Punk bands were often made up of people who had never picked up a musical instrument. Their music was loud, often aggressive and challenging.
+				</div>	
+				</div>
+				</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="goth_modal">
+	<div class="modal fade" tabindex="-1" id="goth_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="goth_modal">Goths</h4>
+				</div>
+				
+				<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-4x3" style="max-width: 249px"><div class="ph"><img draggable="false" src="images/module6/a7/Ladygoth.jpg" alt="Goth"></div></div>					
+						</div>
+						<div class="col-sm-8">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a7/Goths.m4a"></button>
+					<br><br>
+					Goth subculture has a variety of followers. They pride themselves on being outsiders. Goth culture is darker than punk. The two came together in the late 1970s. The bands featured pale faces, black cloaks and howling sounds on stage. Goths use heavy eyeliner and wear all black clothing. They’re not interested in being fashionable or cool. They just want to say ‘I don’t conform.’
+					</div>
+					</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</template>

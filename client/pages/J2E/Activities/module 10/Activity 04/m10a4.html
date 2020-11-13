@@ -1,0 +1,742 @@
+<template name="m10a4">
+	<article class="with-tools-sidebar m1">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Cambridge');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class='parent-level'>Module 10</div>
+				<div class='acttitle-title'>{{> activity}} 4 - {{> m10a4Title}}</div>
+			</header>
+			<section id="m10a4">
+				<div class="content">
+					<h1 class="start-page-header">{{>m10a4Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m10a4Intro}}</h3>
+					{{> m10a4Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m10a4_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m10a4_1}} {{>m10a4_2}} {{>m10a4_3}} {{>m10a4_4}} {{>m10a4_5}} {{>m10a4_6}} {{>m10a4_7}} {{>m10a4_8}} {{>m10a4_9}} {{>m10a4_10}}
+			{{>m10a4_11}} {{>EndPage char="k" act="m10a4" nextact="m10a5" place="Cambridge"}}
+		</div>
+	</article>
+</template>
+<template name="m10a4_1">
+	<section id="m10a4_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen to the conversation from Activity 3 again. It has a lot of informal words and phrases. </h3>
+			<div class="container-fluid">
+				<div class="row center">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="ph-w ph-7x3 border1" style="max-width: 511px">
+							<div class="ph">
+								<img draggable="false" src="/images/module10/a3/argument.jpg" alt="Two people arguing">
+							</div>
+						</div>
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4" nexturl="#m10a4_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_5">
+	<section id="m10a4_5" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 3;">
+					<li>
+						<span class=" ddwidth7 dd1line">You've</span>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target8">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">like</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">no</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">it</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target8">there</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">what</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">idea</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">sounds</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">up</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_4" nexturl="#m10a4_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_4">
+	<section id="m10a4_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 2;">
+					<li>
+						<span class=" ddwidth7 dd1line">I</span>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">in</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">moved</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">know</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">just</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">you've</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_3" nexturl="#m10a4_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_6">
+	<section id="m10a4_6" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 4;">
+					<li>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">my</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">crazy</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">It's</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">wife</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">driving</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_5" nexturl="#m10a4_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_11">
+	<section id="m10a4_11" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Now you can read the conversation.</h3>
+			{{>metametrics level="1" star="yes" align="center"}}
+			<ul class="speech center-block">
+
+				<li>
+					<img src="images/module10/a4/portrait1.jpg" alt="Man 1">
+					<div class="speech1">
+						I’m from the flat upstairs. Any chance you could turn the volume down a bit?
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						Yeah, well we’re just having a flat warming party.
+					</div>
+					<img src="images/module10/a4/portrait2.jpg" alt="Man 2">
+				</li>
+
+				<li>
+					<img src="images/module10/a4/portrait1.jpg" alt="Man 1">
+					<div class="speech1">
+						Right, yeah, I know you’ve just moved in but you’ve no idea what it sounds like up there. It’s just thump, thump, thump all
+						the time. It’s driving my wife crazy!
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						Chill out man!
+					</div>
+					<img src="images/module10/a4/portrait2.jpg" alt="Man 2">
+				</li>
+
+				<li>
+					<img src="images/module10/a4/portrait1.jpg" alt="Man 1">
+					<div class="speech1">
+						Look, do me a favour and turn it down. We can’t even hear the TV.
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						OK, OK.
+					</div>
+					<img src="images/module10/a4/portrait2.jpg" alt="Man 2">
+				</li>
+				<li>
+					<img src="images/module10/a4/portrait1.jpg" alt="Man 1">
+					<div class="speech1">
+						Right, well… because if the worst comes to the worst, I can call the police you know.
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						Hey, no need to do that. I don’t want to cause any bother.
+					</div>
+					<img src="images/module10/a4/portrait2.jpg" alt="Man 2">
+				</li>
+
+			</ul>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_10" nexturl="#m10a4_end" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_2">
+	<section id="m10a4_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>
+						<span class=" ddwidth7 dd1line">Any</span>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div>
+						<span class=" ddwidth7 dd1line">a bit?</span>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">could</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">volume</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">you</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">turn</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">the</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">chance</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">down</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_1" nexturl="#m10a4_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_9">
+	<section id="m10a4_9" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 7;">
+					<li>
+						<span class=" ddwidth7 dd1line">If</span>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+						<span class=" ddwidth7 dd1line">worst</span>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">worst</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target5">the</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">comes</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">to</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_8" nexturl="#m10a4_10" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_7">
+	<section id="m10a4_7" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">man</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">out</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">chill</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_6" nexturl="#m10a4_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_10">
+	<section id="m10a4_10" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 8;">
+					<li>
+						<span class=" ddwidth7 dd1line">I</span>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">cause</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">don't</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">bother</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">to</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">want</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">any</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_9" nexturl="#m10a4_11" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_8">
+	<section id="m10a4_8" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 6;">
+					<li>
+						<span class=" ddwidth7 dd1line">Do</span>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">turn</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">down</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">favour</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">me</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">it</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">a</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">and</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_7" nexturl="#m10a4_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a4_3">
+	<section id="m10a4_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence or phrase. </h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle" style="counter-reset: start 1;">
+					<li>
+						<span class=" ddwidth7 dd1line">We're</span>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="container-fluid visible-xs">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">a flat</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">just</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">party</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">warming</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">having</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="container-fluid hidden-xs">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+						<h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a4_2" nexturl="#m10a4_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

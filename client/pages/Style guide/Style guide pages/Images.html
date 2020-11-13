@@ -1,0 +1,186 @@
+<template name="styleImages">
+<section id="style-images" class="hidden">{{> popovers}}
+	<div class="content">
+
+        <h1>Images</h1>
+        <p>All images should be wrapped in a placeholder <span class="htmlcode">DIV</span>. This provides a background image that shows before the image loads (or if the image doesn't load at all.) When setting the width and height as inline attributes in the image tag, you can simply wrap it in a <span class="htmlcode">.ph-w</span> DIV with the image width like so:</p>
+        <div class="ph-w" style="width: 140px;"><img draggable="false" src="images/module1/ferrari.jpeg" alt="Car" width="140" height="140"></div>
+        <pre class="htmlcode2">&lt;div class=&quot;ph-w&quot; style=&quot;width: 140px;&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;images/module1/ferrari.jpeg&quot; alt=&quot;Car&quot; width=&quot;140&quot; height=&quot;140&quot;&gt;&lt;/div&gt;</pre>
+        <p>Please scroll down to see how to handle responsive images (images that resize depending on their container size or page size.)</p>
+        <p>As a rule, all image tags should have the attribute <span class="htmlcode">draggable="false"</span> added - otherwise users can swipe-scroll if their finger is over an image (a bug that comes with our current drag and drop code it seems).</p>
+        <p>&nbsp;</p>
+        <p><b>Here are some common ways of displaying images:</b></p>
+
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <figure class="image">
+                        <img draggable="false" src="images/module1/eiffel.jpeg" width="140" height="140" class="border1">
+                        <figcaption>Full colour pics sometimes look good with class <span class="htmlcode">border1</span></figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4">
+                    <figure class="image">
+                        <img draggable="false" src="images/module1/act10 ice cream.png" width="200" height="278">
+                        <figcaption>White/transparent backgrounds should have no border</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4">
+                    <figure class="image">
+                        <img draggable="false" src="images/module1/a21_interested.png" width="198" height="182" class="border2">
+                        <figcaption>White/transparent backgrounds where the image is clipped at the edge should have <span class="htmlcode">border2</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+		<br>
+		<p>Adding the shadow class to the images is optional - decide what works best for the picture/layout.</p>
+		<img draggable="false" src="images/module1/whisky.jpeg" width="140" height="140" class="border1 shadow">
+		<p>&nbsp;</p>
+        <p><i>To see responsive floated image positioning, see the examples in <a draggable="false" href="#style-article" class="pagination">Article</a>.</i></p>
+        <p>Images should always be given <span class="htmlcode">width</span> and <span class="htmlcode">height</span> attributes so that the page layout doesn't change when images load in. See below for making responsive images.</p>
+        <br>
+        
+        <h2>Responsive images</h2>
+        <p>Generally it's best practice to make images responsive, especially if they're naturally wider than about 240px. Responsive images will scale down to fit their container. However we don't use the simple way of making images responsive, as means before they have loaded they will take up no space and the page layout is going to jump about and change as images load. Not a great user experience. So every responsive image should be wrapped in a placeholder <span class="htmlcode">DIV</span> that sets the size.</p>
+
+        <p>If your image is a common aspect ratio then you only need to know the width of your image. If not, you'll have to do some maths (see below).</p>
+
+        <p><b>Note:</b> when using responsive images, all styling (borders, shadows, etc) should be applied to the <span class="htmlcode">DIV</span> rather than the <span class="htmlcode">IMG</span>.</p>
+
+        <p>&nbsp;</p>
+
+        <p><b>Here is an example of an image with a common ratio - 16x9:</b></p>
+        <div class="ph-w ph-16x9" style="max-width: 842px">
+            <div class="ph">
+                <img draggable="false" src="images/game/module1/elle-kitchen1.jpg">
+            </div>
+        </div>
+        <br>
+        <p>Becuase this is a pre-set ratio, we don't need to calculate the top padding - we just need to add the ratio class. You can use <span class="htmlcode">ph-1x1</span>, <span class="htmlcode">ph-4x3</span>, <span class="htmlcode">ph-3x4</span>, <span class="htmlcode">ph-3x2</span>, <span class="htmlcode">ph-2x3</span>, <span class="htmlcode">ph-5x4</span>, <span class="htmlcode">ph-4x5</span>, <span class="htmlcode">ph-16x9</span> or <span class="htmlcode">ph-16x10</span>.</p>
+        <p>&nbsp;</p>
+
+        <pre class="htmlcode2">&lt;div class=&quot;ph-w <span class="html-red">ph-16x9</span>&quot; style=&quot;max-width: <span class="html-red">842px</span>&quot;&gt;
+    &lt;div class=&quot;ph&quot;&gt;
+        &lt;img draggable=&quot;false&quot; src=&quot;<span class="html-red">images.jpg</span>&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>&nbsp;</p>
+        <p><B>Here is an example of an image with an irregular ratio:</B></p>
+        <div class="ph-w" style="max-width: 960px">
+            <div class="ph" style="padding-top: 65.625%">
+                <img draggable="false" src="images/game/module9/q2a.jpg">
+            </div>
+        </div>
+        <br>
+        <p>For irregular images we must calculate he height as a percentage of the width. We calculate this thusly: <b>height / width &times; 100</b>. In this case the image is 960x630px, so the <span class="htmlcode">max-width</span> is set to 960px and top padding is set to <b>360 / 640 &times; 100% = <u>65.625%</u></b></p>
+
+        <pre class="htmlcode2">&lt;div class=&quot;ph-w&quot; style=&quot;max-width: <span class="html-red">960px</span>&quot;&gt;
+    &lt;div class=&quot;ph&quot; style=&quot;padding-top: <span class="html-red">65.625%</span>&quot;&gt;
+        &lt;img draggable=&quot;false&quot; src=&quot;<span class="html-red">images.jpg</span>&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        <p>&nbsp;</p>
+        <p><b>If an image has a transparent background, add the class <span class="htmlcode">trans</span>.</b></p>
+        <div class="ph-w ph-4x3 trans" style="max-width: 250px">
+            <div class="ph">
+                <img draggable="false" src="images/emotion-yes.png">
+            </div>
+        </div>
+        <pre class="htmlcode2">&lt;div class=&quot;ph-w ph-4x3 <span class="html-red">trans</span>&quot; style=&quot;max-width: 250px&quot;&gt;
+    &lt;div class=&quot;ph&quot;&gt;
+        &lt;img draggable=&quot;false&quot; src=&quot;image.png&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        <p>&nbsp;</p>
+        <p><b>Remember to add additional classes to the <span class="htmlcode">DIV</span> and not the <span class="htmlcode">IMG</span>.</b></p>
+        <div class="ph-w ph-16x9 border1 shadow" style="max-width: 700px">
+            <div class="ph">
+                <img draggable="false" src="images/right-wrong_right.jpg">
+            </div>
+        </div><br>
+        <pre class="htmlcode2">&lt;div class=&quot;ph-w ph-16x9 <span class="html-red">border1 shadow</span>&quot; style=&quot;max-width: 250px&quot;&gt;
+    &lt;div class=&quot;ph&quot;&gt;
+        &lt;img draggable=&quot;false&quot; src=&quot;image.jpg&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>&nbsp;</p>
+		
+		<h2>"Snapshot" style</h2>
+		<p>We may need to use this again. The numbers and captions are optional and can be removed. The numbers were added for <a draggable="false" href="/m3a19">M3A19</a> to list the top 14 cities in order.</p>
+		
+		<p>To change the size of the images, change the <span class="htmlcode">width</span> of the <span class="htmlcode">figure</span>s. Probably easiest to make a new rule in the activities stylesheet (e.g. <span class="htmlcode">.m3a19 .snapshots figure &#123;width: 200px;&#125;</span>). The image placeholders <span class="htmlcode">ph-w</span> are set with <span class="htmlcode">max-width: 100%</span> by default.</p><br>
+		
+		<p>If the images are going to be clickable, add <span class="htmlcode">snapshots-links</span>. to give them a pointer and a hover state.</p>
+		
+		<div class="snapshots" style="max-width: 600px">
+            <figure>
+                <div class="number">1</div>
+                <div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a19/Edinburgh.jpg"></div></div>
+                <figcaption>Edinburgh</figcaption>
+            </figure>
+            <figure>
+                <div class="number">2</div>
+                <div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg"></div></div>
+                <figcaption>Oxford</figcaption>
+            </figure>
+            <figure>
+                <div class="number">3</div>
+                <div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a19/London.jpg"></div></div>
+                <figcaption>London</figcaption>
+            </figure>
+            <figure>
+                <div class="number">4</div>
+                <div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a19/Liverpool.jpg"></div></div>
+                <figcaption>Liverpool</figcaption>
+            </figure>
+            <figure>
+                <div class="number">5</div>
+                <div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a19/Glasgow.jpg"></div></div>
+                <figcaption>Glasgow</figcaption>
+            </figure>
+            <figure>
+                <div class="number">6</div>
+                <div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a19/Brighton.jpg"></div></div>
+                <figcaption>Brighton</figcaption>
+            </figure>
+        </div>
+		<br>
+<pre class="htmlcode2">&lt;div class=&quot;snapshots&quot; style=&quot;max-width: 600px&quot;&gt;
+    &lt;figure&gt;
+        &lt;div class=&quot;number&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;ph-w ph-3x2&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;images/module3/a19/Edinburgh.jpg&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;figcaption&gt;Edinburgh&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;div class=&quot;number&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;ph-w ph-3x2&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;images/module3/a19/Oxford.jpg&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;figcaption&gt;Oxford&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;div class=&quot;number&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;ph-w ph-3x2&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;images/module3/a19/London.jpg&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;figcaption&gt;London&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;div class=&quot;number&quot;&gt;4&lt;/div&gt;
+        &lt;div class=&quot;ph-w ph-3x2&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;images/module3/a19/Liverpool.jpg&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;figcaption&gt;Liverpool&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;div class=&quot;number&quot;&gt;5&lt;/div&gt;
+        &lt;div class=&quot;ph-w ph-3x2&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;images/module3/a19/Glasgow.jpg&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;figcaption&gt;Glasgow&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;div class=&quot;number&quot;&gt;6&lt;/div&gt;
+        &lt;div class=&quot;ph-w ph-3x2&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;images/module3/a19/Brighton.jpg&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;figcaption&gt;Brighton&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;</pre>
+		
+
+	</div>
+
+</section>
+</template>

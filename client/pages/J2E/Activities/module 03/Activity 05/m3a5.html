@@ -1,0 +1,244 @@
+<template name="m3a5">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Dunfermline');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 5 - {{>m3a5Title}}</div>
+			</header>
+
+			<section id="m3a5">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a5Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m3a5Intro}}</h3>
+					{{> m3a5Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a5_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m3a5_1}} {{>m3a5_2}} {{>m3a5_3}} {{>m3a5_4}} {{>m3a5_5}} {{>m3a5_6}} {{>m3a5_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m3a5_1">
+	<section id="m3a5_1" class="hidden">
+		<div class="content center">
+			<h3>We use ‘a’ for these two reasons:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1 col-sm-offset-3">
+						<div class="number">1</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="parapaper">
+							<h4>With singular countable nouns.</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3>My brother’s
+				<span class="grammar">a</span> chef -
+				<br> chef is a singular countable noun.</h3>
+			<div class="ph-w ph-5x2 border2" style="max-width: 500px">
+				<div class="ph">
+					<img draggable="false" src="/images/module3/brother.png" alt="brothers" />
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a5" nexturl="#m3a5_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a5_2">
+	<section id="m3a5_2" class="hidden">
+		<div class="content center">
+			<h3>We use ‘a’ for these two reasons:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1 col-sm-offset-3">
+						<div class="number">2</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="parapaper">
+							<h4>Where something is not definite.</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3>He’s looking for
+				<span class="grammar">a</span> job at the moment -
+				<br> he’ll take ANY job, he’s not looking for a PARTICULAR one.</h3>
+			<div class="ph-w ph-5x2 border2" style="max-width: 500px">
+				<div class="ph">
+					<img draggable="false" src="/images/module3/job.png" alt="job" />
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a5_1" nexturl="#m3a5_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a5_3">
+	<section id="m3a5_3" class="hidden">
+		<div class="content center">
+			<h3>Using ‘an’</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper">
+							<h4>If the word after begins with a vowel, use ‘
+								<span class="grammar">an</span>’ instead of ‘
+								<span class="grammar">a</span>’.</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3>‘Can I have
+				<span class="grammar">a</span> banana and
+				<span class="grammar">an</span> apple please?’</h3>
+			<div class="ph-w ph-5x2 border2" style="max-width: 500px">
+				<div class="ph">
+					<img draggable="false" src="/images/module3/apple and banana.png" alt="apple and banana" />
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a5_2" nexturl="#m3a5_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a5_4">
+	<section id="m3a5_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the right article into the space. The blank box means there is no change.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}} {{>welldone}}
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target1">&nbsp;</div>Bad behaviour included logging into someone else’s account to post
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target2">&nbsp;</div> joke, sharing too much
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target3">&nbsp;</div> personal information and tagging
+							<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target4">&nbsp;</div> unflattering photo of your friends.’
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth4 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth4 dd1line">
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target2">a</div>
+					</div>
+					<div class="ddseat ddwidth4 dd1line">
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target4">an</div>
+					</div>
+					 <div class="ddseat ddwidth4 dd1line">										<!-- "central" drag and drop does not support such elements -->
+						<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target1 target3">&nbsp;</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a5" nexturl="#m3a5_5" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a5_5">
+	<section id="m3a5_5" class="hidden">
+		<div class="content center">
+			<h4>We can only use ‘a’ or ‘an’ when the noun is COUNTABLE and can form a plural:</h4>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-3">
+						<div class="caption capgreen">a laptop</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="caption capgreen">a situation</div>
+					</div>
+				</div>
+				<br>
+				<h4>but not with an UNCOUNTABLE NOUN that can’t form a plural like:</h4>
+				<br>
+				<div class="row center">
+					<div class="caption capgreen">information</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a5_4" nexturl="#m3a5_6" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a5_6">
+	<section id="m3a5_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect center">
+			<div class="caption capgreen">We don’t use ‘a’ with PLURALS.</div>
+			<h3 class="center">Drag these three plurals to the right space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}} {{>welldone}} They would like mobile
+							<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target1">&nbsp;</div> banned in public
+							<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target2">&nbsp;</div> because they dislike hearing other people’s loud phone
+							<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target3">&nbsp;</div>.
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth9 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">places</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">conversations</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">devices</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a5" nexturl="#m3a5_end" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a5_end">
+	{{>EndPage char="tu" act="m3a5" nextact="m3a6" place="Dunfermline"}}
+</template>

@@ -1,0 +1,60 @@
+body {
+    padding: 10px;
+    font-family: sans-serif;
+}
+  
+.target:empty, .drag, .drag-container >.target, .target-container>.target {
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+  
+.target:empty {
+    border: 3px dashed gray;
+}
+  
+.drag {
+    border: 3px solid green;
+}
+  
+.target-container >.target >.drag {
+    border: 3px solid gray;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+  
+.drag-container {
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+}
+ 
+.target-container {
+    width: 300px;
+    height: 50px;
+    border: 2px solid gray; 
+    border-radius: 5px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+  
+#bufferText {
+    position: absolute;
+    left: 50px;
+    top: 400px;
+}
+
+#ddtest {
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    border-radius: 10px;
+    height: 600px;
+}

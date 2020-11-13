@@ -1,0 +1,102 @@
+<template name="m8a32"> 
+<article class="with-tools-sidebar m8a32">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Stonehenge');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 32 - {{>m8a32Title}}</div>
+		</header>
+		<section id="m8a32">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a32Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a32Intro}}</h3>
+				{{> m8a32Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a32_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a32_1}}
+		{{>m8a32_2}}
+		{{>m8a32_3}}
+		{{>m8a32_4}}
+		{{>EndPage char="tu" act="m8a32" nextact="m8a33" place="Stonehenge"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a32_1"> 
+	<section id="m8a32_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h1>Idioms</h1>
+			{{> mod8_idioms_OP}} 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a32" nexturl="#m8a32_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a32_3"> 
+	<section id="m8a32_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right preposition into the space.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>The drawer in his desk was full of <div class="ddseatedtarget ddwidth11 dd1line2high" data-destinationid = "target1">&nbsp;</div> .</li>
+						<li>If you work in that hotel you’ll be paid <div class="ddseatedtarget ddwidth11 dd1line2high" data-destinationid = "target2">&nbsp;</div> .</li>
+						<li>The lack of women in top financial jobs might suggest there’s a <div class="ddseatedtarget ddwidth11 dd1line2high" data-destinationid = "target3">&nbsp;</div> .</li>
+						<li>Don’t write instructions – make a video, remember <div class="ddseatedtarget ddwidth11 dd1line2high" data-destinationid = "target4">&nbsp;</div> </li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth11 dd1line2high"><div class="ddsourceseated ddwidth11 dd1line2high shadow" draggable="false" data-destination="target2">peanuts</div></div>
+				<div class="ddseat ddwidth11 dd1line2high"><div class="ddsourceseated ddwidth11 dd1line2high shadow" draggable="false" data-destination="target1">odds and ends</div></div>
+				<div class="ddseat ddwidth11 dd2lines"><div class="ddsourceseated ddwidth11 dd2lines shadow" draggable="false" data-destination="target4">a picture paints a thousand words</div></div>
+				<div class="ddseat ddwidth11 dd1line2high"><div class="ddsourceseated ddwidth11 dd1line2high shadow" draggable="false" data-destination="target3">glass ceiling</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a32_2" nexturl="#m8a32_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a32_4"> 
+	<section id="m8a32_4" class="hidden"> 
+		<div class="content">  
+      			 {{> K_saved module="8"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a32_3" nexturl="#m8a32_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a32_2"> 
+	<section id="m8a32_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h1>Idioms</h1>
+			{{> mod8_idioms}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a32_1" nexturl="#m8a32_3" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

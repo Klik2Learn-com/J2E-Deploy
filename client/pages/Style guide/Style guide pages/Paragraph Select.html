@@ -1,0 +1,345 @@
+<template name="paraSelect">
+<section id="paraSelect" class="hidden">
+<div class="content">
+
+{{>SGparagraphselect}}
+<div class="container-fluid">
+	{{> blankrow}}
+	<div class="row">
+		<div class="col-sm-3 col-xs-2">
+			<div class="number pull-right">2</div>
+		</div>
+		<div class="col-sm-6 col-xs-9">
+			<div class="row">
+				<div class="caption">
+				<p>How do we know that Doctor Who has been around for a long time?</p>
+				</div>
+			</div>
+			{{> blankrow}}
+			<div class="row center">
+				<div class="captionsmall capgreen">
+				Paragraph 2				
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 col-xs-1"></div>
+	</div>
+	{{> blankrow}}
+</div>
+
+<p>&nbsp;</p>
+<p>Once you've made your pages, do a folder-wide find and replace on these:</p>
+<ul>
+	<li><span class="htmlcode">m4a42</span> - replace with your module/activity</li>
+	<li><span class="htmlcode">Question # goes here</span> - your questions where <span class="htmlcode">#</span> is the number 1-8</li>
+	<li><span class="htmlcode">Paragraph #</span> - put the paragraph where the answer will be found here, where <span class="htmlcode">#</span> is the question number 1-8</li>
+	<li><span class="htmlcode">First paragraph goes here</span> - The text of the first paragraph. Don't include the paragraph number, this is done for you. Continue for <span class="htmlcode">second</span> - <span class="htmlcode">tenth</span>.</li>	
+</ul>
+<p>&nbsp;</p>
+
+HTML - use this to make the question slides. Remove <span class="htmlcode">hidden</span> on all 'previous' buttons for question 2 onwards.<br>
+Remember to add activeSection helpers for each page.
+<pre class="htmlcode2">&lt;template name=&quot;m4a42_1&quot;&gt;
+	&lt;section id=&quot;m4a42_1&quot; class=&quot;hidden&quot;&gt;
+	&#123;&#123;#if activeSection&#125;&#125;
+		&lt;div class=&quot;content&quot;&gt;
+			&#123;&#123;>m4a42paragraphselect&#125;&#125;
+			&lt;div class=&quot;container-fluid&quot;&gt;
+				&#123;&#123;&gt; blankrow&#125;&#125;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-sm-3 col-xs-2&quot;&gt;
+						&lt;div id=&quot;m4a42Q&quot; class=&quot;number pull-right&quot;&gt;1&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-6 col-xs-9&quot;&gt;
+						&lt;div class=&quot;row&quot;&gt;
+							&lt;div id=&quot;m4a42Quest&quot; class=&quot;caption&quot;&gt;
+							&lt;p&gt;<span class="html-red" title="">Question 1 goes here</span>&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&#123;&#123;&gt; blankrow&#125;&#125;
+						&lt;div class=&quot;row center&quot;&gt;
+							&lt;div id=&quot;m4a42P&quot; class=&quot;captionsmall capgreen&quot;&gt;
+							<span class="html-red" title="The paragraph that has the answer">Paragraph 1</span>				
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-3 col-xs-1&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&#123;&#123;&gt; blankrow&#125;&#125;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav prevurl=&quot;#m4a42&quot; nexturl=&quot;#m4a42_2&quot; prev=&quot;hidden&quot; next=&quot;&quot;&#125;&#125;
+		&lt;/footer&gt;
+	&#123;&#123;/if&#125;&#125;
+	&lt;/section&gt;
+&lt;/template></pre>
+
+<p>&nbsp;</p>
+
+HTML - use this to make the final question slide before the answers.
+<pre class="htmlcode2">&lt;template name=&quot;m4a42_8&quot;&gt;
+	&lt;section id=&quot;m4a42_8&quot; class=&quot;hidden&quot;&gt;
+	&#123;&#123;#if activeSection&#125;&#125;
+		&lt;div class=&quot;content&quot;&gt;
+			&#123;&#123;>m4a42paragraphselect&#125;&#125;
+			&lt;div class=&quot;container-fluid&quot;&gt;
+				&#123;&#123;&gt; blankrow&#125;&#125;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-sm-3 col-xs-2&quot;&gt;
+						&lt;div id=&quot;m4a42Q&quot; class=&quot;number pull-right&quot;&gt;8&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-6 col-xs-9&quot;&gt;
+						&lt;div class=&quot;row&quot;&gt;
+							&lt;div id=&quot;m4a42Quest&quot; class=&quot;caption&quot;&gt;
+							&lt;p&gt;<span class="html-red" title="">Question 8 goes here</span>&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&#123;&#123;&gt; blankrow&#125;&#125;
+						&lt;div class=&quot;row center&quot;&gt;
+							&lt;div id=&quot;m4a42P&quot; class=&quot;captionsmall capgreen&quot;&gt;
+							<span class="html-red" title="">Paragraph 8</span>					
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-3 col-xs-1&quot;&gt;&lt;/div&gt;
+					&#123;&#123;&gt; blankrow&#125;&#125;
+					&lt;div class=&quot;col-xs-12&quot;&gt;
+						&lt;h3 class=&quot;center&quot;&gt;Continue when you&rsquo;re ready to see the answers.&lt;/h3&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&#123;&#123;&gt; blankrow&#125;&#125;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav prevurl=&quot;#m4a42_7&quot; nexturl=&quot;#m4a42_9&quot; prev=&quot;&quot; next=&quot;&quot;&#125;&#125;
+		&lt;/footer&gt;
+	&#123;&#123;/if&#125;&#125;
+	&lt;/section&gt;
+&lt;/template&gt;</pre>
+
+<p>&nbsp;</p>
+
+HTML - use this to make the paragraphs
+<pre class="htmlcode2">&lt;template name=&quot;m4a42paragraphselect&quot;&gt;
+&lt;div style=&quot;clear: both; display:block; position:relative; background-color: #FFFFFF;&quot;&gt;
+	&#123;&#123;&gt;InstructionsNotebook text=&quot;Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end.&quot;&#125;&#125;
+	&lt;br&gt;
+	&lt;div class=&quot;container-fluid&quot;&gt;
+		&#123;&#123;&gt; blankrow&#125;&#125;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;col-sm-10&quot;&gt;
+				&lt;div id=&quot;m4a42textDisplay&quot; class=&quot;parapaper fold&quot;&gt;
+					&lt;p&gt;&lt;b&gt;1.&lt;/b&gt; <span class="html-red" title="">First paragraph goes here</span>&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;	
+		&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;col-sm-10 text-right&quot;&gt;
+				&lt;span class=&quot;paragraph-label&quot;&gt;Select a paragraph:&lt;/span&gt;
+				&lt;a&gt;&lt;div id=&quot;0&quot; class=&quot;numbutt&quot;&gt;1&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;1&quot; class=&quot;numbutt&quot;&gt;2&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;2&quot; class=&quot;numbutt&quot;&gt;3&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;3&quot; class=&quot;numbutt&quot;&gt;4&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;4&quot; class=&quot;numbutt&quot;&gt;5&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;5&quot; class=&quot;numbutt&quot;&gt;6&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;6&quot; class=&quot;numbutt&quot;&gt;7&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;7&quot; class=&quot;numbutt&quot;&gt;8&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;8&quot; class=&quot;numbutt&quot;&gt;9&lt;/div&gt;&lt;/a&gt;
+				&lt;a&gt;&lt;div id=&quot;9&quot; class=&quot;numbutt&quot;&gt;10&lt;/div&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/template&gt;</pre>
+
+JS - activity route<br>Hover over the stuff in red for info
+<pre class="htmlcode2">Template.m4a42.helpers({
+endPageSect: function() {
+var session = Session.get('activeSection');
+if (session == '#m4a42_end') {
+ 	return false;
+	}
+return true;
+},
+
+	
+	// This helper allows m4a42 to determine if a section is a PARAGRAPH SELECTION TEMPLATE. List all the pages on which the paragraph select should be displayed
+	paragraphSection: function(){
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		var paragraphSections = [<span class="html-red" title="All the pages on which the paragraph select should be shown">&quot;#m4a42_1&quot;,&quot;#m4a42_2&quot;,&quot;#m4a42_3&quot;,&quot;#m4a42_4&quot;,&quot;#m4a42_5&quot;,&quot;#m4a42_6&quot;,&quot;#m4a42_7&quot;,&quot;#m4a42_8&quot;</span>];
+		
+		for (var i = 0; i &lt; paragraphSections.length; i++) {
+			if (paragraphSections[i] == activeSection) {
+				return true;
+			}
+		}
+		return false;
+	}	
+})
+
+Template.m4a42.events({
+
+	'click i.titlereturn': function(evt){
+		var activeSection = $(evt.currentTarget).parent('a').attr('href');
+		Session.set('activeSection', activeSection);
+	}
+})</pre>
+
+<p>&nbsp;</p>
+
+JS - first page with paragraph select<br>Hover over the stuff in red for info
+<pre class="htmlcode2">Template.m4a42paragraphselect.helpers({
+	isHidden: function() {
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		var paragraphSections = [<span class="html-red" title="All the pages on which the paragraph select should be shown">&quot;#m4a42_1&quot;,&quot;#m4a42_2&quot;,&quot;#m4a42_3&quot;,&quot;#m4a42_4&quot;,&quot;#m4a42_5&quot;,&quot;#m4a42_6&quot;, &quot;#m4a42_7&quot;, &quot;#m4a42_8&quot;</span>];
+		
+		for (var i = 0; i &lt; paragraphSections.length; i++) {
+			if (paragraphSections[i] == activeSection) {
+				return &quot;hello&quot;;
+			}
+		}
+		return &quot;hidden&quot;;
+	},
+
+	helpBox: function(){
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		if (activeSection == &quot;#m4a42<span class="html-red" title="First page with paragraph select">_1</span>&quot;){
+			return &quot;speech2&quot;
+		} else {
+			return &quot;hidden&quot;
+		}
+		return
+	},
+	
+	helpBox_2: function(){
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		if (activeSection == &quot;#m4a42<span class="html-red" title="Last page with paragraph select">_8</span>&quot;){
+			return &quot;&quot;
+		} else {
+			return &quot;hidden&quot;
+		}
+		return
+	}
+})
+
+Template.m4a42paragraphselect.events({
+	
+	&quot;click .numbutt&quot;: function (evt) {
+		$.k2l.m4a42.index =evt.currentTarget.id;
+		$(&quot;#m4a42textDisplay&quot;).html($.k2l.m4a42.paragraph[$.k2l.m4a42.index].paragraph);
+		//$(&quot;#m4a42Q&quot;).html($(evt.currentTarget).html());
+		},
+	&quot;click #m4a42nextQ&quot;: function (evt) {
+		if ($.k2l.m4a42.Qindex &gt;= <span class="html-red" title="ONCE THIS IS WORKING ADD A DSESCRIPTION HERE">7</span>){
+				$(&quot;#m4a42nextQ&quot;).addClass('pagination');
+				$(&quot;#m4a42cont&quot;).removeClass('hidden');
+				$(&quot;#m4a42nextQ&quot;).attr(&quot;href&quot;, &quot;#m4a42<span class="html-red" title="ONCE THIS IS WORKING ADD A DSESCRIPTION HERE">_2</span>&quot;)
+	} else {
+		$(&quot;#m4a42prevQ&quot;).removeClass('pagination');
+		$.k2l.m4a42.Qindex += 1;
+		$(&quot;#m4a42Quest&quot;).html($.k2l.m4a42.question[$.k2l.m4a42.Qindex].question);
+		$(&quot;#m4a42P&quot;).html($.k2l.m4a42.question[$.k2l.m4a42.Qindex].paragraph);
+		$(&quot;#m4a42Q&quot;).html(($.k2l.m4a42.Qindex + 1));
+		$(&quot;#m4a42Help&quot;).addClass('hidden');
+		$(&quot;#m4a42cont&quot;).addClass('hidden');
+		
+	};
+			
+		},
+		&quot;click #m4a42prevQ&quot;: function (evt) {
+			if ($.k2l.m4a42.Qindex &lt;= 0){
+				$(&quot;#m4a42prevQ&quot;).addClass('pagination');
+				$.k2l.m4a42.Qindex = 0;
+			} else {
+		$.k2l.m4a42.Qindex -= 1;
+		$(&quot;#m4a42Quest&quot;).html($.k2l.m4a42.question[$.k2l.m4a42.Qindex].question);
+		$(&quot;#m4a42P&quot;).html($.k2l.m4a42.question[$.k2l.m4a42.Qindex].paragraph);
+		$(&quot;#m4a42Q&quot;).html(($.k2l.m4a42.Qindex + 1));
+			};
+		
+			
+		}
+	}
+)
+
+Template.m4a42.rendered = function() {
+	
+	if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	}
+	if (typeof $.k2l.m4a42 == 'undefined') {
+		$.k2l.m4a42 = {};
+	};
+	
+	
+	$.k2l.m4a42.index = 0;
+	$.k2l.m4a42.Qindex = 0;
+
+	
+	var question = [
+					{question:&quot;<span class="html-red" title="">Question 1 goes here</span>&quot;, paragraph:&quot;Paragraph 1&quot;},
+					{question:&quot;<span class="html-red" title="">Question 2 goes here</span>&quot;, paragraph:&quot;Paragraph 2&quot;},
+					{question:&quot;<span class="html-red" title="">Question 3 goes here</span>&quot;, paragraph:&quot;Paragraph 3&quot;},
+					{question:&quot;<span class="html-red" title="">Question 4 goes here</span>&quot;, paragraph:&quot;Paragraph 4&quot;},
+					{question:&quot;<span class="html-red" title="">Question 5 goes here</span>&quot;, paragraph:&quot;Paragraph 5&quot;},
+					{question:&quot;<span class="html-red" title="">Question 6 goes here</span>&quot;, paragraph:&quot;Paragraph 6&quot;},
+					{question:&quot;<span class="html-red" title="">Question 7 goes here</span>&quot;, paragraph:&quot;Paragraph 7&quot;},
+					{question:&quot;<span class="html-red" title="">Question 8 goes here</span>&quot;, paragraph:&quot;Paragraph 8&quot;},
+					]
+					
+	var paragraph = [
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;1.&lt;/b&gt; <span class="html-red" title="">First paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;2.&lt;/b&gt; <span class="html-red" title="">Second paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;3.&lt;/b&gt; <span class="html-red" title="">Third paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;4.&lt;/b&gt; <span class="html-red" title="">Fourth paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;5.&lt;/b&gt; <span class="html-red" title="">Fifth paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;6.&lt;/b&gt; <span class="html-red" title="">Sixth paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;7.&lt;/b&gt; <span class="html-red" title="">Seventh paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;8.&lt;/b&gt; <span class="html-red" title="">Eighth paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;9.&lt;/b&gt; <span class="html-red" title="">Ninth paragraph goes here</span>&lt;/p&gt;&quot;},
+			{paragraph: &quot;&lt;p&gt;&lt;b&gt;10.&lt;/b&gt; <span class="html-red" title="">Tenth paragraph goes here</span>&lt;/p&gt;&quot;}
+		]
+		
+	$.k2l.m4a42.question = question;
+	$.k2l.m4a42.paragraph = paragraph;
+	
+	$(&quot;#m4a42nextQ&quot;).removeClass('pagination');
+}</pre>
+
+</div>
+</section>
+</template>
+
+<template name="SGparagraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+		{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+		<br>
+		{{> blankrow}}
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div id="m5a11textDisplay" class="parapaper fold">
+					<p><b>1.</b> <i>Doctor Who</i> has made history by becoming the first British TV show ever to feature on the front cover of US magazine <i>Entertainment Weekly</i>. Matt Smith - who portrays the Time Lord in the BBC One programme - is pictured on the front cover in front of the TARDIS, and scriptwriter Steven Moffat insists the show is no longer considered to be a "British import".</p>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 text-right">
+				<span class="paragraph-label">Select a paragraph:</span>
+				<a><div id="0" class="numbutt">1</div></a>
+				<a><div id="1" class="numbutt">2</div></a>
+				<a><div id="2" class="numbutt">3</div></a>
+				<a><div id="3" class="numbutt">4</div></a>
+				<a><div id="4" class="numbutt">5</div></a>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+</div>
+</template>

@@ -1,0 +1,62 @@
+<template name="m7a19"> 
+<article class="with-tools-sidebar m7a19">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/ColwynBay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 19 - {{>m7a19Title}}</div>
+		</header>
+		<section id="m7a19">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a19Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m7a19Intro}}</h3>
+				{{> m7a19Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a19_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a19_1}}
+		{{>EndPage char="k" act="m7a19" nextact="m7a20" place="ColwynBay"}}
+	</div>
+</article>
+
+</template>
+<template name="m7a19_1"> 
+	<section id="m7a19_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Here are two descriptions of a similar event. Fill in the missing verbs. The first needs the Past Simple. Some verbs in the second description need the Past Perfect.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="parapaper linespace2 fold">
+							<h4>Past Simple</h4>		
+							I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="13" autocomplete="off"><input type="submit" value="OK"></form></span> (have) a party last week for my birthday, I <span id="entryanswer1" class="textentry-disabled"></span> (invite) all my friends and colleagues. I <span id="entryanswer2" class="textentry-disabled"></span> (meet) my boss’s wife at the party.  I <span id="entryanswer3" class="textentry-disabled"></span> (see) some of my old school friends. Some of them <span id="entryanswer4" class="textentry-disabled"></span> (look) much the same.
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="parapaper linespace2 fold">
+							<h4>Past Perfect</h4>		
+							I <span id="entryanswer5" class="textentry-disabled"></span> (have) a party last week for my birthday. I <span id="entryanswer6" class="textentry-disabled"></span> (invite) all my friends and colleagues. I <span id="entryanswer7" class="textentry-disabled"></span> (meet) my boss’s wife two years ago. I <span id="entryanswer8" class="textentry-disabled"></span> (not see) some of my old school friends for years. Some of them <span id="entryanswer9" class="textentry-disabled"></span> (not change) a bit.
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}} {{> welldone}} 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a19" nexturl="#m7a19_end" prev="disabled" next="disabled"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+

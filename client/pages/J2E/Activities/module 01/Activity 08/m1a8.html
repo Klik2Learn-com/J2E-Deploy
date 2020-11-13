@@ -1,0 +1,584 @@
+<template name="m1a8">
+  <article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/LochNess');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 8 - {{>m1a8Title}}</div>
+		</header>
+				
+				
+	<section id="m1a8">
+      <div class="content">
+<h1 class="start-page-header">{{> m1a8Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m1a8Intro}}</h3>
+{{> m1a8Time}} <!--{{> resumePopUp}}-->
+      </div>
+      <footer>
+        {{>footer_nav nexturl="#m1a8_1" prev="hidden" next="" next_text="Start"}}
+      </footer>
+    </section>
+
+	{{> m1a8_1}}
+	{{> m1a8_conv1}}
+	{{> m1a8_conv1b}}
+	{{> m1a8_conv2}}
+	{{> m1a8_conv2b}}
+	{{> m1a8_conv3}}
+	{{> m1a8_conv3b}}
+	{{> m1a8_conv4}}
+	{{> m1a8_conv4b}}
+	{{> m1a8_conv5}}
+	{{> m1a8_conv5b}}
+	{{> m1a8_end}}
+	</div>
+</article>
+
+</template>
+<template name="m1a8_1">
+	<section id="m1a8_1" class="hidden">
+		<div class="content">
+			<h4>There are many different ways you can introduce yourself. Introducing yourself at a party is different to introducing yourself at an interview.</h4>
+			<br>
+			
+			<div class="container-fluid m1a8_container">
+				<h3 class="center">Listen to these 5 conversations.</h3>
+				<div class="row">
+				
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_formal.png" alt="Formal conversation"></div></div>
+							<div class="caption center">Some are formal</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_informal.png" alt="Informal conversation"></div></div>
+							<div class="caption center">Some are informal</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv1" prev="hidden" next=""}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv1">
+<section id="m1a8_conv1" class="hidden">
+		<div class="content">
+			<h1>Conversation 1</h1>
+			
+			<div class="container-fluid m1a8_container">
+				<h3>
+					<div class="toolbuttleft">
+						<button type="button" id="conv_1" class="buttonround buttonaudio"></button> 
+					</div>
+					<div class="toolbuttright">
+						{{>touch yes="Tap" no="Click"}} to listen to the conversation, then {{>touch yes="tap" no="click"}} on the right word: FORMAL or INFORMAL
+					</div>
+				</h3>
+			
+				<div class="row">
+				{{> rightwrong}}
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_formal.png" alt="Formal conversation"></div></div>
+							<div class="button1 wrong-ans">FORMAL</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_informal.png" alt="Informal conversation"></div></div>
+							<div class="button1 correct-ans1">INFORMAL</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<audio src="../audio/module1/a8/conv_1.m4a" preload="auto" id="m1a8_conv_1"></audio>
+			
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv1b" prev="hidden" next="hidden"}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv1b">
+<section id="m1a8_conv1b" class="hidden">
+		<div class="content">
+			<h1>Conversation 1</h1>
+			<h3>Now read the conversation. The INFORMAL words and phrases are in <span class="grammar">blue</span>.</h3>
+			<div class="transcript shadow fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button type="button" id="conv_1" class="buttonround buttonaudio"></button>
+							<br><br>
+						</div>
+						<div class="col-sm-11">
+							<dl>
+								<dt>Carlos:</dt>
+								<dd><span class="grammar">Hey, don’t think we’ve met.</span> I’m Carlos, and you?</dd>
+								
+								<dt>Sipho:</dt>
+								<dd>I’m Sipho.</dd>
+								
+								<dt>Carlos:</dt>
+								<dd>Sipho? How do you spell that?</dd>
+								
+								<dt>Sipho:</dt>
+								<dd>S-I-P-H-O. It’s a common African name.</dd>
+								
+								<dt>Carlos:</dt>
+								<dd>So where are you from originally?</dd>
+								
+								<dt>Sipho:</dt>
+								<dd>From South Africa, <span class="grammar">yeah</span>, but I’ve been in Scotland now for a couple of years.</dd>
+								
+								<dt>Carlos:</dt>
+								<dd>Well I’m Spanish... so what language do you speak?</dd>
+								
+								<dt>Sipho:</dt>
+								<dd>Well my family speak Zulu but I learned English at school.</dd>
+								
+								<dt>Carlos:</dt>
+								<dd><span class="grammar">Yeah, me too</span> but not very well.</dd>
+								
+								<dt>Sipho:</dt>
+								<dd><span class="grammar">OK, well, hope to see you around</span> Carlos.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv2" prev="hidden" next=""}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv2">
+<section id="m1a8_conv2" class="hidden">
+		<div class="content">
+			<h1>Conversation 2</h1>
+			
+			<div class="container-fluid m1a8_container">
+				<h3>
+					<div class="toolbuttleft">
+						<button type="button" id="conv_2" class="buttonround buttonaudio"></button> 
+					</div>
+					<div class="toolbuttright">
+						{{>touch yes="Tap" no="Click"}} to listen to the conversation, then {{>touch yes="tap" no="click"}} on the right word: FORMAL or INFORMAL
+					</div>
+				</h3>
+			
+				<div class="row">
+				{{> rightwrong}}
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_formal2.png" alt="Formal conversation"></div></div>
+							<div class="button1 wrong-ans">FORMAL</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_informal2.png" alt="Informal conversation"></div></div>
+							<div class="button1 correct-ans2">INFORMAL</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#" nexturl="#m1a8_conv2b" prev="hidden" next="hidden"}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv2b">
+<section id="m1a8_conv2b" class="hidden">
+		<div class="content">
+			<h1>Conversation 2</h1>
+			<h3>Now read the conversation. The INFORMAL words and phrases are in <span class="grammar">blue</span>.</h3>
+			<div class="transcript shadow fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button type="button" id="conv_2" class="buttonround buttonaudio"></button>
+							<br><br>
+						</div>
+						<div class="col-sm-11">
+							<dl>
+								<dt>Wen:</dt>
+								<dd>Hello, how are you? My name’s Wen.</dd>
+								
+								<dt>Julita:</dt>
+								<dd><span class="grammar">Hi</span> I’m Julianna but my friends call me Julita.</dd>
+								
+								<dt>Wen:</dt>
+								<dd>Julita... how do you spell that?</dd>
+								
+								<dt>Julita:</dt>
+								<dd>J-U-L-I-T-A</dd>
+								
+								<dt>Wen:</dt>
+								<dd>So, where are you from then?</dd>
+								
+								<dt>Julita:</dt>
+								<dd>I’m originally from Poland... I moved here a year ago. <span class="grammar">How about you?</span></dd>
+								
+								<dt>Wen:</dt>
+								<dd>Well I’m from Hong Kong but I’ve got relatives in Scotland.</dd>
+								
+								<dt>Julita:</dt>
+								<dd>So you speak English then?</dd>
+								
+								<dt>Wen:</dt>
+								<dd><span class="grammar">Not really.</span> Cantonese is my first language but I understand English quite well.</dd>
+								
+								<dt>Julita:</dt>
+								<dd><span class="grammar">Well, great to meet you</span> Wen. I’m sure <span class="grammar">I’ll see you around.</span></dd>
+								
+								<dt>Wen:</dt>
+								<dd><span class="grammar">Yeah, great. See you later.</span></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv3" prev="hidden" next=""}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv3">
+<section id="m1a8_conv3" class="hidden">
+		<div class="content">
+			<h1>Conversation 3</h1>
+			
+			<div class="container-fluid m1a8_container">
+				<h3>
+					<div class="toolbuttleft">
+						<button type="button" id="conv_3" class="buttonround buttonaudio"></button> 
+					</div>
+					<div class="toolbuttright">
+						{{>touch yes="Tap" no="Click"}} to listen to the conversation, then {{>touch yes="tap" no="click"}} on the right word: FORMAL or INFORMAL
+					</div>
+				</h3>
+			
+				<div class="row">
+				{{> rightwrong}}
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_formal.png" alt="Formal conversation"></div></div>
+							<div class="button1 correct-ans3">FORMAL</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_informal.png" alt="Informal conversation"></div></div>
+							<div class="button1 wrong-ans">INFORMAL</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>			
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv3b" prev="hidden" next="hidden"}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv3b">
+<section id="m1a8_conv3b" class="hidden">
+		<div class="content">
+			<h1>Conversation 3</h1>
+			<h3>Now read the conversation. The FORMAL words and phrases are in <span class="grammar">blue</span>.</h3>
+			<div class="transcript shadow fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button type="button" id="conv_3"  class="buttonround buttonaudio"></button>
+							<br><br>
+						</div>
+						<div class="col-sm-11">
+							<dl>
+								<dt>Eduardo:</dt>
+								<dd>Hello, <span class="grammar">pleased to meet you,</span> I’m Eduardo.</dd>
+								
+								<dt>Jose:</dt>
+								<dd>Hello, I’m Jose but it’s spelt J-O-S-E.</dd>
+								
+								<dt>Eduardo:</dt>
+								<dd>Are you from Spain then?</dd>
+								
+								<dt>Jose:</dt>
+								<dd>No. I’m from Brazil actually. And you?</dd>
+								
+								<dt>Eduardo:</dt>
+								<dd>Well, I was born in Spain but my parents moved to Portugal when I was very young.</dd>
+								
+								<dt>Jose:</dt>
+								<dd>So do you speak Spanish or Portuguese?</dd>
+								
+								<dt>Eduardo:</dt>
+								<dd>I can speak both but my main language is Portuguese.</dd>
+								
+								<dt>Jose:</dt>
+								<dd>That’s my first language too but I want to improve my English.</dd>
+								
+								<dt>Eduardo:</dt>
+								<dd>Yes so do I. Well, <span class="grammar">I’m delighted to have met you</span> Jose.</dd>
+								
+								<dt>Jose:</dt>
+								<dd><span class="grammar">It’s been a pleasure to meet you too</span> Eduardo. <span class="grammar">I look forward to seeing you again.</span></dd>								
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv4" prev="hidden" next=""}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv4">
+<section id="m1a8_conv4" class="hidden">
+		<div class="content">
+			<h1>Conversation 4</h1>
+			
+			<div class="container-fluid m1a8_container">
+				<h3>
+					<div class="toolbuttleft">
+						<button type="button" id="conv_4" class="buttonround buttonaudio"></button> 
+					</div>
+					<div class="toolbuttright">
+						{{>touch yes="Tap" no="Click"}} to listen to the conversation, then {{>touch yes="tap" no="click"}} on the right word: FORMAL or INFORMAL
+					</div>
+				</h3>
+			
+				<div class="row">
+				{{> rightwrong}}
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_formal2.png" alt="Formal conversation"></div></div>
+							<div class="button1 correct-ans4">FORMAL</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_informal2.png" alt="Informal conversation"></div></div>
+							<div class="button1 wrong-ans">INFORMAL</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>		
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv4b" prev="hidden" next="hidden"}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv4b">
+<section id="m1a8_conv4b" class="hidden">
+		<div class="content">
+			<h1>Conversation 4</h1>
+			<h3>Now read the conversation. The FORMAL words and phrases are in <span class="grammar">blue</span>.</h3>
+			<div class="transcript shadow fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button type="button" id="conv_4" class="buttonround buttonaudio"></button>
+							<br><br>
+						</div>
+						<div class="col-sm-11">
+							<dl>
+								<dt>Devender:</dt>
+								<dd>Hello, I’m Devender... <span class="grammar">delighted to meet you.</span></dd>
+								
+								<dt>Hadeel:</dt>
+								<dd>I’m Hadeel.</dd>
+								
+								<dt>Devender:</dt>
+								<dd>I haven’t heard that name before. How do you spell it?</dd>
+								
+								<dt>Hadeel:</dt>
+								<dd>H-A-D-E-E-L. It’s a popular name in Jordan.</dd>
+								
+								<dt>Devender:</dt>
+								<dd>So you’re from Jordan then. You must be an Arabic speaker.</dd>
+								
+								<dt>Hadeel:</dt>
+								<dd>Yes, that’s right. What’s your native language?</dd>
+								
+								<dt>Devender:</dt>
+								<dd>Well, Telugu is my family language but I also speak Urdu.</dd>
+								
+								<dt>Hadeel:</dt>
+								<dd>Have you been here long?</dd>
+								
+								<dt>Devender:</dt>
+								<dd>I arrived six months ago. I’m working in Scotland.</dd>
+								
+								<dt>Hadeel:</dt>
+								<dd>I’ve lived in Scotland for two years but I need to improve my English to get a job. I’m doing an SQA course.</dd>
+								
+								<dt>Devender:</dt>
+								<dd>Well <span class="grammar">I’m delighted to have met you Hadeel.</span> Good luck with your course.</dd>
+								
+								<dt>Hadeel:</dt>
+								<dd>Thanks very much and good luck with your job.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv5" prev="hidden" next=""}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv5">
+<section id="m1a8_conv5" class="hidden">
+		<div class="content">
+			<h1>Conversation 5</h1>
+			
+			<div class="container-fluid m1a8_container">
+				<h3>
+					<div class="toolbuttleft">
+						<button type="button" id="conv_5" class="buttonround buttonaudio"></button> 
+					</div>
+					<div class="toolbuttright">
+						{{>touch yes="Tap" no="Click"}} to listen to the conversation, then {{>touch yes="tap" no="click"}} on the right word: FORMAL or INFORMAL
+					</div>
+				</h3>
+			
+				<div class="row">
+				{{> rightwrong}}
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_formal2.png" alt="Formal conversation"></div></div>
+							<div class="button1 wrong-ans">FORMAL</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-sm-6 center">
+						<div class="m1a8_cont">
+							<div class="ph-w ph-4x3 shadow" style="max-width: 298px"><div class="ph"><img draggable="false" src="images/module1/m1a8_informal2.png" alt="Informal conversation"></div></div>
+							<div class="button1 correct-ans5">INFORMAL</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_conv5b" prev="hidden" next="hidden"}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_conv5b">
+<section id="m1a8_conv5b" class="hidden">
+		<div class="content">
+			<h1>Conversation 5</h1>
+			<h3>Now read the conversation. The INFORMAL words and phrases are in <span class="grammar">blue</span>.</h3>
+			<div class="transcript shadow fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button type="button" id="conv_5" class="buttonround buttonaudio"></button>
+							<br><br>
+						</div>
+						<div class="col-sm-11">
+							<dl>
+								<dt>Viktor:</dt>
+								<dd><span class="grammar">D’you mind if join you?</span> I’m Viktor <span class="grammar">by the way.</span> That’s Viktor with a ‘K’ not a ‘C.’ You’re not from Scotland are you?</dd>
+								
+								<dt>Karina:</dt>
+								<dd><span class="grammar">How did you guess! Hi.</span> I’m Karina... from Latvia. So... Viktor with a ‘K’. <span class="grammar">You’re from Russia then?</span></dd>
+								
+								<dt>Viktor:</dt>
+								<dd><span class="grammar">Yeah, that’s right.</span> From Vladivostok.</dd>
+								
+								<dt>Karina:</dt>
+								<dd>That’s quite near the Chinese border isn’t it?</dd>
+								
+								<dt>Viktor:</dt>
+								<dd><span class="grammar">Yeah.</span> Not too far from North Korea either. I suppose you understand Russian.</dd>
+								
+								<dt>Karina:</dt>
+								<dd><span class="grammar">Yeah,</span> I do, but of course we use Latvian all the time at home.</dd>
+								
+								<dt>Viktor:</dt>
+								<dd><span class="grammar">So, what brings you to Scotland?</span></dd>
+								
+								<dt>Karina:</dt>
+								<dd><span class="grammar">Got</span> a summer job in a hotel, but I need to be able to speak English better.</dd>
+								
+								<dt>Viktor:</dt>
+								<dd><span class="grammar">Yeah, me too. Well, it was great meeting you</span> Karina. <span class="grammar">Hope to catch you later.</span></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+        {{>footer_nav prevurl="#m1a8" nexturl="#m1a8_end" prev="hidden" next=""}}
+		</footer>
+    </section>
+</template>
+
+<template name="m1a8_end">
+{{>EndPage char="tu" act="m1a8" nextact="m1a9" place="LochNess"}}
+</template>

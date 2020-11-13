@@ -1,0 +1,147 @@
+<template name="MoreAboutEdinburgh">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Edinburgh"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m3l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m3l6}}</div>
+		</header>
+
+		<section id="moreaboutEdinburgh">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent ">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-1 col-xs-6 bonus-image" style="background-image: url('images/bonus/Edinburgh/Edinburgh1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l6_A">
+						<p>Edinburgh Castle</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Edinburgh/Edinburgh2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l6_B">
+						<p>Fringe Festival</p>
+					</div>									
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Edinburgh/Edinburgh6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l6_F">
+						<p>Military Tattoo</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Edinburgh/Edinburgh4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l6_D">
+						<p>Greyfriars Bobby</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Edinburgh/Edinburgh5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l6_E">
+						<p>Hogmanay</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l6_A">Edinburgh Castle</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Edinburgh/Edinburgh1.jpg" alt="Edinburgh Castle" style="max-width: 250px;">
+					</figure>
+					<p>The outline of the castle built on a rocky outcrop, dominates the Edinburgh skyline. It has been the scene of over 26 attempts to capture it and can claim to be one of the most attacked castles in the world. It is Scotland’s most visited attraction with over 1.4 million visitors a year. Every day, at one o’clock, a gun is fired from the castle, continuing the tradition when ships used it to set their clocks. Nowadays, crowds of tourists gather to watch the spectacle. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.edinburghcastle.gov.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l6_B">Fringe Festival</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Edinburgh/Edinburgh2.jpg" alt="Fringe Festival" style="max-width: 250px;">
+					</figure>
+					<p>The Edinburgh Fringe Festival originally started as alternative entertainment to the main Edinburgh Festival. It has now grown to be the largest arts festival in the world with over 50,000 performances over 25 days. Anyone can take part and many famous actors, musicians and comedians began their careers at the Fringe. The performances take place all over the city and many performers try to attract an audience by performing live in the streets during the festival.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.edfringe.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l6_D">Greyfriars Bobby</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Edinburgh/Edinburgh4.jpg" alt="Greyfriars Bobby" style="max-width: 250px;">
+					</figure>
+					<p>The story of a small terrier dog is one of Edinburgh’s most famous tales. Bobby accompanied his owner during his working life as a gardener and when the man died, the dog  kept watch over his master’s grave every day for the next fourteen years. He was fed every day by a local man and before he died he was given a special collar by the Lord Provost of Edinburgh. There is now a statue  dedicated to him outside the church where he sat for so many years.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.historic-uk.com/HistoryUK/HistoryofScotland/Greyfriars-Bobby/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l6_E">Hogmanay</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Edinburgh/Edinburgh5.jpg" alt="Hogmanay" style="max-width: 250px;">
+					</figure>
+					<p>Edinburgh’s three day New Year Street Party has become one of the world’s largest New Year celebrations . It offers some of the biggest bands, torchlight processions, Scottish traditional music and firework displays.  It has been shown on the Discovery Channel as one of the world’s top twenty five travel experiences.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.edinburghfestivalcity.com/festivals/edinburghs-hogmanay" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l6_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l6_F">Military Tattoo</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Edinburgh/Edinburgh6.jpg" alt="Military Tattoo" style="max-width: 250px;">
+					</figure>
+					<p>This annual event brings together the best of military music and performances from over 48 countries. It takes place at Edinburgh castle throughout the month of August. Each night over 200,000 people go to the show every night.  Although it is held in the open air, it has never been cancelled due to the Scottish weather. Over 100 million people from all over the world also watch the tattoo on TV.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.edintattoo.co.uk/the-experience/video-gallery" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

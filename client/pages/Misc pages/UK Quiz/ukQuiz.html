@@ -1,0 +1,66 @@
+<template name="UKquiz">
+	<article class="shadow ukQuiz">
+		
+		<!-- What do you know about the UK? -->
+		
+		<header>
+			<a draggable="false" href="/">
+				<img draggable="false" src="landing/logo-klik2learn.png" alt="Klik2learn">
+				<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+			</a>
+			<div class="buttons">
+				<button class="join" data-href="#loginRegister">Start learning today</button>
+			</div>
+			
+			<div class="dropdown mobile-nav">
+			  <button type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<button class="join" data-href="#loginRegister">Start learning today</button>					
+				</div>
+			</div>
+			
+			<div class="dropdown mobile-nav">
+			  <button type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+				<div class="dropdown-menu dropdown-menu-right">
+					{{>SignUpSignIn}}						
+				</div>
+			</div>
+			
+		</header>
+		
+		<section id="ukQuiz">
+			<div class="content">
+				<h1>How smart are you?</h1>
+				<figure class="ukQuiz-intro"><img draggable="false" src="/images/startend/act_start_speaking.png"></figure>
+				<ul class="ulblank">
+					<li>Test your language skills</li>
+					<li>Test your UK knowledge</li>
+				</ul>
+			</div>
+			<footer>
+				{{>footer_nav class="no-xs" prevurl="#" nexturl="#ukQuiz_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>ukQuiz_1}}
+		{{>ukQuiz_2}}
+		{{>ukQuiz_3}}
+		{{>ukQuiz_4}}
+		{{>ukQuiz_5}}
+		{{>ukQuiz_6}}
+		{{>ukQuiz_7}}
+		{{>ukQuiz_8}}
+		{{>ukQuiz_10}}
+		{{>ukQuiz_11}}
+		{{>ukQuiz_12}}
+		{{>ukQuiz_13}}
+		{{>ukQuiz_14}}
+		{{>ukQuiz_15}}
+		{{>ukQuiz_16}}
+		{{>ukQuiz_17}}
+		{{>ukQuiz_scores}}
+		
+		{{>loginFooter}}
+		
+</article>
+</template>

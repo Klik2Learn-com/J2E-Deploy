@@ -1,0 +1,157 @@
+<template name="m10a14"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Felixstowe');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 14 - {{> m10a14Title}}</div>
+		</header>
+		<section id="m10a14">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a14Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m10a14Intro}}</h3>
+				{{> m10a14Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a14_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a14_1}}
+		{{>m10a14_2}}
+		{{>m10a14_3}}
+		{{>m10a14_4}}
+		{{>EndPage char="tu" act="m10a14" nextact="m10a15" place="Felixstowe"}}
+	</div>
+</article>
+</template>
+
+<template name="m10a14_1"> 
+	<section id="m10a14_1" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+				word1="sparkle"
+				word2="aspire"
+				word3="soar"
+				word4="strive"
+				word5c="hidden"
+				word6c="hidden"
+				word7c="hidden"
+				word8c="hidden"
+				word9c="hidden"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a14" nexturl="#m10a14_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+ 
+ 
+<template name="m10a14_2"> 
+	<section id="m10a14_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Watch this video about a technology company and how its products affect our lives.</h3>
+				{{>metametrics level="4" star="no" align="center"}}
+      			<div class="videoplayer" style="max-width: 506px">
+					<div class="embed-responsive embed-responsive-16by9">
+						<video class="embed-responsive-item" id="video-id" controls poster="/video/module10/a14/technology.png">
+							<source src="video/module10/a14/technology.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a14_1" nexturl="#m10a14_3" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a14_3"> 
+	<section id="m10a14_3" class="hidden"> 
+		{{#if activeSection}} 
+			<div class="content noselect">
+			<h3 class="center">Here are some phrases from the video. Drag the right word to the space.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+					<ol class="olcircle">
+						<li>Turning what was hard to imagine into  <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target1">&nbsp;</div>.</li>
+						<li>Knowing what makes your eyes <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target2">&nbsp;</div>.</li>
+						<li>Digital Display is getting <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target3">&nbsp;</div> to you.</li>
+						<li>Technology finds a <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target4">&nbsp;</div>.</li>
+						<li>Technology <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target5">&nbsp;</div> to perfection.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth8 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">purpose</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">sparkle</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">reality</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="">heart</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">closer</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="">create</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">aspires</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="">joy</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="">conversations</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="">soar</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a14_2" nexturl="#m10a14_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a14_4"> 
+	<section id="m10a14_4" class="hidden"> 
+		{{#if activeSection}} 
+			<div class="content noselect">
+			<h3 class="center">Here are some phrases from the video. Drag the right word to the space.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle" style="counter-reset: start 5;">
+						<li>For imagination to <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target6">&nbsp;</div> higher.</li>
+						<li>The technology we <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target7">&nbsp;</div> is more than you think.</li>
+						<li>It will have more <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target8">&nbsp;</div> with you.</li>
+						<li>And strive to bring you more <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target9">&nbsp;</div>.</li>
+						<li>At the <div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target10">&nbsp;</div> of Digital Display’s technology is you.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth8 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth8 dd1line"></div>
+				<div class="ddseat ddwidth8 dd1line"></div>
+				<div class="ddseat ddwidth8 dd1line"></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target10">heart</div></div>
+				<div class="ddseat ddwidth8 dd1line"></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target7">create</div></div>
+				<div class="ddseat ddwidth8 dd1line"></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target9">joy</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target8">conversations</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target6">soar</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a14_3" nexturl="#m10a14_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

@@ -1,0 +1,233 @@
+<template name="m1a13">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/FortAugustus');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<!-- Change module, activity number and name here -->
+			<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 13 - {{>m1a13Title}}</div>
+		</header>
+		
+				
+		<section id="m1a13">
+		  <div class="content">
+<h1 class="start-page-header">{{> m1a13Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m1a13Intro}}</h3>
+{{> m1a13Time}} <!--{{> resumePopUp}}-->
+		  </div>
+		  <footer>
+			{{>footer_nav nexturl="#m1a13_1" prev="hidden" next="" next_text="Start"}}
+		  </footer>
+		</section>
+		{{>m1a13_1}}
+		{{>m1a13_2}}
+		{{>m1a13_3}}
+		{{>m1a13_4}}
+		{{>m1a13_5}}
+		{{>m1a13_6}}
+		{{>m1a13_end}}
+	</div>
+</article>
+
+</template>
+<template name="m1a13_1">
+	<section id="m1a13_1" class="hidden">
+		<div class="content">
+			<h3 class="center">Some people believe that your handwriting can tell you about your personality. Try this handwriting test.</h3>
+			<div class="parapaper center container-fluid" style="padding: 1em;">
+				<div class="row">
+					<div class="col-sm-4" style="padding: 5px">
+						<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/paper.png" alt="Sheet of paper"></div></div>
+						<div class="info shadow"> Take a piece of paper</div>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/rectangle.png" alt="Hand with pen"></div></div>
+						<div class="info shadow">Draw a rectangle</div>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+						<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/name.png" alt="Hand writing name"></div></div>
+						<div class="info shadow">Write your signature in the box</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<footer>
+		{{>footer_nav nexturl="#m1a13_2" prev="hidden" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a13_2">
+	<section id="m1a13_2" class="hidden">
+		<div class="content">
+			<h2 class="center">Choose One</h2>
+			<h3 class="center">Which of these matches your handwriting?</h3>
+			<div class="parapaper center container-fluid" style="padding: 1em;">
+				<div class="row">
+					<div class="col-sm-4" style="padding: 5px">
+						<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/1a.png" alt="Signature"></div></div>
+						<button id="1" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_3">It fills the box</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/1b.png" alt="Signature"></div></div>
+						<button id="2" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_3">It fills half the box</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/1c.png" alt="Signature"></div></div>
+						<button id="3" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_3">It fills a small part of the box</a></button>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<footer>
+		{{>footer_nav prevurl ="#m1a13_1" nexturl="#m1a13_3" prev="hidden" next="hidden"}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a13_3">
+	<section id="m1a13_3" class="hidden">
+		<div class="content">
+			<h2 class="center">Choose One</h2>
+			<h3 class="center">Which of these matches your handwriting? Click the red box to choose your answer.</h3>
+			<div class="parapaper center container-fluid" style="padding: 1em;">
+				<div class="row">
+					<div class="col-sm-4" style="padding: 5px">
+						<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/2a.png" alt="Signature"></div></div>
+						<button id="1" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_4">It points to the right</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/2b.png" alt="Signature"></div></div>
+						<button id="2" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_4">It goes straight up and down</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/2c.png" alt="Signature"></div></div>
+						<button id="3" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_4">It points to the left</a></button>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<footer>
+		{{>footer_nav prevurl ="#m1a13_2" nexturl="#m1a13_4" prev="hidden" next="hidden"}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a13_4">
+	<section id="m1a13_4" class="hidden">
+		<div class="content">
+			<h2 class="center">Choose One</h2>
+			<h3 class="center">Is there space between the two words? Click the red box to choose your answer.</h3>
+			<div class="parapaper center container-fluid" style="padding: 1em;">
+				<div class="row">
+					<div class="col-sm-4" style="padding: 5px">
+						<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/3a.png" alt="Signature"></div></div>
+						<button id="1" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_5">No</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/3b.png" alt="Signature"></div></div>
+						<button id="2" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_5">Not too much</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/3c.png" alt="Signature"></div></div>
+						<button id="3" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_5">Yes</a></button>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<footer>
+		{{>footer_nav prevurl ="#m1a13_3" nexturl="#m1a13_5" prev="hidden" next="hidden"}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a13_5">
+	<section id="m1a13_5" class="hidden">
+		<div class="content">
+			<h2 class="center">Choose One</h2>
+			<h3 class="center">Did you underline the signature? Click the red box to choose your answer.</h3>
+			<div class="parapaper center container-fluid" style="padding: 1em;">
+				<div class="row">
+					<div class="col-sm-4" style="padding: 5px">
+						<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/4a.png" alt="Signature"></div></div>
+						<button id="1" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_6">Multiple lines</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/4b.png" alt="Signature"></div></div>
+						<button id="2" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_6">One line</a></button>
+					</div>
+					<div class="col-sm-4" style="padding: 5px;">
+					<div class="ph-w ph-3x2" style="max-width: 225px"><div class="ph"><img draggable="false" src="/images/module1/4c.png" alt="Signature"></div></div>
+						<button id="3" class="button1 shadow" style="margin:4px;"><a draggable="false" href="#m1a13_6">No Line</a></button>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<footer>
+		{{>footer_nav prevurl ="#m1a13_4" nexturl="#m1a13_6" prev="hidden" next="hidden"}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a13_6">
+	<section id="m1a13_6" class="hidden">
+		<div class="content">
+			<h1 class="center">Results!</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+					<!--Display if handwriting_1 is greatest or equal to handwriting_2/handwriting_3 *Remove capfade*-->
+						<div class="caption capgreen {{visibleResult1}}"><p>You tend to be an extrovert. You like people to know you are in the room. You appear to be very ambitious and self confident. You like to be where the action is and preferably in charge.</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+					<!--Display if handwriting_2 is greatest or equal to handwriting_1/handwriting_3 *Remove capfade*-->
+						<div class="caption capgreen {{visibleResult2}}"><p>You can be sociable but you also like quiet times. You enjoy meeting people but only have a few close friends. You are hard working but know how to relax and have fun.</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+					<!--Display if handwriting_3 is greatest or equal to handwriting_1/handwriting_2 *Remove capfade*-->
+						<div class="caption capgreen {{visibleResult3}}"><p>You tend to prefer your own company or have a few close friends around for dinner. You can be ambitious but in general you don't make	decisions quickly - you are cautious. When you speak, it's usually to make a thoughtful comment.</p></div>
+					</div>
+					
+				</div>
+				<br>
+				<br>
+				<div class="row">
+				  <div class="col-sm-4 center-block text-center">
+					<div class="caption capred ">
+					  {{handwriting1}}
+					</div>
+				  </div>
+				   <div class="col-sm-4 center-block text-center">
+					<div class="caption capred">
+					  {{handwriting2}}
+					</div>
+				  </div>
+				   <div class="col-sm-4 center-block text-center">
+					<div class="caption capred">
+					  {{handwriting3}}
+					</div>
+				  </div>
+				</div>
+			</div>
+		
+		</div>
+		<footer>
+		{{>footer_nav prevurl ="#m1a13_5" nexturl="#m1a13_end" prev="hidden" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a13_end">
+{{>EndPage char="k" act="m1a13" nextact="m1a14" place="FortAugustus"}}
+</template>

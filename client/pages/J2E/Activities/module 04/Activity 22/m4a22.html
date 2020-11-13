@@ -1,0 +1,550 @@
+<template name="m4a22">
+	<article class="with-tools-sidebar m4a22">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/LochLomond');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 22 - {{>m4a22Title}}</div>
+			</header>
+
+
+			<section id="m4a22">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a22Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m4a22Intro}}</h3>
+					{{> m4a22Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a22_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a22_1}} {{>m4a22_2}} {{>m4a22_3}} {{>m4a22_4}} {{>m4a22_5}} {{>m4a22_6}} {{>m4a22_7}} {{>m4a22_8}} {{>m4a22_9}} {{>m4a22_10}}
+			{{>m4a22_11}} {{>m4a22_12}} {{>EndPage char="k" act="m4a22" nextact="m4a23" place="LochLomond"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a22_1">
+	<section id="m4a22_1" class="hidden m4a22_1">
+		<div class="content">
+			<h1>Modal Verbs Part 2</h1>
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 3 you looked at
+								<b>probability</b> and
+								<b>possibility</b>.</h4>
+						</div>
+					</div>
+				</div>
+				<span style="color: #fff;">{{>blankrow}}</span>
+				<div class="row">
+					<h5>Now it's...</h5>
+				</div>
+				<span style="color: #fff;">{{>blankrow}}</span>
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-1 col-xs-5 col-xxs-12 col-xxs-12">
+						<div class="caption" style="width: 100%;">
+							<b>obligation</b>
+						</div>
+						<br>
+						<div class="ph-w ph-16x9 shadow" style="max-width: 320px"><div class="ph"><img draggable="false" src="images/module4/obligation.png" alt="Obligation"></div></div>
+						<p>
+							<b>"I'll
+								<u>have to</u> work 40 hours a week."</b>
+						</p>
+					</div>
+					<div class="col-xs-2 col-xxs-12 text-center">
+						<h5>
+							<br>and
+							<br>&nbsp;</h5>
+					</div>
+					<div class="col-sm-4 col-xs-5 col-xxs-12 col-xxs-12">
+						<div class="caption" style="width: 100%;">
+							<b>necessity</b>
+						</div>
+						<br>
+						<div class="ph-w ph-16x9 shadow" style="max-width: 320px"><div class="ph"><img draggable="false" src="images/module4/necessity.png" alt="Necessity"></div></div>
+						<p>
+							<b>"I
+								<u>need</u> food to survive."</b>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-1 col-xs-5 col-xxs-12 col-xxs-12">
+						<div class="caption" style="width: 100%;">
+							<b>warning</b>
+						</div>
+						<br>
+						<div class="ph-w ph-16x9 shadow" style="max-width: 320px"><div class="ph"><img draggable="false" src="images/module4/warning.png" alt="Warning"></div></div>
+						<p>
+							<b>"You
+								<u>mustn't</u> play with matches."</b>
+						</p>
+					</div>
+					<div class="col-xs-2 col-xxs-12 text-center">
+						<h5>
+							<br>and
+							<br>&nbsp;</h5>
+					</div>
+					<div class="col-sm-4 col-xs-5 col-xxs-12 col-xxs-12">
+						<div class="caption" style="width: 100%;">
+							<b>advice</b>
+						</div>
+						<br>
+						<div class="ph-w ph-16x9 shadow" style="max-width: 320px"><div class="ph"><img draggable="false" src="images/module4/advice.png" alt="Advice"></div></div>
+						<p>
+							<b>"You
+								<u>had better</u> wear a scarf - it's cold today."</b>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="caption block center-block" style="max-width: 320px;">
+							<b>reasonable assumption</b>
+						</div>
+						<br>
+						<div class="ph-w ph-16x9 shadow" style="max-width: 320px"><div class="ph"><img draggable="false" src="images/module4/assumption.png" alt="Warning"></div></div>
+						<p>
+							<b>"If I exercise more, I
+								<u>should</u> lose weight / I
+								<u>ought to</u> lose weight."</b>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22" nexturl="#m4a22_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a22_10">
+	<section id="m4a22_10" class="hidden">
+		{{#if activeSection}}
+		<!--{{> popovers}}-->
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the
+				<b>Modal Verbs</b>. Find out why they are used in the next activity.</h3>
+				
+			<div class="parapaper paraclick">
+
+				<p>
+					<span class="wrong">So yeah, </span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+						 data-content="It's <b>advice</b>" data-html="true">you’d better</a>
+					</span>
+					<span class="wrong"> look out those trainers! The trouble is, it’s so easy to wipe out all that hard work with a small snack afterwards.</span>
+				</p>
+				<br>
+				<br>
+				<p>
+					<span class="wrong">You </span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+						 data-content="It's a <b>general requirement</b>" data-html="true">need to</a>
+					</span>
+					<span class="wrong"> know what that little treat contains:</span>
+				</p>
+				<br>
+				<br>
+				<p>
+					<span class="wrong">
+						<ul>
+							<li>2 tbsp peanut butter has 188 calories.</li>
+							<li>1 Twix bar (1/2 a package) has 145 calories.</li>
+							<li>1 oz (28g) of plain tortilla chips has 138 calories.</li>
+							<li>Half a plain bagel has 215 calories.</li>
+							<li>A grande caffe latte with non-fat milk at a coffee shop has 168 calories.</li>
+						</ul>
+					</span>
+				</p>
+
+			</div>
+			<div class="counterleft">Modal Verbs to find
+				<u>2</u>
+			</div>
+			{{>rightwrong}}{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_9" nexturl="#m4a22_11" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a22_11">
+	<section id="m4a22_11" class="hidden">
+		{{#if activeSection}}
+		<!--{{> popovers}}-->
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the
+				<b>Modal Verbs</b>. Find out why they are used in the next activity.</h3>
+			<div class="parapaper paraclick">
+
+				<p>
+					<span class="wrong">You also </span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-content="It's a <b>general requirement</b>" data-html="true">need to</a>
+					</span>
+					<span class="wrong"> make sure that if you increase your level of exercise you don't cancel it out by eating more food. My question for you
+						today is: Which do you find easier - diet or exercise?</span>
+				</p>
+
+			</div>
+			<div class="counterleft">Modal Verbs to find
+				<u>1</u>
+			</div>
+			{{>rightwrong}}{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_10" nexturl="#m4a22_12" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a22_12">
+	<section id="m4a22_12" class="hidden">
+		<div class="content">
+			<h4 class="text-center">Here are all the
+				<b>modal verbs</b> you found.</h4>
+			<br>
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="caption cappad item-space ddwidth10">should</div>
+						<div class="caption cappad item-space ddwidth10">ought to</div>
+						<div class="caption cappad item-space ddwidth10">must</div>
+						<div class="caption cappad item-space ddwidth10">have to</div>
+						<div class="caption cappad item-space ddwidth10">had better</div>
+						<div class="caption cappad item-space ddwidth10">need to</div>
+					</div>
+				</div>
+			</div>
+			<br> {{>gg_button gg_text="Click here to find out more about Modal Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_11" nexturl="#m4a22_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a22_2">
+	<section id="m4a22_2" class="hidden">
+		<div class="content">
+			<h3>Read this account of one person’s experience of exercise and diet.</h3>
+			{{>DietVsExercise}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_1" nexturl="#m4a22_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="DietVsExercise">
+	<div class="container-fluid text-center">
+		<div class="row">
+			<div class="col-xs-5">
+				<div class="caption" style="width: 100%;">Diet</div>
+				<div class="ph-w ph-3x2 border2" style="max-width: 320px; margin-top: 1em;"><div class="ph"><img draggable="false" src="images/module4/diet.png" alt="Diet"></div></div>
+			</div>
+			<div class="col-xs-2">
+				<div class="caption" style="width: 100%; padding-right: 0; padding-left: 0;">V.</div>
+			</div>
+			<div class="col-xs-5">
+				<div class="caption" style="width: 100%;">Exercise</div>
+				<div class="ph-w ph-3x2 border2" style="max-width: 320px; margin-top: 1em;"><div class="ph"><img draggable="false" src="images/module4/runner.png" alt="Exercise"></div></div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m4a22_3">
+	<section id="m4a22_3" class="hidden">
+		<div class="content">
+			{{> dictionary_page word1="effective" word2="stressful" word3="jogging" word4="priority" word5c="hidden" word6c="hidden"
+			word7c="hidden" word8="calories" word9="metabolism" word10="hidden" word11c="hidden" word12c="hidden"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_2" nexturl="#m4a22_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a22_4">
+	<section id="m4a22_4" class="hidden">
+		<div class="content">
+			<h3 class="text-center">A word not in the learner's dictionary:</h3>
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>‘trainers’ - shoes designed for exercising or sports.</li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<h3 class="text-center">A phrasal verb from the article:</h3>
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>‘to wind up’ - to find yourself doing something you didn’t plan to do.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_3" nexturl="#m4a22_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a22_5">
+	<section id="m4a22_5" class="hidden">
+		<div class="content">
+			<h1>Diet V. Exercise</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						{{>DietVExerciseArticle}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_4" nexturl="#m4a22_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a22_6">
+	<section id="m4a22_6" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Now read it again and find the Modal Verbs.</h3>
+			{{>DietVsExercise}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_5" nexturl="#m4a22_7" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a22_7">
+	<section id="m4a22_7" class="hidden">
+		{{#if activeSection}}
+		<!--{{> popovers}}-->
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the
+				<b>Modal Verbs</b>. Find out why they are used in the next activity.</h3>
+			<div class="parapaper paraclick">
+
+				<p>
+					<span class="wrong">When it comes to weight loss and looking at diet versus exercise, which is more important? If you know where to focus
+						your efforts, you </span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+						 data-content="It's a <b>reasonable assumption</b>" data-html="true">should</a>
+					</span>
+					<span class="wrong"> be able to see more effective results.</span>
+				</p>
+				<br>
+				<br>
+				<p>
+					<span class="wrong">A couple of years ago I had a really stressful job. My role was to support 85 candidates running for the Green Party
+						in a general election. It was a lot of fun, but it was definitely a lot of work.</span>
+				</p>
+				<br>
+				<br>
+				<p>
+					<span class="wrong">I wound up working until midnight or later most days. I stopped keeping track of the hours I worked because it just
+						scared me. I knew I </span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+						 data-content="It's a <b>sensible action</b>" data-html="true">ought to</a>
+					</span>
+					<span class="wrong"> exercise more. That’s when I started jogging. When I was facing a long, stressful day I knew that this was the only
+						time I had for myself. I felt the freedom and energy of running.</span>
+				</p>
+
+			</div>
+			<div class="counterleft">Modal Verbs to find
+				<u>2</u>
+			</div>
+			{{>rightwrong}}{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_6" nexturl="#m4a22_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a22_8">
+	<section id="m4a22_8" class="hidden">
+		{{#if activeSection}}
+		<!--{{> popovers}}-->
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the
+				<b>Modal Verbs</b>. Find out why they are used in the next activity.</h3>
+			<div class="parapaper paraclick">
+
+				<p>
+					<span class="wrong">I made it a priority to jog every single morning during the campaign. I felt fantastic, and found that by Election Day
+						I had lost some weight. I never really knew whether it was from the jogging - or from not having much time to snack
+						and eat.</span>
+				</p>
+				<br>
+				<br>
+				<p>
+					<span class="wrong">Diet plans control how many calories you eat, and exercise controls how many calories you burn. To be successful you
+						</span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+						 data-content="It's an <b>external obligation</b>" data-html="true">have to</a>
+					</span>
+					<span class="wrong"> do both.</span>
+				</p>
+
+			</div>
+			<div class="counterleft">Modal Verbs to find
+				<u>1</u>
+			</div>
+			{{>rightwrong}}{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_7" nexturl="#m4a22_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a22_9">
+	<section id="m4a22_9" class="hidden">
+		{{#if activeSection}}
+		<!--{{> popovers}}-->
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the
+				<b>Modal Verbs</b>. Find out why they are used in the next activity.</h3>
+			<div class="parapaper paraclick">
+
+				<p>
+					<span class="wrong">Half an hour of exercise is a great way to burn more calories. Here's what you </span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+						 data-content="It's a <b>personal obligation</b>" data-html="true">must</a>
+					</span>
+					<span class="wrong"> do if you want to burn calories:</span>
+				</p>
+				<br>
+				<br>
+				<p>
+					<span class="wrong">
+						<ul>
+							<li>30 min brisk walk (3mph) - 110 calories</li>
+							<li>30 min jog (5mph) - 280 calories</li>
+							<li>30 min cycle (under 10mph) - 140 calories</li>
+							<li>30 min swim - 250 calories</li>
+							<li>30 min rollerblade - 180 calories</li>
+						</ul>
+					</span>
+				</p>
+				<br>
+				<p>
+					<span class="wrong">If you train enough to speed up your metabolism for the whole day, you </span>
+					<span class="paraclick-word">
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom"
+						 data-content="It's a <b>reasonable assumption</b>" data-html="true">should</a>
+					</span>
+					<span class="wrong"> lose 140 calories.</span>
+				</p>
+
+			</div>
+			<div class="counterleft">Modal Verbs to find
+				<u>2</u>
+			</div>
+			{{>rightwrong}}{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a22_8" nexturl="#m4a22_10" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+<template name="DietVExerciseArticle">
+	<div class="parapaper article-text">
+		<p>When it comes to weight loss and looking at diet versus exercise, which is more important? If you know where to focus your
+			efforts, you should be able to see more effective results.</p>
+
+		<p>A couple of years ago I had a really stressful job. My role was to support 85 candidates running for the Green Party in
+			a general election. It was a lot of fun, but it was definitely a lot of work.</p>
+
+		<figure class="image imgleft-responsive">
+			<div class="ph-w ph-3x2 shadow" style="width: 160px;"><div class="ph"><img draggable="false" src="images/module4/runner.png" alt="Diet"></div></div>
+		</figure>
+		<p>I wound up working until midnight or later most days. I stopped keeping track of the hours I worked because it just scared
+			me. I knew I ought to exercise more. That’s when I started jogging. When I was facing a long, stressful day I knew that
+			this was the only time I had for myself. I felt the freedom and energy of running.</p>
+
+		<p>I made it a priority to jog every single morning during the campaign. I felt fantastic, and found that by Election Day
+			I had lost some weight. I never really knew whether it was from the jogging - or from not having much time to snack and
+			eat.</p>
+
+		<p>Diet plans control how many calories you eat, and exercise controls how many calories you burn. To be successful you have
+			to do both.</p>
+
+		<p>Half an hour of exercise is a great way to burn more calories. Here's what you must do if you want to burn calories:</p>
+
+		<ul>
+			<li>30 min brisk walk (3mph) - 110 calories</li>
+			<li>30 min jog (5mph) - 280 calories</li>
+			<li>30 min cycle (under 10mph) - 140 calories</li>
+			<li>30 min swim - 250 calories</li>
+			<li>30 min rollerblade - 180 calories</li>
+		</ul>
+
+		<figure class="image imgright-responsive">
+			<div class="ph-w ph-3x2 shadow" style="width: 160px;"><div class="ph"><img draggable="false" src="images/module4/diet.png" alt="Exercise"></div></div>
+		</figure>
+		<p>If you train enough to speed up your metabolism for the whole day, you should lose 140 calories.</p>
+
+		<p>So yeah, you’d better look out those trainers! The trouble is, it’s so easy to wipe out all that hard work with a small
+			snack afterwards.</p>
+
+		<p>You need to know what that little treat contains:</p>
+
+		<ul>
+			<li>2 tbsp peanut butter has 188 calories.</li>
+			<li>1 Twix bar (1/2 a package) has 145 calories.</li>
+			<li>1 oz (28g) of plain tortilla chips has 138 calories.</li>
+			<li>Half a plain bagel has 215 calories.</li>
+			<li>A grande caffe latte with non-fat milk at a coffee shop has 168 calories.</li>
+		</ul>
+
+		<p>You also need to make sure that if you increase your level of exercise you don't cancel it out by eating more food. My
+			question for you today is: Which do you find easier - diet or exercise?</p>
+	</div>
+	<div class="articlesrc">Adapted from ‘Healthy Eating Starts Here’ - January 2011</div>
+</template>

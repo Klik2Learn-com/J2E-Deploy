@@ -1,0 +1,33 @@
+<template name="Yeti_d4_h1">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="Yeti_d4_h1">
+		{{#if activeSection}}
+		<div class="journal2bg">
+			<div class="content">
+			<div class="gameInfo text-center">
+		  Put the remaining journal fragments in to complete the sentence. When you’re done, {{>touch yes="tap" no="click"}} OK.
+		</div>
+				<div class="yetiDrag">
+					<div class="ddtarget ddwidth11 answerSlot" id="target1">&nbsp;</div> <div class="ddtarget ddwidth11 answerSlot" id="target2">&nbsp;</div> <div class="ddtarget ddwidth11 answerSlot" id="target3">&nbsp;</div>  <div class="ddtarget ddwidth11 answerSlot" id="target4">&nbsp;</div>  <div class="ddtarget ddwidth11 answerSlot" id="target5">&nbsp;</div>  <div class="ddtarget ddwidth11 answerSlot" id="target6">&nbsp;</div>  <div class="ddtarget ddwidth11 answerSlot" id="target7">&nbsp;</div>  <div class="ddtarget ddwidth11 answerSlot" id="target8">&nbsp;</div>  <div class="ddtarget ddwidth11 answerSlot" id="target9">&nbsp;</div>  <div class="ddtarget ddwidth11 answerSlot" id="target10">&nbsp;</div> <div class="ddtarget ddwidth11 answerSlot" id="target11">&nbsp;</div> &nbsp;&nbsp;<div id="submitButton" class="button2 buttonsmall">OK</div>
+			</div>
+			<div class="Yetibox box1dd1">
+				<!-- Ensure all 'ddsource ddwidth11' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->			
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target6">creature in</div>
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target1">There</div>
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target7">Balkapram</div>	
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target3">many</div>				
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target8">National Park</div>
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target5">a strange</div>
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target9">in the</div>
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target2">are also</div>
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target10">north-eastern state</div>
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target4">sightings of</div>				
+				<div class="ddsourceyeti dragitem ddwidth9" draggable="true" data-destination="target11">of Meghalaya.</div>				
+			</div>
+			<div class="text-center"><span class="incorrectbig hidden"><i class="fa fa-close"></i></span><span class="correctbig hidden"><i class="fa fa-check"></i></span></div>
+		</div>
+		
+		</div>
+		{{/if}}
+	</section>
+</template>

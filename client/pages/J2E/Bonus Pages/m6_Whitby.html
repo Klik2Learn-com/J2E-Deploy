@@ -1,0 +1,148 @@
+<template name="MoreAboutWhitby">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Whitby"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m6l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m6l3}}</div>
+		</header>
+
+		<section id="moreaboutWhitby">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1 col-xs-6 bonus-image" style="background-image: url('images/bonus/Whitby/Whitby1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l3_A">
+						<p>Bram Stoker’s Dracula</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Whitby/Whitby2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l3_B">
+						<p>Fossils</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Whitby/Whitby3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l3_C">
+						<p>Whitby Goth Weekend</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/Whitby/Whitby4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l3_D">
+						<p>Whitby Harbour</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Whitby/Whitby5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l3_E">
+						<p>Whitby Abbey</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l3_A">Bram Stoker’s Dracula</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Whitby/Whitby1.jpg" alt="Bram Stoker’s Dracula" style="max-width: 250px;">
+					</figure>
+					<p>The author of ‘Dracula’, Bram Stoker chose Whitby as the setting for one of the main characters in the story. Since it was written at the end of the 19th century, many similar stories, films and TV programmes have copied the story’s ideas of vampire characters.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.whitbyonline.co.uk/whitbyhistory/bramstoker.php" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l3_B">Fossils</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Whitby/Whitby2.jpg" alt="Fossils" style="max-width: 250px;">
+					</figure>
+					<p>Whitby is one of the best places in the UK to learn about fossils and you can go on a 3 mile walk along the beach at low tide with an expert fossil hunter. It is possible to find a wide variety of fossils and shells and you can even see dinosaur footprints.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://ukfossils.co.uk/2007/03/18/whitby/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l3_C">Whitby Goth Weekend</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Whitby/Whitby3.jpg" alt="Whitby Goth Weekend" style="max-width: 250px;">
+					</figure>
+					<p>This is an alternative music festival for Goths, organised every  April and October. Whitby was chosen because of its connections with the story ‘Dracula.’ Over 1,500 people come from all over the UK and from other countries. At Halloween, other groups interested in fantasy and science fiction also come to Whitby.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.whitbygothweekend.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l3_D">Whitby Harbour</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Whitby/Whitby4.jpg" alt="Whitby Harbour" style="max-width: 250px;">
+					</figure>
+					<p>Whitby has been a port for over 1,000 years and visitors today can wander down the narrow streets to the harbour just as people did centuries ago. The harbour is still busy with fishing boats and pleasure boats in the summer. You can visit the lifeboat, museum, watch the local rowing club training and see a Tall Ship which has been used in many TV programmes and films. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.harbourguides.com/harbours/Whitby" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l3_E">Whitby Abbey</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Whitby/Whitby5.jpg" alt="Whitby Abbey" style="max-width: 250px;">
+					</figure>
+					<p>Whitby Abbey was the inspiration for the famous story ‘Dracula.’ Over the years it has been damaged by wind and rain and more damage was done in the First World War by the German fleet. It is now a ruin on the cliffs above Whitby.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.english-heritage.org.uk/visit/places/whitby-abbey/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

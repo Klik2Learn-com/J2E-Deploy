@@ -1,0 +1,314 @@
+<template name="m6a2">
+	<article class="with-tools-sidebar m6a2">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Newcastle');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 2 - {{>m6a2Title}}</div>
+			</header>
+
+			<section id="m6a2">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a2Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m6a2Intro}}</h3>
+					{{> m6a2Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a2_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m6a2_1}} {{>m6a2_2}} {{>m6a2_3}} {{>EndPage char="tu" act="m6a2" nextact="m6a3" place="Newcastle"}}
+
+		</div>
+	</article>
+
+	{{>para1_modal}} {{>para2_modal}} {{>para3_modal}}
+</template>
+<template name="m6a2_1">
+	<section id="m6a2_1" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold center">
+				{{> rightwrong}}
+				<span>The Queen</span>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target8">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target9">&nbsp;</div>
+				<span>youngsters</span>.
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">important</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">to</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">most</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">Britain</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">person</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">in</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">is</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">the</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target8">according</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<button data-toggle="modal" data-target="#para1_modal" class="button2">Read Article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a2_1" nexturl="#m6a2_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a2_2">
+	<section id="m6a2_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold center">
+				{{> rightwrong}}
+				<span>The Queen</span>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target8">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target9">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target10">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target11">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target12">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target13">&nbsp;</div>
+				<span>place</span>.
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3 target6 target12">and</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">comes</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">top</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target10">in</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">the</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">are</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">Duchess of</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target8">Cambridge</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">Duke</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target13">third</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target11">second</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<button data-toggle="modal" data-target="#para2_modal" class="button2">Read Article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a2_2" nexturl="#m6a2_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a2_3">
+	<section id="m6a2_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the words to the spaces to complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold center">
+				{{> rightwrong}} {{> welldone}}
+				<span>The</span>
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target2">&nbsp;</div> -
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target3">&nbsp;</div>,
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target4">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target5">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target6">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target7">&nbsp;</div>
+				<div class="ddseatedtarget ddwidth7 dd1line2high" data-destinationid="target8">&nbsp;</div>
+				<span>Prime Minister</span>.
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target4">lagged</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target2">king</div>
+					</div>
+					<div class="ddseat ddwidth7 dd2lines">
+						<div class="ddsourceseated ddwidth7 dd2lines shadow" draggable="false" data-destination="target6">Prince William</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target5">behind</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target7">and</div>
+					</div>
+					<div class="ddseat ddwidth7 dd2lines">
+						<div class="ddsourceseated ddwidth7 dd2lines shadow" draggable="false" data-destination="target3">Prince Charles</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target8">the</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target1">next</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<button data-toggle="modal" data-target="#para3_modal" class="button2">Read Article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a2_2" nexturl="#m6a2_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+
+<template name="para1_modal">
+	{{> popovers}}
+	<div class="modal fade" tabindex="-1" id="para1_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="para1_modal"></h4>
+				</div>
+
+				<div class="content">
+
+					<div class="parapaper article-text">
+						{{> importantPeople para1="show-block"}}
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="para2_modal">
+	{{> popovers}}
+	<div class="modal fade" tabindex="-1" id="para2_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="para2_modal"></h4>
+				</div>
+
+				<div class="content">
+
+					<div class="parapaper article-text">
+						{{> importantPeople para4="show-block"}}
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="para3_modal">
+	{{> popovers}}
+	<div class="modal fade" tabindex="-1" id="para3_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="para3_modal"></h4>
+				</div>
+
+				<div class="content">
+
+					<div class="parapaper article-text">
+						{{> importantPeople para5="show-block"}}
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,125 @@
+<template name="MoreAboutPeebles">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Peebles"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m3l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m3l4}}</div>
+		</header>
+
+		<section id="moreaboutPeebles">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/Peebles/Peebles3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l4_C">
+						<p>Rugby Sevens</p>
+					</div>
+					<div class="col-sm-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Peebles/Peebles4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l4_D">
+						<p>Neidpath Castle</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">					
+					<div class="col-sm-8 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/Peebles/Peebles1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l4_A">
+							<p>Ridelines</p>
+					</div>
+					<div class="col-sm-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Peebles/Peebles2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l4_B">
+							<p>John Buchan</p>
+					</div>	
+
+					</div>		
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l4_A">Ridelines</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Peebles/Peebles1.jpg" alt="Ridelines" style="max-width: 250px;">
+					</figure>
+					<p>One of the most popular activities to do in the Peebles area is go on a day’s ride with Ridelines Mountain Bikes. They have some of the best trail riding in Britain and and organise events for companies, families and individuals. They offer bike tours through some of Scotland’s wild scenery: hills, lochs, forests and old roads once used to drive cattle to market. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://ridelines.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l4_B">John Buchan</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Peebles/Peebles2.jpg" alt="John Buchan" style="max-width: 250px;">
+					</figure>
+					<p>John Buchan spent many of his childhood years in the Scottish Borders and later became an MP for Peebles. He had a long and varied career as a lawyer, writer, diplomat and spent some of his career in Africa. His last career move was to Canada where he was appointed the Governor General by King George the 5th. His most famous book was ‘The 39 Steps’ which was first made into a film by Hitchcock. There is a museum in Peebles with lots of information about his life and travels.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.johnbuchansociety.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l4_C">Rugby Sevens</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Peebles/Peebles3.jpg" alt="Rugby Sevens" style="max-width: 250px;">
+					</figure>
+					<p>Rugby Sevens was started in the Scottish borders in the 1880s. Peebles is one of the Scottish border towns which holds a rugby sevens tournament every year. Rugby sevens is a type of rugby with seven players on each side instead of the usual fifteen. The game lasts seven minutes for each half instead of forty minutes. It’s now popular in Europe, America, Asia and Africa and is now an Olympic sport.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.worldrugby.org/sevens/history-of-sevens?lang=en" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l4_D">Neidpath Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Peebles/Peebles4.jpg" alt="Neidpath Castle" style="max-width: 250px;">
+					</figure>
+					<p>Neidpath castle is actually a tower built close to Peebles. It dates back to the 13th century and had some famous visitors over the years. One of these was Mary Queen of Scots and her son. Like many castles in Scotland it is said to be haunted by a woman who was forbidden to marry the man she loved. She is said to have died of a broken heart. The castle has been used in many films and TV programmes but is not open to the public.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.neidpathcastle.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

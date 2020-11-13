@@ -1,0 +1,183 @@
+<template name="m3a28">
+<article class="with-tools-sidebar m3a28">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Edinburgh');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 28 - {{>m3a28Title}}</div>
+		</header>
+		
+		
+		<section id="m3a28">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a28Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m3a28Intro}}</h3>
+{{> m3a28Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a28_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a28_1}}
+		{{>m3a28_2}}
+
+		{{>EndPage char="k" act="m3a28" nextact="m3a29" place="Edinburgh"}}
+
+		
+	</div>
+</article>
+
+	{{>m3a28_bios}}
+</template>
+<template name="m3a28_1">
+<section id="m3a28_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m3_queen.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Queen Elizabeth II</h2>									
+												Born 1926
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m3a28_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m3_qe.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“Think what we would have missed if we had never used a mobile phone or surfed the net or, to be honest, listened to other people talking about surfing the net.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m2_bcvid" src="https://www.youtube.com/embed/HFxlSVVcNXk" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m3a28_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a28_2">
+<section id="m3a28_2" class="hidden">
+	{{# if activeSection}}
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">	
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m3_stephen.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Stephen Fry</h2>
+											Born 1957
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m3a28_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m3_sf.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“Education is the sum of what students teach each other between lectures and seminars.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-4by3">
+									<iframe class="embed-responsive-item" id="m2_cdvid" src="https://www.youtube.com/embed/J7E-aoXLZGY?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m3a28_end" prevurl="#m3a28_1" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a28_bios">
+	<div class="modal fade" id="m3a28_bio1" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Queen Elizabeth II</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m3_queen.jpg" alt="Photo"></figure>Queen Elizabeth II, born in 1926, was reflecting here on the huge changes technology has brought to everyone’s lives over the last 50 years. The Queen is the Head of State in the UK and 15 other Commonwealth countries. She became Queen at the age of 25 and was married to Prince Philip in 1947 as Britain was still recovering from World War 2. Like any other bride of the period, she had to save clothing coupons for her wedding dress. Her lifelong interests include horses and Scottish country dancing.
+
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="m3a28_bio2" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Stephen Fry</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m3_stephen.jpg" alt="Photo"></figure>
+					Stephen Fry – born in 1957 is one of the most well known faces in Britain. He has a wide variety of roles as actor, screenwriter, novelist, comedian, author, poet, TV presenter and film director. After a difficult childhood and adolescence, he studied English at Cambridge where he met his comedy partner, Hugh Laurie. He now hosts the comedy quiz programme <i>QI</i> and will be appearing in the second part of the film adaptation of <i>The Hobbit</i>.
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</template>

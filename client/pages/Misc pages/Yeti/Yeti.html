@@ -1,0 +1,89 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="Yeti">
+<article class="with-tools-sidebar ">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<!-- Change href to location activity is in 
+			 <a draggable="false" id='dunveganreturn' href="/DunveganCastle"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}} 
+			 Change module, activity number and name here -->
+			<div class="parent-level">Journey 2 English</div> <div class="acttitle-title">Find the Yeti</div>
+		</header>
+		
+		<section id="Yeti" style="background: none;">
+			{{> yeti_intro}}
+		</section>
+		
+		{{> Yeti_1}}
+		{{> Yeti_map1}}
+		
+		{{#if d1_hardpath}}
+			{{> Yeti_d1_h1}}
+			{{> Yeti_d1_h2}}
+			{{> Yeti_d1_h3}}
+		{{else}}
+			{{> Yeti_d1_e1}}
+			{{> Yeti_d1_e2}}
+			{{> Yeti_d1_e3}}
+			{{> Yeti_d1_e4}}
+			{{> Yeti_d1_e5}}
+		{{/if}}
+		
+		{{> Yeti_d1_result}}
+		{{> Yeti_map2}}
+		
+		
+		{{#if d2_hardpath}}
+			{{> Yeti_d2_h1}} 
+			{{> Yeti_d2_h2}}
+			{{> Yeti_d2_h3}}
+		{{else}}
+			{{> Yeti_d2_e1}}
+			{{> Yeti_d2_e2}}
+			{{> Yeti_d2_e3}}
+			{{> Yeti_d2_e4}}
+			{{> Yeti_d2_e5}}
+		{{/if}}
+ 		
+		{{> Yeti_d2_result}}
+		{{> Yeti_map3}}
+		
+		{{#if d3_hardpath}}
+			{{> Yeti_d3_h1}}
+			{{> Yeti_d3_h2}}
+			{{> Yeti_d3_h3}}
+		{{else}}
+			{{> Yeti_d3_e1}}
+			{{> Yeti_d3_e2}}
+			{{> Yeti_d3_e3}}
+			{{> Yeti_d3_e4}}
+			{{> Yeti_d3_e5}} 
+		{{/if}}
+ 		
+		{{> Yeti_d3_result}}
+		{{> Yeti_map4}}
+		
+		{{#if d4_hardpath}}
+			{{> Yeti_d4_h1}}
+			{{> Yeti_d4_h2}}
+			{{> Yeti_d4_h3}}
+		{{else}}
+			{{> Yeti_d4_e1}}
+			{{> Yeti_d4_e2}}
+			{{> Yeti_d4_e3}}
+			{{> Yeti_d4_e4}}
+			{{> Yeti_d4_e5}}
+		{{/if}}
+		
+		{{> Yeti_photo}}
+		{{> Yeti_end_result}}
+		{{> Yeti_ans_d1}}
+		{{> Yeti_end}}
+		
+	</div>
+</article>
+
+</template>
+	
+	

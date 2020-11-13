@@ -1,0 +1,33 @@
+<template name="moreAnnouncementsModal">
+	<div class="modal fade" tabindex="-1" id="moreAnnouncementsModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="moreAnnouncementsModal">Announcements</h4>
+				</div>
+
+				<div class="content">
+
+					{{#each Announcements}}
+						{{#if display}}
+						{{#unless read}}<button type="button" class="readMsg" data-target="{{this._id}}" aria-label="Read">Mark as read <i class="fa fa-check-circle"></i></button>{{/unless}}
+						<div class="Announcements-contents">
+							<div class="Announcements-title">{{#if read}} {{title}} {{else}} <span class="unread">{{title}}</span> {{/if}}</div>
+							<div class="forum-post-content">
+								<pre>{{message}}</pre>
+							</div>
+							<div class="Announcements-by">Posted by {{getFullnameFromId author}} on {{formatDate date}}{{#if notStudent}}<br>Expires on {{formatDate expiry}}{{/if}}
+								{{#if isAdmin}}{{orgName organisation}}{{/if}}</div>
+						</div>
+						{{/if}}
+					{{/each}}
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>

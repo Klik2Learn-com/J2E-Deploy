@@ -1,0 +1,387 @@
+<template name="m9a13"> 
+<article class="with-tools-sidebar m9a13">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Exeter');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 13 - {{>m9a13Title}}</div>
+		</header>
+		<section id="m9a13">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a13Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a13Intro}}</h3>
+				{{> m9a13Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a13_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a13_1}}
+		{{>m9a13_2}}
+		{{>m9a13_3}}
+		{{>m9a13_4}}
+		{{>m9a13_5}}
+		{{>m9a13_6}}
+		{{>EndPage char="k" act="m9a13" nextact="m9a14" place="Exeter"}}
+	</div>
+</article>
+	{{>m9a13_modal}}
+</template>
+
+<template name="m9a13_modal">
+	<div class="modal fade" tabindex="-1" id="m9a13_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" id="modalButton">×</span></button>
+					
+				</div>
+				
+				<div class="content">
+
+					<div class="videoplayer">
+						<div class="embed-responsive embed-responsive-16by9" id="video-container">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/U1PHpkdvNOs?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m9a13_2"> 
+	<section id="m9a13_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">{{>touch yes="Tap" no="Click"}} to watch the video</h3>
+  			<div class="videoplayer">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/U1PHpkdvNOs?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a13_1" nexturl="#m9a13_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a13_1"> 
+	<section id="m9a13_1" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">The people you work with make a big difference to your working life. One of the most popular comedy shows on BB was called 'The Office.'</h4>
+      			<div class="ph-w ph-2x1" style="max-width: 666px"><div class="ph"><img draggable="false" src="images/module9/a13/office.jpg" alt="The Office"></div></div>
+      			<h4 class="center">You’ll now see a video showing two very different people who work side by side. Gareth (right) takes himself very seriously and Tim (left) likes to tease him and play practical jokes. The boss, David (centre) tries to sort out the argument but doesn’t really help matters…</h4>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a13" nexturl="#m9a13_2" prev="disabled" next=""}}
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a13_6"> 
+	<section id="m9a13_6" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+		<h3 class="center">Now you can read the whole conversation. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.</h3>
+				{{>metametrics level="1" star="yes" align="center"}}
+      			<ul class="speech center-block" style="max-width:600px">
+			
+					<li><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"><div class="speech1">
+						Right! That is it!
+					</div></li>
+					
+					<li><div class="speech2">
+						Slow down. You move too fast. <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A character in the Bible who was famous for being very wise.">Solomon</a>’s here. It’s all part of the job. What’s going on?
+					</div><img draggable="false" src="images/module9/a13/david.jpg" alt="David"></li>
+
+					
+					<li><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"><div class="speech1">
+						He put my stapler inside a jelly again. That’s the third time he’s done it… wasn’t even funny the first time.
+					</div></li>
+					
+					<li><div class="speech2">
+						Why’s he done that?
+					</div><img draggable="false" src="images/module9/a13/david.jpg" alt="David"></li>
+
+
+					<li><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"><div class="speech1">
+						I told him once I don’t like jelly. I don’t trust the way it moves.
+					</div></li>
+
+					<li><div class="speech2">
+						Yeah… you showed a weakness and he pounced. You should know about that. What’s in it?
+					</div><img draggable="false" src="images/module9/a13/david.jpg" alt="David"></li>
+
+
+					<li><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"><div class="speech1">
+						My stapler.
+					</div></li>
+
+					<li><div class="speech2">
+						Don’t do that! Eat it out. There’s people starving in the world which I hate. So… it’s a waste.  So… how do you know it’s yours?
+					</div><img draggable="false" src="images/module9/a13/david.jpg" alt="David"></li>
+
+
+					<li><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"><div class="speech1">
+						Because it’s got my name on it in <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-html="true" data-content="<div class='ph-w ph-1x1 shadow' style='width: 200px; margin-bottom: 1em;'><img draggable='false' src='images/module9/a13/tippex.jpg' alt='Bottle of correction fluid' style='width: 200px; height: 200px; display: inline-block; border-radius: 0;'></div> A white liquid used to correct mistakes in typing.">Tipp-Ex</a>.
+					</div></li>
+
+					<li><div class="speech2">
+						Yeah, don’t eat it now… eh? Chemicals…
+					</div><img draggable="false" src="images/module9/a13/david.jpg" alt="David"></li>
+
+					<li><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"><div class="speech1">
+						Right! You can be my witness. Give him an official warning.
+					</div></li>
+
+					<li><div class="speech2">
+						How do you know it was me?
+					</div><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"></li>
+
+					<li><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"><div class="speech1">
+						It’s always you. Can’t you discipline him?
+					</div></li>
+
+					<li><div class="speech2">
+					Ooh… kinky! The thing about practical jokes… you’ve got to know when to stop as well as start and now it’s time to stop putting Gareth’s personal possessions in jelly. All right?					</div><img draggable="false" src="images/module9/a13/david.jpg" alt="David"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						It’s only a <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="This is a play on words. ‘Trifling’ here means ‘not serious, not important, but ‘trifle’ is also the name of a common pudding made of fruit, jelly and custard.">trifling matter</a>!
+					</div></li>
+
+					<li><div class="speech2">
+						Here we go! It’s always like this!
+					</div><img draggable="false" src="images/module9/a13/david.jpg" alt="David"></li>
+
+					<li><img draggable="false" src="images/module9/a13/ricky.jpg" alt="Ricky"><div class="speech1">
+						You should put him in <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="This is a play on the words ‘custard’ and ‘custody.’ Custard is a dessert or sweet sauce.  Custody means imprisonment.">custardy</a>!
+					</div></li>
+
+					<li><div class="speech2">
+						Yeah, well I’m more worried about damage to company  property – that’s all.
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/david.jpg" alt="David"><div class="speech1">
+						I’m just trying to think of other desserts… to do.
+					</div></li>
+
+					<li><div class="speech2">
+						It’s all right here but people do sometimes take advantage because it’s so relaxed. I like to have a laugh just as much as the next man but this is a place of work… I was in the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A reserve, part time army in the UK. They have ordinary jobs and train at weekends and holidays. They are also called up for duty beside full time soldiers.">Territorial Army</a> for three years and you can’t muck about there. That’s sort of one of the rules.
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						Hey dude.
+					</div></li>
+
+					<li><div class="speech2">
+						Give it back! It’s got my name on it. Gareth. Ask if you want to borrow it.
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						You always say no, mate.
+					</div></li>
+
+					<li><div class="speech2">
+						Well, that’s why you should ask.
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						Gareth, it was just there, OK?
+					</div></li>
+
+					<li><div class="speech2">
+						That’s its home. Leave it there.
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						OK,  OK…
+					</div></li>
+
+					<li><div class="speech2">
+						Philip, get that off him! Get that off him!
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						I’m going to let it go unless you stop acting like a fool.
+					</div></li>
+
+					<li><div class="speech2">
+						Well you won’t so…
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						Well I have so…
+					</div></li>
+
+					<li><div class="speech2">
+						What if that had killed someone?
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						Killed someone? Ah, well… they’ll think you were a murderer. It’s got your name on it!
+					</div></li>
+
+					<li><div class="speech2">
+						Why would a murderer put his name on a murder weapon?
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						To stop people borrowing it?
+					</div></li>
+
+					<li><div class="speech2">
+						I don’t know why you’re laughing…
+					</div><img draggable="false" src="images/module9/a13/gareth.jpg" alt="Gareth"></li>
+
+					<li><img draggable="false" src="images/module9/a13/tim.jpg" alt="Tim"><div class="speech1">
+						You bring me down to this…!
+					</div></li>
+				</ul>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a13_5" nexturl="#m9a13_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a13_3"> 
+	<section id="m9a13_3" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+			<div class="content of-vis">
+			<h3 class="text-center"><span class="avoidwrap">Decide whether these statements are True or False? {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.</span> <span class="avoidwrap"></span></h3>
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}} {{>welldone}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">1</div></div> 
+						<div class="iconright">This is the first time Gareth has found his stapler hidden inside jelly.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">2</div></div>
+						<div class="iconright">Everyone finds it amusing apart from Gareth.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">3</div></div> 
+						<div class="iconright">The boss David, <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="to understand and care about someone's problems: “It's a really bad situation - I do sympathize with her.”">sympathises</a> with Gareth.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">4</div></div> 
+						<div class="iconright">David gives Tim an official warning.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				<div class="center">
+      			<button data-toggle="modal" data-target="#m9a13_modal" class="button2">Watch the video again</button>
+      			</Div>
+				
+			</div>
+			
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a13_2" nexturl="#m9a13_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a13_5"> 
+	<section id="m9a13_5" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+					<div class="parapaper fold notebook-answers">
+						<ol class="olcircle">
+							<li>
+								<p><b>Why do you think Gareth writes his name on the stapler?</b></p>
+								<p>Gareth writes his name on his stapler because he wants to stop other people using it.</p>
+							</li>
+							<li>
+								<p><b>Why do you think Tim hides Gareth’s stapler in jelly?</b></p>
+								<p> He hides Gareth’s stapler in jelly because he thinks he’s being silly not letting other people borrow it. He wants to annoy him.</p>
+							</li>
+							<li>
+								<p><b>How does Gareth describe the office he works in?</b></p>
+								<p>He says it’s all right and very relaxed.</p>
+							</li>
+							<li>
+								<p><b>What did he do before working in the office?</b></p>
+								<p>He was in the Territorial Army for 3 years.</p>
+							</li>
+						</ol>
+					</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a13_4" nexturl="#m9a13_6" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a13_4"> 
+	<section id="m9a13_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>InstructionsNotebook text="Now write the answers to these questions in your Notebook. Check the answers at the end."}}
+
+      			<div class="parapaper paraextract">
+      			<h4>
+      				<ol class="olcircle">
+      					<li>Why do you think Gareth writes his name on the stapler?</li>
+						<li>Why do you think Tim hides Gareth’s stapler in jelly?</li>
+						<li>How does Gareth describe the office he works in?</li>
+						<li>What did he do before working in the office?</li>
+					</ol>
+				</h4>
+      			</div>
+
+      			<div class="center">
+      			<button data-toggle="modal" data-target="#m9a13_modal" class="button2">Watch the video again</button>
+      			</Div>
+
+      			<h3 class="center">Continue when you're ready to see the answers.</h3>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a13_3" nexturl="#m9a13_5" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

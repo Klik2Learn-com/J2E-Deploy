@@ -1,0 +1,632 @@
+<template name="m8a12"> 
+<article class="with-tools-sidebar m8a12">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Cardiff');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 12 - {{>m8a12Title}}</div>
+		</header>
+		<section id="m8a12">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a12Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a12Intro}}</h3>
+				{{> m8a12Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a12_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a12_1}}
+		{{>m8a12_2}}
+		{{>m8a12_3}}
+		{{>m8a12_4}}
+		{{>m8a12_5}}
+		{{>m8a12_6}}
+		{{>m8a12_7}}
+		{{>m8a12_8}}
+		{{>m8a12_9}}
+		{{>m8a12_10}}
+		{{>m8a12_11}}
+		{{>m8a12_12}}
+		{{>m8a12_13}}
+		{{>m8a12_14}}
+		{{>m8a12_15}}
+		{{>m8a12_16}}
+		{{>EndPage char="elle" act="m8a12" nextact="m8a13" place="Cardiff"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a12_1"> 
+	<section id="m8a12_1" class="hidden"> {{> popovers}}
+		<div class="content">  
+      			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> verbs to find out what tense is used.</h3>
+      			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="ph-w ph-16x9 shadow" style="max-width: 409px"><div class="ph"><img draggable="false" src="images/module8/a12/americanrelay.jpg" alt="American Olympic Relay team"></div></div>
+						<Br>
+						<div class="caption">“If they <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past Perfect">hadn’t dropped</a> the baton, they <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past Conditional">would have won</a> a medal.”<Br>
+						This describes the past – something that didn’t happen.</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a12" nexturl="#m8a12_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a12_10"> 
+	<section id="m8a12_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>Listen to the conversation again and write the missing words in the spaces. You can use either the long form or the short form.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">7</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/7_not_exactly.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									Not exactly, but if I<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> you have to do lots of boring jobs before you’re given real responsibility, it <span id="entryanswer1" class="textentry-disabled"></span> easier.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} --> 
+			
+		</div>
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_11"> 
+	<section id="m8a12_11" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>This sentence has no missing words. Continue when you're ready.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">8</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/8_any_final.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									Any final words of advice?
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} -->
+			
+		</div>  
+
+			{{>footer_nav prevurl="#m8a12_10" nexturl="#m8a12_12" prev="disabled" next=""}} 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_12"> 
+	<section id="m8a12_12" class="hidden"> 
+	{{#if activeSection}}
+		<div class="content"> 
+			<h3>Listen to the conversation again and write the missing words in the spaces. You can use either the long form or the short form.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">9</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/9_if_youre.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+								If you<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> not learning anything, <span id="entryanswer1" class="textentry-disabled"></span> what’s wrong –  you or the job.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} {{> welldone}}
+			
+		</div>    
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a12_13"> 
+	<section id="m8a12_13" class="hidden"> {{> popovers}}
+		<div class="content">  
+			<h3 class="center">Here are the Conditional Sentences again</h3>
+      			<div class="parapaper paraextract article-text fold">
+				<p>What do you wish you<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past perfect">'d known</a> before you <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past simple">started</a> your first job?
+				</p>			
+				<br><br>
+				<p>Well, I thought I knew everything! If I<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past perfect">'d realised</a> how different work was compared to college, I<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Future perfect">'d have</a> settled in more quickly.
+				</p>
+
+			</div>
+		{{>gg_button gg_text="Click here to find out more about Conditionals in the Verbs section in the Grammar Guide"}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a12_12" nexturl="#m8a12_14" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a12_14"> 
+	<section id="m8a12_14" class="hidden"> {{> popovers}}
+		<div class="content">  
+			<h3 class="center">Here are the Conditional Sentences again</h3>
+      			<div class="parapaper paraextract article-text fold">
+				<p>Well, I <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past simple">thought</a> I <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Conditional">would be</a> given lots of interesting work to do. 
+				</p>			
+				<br><br>
+				<p>I <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past conditional">would have been</a> better prepared if someone <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past perfect">had told</a> me you always start at the bottom.
+				</p>
+
+			</div>
+		{{>gg_button gg_text="Click here to find out more about Conditionals in the Verbs section in the Grammar Guide"}}
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m8a12_13" nexturl="#m8a12_15" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a12_15"> 
+	<section id="m8a12_15" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+			<h3 class="center">Here are the Conditional Sentences again</h3>
+      			<div class="parapaper paraextract article-text fold">
+				<p>Not exactly, but if I<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past perfect">'d understood</a> you have to do lots of boring jobs before you’re given real responsibility, it <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past conditional">would have been</a> easier.
+				</p>			
+				<br><br>
+				<p>If you<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Present simple">'re</a> not learning anything, <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Present simple">work out</a> what’s wrong –  you or the job.
+				</p>
+
+			</div>
+		{{>gg_button gg_text="Click here to find out more about Conditionals in the Verbs section in the Grammar Guide"}}
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m8a12_14" nexturl="#m8a12_16" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_16"> 
+	<section id="m8a12_16" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>You can listen to the complete conversation again if you want.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/Complete_conversation.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+				</div>
+			</div>
+			
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a12_15" nexturl="#m8a12_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_2"> 
+	<section id="m8a12_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>Listen to this conversation between someone starting their first job and an older person.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/Complete_conversation.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a12_1" nexturl="#m8a12_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_3"> 
+	<section id="m8a12_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">There are 4 “IF” sentences. {{>touch yes="Tap" no="Click"}} the number of the odd one out. If you get the answer right, there’s an explanation.</h3>
+
+      			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>If I’d realised how different work was compared to college, I’d have settled in more quickly.</li>
+						<li>I would have been better prepared if someone had told me you always start at the bottom.</li>
+						<li>If I’d understood you have to do lots of boring  jobs before you’re given real responsibility, it would have been easier.</li>
+						<li>If you’re not learning anything, work out what’s wrong – you or the job. <span class="info bottom hidden">This one is not in the past - it refers to the Present and the Future.</span></li>
+					</ol>
+				</div>
+				<br>
+					<hr>
+				<br>
+				<div class="container-fluid">
+					<div class="row center">
+						<div class="col-sm-3">
+							<button class="button2" id="1">1</button>
+						</div>
+						<div class="col-sm-3">
+							<button class="button2" id="2">2</button>
+						</div>
+						<div class="col-sm-3">
+							<button class="button2" id="3">3</button>
+						</div>
+						<div class="col-sm-3">
+							<button class="button2" id="4">4</button>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a12_2" nexturl="#m8a12_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_4"> 
+	<section id="m8a12_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>Listen to the conversation again and write the missing words in the spaces. You can use either the long form or the short form.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">1</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/1_what.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									What do you wish you<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> before you <span id="entryanswer1" class="textentry-disabled"></span> your first job?
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} -->
+			
+		</div> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_5"> 
+	<section id="m8a12_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>Listen to the conversation again and write the missing words in the spaces. You can use either the long form or the short form.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">2</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/2_well.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									Well, I thought I knew everything! If I<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> how different work was compared to college, I<span id="entryanswer1" class="textentry-disabled"></span> settled in more quickly.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} --> 
+			
+		</div> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_6"> 
+	<section id="m8a12_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>This sentence has no missing words. Continue when you're ready.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">3</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/3_what_do_you_mean.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									What do you mean?
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} --> {{> stuck stuckchar="elle"}}
+		</div> 		
+			{{>footer_nav prevurl="#m8a12_5" nexturl="#m8a12_7" prev="disabled" next=""}} 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_7"> 
+	<section id="m8a12_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>Listen to the conversation again and write the missing words in the spaces. You can use either the long form or the short form.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">4</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/4_well_i_thought.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									Well, I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> I <span id="entryanswer1" class="textentry-disabled"></span> given lots of interesting work to do. 
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} -->
+			
+		</div> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_8"> 
+	<section id="m8a12_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>Listen to the conversation again and write the missing words in the spaces. You can use either the long form or the short form.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">5</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/5_i_would.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> better prepared if someone <span id="entryanswer1" class="textentry-disabled"></span> me you always start at the bottom.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} -->
+			
+		</div>
+		{{> stuck stuckchar="elle"}}  
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a12_9"> 
+	<section id="m8a12_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3>This sentence has no missing words. Continue when you're ready.</h3>			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">6</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module8/a12/6_so_you.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									So you had to make the tea?
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about conditionals under verbs in the Grammar Guide"}}
+			{{> rightwrong}} <!-- {{> welldone}} -->
+			
+		</div>  
+
+			{{>footer_nav prevurl="#m8a12_8" nexturl="#m8a12_10" prev="disabled" next=""}} 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>

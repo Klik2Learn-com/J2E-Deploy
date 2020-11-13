@@ -1,0 +1,185 @@
+<template name="m6a10"> 
+<article class="with-tools-sidebar m6a1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Whitby');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 10 - {{>m6a10Title}}</div>
+		</header>
+		<section id="m6a10">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a10Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m6a10Intro}}</h3>
+				{{> m6a10Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a10_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a10_1}}
+		{{>m6a10_2}}
+		{{>m6a10_3}}
+		{{>m6a10_4}}
+		{{>EndPage char="k" act="m6a10" nextact="m6a11" place="Whitby"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a10_1"> 
+	<section id="m6a10_1" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on these pictures before you start.</h3>
+				  
+			<div class="snapshots snapshots-links" style="max-width: 600px">
+				<a draggable="false" href="#" title="MP" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="Someone who is elected by people in a region of Britain to represent them in the House of Commons.">
+					<figure>
+						<div class="ph-w ph-1x1"><div class="ph"><img draggable="false" src="images/module6/a10/Hazel Blares.jpg" alt="MP"></div></div>
+					</figure>
+				</a>
+				<a draggable="false" href="#" title="Bishop" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="Someone who is appointed to be a leader in the Church of England.">
+					<figure>
+						<div class="ph-w ph-1x1"><div class="ph"><img draggable="false" src="images/module6/a10/Archbishop of Canterbury.jpg" alt="Archbishop of Canterbury"></div></div>
+					</figure>
+				</a>
+				<a draggable="false" href="#" title="House of Commons" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="The ‘lower’ house where elected members of Parliament meet.">
+					<figure>
+						<div class="ph-w ph-1x1"><div class="ph"><img draggable="false" src="images/module6/a10/House of Commons.jpg" alt="House of Commons"></div></div>
+					</figure>
+				</a>
+				<a draggable="false" href="#" title="Bill" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="The name given to a written set of ideas before it becomes a law. If it becomes a law it is called an ‘Act.’">
+					<figure>
+						<div class="ph-w ph-1x1"><div class="ph"><img draggable="false" src="images/module6/a10/Scottish Parliament Act.jpg" alt="Bill"></div></div>
+					</figure>
+				</a>
+				<a draggable="false" href="#" title="House of Lords" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="The ‘upper’ house where specially appointed people like lords and bishops meet.">
+					<figure>
+						<div class="ph-w ph-1x1"><div class="ph"><img draggable="false" src="images/module6/a10/House of Lords.jpg" alt="House of Lords"></div></div>
+					</figure>
+				</a>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m6a10" nexturl="#m6a10_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a10_2"> 
+	<section id="m6a10_2" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+	word1="debate"
+	word2="assent"
+	word3="controversial"
+	word4="elect"
+	word5="whereas"
+	word6="scrutinize"
+	word7="recommend"
+	word8c="hidden"
+	word9c="hidden"
+	word10c="hidden"
+	word11c="hidden"
+	word12c="hidden"
+}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a10_1" nexturl="#m6a10_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a10_3"> 
+	<section id="m6a10_3" class="hidden"> 
+		<div class="content">  
+      			<h1>How Laws are Made</h1>
+      			<h4>About 100 new laws are made in Britain every year. This article explains what happens.</h4>
+      			<div class="ph-w ph-16x9" style="max-width: 640px"><div class="ph"><img draggable="false" src="images/module6/a10/Houses of parliament.jpg" alt="House of Parliament"></div></div>
+      			{{>dic_button}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a10_2" nexturl="#m6a10_4" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m6a10_4"> 
+	<section id="m6a10_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h1>How Laws are Made</h1>
+      			<div class="parapaper paraextract article-text">{{>metametrics level="3" star="no" align="center"}}
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a10/laws1.m4a"></button>
+					<h4>Paragraph 1</h4>
+				</div>
+
+				{{>m6a10_para1}}
+
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a10/laws2.m4a"></button>
+					<h4>Paragraph 2</h4>
+				</div>
+
+				{{>m6a10_para2}}
+
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a10/laws3.m4a"></button>
+					<h4>Paragraph 3</h4>
+				</div>
+
+				{{>m6a10_para3}}
+
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a10/laws4.m4a"></button>
+					<h4>Paragraph 4</h4>
+				</div>
+
+				{{>m6a10_para4}}
+
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a10/laws5.m4a"></button>
+					<h4>Paragraph 5</h4>
+				</div>
+
+				{{>m6a10_para5}}
+
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a10/laws6.m4a"></button>
+					<h4>Paragraph 6</h4>
+				</div>
+
+				{{>m6a10_para6}}
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m6a10_3" nexturl="#m6a10_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<!-- These paragraphs are used in modal boxes in m6a11 -->
+ <template name="m6a10_para1">
+<p>Making new laws in Britain is a lengthy process. The two ‘houses’ – the House of Commons and the House of Lords – have to debate a new Bill before it is passed to the Queen. She then gives it Royal Assent. It only becomes law at that stage.</p>
+ </template>
+ <template name="m6a10_para2">
+<p>Some Bills can take a matter of weeks but it usually takes years for a more controversial Bill to become an Act of Parliament.</p>
+ </template>
+ <template name="m6a10_para3">
+<p>Anyone can come up with a new idea for a Bill. It could be an elected Member of Parliament (MP) from the House of Commons or someone who has been appointed to the House of Lords.</p>
+ </template>
+ <template name="m6a10_para4">
+<p>The House of Lords is made up of bishops from the Church of England and people appointed by the Queen. It has more than 760 members whereas the House of Commons only has 650 MPs.</p>
+ </template>
+ <template name="m6a10_para5">
+<p>When someone comes up with a new idea for a law it takes a long time before it reaches a vote. During the First Reading, someone will present their ideas to the House. At the Second Reading, it’s debated in detail and can be blocked from going any further. If it gets to the next stage – the Committee stage – it’s scrutinised to see exactly how it might work. Changes might be made.  It passes then to the Report Stage where another group looks at it and makes any other changes they think are necessary. Finally, it reaches a Third Reading in the House where it started.</p>
+ </template>
+ <template name="m6a10_para6">
+<p>But… that’s not the end of the matter. It has to go through the whole process again in the other House. If they recommend any changes, the first House has to agree. Even at this stage, if both Houses cannot agree, the new law will go no further.</p>
+ </template>

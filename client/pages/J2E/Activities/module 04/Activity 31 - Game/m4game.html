@@ -1,0 +1,90 @@
+<template name="m4Game">
+<article class="with-tools-sidebar game m4Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Glasgow');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 31 - {{>m4GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m4Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m4Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m4Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m4Game_1}}
+		
+		<!-- K -->
+	 	{{>m4Game_2}}
+		{{>m4Game_3}}
+		{{>m4Game_3r}}
+		
+		{{>m4Game_4}}
+		{{>m4Game_5}}
+		{{>m4Game_5r}}
+		
+		{{>m4Game_6}}
+		{{>m4Game_7}}
+		{{>m4Game_7r}}
+		
+		<!-- note -->
+		{{>m4Game_8}}
+		
+		
+		<!-- Elle -->
+		{{>m4Game_9}}
+		{{>m4Game_10}}
+		{{>m4Game_10r}}
+		
+		{{>m4Game_11}}
+		{{>m4Game_12}}
+		{{>m4Game_12r}}
+		
+		{{>m4Game_13}}
+		{{>m4Game_14}}
+		{{>m4Game_14r}}
+		
+		<!-- note -->
+		{{>m4Game_15}}
+		
+		
+		<!--Tu -->
+		{{>m4Game_16}}
+		{{>m4Game_17}}
+		{{>m4Game_17r}}
+		
+		{{>m4Game_18}}
+		{{>m4Game_19}}
+		{{>m4Game_19r}}
+		
+		{{>m4Game_20}}
+		{{>m4Game_21}}
+		{{>m4Game_22}}
+		{{>m4Game_22r}}
+		
+		{{>m4Game_23}}
+		{{>m4Game_23r}}
+		
+		<!-- note -->
+		{{>m4Game_24}}
+		
+		<!-- Name -->
+		{{>m4Game_25}}
+		
+		
+		{{>m4Game_Score}}
+		{{>m4Game_ans}} 
+		{{>EndPage2 char="all" act="m4Game" nextplace="Belfast" nextmod="5" place="Glasgow"  end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

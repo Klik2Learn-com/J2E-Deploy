@@ -1,0 +1,225 @@
+<template name="m4a23">
+<article class="with-tools-sidebar m4a23">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/LochLomond');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 23 - {{>m4a23Title}}</div>
+		</header>
+		
+		
+		<section id="m4a23">
+			<div class="content">
+				<h1 class="start-page-header">{{> m4a23Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m4a23Intro}}</h3>
+{{> m4a23Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a23_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m4a23_1}}
+		{{>m4a23_2}}
+		{{>m4a23_3}}
+		{{>m4a23_4}}
+		{{>m4a23_5}}
+		{{>m4a23_6}}
+
+		{{>EndPage char="tu" act="m4a23" nextact="m4a24" place="LochLomond"}}
+
+		
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="m4a23_article" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m4a23_article">Diet V. Exercise</h4>
+				</div>
+				
+				<div class="content">
+
+					{{>DietVExerciseArticle}}
+					
+					
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m4a23_1">
+	<section id="m4a23_1" class="hidden">
+		<div class="content">
+			<h4>The article from Activity 22 has 7 Modal Verbs expressing <b>obligation</b> or <b>necessity</b>.</h4>
+			<br>
+			{{>DietVsExercise}}
+			<br>
+			<div class="text-center"><button data-toggle="modal" data-target="#m4a23_article" class="button2">Read the article</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a23" nexturl="#m4a23_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a23_2">
+	<section id="m4a23_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3>Type the modal verbs in the spaces in the order they appear in the article.</h3>
+
+			<div class="parapaper linespace2 fold">
+
+				When it comes to weight loss and looking at diet versus exercise, which is more important? If you know where to focus your efforts, you <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span> to see more effective results.
+
+				<div class="text-center m4a23-info">
+					{{>hint hintchar="tu" hint="This modal verb has 3 words"}}
+					{{>infochar_hidden char="tu" text="It's a reasonable assumption"}}
+					<br>
+					<button data-toggle="modal" data-target="#m4a23_article" class="button2 item-space">Read the article</button><br>
+				</div>
+
+				{{>rightwrong}}
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a23_1" nexturl="#m4a23_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a23_3">
+	<section id="m4a23_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3>Type the modal verbs in the spaces in the order they appear in the article.</h3>
+
+			<div class="parapaper linespace2 fold">
+				I wound up working until midnight or later most days. I stopped keeping track of the hours I worked because it just scared me. I knew I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span> exercise more.
+
+				<div class="text-center m4a23-info">
+					{{>hint hintchar="tu" hint="This modal verb has 2 words"}}
+					{{>infochar_hidden char="tu" text="It's a sensible action"}}
+					<br>
+					<button data-toggle="modal" data-target="#m4a23_article" class="button2 item-space">Read the article</button><br>
+				</div>
+
+				{{>rightwrong}}
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a23_2" nexturl="#m4a23_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a23_4">
+	<section id="m4a23_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3>Type the modal verbs in the spaces in the order they appear in the article.</h3>
+
+			<div class="parapaper linespace2 fold">
+				Diet plans control how many calories you eat, and exercise controls how many calories you burn. To be successful you <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span> do both.
+
+				<div class="text-center m4a23-info">
+					{{>hint hintchar="tu" hint="This modal verb has 2 words"}}
+					{{>infochar_hidden char="tu" text="It's an external obligation"}}
+					<br>
+					<button data-toggle="modal" data-target="#m4a23_article" class="button2 item-space">Read the article</button><br>
+				</div>
+
+				{{>rightwrong}}
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a23_3" nexturl="#m4a23_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a23_5">
+	<section id="m4a23_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3>Type the modal verbs in the spaces in the order they appear in the article.</h3>
+
+			<div class="parapaper linespace2 fold">
+				Half an hour of exercise is a great way to burn more calories. Here's what you <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span> do if you want to burn calories.
+
+				<div class="text-center m4a23-info">
+					{{>hint hintchar="tu" hint="This modal verb has 1 word"}}
+					{{>infochar_hidden char="tu" text="It's a personal obligation"}}
+					<br>
+					<button data-toggle="modal" data-target="#m4a23_article" class="button2 item-space">Read the article</button><br>
+				</div>
+
+				{{>rightwrong}}
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a23_4" nexturl="#m4a23_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a23_6">
+	<section id="m4a23_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3>Type the modal verbs in the spaces in the order they appear in the article.</h3>
+
+			<div class="parapaper linespace2 fold">
+				So yeah, you<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span> look out those trainers! The trouble is, it’s so easy to wipe out all that hard work with a small snack afterwards.
+
+				<div class="text-center m4a23-info">
+					{{>hint hintchar="tu" hint="This modal verb has 2 words"}}
+					{{>infochar_hidden char="tu" text="It's advice"}}
+					<br>
+					<button data-toggle="modal" data-target="#m4a23_article" class="button2 item-space">Read the article</button><br>
+				</div>
+
+				{{>rightwrong}} {{>welldone}}
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a23_5" nexturl="#m4a23_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+

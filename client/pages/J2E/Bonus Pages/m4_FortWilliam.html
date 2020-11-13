@@ -1,0 +1,148 @@
+<template name="MoreAboutFortWilliam">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="FortWilliam"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m4l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m4l1}}</div>
+		</header>
+
+		<section id="moreaboutFortWilliam">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">									
+					<div class="col-sm-3 col-sm-offset-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/FortWilliam/FortWilliam5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l1_E">
+						<p>Old Inverlochy Castle</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/FortWilliam/FortWilliam2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l1_B">
+						<p>Lochaber Highland Games</p>
+					</div>
+					<div class="col-sm-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/FortWilliam/FortWilliam3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l1_C">
+						<p>Mountain Biking</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+				<div class="col-sm-7 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/FortWilliam/FortWilliam1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l1_A">
+						<p>Ben Nevis</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/FortWilliam/FortWilliam4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l1_D">
+						<p>Glenfinnan Viaduct</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l1_A">Ben Nevis</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortWilliam/FortWilliam1.jpg" alt="Ben Nevis" style="max-width: 250px;">
+					</figure>
+					<p>At a height of 1,345 meters, Ben Nevis is the highest mountain in Britain. There is snow at the top of the mountain almost all year. It lies just to the north of the town of Fort William and is a favourite destination for climbers, skiers and mountain bikers. There is a steep path up the mountain which walkers can use and over 100,000 people climb Ben Nevis every year. Some men from Dundee even carried a piano up Ben Nevis to raise money for charity.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://ben-nevis.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l1_B">Lochaber Highland Games</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortWilliam/FortWilliam2.jpg" alt="Lochaber Highland Games" style="max-width: 250px;">
+					</figure>
+					<p>Most towns and villages in Scotland hold their own Highland Games in the summer and visitors can enjoy Highland music, dancing and some unusual Scottish sports as well as more familiar running and field events. The Lochaber Highland games is one of the largest in the country. Originally Highland Games were used to find the men in the area who were strongest, fittest and fastest and could protect the Clan Chief.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=JFTmotfUNwg" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l1_C">Mountain Biking</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortWilliam/FortWilliam3.jpg" alt="Mountain Biking" style="max-width: 250px;">
+					</figure>
+					<p>Fort William is called the outdoor capital of the UK and the Word Cup mountain biking trail attracts world class mountain bikers from all over the world to compete every year. The course is steep and rocky and  needs a lot of skill to descend safely. A gondola makes it easy to get to the top of the mountain and the Snow Goose restaurant. It’s used by mountain bikers and  by skiers in the winter and tourists in the summer.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.pinkbike.com/video/137730/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l1_D">Glenfinnan Viaduct</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortWilliam/FortWilliam4.jpg" alt="Glenfinnan Viaduct" style="max-width: 250px;">
+					</figure>
+					<p>The Glenfinnan viaduct is one of the most dramatic locations in Scotland and has been used in many films. For all Harry Potter fans, this viaduct is not to be missed. It’s the longest railway viaduct in Scotland and runs along the west side of Scotland. In the summer you can travel the West Highland line, including the viaduct in a steam train. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=cPsIU9BTbcQ" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l1_E"> Old Inverlochy Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortWilliam/FortWilliam5.jpg" alt=" Old Inverlochy Castle" style="max-width: 250px;">
+					</figure>
+					<p>The original Inverlochy castle is now a ruin but it was one of the most important castles in Scotland. It had a naturally strong position at the head of the valley, beside the river Lochy and played a part in the civil wars in the middle of the 17th century. In the 19th century, a new castle was built nearby. It is now one of the most expensive, luxury hotels in Scotland.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.inverlochycastle.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

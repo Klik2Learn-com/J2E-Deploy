@@ -1,0 +1,90 @@
+<template name="styleConv">
+	<section id="styleConv" class="hidden">
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="conversation shadow" title="Conversation"></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">1</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/1.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"Who <span><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> you like most to meet?"
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center"><button class="button2 item-space">Examples</button></div>
+		
+
+<b>HTML</b>		
+<pre class="htmlcode2">&lt;template name=&quot;styleConv&quot;&gt;
+	&lt;section id=&quot;styleConv&quot; class=&quot;hidden&quot;&gt;
+		&#123;&#123;#if activeSection&#125;&#125;
+		&lt;div class=&quot;content&quot;&gt; 
+			&lt;h3&gt;Now listen to these people discussing the radio report. Write the correct form of &lt;u&gt;will&lt;/u&gt;, &lt;u&gt;would&lt;/u&gt; or &lt;u&gt;won't&lt;/u&gt; in the space.&lt;/h3&gt;
+
+			
+			&lt;div class=&quot;parapaper parasegment fold&quot;&gt;
+				&lt;div class=&quot;container-fluid&quot;&gt;
+				
+					&lt;div class=&quot;row&quot;&gt;
+						&lt;div class=&quot;col-sm-8 col-sm-push-4&quot;&gt;
+							&lt;div class=&quot;conversation shadow&quot; title=&quot;Conversation&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+						
+						&lt;div class=&quot;col-sm-1 col-sm-pull-8 col-xs-2&quot;&gt;
+							&lt;div class=&quot;number&quot;&gt;1&lt;/div&gt;
+						&lt;/div&gt;
+						
+						&lt;div class=&quot;col-sm-2 col-sm-pull-8 col-xs-8 text-center&quot;&gt;
+							&lt;div class=&quot;hidden-xs&quot; style=&quot;height: 3em;&quot;&gt;&lt;/div&gt;
+							&lt;button type=&quot;button&quot; class=&quot;buttonround buttonroundbig buttonaudio&quot; data-audiosrc='audio/module5/a18/1.m4a' style=&quot;margin: 1em 1em 0 1em;&quot;&gt;&lt;/button&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&#123;&#123;&gt;blankrow&#125;&#125;
+					&lt;div class=&quot;row&quot;&gt;
+						&lt;div class=&quot;col-xs-12&quot;&gt;
+							&lt;div class=&quot;linespace2 text-center&quot;&gt;
+								&lt;span class=&quot;inline-block text-left text2&quot;&gt;
+									&quot;Who &lt;span id=&quot;entryanswer0&quot;&gt;&lt;form class=&quot;textentry&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;userText&quot; size=&quot;7&quot; autocomplete=&quot;off&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;OK&quot;&gt;&lt;/form&gt;&lt;/span&gt; you like most to meet?&quot;
+								&lt;/span&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&#123;&#123;&gt; rightwrong&#125;&#125; &#123;&#123;&gt; welldone&#125;&#125;
+			&lt;div class=&quot;text-center&quot;&gt;&lt;button class=&quot;button2 item-space&quot;&gt;Examples&lt;/button&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav prevurl=&quot;&quot; nexturl=&quot;&quot; prev=&quot;disabled&quot; next=&quot;hidden&quot;&#125;&#125;
+		&lt;/footer&gt;
+		&#123;&#123;&gt; stuck stuckchar=&quot;elle&quot;&#125;&#125;
+		&#123;&#123;/if&#125;&#125;
+	&lt;/section&gt;
+&lt;/template&gt;</pre>
+		
+		</div>
+	
+	</section>
+</template>

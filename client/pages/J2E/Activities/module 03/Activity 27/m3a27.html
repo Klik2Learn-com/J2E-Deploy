@@ -1,0 +1,112 @@
+<template name="m3a27">
+	<article class="with-tools-sidebar m3a27">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Edinburgh');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 27 - {{>m3a27Title}}</div>
+			</header>
+
+
+			<section id="m3a27">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a27Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m3a27Intro}}</h3>
+					{{> m3a27Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a27_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m3a27_1}} {{>m3a27_2}} {{>m3a27_3}} {{>EndPage char="elle" act="m3a27" nextact="m3a28" place="Edinburgh"}}
+
+
+		</div>
+	</article>
+
+</template>
+
+<template name="m3a27_1">
+	<section id="m3a27_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod3_idioms_EF}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a27" nexturl="#m3a27_2" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a27_2">
+	<section id="m3a27_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod3_idioms}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a27_1" nexturl="#m3a27_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a27_3">
+	<section id="m3a27_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Idioms</h1>
+			<h3 class="center">Drag the right idiom into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{>welldone}}
+				<ol class="olcircle">
+					<li>After a few years, he got tired of living
+						<div class="ddseatedtarget ddwidth18 dd1line" data-destinationid="target1">&nbsp;</div> and moved back to London.</li>
+					<li>They’ve been to the same hotel so often it’s like a
+						<div class="ddseatedtarget ddwidth18 dd1line" data-destinationid="target2">&nbsp;</div>.</li>
+					<li>He bought stock in that tech company when it started and now it's worth millions. It just proves that
+						<div class="ddseatedtarget ddwidth18 dd1line" data-destinationid="target3">&nbsp;</div>.</li>
+					<li>You can’t always take people at
+						<div class="ddseatedtarget ddwidth18 dd1line" data-destinationid="target4">&nbsp;</div>. You need to get to know them. </li>
+				</ol>
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth18 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target3">the early bird catches the worm</div>
+					</div>
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target4">face value</div>
+					</div>
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target1">in the sticks</div>
+					</div>
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target2">home from home</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a27_2" nexturl="#m3a27_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

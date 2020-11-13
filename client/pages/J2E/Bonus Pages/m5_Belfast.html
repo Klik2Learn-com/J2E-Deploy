@@ -1,0 +1,148 @@
+<template name="MoreAboutBelfast">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Belfast"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m5l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m5l1}}</div>
+		</header>
+
+		<section id="moreaboutBelfast">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Belfast/Belfast1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l1_A">
+						<p>Music Scene</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Belfast/Belfast2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l1_B">
+						<p>Cave Hill Country Park</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Belfast/Belfast3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l1_C">
+						<p>Titanic</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-6 bonus-image" style="background-image: url('images/bonus/Belfast/Belfast4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l1_D">
+						<p>St George’s Market</p>
+					</div>
+					<div class="col-sm-6 col-xs-6 bonus-image" style="background-image: url('images/bonus/Belfast/Belfast5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l1_E">
+						<p>Crumlin Road Gaol</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l1_A">Music Scene</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Belfast/Belfast1.jpg" alt="Music Scene" style="max-width: 250px;">
+					</figure>
+					<p>Belfast is famous for its music scene. You can find all kinds of music in the city - jazz, rock, blues and classical music. Traditional Irish folk music is also played in many of the city’s pubs.  Many world famous artists have come to Belfast to play. The city has also produced some great musicians such as  Van Morrison and Snow Patrol.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.culturenorthernireland.org/tags/belfast-music" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l1_B">Cave Hill Country Park</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Belfast/Belfast2.jpg" alt="Cave Hill Country Park" style="max-width: 250px;">
+					</figure>
+					<p>If you want to experience the Irish countryside, you can explore the Cave Hill country park near Belfast. A walk there will take you to Belfast Castle . The castle is open to the public and you can learn a lot about the history and wildlife of the area. If you climb to the top of the hill you can get amazing views over the city and Belfast Loch.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.belfasthills.org/content/cave-hill-country-park/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l1_C">Titanic</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Belfast/Belfast3.jpg" alt="Titanic" style="max-width: 250px;">
+					</figure>
+					<p>The new Titanic museum in Belfast opened in 2012. In 2016, it was voted the Best Visitor Attraction in the world. Previous winners of the award are the Taj Mahal and the Pyramids in Egypt. The museum tells the world famous story of the ship which was built in Belfast. It was the largest ship on the ocean in 1912 when it hit an iceberg on its first voyage and sank on the way to New York. Over 1,500 people lost their life.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://titanicbelfast.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l1_D">St George’s Market</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Belfast/Belfast4.jpg" alt="St George’s Market" style="max-width: 250px;">
+					</figure>
+					<p>This large indoor market started in the 19th century and is the last surviving Victorian market in Belfast. It is one of the best in the UK and has won a lot of awards for its fresh local food and interesting arts and crafts. The market often has live music while you are shopping and holds special events throughout the year.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.discovernorthernireland.com/St-Georges-Market-Belfast-P3230" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l1_E">Crumlin Road Gaol</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Belfast/Belfast5.jpg" alt="Crumlin Road Gaol" style="max-width: 250px;">
+					</figure>
+					<p>Crumlin Road Gaol is a grim looking building in Belfast. It was a prison for over 150 years and closed in 1998. There are daily tours where visitors can discover what prison life was like throughout the ages. Some people have reported hearing and seeing strange things in Crumlin Road and if you are feeling brave you can take one of the ghost tours.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.crumlinroadgaol.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

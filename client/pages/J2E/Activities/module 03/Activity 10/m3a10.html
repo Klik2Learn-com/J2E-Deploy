@@ -1,0 +1,649 @@
+<template name="m3a10">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Linlithgow');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 10 - {{>m3a10Title}}</div>
+			</header>
+
+			<section id="m3a10">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a10Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m3a10Intro}}</h3>
+					{{> m3a10Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a10_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m3a10_1}} {{>m3a10_2}} {{>m3a10_3}} {{>m3a10_4}} {{>m3a10_5}} {{>m3a10_6}} {{>m3a10_7}} {{>m3a10_8}} {{>m3a10_9}} {{>m3a10_10}}
+			{{>m3a10_11}} {{>m3a10_12}} {{>m3a10_13}} {{>m3a10_end}}
+		</div>
+	</article>
+</template>
+
+<template name="m3a10_1">
+	<section id="m3a10_1" class="hidden">
+		<div class="content">
+			<h3>Watch these two people arranging a surprise party for a friend. They both make mistakes with the Future Tense.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7 text-center">
+						<div class="ph-w ph-16x10" style="max-width: 428px">
+							<div class="ph">
+								<img draggable="false" src="images/module3/a10/intro.png" alt="Two people having a conversation">
+							</div>
+						</div>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-5 text-center">
+						<div class="caption capred">
+							<b>Watch out!</b>
+						</div>
+						<br>
+						<br>
+						<div class="caption capgreen fold text-left">
+							<p>Sometimes the character gets it right.</p>
+							<p>Sometimes there’s more than one right answer!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10" nexturl="#m3a10_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a10_2">
+	<section id="m3a10_2" class="hidden">
+		<div class="content">
+			<h3>Watch these two people arranging a surprise party for a friend. They both make mistakes with the Future Tense.</h3>
+
+			<div class="m3a10-conv-box m3a10-guy shadow">
+				<div class="speech1">Hi Anka, do you do anything this evening?</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/1.m4a"></button>
+				<button class="buttonround buttonaudio faded"></button>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_1" nexturl="#m3a10_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a10_3">
+	<section id="m3a10_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-guy shadow">
+				<div class="speech1">
+					Hi Anka,
+					<span class="incorrectword">do you do</span> anything this evening?
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/1.m4a"></button>
+				<button class="buttonround buttonaudio faded"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<!-- If the user cannot see the droppable area, remove the div below
+			to remove the floating box of draggable elements and go back to having
+			them in a box under the droppable area (fixed on page, not on screen) -->
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">are you doing</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">will you do</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target3">are you going to do</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_2" nexturl="#m3a10_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_4">
+	<section id="m3a10_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-girl shadow">
+				<div class="speech2">
+					Well, no.
+					<span class="incorrectword">I don’t do</span> anything in particular.
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio faded"></button>
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/2.m4a"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target3">I'm not going to do</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">I won't do</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">I'm not doing</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_3" nexturl="#m3a10_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_5">
+	<section id="m3a10_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-guy shadow">
+				<div class="speech1">
+					You remember Martyna?
+					<span class="incorrectword">She's going to be back</span> from her trip to Australia today.
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/3.m4a"></button>
+				<button class="buttonround buttonaudio faded"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target3">She will be back</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">She's back</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target3">She is being back</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_4" nexturl="#m3a10_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_6">
+	<section id="m3a10_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-guy shadow">
+				<div class="speech1">
+					Her plane
+					<span class="incorrectword">lands</span> at 5pm.
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/4.m4a"></button>
+				<button class="buttonround buttonaudio faded"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target4">is going to land</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">will land</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target3">is landing</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_5" nexturl="#m3a10_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_7">
+	<section id="m3a10_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-guy shadow">
+				<div class="speech1">
+					<span class="incorrectword">We will have</span> a few friends round this evening to welcome her back.
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/5.m4a"></button>
+				<button class="buttonround buttonaudio faded"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">We're having</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">We have</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">We're going to have</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_6" nexturl="#m3a10_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_8">
+	<section id="m3a10_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-guy shadow">
+				<div class="speech1">
+					<span class="incorrectword">Do you come?</span>
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/6.m4a"></button>
+				<button class="buttonround buttonaudio faded"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">Will you come?</div>
+				</div>
+				<div class="ddseat ddwidth12 dd2lines">
+					<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target2">Are you going to come?</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target3">Are you coming?</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_7" nexturl="#m3a10_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_9">
+	<section id="m3a10_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-girl shadow">
+				<div class="speech2">
+					Yeah. Sure.
+					<span class="incorrectword">That'll be great.</span>
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio faded"></button>
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/7.m4a"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target4">That's being great.</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">That great.</div>
+				</div>
+				<div class="ddseat ddwidth12 dd2lines">
+					<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target3">That's going to be great.</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_8" nexturl="#m3a10_10" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_10">
+	<section id="m3a10_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-girl shadow">
+				<div class="speech2">
+					<span class="incorrectword">I’ll bring</span> some drinks if you like.
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio faded"></button>
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/8.m4a"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target4">I'm bringing</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">I bring</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target3">I'm going to bring</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_9" nexturl="#m3a10_11" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_11">
+	<section id="m3a10_11" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-guy shadow">
+				<div class="speech1">
+					Good.
+					<span class="incorrectword">I go</span> to the supermarket now to get some food. See you later. About 8 o’clock?
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd1line2high" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/9.m4a"></button>
+				<button class="buttonround buttonaudio faded"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">I'm going</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">I will go</div>
+				</div>
+				<div class="ddseat ddwidth12 dd1line2high">
+					<div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">I'm going to go</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_10" nexturl="#m3a10_12" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_12">
+	<section id="m3a10_12" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">If you think the tense is wrong, drag the right phrase into the box.</h3>
+			<h3 class="text-center">If the tense is right, {{>touch yes="tap" no="click"}} the red button below.</h3>
+
+			<div class="m3a10-conv-box m3a10-girl shadow">
+				<div class="speech2">
+					That’s great.
+					<span class="incorrectword">I’ll look forward to that.</span>
+					<br>
+					<br>
+					<div class="ddseatedtarget ddwidth12 dd2lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+			</div>
+			<div class="m3a10-audio">
+				<button class="buttonround buttonaudio faded"></button>
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a10/10.m4a"></button>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd2lines">
+					<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target4">I'm looking forward
+						<br>to that</div>
+				</div>
+				<div class="ddseat ddwidth12 dd2lines">
+					<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target2">I'm going to look forward to that</div>
+				</div>
+				<div class="ddseat ddwidth12 dd2lines">
+					<div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target3">I will look forward
+						<br>to that</div>
+				</div>
+				<br>
+				<button class="button1 item-space">This sentence is right</button>
+			</div>
+</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_11" nexturl="#m3a10_13" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a10_13">
+	<section id="m3a10_13" class="hidden">
+		<div class="content">
+			<ul class="speech speech-audio center-block">
+
+				<li>
+					<img draggable="false" src="images/module3/a10/guy.png" alt="Person 1" class="round">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/1-right.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Hi Anka, are you doing anything this evening
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/2-right.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Well, no. I’m not doing anything in particular.
+						</div>
+					</div>
+					<img draggable="false" src="images/module3/a10/girl.png" alt="Person 2" class="round">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/module3/a10/guy.png" alt="Person 1" class="round">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/3-4-5-6-right.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							You remember Martyna? She’s back from her trip to Australia today. Her plane lands at 5pm. We’re having a few friends round
+							this evening to welcome her back. Will you come?
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/7-8-right.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Yeah. Sure. That’ll be great. I’ll bring some drinks if you like.
+						</div>
+					</div>
+					<img draggable="false" src="images/module3/a10/girl.png" alt="Person 2" class="round">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/module3/a10/guy.png" alt="Person 1" class="round">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/9-right.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Good. I’m going to the supermarket now to get some food. See you later. About 8 o’clock?
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/10-right.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							That’s great. I’ll look forward to that.
+						</div>
+					</div>
+					<img draggable="false" src="images/module3/a10/girl.png" alt="Person 2" class="round">
+				</li>
+
+			</ul>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a10_12" nexturl="#m3a10_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a10_end">
+	{{>EndPage char="k" act="m3a10" nextact="m3a11" place="Linlithgow"}}
+</template>

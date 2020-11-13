@@ -1,0 +1,895 @@
+<template name="m3a21">
+<article class="with-tools-sidebar m3a21">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/NorthBerwick');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 21 - {{>m3a21Title}}</div>
+		</header>
+		
+		
+		<section id="m3a21">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a21Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m3a21Intro}}</h3>
+{{> m3a21Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a21_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a21_1}}
+		{{>m3a21_2}}
+		{{>m3a21_3}}
+		{{>m3a21_4}}
+		{{>m3a21_5}}
+		{{>m3a21_6}}
+		{{>m3a21_7}}
+		{{>m3a21_8}}
+		{{>m3a21_9}}
+
+		{{>EndPage char="elle" act="m3a21" nextact="m3a22" place="NorthBerwick"}}
+
+		
+	</div>
+</article>
+
+	{{>m3a21modals}}
+</template>
+<template name="m3a21_1">
+	<section id="m3a21_1" class="hidden">
+		<div class="content">
+			<h1>Renting a House</h1>
+			<h3>When you {{>touch yes="tap" no="click"}} on a picture, you’ll find a description of a property like that to rent. Continue when you’re ready.</h3>
+			
+			<div class="snapshots snapshots-links">
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-detached_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/detached.jpg" alt="Detached house"></div></div>
+				</figure>
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-terraced_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/terraced.jpg" alt="Terraced house"></div></div>
+				</figure>
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-tenement_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/tenement.jpg" alt="Tenement flat"></div></div>
+				</figure>
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-bungalow_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/bungalow.jpg" alt="Bungalow"></div></div>
+				</figure>
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-high-rise_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/high-rise.jpg" alt="High-rise apartment"></div></div>
+				</figure>
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-semi-detached_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/semi-detached.jpg" alt="Semi-detached house"></div></div>
+				</figure>
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-cottage_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/cottage.jpg" alt="Cottage"></div></div>
+				</figure>
+				<figure data-toggle="modal" class="pointer" data-target="#m3a21-maisonette_modal">
+					<div class="ph-w ph-3x2"><div class="ph"><img draggable="false" src="images/module3/a21/maisonette.jpg" alt="Maisonette"></div></div>
+				</figure>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21" nexturl="#m3a21_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a21_2">
+	<section id="m3a21_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>Semi-detached house</h4>		
+							This semi-detached house has everything you need – all the windows have <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="13" autocomplete="off"><input type="submit" value="OK"></form></span> and you could park two cars in the <span id="entryanswer1" class="textentry-disabled"></span>. There’s a very <span id="entryanswer2" class="textentry-disabled"></span> living room and all floor <span id="entryanswer3" class="textentry-disabled"></span> are included.
+							
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/semi-detached.jpg" alt="Semi-detached house"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">spacious</span>
+				<span class="word">coverings</span>
+				<span class="word">double glazing</span>
+				<span class="word">driveway</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_1" nexturl="#m3a21_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21_3">
+	<section id="m3a21_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>Tenement flat</h4>	
+							This flat <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="9" autocomplete="off"><input type="submit" value="OK"></form></span> from gas central heating and is available for a <span id="entryanswer1" class="textentry-disabled"></span> let. It has all the <span id="entryanswer2" class="textentry-disabled"></span> you need – washer/dryer, fridge freezer etc. <span id="entryanswer3" class="textentry-disabled"></span> in to the fitted kitchen. It even has a new <span id="entryanswer4" class="textentry-disabled"></span> shower.
+							
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/tenement.jpg" alt="Tenement flat"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">power</span>
+				<span class="word">benefits</span>
+				<span class="word">long term</span>
+				<span class="word">integrated</span>
+				<span class="word">appliances</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_2" nexturl="#m3a21_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21_4">
+	<section id="m3a21_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>Cottage</h4>
+							This cottage was built in the 1900s but has been completely <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> recently. The living room is heated by a woodburning <span id="entryanswer1" class="textentry-disabled"></span>. It has a <span id="entryanswer2" class="textentry-disabled"></span> location and is set in beautiful countryside with <span id="entryanswer3" class="textentry-disabled"></span> views in every direction. Pets will be allowed by <span id="entryanswer4" class="textentry-disabled"></span>.
+							
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/cottage.jpg" alt="Cottage"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">rural</span>
+				<span class="word">stove</span>
+				<span class="word">panoramic</span>
+				<span class="word">negotiation</span>
+				<span class="word">refurbished</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_3" nexturl="#m3a21_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21_5">
+	<section id="m3a21_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>Detached house</h4>
+							
+							If you are looking for a <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> family home, this wonderful <span id="entryanswer1" class="textentry-disabled"></span> house might be just what need.  There is a <span id="entryanswer2" class="textentry-disabled"></span> back garden for children to play in and 3 bedrooms including a large <span id="entryanswer3" class="textentry-disabled"></span> bedroom. You don’t have to worry about <span id="entryanswer4" class="textentry-disabled"></span> and there is a small <span id="entryanswer5" class="textentry-disabled"></span> charge for this.
+	
+							
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/detached.jpg" alt="Detached house"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">master</span>
+				<span class="word">secluded</span>
+				<span class="word">detached</span>
+				<span class="word">desirable</span>
+				<span class="word">communal</span>
+				<span class="word">maintenance</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_4" nexturl="#m3a21_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21_6">
+	<section id="m3a21_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>Terraced house</h4>
+							
+							The <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> of this house will appeal to anyone who wants to live in one of Scotland’s most attractive towns. The property is nicely <span id="entryanswer1" class="textentry-disabled"></span> throughout and the <span id="entryanswer2" class="textentry-disabled"></span> is well furnished. The bedrooms have <span id="entryanswer3" class="textentry-disabled"></span> wardrobes and the small garden is <span id="entryanswer4" class="textentry-disabled"></span> and well cared for.
+							
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/terraced.jpg" alt="Terraced house"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">decorated</span>
+				<span class="word">enclosed</span>
+				<span class="word">lounge</span>
+				<span class="word">mirrored</span>
+				<span class="word">location</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_5" nexturl="#m3a21_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21_7">
+	<section id="m3a21_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>Maisonette</h4>
+							
+							This large maisonette has plenty of <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> space for a family. There is a <span id="entryanswer1" class="textentry-disabled"></span> kitchen and you can enjoy great views from the <span id="entryanswer2" class="textentry-disabled"></span> in the living room. There is a very good bus <span id="entryanswer3" class="textentry-disabled"></span> into the centre of town.
+
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/maisonette.jpg" alt="Maisonette"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">balcony</span>
+				<span class="word">service</span>
+				<span class="word">storage</span>
+				<span class="word">fitted</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_6" nexturl="#m3a21_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21_8">
+	<section id="m3a21_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>High-rise</h4>
+							
+							The <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> in this high-rise building are <span id="entryanswer1" class="textentry-disabled"></span> for anyone who wants to live near the city centre. They give easy <span id="entryanswer2" class="textentry-disabled"></span> to motorways and public transport. When you want to visit the shops and restaurants of the city, you will find a good selection all within easy walking <span id="entryanswer3" class="textentry-disabled"></span>.
+
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/high-rise.jpg" alt="High-rise"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">apartments</span>
+				<span class="word">access</span>
+				<span class="word">ideal</span>
+				<span class="word">distance</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_7" nexturl="#m3a21_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21_9">
+	<section id="m3a21_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Type the missing words from the list below.</h3>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper linespace2 fold">
+							<h4>Bungalow</h4>
+							
+							This bungalow is an <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> property which has been recently re-decorated. A new <span id="entryanswer1" class="textentry-disabled"></span> has been added to the rear of the house overlooking the garden. The garden has been professionally <span id="entryanswer2" class="textentry-disabled"></span> and has a good variety of <span id="entryanswer3" class="textentry-disabled"></span> shrubs and trees. This is an ideal property for someone who has their own furniture as it is being let <span id="entryanswer4" class="textentry-disabled"></span>.
+							
+							{{> rightwrong}} {{> welldone}}
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure><div class="ph-w ph-3x2 shadow"><div class="ph"><img draggable="false" src="images/module3/a21/bungalow.jpg" alt="Bungalow"></div></div></figure>
+						<br>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="box1 block">
+				<span class="word">landscaped</span>
+				<span class="word">mature</span>
+				<span class="word">outstanding</span>
+				<span class="word">unfurnished</span>
+				<span class="word">conservatory</span>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a21_7" nexturl="#m3a21_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a21modals">
+
+<!--Tenement start-->
+<div class="modal fade" tabindex="-1" id="m3a21-tenement_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-tenement_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">Tenement flat</div>
+					<br>
+					<figure><div class="ph-w ph-3x2 border2 shadow" style="max-width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/tenement.jpg" alt="Tenement flat outside"></div></div></figure>
+					<br>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6">
+								<ul class="olblank">
+									<li><b>No admin fees!</b></li>
+									<li>Fully furnished</li>
+									<li>£450 pcm</li>
+									<li>2 bedrooms</li>
+									<li>Long term let</li>
+									<li>Council Tax Band B</li>
+									<li>Available from 22 Oct 12</li>
+								</ul>
+							</div>
+							<div class="col-xs-6">
+								Features:
+								<ul>
+									<li>Central heating</li>
+									<li>Shower</li>
+									<li>Dish washer</li>
+									<li>Washer/dryer</li>
+									<li>Fridge freezer</li>
+									<li>Microwave</li>
+									<li>Living room</li>
+									<li>Kitchen</li>
+									<li>Bathroom</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<figure><div class="ph-w ph-4x3 border2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/tenement-interior.jpg" alt="Tenement flat inside"></div></div></figure>
+					<br>
+					<p>Two double bedrooms, fully fitted kitchen with integrated appliances including dishwasher and washer dryer. This flat to rent in Glasgow has a fitted bathroom with electric power shower. The flat benefits from gas central heating.</p>
+				
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--Tenement end-->
+
+
+<!--semi-detached start-->
+<div class="modal fade" tabindex="-1" id="m3a21-semi-detached_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-semi-detached_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">Semi-detached house</div>
+					<br>
+					<figure><div class="ph-w ph-3x2 border2 shadow" style="max-width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/semi-detached.jpg" alt="Semi-detached house outside"></div></div></figure>
+					<br>
+					<b>
+						<ul class="olblank">
+							<li>Date available: 01/10/12</li>
+							<li>Property type: Semi Detached House</li>
+							<li>Number of beds: 3</li>
+							<li>Seller type: Private</li>
+						</ul>
+					</b>
+					<p>&nbsp;</p>
+					<figure><div class="ph-w ph-4x3 border2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/semi-detached-interior.jpg" alt="Semi-detached house inside"></div></div></figure>
+					<br>
+					<p>This semi-detached property has 3 bedrooms, spacious lounge/diner, bathroom with shower, kitchen, and a downstairs toilet. Floor coverings are included in the furnishings. Full double glazing fitted throughout. This property is sure to be popular so please get your viewings in early!</p>
+
+					<p>Front and back garden and driveway. There are local schools and bus services close to the property and it’s only a 10 minute drive to Dundee city centre. This property would be ideal for a young family.
+					£600 pcm.</p>
+				
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--semi-detached end-->
+
+
+<!--bungalow start-->
+<div class="modal fade" tabindex="-1" id="m3a21-bungalow_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-bungalow_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">Bungalow</div>
+					<br>
+					<figure><div class="ph-w ph-3x2 border2 shadow" style="max-width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/bungalow.jpg" alt="Bungalow outside"></div></div></figure>
+					<br>
+					<p>This outstanding Bungalow is in the popular Pitcairn area of Glenrothes. The unfurnished property comprises: entrance hall, lounge with separate dining area, fitted kitchen, and conservatory, master bedroom with en-suite facilities, 2 further double bedrooms and family bathroom. Gas heating and double glazing. Extensive landscaped gardens with shed and greenhouse and driveway leading to the garage.</p>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6">
+								<h4>Letting information:</h4>
+								<ul class="olblank">
+									<li>Date available: Now</li>
+									<li>Furnishing: Unfurnished</li>
+									<li>Letting type: Long term</li>
+								</ul>
+							</div>
+							<div class="col-xs-6">
+								<br>
+								<ul class="olblank">
+									<li>No Housing Benefit</li>
+									<li>No Smokers</li>
+									<li>No Pets</li>
+									<li>Council Tax (Band E)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<p>&nbsp;</p>
+					<figure><div class="ph-w ph-4x3 border2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/bungalow-interior.jpg" alt="Bungalow inside"></div></div></figure>
+					<br>
+					<h4>Situation</h4>
+					<p>Glenrothes is one of the most successful towns in Scotland with a wealth of sport and leisure facilities including the Kingdom Shopping Centre. It has its own 18-hole golf course and primary and secondary schooling. For the commuter, the A92 allows easy access to Edinburgh and there are two railway stations.</p>
+					<br>
+					<h4>Garden</h4>
+					<p>The property benefits from an extensive mature garden. The front garden is mainly laid to lawn, surrounded by mature shrubs and trees. There is a patio area and drying green. To the rear is an area of gravel, surrounded by shrubs and trees with a timber shed and single garage.</p>
+				
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--bungalow end-->
+
+
+<!--cottage start-->
+<div class="modal fade" tabindex="-1" id="m3a21-cottage_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-cottage_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">Cottage</div>
+					<br>
+					<h4>East Mains cottage near Elgin, Morayshire</h4>
+					<figure  class="image imgleft-responsive"><div class="ph-w ph-3x2 border2 shadow" style="width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/cottage.jpg" alt="Cottage outside"></div></div></figure>
+					
+					<ul class="olblank">
+						<li>Council Tax Band: B</li>
+						<li>Bathroom</li>
+						<li>Bedroom 1</li>
+						<li>Bedroom 2</li>
+						<li>Kitchen</li>
+						<li>Lounge</li>
+						<li>Storage cupboard</li>
+						<li>Hall</li>
+					</ul>
+					<p>&nbsp;</p>
+					<div class="clearfix"></div>
+					<p><b>Letting details:</b> £450 pcm long term let.</p>
+					
+					<p>A recently refurbished traditional 2 bed rural cottage approx 1.5 miles from Elgin. The property offers a lounge with wood-burning stove, fitted kitchen with cooker, hob &amp; hood, electric heating, 2 bedrooms and a bathroom with overbath shower. Fitted carpets, curtains and blinds included.</p>
+					<br>
+					<figure><div class="ph-w ph-4x3 border2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/cottage-interior.jpg" alt="Cottage inside"></div></div></figure>
+					<br>					
+					<p>Garden grounds to front and rear of property maintained by the landlord. Private off road parking and shed available. Panoramic views of the open countryside. No smoking. Pets by negotiation. Would suit a single professional or couple.</p>
+				
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--cottage end-->
+
+
+<!--detached start-->
+<div class="modal fade" tabindex="-1" id="m3a21-detached_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-detached_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">Detached house</div>
+					<br>
+					<figure><div class="ph-w ph-3x2 border2 shadow" style="max-width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/detached.jpg" alt="Detached house outside"></div></div></figure>
+					<br>
+					<p>Fantastic detached villa situated in the highly desirable area of Westhill in Inverness. Property Comprises: open plan lounge/dining room, kitchen, WC, 3 bedrooms (master en-suite) and bathroom, garage and private driveway. Secluded rear garden. Communal charge for maintenance applies.</p>
+
+					<p>Close to schools, public transport and local amenities.</p>
+					<br>
+					<figure><div class="ph-w ph-4x3 border2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/detached-interior.jpg" alt="Detached house inside"></div></div></figure>
+					<br>
+					<div class="caption capred block text-center noshadow"><i class="fa fa-star"></i> New to the market <i class="fa fa-star"></i></div>
+					<p>&nbsp;</p>
+					<p>Woodlands Avenue, Westhill, Inverness</p>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6">
+								<h4>Key features:</h4>
+								<ul>
+									<li>Gas Central Heating</li>
+									<li>Garage</li>
+									<li>Garden</li>
+									<li>White Goods</li>
+									<li>Close to Schools</li>
+									<li>Fitted Kitchen</li>
+									<li>Double Glazing</li>
+									<li>Two Doubles One Single</li>
+									<li>Electric Shower</li>
+									<li>En-suite Bathroom</li>
+								</ul>
+							</div>
+							<div class="col-xs-6">
+								<h4>Letting information:</h4>
+								<ul class="olblank">
+									<li>Date available: 22/11/2013</li>
+									<li>Furnishing: Furnished</li>
+									<li>£800 per month</li>
+									<li>Deposit: £1163</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--detached end-->
+
+
+<!--terraced start-->
+<div class="modal fade" tabindex="-1" id="m3a21-terraced_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-terraced_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">Terraced house</div>
+					<br>
+					<h4>Furnished 2 Bedroomed Terraced House</h4>
+					<figure class="image imgleft-responsive"><div class="ph-w ph-3x2 border2 shadow" style="width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/terraced.jpg" alt="Terraced house outside"></div></div></figure>
+					<b>Key features:</b>
+					<ul class="olblank">
+						<li>1 Single Bedroom</li>
+						<li>2 Double Bedrooms</li>
+						<li>Private Garden</li>
+						<li>Private Parking</li>
+						<li>Long term let</li>
+						<li>No smokers</li>
+					</ul>
+					
+					<div class="clearfix"></div>
+					<p>&nbsp;</p>
+					
+					<p>Letting Solutions offer this fully furnished two bedroom terraced property situated in the beautiful location of Linlithgow. The property comprises an attractive and modern lounge with blue sofas, fully equipped kitchen with electric cooker, washing machine and fridge freezer, double bedroom with mirrored wardrobes, and a single bedroom which could be used as a study or office, and a brightly decorated bathroom with shower. Benefits include private parking and a small enclosed, well maintained garden.</p>
+					<br>
+					<figure><div class="ph-w ph-4x3 border2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/terraced-interior.jpg" alt="Terraced house inside"></div></div></figure>
+					<br>
+				
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--terraced end-->
+
+
+<!--high-rise start-->
+<div class="modal fade" tabindex="-1" id="m3a21-high-rise_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-high-rise_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">High-rise apartment</div>
+					<br>
+					<figure><div class="ph-w ph-3x2 border2 shadow" style="max-width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/high-rise.jpg" alt="High-rise apartment outside"></div></div></figure>
+					<br>
+					
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6">
+								<h4>Property features</h4>
+								<ul>
+									<li>2 bedrooms, 1 with en-suite.</li>
+									<li>Master Bedroom - <span class="avoidwrap">En-suite</span> shower.</li>
+									<li>Living Room</li>
+								</ul>
+							</div>
+							<div class="col-xs-6">
+								<h4>Property description</h4>
+								<p>A 2 bedroom apartment <span class="avoidwrap">(56.60 Sq. M.).</span> This apartment is located in our high-rise building.</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>About the Argyle Building</h4>
+								<p>These 1 and 2 bedroom apartments are an ideal home for those who love city centre living. Glasgow is well known as a great place to live, work, rest and play. These apartments allow easy access to all that Glasgow has to offer - near train stations, bus routes, the M8 motorway, and within easy walking distance of the many shops and businesses in the city.</p>
+							</div>
+						</div>
+					</div>
+					<p>&nbsp;</p>
+					<figure><div class="ph-w ph-4x3 border2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a21/high-rise-interior.jpg" alt="High-rise apartment inside"></div></div></figure>
+					<br>
+					
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>About the area</h4>
+								<p>Anderston is next to the River Clyde and is only a short walk to the Scottish Exhibition and Conference Centre, and the Glasgow Science Centre. Anderston has a thriving selection of restaurants, pubs and local retailers that cannot be found in the City Centre. The Mitchell library is within walking distance too.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<h4>Leisure</h4>
+								<p>Glasgow hosts a variety of leisure facilities including swimming, bowling, cinema and many parks and museums. Nearby is Braehead - home to Xscape with indoor snowsports as well as bars, bowling, cinema and restaurants.</p>
+							</div>
+							<div class="col-xs-6">
+								<h4>Shopping</h4>
+								<p>The city centre attracts thousands of shoppers to places like Princes Square, the St Enoch Centre, the Sauchiehall Street Centre, and the Buchanan Galleries. The main shopping areas are traffic free with a wide range of top class cafés, restaurants, pubs and wine bars.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--high-rise end-->
+
+
+<!--maisonette start-->
+<div class="modal fade" tabindex="-1" id="m3a21-maisonette_modal" role="dialog">
+    <div class="modal-dialog">
+		<div class="modal-content">
+		
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title" id="m3a21-maisonette_modal">For Rent</h4>
+			</div>
+			
+			<div class="content">
+				<div class="parapaper article-text fold">
+
+					<div class="caption capgreen block text-center">Maisonette</div>
+					<br>
+					<figure><div class="ph-w ph-3x2 border2 shadow" style="max-width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/maisonette.jpg" alt="Maisonette outside"></div></div></figure>
+					<br>
+					
+					<h4>Property description:</h4>
+					<p>This spacious maisonette is in good condition and would make an ideal family home. The property benefits from gas central heating and double glazing throughout. The accommodation comprises hallway with storage, fully fitted kitchen/breakfast room, a living room with balcony offering great views, an upstairs landing with storage cupboard, two double bedrooms and bathroom with white three piece suite and a shower over the bath.</p>
+					
+					<p>&nbsp;</p>
+					<figure class="image imgright-responsive"><div class="ph-w ph-4x3 border2 shadow" style="width: 267px"><div class="ph"><img draggable="false" src="images/module3/a21/maisonette-interior.jpg" alt="Maisonette inside"></div></div></figure>
+					
+					<p>2 bedroom maisonette for rent - £550 per month.</p>
+					
+					<p>44/8 Northfield Drive, Duddingston, Edinburgh EH8</p>
+					
+					<h4>Property features</h4>
+					<ul>
+						<li>2 bedrooms</li>
+						<li>1 bathroom</li>
+						<li>1 public room</li>
+					</ul>
+					
+					<div class="clearfix"></div>
+					
+					<br>
+					
+					<p>Portobello is a self-contained community. Portobello High Street is now an extremely pleasant and safe area in which to shop. Meadowbank sports stadium is nearby. There is an excellent bus service both in and out of town and the A1 and city bypass are within easy reach. </p>
+					
+				</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!--maisonette end-->
+		
+</template>

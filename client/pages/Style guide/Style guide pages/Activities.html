@@ -1,0 +1,174 @@
+<template name="styleActivities">
+<section id="style-activities" class="hidden">
+		<div class="content">
+
+			<!--drag and drop-->
+			<h1>Groups of words</h1>
+			<h4>Use a box like this to contain collections of things, such as a word bank or drag and drop elements.<br><span class="htmlcode">&#60;div class="box1"&#62;</span></h4>
+			<p>If it's a word bank, use <span class="htmlcode">&#60;p class="word"&#62;</span> to style the words.
+				<div class="box1"><h4><span class="htmlcode">&#60;h4&#62;</span>Words:</h4><p class="word">Singularity<br>Word<br>Cheese</p></div>
+			</p>
+			<br><br>
+			<h1>Text entry</h1>
+			<p class="linespace">
+				Use <span class="htmlcode">&#60;p class="linespace"&#62;</span> for paragraphs with text entry or drag and drop - unless using a specific template style that already does the line spacing.. It adds more space between the lines. Use <span class="htmlcode">&#60;span class="textentry-disabled"&#62;&#60;/span&#62;</span> to create a missing word like <span class="textentry-disabled"></span>. Use <span class="htmlcode">&#60;span class="textentry"&#62;</span> to contain text entry elements like this <span class="textentry"><input type="text" size="15"><input type="submit" value="OK"></span> Words that the learner has entered correctly will appear in <span class="correctword">like this</span>. Nulla facilisi. Cras ac semper mauris, id laoreet quam. Donec suscipit convallis rhoncus. Praesent mattis massa eu pellentesque lobortis. Morbi mollis ipsum arcu, nec dictum sapien iaculis molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+				</p>
+				
+			<br><br>
+			
+			<p>Add the class <span class="htmlcode">textentry-big</span> for text entry boxes that are on their own and not surrounded by text or anything else</p><br><br>
+			<div class="text-center"><span class="textentry textentry-big"><input type="text" size="15"><input type="submit" value="OK"></span></div><br><br><br><br>
+			
+			
+			<h1>Drag and drop</h1>
+				<p>Use DIVs to create drag and drop elements. Ensure all words and drop targets are the same width and height. Apply <span class="htmlcode">ddwidth#</span> class to set width, where # is the value in em, and <span class="htmlcode">dd1line</span>, <span class="htmlcode">dd2lines</span>, etc to set how many lines of text</p>
+					<div class="ddseat ddwidth6 dd1line"><div class="ddsourceseated shadow ddwidth6 dd1line">Adjective</div></div> <span class="htmlcode">class="ddsourceseated ddwidth6 dd1line shadow" </span>
+					
+					<br><br>
+					
+					<p>All words than can be dragged should be put in a <span class="htmlcode">div class="ddseat"</span>, with the same width and height classes as the <span class="htmlcode">ddsourceseated</span> div. <span class="htmlcode">ddseat</span>is effectively invisible but stops things shifting and resizing when a word is dragged away.</p>
+					<p>If multiple words are going to be dragged into one box (groups of words, etc.) then <span class="htmlcode">ddsourceseated</span> should be replaced with <span class="htmlcode">ddsourceseated</span> when dragged into the box so they are spaced out. <span class="htmlcode">ddsourceseated</span> has no margins - the margins are set by <span class="htmlcode">ddseat</span></p>
+					
+					<br><br>
+
+					<div class="ddseat ddwidth6 dd1line"><div class="ddsourceseated ddwidth6 dd1line">Adjective</div></div> <span class="htmlcode">class="ddsourceseated"</span><br>
+					- remove shadow from elements that can't be dragged or have already been dragged to the right place<br><br>
+
+					<div class="ddtarget" style="width: 5em;">&nbsp;</div> <span class="htmlcode">class="ddtarget"</span><br><br>
+					
+					<div class="box1" style="width: 150px; height: 200px; margin-right: 30px; vertical-align: top;"><h4><span class="htmlcode">&#60;h4&#62;</span>Drag from here</h4><br><span class="htmlcode">class="box1"</span>
+						<br><br>
+						<div class="ddseat ddwidth5 dd1line"><div class="ddsourceseated ddwidth5 dd1line shadow">Word2</div></div>
+						<div class="ddseat ddwidth5 dd1line"><div class="ddsourceseated ddwidth5 dd1line shadow">Word3</div></div>
+					</div>
+					<div class="box2" style="width: 150px; height: 200px; margin-right: 30px; vertical-align: top;"><h4><span class="htmlcode">&#60;h4&#62;</span>Drag to here</h4><br><span class="htmlcode">class="box2"</span>
+						<br><br>
+						<div class="ddsource ddwidth5 dd1line shadow">Example</div>
+					</div>
+					<br>
+					<br>
+				
+				<div class="parapaper">
+					<h4>Example on paper</h4>
+					<br>
+						<div class="ddseat ddwidth6 dd1line"><div class="ddsourceseated shadow ddwidth6 dd1line">Adjective</div>
+						</div> <span class="htmlcode">class="ddsourceseated ddwidth6 dd1line shadow" </span>
+					
+					<br><br>
+					
+					<p>All words than can be dragged should be put in a <span class="htmlcode">div class="ddseat"</span>, with the same width and height classes as the <span class="htmlcode">ddsourceseated</span> div. <span class="htmlcode">ddseat</span>is effectively invisible but stops things shifting and resizing when a word is dragged away.</p>
+					<p>If multiple words are going to be dragged into one box (groups of words, etc.) then <span class="htmlcode">ddsourceseated</span> should be replaced with <span class="htmlcode">ddsourceseated</span> when dragged into the box so they are spaced out. <span class="htmlcode">ddsourceseated</span> has no margins - the margins are set by <span class="htmlcode">ddseat</span></p>
+					
+					<br><br>
+
+					<div class="ddseat ddwidth6 dd1line"><div class="ddsourceseated ddwidth6 dd1line">Adjective</div></div> <span class="htmlcode">class="ddsourceseated"</span><br>
+					- remove shadow from elements that can't be dragged or have already been dragged to the right place<br><br>
+
+					<div class="ddtarget" style="width: 5em;">&nbsp;</div> <span class="htmlcode">class="ddtarget"</span><br><br>
+					
+					<div class="box1" style="width: 150px; height: 200px; margin-right: 30px; vertical-align: top;"><h4><span class="htmlcode">&#60;h4&#62;</span>Drag from here</h4><br><span class="htmlcode">class="box1"</span>
+						<br><br>
+						<div class="ddseat ddwidth5 dd1line"><div class="ddsourceseated ddwidth5 dd1line shadow">Word2</div></div>
+						<div class="ddseat ddwidth5 dd1line"><div class="ddsourceseated ddwidth5 dd1line shadow">Word3</div></div>
+					</div>
+					<div class="box2" style="width: 150px; height: 200px; margin-right: 30px; vertical-align: top;"><h4><span class="htmlcode">&#60;h4&#62;</span>Drag to here</h4><br><span class="htmlcode">class="box2"</span>
+						<br><br>
+						<div class="ddsource ddwidth5 dd1line shadow">Example</div>
+					</div>
+
+				</div>
+				
+				<div class="box1 box1dd1" style="font-weight: normal;">
+					<p>Give all the drag sources and targets in an activity a class of <span class="htmlcode">ddwidth#</span> where <span class="htmlcode">#</span> is a number between 1 and 20.</p>
+					<p>Give all drag sources a height class based on how many lines of text it contains - e.g. <span class="htmlcode">dd1line</span>,  <span class="htmlcode">dd2lines</span>, <span class="htmlcode">dd3lines</span>, etc.</p>
+					<p>Where possible, give all drag sources in the one page the same width and height.</p>
+					<p>Drag sources 3 lines or higher get an automatic width and don't need an additional width class.</p>
+					<p><span class="htmlcode">dd1line2high</span> should be used if a drag source needs to be 2 lines hight to match others but only has one line of text.</p>
+					<p>By default, any drag source with 3 or more lines will have left-aligned text. Add <span class="htmlcode">text-left</span> class if you need a 2-line drag source aligned left.</p>
+					<div class="ddsource shadow ddwidth1 dd1line" draggable="true">1</div>
+					<div class="ddsource shadow ddwidth2 dd1line" draggable="true">2</div>
+					<div class="ddsource shadow ddwidth3 dd1line" draggable="true">3...</div>
+					<div class="ddsource shadow ddwidth4 dd1line" draggable="true">4 four</div>
+					<div class="ddsource shadow ddwidth5 dd1line" draggable="true">5 steel</div>
+					<div class="ddsource shadow ddwidth6 dd1line" draggable="true">6 steel...</div>
+					<div class="ddsource shadow ddwidth7 dd1line" draggable="true">7 steeeeel!</div>
+					<div class="ddsource shadow ddwidth8 dd1line" draggable="true">8 steeeeeel!</div>
+					<div class="ddsource shadow ddwidth9 dd1line" draggable="true">9 steeeeeeeel!</div>
+					<div class="ddsource shadow ddwidth10 dd1line" draggable="true">10 stainless steel</div>
+					<div class="ddsource shadow ddwidth11 dd1line" draggable="true">11 stainless steel?</div>
+					<div class="ddsource shadow ddwidth12 dd1line" draggable="true">12 stainless steel pan</div>
+					<div class="ddsource shadow ddwidth13 dd1line" draggable="true">13 stainless steel pans</div>
+					<div class="ddsource shadow ddwidth14 dd1line" draggable="true">14 stainless steel pans?</div>
+					<div class="ddsource shadow ddwidth15 dd1line" draggable="true">15 stainless steel pans...?</div>
+					<div class="ddsource shadow ddwidth16 dd1line" draggable="true">16 stainless steel sauce pans</div>
+					<div class="ddsource shadow ddwidth17 dd1line" draggable="true">17 stainless steel sauce pans?</div>
+					<div class="ddsource shadow ddwidth18 dd1line" draggable="true">18 stainless steel sauce pan lids?</div>
+					<div class="ddsource shadow ddwidth19 dd1line" draggable="true">19 I like stainless steel sauce pans</div>
+					<div class="ddsource shadow ddwidth20 dd1line" draggable="true">Steel is an alloy made from iron</div>
+					<div class="ddsource shadow ddwidth20 dd2lines text-left" draggable="true">Steel is an alloy made from iron and other elements</div>
+					<div class="ddsource shadow ddwidth20 dd3lines" draggable="true">Steel is an alloy made from iron and other elements, one of which might be carbon...</div>
+					<div class="ddsource shadow ddwidth20 dd4lines" draggable="true">Steel is an alloy made from iron and other elements, one of which might be carbon... you'd have to check up on that to be sure.</div>
+				
+					<br><br>
+					
+					<p>Remember, keep them all the same height on each page.</p>
+					<div class="ddsource shadow ddwidth12 dd2lines" draggable="true">dd2lines<br>(2 lines of text)</div>
+					<div class="ddsource shadow ddwidth12 dd1line2high" draggable="true">dd1line2high</div>
+				</div>
+			<br><br>
+			<hr>
+			<h1>Pictures for Text Entry/Drag and Drop</h1>
+			These respond well without needing the Bootstrap grid system, but if you have an even number it might like nicer in the grid system.
+			
+			<div class="center">
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<img draggable="false" src="../images/module1/tajmahal.jpeg" class="img-responsive border1">
+					</figure>
+					<div id="tajmahal" class="ddseatedtarget" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<img draggable="false" src="../images/module1/eiffel.jpeg" class="img-responsive border1">
+					</figure>
+					<div id="eiffeltower" class="ddseatedtarget" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<img draggable="false" src="../images/module1/greatwallofchina.jpeg" class="img-responsive border1">
+					</figure>
+					<div id="greatwall" class="ddseatedtarget" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<img draggable="false" src="../images/module1/ferrari.jpeg" class="img-responsive border1">
+					</figure>
+					<div id="ferrari" class="ddseatedtarget" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<img draggable="false" src="../images/module1/pyramids.jpeg" class="img-responsive border1">
+					</figure>
+					<div id="pyramids" class="ddseatedtarget" style="width: 8em;">&nbsp;</div>
+				</div>
+			</div>
+
+<p>Setting the width is optional - only really needed if the images are too big for a nice layout.</p>
+<p>If text is required above the image, put it in <span class="htmlcode2">&#60;figcaption&#62;</span>. It can go above or below the image. Otherwise leave it empty/delete it.</p>
+<pre class="htmlcode2">
+&#60;div class="center"&#62;
+
+	&#60;div class="ddpic shadow" <span style="color: red;">style="width: 10em;"</span>&#62;
+		&#60;figure&#62;
+			&#60;figcaption&#62;&#60;/figcaption&#62;
+			&#60;img draggable="false" src="images/module1/tajmahal.jpeg" class="img-responsive border1"&#62;
+		&#60;/figure&#62;
+		<span style="color: red;">[interaction goes here]</span>
+	&#60;/div&#62;
+	
+&#60;/div&#62;
+</pre>
+		
+		</div>
+	</section>
+</template>

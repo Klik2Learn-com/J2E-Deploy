@@ -1,0 +1,234 @@
+<template name="m10a20"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/SouthendonSea');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 20 - {{> m10a20Title}}</div>
+		</header>
+		<section id="m10a20">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a20Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m10a20Intro}}</h3>
+				{{> m10a20Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a20_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a20_1}}
+		{{>m10a20_2}}
+		{{>m10a20_3}}
+		{{>m10a20_4}}
+		{{>m10a20_5}}
+		{{>EndPage char="tu" act="m10a20" nextact="m10a21" place="SouthendonSea"}}
+	</div>
+</article>
+</template>
+<template name="m10a20_4"> 
+	<section id="m10a20_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the prepositions into the empty spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+				<b>Quynh Na, Age 11</b> 
+
+				<p>"I want <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> be a space scientist because scientists have discovered a new planet and I want <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> help find <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> more <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> new life <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> the Earth."</p>
+			</div>
+
+				<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2">to</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">out</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">by</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">into</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">with</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">for</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">about</div></div>
+					</div></div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a20_3" nexturl="#m10a20_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a20_1"> 
+	<section id="m10a20_1" class="hidden"> 
+		{{#if activeSection}} 
+			<div class="content noselect">
+			<h3 class="center">Now drag the prepositions into the empty spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+				<b>Javier Gossett, Age 8,</b> 
+
+				<p>"I want <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> be a police officer because I want <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> find lost children <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> my dog and solve crimes. I'm going <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> protect people <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> making sure they're OK."</p>
+			</div>
+
+				<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2 target4">to</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">out</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">by</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">for</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">with</div></div>
+					</div></div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a20" nexturl="#m10a20_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+<template name="m10a20_3"> 
+	<section id="m10a20_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the prepositions into the empty spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+				<b>Joe Coleman, Age 9</b> 
+
+				<p>"I want <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> be a lawyer when I get older because I want <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> help people stay <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div>  <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div>  jail.  I don't like seeing people going <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> jail. I would also like <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target6">&nbsp;</div> be a basketball player because it's my favourite sport. When I get <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target7">&nbsp;</div> High School I'd like <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target8">&nbsp;</div> be <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target9">&nbsp;</div> the basketball team."</p>
+			</div>
+
+				<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2 target5 target6 target8">to</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">of</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">in</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">out</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">into</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target10">about</div></div>
+					</div></div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a20_2" nexturl="#m10a20_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a20_5"> 
+	<section id="m10a20_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the prepositions into the empty spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+			{{> welldone}}
+				<b>Selina Ford, Age 12</b> 
+
+				<p>"I see myself <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> college <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> 5 years <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> now, studying <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> be a lawyer. I believe I have the potential <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> fulfil that dream, because <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target6">&nbsp;</div> the way I talk and the attitude I have."</p>
+			</div>
+
+				<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">of</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2">in</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">from</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target8">with</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4 target5">to</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">for</div></div>
+					</div></div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a20_4" nexturl="#m10a20_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a20_2"> 
+	<section id="m10a20_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the prepositions into the empty spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+				<b>Makayla Connor, Age 12</b> 
+
+				<p>"I want <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> be a world renowned paediatrician. I would like <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> attend  University. I will travel <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> the world helping children and babies."</p>
+			</div>
+
+				<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">of</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">around</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">by</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2">to</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">for</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target8">in</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">from</div></div>
+					</div></div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about prepositions in the Grammar Guide"}}
+				</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a20_1" nexturl="#m10a20_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

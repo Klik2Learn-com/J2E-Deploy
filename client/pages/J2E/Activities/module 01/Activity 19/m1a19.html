@@ -1,0 +1,369 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a19">
+<article class="with-tools-sidebar para-select">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Portree');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 19 - {{>m1a19Title}}</div>
+		</header>
+				
+		<section id="m1a19">
+			<div class="content">
+				<!-- Change avatar here - k, tu, elle -->
+				<h1 class="start-page-header">{{> m1a19Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m1a19Intro}}</h3>
+				{{> m1a19Time}} <!--{{> resumePopUp}}-->
+			</div>
+		  	<footer>
+				{{>footer_nav nexturl="#m1a19_2" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{#if paragraphSection}}
+			{{> paragraphselect}}
+		{{/if}}
+		{{> m1a19_2}}
+		{{> m1a19_3}}
+		{{> m1a19_4}}
+		{{> m1a19_5}}
+		{{> m1a19_6}}
+		{{> m1a19_7}}
+		{{> m1a19_8}}
+		{{> m1a19_9}}
+		{{>m1a19_end}}
+	</div>
+</article>
+
+</template>
+	
+	
+<template name="m1a19_2">
+	<section id="m1a19_2" class="hidden">
+		<div class="content">
+			{{>note_intro}}
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m1a19_1" nexturl="#m1a19_3" prev="hidden" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a19_3">
+	<section id="m1a19_3" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m1a19Q" class="number pull-right">1</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m1a19Quest" class="caption">
+							<p>What conclusion did the American study reach about national stereotypes?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m1a19P" class="captionsmall capgreen">
+							Paragraphs 2 and 3						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a19_1" nexturl="#m1a19_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a19_4">
+	<section id="m1a19_4" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m1a19Q" class="number pull-right">2</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m1a19Quest" class="caption">
+							<p>They did two surveys:</p><p>What did the first survey investigate?</p><p>What did the second survey investigate?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m1a19P" class="captionsmall capgreen">
+							Paragraphs 2 and 3						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a19_3" nexturl="#m1a19_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a19_5">
+	<section id="m1a19_5" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m1a19Q" class="number pull-right">3</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m1a19Quest" class="caption">
+							<p>What's the point of the Canadian example?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m1a19P" class="captionsmall capgreen">
+							Paragraph 2					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a19_4" nexturl="#m1a19_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a19_6">
+	<section id="m1a19_6" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m1a19Q" class="number pull-right">4</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m1a19Quest" class="caption">
+							<p>How did they find out what people thought about other nationalities?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m1a19P" class="captionsmall capgreen">
+							Paragraph 3						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a19_5" nexturl="#m1a19_7" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a19_7">
+	<section id="m1a19_7" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m1a19Q" class="number pull-right">5</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m1a19Quest" class="caption">
+							<p>What warning does Robert MacRae give?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m1a19P" class="captionsmall capgreen">
+							Paragraph 4					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a19_6" nexturl="#m1a19_8" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a19_8">
+	<section id="m1a19_8" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m1a19Q" class="number pull-right">6</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m1a19Quest" class="caption">
+							<p>Why do some people believe in national identities?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m1a19P" class="captionsmall capgreen">
+							Paragraph 5						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					<div class="col-xs-12">
+						<h3 class="center">Continue when you’re ready to see the answers.</h3>
+					</div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a19_7" nexturl="#m1a19_9" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a19_9">
+	<section id="m1a19_9" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<h1>Notebook Answers</h1>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="parapaper">
+							 <p><b>1)  What conclusion did the American study reach about national stereotypes?</b></p>
+							 <p>National stereotypes are not true/inaccurate.</p>
+							 <br>
+							 <p><b>2)  a) What did the first survey investigate?</b></p>
+							 <p>The first survey asked people to choose words to describe other nationalities.</p>
+							 <br>
+							 <p><b>2)  b) What did the second survey investigate?</b></p>
+							 <p>The second survey asked people to choose words to describe people they actually knew from different countries.</p>
+							 <br>
+							 <p><b>3)  What’s the point of the Canadian example?</b></p>
+							 <p>The Canadian example shows that the stereotypes don’t match real people</p>
+							 <br>
+							 <p><b>4) How did they find out what people thought about other nationalities?</b></p>
+							 <p>They found out by asking people to choose words to describe their own nationality.</p>
+							 <br>
+							 <p><b>5)  What warning does Robert MacRae give?</b></p>
+							 <p>He warns that national stereotypes can’t be taken seriously.</p>
+							 <br>
+							 <p><b>6)  Why do some people believe in national identities?</b></p>
+							 <p>People use national identities to promote themselves in a positive way.</p>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a19_8" nexturl="#m1a19_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+
+
+
+<template name="m1a19_end">
+{{>EndPage char="k" act="m1a19" nextact="m1a20" place="Portree"}}
+</template>
+
+<template name="paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+	<div class="content para-select-text">
+		{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+		<br>
+		<div class="container-fluid">
+			{{> blankrow}}
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div id="m1a19textDisplay" class="parapaper fold">
+						<p><b>1.</b> Each country has an identity that is supposed to be ‘typical.’ But a new study in the American journal ‘Science’ proves that these stereotypes are inaccurate. The survey found ‘national myths’ in almost every country.</p>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 text-right">
+					<span class="paragraph-label">Select a paragraph:</span>
+					<a><div id="0" class="numbutt">1</div></a>
+					<a><div id="1" class="numbutt">2</div></a>
+					<a><div id="2" class="numbutt">3</div></a>
+					<a><div id="3" class="numbutt">4</div></a>
+					<a><div id="4" class="numbutt">5</div></a>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</template>
+<!-- 
+<template name="paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+	<div class="content content-paragraph-select">
+		{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+		<br>
+		{{> blankrow}}
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div id="m1a19textDisplay" class="parapaper fold">
+					<p><b>1.</b> Each country has an identity that is supposed to be ‘typical.’ But a new study in the American journal ‘Science’ proves that these stereotypes are inaccurate. The survey found ‘national myths’ in almost every country.</p>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 text-right">
+				<span class="paragraph-label">Select a paragraph:</span>
+				<a><div id="0" class="numbutt">1</div></a>
+				<a><div id="1" class="numbutt">2</div></a>
+				<a><div id="2" class="numbutt">3</div></a>
+				<a><div id="3" class="numbutt">4</div></a>
+				<a><div id="4" class="numbutt">5</div></a>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+</div>
+</template>
+ -->

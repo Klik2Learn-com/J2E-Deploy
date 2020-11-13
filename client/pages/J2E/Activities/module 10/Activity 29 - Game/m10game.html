@@ -1,0 +1,75 @@
+<template name="m10Game">
+<article class="with-tools-sidebar game m10Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/London');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 10</div> <div class="acttitle-title">{{> activity}} 29 - {{>m10GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m10Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m10Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m10Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m10Game_1}}
+		{{>m10Game_1b}}
+		{{>m10Game_2}}
+		{{>m10Game_3}}
+		{{>m10Game_4}}
+		{{>m10Game_5}}
+		{{>m10Game_6}}
+		{{>m10Game_7}}
+		{{>m10Game_8}}
+		{{>m10Game_9}}
+		{{>m10Game_10}}
+		{{>m10Game_11}}
+		{{>m10Game_12}}
+		{{>m10Game_13}}
+		{{>m10Game_14}}
+		{{>m10Game_15}}
+		{{>m10Game_16}}
+		{{>m10Game_17}}
+		{{>m10Game_18}}
+		{{>m10Game_19}}
+		{{>m10Game_20}}
+		{{>m10Game_21}}
+		{{>m10Game_22}}
+		{{>m10Game_23}}
+		{{>m10Game_24}}
+		{{>m10Game_25}}
+		{{>m10Game_26}}
+		{{>m10Game_27}}
+		{{>m10Game_28}}
+		{{>m10Game_29}}
+		{{>m10Game_30}}
+		{{>m10Game_31}}
+		{{>m10Game_32}}
+		{{>m10Game_33}}
+		{{>m10Game_34}}
+		{{>m10Game_35}}
+		{{>m10Game_36}}
+		{{>m10Game_37}}
+		{{>m10Game_38}}
+		{{>m10Game_39}}
+		{{>m10Game_40}}
+		{{>m10Game_41}}
+		{{>m10Game_42}}
+		{{>m10Game_43}}
+		{{>m10Game_44}}
+		{{>m10Game_Score}} 
+		{{>m10Game_ans}}
+		{{>EndPage3 char="all" act="m10Game" nextplace="Complete" place="London"  end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

@@ -1,0 +1,173 @@
+<template name="m2a21">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Stonehaven');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<!-- Change module, activity number and name here -->
+			<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 21 - {{>m2a21Title}}</div>
+		</header>
+		
+		<section id="m2a21">
+			<div class="content">
+				<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a21Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m2a21Intro}}</h3>
+{{> m2a21Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav nexturl="#m2a21_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m2a21_1}}
+		{{>m2a21_end}}		
+	</div>
+</article>
+
+	{{>m2a21Article}}
+</template>
+<template name="m2a21_1">
+	<section id="m2a21_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Read the articles and {{>touch yes="tap" no="click"}} True or False beside the sentences. You must choose the right answer to continue.</h3>
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}} {{>welldone}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="number">1</div> A 'tube' train is different from an underground train.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="number">2</div> Anyone can get a weekly bus pass.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="number">3</div> You get the cheapest train fares on the day you travel.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+					<div class="col-sm-8">
+						<div class="number">4</div> If the yellow ‘For Hire’ sign is lit up a taxi is available.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="4" class="row hidden">
+					<div class="col-sm-8">
+						<div class="number">5</div> Mini cabs are usually black.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="5" class="row hidden">
+					<div class="col-sm-8">
+						<div class="number">6</div> Most low cost airlines charge extra for luggage.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="6" class="row hidden">
+					<div class="col-sm-8">
+						<div class="number">7</div> Bikes are less common in cities now.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				<div id="7" class="row hidden">
+					<div class="col-sm-8">
+						<div class="number">8</div> Bikes are the cheapest form of transport.
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="True">True</button>
+						<button class="button2 item-space" data-value="False">False</button>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				<div class="row text-center">
+					<button data-toggle="modal" data-target="#m2a21Article" class="button1 item-space">Articles</button>
+				</div>
+				
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a21" nexturl="#m2a21_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a21_end">
+{{>EndPage char="elle" act="m2a21" nextact="m2a22" place="Stonehaven"}}
+</template>
+
+<template name="m2a21Article">
+<div class="modal fade" tabindex="-1" id="m2a21Article" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m2a21Article">Articles</h4>
+            </div>
+            <div class="content">
+				<div class="parapaper">
+					<h2>Travel and Transport in the UK</h2>
+					<p>There are many ways to get from A to B - it depends on where you live. In cities and towns there is usually a good local bus service or maybe even an underground.  London has the biggest ‘tube’ system and other cities have smaller undergrounds: Glasgow, Newcastle, Manchester and Liverpool.</p>
+					<br>
+					<h4>Trains</h4>
+					<p>Train companies like Scotrail, Virgin trains and East Coast railways offer a range of journeys and tickets all over the UK. You can always get a better price if you book in advance. If you’re aged between 16 and 25, you can pay £26 for a railcard and get one third off all fares.</p>
+					<br>
+					<h4>Buses</h4>
+					<p>Several large companies like Citylink and National Coaches run buses to every town and city in Britain. Generally, they tend to be cheaper than trains. If you’re a student, you can get a discount with a student card. Other companies, like First Bus, run local services. If you make the same journey regularly, you could save money by getting a bus pass for a week, month or year. Don’t forget if you’re out in the evening to check the time of the last bus!</p>
+					<br>
+					<h4>Taxis</h4>
+					<p>There are two types of taxi companies in the UK – ‘black cabs/taxis’ and  ‘mini cabs.’  Black cabs are the ones you usually see outside railway stations. If you see one with the yellow ‘For Hire’ sign lit up, it’s empty and you can flag it down. Mini cabs are private cars available for hire. You need to book them in advance. Both types of taxis are regulated but mini cabs are often cheaper. If you’re travelling a long way by taxi, it’s a good idea to ask the price before you travel.</p>
+					<br>
+					<h4>Flights</h4>
+					<p>If you’re looking for a good price for a plane journey, there’s lots of information on the internet. Don’t forget that many of the cheaper companies, like Easy Jet and Ryan Air will charge you extra for things like luggage, insurance and paying by credit card on top of the price of the ticket.</p>
+					<br>
+					<h4>Bikes</h4>
+					<p>More people are using bikes to get around than before. Some cities have cycle lanes and it can be one of the fastest ways to get around town.  You’re safer with a helmet and high visibility clothing. Don’t forget a strong lock or chain. Bicycles are very easy to steal.</p>
+					<p>Finally, the cheapest form of transport of all is walking and your health will benefit too!</p>
+				</div>
+				
+			</div>
+      </div>
+   </div>
+</div>
+</template>

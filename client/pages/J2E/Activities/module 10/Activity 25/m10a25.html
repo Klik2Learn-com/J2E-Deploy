@@ -1,0 +1,65 @@
+<template name="m10a25"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/London');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 25 - {{> m10a25Title}}</div>
+		</header>
+		<section id="m10a25">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a25Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m10a25Intro}}</h3>
+				{{> m10a25Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a25_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a25_1}}
+		{{>m10a25_2}}
+		{{>m10a25_3}}
+		{{>EndPage char="k" act="m10a25" nextact="m10a26" place="London"}}
+	</div>
+</article>
+</template>
+<template name="m10a25_2"> 
+	<section id="m10a25_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>mod10_idioms}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a25_1" nexturl="#m10a25_3" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a25_1"> 
+	<section id="m10a25_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>mod10_idioms_ST}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a25" nexturl="#m10a25_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a25_3"> 
+	<section id="m10a25_3" class="hidden"> 
+		<div class="content">  
+      			 {{> K_saved module="10"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a25_2" nexturl="#m10a25_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

@@ -1,0 +1,84 @@
+<template name="m9a28"> 
+<article class="with-tools-sidebar m9a28">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StAustell');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 28 - {{> m9a28Title}}</div>
+		</header>
+		<section id="m9a28">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a28Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a28Intro}}</h3>
+				{{> m9a28Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a28_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a28_1}}
+		{{>m9a28_2}}
+		{{>EndPage char="k" act="m9a28" nextact="m9a29" place="StAustell"}}
+	</div>
+</article>
+</template>
+<template name="m9a28_2"> 
+	<section id="m9a28_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Now write in the spaces to complete the Idioms. <b>(<span id="wordCount">2</span> words)</b></h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>He was caught <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="12" autocomplete="off"><input type="submit" value="OK"></form></span> breaking into the shop thanks to CCTV pictures.</li>
+					<li>Politicians sometimes <span id="entryanswer1" class="textentry-disabled"></span> the <span id="entryanswer2" class="textentry-disabled"></span> by blaming the previous government.</li>
+					<li>The doctor told her the injury would heal – it was just a <span id="entryanswer3" class="textentry-disabled"></span> of time.</li>
+					<li>The boss has a <span id="entryanswer4" class="textentry-disabled"></span> in <span id="entryanswer5" class="textentry-disabled"></span>, he knows everything that’s going on.</li>
+				</ol>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a28_1" nexturl="#m9a28_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a28_1"> 
+	<section id="m9a28_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right preposition into the space.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+				 
+					<ol class="olcircle">
+						<li>He was caught <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target1">&nbsp;</div> breaking into the shop thanks to CCTV pictures.</li>
+						<li>Politicians sometimes <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target2">&nbsp;</div> by blaming the previous government.</li>
+						<li>The doctor told her the injury would heal – it was just <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target3">&nbsp;</div>.</li>
+						<li>The boss has a <div class="ddseatedtarget ddwidth12 dd1line" data-destinationid = "target4">&nbsp;</div> , he knows everything that’s going on.</li>		
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target4">finger in every pie</div></div>
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target1">red-handed</div></div>
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target3">a question of time</div></div>
+				<div class="ddseat ddwidth12 dd1line"><div class="ddsourceseated ddwidth12 dd1line shadow" draggable="false" data-destination="target2">pass the buck</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a28" nexturl="#m9a28_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

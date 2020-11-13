@@ -1,0 +1,42 @@
+<template name="m1Game_e_1">
+
+	<section id="m1Game_e_1" class="game-section game-dd hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<h3 class="center">Listen to K, then answer the questions below</h3>
+			<div class="game-content">
+				<div class="game-image-dd m1Game-bg1"></div>
+				<!-- add k, tu or elle to change bubble colour accordingly -->
+				<div class="game-speech-container inline-block k" style="margin-left: 10%;">
+					<div class="game-speech-tail"></div>
+					<div class="game-speech text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module1/Game/ke1.m4a"></button>
+					</div>
+					
+				</div>
+				<div class="sub-question">
+					<div class="instruction">Q1) Where is Elle going?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-4 col-xxs-12">
+								<button class="button1" id="a">Upstairs</button>
+							</div>
+							<div class="col-xs-4 col-xxs-12">
+								<button class="button1" id="b">The Garden</button>
+							</div>
+							<div class="col-xs-4 col-xxs-12">
+								<button class="button1" id="c">The kitchen</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_e_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>

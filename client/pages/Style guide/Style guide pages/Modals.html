@@ -1,0 +1,56 @@
+<template name="modalSG">
+   <section id="modalSG" class="hidden">
+      <div class="content">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 center">
+                  <button data-toggle="modal" data-target="#modalSG_modal" class="button2">Open Modal</button>
+               </div>
+            </div>
+         </div>
+		 <h5>HTML</h5> PUT THE MODAL OUTSIDE OF THE ARTICLE
+<pre class="htmlcode2">
+&#00060;button data-toggle="modal" data-target="#<span class="html-red">modalSG_modal</span>" class="button2"&#00062;Open Modal&#00060;/button&#00062;
+
+&#00060;template name="<span class="html-red">modalSG_modal</span>"&#00062;
+	&#60;div class="modal fade" tabindex="-1" id="<span class="html-red">modalSG_modal</span>" role="dialog"&#62;
+		&#60;div class="modal-dialog"&#62;
+			&#60;div class="modal-content"&#62;
+			
+				&#60;div class="modal-header"&#62;
+					&#60;button type="button" class="close" data-dismiss="modal" aria-label="Close"&#62;&#60;span aria-hidden="true"&#62;×&#60;/span&#62;&#60;/button&#62;
+					&#60;h4 class="modal-title" id="<span class="html-red">modalSG_modal</span>"&#62;<span class="html-red">Heading</span>&#60;/h4&#62;
+				&#60;/div&#62;
+				
+				&#60;div class="content"&#62;
+
+					<span class="html-red"><i>&#60;!--content--&#62;</i></span>
+
+					
+				&#60;/div&#62;
+				
+			&#60;/div&#62;
+		&#60;/div&#62;
+	&#60;/div&#62;
+&#00060;/template&#00062;</pre>
+      </div>
+   </section>
+
+</template>
+
+<template name="modalSG_modal">
+   <div class="modal fade" tabindex="-1" id="modalSG_modal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="modalSG_modal">Modal</h4>
+            </div>
+            <div class="content">
+               
+            
+			</div>
+      </div>
+   </div>
+   </div>
+</template>

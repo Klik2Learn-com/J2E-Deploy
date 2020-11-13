@@ -1,0 +1,172 @@
+<template name="MoreAboutStirling">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Stirling"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m3l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m3l1}}</div>
+		</header>
+
+		<section id="moreaboutStirling">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stirling/Stirling1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l1_A">
+						<p>Andy Murray</p>
+					</div>
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stirling/Stirling2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l1_B">
+						<p>Stirling Castle</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Stirling/Stirling3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l1_C">
+						<p>Falkirk Wheel</p>
+					</div>			
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stirling/Stirling6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l1_F">
+						<p>Scottish War of Independence</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stirling/Stirling5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l1_E">
+						<p>Robert the Bruce and the spider</p>
+					</div>	
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					
+					<div class="col-sm-offset-2 col-sm-8 col-xs-12 bonus-image" style="background-image: url('images/bonus/Stirling/Stirling4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l1_D">
+						<p>Irn Bru</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l1_A">Andy Murray</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stirling/Stirling1.jpg" alt="Andy Murray" style="max-width: 250px;">
+					</figure>
+					<p>Born in a small town in Perthshire near Stirling, Andy Murray is one of Britain’s best athletes, and has been the number British Player since 2006. He is the only tennis player to have won two Olympic single gold medals. He’s also won two Wimbledon titles. At the end of 2016, he became the No 1 tennis player in the world. His brother, Jamie is a well known doubles player who has also won a Wimbledon title. The Murray brothers helped Britain win the Davis Cup in 2015.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://en.wikipedia.org/wiki/Andy_Murray" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l1_B">Stirling Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stirling/Stirling2.jpg" alt="Stirling Castle" style="max-width: 250px;">
+					</figure>
+					<p>The castle is one of the most important in Scotland and has an impressive view of the surrounding countryside from the top of a steep crag. Several Scottish kings and queens have been crowned there - the most famous was Mary Queen of Scots. It’s now a popular tourist attraction where visitors can see the famous Stirling Heads - large oak carvings of famous characters, dating from the 16th century.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.undiscoveredscotland.co.uk/stirling/stirlingcastle/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l1_C">Falkirk Wheel</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stirling/Stirling3.jpg" alt="Falkirk Wheel" style="max-width: 250px;">
+					</figure>
+					<p>The Falkirk Wheel is the world’s only rotating boat lift. It links two canals in central Scotland. It replaced a series of lock gates in 2000 and allowed boats to travel from coast to coast across Scotland. It’s also a great day out for the family with boat trips, a water play park and a mini canal.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.scottishcanals.co.uk/falkirk-wheel/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l1_D">Irn Bru</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stirling/Stirling4.jpg" alt="Irn Bru" style="max-width: 250px;">
+					</figure>
+					<p>Irn Bru is a soft fizzy drink, popular throughout Scotland. It is sometimes called ‘Scotland’s other drink’ after whisky. It’s even more popular than Coca Cola in Scotland and is the 3rd most popular soft drink in the UK. Some places in Scotland sell irn bru flavour foods such as ice cream. The company has  a reputation for unusual and humorous advertising campaigns.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.irn-bru.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l1_E">Robert the Bruce and the spider</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stirling/Stirling5.jpg" alt="Robert the Bruce and the spider" style="max-width: 250px;">
+					</figure>
+					<p>The story about Robert the Bruce and the spider is famous. He was a Scottish knight who fought against the English king. One day, after a defeat in battle he was trying to escape and hid in a small cave. While he was there, he watched a small spider try again and again to make a web. Every time it fell, it got back up again. Finally it managed to spin a web. Robert was inspired by the spider and went on to defeat the English at the battle of Bannockburn.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.sath.org.uk/edscot/www.educationscotland.gov.uk/scotlandshistory/warsofindependence/bruceandspider/index.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l1_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l1_F">Scottish War of Independence</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stirling/Stirling6.jpg" alt="Scottish War of Independence" style="max-width: 250px;">
+					</figure>
+					<p>In the late 13th England invaded Scotland for the next 80 years Scotland and England fought a series of wars. William Wallace and Robert the Bruce were two Scottish leaders who defeated much larger English armies. Scotland remained an independent country until the two countries became part of the Kingdom of Great Britain in 1707.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/scotland/education/as/warsofindependence/board.shtml" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

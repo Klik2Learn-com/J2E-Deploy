@@ -1,0 +1,87 @@
+<template name="adminVoucherList">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+			<div class="main">
+			<header class="acttitle">
+				{{>menu}}
+				{{> adminNav}}
+			</header>
+			<section>
+				<div class="content-user">
+		{{#if isStudent}}
+			Unauthorised access
+		{{else}}
+					<h1>Vouchers List</h1>
+	
+					<table class="table1 table-fixed-header">
+						<thead>
+						<tr>
+							<th>Name</th>
+							<th>Code</th>
+							<th>Description</th>
+							<th>Discount %</th>
+							<th>Plans</th>
+							<th>Usage Amount</th>
+							<th>Total used</th>
+							<th>Active</th>
+							<th>Limited Usage</th>
+							<th>Delete</th>
+						</tr>
+						</thead>
+						<tbody>
+						<!-- Each user this user is allowed to see -->
+						{{#each voucherList}}
+							<tr>
+								<td>
+									{{name}}
+								</td>
+								<td>
+									{{code}}
+								</td>
+								<td>
+									{{description}}
+								</td>
+								<td>
+									{{discount}}
+								</td>
+								<td>
+									{{applyPlans}}
+								</td>
+								<td>
+									{{usageAmount}}
+								</td>
+								<td>
+									{{totalUse code}}
+								</td>
+								<td>
+									{{active}}
+								</td>
+								<td>
+									{{limitedUsage}}
+								</td>
+								<td>
+									<div data-id="{{this._id}}" class="voucher-edit delete text-center"><a draggable="false" href="#"><i class="fa fa-trash-alt"></i></a></div>
+								</td>
+	
+								<!-- {{#if isAdmin}}
+								<td style="text-align: center;">
+										<a draggable="false" class="edit_title_button forum-clickable"><i class="fas fa-pencil-alt"> </i> Edit</a>
+										<form class="edit_title_form hidden form-group nowrapnohidetext">
+											<input required data-id="{{this._id}}" class="form-control edit_title_input" type="text" placeholder="New title…" value="{{this.name}}">
+											<button class="button1 buttonsmall item-space no-border edit_title_ok">OK</button>
+											<span class="edit_title_status"></span>
+										</form>
+								</td>
+								{{/if}} -->
+							</tr>
+						{{/each}}
+						</tbody>
+					</table>
+					{{/if}}
+				</div>
+			</section>
+		</div>
+	</article>
+	
+	</template>
+	

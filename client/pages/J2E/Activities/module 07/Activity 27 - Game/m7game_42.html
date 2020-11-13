@@ -1,0 +1,30 @@
+<template name="m7Game_42">
+
+	<section id="m7Game_42" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m7Game-bg24"></div>
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="a">Elle: “People have been trying for over 100 years to make them out.”</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="b">Elle: “People have been trying for over 100 years to make them up.”</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">Elle: “People had been trying for over 100 years to make them out.”</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+
+</template>

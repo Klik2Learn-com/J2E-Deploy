@@ -1,0 +1,49 @@
+<template name="m10a16"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Chelmsford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 16 - {{> m10a16Title}}</div>
+		</header>
+		<section id="m10a16">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a16Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m10a16Intro}}</h3>
+				{{> m10a16Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a16_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a16_1}}
+		{{>EndPage char="k" act="m10a16" nextact="m10a17" place="Chelmsford"}}
+	</div>
+</article>
+</template>
+<template name="m10a16_1"> 
+	<section id="m10a16_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>InstructionsRecord text="Listen to these sentences, record and playback your voice. Try to match the intonation of the native speaker."}}
+      			<div class="parapaper paraextract">
+					 <ol class="olcircle">
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence1.m4a"></button> I’d like a tea, an Americano and two pieces of chocolate cake.</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence2.m4a"></button> Has he never been to the cinema or the theatre or a museum?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence3.m4a"></button> She’s been to Brazil, Mexico, Argentina and Paraguay.</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence4.m4a"></button> He takes exercise, eats well, yet he still had a heart attack.</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence5.m4a"></button> She doesn’t eat meat, or fish, or eggs or cheese?</li>
+						<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence6.m4a"></button> Haven’t you heard of Bob Dylan or Joni Mitchell or Joan Baez? They were really famous in the seventies.</li>
+					</ol>						
+				</div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a16" nexturl="#m10a16_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

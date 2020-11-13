@@ -1,0 +1,329 @@
+<template name="styleQuotations">
+<section id="styleQuotations" class="hidden">
+		<div class="content">			
+			<h2 style="text-center">Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<img draggable="false" src="images/quote/m2_billy.jpg" class="shadow" style="max-width: 100%;">
+									</div>									
+									<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Billy Connolly CBE</h2>
+											Born 1942
+										</figcaption>
+										<br>
+										<div class="button1 buttonsmall" data-toggle="modal" data-target="#styleQuotations_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m2_bc.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“Marriage is a wonderful invention: but then again, so is a bicycle repair kit.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m2_bcvid" src="https://www.youtube.com/embed/lJ_UGmEQHGI" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">			
+			<h2 style="text-center">Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">	
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<img draggable="false" src="images/quote/m2_charles.jpg" class="shadow" style="max-width: 100%;">
+									</div>									
+									<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Charles Dickens</h2>
+											(1812 - 1870)
+										</figcaption>
+										<br>
+										<div class="button1 buttonsmall" data-toggle="modal" data-target="#styleQuotations_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m2_cd.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">"Annual income £20, annual expenditure £19.96, result happiness. Annual income £20, annual expenditure £20.06, result misery."<br><br>
+								-Mr. Micawber who is quoted here, from ‘David Copperfield.</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-4by3">
+									<iframe class="embed-responsive-item" id="m2_cdvid" src="https://www.youtube.com/embed/qmoY81Jk0CE" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="content">
+		<h4>HTML</h4>
+		<pre class="htmlcode2">
+		&#00060;template name="styleQuotations_1"&#00062;
+&#00060;section id="styleQuotations_1" class="hidden"&#00062;
+	&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&#00060;div class="content"&#00062;			
+			&#00060;h2 style="text-center"&#00062;Each module has two quotations by famous British people. They're in alphabetical order.&#00060;/h2&#00062;
+			&#00060;div class="container-fluid"&#00062;
+				&#00123;&#00123;&#00062;blankrow&#00125;&#00125;
+				&#00060;div class="row"&#00062;
+					&#00060;div class="col-md-3 col-sm-12 text-center"&#00062;
+						&#00060;figure class="figquote"&#00062;						
+							&#00060;div class="container-fluid"&#00062;
+								&#00060;div class="row"&#00062;						
+									&#00060;div class="col-md-12 col-xs-6 text-right"&#00062;
+										&#00060;img draggable="false" src="images/quote/m2_billy.jpg" class="shadow" style="max-width: 100%;"&#00062;
+									&#00060;/div&#00062;									
+									&#00060;div class="col-md-12 col-xs-6 text-left"&#00062;										
+										&#00060;!-- &#00060;div style="display: inline-block;"&#00062; --&#00062;
+										&#00060;figcaption&#00062;
+											&#00060;h2&#00062;Billy Connolly CBE&#00060;/h2&#00062;
+											Born 1942
+										&#00060;/figcaption&#00062;
+										&#00060;br&#00062;
+										&#00060;div class="button1 buttonsmall" data-toggle="modal" data-target="#styleQuotations_bio1"&#00062;Find out more&#00060;/div&#00062;
+										&#00060;!-- &#00060;/div&#00062; --&#00062;
+									&#00060;/div&#00062;
+								&#00060;/div&#00062;
+							&#00060;/div&#00062;
+						&#00060;/figure&#00062;
+					&#00060;/div&#00062;					
+					&#00060;div class="col-md-9 col-sm-12 text-center"&#00062;					
+						&#00060;div class="parapaper quotation fold"&#00062;							&#00060;h5&#00062;
+								&#00060;div class="toolbuttleft"&#00062;
+									&#00060;button type="button" data-audiosrc="/audio/quotes/m2_bc.m4a" class="buttonround buttonaudio"&#00062;&#00060;/button&#00062; 
+								&#00060;/div&#00062;
+								&#00060;div class="toolbuttright"&#00062;“Marriage is a wonderful invention: but then again, so is a bicycle repair kit.”&#00060;/div&#00062;
+							&#00060;/h5&#00062;
+							&#00060;hr&#00062;
+							&#00060;div class="videoplayer"&#00062;
+								&#00060;div class="embed-responsive embed-responsive-16by9"&#00062;
+									&#00060;iframe class="embed-responsive-item" id="m2_bcvid" src="https://www.youtube.com/embed/lJ_UGmEQHGI" frameborder="0" allowfullscreen&#00062;&#00060;/iframe&#00062;
+								&#00060;/div&#00062;
+							&#00060;/div&#00062;
+						&#00060;/div&#00062;
+					&#00060;/div&#00062;
+				&#00060;/div&#00062;
+			&#00060;/div&#00062;
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+			&#00123;&#00123;&#00062;footer_nav nexturl="#styleQuotations_2" prev="hidden" next=""&#00125;&#00125;
+		&#00060;/footer&#00062;
+		&#00123;&#00123;/if&#00125;&#00125;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;
+
+&#00060;template name="styleQuotations_2"&#00062;
+&#00060;section id="styleQuotations_2" class="hidden"&#00062;
+	&#00123;&#00123;# if activeSection&#00125;&#00125;
+		&#00060;div class="content"&#00062;			
+			&#00060;h2 style="text-center"&#00062;Each module has two quotations by famous British people. They're in alphabetical order.&#00060;/h2&#00062;
+			&#00060;div class="container-fluid"&#00062;
+				&#00123;&#00123;&#00062;blankrow&#00125;&#00125;
+				&#00060;div class="row"&#00062;
+					&#00060;div class="col-md-3 col-sm-12 text-center"&#00062;	
+						&#00060;figure class="figquote"&#00062;						
+							&#00060;div class="container-fluid"&#00062;
+								&#00060;div class="row"&#00062;						
+									&#00060;div class="col-md-12 col-xs-6 text-right"&#00062;
+										&#00060;img draggable="false" src="images/quote/m2_charles.jpg" class="shadow" style="max-width: 100%;"&#00062;
+									&#00060;/div&#00062;									
+									&#00060;div class="col-md-12 col-xs-6 text-left"&#00062;										
+										&#00060;!-- &#00060;div style="display: inline-block;"&#00062; --&#00062;
+										&#00060;figcaption&#00062;
+											&#00060;h2&#00062;Charles Dickens&#00060;/h2&#00062;
+											(1812 - 1870)
+										&#00060;/figcaption&#00062;
+										&#00060;br&#00062;
+										&#00060;div class="button1 buttonsmall" data-toggle="modal" data-target="#styleQuotations_bio2"&#00062;Find out more&#00060;/div&#00062;
+										&#00060;!-- &#00060;/div&#00062; --&#00062;
+									&#00060;/div&#00062;
+								&#00060;/div&#00062;
+							&#00060;/div&#00062;
+						&#00060;/figure&#00062;
+					&#00060;/div&#00062;
+					&#00060;div class="col-md-9 col-sm-12 text-center"&#00062;					
+						&#00060;div class="parapaper quotation fold"&#00062;
+							&#00060;h5&#00062;
+								&#00060;div class="toolbuttleft"&#00062;
+									&#00060;button type="button" data-audiosrc="/audio/quotes/m2_cd.m4a" class="buttonround buttonaudio"&#00062;&#00060;/button&#00062; 
+								&#00060;/div&#00062;
+								&#00060;div class="toolbuttright"&#00062;"Annual income £20, annual expenditure £19.96, result happiness. Annual income £20, annual expenditure £20.06, result misery."&#00060;br&#00062;&#00060;br&#00062;
+								-Mr. Micawber who is quoted here, from ‘David Copperfield.&#00060;/div&#00062;
+							&#00060;/h5&#00062;
+							&#00060;hr&#00062;
+							&#00060;div class="videoplayer"&#00062;
+								&#00060;div class="embed-responsive embed-responsive-4by3"&#00062;
+									&#00060;iframe class="embed-responsive-item" id="m2_cdvid" src="https://www.youtube.com/embed/qmoY81Jk0CE" frameborder="0" allowfullscreen&#00062;&#00060;/iframe&#00062;
+								&#00060;/div&#00062;
+							&#00060;/div&#00062;
+						&#00060;/div&#00062;
+					&#00060;/div&#00062;
+				&#00060;/div&#00062;				
+			&#00060;/div&#00062;
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+			&#00123;&#00123;&#00062;footer_nav nexturl="#styleQuotations_end" prevurl="#styleQuotations_1" prev="" next=""&#00125;&#00125;
+		&#00060;/footer&#00062;
+		&#00123;&#00123;/if&#00125;&#00125;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;
+		</pre>
+		
+		<h4>JAVASCRIPT</h4>
+		<pre class="htmlcode2">
+Template.styleQuotations_1.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get('activeSection');
+		return (activeSection == "#styleQuotations_1");
+	&#00125;
+&#00125;)
+
+Template.styleQuotations_1.events(&#00123;
+
+	'click .buttonaudio': function(evt) &#00123;
+		;
+		$.k2l.styleQuotations_1.sound.src = $(evt.currentTarget).attr('data-audiosrc');
+		$.k2l.styleQuotations_1.sound.play();
+	&#00125;,
+	
+	'click .pagination': function(evt) &#00123;
+		
+		$.k2l.styleQuotations_1.sound.src = &#00123;&#00125;;
+	&#00125;
+
+&#00125;);
+
+Template.styleQuotations_1.rendered = function() &#00123;
+
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.styleQuotations_1 == 'undefined') &#00123;
+		$.k2l.styleQuotations_1 = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.styleQuotations_1.sound = new Audio();
+&#00125;
+
+Template.styleQuotations_2.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get('activeSection');
+		return (activeSection == "#styleQuotations_2");
+	&#00125;
+&#00125;)
+
+Template.styleQuotations_2.events(&#00123;
+
+	'click .buttonaudio': function(evt) &#00123;
+		;
+		$.k2l.styleQuotations_2.sound.src = $(evt.currentTarget).attr('data-audiosrc');
+		$.k2l.styleQuotations_2.sound.play();
+	&#00125;,
+	
+	'click .pagination': function(evt) &#00123;
+		
+		$.k2l.styleQuotations_2.sound.src = &#00123;&#00125;;
+	&#00125;
+
+&#00125;);
+
+Template.styleQuotations_2.rendered = function() &#00123;
+
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.styleQuotations_2 == 'undefined') &#00123;
+		$.k2l.styleQuotations_2 = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.styleQuotations_2.sound = new Audio();
+&#00125;
+		</pre>
+		
+		<h1>Bio modal code</h1>
+		<h3>Add the template &#00123;&#00123;>styleQuotations_bios&#00125;&#00125; outside of the activity article like any other modal</h3>
+		<h4>HTML</h4>
+		<pre class="htmlcode2">
+&#00060;template name="styleQuotations_bios"&#00062;
+	&#00060;div class="modal fade" id="styleQuotations_bio1" role="dialog" style="z-index: 1060;"&#00062;
+      	&#00060;div class="modal-dialog" role="document"&#00062;
+         	&#00060;div class="modal-content"&#00062;
+         		&#00060;div class="modal-header"&#00062;
+               		&#00060;button type="button" class="close" data-dismiss="modal" aria-label="Close"&#00062;&#00060;span aria-hidden="true"&#00062;&times;&#00060;/span&#00062;&#00060;/button&#00062;
+               		&#00060;h4 class="modal-title" id="myModalLabel"&#00062;Billy Connolly&#00060;/h4&#00062;
+            	&#00060;/div&#00062;
+				
+				&#00060;div class="quote_bio"&#00062;
+					&#00060;figure class="image imgleft"&#00062;&#00060;img draggable="false" src="images/quote/m2_billy.jpg"&#00062;&#00060;/figure&#00062;
+					Billy Connolly CBE - a famous Scottish comedian, musician and actor born in Glasgow in 1942. He left school to work as a welder in the shipyards and was a member of the parachute regiment before becoming a full time entertainer. He has appeared in a range of films including &#00060;i&#00062;Muppet Treasure Island&#00060;/i&#00062; and was nominated for a BAFTA. He had an unhappy childhood which he wrote about in his autobiography.  He said of his marriage to the comedy actress Pamela Stephenson, ‘Marriage didn’t change me - it saved me.’He has performed to audiences all over the world and was voted Britain’s favourite comedian in 2008.
+				&#00060;/div&#00062;
+				
+				&#00060;div class="modal-footer"&#00062;
+          			&#00060;button type="button" data-dismiss="modal"&#00062;Close&#00060;/button&#00062;
+          		&#00060;/div&#00062;
+			&#00060;/div&#00062;
+		&#00060;/div&#00062;
+	&#00060;/div&#00062;
+	
+	&#00060;div class="modal fade" id="styleQuotations_bio2" role="dialog" style="z-index: 1060;"&#00062;
+      	&#00060;div class="modal-dialog" role="document"&#00062;
+         	&#00060;div class="modal-content"&#00062;
+         		&#00060;div class="modal-header"&#00062;
+               		&#00060;button type="button" class="close" data-dismiss="modal" aria-label="Close"&#00062;&#00060;span aria-hidden="true"&#00062;&times;&#00060;/span&#00062;&#00060;/button&#00062;
+               		&#00060;h4 class="modal-title" id="myModalLabel"&#00062;Charles Dickens&#00060;/h4&#00062;
+            	&#00060;/div&#00062;
+				
+				&#00060;div class="quote_bio"&#00062;
+					&#00060;figure class="image imgleft"&#00062;&#00060;img draggable="false" src="images/quote/m2_charles.jpg"&#00062;&#00060;/figure&#00062;
+					Charles Dickens – a famous English writer who lived from 1812-1870. He wrote stories and novels that are still being made into films and musicals today – &#00060;i&#00062;A Christmas Carol, Oliver Twist&#00060;/i&#00062;. He experienced debt and poverty as a child. The character, Mr. Micawber, is said to be based on his own father. He was hugely popular in his lifetime in Britain and America not just for his 15 novels but for his live performances when he read extracts from them. As well as being the greatest novelist of the Victorian period he was a great social reformer and his novels raised issues like child labour, education and the law. He created some characters who are still remembered today. His character Scrooge from A Christmas Carol now means someone who is mean to others and hates spending money.
+				&#00060;/div&#00062;
+				
+				&#00060;div class="modal-footer"&#00062;
+          			&#00060;button type="button" data-dismiss="modal"&#00062;Close&#00060;/button&#00062;
+          		&#00060;/div&#00062;
+			&#00060;/div&#00062;
+		&#00060;/div&#00062;
+	&#00060;/div&#00062;
+&#00060;/template&#00062;
+		</pre>
+		</div>
+	</section>
+</template>

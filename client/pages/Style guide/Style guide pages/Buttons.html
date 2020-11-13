@@ -1,0 +1,303 @@
+<template name="styleButtons">
+<section id="style-Buttons" class="hidden">
+		<div class="content">
+
+			<h1>Basic buttons</h1>
+			
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="button1">Button 1</div><br>
+						<pre class="htmlcode4">&lt;button class=&quot;button1&quot;&gt;Button text&lt;/button&gt;</pre> 
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="button2">Button 2</div><br>
+						<pre class="htmlcode4">&lt;button class=&quot;button2&quot;&gt;Button text&lt;/button&gt;</pre> 
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="button1 buttonsmall">Small</div><br>
+						<pre class="htmlcode4">&lt;button class=&quot;button1 buttonsmall&quot;&gt;Button text&lt;/button&gt;</pre> 
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="button1 buttonbig">Big</div><br>
+						<pre class="htmlcode4">&lt;button class=&quot;button1 buttonbig&quot;&gt;Button text&lt;/button&gt;</pre> 
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="button1 faded">Faded</div><br>
+						<pre class="htmlcode4">&lt;button class=&quot;button1 faded&quot;&gt;Button text&lt;/button&gt;</pre>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="button1 noclick">Unclickable</div><br>
+						<pre class="htmlcode4">&lt;button class=&quot;button1 noclick&quot;&gt;Button text&lt;/button&gt;</pre> 
+					</div>
+				</div>
+			</div>
+
+			<br>
+
+			<hr>
+			<p>When you have multiple buttons together, it's a good idea to give them <span class="htmlcode">.item-space</span> so they won't touch when side by side or stacked.</p>
+			<div class="button1 item-space">Button</div><div class="button1 item-space">Button</div><div class="button1 item-space">Button</div>
+			<div class="button1 item-space">Button</div><div class="button1 item-space">Button</div><div class="button1 item-space">Button</div>
+			<div class="button1 item-space">Button</div><div class="button1 item-space">Button</div><div class="button1 item-space">Button</div>
+			<br><br>
+			<hr>
+			<p>If you need number buttons, add <span class="htmlcode">.button-number</span>. Don't use <span class="htmlcode">.item-space</span> for this.</p>
+			<p>Use spans with <span class="htmlcode">.avoidwrap</span> to make sure the buttons respond well (see example html below.</p>
+			<div class="row text-center" style="margin-top: 3em;">
+				<b>Syllables: </b>
+				<span class="avoidwrap">
+					<span class="avoidwrap">
+						<button type="button" class="button1 button-number">2</button>
+						<button type="button" class="button1 button-number">3</button>
+						<button type="button" class="button1 button-number">4</button>
+						<button type="button" class="button1 button-number">5</button>
+					</span>
+					<span class="avoidwrap">
+						<button type="button" class="button1 button-number">6</button>
+						<button type="button" class="button1 button-number">7</button>
+						<button type="button" class="button1 button-number">8</button>
+					</span>
+				</span>
+			</div>
+			<br>
+<pre class="htmlcode2">&#60;div class="row text-center" style="margin-top: 3em;"&#62;
+	&#60;b&#62;Syllables: &#60;/b&#62;
+	&#60;span class="avoidwrap"&#62;
+		&#60;span class="avoidwrap"&#62;
+			&#60;button type="button" class="button1 button-number"&#62;2&#60;/button&#62;
+			&#60;button type="button" class="button1 button-number"&#62;3&#60;/button&#62;
+			&#60;button type="button" class="button1 button-number"&#62;4&#60;/button&#62;
+			&#60;button type="button" class="button1 button-number"&#62;5&#60;/button&#62;
+		&#60;/span&#62;
+		&#60;span class="avoidwrap"&#62;
+			&#60;button type="button" class="button1 button-number"&#62;6&#60;/button&#62;
+			&#60;button type="button" class="button1 button-number"&#62;7&#60;/button&#62;
+			&#60;button type="button" class="button1 button-number"&#62;8&#60;/button&#62;
+		&#60;/span&#62;
+	&#60;/span&#62;
+&#60;/div&#62;</pre>
+			<br><br>
+			<h1>Audio Buttons</h1>
+			
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module2/a23/RPart8.m4a"></button>An audio button.
+						<br><br>
+						<h5>HTML</h5>
+						<pre class="htmlcode2">&lt;button class="buttonround buttonaudio" data-audiosrc="/audio/module2/a23/RPart1.m4a"&gt;&lt;/button&gt;</pre>
+					</div>
+					<div class="col-sm-4">
+						<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart8.m4a"></button>A small audio button.
+						<br><br>
+						<h5>HTML</h5>
+						<pre class="htmlcode2">&lt;button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart1.m4a"&gt;&lt;/button&gt;</pre>
+					</div>
+					<div class="col-sm-4">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module2/a23/RPart8.m4a"></button>A big audio button.
+						<br><br>
+						<h5>HTML</h5>
+						<pre class="htmlcode2">&lt;button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module2/a23/RPart1.m4a"&gt;&lt;/button&gt;</pre>
+					</div>
+				</div>
+			</div>
+			<h5>JAVASCRIPT</h5>
+<pre class="htmlcode2">Template.styleButtons.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get('activeSection');
+		return (activeSection == "#styleButtons");
+	&#00125;
+&#00125;)
+
+Template.styleButtons.events(&#00123;
+
+	'click .buttonaudio': function(evt) &#00123;
+		;
+		$.k2l.styleButtons.sound.src = $(evt.currentTarget).attr('data-audiosrc');
+		$.k2l.styleButtons.sound.play();
+	&#00125;,
+	
+	'click .pagination': function(evt) &#00123;
+		
+		$.k2l.styleButtons.sound.src = &#00123;&#00125;;
+	&#00125;
+
+&#00125;);
+
+Template.styleButtons.rendered = function() &#00123;
+
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.styleButtons == 'undefined') &#00123;
+		$.k2l.styleButtons = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.styleButtons.sound = new Audio();
+&#00125;
+</pre>
+
+			<br><br>
+			
+			
+			<p>To center buttons change the class <span class="htmlcode">.buttonroundc .buttonaudioc</span> then add <span class="htmlcode">.center-block</span>. Example Activity 15.</p>
+					
+			<br>
+			<hr>
+			<h2>Lots of text next to a button</h2>
+			<div class="iconleft"><button class="buttonround buttonaudio"></button></div>
+			<div class="iconright">If you have a lot of text next to a round button like this use the following code to keep the text from wrapping underneath the button and make it behave like a list item.</div>
+			<br>
+<pre class="htmlcode2">&lt;div class=&quot;iconleft&quot;&gt;
+	&lt;button class=&quot;buttonround buttonaudio&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;iconright&quot;&gt;Your text here&lt;/div&gt;</pre><br>
+			<hr>
+			<h2>Another kind of audio button - useful if there's a lot of items to hear</h2>
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col-xs-6">
+						<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module2/a23/RPart1.m4a">Leisure pool</button>
+						<br>
+						<pre class="htmlcode2">&lt;button class=&quot;button1 button-icon audio&quot; data-audiosrc=&quot;/audio/module2/a23/RPart1.m4a&quot;&gt;&lt;img src=&quot;images/icons/audio.svg&quot;&gt;Leisure pool&lt;/button&gt;</pre>
+					</div>
+					<div class="col-xs-6">
+						<button class="button1 buttonsmall buttonsmall-icon audio item-space" data-audiosrc="/audio/module2/a23/RPart1.m4a">Leisure pool</button>
+						<br>
+						<pre class="htmlcode2">&lt;button class=&quot;button1 buttonsmall buttonsmall-icon audio&quot; data-audiosrc=&quot;/audio/module2/a23/RPart1.m4a&quot;&gt;&lt;img src=&quot;images/icons/audio.svg&quot;&gt;Leisure pool&lt;/button&gt;</pre>
+					</div>
+				</div>
+			</div>
+			<p>Remember the change <span class="htmlcode">buttonaudio</span> to <span class="htmlcode">button-icon audio</span> or <span class="htmlcode">buttonsmall-icon audio</span> in the Javascript for these buttons.</p>
+			<br><br><br>
+			
+			
+			<h1>Icon Buttons</h1>
+			<p>Like the audio buttons above but with a customisable icon. Just change the image source.</p>
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col-xs-6">
+						<button class="button1 button-icon item-space"><img draggable="false" src="/images/icons/audio.svg">Leisure pool</button>
+						<br>
+						<pre class="htmlcode2">&lt;button class=&quot;button1 button-icon&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;/images/icons/audio.svg&quot;&gt;Leisure pool&lt;/button&gt;</pre>
+					</div>
+					<div class="col-xs-6">
+						<button class="button1 buttonsmall buttonsmall-icon item-space"><img src="/images/icons/audio.svg">Leisure pool</button>
+						<br>
+						<pre class="htmlcode2">&lt;button class=&quot;button1 buttonsmall buttonsmall-icon &quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;/images/icons/audio.svg&quot;&gt;Leisure pool&lt;/button&gt;</pre>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+					
+				
+			<h1>Tool buttons</h1>
+			<h2>Clickable icons next to instruction text</h2>
+			
+			{{>InstructionsNotebook text="Read the following article and then answer the questions in your notebook."}}
+			
+			<p>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsNotebook text="Notebook instruction text goes here"&#125;&#125;</pre><br>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsDictionary text="Check any words you don't know in the Dictionary"&#125;&#125;</pre><br>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsRecord text="Voice recorder instruction text goes here"&#125;&#125;</pre><br>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsForum text="Forum instruction text goes here"&#125;&#125;</pre><br>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsEmail text="Email instruction text goes here"&#125;&#125;</pre><br>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsGrammar text="Grammar guide instruction text goes here"&#125;&#125;</pre><br>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsEPortfolio text="E-portfolio instruction text goes here"&#125;&#125;</pre><br>
+				<pre class="htmlcode4">&#123;&#123;&#62;InstructionsUserGuide text="User guide instruction text goes here"&#125;&#125;</pre><br>
+			</p>
+			<br>
+			
+			<hr>
+			<h2>Clickable icons on their own</h2>
+			<div class="container-fluid text-center styleguide-tool-buttons">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconNote}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconNote&#125;&#125;</pre><br><br>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconDic}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconDic&#125;&#125;</pre><br><br>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconRec}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconRec&#125;&#125;</pre><br><br>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconForum}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconForum&#125;&#125;</pre><br><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconEmail}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconEmail&#125;&#125;</pre><br><br>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconGG}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconGG&#125;&#125;</pre><br><br>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconEportfolio}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconEportfolio&#125;&#125;</pre><br><br>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						{{>ToolIconUserGuide}}
+						<div class="parent_expander"></div>
+						<pre class="htmlcode4">&#123;&#123;&#62;ToolIconUserGuide&#125;&#125;</pre><br><br>
+					</div>
+				</div>
+			</div>
+
+			
+			<br>
+			<hr>
+			<h2>Grammar Guide and Dictionary footers</h2>
+			
+			<div class="text-center">
+				<!--Grammer guide link start-->
+				{{>gg_button gg_text="Click here to find out more about [whatever] in the Grammar Guide"}}
+				<pre class="htmlcode4">&#123;&#123;&#62;gg_button gg_text="Click here to find out more about [whatever] in the Grammar Guide"&#125;&#125;</pre> 
+				<!--Grammer guide link end-->
+				<p>&nbsp;</p>
+				<!--Dictionary link start-->
+				{{>dic_button}}
+				<pre class="htmlcode4">&#123;&#123;&#62;dic_button&#125;&#125;</pre> 
+				<!--Grammer guide link end-->
+			</div>
+
+			<br><br>
+			<hr>
+			<h2>Stuck button</h2>
+			
+			<div class="stuck" style="position: relative">
+				<div class="stuck-enter">
+					<div class="stuck-button shadow">
+						<div class="stuck_k"></div>
+						<span>Stuck? {{>touch yes="Tap" no="Click"}} to see the answer</span>
+					</div>
+				</div>
+			</div>
+
+			<p>For a stuck button, use <pre class="htmlcode4">&#123;&#123;&#62;stuck stuckchar="k"&#125;&#125;</pre> where <span class="htmlcode">k</span> is either <span class="htmlcode">k</span>, <span class="htmlcode">tu</span> or <span class="htmlcode">elle</span>.</p>
+			
+			<p>It doesn't matter where this is put on the page as it will always display in the bottom-left corner</p>
+			
+			<p>If you require custom text, use <pre class="htmlcode4">&#123;&#123;&#62;stuck-custom stuckchar="k" stucktext="Custom text"&#125;&#125;</pre></p>
+		
+		</div>
+	</section>
+</template>

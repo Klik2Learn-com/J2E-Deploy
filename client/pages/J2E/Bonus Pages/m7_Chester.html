@@ -1,0 +1,148 @@
+<template name="MoreAboutChester">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Chester"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m7l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m7l4}}</div>
+		</header>
+
+		<section id="moreaboutChester">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Chester/Chester1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l4_A">
+						<p>Chester Cathedral</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Chester/Chester2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l4_B">
+						<p>River Dee Cruises</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Chester/Chester3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l4_C">
+						<p>Heritage Museums</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-2  col-xs-12 bonus-image" style="background-image: url('images/bonus/Chester/Chester4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l4_D">
+						<p>Romans</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Chester/Chester5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l4_E">
+						<p>Miniature Railway</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l4_A">Chester Cathedral</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chester/Chester1.jpg" alt="Chester Cathedral" style="max-width: 250px;">
+					</figure>
+					<p>The church at Chester became a cathedral in 1541. Historians think there was a church on this site in Roman times. Chester was an important town for the Romans when they ruled Britain from the 1st to the 5th century. The cathedral is now used for concerts and exhibitions as well as services.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.chestercathedral.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l4_B">River Dee Cruises</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chester/Chester2.jpg" alt="River Dee Cruises" style="max-width: 250px;">
+					</figure>
+					<p>Going on a cruise down the River Dee is one of the most relaxing ways to see the countryside and the town of Chester. You can choose from half an hour sightseeing or a party boat at night. If you want a really English experience you can go on one of the ‘Fish and Chip’ cruises in the evening.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.chesterboat.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l4_C">Heritage Museums</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chester/Chester3.jpg" alt="Heritage Museums" style="max-width: 250px;">
+					</figure>
+					<p>There is a collection of museums in Chester which focus on different aspects of the town, for example, ‘Weaver Hall’ was once a workhouse and now displays the industrial past of the town. You can visit a watermill which produced corn and was working until the 1950s and a salt works. The salt industry was important for the economy of Chester.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.cheshirewestmuseums.org/?page_id=58" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l4_D">Romans</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chester/Chester4.jpg" alt="Romans" style="max-width: 250px;">
+					</figure>
+					<p>The Roman name for Chester was ‘Military camp on the River Dee.’ It was home to the 20th Legion for over 200 years. The River Dee provided an important trade route and a Roman harbour nearby used to send lead and copper from the mines in North Wales to other parts of the Roman Empire.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.romantoursuk.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l4_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l4_E">Miniature Railway</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chester/Chester5.jpg" alt="Miniature Railway" style="max-width: 250px;">
+					</figure>
+					<p>Grosvenor Park, Chester, is just a few minutes’ walk from the city centre. Here, you can take a short train ride on a steam  or diesel train round the park. Children can even have a ‘drive a train’ experience on a new electric train. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitchester.com/things-to-do/grosvenor-park-miniature-railway-p51281" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

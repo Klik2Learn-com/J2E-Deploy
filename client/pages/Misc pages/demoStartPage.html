@@ -1,0 +1,72 @@
+<template name="demoStartPageExample">
+	<article class="{{hasCourseSidebar}} ">
+		{{#if hasCourse}} {{>ToolsSidebar}} {{/if}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if hasCourse}} {{>menu}} {{else}} {{>menu_assess}} {{/if}}
+				<div class="parent-level">Journey 2 English</div>
+				<div class="acttitle-title">Home</div>
+			</header>
+			<!-- Activity 1 -->
+			{{>demoStartPage
+				intro="<p>Find out what kind of learner you are with this fun quiz.</p>"
+				title="How Do You Learn?"
+				avatar="k"
+				href="#"
+			}}
+
+			<!-- Game
+			{{>demoStartPage
+				intro="<p><i>Journey 2 English</i> combines fun with serious learning. All the grammar points are revised in a game at the end of each module.</p><p>See if your knowledge of English grammar can help you catch a thief in a Scottish castle.</p>"
+				title="Find the Fairy Flag"
+				avatar="all"
+				href="#"
+			}}
+			-->
+		
+			<!--Phrasal verbs		
+			{{>demoStartPage
+				intro="<p>Native speakers of English use hundreds of phrasal verbs. <i>Journey 2 English</i> will teach you some of the most common ones. Try this fun method of learning a few of them.</p>"
+				title="Phrasal Verbs"
+				avatar="tu"
+				href="#"
+			}}
+			-->
+		
+			<!--Phrasal verbs		
+			{{>demoStartPage
+				intro="<p>Native speakers of English use hundreds of idioms. <i>Journey 2 English</i> will teach you some of the most common ones. Try this fun method of learning a few of them.</p>"
+				title="Idioms"
+				avatar="elle"
+				href="#"
+			}}
+			-->
+		</div>
+	</article>
+</template>
+
+<template name="demoStartPage">
+	<section class="demo-start-page">
+		<div class="content">
+			<h1>Welcome to the world of Klik2learn</h1>
+			<h4>
+				<p>This activity will give you a taste of <i>Journey 2 English</i> - the new way to learn English.</p>
+				{{{intro}}}
+			</h4>
+			<p>&nbsp;</p>
+
+			<div class="course-container demo">
+				<div class="demo-course-row">
+					<a draggable="false" href="{{href}}" class="demo-activity-wrapper">
+						<div class="number hidden">1</div>
+						<img draggable="false" src="/mappage/{{avatar}}@2x.png" alt="Activity thumbnail" class="act-thumb">
+						<div class="title">
+							<div class="demo-activity-title">{{title}}</div>
+							<div class="demo-activity-begin">Click here to begin</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</template>

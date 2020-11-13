@@ -1,0 +1,116 @@
+<template name="m10a24"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/London');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 24 - {{> m10a24Title}}</div>
+		</header>
+		<section id="m10a24">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a24Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a24Intro}}</h3>
+				{{> m10a24Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a24_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a24_1}}
+		{{>m10a24_2}}
+		{{>m10a24_3}}
+		{{>EndPage char="elle" act="m10a24" nextact="m10a25" place="London"}}
+	</div>
+</article>
+</template>
+<template name="m10a24_3"> 
+	<section id="m10a24_3" class="hidden"> 
+		<div class="content">  
+      			 {{> Tu_saved module="10"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a24_2" nexturl="#m10a24_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a24_2"> 
+	<section id="m10a24_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+			
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To read something quickly:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid = "target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To investigate</b><br>
+					<div class="ddtarget dd4lines" data-destinationid = "target2">&nbsp;</div>
+				</div>
+			</div>
+		
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">Scientists are looking into the effects of global warming on the Arctic ice.</div></div>
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">Look through the latest news on the BBC website.</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		
+			{{> rightwrong}}{{>welldone}}
+			
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a24_1" nexturl="#m10a24_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a24_1"> 
+	<section id="m10a24_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+			
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To take care of <br>someone or something:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid = "target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b><br>To admire/respect someone:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid = "target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b><br>To be careful:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid = "target3">&nbsp;</div>
+				</div>
+			</div>
+		
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target3">Passengers were warned to look out for luggage left unattended in public places.</div></div>
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">Many people look up to the Scottish naturalist John Muir as a role model for conservation.</div></div>
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">We haven’t looked after the planet very well in recent years.</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		
+			{{> rightwrong}}
+			
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a24" nexturl="#m10a24_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

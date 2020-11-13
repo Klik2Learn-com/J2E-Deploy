@@ -1,0 +1,140 @@
+<template name="m8a24"> 
+<article class="with-tools-sidebar m8a24">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bath');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 8</div> <div class='acttitle-title'>{{> activity}} 24 - {{> m8a24Title}}</div>
+		</header>
+		<section id="m8a24">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a24Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a24Intro}}</h3>
+				{{> m8a24Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a24_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a24_1}}
+		{{>m8a24_2}}
+		{{>m8a24_3}}
+		{{>m8a24_4}}
+		{{>EndPage char="elle" act="m8a24" nextact="m8a25" place="Bath"}}
+	</div>
+</article>
+</template>
+
+<template name="m8a24_1"> 
+	<section id="m8a24_1" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Prefixes are letters that go in front of a word.</h4>
+      			<br><br>
+      			<div class="center">
+      				<div class="caption capgreen">dis</div> <div class="caption">agree</div>
+      			</div>
+      			<br><br>
+      			<h4 class="center">A prefix can change the meaning of a word. ‘Disagree’ is the opposite of ‘agree.’</h4>
+      			{{>gg_button gg_text="Click here to find out more about prefixes in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a24" nexturl="#m8a24_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+ 
+<template name="m8a24_2"> 
+	<section id="m8a24_2" class="hidden"> 
+		<div class="content">  
+      			<h2 class="center">Here are some more Prefixes.</h2>
+				{{> prefixExamplesP1}}
+      			{{>gg_button gg_text="Click here to find out more about prefixes in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a24_1" nexturl="#m8a24_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a24_3"> 
+	<section id="m8a24_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the right Prefix for the word.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">Re</span></div></div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">Anti</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">In</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">Dis</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">Sub</span></div></div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto6 animated flipInX" id="lottoc5"><div><span class="contents">Ab</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc6"><div><span class="contents">Ultra</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc7"><div><span class="contents">Pre</span></div></div>
+					</div> 
+					 <div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto7 animated flipInX" id="lottoc8"><div><span class="contents">Over</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc9"><div><span class="contents">Infra</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc10"><div><span class="contents">Im</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc11"><div><span class="contents">Out</span></div></div> 
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="number">1</div> <h5><span class="textentry-disabled"></span> <span id="questions">condition</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="counterleft">Prefixes left to find: <u id="startClock1">2</u></div>
+			{{>rightwrong}}
+			{{>welldone}}
+			</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a24_2" nexturl="#m8a24_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m8a24_4"> 
+	<section id="m8a24_4" class="hidden"> 
+		<div class="content">  
+      			<h2 class="center">Here are the Prefixes again.</h2>
+				{{> prefixExamplesP1}}
+      			
+      			{{>gg_button gg_text="Click here to find out more about prefixes in the Grammar Guide"}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a24_3" nexturl="#m8a24_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

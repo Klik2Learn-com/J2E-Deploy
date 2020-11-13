@@ -1,0 +1,88 @@
+<template name="voiceRecorderViewer">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/user/{{this.audioAuthor}}"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">{{this.original.name}}</div>
+			<div class="acttitle-title">Listen to recording</div>
+		</header>
+
+	<section class="recorder_listen">
+      <div class="content">
+		<div class="notebookmain">
+			<div class="parapaper fold note-container">			
+				<div class="note-titlebar">
+					<button class="buttonround buttonplay" data-function="playAudio" data-audiosrc="{{this.url}}"></button>
+					<div class="rec-title">
+						<div class="note-title">{{this.original.name}}&nbsp;</div>
+						<div class="note-date">{{this.metadata.duration}}s</div>
+						<div class="parent_expander"></div>
+					</div>
+				</div>
+
+				<div>
+					<div class="spacer2"></div>
+					<div class="text-center">
+						<div class="inline-block text-left">
+							Length: <b>{{this.metadata.duration}} seconds</b><br>
+							Recorded on: <b>{{this.uploadedAt}}</b>
+						</div>
+					</div>
+					<div class="spacer"></div>
+				</div>
+			</div>
+			<!-- Reply Recordings Here --> 
+			  {{#if comments}}
+	           <div class="comments-header">Comments</div>
+	          {{/if}}
+			{{#each this.comments}}
+				{{#if typeAudio}}
+					{{#if isTutorComment}}
+						{{#with commentRecording}}
+							<div class="notebook-comment tutor shadow" data-identifier="{{this._id}}">
+								<b>{{getFullnameFromId this.audioAuthor}}</b>
+								<div class="note-content">
+									<p style="white-space: pre-wrap; word-wrap: break-word;">{{this.comment}}</p>
+								</div>
+								<button class="buttonround buttonroundbig buttonaudio" data-function="playAudio" data-audiosrc="{{this.url}}"></button> <b>Length: {{this.metadata.duration}} seconds</b>
+							</div>
+						{{/with}}
+					{{else}}
+						{{#with commentRecording}}
+							<div class="notebook-comment student shadow" data-identifier="{{this._id}}">
+								<b>{{getFullnameFromId this.audioAuthor}}</b>
+								<div class="note-content">
+									<p style="white-space: pre-wrap; word-wrap: break-word;">{{this.comment}}</p>
+								</div>
+								<button class="buttonround buttonroundbig buttonaudio"  data-function="playAudio" data-audiosrc="{{this.url}}"></button> <b>Length: {{this.metadata.duration}} seconds</b>
+							</div>
+						{{/with}}
+					{{/if}}
+				{{else}}
+					{{#if isTutorComment}}
+						<div class="notebook-comment tutor shadow" data-identifier="{{this._id}}">
+							<div class="comment-from">{{getFullnameFromId this.commenter}}</div>
+							<div class="note-content">
+								<p style="white-space: pre-wrap; word-wrap: break-word;">{{this.comment}}</p>
+							</div>
+						</div>
+					{{else}}
+						<div class="notebook-comment student shadow" data-identifier="{{this._id}}">
+							<b>{{getFullnameFromId this.commenter}}</b>
+							<div class="note-content">
+								<p style="white-space: pre-wrap; word-wrap: break-word;">{{this.comment}}</p>
+							</div>
+						</div>
+					{{/if}}
+				{{/if}}
+			{{/each}}
+			{{> voiceRecorderComment}}
+		  </div>
+		</div>
+	</section>
+	</div>
+</article>
+
+</template>

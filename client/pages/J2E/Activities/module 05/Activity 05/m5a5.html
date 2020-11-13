@@ -1,0 +1,482 @@
+<template name="m5a5">
+<article class="with-tools-sidebar m5a5">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Blackpool');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 5 - {{>m5a5Title}}</div>
+		</header>
+		
+		
+		<section id="m5a5">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a5Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m5a5Intro}}</h3>
+{{> m5a5Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a5_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a5_1}}
+		{{>m5a5_2}}	
+		{{>m5a5_3}}
+		{{>m5a5_4}}		
+		{{>m5a5_5}}
+		{{>m5a5_6}}
+		{{>m5a5_7}}
+		{{>m5a5_8}}
+		{{>m5a5_9}}
+		{{>m5a5_10}}
+		{{>m5a5_11}}
+		{{>m5a5_12}}
+		{{>m5a5_13}}
+
+
+		{{>EndPage char="tu" act="m5a5" nextact="m5a6" place="Blackpool"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m5a5_1">
+	<section id="m5a5_1" class="hidden">
+		<div class="content center">
+			<div class="caption">The PAST SIMPLE is used when an action happened in the past and is now finished.</div>
+			<h4 class="">It might be something which happened:</h4><Br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="ph-w ph-16x9 shadow" style="max-width: 270px"><div class="ph"><img draggable="false" src="/images/prepositions/time_v2.png" alt="Watch"></div></div><br><br>
+						<div class="caption capgreen">at a particular time</div><br><br>
+						<p>I <span class="grammar">waited</span> for over an hour yesterday for the train to arrive.</p>
+					</div>
+					<div class="col-sm-6">
+						<div class="ph-w ph-16x9 shadow" style="max-width: 270px"><div class="ph"><img draggable="false" src="/images/module5/multiple_times.png" alt="Calendar"></div></div><br><br>
+						<div class="caption capgreen">more than once</div><br><br>
+						<p>I <span class="grammar">phoned</span> him every week.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a5" nexturl="#m5a5_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a5_10">
+	<section id="m5a5_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Man with drink" src="/images/module5/called.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							He often <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> for a drink after work.
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">swim</span>
+							<span class="word">buy</span>
+							<span class="word">go</span>
+							<span class="word">wear</span>
+							<span class="word">eat</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_11">
+	<section id="m5a5_11" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="People wearing 70s clothes" src="/images/module5/wore.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							During the 70s people <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> platform shoes and bell bottom trousers.
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">swim</span>
+							<span class="word">buy</span>
+							<span class="word">go</span>
+							<span class="word">wear</span>
+							<span class="word">eat</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_12">
+	<section id="m5a5_12" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Boy eating junk food" src="/images/module5/junkfood.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							He <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> junk food for a whole month.
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">swim</span>
+							<span class="word">buy</span>
+							<span class="word">go</span>
+							<span class="word">wear</span>
+							<span class="word">eat</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_13">
+	<section id="m5a5_13" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Paying for tomatoes" src="/images/module5/buy.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							I <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> some strawberries.
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">swim</span>
+							<span class="word">buy</span>
+							<span class="word">go</span>
+							<span class="word">wear</span>
+							<span class="word">eat</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_2">
+	<section id="m5a5_2" class="hidden">
+		<div class="content center">
+			<h4>Add <span class="grammar">'ed'</span> to a regular verb:</h4>
+			<div class="caption">wait</div> <span style="font-size:2em;font-weight:800;padding: 0px 25px;">=</span> <div class="caption capgreen">waited</div>
+			<br>
+			<br>
+			<h4>Add <span class="grammar">'d'</span> if the verb already ends in <span class="grammar">'e'</span>:</h4>
+			<div class="caption">phone</div> <span style="font-size:2em;font-weight:800;padding: 0px 25px;">=</span> <div class="caption capgreen">phoned</div>
+			{{>gg_button gg_text="Click here to find out more about the PAST SIMPLE TENSE in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a5_1" nexturl="#m5a5_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a5_3">
+	<section id="m5a5_3" class="hidden">
+		<div class="content center">
+			<h4>Some common verbs are irregular. They don't add <span class="grammar">'ed'</span></h4>
+			<h4>Here are some examples:</h4>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="caption ddwidth6">swim</div> <span style="font-size:2em;font-weight:800;padding: 0px 25px;">=</span> <div class="caption ddwidth6 capgreen">swam</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="caption ddwidth6">go</div> <span style="font-size:2em;font-weight:800;padding: 0px 25px;">=</span> <div class="caption ddwidth6 capgreen">went</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="caption ddwidth6">eat</div> <span style="font-size:2em;font-weight:800;padding: 0px 25px;">=</span> <div class="caption ddwidth6 capgreen">ate</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="caption ddwidth6">buy</div> <span style="font-size:2em;font-weight:800;padding: 0px 25px;">=</span> <div class="caption ddwidth6 capgreen">bought</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="caption ddwidth6">wear</div> <span style="font-size:2em;font-weight:800;padding: 0px 25px;">=</span> <div class="caption ddwidth6 capgreen">wore</div>
+					</div>
+					<div class="col-sm-6">
+						
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about IRREGULAR VERBS in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a5_2" nexturl="#m5a5_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a5_4">
+	<section id="m5a5_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Person entering a house" src="/images/module5/arrived.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							I  <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> home at 11.30pm.
+
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">wash</span>
+							<span class="word">arrive</span>
+							<span class="word">like</span>
+							<span class="word">play</span>
+							<span class="word">walk</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_5">
+	<section id="m5a5_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Boy walking" src="/images/module5/walk.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							He  <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> to school every day.
+
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">wash</span>
+							<span class="word">arrive</span>
+							<span class="word">like</span>
+							<span class="word">play</span>
+							<span class="word">walk</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_6">
+	<section id="m5a5_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Woman mopping floor" src="/images/module5/clean.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							I  <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> the kitchen floor at the weekend.
+
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">wash</span>
+							<span class="word">arrive</span>
+							<span class="word">like</span>
+							<span class="word">play</span>
+							<span class="word">walk</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_7">
+	<section id="m5a5_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Girl playing piano" src="/images/module5/play.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							She <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> the piano when she was a child.
+
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">wash</span>
+							<span class="word">arrive</span>
+							<span class="word">like</span>
+							<span class="word">play</span>
+							<span class="word">walk</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_8">
+	<section id="m5a5_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Boy with records" src="/images/module5/like.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							I <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> that band when I was younger, but not now.
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">wash</span>
+							<span class="word">arrive</span>
+							<span class="word">like</span>
+							<span class="word">play</span>
+							<span class="word">walk</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_9">
+	<section id="m5a5_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="center">Choose one of the verbs below and type the <b>past tense</b> in the space.</h3>
+			<div class="ph-w ph-16x9 shadow" style="max-width: 412px"><div class="ph"><img draggable="false" alt="Elderly man swimming" src="/images/module5/swam.png"></div></div><br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper linespace2 fold center">
+							He <span id="entryanswer"><form class="textentry">{{> m5a5_input}}<input type="submit" value="OK"></form></span> the English Channel when he was 70 years old.
+							{{> rightwrong}} {{> welldone}}
+						</div>
+
+						<div class="box1 block">
+							<span class="word">swim</span>
+							<span class="word">buy</span>
+							<span class="word">go</span>
+							<span class="word">wear</span>
+							<span class="word">eat</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						{{>gg_button gg_text="Click here to find out more about verbs in the Grammar Guide"}}
+		</div>
+		{{> stuck stuckchar="k"}}
+
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a5_input">
+    <input type="text" name="userText" size="7" autocomplete="off" autofocus>
+</template>
+

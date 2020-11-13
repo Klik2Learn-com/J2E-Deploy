@@ -1,0 +1,426 @@
+<template name="m7a16">
+	<article class="with-tools-sidebar m7a16">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Chester');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 16 - {{>m7a16Title}}</div>
+			</header>
+			<section id="m7a16">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a16Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m7a16Intro}}</h3>
+					{{> m7a16Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a16_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a16_1}} {{>m7a16_2}} {{>m7a16_3}} {{>m7a16_4}} {{>m7a16_5}} {{>m7a16_6}} {{>EndPage char="k" act="m7a16" nextact="m7a17"
+			place="Chester"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a16_1">
+	<section id="m7a16_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here is some vocabulary you'll need to know as a student. Drag the explanation to the picture.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 border1" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/graduate.jpg" alt="Man with mortat board">
+							</div>
+						</div>
+						<h4>Graduate</h4>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd3lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 border1" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/post grad.jpg" alt="Woman with laptop">
+							</div>
+						</div>
+						<h4>Post graduate</h4>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd3lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1" border1 style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/professor.jpg" alt="Older man speaking">
+							</div>
+						</div>
+						<h4>Professor</h4>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd3lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 border1" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/under grad.jpg" alt="Person reading book on grass">
+							</div>
+						</div>
+						<h4>Undergraduate</h4>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd3lines ddwidth12">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth12 dd3lines">
+						<div class="ddsourceseated shadow ddwidth12 dd3lines" draggable="false" data-destination="target3">The head of a department in a university</div>
+					</div>
+					<div class="ddseat ddwidth12 dd3lines">
+						<div class="ddsourceseated shadow ddwidth12 dd3lines" draggable="false" data-destination="target1">Someone who receives a degree (e.g. B.A., M.A., Bsc)</div>
+					</div>
+					<div class="ddseat ddwidth12 dd3lines">
+						<div class="ddsourceseated shadow ddwidth12 dd3lines" draggable="false" data-destination="target4">Someone who is studying for a degree</div>
+					</div>
+					<div class="ddseat ddwidth12 dd3lines">
+						<div class="ddsourceseated shadow ddwidth12 dd3lines" draggable="false" data-destination="target2">Someone who is studying for a higher degree</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a16" nexturl="#m7a16_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a16_2">
+	<section id="m7a16_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here is some vocabulary you'll need to know as a student. Drag the explanation to the picture.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/essay.png" alt="Pages with writing">
+							</div>
+						</div>
+						<h4>Essay</h4>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/degree.png" alt="Diploma">
+							</div>
+						</div>
+						<h4>Degree</h4>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/coursework.png" alt="Books">
+							</div>
+						</div>
+						<h4>Coursework</h4>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/subjects.png" alt="Prospectus">
+							</div>
+						</div>
+						<h4>Subjects</h4>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target2">A title given to students who have passed a course of study/exams</div>
+					</div>
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target4">The names of the areas of study e.g. biology, maths, German</div>
+					</div>
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target3">Work that a student does throughout the year</div>
+					</div>
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target1">A piece of writing students do for a tutor on a topic</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a16_1" nexturl="#m7a16_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a16_3">
+	<section id="m7a16_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here is some vocabulary you'll need to know as a student. Drag the explanation to the picture.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/syllabus.png" alt="Papers">
+							</div>
+						</div>
+						<h4>Syllabus</h4>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/prospectus.png" alt="Prospectus">
+							</div>
+						</div>
+						<h4>Prospectus</h4>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/terms.png" alt="Calendar">
+							</div>
+						</div>
+						<h4>Terms</h4>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target3">The start and finish dates of periods of study</div>
+					</div>
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target2">A booklet listing all the courses available at a college or university</div>
+					</div>
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target1">The topics covered in a course of study</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a16_2" nexturl="#m7a16_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a16_4">
+	<section id="m7a16_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here is some vocabulary you'll need to know as a student. Drag the explanation to the picture.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans border1" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/residence.jpg" alt="Halls of residence">
+							</div>
+						</div>
+						<h4>Halls of Residence</h4>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans border1" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/campus.jpg" alt="Campus">
+							</div>
+						</div>
+						<h4>Campus</h4>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target2">The area where all the buildings in a college or university are situated</div>
+					</div>
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target1">Accommodation provided for students</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a16_3" nexturl="#m7a16_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a16_5">
+	<section id="m7a16_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here is some vocabulary you'll need to know as a student. Drag the explanation to the picture.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/cheat.png" alt="Boy looking at someone else's answers">
+							</div>
+						</div>
+						<h4>Cheating</h4>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/plagiarism.png" alt="Book falling out of girl's folder">
+							</div>
+						</div>
+						<h4>Plagiarism</h4>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target2">To pass off someone else’s work as your own</div>
+					</div>
+					<div class="ddseat ddwidth12 dd4lines">
+						<div class="ddsourceseated shadow ddwidth12 dd4lines" draggable="false" data-destination="target1">To act dishonestly or break the rules on coursework or exams</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a16_4" nexturl="#m7a16_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a16_6">
+	<section id="m7a16_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here is some vocabulary you'll need to know as a student. Drag the explanation to the picture.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/seminar.png" alt="Seminar">
+							</div>
+						</div>
+						<h4>Seminar</h4>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd5lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/lecture.png" alt="Lecture hall">
+							</div>
+						</div>
+						<h4>Lecture</h4>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd5lines ddwidth12">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth14">
+					<figure>
+						<div class="ph-w ph-1x1 trans" style="max-width: 180px">
+							<div class="ph">
+								<img draggable="false" src="../images/module7/a16/tutorial.png" alt="Tutorial">
+							</div>
+						</div>
+						<h4>Tutorial</h4>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd5lines ddwidth12">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth12 dd5lines">
+						<div class="ddsourceseated shadow ddwidth12 dd5lines" draggable="false" data-destination="target3">A small group or individual lesson where you discuss your work with a tutor</div>
+					</div>
+					<div class="ddseat ddwidth12 dd5lines">
+						<div class="ddsourceseated shadow ddwidth12 dd5lines" draggable="false" data-destination="target1">A larger group of students who meet to discuss their work with a tutor</div>
+					</div>
+					<div class="ddseat ddwidth12 dd5lines">
+						<div class="ddsourceseated shadow ddwidth12 dd5lines" draggable="false" data-destination="target2">A talk given by a member of staff to a large group of students</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a16_5" nexturl="#m7a16_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

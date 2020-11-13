@@ -1,0 +1,408 @@
+<template name="m4a7">
+<article class="with-tools-sidebar m4a7 para-select">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/GlenCoe');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 7 - {{>m4a7Title}}</div>
+		</header>
+		
+		
+		<section id="m4a7">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a7Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m4a7Intro}}</h3>
+{{> m4a7Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a7_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{#if paragraphSection}}
+			{{> m4a7paragraphselect}}
+		{{/if}}
+		{{>m4a7_1}}
+		{{>m4a7_2}}
+		{{>m4a7_3}}
+		{{>m4a7_4}}
+		{{>m4a7_5}}
+		{{>m4a7_6}}
+		{{>m4a7_7}}
+		{{>m4a7_8}}
+		{{>m4a7_9}}
+
+		{{>EndPage char="k" act="m4a7" nextact="m4a8" place="GlenCoe"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m4a7_1">
+	<section id="m4a7_1" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">1</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>Why does Scotland have a lot of people suffering from Multiple Sclerosis?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraph 1						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7" nexturl="#m4a7_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_2">
+	<section id="m4a7_2" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">2</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>What does Professor Ebers want to do about this problem?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraph 2						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_1" nexturl="#m4a7_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_3">
+	<section id="m4a7_3" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">3</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>How is the company Kellogg’s helping to tackle the problem?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraph 5				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_2" nexturl="#m4a7_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_4">
+	<section id="m4a7_4" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">4</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>What two diseases have been prevented by adding vitamins to food?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraph 6						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_3" nexturl="#m4a7_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_5">
+	<section id="m4a7_5" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">5</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>Why did children in Victorian times get the disease rickets?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraph 7						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_4" nexturl="#m4a7_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_6">
+	<section id="m4a7_6" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">6</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>Why might children in the  21st century still get rickets?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraph 8						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_5" nexturl="#m4a7_7" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_7">
+	<section id="m4a7_7" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">7</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>What two types of people are most likely to lack Vitamin D?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraph 10						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_6" nexturl="#m4a7_8" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_8">
+	<section id="m4a7_8" class="hidden">
+		<div class="content para-select-content">
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m4a7Q" class="number pull-right">8</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m4a7Quest" class="caption">
+							<p>The article mentions three possible ways people can get enough Vitamin D. What are they?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m4a7P" class="captionsmall capgreen">
+							Paragraphs 1 and 6						
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					<div class="col-xs-12">
+						<h3 class="center">Continue when you’re ready to see the answers.</h3>
+					</div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_7" nexturl="#m4a7_9" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a7_9">
+	<section id="m4a7_9" class="hidden">
+		<div class="content">
+			<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+				<ol class="olcircle">
+					<li>
+						<p><b>Why does Scotland have a lot of people suffering from Multiple Sclerosis?</b></p>
+						<p>Scots don’t get enough sunshine. Lack of sunshine leads to lack of vitamin D.</p>
+					</li>
+					<li>
+						<p><b>What does Professor Ebers want to do about this problem?</b></p>
+						<p>He wants to dose the whole population with vitamin D.</p>
+					</li>
+					<li>
+						<p><b>How is the company Kellogg’s helping to tackle the problem?</b></p>
+						<p>Kellogg’s adds vitamin D to its cereals.</p>
+					</li>
+					<li>
+						<p><b>What two diseases have been prevented by adding vitamins to food?</b></p>
+						<p>Rickets and goitre.</p>
+					</li>
+					<li>
+						<p><b>Why did children in Victorian times get the disease rickets?</b></p>
+						<p>Children in Victorian times got rickets because they didn’t get enough vitamin D.</p>
+					</li>
+					<li>
+						<p><b>Why might children in the  21st century still get rickets?</b></p>
+						<p>Children in the 21st century might get rickets because they don’t get outside enough. They spend a lot of time indoors watching TV or playing computer games.</p>
+					</li>
+					<li>
+						<p><b>What two types of people are most likely to lack Vitamin D?</b></p>
+						<p>People with darker skins and people who stay covered up are more likely to lack vitamin D.</p>
+					</li>
+					<li>
+						<p><b>The article mentions three possible ways people can get enough Vitamin D. What are they?</b></p>
+						<p>
+							- Getting enough sunshine.<br>
+							- Eating foods which contain vitamin D like oily fish.<br>
+							- Taking vitamin D pills.<br>
+						</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a7_8" nexturl="#m4a7_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+
+
+
+<template name="m4a7_end">
+{{>EndPage char="k" act="m4a7" nextact="m4a8" place="Portree"}}
+</template>
+
+<template name="m4a7paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+	<div class="content para-select-text">
+		{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+		<br>
+		<div class="container-fluid">
+			{{> blankrow}}
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div id="m4a7textDisplay" class="parapaper fold">
+						<p><b>1.</b> International experts are calling for vitamin D to be added to food in Scotland.</p><p>Scotland has a high number of people with Multiple Sclerosis – one of the highest levels in the world. Scots don’t get enough sunshine and a lack of vitamin D is caused by a lack of sunlight. For half the year, nobody living in Scotland gets enough UVB rays from the sun on their skin to make the vitamin D they need and many do not eat enough of the foods that contain it, such as oily fish.</p>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 text-right">
+					<span class="paragraph-label">Select a paragraph:</span>
+					<a><div id="0" class="numbutt">1</div></a>
+					<a><div id="1" class="numbutt">2</div></a>
+					<a><div id="2" class="numbutt">3</div></a>
+					<a><div id="3" class="numbutt">4</div></a>
+					<a><div id="4" class="numbutt">5</div></a>
+					<a><div id="5" class="numbutt">6</div></a>
+					<a><div id="6" class="numbutt">7</div></a>
+					<a><div id="7" class="numbutt">8</div></a>
+					<a><div id="8" class="numbutt">9</div></a>
+					<a><div id="9" class="numbutt">10</div></a>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</template>

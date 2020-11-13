@@ -1,0 +1,134 @@
+<template name="styleSpeech">
+<section id="style-speech" class="hidden">
+	<div class="content">
+		<h1>Speech Bubbles</h1>
+		<p>You can change the width of the conversation by adding <span class="htmlcode">max-width="<span class="html-red">###</span>px"</span> as an inline style on the <span class="htmlcode">&#60;ul&#62;</span></p>
+		<br>
+		<ul class="speech center-block">
+			<li><span class="htmlcode">&#60;div class="speech1"&#62;</span> <span class="htmlcode" style="float: right;">&#60;div class="speech2"&#62;</span></li>
+			<li></li>
+			<li><img draggable="false" src="images/stuck_k.png"><div class="speech1">Hello there!</div></li>
+			<li><div class="speech2">Hi.</div><img draggable="false" src="images/stuck_elle.png"></li>
+			<li><img draggable="false" src="images/stuck_k.png"><div class="speech1">Who are you?</div></li>
+			<li><div class="speech2">Hi. I'm an expandable chat box. I expand horizontally and vertically, as you can see here.</div><img draggable="false" src="images/stuck_elle.png"></li>
+			<li><img draggable="false" src="images/stuck_k.png"><div class="speech1">Hi. I'm an expandable chat box with box as well!</div></li>
+			<li><div class="speech2">Cool!</div><img draggable="false" src="images/stuck_elle.png"></li>
+			<li><img draggable="false" src="images/stuck_k.png"><div class="speech1">Isn't it?</div></li>
+			<li><div class="speech2">You just put each speech DIV in <span class="htmlcode">&#60;li&#62;</span> tags in a <span class="htmlcode">&#60;ul class="speech center-block"&#62;</span> to space them out like this. Set the width of your UL or container DIV to choose the max width of these bubbles.</div><img draggable="false" src="images/stuck_elle.png"></li>
+			<li><img draggable="false" src="images/stuck_k.png"><div class="speech1">Cool. Got it.</div></li>
+		</ul>
+
+		<br><br><br><br>
+
+		<div class="speech3"><span class="htmlcode">&#60;div class="speech3"&#62;</span></div><div class="speech4"><span class="htmlcode">&#60;div class="speech4"&#62;</span></div><br><br><br><br>
+		<div class="speech5"><span class="htmlcode">&#60;div class="speech5"&#62;</span></div><div class="speech6"><span class="htmlcode">&#60;div class="speech6"&#62;</span></div><br><br><br><br>
+		
+		<br><br>
+		
+<pre class="htmlcode2">&#60;ul class="speech center-block"&#62;
+			
+	&#60;li&#62;&#60;img src="<span style="color: violet;">images/module3/a10/guy.png</span>"&#62;&#60;div class="speech1"&#62;
+		<span style="color: red;">First person's dialogue.</span>
+	&#60;/div&#62;&#60;/li&#62;
+	
+	&#60;li&#62;&#60;div class="speech2"&#62;
+		<span style="color: blue;">Second person's dialogue.</span>
+	&#60;/div&#62;&#60;img src="<span style="color: skyblue;">images/module3/a10/girl.png</span>"&#62;&#60;/li&#62;
+	
+	&#60;li&#62;&#60;img src="<span style="color: violet;">images/module3/a10/guy.png</span>"&#62;&#60;div class="speech1"&#62;
+		<span style="color: red;">First person</span>
+	&#60;/div&#62;&#60;/li&#62;
+	
+	&#60;li&#62;&#60;div class="speech2"&#62;
+		<span style="color: blue;">Second person</span>
+	&#60;/div&#62;&#60;img src="<span style="color: skyblue;">images/module3/a10/girl.png</span>"&#62;&#60;/li&#62;
+	
+&#60;/ul&#62;</pre>
+<p>&nbsp;</p>
+
+
+<h1>Speech Bubbles with Audio Buttons</h1>
+
+<ul class="speech speech-audio center-block">
+
+	<li><img draggable="false" src="images/module3/a10/guy.png" class="round"><div class="speech1">
+		<div class="toolbuttleft">
+			<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/1-right.m4a"></button>
+		</div> 
+		<div class="toolbuttright">
+			Hi Anka, are you doing anything this evening
+		</div>
+	</div></li>
+	
+	<li><div class="speech2">
+		<div class="toolbuttleft">
+			<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/2-right.m4a"></button>
+		</div> 
+		<div class="toolbuttright">
+			Well, no. I’m not doing anything in particular.
+		</div>
+	</div><img draggable="false" src="images/module3/a10/girl.png" class="round"></li>
+	
+	<li><img draggable="false" src="images/module3/a10/guy.png" class="round"><div class="speech1">
+		<div class="toolbuttleft">
+			<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/3-4-5-6-right.m4a"></button>
+		</div> 
+		<div class="toolbuttright">
+			You remember Martyna? She’s back from her trip to Australia today. Her plane lands at 5pm. We’re having a few friends round this evening to welcome her back. Will you come?
+		</div>
+	</div></li>
+	
+	<li><div class="speech2">
+		<div class="toolbuttleft">
+			<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module3/a10/7-8-right.m4a"></button>
+		</div> 
+		<div class="toolbuttright">
+			Yeah. Sure. That’ll be great. I’ll bring some drinks if you like.
+		</div>
+	</div><img draggable="false" src="images/module3/a10/girl.png" class="round"></li>
+	
+			</ul>
+<br>
+<pre class="htmlcode2">&#60;ul class="speech speech-audio center-block"&#62;
+			
+	&#60;li&#62;&#60;img src="<span style="color: violet;">images/module3/a10/guy.png</span>"&#62;&#60;div class="speech1"&#62;
+		&#60;div class="toolbuttleft"&#62;
+			&#60;button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="<span style="color: orange;">/audio/module3/a10/1-right.m4a</span>"&#62;&#60;/button&#62;
+		&#60;/div&#62; 
+		&#60;div class="toolbuttright"&#62;
+			<span style="color: red;">Hi Anka, are you doing anything this evening</span>
+		&#60;/div&#62;
+	&#60;/div&#62;&#60;/li&#62;
+	
+	&#60;li&#62;&#60;div class="speech2"&#62;
+		&#60;div class="toolbuttleft"&#62;
+			&#60;button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="<span style="color: orange;">/audio/module3/a10/2-right.m4a</span>"&#62;&#60;/button&#62;
+		&#60;/div&#62; 
+		&#60;div class="toolbuttright"&#62;
+			<span style="color: blue;">Well, no. I’m not doing anything in particular.</span>
+		&#60;/div&#62;
+	&#60;/div&#62;&#60;img src="<span style="color: skyblue;">images/module3/a10/girl.png</span>"&#62;&#60;/li&#62;
+	
+	&#60;li&#62;&#60;img src="<span style="color: violet;">images/module3/a10/guy.png</span>"&#62;&#60;div class="speech1"&#62;
+		&#60;div class="toolbuttleft"&#62;
+			&#60;button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="<span style="color: orange;">/audio/module3/a10/3-4-5-6-right.m4a</span>"&#62;&#60;/button&#62;
+		&#60;/div&#62; 
+		&#60;div class="toolbuttright"&#62;
+			<span style="color: red;">You remember Martyna? She’s back from her trip to Australia today. Her plane lands at 5pm. We’re having a few friends round this evening to welcome her back. Will you come?</span>
+		&#60;/div&#62;
+	&#60;/div&#62;&#60;/li&#62;
+	
+	&#60;li&#62;&#60;div class="speech2"&#62;
+		&#60;div class="toolbuttleft"&#62;
+			&#60;button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="<span style="color: orange;">/audio/module3/a10/7-8-right.m4a</span>"&#62;&#60;/button&#62;
+		&#60;/div&#62; 
+		&#60;div class="toolbuttright"&#62;
+			<span style="color: blue;">Yeah. Sure. That’ll be great. I’ll bring some drinks if you like.</span>
+		&#60;/div&#62;
+	&#60;/div&#62;&#60;img src="<span style="color: skyblue;">images/module3/a10/girl.png</span>"&#62;&#60;/li&#62;
+	
+&#60;/ul&#62;</pre>
+	
+	</div>		
+</section>
+</template>

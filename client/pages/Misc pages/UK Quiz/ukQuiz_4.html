@@ -1,0 +1,29 @@
+<template name="ukQuiz_4">
+	<section id="ukQuiz_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Language Questions</h1>
+			<h3 class="center">Drag the right word into the space to complete the idiom.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ul class="ulblank center">
+						<li>You can't have your <div class="ddseatedtarget ddwidth7 dd1line" id = "target1">&nbsp;</div> and eat it.</li>
+					</ul>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target3">chocolate</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target2">ice cream</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target1">cake</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target4">cookie</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+				{{>footer_nav prevurl="#ukQuiz_3" nexturl="#ukQuiz_5" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>

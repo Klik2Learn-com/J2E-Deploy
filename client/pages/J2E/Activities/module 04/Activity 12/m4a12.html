@@ -1,0 +1,564 @@
+<template name="m4a12">
+	<article class="with-tools-sidebar m4a12">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Crianlarich');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 12 - {{>m4a12Title}}</div>
+			</header>
+
+
+			<section id="m4a12">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a12Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m4a12Intro}}</h3>
+					{{> m4a12Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a12_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a12_1}} {{>m4a12_2}} {{>m4a12_3}} {{>m4a12_4}} {{>EndPage char="elle" act="m4a12" nextact="m4a13" place="Crianlarich"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="hospitalwards">
+	<div style="max-width: 600px; margin: 0 auto;">
+		<div class="container-fluid hospital-wards">
+			<div class="row">
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card1" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Cardiology</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Heart patients</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card2" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Maternity</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Mothers and babies</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card3" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Pharmacy</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Medicines</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card4" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Paediatrics</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Children's department</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card5" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Neurology</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Brain patients</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card6" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Physiotherapy</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Exercise and massage</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card7" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Oncology</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Cancer patients</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card8" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Ophthalmology</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Eye patients</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card9" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Renal Unit</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Kidney patients</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card10" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Accident and Emergency (A&amp;E)</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Accidents/sudden illness</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card11" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Radiotherapy</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">X-rays</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-6 col-xxs-12">
+					<div id="m4a13-card12" class="flippable">
+						<div class="front noselect">
+							<div class="front-content">Orthopaedics</div>
+						</div>
+						<div class="back noselect">
+							<div class="back-content">Broken bones</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m4a12_1">
+	<section id="m4a12_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Hospital Departments</h1>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on a department to find out what it deals with</h3>
+			{{> hospitalwards}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a12" nexturl="#m4a12_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a12_2">
+	<section id="m4a12_2" class="hidden">
+		<div class="content">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} to hear the name of a hospital department. Then choose the explanation that matches the
+				department.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0">
+							<div>
+								<span class="contents">medicines</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1">
+							<div>
+								<span class="contents">children’s department</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2">
+							<div>
+								<span class="contents">exercise and massage</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3">
+							<div>
+								<span class="contents">X rays</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">heart patients</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto6 animated flipInX" id="lottoc5">
+							<div>
+								<span class="contents">kidney patients</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc6">
+							<div>
+								<span class="contents">cancer patients</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc7">
+							<div>
+								<span class="contents">eye patients</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto7 animated flipInX" id="lottoc8">
+							<div>
+								<span class="contents">broken bones</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc9">
+							<div>
+								<span class="contents">accidents/sudden illness</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc10">
+							<div>
+								<span class="contents">brain patients</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc11">
+							<div>
+								<span class="contents">mothers and babies</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-7 audio text-center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Cardiology.m4a"></button>
+							<b class="avoidwrap">{{>touch yes="Tap" no="Click"}} to hear the audio</b>
+						</div>
+						<div class="col-sm-5 text-center">
+							{{>scorebox1 rightSession="m4a12RightScore" wrongSession="m4a12WrongScore"}}
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a12_1" nexturl="#m4a12_3" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a12_3">
+	<section id="m4a12_bad" class="hidden">
+		<div class="content">
+
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m4a12RightScore" wrongSession="m4a12WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" id="m4a12restart" href="#m4a12_1" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a12_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m4a12_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m4a12RightScore" wrongSession="m4a12WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a12_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a12_4">
+	<section id="m4a12_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h4 class="text-center">Here are the answers.</h4>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">1</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Cardiology.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Cardiology:
+										<br> Heart patients</p>
+								</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">2</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Paediatrics.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Paediatrics:
+										<br> Children’s department</p>
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">3</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Oncology.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Oncology:
+										<br> Cancer patients</p>
+								</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">4</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Accident_and_Emergency_(AandE).m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Accident and Emergency:
+										<br> Accidents/sudden illness</p>
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">5</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12//Maternity.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Maternity:
+										<br> Mothers and babies</p>
+								</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">6</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Neurology.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Neurology:
+										<br> Brain patients</p>
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">7</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Ophthalmology.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Ophthalmology:
+										<br> Eye patients</p>
+								</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">8</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Radiotherapy.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Radiology:
+										<br> X rays</p>
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">9</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Pharmacy.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Pharmacy:
+										<br> Medicines
+									</p>
+								</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">10</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Physiotherapy.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Physiotherapy:
+										<br> Exercise and massage</p>
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">11</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Renal Unit.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Renal Unit:
+										<br> Kidney patients</p>
+								</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="number">12</div>
+							</div>
+							<div class="col-sm-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a12/Orthopaedics.m4a"></button>
+							</div>
+							<div class="col-sm-8">
+								<b>
+									<p>Orthopaedics:
+										<br> Broken bones</p>
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a12" nexturl="#m4a12_end" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

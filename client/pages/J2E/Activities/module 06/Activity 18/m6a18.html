@@ -1,0 +1,482 @@
+<template name="m6a18">
+	<article class="with-tools-sidebar m6a18">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Scarborough');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 18 - {{>m6a18Title}}</div>
+			</header>
+			<section id="m6a18">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a18Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m6a18Intro}}</h3>
+					{{> m6a18Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a18_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a18_1}} {{>m6a18_2}} {{>m6a18_3}} {{>m6a18_4}} {{>m6a18_5}} {{>EndPage char="elle" act="m6a18" nextact="m6a19" place="Scarborough"}}
+		</div>
+	</article>
+
+	{{>m6a18_4_modal}}
+</template>
+
+<template name="m6a18_1">
+	<section id="m6a18_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h4 class="center">
+				The UK youth parliament is run by young people aged 11-18. They elect their own members for different parts of Britain, just
+				like real politicians. Once a year they go to London to have a debate in the Houses of Parliament.
+			</h4>
+			<div class="ph-w ph-3x2" style="max-width: 414px">
+				<div class="ph">
+					<img draggable="false" src="/images/module6/a18/youngmps.jpg" alt="Room full of people">
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a18" nexturl="#m6a18_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m6a18_2">
+	<section id="m6a18_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				Watch this video where they debate the following topics - or motions as they are called in Parliament.
+			</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<br>
+						<br>
+						<br>
+						<h5>
+							<ul class="list-space">
+								<li>Public transport</li>
+								<li>Getting ready for work</li>
+								<li>Marriage for all</li>
+								<li>National minimum wage</li>
+								<li>A curriculum to prepare for life</li>
+							</ul>
+						</h5>
+					</div>
+					<div class="col-sm-7">
+						<div class="videoplayer">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rqYdnF8EIpI?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a18_1" nexturl="#m6a18_3" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m6a18_3">
+	<section id="m6a18_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				Listen to these sentences then match them to the topics.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-10 col-sm-offset-1 text-center parapaper">
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module6/a18/1.m4a"></button>
+						<div class="caption capgreen">
+							<span id="question_text">Sentence 1</span>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<button class="button2 item-space ddwidth10 dd2lines">Getting ready for work</button>
+								<button class="button2 item-space ddwidth12 dd2lines">Equal National Minimum Wage</button>
+								<button class="button2 item-space ddwidth10 dd2lines">Marriage for all</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<button class="button2 item-space ddwidth11 dd2lines">Public Transport</button>
+								<button class="button2 item-space ddwidth11 dd2lines">A curriculum to prepare for life</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{> scorebox1 rightID="m4a17RightScore" wrongID="m4a17WrongScore"}}
+					</div>
+				</div>
+			-->
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a18_2" nexturl="#m6a18_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m6a18_4">
+	<section id="m6a18_4" class="hidden">
+		<div class="content">
+			{{> rightwrong}}
+			<h3 class="center">
+				Now watch the last 3 minutes of the video again and match the votes to the topics.
+			</h3>
+			<div class="row">
+				<div class="col-sm-offset-3 col-sm-6">
+					<div class="parapaper parapaperdd1 fold">
+						<ol class="olcircle">
+							<li>Public transport
+								<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target1">&nbsp;</div>
+							</li>
+							<li>Getting ready for work
+								<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target2">&nbsp;</div>
+							</li>
+							<li>Marriage for all
+								<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target3">&nbsp;</div>
+							</li>
+							<li>National minimum wage
+								<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target4">&nbsp;</div>
+							</li>
+							<li>A curriculum to prepare for life
+								<div class="ddseatedtarget ddwidth4 dd1line" data-destinationid="target5">&nbsp;</div>
+							</li>
+						</ol>
+					</div>
+
+					<div class="dd-fixed-source-container animated slideInUp">
+						<div class="box1 box1dd1">
+
+							<div class="ddseat ddwidth4 dd1line">
+								<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target4">50</div>
+							</div>
+							<div class="ddseat ddwidth4 dd1line">
+								<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target3">22</div>
+							</div>
+							<div class="ddseat ddwidth4 dd1line">
+								<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target2">46</div>
+							</div>
+							<div class="ddseat ddwidth4 dd1line">
+								<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target5">154</div>
+							</div>
+							<div class="ddseat ddwidth4 dd1line">
+								<div class="ddsourceseated ddwidth4 dd1line shadow" draggable="false" data-destination="target1">23</div>
+							</div>
+						</div>
+					</div>
+					<div class="dd-fixed-fade animated slideInUp"></div>
+					<div class="dd-fixed-pad"></div>
+				</div>
+			</div>
+			<br>
+			<div class="center">
+				<button data-toggle="modal" data-target="#m6a18_4_modal" class="center button2">{{>touch yes="Tap" no="Click"}} to watch the video again</button>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a18_3" nexturl="#m6a18_5" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a18_4_modal">
+	<div class="modal fade" tabindex="-1" id="m6a18_4_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" id="modalButton">×</span>
+					</button>
+					<h4 class="modal-title" id="m6a18_4_modal">House of Commons Debate (November 2012)</h4>
+				</div>
+				<div class="content">
+					<iframe id="ytvideo" width="554" height="416" src="https://www.youtube.com/embed/rqYdnF8EIpI?rel=0&enablejsapi=1" frameborder="0"
+					 allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template name="m6a18_5">
+	<section id="m6a18_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h4 class="center">Here are the sentences again.</h4>
+			<div class="container-fluid" style="max-width: 760px;">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/1.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>1. People who I speak to think that getting a good education to get a good job is very important.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Getting ready for work</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/2.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>2. Is it really a main issue for us young people?</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Marriage for all</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/3.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>3. Make public transport cheaper, better and accessible to all.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Public Transport</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/4.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>4. I have a younger cousin who lives in a rural area.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Public Transport</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/5.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>5. Finance skills, sustainable living…what’s she just gone on about?</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">A curriculum to prepare for life</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/6.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>6. 16 year olds doing exactly the same job for exactly the same hours get paid less than an 18 year old or a 21 year
+								old.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Equal National Minimum Wage</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/7.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>7. I’m seventeen and it’s important for me to think about getting ready for work.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Getting ready for work</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/8.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>8. If you don’t have the skills to put that education into practice, what good will it be?</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Getting ready for work</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/9.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>9. We need an education system that is concise and to the point.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">A curriculum to prepare for life</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/10.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>10. But he and many young people alike face a daily struggle to get to school.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Public Transport</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/11.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>11. Shouldn’t it be something everyone’s entitled to?</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Marriage for all</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/12.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>12. Because he’s under 21, the people he trains make more money than him.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Equal National Minimum Wage</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/13.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>13. The decisions we make today will define our lives.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">A curriculum to prepare for life</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/14.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>14. What is the point in giving free education if young people can’t get there?</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Public Transport</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/15.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>15. I would rather be well informed, well trained, well paid or well travelled than well…married.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Marriage for all</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a18/16.m4a"></button>
+						</div>
+						<div class="iconright">
+							<b>16. They’ll keep their profits and leave us with our youth unemployment.</b>
+						</div>
+					</div>
+					<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption capgreen text-left block">Equal National Minimum Wage</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a18_4" nexturl="#m6a18_end" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

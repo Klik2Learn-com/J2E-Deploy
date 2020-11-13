@@ -1,0 +1,126 @@
+<template name="MoreAboutCrianlarich">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Crianlarich"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m4l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m4l3}}</div>
+		</header>
+
+		<section id="moreaboutCrianlarich">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Crianlarich/Crianlarich1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l3_A">
+						<p>Crianlarich Hills</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Crianlarich/Crianlarich2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l3_B">
+						<p>The West Highland Line</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Crianlarich/Crianlarich4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l3_D">
+						<p>Cruachan Power Station</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					
+					<div class="col-sm-12 col-xs-12 bonus-image" style="background-image: url('images/bonus/Crianlarich/Crianlarich3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l3_C">
+						<p>Cruachan</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l3_A">Crianlarich Hills</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Crianlarich/Crianlarich1.jpg" alt="Crianlarich Hills" style="max-width: 250px;">
+					</figure>
+					<p>One of the popular things to do if you are a keen hillwalker in Britain, is to climb every mountain over 3,000 feet (914 metres.) There are 277 in Scotland and they are called ‘Munros’ after Sir James Munro who produced the first list of all these mountains. Over 5,500 people  have climbed them all and some have done it twice or even three times. Usually people will climb one or two in a day but in Crianlarich, it is possible to do seven Munros in one day if you are fit enough.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.climbthemunros.co.uk/crianlarich_hills.php" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l3_B">The West Highland Line</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Crianlarich/Crianlarich2.jpg" alt="The West Highland Line" style="max-width: 250px;">
+					</figure>
+					<p>Although Crianlarich is a small village, it is one of the main stations on the West Highland Line. This famous railway journey takes passengers through some of Scotland’s most spectacular scenery and runs along Britain’s largest body of inland water - Loch Lomond. It has twice been voted the world’s best railway journey. The whole route from Glasgow to the end of the line at Mallaig takes nearly six hours.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.seat61.com/WestHighlandLine.htm#.UnFLyuISbIU" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l3_C">Cruachan</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Crianlarich/Crianlarich3.jpg" alt="Cruachan" style="max-width: 250px;">
+					</figure>
+					<p>Hidden deep within the mountain of Cruachan lies one of Scotland’s most amazing engineering achievements. It is a massive space, big enough to fit in the Tower of London. Inside are huge turbines which turn the power of water into electricity. On one wall you can see a mural, carved on wood which shows the local legends about the mountain. It took 1,300 men over six years to build the structure.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitcruachan.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l3_D">Cruachan Power Station</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Crianlarich/Crianlarich4.jpg" alt="Cruachan Power Station" style="max-width: 250px;">
+					</figure>
+					<p>During the 1950s several large hydro electric schemes were built in Scotland. The Cruachan Power Station is a good example. It uses cheap electricity at night to pump water 400 metres to a high reservoir. This can be released during the day. The structure has received awards for its design and it  now has a visitor centre which attracts over 50,000 visitors a year. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.secretscotland.org.uk/index.php/Secrets/CruachanPowerStation" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

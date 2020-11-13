@@ -1,0 +1,25 @@
+<template name="Yeti_end_result">
+	<section id="Yeti_end_result">
+		{{#if activeSection}}
+			{{#if perfectScore}}
+				{{> Yeti_s_perfect}}
+			{{/if}}
+		
+			{{#if amazingScore}}
+				{{> Yeti_s_amazing}}
+			{{/if}}
+		
+			{{#if goodScore}}
+				{{> Yeti_s_good}}
+			{{/if}}
+		
+			{{#if mediumScore}}
+				{{> Yeti_s_ok}}
+			{{/if}}
+		
+			{{#if badScore}}
+				{{> Yeti_s_bad}}
+			{{/if}}
+		{{/if}}
+	</section>
+</template>

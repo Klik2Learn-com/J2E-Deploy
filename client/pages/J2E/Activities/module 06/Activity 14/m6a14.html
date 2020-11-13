@@ -1,0 +1,87 @@
+<template name="m6a14"> 
+<article class="with-tools-sidebar m6a14">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<a draggable="false" onclick="safeLeave('/Whitby');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 14 - {{>m6a14Title}}</div>
+		</header>
+		<section id="m6a14">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a14Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m6a14Intro}}</h3>
+				{{> m6a14Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a14_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a14_1}}
+		{{>m6a14_2}}
+		{{>EndPage char="tu" act="m6a14" nextact="m6a15" place="Whitby"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a14_1"> 
+	<section id="m6a14_1" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+      			<h3>Here are 2 kinds of sentences with 'if.' {{>touch yes="Tap" no="Click"}} the verb in each part of the sentence to find out what tense is used.</h3>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<h4>Zero conditional</h4>
+							<h4>Things which are always true:</h4>
+							<div class="ph-w ph-16x9" style="max-width: 355px"><div class="ph"><img draggable="false" src="images/module6/a14/ice.png" alt="ice cubes"></div></div>
+							<br>
+							<div class="caption block">"<u>If</u> the temperature <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Present Simple">falls</a> below zero, water <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Present Simple">freezes</a>."</div><br>&nbsp;
+						</div>
+						<div class="col-sm-6">
+							<h4>First conditional</h4>
+							<h4>Things which are very probable:</h4>
+							<div class="ph-w ph-16x9" style="max-width: 355px"><div class="ph"><img draggable="false" src="images/module6/a14/washingmachine.png" alt="ice cubes"></div></div>
+							<br>
+							<div class="caption block">"<u>If</u> you <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Present Simple">put</a> your mobile phone in the washing machine, it <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Future">won't</a> work."</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m6a14" nexturl="#m6a14_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a14_2"> 
+	<section id="m6a14_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Statements</h1>
+			<h3 class="center">Complete the sentences using the verbs at the end.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				
+					<ol class="olcircle">
+						<li>I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> Steve if he's free. <i>(ask)</i></li>
+						<li>What <span id="entryanswer1" class="textentry-disabled"></span> you <span id="entryanswer2" class="textentry-disabled"></span> if you don't get that job? <i>(do)</i></li>
+						<li>If it <span id="entryanswer3" class="textentry-disabled"></span> tomorrow I <span id="entryanswer4" class="textentry-disabled"></span>. <i>(rain, not go)</i></li>
+						<li>I<span id="entryanswer5" class="textentry-disabled"></span> be back at work tomorrow if I <span id="entryanswer6" class="textentry-disabled"></span> better. <i>(be, feel)</i></li>
+						<li>If they <span id="entryanswer7" class="textentry-disabled"></span> there before me, <span id="entryanswer8" class="textentry-disabled"></span> them to wait. <i>(get, tell)</i></li>
+						<li>If you don't <span id="entryanswer9" class="textentry-disabled"></span> plants, they <span id="entryanswer10" class="textentry-disabled"></span>. <i>(water, die)</i></li>
+						<li>If she <span id="entryanswer11" class="textentry-disabled"></span> nuts, she <span id="entryanswer12" class="textentry-disabled"></span> a bad reaction. <i>(eat, have)</i></li>
+						<li>If you <span id="entryanswer13" class="textentry-disabled"></span> the  control, the TV <span id="entryanswer14" class="textentry-disabled"></span> on. <i>(press, come)</i></li>
+					</ol>
+				</div>
+				
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m6a14_1" nexturl="#m6a14_end" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>

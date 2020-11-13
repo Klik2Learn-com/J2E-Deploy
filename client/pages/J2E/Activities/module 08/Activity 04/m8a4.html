@@ -1,0 +1,213 @@
+<template name="m8a4"> 
+<article class="with-tools-sidebar m8a4">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Oxford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 4 - {{>m8a4Title}}</div>
+		</header>
+		<section id="m8a4">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a4Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a4Intro}}</h3>
+				{{> m8a4Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a4_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a4_1}}
+		{{>m8a4_2}}
+		{{>m8a4_3}}
+		{{>EndPage char="k" act="m8a4" nextact="m8a5" place="Oxford"}}
+	</div>
+</article>
+
+	{{>painter_modal}}
+	{{>chef_modal}}
+</template>
+<template name="m8a4_1"> 
+	<section id="m8a4_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">Look at these two job adverts.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2 center">
+						<div class="ph-w ph-4x3 border1 item-space" style="max-width: 200px"><div class="ph"><img draggable="false" src="images/module8/a4/paintercrop.jpg" alt="Painter"></div></div>
+						<button data-toggle="modal" data-target="#painter_modal" class="button2">Painter/Decorator</button>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-4x3 border1 item-space" style="max-width: 200px"><div class="ph"><img draggable="false" src="images/module8/a4/chefcrop.jpg" alt="Painter"></div></div>
+						<button data-toggle="modal" data-target="#chef_modal" class="button2">Executive Pastry Chef</button>
+					</div>
+				</div>
+				<h3 class="center">{{>touch yes="Tap" no="Click"}} to see the job adverts</h3>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a4" nexturl="#m8a4_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="painter_modal">
+ {{> popovers}}
+	<div class="modal fade" tabindex="-1" id="painter_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="painter_modal">Painter/Decorator Aberdeen £on application</h4>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper article-text">
+	
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-10x16 shadow" style="width: 200px"><div class="ph"><img draggable="false" src="images/module8/a4/painter.jpg" alt="painter"></div></div>
+	</figure>
+	
+	<p>A full-time vacancy has arisen for a <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A qualified tradesperson who has completed their training">time-served</a> painter. The candidate must be experienced in commercial and residential work and comfortable working at heights. Full driver’s licence essential. A company vehicle will be provided with this role for local applicants. Qualifications are preferred but training will be provided if required.  An excellent rate of pay is available.</p>
+
+	<p>To apply for the above position please send your CV along with a covering letter by email to:  recruitment@proservuk.com or alternatively by mail to:</p>
+
+	<p>
+	The Recruitment Department<br>
+	Unit 11 Blackburn Industrial Estate<br>
+	Woodburn Road<br>
+	Aberdeen, AB21 0RX.
+	</p>
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="chef_modal">
+	<div class="modal fade" tabindex="-1" id="chef_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="chef_modal">Executive Pastry Chef -- Department:Galley -- Salary: £based on experience</h4>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper article-text">
+
+	
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-10x16 shadow" style="width: 200px"><div class="ph"><img draggable="false" src="images/module8/a4/chef.jpg" alt="Chef"></div></div>
+	</figure>
+	
+	<p>P&amp;O Cruises &amp; Cunard Line provide world class customer experiences. Our vision is to be the most spectacularly successful cruise company in Britain. Our award winning brand needs talented and passionate people to deliver the highest customer service standards to our adoring and loyal customers. A fantastic opportunity is available for an experienced Executive Pastry Chef, to join our market leading Cunard brand.</p>
+
+<p>You will be responsible for the day to day running of the bakery and patisserie, covering breakfast, lunch, afternoon tea, buffets as well as alternative dining facilities. Managing staff, such as appraisals, staff hours training and developing team members.</p>
+
+<p>This is a senior level position, so applicants must have the following experience;</p>
+
+<ul>
+<li>Experience in a high class/high volume pastry environment, for example a  4/5 star hotel or cruise ship.</li>
+<li>Experience in a multi-site environment. </li>
+<li>Experience of managing and motivating a team.</li>
+<li>Experience of budgets, stock control and ordering.</li>
+<li>Excellent knowledge and skills.</li>
+</ul>
+
+<p>In return we offer a competitive salary and package, as well as excellent career prospects. This is a rare chance to join our exclusive Cunard brand.</p>
+	
+	<!-- fixes image floats -->
+	<div class="parent_expander"></div>
+</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m8a4_2"> 
+	<section id="m8a4_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">	
+			<h3>Look at this example of a covering letter for the first job. The applicant makes mistakes with grammar and vocabulary. {{>touch yes="Tap" no="Click"}} on a word if you think it's a mistake.</h3>
+
+			<div class="parapaper paraclick">
+			<span class="wrong"><p>Benedyck Nowak<br>
+			32 Station Road<br>
+			Dundee<br>
+			DD1 8GF</p></span>
+			<br><br>
+			<p><span class="wrong">Dear Sir,<br>
+			I would like</span> <span class="paraclick-word">applying</span> <span class="wrong">for the job as Painter/Decorator in Aberdeen. I have been working</span> <span class="paraclick-word">since</span> <span class="wrong">the last three years with Marr Builders on new houses. Before that I</span> <span class="paraclick-word">have gone</span> <span class="wrong">to</span> <span class="paraclick-word">the</span> <span class="wrong">college for two years to train to be a painter/decorator. I</span> <span class="paraclick-word">will</span> <span class="wrong">like to work on bigger projects and I am not afraid</span> <span class="paraclick-word">for</span> <span class="wrong">heights</span>.</p><br>
+			<p><span class="wrong">I have a full driving licence and I am a reliable worker who</span> <span class="paraclick-word">gets</span> <span class="wrong">pride in his work. I look forward to</span> <span class="paraclick-word">hear</span> <span class="wrong">from you</span>.</p>
+			<br>
+			<br>
+			<p>Yours faithfully,<br>
+			Benedyck Nowak</p>
+			</div>
+			<div class="counterleft">Mistakes left to find: <u id="startClock1">8</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a4_1" nexturl="#m8a4_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a4_3"> 
+	<section id="m8a4_3" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">	
+			<h3>Now {{>touch yes="tap" no="click"}} the mistakes to see what should have been written.</h3>
+
+			<div class="parapaper paraclick">
+			<p>Benedyck Nowak<br>
+			32 Station Road<br>
+			Dundee<br>
+			DD1 8GF</p>
+			<br><br>
+			<p>Dear Sir,<br>
+			I would like <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="'to apply'">applying</a> for the job as Painter/Decorator in Aberdeen. I have been working <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="'for'">since</a> the last three years with Marr Builders on new houses. Before that I <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="'went'">have gone</a> to <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Don't use 'the'">the</a> college for two years to train to be a painter/decorator. I <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="'would'">will</a> like to work on bigger projects and I am not afraid <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="'of'">for</a> heights.</p><br>
+			<p>I have a full driving licence and I am a reliable worker who <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="'takes'">gets</a> pride in his work. I look forward to <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="'hearing'">hear</a> from you.</p>
+			<br>
+			<br>
+			<p>Yours faithfully,<br>
+			Benedyck Nowak</p>
+			</div>
+			
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a4_2" nexturl="#m8a4_end" prev="disabled" next=""}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>

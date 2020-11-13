@@ -1,0 +1,217 @@
+<template name="ddmultiSG">
+<section id="ddmultiSG" class="hidden">
+		<div class="content noselect">
+			<h1>Dragging 1 element to multiple places</h1>
+			<h3 class="center">Drag the right preposition into the space.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>The war went <div class="ddseatedtarget ddwidth7 dd1line" id = "target1">&nbsp;</div> for another two years.</li>
+						<li>She went <div class="ddseatedtarget ddwidth7 dd1line" id = "target2">&nbsp;</div> about her illness.</li>
+						<li>He went <div class="ddseatedtarget ddwidth7 dd1line" id = "target3">&nbsp;</div> to the next item on the agenda.</li>
+						<li>What’s going <div class="ddseatedtarget ddwidth7 dd1line" id = "target4">&nbsp;</div> here?</li>
+						<li>What a silly way to go <div class="ddseatedtarget ddwidth7 dd1line" id = "target5">&nbsp;</div>!</li>
+						
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target1 target3 target4 target5 target6 target7 taregt9">on</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target2 target8">on and on</div></div>
+					</div></div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+		</div>
+		<div class="content">
+		<h4>HTML</h4>
+<pre class="htmlcode2">&#00060;template name="m2a25_3"&#00062;
+	&#00060;section id="m2a25_3" class="hidden"&#00062;
+		&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&#00060;div class="content noselect"&#00062;
+			&#00060;h1&#00062;Statements&#00060;/h1&#00062;
+			&#00060;h3 class="center"&#00062;Drag the right preposition into the space.&#00060;/h3&#00062;
+			&#00060;div class="parapaper parapaperdd1 fold"&#00062;
+			&#00123;&#00123;&#00062; rightwrong&#00125;&#00125;
+			&#00123;&#00123;&#00062; welldone&#00125;&#00125;
+				&#00060;ol class="olcircle"&#00062;
+					&#00060;li&#00062;The war went &#00060;div class="ddseatedtarget ddwidth7 dd1line" id = "target1"&#00062;&amp;nbsp;&#00060;/div&#00062; for another two years.&#00060;/li&#00062;
+					&#00060;li&#00062;She went &#00060;div class="ddseatedtarget ddwidth7 dd1line" id = "target2"&#00062;&amp;nbsp;&#00060;/div&#00062; about her illness.&#00060;/li&#00062;
+					&#00060;li&#00062;He went &#00060;div class="ddseatedtarget ddwidth7 dd1line" id = "target3"&#00062;&amp;nbsp;&#00060;/div&#00062; to the next item on the agenda.&#00060;/li&#00062;
+					&#00060;li&#00062;What’s going &#00060;div class="ddseatedtarget ddwidth7 dd1line" id = "target4"&#00062;&amp;nbsp;&#00060;/div&#00062; here?&#00060;/li&#00062;
+					&#00060;li&#00062;What a silly way to go &#00060;div class="ddseatedtarget ddwidth7 dd1line" id = "target5"&#00062;&amp;nbsp;&#00060;/div&#00062;!&#00060;/li&#00062;
+					&#00060;li&#00062;Oh, go &#00060;div class="ddseatedtarget ddwidth7 dd1line" id = "target6"&#00062;&amp;nbsp;&#00060;/div&#00062; then!&#00060;/li&#00062;
+					&#00060;li&#00062;The police have very little to go &#00060;div class="ddseatedtarget ddwidth7 dd1line" id = "target7"&#00062;&amp;nbsp;&#00060;/div&#00062;.	&#00060;/li&#00062;
+				&#00060;/ol&#00062;
+			&#00060;/div&#00062;
+
+			&lt;div class=&quot;dd-fixed-source-container animated slideInUp&quot;&gt;
+					&lt;div class=&quot;box1 box1dd1&quot;&gt;
+						&lt;!-- Ensure all &#39;ddsourceseated ddwidth7 dd1line&#39; and &#39;ddseatedtargets&#39; are the same width within an activity. Use &#39;em&#39; in case the text size changes --&gt;
+						&lt;div class=&quot;ddseat ddwidth7 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated ddwidth7 dd1line shadow&quot; draggable=&quot;true&quot; data-destination=&quot;target1 target3 target4 target5 target6 target7 taregt9&quot;&gt;on&lt;/div&gt;&lt;/div&gt;
+						&lt;div class=&quot;ddseat ddwidth7 dd1line&quot;&gt;&lt;div class=&quot;ddsourceseated ddwidth7 dd1line shadow&quot; draggable=&quot;true&quot; data-destination=&quot;target2 target8&quot;&gt;on and on&lt;/div&gt;&lt;/div&gt;
+					&lt;/div&gt;&lt;/div&gt;
+				&lt;div class=&quot;dd-fixed-fade animated slideInUp&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;dd-fixed-pad&quot;&gt;&lt;/div&gt;
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+				&#00123;&#00123;&#00062;footer_nav prevurl="#m1a26" nexturl="#m1a26_4" prev="disabled" next="disabled"&#00125;&#00125;
+		&#00060;/footer&#00062;
+	&#00123;&#00123;/if&#00125;&#00125;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;</pre>
+		
+		<h4>JAVASCRIPT</h4>
+		<pre class="htmlcode2">
+		Template.ddmultiSG.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#ddmultiSG");
+	&#00125;
+&#00125;);
+
+
+Template.ddmultiSG.events(&#00123;
+	"dragstart .ddsourceseated": function(evt) &#00123;
+		evt.currentTarget.style.opacity = '1.0';
+		evt.originalEvent.dataTransfer.effectAllowed = 'move';
+		evt.originalEvent.dataTransfer.setData('text/html', $(evt.currentTarget).html());
+		
+		$.k2l.ddmultiSG.draggedElement = evt.currentTarget;
+	&#00125;,
+	
+	"dragend .ddsourceseated": function(evt) &#00123;
+		
+	&#00125;,
+	
+	"dragenter .target": function(evt) &#00123;
+		if (evt.preventDefault) &#00123;
+			evt.preventDefault();
+		&#00125;
+	&#00125;,
+	
+	"dragover .ddseatedtarget": function(evt) &#00123;
+		if (evt.preventDefault) &#00123;
+			evt.preventDefault();
+		&#00125;
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	&#00125;,
+	
+	"dragleave .target": function(evt) &#00123;
+		
+	&#00125;,
+	
+	"drop .ddseatedtarget": function(evt) &#00123;
+		
+		if (evt.stopPropagation) &#00123;
+			evt.stopPropagation();
+		&#00125;;
+
+		var destination = $.k2l.ddmultiSG.draggedElement.dataset.destination;
+		var targets = destination.split(" ");
+		var targetDestination = false;
+
+		for (var i = 0; i &#00060; targets.length; i++) &#00123;
+			if (targets[i] == $(evt.currentTarget).attr('id')) &#00123;
+				targetDestination = true;
+			&#00125;
+		&#00125;
+
+		if (targetDestination) &#00123;
+			$.k2l.ddmultiSG.counter++;
+					
+			$('.correctscreen').removeClass('hidden');
+			setTimeout( function() &#00123;
+				$('.correctscreen').addClass('hidden');
+			&#00125;, 1000);
+			var parentSection = $(evt.currentTarget).parents('section');
+			
+			if (targets.length &#00060; 2) &#00123;
+				$.k2l.ddmultiSG.draggedElement.draggable = false;
+				$($.k2l.ddmultiSG.draggedElement).html('');
+				$($.k2l.ddmultiSG.draggedElement).removeClass('shadow');
+				$($.k2l.ddmultiSG.draggedElement).removeClass('ddsourceseated');
+				$($.k2l.ddmultiSG.draggedElement).addClass('ddsourceseated2');				
+			&#00125;
+			
+				$(evt.currentTarget).removeClass('ddwidth7 dd1line');
+				$(evt.currentTarget).removeClass('ddseatedtarget');
+				$(evt.currentTarget).addClass('ddseatedtarget2');
+				$(evt.currentTarget).html('');
+				
+			var newDestinations = [];
+			for (var j = 0; j &#00060; targets.length; j++) &#00123;
+				if (targets[j] != $(evt.currentTarget).attr('id')) &#00123;
+					newDestinations.push(targets[j]);
+				&#00125;
+			&#00125;
+
+			$($.k2l.ddmultiSG.draggedElement).attr('data-destination', newDestinations.join(" "));
+			
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated');
+			$(listItem).addClass('ddwidth7 dd1line');
+			$(evt.currentTarget).append(listItem);
+
+			if ($.k2l.ddmultiSG.counter == $.k2l.ddmultiSG.max) &#00123;
+				
+				// Load the next page automatically
+				setTimeout( function() &#00123;
+				$('#welldonecap').removeClass('hidden');
+				&#00125;, 1000);
+			setTimeout( function() &#00123;
+				$('#welldonecap').addClass('hidden');
+			&#00125;, 2000);
+				setTimeout(function() &#00123;
+					$.k2l.ddmultiSG.counter = 0;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					&#00125;, 2000);
+				
+				//Navigavtion to next page manually
+				// $('.pagination').removeClass('hidden');
+			&#00125;;
+		&#00125; else &#00123;
+		$('.incorrectscreen').removeClass('hidden');
+		setTimeout( function() &#00123;
+			$('.incorrectscreen').addClass('hidden');
+		&#00125;, 1000);
+		&#00125;;
+	&#00125;,
+	
+	"dragend .target": function(evt) &#00123;
+	&#00125;,
+	
+	"click .pagination": function(evt)&#00123;
+		$.k2l.ddmultiSG.draggedElement = &#00123;&#00125;;
+		$.k2l.ddmultiSG.counter = 0;
+	&#00125;
+&#00125;);
+
+Template.ddmultiSG.rendered = function() &#00123;
+	
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.ddmultiSG == 'undefined') &#00123;
+		$.k2l.ddmultiSG = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.ddmultiSG.draggedElement = &#00123;&#00125;;
+	$.k2l.ddmultiSG.counter = 0;
+
+	$.k2l.ddmultiSG.max = 5; // number of drag spaces on this page.
+&#00125;
+
+		</pre>
+		</div>
+	</section>
+</template>

@@ -1,0 +1,244 @@
+<template name="m1a9"> 
+<article class="with-tools-sidebar m1a9">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/LochNess');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 1</div> <div class='acttitle-title'>Activity 9 - {{> m1a9Title}}</div>
+		</header>
+		<section id="m1a9">
+			<div class="content">
+				<h1 class="start-page-header">{{>m1a9Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m1a9Intro}}</h3>
+				{{> m1a9Time}}
+				<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m1a9_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m1a9_1}}
+		{{>m1a9_2}}
+		{{>m1a9_3}}
+		{{>EndPage char="elle" act="m1a9" nextact="m1a10" place="LochNess"}}
+	</div>
+</article>
+</template>
+<template name="m1a9_1"> 
+	<section id="m1a9_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the audio button then {{>touch yes="tap" no="click"}} the right item.</h3>
+      			<div class="container-fluid">
+      			{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="ph-w ph-16x10 border1" style="max-width: 518px"><div class="ph"><img draggable="false" src="images/module1/gang_table.png" alt="K, Tu and Elle having a conversation"></div></div>
+						</div>
+						<div class="col-sm-5 center">
+							<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module1/a9/mobile.m4a"></button> <div class="numberBig">1</div><br><br>
+							<img draggable="false" id="1" src="images/module1/m1a9_calcu2.jpeg" alt="Calculator" class="item-space imghover pointer" width="90" height="70">
+							<img draggable="false" id="2" src="images/module1/m1a9_microwave2.jpeg" alt="Microwave" class="item-space imghover pointer" width="90" height="70">
+							<img draggable="false" id="3" src="images/module1/m1a9_mirror2.jpeg" alt="Mirror" class="item-space imghover pointer" width="90" height="70">
+							<img draggable="false" id="4" src="images/module1/m1a9_toaster2.jpeg" alt="Toaster" class="item-space imghover pointer" width="90" height="70">
+							<img draggable="false" id="5" src="images/module1/m1a9_phone1.jpeg" alt="Mobile Phone" class="item-space imghover pointer" width="90" height="70">
+							<img draggable="false" id="6" src="images/module1/m1a9_camera2.jpeg" alt="Camera" class="item-space imghover pointer" width="90" height="70">
+							<img draggable="false" id="7" src="images/module1/m1a9_dictionary1.jpeg" alt="Dictionary" class="item-space imghover pointer" width="90" height="70">
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m1a9" nexturl="#m1a9_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m1a9_2"> 
+	<section id="m1a9_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">{{>touch yes="Tap" no="Click"}} on the audio button and then {{>touch yes="tap" no="click"}} on the right department.</h3>
+      			<div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-3 center">
+                     <div class="hidden-sm hidden-xs" style="height:100px"></div>
+                        <div class="numberBig">1</div> <button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module1/a9/camera.m4a"></button>
+						<p>&nbsp;</p>
+                        
+                     </div>
+                     <div class="col-md-9 center">
+					   {{> rightwrong}} {{>welldone}}
+					      <div class="m1a9_dept_cont shadow">
+					         <div class="m1a9_dept_list">
+					            <div id="1" class="m1a9_dept">
+					               <div class="pointer">Computers and Phones</div>
+					               
+					            </div>
+					            <div id="2" class="m1a9_dept">
+					               <div class="pointer">Small Appliances</div>
+					               
+					            </div>
+					            <div id="3" class="m1a9_dept">
+					               <div class="pointer">Stationery</div>
+					               
+					            </div>
+					            <div id="4" class="m1a9_dept">
+					               <div class="pointer">Sound and Vision</div>
+					               
+					            </div>
+					            <div id="5" class="m1a9_dept">
+					               <div class="pointer">Books and Leisure</div>
+					               
+					            </div>
+					            <div id="6" class="m1a9_dept">
+					               <div class="pointer">Home Furnishings</div>
+					               
+					            </div>
+					         </div>
+					      </div>
+					      <!-- <div class="visible-xs">
+					      <button id="1" class="button2 item-space" style="width:100%;">Computers and Phones</button>
+					      <button id="2" class="button2 item-space" style="width:100%;">Small Appliances</button>
+					      <button id="3" class="button2 item-space" style="width:100%;">Stationery</button>
+					      <button id="4" class="button2 item-space" style="width:100%;">Sound and Vision</button>
+					      <button id="5" class="button2 item-space" style="width:100%;">Books and Leisure</button>
+					      <button id="6" class="button2 item-space" style="width:100%;">Home Furnishings</button>
+					      </div> -->
+					   </div>
+                  </div>
+               </div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m1a9_1" nexturl="#m1a9_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m1a9_3"> 
+	<section id="m1a9_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">{{>touch yes="Tap" no="Click"}} on the audio button and then {{>touch yes="tap" no="click"}} on the right item.</h3>
+      			<div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-2 center">
+                     <div class="numberBig">1</div> <button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module1/a9/calculator2.m4a"></button>
+                     <br><br>
+                  </div>
+                   <div class="col-sm-10 products center">
+				   {{> rightwrong}} {{>welldone}}
+				      <div id="calcu2" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_calcu2.jpeg" alt="Calculator" width="90" height="70">
+				            <div class="m1a9_price shadow">£7.00</div>
+				         </a>
+				      </div>
+				      <div id="calcu1" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_calcu1.jpeg" alt="Calculator" width="90" height="70">
+				            <div class="m1a9_price shadow">£6.00</div>
+				         </a>
+				      </div>
+				      <div id="mirror2" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_mirror2.jpeg" alt="Mirror" width="90" height="70">
+				            <div class="m1a9_price shadow">£60.00</div>
+				         </a>
+				      </div>
+				      <div id="mirror1" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_mirror1.jpeg" alt="Mirror" width="90" height="70">
+				            <div class="m1a9_price shadow">£25.00</div>
+				         </a>
+				      </div>
+				      <div id="dictionary2" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_dictionary2.jpeg" alt="Dictionary" width="90" height="70">
+				            <div class="m1a9_price shadow">£19.00</div>
+				         </a>
+				      </div>
+				      <div id="dictionary1" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_dictionary1.jpeg" alt="Dictionary" width="90" height="70">
+				            <div class="m1a9_price shadow">£15.00</div>
+				         </a>
+				      </div>
+				      <div id="phone1" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_phone1.jpeg" alt="Mobile phone" width="90" height="70">
+				            <div class="m1a9_price shadow">£115.00</div>
+				         </a>
+				      </div>
+				      <div id="phone2" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_phone2.jpeg" alt="Mobile phone" width="90" height="70">
+				            <div class="m1a9_price shadow">£165.00</div>
+				         </a>
+				      </div>
+				      <div id="microwave2" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_microwave2.jpeg" alt="Microwave" width="90" height="70">
+				            <div class="m1a9_price shadow">£95.00</div>
+				         </a>
+				      </div>
+				      <div id="microwave1" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_microwave1.jpeg" alt="Microwave" width="90" height="70">
+				            <div class="m1a9_price shadow">£80.00</div>
+				         </a>
+				      </div>
+				      <div id="camera1" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_camera1.jpeg" alt="Camera" width="90" height="70">
+				            <div class="m1a9_price shadow">£120.00</div>
+				         </a>
+				      </div>
+				      <div id="camera2" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_camera2.jpeg" alt="Camera" width="90" height="70">
+				            <div class="m1a9_price shadow">£90.00</div>
+				         </a>
+				      </div>
+				      <div id="toaster1" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_toaster1.jpeg" alt="Toaster" width="90" height="70">
+				            <div class="m1a9_price shadow">£35.00</div>
+				         </a>
+				      </div>
+				      <div id="toaster2" class="m1a9_product">
+				         
+				         <a draggable="false" href="#" class="imghover-wrap">
+				            <img draggable="false" src="images/module1/m1a9_toaster2.jpeg" alt="Toaster" width="90" height="70">
+				            <div class="m1a9_price shadow">£40.00</div>
+				         </a>
+				      </div>
+				   </div>
+               </div>
+            </div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m1a9_2" nexturl="#m1a9_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

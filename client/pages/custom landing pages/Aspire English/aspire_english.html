@@ -1,0 +1,26 @@
+<template name="aspire">
+	<article class="login-page login-page2 bespoke-login-page">
+		{{>bespokeLoginHeader logoSrc="/images/logos/ae-logo2.png" logoAlt="Aspire English" style="max-width: 90px; margin: 5px;"}}
+		{{>bespokeLoginBody 
+			organisation="aspireEnglish" 
+			orgId="{{organisationId}}" }}
+			{{>aspireContact}}
+		{{>bespokeLoginFooter}}
+	</article>
+</template>
+
+<template name="aspireContact">
+	<div class="bespoke-contact">
+		<h2>Contact</h2>
+		<p>
+			<i class='fa fa-envelope'></i>
+			<a draggable='false' href='mailto:aspireenglish@iegro.ru'>aspireenglish@iegro.ru</a>
+			<p>
+				<p>
+					<i class='fa fa-globe'></i>
+					<a draggable='false' target='_blank' href='http://www.aspireenglish.org'>www.aspireenglish.org</a>
+				</p>
+			</p>
+		</p>
+	</div>
+</template>

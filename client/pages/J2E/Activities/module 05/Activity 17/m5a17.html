@@ -1,0 +1,218 @@
+<template name="m5a17">
+	<article class="with-tools-sidebar m5a17">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/StHelens');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 17 - {{>m5a17Title}}</div>
+			</header>
+
+
+			<section id="m5a17">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a17Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m5a17Intro}}</h3>
+					{{> m5a17Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a17_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a17_1}} {{>m5a17_2}} {{>m5a17_3}} {{>EndPage char="tu" act="m5a17" nextact="m5a18" place="StHelens"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a17_1">
+	<section id="m5a17_1" class="hidden">
+		<div class="content">
+			<h2 class="center">These Modal Verbs express
+				<b>Preferences, Intention</b>
+				<b>or Opinion</b>.</h2>
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-1 center">
+						<div class="caption capgreen ddwidth8">Preferences</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="caption">He
+							<b>would</b> rather spend time with adoring fans or sick children.</div>
+					</div>
+				</div>
+				<Br>
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-1 center">
+						<div class="caption capgreen ddwidth8">Intention</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="caption">She says she
+							<b>will</b> now study at New York University.</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-3 col-sm-offset-1 center">
+						<div class="caption capgreen ddwidth8">Opinion</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="caption">You
+							<b>would</b> think Emma Watson
+							<b>would</b> have buckled under the pressure of her star status.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a17" nexturl="#m5a17_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a17_2">
+	<section id="m5a17_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Statements</h1>
+			<h3 class="center">Listen to the audio from each article. Then type in the spaces below.</h3>
+			<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip1.m4a"></button>
+						</div>
+						<div class="iconright">He
+							<span id="entryanswer0">
+								<form class="textentry">
+									<input type="text" name="userText" size="10" autocomplete="off">
+									<input type="submit" value="OK">
+								</form>
+							</span> rather spend time with adoring fans or sick children.</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip2.m4a"></button>
+						</div>
+						<div class="iconright">She says she
+							<span id="entryanswer1" class="textentry-disabled"></span> now study at New York University. </div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip3.m4a"></button>
+						</div>
+						<div class="iconright">You
+							<span id="entryanswer2" class="textentry-disabled"></span> think Emma Watson
+							<span id="entryanswer3" class="textentry-disabled"></span> buckled under the pressure of her star status.</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip4.m4a"></button>
+						</div>
+						<div class="iconright">She's a normal healthy weight and
+							<span id="entryanswer4" class="textentry-disabled"></span> want to be any different. </div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip5.m4a"></button>
+						</div>
+						<div class="iconright">Even though Nick has diabetes, he
+							<span id="entryanswer5" class="textentry-disabled"></span> let that get in the way of his dreams. </div>
+					</li>
+				</ol>
+			</div>
+			{{>hint hintchar="tu" hint="Remember to include apostrophes when needed."}}
+
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a17" nexturl="#m5a17_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+<template name="m5a17_3">
+	<section id="m5a17_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Now drag an explanation to each sentence..</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip1.m4a"></button>
+						</div>
+						<div class="iconright">He would rather spend time with adoring fans or sick children.
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip2.m4a"></button>
+						</div>
+						<div class="iconright">She says she will now study at New York University.
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+						</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip3.m4a"></button>
+						</div>
+						<div class="iconright">You would think Emma Watson would have buckled under the pressure of her star status.
+							<div class="ddseatedtarget ddwidth7 dd1line"
+							 data-destinationid="target3">&nbsp;</div>
+						</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip4.m4a"></button>
+						</div>
+						<div class="iconright">She's a normal healthy weight and wouldn't want to be any different.
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+						</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a17/Clip5.m4a"></button>
+						</div>
+						<div class="iconright">Even though Nick has diabetes, he won't let that get in the way of his dreams.
+							<div class="ddseatedtarget ddwidth7 dd1line"
+							 data-destinationid="target5">&nbsp;</div>
+						</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2 target5">Intention</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target4">Preference</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">Opinion</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a17_3" nexturl="#m5a17_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

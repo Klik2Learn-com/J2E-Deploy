@@ -1,0 +1,268 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a3">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Inverness');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 3: {{> m1a3Title}}</div>
+			</header>
+
+			<section id="m1a3">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m1a3Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m1a3Intro}}</h3>
+					{{> m1a3Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="" nexturl="#m1a3_2" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			<section id="m1a3_2" class="hidden">
+				{{> m1a3_numbers}}
+			</section>
+			<section id="m1a3_3" class="hidden">
+				{{> m1a3_numbers_words}}
+			</section>
+			{{> m1a3_end}}
+		</div>
+	</article>
+
+</template>
+
+<template name="m1a3_numbers">
+	{{#if activeSection}}
+	<div class="content">
+		<h3 class="center">{{>touch yes="Tap" no="Click"}} to hear the numbers from 1-100</h3>
+		<div class="container-fluid">
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="1"></button>
+					{{#each getNumbers 1 10}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="11"></button>
+					{{#each getNumbers 11 20}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="21"></button>
+					{{#each getNumbers 21 30}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="31"></button>
+					{{#each getNumbers 31 40}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="41"></button>
+					{{#each getNumbers 41 50}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="51"></button>
+					{{#each getNumbers 51 60}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="61"></button>
+					{{#each getNumbers 61 70}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="71"></button>
+					{{#each getNumbers 71 80}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="81"></button>
+					{{#each getNumbers 81 90}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="parapaper m1a3-num-bg">
+					<button type="button" class="buttonround buttonaudio" data-start="91"></button>
+					{{#each getNumbers 91 100}}
+					<div class="m1a3-num-off">{{this}}</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+	{{/if}}
+	<footer>
+		{{>footer_nav prevurl="#m1a3" nexturl="#m1a3_3" prev="hidden" next=""}}
+	</footer>
+</template>
+
+<template name="m1a3_numbers_words">
+	{{#if activeSection}}
+	<div class="content">
+		<h3 class="center">{{>touch yes="Tap" no="Click"}} again to see the words</h3>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="1"></button>
+						</div>
+						<br> {{#each getLabels 1 10}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="11"></button>
+						</div>
+						<br> {{#each getLabels 11 20}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="21"></button>
+						</div>
+						<br> {{#each getLabels 21 30}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="31"></button>
+						</div>
+						<br> {{#each getLabels 31 40}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="41"></button>
+						</div>
+						<br> {{#each getLabels 41 50}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="51"></button>
+						</div>
+						<br> {{#each getLabels 51 60}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="61"></button>
+						</div>
+						<br> {{#each getLabels 61 70}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="71"></button>
+						</div>
+						<br> {{#each getLabels 71 80}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="81"></button>
+						</div>
+						<br> {{#each getLabels 81 90}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+					<div class="parapaper m1a3-num-bg2 fold">
+						<div align="center">
+							<button type="button" class="buttonround buttonaudio" data-start="91"></button>
+						</div>
+						<br> {{#each getLabels 91 100}}
+						<div class="m1a3-num-off">{{this.number}}</div>
+						<span class="numWord">{{this.label}}</span>
+						<br> {{/each}}
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	{{/if}}
+	<footer>
+		{{>footer_nav prevurl="#m1a3_2" nexturl="#m1a3_end" prev="" next=""}}
+	</footer>
+</template>
+
+
+
+<template name="m1a3_end">
+	{{>EndPage char="elle" act="m1a3" nextact="m1a4" place="Inverness"}}
+</template>

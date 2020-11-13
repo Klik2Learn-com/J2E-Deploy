@@ -1,0 +1,188 @@
+<template name="m3a20">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/NorthBerwick');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 20 - {{>m3a20Title}}</div>
+			</header>
+
+
+			<section id="m3a20">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a20Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m3a20Intro}}</h3>
+					{{> m3a20Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a20_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m3a20_1}} {{>m3a20_2}} {{>EndPage char="tu" act="m3a20" nextact="m3a21" place="NorthBerwick"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m3a20_1">
+	<section id="m3a20_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are pictures of different types of houses you can find in cities and the countryside. Drag the right name underneath
+				each picture.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/semi-detached.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/detached.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/tenement.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/bungalow.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target3">Tenement</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="false" data-destination="target1">Semi-detached house</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target4">Bungalow</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target2">Detached house</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a20" nexturl="#m3a20_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a20_2">
+	<section id="m3a20_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Here are pictures of different types of houses you can find in cities and the countryside. Drag the right name underneath
+				each picture.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/terraced.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget ddwidth10 dd1line2high">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/maisonettes.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget ddwidth10 dd1line2high">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/high-rise.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget ddwidth10 dd2lines">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module3/a20/cottage.jpg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget ddwidth10 dd1line2high">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth10 dd1line2high">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target2">Maisonette</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="false" data-destination="target3">High rise apartment block</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line2high">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target4">Cottage</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line2high">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target1">Terraced house</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a20_1" nexturl="#m3a20_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

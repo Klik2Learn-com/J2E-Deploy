@@ -1,0 +1,126 @@
+<template name="m7a13"> 
+<article class="with-tools-sidebar m7a13">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StokeonTrent');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 13 - {{>m7a13Title}}</div>
+		</header>
+		<section id="m7a13">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a13Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m7a13Intro}}</h3>
+				{{> m7a13Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a13_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a13_1}}
+		{{>m7a13_2}}
+		{{>EndPage char="k" act="m7a13" nextact="m7a14" place="StokeonTrent"}}
+	</div>
+</article>
+{{>m7a13_modal}}
+
+</template>
+<template name="m7a13_1"> 
+	<section id="m7a13_1" class="hidden"> 
+		<div class="content">  
+			{{>m7a13_examples}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m7a13" nexturl="#m7a13_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m7a13_2"> 
+	<section id="m7a13_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Read these sentences from the article (Activity 12) then choose the right description for them.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">
+						<div class="iconleft"><div class="number">1</div></div>
+						<div class="iconright"><span id="question_text">When he was growing up, Fiennes was a good looking boy.</span></div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 col-sm-6 center">
+						<button id="1" class="button1 item-space ddwidth16">Something happening around a particular time in the past.</button>
+					</div>
+					<div class="col-md-5 col-sm-6 center">
+						<button id="2" class="button1 item-space ddwidth16">The background situation when something else happens.</button>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<button data-toggle="modal" data-target="#m7a13_modal" class="button2 item-space">Examples</button>
+					</div>
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="m7a13_1" nexturl="#m7a13_end" prev="disabled" next="disabled"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+ 
+ <template name="m7a13_examples">
+	<h2 class="text-center">The Past Continuous is used in two ways:</h2>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<h4 class="text-center">"In 1943 my grandmother was living in London."</h4>
+				<Br>
+				<div class="ph-w ph-16x10 border2" style="max-width: 357px"><div class="ph"><img draggable="false" src="images/module7/a13/granny.png" alt="Woman on the street next to an old bus"></div></div>
+				<br>
+				<div class="caption capgreen block">
+					Something happening around a particular time in the past.
+				</div>
+			</div>
+			<div class="col-xs-12 visible-xs" style="padding: 20px 0;"><hr></div>
+			<div class="col-sm-6">
+				<h4 class="text-center">"They were collecting apples when suddenly it started raining."</h4>
+				<Br>
+				<div class="ph-w ph-16x10 border2" style="max-width: 357px"><div class="ph"><img draggable="false" src="images/module7/a13/Rain.png" alt="Two women caught in the rain"></div></div>
+				<br>
+				<div class="caption capgreen block">
+					The background situation when something else happens.
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m7a13_modal">
+	<div class="modal fade" tabindex="-1" id="m7a13_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m7a13_modal">Examples</h4>
+				</div>
+				
+				<div class="content">
+
+					{{>m7a13_examples}}
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>

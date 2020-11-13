@@ -1,0 +1,25 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="tooltip">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" href="/DunveganCastle"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 25 - {{>m1a25Title}}</div>
+		</header>
+				
+		<section id="tooltip">
+			<a draggable="false" href="#" data-toggle="tooltip" data-placement="top" title="Hooray! This works how will it look when there is a lot of text will it breakline? TextTextTextTextTextTextTextText Text Text Text Text Text Text Text Text Text Text Text">Hover</a>
+			<a draggable="false" href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a>
+			<a draggable="false" href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a>
+			<a draggable="false" href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover</a>
+		</section>
+
+	</div>
+</article>
+
+	</template>

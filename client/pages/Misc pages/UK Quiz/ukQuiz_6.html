@@ -1,0 +1,36 @@
+<template name="ukQuiz_6">
+   <section id="ukQuiz_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Language Questions</h1>
+			<h3 class="center">
+				Choose the right sentence for the picture.
+			</h3>
+				<div class="container-fluid">
+				<!-- {{>rightwrong}} {{>welldone}} -->
+					<img src="/images/uk-quiz/Argument.jpg" class="img-responsive center-block" alt="Argument">
+					<div class="row">
+						<div class="col-sm-6 center">
+							<button id="1" class="button2 item-space dd2lines">They don’t get by with each other.</button>
+						</div>
+						<div class="col-sm-6 center">
+							<button id="2" class="button2 item-space dd2lines">They don’t get out with each other.</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 center">
+							<button id="3" class="button2 item-space dd2lines">They don’t get on with each other.</button>
+						</div>
+						<div class="col-sm-6 center">
+							<button id="3" class="button2 item-space dd2lines">They don’t get in with each other.</button>
+						</div>
+					</div>
+					<!-- {{>gg_button gg_text="You can get more information about ADVERBS in the Grammar Guide."}} -->
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#ukQuiz_5" nexturl="#ukQuiz_7" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>

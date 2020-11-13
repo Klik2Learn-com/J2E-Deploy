@@ -1,0 +1,118 @@
+<template name="m10a3"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Cambridge');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 3 - {{> m10a3Title}}</div>
+		</header>
+		<section id="m10a3">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a3Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a3Intro}}</h3>
+				{{> m10a3Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a3_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a3_1}}
+		{{>m10a3_2}}
+		{{>m10a3_3}}
+		{{>EndPage char="elle" act="m10a3" nextact="m10a4" place="Cambridge"}}
+	</div>
+</article>
+</template>
+<template name="m10a3_2"> 
+	<section id="m10a3_2" class="hidden"> 
+		<div class="content">  
+      			{{>InstructionsNotebook text="Answer these questions in your Notebook to show that you’ve understood the main ideas. You can check the answers at the end."}}
+      			<div class="center"><button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button> <h5>{{>touch yes="Tap" no="Click"}} to hear the conversation again.</h5></div>
+      			<br>
+	<div class="parapaper fold notebook-answers">
+		<ol class="olcircle">
+			<li>Why is the neighbour downstairs having a party?</li>
+			<li>What is the neighbour upstairs asking him to do?</li>
+			<li>What might he do if the noise doesn’t stop?</li>
+			<li>What does the neighbour upstairs say about his wife?</li>
+			<li>What is the neighbour upstairs trying to do?</li>
+		</ol>
+	</div>
+	<h3 class="center">Continue when you're ready to see the answers.</h3>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a3_1" nexturl="#m10a3_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+
+<template name="m10a3_1"> 
+	<section id="m10a3_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content" style="overflow: visible;">  
+      			<h3 class="center">Listen to the conversation between two neighbours - Bill and Peter who live in an apartment block – Bill is complaining about the noise Peter is making. What will he do if Peter doesn’t make less noise?</h3>
+      			<div class="container-fluid">
+					<div class="row center">
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="ph-w ph-7x3 border1" style="max-width: 511px"><div class="ph"><img draggable="false" src="/images/module10/a3/argument.jpg" alt="Two people arguing"></div></div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-6">
+										<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module10/a3/whole_conversation.m4a"></button>
+									</div>
+									<div class="col-xs-6">
+										<br>
+										{{>metametrics level="1" star="yes" align="center"}}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a3" nexturl="#m10a3_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a3_3"> 
+	<section id="m10a3_3" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+				<div class="parapaper fold notebook-answers">
+					<ol class="olcircle">
+						<li>
+							<p><b>Why is the neighbour downstairs having a party?</b></p>
+							<p>The neighbour downstairs is having a flat warming party/he’s just moved in.</p>
+						</li>
+						<li>
+							<p><b>What is the neighbour upstairs trying to do?</b></p>
+							<p>The neighbour upstairs is asking him to turn the volume down.</p>
+						</li>
+						<li>
+							<p><b>What might he do if the noise doesn’t stop?</b></p>
+							<p>He might call the police.</p>
+						</li>
+						<li>
+							<p><b>What does the neighbour upstairs say about his wife?</b></p>
+							<p>He says the noise is driving his wife crazy.</p>
+						</li>
+						<li>
+							<p><b>What is the neighbour upstairs trying to do?</b></p>
+							<p>He’s trying to watch TV.</p>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a3_2" nexturl="#m10a3_end" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>

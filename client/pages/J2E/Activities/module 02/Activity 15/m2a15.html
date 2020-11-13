@@ -1,0 +1,584 @@
+<!-- Change template name to activity number m2a12, m1a2 etc -->
+<template name="m2a15">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Kirriemuir');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 15 - {{>m2a15Title}}</div>
+			</header>
+
+			<section id="m2a15">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m2a15Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m2a15Intro}}</h3>
+					{{> m2a15Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m2a15_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{> m2a15_1}} {{> m2a15_2}} {{> m2a15_3}} {{> m2a15_4}} {{> m2a15_5}} {{> m2a15_6}} {{> m2a15_7}} {{> m2a15_8}} {{> m2a15_9}}
+			{{> m2a15_end}}
+		</div>
+	</article>
+
+</template>
+
+<template name="m2a15_1">
+	<section id="m2a15_1" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="center">
+							Most nouns are COUNTABLE nouns. This means there can be ONE instance of the noun or there can be MANY instances.
+						</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="parapaper fold">
+							- You could have one
+							<span class="correctword">coin</span> or you could have many
+							<span class="correctword">coins</span>.
+							<br> - I have one
+							<span class="correctword">brother</span> but she has three
+							<span class="correctword">brothers</span>.
+							<br> - They have one
+							<span class="correctword">pizza</span>, but they wish they had lots of
+							<span class="correctword">pizzas</span>.
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="center">
+							UNCOUNTABLE nouns cannot be counted and do not have a plural form. For example
+							<span class="correctword">information</span> is not something that can be counted. It does not make sense to have a single
+							<span class="correctword">information</span> or many
+							<span class="correctword">informations</span>.
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a15_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a15_2">
+	<section id="m2a15_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}}
+
+			<h3 class="">Most nouns are COUNTABLE - they can form plurals. Drag the right word to the picture. Some words can go in both boxes.
+				If you’re right, it will stay there.</h3>
+			<div class="container-fluid">
+				<div class=" parapaperdd1 center" style="padding: 10px 0; vertical-align: top;">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w trans" style="width: 150px;">
+								<img draggable="false" src="images/module2/Electric_Car.gif" width="150" height="96" alt="Car">
+							</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:150px" data-destinationid="target1">
+								<h4>Singular</h4>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="ph-w trans" style="padding-bottom: 12px; width: 150px;">
+								<img draggable="false" src="images/module2/Electric_Cars.gif" width="150" height="84" alt="Cars">
+							</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:150px" data-destinationid="target2">
+								<h4>Plural</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth5 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2">our</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target2">some</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2">their</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2">your</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">a</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2">the</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2">his</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2">my</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">this</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2">her</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target2">any</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target2">these</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		{{> welldone}}
+		<footer>
+			{{>footer_nav nexturl="#m2a15_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a15_3">
+	<section id="m2a15_3" class="hidden">
+		<div class="content">
+			<h3 class="center">Here are the words which you can’t use with PLURALS.</h3>
+			<div class="ph-w trans" style="padding-bottom: 12px; width: 150px;">
+				<img draggable="false" src="images/module2/Electric_Cars.gif" width="150" height="84" alt="Cars">
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<div class="ddseat ddwidth5 dd1line">
+							<div class="ddsourceseated ddwidth5 dd1line">a</div>
+						</div>
+						<div class="ddseat ddwidth5 dd1line">
+							<div class="ddsourceseated ddwidth5 dd1line ">this</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a15" nexturl="#m2a15_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a15_4">
+	<section id="m2a15_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}}
+
+			<h3 class="">Some nouns are UNCOUNTABLE - they don’t have plurals. Drag the right word to the box. If you’re right, it will stay there.</h3>
+			<div class="container-fluid">
+				<div class=" parapaperdd1 fold center" style="padding: 10px 0; vertical-align: top;">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<div class="ph-w" style="width: 150px">
+								<img draggable="false" src="images/module2/rice.png" width="150" height="150" alt="Rice">
+							</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:150px" data-destinationid="target1">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth5 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">our</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">these</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">some</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">their</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">your</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">a/an</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">the</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">his</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">my</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">this</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">her</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1">any</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		{{> welldone}}
+		<footer>
+			{{>footer_nav nexturl="#m2a15_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a15_5">
+	<section id="m2a15_5" class="hidden">
+		<div class="content">
+			<h3 class="center">Here are the words which you can’t use with UNCOUNTABLE nouns.</h3>
+			<div class="ph-w" style="width: 150px">
+				<img draggable="false" src="images/module2/rice.png" alt="Rice" width="150" height="150">
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 center">
+						<div class="ddseat ddwidth5 dd1line">
+							<div class="ddsourceseated ddwidth5 dd1line">a/an</div>
+						</div>
+						<div class="ddseat ddwidth5 dd1line">
+							<div class="ddsourceseated ddwidth5 dd1line ">these</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a15" nexturl="#m2a15_6" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a15_6">
+	<section id="m2a15_6" class="hidden">
+		<div class="content">
+			<h1>Countable or Uncountable?</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 center">
+						<div class="caption">Cars are...</div>
+						<div class="ph-w trans" style="width: 150px; padding: 20px 0;">
+							<img draggable="false" src="images/module2/Electric_Cars.gif" width="150" height="84" alt="Cars">
+						</div>
+						<div class="caption capred">COUNTABLE</div>
+					</div>
+					<div class="col-sm-12 visible-sm visible-xs">
+						<hr style="margin: 24px 0;">
+					</div>
+					<div class="col-md-6 center">
+						<div class="caption">Rice is...</div>
+						<div class="ph-w trans" style="width: 150px">
+							<img draggable="false" src="images/module2/rice.png" width="150" height="150" alt="Rice">
+						</div>
+						<div class="caption capred">UNCOUNTABLE</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a15" nexturl="#m2a15_7" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a15_7">
+	<section id="m2a15_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}}
+
+			<h3 class="">Choose two words you CAN’T use with these nouns.</h3>
+			<div class="container-fluid">
+				<div class=" parapaperdd1 center" style="padding: 10px 0; vertical-align: top;">
+					<div class="row">
+						<div class="col-sm-4 center">
+							<div class="ph-w ph-1x1" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module2/Information.jpeg" alt="information">
+								</div>
+							</div>
+							<div class="caption" style="margin: 10px 0;">information (i)</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:50px" data-destinationid="target1">
+							</div>
+						</div>
+						<div class="col-sm-4 center">
+							<div class="ph-w ph-1x1" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module2/Music.png" alt="Music">
+								</div>
+							</div>
+							<div class="caption" style="margin: 10px 0;">Music</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:50px" data-destinationid="target2">
+							</div>
+						</div>
+						<div class="col-sm-4 center">
+							<div class="ph-w ph-1x1" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module2/Butter.jpeg" alt="Butter">
+								</div>
+							</div>
+							<div class="caption" style="margin: 10px 0;">Butter</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:50px" data-destinationid="target3">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth5 dd1line' and 'ddtarget2s' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">our</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2 target3 target4">these</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">some</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">their</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">your</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2 target3 target4">a/an</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">the</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">his</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">my</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">this</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">her</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">any</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		{{> welldone}}
+		<footer>
+			{{>footer_nav nexturl="#m2a15_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a15_8">
+	<section id="m2a15_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}}
+
+			<h3 class="">Choose two words you CAN’T use with these nouns.</h3>
+			<div class="container-fluid">
+				<div class=" parapaperdd1 center" style="padding: 10px 0; vertical-align: top;">
+					<div class="row">
+						<div class="col-sm-4 center">
+							<div class="ph-w ph-1x1" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module2/Money.jpeg" alt="Money">
+								</div>
+							</div>
+							<div class="caption" style="margin: 10px 0;">Money</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:50px" data-destinationid="target1">
+							</div>
+						</div>
+						<div class="col-sm-4 center">
+							<div class="ph-w ph-1x1" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module2/Water.jpeg" alt="Water">
+								</div>
+							</div>
+							<div class="caption" style="margin: 10px 0;">Water</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:50px" data-destinationid="target2">
+							</div>
+						</div>
+						<div class="col-sm-4 center">
+							<div class="ph-w ph-1x1" style="max-width: 150px">
+								<div class="ph">
+									<img draggable="false" src="images/module2/Milk.jpeg" alt="Milk">
+								</div>
+							</div>
+							<div class="caption" style="margin: 10px 0;">Milk</div>
+							<div class="box2 ddtarget2 box2dd1 target" style="height:50px" data-destinationid="target3">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth5 dd1line' and 'ddtarget2s' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">our</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2 target3 target4">these</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">some</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">their</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">your</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="target1 target2 target3 target4">a/an</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">the</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">his</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">my</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">this</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">her</div>
+					</div>
+					<div class="ddseat ddwidth5 dd1line">
+						<div class="ddsourceseated ddwidth5 dd1line shadow" draggable="false" data-destination="">any</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		{{> welldone}}
+		<footer>
+			{{>footer_nav nexturl="#m2a15_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a15_9">
+	<section id="m2a15_9" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-1x1" style="max-width: 150px">
+							<div class="ph">
+								<img draggable="false" src="images/module2/Information.jpeg" alt="information">
+							</div>
+						</div>
+						<div class="caption" style="margin: 10px 0 3em;">information (i)</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-1x1" style="max-width: 150px">
+							<div class="ph">
+								<img draggable="false" src="images/module2/Music.png" alt="Music">
+							</div>
+						</div>
+						<div class="caption" style="margin: 10px 0 3em;">Music</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-1x1" style="max-width: 150px">
+							<div class="ph">
+								<img draggable="false" src="images/module2/Butter.jpeg" alt="Butter">
+							</div>
+						</div>
+						<div class="caption" style="margin: 10px 0 3em;">Butter</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-1x1" style="max-width: 150px">
+							<div class="ph">
+								<img draggable="false" src="images/module2/Money.jpeg" alt="Money">
+							</div>
+						</div>
+						<div class="caption" style="margin: 10px 0 3em;">Money</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-1x1" style="max-width: 150px">
+							<div class="ph">
+								<img draggable="false" src="images/module2/Water.jpeg" alt="Water">
+							</div>
+						</div>
+						<div class="caption" style="margin: 10px 0 3em;">Water</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div class="ph-w ph-1x1" style="max-width: 150px">
+							<div class="ph">
+								<img draggable="false" src="images/module2/Milk.jpeg" alt="Milk">
+							</div>
+						</div>
+						<div class="caption" style="margin: 10px 0 3em;">Milk</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 center">
+						<div class="caption capred">are UNCOUNTABLE</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a15" nexturl="#m2a15_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a15_end">
+	{{>EndPage char="elle" act="m2a15" nextact="m2a16" place="Kirriemuir"}}
+</template>

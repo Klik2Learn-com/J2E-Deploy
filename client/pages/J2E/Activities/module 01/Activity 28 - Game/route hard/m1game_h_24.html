@@ -1,0 +1,43 @@
+<template name="m1Game_h_24">
+
+	<section id="m1Game_h_24" class="game-section game-phone-section hidden">
+	{{#if activeSection}}<!--
+		--><div class="game-container game-container-bg k m1Game-bg-k-garden-phone">
+			<h3 class="center">Choose the correct message.</h3>
+			<div class="game-content">
+
+				<div class="game-phone-screen">
+					{{>GamePhoneHeader app="sms" icon="envelope" contact="Dunvegan Castle Security" time="5:01pm" battery="three-quarters"}}
+					<div class="game-phone-content">
+					
+					
+						<ul class="speech center-block">
+							<li><a href="#"><div id="a" class="speech1">
+								Is the thief escaping by boat?
+							</div></a></li>
+							<li></li>
+							<li><a href="#"><div id="b" class="speech1">
+								Could the thief escape by boat?
+							</div></a></li>
+							<li></li>
+							<li><a href="#"><div id="c" class="speech1">
+								Is escaping the thief by boat?
+							</div></a></li>
+						</ul>
+						
+						
+					
+						{{> rightwrong}}
+					</div>
+					</div>
+
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_h_25" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>

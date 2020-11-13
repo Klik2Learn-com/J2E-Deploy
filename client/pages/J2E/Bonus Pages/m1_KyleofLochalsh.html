@@ -1,0 +1,123 @@
+<template name="MoreAboutKyleofLochalsh">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="KyleofLochalsh"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m1l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m1l4}}</div>
+		</header>
+
+		<section id="moreaboutKyleofLochalsh">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-xs-12 bonus-image" style="background-image: url('images/bonus/KyleofLochalsh/KyleofLochalsh1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m1l4_A">
+						<p>The Skye Bridge</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-7 bonus-image" style="background-image: url('images/bonus/KyleofLochalsh/KyleofLochalsh2.jpg'); background-position: center top" data-toggle="modal" data-target="#bonus_modal_m1l4_B">
+						<p>Falls of Glomach</p>
+					</div>
+					<div class="col-sm-2 col-xs-5 bonus-image" style="background-image: url('images/bonus/KyleofLochalsh/KyleofLochalsh3.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l4_C">
+						<p>Sorley MacLean</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/KyleofLochalsh/KyleofLochalsh4.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l4_D">
+						<p>The Five Sisters of Kintail</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l4_A">The Skye Bridge</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/KyleofLochalsh/KyleofLochalsh1.jpg" alt="The Skye Bridge" style="max-width: 250px;">
+					</figure>
+					<p>The Skye Bridge is a road bridge that connects Kyle of Lochalsh on the mainland to the Isle of Skye. It is 500m long. Before the bridge opened in 1995 you had to get a ferry to travel between the island and the mainland.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.lochalsh.co.uk/skye_bridge.shtml" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l4_B">Falls of Glomach</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/KyleofLochalsh/KyleofLochalsh2.jpg" alt="Waterfall" style="max-width: 150px;">
+					</figure>
+					<p>The Falls of Glomach, in Kyle of Lochalsh, Scotland, is one of the highest waterfalls in Britain, at 113 m (370 ft).</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nts.org.uk/Property/Falls-Of-Glomach/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l4_C">Sorley MacLean</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/KyleofLochalsh/KyleofLochalsh3.jpg" alt="Sorley MacLean" style="max-width: 250px;">
+					</figure>
+					<p>Sorley MacLean (26 October 1911 – 24 November 1996) was one of the most significant Scottish poets of the 20th century. As well as writing poetry he was instrumental in preserving the teaching of Gaelic in Scottish schools.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.sorleymaclean.org/english/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l4_D">The Five Sisters of Kintails</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/KyleofLochalsh/KyleofLochalsh4.jpg" alt="Hills" style="max-width: 250px;">
+					</figure>
+					<p>The Five Sisters refers to a group of five connected munros popular with hill walkers. A munro is a mountain in Scotland over 3,000 ft high (910 m).</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nts.org.uk/Nature-Channel/View/The-Five-Sisters-of-Kintail/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

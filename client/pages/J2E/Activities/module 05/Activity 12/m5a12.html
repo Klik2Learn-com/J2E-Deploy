@@ -1,0 +1,119 @@
+<template name="m5a12">
+<article class="with-tools-sidebar m5a12">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Bolton');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 12 - {{>m5a12Title}}</div>
+		</header>
+		
+		
+		<section id="m5a12">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a12Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m5a12Intro}}</h3>
+{{> m5a12Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a12_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a12_1}}		
+		{{>m5a12_2}}
+
+		{{>EndPage char="elle" act="m5a12" nextact="m5a13" place="Bolton"}}
+
+		
+	</div>
+</article>
+
+	
+	{{>doctorwho_modal}}
+</template>
+<template name="m5a12_1">
+			<section id="m5a12_1" class="hidden">
+					{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are some questions about the Doctor Who article</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+					<ol class="olcircle">
+						<li>What word is similar to 'display' or 'publicise'? <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="11" autocomplete="off"><input type="submit" value="OK"></form></span></li>
+						<li>What do you call someone who writes the words for a film? <span id="entryanswer1" class="textentry-disabled"></span> </li>
+						<li>What word means 'not well known'? <span id="entryanswer2" class="textentry-disabled"></span></li>
+						<li>What word describes someone who is passionate about 'Doctor Who'? <span id="entryanswer3" class="textentry-disabled"></span></li>
+						<li>What expression is used for a problem that is quite difficult to solve <i>(3 words)</i> <span id="entryanswer4" class="textentry-disabled"></span></li>
+					</ol>
+				</div>
+				<div class="center">
+				<button data-toggle="modal" data-target="#doctorwho_modal" class="button2">View Article</button>
+				</div>
+	
+				
+
+		</div>
+			<footer>
+				
+			</footer>
+			{{> stuck stuckchar="elle"}}
+	{{/if}}
+		</section>
+	</template>
+	
+<template name="doctorwho_modal">
+	<div class="modal fade" tabindex="-1" id="doctorwho_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="doctorwho_modal">Doctor Who makes history as the first British TV show on 'Entertainment Weekly' cover</h4>
+				</div>
+				
+				<div class="content">
+
+					{{>DrWhoArticle}}
+					
+					
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m5a12_2">
+			<section id="m5a12_2" class="hidden">
+					{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are some questions about the Doctor Who article</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+					<ol class="olcircle" style="counter-reset: start 5;">
+						<li>What word here is similar to 'importance'? <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="11" autocomplete="off"><input type="submit" value="OK"></form></span></li>
+						<li>A TV show which is on every week is called a ... <span id="entryanswer1" class="textentry-disabled"></span> </li>
+						<li>Each individual programme is called an ... <span id="entryanswer2" class="textentry-disabled"></span></li>
+						<li>What word is used for films, guns and arrows? <span id="entryanswer3" class="textentry-disabled"></span></li>
+					</ol>
+				</div>
+				
+				<div class="center">
+				<button data-toggle="modal" data-target="#doctorwho_modal" class="button2">View Article</button>
+				</div>
+	
+				
+
+		</div>
+			<footer>
+				
+			</footer>
+			{{> stuck stuckchar="elle"}}
+	{{/if}}
+		</section>
+	</template>

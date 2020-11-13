@@ -1,0 +1,210 @@
+<template name="bodyHeader">
+	<header class="course-header hidden-xs">
+		<nav>
+
+			<a draggable="false" data-target="home" title="home" class="logos">
+				
+				<img draggable="false" src="{{customLogoSrc}}" class="brand" alt="{{customLogoAlt}}">				
+				<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+				
+			</a>
+
+			<div class="links">{{>TopMenu}}</div>
+		</nav>
+	</header> 
+</template>
+
+<template name="EnglishMasterHeader">
+	<header class="header-custom header-custom-english-master hidden-xs">
+		<nav class="container-fluid-no-gutter">
+			<div class="row">
+				<div class="col-sm-5">
+					<a draggable="false" onclick="safeLeave('/');" class="logos">
+						<img draggable="false" src="/journey-to-english-1line.png" class="banner" alt="Journey 2 English">
+					</a>
+				</div>
+				<div class="col-sm-2 text-center">
+					<a draggable="false" onclick="safeLeave('/');" class="logos">
+						<img draggable="false" src="/images/logos/EnglishMaster.png" class="brand" alt="English Master">	
+					</a>
+				</div>	
+				<div class="col-sm-5 text-right">
+					<div class="links">{{>TopMenu}}</div>
+				</div>			
+			</div>
+		</nav>
+	</header>
+</template>
+
+<template name="articleHeader">
+	<button class="titlephone">
+			<i class="icon-phone" style="color: white;"></i>
+	</button>
+</template>
+
+<template name="StartPageAvatar">
+	<div class="ph-w StartPageAvatarContainer">
+		<img draggable="false" src="images/startend/act_start_{{char}}.png" alt="">
+	</div>
+</template>
+
+<template name="StartPageAvatarSmall">
+	<div class="ph-w StartPageAvatarSmallContainer">
+		<img draggable="false" src="/images/startend/act_start_{{char}}.png" alt="">
+	</div>
+</template>
+
+<template name="StartPageAvatarSpeaking">
+	<div class="ph-w StartPageAvatarSpeakingContainer">
+		<img draggable="false" src="/images/startend/act_start_speaking.png" alt="">
+	</div>
+</template>
+
+<template name="actDetails">
+	<div class="center">
+		<div class="act-type-wrapper {{type}}">
+			<div class="type-reading shadow"><i class="fa fa-eye"></i><span>Reading</span></div>
+			<div class="type-writing shadow"><i class="far fa-keyboard"></i><span>Writing</span></div>
+			<div class="type-listening shadow"><i class="fa icon-audio"></i><span>Listening</span></div>
+			<div class="type-speaking shadow"><i class="fa icon-recording"></i><span>Speaking</span></div>
+			<div class="type-grammar shadow"><i class="fa icon-grammarguide"></i><span>Grammar</span></div>
+			<div class="type-vocabulary shadow"><i class="fa icon-vocab"></i><span>Vocabulary</span></div>
+			<div class="type-test shadow"><i class="far fa-edit"></i><span>Test yourself</span></div>
+			<div class="type-uk-culture shadow"><i class="fa icon-uk-i"></i><span>UK Culture</span></div>
+		</div>
+		
+		<div class="act-time-wrapper show{{time}}">
+			<div class="time1 shadow"><div class="icon-time15"></div>Up to 15 minutes</div>
+			<div class="time2 shadow"><div class="icon-time30"></div>15-30 minutes</div>
+			<div class="time3 shadow"><div class="icon-time50"></div>More than 30 minutes</div>
+		</div>
+	</div>
+	<div class="parent_expander"></div>
+</template>
+
+<template name="duration1">
+	<div class="center"> 
+	<div class="time shadow"><div class="icon-time15"></div>Up to 15 minutes</div>
+	</div>
+	<div class="parent_expander"></div>
+</template>
+
+<template name="duration2">
+	<div class="center"><div class="time shadow"><div class="icon-time30"></div>15-30 minutes</div></div>
+	<div class="parent_expander"></div>	
+</template>
+
+<template name="duration3">
+	<div class="center"><div class="time shadow"><div class="icon-time50"></div>More than 30 minutes</div></div>
+	<div class="parent_expander"></div>	
+</template>
+
+<template name="prev">
+	<i class="icon-angle-circled-left"></i>
+</template>
+
+<template name="next">
+	<i class="icon-angle-circled-right"></i>
+</template>
+
+
+
+<!-- Footer components -->
+
+<template name="FooterBagdes">
+	<div><img draggable="false" class="footer-badge" src="/images/logos/ncfe-approved-{{color}}.png" alt="NCFE Approved Centre" style="width: 80px;"></div>
+	<div><img draggable="false" class="footer-badge" src="/images/logos/cpd-{{color}}.png" alt="CPD Certified" title="CPD Certified" style="width: 110px;"></div>
+	<div><img draggable="false" class="footer-badge" src="/images/logos/sqa-e.png" alt="SQA Endorsed"></div>
+	<div><img draggable="false" class="footer-badge" src="/images/logos/cag-{{color}}.png" alt="City &amp; Guilds"></div>
+	<div><img draggable="false" class="footer-badge" src="/images/logos/IP100-logo-2016.png" alt="IP 100 Shortlisted"></div>
+	<div><img draggable="false" class="footer-badge" src="/images/logos/metametrics-{{color}}.png" alt="Measured by MetaMetrics" style="width: 130px; padding-bottom: 10px;"></div>
+	<div><img draggable="false" class="footer-badge" src="/images/logos/eltons14.png" alt="Nominated for Excellence in Course Innovation in the 2014 ELTons" style="width: 75px;"></div>
+</template>
+
+<template name="footerBrand">
+	<div class="footer-brand {{color}}">
+		<a draggable="false" href="http://www.klik2learn.com" target="_blank"><img draggable="false" class="footer-badge" src="/images/logo-normal.png" alt="Klik2learn"><br>
+		Powered by Klik2learn™</a>
+	</div>
+</template>
+
+<template name="FooterLinks">
+	<!-- <li class="main-menu-link"><a>Terms &amp; conditions</a></li><li class="main-menu-link"><a>Support</a></li><li class="main-menu-link"><a>Contact</a></li> -->
+</template>
+
+
+
+<!-- Footers -->
+
+<!-- The footer shown when logged in on desktop view -->
+<template name="MainFooter">
+	<footer class="hidden-xs main-footer-container">
+		<div class="footer-badges-flex">{{>FooterBagdes color="inverted"}}</div>
+		
+		{{>FooterLinks}}
+		<div class="clear-float"></div>
+	</footer>
+</template>
+
+<!-- The footer shown when logged in on mobile view (only used on the courses page) -->
+<template name="MainFooterXs">
+	<footer class="visible-xs main-footer-container {{#if currentUser}}courses{{else}}signed-out{{/if}}">
+		<div class="footer-badges-flex">{{>FooterBagdes color="normal"}}</div>
+		
+		{{>FooterLinks}}
+		<div class="clear-float"></div>
+	</footer>
+</template>
+
+<!-- The footer shown on the landing page when logged out (B2C) -->
+<template name="LandingFooter1">
+	<footer class="main-footer-container">
+		<div class="container-fluid site-footer-container">
+			<div class="row">
+				<div class="col-sm-12 text-right">
+					<div class="footer-badges">{{>FooterBagdes color="inverted"}}</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="main-footer">
+						{{>FooterLinks}}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clear-float"></div>
+	</footer>
+</template>
+
+<!-- The footer shown on the B2B landing page -->
+<template name="LandingFooter2">
+	<footer class="main-footer-container">
+		<div>
+			<img src="/landing/landing-footer2b-spacer.png">
+		</div>
+		<div>
+			<div class="footer-badges">{{>FooterBagdes color="normal"}}</div>
+		</div>
+		<div class="text-center visible-xs"><img draggable="false" src="/landing/landing-footer2b.png"></div>
+		{{>FooterLinks}}
+	</footer>
+</template>
+
+<!-- The footer shown on the 'Welcome' landing page -->
+<template name="WelcomeFooter">
+	<footer class="main-footer-container">
+		<div class="text-center" style="padding-bottom: 1em;">
+			<div class="footer-badges-flex" style="margin: 0">{{>FooterBagdes color="normal"}}</div>
+		</div>
+	</footer>
+</template>
+
+<!-- The footer shown on the bespoke landing page when logged out -->
+<template name="LandingFooter3">
+	<footer class="main-footer-container">
+		<div class="text-center" style="padding-bottom: 1em;">
+			<div class="footer-badges-flex" style="margin: 0">{{>FooterBagdes color="inverted"}}</div>
+		</div>
+	</footer>
+</template>

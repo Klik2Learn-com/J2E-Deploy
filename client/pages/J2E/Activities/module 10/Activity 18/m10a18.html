@@ -1,0 +1,119 @@
+<template name="m10a18"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Chelmsford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 18 - {{> m10a18Title}}</div>
+		</header>
+		<section id="m10a18">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a18Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a18Intro}}</h3>
+				{{> m10a18Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a18_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a18_1}}
+		{{>m10a18_2}}
+		{{>m10a18_3}}
+		{{>EndPage char="elle" act="m10a18" nextact="m10a19" place="Chelmsford"}}
+	</div>
+</article>
+</template>
+<template name="m10a18_1"> 
+	<section id="m10a18_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Complete these sentences using the words from the list below.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} 
+				<ol class="olcircle">
+					<li>He fell and hurt his <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="10" autocomplete="off"><input type="submit" value="OK"></form></span> last <span id="entryanswer1" class="textentry-disabled"></span>.</li>
+					<li>It was a steep <span id="entryanswer2" class="textentry-disabled"></span> to the top of the mountain but the <span id="entryanswer3" class="textentry-disabled"></span> was fantastic.</li>
+					<li>She cut her <span id="entryanswer4" class="textentry-disabled"></span> with the bread <span id="entryanswer5" class="textentry-disabled"></span>.</li>
+					<li>Can you <span id="entryanswer6" class="textentry-disabled"></span> this <span id="entryanswer7" class="textentry-disabled"></span> for me please?</li>
+					<li>Do you fancy a <span id="entryanswer8" class="textentry-disabled"></span> curry this evening?</li>
+				</ol>
+			</div>
+
+			<div class="box1">
+				<p class="word"><b style="word-spacing: 1em;">knee   Wednesday   writing   climb   knife   thumb   sword   autumn   scenery   wrapping   sign   solemn receipt   counsellor   often   whistle   lamb   wreck   scissors   wrong   debt</b></p>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a18" nexturl="#m10a18_2" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+<template name="m10a18_3"> 
+	<section id="m10a18_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Complete these sentences using the words from the list below.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>His <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="10" autocomplete="off"><input type="submit" value="OK"></form></span> is so bad you can hardly read it.</li>
+					<li>The <span id="entryanswer1" class="textentry-disabled"></span> of the Titanic lies at the bottom of the Atlantic.</li>
+					<li>The actors had to learn <span id="entryanswer2" class="textentry-disabled"></span> fighting for the film.</li>
+					<li>Funerals are always <span id="entryanswer3" class="textentry-disabled"></span> occasions.</li>
+					<li>The <span id="entryanswer4" class="textentry-disabled"></span> colours of the trees were magnificent.</li>
+				</ol>
+			</div>
+
+			<div class="box1">
+				<p class="word"><b style="word-spacing: 1em;">knee   Wednesday   writing   climb   knife   thumb   sword   autumn   scenery   wrapping   sign   solemn receipt   counsellor   often   whistle   lamb   wreck   scissors   wrong   debt</b></p>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a18_2" nexturl="#m10a18_end" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+
+<template name="m10a18_2"> 
+	<section id="m10a18_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Complete these sentences using the words from the list below.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} 
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>Can I borrow your <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="10" autocomplete="off"><input type="submit" value="OK"></form></span> to cut this <span id="entryanswer1" class="textentry-disabled"></span> paper?</li>
+					<li>The business ran up a <span id="entryanswer2" class="textentry-disabled"></span> of £50,000.</li>
+					<li>We’re lost – we must have taken a <span id="entryanswer3" class="textentry-disabled"></span> turning.</li>
+					<li>The referee blew his <span id="entryanswer4" class="textentry-disabled"></span> for the end of the match.</li>
+					<li>She quite <span id="entryanswer5" class="textentry-disabled"></span> goes to see a <span id="entryanswer6" class="textentry-disabled"></span> to help her recover from the accident.</li>
+				</ol>
+			</div>
+
+			<div class="box1">
+				<p class="word"><b style="word-spacing: 1em;">knee   Wednesday   writing   climb   knife   thumb   sword   autumn   scenery   wrapping   sign   solemn receipt   counsellor   often   whistle   lamb   wreck   scissors   wrong   debt</b></p>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a18_1" nexturl="#m10a18_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+

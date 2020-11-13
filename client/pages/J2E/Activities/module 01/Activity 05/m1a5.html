@@ -1,0 +1,666 @@
+<template name="m1a5">
+	<article class="with-tools-sidebar m1a5">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				<a draggable="false" onclick="safeLeave('/Inverness');"><i class="titlereturn fa fa-arrow-left"></i></a>
+				{{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div><div class='acttitle-title'>{{> activity}} 5 - {{> m1a5Title}}</div>
+			</header>
+			<section id="m1a5">
+				<div class="content">
+					<h1 class="start-page-header">{{> m1a5Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m1a5Intro}}</h3>
+					{{> m1a5Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a5_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			<section id="m1a5_1" class="hidden">
+				<div class="content">
+					<h1>Times</h1>
+					<h3 class="center">Listen to these three sentences. Continue when you're ready.</h3>
+
+
+					<div class="container-fluid">
+						<div class="row">
+
+							<div class="col-md-5">
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/the_16-25.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										The 16:25 to Aberdeen leaves from platform 18
+									</div>
+								</div>
+								<br>
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/17-00_to_london.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										The 17:00 to London leaves from platform 4
+									</div>
+								</div>
+								<br>
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/we_need_to.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										We need to leave at 25 past 4, not five o'clock.
+									</div>
+								</div>
+								<br>
+							</div>
+
+							<div class="col-md-7 center">
+								<figure>
+									<div class="ph-w ph-4x3 border1 shadow" style="max-width: 411px"><div class="ph"><figure><img draggable="false" src="images/module1/m1a5_rail.jpg"></figure></div></div>
+								</figure>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+				</div>
+
+				<footer>
+					{{>footer_nav prevurl="#m1a5" nexturl="#m1a5_2" prev="hidden" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_2" class="hidden">
+				<div class="content">
+					<h1>Times</h1>
+					<h3 class="center">Listen to these clock times. Continue when you're ready.</h3>
+
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-01.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-00pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-02.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-05pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-03.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-10pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-04.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-15pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-05.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-20pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-06.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-25pm.m4a"></button>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-07.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-30pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-08.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-35pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-09.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-40pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-10.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-45pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-11.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-50pm.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-sm-2 col-md-2 m1a5_clock">
+								<img draggable="false" src="images/module1/clock_times-12.png" width="90" height="90">
+								<br>
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/m1a5_2-55pm.m4a"></button>
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+				<footer>
+					{{>footer_nav prevurl="#m1a5_1" nexturl="#m1a5_3" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_3" class="hidden">
+				<div class="content">
+					<h1>Phone Numbers</h1>
+					<h3 class="center">Here are some examples of phone numbers in the UK.</h3>
+
+
+					<div class="container-fluid-no-gutter">
+						<div class="row">
+							<div class="col-md-6 center">
+
+								<div class="caption m1a5-phone-bg">
+									<div class="center m1a5_cap1">Here's a city phone number</div>
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/0141_339_8215.m4a"></button>
+									</div>
+									<div class="toolbuttright m1a5_cap2">
+										0141&nbsp;&nbsp;339&nbsp;&nbsp;8215
+									</div>
+
+									<br>
+									<div class="info-callout m1a5_info-callout">
+										area code
+										<b class="info-notch" style="left: 50px;"></b>
+									</div>
+									<div class="info-callout m1a5_info-callout">
+										district
+										<b class="info-notch" style="left: 20px;"></b>
+									</div>
+									<div class="info-callout m1a5_info-callout">
+										individual
+										<br>number
+										<b class="info-notch" style="left: 20px;"></b>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-md-6 center">
+
+								<div class="caption m1a5-phone-bg">
+									<div class="center m1a5_cap1">Here's a town phone number</div>
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/01463_636541.m4a"></button>
+									</div>
+									<div class="toolbuttright m1a5_cap2">
+										01463&nbsp;&nbsp;636541
+									</div>
+
+									<br>
+									<div class="info-callout m1a5_info-callout">
+										area code
+										<b class="info-notch" style="left: 30px;"></b>
+									</div>
+									<div class="info-callout m1a5_info-callout">
+										individual
+										<br>number
+										<b class="info-notch" style="left: 40px;"></b>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="center">
+								<div class="caption m1a5-phone-bg">
+									<div class="center m1a5_cap1">Here's a mobile phone number</div>
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/07786_484875.m4a"></button>
+									</div>
+									<div class="toolbuttright m1a5_cap2">
+										07786&nbsp;&nbsp;484875
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+				</div>
+
+				<footer>
+					{{>footer_nav prevurl="#m1a5_2" nexturl="#m1a5_4" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_4" class="hidden">
+				<div class="content">
+					<h1>Phone Numbers</h1>
+					<h3 class="center">Here are some examples of phone numbers in the UK.</h3>
+
+					<div class="center">
+						<p>
+							<div class="caption capgreen">numbers beginning
+								<span class="m1a5_num-hilight">0800</span> are free</div>
+						</p>
+						<p>
+							<div class="caption capgreen">numbers beginning
+								<span class="m1a5_num-hilight">0845</span> are local calls</div>
+						</p>
+						<p>
+							<div class="caption capgreen">
+								<span class="m1a5_num-hilight">999</span> connects you to fire, police or ambulance services</div>
+						</p>
+					</div>
+
+				</div>
+
+				<footer>
+					{{>footer_nav prevurl="#m1a5_3" nexturl="#m1a5_5" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_5" class="hidden">
+				<div class="content">
+					<h1>Shopping</h1>
+					<h3 class="center">Listen to these sentences about shopping.</h3>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/those_jeans.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										Those jeans cost £18.95.
+									</div>
+								</div>
+								<br>
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/have_you_got.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										Have you got a 50p coin?
+									</div>
+								</div>
+								<br>
+
+							</div>
+
+							<div class="col-sm-6 col-md-6 center">
+								<div class="ph-w ph-5x4 border1 shadow" style="max-width: 350px"><div class="ph"><img draggable="false" src="images/module1/m1a5_jeans.jpg"></div></div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#m1a5_4" nexturl="#m1a5_6" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_6" class="hidden">
+				<div class="content">
+					<h1>Dates</h1>
+					<h3 class="center">Listen to these sentences about dates.</h3>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/weve_got_rooms.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										We’ve got rooms available on the 1st, 2nd and 3rd of June.
+									</div>
+								</div>
+								<br>
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/he_was_born.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										He was born on 4th of August 1942.
+									</div>
+								</div>
+								<br>
+
+							</div>
+
+							<div class="col-sm-6 col-md-6 center">
+								<div class="ph-w ph-5x4 border1 shadow" style="max-width: 350px"><div class="ph"><img draggable="false" src="images/module1/m1a5_calendar.jpg"></div></div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#m1a5_5" nexturl="#m1a5_7" prev="" next=""}}
+				</footer>
+			</section>
+
+
+
+			<section id="m1a5_7" class="hidden">
+				{{> m1a5_7animation}}
+				<footer>
+					{{>footer_nav prevurl="#m1a5_6" nexturl="#m1a5_8" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_8" class="hidden">
+				<div class="content">
+					<h1>Sport</h1>
+					<h3 class="center">Listen to these examples about sport.</h3>
+
+
+					<div class="container-fluid">
+						<div class="row">
+
+							<div class="col-md-5">
+								<h5 style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/the_game_ended.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										Don’t use ‘zero’ for a game of football or rugby. Use ‘nil’ or ‘nothing’.
+									</div>
+								</h5>
+
+								<br>
+
+								<div class="caption fold" style="display: block;">
+									Tennis uses the word ‘love’ which comes from the French word for egg ‘l’oeuf’. It has a shape like the number 0.
+									<br>
+									<br>
+									<div class="container-fluid">
+										<div class="row">
+
+											<div class="col-xs-4 center">
+												<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/15_love.m4a"></button>
+												<br>
+												<br>
+												<span style="font-size: 0.9em;">15 love</span>
+											</div>
+
+											<div class="col-xs-4 center">
+												<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/30_love.m4a"></button>
+												<br>
+												<br>
+												<span style="font-size: 0.9em;">30 love</span>
+											</div>
+
+											<div class="col-xs-4 center">
+												<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/40_love.m4a"></button>
+												<br>
+												<br>
+												<span style="font-size: 0.9em;">40 love</span>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<br>
+							</div>
+
+							<div class="col-md-7 center">
+								<div class="ph-w ph-5x4 border1 shadow" style="max-width: 350px"><div class="ph"><figure><img draggable="false" src="images/module1/m1a5_score.jpg"></figure></div></div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+
+				<footer>
+					{{>footer_nav prevurl="#m1a5_7" nexturl="#m1a5_9" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_9" class="hidden">
+				<div class="content">
+					<h1>Temperature</h1>
+					<h3 class="center">Listen to these sentences about temperature.</h3>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/the_temperature.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										The temperature fell to fourteen degrees below zero.
+									</div>
+								</div>
+								<br>
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/it_was_minus.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										It was minus twenty two degrees last night.
+									</div>
+								</div>
+								<br>
+
+							</div>
+
+							<div class="col-sm-6 col-md-6 center">
+								<div class="ph-w ph-5x4 border1 shadow" style="max-width: 350px"><div class="ph"><img draggable="false" src="images/module1/m1a5_therm.jpg"></div></div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#m1a5_8" nexturl="#m1a5_10" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_10" class="hidden">
+				<div class="content">
+					<h1>Maths</h1>
+					<h3 class="center">Listen to these sentences about maths.</h3>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-md-6">
+
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/the_economy.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										The economy grew by 1.6 percent.
+									</div>
+								</div>
+								<br>
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/he_won_the.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										He won the race by 0.01 of a second.
+									</div>
+								</div>
+								<br>
+								<div class="caption" style="display: block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/the_answers_6and.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										The answer’s six and a third, not four and seven eighths.
+									</div>
+								</div>
+								<br>
+
+							</div>
+
+							<div class="col-sm-6 col-md-6 center">
+								<div class="ph-w ph-5x4 border1 shadow" style="max-width: 350px"><div class="ph"><img draggable="false" src="images/module1/m1a5_numbers.jpg"></div></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#m1a5_9" nexturl="#m1a5_11" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			<section id="m1a5_11" class="hidden">
+				<div class="content">
+					<h1>Collective Nouns</h1>
+
+					<div class="container-fluid">
+						<div class="row center">
+
+							<div class="col-sm-4 center">
+								<div class="ph-w ph-4x5" style="max-width: 224px"><div class="ph"><img draggable="false" src="images/module1/m1a5_eggs.jpg"></div></div><br>
+								<div style="display: inline-block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/get_me_half.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										<h5>Give me half a dozen eggs please.</h5>
+									</div>
+								</div>
+								<br>
+								<br>
+								<br>
+							</div>
+
+
+							<div class="col-sm-4 center">
+								<div class="ph-w ph-4x5" style="max-width: 224px"><div class="ph"><img draggable="false" src="images/module1/m1a5_homefront.jpg"></div></div><br>
+								<div style="display: inline-block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/scores_of_people.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										<h5>Scores of people turned up to hear him.</h5>
+									</div>
+								</div>
+								<br>
+								<br>
+								<br>
+							</div>
+
+
+							<div class="col-sm-4 center">
+								<div class="ph-w ph-4x5" style="max-width: 224px"><div class="ph"><img draggable="false" src="images/module1/m1a5_leader.jpg"></div></div><br>
+								<div style="display: inline-block;">
+									<div class="toolbuttleft">
+										<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/a5/he_remained_in.m4a"></button>
+									</div>
+									<div class="toolbuttright">
+										<h5>He remained in power for over three decades.</h5>
+									</div>
+								</div>
+								<br>
+								<br>
+								<br>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#m1a5_10" nexturl="#m1a5_end" prev="" next=""}}
+				</footer>
+			</section>
+
+
+			{{>EndPage char="tu" act="m1a5" nextact="m1a6" place="Inverness"}}
+
+
+		</div>
+	</article>
+
+</template>
+
+<template name="m1a5_7animation">
+	{{#if activeSection}}
+	<div class="content">
+		<h1>Dates</h1>
+		<h3 class="center">You often give your date of birth using six digits.</h3>
+		<div class="center">
+			<div class="caption">
+				<div class="toolbuttleft">
+					<button type="button" id="m5a7_audio_button" data-audiosrc="../audio/module1/a5/07_08_84.m4a" class="buttonround buttonaudio"></button>
+				</div>
+				<div class="toolbuttright" style="font-size: 1.3em;">
+					<span style="white-space: nowrap;" id="numWord1" class="numWord">zero seven,</span>
+					<span style="white-space: nowrap;" id="numWord2" class="numWord">zero eight,</span>
+					<span style="white-space: nowrap;" id="numWord3" class="numWord">eight four</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	{{/if}}
+</template>

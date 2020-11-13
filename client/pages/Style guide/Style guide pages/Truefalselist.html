@@ -1,0 +1,296 @@
+<template name="styleTrueFalseList">
+	<section id="style-truefalselist" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Are these statements True or False?</h3>
+			<div class="container-fluid TrueFalse">
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/leisure-pool.m4a"></button>
+						<div class="number">1</div></div> 
+						<div class="iconright">The Leisure pool is free for children under five.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space faded">True</button>
+						<button class="button2 item-space noclick">False</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/ice-rink.m4a"></button>
+						<div class="number">2</div></div>
+						<div class="iconright">The ice rink was built by a famous local whisky family.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space noclick">True</button>
+						<button class="button2 item-space faded">False</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a23/public-library.m4a"></button>
+						<div class="number">3</div></div> 
+						<div class="iconright">Visitors are welcome in the Perth library.</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space">True</button>
+						<button class="button2 item-space">False</button>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				
+			</div>
+			<br>
+			<p>HTML - remove audio buttons if not required</p>
+<pre class="htmlcode2">&lt;template name=&quot;styleTrueFalse&quot;&gt;
+	&lt;section id=&quot;styleTrueFalse&quot; class=&quot;hidden&quot;&gt;
+		&#123;&#123;#if activeSection&#125;&#125;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;h3 class=&quot;text-center&quot;&gt;&lt;span class=&quot;avoidwrap&quot;&gt;Are these statements True or False?&lt;/span&gt; &lt;span class=&quot;avoidwrap&quot;&gt;Listen to find the answer.&lt;/span&gt;&lt;/h3&gt;
+			&lt;div class=&quot;container-fluid TrueFalse&quot;&gt;
+				&#123;&#123;&gt;rightwrong&#125;&#125; &#123;&#123;&gt;welldone&#125;&#125;
+				&lt;div id=&quot;0&quot; class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/leisure-pool.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;1&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;The Leisure pool is free for children under five.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;1&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/ice-rink.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;2&lt;/div&gt;&lt;/div&gt;
+						&lt;div class=&quot;iconright&quot;&gt;The ice rink was built by a famous local whisky family.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;2&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/public-library.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;3&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;Visitors are welcome in the Perth library.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;3&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/golf-course.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;4&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;Perth was the capital of Scotland in the 14th century.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;4&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/public-parks.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;5&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;Perth regularly wins the &lsquo;Britain in Bloom&rsquo; competition.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;5&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/golf-course.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;6&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;The North Inch park has a crazy golf course.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;6&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/skatepark.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;7&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;The skatepark was built two years ago.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;7&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/tennis-courts.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;8&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;Perth Tennis Club has four grass courts.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;8&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/riverside-walks.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;9&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;The River Tay has a larger volume of flow than any other British river.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div id=&quot;9&quot; class=&quot;row hidden&quot;&gt;
+					&lt;div class=&quot;col-sm-8&quot;&gt;
+						&lt;div class=&quot;iconleft&quot;&gt;&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module3/a23/museum-art-gallery.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;10&lt;/div&gt;&lt;/div&gt; 
+						&lt;div class=&quot;iconright&quot;&gt;Perth Art Gallery is one of the oldest in Scotland.&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center nowraptext&quot;&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;True&quot;&gt;True&lt;/button&gt;
+						&lt;button class=&quot;button2 item-space&quot; data-value=&quot;False&quot;&gt;False&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&#123;&#123;&gt;blankrow&#125;&#125;
+				
+			&lt;/div&gt;
+			
+		&lt;/div&gt;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav prevurl=&quot;#&quot; nexturl=&quot;#&quot; prev=&quot;disabled&quot; next=&quot;hidden&quot;&#125;&#125;
+		&lt;/footer&gt;
+		&#123;&#123;/if&#125;&#125;
+	&lt;/section&gt;
+&lt;/template&gt;</pre>
+<br>
+<p>JS</p>
+<pre class="htmlcode2">Template.styleTrueFalse.helpers({
+	activeSection: function(){
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		return (activeSection == &quot;#styleTrueFalse&quot;);
+	}
+});
+
+
+Template.styleTrueFalse.events({
+	
+    &quot;click #styleTrueFalse .button2&quot;: function(evt) {
+		
+		var currentSection = $(evt.currentTarget).parents('section');
+		var nextSection = $(evt.currentTarget).parents('section').next('section');
+		var buttonValue = $(evt.currentTarget).data(&quot;value&quot;);
+		
+		if ($.k2l.styleTrueFalse.questionWordLock == false) {
+			$.k2l.styleTrueFalse.questionWordLock = true;
+			
+			var correctAnswer = $.k2l.styleTrueFalse.correctAnswers[$.k2l.styleTrueFalse.index];
+			if(buttonValue == correctAnswer){
+				$('.correctscreen').removeClass(&quot;hidden&quot;);
+				setTimeout(function(){
+					$('.correctscreen').addClass(&quot;hidden&quot;);
+				}, 1000);
+				var parentSection = $(evt.currentTarget).parents('section');
+				var temp = $(evt.currentTarget).data('value')
+					var value = $.trim(temp);
+					if (value == &quot;True&quot;) {
+						$(evt.currentTarget).addClass('noclick');
+						$(evt.currentTarget).next('button').addClass('faded'); // Next Button must be False
+					} else if (value == 'False') {
+						$(evt.currentTarget).addClass('noclick');
+						$(evt.currentTarget).prev('button').addClass('faded'); // Previous Button must be True
+					}
+					$.k2l.styleTrueFalse.index++;
+					$.k2l.styleTrueFalse.questionWordLock = false;
+					$('#styleTrueFalse .row#' + $.k2l.styleTrueFalse.index).removeClass('hidden');				
+					
+					if ($.k2l.styleTrueFalse.index &lt; $.k2l.styleTrueFalse.correctAnswers.length) {
+					setTimeout(function() {						
+						$('.incorrectscreen').addClass('hidden');
+						$('.correctscreen').addClass('hidden');						
+						$.k2l.styleTrueFalse.questionWordLock = false; // Make the buttons clickable again						
+					}, 1000);
+				} else {					
+					setTimeout( function() {
+						$('#welldonecap').removeClass('hidden');
+						}, 1000);
+					setTimeout( function() {
+						$('#welldonecap').addClass('hidden');
+					}, 2000);	
+					setTimeout(function() {
+						$.k2l.styleTrueFalse.index = 0;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set(&quot;activeSection&quot;, '#'+$(parentSection).next('section').attr('id'));
+					}, 2000);
+						}
+					$.k2l.styleTrueFalse.questionWordLock = false;
+			}	else {
+				$('.incorrectscreen').removeClass('hidden');
+				setTimeout( function() {
+					$('.incorrectscreen').addClass('hidden');
+				}, 1000);
+				$.k2l.styleTrueFalse.questionWordLock = false;
+			}
+    }
+	},
+	
+	'click a.restart': function(evt){
+	// When clicking to restart the activity this should reset the variables to
+	// initial values.
+	
+	
+		if(typeof $.k2l != 'undefined'){
+		  if(typeof $.k2l.styleTrueFalse != 'undefined'){
+			if(typeof $.k2l.styleTrueFalse.index != 'undefined'){
+				$.k2l.styleTrueFalse.index = 0;
+			}
+			if (typeof $.k2l.styleTrueFalse.wrongCount != 'undefined'){
+				$.k2l.styleTrueFalse.wrongCount = 0;
+			}
+		  }
+		}
+	}
+		
+})
+
+Template.styleTrueFalse.rendered = function (){
+	if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	};
+	
+	if (typeof $.k2l.styleTrueFalse == 'undefined') {
+		$.k2l.styleTrueFalse = {};
+	};
+		
+	var correctAnswers = [&quot;True&quot;, &quot;False&quot;, &quot;True&quot;, &quot;False&quot;, &quot;True&quot;, &quot;False&quot;, &quot;False&quot;, &quot;True&quot;, &quot;True&quot;, &quot;True&quot;];
+		
+	$.k2l.styleTrueFalse.index = 0;
+	$.k2l.styleTrueFalse.correctAnswers = correctAnswers;
+	
+	$.k2l.styleTrueFalse.questionWordLock = false; //variable to prevent multiple clicks of button
+}</pre>
+			
+		</div>
+	</section>
+</template>

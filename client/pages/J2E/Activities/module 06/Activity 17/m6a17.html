@@ -1,0 +1,133 @@
+<template name="m6a17">
+	<article class="with-tools-sidebar m6a17">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Scarborough');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 17 - {{>m6a17Title}}</div>
+			</header>
+			<section id="m6a17">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a17Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m6a17Intro}}</h3>
+					{{> m6a17Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a17_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a17_1}} {{>EndPage char="tu" act="m6a17" nextact="m6a18" place="Scarborough"}}
+		</div>
+	</article>
+
+</template>
+<template name="m6a17_1">
+	<section id="m6a17_1" class="hidden">
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Drag the right adverbs and phrases to the spaces.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="box2 ddtarget2 box2dd1 target" style="min-height:290px" data-destinationid="target1">
+							<h4>When</h4>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="box2 ddtarget2 box2dd1 target" style="min-height:290px" data-destinationid="target2">
+							<h4>How long</h4>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="box2 ddtarget2 box2dd1 target" style="min-height:290px" data-destinationid="target3">
+							<h4>How often</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">Later</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target3">Never</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">Already</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target2">Still</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target3">Usually</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">Last week</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">Next</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target3">No longer</div>
+								</div>
+								<div class="ddseat ddwidth8 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth8" draggable="false" data-destination="target2">Since last week</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">Recently</div>
+								</div>
+								<div class="ddseat ddwidth8 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth8" draggable="false" data-destination="target2">From May to October</div>
+								</div>
+								<div class="ddseat ddwidth8 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth8" draggable="false" data-destination="target2">For over three hours</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">Tomorrow</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target3">Sometimes</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target2">All night</div>
+								</div>
+								<div class="ddseat ddwidth8 dd2lines">
+									<div class="ddsourceseated shadow dd2lines ddwidth8" draggable="false" data-destination="target2">All through the winter</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">In 1973</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target1">Yet</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target3">Seldom</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line2high">
+									<div class="ddsourceseated shadow dd1line2high ddwidth8" draggable="false" data-destination="target3">Occasionally</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a17" nexturl="#m6a17_end" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>

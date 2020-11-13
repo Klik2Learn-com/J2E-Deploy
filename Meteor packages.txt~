@@ -1,0 +1,31 @@
+accounts-password        1.1.4  Password support for accounts
+accounts-ui              1.1.6  Simple templates to add login widgets to an app
+alanning:roles           1.2.15  Authorization package for Meteor
+blaze-html-templates     1.0.1  Compile HTML templates into reactive UI with Meteor...
+cfs:gridfs               0.0.33  GridFS storage adapter for CollectionFS
+cfs:standard-packages    0.5.9  Filesystem for Meteor, collectionFS
+cfs:ui                   0.1.3  CollectionFS, provides UI helpers
+check                    1.1.0  Check whether a value matches a pattern
+ejson                    1.0.7  Extended and Extensible JSON library
+fastclick                1.0.11  Faster touch events on mobile
+fortawesome:fontawesome  4.5.0  Font Awesome (official): 500+ scalable vector icons...
+harrison:papa-parse      1.1.1  A powerful, in-browser CSV parser for big boys and ...
+http                     1.1.1  Make HTTP calls to remote servers
+insecure                 1.0.4  (For prototyping only) Allow all database writes fr...
+iron:router              1.0.12  Routing specifically designed for Meteor
+jquery                   1.11.4  Manipulate the DOM using CSS selectors
+less                     2.5.1  Leaner CSS language
+logging                  1.0.8  Logging facility.
+meteor-base              1.0.1  Packages that every Meteor app needs
+mikael:device            0.0.1  A meteor package for querying information abo...
+mobile-experience        1.0.1  Packages for a great mobile user experience
+momentjs:moment          2.13.1  Moment.js (official): parse, validate, manipulate,...
+mongo                    1.1.3  Adaptor for using MongoDB and Minimongo over DDP
+random                   1.0.5  Random number generator and utilities
+reload                   1.1.4  Reload the page while preserving application state.
+session                  1.1.1  Session variable
+spacebars                1.0.7  Handlebars-like template language for Meteor
+standard-minifiers       1.0.2  Standard minifiers used with Meteor apps by default.
+themeteorchef:bert       2.1.0  A client side, multi-style alerts system for ...
+tracker                  1.0.9  Dependency tracker to allow reactive callbacks
+twbs:bootstrap           3.3.6  The most popular front-end framework for developing...

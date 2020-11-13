@@ -1,0 +1,86 @@
+<template name="m9a24"> 
+<article class="with-tools-sidebar m9a24">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Plymouth');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 24 - {{> m9a24Title}}</div>
+		</header>
+		<section id="m9a24">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a24Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m9a24Intro}}</h3>
+				{{> m9a24Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a24_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a24_1}}
+		{{>m9a24_2}}
+		{{>EndPage char="elle" act="m9a24" nextact="m9a25" place="Plymouth"}}
+	</div>
+</article>
+</template>
+<template name="m9a24_1"> 
+	<section id="m9a24_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+  			<h4 class="center">When you expect the answer <b>yes</b> your voice usually goes down.</h4>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="toolbuttleft"><div class="ph-w ph-4x5" style="width: 97px"><div class="ph"><img draggable="false" src="images/module9/a24/yes.png" alt="Person"></div></div></div>
+							  <div class="toolbuttright"><div class="caption" style="margin-top: 1.5em;"><div class="toolbuttleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a24/1.m4a"></button></div> <div class="toolbuttright">Great day today, isn't it? {{>arrow direction="down"}}</div></div></div>
+							  <p>&nbsp;</p>
+						</div>
+					</div>
+				</div>   
+  			<h4 class="center">When you expect the answer <b>no</b> your voice usually goes up.</h4>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-9 col-sm-offset-2 center">
+							<div class="toolbuttleft"><div class="ph-w ph-4x5" style="width: 97px"><div class="ph"><img draggable="false" src="images/module9/a24/no.png" alt="Person"></div></div></div>
+							  <div class="toolbuttright"><div class="caption" style="margin-top: 1.5em;"><div class="toolbuttleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a24/3.m4a"></button></div> <div class="toolbuttright">You're not going out like that are you? {{>arrow direction="up"}}</div></div></div>
+							  <p>&nbsp;</p>
+						</div>
+					</div>
+				</div>      			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a24" nexturl="#m9a24_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a24_2"> 
+	<section id="m9a24_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>InstructionsRecord text="Listen to the intonation in these sentences. Record your version and play it back. Try to match the native speaker."}}
+      			<div class="parapaper paraextract">
+				<ol class="olcircle">
+					<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a24/1.m4a"></button> <h5>Great day today, isn't it?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a24/2.m4a"></button> <h5>You didn’t tell him, did you?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a24/3.m4a"></button> <h5>You’re not going out like that, are you?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/3.m4a"></button> <h5>He’s never been to America, has he?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a24/5.m4a"></button> <h5>She’d go out with him if he asked her, wouldn’t she?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/5.m4a"></button> <h5>He can’t swim very well, can he?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a24/7.m4a"></button> <h5>It’s going to rain later, isn’t it?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/7.m4a"></button> <h5>They haven’t seen each other for years, have they?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/8.m4a"></button> <h5>We don’t want to be late, do we?</h5></li>
+	      			<li><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a23/9.m4a"></button> <h5>She doesn’t drive, does she?</h5></li>
+				</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a24_1" nexturl="#m9a24_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

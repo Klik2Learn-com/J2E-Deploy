@@ -1,0 +1,59 @@
+<template name="adminSubgroupCreator">
+        <article class="with-tools-sidebar">
+            {{>ToolsSidebar}}
+                <div class="main">
+                <header class="acttitle">
+                    {{>menu}}
+
+                    {{#if isAdmin}}
+                        {{> adminNav}}
+                    {{else}}
+                        <a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+                    {{/if}}
+                </header>
+                <section>
+                    
+                    
+
+                    {{#if isAdminModOrTutor}}
+                        <div class="content-user">
+                            <h1>Add Sub-group</h1>
+                            {{#if isAdminOrMod}}
+                            <p>Use this panel to create a New Sub-group of Students within a group. To be grouped, students must be from the same organisation and group.</p>
+                            <br>
+                            {{else}}
+                            <p>Use this panel to create a New Sub-group of Students within a group.</p>
+                            <br>
+                            {{/if}}
+                                <div class="form-group">
+                                <label for="groupselector">Group:</label>
+                                <select class="form-control" id="groupselector">
+                                        <option disabled selected value> -- select an option -- </option>
+                                    {{#each group}}
+                                        <option value="{{this.name}}">{{this.name}}</option>
+                                    {{/each}}
+                                </select>
+                                </div>
+                            {{#if groupIsSelected}}
+                                <br>
+                                <label for="subgroupname">Sub-group name:</label>
+                                <input id="subgroupname" type="text" class="form-control" placeholder="Enter new name...">
+                                
+                                <br>
+                                <div class="text-center">
+                                    <button class="button2 buttonsmall item-space" data-function="createsubgroup">Create Sub-group</button>
+                                </div>
+                            {{/if}}
+                        </div>
+                    {{/if}}
+
+                    {{#if isStudent}}
+                        Unauthorised access.
+                    {{/if}}
+        
+                </section>
+            </div>
+        </article>
+        
+        </template>
+        

@@ -1,0 +1,314 @@
+<template name="m2a20">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Stonehaven');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<!-- Change module, activity number and name here -->
+			<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 20 - {{>m2a20Title}}</div>
+		</header>
+		
+		<section id="m2a20">
+			<div class="content">
+				<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a20Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m2a20Intro}}</h3>
+{{> m2a20Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav nexturl="#m2a20_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m2a20_1}}
+		{{>m2a20_2}}
+		{{>m2a20_3}}
+		{{>m2a20_4}}
+		{{>m2a20_5}}
+		{{>m2a20_6}}
+		{{>m2a20_7}}
+		{{>m2a20_8}}
+		{{>m2a20_9}}
+		{{>m2a20_end}}		
+	</div>
+</article>
+
+</template>
+<template name="m2a20_1">
+	<section id="m2a20_1" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<div class="text-center">
+				<div class="caption capgreen item-space">without breaking the bank</div>
+				  <p>is an idiom meaning</p>
+				  <p><b><em>"cheaply/not costing a lot of money"</em></b></p>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20" nexturl="#m2a20_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_2">
+	<section id="m2a20_2" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			{{> dictionary_page word1="discount" word2="regulate" word3="insurance" word4="visibility" word5c="hidden" word6c="hidden" word7c="hidden" word8c="hidden" word9c="hidden" word10c="hidden" word11c="hidden" word12c="hidden"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_1" nexturl="#m2a20_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_3">
+	<section id="m2a20_3" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<h3 class="center">Click on any words in <span class="a-color">red</span> to find out more.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-xs-9">
+						<div class="parapaper">
+							{{>metametrics level="5" star="no" align="center"}}
+							<p>There are many ways to get from A to B - it depends on where you live.</p>
+							<p>In cities and towns there is usually a good local bus service or maybe even an underground.</p>
+							<p>London has the biggest ‘tube’ system and other cities have smaller undergrounds: Glasgow, Newcastle, Manchester and Liverpool.</p>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-3">
+						<figure class="image">
+							<div class="ph-w shadow ph-10x16" style="max-width: 221px"><div class="ph"><img draggable="false" src="images/module2/m2a20/uk_map.jpg" alt="Map of UK" class="shadow"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_2" nexturl="#m2a20_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_4">
+	<section id="m2a20_4" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<h3 class="center">Click on any words in <span class="a-color">red</span> to find out more.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper">
+							<figure class="image imgright-responsive">
+								<div class="ph-w shadow ph-10x16 h2-margin" style="width: 188px"><div class="ph"><img draggable="false" src="images/module2/m2a20/bus.jpg" alt="Bus"></div></div>
+							</figure>
+							{{>metametrics level="5" star="no" align="center"}}
+							<h2>Buses</h2>
+							<p>Several large companies like Citylink and National Coaches run buses to every town and city in Britain. </p>
+							<p>Generally, they tend to be cheaper than trains. If you’re a student, you can get a discount with a student card. Other companies, like First Bus, run local services.</p>
+							<p>If you make the same journey regularly, you could save money by getting a bus pass for a week, month or year. Don’t forget if you’re out in the evening to check the time of the last bus!</p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure class="image">
+							<div class="ph-w shadow ph-10x16" style="max-width: 221px"><div class="ph"><img draggable="false" src="images/module2/m2a20/uk_map.jpg" alt="Map of UK" class="shadow"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_3" nexturl="#m2a20_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_5">
+	<section id="m2a20_5" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<h3 class="center">Click on any words in <span class="a-color">red</span> to find out more.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper">
+							{{>metametrics level="5" star="no" align="center"}}
+							<h2>Trains</h2>
+							<p>Train companies like Scotrail, Virgin trains and East Coast railways offer a range of journeys and tickets all over the UK. You can always get a better price if you book in advance. If you’re aged between 16 and 25, you can pay £26 for a railcard and get one third off all fares.</p>
+							<figure class="image">
+								<div class="ph-w" style="max-width: 447px"><div class="ph" style="padding-top: 22.37%"><img draggable="false" src="images/module2/m2a20/train.jpeg" alt="Train"></div></div>
+							</figure>
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure class="image">
+							<div class="ph-w shadow ph-10x16 shadow" style="max-width: 221px"><div class="ph"><img draggable="false" src="images/module2/m2a20/uk_map.jpg" alt="Map of UK"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_4" nexturl="#m2a20_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_6">
+	<section id="m2a20_6" class="hidden">
+		{{> popovers}}
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<h3 class="center">Click on any words in <span class="a-color">red</span> to find out more.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper">
+							<figure class="image imgright-responsive">
+								<div class="ph-w shadow ph-10x16 h2-margin" style="width: 188px"><div class="ph"><img draggable="false" src="images/module2/m2a20/taxi.jpg" alt="Taxi"></div></div>
+							</figure>
+							{{>metametrics level="5" star="no" align="center"}}
+							<h2>Taxis</h2>
+							<p>There are two types of taxi companies in the UK – ‘black cabs/taxis’ and  ‘mini cabs.’  Black cabs are the ones you usually see outside railway stations. </p>
+							<p>If you see one with the yellow ‘For Hire’ sign, it’s empty and you can 
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="to signal or wave, indicating that someone should stop">flag it down</a>. Mini cabs are private cars available for hire. You need to book them in advance.</p>
+							<p>Both types of taxis are regulated but mini cabs are often cheaper. If you’re travelling a long way by taxi, it’s a good idea to ask the price before you travel.</p>
+						<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure class="image">
+								<div class="ph-w shadow ph-10x16 shadow" style="max-width: 221px"><div class="ph"><img draggable="false" src="images/module2/m2a20/uk_map.jpg" alt="Map of UK"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_5" nexturl="#m2a20_7" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_7">
+	<section id="m2a20_7" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<h3 class="center">Click on any words in <span class="a-color">red</span> to find out more.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper">
+							{{>metametrics level="5" star="no" align="center"}}
+							<h2>Flights</h2>
+							<p>If you’re looking for a good price for a plane journey, there’s lots of information on the internet. Don’t forget that many of the cheaper companies, like Easy Jet and Ryan Air will charge you extra for things like luggage, insurance and paying by credit card on top of the price of the ticket.</p>
+							<figure class="image imgrights">
+								<div class="ph-w" style="max-width: 380px"><div class="ph" style="padding-top: 39.47%"><img draggable="false" src="images/module2/m2a20/flight.jpeg" alt="Plane"></div></div>
+							</figure>
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure class="image">
+							<div class="ph-w shadow ph-10x16 shadow" style="width: 188px"><div class="ph"><img draggable="false" src="images/module2/m2a20/uk_map.jpg" alt="Map of UK"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_6" nexturl="#m2a20_8" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_8">
+	<section id="m2a20_8" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<h3 class="center">Click on any words in <span class="a-color">red</span> to find out more.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="parapaper">
+							<figure class="image imgright-responsive">
+								<div class="ph-w shadow ph-10x16 h2-margin" style="width: 188px"><div class="ph"><img draggable="false" src="images/module2/m2a20/bike.jpg" alt="Bike"></div></div>
+							</figure>
+							{{>metametrics level="5" star="no" align="center"}}
+							<h2>Bikes</h2>
+							<p>More people are using bikes to get around than before. Some cities have cycle lanes and it can be one of the fastest ways to get around town.  You’re safer with a helmet and high visibility clothing. Don’t forget a strong lock or chain. Bicycles are very easy to steal.</p>
+							<p>Finally, the cheapest form of transport of all is walking and your health will benefit too! </p>
+						<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<figure class="image">
+							<div class="ph-w shadow ph-10x16 shadow" style="max-width: 221px"><div class="ph"><img draggable="false" src="images/module2/m2a20/uk_map.jpg" alt="Map of UK"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_7" nexturl="#m2a20_9" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_9">
+	<section id="m2a20_9" class="hidden">
+		<div class="content">
+			<h1>Getting round the UK without breaking the bank</h1>
+			<h3 class="text-center">You can now listen to the articles.</h3>
+			<div class="center">
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="audio/module2/a20/audio.m4a"></button>
+			</div>
+			<br>
+			<div class="container-fluid" style="max-width: 600px;">
+				<div class="row">
+					<div class="col-xs-4 text-left">
+						<div class="ph-w shadow ph-10x16 shadow item-space" style="max-width: 188px"><div class="ph"><img draggable="false" src="images/module2/m2a20/bus.jpg" alt="Bus"></div></div>
+					</div>
+					<div class="col-xs-4 text-center">
+						<div class="ph-w shadow ph-10x16 shadow item-space" style="max-width: 188px"><div class="ph"><img draggable="false" src="images/module2/m2a20/taxi.jpg" alt="Taxi"></div></div>
+					</div>
+					<div class="col-xs-4 text-right">
+						<div class="ph-w shadow ph-10x16 shadow item-space" style="max-width: 188px"><div class="ph"><img draggable="false" src="images/module2/m2a20/bike.jpg" alt="Bike"></div></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-8 text-left">
+						<div class="ph-w shadow item-space" style="max-width: 447px"><div class="ph" style="padding-top: 22.37%"><img draggable="false" src="images/module2/m2a20/train.jpeg" alt="Train"></div></div>
+					</div>
+					<div class="col-xs-4 text-right">
+						<div class="ph-w shadow item-space" style="max-width: 380px"><div class="ph" style="padding-top: 39.47%"><img draggable="false" src="images/module2/m2a20/flight.jpeg" alt="Plane"></div></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a20_8" nexturl="#m2a20_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a20_end">
+{{>EndPage char="tu" act="m2a20" nextact="m2a21" place="Stonehaven"}}
+</template>

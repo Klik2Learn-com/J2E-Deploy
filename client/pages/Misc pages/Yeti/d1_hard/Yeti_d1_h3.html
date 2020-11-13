@@ -1,0 +1,24 @@
+<template name="Yeti_d1_h3">
+	<section id="Yeti_d1_h3" class="hidden">
+		{{#if activeSection}}
+		<div class="journalfbg">
+			<div class="content">
+				<div class="gameInfo text-center">
+				  One of these sentences is right and the rest are wrong. {{>touch yes="Tap" no="Click"}} the right one.
+				</div>
+				<div class="yetiSelect">
+					<ol>
+						<li id="answer1" class="pointer"><span id="qu1">The leader of our expedition is coming from America.</span><span id="incorrect1" class="incorrect hidden"><i class="fa fa-close"></i></span><span id="correct1" class="correct hidden"><i class="fa fa-check"></i></span></li>
+						<li id="answer2" class="pointer"><span id="qu2">Our expedition leader is America.</span><span id="incorrect2" class="incorrect hidden"><i class="fa fa-close"></i></span><span id="correct2" class="correct hidden"><i class="fa fa-check"></i></span></li>
+						<li id="answer3" class="pointer"><span id="qu3">The leader of our expedition comes from America.</span><span id="incorrect3" class="incorrect hidden"><i class="fa fa-close"></i></span><span id="correct3" class="correct hidden"><i class="fa fa-check"></i></span></li>
+					</ol>
+				</div>
+				
+			</div>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+	
+	

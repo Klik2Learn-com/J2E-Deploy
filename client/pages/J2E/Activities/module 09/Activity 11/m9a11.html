@@ -1,0 +1,421 @@
+<template name="m9a11"> 
+<article class="with-tools-sidebar m9a11 para-select">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Exeter');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 11 - {{>m9a11Title}}</div>
+		</header>
+		<section id="m9a11">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a11Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a11Intro}}</h3>
+				{{> m9a11Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a11_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a11_1}}
+		{{>m9a11_2}}
+		{{>m9a11_3}}
+		{{>m9a11_4}}
+		{{>m9a11_5}}
+		{{>m9a11_6}}
+		{{>m9a11_7}}
+		{{>m9a11_8}}
+		{{>m9a11_9}}
+		{{>EndPage char="tu" act="m9a11" nextact="m9a12" place="Exeter"}}
+	</div>
+</article>
+</template>
+<template name="m9a11_9"> 
+	<section id="m9a11_9" class="hidden"> 
+		<div class="content">  
+      			<h1>Notebook Answers</h1>		
+				<div class="parapaper fold notebook-answers">
+					<ol class="olcircle">
+						<li>
+							<p><b>Describe what happened when Gill went for the Amazon interview.</b></p>
+							<p>She filled in a form, was tested for drugs and alcohol and they made sure she could read.</p>
+						</li>
+						<li>
+							<p><b>Describe a typical day for Susan and Pete. Explain:</b></p>
+							<ul>
+							<li><b>- what time they start</b><br>
+							     They start at 5am.</li>
+						     <li><b>- how long they work</b><br>
+							     They work for 10 and a half hours.</li>
+						     <li><b>- when they get home</b><br>
+							     They get home at 9pm.</li>
+							</ul>
+						</li>
+						<li>
+							<p><b>What item surprises you most from the list?</b></p>
+							<p>One Direction charm bracelet/a cat scratching post, a banana slicer.</p>
+						</li>
+						<li>
+							<p><b>What are Amazon’s plans in Britain?</b></p>
+							<p>It plans to double the number of warehouses in Britain.</p>
+						</li>
+						<li>
+							<p><b>Explain three disadvantages of working for Amazon.</b></p>
+							<p>It pays the minimum wage, it makes workers work long hours and they get fired if they have 3 sick breaks in three months.</p>
+						</li>
+						<li>
+							<p><b>Why is Amazon not popular with MPs?</b></p>
+							<p>It pays minimal tax.</p>
+						</li>
+						<li>
+							<p><b>Why is Amazon so successful?</b></p>
+							<p>It is very good at what it does.</p>
+						</li>
+						<li>
+							<p><b>What kind of work might thousands of people do in the future?</b></p>
+							<p>They might work in large centres like Amazon.</p>
+						</li>
+					</ol>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_8" nexturl="#m9a11_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a11_8"> 
+	<section id="m9a11_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">8</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>What kind of work might thousands of people do in the future?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 9					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					<div class="col-xs-12">
+						<h3 class="center">Continue when you’re ready to see the answers.</h3>
+					</div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_7" nexturl="#m9a11_9" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a11_3"> 
+	<section id="m9a11_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">3</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>What item surprises you most from the list?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 4				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_2" nexturl="#m9a11_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a11_1"> 
+	<section id="m9a11_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">1</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>Describe what happened when Gill went for the Amazon interview.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 2				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11" nexturl="#m9a11_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m9a11paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+	{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+	<br>
+	<div class="container-fluid">
+		{{> blankrow}}
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div id="m9a11textDisplay" class="parapaper fold">
+					<p><b>1.</b> It’s the world's biggest online business. But how does it treat its employees? What’s it really like to work at Amazon? Here’s a first hand account from Gill Brown who used to work for Amazon.</p>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 text-right">
+				<span class="paragraph-label">Select a paragraph:</span>
+				<a><div id="0" class="numbutt">1</div></a>
+				<a><div id="1" class="numbutt">2</div></a>
+				<a><div id="2" class="numbutt">3</div></a>
+				<a><div id="3" class="numbutt">4</div></a>
+				<a><div id="4" class="numbutt">5</div></a>
+				<a><div id="5" class="numbutt">6</div></a>
+				<a><div id="6" class="numbutt">7</div></a>
+				<a><div id="7" class="numbutt">8</div></a>
+				<a><div id="8" class="numbutt">9</div></a>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+</div>
+</template>
+
+<template name="m9a11_2"> 
+	<section id="m9a11_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">2</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>Describe a typical day for Susan and Pete. Explain:
+								<ul>
+									<li>what time they start</li>
+									<li>how long they work</li>
+									<li>when they get home</li>
+								</ul>
+							</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 2				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_1" nexturl="#m9a11_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a11_5"> 
+	<section id="m9a11_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">5</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>Explain three disadvantages of working for Amazon.</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 7				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_4" nexturl="#m9a11_6" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a11_7"> 
+	<section id="m9a11_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">7</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>Why is Amazon so successful?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 8				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_6" nexturl="#m9a11_8" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a11_6"> 
+	<section id="m9a11_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">6</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>Why is Amazon not popular with MPs?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 7				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_5" nexturl="#m9a11_7" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a11_4"> 
+	<section id="m9a11_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m9a11paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m9a11Q" class="number pull-right">4</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m9a11Quest" class="caption">
+							<p>What are Amazon’s plans in Britain?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m9a11P" class="captionsmall capgreen">
+							Paragraph 6				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a11_3" nexturl="#m9a11_5" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

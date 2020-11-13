@@ -1,0 +1,135 @@
+<template name="m1a4"> 
+<article class="with-tools-sidebar m1a4">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Inverness');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 1</div> <div class='acttitle-title'>{{> activity}} 4 - {{> m1a4Title}}</div>
+		</header>
+		<section id="m1a4">
+			<div class="content">
+				<h1 class="start-page-header">{{>m1a4Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m1a4Intro}}</h3>
+				{{> m1a4Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m1a4_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m1a4_1}}
+		{{>m1a4_2}}
+		{{>EndPage char="k" act="m1a4" nextact="m1a5" place="Inverness"}}
+	</div>
+</article>
+</template>
+<template name="m1a4_1"> 
+	<section id="m1a4_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h3 class="center">{{>touch yes="Tap" no="Click"}} on the number when you hear it.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">twenty two</span></div> </div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">three</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">one</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">nine</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">fourteen</span></div></div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto6 animated flipInX" id="lottoc5"><div><span class="contents">sixteen</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc6"><div><span class="contents">seven</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc7"><div><span class="contents">eight</span></div></div>
+					</div> 
+					 <div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto7 animated flipInX" id="lottoc8"><div><span class="contents">thirty</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc9"><div><span class="contents">eighty six</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc10"><div><span class="contents">twenty nine</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc11"><div><span class="contents">two</span></div></div> 
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-7 audio text-center">
+							<button id="m1a4AudioBtn" class="buttonround buttonaudio" data-audiosrc="/audio/module1/a4/29.m4a"></button>
+							<b class="avoidwrap">{{>touch yes="Tap" no="Click"}} to hear the audio</b>
+						</div>
+						<div class="col-sm-5 text-center">
+							{{>scorebox1 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m1a4" nexturl="#m1a4_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m1a4_2"> 
+	<section id="m1a4_bad" class="hidden">
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m1a4_1" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a4_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m1a4_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m1a4RightScore" wrongSession="m1a4WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a4_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+ </template>

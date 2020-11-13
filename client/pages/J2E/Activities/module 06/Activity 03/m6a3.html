@@ -1,0 +1,373 @@
+<template name="m6a3">
+<article class="with-tools-sidebar m6a3">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Newcastle');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 3 - {{>m6a3Title}}</div>
+		</header>
+		
+		<section id="m6a3">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a3Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m6a3Intro}}</h3>
+				{{> m6a3Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a3_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m6a3_1}}
+		{{>m6a3_2}}
+		{{>m6a3_3}}
+		{{>m6a3_4}}
+		{{>m6a3_5}}
+		{{>m6a3_6}}
+		{{>m6a3_7}}
+		{{>EndPage char="elle" act="m6a3" nextact="m6a4" place="Newcastle"}}
+
+		
+	</div>
+</article>
+
+	{{>importantpeople_modal}}
+</template>
+
+<template name="importantpeople_modal">
+{{> popovers}}
+	<div class="modal fade" tabindex="-1" id="importantpeople_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="importantpeople_modal">Who are the most important people in Britain?</h4>
+				</div>
+				
+				<div class="content">
+
+<div class="parapaper clearfix article-text">
+	
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Elizabeth.jpg" alt="The Queen"></div></div>
+		<figcaption>The Queen</figcaption>
+	</figure>
+	<div class="article-header">
+		<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a1/Queen_Royal_Family.m4a"></button>
+	</div>
+	
+	<p>Children still believe the Royal Family are the most important people in Britain. The Queen comes top with British youngsters.</p>
+
+	<p class="clearfix">Six hundred and fifty British school children were asked questions by child experts. Some people think that school children are influenced by celebrities but children still think politicians and Royals <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="scoring more highly">outrank</a> pop stars and sports personalities.</p>	
+
+
+
+	<br>
+	<figure class="image imgleft-responsive">
+		<div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/David Cameron.jpg" alt="Description"></div></div>
+		<figcaption>David Cameron</figcaption>
+	</figure>
+	<div class="article-header">
+		<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a1/David_Cameron.m4a"></button>
+	</div>
+	
+	<p class="clearfix">David Cameron, Britain's Prime Minister from 2010 to 2016, and the Duke of Cambridge are more important than David Beckham according to the children. Even some of the most popular TV personalities didn't score very highly.  TV shows like The X Factor and Britain's Got Talent, have millions of viewers. Children as young as eleven take part in these shows but that didn't seem to influence children's opinions <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="not very much">unduly</a>.</p>
+
+
+
+	<br>
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Ant And Dec.jpg" alt="Ant and Dec"></div></div>
+		<figcaption>Ant and Dec</figcaption>
+	</figure>
+	<div class="article-header">
+		<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a1/Ant_Dec.m4a"></button>
+	</div>
+	
+	<p>Well known TV presenters Ant and Dec were important to only 21 percent of children. Teenage <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="adored by female fans">heartthrob</a> Harry Styles from the boy band One Direction received just 13 per cent of the votes. Even the Harry Potter star Daniel Radcliffe seems to have lost his magic.</p>
+
+	<p class="clearfix">The most surprising result was the popularity of the Mayor of London - Boris Johnson. He scored more highly than the superstar footballer David Beckham.</p>
+
+
+	
+
+	<br>
+	<figure class="image imgleft-responsive">
+		<div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Duke Of Cambridge.jpg" alt="Duke Of Cambridge"></div></div>
+		<figcaption>Duke Of Cambridge</figcaption>
+	</figure>
+	<div class="article-header">
+		<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a1/Children_Are_Not_Frivolous.m4a"></button>
+	</div>
+	
+	<p class="clearfix">Children aren't as <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="superficial, making fun of things">frivolous</a> as adults think. It's good news for the Royals in jubilee year. The Queen comes top and the Duke and Duchess of Cambridge are in second and third place.</p>
+
+
+	
+	<br>
+	<figure class="image imgright-responsive">
+		<div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Prince Charles.jpg" alt="Prince Charles"></div></div>
+		<figcaption>The Prince of Wales</figcaption>
+	</figure>
+	<div class="article-header">
+		<button class="buttonround buttonaudio" data-audiosrc="/audio/module6/a1/Royals_Cant_Rest.m4a"></button>
+	</div>
+	
+	<p class="clearfix">The Royal family can't <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="being satisfied with things as they are - not trying to improve">rest on their laurels</a> however. The next king - Prince Charles, <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="being late or behind everyone else">lagged</a> behind Prince William and the Prime Minister.</p>
+
+</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m6a3_1">
+	<section id="m6a3_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="numberBig">1</div>
+		</div>
+		<div class="col-sm-11">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on a word which means 'scoring more highly.'</h3>
+		</div>
+	</div>
+</div>
+			
+
+			<div class="parapaper clearfix paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Elizabeth.jpg" alt="The Queen"></div></div></figure><p>
+						<span class="wrong">Children still believe the Royal Family are the most important people in Britain. The Queen comes top with British youngsters.
+
+						Six hundred and fifty British school children were asked questions by child experts. Some people think that school children are influenced by celebrities but children still think politicians and Royals </span><span class="paraclick-word">outrank</span><span class="wrong"> pop stars and sports personalities.</span>
+</p>
+			</div>
+			<div class="counterleft">Words left to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a3_2" nexturl="#m6a3_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a3_2">
+	<section id="m6a3_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="numberBig">2</div>
+		</div>
+		<div class="col-sm-11">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on a word which means 'not very much.'</h3>
+		</div>
+	</div>
+</div>
+			
+
+			<div class="parapaper clearfix paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/David Cameron.jpg" alt="David Cameron"></div></div></figure><p>
+						<span class="wrong">David Cameron, Britain's Prime Minister since 2010, and the Duke of Cambridge are more important than David Beckham according to the children. Even some of the most popular TV personalities didn't score very highly.  TV shows like The X Factor and Britain's Got Talent, have millions of viewers. Children as young as eleven take part in these shows but that didn't seem to influence children's opinions </span><span class="paraclick-word">unduly</span>.
+</p>
+			</div>
+			<div class="counterleft">Words left to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a3_2" nexturl="#m6a3_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a3_3">
+	<section id="m6a3_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="numberBig">3</div>
+		</div>
+		<div class="col-sm-11">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on a word which means 'adored by female fans.'</h3>
+		</div>
+	</div>
+</div>
+			
+
+			<div class="parapaper clearfix paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Ant And Dec.jpg" alt="Ant and Dec"></div></div></figure><p>
+						<span class="wrong">Well known TV presenters Ant and Dec were important to only 21 percent of children. Teenage </span><span class="paraclick-word">heartthrob</span><span class="wrong"> Harry Styles from the boy band One Direction received just 13 per cent of the votes. Even the Harry Potter star Daniel Radcliffe seems to have lost his magic. The most surprising result was the popularity of the Mayor of London - Boris Johnson. He scored more highly than the superstar footballer David Beckham.</span>
+</p>
+			</div>
+			<div class="counterleft">Words left to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a3_3" nexturl="#m6a3_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a3_4">
+	<section id="m6a3_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="numberBig">4</div>
+		</div>
+		<div class="col-sm-11">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on a word which means 'superficial, making fun of things.'</h3>
+		</div>
+	</div>
+</div>
+			
+
+			<div class="parapaper clearfix paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Duke Of Cambridge.jpg" alt="Duke of Cambridge"></div></div></figure><p>
+						<span class="wrong">Children aren't as </span><span class="paraclick-word">frivolous</span><span class="wrong"> as adults think. It's good news for the royal family. The Queen comes top and the Duke and Duchess of Cambridge are in second and third place.</span>.
+</p>
+			</div>
+			<div class="counterleft">Words left to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a3_4" nexturl="#m6a3_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a3_5">
+	<section id="m6a3_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="numberBig">5a</div>
+		</div>
+		<div class="col-sm-11">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on a phrase which means 'being satisfied with thing as they are - not trying to improve' (4 words).</h3>
+		</div>
+	</div>
+</div>
+			
+
+			<div class="parapaper clearfix paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Prince Charles.jpg" alt="Prince Charles"></div></div></figure><p>
+						<span class="wrong">The Royal family can't </span><span class="paraclick-word">rest on their laurels</span> <span class="wrong">however. The next king - Prince Charles, lagged behind Prince William and the Prime Minister.</span>
+</p>
+			</div>
+			<div class="counterleft">Phrases left to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a3_5" nexturl="#m6a3_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a3_6">
+	<section id="m6a3_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="numberBig">5b</div>
+		</div>
+		<div class="col-sm-11">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on a word which means 'being late or behind everyone else.'</h3>
+		</div>
+	</div>
+</div>
+			
+
+			<div class="parapaper clearfix paraclick">
+				<figure class="image imgright-responsive"><div class="ph-w ph-2x3 shadow" style="width: 100px"><div class="ph"><img draggable="false" src="images/module6/a1/Prince Charles.jpg" alt="Prince Charles"></div></div></figure><p>
+						<span class="wrong">The Royal family can't rest on their laurels however. The next king - Prince Charles, </span><span class="paraclick-word">lagged</span><span class="wrong"> behind Prince William and the Prime Minister.</span>
+</p>
+			</div>
+			<div class="counterleft">Words left to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a3_6" nexturl="#m6a3_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a3_7">
+	<section id="m6a3_7" class="hidden">
+			{{#if activeSection}}
+<div class="content">
+	<h3 class="center">Now write the words you learned in the box. {{>touch yes="Tap" no="Click"}} to see the article if you get stuck.</h3>
+		<div class="parapaper clearfix linespace para-ol-space fold">
+		{{> rightwrong}} {{> welldone}}
+			<ol class="olcircle">
+				<li>'Score more highly' (1 word) <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="12" autocomplete="off"><input type="submit" value="OK"></form></span></li>
+				<li>'Not very much' (1 word) <span id="entryanswer1" class="textentry-disabled"></span>.</li>
+				<li>'Adored by female fans' (1 word) <span id="entryanswer2" class="textentry-disabled"></span></li>
+				<li>'Superficial, making fun of things' (1 word) <span id="entryanswer3" class="textentry-disabled"></span></li>
+				<li>'Satisfied with things as they are - not trying to improve' (4 words) <span id="entryanswer4" class="textentry-disabled"></span></li>				
+				<li>'Late, slow or behind everyone else' (1 word) <span id="entryanswer5" class="textentry-disabled"></span></li>
+			</ol>
+		</div>
+
+			<div class="center">
+			<button data-toggle="modal" data-target="#importantpeople_modal" class="button2">See Article</button>
+			</div>
+
+</div>
+	<footer>
+		
+	</footer>
+	{{> stuck stuckchar="elle"}}
+{{/if}}
+</section>
+</template>

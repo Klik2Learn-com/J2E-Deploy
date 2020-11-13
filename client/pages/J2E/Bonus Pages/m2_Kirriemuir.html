@@ -1,0 +1,143 @@
+<template name="MoreAboutKirriemuir">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Kirriemuir"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m2l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m2l4}}</div>
+		</header>
+
+		<section id="moreaboutKirriemuir">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 bonus-image" style="background-image: url('images/bonus/Kirriemuir/Kirriemuir1.jpg'); background-position: center bottom;" data-toggle="modal" data-target="#bonus_modal_m2l4_A">
+						<p>Bon Scott</p>
+					</div>
+					<div class="col-sm-2 col-xs-4 bonus-image" style="background-image: url('images/bonus/Kirriemuir/Kirriemuir2.jpg'); background-position: right;" data-toggle="modal" data-target="#bonus_modal_m2l4_B">
+						<p>Gingerbread</p>
+					</div>
+					<div class="col-sm-2 col-xs-3 bonus-image" style="background-image: url('images/bonus/Kirriemuir/Kirriemuir3.jpg'); background-position: right top;" data-toggle="modal" data-target="#bonus_modal_m2l4_C">
+						<p>Red Squirrels</p>
+					</div>
+					<div class="col-sm-2 col-xs-4 bonus-image" style="background-image: url('images/bonus/Kirriemuir/Kirriemuir4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l4_D">
+						<p>J.M. Barrie</p>
+					</div>
+					<div class="col-sm-3 col-xs-8 bonus-image" style="background-image: url('images/bonus/Kirriemuir/Kirriemuir6.jpg'); background-position: left;" data-toggle="modal" data-target="#bonus_modal_m2l4_F">
+						<p>Wild Haggis</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l4_A">Bon Scott</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Kirriemuir/Kirriemuir1.jpg" alt="AC/DC" style="max-width: 250px;">
+					</figure>
+					<p>Kirriemuir is noted for being the birthplace of musician Bon Scott, who was the singer for the rock band AC/DC until his death in 1980. Every year Kirriemuir hosts <i>Bonfest</i>, a music festival in celebration of Scott.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.heraldscotland.com/news/13165269.Rock_off__Kirriemuir_residents_reject_a_statue_of_AC_DC_s_Bon_Scott_in_town_square/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l4_B">Gingerbread</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Kirriemuir/Kirriemuir2.jpg" alt="Gingerbread" style="max-width: 250px;">
+					</figure>
+					<p>Kirriemuir is known for its famous gingerbread, originally created by a baker called Walter Burnett.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/food/recipes/gingerbread_cake_with_69829">{{>touch yes="Tap" no="Click"}} here for a gingerbread cake recipe</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l4_C">Red Squirrels</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Kirriemuir/Kirriemuir3.jpg" alt="Red squirrel" style="max-width: 250px;">
+					</figure>
+					<p>Red squirrels can be found in the woods and countryside of Kirriemuir. The red squirrel population has been decreasing in the UK, partly due to the introduction of North American grey squirrels in the 19th century.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://scottishsquirrels.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l4_D">J.M. Barrie</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Kirriemuir/Kirriemuir4.jpg" alt="Portrait of J.M. Barrie" style="max-width: 250px;">
+					</figure>
+					<p>Sir James Matthew Barrie (9 May 1860 – 19 June 1937) was a Scottish novelist and playwright, best remembered today as the creator of Peter Pan. He was born and educated in Scotland but moved to London, where he wrote a number of successful novels and plays. When he died he was buried in Kirriemuir next to his parents.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.biography.com/people/jm-barrie-9200058" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l4_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l4_F">Wild Haggis</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Kirriemuir/Kirriemuir6.jpg" alt="Deer" style="max-width: 250px;">
+					</figure>
+					<p>While haggis is a type of food made from sheep, there are amusing stories of "the wild haggis", a fictional animal said to roam the Scottish countryside and is hunted for food and to make bagpipes.</p>
+					<p>It's a common practical joke in Scotland to convince visitors to the country that the haggis is a real animal.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://hubpages.com/education/The-mysterious-life-of-the-wild-haggis" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

@@ -1,0 +1,171 @@
+<template name="MoreAboutOxford">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Oxford"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m8l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m8l1}}</div>
+		</header>
+
+		<section id="moreaboutOxford">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Oxford/Oxford1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l1_A">
+						<p>Blenheim Palace</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Oxford/Oxford2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l1_B">
+						<p>Harry Potter Tour of Oxford</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Oxford/Oxford3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l1_C">
+						<p>Oxford University</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Oxford/Oxford4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l1_D">
+						<p>Museum of Natural History</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Oxford/Oxford5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l1_E">
+						<p>May Morning</p>
+					</div>				
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Oxford/Oxford6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l1_F">
+						<p>Cherwell Boathouse</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l1_A">Blenheim Palace</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Oxford/Oxford1.jpg" alt="Blenheim Palace" style="max-width: 250px;">
+					</figure>
+					<p>Blenheim Palace was built in the 18th century and is one of England’s largest houses. It is privately owned by the Churchill family and was the birthplace of the British Prime Minister, Sir Winston Churchill. The palace, park and gardens have many attractions and are open to the public. It has also been used as a film location for Shakespeare productions and James Bond films.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.blenheimpalace.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l1_B">Harry Potter Tour of Oxford</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Oxford/Oxford2.jpg" alt="Harry Potter Tour of Oxford" style="max-width: 250px;">
+					</figure>
+					<p>Many of the scenes in the famous Harry Potter films were filmed in Oxford and you can take a special tour to see them for yourself. They include the medieval dining hall of New College, the cloisters, the gardens and the library where the hospital and dance scenes were filmed. Harry Potter fans can find out how much they know by taking a fun quiz.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.footprints-tours.com/oxford-walking-tours/tours/harry-potter-tour-of-oxford/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l1_C">Oxford University</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Oxford/Oxford3.jpg" alt="Oxford University" style="max-width: 250px;">
+					</figure>
+					<p>Oxford is one of the leading universities in the world and has over 30 colleges, each with their own traditions. They select the brightest and best students from all over the world. Oxford has produced 27 British Prime Ministers, over 30 world leaders, 50 Nobel prize winners and 120 Olympic medal winners.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.ox.ac.uk/about" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l1_D">Museum of Natural History</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Oxford/Oxford4.jpg" alt="Museum of Natural History" style="max-width: 250px;">
+					</figure>
+					<p>The museum is known simply as Oxford University museum and has been a centre for scientific study at the University since 1860. It has large collections of plants and animals and for many years scientists have been studying a flock of birds who nest in the tower. Some famous things to see include complete dinosaur skeletons and the Oxford dodo - now an extinct bird.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.oum.ox.ac.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l1_E">May Morning</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Oxford/Oxford5.jpg" alt="May Morning" style="max-width: 250px;">
+					</figure>
+					<p>The 1st of May is a day for traditional celebration in England to mark the arrival of spring. In Oxford , the day begins at 6am with the choir of Magdalen College singing from the Great Tower. People in the town celebrate by singing and dancing and the restaurants are open for a special breakfast.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.oxfordmaymorning.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l1_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l1_F">Cherwell Boathouse</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Oxford/Oxford6.jpg" alt="Cherwell Boathouse" style="max-width: 250px;">
+					</figure>
+					<p>One of the most enjoyable things to do as a visitor to Oxford or Cambridge is to hire a punt and go for a trip on the river. Punting has been very popular since Victorian times. If you don’t feel confident to try punting yourself, you can take a guided tour. Cherwell Boathouse is the largest boat yard in Oxford and has over 80 punts for hire.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.cherwellboathouse.co.uk/index.php" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

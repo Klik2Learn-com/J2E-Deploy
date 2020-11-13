@@ -1,0 +1,186 @@
+<template name="m10a27"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/London');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 27 - {{> m10a27Title}}</div>
+		</header>
+		<section id="m10a27">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a27Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a27Intro}}</h3>
+				{{> m10a27Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a27_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a27_1}}
+		{{>m10a27_2}}
+		{{>EndPage char="elle" act="m10a27" nextact="m10a28" place="London"}}
+	</div>
+</article>
+	{{>m10_wsmodal}}
+	{{>m10_mtmodal}}
+</template>
+<template name="m10a27_1"> 
+	<section id="m10a27_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m10_shakespeare.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>William Shakespeare</h2>
+											(1564 - 1610)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m10_wsmodal">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m10_ws.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“The course of true love never did run smooth.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m10_wsvid" src="https://www.youtube.com/embed/pw-J7GbwNV4?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a27" nexturl="#m10a27_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m10_wsmodal">
+<div class="modal fade" id="m10_wsmodal" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">William Shakespeare</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m10_shakespeare.jpg" alt="Photo" style="max-width:250px;"></figure>
+					Shakespeare is regarded by many people as the greatest playwright ever to have lived. As well as writing 38 plays, he was an actor himself and wrote poems too. Even today we are still using many of the new words and phrases he <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="to make up a new word or phrase">coined</a>. He was born in Stratford on Avon in 1564 but moved to London where he joined a group of actors. He became successful soon after his first plays were published and his acting company bought two theatres in London. The most famous one – The Globe - was restored during the 70s and opened by the Queen in 1997.  Today, you can see Shakespeare plays performed just as they were in the 17th century. He spent the final years of his life in Stratford and is buried in a church there.
+				</div>
+				{{>popovers}}
+				
+				<div class="modal-footer">
+          			<button type="button" data-dismiss="modal">Close</button>
+          		</div>
+			</div>
+		</div>
+	</div>
+ </template>
+
+<template name="m10a27_2"> 
+	<section id="m10a27_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">	
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m10_thatcher.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Margaret Thatcher</h2>
+											(1928 - 2013)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m10_mtmodal">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m10_mt.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“In politics, if you want anything said ask a man, if you want anything done, ask a woman.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-4by3">
+									<video class="embed-responsive-item" id="thatcherVideo" controls poster="/video/quotes/thatcher.jpg">
+										<source src="/video/quotes/thatcher.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a27_1" nexturl="#m10a27_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m10_mtmodal">
+<div class="modal fade" id="m10_mtmodal" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Margaret Thatcher</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m10_thatcher.jpg" alt="Photo" style="max-width:250px;"></figure>
+					Margaret Thatcher became the leader of the Conservative party in 1975 and four years later was elected Britain’s first female Prime Minister.  When she moved to 10 Downing Street, Britain’s economy was in recession, inflation was very high and many people were unemployed. She wanted to reduce the power of the state and the trade unions. She was called ‘The Iron Lady’ by the Russians and led Britain to war over the Falkland Islands in 1982. She narrowly escaped death herself two years later when the Irish Republican Army bombed the hotel in Brighton where she was staying. Towards the end of her career she became unpopular after a series of very controversial policies. She died in 2013 not long after a film called ‘The Iron Lady’ was made about her life.
+				</div>
+				{{>popover}}
+				
+				<div class="modal-footer">
+          			<button type="button" data-dismiss="modal">Close</button>
+          		</div>
+			</div>
+		</div>
+	</div>
+ </template>

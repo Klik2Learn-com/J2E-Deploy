@@ -1,0 +1,238 @@
+<template name="m5a14">
+	<article class="with-tools-sidebar m5a14">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Manchester');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 14 - {{>m5a14Title}}</div>
+			</header>
+
+
+			<section id="m5a14">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a14Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m5a14Intro}}</h3>
+					{{> m5a14Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a14_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a14_1}} {{>m5a14_2}} {{>m5a14_3}} {{>m5a14_4}} {{>m5a14_5}} {{>m5a14_6}} {{>EndPage char="elle" act="m5a14" nextact="m5a15"
+			place="Manchester"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a14_1">
+	<section id="m5a14_1" class="hidden">
+		<div class="content">
+			<div class="ph-w ph-16x9 border2" style="max-width: 616px">
+				<div class="ph">
+					<img draggable="false" src="images/module5/newspaper-doomed.png" alt="Newspapers are doomed">
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a14" nexturl="#m5a14_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a14_2">
+	<section id="m5a14_2" class="hidden">
+		<div class="content">
+			{{> dictionary_page word1="terminal" word2="decline" word3="articulate" word4c="hidden" word5c="hidden" word6c="hidden" word7="distribution"
+			word8="predict" word9c="hidden" word10c="hidden" word11c="hidden" word12c="hidden" }}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a14_1" nexturl="#m5a14_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a14_3">
+	<section id="m5a14_3" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Read this article.</h3>
+
+			{{> Paperdecline_article}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a14_2" nexturl="#m5a14_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="Paperdecline_article">
+	<div class="parapaper paraextract article-text">
+		{{>metametrics level="3" star="no" align="center"}}
+
+		<figure class="image imgright-responsive">
+			<div class="ph-w ph-16x9 shadow" style="width: 230px">
+				<div class="ph">
+					<img draggable="false" src="images/module5/newspaper-doomed.png" alt="Newspapers are doomed">
+				</div>
+			</div>
+		</figure>
+
+		<p>Unfortunately, the circulation of Britain’s national newspapers is in terminal decline. This has been quite obvious for
+			a while. You only have to speak to the millions of well-informed, articulate people under 30 years old to know why. The
+			dailies are down almost 8 per cent, year on year and the Sundays by as much as 11 per cent.</p>
+
+		<p>What issues do newspaper publishers face? Take distribution, for example. Delivering newsprint successfully all round the
+			country is costly. However, it’s hard to predict what fuel prices will be from year to year. Papers like
+			<i>The Guardian</i> are already losing millions every year.</p>
+
+		<p>There will soon come a time when the costs are simply too great. There is one basic question - when will newspaper publishers
+			eventually stop trying to sell papers?</p>
+
+		<p>The answer to that question is: sooner than you think. </p>
+
+		<!-- fixes image floats -->
+		<div class="parent_expander"></div>
+	</div>
+</template>
+
+<template name="m5a14_4">
+	<section id="m5a14_4" class="hidden">
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the adverbs into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target1">&nbsp;</div> the circulation of Britain’s national newspapers is in terminal decline. This has been
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target2">&nbsp;</div> obvious for a while. You only have to speak to the millions of well-informed, articulate people under
+						30 years old to know why. The dailies are down
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target3">&nbsp;</div> 8 per cent, year on year and the Sundays by
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target4">&nbsp;</div> 11 per cent.</li>
+				</ol>
+			</div>
+
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">quite</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">as much as</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">unfortunately</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">almost</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a14_3" nexturl="#m5a14_5" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m5a14_5">
+	<section id="m5a14_5" class="hidden">
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the adverbs into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 1;">
+					<li>What issues do newspaper publishers face? Take distribution, for example. Delivering newsprint
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target1">&nbsp;</div> all round the country is costly.
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div> it’s
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target3">&nbsp;</div> to predict what fuel prices will be from year to year. Papers like The Guardian are
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target4">&nbsp;</div> losing millions every year.</li>
+				</ol>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">however</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">successfully</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">already</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">hard</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a14_4" nexturl="#m5a14_6" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m5a14_6">
+	<section id="m5a14_6" class="hidden">
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the adverbs into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 2;">
+					<li>
+						There will
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target1">&nbsp;</div> come a time when the costs are
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target2">&nbsp;</div> too great. There is one basic question - when will newspaper publishers
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target3">&nbsp;</div> stop trying to sell papers?
+						<br><br>
+						The answer to that question is:
+						<div class="ddseatedtarget ddwidth8 dd1line" data-destinationid="target4">&nbsp;</div> than you think.
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">sooner</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">simply</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">eventually</div>
+					</div>
+					<div class="ddseat ddwidth8 dd1line">
+						<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">soon</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a14_5" nexturl="#m5a14_end" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>

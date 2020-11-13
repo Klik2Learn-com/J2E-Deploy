@@ -1,0 +1,286 @@
+<template name="m3a4">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Stirling');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 4 - {{>m3a4Title}}</div>
+			</header>
+
+			<section id="m3a4">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a4Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m3a4Intro}}</h3>
+					{{> m3a4Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a4_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m3a4_1}} {{>m3a4_2}} {{>m3a4_5}} {{>m3a4_6}} {{>m3a4_7}} {{>m3a4_8}} {{>m3a4_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m3a4_1">
+	<section id="m3a4_1" class="hidden">
+		<div class="content">
+			<h1>The Articles</h1>
+			<div class="text-center">
+				<div class="parapaper inline-block text-center item-space">
+					<h4>The
+						<b>Indefinite</b> article - '
+						<b>A</b>'</h4>
+					<br>
+					<figure>
+						<div class="ph-w" style="width: 204px"><div class="ph" style="padding-top: 52.08%"><img draggable="false" src="images/module3/a-car.png" alt="A car"></div></div>
+					</figure>
+					<h2>
+						<u>a</u> car</h2>
+				</div>
+				<div class="parapaper inline-block text-center item-space">
+					<h4>The
+						<b>Definite</b> article - '
+						<b>The</b>'</h4>
+					<br>
+					<figure>
+						<div class="ph-w" style="width: 204px"><div class="ph" style="padding-top: 52.08%"><img draggable="false" src="images/module3/the-car.png" alt="The car"></div></div>
+					</figure>
+					<h2>
+						<u>the</u> car</h2>
+				</div>
+				<div class="parapaper inline-block text-center item-space">
+					<h4>No article</h4>
+					<br>
+					<figure>
+						<div class="ph-w" style="width: 204px"><div class="ph" style="padding-top: 52.08%"><img draggable="false" src="images/module3/cars.png" alt="Several cars"></div></div>
+					</figure>
+					<h2>cars</h2>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a4" nexturl="#m3a4_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a4_2">
+	<section id="m3a4_2" class="hidden">
+		<div class="content">
+			<h1>The Articles</h1>
+			<div class="text-center">
+				<h3 class="text-center">Here are three basic rules for using the articles:</h3>
+				<span class="number">1</span>
+				<div class="caption">Use ‘a’ for one thing in general – not a particular thing.</div>
+				<figure style="margin: 2em;">
+					<div class="ph-w ph-5x2 border2" style="max-width: 500px"><div class="ph"><img draggable="false" src="images/module3/drop.png"></div></div>
+				</figure>
+				<p>
+					<b>Example:</b> she dropped a tomato on the floor.</p>
+				<p>
+					<b>Explanation:</b> it was just any tomato - not a particular one.</p>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a4_1" nexturl="#m3a4_3" prev="" next=""}}
+		</footer>
+	</section>
+
+	<section id="m3a4_3" class="hidden">
+		<div class="content">
+			<div class="text-center">
+				<h1>The Articles</h1>
+				<h3 class="text-center">Here are three basic rules for using the articles:</h3>
+				<span class="number">2</span>
+				<div class="caption">Use ‘the’ for one thing in particular.</div>
+				<figure style="margin: 2em;">
+					<div class="ph-w ph-5x2 border2" style="max-width: 500px"><div class="ph"><img draggable="false" src="images/module3/last.png"></div></div>
+				</figure>
+				<p>
+					<b>Example:</b> he ate the last tomato.</p>
+				<p>
+					<b>Explanation:</b> In this case, it's the last tomato.</p>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a4_2" nexturl="#m3a4_4" prev="" next=""}}
+		</footer>
+	</section>
+
+	<section id="m3a4_4" class="hidden">
+		<div class="content">
+			<h1>The Articles</h1>
+			<div class="text-center">
+				<h3 class="text-center">Here are three basic rules for using the articles:</h3>
+				<span class="number">3</span>
+				<div class="caption">Use no article for plural things in general.</div>
+				<figure style="margin: 2em;">
+					<div class="ph-w ph-5x2 border2" style="max-width: 500px"><div class="ph"><img draggable="false" src="images/module3/recipe.png" class="border2 img-responsive center-block"></div></div>
+				</figure>
+				<p>
+					<b>Example:</b> tomatoes are used in savoury cooking.</p>
+				<p>
+					<b>Explanation:</b> tomatoes in general.</p>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a4_3" nexturl="#m3a4_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a4_5">
+	<section id="m3a4_5" class="hidden">
+		<div class="content">
+			<div class="text-center">
+				<div class="caption capred">Before you continue...</div>
+			</div>
+			<h3>Check first that you know about
+				<b>Nouns</b>. Your understanding of '
+				<b>a</b>’ and '
+				<b>the</b>' depends on this.</h3>
+			{{>gg_button gg_text="Click here to find out more about Nouns in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a4_4" nexturl="#m3a4_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a4_6">
+
+
+	<section id="m3a4_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>The Articles</h1>
+			<h3 class="text-center">
+				<span class="avoidwrap">{{>touch yes="Tap" no="Click"}} on the 9
+					<b>Nouns</b> in the sentence.</span>
+				<span class="avoidwrap">If you’re right, the word will turn
+					<span class="correctword">green</span>.</span>
+			</h3>
+			<h3 class="text-center">
+				<b>Watch out!</b> One has a
+				<b>capital letter</b>.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper paraclick">
+							<p>
+								<span class="wrong">The</span>
+								<span class="paraclick-word">survey</span>
+								<span class="wrong">by</span>
+								<span class="paraclick-word">Intel</span>
+								<span class="wrong">, found major</span>
+								<span class="paraclick-word">no-nos</span>
+								<span class="wrong"> of mobile </span>
+								<span class="paraclick-word">etiquette</span>
+								<span class="wrong"> included logging into someone else’s </span>
+								<span class="paraclick-word">account</span>
+								<span class="wrong"> to post a</span>
+								<span class="paraclick-word">joke</span>
+								<span class="wrong">, over sharing personal</span>
+								<span class="paraclick-word">information</span>
+								<span class="wrong"> and tagging an unflattering </span>
+								<span class="paraclick-word">photo</span>
+								<span class="wrong">of your</span>
+								<span class="paraclick-word">friends.</span>
+							</p>
+
+
+						</div>
+
+
+						<div class="counterleft">Nouns left to find:
+							<u id="startClock">9</u>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}} {{> welldone}}
+		</div>
+
+		<footer>
+			{{>footer_nav prevurl="#m3a4_5" nexturl="#m3a4_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m3a4_7">
+
+
+	<section id="m3a4_7" class="hidden">
+		<div class="content">
+			<h1>The Articles</h1>
+			<div class="text-center">
+				<h5>Did you {{>touch yes="tap" no="click"}} the word </h5>
+				<span class="caption">mobile</span>
+				<h5> ?</h5>
+				<p>&nbsp;</p>
+				<h5>It's an
+					<span class="grammar">adjective</span> here but it can be used as a
+					<span class="grammar">noun</span>.</h5>
+				<p>&nbsp;</p>
+				<h5>Here's a sentence with the noun 'mobile':</h5>
+				<p>&nbsp;</p>
+				<div class="caption">Two thirds of people check their
+					<b>mobile</b> before going to work.</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a4_6" nexturl="#m3a4_8" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a4_8">
+	<section id="m3a4_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>The Articles</h1>
+			<h3 class="text-center">
+				<span class="avoidwrap">Find the two
+					<b>uncountable</b> nouns in this sentence.</span>
+				<span class="avoidwrap">If you’re right, the word will turn
+					<span class="correctword">green</span>.</span>
+			</h3>
+			<h3 class="text-center">An
+				<b>uncountable</b> noun doesn’t have a plural.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper paraclick">
+							<p>
+								<span class="wrong">The survey by Intel, found major no-nos of mobile</span>
+								<span class="paraclick-word">etiquette</span> <span class="wrong"> included logging into someone else’s account to post a joke, over sharing personal</span>
+								<span class="paraclick-word">information</span><span class="wrong"> and tagging an unflattering photo of your friends.</span></p>
+						</div>
+						<div class="counterleft">Nouns left to find:
+							<u id="startClock2">2</u>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}} {{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a4_7" nexturl="#m3a4_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}} {{/if}}
+	</section>
+</template>
+
+<template name="m3a4_end">
+	{{>EndPage char="k" act="m3a4" nextact="m3a5" place="Stirling"}}
+</template>

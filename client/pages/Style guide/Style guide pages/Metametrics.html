@@ -1,0 +1,66 @@
+<template name="styleMetametrics">
+<section id="style-metametrics" class="hidden">
+	<div class="content">
+		<h1>MetaMetrics</h1>
+		
+		<p>The MetaMetrics bar is added before the first paragraph of the article. It should be the first thing inside the <span class="htmlcode">.parapaper</span> DIV. Simply edit the level (1-10), the alignment (left/right/center) if required, and change star to "yes" if it is a hard passage for the given level.</p>
+		<br>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>On its own</h4>
+					
+					<div class="parapaper fold">
+					
+						{{>metametrics level="3" star="no" align="center"}}
+						
+						<p><b>5.</b> Nevertheless, experts say national identities are real and do serve a purpose. Often a group will promote themselves by choosing a few characteristics that are positive and ignore others that might not show them in a good light. They might say for example, ‘we are warm, friendly and relaxed,’ but not mention that their industrial output figures are not very good!</p>
+					
+					</div>
+					
+					<pre class="htmlcode2">&#123;&#123;&gt;metametrics level="<span class="html-red">3</span>" star="<span class="html-red">no</span>" align="center"&#125;&#125;</pre>
+					
+					<br>
+					<br>
+				</div>
+				<div class="col-sm-6">
+					<h4>Next to audio button</h4>
+					
+					<div class="parapaper fold">
+					
+						<div class="container-fluid-no-gutter">
+							<div class="row">
+								<div class="col-xs-5">
+									<button type="button" class="buttonround buttonaudio"></button>
+								</div>
+								<div class="col-xs-7">
+									{{>metametrics level="3" star="no" align="right"}}
+								</div>
+							</div>
+						</div>
+						
+						<p><b>5.</b> Nevertheless, experts say national identities are real and do serve a purpose. Often a group will promote themselves by choosing a few characteristics that are positive and ignore others that might not show them in a good light. They might say for example, ‘we are warm, friendly and relaxed,’ but not mention that their industrial output figures are not very good!</p>
+						
+					</div>
+					
+					<pre class="htmlcode2">&lt;div class=&quot;container-fluid-no-gutter&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-xs-5&quot;&gt;
+			<span class="html-red">&lt;button type=&quot;button&quot; class=&quot;buttonround buttonaudio&quot;&gt;&lt;/button&gt;</span>
+		&lt;/div&gt;
+		&lt;div class=&quot;col-xs-7&quot;&gt;
+			&#123;&#123;&gt;metametrics level="<span class="html-red">3</span>" star="<span class="html-red">no</span>" align="right"&#125;&#125;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+					
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+</template>

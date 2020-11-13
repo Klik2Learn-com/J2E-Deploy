@@ -1,0 +1,37 @@
+<template name="m1Game_phone_textentry">
+
+	<section id="m1Game_phone_textentry" class="game-section game-phone-section hidden"><!--
+		--><div class="game-container game-container-bg m1Game-bg1">
+			<h3 class="center">Type in the missing words.</h3>
+			<div class="game-content">
+
+				<div class="game-phone-screen">
+					{{>GamePhoneHeader app="sms" icon="envelope" contact="Dunvegan Castle Security" time="4:19pm" battery="three-quarters"}}
+					<div class="game-phone-content text-entry linespace2">
+					
+					
+						<ul class="speech center-block">
+							<li><div class="speech1">
+								This semi-detached house has everything you need – all the windows have <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> and you could park two cars in the <span id="entryanswer1" class="textentry-disabled"></span>. There’s a very <span id="entryanswer2" class="textentry-disabled"></span> living room and all floor <span id="entryanswer3" class="textentry-disabled"></span> are included.
+							</div></li>
+							
+							<li><div class="speech2">
+								Second person's dialogue.
+							</div></li>
+						</ul>
+						
+						
+					
+						{{> rightwrong}}
+					</div>
+					</div>
+
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_dd" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+</template>

@@ -1,0 +1,177 @@
+<template name="SGparaclick">
+	<section id="SGparaclick" class="hidden">
+		<div class="content">	
+			<h3>There are 8 <span class="grammar">adjectives</span> in this paragraph. Click on a word if you think it's an <span class="grammar">adjective</span>.</h3>
+
+			<div class="parapaper paraclick">
+
+				<h2>Sleep</h2>
+				<figure class="image imgright"><img draggable="false" src="images/module4/a3/sleep.jpg" alt="Person sleeping"></figure><p>
+						<span class="wrong">Studies have shown that not getting enough sleep is associated with</span><span class="paraclick-word"> high </span><span class="paraclick-word">blood </span><span class="wrong">pressure,</span><span class="paraclick-word"> weight </span><span class="wrong">gain,</span><span class="paraclick-word"> lowered </span><span class="wrong">immunity and depression. In 2013, more people will associate sleep with health. 76% of individuals in the U.S.A. would like to enhance the quality and quantity of sleep they get. In addition, the</span> <span class="paraclick-word">National </span><span class="paraclick-word-sleep">Sleep </span><span class="wrong">Foundation says that two-thirds of women have</span><span class="paraclick-word"> regular </span><span class="paraclick-word-sleep">sleep </span><span class="wrong">problems. According to the</span><span class="paraclick-word"> World </span><span class="wrong">Association of</span><span class="paraclick-word-sleep"> Sleep </span><span class="wrong">Medicine, 45% of people in the world suffer from</span><span class="paraclick-word-sleep"> sleep </span><span class="wrong">deprivation.</span>
+				</p>
+			</div>
+			<div class="counterleft">Adjectives left to find: <u id="startClock1">8</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}
+			{{> welldone}}
+
+			{{>gg_button gg_text="You can get more information about Adjectives in the Grammar Guide"}}
+		</div>
+		
+		<div class="content">
+				<h4>HTM</h4>
+					<pre class="htmlcode2">
+&lt;template name=&quot;m4a3_3&quot;&gt;
+	&lt;section id=&quot;m4a3_3&quot; class=&quot;hidden&quot;&gt;
+		&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&lt;div class=&quot;content&quot;&gt;	
+			&lt;h3&gt;There are 8 &lt;span class=&quot;grammar&quot;&gt;adjectives&lt;/span&gt; in this paragraph. Click on a word if you think it's an &lt;span class=&quot;grammar&quot;&gt;adjective&lt;/span&gt;.&lt;/h3&gt;
+
+			&lt;div class=&quot;parapaper paraclick&quot;&gt;
+
+				&lt;h2&gt;Sleep&lt;/h2&gt;
+				&lt;figure class=&quot;image imgright&quot;&gt;&lt;img draggable="false" src=&quot;images/module4/a3/sleep.jpg&quot; alt=&quot;Person sleeping&quot;&gt;&lt;/figure&gt;&lt;p&gt;
+						&lt;span class=&quot;wrong&quot;&gt;Studies have shown that not getting enough sleep is associated with&lt;/span&gt;&lt;span class=&quot;paraclick-word&quot;&gt; high &lt;/span&gt;&lt;span class=&quot;paraclick-word&quot;&gt;blood &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;pressure,&lt;/span&gt;&lt;span class=&quot;paraclick-word&quot;&gt; weight &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;gain,&lt;/span&gt;&lt;span class=&quot;paraclick-word&quot;&gt; lowered &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;immunity and depression. In 2013, more people will associate sleep with health. 76% of individuals in the U.S.A. would like to enhance the quality and quantity of sleep they get. In addition, the&lt;/span&gt; &lt;span class=&quot;paraclick-word&quot;&gt;National &lt;/span&gt;&lt;span class=&quot;paraclick-word-sleep&quot;&gt;Sleep &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;Foundation says that two-thirds of women have&lt;/span&gt;&lt;span class=&quot;paraclick-word&quot;&gt; regular &lt;/span&gt;&lt;span class=&quot;paraclick-word-sleep&quot;&gt;sleep &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;problems. According to the&lt;/span&gt;&lt;span class=&quot;paraclick-word&quot;&gt; World &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;Association of&lt;/span&gt;&lt;span class=&quot;paraclick-word-sleep&quot;&gt; Sleep &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;Medicine, 45% of people in the world suffer from&lt;/span&gt;&lt;span class=&quot;paraclick-word-sleep&quot;&gt; sleep &lt;/span&gt;&lt;span class=&quot;wrong&quot;&gt;deprivation.&lt;/span&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;counterleft&quot;&gt;Adjectives left to find: &lt;u id=&quot;startClock1&quot;&gt;8&lt;/u&gt;&lt;/div&gt;
+			&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+
+			&#00123;&#00123;&gt;rightwrong&#00125;&#00125;
+			&#00123;&#00123;&gt; welldone&#00125;&#00125;
+
+			&#00123;&#00123;&gt;gg_button gg_text=&quot;You can get more information about Adjectives in the Grammar Guide&quot;&#00125;&#00125;
+		&lt;/div&gt;
+		&lt;footer&gt;
+			&#00123;&#00123;&gt;footer_nav prevurl=&quot;#m4a3_2&quot; nexturl=&quot;#m4a3_4&quot; prev=&quot;disabled&quot; next=&quot;hidden&quot;&#00125;&#00125;
+		&lt;/footer&gt;
+		&#00123;&#00123;&gt; stuck stuckchar=&quot;elle&quot;&#00125;&#00125;
+		&#00123;&#00123;/if&#00125;&#00125;
+	&lt;/section&gt;
+&lt;/template&gt;
+
+					</pre>
+				<h4>Javascript</h4>
+					<pre class="htmlcode2">
+Template.m4a3_3.helpers({
+	activeSection: function(){
+		var activeSection = Session.get(&quot;activeSection&quot;);
+		return (activeSection == &quot;#m4a3_3&quot;);
+	}
+});
+
+Template.m4a3_3.events({
+	'click .paraclick-word-sleep': function(evt) {
+		if ($(evt.target).hasClass('correctword')){
+				return;
+		}
+	var parentSection = $(evt.currentTarget).parents('section');
+    if($.k2l.m4a3_3.questionWordLock == false &amp;&amp; $.k2l.m4a3_3.stuckFlag == false){
+      $.k2l.m4a3_3.questionWordLock = true;
+      setTimeout(function(){
+        $.k2l.m4a3_3.questionWordLock = false;
+      }, 1000);
+			$('.paraclick-word-sleep').addClass('correctword');
+      $('.correctscreen').removeClass(&quot;hidden&quot;);
+      setTimeout(function(){
+        $('.correctscreen').addClass(&quot;hidden&quot;);
+      }, 1000);
+
+      $.k2l.m4a3_3.index--;
+      $(&quot;.counterleft u&quot;).html($.k2l.m4a3_3.index);
+
+      if($.k2l.m4a3_3.index &lt;=0){
+      $('.pagination').removeClass('hidden');
+	  $('.stuck').addClass('hidden');
+      }
+    }
+	},
+
+	'click .paraclick-word': function(evt) {
+		if ($(evt.target).hasClass('correctword')){
+				return;
+		}
+	var parentSection = $(evt.currentTarget).parents('section');
+    if($.k2l.m4a3_3.questionWordLock == false &amp;&amp; $.k2l.m4a3_3.stuckFlag == false){
+      $.k2l.m4a3_3.questionWordLock = true;
+      setTimeout(function(){
+        $.k2l.m4a3_3.questionWordLock = false;
+      }, 1000);
+      $(evt.target).addClass('correctword');
+      $('.correctscreen').removeClass(&quot;hidden&quot;);
+      setTimeout(function(){
+        $('.correctscreen').addClass(&quot;hidden&quot;);
+      }, 1000);
+
+      $.k2l.m4a3_3.index--;
+      $(&quot;.counterleft u&quot;).html($.k2l.m4a3_3.index);
+
+      if($.k2l.m4a3_3.index &lt;=0){
+    $('.pagination').removeClass('hidden');
+	$('.stuck').addClass('hidden');
+      }
+    }
+	},
+
+  'click .wrong': function(evt) {
+
+    if($.k2l.m4a3_3.questionWordLock == false &amp;&amp; $.k2l.m4a3_3.stuckFlag == false){
+      $.k2l.m4a3_3.questionWordLock = true;
+      setTimeout(function(){
+        $.k2l.m4a3_3.questionWordLock = false;
+      }, 1000);
+      $('.incorrectscreen').removeClass(&quot;hidden&quot;);
+      setTimeout(function(){
+        $('.incorrectscreen').addClass(&quot;hidden&quot;);
+      }, 1000);
+      $.k2l.m4a3_3.wrongscore++;
+
+      if($.k2l.m4a3_3.wrongscore &gt; 2){
+        $('.stuck').removeClass('hidden');
+      }
+
+    }
+	},
+  'click .stuck': function(evt) {
+    $('.stuck').addClass('hidden');
+    $.k2l.m4a3_3.wrongscore = 0;
+    $.k2l.m4a3_3.index = 0;
+    $(&quot;.counterleft u&quot;).html($.k2l.m4a3_3.index);
+    $('.paraclick-word').addClass('correctword');
+    $('.paraclick-word-sleep').addClass('correctword');
+    $('#m4a3_3 .navfooter a').removeClass('hidden');
+    $.k2l.m4a3_3.stuckFlag = true;
+  },
+
+  'click .navfooter a': function(evt) {
+    $('#m4a3_3 .navfooter a').addClass('hidden');
+    $('.paraclick-word').removeClass('correctword');
+    $.k2l.m4a3_3.wrongscore = 0;
+    $.k2l.m4a3_3.index = 6;
+		$.k2l.m4a3_3.stuckFlag = false;
+    $(&quot;.counterleft u&quot;).html($.k2l.m4a3_3.index);
+  }
+
+});
+
+Template.m4a3_3.rendered = function() {
+  if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	};
+
+	if (typeof $.k2l.m4a3_3 == 'undefined') {
+		$.k2l.m4a3_3 = {};
+	};
+
+	$.k2l.m4a3_3.index = 8;
+  $.k2l.m4a3_3.wrongscore = 0;
+  $.k2l.m4a3_3.stuckFlag = false;
+  $.k2l.m4a3_3.questionWordLock = false;
+
+}
+
+					</pre>
+				</div>
+	</section>
+</template>

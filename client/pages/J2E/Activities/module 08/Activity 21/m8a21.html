@@ -1,0 +1,262 @@
+<template name="m8a21"> 
+<article class="with-tools-sidebar m8a21">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bristol');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 21 - {{>m8a21Title}}</div>
+		</header>
+		<section id="m8a21">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a21Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a21Intro}}</h3>
+				{{> m8a21Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a21_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a21_1}}
+		{{>m8a21_2}}
+		{{>m8a21_3}}
+		{{>m8a21_4}}
+		{{>m8a21_5}}
+		{{>m8a21_6}}
+		{{>m8a21_7}}
+		{{>m8a21_8}}
+		{{>EndPage char="elle" act="m8a21" nextact="m8a22" place="Bristol"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a21_4"> 
+	<section id="m8a21_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Switching a computer on or off is easy. It doesn’t need any special skill or effort. Which sentence is right? {{>touch yes="Tap" no="Click"}} the right answer.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+						<div class="ph-w ph-1x1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module8/a21/Desktop.jpg" alt="Computer"></div></div><br>
+							<div class="row">
+								<div class="col-sm-6 center">
+									<button id="1" class="button2 item-space ddwidth15">Try switching it off then on again.</button>
+								</div>
+								<div class="col-sm-6 center">
+									<button id="2" class="button2 item-space ddwidth15">Try to switch it off then on again.</button>
+								</div>
+							</div>		
+				</div>
+				</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a21_3" nexturl="#m8a21_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a21_8"> 
+	<section id="m8a21_8" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Here are the reasons why 'ing' is different from 'to' in these situations.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<h4 class="center">Present Participle '-ing'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/try turning.png" alt="Finger pressing button"></div></div>
+							<div class="parapaper"><h4>Try switching it off then on again.</h4></div>
+							<div class="info bottom-left shadow"><h4>Anyone can do this, it’s easy.</h4></div>
+						</div>
+						<div class="col-sm-6">
+							<h4 class="center">The Infinitive 'to'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/try to turn.png" alt="Man under desk doing something with a computer tower"></div></div>
+							<div class="parapaper"><h4>Try to switch it off then on again.</h4></div>
+							<div class="info bottom-left shadow"><h4>This makes it sound difficult.</h4></div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about the Present Participle and Infinitives under Verbs in the Grammar Guide"}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a21_7" nexturl="#m8a21_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a21_1"> 
+	<section id="m8a21_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Sometimes you can change the meaning of a sentence by using ‘ing’.<Br> One of these sentences means that a call was made. {{>touch yes="Tap" no="Click"}} the right answer.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="ph-w ph-1x1 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module8/a21/Cordlessphone.jpg" alt="Phone"></div></div><br>
+							<div class="row">
+								<div class="col-sm-6 center">
+									<button id="2" class="button2 item-space ddwidth15">I tried <u>phoning</u> him but he didn’t answer.</button>
+								</div>
+								<div class="col-sm-6 center">
+									<button id="1" class="button2 item-space ddwidth15">I tried <u>to phone</u> him but I couldn’t get a signal.</button>
+								</div>
+							</div>		
+				</div>
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a21" nexturl="#m8a21_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a21_3"> 
+	<section id="m8a21_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Which sentence means you made a call? {{>touch yes="Tap" no="Click"}} the right answer.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="ph-w ph-1x1 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module8/a21/Cordlessphone.jpg" alt="Phone"></div></div><br>
+							<div class="row">
+								<div class="col-sm-6 center">
+									<button id="1" class="button2 item-space ddwidth15">She stopped phoning him.</button>
+								</div>
+								<div class="col-sm-6 center">
+									<button id="2" class="button2 item-space ddwidth15">She stopped to phone him.</button>
+								</div>
+							</div>		
+				</div>
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a21_2" nexturl="#m8a21_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a21_5"> 
+	<section id="m8a21_5" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Here are the reasons why 'ing' is different from 'to' in these situations.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<h4 class="center">Present Participle '-ing'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/tried phoning.png" alt="Woman on phone, waiting for the other person to answer"></div></div>
+							<div class="parapaper"><h4>I tried phoning him but he didn’t answer.</h4></div>
+							<div class="info bottom-left shadow"><h4>I did make a call.</h4></div>
+						</div>
+						<div class="col-sm-6">
+							<h4 class="center">The Infinitive 'to'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/tried to phone.png" alt="Woman holding mobile phone up in the air, trying to get a signal"></div></div>
+							<div class="parapaper"><h4>I tried to phone him but I couldn’t get a signal.</h4></div>
+							<div class="info bottom-left shadow"><h4>I couldn’t make a call.</h4></div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about the Present Participle and Infinitives under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a21_4" nexturl="#m8a21_6" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a21_2"> 
+	<section id="m8a21_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Which sentence is in the past?  {{>touch yes="Tap" no="Click"}} the right answer.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="ph-w ph-1x1 border1" style="max-width: 260px"><div class="ph"><img draggable="false" src="images/module8/a21/Cordlessphone.jpg"></div></div><br>
+							<div class="row">
+								<div class="col-sm-6 center">
+									<button id="1" class="button2 item-space ddwidth15">Remember to phone your mother.</button>
+								</div>
+								<div class="col-sm-6 center">
+									<button id="2" class="button2 item-space ddwidth15">I remember phoning my mother.</button>
+								</div>
+							</div>		
+				</div>
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a21_1" nexturl="#m8a21_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a21_7"> 
+	<section id="m8a21_7" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Here are the reasons why 'ing' is different from 'to' in these situations.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<h4 class="center">Present Participle '-ing'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/stopped phoning.png" alt="Boy looking at a dusty phone"></div></div>
+							<div class="parapaper"><h4>She stopped phoning him.</h4></div>
+							<div class="info bottom-left shadow"><h4>She doesn’t phone him any more.</h4></div>
+						</div>
+						<div class="col-sm-6">
+							<h4 class="center">The Infinitive 'to'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/stopped to phone.png" alt="Woman holding a phone next to a parked car"></div></div>
+							<div class="parapaper"><h4>She stopped to phone him.</h4></div>
+							<div class="info bottom-left shadow"><h4>She stopped the car and made a phone call to him.</h4></div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about the Present Participle and Infinitives under Verbs in the Grammar Guide"}}
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m8a21_6" nexturl="#m8a21_8" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a21_6"> 
+	<section id="m8a21_6" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Here are the reasons why 'ing' is different from 'to' in these situations.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<h4 class="center">Present Participle '-ing'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/remember phoning.png" alt="Man remembering a phone call"></div></div>
+							<div class="parapaper"><h4>I remember phoning my mother.</h4></div>
+							<div class="info bottom-left shadow"><h4>I did phone my mother.</h4></div>
+						</div>
+						<div class="col-sm-6">
+							<h4 class="center">The Infinitive 'to'</h4>
+							<div class="ph-w ph-4x3" style="max-width: 323px"><div class="ph"><img draggable="false" src="images/module8/a21/remember to phone.png" alt="Dad telling son to call his mother"></div></div>
+							<div class="parapaper"><h4>Remember to phone your mother.</h4></div>
+							<div class="info bottom-left shadow"><h4>I haven’t phoned my mother yet.</h4></div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about the Present Participle and Infinitives under Verbs in the Grammar Guide"}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a21_5" nexturl="#m8a21_7" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

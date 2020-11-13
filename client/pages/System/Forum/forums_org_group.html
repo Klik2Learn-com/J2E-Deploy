@@ -1,0 +1,120 @@
+<template name="forums_org_group">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if Template.subscriptionsReady}}
+					{{#with forumDoc}} 
+					<a draggable="false" href="/forums/{{this.organisation}}/" class="forums_org_back forum-clickable"><i class="titlereturn fa fa-arrow-left"></i></a> {{>menu}}
+						<div class="parent-level">{{orgName}} Forum</div>
+						<div class="acttitle-title">{{groupName}}</div>
+					{{/with}}
+				{{/if}}
+			</header>
+			<section>
+				<div class="content-forum">
+					{{#with currGroup}}
+						<div class="forum-wrapper">
+							<h4>Subgroups</h4>
+							{{#each subgroups this}}
+								<div class="forum-row">
+									<div class="forum-title">
+										<a draggable="false" href="{{this._id}}/">{{this.name}} forum →</a>
+									</div>
+								</div>
+							{{/each}}
+						</div>
+					{{/with}}
+
+					<p id="forums-data"></p>
+					{{#with forumDoc}}
+					<a draggable="false" class="forum-new-post">New Topic</a>
+						<div class="forum-wrapper">
+							<h4>Topics</h4>
+							{{#each groupThread}}
+							<div data-threadNo="{{@index}}" class="forum-thread-container {{stickyCheck}} forum-row">
+								<div class="truncate"><a draggable="false" class="forum_thread forum-clickable"><i class="fa fa-comment"></i> {{this.title}} ({{postCount}}{{latestPostBy}})</a></div>
+								<ul class="details">
+									<li><span class="hidden-xxs-inline">Topic started by</span><span class="visible-xxs-inline">By</span> <b>{{posterNameStarted}}</b>									on {{this.date}}</li>
+									<span class="avoidwrap">
+											{{#if stickyButtonCheck this.organisation}}
+												<li><a draggable="false" class="sticky_button forum-clickable">Sticky</a></li>
+											{{/if}}
+											{{#if threadbuttonsCheck this.organisation }}
+												<li><a draggable="false" class="edit_title_button forum-clickable">Edit title</a></li>
+												<li><a draggable="false" class="delete_thread_button forum-clickable">Delete topic </a></li>
+											{{/if}}
+										</span>
+
+								</ul>
+								{{#if threadbuttonsCheck this.organisation }}
+								<form class="edit_title_form hidden form-group nowrapnohidetext">
+									<input required class="form-control edit_title_input" type="text" placeholder="New title…" value="{{this.title}}">
+									<button class="button1 buttonsmall item-space no-border edit_title_ok">OK</button>
+									<span class="edit_title_status"></span>
+								</form>
+								{{/if}}
+								<div class="forum_posts hidden">
+									<!-- <a draggable="false" class="forum-new-reply">Post Reply</a> -->
+								{{#each this.posts}}
+									{{#if deletedCheck this.deleted}}
+										<div data-postNo="{{@index}}" class="deletedPost forum-post-container">
+											<ul class="details">
+												<li><span class="float right">{{this.date}}</span> <b>{{posterName}}</b> <span class="float right">posted:</span></li>
+											</ul>
+											<div class="forum-post-content"><i><pre>{{this.content}}</pre></i></div>
+										</div>
+									{{else}}
+										<div data-postNo="{{@index}}" class="forum-post-container">
+											<ul class="details">
+												<li>
+													<b class="forum-post-posted-user">{{posterName}}</b>
+													<span class="forum-post-posted-date">posted: {{this.date}}</span>
+												</li>
+											</ul>
+											<div class="clear-float"></div>
+											<div class="forum-post-content">
+												<pre>{{this.content}}</pre>
+											</div>
+											
+											{{#if postbuttonsCheck this.organisation this.poster}}
+											<button class="button2 buttonsmall no-border delete_post_button"><i class="fa fa-trash-alt"></i> <span class="hidden-xxs-inline">Delete post</span></button>
+											<button class="button2 buttonsmall no-border change_post_button forum-clickable"><i class="fas fa-pencil-alt"></i> <span class="hidden-xxs-inline" data-post="{{this.content}}+{{this.date}}">Edit post</span></button>
+											<div class="clear-float"></div>
+											<form class="change_post_form hidden form-group" data-post="{{this.content}}+{{this.date}}">
+												<br>
+												<hr>
+												<textarea required class="form-control change_post_input" placeholder="New content…" rows="5">{{this.content}}</textarea>
+												<button class="button1 buttonsmall no-border change_post_ok">Edit post</button>
+												<div class="clear-float"></div>
+												<span class="change_post_status"></span>
+											</form>
+											{{/if}}
+										</div>
+									{{/if}}
+								{{/each}}
+								</div>
+								<form class="reply_in_thread hidden form-group">
+									<h4>Reply</h4>
+									<textarea class="form-control reply_in_thread_post" placeholder="Your post…" rows="5" required></textarea>
+									<button class="button2 no-border reply_in_thread_button">Post reply</button>
+								</form>
+							</div>
+							{{/each}}
+						</div>
+					{{/with}}
+					<div class="parapaper new-topic-container fold" id="newTopic">
+						<form class="create_thread form-group">
+							<h4>New topic</h4>
+							<input class="form-control create_thread_input_title" type="text" placeholder="Title" required>
+							<textarea class="form-control create_thread_input_post" placeholder="Your post…" rows="5" required></textarea>
+							<button class="button2 no-border create_thread_button">Post new topic</button>
+						</form>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</section>
+		</div>
+	</article>
+
+</template>

@@ -1,0 +1,253 @@
+<template name="m4a5">
+	<article class="with-tools-sidebar m4a5">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/FortWilliam');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 5 - {{>m4a5Title}}</div>
+			</header>
+
+
+			<section id="m4a5">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a5Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m4a5Intro}}</h3>
+					{{> m4a5Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a5_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a5_1}} {{>m4a5_2}} {{>m4a5_3}} {{>m4a5_4}} {{>m4a5_5}} {{>EndPage char="tu" act="m4a5" nextact="m4a6" place="FortWilliam"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a5_1">
+	<section id="m4a5_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are seven sentences which use these words as
+				<b>nouns</b> or
+				<b>verbs</b>. Some of them are colloquial or informal English.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>He's a
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> at the tennis club.</li>
+					<li>The team was on a
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> after winning the championship.</li>
+					<li>Most supermarkets have
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> the price of basic foods.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">high</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">regular</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">lowered</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br> {{>gg_button gg_text="Click here to find out more about Nouns and Verbs in the Grammar Guide"}}
+		</div>
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a5_2">
+	<section id="m4a5_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are seven sentences which use these words as
+				<b>nouns</b> or
+				<b>verbs</b>. Some of them are colloquial or informal English.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 3;">
+					<li>She always faints at the sight of
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>.</li>
+					<li>Most of us dream in our
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> even though we don't remember it.</li>
+					<li>It's much easier to put on
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div> than to lose it.</li>
+					<li>Asia is the largest continent in the
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div>.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">world</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">sleep</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">weight</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">blood</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br> {{>gg_button gg_text="Click here to find out more about Nouns and Verbs in the Grammar Guide"}}
+		</div>
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a5_3">
+	<section id="m4a5_3" class="hidden">{{> popovers}}
+		<div class="content">
+			<h3 class="text-center">Now {{>touch yes="tap" no="click"}} each word to find out if it is a
+				<b>noun</b> or a
+				<b>verb</b>.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>He's a
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+						 data-placement="top" data-content="noun">regular</a> at the tennis club.</li>
+					<li>The team was on a
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+						 data-placement="top" data-content="noun">high</a> after winning the championship.</li>
+					<li>Most supermarkets have
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+						 data-placement="top" data-content="verb">lowered</a> the price of basic foods.</li>
+
+					<li>She always faints at the sight of
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"
+						 data-trigger="manual" data-placement="top" data-content="noun">blood</a>.</li>
+					<li>Most of us dream in our
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+						 data-placement="top" data-content="noun">sleep</a> even though we don't remember it.</li>
+					<li>It's much easier to put on
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+						 data-placement="top" data-content="noun">weight</a> than to lose it.</li>
+					<li>Asia is the largest continent in the
+						<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"
+						 data-trigger="manual" data-placement="top" data-content="noun">world</a>.</li>
+				</ol>
+			</div>
+			<br> {{>gg_button gg_text="Click here to find out more about Nouns and Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a5_2" nexturl="#m4a5_4" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a5_4">
+	<section id="m4a5_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag either
+				<b>'noun'</b> or
+				<b>'verb'</b> to the correct sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>He's a
+						<span class="grammar">regular</span> at the tennis club.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>Most supermarkets have
+						<span class="grammar">lowered</span> the price of basic foods.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>The team was on a
+						<span class="grammar">high</span> after winning the championship.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target3 taregt9">Noun</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2 taregt9">Verb</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br> {{>gg_button gg_text="Click here to find out more about Nouns and Verbs in the Grammar Guide"}}
+		</div>
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a5_5">
+	<section id="m4a5_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag either
+				<b>'noun'</b> or
+				<b>'verb'</b> to the correct sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 3;">
+					<li>She always faints at the sight of
+						<span class="grammar">blood</span>.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>Most of us dream in our
+						<span class="grammar">sleep</span> even though we don't remember it.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>It's much easier to put on
+						<span class="grammar">weight</span> than to lose it.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>Asia is the largest continent in the
+						<span class="grammar">world</span>.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4 target5 target6 target7 taregt9">Noun</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="taregt9">Verb</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br> {{>gg_button gg_text="Click here to find out more about Nouns and Verbs in the Grammar Guide"}}
+		</div>
+
+		{{/if}}
+	</section>
+</template>

@@ -1,0 +1,161 @@
+<template name="viewGroups">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{>menu}} {{#if isAdmin}} {{> adminNav}} {{else}}
+				<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a> {{/if}}
+			</header>
+			<section>
+				<div class="content-user">
+					{{#if isStudent}} Unauthorised access {{else}} {{#if isAdmin}}
+					<h1>Groups List</h1>{{/if}} {{#if isMod}}
+					<h1>Groups List</h1>{{/if}} {{#if isTutor}}
+					<h1>My Groups</h1>{{/if}} {{#if isStudent}}
+					<h1>My Group</h1>{{/if}}
+					<!-- {{>NewGroupLink}} -->
+
+					{{#each organisations}}
+					<h4 class="text-center" id="{{this._id}}">{{this.name}} Organisation</h4>
+					<div class="table-wrapper scrollbar">
+						<table class="table1">
+							<thead>
+								<tr>
+
+									<th>Group Name</th>
+									<th>No.of Tutors</th>
+									<th>No. of Students</th>
+									<th>No. of Subgroups</th>
+									{{#if isAdmin}}
+									<th>Change name</th>
+									<th>Change organisation</th>
+									<th style="width: 20px;">Delete</th>
+									{{/if}} {{#if isMod}}
+									<th>Change name</th>
+									<th style="width: 20px;">Delete</th>
+									{{/if}}
+								</tr>
+							</thead>
+							<tbody>
+								<!-- Each user this user is allowed to see -->
+
+								{{#each groups this._id}}
+								<tr>
+									<td>
+										<a draggable="false" class="group-name">{{this.name}}</a>
+									</td>
+									<td style="text-align: center;">
+										{{numberTutors}}
+									</td>
+									<td style="text-align: center;">
+										{{numberStudents}}
+									</td>
+									<td style="text-align: center;">
+										{{numberSubgroups}}
+									</td>
+									{{#if isAdmin}}
+									<td style="text-align: center;">
+										<a draggable="false" class="edit_title_button forum-clickable"><i class="fas fa-pencil-alt"> </i> Edit</a>
+										<form class="edit_title_form hidden form-group nowrapnohidetext">
+											<input required data-id="{{this._id}}" class="form-control edit_title_input" type="text" placeholder="New title…" value="{{this.name}}">
+											<button class="button1 buttonsmall item-space no-border edit_title_ok">OK</button>
+											<span class="edit_title_status"></span>
+										</form>
+									</td>
+									<td>
+										<select name="changeOrg" class="form-control">
+									<option selected="true" disabled="disabled" value=""><i>Choose from the list</i></option>
+									{{#each organisations}}
+										<option data-groupId="{{../_id}}" value="{{_id}}">{{name}}</option>
+									{{/each}}
+										<option data-groupId="{{_id}}" value="">- None -</option>
+								</select>
+									</td>
+									<td>
+										<div class="user-edit delete text-center"><a draggable="false" href="#"><i class="fa fa-trash-alt"></i></a></div>
+									</td>
+									{{/if}} {{#if isMod}}
+									<td style="text-align: center;">
+										<a draggable="false" class="edit_title_button forum-clickable"><i class="fas fa-pencil-alt"> </i> Edit</a>
+										<form class="edit_title_form hidden form-group nowrapnohidetext">
+											<input required data-id="{{this._id}}" class="form-control edit_title_input" type="text" placeholder="New title…" value="{{this.name}}">
+											<button class="button1 buttonsmall item-space no-border edit_title_ok">OK</button>
+											<span class="edit_title_status"></span>
+										</form>
+									</td>
+									<td>
+										<div class="user-edit delete text-center"><a draggable="false" href="#"><i class="fa fa-trash-alt"></i></a></div>
+									</td>
+									{{/if}}
+
+								</tr>
+
+								{{/each}}
+							</tbody>
+						</table>
+					</div>
+					{{/each}} {{/if}}
+				</div>
+				{{#if isAdmin}}
+				<h4 class="text-center">Groups not belonging to an organisation</h4>
+				<div class="table-wrapper scrollbar">
+					<table class="table1">
+						<thead>
+							<tr>
+
+								<th>Group Name</th>
+								<th>No.of Tutors</th>
+								<th>No. of Students</th>
+								<th>Change name</th>
+								<th>Change organisation</th>
+								<th style="width: 20px;">Delete</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Each user this user is allowed to see -->
+
+							{{#each groupsWithNoOrg}}
+							<tr>
+								<td>
+									<a draggable="false" class="group-name">{{this.name}}</a>
+								</td>
+								<td style="text-align: center;">
+									{{numberTutors}}
+								</td>
+								<td style="text-align: center;">
+									{{numberStudents}}
+								</td>
+								<td style="text-align: center;">
+									<a draggable="false" class="edit_title_button forum-clickable"><i class="fas fa-pencil-alt"> </i> Edit</a>
+									<form class="edit_title_form hidden form-group nowrapnohidetext">
+										<input required data-id="{{this._id}}" class="form-control edit_title_input" type="text" placeholder="New title…" value="{{this.name}}">
+										<button class="button1 buttonsmall item-space no-border edit_title_ok">OK</button>
+										<span class="edit_title_status"></span>
+									</form>
+								</td>
+								<td>
+									<select name="changeOrg" class="form-control">
+							<option selected="true" disabled="disabled" value=""><i>Choose from the list</i></option>
+							{{#each organisations}}
+								<option data-groupId="{{../_id}}" value="{{_id}}">{{name}}</option>
+							{{/each}}
+						</select>
+								</td>
+
+								<td>
+									<div class="user-edit delete text-center"><a draggable="false" href="#"><i class="fa fa-trash-alt"></i></a></div>
+								</td>
+
+							</tr>
+
+							{{/each}}
+						</tbody>
+					</table>
+
+				</div>
+				{{/if}}
+			</section>
+		</div>
+	</article>
+
+</template>

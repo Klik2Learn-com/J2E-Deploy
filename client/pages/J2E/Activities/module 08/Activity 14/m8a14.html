@@ -1,0 +1,210 @@
+<template name="m8a14">
+	<article class="with-tools-sidebar m8a14">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Cardiff');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 8</div>
+				<div class="acttitle-title">{{> activity}} 14 - {{>m8a14Title}}</div>
+			</header>
+			<section id="m8a14">
+				<div class="content">
+					<h1 class="start-page-header">{{>m8a14Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m8a14Intro}}</h3>
+					{{> m8a14Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m8a14_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m8a14_1}} {{>m8a14_2}} {{>m8a14_3}} {{>m8a14_4}} {{>m8a14_5}} {{>EndPage char="tu" act="m8a14" nextact="m8a15" place="Cardiff"}}
+		</div>
+	</article>
+
+</template>
+<template name="m8a14_1">
+	<section id="m8a14_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h4 class="">You've learned all the different ways of using 'if' sentences - conditionals. See how well you know them...</h4>
+			<h3 class="center">Listen to this person tell a friend about how bad their job is!</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 center">
+						<div class="hidden-xs" style="height:80px"></div>
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module8/a14/whole.m4a"></button>
+						<br>
+						<br>
+					</div>
+					<div class="col-sm-9">
+						<div class="ph-w ph-7x3 shadow" style="max-width: 513px"><div class="ph"><img draggable="false" src="images/module8/a14/phone call.jpg"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a14" nexturl="#m8a14_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m8a14_2">
+	<section id="m8a14_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen again and type the missing
+				<b>verbs</b> or missing parts of the
+				<b>verbs</b> in the spaces. You can use either the long form or the short form. (1 word)</h3>
+
+			{{> rightwrong}}
+			<!-- {{> welldone}} -->
+			<div class="container-fluid">
+				<div class="parapaper linespace para-ol-space fold">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a14/1.m4a"></button>
+						</div>
+						<div class="col-sm-11">
+							<ol class="olcircle">
+								<li>Hi Dave... You OK? Remember you asked about my new job? Well if I
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="7" autocomplete="off">
+											<input type="submit" value="OK">
+										</form>
+									</span> realised how awful it was going to be, I
+									<span id="entryanswer1" class="textentry-disabled"></span> never have taken it.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a14_1" nexturl="#m8a14_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+<template name="m8a14_3">
+	<section id="m8a14_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen again and type the missing
+				<b>verbs</b> or missing parts of the
+				<b>verbs</b> in the spaces. You can use either the long form or the short form. (2 words)</h3>
+
+			{{> rightwrong}}
+			<!-- {{> welldone}} -->
+			<div class="container-fluid">
+				<div class="parapaper linespace para-ol-space fold">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a14/2.m4a"></button>
+						</div>
+						<div class="col-sm-11">
+							<ol class="olcircle" style="counter-reset: start 1;">
+								<li>If you
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="7" autocomplete="off">
+											<input type="submit" value="OK">
+										</form>
+									</span> a spare week sometime, I
+									<span id="entryanswer1" class="textentry-disabled"></span> you all about it.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a14_2" nexturl="#m8a14_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+<template name="m8a14_4">
+	<section id="m8a14_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen again and type the missing
+				<b>verbs</b> or missing parts of the
+				<b>verbs</b> in the spaces. You can use either the long form or the short form. (1 word)</h3>
+
+			{{> rightwrong}}
+			<!-- {{> welldone}} -->
+			<div class="container-fluid">
+				<div class="parapaper linespace para-ol-space fold">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a14/3.m4a"></button>
+						</div>
+						<div class="col-sm-11">
+							<ol class="olcircle" style="counter-reset: start 2;">
+								<li>My supervisor’s crazy – and rude. He told me yesterday my brain was the size of a pea. If something
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="7" autocomplete="off">
+											<input type="submit" value="OK">
+										</form>
+									</span> wrong,
+									<span id="entryanswer1" class="textentry-disabled"></span> never his fault. </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a14_3" nexturl="#m8a14_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+<template name="m8a14_5">
+	<section id="m8a14_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen again and type the missing
+				<b>verbs</b> or missing parts of the
+				<b>verbs</b> in the spaces. You can use either the long form or the short form. (1 word)</h3>
+			{{> rightwrong}} {{> welldone}}
+			<div class="container-fluid">
+				<div class="parapaper linespace para-ol-space fold">
+					<div class="row">
+						<div class="col-sm-1 center">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a14/4.m4a"></button>
+						</div>
+						<div class="col-sm-11">
+							<ol class="olcircle" style="counter-reset: start 3;">
+								<li>If I
+									<span id="entryanswer0">
+										<form class="textentry">
+											<input type="text" name="userText" size="7" autocomplete="off">
+											<input type="submit" value="OK">
+										</form>
+									</span> walk out tomorrow I
+									<span id="entryanswer1" class="textentry-disabled"></span> but I need to earn some cash right now.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m8a14_4" nexturl="#m8a14_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>

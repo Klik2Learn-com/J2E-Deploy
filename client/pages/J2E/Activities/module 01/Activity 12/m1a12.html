@@ -1,0 +1,187 @@
+<template name="m1a12">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/FortAugustus');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 12 - {{>m1a12Title}}</div>
+			</header>
+
+
+			<section id="m1a12">
+				<div class="content">
+					<h1 class="start-page-header">{{> m1a12Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m1a12Intro}}</h3>
+					{{> m1a12Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a12_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{#if loadM1a12_1}} {{> m1a12_1}} {{/if}} {{>m1a12_2_good}} {{>m1a12_2_bad}} {{>m1a12_3}} {{>m1a12_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m1a12_1">
+	<section id="m1a12_1" class="">
+		<div class="content">
+			<h3 class="center"> Listen to the sentences and decide if they are QUESTIONS or STATEMENTS</h3>
+			<div class="parapaper center" style="padding: 1em;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3" style="margin-bottom: 1em;">
+							{{> rightwrong}}
+							<span id="m1a12Ex" class="number">1</span>
+							<button type="button" class="buttonround buttonroundbig buttonaudio"></button>
+							<br>
+							<br>
+							<button id="questionButton" class="button1 ddwidth8">Question</button>
+							<br>
+							<br>
+							<button id="statementButton" class="button1 ddwidth8">Statement</button>
+						</div>
+						<div class="col-sm-8">
+							<div class="ph-w ph-16x10 shadow img-responsive" style="max-width: 513px"><div class="ph"><img draggable="false" src="/images/conv-pics/conversation2.png" alt="Conversation"></div></div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col-sm-12 center-block">
+							{{> scorebox1 rightSession="m1a12RightScore" wrongSession="m1a12WrongScore"}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a12_1" prev="hidden" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a12_2_bad">
+	<section id="m1a12_2_bad" class="hidden">
+		<div class="content">
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m1a12RightScore" wrongSession="m1a12WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a12_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a12_2_good">
+	<section id="m1a12_2_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m1a12RightScore" wrongSession="m1a12WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a12_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a12_3">
+	<section id="m1a12_3" class="hidden">
+		<div class="content">
+			<h3 class="center"> Practice speaking these sentences. {{>touch yes="Tap" no="Click"}} the numbers below to change sentence. If you click
+				on the Voice Recorder, you can record yourself and playback your recording.</h3>
+			<div class="parapaper center" style="padding: 1em;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2 col-sm-3">
+							<button type="button" class="buttonround buttonaudio"></button>
+							<div id="m1a12Sen" class="number">1</div>
+						</div>
+						<div class="col-md-8 col-sm-8">
+							<h4 id="textDisplay">My name's Maria. What's yours?</h4>
+						</div>
+						<div class="col-md-2 col-sm-1"></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<span class="avoidwrap">
+							<a>
+								<div id="0" class="numbutt">1</div>
+							</a>
+							<a>
+								<div id="1" class="numbutt">2</div>
+							</a>
+							<a>
+								<div id="2" class="numbutt">3</div>
+							</a>
+							<a>
+								<div id="3" class="numbutt">4</div>
+							</a>
+							<a>
+								<div id="4" class="numbutt">5</div>
+							</a>
+						</span>
+						<span class="avoidwrap">
+							<a>
+								<div id="5" class="numbutt">6</div>
+							</a>
+							<a>
+								<div id="6" class="numbutt">7</div>
+							</a>
+							<a>
+								<div id="7" class="numbutt">8</div>
+							</a>
+							<a>
+								<div id="8" class="numbutt">9</div>
+							</a>
+							<a>
+								<div id="9" class="numbutt">10</div>
+							</a>
+						</span>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a12_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a12_end">
+	{{>EndPage char="elle" act="m1a12" nextact="m1a13" place="FortAugustus"}}
+</template>

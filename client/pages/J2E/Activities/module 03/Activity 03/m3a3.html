@@ -1,0 +1,453 @@
+<template name="m3a3">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Stirling');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 3 - {{>m3a3Title}}</div>
+		</header>
+		
+		<section id="m3a3">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a3Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m3a3Intro}}</h3>
+{{> m3a3Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a3_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m3a3_1}}
+		{{>m3a3_2}}
+		{{>m3a3_3}}
+		{{>m3a3_4}}
+		{{>m3a3_5}}
+		{{>m3a3_6}}
+		{{>m3a3_7}}
+		{{>m3a3_8}}
+		{{>m3a3_end}}
+	</div>
+</article>
+
+</template>
+<template name="m3a3_1">
+	<section id="m3a3_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 1</h4>
+						<p>You know the type. She won’t stop nattering on her cell phone and he can’t resist tweeting while having dinner.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> Find a slang word for <b>talking</b>.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3" nexturl="#m3a3_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a3_2">
+	<section id="m3a3_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 2</h4>
+						<p>And we’re all irritated by them, so much so that a new mobile survey has found that there should be a set of rules about the use of mobile phones in public.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>2)</b> Find a <b>3 word phrase</b> which means ‘to such an extent’.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3_1" nexturl="#m3a3_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a3_3">
+	<section id="m3a3_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 3</h4>
+						<p>The survey by Intel, found major no-nos of mobile etiquette included logging into someone else’s account to post a joke, sharing too much personal information and tagging an unflattering photo of your friends.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>3)</b> Find a slang word which means ‘things that are not acceptable’.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3_2" nexturl="#m3a3_4" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a3_4">
+	<section id="m3a3_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 4</h4>
+						<p>Surprisingly, the survey found that checking Facebook while out for coffee, bringing your laptop on a weekend break and using mobile devices in the bedroom were all acceptable. ‘People’s tolerance levels are rising and the use of mobile technology is now so pervasive that we need a new code of conduct,’ said Intel’s spokesperson.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>4)</b> Three of these words mean the same as ‘pervasive.’ Which one is different?</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row text-center">
+					<span class="avoidwrap">
+						<button class="button1 item-space">widespread</button>
+						<button class="button1 item-space">far reaching</button>
+					</span>
+					<span class="avoidwrap">
+						<button class="button1 item-space">intensive</button>
+						<button class="button1 item-space">commonplace</button>
+					</span>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3_3" nexturl="#m3a3_5" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a3_5">
+	<section id="m3a3_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 4</h4>
+						<p>Surprisingly, the survey found that checking Facebook while out for coffee, bringing your laptop on a weekend break and using mobile devices in the bedroom were all acceptable. ‘People’s tolerance levels are rising and the use of mobile technology is now so pervasive that we need a new code of conduct,’ said Intel’s spokesperson.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>5)</b> Find a 3 word expression that describes the way we should behave.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3_4" nexturl="#m3a3_6" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m3a3_6">
+	<section id="m3a3_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 8</h4>
+						<p>More than half said they would prefer to sacrifice their favourite sweet treat for a week, than be separated from their mobile device.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>6)</b> Which answer is <b>wrong?</b></h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row text-center">
+					<span class="avoidwrap">
+						<button class="button1 item-space ddwidth13 text-center">'sacrifice' is a very strong word</button>
+						<button class="button1 item-space ddwidth13 text-center">'sacrifice' suggests that something is very important to you</button>
+					</span>
+					<span class="avoidwrap">
+						<button class="button1 item-space ddwidth13 text-center">'sacrifice' has a religious origin</button>
+						<button class="button1 item-space ddwidth13 text-center">'sacrifice' means the same as 'give up'</button>
+					</span>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3_5" nexturl="#m3a3_7" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a3_7">
+	<section id="m3a3_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 10</h4>
+						<p>People signalled there were limits to where mobile devices should be used. Bringing a laptop to the dinner table was top of the list for bad manners.  They were also worried about creating a dangerous situation such as texting while driving.  South African drivers were most concerned about this.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>7)</b> Which answer is <b>wrong?</b></h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row text-center">
+					<button class="button1 item-space ddwidth14 text-center">'signalled' is a very strong word</button>
+					<button class="button1 item-space ddwidth14 text-center">'signalled' suggests something to do with driving</button>
+					<button class="button1 item-space ddwidth14 text-center">'signalled' always suggests a physical gesture</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3_6" nexturl="#m3a3_8" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a3_8">
+	<section id="m3a3_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<h4 class="text-center">Paragraph 9</h4>
+						<p>'The research suggests that most of us check our emails or post our first tweet before we even leave the house in the mornings. Two thirds of people check their mobile before going to work. Almost a quarter, do that before they get out of bed. It's the new norm.'</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>8)</b> Which word means 'an accepted standard of behaviour'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a3_7" nexturl="#m3a3_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m3a3_end">
+{{>EndPage char="elle" act="m3a3" nextact="m3a4" place="Stirling"}}
+</template>

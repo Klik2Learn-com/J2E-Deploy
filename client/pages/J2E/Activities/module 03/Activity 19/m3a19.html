@@ -1,0 +1,747 @@
+<template name="m3a19">
+<article class="with-tools-sidebar m3a19">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/NorthBerwick');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 19 - {{>m3a19Title}}</div>
+		</header>
+		
+		
+		<section id="m3a19">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a19Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m3a19Intro}}</h3>
+{{> m3a19Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a19_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a19_1}}
+		{{>m3a19_2}}
+		{{>m3a19_3}}
+		{{>m3a19_4}}
+		{{>m3a19_5}}
+		{{>m3a19_6}}
+		{{>m3a19_7}}
+		{{>m3a19_8}}
+
+		{{>EndPage char="k" act="m3a19" nextact="m3a20" place="NorthBerwick"}}
+
+		
+	</div>
+</article>
+
+	{{>m3a19vids}}
+</template>
+<template name="m3a19_1">
+	<section id="m3a19_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} to listen to this short article about the Best Cities in Britain.</h3>
+			<div class="text-center">
+				<div class="parapaper">
+				
+					<div class="container-fluid m3a19-intro">
+						<div class="row">
+							<div class="col-xs-4 col-xxs-12 vmiddle">
+								<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a19/full.m4a"></button>
+							</div>
+							<div class="col-xs-4 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Newcastle.jpg" alt="City photo"></div></div>
+							</div>
+							<div class="col-xs-4 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg" alt="City photo"></div></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Edinburgh.jpg" alt="City photo"></div></div>
+							</div>
+							<div class="col-xs-4 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Canterbury.jpg" alt="City photo"></div></div>
+							</div>
+							<div class="col-xs-4 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Cambridge.jpg" alt="City photo"></div></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19" nexturl="#m3a19_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a19_2">
+	<section id="m3a19_2" class="hidden">
+		<div class="content">
+
+			<h3 class="text-center">Now choose the right answer.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-sm-4 col-xs-3 col-xxs-12 text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a19/1.m4a" style="margin: 0 0 10px 0;"></button><br>
+						<b>{{>touch yes="Tap" no="Click"}} to listen again</b><br><br>
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg" alt="Oxford"></div></div>
+					</div>
+
+					<div class="col-sm-8 col-xs-9 col-xxs-12 ">
+						<div class="parapaper">
+							<div class="numberBig" style="float: left;">1</div>
+							<h4>The magazine which did the survey was called:</h4>
+							<div class="clearfix"></div>
+							<div class="text-center">
+								<button class="button1 ddwidth10 item-space incorrectAnswer">a) Travel</button><br>
+								<button class="button1 ddwidth10 item-space incorrectAnswer">b) Travelling</button><br>
+								<button class="button1 ddwidth10 item-space correctAnswer">c) Traveller</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			{{>rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19_1" nexturl="#m3a19_3" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m3a19_3">
+	<section id="m3a19_3" class="hidden">
+		<div class="content">
+
+			<h3 class="text-center">Now choose the right answer.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-sm-4 col-xs-3 col-xxs-12 text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a19/2.m4a" style="margin: 0 0 10px 0;"></button><br>
+						<b>{{>touch yes="Tap" no="Click"}} to listen again</b><br><br>
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg" alt="Oxford"></div></div>
+					</div>
+
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper">
+							<div class="numberBig" style="float: left;">2</div>
+							<h4>The word used to describe the general features they voted for was:</h4>
+							<div class="clearfix"></div>
+							<div class="text-center">
+								<button class="button1 ddwidth10 item-space correctAnswer">a) Criteria</button><br>
+								<button class="button1 ddwidth10 item-space correctAnswer">b) Categories</button><br>
+								<button class="button1 ddwidth10 item-space incorrectAnswer">c) Conditions</button>
+							</div>
+						</div>
+						<div class="row text-center">{{>hint hintchar="k" hint="There is more than one right answer"}}</div>
+					</div>
+
+				</div>
+			</div>
+
+			{{>rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19_2" nexturl="#m3a19_4" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m3a19_4">
+	<section id="m3a19_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+		
+			<h3 class="text-center">Now choose the right answer.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+				
+					<div class="col-sm-4 col-xs-3 col-xxs-12 text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a19/2.m4a" style="margin: 0 0 10px 0;"></button><br>
+						<b>{{>touch yes="Tap" no="Click"}} to listen again</b><br><br>
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg" alt="Oxford"></div></div>
+					</div>
+					
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper">
+							<div class="numberBig" style="float: left;">3</div>
+							<h4>The article used the nouns from '<u>friendly</u>' and '<u>clean</u>'. Type them in the boxes below.</h4>
+							<div class="clearfix"></div>
+							<p>&nbsp;</p>
+							
+							<div class="container-fluid">
+							
+								<div class="row">
+									<div class="col-sm-5 text-center">
+										<div class="inline-block-xs" style="padding-bottom: 1em;"><b>Adjective:</b></div>
+										<div class="caption capgreen">friendly</div>
+									</div>
+									<div class="col-sm-2 text-center">
+										<div class="hidden-xs" style="padding-bottom: 1em;">&nbsp;</div>
+										{{>arrowresponsive_big direction="right" directionxs="down"}}
+									</div>
+									<div class="col-sm-5 text-center">
+										<div class="inline-block-xs" style="padding-bottom: 1em;"><b>Noun:</b></div>
+										<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off"><input type="submit" value="OK"></form></span>
+									</div>
+								</div>
+								{{>blankrow}}
+								<div class="row visible-xs"><div class="col-xs-12"><hr></div></div>
+								{{>blankrow}}
+								<div class="row">
+									<div class="col-sm-5 text-center">
+										<div class="visible-xs-inline-block inline-block-xs" style="padding-bottom: 1em;"><b>Adjective:</b></div>
+										<div class="caption capgreen">clean</div>
+									</div>
+									<div class="col-sm-2 text-center">
+										{{>arrowresponsive_big direction="right" directionxs="down"}}
+									</div>
+									<div class="col-sm-5 text-center">
+										<div class="visible-xs-inline-block inline-block-xs" style="padding-bottom: 1em;"><b>Noun:</b></div>
+										<span id="entryanswer1"><span class="textentry-disabled"></span></span>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+						{{>gg_button gg_text="Click here to find out more about Adjectives and Nouns in the Grammar Guide"}}
+					</div>
+					
+				</div>
+			</div>
+			
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19_3" nexturl="#m3a19_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a19_5">
+	<section id="m3a19_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+		
+			<h3 class="text-center">Now choose the right answer.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+				
+					<div class="col-sm-4 col-xs-3 col-xxs-12 text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a19/q4.m4a" style="margin: 0 0 10px 0;"></button><br>
+						<b>{{>touch yes="Tap" no="Click"}} to listen again</b><br><br>
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg" alt="Oxford"></div></div>
+					</div>
+					
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper">
+							<div class="numberBig" style="float: left;">4</div>
+							<h4>The article contains 4 superlatives. Here's an example:</h4>
+							<div class="clearfix"></div>
+							<table class="table1 table-center">
+								<tr>
+									<th>Adjective</th><th>Comparative</th><th><u>Superlative</u></th>
+								</tr>
+								<tr>
+									<td>happy</td><td>happier</td><td><b>happiest</b></td>
+								</tr>
+							</table>
+							<p>&nbsp;</p>
+							
+							<h3 class="text-center">Type in the <span id="order">first</span> superlative</h3>
+							
+							<div class="text-center">
+								<ol class="olcircle text-left" style="display: inline-block;">
+									<li><span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="10" autocomplete="off"><input type="submit" value="OK"></form></span></li>
+									<li><span id="entryanswer1"><span class="textentry-disabled"></span></span></li>
+									<li><span id="entryanswer2"><span class="textentry-disabled"></span></span></li>
+									<li><span id="entryanswer3"><span class="textentry-disabled"></span></span></li>
+								</ol>
+							</div>
+							
+						</div>
+						{{>gg_button gg_text="Click here to find out more about Adjectives in the Grammar Guide"}}
+					</div>
+					
+				</div>
+			</div>
+			
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19_4" nexturl="#m3a19_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a19_6">
+	<section id="m3a19_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+		
+			<h3 class="text-center">Now choose the right answer.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+				
+					<div class="col-sm-4 col-xs-3 col-xxs-12 text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a19/3.m4a" style="margin: 0 0 10px 0;"></button><br>
+						<b>{{>touch yes="Tap" no="Click"}} to listen again</b><br><br>
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg" alt="Oxford"></div></div>
+					</div>
+					
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper">
+							<div class="numberBig" style="float: left;">5</div>
+							<h4>The article uses an informal expression which means:</h4>
+							<div class="clearfix"></div>
+							<div class="center"><div class="caption capgreen">'If you want value for money.'</div></div>
+							<p>&nbsp;</p>
+							
+							<h3 class="text-center">Type it in the box below. Remember to use apostrophes (’)</h3>
+							
+							<div class="text-center">
+								<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" autocomplete="off"><input type="submit" value="OK"></form></span>
+							</div>
+							<p>&nbsp;</p>
+						</div>
+						<div class="row text-center">{{>hint hintchar="k" hint="The expression has 7 words"}}</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19_5" nexturl="#m3a19_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a19_7">
+	<section id="m3a19_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+		
+			<h3 class="text-center">Now choose the right answer.</h3>
+			
+			<div class="container-fluid">
+				<div class="row">
+				
+					<div class="col-sm-4 col-xs-3 col-xxs-12 text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a19/4.m4a" style="margin: 0 0 10px 0;"></button><br>
+						<b>{{>touch yes="Tap" no="Click"}} to listen again</b><br><br>
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 300px"><div class="ph"><img draggable="false" src="images/module3/a19/Oxford.jpg" alt="Oxford"></div></div>
+					</div>
+					
+					<div class="col-sm-8 col-xs-9 col-xxs-12">
+						<div class="parapaper">
+							<div class="numberBig" style="float: left;">6</div>
+							<h4>Towards the end of the article there is a word which suggests you’re not sure about something, although it may be true.</h4>
+							<div class="clearfix"></div>
+							<p>&nbsp;</p>
+							
+							<h3 class="text-center">Type it in the box below.</h3>
+							
+							<div class="text-center">
+								<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="10" autocomplete="off"><input type="submit" value="OK"></form></span>
+							</div>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19_6" nexturl="#m3a19_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a19_8">
+	<section id="m3a19_8" class="hidden">
+		<div class="content">
+		
+			{{>InstructionsDictionary text="You can now read the article. Click on the cities below to watch short videos about them. Look up the words in blue in the Dictionary."}}
+			
+			<div class="parapaper paraextract article-text">
+				{{>metametrics level="5" star="no" align="center"}}
+				<p>In 2010, the readers of the magazine ‘Traveller’ voted for their favourite British cities. They gave each city a score based on <span class="grammar">criteria</span> such as architecture, friendliness, cleanliness, and safety.</p>
+
+				<p>Overall, the winner was Edinburgh with high scores in every <span class="grammar">category</span> but particularly for <span class="grammar">aesthetics</span>/architecture and friendliness. However, Liverpool had the friendliest people and Oxford the cleanest streets. London was best for culture as you would expect and for a range of accommodation - but if it’s value for money you’re after, then head for Bristol.</p>
+
+				<p>Bath got the best score for food and restaurants. Which city is the safest in Britain? Well <span class="grammar">apparently</span> it’s York, followed closely by Brighton.</p>
+
+				<p>Here’s their list of the top fifteen cities in the UK.</p>
+			</div>
+			<br>
+			<div class="snapshots snapshots-links text-center">
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city1">
+						<div class="number">1</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Edinburgh.jpg" alt="Edinburgh"></div></div>
+						<figcaption>Edinburgh</figcaption>
+					</figure>
+					
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city2">
+						<div class="number">2</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Oxford.jpg" alt="Oxford"></div></div>
+						<figcaption>Oxford</figcaption>
+					</figure>
+					
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city3">
+						<div class="number">3</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/London.jpg" alt="London"></div></div>
+						<figcaption>London</figcaption>
+					</figure>
+				
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city4">
+						<div class="number">4</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Liverpool.jpg" alt="Liverpool"></div></div>
+						<figcaption>Liverpool</figcaption>
+					</figure>
+				
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city5">
+						<div class="number">5</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Glasgow.jpg" alt="Glasgow"></div></div>
+						<figcaption>Glasgow</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city6">
+						<div class="number">6</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Brighton.jpg" alt="Brighton"></div></div>
+						<figcaption>Brighton</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city7">
+						<div class="number">7</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Manchester.jpg" alt="Manchester"></div></div>
+						<figcaption>Manchester</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city8">
+						<div class="number">8</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Bath.jpg" alt="Bath"></div></div>
+						<figcaption>Bath</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city9">
+						<div class="number">9</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Cambridge.jpg" alt="Cambridge"></div></div>
+						<figcaption>Cambridge</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city10">
+						<div class="number">10</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Newcastle.jpg" alt="Newcastle"></div></div>
+						<figcaption>Newcastle</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city11">
+						<div class="number">11</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/York.jpg" alt="York"></div></div>
+						<figcaption>York</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city12">
+						<div class="number">12</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Canterbury.jpg" alt="Canterbury"></div></div>
+						<figcaption>Canterbury</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city13">
+						<div class="number">13</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Durham.jpg" alt="Durham"></div></div>
+						<figcaption>Durham</figcaption>
+					</figure>
+
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city14">
+						<div class="number">14</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Bristol.jpg" alt="Bristol"></div></div>
+						<figcaption>Bristol</figcaption>
+					</figure>
+					
+					<figure data-toggle="modal" class="pointer" data-target="#m3a19_city15">
+						<div class="number">15</div>
+						<div class="ph-w ph-3x2" style="max-width: 300px"><div class="ph"><img draggable="false" class="pointer" src="images/module3/a19/Leeds.jpg" alt="Leeds"></div></div>
+						<figcaption>Leeds</figcaption>
+					</figure>
+					
+			</div>
+				
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a19_7" nexturl="#m3a19_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a19vids">
+
+<div class="modal fade" tabindex="-1" id="m3a19_city1" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city1">Edinburgh</h4>
+		</div>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LX2nq-tthxs?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	  </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city2" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city2">Oxford</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K4ozpM5JFP0?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+	  </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city3" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city3">London</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hhU9U5VcJDc?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city4" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city4">Liverpool</h4>
+		</div>
+
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pR-EI0JhBng?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city5" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city5">Glasgow</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HklVbbq5gsw?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" id="m3a19_city6" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city6">Brighton</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FXOCZtxGA14?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" id="m3a19_city7" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city7">Manchester</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XW6t2I-Le8w?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" id="m3a19_city8" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city8">Bath</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4anK-hczdZw?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city9" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city9">Cambridge</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rml3WE2_Lt0?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city10" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city10">Newcastle</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hR591bBDT20?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city11" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city11">York</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xoPbY_7yxms?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city12" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city12">Canterbury</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f4T4dXJc-Rw?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city13" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city13">Durham</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PFzml325RJw?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city14" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city14">Bristol</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QxYCV3wXF4E?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="m3a19_city15" role="dialog">
+  <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+		   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		   <h4 class="modal-title" id="m3a19_city15">Leeds</h4>
+		</div>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wi1SYvEy6wQ?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	 </div>
+   </div>
+</div>
+
+</template>

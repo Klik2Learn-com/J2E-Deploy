@@ -1,0 +1,148 @@
+<template name="m7a15">
+	<article class="with-tools-sidebar m7a15">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Chester');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 15 - {{>m7a15Title}}</div>
+			</header>
+			<section id="m7a15">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a15Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m7a15Intro}}</h3>
+					{{> m7a15Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a15_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a15_1}} {{>m7a15_2}} {{>m7a15_3}} {{>EndPage char="elle" act="m7a15" nextact="m7a16" place="Chester"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a15_1">
+	<section id="m7a15_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">This article about education in the UK has 8 words missing. Drag the words to the right spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a15/Pt1.m4a"></button>
+				Almost a third of 18-year-old Scots have applied for a place at university this autumn. The demand for a university place
+				in 2013 is at record level, despite the cost of
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> - up to £9,000 last year. Scots studying in their home country are
+				<div class="ddseatedtarget ddwidth7 dd1line"
+				data-destinationid="target2">&nbsp;</div> from fees, but there is a 14 per cent rise in applications from elsewhere in the UK, even though students
+				from England, Northern Ireland and Wales are
+				<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> for fees.
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">exempt</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">liable</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">tuition fees</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{>dic_button}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a15" nexturl="#m7a15_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a15_2">
+	<section id="m7a15_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">This article about education in the UK has 8 words missing. Drag the words to the right spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a15/Pt2.m4a"></button>
+				Applications from school leavers are rising again and the
+				<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target1">&nbsp;</div> between rich and poor is closing. More
+				<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target2">&nbsp;</div> groups are applying to colleges and universities. The
+				<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target3">&nbsp;</div> of the National
+				<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target4">&nbsp;</div> of Students (NUS) in Scotland, said, “It’s great to see that
+				<div class="ddseatedtarget ddwidth9 dd1line"
+				data-destinationid="target5">&nbsp;</div> education in Scotland is continuing to work.”
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">Union</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target5">free</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">disadvantaged</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">gap</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">president</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			{{>dic_button}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a15_1" nexturl="#m7a15_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a15_3">
+	<section id="m7a15_3" class="hidden">
+		<div class="content">
+			<h4 class="center">Here are the words/phrases again.</h4>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption item-space">tuition fees</div>
+						<div class="caption item-space">exempt</div>
+						<div class="caption item-space">liable</div>
+						<div class="caption item-space">gap</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption item-space">disadvantaged</div>
+						<div class="caption item-space">president</div>
+						<div class="caption item-space">union</div>
+						<div class="caption item-space">free</div>
+					</div>
+				</div>
+			</div>
+			{{>dic_button}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a15_2" nexturl="#m7a15_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

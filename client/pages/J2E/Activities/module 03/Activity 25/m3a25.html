@@ -1,0 +1,267 @@
+<template name="m3a25">
+<article class="with-tools-sidebar m3a25">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Edinburgh');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 25 - {{>m3a25Title}}</div>
+		</header>
+		
+		
+		<section id="m3a25">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a25Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m3a25Intro}}</h3>
+{{> m3a25Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a25_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a25_1}}
+		{{>m3a25_2}}
+		{{>m3a25_good}}
+		{{>m3a25_bad}}
+		{{>m3a25_3}}
+
+		{{>EndPage char="k" act="m3a25" nextact="m3a26" place="Edinburgh"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m3a25_1">
+	<section id="m3a25_1" class="hidden">
+		<div class="content">
+			<h2>You’ll now hear some sentences. They could be either <b>questions</b> on <b>statements</b> depending on the <b>intonation</b>.</h2>
+			<br>
+			<h3 class="text-center">Listen to each sentence and decide if it's a <b>question</b> or <b>statement</b>.</h3>
+			<p>&nbsp;</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-1 col-xs-6 text-center">
+						<div class="button1 qs-button" style="pointer-events: none; cursor: default;">?</div><br>
+						<b>Question</b>
+					</div>
+					<div class="col-sm-5 col-xs-6 text-center">
+						<div class="button1 qs-button" style="pointer-events: none; cursor: default;">.</div><br>
+						<b>Statement</b>
+					</div>
+				</div>
+			</div>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<h4>There are 12 sentences. If you get more than 3 wrong, you should try again. Good luck!</h4>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a25" nexturl="#m3a25_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a25_2">
+	<section id="m3a25_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			
+			<h3 class="text-center">Listen to the sentence. Choose whether it is a question (<b>?</b>) or a statement (<b>.</b>)</h3>
+			
+			<div class="container-fluid">
+				<div class="row text-center">
+					<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a25/1.m4a"></button>
+					<div class="caption" id="sentence">Sentence 1</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-1 col-xs-6 text-center">
+						<div class="button1 qs-button" id="question">?</div><br>
+						<b>Question</b>
+					</div>
+					<div class="col-sm-5 col-xs-6 text-center">
+						<div class="button1 qs-button" id="statement">.</div><br>
+						<b>Statement</b>
+					</div>
+				</div>
+				<div class="row text-center">
+					{{>scorebox1 rightSession="m3a25RightScore" wrongSession="m3a25WrongScore" }}
+				</div>
+			</div>
+			
+			{{>rightwrong}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a25_1" nexturl="#m3a25_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+
+
+
+
+
+<template name="m3a25_3">
+	<section id="m3a25_3" class="hidden">
+		<div class="content">
+			
+			{{>InstructionsRecord text="All of these sentences can be either questions or statements. Click (?) or (.) to hear the difference. Now practise speaking these sentences yourself. Record your voice then listen to it."}}
+			
+			
+			<table style="vertical-align: middle; margin: 0 auto;">
+				<tr>
+					<td><h5>She didn’t leave a message</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/1.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/1s.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>You didn’t tell them anything</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/2.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/2s.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>No-one’s heard anything from him</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/3q.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/3.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>He never turned up</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/4.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/4s.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>They were late again</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/5.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/5s.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>That’s his house</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/6q.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/6.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>She said that</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/7.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/7s.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>The show was cancelled</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/8q.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/8.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>She’s going to Venezuela</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/9q.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/9.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>She went out with him</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/10q.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/10.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>You're not going this evening</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/11.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/11s.m4a">.</button>
+					</td>
+				</tr>
+				<tr><td colspan="2"><hr style="margin: 0;"></td></tr>
+				<tr>
+					<td><h5>He got the job</h5></td>
+					<td class="nowraptext">
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/12q.m4a">?</button>
+						<button class="button1 item-space" data-audiosrc="/audio/module3/a25/12.m4a">.</button>
+					</td>
+				</tr>
+			</table>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a25_2" nexturl="#m3a25_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m3a25_bad">
+	<section id="m3a25_bad" class="hidden">
+	<div class="content">
+	<h2 class="center">You got too many questions wrong.</h2>
+		<div class="parapaper scorecontainer">
+			<div class="scoreleft">
+				{{> scorebox2 rightSession="m3a25RightScore" wrongSession="m3a25WrongScore" }}
+			</div>
+			<div class="scoreright">
+				<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+				<a draggable="false" href="#m3a25_2">
+					<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+				</a>
+			</div>
+			<div class="parent_expander"></div>
+		</div>
+		</div>
+		<footer>
+		{{>footer_nav nexturl="#m3a25_3" prev="hidden" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m3a25_good">
+	<section id="m3a25_good" class="hidden">
+	<div class="content">
+<h2 class="center">Well done! You got a good score.</h2>
+
+	<div class="parapaper scorecontainer">
+		<div class="scoreleft">
+			{{> scorebox2 rightSession="m3a25RightScore" wrongSession="m3a25WrongScore" }}
+		</div>
+		<div class="scoreright">
+			<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+		</div>
+		<div class="parent_expander"></div>
+	</div>
+	</div>
+		<footer>
+		{{>footer_nav nexturl="#m3a25_3" prev="hidden" next=""}}
+	  </footer>
+	</section>
+</template>

@@ -1,0 +1,30 @@
+<template name="complete">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+	<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div> <div class="acttitle-title">Course Complete</div>
+		</header>
+
+		<section id="courseComplete">
+			<div class="content">
+				<img draggable="false" src="/images/course-complete.png" class="img-responsive center-block" alt="Course complete badge">
+				<h3 class="text-center">Congratulations {{currentUser.profile.firstname}}! You have reached the end of the course.</h3>
+				<div class="parapaper paraextract fold courseComplete-stats">
+					<h4 class="text-center">Your progress</h4>
+					<ul class="ulblank">
+						<li>You have completed {{coursePercentage(currentUser._id)}}% of the course.</li>
+						<li>You have completed {{completedCount(currentUser._id)}} activities.</li>
+						<li>You spent a total of {{totalTimeCount(currentUser._id)}} on the course.</li>
+					</ul>
+				</div>
+				<p><b>You still have {{daysRemaining}} days remaining on the course. You can <a draggable="false" href="/ModuleSelect">go back</a> and do any activities again.</b></p>
+				<p class="thank-you">Thank you for learning with Journey 2 English.</p>
+				<a draggable="false" href="/" class="courseComplete-home"><i class="fa fa-home"></i></a>
+			</div>
+		</section>
+	</div>
+</article>
+</template>

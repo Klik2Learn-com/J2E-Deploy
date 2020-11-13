@@ -1,0 +1,44 @@
+<template name="ukQuiz_3">
+   <section id="ukQuiz_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Language Questions</h1>
+			<h3 class="center">
+				Choose the right picture to finish the sentence.
+			</h3>
+				<div class="container-fluid">
+				<!-- {{>rightwrong}} {{>welldone}} -->
+					
+					<div class="row">
+						<div class="col-sm-3 center">
+						<img src="/images/uk-quiz/Car.jpg" class="img-responsive center-block pointer" id="1">
+							<!-- <button id="1" class="button2 item-space ddwidth10">Car</button> -->
+						</div>						
+						<div class="col-sm-3 center">
+						<img src="/images/uk-quiz/Plane.jpg" class="img-responsive center-block pointer" id="4">
+							<!-- <button id="3" class="button2 item-space ddwidth10">Plane</button> -->
+						</div>
+						<div class="col-sm-3 center">
+						<img src="/images/uk-quiz/Train.jpg" class="img-responsive center-block pointer" id="3">
+							<!-- <button id="3" class="button2 item-space ddwidth10">Train</button> -->
+						</div>
+						<div class="col-sm-3 center">
+						<img src="/images/uk-quiz/Boat.jpg" class="img-responsive center-block pointer" id="2">
+							<!-- <button id="2" class="button2 item-space ddwidth10">Boat</button> -->
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-12 text-center parapaper">
+							<h4 id="questions">We're all in the same <span class="textentry-disabled"></span>.</h4>
+						</div>
+					</div>
+					<!-- {{>gg_button gg_text="You can get more information about ADVERBS in the Grammar Guide."}} -->
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#ukQuiz_2" nexturl="#ukQuiz_4" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>

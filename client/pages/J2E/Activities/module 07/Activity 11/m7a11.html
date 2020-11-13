@@ -1,0 +1,416 @@
+<template name="m7a11">
+	<article class="with-tools-sidebar m7a11">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/StokeonTrent');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 11 - {{>m7a11Title}}</div>
+			</header>
+			<section id="m7a11">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a11Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m7a11Intro}}</h3>
+					{{> m7a11Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a11_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a11_1}} {{>m7a11_2}} {{>m7a11_3}} {{>m7a11_4}} {{>m7a11_5}} {{>m7a11_6}} {{>m7a11_7}} {{>EndPage char="tu" act="m7a11"
+			nextact="m7a12" place="StokeonTrent"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a11_1">
+	<section id="m7a11_1" class="hidden">
+		<div class="content">
+			<h3 class="center">In this activity, you need to decide which tenses to use in the sentences.</h3>
+			<div class="parapaper paraextract center fold">
+				<h4>If it's
+					<u>real/likely</u> to happen use the Present/Future tenses.</h4>
+			</div>
+			<br>
+			<div class="parapaper paraextract center fold">
+				<h4>If it’s
+					<u>very unreal/unlikely</u> to happen, use the Past Simple/Conditional tenses.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a11" nexturl="#m7a11_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m7a11_2">
+	<section id="m7a11_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the right tenses under the pictures.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real2}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/festival1.jpg" alt="Rainy festival">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If it rained the show would be cancelled.</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real1}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/festival2.jpg" alt="A large crowd at a festival">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If it rains, the show will be cancelled.</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd1line2high" draggable="false" data-destination="target2">Present/ Future tense</div>
+					</div>
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd2lines" draggable="false" data-destination="target1">Past Simple/Conditional Tense</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a11_1" nexturl="#m7a11_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a11real1">
+	<h4>real/likely</h4>
+</template>
+
+<template name="m7a11real2">
+	<h4>unreal/unlikely</h4>
+</template>
+
+
+<template name="m7a11_3">
+	<section id="m7a11_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the right tenses under the pictures.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real1}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/weight2.jpg" alt="Strong man lifting weights">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If he lifts that weight, he’ll win the competition.</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real2}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/weight1.jpg" alt="Baby trying to lift weights">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If he lifted that weight, he’d win the competition.</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd1line2high" draggable="false" data-destination="target1">Present/ Future tense</div>
+					</div>
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd2lines" draggable="false" data-destination="target2">Past Simple/Conditional Tense</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a11_2" nexturl="#m7a11_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a11_4">
+	<section id="m7a11_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the right tenses under the pictures.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real2}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/study1.jpg" alt="Girl sleeping with open book">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If she worked hard she’d pass her exams.</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real1}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/study2.jpg" alt="Girl on laptop">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If she works hard she’ll pass her exam.</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd1line2high" draggable="false" data-destination="target2">Present/ Future tense</div>
+					</div>
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd2lines" draggable="false" data-destination="target1">Past Simple/Conditional Tense</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a11_3" nexturl="#m7a11_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a11_5">
+	<section id="m7a11_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the right tenses under the pictures.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real1}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/weather1.jpg" alt="Weather map showing ice/snow">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If it snows tomorrow, I’ll go skiing.</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real2}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/weather2.jpg" alt="Weather map showing sunny weather">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If it snowed tomorrow, I’d go skiing.</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd1line2high" draggable="false" data-destination="target1">Present/ Future tense</div>
+					</div>
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd2lines" draggable="false" data-destination="target2">Past Simple/Conditional Tense</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a11_4" nexturl="#m7a11_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a11_6">
+	<section id="m7a11_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the right tenses under the pictures.</h3>
+			{{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real1}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/read1.jpg" alt="Hands holding open book">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If you speak Japanese, you’ll be able to read this.</div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth20">
+					<figure>
+						{{>m7a11real2}}
+						<div class="ph-w border1" style="max-width: 315px">
+							<div class="ph" style="padding-top: 57.46%">
+								<img draggable="false" src="../images/module7/a11/read2.jpg" alt="Man lying on grass reading a book">
+							</div>
+						</div>
+						<br>
+						<div class="capblank">If you spoke Japanese, you’d be able to read this.</div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth14">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd1line2high" draggable="false" data-destination="target1">Present/ Future tense</div>
+					</div>
+					<div class="ddseat ddwidth14 dd2lines">
+						<div class="ddsourceseated shadow ddwidth14 dd2lines" draggable="false" data-destination="target2">Past Simple/Conditional Tense</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a11_5" nexturl="#m7a11_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a11_7">
+	<section id="m7a11_7" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 center">
+						<div class="box1 ">
+							<h4>real/likely</h4>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If it rains, the show will be cancelled.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If he lifts that weight, he’ll win the competition.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If she works hard she’ll pass her exam.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If it snows tomorrow, I’ll go skiing.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If you speak Japanese, you’ll be able to read this.
+							</div>
+							<br>
+							<br>
+						</div>
+					</div>
+					{{>blankrowxs}}
+					<div class="col-sm-6 center">
+						<div class="box1 ">
+							<h4>unreal/unlikely</h4>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If it rained the show would be cancelled.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If he lifted that weight, he’d win the competition.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If she worked hard she’d pass her exams.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If it snowed tomorrow, I’d go skiing.
+							</div>
+							<br>
+							<br>
+							<div class="caption capgreen ddwidth15">
+								If you spoke Japanese, you’d be able to read this.
+							</div>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a11_6" nexturl="#m7a11_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

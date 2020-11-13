@@ -1,0 +1,308 @@
+<template name="m1a26">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/DunveganCastle');"><i class="titlereturn fa fa-arrow-left"></i></a> {{/if}}
+				{{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 26 - {{>m1a26Title}}</div>
+			</header>
+
+			<section id="m1a26">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m1a26Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m1a26Intro}}</h3>
+					{{> m1a26Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a26_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{> m1a26_1}} {{> m1a26_2}} {{> m1a26_3}} {{> m1a26_4}} {{> m1a26_5}} {{> m1a26_6}} {{> m1a26_7}} {{> m1a26_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m1a26_1">
+	<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m1a26_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the right preposition into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>Since he lost his job, he doesn't know how he's going to get
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>.</li>
+					<li>She always gets
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> well with everyone she meets.</li>
+					<li>I don't know how Nelson Mandela got
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> his years of imprisonment.</li>
+					<li>She found it difficult to get
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> to her studies after she had been travelling for a year.</li>
+					<li>I don't think you'll be able to get
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> of that appointment - you promised to go.</li>
+				</ol>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">by</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">on</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">up</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">down</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">through</div>
+				</div>
+				<div class="ddseat ddwidth7 dd1line">
+					<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">out</div>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		<footer>
+			<div id="messageboard"></div>
+			{{>footer_nav prevurl="#m1a26" nexturl="#m1a26_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a26_2">
+	<section id="m1a26_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the right meaning of the sentence.</h3>
+			<div class="container-fluid parapaper">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4 id="question"> <span class="number">1</span>His part-time job helps him to get by.</h4>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<button id="answer0" class="button2 col-sm-6 col-xs-12">
+							To survive a difficult experience.
+					</button>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<button id="answer1" class="button2 col-sm-6 col-xs-12">
+							To concentrate on something
+					</button>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<button id="answer2" class="button2 col-sm-6 col-xs-12">
+							To have enough money to live on.
+					</button>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<button id="answer3" class="button2 col-sm-6 col-xs-12">
+							To escape from/avoid something.
+						</button>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<button id="answer4" class="button2 col-sm-6 col-xs-12">
+							To have good relationships with people.
+							</button>
+
+				</div>
+				{{>blankrow}} {{> welldone}} {{> rightwrong}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a26_1" nexturl="#m1a26_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a26_3">
+	<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m1a26_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Statements</h1>
+			<h3 class="center">Write the <b>PREPOSITION</b> in the space to go with the <b>VERB</b> ‘to get’.</h3>
+			<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>He left the job because he didn't get <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span>						with his boss.</li>
+					<li>Many people have to get <span id="entryanswer1" class="blank"></span> on a dollar a day. </li>
+					<li>Despite doing very little work, he got <span id="entryanswer2" class="blank"></span> the exam. </li>
+					<li>The problem won't seem so difficult if you just get <span id="entryanswer3" class="blank"></span> to it. </li>
+					<li>She knows she eats too much chocolate, but she finds it hard to get <span id="entryanswer4" class="blank"></span> of the habit.
+						</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a26_2" nexturl="#m1a26_4" prev="hidden" next="hidden"}}
+		</footer>
+				{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a26_4">
+	<section id="m1a26_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h4 class="center">Here are two phrasal verbs from the article on National Stereotypes</h4>
+			<h3 class="center">Drag the phrasal verb to the correct sentence.</h3>
+
+
+			<div class="parapaper parapaperdd1 fold">
+				<!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width and height  within an activity. Use 'em' in case the text size changes -->
+				{{> rightwrong}}
+				<ol class="olcircle" style="padding-left: 5%;">
+					<li>
+						<p> The researchers tried to
+							<div class="ddseatedtarget ddwidth6 dd1line" data-destinationid="target1">&nbsp;</div> if the stereotypes matched real people.</p>
+
+					</li>
+					<li>
+						<p> Beliefs about 'typical Americans' are not a very good guide when it
+							<div class="ddseatedtarget ddwidth6 dd1line" data-destinationid="target2">&nbsp;</div> interacting with real people.</p>
+
+					</li>
+				</ol>
+			</div>
+
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth6 dd1line">
+					<div class="ddsourceseated ddwidth6 dd1line shadow" draggable="false" data-destination="target2">comes to</div>
+				</div>
+				<div class="ddseat ddwidth6 dd1line">
+					<div class="ddsourceseated ddwidth6 dd1line shadow" draggable="false" data-destination="target1">find out</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a26_3" nexturl="#m1a26_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+
+	</section>
+</template>
+
+
+<template name="m1a26_5">
+	<section id="m1a26_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Now drag the meaning to the correct sentence.</h3>
+
+			<div class="parapaper parapaperdd1 fold">
+				<!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width and height  within an activity. Use 'em' in case the text size changes -->
+				{{> rightwrong}}
+				<ol class="olcircle" style="padding-left: 5%;">
+					<li>
+						<p> The researchers tried to <span class="correctword">find out</span> if the stereotypes matched real people.</p>
+						<p>
+							<div class="ddseatedtarget ddwidth16 dd1line" data-destinationid="target1">&nbsp;</div>
+						</p>
+					</li>
+					<li>
+						<p> Beliefs about 'typical Americans' are not a very good guide when it <span class="correctword">comes to</span> interacting
+							with real people.</p>
+						<p>
+							<div class="ddseatedtarget ddwidth16 dd1line" data-destinationid="target2">&nbsp;</div>
+						</p>
+					</li>
+				</ol>
+			</div>
+
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth16 dd1line">
+					<div class="ddsourceseated ddwidth16 dd1line shadow" draggable="false" data-destination="target2">to do something for real</div>
+				</div>
+				<div class="ddseat ddwidth16 dd1line">
+					<div class="ddsourceseated ddwidth16 dd1line shadow" draggable="false" data-destination="target1">to discover or investigate</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<footer>
+			{{>footer_nav prevurl="#m1a26_4" nexturl="#m1a26_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+
+	</section>
+</template>
+
+
+<template name="m1a26_6">
+	<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m1a26_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Write the correct phrasal verb in the space.</h3>
+			<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>The researchers tried to <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span>						if the stereotypes matched the real people.</li>
+					<li>Beliefs about 'typical Americans' are not a very good guide when it <span id="entryanswer1" class="blank"></span> interacting
+						with real people.</li>
+				</ol>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a26_6" nexturl="#m1a26_end" prev="hidden" next="hidden"}}
+		</footer>
+				{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a26_7">
+	<section id="m1a26_7" class="hidden">
+		<div class="content">
+			{{> Tu_saved}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a26_6" nexturl="#m1a26_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a26_end">
+	{{>EndPage char="tu" act="m1a26" nextact="m1a27" place="DunveganCastle"}}
+</template>

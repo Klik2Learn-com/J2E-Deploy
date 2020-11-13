@@ -1,0 +1,47 @@
+<template name="ssgame_difficulty">
+	<section id="ssgame_difficulty" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-story">
+			<h3 class="center">Choose which route you want to search</h3>
+				<div class="game-map-container m1Game-map">
+					<a draggable="false" href="#m1Game_textentry" class="pagination"><div class="game-map-A"></div></a>
+					<a draggable="false" href="#m1Game_textentry" class="pagination"><div class="game-map-B"></div></a>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="content">
+					<h4>HTML</h4>
+						<pre class="htmlcode2">
+&lt;template name=&quot;m1Game_3&quot;&gt;
+
+	&lt;section id=&quot;m1Game_3&quot; class=&quot;game-section hidden&quot;&gt;
+		&lt;div class=&quot;game-container&quot;&gt;
+			&lt;div class=&quot;game-story&quot;&gt;
+			&lt;h3&gt;Choose which route you want to search&lt;/h3&gt;
+				&lt;div class=&quot;game-map-container m1Game-map&quot;&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;#m1Game_textentry&quot; class=&quot;pagination&quot;&gt;&lt;div class=&quot;game-map-A&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+					&lt;a draggable=&quot;false&quot; href=&quot;#m1Game_textentry&quot; class=&quot;pagination&quot;&gt;&lt;div class=&quot;game-map-B&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			
+		&lt;/div&gt;
+	&lt;/section&gt;
+
+&lt;/template&gt;
+						</pre>
+					<h4>Javascript</h4>
+						<pre class="htmlcode2">
+Template.m1Game_3.events(&#123;
+	&#39;click .route-easy&#39;: function(evt) &#123;
+	Session.set(&quot;activeSection&quot;, &quot;#m1Game_1&quot;);
+	&#125;,
+	&#39;click .route-hard&#39;: function(evt) &#123;
+	Session.set(&quot;activeSection&quot;, &quot;#m1Game_1&quot;);
+	 &#125;
+&#125;);
+						</pre>
+				</div>
+	</section>
+</template>

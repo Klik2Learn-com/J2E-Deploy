@@ -1,0 +1,769 @@
+<template name="m2a22">
+	<article class="with-tools-sidebar m2a22">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Stonehaven');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 22 - {{>m2a22Title}}</div>
+			</header>
+
+			<section id="m2a22">
+				<div class="content">
+					<h1 class="start-page-header">{{> m2a22Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m2a22Intro}}</h3>
+					{{> m2a22Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m2a22_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m2a22_1}} {{>m2a22_2}} {{>m2a22_3}} {{>m2a22_4}} {{>m2a22_5}} {{>m2a22_6}} {{>m2a22_7}} {{>m2a22_8}} {{>m2a22_9}} {{>m2a22_10}}
+			{{>m2a22_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m2a22_1">
+	<section id="m2a22_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are words you need for different kinds of transport. Drag the words to the right pictures.</h3>
+			<div class="center">
+				<div class="caption item-space">Buses</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/1.jpeg" alt="Picture" width="144" height="144">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target1">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/2.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target2">&nbsp;</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/3.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target3">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/4.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target4">&nbsp;</div>
+					</div>
+				</span>
+			</div>
+			{{> rightwrong}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="false" data-destination="target4">Exact fare
+							<br>only sign</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target2">Stance</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target1">Double decker</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target3">Coach</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a22_10">
+	<section id="m2a22_10" class="hidden">
+		{{> popovers}}
+		<div class="content">
+			<h3>Well done. {{>touch yes="Tap" no="Click"}} the pictures to find out more about them.</h3>
+			<div class="center">
+				<div class="caption item-space">Cycling</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="High visibility jacket" data-toggle="popover" data-trigger="manual" data-placement="bottom"
+							 data-content="High visibility jackets are often worn by cyclists to make them easy to see by other road users. They are brightly coloured and often reflective.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/17.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd2lines">High visibility jacket</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Cycle racks" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A cycle rack is a series of metal frames where people can park their bicycles. They can lock their bicycle here with a bike chain - a thick chain with a lock on it.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/18.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Cycle racks</div>
+						</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Helmet" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="Cyclists wear helmets to help protect their heads if they have an accident while cycling.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/19.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Helmet</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Spokes" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="Spokes are the metal bars or wires that connect the middle of the wheel to the frame.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/20.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Spokes</div>
+						</div>
+					</div>
+				</span>
+			</div>
+			<br> {{>dic_button}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a22_2">
+	<section id="m2a22_2" class="hidden">
+		{{> popovers}}
+		<div class="content">
+			<h3>Well done. {{>touch yes="Tap" no="Click"}} the pictures to find out more about them.</h3>
+			<div class="center">
+				<div class="caption item-space">Buses</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Double decker" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A double decker is a bus that has two storeys or ‘decks’. You can sit downstairs or upstairs.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/1.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Double decker</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Stance" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A stance is the place where a bus or coach parks between journeys. Passengers often wait for their buses here.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/2.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Stance</div>
+						</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Coach" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A coach is a type of bus used to take groups of people on long journeys.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/3.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Coach</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Exact fare only sign" data-toggle="popover" data-trigger="manual" data-placement="bottom"
+							 data-content="Often buses will have this sign to tell you that they cannot give you change when you buy a ticket.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/4.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd2lines">Exact fare
+								<br>only sign</div>
+						</div>
+					</div>
+				</span>
+			</div>
+			<br> {{>dic_button}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a22_1" nexturl="#m2a22_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a22_3">
+	<section id="m2a22_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are words you need for different kinds of transport. Drag the words to the right pictures.</h3>
+			<div class="center">
+				<div class="caption item-space">Trains</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/5.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target5">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/6.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target6">&nbsp;</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/7.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target7">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/8.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target8">&nbsp;</div>
+					</div>
+				</span>
+			</div>
+			{{> rightwrong}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target7">Coach</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="false" data-destination="target8">Luggage
+							<br>trolley</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target5">Platform</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="false" data-destination="target6">Automatic
+							<br>barrier</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_4" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a22_4">
+	<section id="m2a22_4" class="hidden">
+		{{> popovers}}
+		<div class="content">
+			<h3>Well done. {{>touch yes="Tap" no="Click"}} the pictures to find out more about them.</h3>
+			<div class="center">
+				<div class="caption item-space">Trains</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Platform" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="The platform is the area in a railway station where you get on and off the train. Passengers will often stand here when waiting for a train.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/5.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Platform</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Automatic barrier" data-toggle="popover" data-trigger="manual" data-placement="bottom"
+							 data-content="An automatic barrier is a mechanically operated barrier between the train station entrance and the platforms. You need to use your ticket to get through them.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/6.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd2lines">Automatic
+								<br>barrier</div>
+						</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Coach" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="Trains are split up into different coaches. On passenger trains there is seating in each coach. Some trains have separate coaches for first class passengers only.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/7.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Coach</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Luggage trolley" data-toggle="popover" data-trigger="manual" data-placement="bottom"
+							 data-content="A luggage trolley is a cart with wheels to make it easier to carry bags and luggage around the station.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/8.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd2lines">Luggage
+								<br>trolley</div>
+						</div>
+					</div>
+				</span>
+			</div>
+			<br> {{>dic_button}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a22_3" nexturl="#m2a22_5" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a22_5">
+	<section id="m2a22_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are words you need for different kinds of transport. Drag the words to the right pictures.</h3>
+			<div class="center">
+				<div class="caption item-space">Taxis</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/9.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target9">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/10.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target10">&nbsp;</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/11.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target11">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/12.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target12">&nbsp;</div>
+					</div>
+				</span>
+			</div>
+			{{> rightwrong}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target10">For hire sign</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target12">Taxi rank</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target9">Meter</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target11">Hailing/flagging</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_6" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a22_6">
+	<section id="m2a22_6" class="hidden">
+		{{> popovers}}
+		<div class="content">
+			<h3>Well done. {{>touch yes="Tap" no="Click"}} the pictures to find out more about them.</h3>
+			<div class="center">
+				<div class="caption item-space">Taxis</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Meter" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A meter is a device in a taxi that tells you how much you will have to pay. Usually you will be able to see the cost on the screen as you travel.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/9.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Meter</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="For hire sign" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="Some taxis have a for hire sign on the roof, which usually says ‘taxi’. When it lights up it means the taxi is available to hire.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/10.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">For hire sign</div>
+						</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Hailing/flagging" data-toggle="popover" data-trigger="manual" data-placement="bottom"
+							 data-content="If you are on the street and want to hire a taxi, you can hail (or flag) passing taxis. You do this by raising your arm to get the driver’s attention.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/11.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Hailing/flagging</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Taxi rank" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A taxi rank is an area where taxis queue and wait for passengers.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/12.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Taxi rank</div>
+						</div>
+					</div>
+				</span>
+			</div>
+			<br> {{>dic_button}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_7" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a22_7">
+	<section id="m2a22_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are words you need for different kinds of transport. Drag the words to the right pictures.</h3>
+			<div class="center">
+				<div class="caption item-space">Airports</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/13.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target13">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/14.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target14">&nbsp;</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/15.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target15">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/16.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target16">&nbsp;</div>
+					</div>
+				</span>
+			</div>
+			{{> rightwrong}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="false" data-destination="target14">Departure
+							<br>lounge</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target13">Check-in desk</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target15">Boarding pass</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target16">Gate</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_8" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a22_8">
+	<section id="m2a22_8" class="hidden">
+		{{> popovers}}
+		<div class="content">
+			<h3>Well done. {{>touch yes="Tap" no="Click"}} the pictures to find out more about them.</h3>
+			<div class="center">
+				<div class="caption item-space">Airports</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Check-in desk" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A check-in desk is one of the first places you go to in an airport. You show your tickets and passport, and hand in your bags. You are letting the airport staff know that you are in the building and will be getting on your flight.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/13.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Check-in desk</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Departure lounge" data-toggle="popover" data-trigger="manual" data-placement="bottom"
+							 data-content="The departure lounge is the area in an airport where passengers wait before boarding the plane.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/14.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd2lines">Departure
+								<br>lounge</div>
+						</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Boarding pass" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="A boarding pass is a document given to you at check-in. It has details about you and your flight. You need it to be allowed onto the plane. ">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/15.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Boarding pass</div>
+						</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<a draggable="false" href="#" title="Gate" data-toggle="popover" data-trigger="manual" data-placement="bottom" data-content="In an airport a gate is a passageway that takes you from the airport and onto the plane.">
+								<div class="ph-w">
+									<img draggable="false" src="images/module2/a22/16.jpeg" width="144" height="144" alt="Picture">
+								</div>
+							</a>
+						</figure>
+						<div class="ddseat ddwidth10 dd2lines">
+							<div class="ddsourceseated ddplaced ddwidth10 dd1line2high">Gate</div>
+						</div>
+					</div>
+				</span>
+			</div>
+			<br> {{>dic_button}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_9" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a22_9">
+	<section id="m2a22_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3>Here are words you need for different kinds of transport. Drag the words to the right pictures.</h3>
+			<div class="center">
+				<div class="caption item-space">Cycling</div>
+				<br>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/17.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target17">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/18.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target18">&nbsp;</div>
+					</div>
+				</span>
+				<span class="avoidwrap">
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/19.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target19">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow" style="width: 12em;">
+						<figure>
+							<div class="ph-w">
+								<img draggable="false" src="images/module2/a22/20.jpeg" width="144" height="144" alt="Picture">
+							</div>
+						</figure>
+						<div class="ddseatedtarget dd2lines ddwidth10" data-destinationid="target20">&nbsp;</div>
+					</div>
+				</span>
+			</div>
+			{{> rightwrong}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target20">Spokes</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target18">Cycle racks</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="false" data-destination="target17">High visibility jacket</div>
+					</div>
+					<div class="ddseat ddwidth10 dd2lines">
+						<div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="false" data-destination="target19">Helmet</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a22_10" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a22_end">
+	{{>EndPage char="k" act="m2a22" nextact="m2a23" place="Stonehaven"}}
+</template>

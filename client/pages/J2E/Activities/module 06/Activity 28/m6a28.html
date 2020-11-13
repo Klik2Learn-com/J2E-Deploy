@@ -1,0 +1,186 @@
+<template name="m6a28">
+<article class="with-tools-sidebar m6a28">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/York');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 28 - {{>m6a28Title}}</div>
+		</header>
+
+
+		<section id="m6a28">
+			<div class="content">
+<h1 class="start-page-header">{{> m6a28Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m6a28Intro}}</h3>
+{{> m6a28Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a28_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+
+		{{>m6a28_1}}
+		{{>m6a28_2}}
+
+		
+		{{>EndPage char="k" act="m6a28" nextact="m6a29" place="York"}}
+
+
+	</div>
+</article>
+
+	 {{>m6a28_bios}}
+</template>
+
+		<template name="m6a28_1">
+<section id="m6a28_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m6_keats.jpg" alt="Photo"></div></div>
+									</div>
+										<div class="col-md-12 col-xs-6 text-left">
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>John Keats</h2>
+											(1795 - 1821)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m6a28_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="col-md-9 col-sm-12 text-center">
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m6_jk.m4a" class="buttonround buttonaudio"></button>
+								</div>
+								<div class="toolbuttright">"A thing of beauty is a joy forever. Its loveliness increases: it will never pass into nothingness".</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/5HxO8M7HosI?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m6a28_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a28_2">
+<section id="m6a28_2" class="hidden">
+	{{# if activeSection}}
+		<div class="content">
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m6_lennon.jpg" alt="Photo"></div></div>
+									</div>
+										<div class="col-md-12 col-xs-6 text-left">
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>John Lennon</h2>
+											(1940 - 1980)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m6a28_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="col-md-9 col-sm-12 text-center">
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m6_jl.m4a" class="buttonround buttonaudio"></button>
+								</div>
+								<div class="toolbuttright">"I don't care too much for money. Money can't buy me love".</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-4by3">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/XGUK2agwUPs" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m6a28_end" prevurl="#m6a28_1" prev="" next="" nextplace="Sheffield" nextmod="7" }}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m6a28_bios">
+	<div class="modal fade" id="m6a28_bio1" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">John Keats</h4>
+            	</div>
+
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m6_keats.jpg" alt="Photo"></figure>
+					John Keats is one of the most famous English Romantic poets. By the age of fourteen Keats had lost both his parents but went on to qualify as a doctor. His real ambition however was to be a writer and when his first poem was published in a leading magazine of the time, he gave up medicine. He had a short and often troubled life and towards the end of his life he went to Europe to try to improve his health. He died in Rome of TB. During his lifetime, his poetry was not well received but after his death, his reputation grew. Today he is one of the best loved poets in English literature.
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="m6a28_bio2" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">John Lennon</h4>
+            	</div>
+
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m6_lennon.jpg" alt="Photo"></figure>
+					John Lennon shot to fame in the 60’s as a member of The Beatles – one of the most successful and talented groups in the history of popular music. With Paul McCartney, he formed the 20th century’s most famous songwriting partnership. Songs like ‘Imagine’ and ‘Give Peace a Chance’ have been performed by hundreds of artists. He married Yoko Ono in 1969 but stopped performing in 1975 to concentrate on bringing up his young son Sean. Five years later, he released his last album – Double Fantasy.  Just three weeks later, as he and Yoko were returning to their New York apartment one December evening, he was shot by a crazed fan. Mark Chapman is still serving a life sentence for the murder.
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</template>
+

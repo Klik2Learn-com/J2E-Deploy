@@ -1,0 +1,30 @@
+<template name="m7Game_36">
+
+	<section id="m7Game_36" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m7Game-bg1"></div>
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="a">Elle: “Well nobody is really knowing what language it is.”</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="b">Elle: “Well nobody really knows what language it is.”</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">Elle: “Well nobody really know what language it is.”</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+
+</template>

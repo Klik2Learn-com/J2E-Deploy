@@ -1,0 +1,200 @@
+<template name="m1a6">
+	<article class="shadow m1a6">
+	
+		<header class="acttitle" >
+			{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Inverness');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{> menu}}
+			<div class="parent-level">Module 1</div>
+			<div class="acttitle-title">{{> activity}} 6 - {{>m1a6Title}}</div>
+		</header>
+		
+		<section id="m1a6">
+			<div class="content">
+				<h1 class="start-page-header">{{>m1a6Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m1a6Intro}}</h3>
+				{{> m1a6Time}}
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m1a6_1" prev="disabled" next=""}}
+			</footer>
+		</section>
+		
+		{{>m1a6_1}}
+		{{>m1a6_2}}
+		{{>EndPage char="elle" act="m1a6" nextact="m1a7" place="Inverness"}}
+		
+	</article>
+	{{>m1a6_modal}}
+</template>
+
+<template name="m1a6_1">
+	<section id="m1a6_1" class="hidden">
+		<div class="content">
+			<h3 class="center">Read the examples below.</h3>
+			{{> m1a6_examples}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a6" nexturl="#m1a6_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a6_examples">
+<div class="parapaper linespace m1a6_eg fold" style="max-width: 600px; margin-right: auto; margin-left: auto;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-1"><div class="number">1</div></div>
+			<div class="col-xs-11 center">
+				zero seven nine six six five four eight two six one<br>
+				<h5><span class="m1a5_num-hilight">07966548261</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">2</div></div>
+			<div class="col-xs-11 center">
+				minus twenty two<br>
+				<h5><span class="m1a5_num-hilight">-22</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">3</div></div>
+			<div class="col-xs-11 center">
+				two nil (or two nothing)<br>
+				<h5><span class="m1a5_num-hilight">2-0</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">4</div></div>
+			<div class="col-xs-11 center">
+				forty nine ninety nine<br>
+				<h5><span class="m1a5_num-hilight">£49.99</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">5</div></div>
+			<div class="col-xs-11 center">
+				twenty five to eight in the evening<br>
+				<h5><span class="m1a5_num-hilight">7:35pm</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">6</div></div>
+			<div class="col-xs-11 center">
+				fifteen love<br>
+				<h5><span class="m1a5_num-hilight">15-0</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">7</div></div>
+			<div class="col-xs-11 center">
+				eighty nine pence<br>
+				<h5><span class="m1a5_num-hilight">89p</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">8</div></div>
+			<div class="col-xs-11 center">
+				twenty two point zero five<br>
+				<h5><span class="m1a5_num-hilight">22.05</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">9</div></div>
+			<div class="col-xs-11 center">
+				two dozen<br>
+				<h5><span class="m1a5_num-hilight">24</span></h5>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-1"><div class="number">10</div></div>
+			<div class="col-xs-11 center">
+				 five and a quarter<br>
+				<h5><span class="m1a5_num-hilight">5¼</span></h5>
+			</div>
+		</div>
+	</div>
+</div>
+</template>
+
+<template name="m1a6_modal">
+	<div class="modal fade" tabindex="-1" id="m1a6_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m1a6_modal">Examples</h4>
+				</div>				
+				<div class="content">
+					{{> m1a6_examples}}					
+				</div>				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m1a6_2">
+	<section id="m1a6_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>Listen to the numbers and then type them in the box. You only have to type the numbers — the rest has been done for you. <wbr>If you get them wrong, look again at the examples.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+					<ol class="olcircle" style="font-size: 1.3em">
+						<li>
+							<button class="buttonround buttonaudio" id="m1a6audio1" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="4" maxlength="4" autocomplete="off"><input type="submit" value="OK"></form></span> 
+							<span id="entryanswer1" class="textentry-disabled"></span> 
+							<span id="entryanswer2" class="textentry-disabled"></span>
+						</li>
+						<li>
+							<button class="buttonround buttonaudio hidden" id="m1a6audio2" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<b>–</b><span id="entryanswer3" class="textentry-disabled"></span>
+						</li>
+						<li>
+							<button class="buttonround buttonaudio hidden" id="m1a6audio3" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<span id="entryanswer4" class="textentry-disabled"></span> <b>–</b> <span id="entryanswer5" class="textentry-disabled"></span>
+						</li>
+						<li>
+							<button class="buttonround buttonaudio hidden" id="m1a6audio4" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<b>£</b><span id="entryanswer6" class="textentry-disabled"></span><b>.</b><span id="entryanswer7" class="textentry-disabled"></span>
+						</li>
+						<li>
+							<button class="buttonround buttonaudio hidden" id="m1a6audio5" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<span id="entryanswer8" class="textentry-disabled"></span><b>:</b><span id="entryanswer9" class="textentry-disabled"></span><b>pm</b>
+						</li>
+						<li>
+							<button class="buttonround buttonaudio hidden" id="m1a6audio6" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<span id="entryanswer10" class="textentry-disabled"></span> <b>–</b> <span id="entryanswer11" class="textentry-disabled"></span>
+						</li>
+						<li>
+							<button class="buttonround buttonaudio hidden" id="m1a6audio7" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<span id="entryanswer12" class="textentry-disabled"></span><b>p</b>
+						</li>
+						<li>
+							<button class="buttonround buttonaudio hidden" id="m1a6audio8" data-audiosrc="/audio/module1/a6/1-0776.m4a"></button> 
+							<span id="entryanswer13" class="textentry-disabled"></span><b>.</b><span id="entryanswer14" class="textentry-disabled"></span>
+						</li>
+						
+					</ol>
+				</div>
+				<div class="center">
+					<button data-toggle="modal" data-target="#m1a6_modal" class="button2">Examples</button>
+				</div>
+
+		</div>
+		{{> stuck stuckchar="elle"}}
+	{{/if}}
+		</section>
+</template>

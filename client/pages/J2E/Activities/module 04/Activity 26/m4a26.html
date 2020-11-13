@@ -1,0 +1,120 @@
+<template name="m4a26">
+<article class="with-tools-sidebar m4a26">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/LochLomond');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 26 - {{>m4a26Title}}</div>
+		</header>
+		
+		
+		<section id="m4a26">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a26Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m4a26Intro}}</h3>
+{{> m4a26Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a26_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m4a26_1}}
+		{{>m4a26_2}}
+		{{>m4a26_3}}
+		{{>m4a26_4}}
+
+		{{>EndPage char="tu" act="m4a26" nextact="m4a27" place="LochLomond"}}
+
+		
+	</div>
+</article>
+
+</template>
+
+<template name="m4a26_1">
+	<section id="m4a26_1" class="hidden">
+		<div class="content text-center">
+			<h2 >Here are seven prepositions from this module:</h2>
+			<div class="caption item-space">OVER</div><div class="caption item-space">IN</div><div class="caption item-space">OF</div><div class="caption item-space">FOR</div><div class="caption item-space">WITH</div><div class="caption item-space">UP</div><div class="caption item-space">UNTIL</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a26" nexturl="#m4a26_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a26_2">
+	<section id="m4a26_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Fill in the missing spaces to complete the sentence.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+					<div class="iconleft"><div class="number">1</div></div>
+					<div class="iconright"><span id="entryanswer0"><form class="textentry">{{>m4a26_input_2}}<input type="submit" value="OK"></form></span> the last few years, there’s been an increase <span id="entryanswer1" class="textentry-disabled"></span> the popularity <span id="entryanswer2" class="textentry-disabled"></span> energy drinks.</div>
+				</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a26" nexturl="#m4a26_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+	{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a26_3">
+	<section id="m4a26_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Fill in the missing spaces to complete the sentence.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+					<div class="iconleft"><div class="number">2</div></div>
+					<div class="iconright">International experts are calling <span id="entryanswer0"><form class="textentry">{{>m4a26_input_3}}<input type="submit" value="OK"></form></span> food <span id="entryanswer1" class="textentry-disabled"></span> Scotland to be fortified <span id="entryanswer2" class="textentry-disabled"></span> vitamin D.</div>
+				</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a26" nexturl="#m4a26_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+	{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a26_4">
+	<section id="m4a26_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Fill in the missing spaces to complete the sentence.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+					<div class="iconleft"><div class="number">3</div></div>
+					<div class="iconright">I wound <span id="entryanswer0"><form class="textentry">{{>m4a26_input_4}}<input type="submit" value="OK"></form></span> working <span id="entryanswer1" class="textentry-disabled"></span> midnight or later most days.</div>
+				</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a26" nexturl="#m4a26_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+	{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a26_input_2">
+    <input type="text" name="userText" size="7" autocomplete="off" autofocus>
+</template>
+<template name="m4a26_input_3">
+    <input type="text" name="userText" size="7" autocomplete="off" autofocus>
+</template>
+<template name="m4a26_input_4">
+    <input type="text" name="userText" size="7" autocomplete="off" autofocus>
+</template>
+

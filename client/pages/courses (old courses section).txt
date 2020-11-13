@@ -1,0 +1,76 @@
+<section id="Courses" class="hidden">
+				<div class="content">
+
+					{{#if isExpired}} 
+						<div class="welcome-h hand-font">
+							<span class="avoidwrap">Welcome {{currentUser.profile.firstname}}. Your subscription has expired!</span>
+							<br>
+							<span class="avoidwrap">If you want to continue ...</span>
+						</div>
+						{{>subscriptionOptions}} 
+					{{else}}
+
+						<div class="welcome-h hand-font">
+							<span class="avoidwrap">Welcome{{#if hasCourse}} back,{{else}},{{/if}} {{currentUser.profile.firstname}}!</span>
+						</div>
+
+
+
+						<div class="homepage-first">
+
+
+							{{#if hasAssessment}}
+							<div class="home-item">
+								<div class="assessment-peek">
+									<span class="title">English Skills Test</span>
+									<img draggable="false" src="/images/icon-assess2.png" alt="Test">
+								</div>
+								<div class="course-begin">
+									<div class="course-begin-button infor button2 no-border" data-function="link" data-target="InitialAssessmentHowTo"><i class="fa fa-info"></i> How to</div>
+									<div class="course-begin-button button1 no-border" data-function="link" data-target="/assessment/{{getAssessmentId}}">Sit Assessment</div>
+								</div>
+							</div>
+							{{/if}} {{#if hasCourse}}
+							<div class="home-item">
+								<div id="progressWrap" class="progress-peek" data-target="profile">
+									<span class="title">Your course progress</span>
+								</div>
+								<div class="course-begin">
+									<div class="course-begin-button start button1 no-border" data-function="link" data-target="ModuleSelect">Start</div>
+									<div class="course-begin-button infor button2 no-border" data-function="link" data-target="Overview"><i class="fa fa-info"></i> Overview</div>
+								</div>
+							</div>
+							{{else}}
+							<div class="home-item">
+								<div id="progressWrap" class="progress-peek faded">
+									<span class="title">Your course progress</span>
+								</div>
+								<div class="course-begin">
+									<div class="course-begin-button start button1 no-border faded">Start</div>
+									<div class="course-begin-button infor button2 no-border faded"><i class="fa fa-info"></i> Overview</div>
+								</div>
+							</div>
+							{{/if}} {{#if announcement}}
+							<div class="home-item">
+								<div class="Announcements-wrapper">
+									<span class="title"><i class="fa fa-bullhorn"></i> Announcements</span> {{#each Announcements}} {{#if display}}
+									<div class="Announcements-box" data-toggle="modal" data-target="#moreAnnouncementsModal">
+										<div class="Announcements-contents">
+											<div class="Announcements-title">{{title}} <span class="Announcements-date"> - {{formatDate date}}</span></div>
+											<div class="Announcements-preview">{{message}}</div>
+											<div class="Announcements-more a-color">Read more</div>
+										</div>
+									</div>
+									{{/if}} {{/each}}
+									<div class="Announcements-more"><a draggable="false" href="#" data-toggle="modal" data-target="#moreAnnouncementsModal">View more Announcements...</a>									</div>
+								</div>
+							</div>
+							{{/if}}
+
+						</div>
+
+						<!--Depending on the user account, get only the appropriate dashboard-->
+						{{> Template.dynamic template=courseDashboard data=this}}
+					{{/if}}
+				</div>
+			</section>

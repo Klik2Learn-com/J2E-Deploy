@@ -1,0 +1,27 @@
+<template name="spt">
+	<article class="login-page login-page2 bespoke-login-page">
+		{{>bespokeLoginHeader logoSrc="/images/logos/spt.png" logoAlt="Shinny Performance Training Group Limited" style="max-width: 90px; margin: 5px;"}}
+		{{>bespokeLoginBody 
+			organisation="SPT" 
+			orgId="{{organisationId}}" }}
+			{{>sptContact}}
+		{{>bespokeLoginFooter}}
+	</article>
+</template>
+
+<template name="sptContact">
+	<div class="bespoke-contact">
+		<h2>Contact</h2>
+		<p>
+            <i class='fa fa-envelope'></i>
+            <!-- To be changed once SPT provide email -->
+			<!-- <a draggable='false' href='mailto:aspireenglish@iegro.ru'>aspireenglish@iegro.ru</a> -->
+			<p>
+				<p>
+					<i class='fa fa-globe'></i>
+					<a draggable='false' target='_blank' href='https://www.sptraining.org/'>www.sptraining.org</a>
+				</p>
+			</p>
+		</p>
+	</div>
+</template>

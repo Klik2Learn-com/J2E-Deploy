@@ -1,0 +1,133 @@
+<template name="SignIn">
+	{{>loginBox}}
+	<article class="login-page login-page2 bespoke-login-page">	
+		{{>bespokeLoginHeader logoSrc="/images/logos/your-logo.png" logoAlt="Your Organisation" style=""}}		
+		{{>registerForm organisation="yourOrganisation"}}
+		{{>bespokeLoginFooter}}
+	</article>
+</template>
+
+<template name="signup">
+	<!-- Instead of the login box, inclue a button or a link that will reveal / navigate to login, because
+	we cannot have two elements with id of "login-button" on the same page -->
+	{{>loginBox}}
+	<article class="login-page login-page2 bespoke-login-page">	
+		{{>loginHeaderWelcome2}}
+		{{>registerForm organisation="Klik2learn"}}
+		{{>bespokeLoginFooter}}
+	</article>
+</template>
+
+<template name="registerFormFloat">
+	<div id="register-float" class="fadeIn animated hidden">
+		<div class="dialogue fadeInDown animated">
+			<a class="close-register-float" data-target="close"><i class="fa fa-times"></i></a>
+			{{>registerForm organisation="{{organisation}}"}}
+		</div>
+	</div>
+</template>
+
+<!-- Currently not in use -->
+ <template name="bespokeLoginBody">
+		<section id="{{organisation}}-signin" class="">
+			<div class="content-login buy text-center">
+				{{>registerFormFloat organisation="{{organisation}}"}}
+				<h1>Welcome to Journey 2 English</h1>
+				<h2>Sign in or enter your access code to sign up</h2>
+				<div class="signin-container divide">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6">
+								<h4>New users</h4>
+								<form class="signin-form signup-from" data-orgId="{{orgId}}" method="POST">
+									<p class="signin-p"><i class="fa fa-rocket"></i>Have an access code? Click to get started.</p>
+									<button class="button no-border buttonsmall open-register-float">Register</button>
+								</form>
+							</div>
+							<div class="col-sm-6">
+								<h4>Existing users</h4>
+								<form id="bespoke-login-form" method="post" action="action" class="signin-form">
+									<fieldset class="loginfield">
+										<input type="text" id="login-email" class="form-control" placeholder="User name/email" autocorrect="off" autocapitalize="off">
+										<input type="password" class="form-control" id="login-password" placeholder="Password">
+										<input type="submit" class="button no-border buttonsmall" id="login-button" value="Sign In"><br>
+										<div id="loginerror" class="log-reg-error"></div>
+									</fieldset>
+									<p class="text-center"><a draggable="false" id="reset-form-show-button">Forgot/reset password</a></p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+</template>
+
+<template name="registerForm">
+	<section id="registerForm" class="">{{> popovers}}
+		<div class="content-login buy text-center hero-panel">
+			<h1>Register to start your journey</h1>	
+			<div id="register-container">
+				<form id="user-register-form2" autocomplete="off" method="POST">
+					<div class="container-fluid-no-gutter">
+						<div class="row">
+							<div class="col-sm-6">
+								<label for="registerFName" class="text-input-label">First name</label>
+								<input id="registerFName" class="form-control"  type="text" name="text" placeholder="" style="text-transform: capitalize;" required>
+							</div>
+							<div class="col-sm-6">
+								<label for="registerLName" class="text-input-label">Last name</label>
+								<input id="registerLName" class="form-control"  type="text" name="text" placeholder="" style="text-transform: capitalize;" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<label for="registerEmail" class="text-input-label">Email address</label>
+								<input id="registerEmail" class="form-control"  type="email" name="email" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<label for="registerEmailConfirm" class="text-input-label">Confirm email</label>
+								<input id="registerEmailConfirm" class="form-control"  type="email" name="email" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<label for="registerPassword" class="text-input-label">Password</label>
+								<input id="registerPassword" class="form-control"  type="password" name="password" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<label for="registerPasswordConfirm" class="text-input-label">Confirm password</label>
+								<input id="registerPasswordConfirm" class="form-control"  type="password" name="password" placeholder="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<label for="registerAccessCode" class="text-input-label">Access code <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="This is the code you will have received in your welcome email"><i class="fa fa-question-circle"></i></a></label>
+								<input id="registerAccessCode" class="form-control"  type="text" name="accessCode" placeholder="">
+							</div>
+						</div>
+					</div>
+					
+					<!-- We don't need this because we have other checks-->
+					<!-- {{> honeypot }} -->
+					<div class="text-center">
+						<label class="form-check-inline">
+							<input class="form-check-input" type="checkbox" id="tcCheck" value="yes"> I agree with the <a href="#" class="terms_activate">Terms &amp; Conditions</a>
+						</label>
+						
+						<input type="submit" id="register-button" value="Register"/>
+						
+						<div class="registrationErrors"></div>
+					</div>
+				</form>
+			</div>
+			<p class="already-have">Already have an account? <a class="call-login-box" style="font-weight: normal;">Sign in here</a>.</p>
+			<p class="find-out-more">Don't have an access code? <a href="/find-out-more" style="font-weight: normal;">Click here to find out how to access Journey 2 English</a>.</p>
+		{{>TermsConditions}}
+		</div>
+	</section>
+</template>

@@ -1,0 +1,586 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m2a9">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Dundee');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 9 - {{>m2a9Title}}</div>
+		</header>
+				
+			<section id="m2a9">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a9Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m2a9Intro}}</h3>
+{{> m2a9Time}} <!--{{> resumePopUp}}-->
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a9_1" prev="hidden" next="" next_text="Start"}}
+	</footer>
+		</section>
+		{{> m2a9_1}}
+		{{> m2a9_2}}
+		{{> m2a9_3}}
+		{{> m2a9_4}}
+		{{> m2a9_5}}
+		{{> m2a9_6}}
+		{{> m2a9_7}}
+		{{> m2a9_8}}
+		{{> m2a9_9}}
+		{{> m2a9_10}}
+		{{> m2a9_11}}
+		{{> m2a9_12}}
+		{{> m2a9_13}}
+		{{> m2a9_14}}
+		{{> m2a9_15}}
+		{{> m2a9_end}}
+	</div>
+</article>
+
+		{{>m2a9ExModal}}
+	</template>
+	
+	
+<template name="m2a9_1">
+	<section id="m2a9_1" class="hidden">
+		<div class="content">
+			<h2>Here’s an example of the PRESENT CONTINUOUS towards the end of the article about people not shopping in supermarkets (Activity 6)</h2>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8 text-center">
+						<div class="caption text-center">
+							They <span class="grammar">are getting</span> more efficient...
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<p>This seems to break the rule that the <b>Present Continuous</b> is used for things happening <span class="grammar">at the moment</span>.</p>
+						<p>BUT, this tense can also mean</p>
+						<ul>
+							<li><b>Now</b> in a general sense – <span class="grammar">over a period of time</span> – part of a process that continues from week to week.</li>
+						</ul>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a9_2" prev="hidden" next=""}}
+	</footer>
+	</section>
+
+	</template>
+	
+	
+
+<template name="m2a9_10">
+	<section id="m2a9_10" class="hidden">
+		<div class="content">
+			<h1>Over a period of time</h1>
+			<div class="center">
+				<div class="ph-w ph-16x9" style="max-width: 530px"><div class="ph"><img draggable="false" src="/images/module2/periodoftime.png" alt="Calendar"></div></div>
+				<br><br>
+				<div class="caption">
+					I’m watching less and less TV these days.
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a9_11" prev="hidden" next=""}}
+		</footer>
+	</section>
+
+	</template>
+
+<template name="m2a9_11">
+	<section id="m2a9_11" class="hidden">
+	{{#if activeSection}}7
+		<div class="content">
+			<h3 class="text-center">Choose the correct reason for using the <b>Present Continuous</b>.</h3>
+			{{>rightwrong}}
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="caption"><div class="number">5</div> That dog’s barking again. It’s driving me mad!</div>
+				</div>
+				{{>blankrow}}
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4 center">
+						<div id="9" class="button1 item-space nowraptext">At the moment</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div id="10" class="button1 item-space nowraptext">Over a period of time</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div type="button" class="button2 item-space" data-toggle="modal" data-target="#m2a9Ex">Examples</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="#m2a9_12" prev="disabled" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_12">
+	<section id="m2a9_12" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>At the moment</h1>
+			<div class="center">
+				<div class="ph-w ph-16x9" style="max-width: 530px"><div class="ph"><img draggable="false" src="images/module2/bark.png" alt="Woman annoyed by barking dog"></div></div>
+				<br><br>
+				<div class="caption">
+					That dog’s barking again. It’s driving me mad!
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a9_13" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_13">
+	<section id="m2a9_13" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Choose the correct reason for using the <b>Present Continuous</b>.</h3>
+			{{>rightwrong}}
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="caption"><div class="number">6</div> His health is slowly improving.</div>
+				</div>
+				{{>blankrow}}
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4 center">
+						<div id="11" class="button1 item-space nowraptext">At the moment</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div id="12" class="button1 item-space nowraptext">Over a period of time</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div type="button" class="button2 item-space" data-toggle="modal" data-target="#m2a9Ex">Examples</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="#m2a9_14" prev="disabled" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_14">
+	<section id="m2a9_14" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Over a period of time</h1>
+			<div class="center">
+				<div class="ph-w ph-16x9" style="max-width: 530px"><div class="ph"><img draggable="false" src="images/module2/periodoftime.png" alt="Calendar"></div></div>
+				<br><br>
+				<div class="caption">
+					His health is slowly improving.
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a9_15" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_15">
+	<section id="m2a9_15" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid" style="max-width: 760px;">
+				<div class="row">
+					<div class="col-sm-6 col-xs-5"><b>I’m reading a couple of Dan Brown’s novels.</b></div>
+					<div class="col-sm-1 col-xs-2 text-center">{{>arrow direction="right"}}</div>
+					<div class="col-sm-5 col-xs-5"><div class="caption capgreen text-center block">Over a period of time</div></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6 col-xs-5"><b>Don’t disturb her, she’s sleeping.</b></div>
+					<div class="col-sm-1 col-xs-2 text-center">{{>arrow direction="right"}}</div>
+					<div class="col-sm-5 col-xs-5"><div class="caption capgreen text-center block">At the moment</div></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6 col-xs-5"><b>He’s not listening - he’s got his headphones on.</b></div>
+					<div class="col-sm-1 col-xs-2 text-center">{{>arrow direction="right"}}</div>
+					<div class="col-sm-5 col-xs-5"><div class="caption capgreen text-center block">At the moment</div></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6 col-xs-5"><b>I’m watching less and less TV these days.</b></div>
+					<div class="col-sm-1 col-xs-2 text-center">{{>arrow direction="right"}}</div>
+					<div class="col-sm-5 col-xs-5"><div class="caption capgreen text-center block">Over a period of time</div></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6 col-xs-5"><b>That dog’s barking again. It’s driving me mad!</b></div>
+					<div class="col-sm-1 col-xs-2 text-center">{{>arrow direction="right"}}</div>
+					<div class="col-sm-5 col-xs-5"><div class="caption capgreen text-center block">At the moment</div></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-6 col-xs-5"><b>His health is slowly improving.</b></div>
+					<div class="col-sm-1 col-xs-2 text-center">{{>arrow direction="right"}}</div>
+					<div class="col-sm-5 col-xs-5"><div class="caption capgreen text-center block">Over a period of time</div></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a9_end" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_2">
+	<section id="m2a9_2" class="hidden">
+		<div class="content">
+
+			<h2>Here’s another example like this</h2>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="hidden-xs" style="margin-top: 30%;"></div>
+						<div class="caption text-left" style="margin-bottom: 1em;">
+							I <span class="grammar">practise</span> the guitar every day and I’m <span class="grammar">getting</span> better all the time.
+						</div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="ph-w ph-1x1" style="max-width: 362px"><div class="ph"><img draggable="false" src="images/module2/Guitar.png" alt="Boy imagining a rock concert"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+  	<footer>
+		{{>footer_nav prevurl="#m2a9_1" nexturl="#m2a9_3" prev="" next=""}}
+	</footer>
+	</section>
+
+	</template>
+	
+	
+
+<template name="m2a9_3">
+	<section id="m2a9_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Choose the correct reason for using the <b>Present Continuous</b>.</h3>
+			{{>rightwrong}}
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="caption"><div class="number">1</div> I’m reading a couple of Dan Brown’s novels.</div>
+				</div>
+				{{>blankrow}}
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4 center">
+						<div id="1" class="button1 item-space nowraptext">At the moment</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div id="2" class="button1 item-space nowraptext">Over a period of time</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div type="button" class="button2 item-space" data-toggle="modal" data-target="#m2a9Ex">Examples</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a9_4" prev="disabled" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_4">
+	<section id="m2a9_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Over a period of time</h1>
+			<div class="center">
+				<div class="ph-w ph-16x9" style="max-width: 530px"><div class="ph"><img draggable="false" src="images/module2/periodoftime.png" alt="Calendar"></div></div>
+				<br><br>
+				<div class="caption">
+					I’m reading a couple of Dan Brown’s novels.
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a9_3" nexturl="#m2a9_5" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_5">
+	<section id="m2a9_5" class="hidden">
+	{{#if activeSection}}
+	<div class="content">
+			<h3 class="text-center">Choose the correct reason for using the <b>Present Continuous</b>.</h3>
+			{{>rightwrong}}
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="caption"><div class="number">2</div> Don’t disturb her, she’s sleeping.</div>
+				</div>
+				{{>blankrow}}
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4 center">
+						<div id="3" class="button1 item-space nowraptext">At the moment</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div id="4" class="button1 item-space nowraptext">Over a period of time</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div type="button" class="button2 item-space" data-toggle="modal" data-target="#m2a9Ex">Examples</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="#m2a9_6" prev="disabled" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_6">
+	<section id="m2a9_6" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>At the moment</h1>
+			<div class="center">
+				<div class="ph-w ph-16x9" style="max-width: 530px"><div class="ph"><img draggable="false" src="/images/module2/sleep.png" alt="Girl sleeping"></div></div>
+				<br><br>
+				<div class="caption">
+					Don’t disturb her, she’s sleeping.
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a9_7" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_7">
+	<section id="m2a9_7" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Choose the correct reason for using the <b>Present Continuous</b>.</h3>
+			{{>rightwrong}}
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="caption"><div class="number">3</div> He’s not listening, he’s got his headphones on.</div>
+				</div>
+				{{>blankrow}}
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4 center">
+						<div id="5" class="button1 item-space nowraptext">At the moment</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div id="6" class="button1 item-space nowraptext">Over a period of time</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div type="button" class="button2 item-space" data-toggle="modal" data-target="#m2a9Ex">Examples</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="#m2a9_8" prev="disabled" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_8">
+	<section id="m2a9_8" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>At the moment</h1>
+			<div class="center">
+				<div class="ph-w ph-16x9" style="max-width: 530px"><div class="ph"><img draggable="false" src="/images/module2/notlistening.png" alt="Man with headphones on"></div></div>
+				<br><br>
+				<div class="caption">
+					He’s not listening, he’s got his headphones on.
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a9_9" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_9">
+	<section id="m2a9_9" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Choose the correct reason for using the <b>Present Continuous</b>.</h3>
+			{{>rightwrong}}
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="caption"><div class="number">4</div> I’m watching less and less TV these days.</div>
+				</div>
+				{{>blankrow}}
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4 center">
+						<div id="7" class="button1 item-space nowraptext">At the moment</div>
+					</div>
+					<div class="col-sm-4 center">
+						<div id="8" class="button1 item-space nowraptext">Over a period of time</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div type="button" class="button2 item-space" data-toggle="modal" data-target="#m2a9Ex">Examples</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="#m2a9_10" prev="disabled" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+	
+	
+
+<template name="m2a9_end">
+{{>EndPage char="elle" act="m2a9" nextact="m2a10" place="Dundee"}}
+</template>
+
+<template name="m2a9ExModal">
+	<div id="m2a9Ex" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<h1>Examples</h1>
+					<h4>Here’s an example of the PRESENT CONTINUOUS towards the end of the article about people not shopping in supermarkets (Activity 6)</h4>
+					<div class="container-fluid">
+						<div class="text-center">
+							
+							<div class="caption text-center">
+								They <span class="grammar">are getting</span> more efficient...
+							</div>
+
+						</div>
+						<br>
+						<br>
+						<div>
+							
+							
+							<p>This seems to break the rule that the <b>Present Continuous</b> is used for things happening <span class="grammar">at the moment</span>.</p>
+							<p>BUT, this tense can also mean</p>
+							<ul>
+								<li><b>Now</b> in a general sense – <span class="grammar">over a period of time</span> – part of a process that continues from week to week.</li>
+							</ul>
+							
+							
+						</div>
+						<br>
+						<h4>Here’s another example like this</h4>
+						<div class="text-center">
+							
+							
+							<div class="caption text-left">
+								I <span class="grammar">practise</span> the guitar every day and I’m <span class="grammar">getting</span> better all the time.
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button2" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

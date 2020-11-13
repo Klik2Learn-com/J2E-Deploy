@@ -1,0 +1,178 @@
+<template name="m7a25"> 
+<article class="with-tools-sidebar m7a25">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bangor');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 25 - {{>m7a25Title}}</div>
+		</header>
+		<section id="m7a25">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a25Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m7a25Intro}}</h3>
+				{{> m7a25Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a25_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a25_1}}
+		{{>m7a25_2}}
+		{{>EndPage char="k" act="m7a25" nextact="m7a26" place="Bangor"}}
+	</div>
+</article>
+
+	{{>m7a25_bio1}}
+	{{>m7a25_bio2}}
+</template>
+<template name="m7a25_1"> 
+	<section id="m7a25_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m7_charles.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Charles Rennie Mackintosh</h2>
+											(1868 - 1928)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m7a25_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m7_cr.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“Art is the Flower. Life is the Green Leaf. Let every artist strive to make his flower a beautiful living thing, something that will convince the world that there may be, there are, things more precious more beautiful - more lasting than life itself.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m7_crvid" src="https://www.youtube.com/embed/qMMEPA3HRPU?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a25" nexturl="#m7a25_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m7a25_bio1">
+	<div class="modal fade" id="m7a25_bio1" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Charles Rennie Mackintosh</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m7_charles.jpg" alt="Photo"></figure>
+					Charles Rennie Mackintosh was a Scottish designer, architect and artist from Glasgow who had a considerable influence on European art. He lived in the south of France for two years with his wife and his designs were particularly popular in Austria and Germany. His design for the Glasgow School of Art made his reputation in Europe. Many of his paintings and pieces of furniture are owned by Glasgow University. If you visit the Willow tea rooms in Glasgow you will be surrounded by MacIntosh’s designs which you can now find on many objects from chairs to candles.
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m7a25_2"> 
+	<section id="m7a25_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m7_florence.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Florence Nightingale</h2>
+											(1820 - 1910)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m7a25_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m7_fn.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“I attribute my success to this - I never gave or took any excuse.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m7_fnvid" src="https://www.youtube.com/embed/65rPhLeEXpc?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a25_1" nexturl="#m7a25_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+  <template name="m7a25_bio2">
+	<div class="modal fade" id="m7a25_bio2" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Florence Nightingale</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m7_florence.jpg" alt="Photo"></figure>
+					Florence was born into a wealthy English family and spent her childhood in one of the family’s large mansion houses. Despite her family’s opposition, she refused to accept a role as a wife and mother and at the age of 24 decided to become a nurse. She is most famous for her work among wounded soldiers in the Crimean war. She became known as the Lady with the Lamp because she did her nursing rounds at night. She wrote the first textbook on nursing and the International Nurses’ Day is celebrated round the world on her birthday.
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>

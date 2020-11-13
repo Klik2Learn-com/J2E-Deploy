@@ -1,0 +1,553 @@
+<template name="Yeti_ans_d1">
+	<section id="Yeti_ans_d1" class="hidden" style="background: none;">
+	{{#if activeSection}}
+	<div class="answersbg">
+		<div class="content">
+			<h1 class="yetih1">Answers</h1>
+			<div class="ansjournal">
+				{{#if d1_hardpath}}
+					{{> d1_title}}						 
+						{{> d1_h1_ans}}
+						{{> d1_h2_ans}}
+						{{> d1_h3_ans}}
+				{{else}}
+					{{> d1_title}}
+						{{> d1_e1_ans}}
+						{{> d1_e2_ans}}
+						{{> d1_e3_ans}}
+						{{> d1_e4_ans}}
+						{{> d1_e5_ans}}
+				{{/if}}
+				
+				{{#if d2_hardpath}}
+					{{> d2_title}}						 
+						{{> d2_h1_ans}}
+						{{> d2_h2_ans}}
+						{{> d2_h3_ans}}
+				{{else}}
+					{{> d2_title}}	
+						{{> d2_e1_ans}}
+						{{> d2_e2_ans}}
+						{{> d2_e3_ans}}
+						{{> d2_e4_ans}}
+						{{> d2_e5_ans}}
+				{{/if}}
+				{{#if d3_hardpath}}
+					{{> d3_title}}						 
+						{{> d3_h1_ans}}
+						{{> d3_h2_ans}}
+						{{> d3_h3_ans}}
+				{{else}}
+					{{> d3_title}}
+						{{> d3_e1_ans}}
+						{{> d3_e2_ans}}
+						{{> d3_e3_ans}}
+						{{> d3_e4_ans}}
+						{{> d3_e5_ans}}
+				{{/if}}
+				{{#if d4_hardpath}}
+					{{> d4_title}}						 
+						{{> d4_h1_ans}}
+						{{> d4_h2_ans}}
+						{{> d4_h3_ans}}
+				{{else}}
+					{{> d4_title}}	
+					
+						{{> d4_e1_ans}}
+						{{> d4_e2_ans}}
+						{{> d4_e3_ans}}
+						{{> d4_e4_ans}}
+						{{> d4_e5_ans}}
+				{{/if}}
+			</div>
+		</div>
+	</div>
+	{{/if}}
+</section>
+</template>
+<template name="d1_title">
+	<section id="title1" class="Yeti_ans_title">
+		<h4>Journey to the base camp:</h4>
+		<br>
+		<br>
+	</section>
+</template>
+<template name="d1_e1_ans">
+	<section>
+		<div class="yetianswer">
+			<p>Arrived at 6pm last night. The rest of the team are already here. Very excited <span class="correctword">about</span> starting the journey tomorrow. I’ve always been interested <span class="correctword">in</span> yetis. Everything is looking good. Even the <span class="correctword">weather</span> forecast is good for the next few days.</p>
+		</div>
+		{{> next_section_nav prev="hidden"}}
+	</section>
+</template>
+<template name="d1_e2_ans">
+	<section class="hidden"><div class="yetianswer">
+			<p><span class="correctword">In</span> 1925 a photographer saw a creature <span class="correctword">like</span> a man pulling up small bushes <span class="correctword">near</span> the Zemu glacier.</p>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d1_e3_ans">
+	<section class="hidden"><div class="yetianswer">
+		<ul>
+			<li class="linespace">The leader of our expedition is coming from America.</li>
+			<li class="linespace">Our expedition leader is from American.</li>
+			<li class=" linespace correctword">The leader of our expedition comes from America.</li>
+		</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d1_e3b_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+		<ul>
+			<li class="linespace">I’ve red lots of articles about yeti sightings</li>
+			<li class="linespace correctword">Have you read any?</li>
+			<li class="linespace">Our tents are read.</li>
+		</ul>
+		{{> next_section_nav}}
+		</div>
+	</section>
+</template>
+<template name="d1_e3c_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+		<ul>
+			<li class="linespace">There not easy to find.</li>
+			<li class="linespace">They’re walk like a man.</li>
+			<li class="linespace correctword">There are photographs of their footprints.</li>
+		</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d1_e4_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				<p>The word ‘yeti’ means ‘rock bear.’</p>
+				<span class="correctword">TRUE</span>
+			</div>
+		{{> next_section_nav}}
+		</div>
+	</section>
+</template>
+<template name="d1_e5_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				A large animal was shot by an Indian hunter from Ladakh.
+			</div>
+			{{> next_section_nav}}
+		</div>
+	</section>
+</template>
+<template name="d1_h1_ans">
+	<section>
+		<div class="yetianswer">
+			<p>Arrived <span class="correctword">at</span> 6pm last night. The rest <span class="correctword">of</span> the team are already here. Very excited <span class="correctword">about</span> starting the journey tomorrow. I’ve been fascinated <span class="correctword">by</span> yetis <span class="correctword">since</span> I was a child. Everything is looking positive. Even the <span class="correctword">weather</span> forecast is good for the next few days.</p>
+		</div>
+		{{> next_section_nav prev="hidden"}}
+	</section>
+</template>
+<template name="d1_h2_ans">
+	<section class="hidden"><div class="yetianswer">
+			<div class="tfanswer text-center">
+				<p>In 1925 a photographer saw a creature like a man pulling up small bushes near the Zemu glacier.</p>
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d1_h3_ans">
+	<section class="hidden"><div class="yetianswer">
+			<ul>
+				<li class="linespace">The leader of our expedition is coming from America.</li>
+				<li class="linespace">Our expedition leader is America.</li>
+				<li class="linespace correctword">The leader of our expedition comes from America.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d1_h3b_ans">
+	<section class="hidden"><div class="yetianswer">
+			<ul>
+				<li class="linespace">I’ve red lots of articles about yeti sightings.</li>
+				<li class="linespace correctword">Have you read any?</li>
+				<li class="linespace">Do you read any articles about yetis?</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d1_h3c_ans">
+	<section class="hidden"><div class="yetianswer">
+			<ul>
+				<li class="linespace">There not easy to find.</li>
+				<li class="linespace correctword">They’re supposed to walk like a man.</li>
+				<li class="linespace">There photographs of their footprints.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<!-- *********************** DAY 2 ANSWERS *****************************-->
+<template name="d2_title">
+	<section id="title2" class="hidden">
+		<h4>Journey to check point 1:</h4>
+		<br>
+		<br>
+	</section>
+</template>
+<template name="d2_e1_ans">
+	<section class="hidden"><div class="yetianswer">
+			<ul>
+				<li class="linespace blankli"> <button id="easy sec1-1a" class="buttonaudio buttonround"></button> We’re testing the radios. Have you got? Over.</li>
+				<li class="linespace correctword blankli"> <button id="easy sec1-1b" class="buttonaudio buttonround"></button> Yes, I’ve got one. Over.</li>
+				<li class="linespace blankli"> <button id="easy sec1-1c" class="buttonaudio buttonround"></button> Right. Do you hearing me? Over.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d2_e2_ans">
+	<section class="hidden"><div class="yetianswer">
+			<p>	In 1970 a famous British climber saw an ape <span class="correctword">like</span> creature searching <span class="correctword">for</span> food <span class="correctword">around</span> his camp.</p>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d2_e3_ans">
+	<section class="hidden"><div class="yetianswer">
+			<p>Today we get down to work. Everybody is getting <span class="correctword">on</span> well. The ground is quite easy to start <span class="correctword">with</span> but I can see some difficulties ahead. We need to find a way to get <span class="correctword">across</span> several large crevasses. Will there be a bridge?</p>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d2_e4_ans">
+	<section class="hidden"><div class="yetianswer">
+			<div class="tfanswer text-center">
+				A famous British mountaineer followed large footprints for over a mile.
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d2_e5_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				<p>Climbers began to visit the area at the beginning of the 20th century.	</p>
+				<span class="correctword">TRUE</span>
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d2_h1_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace blankli"> <button id="hard sec1-1a" class="buttonaudio buttonround"></button> We’re testing the radios. Do you have? Over.</li>
+				<li class="linespace correctword blankli"> <button id="hard sec1-1b" class="buttonaudio buttonround"></button> Yes, I’ve got one. Over.</li>
+				<li class="linespace blankli"> <button id="hard sec1-1c" class="buttonaudio buttonround"></button> Right. Do you hearing me? Over.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d2_h2_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+		<p>	Today we get <span class="correctword">down</span> to business. Spirits are high and everybody is getting <span class="correctword">on</span> well. The terrain is quite easy to start <span class="correctword">with</span> but I can see some difficulties <span class="correctword">up</span> ahead. We need to find a way to get <span class="correctword">across</span> several large crevasses. Will <span class="correctword">there</span> be a bridge?</p>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d2_h3_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				In 1970 a famous British climber saw an ape like creature searching for food around his camp.
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<!-- *********************** DAY 3 ANSWERS *****************************-->
+<template name="d3_title">
+	<section id="title3" class="hidden">
+		<h4>Journey to check point 2:</h4>
+		<br>
+		<br>
+	</section>
+</template>
+<template name="d3_e1_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<p>Our expedition leader is worried <span class="correctword">about</span> the weather. It changed <span class="correctword">during/in</span> the night. We could hear the wind howling. He needs to work out  the safest route to take <span class="correctword">through/across/over</span> the ice fall. The ice blocks are massive and could kill you.</p>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_e2_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">No-one is not sure which way to go.</li>
+				<li class="linespace">There is no such thing that we cannot do it.</li>
+				<li class="linespace correctword">The wind is getting stronger and stronger.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_e2b_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">It was snowing since the night.</li>
+				<li class="linespace">We can’t any more see footprints in the snow.</li>
+				<li class="linespace correctword">We’ve got a local guide with us.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_e2c_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">I’ve no longer seen such big blocks of ice.</li>
+				<li class="linespace correctword">One of these could kill a man.</li>
+				<li class="linespace">We need to contact base camp for helps.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_e3_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				<p>Scientists did tests on the bones of an animal.</p>
+				<span class="correctword">FALSE</span>
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_e4_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace blankli"> <button id="easy sec3-4a" class="buttonaudio buttonround"></button>Base camp to expedition leader. Weather getting worse. Temperature has fallen  to -2°</li>
+				<li class="linespace correctword blankli"> <button id="easy sec3-4b" class="buttonaudio buttonround"></button>Base camp to expedition leader. Weather getting worse. Temperature has fallen  to -22°.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_e5_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				The creature is a mixture between a polar  bear and a brown bear.
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_h1_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<p>Our expedition leader is worried <span class="correctword">about</span> the weather. It changed <span class="correctword">during/in</span> the night. We could <span class="correctword">hear</span> the wind howling. He needs to work <span class="correctword">out</span> the safest route <span class="correctword">to</span> take <span class="correctword">through/across/ove</span>r the ice fall. The ice blocks are massive and could easily crush a man.</p>
+		</div>	
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_h2_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">No-one isn’t sure which way to go.</li>
+				<li class="linespace">There is no such thing that we cannot do it</li>
+				<li class="linespace correctword">We must hurry as the wind is getting stronger and stronger.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_h2b_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">It’s been snowing since the night.</li>
+				<li class="linespace">We can’t any more see our footprints in the snow.</li>
+				<li class="linespace correctword">We’re glad we’ve got a local guide with us.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_h2c_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">I’ve no longer seen such enormous blocks of ice before.</li>
+				<li class="linespace correctword">One of these could crush a man.</li>
+				<li class="linespace">We need to contact base camp for advices.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d3_h3_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace blankli correctword"> <button id="hard sec2-3a" class="buttonaudio buttonround"></button> Base camp to expedition leader. The wind speed is approaching 80 kilometres an hour. Are you receiving me - over?</li>
+				<li class="linespace blankli"> <button id="hard sec2-3b" class="buttonaudio buttonround"></button> Base camp to expedition leader. The wind speed is approaching 8 kilometres an hour. Are you receiving me? Over.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<!-- *********************** DAY 4 ANSWERS *****************************-->
+<template name="d4_title">
+	<section id="title4" class="hidden">
+		<h4>Journey to they Yeti:</h4>
+		<br>
+		<br>
+	</section>
+</template>
+<template name="d4_e1_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<p><span class="correctword">There</span> are also <span class="correctword">many</span> sightings of a strange <span class="correctword">creature</span> in Balkapram National Park <span class="correctword">in</span> the north- eastern state of Meghalaya.</p>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_e2_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace blankli correctword"> <button id="easy sec3-2a" class="buttonaudio buttonround"></button> Breaking news. We have seen a large ape like creature. Map reference 671298, about 100 metres above the rock face.</li>
+				<li class="linespace blankli"> <button id="easy sec3-2b" class="buttonaudio buttonround"></button> Breaking news. We have seen a large ape like creature. Map reference 617928, about 100  metres below the rock face.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_e3_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">We have hurry up before it gets dark.</li>
+				<li class="linespace">We have to hurry up before it got dark.</li>
+				<li class="linespace correctword">We’ve got to hurry up before it gets dark.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_e3b_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace correctword">I hope we get there in time.</li>
+				<li class="linespace">I hope we got there in time.</li>
+				<li class="linespace">I hope we get there through time.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_e3c_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace">I’m excited to seeing a yeti.</li>
+				<li class="linespace correctword">I’m excited about seeing  a yeti.</li>
+				<li class="linespace">I’m excited about to see a yeti.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_e4_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				Scientists think the bear may still be there.
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_e5_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<p>The route in front of us is getting steeper. I’m nervous <span class="correctword">about</span> rock climbing but there could be a yeti up there. I’ve <span class="correctword">got</span> to get a photo in daylight. We’ll be famous all over the world if we <span class="correctword">get</span> a good photo. </p>
+		</div>
+		<nav class="navfooter">
+			<ul>
+			  <li class="first" style="float: left;">
+				<a draggable="false" title="previous" rel="prev" class="pagination hidden">
+				  <i class="fa fa-chevron-circle-left"></i>
+				</a>
+			  </li>
+			  <li style="float: right;">
+				<a draggable="false" href="#Yeti_end" title="next" rel="next" class="pagination">
+				  <i class="fa fa-chevron-circle-right"></i>
+				</a>
+			  </li>
+			</ul>
+		 </nav>
+	</section>
+</template>
+<template name="d4_h1_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<div class="tfanswer text-center">
+				There are also many sightings of a strange creature in Balkapram National Park in the north-eastern state of Meghalaya.
+			</div>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_h2_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<ul>
+				<li class="linespace blankli correctword"> <button id="easy sec3-2a" class="buttonaudio buttonround"></button> Breaking news. We have a sighting of a large ape like creature. Map reference 617928, about 100 metres north east above the rock face. </li>
+				<li class="linespace blankli"> <button id="easy sec3-2b" class="buttonaudio buttonround"></button> Breaking news. We have a sighting of a large ape like creature. Map reference 671298, about 100 meters north east above the rock face.</li>
+			</ul>
+		</div>
+		{{> next_section_nav}}
+	</section>
+</template>
+<template name="d4_h3_ans">
+	<section class="hidden">
+		<div class="yetianswer">
+			<p>	The route in <span class="correctword">front</span> of us is getting steeper. I’m nervous <span class="correctword">about</span> rock climbing but there could be a yeti up there. I’ve <span class="correctword">got</span> to get a photo <span class="correctword">in</span> daylight. We’ll be famous all <span class="correctword">over</span> the world if we <span class="correctword">get</span> a good photo. </p>
+		</div>
+		<nav class="navfooter">
+			<ul>
+			  <li class="first" style="float: left;">
+				<a draggable="false" title="previous" rel="prev" class="pagination hidden">
+				  <i class="fa fa-chevron-circle-left"></i>
+				</a>
+			  </li>
+			  <li style="float: right;">
+				<a draggable="false" href="#Yeti_end" title="next" rel="next" class="pagination">
+				  <i class="fa fa-chevron-circle-right"></i>
+				</a>
+			  </li>
+			</ul>
+		 </nav>
+	</section>
+</template>

@@ -1,0 +1,189 @@
+<template name="styleguide">
+{{#if isAdmin}}
+<article class="with-tools-sidebar ">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+		<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+		
+		<nav style="position: absolute; right: 9px; top: 9px;">
+			<div class="dropdown" style="display: inline-block;">
+				<button class="btn-2 dropdown-toggle" type="button" data-toggle="dropdown">Basic <span class="caret-fa"></span></button>
+				<ul class="dropdown-menu dropdown-menu-scroll">
+					<li><a draggable="false" href="#styleAchievements" class="pagination">Achievements</a></li>
+					<li><a draggable="false" href="#style-arrows" class="pagination">Arrows</a></li>
+					<li><a draggable="false" href="#style-basic" class="pagination">Basic design/formatting</a></li>
+					<li><a draggable="false" href="#style-Bootstrap" class="pagination">Bootstrap</a></li>				
+					<li><a draggable="false" href="#style-Buttons" class="pagination">Buttons</a></li>
+					<li><a draggable="false" href="#style-captions" class="pagination">Captions</a></li>
+					<li><a draggable="false" href="#style-dropdowns" class="pagination">Dropdown menus</a></li>
+					<li><a draggable="false" href="#styleEmojis" class="pagination">Feedback emojis</a></li>
+					<li><a draggable="false" href="#styleCards" class="pagination">Flipcards</a></li>
+					<li><a draggable="false" href="#styleK2Licons" class="pagination">Icons</a></li>
+					<li><a draggable="false" href="#style-images" class="pagination">Images</a></li>
+					<li><a draggable="false" href="#style-lists" class="pagination">Lists</a></li>
+					<li><a draggable="false" href="#style-metametrics" class="pagination">MetaMetrics</a></li>
+					<li><a draggable="false" href="#style-popovers" class="pagination">Popovers</a></li>
+					<li><a draggable="false" href="#style-speech" class="pagination">Speech bubbles</a></li>
+					<li><a draggable="false" href="#style-tables" class="pagination">Tables</a></li>
+					<li><a draggable="false" href="#style-activities" class="pagination">Text entry / drag &amp; drop</a></li>
+					<li><a draggable="false" href="#style-classes" class="pagination">Useful classes</a></li>
+					<li><a draggable="false" href="#style-video" class="pagination">Videos</a></li>
+				</ul>
+			</div>
+			<div class="dropdown" style="display: inline-block;">
+				<button class="btn-2 dropdown-toggle" type="button" data-toggle="dropdown">Templates <span class="caret-fa"></span></button>
+				<ul class="dropdown-menu dropdown-menu-scroll">
+					<li><a draggable="false" href="#style-new" class="pagination">Activity</a></li>
+					<li><a draggable="false" href="#style-notebook-answers" class="pagination">Answers</a></li>
+					<li><a draggable="false" href="#style-article" class="pagination">Article</a></li>
+					<li><a draggable="false" href="#styleConv" class="pagination">Conversation activity</a></li>
+					<li><a draggable="false" href="#style-dic" class="pagination">Dictionary page</a></li>
+					<li><a draggable="false" href="#SGscores" class="pagination">Good/bad score pages</a></li>
+					<li><a draggable="false" href="#idiomsSG" class="pagination">Idioms pages</a></li>
+					<li><a draggable="false" href="#style-Idiomssaved" class="pagination">Idioms saved</a></li>
+					<li><a draggable="false" href="#style-map" class="pagination">Map page</a></li>
+					<li><a draggable="false" href="#modalSG" class="pagination">Modals</a></li>
+					<li><a draggable="false" href="#newSGpage" class="pagination">New Styleguide page</a></li>
+					<li><a draggable="false" href="#phrasalhistory" class="pagination">Phrasal history page</a></li>
+					<li><a draggable="false" href="#style-Phrasalsaved" class="pagination">Phrasal verbs saved</a></li>
+					<li><a draggable="false" href="#styleQuotations" class="pagination">Quotation pages</a></li>
+					<li><a draggable="false" href="#VocabSaved" class="pagination">Vocab saved</a></li>
+				</ul>
+			</div>
+			<div class="dropdown" style="display: inline-block;">
+				<button class="btn-2 dropdown-toggle" type="button" data-toggle="dropdown">Activity types <span class="caret-fa"></span></button>
+				<ul class="dropdown-menu dropdown-menu-scroll">
+					<li><a draggable="false" href="#activityTypes" class="pagination">Activity types sheet</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Assorted</li>
+					<li><a draggable="false" href="#SGmultichoice" class="pagination">Multiple choice</a></li>
+					<li><a draggable="false" href="#SGparaclick" class="pagination">Paragraph click</a></li>
+					<li><a draggable="false" href="#paraSelect" class="pagination">Paragraph select</a></li>
+					<li><a draggable="false" href="#SGlottery" class="pagination">Word lottery</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Drag and Drop</li>
+					<li><a draggable="false" href="#DDcategoriesSG" class="pagination">Categories</a></li>
+					<li><a draggable="false" href="#styleDDBig" class="pagination">Definitions to headers</a></li>
+					<li><a draggable="false" href="#ddmultiSG" class="pagination">One to many</a></li>
+					<li><a draggable="false" href="#DD2MC" class="pagination">Single to multi choice</a></li>
+					<li><a draggable="false" href="#dd2SG" class="pagination">Words</a></li>
+					<li><a draggable="false" href="#DDwords2picsSG" class="pagination">Words to pictures</a></li>
+					<li><a draggable="false" href="#vocab" class="pagination">Vocabulary</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Text Entry</li>
+					<li><a draggable="false" href="#textEntrySG" class="pagination">Multiple</a></li>
+					<li><a draggable="false" href="#textEntryPara" class="pagination">Paragraph</a></li>
+					<li><a draggable="false" href="#textEntryBigSG" class="pagination">Single (big)</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">True or False</li>
+					<li><a draggable="false" href="#TF" class="pagination">True or false</a></li>
+					<li><a draggable="false" href="#style-truefalselist" class="pagination">True or false 2</a></li>
+				</ul>
+			</div>
+			<div class="dropdown" style="display: inline-block;">
+				<button class="btn-2 dropdown-toggle" type="button" data-toggle="dropdown">Javascript <span class="caret-fa"></span></button>
+				<ul class="dropdown-menu dropdown-menu-scroll" style="left: initial; right: 0;">
+					 <li><a draggable="false" href="#audiovisualauto" class="pagination">audio/visual advance</a></li>
+					 <li><a draggable="false" href="#audiocode" class="pagination">audio button code</a></li>
+				</ul>
+			</div>
+			<div class="dropdown" style="display: inline-block;">
+				<button class="btn-2 dropdown-toggle" type="button" data-toggle="dropdown">Game pages <span class="caret-fa"></span></button>
+				<ul class="dropdown-menu dropdown-menu-scroll" style="left: initial; right: 0;">
+					 <li><a draggable="false" href="#ssgame_startpage" class="pagination">Start page</a></li>
+					 <li><a draggable="false" href="#ssgame_opening" class="pagination">Opening video</a></li>
+					 <li><a draggable="false" href="#ssgame_explain" class="pagination">Explanation page</a></li>
+					 <li><a draggable="false" href="#ssgame_difficulty" class="pagination">Difficulty choice</a></li>
+					 <li><a draggable="false" href="#ssgame_textentry" class="pagination">Textentry</a></li>
+					 <li><a draggable="false" href="#ssgame_dd" class="pagination">Drag & Drop</a></li>
+					 <li><a draggable="false" href="#ssgame_audiomc" class="pagination">Multiple Choice audio</a></li>
+					<!--  <li><a draggable="false" href="#audiocode" class="pagination">audio button code</a></li> -->
+				</ul>
+			</div>
+		</nav>
+		
+	</header>
+	
+	<nav class="hidden" style="background-color: #dbe9ff; padding: .75em; text-align: center;"></nav>
+	
+	{{>styleBasic}}
+	{{>stylePopovers}}
+	{{>styleLists}}
+	{{>styleMetametrics}}
+	{{>styleArrows}}
+	{{>styleAchievements}}
+	{{>styleEmojis}}
+	{{>styleNew}}
+	{{>styleMap}}
+	{{>styleCaptions}}
+	{{>styleCards}}
+	{{>styleRW}}
+	{{>styleButtons}}
+	{{>styleDropdowns}}
+	{{>styleVideo}}
+	{{>styleArticle}}
+	{{>styleConv}}
+	{{>styleNotebookAnswers}}
+	{{>styleActivities}}
+	{{>styleTables}}
+	{{>styleSpeech}}
+	{{>styleDic}}
+	{{>styleClasses}}
+	{{>styleBootstrap}}
+	{{>styleK2Licons}}
+	{{>styleImages}}
+	{{>modalSG}}
+	{{>stylePhrasalsaved}}	
+	{{>phrasalhistory}}
+	{{>styleIdiomssaved}}
+	{{>idiomsSG}}
+	{{>styleQuotations}}
+	{{>newSGpage}}
+	{{>SGscores}}
+	{{>VocabSaved}}
+	
+	<!-- Activity types  -->
+	{{> dd2SG}}
+	{{> ddmultiSG}}
+	{{> DDcategoriesSG}}
+	{{> DDwords2picsSG}}
+	{{> styleDDBig}}
+	{{> textEntrySG}}
+	{{> textEntryPara}}
+	{{> textEntryBigSG}}
+	{{> TF}}
+	{{> styleTrueFalseList}}
+	{{>paraSelect}}
+	{{>activityTypes}}
+	{{>SGlottery}}
+	{{>DD2MC}}
+	{{>SGmultichoice}}
+	{{>SGparaclick}}
+	{{>vocab}}
+
+	<!-- Javascript -->
+	{{> audiovisualauto}}
+	{{> audiocode}}
+
+	<!-- Games -->
+	{{>ssgame_startpage}}
+	{{>ssgame_opening}}
+	{{>ssgame_explain}}
+	{{>ssgame_difficulty}}
+	{{>ssgame_textentry}}
+	{{>ssgame_dd}}
+	{{>ssgame_audiomc}}
+
+	
+	
+</div>
+
+</article>
+
+   {{> modalSG_modal}}
+   {{>styleQuotations_bios}}
+   {{else}}
+   {{>notFound}}
+   {{/if}}
+</template>

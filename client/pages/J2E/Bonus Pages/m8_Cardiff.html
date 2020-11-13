@@ -1,0 +1,148 @@
+<template name="MoreAboutCardiff">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Cardiff"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m8l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m8l3}}</div>
+		</header>
+
+		<section id="moreaboutCardiff">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Cardiff/Cardiff1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l3_A">
+						<p>Cardiff Castle</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Cardiff/Cardiff2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l3_B">
+						<p>Flat Holm Island</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Cardiff/Cardiff3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l3_C">
+						<p>Wales Millennium Centre</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-sm-offset-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Cardiff/Cardiff4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l3_D">
+						<p>National Museum</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Cardiff/Cardiff5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l3_E">
+						<p>Doctor Who Experience</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l3_A">Cardiff Castle</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cardiff/Cardiff1.jpg" alt="Cardiff Castle" style="max-width: 250px;">
+					</figure>
+					<p>Cardiff castle is one of the most amazing castles to visit in the UK. It has a history going back 2,000 years when it was the site of a Roman Fort. The modern castle is a Victorian fantasy palace built for one of the world’s richest men. In the castle grounds you can see a reconstruction of a large 13th century weapon used to throw large rocks at the walls of a castle.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.castlewales.com/cardiff.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l3_B">Flat Holm Island</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cardiff/Cardiff2.jpg" alt="Flat Holm Island" style="max-width: 250px;">
+					</figure>
+					<p>This small island is a Nature Reserve,five miles off the coast of Cardiff. Although it is only half a mile long, you can spend a fascinating day exploring the wildlife, history and the buildings. In 1897, the Italian inventor, Marconi sent the first wireless signal from Flat Holm island to the coast of Wales. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.flatholmisland.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l3_C">Wales Millennium Centre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cardiff/Cardiff3.jpg" alt="Wales Millennium Centre" style="max-width: 250px;">
+					</figure>
+					<p>The Millennium Centre is an arts centre in  Cardiff - home to the Welsh National Orchestra as well as plays, dance and musicals. The architect was asked to design a building which expressed ‘Welshness’ so the walls are covered in different colours of Welsh slate. Steel making is also a Welsh tradition so the large dome is covered in steel. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.wmc.org.uk/AboutTheCentre/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l3_D">National Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cardiff/Cardiff4.jpg" alt="National Museum" style="max-width: 250px;">
+					</figure>
+					<p>The museum has the country’s largest collection of art, geology and natural history. The art department has one of Europe’s finest collections of French Impressionist paintings. You can also take a journey through time and see dinosaur skeletons and whales.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://museum.wales/cardiff/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l3_E">Doctor Who Experience</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Cardiff/Cardiff5.jpg" alt="Doctor Who Experience" style="max-width: 250px;">
+					</figure>
+					<p>Doctor Who has been a much loved BBC science fiction series on TV since the 1960s. The Doctor Who experience in Cardiff is beside the studio where the TV programme is filmed.  You can see the country’s largest collection of costumes and props from the programme and even star in your own Doctor Who show.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.doctorwho.tv/events/doctor-who-experience/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

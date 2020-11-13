@@ -1,0 +1,280 @@
+<template name="m4a20">
+	<article class="with-tools-sidebar m4a2">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Helensburgh');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 20 - {{>m4a20Title}}</div>
+			</header>
+
+
+			<section id="m4a20">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a20Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m4a20Intro}}</h3>
+					{{> m4a20Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a20_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a20_1}} {{>m4a20_2}} {{>m4a20_3}} {{>m4a20_4}} {{>EndPage char="tu" act="m4a20" nextact="m4a21" place="Helensburgh"}}
+
+
+		</div>
+	</article>
+
+	{{>m4a20_article}}
+</template>
+<template name="m4a20_1">
+	<section id="m4a20_1" class="hidden">
+		<div class="content">
+			<h3 class="text-center">Read the following story about getting fit.</h3>
+			<br>
+			<div class="text-center"><div class="ph-w ph-3x2 shadow" style="max-width: 319px;"><div class="ph"><img draggable="false" src="images/module4/runner.png" class="shadow" alt="Woman running"></div></div></div>
+			<br>
+			{{>gg_button gg_text="You can find out more about Adverbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a20" nexturl="#m4a20_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a20_2">
+	<section id="m4a20_2" class="hidden">
+		<div class="content">
+			<h3 class="text-center">
+				<span class="avoidwrap">{{>touch yes="Tap" no="Click"}} on the 6
+					<b>adverbs</b> in the sentence.</span>
+				<span class="avoidwrap">If you're right, the word will turn
+					<span class="correctword">green</span>.</span>
+			</h3>
+
+			<div class="parapaper paraclick">
+				<div class="container-fluid-no-gutter">
+					<div class="row">
+						<div class="col-xs-8 col-xxs-12">
+							<h2>Getting fit</h2>
+							<p>
+								<span class="paraclick-word">Recently</span>
+								<span class="wrong"> I’ve been eating </span>
+								<span class="paraclick-word">too much</span>
+								<span class="wrong"> fast food.</span>
+							</p>
+							<br>
+							<br>
+							<p>
+								<span class="wrong">I looked at myself in the mirror and decided I </span>
+								<span class="paraclick-word">absolutely</span>
+								<span class="wrong"> had to do something.</span>
+							</p>
+							<br>
+							<br>
+							<p>
+								<span class="wrong">I </span>
+								<span class="paraclick-word">seldom</span>
+								<span class="wrong"> took any exercise at all. I prefer exercising outdoors but I live in the city and there’s nothing available </span>
+								<span
+								 class="paraclick-word">locally</span>
+								<span class="wrong">. </span>
+								<span class="paraclick-word">However</span>
+								<span class="wrong"> things are about to change.</span>
+							</p>
+						</div>
+						<div class="hidden-xxs col-xs-4">
+							<div class="ph-w ph-3x2 shadow" style="max-width: 319px; margin-left: 1em;"><div class="ph"><img draggable="false" src="images/module4/runner.png" class="shadow" alt="Woman running"></div></div>
+							<br><br>
+							<div class="ph-w ph-3x2 shadow" style="max-width: 319px; margin-left: 1em;"><div class="ph"><img draggable="false" src="images/module4/couch.png" alt="Man watching TV"></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="counterleft">Adverbs left to find:
+				<u>6</u>
+			</div>
+
+			{{>rightwrong}} {{> welldone}} {{>gg_button gg_text="You can find out more about Adverbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a20_1" nexturl="#m4a20_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+	</section>
+</template>
+
+<template name="m4a20_3">
+	<section id="m4a20_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h4 class="text-center">Here are the six adverbs.</h4>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the words to see what type of adverb they are.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="front-content">recently</div>
+							</div>
+							<div class="back noselect">
+								<div class="back-content">time</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="front-content">too much</div>
+							</div>
+							<div class="back noselect">
+								<div class="back-content">how much/degree</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="front-content">absolutely</div>
+							</div>
+							<div class="back noselect">
+								<div class="back-content">how much/degree</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="front-content">seldom</div>
+							</div>
+							<div class="back noselect">
+								<div class="back-content">how often/frequently</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="front-content">locally</div>
+							</div>
+							<div class="back noselect">
+								<div class="back-content">place</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12">
+						<div class="flippable">
+							<div class="front noselect">
+								<div class="front-content">however</div>
+							</div>
+							<div class="back noselect">
+								<div class="back-content">connecting</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{{>gg_button gg_text="You can find out more about Adverbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a20_2" nexturl="#m4a20_4" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a20_4">
+	<section id="m4a20_4" class="hidden">
+		{{> welldone}} {{#if activeSection}}
+		<div class="content">
+
+			<h3>Write the missing adverb in the space. There may be more than one right answer.</h3>
+
+			<div class="parapaper linespace2 fold">
+				<p>
+					<span id="entryanswer0">
+						<form class="textentry">{{>m4a20_input}}
+							<input type="submit" value="OK">
+						</form>
+					</span> I’ve been eating
+					<span id="entryanswer1" class="textentry-disabled ddwidth9"></span> fast food.</p>
+				<p>I looked at myself in the mirror and decided I
+					<span id="entryanswer2" class="textentry-disabled ddwidth9"></span> had to do something.</p>
+				<p>I
+					<span id="entryanswer3" class="textentry-disabled ddwidth9"></span> took any exercise at all. I prefer exercising outdoors but I live in the city and there’s nothing available
+					<span id="entryanswer4" class="textentry-disabled ddwidth9"></span>.
+					<span id="entryanswer5" class="textentry-disabled ddwidth9"></span> things are about to change.</p>
+
+				{{> rightwrong}}
+
+				<div class="center">
+					<button data-toggle="modal" data-target="#m4a20_article" class="button2" style="line-height: initial; margin: 10px 0;">Read the article</button>
+				</div>
+			</div>
+			{{>gg_button gg_text="You can find out more about Adverbs in the Grammar Guide"}}
+
+		</div>
+
+		<footer>
+			{{>footer_nav prevurl="#m4a20_3" nexturl="#m4a20_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+<template name="m4a20_article">
+	<div class="modal fade" tabindex="-1" id="m4a20_article" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="m4a20_article">Getting Fit</h4>
+				</div>
+
+				<div class="content">
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">{{>metametrics level="4" star="no" align="center"}}</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-xxs-12">
+								<p>Recently I’ve been eating too much fast food.</p>
+								<p>I looked at myself in the mirror and decided I absolutely had to do something.</p>
+								<p>I seldom took any exercise at all. I prefer exercising outdoors but I live in the city and there’s nothing available
+									locally. However things are about to change.</p>
+							</div>
+							<div class="hidden-xxs col-xs-4">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 319px; margin-left: 1em;"><div class="ph"><img draggable="false" src="images/module4/runner.png" class="shadow" alt="Woman running"></div></div>
+								<br><br>
+								<div class="ph-w ph-3x2 shadow" style="max-width: 319px; margin-left: 1em;"><div class="ph"><img draggable="false" src="images/module4/couch.png" alt="Man watching TV"></div></div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template name="m4a20_input">
+	<input type="text" name="userText" size="9" autocomplete="off" autofocus>
+</template>

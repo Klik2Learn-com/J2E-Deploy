@@ -1,0 +1,149 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a2">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Inverness');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 2 - {{>m1a2Title}}</div>
+			</header>
+
+			<section id="m1a2">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m1a2Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m1a2Intro}}</h3>
+					{{> m1a2Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a2_2" prev="hidden" next="" next_text="Start"}}
+				</footer>
+
+			</section>
+
+			<section id="m1a2_2" class="hidden">
+				{{> m1a2_2}} {{>footer_nav prevurl="#m1a2" nexturl="#m1a2_3" prev="hidden" next=""}}
+			</section>
+
+			<section id="m1a2_3" class="hidden">
+				{{> m1a2_3}} {{>footer_nav prevurl="#m1a2_2" nexturl="#m1a2_end" prev="hidden" next="disabled" nextID="dd7"}}
+			</section>
+			{{>m1a2_end}}
+		</div>
+	</article>
+
+</template>
+
+<template name="m1a2_end">
+	{{>EndPage char="tu" act="m1a2" nextact="m1a3" place="Inverness"}}
+</template>
+
+<template name="m1a2_2">
+	{{#if activeSection}}
+	<div class="content">
+		<h3 class="center">{{>touch yes="Tap" no="Click"}} a letter to hear how to say it.</h3>
+		<div class="letter_row">
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/A.m4a">A</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/B.m4a">B</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/C.m4a">C</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/D.m4a">D</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/E.m4a">E</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/F.m4a">F</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/G.m4a">G</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/H.m4a">H</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/I.m4a">I</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/J.m4a">J</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/K.m4a">K</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/L.m4a">L</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/M.m4a">M</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/N.m4a">N</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/O.m4a">O</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/P.m4a">P</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/Q.m4a">Q</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/R.m4a">R</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/S.m4a">S</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/T.m4a">T</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/U.m4a">U</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/V.m4a">V</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/W.m4a">W</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/X.m4a">X</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/Y.m4a">Y</button>
+			<button class="letter monospace" data-audiosrc="/audio/module1/a2/Z.m4a">Z</button>
+		</div>
+
+
+	</div>
+	{{/if}}
+</template>
+
+<template name="m1a2_3">
+	{{#if activeSection}}
+	<div class="content">
+		<h3 class="center" id="exercise_instructions">Drag the 3 letters with the same vowel sound as
+			<b>A</b> to the box.</h3>
+		<div class="center caption capgreen disabled shadowdark" id="exercise_instructions2" style="position: fixed;z-index: 9;bottom: 20px;left: 10px;margin-right: 10px;">There are no letters that have the same vowel sound.
+			<!-- <button type="button" class="button1 buttonsmall" id="next_letter2">Next letter</button> -->
+		</div>
+		{{> welldone}}
+
+		<div class="parapaper parapaperdd1 fold text-center" style="padding: 10px;">
+			<div class="box2 m1a2box2 ddwidth12 target7" id="target1" data-itemcount="4" style="min-height: 6em;">
+				<div class="ddsource ddsourcealpha">A</div>
+			</div>
+			<div class="box2 m1a2box2 ddwidth12 hidden target7" id="target2" data-itemcount="8" style="min-height: 6em;">
+				<div class="ddsource ddsourcealpha">B</div>
+			</div>
+			<div class="box2 m1a2box2 ddwidth12 hidden target7" id="target3" data-itemcount="7" style="min-height: 6em;">
+				<div class="ddsource ddsourcealpha">F</div>
+			</div>
+			<div class="box2 m1a2box2 ddwidth12 hidden target7" id="target4" data-itemcount="2" style="min-height: 6em;">
+				<div class="ddsource ddsourcealpha">I</div>
+			</div>
+			<div class="box2 m1a2box2 ddwidth12 hidden target7" id="target5" data-itemcount="1" style="min-height: 6em;">
+				<div class="ddsource ddsourcealpha">O</div>
+			</div>
+			<div class="box2 m1a2box2 ddwidth12 hidden target7" id="target6" data-itemcount="1" style="min-height: 6em;">
+				<div class="ddsource ddsourcealpha">R</div>
+			</div>
+			<div class="box2 m1a2box2 ddwidth12 hidden target7" id="target7" data-itemcount="3" style="min-height: 6em;">
+				<div class="ddsource ddsourcealpha">Q</div>
+			</div>
+			{{> rightwrong}}
+		</div>
+
+
+
+		<div class="box1 box1dd1">
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target2">C</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target2">D</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target2">E</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target2">G</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target1">H</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target1">J</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target1">K</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target3">L</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target3">M</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target3">N</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target2">P</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target3">S</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target2">T</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target7">U</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target2">V</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target7">W</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target3">X</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target4">Y</div>
+			<div class="ddsource ddsourcealpha shadow draggable" data-destination="target3">Z</div>
+
+		</div>
+
+		<!-- Drag and drop end -->
+	</div>
+	{{/if}}
+</template>

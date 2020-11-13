@@ -1,0 +1,58 @@
+<template name="dd4">
+<section id="dd_4" class="hidden">
+		<div class="content">
+	<h1>Tense</h1>
+	<h3 class="center">Drag the definitions below to the right sentences.</h3>
+		
+
+		<div class="parapaper parapaperdd1 fold">
+			<!-- Ensure all 'ddsource' and 'ddtargets' are the same width and height  within an activity. Use 'em' in case the text size changes -->
+			
+			<ol class="olcircle" style="padding-left: 5%;">
+				<li>
+					<p>He will be going to the cinema tomorrow.</p>
+					<p><div class="ddtarget  ddwidth10 dd2lines target4" id="target1" >&nbsp;</div></p>
+				</li>
+				<li>
+					<p>I went to the cinema to see <em>Ironic Man 5: Rise of Sarcsmo.</em></p>
+					<p><div class="ddtarget ddwidth10 dd2lines target4" id="target2" >&nbsp;</div></p>
+				</li>
+				<li>
+					<p>I am going to the cinema now to see that film!</p>
+					<p><div class="ddtarget ddwidth10 dd2lines target4" id="target3" >&nbsp;</div></p>
+				</li>
+			</ol>
+		</div>
+
+	
+		<div class="dd-fixed-source-container animated slideInUp"> 
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsource' and 'ddtargets' are the same width and height within an activity. Use 'em' in case the text size changes -->
+				<div class="ddsource shadow ddwidth10 dd2lines " draggable="true" data-destination="target1">This is<br>Future Tense</div>
+				<div class="ddsource shadow ddwidth10 dd2lines " draggable="true" data-destination="target2">This is<br>Present Tense</div>
+				<div class="ddsource shadow ddwidth10 dd2lines " draggable="true" data-destination="target3">This is<br>Past Tense</div>
+			</div>
+		</div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		
+				<footer>
+				<nav class="navfooter">
+					<ul>
+						<li class="first" style="float: left;">
+							<a draggable="false" href="#m1a1_1" title="previous" rel="prev" class="pagination">
+								{{> prev}}
+							</a>
+						</li>					
+						<li style="float: right;">
+						<!-- Set to second page of activity -->
+							<a draggable="false" href="#m1a1_1" title="next" rel="next" class="disabled next" id="dd4">
+								{{> next}}
+							</a>
+						</li>
+					</ul>
+				</nav>
+		</footer>
+		</div>
+		</section>
+</template>

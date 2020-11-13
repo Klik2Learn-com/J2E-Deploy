@@ -1,0 +1,224 @@
+<template name="login_b2b">
+
+	{{>loginBox}}
+	{{#if currentUser}}<div style="height: 2em;"></div>{{/if}}
+	<article class="login-page login-page1 b2b">	
+		{{>loginHeaderB2B}}
+		<section id="" class="welcome">
+			<div class="content-landing first">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h1>The New Way to Offer English Language Courses</h1>
+							<h2>A complete 100 hour, digital course YOU can offer to intermediate learners of English</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6 text-center">
+							<img draggable="false" src="/landing/icon-online.png" class="feat-icon center-block" alt="Online">
+							<h4>Mobile-friendly learning</h4>							
+							<p>Over 100 hours of interactive content on any device mapped to level B1/B2 on the common European framework</p>
+						</div>
+						<div class="col-md-3 col-sm-6 text-center">
+							<img draggable="false" src="/landing/icon-learning.png" class="feat-icon center-block" alt="Learning">
+							<h4>Higher-level learning</h4>
+							<p>The content allows students to acquire a sound grasp of English structure and includes a dictionary and integrated grammar guide</p>
+						</div>
+						<div class="col-md-3 col-sm-6 text-center">
+							<img draggable="false" src="/landing/icon-collab.png" class="feat-icon center-block" alt="Collaborative learning system">
+							<h4>Collaborative learning system</h4>
+							<p>Teach, monitor and assess students remotely. Deliver a complete SQA ESOL qualification off campus and maximise staff resources.</p>
+						</div>
+						<div class="col-md-3 col-sm-6 text-center">
+							<img draggable="false" src="/landing/icon-uk.png" class="feat-icon center-block" alt="Life in the UK">
+							<h4>Learn English and more…</h4>
+							<p>Give students and insight into British life and culture and let them listen to native speakers</p>
+						</div>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item"></div>
+					<div class="flex-item"><img src="/landing/more-arrow.png" draggable="false" alt="More..." width="96" height="38"></div>
+					<div class="flex-item"></div>
+				</div>
+			</div>
+			
+			<div class="content-landing">
+				<div class="container-fluid quote-caption-container">
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="quote-caption">The perfect English learning solution for organisations</div>
+						</div>
+						<div class="col-sm-5">
+							<ul class="includes includes2 ulblank">
+								<li>Language schools</li>
+								<li>Collages</li>
+								<li>Travel companies</li>
+								<li>Government &amp; Local Authorities</li>
+								<li>Charities &amp; NGOs</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-landing">
+				<div class="container-fluid contact-container">
+					<div class="row">
+						<div class="col-sm-2 col-xs-6">
+							<img draggable="false" src="/images/logos/sqa-e.png">
+						</div>
+						<div class="col-sm-2 col-sm-push-8 col-xs-6">
+							<img draggable="false" src="/images/logos/IP100-logo-2016.png">
+						</div>
+						<div class="col-sm-8 col-sm-pull-2 col-xs-12">
+							{{>contactForm}}
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-landing">
+				<h2>99% of our Students are Happy and Would Recommend Us</h2>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="vid-wrapper">
+								<div class="embed-responsive embed-responsive-16by9">
+									<video class="embed-responsive-item" id="login-course-vid4" controls poster="/video/testimonials.jpg">
+										<source src="/video/testimonials.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<ul class="includes includes2">
+								<p class="header">Here are why our students love us:</p>
+								<li>It prepares students for any ESOL exam at Level B1/B2</li>
+								<li>Support students, track progress and encourage peer-to-peer learning using our collaborative learning platform</li>
+								<li>Extend provision off-campus or to international partners</li>
+								<li>Deliver a qualification using our e-assessment tools</li>
+							</ul>
+						</div>
+						<div class="col-xs-12">
+							<div class="quote shadow1">
+								<p>“I was extremely impressed with your online ESOL course which I found informative, interactive and challenging (it certainly kept me on my toes.) It was interesting that you managed to combine all these elements to produce something very unique indeed.”</p>
+								<p><b>Sean Dyer</b></p>
+								<p><i>ELT Sales Consultant, Cambridge University Press</i></p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="content-landing-divide"></div>
+					
+					{{>contactForm2}}
+				</div>
+			</div>
+			
+			<div class="content-landing">
+				<h1>Exceptional SQA &amp; British Council approved learning</h1>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-8 col-md-7 col-sm-6 col-lg-push-4 col-md-push-5 col-sm-push-6">
+							<ul class="includes">
+								<li>Prepare students for any ESOL exam at Level B1/B2</li>
+								<li>Give students an insight into the British way of life</li>
+								<li>Support students, track progress and encourage peer-to-peer learning using our collaborative learning platform</li>
+								<li>Extend provision off-campus or to international partners</li>
+								<li>Deliver a qualification using our e-assessment tools</li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-5 col-sm-6 col-lg-pull-8 col-md-pull-7 col-sm-pull-6">
+							<img draggable="false" src="/landing/topics.png" class="img-responsive center-block" alt="Topics covered">
+						</div>
+					</div>
+				</div>
+				
+				<div class="content-landing-divide"></div>
+				
+				<h1>What your students will learn</h1>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="vid-wrapper">
+								<div class="embed-responsive embed-responsive-16by9">
+									<video class="embed-responsive-item" id="login-course-vid5" controls poster="/video/course.jpg">
+										<source src="/video/course.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<ul class="includes includes2">
+								<p class="header">As they learn English your students will discover UK life and culture to help them achieve citizenship</p>
+								<li>Over 100 hours of interactive learning divided into 15-30 minute activities</li>
+								<li>Integrated Oxford Learner's dictionary</li>
+								<li>Dedicated, simple grammar guide</li>
+								<li>Shared digital notebook to improve writing skills</li>
+								<li>Voice recorder for sharing audio files</li>
+								<li>Forum for group discussion</li>
+								<li>A quiz at the end of each module</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-landing contents-screenshots">
+				<h1>Have a look at the course</h1>
+				{{>screenshots_b2b}}
+				<span id="pricing"></span>
+			</div>
+			
+			<div class="content-landing">
+				<h1>Product versions</h1>
+				<table class="table table-striped table-features">
+					<thead>
+						<tr> <th></th> <th>Self-study</th> <th>Full tutor support</th> </tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>100 hours of interactive learning</td> <td><i class="fa fa-check"></i></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Progress tracking</td> <td></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Assessment</td> <td></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Digital notebook</td> <td><i class="fa fa-check"></i></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Oxford Learner's dictionary</td> <td><i class="fa fa-check"></i></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Grammar guide</td> <td><i class="fa fa-check"></i></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Voice recorder</td> <td><i class="fa fa-check"></i></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Messaging</td> <td></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+						<tr>
+							<td>Forum</td> <td></td> <td><i class="fa fa-check"></i></td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- <div class="articlesrc text-right">*Due to restrictions by Apple, the voice recorder is currently unavailable on iOS. We are working to fix this.</div> -->
+			</div>
+			
+			<div class="content-landing last2">
+				{{>contactForm3}}
+			</div>
+			
+
+			{{>LandingFooter2}}
+		</section>
+
+</article>
+</template>
+

@@ -1,0 +1,30 @@
+<template name="ukQuiz_9"> 
+	<section id="ukQuiz_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Sometimes 'will' and 'won't' are in the right place. Sometimes they aren't. If you think it's right, {{>touch yes="tap" no="click"}} 'yes'. If it's wrong, {{>touch yes="tap" no="click"}} 'no'.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">						
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module6/a15/1a.m4a"></button>
+						<div class="caption capgreen"><span id="question_text">Sentence 1a</span></div>
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="yes" class="button2 item-space ddwidth9">Yes</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="no" class="button2 item-space ddwidth9">No</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#ukQuiz_8" nexturl="#ukQuiz_10" prev="hidden" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

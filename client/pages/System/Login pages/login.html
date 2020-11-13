@@ -1,0 +1,107 @@
+<template name="login">
+
+	{{>loginBox}}
+	{{#if currentUser}}<div style="height: 2em;"></div>{{/if}}
+	<article class="login-page login-page2">	
+		{{>loginHeader}}
+		<section id="welcome">
+			<div class="landing">
+				<div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-6 text-center">
+								<h1>A digital course for intermediate learners of English</h1>
+								<p>Available on your computer, tablet and smartphone</p>
+								{{>StartJourney}}
+								<p class="account-yes"><a class="call-login-box">Have an account?</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img draggable="false" src="/landing/landing-chars-767-spacer.gif" class="visible-sm visible-xs chars-spacer">
+				<img draggable="false" src="/landing/landing-chars-767.png" class="visible-sm visible-xs chars">
+			</div>
+			
+			<div class="content-login">
+				<h1>Why choose Journey 2 English?</h1>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-5">
+							<ul class="features">
+								<li>English opens up a world of opportunities</li>
+								<li>With JOURNEY 2 ENGLISH you don't just learn what to say, you learn why</li>
+								<li>JOURNEY 2 ENGLISH gives you an insight into British culture</li>
+								<li>Plan your own route round the UK</li>
+								<li>Prepare for any intermediate exam</li>
+							</ul>
+						</div>
+						<div class="col-sm-7">
+							<div class="vid-wrapper">
+								<div class="embed-responsive embed-responsive-16by9">
+									<video class="embed-responsive-item" id="login-course-vid" controls poster="/video/course.jpg">
+										<source src="/video/course.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="clear-float"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-login tools">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12"><h1>Journey 2 English includes:</h1></div>
+						<div class="col-sm-6 col-sm-push-6">
+							<ul class="features">
+								<li>Over 100 hours of interactive learning divided into 15-30 minute activities</li>
+								<li>Integrated Oxford Learner's dictionary</li>
+								<li>Dedicated, simple grammar guide</li>
+								<li>Digital notebook to improve writing skills</li>
+								<li>Voice recorder for speaking practice</li>
+								<li>A quiz at the end of each module to test yourself</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 col-sm-pull-6">
+							<img draggable="false" src="/landing/learning-tools.jpg" class="side-img" alt="Learning tools">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-login vid">
+				<div class="container-fluid">
+					<div class="row">
+						<h1>What people say about Journey 2 English</h1>
+						<div class="vid-wrapper">
+							<div class="embed-responsive embed-responsive-16by9">
+								<video class="embed-responsive-item" id="login-course-vid1" controls poster="/video/testimonials.jpg">
+									<source src="/video/testimonials.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="clear-float"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-login tutor-support">
+				<h1>Tutor Support</h1>
+				<i class="fa fa-graduation-cap"></i>
+				<p>If you would like your own, qualified tutor, send us an email and you will be added to our tutor support mailing list.</p>
+				<div class="clear-float"></div>
+				<div class="text-center"><a draggable="false" href="mailto:contact@klik2learn.com?subject=Journey 2 English with tutor support&body=Hi, I would be interested in a tutor to help me with Journey 2 English." class="landing-button">contact@klik2learn.com</a></div>
+			</div>
+			
+			<div class="content-login end">
+				<h1>Ready to succeed?</h1>
+				<div class="text-center">{{>StartJourney}}</div>
+			</div>
+			
+			
+		</section>
+
+		{{>loginFooter}}
+</article>
+</template>

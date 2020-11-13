@@ -1,0 +1,91 @@
+<template name="FortWilliam">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> m4l1}}<em class="titleactcount">{{>m4l1No}}</em></div>
+	</header>
+	
+				
+	<!-- Place -->
+	<section id="FortWilliam" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m4_satnav}}
+					<!--Module-->
+					{{>mapButtons module="4" location="FortWilliam" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a1">
+								<div class="actbutton a1 {{completed '4' '1'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">1</div>
+								</div>
+							</a><br>
+							{{> m4a1Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a2">
+								<div class="actbutton a2 {{completed '4' '2'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">2</div>
+								</div>
+							</a><br>
+							{{> m4a2Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a3">
+								<div class="actbutton a3 {{completed '4' '3'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">3</div>
+								</div>
+							</a><br>
+							{{> m4a3Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a4">
+								<div class="actbutton a4 {{completed '4' '4'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">4</div>
+								</div>
+							</a><br>
+							{{> m4a4Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a5">
+								<div class="actbutton a5 {{completed '4' '5'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">5</div>
+								</div>
+							</a><br>
+							{{> m4a5Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="4" location="FortWilliam" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

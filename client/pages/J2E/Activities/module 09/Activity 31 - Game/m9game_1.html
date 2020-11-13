@@ -1,0 +1,24 @@
+<template name="m9Game_1">
+
+	<section id="m9Game_1" class="game-section hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<h1>Introduction</h1>
+					<div class="videoplayer">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video class="embed-responsive-item" id="m9game-intro" autoplay poster="/video/games/m9intro.jpg">
+								<source src="/video/games/m9intro.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9Game_2" prev="hidden" next="" next_text="Skip intro"}}
+			</footer>
+	{{/if}}
+	</section>
+</template>

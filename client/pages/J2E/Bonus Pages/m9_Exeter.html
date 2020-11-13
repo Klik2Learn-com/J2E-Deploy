@@ -1,0 +1,148 @@
+<template name="MoreAboutExeter">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Exeter"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m9l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m9l3}}</div>
+		</header>
+
+		<section id="moreaboutExeter">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Exeter/Exeter1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l3_A">
+						<p>Exeter Cathedral</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Exeter/Exeter2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l3_B">
+						<p>Royal Albert Memorial Museum & Art Gallery</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Exeter/Exeter3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l3_C">
+						<p>Powderham Castle</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Exeter/Exeter4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l3_D">
+						<p>Exeter Castle</p>
+					</div>
+					<div class="col-sm-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Exeter/Exeter5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l3_E">
+						<p>Dr Thomas Shapter</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l3_A">Exeter Cathedral</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Exeter/Exeter1.jpg" alt="Exeter Cathedral" style="max-width: 250px;">
+					</figure>
+					<p>Exeter Cathedral was built in 1400 and has the longest vaulted ceiling in Britain.  During the 2nd World War the cathedral was bombed and part of the building was destroyed. It has now been restored. The cathedral has several unusual features: an astronomical clock and the UK’s earliest known wooden carving of an elephant. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.exeter-cathedral.org.uk/visiting/plan-your-visit/virtual-tour-.ashx" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l3_B">Royal Albert Memorial Museum & Art Gallery</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Exeter/Exeter2.jpg" alt="Royal Albert Memorial Museum & Art Gallery" style="max-width: 250px;">
+					</figure>
+					<p>The museum was voted Museum of the Year in 2012 and is the ideal place to explore the history of Devon. It has over a million objects from paintings, to natural history. Many of them come from other cultures and countries and tell the story of the area’s global exploration.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://rammuseum.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l3_C">Powderham Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Exeter/Exeter3.jpg" alt="Powderham Castle" style="max-width: 250px;">
+					</figure>
+					<p>Powderham Castle is one of England’s oldest family homes. It’s now the home of the Earl and Countess of Devon and the castle and the gardens are open to visitors during the summer. The castle also organises horse shows, rock concerts and Radio 1’s annual event - the Big Weekend.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.powderham.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l3_D">Exeter Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Exeter/Exeter4.jpg" alt="Exeter Castle" style="max-width: 250px;">
+					</figure>
+					<p>The castle dates from the 11th century and over the years, the castle has served many purposes. It was mentioned in one of Shakespeare’s plays and for over 400 years it was the county court and prison. Nowadays, part of the Castle has been renovated as a ballroom and concerts are held in the courtyard.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.exetercastle.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l3_E">Dr Thomas Shapter</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Exeter/Exeter5.jpg" alt="Dr Thomas Shapter" style="max-width: 250px;">
+					</figure>
+					<p>Thomas Shapter graduated as a doctor from Edinburgh University and arrived in Exeter at the time of the cholera epidemic. He was twice elected as the Mayor of Exeter but is famous mainly for his important book on the history of the cholera epidemic.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.exetermemories.co.uk/em/_people/shapter.php" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

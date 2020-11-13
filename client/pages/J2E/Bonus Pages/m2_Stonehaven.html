@@ -1,0 +1,148 @@
+<template name="MoreAboutStonehaven">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Stonehaven"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m2l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m2l5}}</div>
+		</header>
+
+		<section id="moreaboutStonehaven">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Stonehaven/Stonehaven2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l5_B">
+						<p>Dunnottar Castle</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-color: #ae4d61; background-image: url('images/bonus/Stonehaven/Stonehaven3.gif'); background-position: center top; background-size: contain;" data-toggle="modal" data-target="#bonus_modal_m2l5_C">
+						<p>Doric Dialect</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Stonehaven/Stonehaven4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l5_D">
+						<p>Deep-fried Mars Bar</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stonehaven/Stonehaven5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l5_E">
+						<p>Stonehaven Fireballs</p>
+					</div>				
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Stonehaven/Stonehaven6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l5_F">
+						<p>Floods</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l5_B">Dunnottar Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehaven/Stonehaven2.jpg" alt="Dunnottar Castle" style="max-width: 250px;">
+					</figure>
+					<p>Dunnottar Castle is a ruined medieval fortress built on a rocky headland in Stonehaven. The surviving buildings date back to the 15th and 16th centuries, but the site is believed to have been fortified in the Early Middle Ages. Dunnottar has played a prominent role in the history of Scotland because of its strategic location and defensive strength. Dunnottar is best known as the place where the Honours of Scotland, the Scottish crown jewels, were hidden from Oliver Cromwell's invading army in the 17th century. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.dunnottarcastle.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l5_C">Doric Dialect</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehaven/Stonehaven3.gif" alt="Speech bubble" style="max-width: 250px;">
+					</figure>
+					<p>Doric is a dialect spoken in the North-East of Scotland. It has been described as the liveliest and most distinctive of all the Scots dialects.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.ayecan.com/listen_to_scots/north_east.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l5_D">Deep-fried Mars Bar</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehaven/Stonehaven4.jpg" alt="Deep-fried Mars bar" style="max-width: 250px;">
+					</figure>
+					<p>The infamous deep-fried Mars bar is said to have first been made in 1995 in a fish-and-chip shop in Stonehaven, supposedly as a school dare. In consists of a <a draggable="false" href="https://en.wikipedia.org/wiki/Mars_(chocolate_bar)">Mars</a> chocolate bar, coated in batter and then deep-fried in oil. Some fish-and-chip shops in Scotland (and now other countries) will offer it on their menus.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitscotland.com/blog/food-drink/the-deep-fried-mars-bar-an-acquired-taste" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l5_E">Stonehaven Fireballs</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehaven/Stonehaven5.jpg" alt="Person swinging fire" style="max-width: 250px;">
+					</figure>
+					<p>The Fireball Ceremony is the traditional way to greet the new year in Stonehaven. It is held every year on Hogmanay (the Scots word for the last day of the year). It features a parade or local people swinging fire cages around their head. The idea behind the ceremony is to burn off the bad spirits left from the old year so that the spirits of the New Year can come in clean and fresh.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=xm5cqvnZ2eE">{{>touch yes="Tap" no="Click"}} here to see the ceremony</a></p>
+					<p class="text-center"><a draggable="false" href="http://stonehavenfireballs.co.uk/about" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l5_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l5_F">Floods</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Stonehaven/Stonehaven6.jpg" alt="Flood warning" style="max-width: 250px;">
+					</figure>
+					<p>It is not uncommon for Stonehaven be subject to flooding during bad weather when the River Carron can swell and overflow.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/news/uk-scotland-20827290" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

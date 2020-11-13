@@ -1,0 +1,269 @@
+<!-- Change template name to activity number m2a11, m1a2 etc -->
+<template name="m2a11">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Arbroath');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 11 - {{>m2a11Title}}</div>
+		</header>
+				
+		<section id="m2a11">
+			<div class="content">
+			<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a11Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m2a11Intro}}</h3>
+{{> m2a11Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+			{{>footer_nav nexturl="#m2a11_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+	</section>
+		
+		{{> m2a11_1}}
+		{{> m2a11_2}}
+		{{> m2a11_3}}
+		{{> m2a11_4}}
+		{{> m2a11_5}}
+		{{> m2a11_6}}
+		{{> m2a11_end}}
+	</div>
+</article>
+
+	</template>
+	
+	
+<template name="m2a11_1">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a11_1" class="hidden">
+		<div class="content">
+			<div class="center parapaper fold">There are some verbs which are not normally found in the <b>PRESENT CONTINUOUS</b> -  here are some typical examples:</div>
+			<div class="container-fluid">
+				<div class="row">						
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-10x16" style="max-width: 147px"><div class="ph"><img draggable="false" src="../images/module2/listen.png" alt="Woman listening to music" /></div></div>
+							<div class="caption capred">Senses</div>
+							<br>
+							<br>
+							<div class=" caption capgreen text-center">hear / smell / recognise</div>
+							</div>
+						</div>
+						{{> blankrowxs}}
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-10x16" style="max-width: 147px"><div class="ph"><img draggable="false" src="../images/module2/emote.png" alt="Angry boy" /></div></div>
+							<div class="caption capred">Emotion</div>
+							<br>
+							<br>
+							<div class=" caption capgreen text-center">want / wish / hate / love / like</div>
+							</div>
+						</div>
+						{{> blankrowxs}}
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-10x16" style="max-width: 147px"><div class="ph"><img draggable="false" src="../images/module2/think.png" alt="Person thinking" /></div></div>
+							<div class="caption capred">Thinking</div>
+							<br>
+							<br>
+							<div class=" caption capgreen text-center"> understand /  know / suppose / believe / forget</div>
+							</div>
+						</div>
+						{{> blankrowxs}}
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-10x16" style="max-width: 147px"><div class="ph"><img draggable="false" src="../images/module2/own.png" alt="Girl with a puppy" /></div></div>
+							<div class="caption capred">Possessing</div>
+							<br>
+							<br>
+							<div class=" caption capgreen text-center">belong / own</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<footer>
+					{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a11_2" prev="hidden" next=""}}
+			</footer>
+		</div>
+	</section>
+</template>
+
+<template name="m2a11_2">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a11_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the correct sentence.</h3>
+				<div class="container-fluid">	
+					<div class="center-block caption capgreen">TO SMELL</div> 
+					<br>
+					<br>
+				<div class="row">
+					<div class="ph-w" style="max-width: 752px"><div class="ph" style="padding-top: 38.03%"><img draggable="false" src="../images/module2/smell.png" alt="Man smelling flower and a woman smelling rotten fish" /></div></div>
+				</div>
+					<div class="row">
+						<div class="col-sm-6 text-center">
+							<button id="m2a11_2ans1" class="button1 m2a11_2ans item-space">“I smell something great!”</button>
+						</div>
+						<div class="col-sm-6 text-center">
+							<button id="m2a11_2ans2" class="button1 m2a11_2ans item-space">“I am smelling something bad!”</button>
+						</div>
+					</div>
+					{{> rightwrong}}
+				</div>
+			<footer>
+					{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a11_3" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+
+
+<template name="m2a11_3">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a11_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the correct sentence.</h3>
+				<div class="container-fluid">	
+						<div class="center-block caption capgreen">TO WANT</div> 
+						<br>
+						<br>
+					<div class="row">
+						<div class="ph-w" style="max-width: 752px"><div class="ph" style="padding-top: 38.03%"><img draggable="false" src="../images/module2/want.png" alt="Girl reaching for ice cream and a man dressed as a superhero" /></div></div>
+						</div>
+							<div class="row">
+								<div class="col-sm-6 text-center">
+									<button id="m2a11_3ans1" class="button1 m2a11_3ans item-space">“I’m wanting that ice cream!”</button>
+								</div>
+								<div class="col-sm-6 text-center">
+									<button id="m2a11_3ans2" class="button1 m2a11_3ans item-space">“I want to fight crime...”</button>
+								</div>
+							</div>
+							{{> rightwrong}}
+					</div>
+			<footer>
+					{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a11_4" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+
+
+<template name="m2a11_4">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a11_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the correct sentence.</h3>
+				<div class="container-fluid">	
+						<div class="center-block caption capgreen">TO FORGET</div> 
+						<br>
+						<br>
+					<div class="row">
+						<div class="ph-w" style="max-width: 752px"><div class="ph" style="padding-top: 38.03%"><img draggable="false" src="../images/module2/forget.png" alt="Elderly woman struggling to remember names and a woman who can't remember a person's name" /></div></div>
+						</div>
+							<div class="row">
+								<div class="col-sm-6 text-center">
+									<button id="m2a11_4ans1" class="button1 m2a11_4ans item-space">“She forgets people’s names.”</button>
+								</div>
+								<div class="col-sm-6 text-center">
+									<button id="m2a11_4ans2" class="button1 m2a11_4ans item-space">“I am forgetting his name.”</button>
+								</div>
+							</div>
+							{{> rightwrong}}
+					</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a11_5" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+
+
+<template name="m2a11_5">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a11_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the correct sentence.</h3>
+				<div class="container-fluid">	
+						<div class="center-block caption capgreen">TO OWN</div> 
+						<br>
+						<br>
+					<div class="row">
+						<div class="ph-w" style="max-width: 752px"><div class="ph" style="padding-top: 38.03%"><img draggable="false" src="../images/module2/own2.png" alt="A rich man and a man with a cat" /></div></div>
+						</div>
+							<div class="row">
+								<div class="col-sm-6 text-center">
+									<button id="m2a11_5ans1" class="button1 m2a11_5ans item-space">“I own an island.”</button>
+								</div>
+								<div class="col-sm-6 text-center">
+									<button id="m2a11_5ans2" class="button1 m2a11_5ans item-space">“I am owning a cat.”</button>
+								</div>
+							</div>
+							{{> rightwrong}}
+					</div>
+			<footer>
+					{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a11_6" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+
+
+<template name="m2a11_6">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m2a11_6" class="hidden">
+		<div class="content">
+			<h1>Correct Answers</h1>
+			<div class="container-fluid">
+				<div class="row">
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-1x1" style="max-width: 280px"><div class="ph"><img draggable="false" src="../images/module2/smell(2).png" /></div></div>
+							<br>
+							<div class="caption capred">“I smell something great!”</div>
+							</div>
+						</div>
+						{{> blankrowxs}}
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-1x1" style="max-width: 280px"><div class="ph"><img draggable="false" src="../images/module2/want(2).png" /></div></div>
+							<br>
+							<div class="caption capred">“I want to fight crime...”</div>
+							</div>
+						</div>
+						{{> blankrowxs}}
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-1x1" style="max-width: 280px"><div class="ph"><img draggable="false" src="../images/module2/forget(2).png" /></div></div>
+							<br>
+							<div class="caption capred">“She forgets people’s names.”</div>
+							</div>
+						</div>
+						{{> blankrowxs}}
+						<div class="col-sm-3 center">
+							<div><div class="ph-w ph-1x1" style="max-width: 280px"><div class="ph"><img draggable="false" src="../images/module2/own3.png" /></div></div>
+							<br>
+							<div class="caption capred">“I own an island.”</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<footer>
+					{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a11_end" prev="hidden" next=""}}
+			</footer>
+		</div>
+	</section>
+</template>
+
+<template name="m2a11_end">
+{{>EndPage char="tu" act="m2a11" nextact="m2a12" place="Arbroath"}}
+</template>

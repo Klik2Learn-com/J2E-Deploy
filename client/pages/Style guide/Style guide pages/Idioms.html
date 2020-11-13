@@ -1,0 +1,94 @@
+<template name="idiomsSG">
+	<section id="idiomsSG" class="hidden">
+	<div class="content">
+		<h3>To edit the inner templates go to templates\client\pages\I&PV\Idioms and Phrasal verbs content</h3>
+		<h1>Idioms</h1>
+		{{> mod2_idioms_CD}}	 
+		</div>
+		
+
+	<div class="content">
+		<h1>Idioms</h1>
+		{{> mod2_idioms}}
+		</div>
+
+		
+		<div class="content">
+			
+			<h4>HMTL</h4>
+			<pre class="html2">
+&#00060;template name="<span class="html-red">idiomsSG_1</span>"&#00062;
+	&#00060;section id="<span class="html-red">idiomsSG_1</span>" class="hidden"&#00062;
+	&#00123;&#00123;#if activeSection&#00125;&#00125;
+	&#00060;div class="content"&#00062;
+		&#00060;h1&#00062;Idioms&#00060;/h1&#00062;
+		<span class="html-red">&#00123;&#00123;&#00062; mod2_idioms_CD&#00125;&#00125;</span>
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+			&#00123;&#00123;&#00062;footer_nav prevurl="#idiomsSG" nexturl="#midiomsSG_2" prev="" next=""&#00125;&#00125;
+		&#00060;/footer&#00062;
+	&#00123;&#00123;/if&#00125;&#00125;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;
+	
+&#00060;template name="<span class="html-red">idiomsSG_2</span>"&#00062;
+	&#00060;section id="<span class="html-red">idiomsSG_2</span>" class="hidden"&#00062;
+	&#00123;&#00123;#if activeSection&#00125;&#00125;
+	&#00060;div class="content"&#00062;
+		&#00060;h1&#00062;Idioms&#00060;/h1&#00062;
+		<span class="html-red">&#00123;&#00123;&#00062; mod2_idioms&#00125;&#00125;</span>
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+			&#00123;&#00123;&#00062;footer_nav prevurl="#idiomsSG" nexturl="#idiomsSG_3" prev="" next=""&#00125;&#00125;
+		&#00060;/footer&#00062;
+	&#00123;&#00123;/if&#00125;&#00125;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;
+			</pre>
+			<h4>JAVASCRIPT</h4>
+			<pre class="html2">
+Template.idiomsSG_1.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get('activeSection');
+		return (activeSection == "#idiomsSG_1");
+	&#00125;
+&#00125;)
+
+Template.idiomsSG_1.events(&#00123;
+
+	'click .buttonaudio': function(evt) &#00123;
+		;
+		$.k2l.idiomsSG_1.sound.src = $(evt.currentTarget).attr('data-audiosrc');
+		$.k2l.idiomsSG_1.sound.play();
+	&#00125;,
+	
+	'click .pagination': function(evt) &#00123;
+		
+		$.k2l.idiomsSG_1.sound.src = &#00123;&#00125;;
+	&#00125;
+
+&#00125;);
+
+Template.idiomsSG_1.rendered = function() &#00123;
+
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.idiomsSG_1 == 'undefined') &#00123;
+		$.k2l.idiomsSG_1 = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.idiomsSG_1.sound = new Audio();
+&#00125;
+
+Template.idiomsSG_2.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get('activeSection');
+		return (activeSection == "#idiomsSG_2");
+	&#00125;
+&#00125;)
+			</pre>
+		</div>
+	</section>
+</template>

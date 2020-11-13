@@ -1,0 +1,178 @@
+<template name="m7a17">
+	<article class="with-tools-sidebar m7a17">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Chester');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 17 - {{>m7a17Title}}</div>
+			</header>
+			<section id="m7a17">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a17Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m7a17Intro}}</h3>
+					{{> m7a17Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a17_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a17_1}} {{>m7a17_2}} {{>m7a17_3}} {{>m7a17_4}} {{>EndPage char="tu" act="m7a17" nextact="m7a18" place="Chester"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a17_1">
+	<section id="m7a17_1" class="hidden">
+		<div class="content">
+			{{>complex_words}}
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>dyslexic - difficulty in reading and understanding words and letters.</li>
+						<li>net profit - what you have left after taking off all the costs in a business.</li>
+						<li>gross profit - what you have after taking off the cost of producing something.</li>
+						<li>maverick - someone who is unpredictable/behaves differently.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a17" nexturl="#m7a17_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m7a17_2">
+	<section id="m7a17_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>Watch the video of Sir Richard Branson - the founder of the Virgin Group of companies - talking about his school-days.</h3>
+			<div class="videoplayer">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3XQcdVp9sls?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a17_1" nexturl="#m7a17_3" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a17_3">
+	<section id="m7a17_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose a word to fill in the space in these sentences.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>I had no understanding of school work
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>.</li>
+					<li>If I’m not interested in something, you know, I just don’t
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> it. </li>
+					<li>As somebody who’s
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>, you also have some quite
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> situations.</li>
+					<li>I’ve been
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> a large group of private companies in Europe.</li>
+					<li>I haven’t been able to know the difference
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div> net and gross! </li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">dyslexic</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">bizarre</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">running</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">grasp</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">whatsoever</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">between</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a17_2" nexturl="#m7a17_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a17_4">
+	<section id="m7a17_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose a word to fill in the space in these sentences.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li> So the Board meetings have been
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>.</li>
+					<li> So when I
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> fifty, somebody took me outside the Boardroom.</li>
+					<li> I finally
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> it all out.</li>
+					<li>Were you a
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> then?</li>
+					<li>Yes I think I was a bit of a
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>… but I was fortunately good at sport so at least I had something to
+						<div class="ddseatedtarget ddwidth7 dd1line"
+						data-destinationid="target6">&nbsp;</div> at at school.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">excel</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">fascinating</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">maverick</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">rebel</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">turned</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">worked</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a17_3" nexturl="#m7a17_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

@@ -1,0 +1,115 @@
+<template name="k2ltest">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" href="/Inverness"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 1 - {{>m1a1Title}}</div>
+		</header>
+				
+			<section id="m1a1_1">
+		<div class="content">
+		  <h3>K2L Tests</h3>
+  {{> modalButton}}
+  {{> modalTest}}
+  				<footer>
+				<nav class="navfooter">
+					<ul>
+						<li class="first" style="float: left;">
+							<a draggable="false" href="#m1a1_1" title="previous" rel="prev" class="pagination">
+								{{> prev}}
+							</a>
+						</li>					
+						<li style="float: right;">
+						<!-- Set to second page of activity -->
+							<a draggable="false" href="#modal" title="next" rel="next" class=" pagination next" >
+								{{> next}}
+							</a>
+						</li>
+					</ul>
+				</nav>
+		</footer>
+		</div>
+		</section>
+    </div>
+</article>
+
+</template>
+
+
+
+<template name="modalButton">
+ <input type="button" class="open-modal" value="Show modal." />
+</template>
+
+<template name="modalTest">
+  <div class="modal fade in" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Big Image</h4>
+        </div>
+        <div class="modal-body">
+          <img draggable="false" src="../images/right-wrong_right.jpg" alt="..." class="img-rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="activity11">
+    <article>
+    <section id="act_11_sect_1" class="dog_ear">
+      <header id="header" class="">
+        <h1>Understanding words2 and phrases</h1>
+      </header><!-- /header -->
+      <div class="content">
+        <figure class="avatar_LHS">
+            <img draggable="false" src="../style/images/tu intro.png" alt="Tu">
+            <figcaption>Tu</figcaption>
+        </figure>
+        <p>How well did you understand some of the new words and phrases in Activity 10?</p>
+        <p>In this activity you can find out by typing the correct answer in the box provided.</p>
+      </div>
+      <footer>
+        <p class="duration">Up to 15 minutes</p>
+        {{> act_11_pagination url="#act_11_sect_2" exit="" prev="" next="" }}
+      </footer>
+    </section>
+    <section id="act_11_sect_2" class="hidden panel panel-primary">
+      <header id="header" class="">
+        <h2 id = "intro">Read the article below.</h2>
+      </header><!-- /header -->
+      <div class="content panel-body">
+        <p id = "paragraph" class = "yellow_box dog_ear">{{getParagraph}}</p>
+        <p id = "prompt">{{getPrompt}}</p>
+        <input type="text" name="guess" value="" placeholder="Guess" id = "guess">
+        <button type="button" class = "yellow_box" id = "btnGuess">Submit answer</button>
+        <span id = "guess_label" class = "hidden">placeholder</span>
+      </div>
+      <footer>
+        {{> act_11_pagination url="#act_11_sect_3" exit="" prev="" next="hidden" }}
+      </footer>
+    </section>
+    
+    <footer>
+
+    </footer>
+</article>
+
+</template>
+
+<template name="act_11_pagination">
+  <nav>
+    <ul>
+      <li><a draggable="false" href="" title="" class="pagination {{exit}}" id="btnExit">Exit</a></li>
+      <li><a draggable="false" href="" title="previous" rel="prev" class="pagination {{prev}}" id="btnPrev">Prev</a></li>
+      <li><a draggable="false" href="{{url}}" title="next" rel="next" class="pagination {{next}}" id="btnNext">Next</a></li>
+    </ul>
+  </nav>
+</template>

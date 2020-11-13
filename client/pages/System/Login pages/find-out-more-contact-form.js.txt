@@ -1,0 +1,43 @@
+Template.findOutMore.events({
+
+	'click .browser.dropdown-menu li a' : function(evt){
+		$("#form-browser").html(evt.currentTarget.innerHTML);
+		$("#form-browser").removeClass('faded');
+	},
+
+
+	'click .device.dropdown-menu li a' : function(evt){
+		$("#form-device").html(evt.currentTarget.innerHTML);
+		$("#form-device").removeClass('faded');
+	},
+
+	'click #submitReportButton' : function(evt){
+		evt.preventDefault();
+		if (Honeypot.isHuman("#findOutMoreForm")) {
+ 		 Honeypot.removeHoneypotFields("#findOutMoreForm");
+		var name = $('#form-name').val(),
+		    email = $('#form-email').val(),
+		    organisation = $('#form-organisation').val();
+
+		if (name == "" || email == ""){
+			Bert.alert( "Name and email are required" , 'warning', 'growl-top-right' );
+			return;
+		}
+
+		Meteor.call('submitContactForm',"B2B trial request", name, email, organisation, Meteor.userId(), function (error, result) {
+			if (!error) {
+				Bert.alert( 'Contact form submitted', 'success', 'growl-top-right' );
+				 $('#form-name').val("");
+				 $('#form-email').val("");
+				 $('#form-org').val("");
+				 $('#form-organisation').val("");
+
+			} else {
+				Bert.alert( error.toString() , 'danger', 'growl-top-right' );
+			}
+		});
+	} else {
+		return false;
+	}
+}
+})

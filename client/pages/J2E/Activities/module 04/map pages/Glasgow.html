@@ -1,0 +1,106 @@
+<template name="Glasgow">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+		<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+		{{>menu}}
+		<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> m4l6}}<em class="titleactcount">{{>m4l6No}}</em></div>
+	</header>
+	
+				
+	<!-- Place -->
+	<section id="Glasgow" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m4_satnav}}
+					<!--Module-->
+					{{>mapButtons module="4" location="Glasgow" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a27">
+								<div class="actbutton a27 {{completed '4' '27'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">27</div>
+								</div>
+							</a><br>
+							{{> m4a27Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a28">
+								<div class="actbutton a28 {{completed '4' '28'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">28</div>
+								</div>
+							</a><br>
+							{{> m4a28Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a29">
+								<div class="actbutton a29 {{completed '4' '29'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">29</div>
+								</div>
+							</a><br>
+							{{> m4a29Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4a30">
+								<div class="actbutton a30 {{completed '4' '30'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">30</div>
+								</div>
+							</a><br>
+							{{> m4a30Title}}
+						</div>
+						
+						{{#if notStudent}}
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m4Game">
+								<div class="actbutton all {{completed '4' '31'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">31</div>
+								</div>
+							</a><br>
+							<span>{{> m4GameTitle}}</span>
+						</div>
+						{{else}}
+						<div class="actbuttoncont {{isLocked}}">
+							{{> ActLocked pass="5" total="7"}}
+							<a draggable="false" href="/m4Game">
+								<div class="actbutton all {{completed '4' '31'}}">
+									<i class="actCompleteTick"></i>
+									<div class="game-star">31</div>
+								</div>
+							</a><br>
+							<span>{{> m4GameTitle}}</span>							
+						</div>
+						{{/if}}
+						
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="next-mod-button-wrapper"><a href="Belfast" draggable="false" class="shadowsolid">Next module <i class="fas fa-arrow-right"></i></a></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="4" location="Glasgow" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

@@ -1,0 +1,76 @@
+<template name="styleLists">
+<section id="style-lists" class="hidden">
+	<div class="content">
+		<h1>Lists</h1>
+		
+		
+	
+		
+		<div class="parapaper">
+				<h2>Regular text <span class="htmlcode">&#60;ol class="olcircle2"&#62;</span></h2>
+				<ol class="olcircle2">
+					<li>Question 1</li>
+					<li>Question 2</li>
+					<li>Question 3</li>
+				</ol>
+				<hr>
+				<h2>Text entry or drag and drop <span class="htmlcode">&#60;ol class="olcircle"&#62;</span></h2>
+				<ol class="olcircle">
+					<li>First item <div class="ddtarget" style="width: 7em;">&nbsp;</div></li>
+					<li>Second item <div class="ddtarget" style="width: 7em;">&nbsp;</div></li>
+					<li>Third item <div class="ddtarget" style="width: 7em;">&nbsp;</div></li>
+				</ol>
+				<p>If you need your list to start at a number other than one, add  <span class="htmlcode">style="counter-reset: start #;"</span> to the <span class="htmlcode">ol</span> - where <span class="htmlcode">#</span> is the previous number - e.g. setting it to 5 will make the first item on the list 6.</p>
+
+				<p><div class="number">1</div> If you need a number and making a list isn't an option, you can use this <span class="htmlcode">&#60;div class="number"&#62;</span></p>
+				
+				<p><div class="numberBig">1</div> If you need a big number in a circle, use this <span class="htmlcode">&#60;div class="numberBig"&#62;</span></p>
+				
+				<p><div class="lettercir">A</div> If you need a letter in a circle, you can use this <span class="htmlcode">&#60;div class="lettercir"&#62;</span></p>
+				
+				
+				<br>
+				<h2>Lots of text next to a number</h2>
+				<div class="iconleft"><div class="number">!</div></div>
+				<div class="iconright">If you have a lot of text next to a number like this use the following code to keep the text from wrapping underneath the number and make it behave like a list item.</div>
+				<br>
+<pre class="htmlcode2">&lt;div class=&quot;iconleft&quot;&gt;&lt;div class=&quot;number&quot;&gt;1&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;iconright&quot;&gt;Your text here&lt;/div&gt;</pre>
+				
+				<br>
+				<hr>
+				<br>
+				<p>This kind of list should be used for questions or things to do, e.g. sentences with drag and drop or text entry. If it's just an informative list of things, use a regular <span class="htmlcode">&#60;ul&#62;</span> or <span class="htmlcode">&#60;ol&#62;</span>.</p>
+
+				
+				<ul>
+					<li>First item</li>
+					<li>Second item</li>
+					<li>Third item</li>
+				</ul>
+				<br>
+				<ol>
+					<li>First item</li>
+					<li>Second item</li>
+					<li>Third item</li>
+				</ol>
+				
+				<br>
+				
+				<p>To add some spacing between the list items (example here in an <span class="htmlcode">&#60;h5&#62; tag</span>) add <span class="htmlcode">.list-space</span> to the <span class="htmlcode">&#60;ul&#62;</span>.</p>
+				
+				<h5>
+					<ul class="list-space">
+						<li>First item in this list</li>
+						<li>Second item in this list</li>
+						<li>Third item in this list</li>
+					</ul>
+				</h5>
+				
+				<br>
+				
+		</div>
+		
+	</div>
+</section>
+</template>

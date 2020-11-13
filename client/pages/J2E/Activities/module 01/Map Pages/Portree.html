@@ -1,0 +1,83 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="Portree">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> m1l5}}<em class="titleactcount">{{>m1l5No}}</em></div>
+		</header>
+				
+	<!-- Place -->
+	<section id="Portree" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m1_satnav}}
+					<!--Module-->
+					{{>mapButtons module="1" location="Portree" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a19">
+								<div class="actbutton a19 {{completed '1' '19'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">19</div>
+								</div>
+							</a><br>
+							{{> m1a19Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a20">
+								<div class="actbutton a20 {{completed '1' '20'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">20</div>
+								</div>
+							</a><br>
+							{{> m1a20Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a21">
+								<div class="actbutton a21 {{completed '1' '21'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">21</div>
+								</div>
+							</a><br>
+							{{> m1a21Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a22">
+								<div class="actbutton a22 {{completed '1' '22'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">22</div>
+								</div>
+							</a><br>
+							{{> m1a22Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="1" location="Portree" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

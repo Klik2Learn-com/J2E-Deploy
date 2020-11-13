@@ -1,0 +1,237 @@
+<template name="m10a1"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Cambridge');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 1 - {{> m10a1Title}}</div>
+		</header>
+		<section id="m10a1">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a1Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m10a1Intro}}</h3>
+				{{> m10a1Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a1_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a1_1}}
+		{{>m10a1_2}}
+		{{>m10a1_3}}
+		{{>m10a1_4}}
+		{{>EndPage char="k" act="m10a1" nextact="m10a2" place="Cambridge"}}
+	</div>
+</article>
+	{{>m10a1strikes_modal}}
+	{{>m10a1playground_modal}}
+	{{>m10a1neighbours_modal}}
+</template>
+<template name="m10a1_1"> 
+	<section id="m10a1_1" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+				word1="compensate"
+				word2="productive"
+				word3="obesity"
+				word4="crisis"
+				word5="impact"
+				word6="irritable"
+				word7="tolerance"
+				word8c="hidden"
+				word9c="hidden"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a1" nexturl="#m10a1_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a1_2"> 
+	<section id="m10a1_2" class="hidden"> 
+		<div class="content">  
+{{>complex_words}}
+<div class="center">
+	<div class="parapaper paradic fold">
+		<ul class="dicwords">
+			<li>to axe something: to remove something suddenly.</li>
+		</ul>
+	</div>
+</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a1_1" nexturl="#m10a1_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a1_3"> 
+	<section id="m10a1_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3>Listen to these articles about problems people can have in their own communities. Drag the headings to the right articles.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth15" >
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 241px"><div class="ph"><img draggable="false" src="../images/module10/a1/Strike.jpg" alt="Workers on strike"></div></div>
+					</figure>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a1/strikes.m4a"></button>
+					<div data-destinationid="target1" class="ddseatedtarget dd1line ddwidth13">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth15" >
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 241px"><div class="ph"><img draggable="false" src="../images/module10/a1/Playground.jpg" alt="Playground"></div></div>
+					</figure>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a1/playparks.m4a"></button>
+					<div data-destinationid="target2" class="ddseatedtarget dd1line ddwidth13">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth15" >
+					<figure>
+						<div class="ph-w ph-3x2 border1" style="max-width: 241px"><div class="ph"><img draggable="false" src="../images/module10/a1/Neighbours.jpg" alt="Houses"></div></div>
+					</figure>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a1/neighbours.m4a"></button>
+					<div data-destinationid="target3" class="ddseatedtarget dd1line ddwidth13">&nbsp;</div>
+				</div>
+			</div>
+<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+			<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+			<div class="ddseat ddwidth13 dd1line"><div class="ddsourceseated shadow ddwidth13 dd1line" draggable="false"  data-destination="target2">Nowhere to Play</div></div>
+			<div class="ddseat ddwidth13 dd1line"><div class="ddsourceseated shadow ddwidth13 dd1line" draggable="false"  data-destination="target3">Noisy Neighbours</div></div>
+			<div class="ddseat ddwidth13 dd1line"><div class="ddsourceseated shadow ddwidth13 dd1line" draggable="false"  data-destination="target1">Bus Strikes</div></div>
+		</div>
+		</div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a1_2" nexturl="#m10a1_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a1_4"> 
+	<section id="m10a1_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now you can {{>touch yes="tap" no="click"}} the pictures to read the articles.</h3>
+			<div class="center">
+				<div class="ddpic shadow ddwidth15" >
+					<figure>
+						<a draggable="false" data-toggle="modal" data-target="#m10a1strikes_modal"><div class="ph-w ph-3x2 border1" style="max-width: 241px"><div class="ph"><img draggable="false" src="../images/module10/a1/Strike.jpg" alt="Workers on strike"></div></div></a>
+					</figure>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a1/strikes.m4a"></button><br>
+					<div class="caption capgreen">Bus Strikes</div>
+				</div>
+				<div class="ddpic shadow ddwidth15" >
+					<figure>
+						<a draggable="false" data-toggle="modal" data-target="#m10a1playground_modal"><div class="ph-w ph-3x2 border1" style="max-width: 241px"><div class="ph"><img draggable="false" src="../images/module10/a1/Playground.jpg" alt="Playground"></div></div></a>
+					</figure>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a1/playparks.m4a"></button>
+					<div class="caption capgreen">Nowhere to Play</div>
+				</div>
+				<div class="ddpic shadow ddwidth15" >
+					<figure>
+						<a draggable="false" data-toggle="modal" data-target="#m10a1neighbours_modal"><div class="ph-w ph-3x2 border1" style="max-width: 241px"><div class="ph"><img draggable="false" src="../images/module10/a1/Neighbours.jpg" alt="Houses"></div></div></a>
+					</figure>
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a1/neighbours.m4a"></button>
+					<div class="caption capgreen">Noisy Neighbours</div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a1_3" nexturl="#m10a1_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m10a1strikes_modal">
+	<div class="modal fade" tabindex="-1" id="m10a1strikes_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m10a1strikes_modal">Bus Strikes</h4>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper paraextract">{{>metametrics level="5" star="no" align="center"}}
+						
+					<p>More than 100 buses were cancelled in Dundee on Monday after drivers refused to work overtime to compensate for staff shortages. The bus company doesn’t have enough drivers. The men behind the wheel say the amount of extra work they are expected to do is far too much. Passengers are worried that more services will be cancelled on Friday. A spokeswoman for the bus company said on Wednesday night: “Today’s meeting with the trade union was productive and we will continue to talk over the coming weeks. We have issued a notice to staff to keep them up to date.”</p>
+					</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+ <template name="m10a1playground_modal">
+	<div class="modal fade" tabindex="-1" id="m10a1playground_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m10a1playground_modal">Nowhere to Play</h4>
+				</div>
+				
+				<div class="content">
+					<div class="parapaper paraextract">	{{>metametrics level="5" star="no" align="center"}}
+						<p>A group called ‘Fair Play for Children’ asked 300 councils in England about the number of playgrounds they had. There was only one for every 694 children. The government says councils are getting more freedom to choose how they spend money but the group’s secretary said there was a risk that councils pushed children and play areas to the bottom of the list. They pointed out that 3.5 million golfers enjoyed much better access to golf courses.</p>
+
+						<p>“There is a problem with childhood obesity” said the secretary. “We think there is a national crisis. Our children can’t get out and play.”  Councils said that plans to build 279 playgrounds across England had to be axed because of spending cuts. The government says they know the importance of play but they are still cutting money for playgrounds.</p>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+ <template name="m10a1neighbours_modal">
+	<div class="modal fade" tabindex="-1" id="m10a1neighbours_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m10a1neighbours_modal">Noisy Neighbours</h4>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper paraextract">{{>metametrics level="5" star="no" align="center"}}
+						<p>Neighbours who make lots of noise can have a serious impact on your life.</p>
+
+						<p>Noisy neighbours can prevent you from enjoying activities in your own home – watching TV, listening to music or reading a book.
+						They can also prevent you from getting a decent night’s sleep. When that happens every night it’s a serious problem. It can be difficult to relax and it can make you irritable, nervous and stressed.</p>
+
+						<p>Noise takes many forms – arguments, stereo systems, loud TVs, DIY noise, smoke alarms, dogs barking, doors slamming and just stamping around.</p> 
+
+						<p>We can have a very high tolerance for noise but the truth is, if the noise disturbs you, then it’s a nuisance, and you should not have to put up with it.</p>
+					</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>

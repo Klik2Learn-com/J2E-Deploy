@@ -1,0 +1,55 @@
+<template name="m1Game_h_10">
+
+	<section id="m1Game_h_10" class="game-section game-audio hidden">
+	{{#if activeSection}}
+		<div class="game-container game-image-audio m1Game-bg-tu-music2">
+			<h3 class="center">Listen to the messages and decide which one is correct</h3>
+			<div class="game-content k from-phone">
+				<div class="game-image-audio-xs m1Game-bg-tu-music2"><div class="game-audio-box2-tail-top"></div></div>
+				<div class="game-audio-box2">
+					
+					<div class="game-audio-box2-tail-left" style="top: 30%;"></div>
+					{{>rightwrong}}
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh3.1.m4a"></button>
+							</div>
+							<div class="col-xs-10">
+								<input type="radio" name="audio1" value="msg1" id="msg1">
+								<label for="msg1"><span></span><div>Hi Tu. How are you getting on?</div></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh3.2.m4a"></button>
+							</div>
+							<div class="col-xs-10">
+								<input type="radio" name="audio1" value="msg2" id="msg2">
+								<label for="msg2"><span></span><div>Hi Tu. How do you get on?</div></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/kh3.3.m4a"></button>
+							</div>
+							<div class="col-xs-10">
+								<input type="radio" name="audio1" value="msg3" id="msg3">
+								<label for="msg3"><span></span><div>Hi Tu. How do you getting on?</div></label>
+							</div>
+						</div>
+					</div>
+					<div class="game-submit-container"><button class="button2">Submit</button></div>
+					
+				</div>
+				<div class="parent_expander"></div>
+				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_h_11" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+
+</template>

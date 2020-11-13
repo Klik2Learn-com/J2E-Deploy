@@ -1,0 +1,56 @@
+<template name="C1r">
+	<section id="C1r">
+	{{#if activeSection}}
+			<div class="content">
+			<h3 class="center">Read the text and then answer each question.</h3>
+				<div class="parapaper paraextract article-text noselect">
+					<p>
+						&emsp;The earliest settlement of South Asians in Britain dates back to the days of the British Empire. In the 19th century, British ships returning from India recruited local sailors to fill vacancies in their crews; such employment opportunities being common enough as sailing was a dangerous job and the mortality rate was high. British families returning home from India often brought servants with them. Indian students studied in British universities and ambitious young men came to pass the exams for the Indian Civil Service, which could only be taken in London. Indian companies sent representatives to Britain, and as the country prepared for independence in 1947, increasing numbers of Indian politicians came to London. During both world wars, units of the Indian Army worked and served alongside British troops. Some people from all of these groups chose to remain in Britain. 
+						<br><br>
+						&emsp;The end of the Second World War in 1945 was followed by Indian independence two years later, and the partition of what had been British India into India and Pakistan. Following this, migration from both countries to Britain increased. Manual workers, mainly from Pakistan, filled the nationwide labour shortage caused by the destruction of the war. In the late 1950s and 1960s, workers, mostly from the Indian part of the Punjab region, arrived to take up positions in the factories of the English midlands and the north. At the same time, medical staff found work in the National Health Service. This had been founded in the years after the war. Free access to medical care meant a greatly increased demand and a consequent need for more staff. In 1972, all Asians in Uganda were expelled by the dictator Idi Amin. Many had been involved in business there and some continued this type of employment in Britain. Two immigration laws, of 1962 and 1971, largely restricted any further primary immigration, although family members of existing immigrants were still allowed.
+					</p>
+				</div>
+				<br>
+				<hr>
+				<h3 class="center"> Type your answers in the boxes. Look back at the text before you answer.</h3>
+				<div class="parapaper linespace paraextract parasegment para-ol-space fold">
+					<ol class="olcircle">
+						<li><b><span data-questionFor="answer1">What happened to some British sailors on the way to India?</span></b><br>
+						They <form class="textentry"><input id="answer1" type="text" name="userText" data-function="answerBox" size="11" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer2">What were Indian politicians preparing for before 1947?</span></b><br>
+						<form class="textentry"><input id="answer2" type="text" name="userText" data-function="answerBox" size="10" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer3">Did all members of the Indian army return home after the wars?</span></b><br>
+						<form class="textentry"><input id="answer3" type="text" name="userText" data-function="answerBox" size="3" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer4">Which exams could Indians only sit in London?</span></b><br>
+						<form class="textentry"><input id="answer4" type="text" name="userText" data-function="answerBox" size="13" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer5">Which of these summarises the main reasons for South Asian settlement in Britain in the 19th and early 20th century?<br>A) They came to Britain to work.<br>B) They came to Britain because of their work.<br><small>please indicate with "A" or "B"</small></span></b><br>
+						<form class="textentry"><input id="answer5" type="text" name="userText" data-function="answerBox" size="1" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer6">When was Pakistan established as a country?</span></b><br>
+						<form class="textentry"><input id="answer6" type="text" name="userText" data-function="answerBox" size="4" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer7">Which two of these groups of South Asians came to work in Britain?<br>A) Manual workers<br>B) Agricultural workers<br>C) Doctors and nurses<br><small>please indicate with "A,B", "B,C", or "A,C"</small></span></b><br>
+						<form class="textentry"><input id="answer7" type="text" name="userText" data-function="answerBox" size="3" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer8">Is the whole of the Punjab in modern India?</span></b><br>
+						<form class="textentry"><input id="answer8" type="text" name="userText" data-function="answerBox" size="2" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer9">Did the immigration laws stop family members coming to Britain?</span></b><br>
+						<form class="textentry"><input id="answer9" type="text" name="userText" data-function="answerBox" size="2" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer10">What word shows that Ugandan Asians did not come to Britain by choice?</span></b><br>
+						<form class="textentry"><input id="answer10" type="text" name="userText" data-function="answerBox" size="19" autocomplete="off"></form></li>
+					</ol>
+				</div>
+				<div class="assess-finish">
+					<span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+				</div>
+				{{>finishBtn}}
+			</div>
+	{{/if}}
+	</section>
+</template>

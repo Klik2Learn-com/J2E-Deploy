@@ -1,0 +1,276 @@
+<template name="TF">
+   <section id="TF" class="hidden">
+		<div class="content">
+			<h1>True and False with changing audio, question text and question number on a single page</h1>
+			<h3 class="center">
+				Read these statements and choose <b>True</b> or <b>False</b>. 
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">						
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module2/a1/Statement1.m4a"></button><br>
+						<div class="number">1</div><span id="question_text">Grain can be an ingredient for energy drinks</span>
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="true" class="button2 item-space ddwidth9">True</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="false" class="button2 item-space ddwidth9">False</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1}}
+					</div>
+				</div>
+			</div>
+      </div>
+	  
+	  <div class="content">
+			<h4>HTML</h4>
+				<pre class="htmlcode2">
+&lt;template name=&quot;TF&quot;&gt;
+   &lt;section id=&quot;TF&quot; class=&quot;hidden&quot;&gt;
+		&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;h3 class=&quot;center&quot;&gt;
+				Read these statements and choose &lt;b&gt;True&lt;/b&gt; or &lt;b&gt;False&lt;/b&gt;. 
+			&lt;/h3&gt;
+			&lt;div class=&quot;container-fluid&quot;&gt;
+				&lt;div class=&quot;row&quot;&gt;
+				&#00123;&#00123;&gt;rightwrong&#00125;&#00125; &#00123;&#00123;&gt;welldone&#00125;&#00125;
+					&lt;div class=&quot;col-sm-8 col-sm-offset-2 text-center parapaper&quot;&gt;						
+						&lt;button class=&quot;buttonround buttonroundbig buttonaudio&quot; id=&quot;questions_audio&quot; data-audiosrc=&quot;/audio/module2/a1/Statement1.m4a&quot;&gt;&lt;/button&gt;
+						&lt;div class=&quot;number&quot;&gt;1&lt;/div&gt;&lt;span id=&quot;question_text&quot;&gt;Grain can be an ingredient for energy drinks&lt;/span&gt;
+							&lt;div class=&quot;row&quot;&gt;
+								&lt;div class=&quot;col-sm-6&quot;&gt;
+									&lt;button id=&quot;true&quot; class=&quot;button2 item-space ddwidth9&quot;&gt;True&lt;/button&gt;
+								&lt;/div&gt;
+								&lt;div class=&quot;col-sm-6&quot;&gt;
+									&lt;button id=&quot;false&quot; class=&quot;button2 item-space ddwidth9&quot;&gt;False&lt;/button&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;						
+					&lt;/div&gt;					
+				&lt;/div&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-sm-6 col-sm-offset-3 center&quot;&gt;
+						&#00123;&#00123;&gt;scorebox1&#00125;&#00125;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+      &lt;/div&gt;
+	  &lt;footer&gt;
+		&#00123;&#00123;&gt;footer_nav prevurl=&quot;#TF_1&quot; nexturl=&quot;#TF_3&quot; prev=&quot;hidden&quot; next=&quot;hidden&quot;&#00125;&#00125;
+	  &lt;/footer&gt;
+		&#00123;&#00123;/if&#00125;&#00125;
+   &lt;/section&gt;
+&lt;/template&gt;
+				</pre>
+			<h4>Javascript</h4>
+				<pre class="htmlcode2">
+Template.TF.helpers({
+	activeSection: function(){
+		var activeSection = Session.get('activeSection');
+		return (activeSection == "#TF");
+	},
+	
+		rightScore: function(){
+		return Session.get('TFRightScore');
+	},
+	
+	wrongScore: function() {
+		return Session.get('TFWrongScore');
+	}
+})
+
+Template.scorebox1.helpers({
+	activeSection: function(){
+		var activeSection = Session.get('activeSection');
+		return (activeSection == "#TF");
+	},
+	
+		rightScore: function(){
+		return Session.get('TFRightScore');
+	},
+	
+	wrongScore: function() {
+		return Session.get('TFWrongScore');
+	}
+})
+
+Template.TF.events({
+	"click .button2": function(evt){
+		
+		if ($.k2l.TF.allowClick == true) {
+			
+			$.k2l.TF.allowClick = false;
+			if ($(evt.currentTarget).attr('id') == $.k2l.TF.answer_index[$.k2l.TF.index]) {
+				// Correct
+				$('.correctscreen').removeClass('hidden');
+				setTimeout( function() {
+					$('.correctscreen').addClass('hidden');
+				}, 1000);
+				$.k2l.TF.rightscore++;
+				var rightScore = $.k2l.TF.rightscore;
+			var wrongScore = $.k2l.TF.wrongscore;
+			
+			Session.set('TFRightScore', rightScore);
+			Session.set('TFWrongScore', wrongScore);
+				
+				if ($.k2l.TF.index &lt; $.k2l.TF.question.length-1) {
+					$.k2l.TF.index++;
+					setTimeout(function() {
+						$('.buttonaudio').attr("data-audiosrc",$.k2l.TF.questionsaudio[$.k2l.TF.index]);
+						$('.incorrectscreen').addClass('hidden');
+						$('.correctscreen').addClass('hidden');
+						$('.number').html($.k2l.TF.index+1);
+						$('.question_text').html($.k2l.TF.question[$.k2l.TF.index]);
+						$.k2l.TF.allowClick = true; // Make the buttons clickable again
+						setTimeout(function() {
+							$.k2l.TF.sound.src = $('.buttonaudio').attr("data-audiosrc");
+							$.k2l.TF.sound.play();
+						}, 800);
+					}, 1000);
+				} else {
+					setTimeout (function() {
+						$('#welldonecap').removeClass('hidden');
+					}, 1000);
+					
+					setTimeout(function() {
+						$('#welldonecap').addClass('hidden');
+						$("#TF").addClass('hidden');
+						
+						if ($.k2l.TF.wrongscore &lt; 3) {
+							$("#TF_good").removeClass('hidden');
+							Session.set("activeSection", "#TF_good");
+						} else {
+							$("#TF_bad").removeClass('hidden');
+							Session.set("activeSection", "#TF_bad");
+						}
+					}, 2000);
+					
+					// $('.pagination').removeClass('hidden');
+				}
+			} else {
+				$.k2l.TF.wrongscore++;
+				// incorrect
+				var rightScore = $.k2l.TF.rightscore;
+			var wrongScore = $.k2l.TF.wrongscore;
+			
+			Session.set('TFRightScore', rightScore);
+			Session.set('TFWrongScore', wrongScore);
+				$('.incorrectscreen').removeClass('hidden');
+				setTimeout( function() {
+					$('.incorrectscreen').addClass('hidden');
+				}, 1000);
+				
+				
+				if ($.k2l.TF.index &lt; $.k2l.TF.question.length-1) {
+					$.k2l.TF.index++;
+					setTimeout(function() {
+						$('.buttonaudio').attr("data-audiosrc",$.k2l.TF.questionsaudio[$.k2l.TF.index]);
+						$('.incorrectscreen').addClass('hidden');
+						$('.correctscreen').addClass('hidden');
+						$('.number').html($.k2l.TF.index+1);
+						$('.question_text').html($.k2l.TF.question[$.k2l.TF.index]);
+						$.k2l.TF.allowClick = true; // Make the buttons clickable again
+						setTimeout(function() {
+							$.k2l.TF.sound.src = $('.buttonaudio').attr('data-audiosrc');
+							$.k2l.TF.sound.play();
+						}, 800);
+					}, 1000);
+				} else {
+					$.k2l.TF.sound.src = {};
+					setTimeout (function() {
+						$('#welldonecap').removeClass('hidden');
+					}, 1000);
+					
+					setTimeout(function() {
+						$('#welldonecap').addClass('hidden');
+						$("#TF").addClass('hidden');
+						
+						if ($.k2l.TF.wrongscore &lt; 3) {
+							$("#TF_good").removeClass('hidden');
+							Session.set("activeSection", "#TF_good");
+						} else {
+							$("#TF_bad").removeClass('hidden');
+							Session.set("activeSection", "#TF_bad");
+						}
+					}, 2000);
+			}
+		}
+		}
+			
+	},
+	
+	'click .buttonaudio': function(evt) {
+		$.k2l.TF.sound.src = $(evt.currentTarget).attr('data-audiosrc');
+		$.k2l.TF.sound.play();
+	},
+	
+	'click .pagination': function(evt) {
+		$.k2l.TF.sound.src = {};
+		$.k2l.TF.index = 0;
+		$.k2l.TF.allowClick = true;
+	}
+
+});
+
+Template.TF.rendered = function() {
+
+	if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	};
+	
+	if (typeof $.k2l.TF == 'undefined') {
+		$.k2l.TF = {};
+	};
+	
+	$.k2l.TF.sound = new Audio();
+	
+	var questions = ["Grain can be an ingredient for energy drinks",
+					 "Question 2",
+					 "Question 3",
+					 "Question 4",
+					 "Question 5",];
+	
+	
+	var questionsaudio = ["/audio/module2/a1/Statement1.m4a",
+					"/audio/module2/a1/Statement2.m4a",
+					"/audio/module2/a1/Statement3.m4a", 
+					"/audio/module2/a1/Statement4.m4a",
+					"/audio/module2/a1/Statement5.m4a",
+					"/audio/module2/a1/Statement6.m4a",
+					"/audio/module2/a1/Statement7.m4a",
+					"/audio/module2/a1/Statement8.m4a",
+					"/audio/module2/a1/Statement9.m4a",
+					"/audio/module2/a1/Statement10.m4a",
+					"/audio/module2/a1/Statement11.m4a",
+					"/audio/module2/a1/Statement12.m4a",
+					"/audio/module2/a1/Statement13.m4a",
+					"/audio/module2/a1/Statement14.m4a",
+					"/audio/module2/a1/Statement15.m4a",
+					"/audio/module2/a1/Statement16.m4a"					
+					];
+					
+	var answer_index = ["true", "false", "true", "false","true","true","false","false","true","false","true","true","false","false","false","true"];
+	
+	$.k2l.TF.question = questions;
+	$.k2l.TF.questionsaudio = questionsaudio;
+	$.k2l.TF.answer_index = answer_index;
+	$.k2l.TF.index = 0;
+	$.k2l.TF.rightscore = 0;
+	$.k2l.TF.wrongscore = 0;
+	
+	Session.set('TFRightScore', 0);
+	Session.set('TFWrongScore', 0);
+
+	$.k2l.TF.allowClick = true;
+}
+				</pre>
+				</div>
+   </section>
+</template>

@@ -1,0 +1,301 @@
+<template name="m6a6"> 
+<article class="with-tools-sidebar m6a6">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Durham');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 6 - {{>m6a6Title}}</div>
+		</header>
+		<section id="m6a6">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a6Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m6a6Intro}}</h3>
+				{{> m6a6Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a6_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a6_1}}
+		{{>m6a6_2}}
+		{{>m6a6_3}}
+		{{>m6a6_4}}
+		{{>m6a6_5}}
+		{{>EndPage char="elle" act="m6a6" nextact="m6a7" place="Durham"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a6_1"> 
+	<section id="m6a6_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b></b> Boris Johnson, the Mayor of London recently won plaudits for his handling of the Olympic Games.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> Write a word which means 'praise, admiration'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m6a6" nexturl="#m6a6_2" prev="disabled" next="hidden"}} 
+		</footer>  
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a6_2"> 
+	<section id="m6a6_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b></b> Prince Harry hit the headlines for his military service in Afghanistan.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>2)</b> Write an expression that means 'to get a lot of publicity' (3 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m6a6_1" nexturl="#m6a6_3" prev="disabled" next="hidden"}} 
+		</footer>  
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a6_3"> 
+	<section id="m6a6_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b></b> Despite the popularity of sportsmen, the top 20 is still dominated by government figures. </p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>3)</b> Write a word that means 'to be important, to have control'</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m6a6_2" nexturl="#m6a6_4" prev="disabled" next="hidden"}} 
+		</footer>  
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a6_4"> 
+	<section id="m6a6_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b></b> Despite the power of Facebook and Twitter, important businessmen are not always keen to seek publicity.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>4)</b> Write an expression that means 'to look for attention from the public' (2 words).</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m6a6_3" nexturl="#m6a6_5" prev="disabled" next="hidden"}} 
+		</footer>  
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a6_5"> 
+	<section id="m6a6_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b></b> Business tycoons are now more retiring figures who avoid the limelight.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>5)</b> Write an expression that means 'to stay private' (3 words).</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m6a6_4" nexturl="#m6a6_end" prev="disabled" next="hidden"}} 
+		</footer>  
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>

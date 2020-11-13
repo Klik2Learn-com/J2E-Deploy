@@ -1,0 +1,337 @@
+<template name="m4a24">
+<article class="with-tools-sidebar m4a24">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/LochLomond');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 24 - {{>m4a24Title}}</div>
+		</header>
+		
+		
+		<section id="m4a24">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a24Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m4a24Intro}}</h3>
+{{> m4a24Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a24_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m4a24_1}}
+		{{>m4a24_2}}
+		{{>m4a24_3}}
+		{{>m4a24_4}}
+		{{>m4a24_5}}
+		{{>m4a24_6}}
+		{{>m4a24_7}}
+		{{>m4a24_8}}
+		{{>m4a24_9}}
+
+		
+		{{>EndPage char="elle" act="m4a24" nextact="m4a25" place="LochLomond"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m4a24_1">
+	<section id="m4a24_1" class="hidden">
+		<div class="content">
+		<h1>Why Use Modal Verbs?</h1>
+		<h2 class="text-center">Use <span class="grammar">should</span>/<span class="grammar">ought to</span>/<span class="grammar">had better</span> to:</h2>
+			<table class="table1">
+				<tr>
+					<th colspan="2">give advice/warnings</th>
+				</tr>
+				<tr>
+					<td>SHOULD</td>
+					<td>You should try to get more sleep.</td>
+				</tr>
+				<tr>
+					<td>OUGHT TO</td>
+					<td>You ought to tell her what you know.</td>
+				</tr>
+				<tr>
+					<td>HAD BETTER</td>
+					<td>You’d better take an umbrella in case it rains.</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a24" nexturl="#m4a24_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a24_2">
+	<section id="m4a24_2" class="hidden">
+		<div class="content">
+			<h1>Why Use Modal Verbs?</h1>
+			<h2 class="text-center">Use <span class="grammar">should</span>/<span class="grammar">ought to</span>/<span class="grammar">had better</span> to:</h2>
+			<table class="table1">
+				<tr>
+					<th colspan="2">make a reasonable assumption</th>
+				</tr>
+				<tr>
+					<td>SHOULDN’T</td>
+					<td>It shouldn’t take too long to drive there- it’s not far.</td>
+				</tr>
+				<tr>
+					<td>OUGHT TO</td>
+					<td>They ought to be back by 9 o’clock.</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a24_1" nexturl="#m4a24_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a24_3">
+	<section id="m4a24_3" class="hidden">
+		<div class="content">
+			<h1>Why Use Modal Verbs?</h1>
+			<h2 class="text-center">Use <span class="grammar">should</span>/<span class="grammar">ought to</span>/<span class="grammar">had better</span> to:</h2>
+			<table class="table1">
+				<tr>
+					<th colspan="2">explain a personal obligation</th>
+				</tr>
+				<tr>
+					<td>SHOULD</td>
+					<td>He should be at work but he’s taking a day off.</td>
+				</tr>
+				<tr>
+					<td>OUGHT TO</td>
+					<td>I ought to stay in and finish my work.</td>
+				</tr>
+				<tr>
+					<td>HAD BETTER</td>
+					<td>I’d better tidy up- my mother’s coming round.</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a24_2" nexturl="#m4a24_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a24_4">
+	<section id="m4a24_4" class="hidden">
+		<div class="content">
+			<h1>Why Use Modal Verbs?</h1>
+			<h2 class="text-center">Use <span class="grammar">have to</span>/<span class="grammar">must</span>/<span class="grammar">need to</span>:</h2>
+			<table class="table1">
+				<tr>
+					<th colspan="2">to talk about an external obligation</th>
+				</tr>
+				<tr>
+					<td>HAVE TO</td>
+					<td>You have to show your passport when you check in at the airport.</td>
+				</tr>
+				<tr>
+					<td>MUST</td>
+					<td>You must go outside if you want to smoke.</td>
+				</tr>
+				<tr>
+					<td>NEED TO</td>
+					<td>You need to pass a theory test as well as a driving test to get a driving licence.</td>
+				</tr>
+			</table>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a24_3" nexturl="#m4a24_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a24_5">
+   <section id="m4a24_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				{{>touch yes="Tap" no="Click"}} the right type of obligation and necessity underneath the sentence.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 parapaper fold">
+							<div class="iconleft"><div class="number">1</div></div>
+							<div class="iconright">“You need A levels in maths, physics and chemistry to get into that course.”</div>
+						</div>
+					</div>
+					<br>
+						<hr>
+					<br>					
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-2 center">
+							<button id="1" class="button2 item-space ddwidth10 dd2lines">External Obligation</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth10 dd2lines">Personal Obligation</button>
+						</div>
+					</div>
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#m4a24_5" nexturl="#m4a24_6" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>
+
+<template name="m4a24_6">
+   <section id="m4a24_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				{{>touch yes="Tap" no="Click"}} the right type of obligation and necessity underneath the sentence.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 parapaper fold">
+							<div class="iconleft"><div class="number">2</div></div>
+							<div class="iconright">“She should win that match. She’s a much better player than her opponent.”</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-2 center">
+							<button id="1" class="button2 item-space ddwidth10 dd1line2high">Give Advice</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth10 dd2lines">Reasonable Assumption</button>
+						</div>
+					</div>
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#m4a24_5" nexturl="#m4a24_7" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>
+
+<template name="m4a24_7">
+   <section id="m4a24_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				{{>touch yes="Tap" no="Click"}} the right type of obligation and necessity underneath the sentence.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 parapaper fold">
+							<div class="iconleft"><div class="number">3</div></div>
+							<div class="iconright">“He ought to visit his mother more often.”</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-2 center">
+							<button id="1" class="button2 item-space ddwidth10 dd2lines">Personal Obligation</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth10 dd2lines">External Obligation</button>
+						</div>
+					</div>
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#m4a24_6" nexturl="#m4a24_8" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>
+
+<template name="m4a24_8">
+   <section id="m4a24_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				{{>touch yes="Tap" no="Click"}} the right type of obligation and necessity underneath the sentence.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 parapaper fold">
+							<div class="iconleft"><div class="number">4</div></div>
+							<div class="iconright">“You’d better put sun cream on the children – it’s very hot.”</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-2 center">
+							<button id="1" class="button2 item-space ddwidth10 dd1line2high">Give Advice</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth10 dd2lines">External Obligation</button>
+						</div>
+					</div>
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#m4a24_7" nexturl="#m4a24_9" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>
+
+<template name="m4a24_9">
+   <section id="m4a24_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				{{>touch yes="Tap" no="Click"}} the right type of obligation and necessity underneath the sentence.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 parapaper fold">
+							<div class="iconleft"><div class="number">5</div></div>
+							<div class="iconright">“You must buy a T.V. licence to watch T.V. in the UK.”</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-2 center">
+							<button id="1" class="button2 item-space ddwidth10 dd2lines">Advice / Warning</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth10 dd2lines">External Obligation</button>
+						</div>
+					</div>
+				</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#m4a24_7" nexturl="#m4a24_9" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>

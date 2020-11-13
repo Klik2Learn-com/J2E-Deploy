@@ -1,0 +1,146 @@
+<template name="MoreAboutDunveganCastle">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="DunveganCastle"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m1l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m1l6}}</div>
+		</header>
+
+		<section id="moreaboutDunveganCastle">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-xs-7 bonus-image" style="background-image: url('images/bonus/DunveganCastle/DunveganCastle1.jpg'); background-position: right top;" data-toggle="modal" data-target="#bonus_modal_m1l6_A">
+						<p>Dunvegan Castle</p>
+					</div>
+					<div class="col-xs-5 bonus-image" style="background-image: url('images/bonus/DunveganCastle/DunveganCastle2.jpg'); background-position: center bottom;" data-toggle="modal" data-target="#bonus_modal_m1l6_B">
+						<p>Clan MacLeod</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/DunveganCastle/DunveganCastle3.jpg'); background-position: center bottom;" data-toggle="modal" data-target="#bonus_modal_m1l6_C">
+						<p>Danny MacAskill</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/DunveganCastle/DunveganCastle4.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l6_D">
+						<p>MacCrimmon's Lament</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/DunveganCastle/DunveganCastle5.jpg');" data-toggle="modal" data-target="#bonus_modal_m1l6_E">
+						<p>Clearances</p>
+					</div>				
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l6_A">Dunvegan Castle</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/DunveganCastle/DunveganCastle1.jpg" alt="Castle" style="max-width: 250px;">
+					</figure>
+					<p>Dunvegan Castle is a castle a mile and a half to the north of Dunvegan on the Isle of Skye, situated off the west coast of Scotland. It is the home of Hugh MacLeod, chief of the Clan MacLeod. Dunvegan Castle is the oldest continuously inhabited castle in Scotland and has been the stronghold of the chiefs of the clan for more than 800 years. The castle is now a five star visitor attraction.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://undiscoveredscotland.com/skye/dunvegancastle" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l6_B">Clan MacLeod</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/DunveganCastle/DunveganCastle2.jpg" alt="Kilts" style="max-width: 250px;">
+					</figure>
+					<p>Clan MacLeod is a Highland Scottish clan associated with the Isle of Skye. The MacLeods of Skye established the castle at Dunvegan, which remains the chief’s home to this day.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.scotclans.com/scottish_clans/clan_macleod/history.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l6_C">Danny MacAskill</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/DunveganCastle/DunveganCastle3.jpg" alt="Danny MacAskill" style="max-width: 250px;">
+					</figure>
+					<p>Danny MacAskill is a Scottish trials cyclist, from Dunvegan on the Isle of Skye. He works professionally as a street trials pro rider for Inspired Bicycles Ltd. In 2009 he released a five-and-a-half-minute street trials video, filmed by his flatmate Dave Sowerby, on YouTube to popular acclaim and widespread media attention. The video features stunts performed by MacAskill.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=Sv3xVOs7_No" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l6_D">MacCrimmon's Lament</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/DunveganCastle/DunveganCastle4.jpg" alt="Piper" style="max-width: 250px;">
+					</figure>
+					<p>The MacCrimmons were a Scottish family, pipers to the chiefs of Clan MacLeod for several generations. The MacCrimmon were centred near the Clan MacLeod seat at Dunvegan on the Isle of Skye. Here the MacCrimmons taught at one of the best known "piping colleges" in the Highlands of Scotland. A lament is a slow, solemn tune written to express sorrow at a sad event like a funeral or losing a battle.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=MpVYWhpMkN0" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l6_E">Clearances</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/DunveganCastle/DunveganCastle5.jpg" alt="Pictish symbol carving" style="max-width: 250px;">
+					</figure>
+					<p>During the 18th and 19th centuries Highland land owners, such as the ones on Skye, cleared their lands of tenants forcing tens of thousands of people out of their homes. They cleared the land of people to farm sheep which could make them more money than people could afford to pay in rent. Many Highlanders emigrated to North America, never to return.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.macaskillsociety.org/content/past-clearances/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

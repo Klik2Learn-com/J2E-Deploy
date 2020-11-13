@@ -1,0 +1,15 @@
+
+.ddtarget{
+	position: relative;
+}
+.ddtarget2{
+	position: relative;
+}
+.ddseatedtarget{
+	position: relative;
+}
+.ddsourceseated.ui-draggable-disabled{
+	position: absolute  !important;
+	left: -1px !important;
+	top: -1px !important;
+}

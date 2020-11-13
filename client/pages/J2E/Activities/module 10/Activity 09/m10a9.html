@@ -1,0 +1,94 @@
+<template name="m10a9"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Newmarket');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 9 - {{> m10a9Title}}</div>
+		</header>
+		<section id="m10a9">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a9Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a9Intro}}</h3>
+				{{> m10a9Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a9_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a9_1}}
+		{{>m10a9_2}}
+		{{>EndPage char="elle" act="m10a9" nextact="m10a10" place="Newmarket"}}
+	</div>
+</article>
+</template>
+<template name="m10a9_2"> 
+	<section id="m10a9_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">See if you can guess what they considered most important. Put them in order of importance. Don’t worry if you get it wrong.</h3>
+			<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+							<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}}
+							{{> welldone}}				
+							<ol class="olcircle">
+								<li><div class="ddseatedtarget ddwidth11 dd2lines" data-destinationid = "target1">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth11 dd2lines" data-destinationid = "target2">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth11 dd2lines" data-destinationid = "target3">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth11 dd2lines" data-destinationid = "target4">&nbsp;</div></li>
+								<li><div class="ddseatedtarget ddwidth11 dd2lines" data-destinationid = "target5">&nbsp;</div></li>
+							</ol>
+						</div>
+						</div>
+					</div>
+				</div>
+				
+		<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth11 dd2lines' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth11 dd2lines"><div class="ddsourceseated ddwidth11 dd2lines shadow" draggable="false" data-destination="target4">Global Population Growth</div></div>
+					<div class="ddseat ddwidth11 dd1line2high"><div class="ddsourceseated ddwidth11 dd1line2high shadow" draggable="false" data-destination="target2">Global Economy</div></div>
+					<div class="ddseat ddwidth11 dd2lines"><div class="ddsourceseated ddwidth11 dd1line2high shadow" draggable="false" data-destination="target5">Global Water Crisis</div></div>
+					<div class="ddseat ddwidth11 dd1line2high"><div class="ddsourceseated ddwidth11 dd1line2high shadow" draggable="false" data-destination="target1">Global Warming</div></div>
+					<div class="ddseat ddwidth11 dd2lines"><div class="ddsourceseated ddwidth11 dd2lines shadow" draggable="false" data-destination="target3">Energy Consumption</div></div>
+				</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+					
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a9_1" nexturl="#m10a9_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a9_1"> 
+	<section id="m10a9_1" class="hidden"> 
+		<div class="content">  
+      			<h1>Twenty Years from Now...</h1>
+      			<h4 class="center">The next twenty years will be of great importance to our planet. Can we solve our global problems? One website asked its followers to say what five global issues they considered most important. Here’s the list below:</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption item-space">Global Population Growth</div><div class="caption item-space">Global Economy</div><div class="caption item-space">Global Water Crisis</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption item-space">Global Warming</div><div class="caption item-space">Energy Consumption</div>
+						</div>
+					</div>
+				</div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a9" nexturl="#m10a9_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

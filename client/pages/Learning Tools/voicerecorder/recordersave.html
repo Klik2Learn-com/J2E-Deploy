@@ -1,0 +1,59 @@
+<template name="recordersave">
+   <section id="recorder_save">
+      <nav class="notebooknav"><!--
+         --><div class="tooltab_active tooltab-rec"><i class="fa fa-circle"></i> New<span> Recording</span></div><!--
+         --><span class="vrTab notebook-spanlink" data-target="#recorder_listen"><!--
+            --><div class="tooltab tooltab-rec"><i class="fa fa-play"></i> Saved<span> Recordings</span></div><!--
+         --></span><!--
+      --></nav>
+      <div class="notebookmain">
+         {{#if recorded}}
+            <div class="content">
+				<h3 class="text-center">{{>touch yes="Tap" no="Click"}} to listen to your recording. You can then save it or delete it and start again.</h3>
+				<div class="parapaper fold paraextract" style="padding-bottom: 1em;">
+					<h4 class="text-left" style="margin-bottom: 1em;">New voice recording</h4>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 text-center">
+								<button id="btnplaytemp" class="buttonround buttonroundbig buttonplay"></button>
+								<br>
+								<div style="font-size: 0.8em; margin-top: 10px; text-align: left; display: inline-block;">Length: {{audioLength}}</div>
+							</div>
+							<div class="col-sm-8 text-center" style="padding-top: 2.5em;">
+								<input type="text" id="savename" style="width: 100%; margin-bottom: 10px;" placeholder="Name your recording…"><br>
+								<button class="button2 buttonsmall ddwidth6 item-space" id="btnsave">Save</button>
+								<button class="button1 buttonsmall ddwidth6 item-space" id="btndelete">Delete</button>
+							</div>
+						</div>
+					</div>
+					<audio id="player">You need to update your browser to use this feature</audio>
+				</div>
+            </div>
+         {{else}}
+            <div class="content">
+				{{#if internetExplorer}}
+					<span>
+						<h4><i class="fa fa-warning" style="color: crimson; font-size: 1.5em;"></i> Due to restrictions, the voice recorder feature cannot be used on Internet Explorer. Please use another browser.</h4>
+						<div class="clear-float"></div>
+					</span>
+				{{else}}
+					<!-- <span class="visible-ios">
+						<h4><i class="fa fa-warning" style="color: crimson; font-size: 1.5em;"></i> Due to restrictions by Apple, the speaking assessment cannot be taken on an iPhone/iPad. Please use a computer or Android device to complete the assessment.</h4>
+						<div class="clear-float"></div>
+					</span> -->
+
+					<h3 class="center">{{>touch yes="Tap" no="Click"}} the button to start recording. {{>touch yes="Tap" no="Click"}} again to stop. You can then save your recording.</h3>
+					<div class="parapaper fold paraextract text-center" style="padding-bottom: 1em;">
+						<h4 class="text-left" style="margin-bottom: 1em;">New voice recording</h4>
+						{{#if recording}}
+						<button id="btnstop" class="buttonround buttonroundbig buttonstop animated"></button>
+						{{else}}
+						<button id="btnrecord" class="buttonround buttonroundbig buttonrec"></button>
+						{{/if}}
+					</div>
+				{{/if}}
+            </div>
+         {{/if}}
+      </div>
+   </section>
+</template>

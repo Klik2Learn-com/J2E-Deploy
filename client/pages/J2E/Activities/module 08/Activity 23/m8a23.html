@@ -1,0 +1,147 @@
+<template name="m8a23"> 
+<article class="with-tools-sidebar m8a23">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bristol');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 23 - {{>m8a23Title}}</div>
+		</header>
+		<section id="m8a23">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a23Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a23Intro}}</h3>
+				{{> m8a23Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a23_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a23_1}}
+		{{>m8a23_2}}
+		{{>m8a23_3}}
+		{{>EndPage char="tu" act="m8a23" nextact="m8a24" place="Bristol"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a23_3"> 
+	<section id="m8a23_3" class="hidden"> 
+		<div class="content">  
+      			<h2 class="center">Here are the verbs again</h2>
+      			<div class="container-fluid">
+					<div class="row center">
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">arrive</div>
+						</div>
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">visit</div>
+						</div>
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">be</div>
+						</div>
+					</div>
+					<div class="row center">
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">go</div>
+						</div>
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">travel</div>
+						</div>
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">open</div>
+						</div>
+					</div>
+					<div class="row center">
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">go out</div>
+						</div>
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">drive</div>
+						</div>
+						<div class="col-xs-4 col-xxs-12">
+							<h5>to</h5> <div class="caption item-space">get</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a23_2" nexturl="#m8a23_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a23_1"> 
+	<section id="m8a23_1" class="hidden"> 
+		{{#if activeSection}} 
+			<div class="content noselect">
+			<h4 class="center">Some verbs must be followed by 'to.'</h4>
+			<h3 class="center">Drag the right verbs to the spaces in the sentences.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<!-- {{> welldone}} -->
+				
+					<ol class="olcircle">
+						<li>We decided to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> for dinner.</li>
+						<li>The police asked him to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> the boot of the car.</li>
+						<li>They helped him to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> a job.</li>
+						<li>He’s planning to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> for a year.</li>
+						<li>She’s learning to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> .</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">open</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">get</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">travel</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">go out</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">drive</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a23" nexturl="#m8a23_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a23_2"> 
+	<section id="m8a23_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h4 class="center">Some verbs must be followed by 'to.'</h4>
+			<h3 class="center">Drag the right verbs to the spaces in the sentences.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+				
+					<ol class="olcircle" style="counter-reset: start 5;">
+						<li>I promise to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> there on time.</li>
+						<li>I’d like you to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> her a present.</li>
+						<li>We hope to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> about midday.</li>
+						<li>I really want to <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> to Peru.</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">go</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">get</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">travel</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">be</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a23_1" nexturl="#m8a23_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

@@ -1,0 +1,25 @@
+<template name="Yeti_d2_e2">
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="Yeti_d2_e2" class="hidden">
+		{{#if activeSection}}
+		<div class="journal2bg">
+			<div class="content">
+			<div class="gameInfo text-center">
+		  Put the remaining journal fragments in to complete the sentence. When you’re done, {{>touch yes="tap" no="click"}} OK.
+		</div>
+				<div class="yetiDrag">
+					<span class="yetidd">In 1970</span> <span class="yetidd">a famous</span> <span class="yetidd">British</span> <span class="yetidd">climber</span> <span class="yetidd">saw an</span> <span class="yetidd">ape</span> <div class="ddtarget ddwidth4 answerSlot" id="target1">&nbsp;</div> <span class="yetidd">creature</span> <span class="yetidd">searching</span> <div class="ddtarget ddwidth4 answerSlot" id="target2">&nbsp;</div> <span class="yetidd">food</span> <div class="ddtarget ddwidth4 answerSlot" id="target3">&nbsp;</div> <span class="yetidd">his camp.</span>&nbsp;&nbsp;<div id="submitButton" class="button2 buttonsmall">OK</div>
+			</div>
+			<div class="Yetibox box1dd1">
+				<!-- Ensure all 'ddsource ddwidth4' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddsourceyeti dragitem ddwidth4 " draggable="true" data-destination="target2">for</div>
+				<div class="ddsourceyeti dragitem ddwidth4 " draggable="true" data-destination="target3">around</div>
+				<div class="ddsourceyeti dragitem ddwidth4 " draggable="true" data-destination="target1">like</div>				
+			</div>
+			<div class="text-center"><span class="incorrectbig hidden"><i class="fa fa-close"></i></span><span class="correctbig hidden"><i class="fa fa-check"></i></span></div>
+		</div>
+		
+		</div>
+		{{/if}}
+	</section>
+</template>

@@ -1,0 +1,971 @@
+<template name="m6Game_ans">
+
+
+	<section id="m6Game_ans1" class="game-section game-answers game-legacy hidden">
+	<!-- {{#if hardpath}}
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>1 - Main Hall</h2>
+			
+			<ol class="olcircle">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">Downstairs</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">Upstairs</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The Garden</button>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The kitchen</button>
+								</div>
+								<div class="col-sm-4 col-xs-12">
+									<button class="button1style">The music room</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">Outside</button>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The garden</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The kitchen</button>
+								</div>
+								<div class="col-sm-4 col-xs-12">
+									<button class="button1style">Upstairs</button>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</li>				
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans2h" prev="hidden" next="" next_text="Next"}}
+		</footer>
+
+			{{else}} -->
+
+	<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">If we each search a different area we would find it more quickly.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">If we each search a different area we’ll find it more quickly.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">If we each searched a different area we’ll find it more quickly.</button>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">The bell won’t ring on time if we don’t find the key.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">The bell won’t ring on time if we didn’t find the key.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">“I’m interesting to see how people lived long ago,” said Elle.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>		
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">If you find anything, call the cathedral police on your mobile.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">If you would find anything, call the cathedral police on your mobile.</button>
+								</div>
+							<!-- 	<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The kitchen</button>
+								</div> -->
+							</div>
+						</div>		
+					</div>
+				</li>
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans2" prev="hidden" next="" next_text="Next"}}
+		</footer>
+
+	<!-- {{/if}} -->
+	</section>
+	
+	<section id="m6Game_ans2" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 3;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">If we know who lost the key it would help.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">If we knew who lost the key it would help.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">If we would know who lost the key it would help.</button>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">If the cathedral isn’t so big, it would be easier.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">If the cathedral wasn’t so big, it would be easier.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">Oil workers are using helicopters regularly.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">If we’re lucky, we’ll find it quickly.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">If we were lucky, we’ll find it quickly.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">Anyway it’s an 18th century village completely.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>			
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans3" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>	
+
+	<section id="m6Game_ans3" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 6;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">If it’s dropped into a hole, we’re in trouble!</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">If it would have dropped into a hole, we’re in trouble!</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">If it will have dropped into a hole, we’re in trouble!</button>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">If you would finish searching your area, let me know.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">If you finish searching your area, let me know.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">Sometimes it was John.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">If anyone asks what you’re doing, just say you’ve lost your keys.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">If anyone would ask what you’re doing, just say you’ve lost your keys.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The ghost magically of a girl called Annie appears.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>			
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans4" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m6Game_ans4" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 9;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">In 1984 a bolt of lightning was striking York minster.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">In 1984 a bolt of lightning struck York minster.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">‘I’ll rather see the Elvis exhibition’ said Tu.</button>
+								</div> -->
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">The fire crew were chatting in the crew room when the alarm sounded.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The fire crew chatted in the crew room when the alarm sounded.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The fire crew chatted in the crew room when the alarm was sounding.</button>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">They saved the famous Rose window.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">They were saving the famous Rose window.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">‘Elle, listen for this Beatles song by Paul with my MP3 player,’ said Tu.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>			
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans5" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m6Game_ans5" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 12;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">By AD 640 a stone church has replaced the old wooden one.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">By AD 640 a stone church had replaced the old wooden one.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">By AD 640 a stone church was replacing the old wooden one.</button>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">The Romans had ruled York for decades before the Vikings arrived.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">The Romans ruled York for decades before the Vikings had arrived.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The submarine is always managing to avoid the wreck.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">By the time Elizabeth I died, many of the treasures had been destroyed.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">By the time Elizabeth I died, many of the treasures have been destroyed.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12">
+									<button class="button1style">“I’m more interested in the Engine Room,” said Tu.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>			
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans6" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m6Game_ans6" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 15;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">The Roman Emperor Severus was living in York when he died.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The Roman Emperor Severus lived in York when he died.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The Roman Emperor Severus was living in York when he was dying.</button>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">The first York minster stood in the middle of a Roman fort.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">The first York minster was standing in the middle of a Roman fort.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">Sometimes you just need a bit of luck.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">Archaeologists were finding human bones under the minster in 2012.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">Archaeologists found human bones under the minster in 2012.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">Britannia was launched at 1953 with no name on her bow.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>			
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans7" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m6Game_ans7" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 18;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">Elle decided to ask some questions before she started.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">Elle decided to ask about some questions before she started.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">You won’t see the name on the bow.</button>
+								</div> -->
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">She knew nobody made off with the key deliberately.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">She knew nobody had made out with the key deliberately.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">She knew nobody had made off with the key deliberately.</button>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">She decided to look between the Chapter House.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">She decided to look in the Chapter House.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">They almost gave up when their manager died.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>			
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans8" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m6Game_ans8" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 21;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">It was too dark to make things out clearly.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">It was too dark to make things up clearly.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">She might to server as a hospital ship in time of war.</button>
+								</div> -->
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">She shone her mobile phone torch around the walls.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">She was shining her mobile phone torch around the walls.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">She shone her mobile phone torch among the walls.</button>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">If she could find the key in ten minutes, the bell would ring on time.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">If she could find the key in ten minutes, the bell will ring on time.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">The goods they sold were at poorer quality.</button>
+								</div> -->
+							</div>
+						</div>	
+					</div>	
+				</li>			
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans9" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+	<section id="m6Game_ans9" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			
+			<ol class="olcircle" style="counter-reset: start 24;">
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">With five minutes left Elle saw something glinting on the floor.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">With five minutes left Elle was seeing something glinting on the floor.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">“Could we go to the Tea Room now?” asked Tu. </button>
+								</div> -->
+							</div>
+						</div>		
+					</div>
+				</li>	
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-6 col-xs-12 faded">
+									<button class="button1style">If that would be the key... the bell will ring on time.</button>
+								</div>
+								<div class="col-sm-6 col-xs-12 ">
+									<button class="button1style">If that’s the key... the bell will ring on time.</button>
+								</div>
+								<!-- <div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">‘I thought I will not like it,’ said Elle ‘but I did.’</button>
+								</div> -->
+							</div>
+						</div>		
+					</div>
+				</li>
+				<li>
+					<div class="sub-question">
+						<div class="instruction">Which sentence is right?</div>
+						<div class="container-fluid">
+							<div class="row center">
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">She bent down and was reaching under the seat.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 ">
+									<button class="button1style">She bent down and reached under the seat.</button>
+								</div>
+								<div class="col-sm-4 col-xs-12 faded">
+									<button class="button1style">She bent down and had reached under the seat.</button>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</li>
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_end" prev="hidden" next="" next_text="Finish"}}
+		</footer>
+	</section>
+	<!-- HARD ROUTE ANSWERS -->
+
+
+
+	<!-- <section id="m6Game_ans2h" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>2 - The kitchen</h2>
+			
+			<ol class="olcircle" style="counter-reset: start 3;">
+				<li>					
+					<div class="game-speech-container elle">
+						<div class="game-speech center">
+							<div class="ddseatedtarget2"><div class="ddsourceseated ddwidth7 dd1line">I'm looking</div></div> in all the cupboards.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>I’m not finding anything here.</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>I can’t find nothing here.</div>
+								</div>
+							</div>
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>I can’t find anything here.</div>{{>capcorrect}}
+								</div>
+							</div>
+						</div>					
+					</div>
+				</li>
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Is there anything through the window?</div>
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Is there anything at the window?</div> 
+								</div>
+							</div>
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Is there anything on the window?</div>{{>capcorrect}}
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</li>
+				<li>					
+					<div class="game-phone-content">	
+						<ul class="speech center-block">
+							<li><div class="speech2 faded">
+								I get a picture
+							</div></li>
+							<li></li>
+							<li><div class="speech2 ">
+								I've got a picture
+							</div></li>
+							<li></li>
+							<li><div class="speech2 faded">
+								I do get a picture
+							</div></li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans3h" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>	
+
+	<section id="m6Game_ans3h" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>3 - The music room</h2>
+			
+			<ol class="olcircle" style="counter-reset: start 7;">
+				
+				<li>
+					<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Hi Tu. How are you getting on?</div> {{>capcorrect}}
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Hi Tu. How do you get on?</div> 
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>Hi Tu. How do you getting on?</div>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+						<ul class="speech center-block">
+							<li><div class="speech1">
+								The flag is <span class="correctword">over</span> 1700 years old. It’s made <span class="correctword">of</span> silk and comes <span class="correctword">from</span> the Middle East. <span class="correctword">There</span> are many stories <span class="correctword">about</span> the flag. People believe it can protect the clan MacLeod <span class="correctword">in</span> times of danger. Some soldiers believe they got <span class="correctword">through</span> the second world war <span class="correctword">by</span> carrying photos of the flag. Although it’s ripped and torn, it’s the most precious object in the castle and people come <span class="correctword">from</span> all <span class="correctword">over</span> the world to see it. 
+							</div></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="game-phone-content">
+					
+					
+						<ul class="speech center-block">
+							<li><div class="speech2 ">
+								There’s a small piece of cloth on the rug.
+							</div></li>
+							<li></li>
+							<li><div class="speech2 faded">
+								Their’s a small piece of cloth on the rug.
+							</div></li>
+							<li></li>
+							<li><div class="speech2 faded">
+								They’re is a small piece of cloth on the rug.
+							</div></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+				<div class="game-phone-content">	
+						<ul class="speech center-block">
+							<li><div class="speech1 faded">
+								Pick it off.
+							</div></li>
+							<li></li>
+							<li><div class="speech1 ">
+								Pick it up.
+							</div></li>
+							<li></li>
+							<li><div class="speech1 faded">
+								Pick up it.
+							</div></li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_ans4h" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+
+	<section id="m6Game_ans4h" class="game-section game-answers game-legacy hidden">
+		<div class="game-content width">
+			<h1>Correct Answers</h1>
+			<h2>4 - The garden</h2>
+			
+			<ol class="olcircle" style="counter-reset: start 11;">
+			<li>
+				<div class="game-audio-box2">
+						<div class="container-fluid">
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>63592</div> 
+								</div>
+							</div>
+							<div class="row faded2">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>65397</div>
+								</div>
+							</div>
+							<div class="row ">
+								<div class="col-sm-2 col-xs-3">
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m6a"></button>
+								</div>
+								<div class="col-sm-10 col-xs-9">
+									<div>65392</div> {{>capcorrect}}
+								</div>
+							</div>
+						</div>					
+					</div>
+				</li>
+			<li>					
+				<div class="game-speech-container k">
+					<div class="game-speech">
+						<span>Every morning at </span><span class="correctword">10.30 am</span><span>. Every afternoon at </span><span class="correctword">2 pm</span><span>. Sunday trips at </span><span class="correctword">12 pm</span><span>. Adult price - </span><span class="correctword">£5</span><span> children </span><span class="correctword">£2.50</span><span> Family ticket for four people, </span><span class="correctword">£12</span><span>. Senior citizens </span><span class="correctword">£3.50</span><span>.</span>
+
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="game-phone-content">					
+				
+					<ul class="speech center-block">
+						<li><div class="speech1 faded">
+							Is the thief escaping by boat?
+						</div></li>
+						<li></li>
+						<li><div class="speech1 ">
+							Could the thief escape by boat?
+						</div></li>
+						<li></li>
+						<li><div class="speech1 faded">
+							Is escaping the thief by boat?
+						</div></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+					<div class="game-phone-content">					
+					
+						<ul class="speech center-block">
+							<li><div class="speech2 faded">
+								No, the engine repairs
+							</div></li>
+							<li></li>
+							<li><div class="speech2 faded">
+								No, the engine is repairing
+							</div></li>
+							<li></li>
+							<li><div class="speech2 ">
+								No, the engine’s being repaired.
+							</div></li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+			
+		</div>
+		<footer>
+			<div class="skip-answers"><a draggable="false" href="#m6Game_end" class="pagination">Skip answers</a></div>
+			{{>footer_nav prevurl="#" nexturl="#m6Game_end" prev="hidden" next="" next_text="Finish"}}
+		</footer>
+	</section> -->
+
+</template>

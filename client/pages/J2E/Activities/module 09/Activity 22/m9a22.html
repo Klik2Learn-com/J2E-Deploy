@@ -1,0 +1,285 @@
+<template name="m9a22"> 
+<article class="with-tools-sidebar m9a22">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Plymouth');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 22 - {{> m9a22Title}}</div>
+		</header>
+		<section id="m9a22">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a22Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a22Intro}}</h3>
+				{{> m9a22Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a22_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a22_1}}
+		{{>m9a22_2}}
+		{{>m9a22_3}}
+		<!-- {{>m9a22_4}} -->
+		{{>m9a22_5}}
+		{{>EndPage char="k" act="m9a22" nextact="m9a23" place="Plymouth"}}
+	</div>
+</article>
+</template>
+<template name="m9a22_2"> 
+	<section id="m9a22_2" class="hidden"> 
+		<div class="content">  
+			<h4 class="center">Question tags are short questions added to the end of sentences – especially in spoken English. The basic rules are not difficult to learn.</h4>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 center">
+						<div class="ph-w ph-3x2 border1" style="max-width: 640px"><div class="ph"><img draggable="false" src="images/module9/a22/nurse.jpg" alt="Nurse"></div></div>
+						<Br>
+						<div class="caption">“She’s not a doctor, is she?”</div>
+						</div>
+					<div class="col-sm-6 center">
+						<h4 class="center">If the main part of the sentence is negative:</h4>
+						<div class="caption">“She’s not a doctor?”</div>
+						<br>
+						<br>
+						<h4 class="center">The question tag is positive.</h4>
+						<div class="caption">“Is she?”</div>
+						<br>
+						<br>
+						<h4 class="center">The usual answer is:</h4>
+						<div class="caption">"No"</div>
+					</div>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a22_1" nexturl="#m9a22_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a22_4"> 
+	<section id="m9a22_4" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Have you noticed what happens to the negative in these questions?</h4>
+      			<div style="height:100px" class="hidden-xs"></div>
+      			<div class="visible-xs" style="height:25px"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 center">
+							<div class="caption">"You work in a bank, don't you?"</div>
+							<div class="visible-xs" style="height:50px"></div>
+						</div>
+						<div class="col-sm-6 center">
+							<div class="caption">"You work in a bank?"</div>
+						</div>
+					</div>
+				</div>      			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a22_3" nexturl="#m9a22_5" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a22_1"> 
+	<section id="m9a22_1" class="hidden"> 
+		<div class="content">  
+			<h4 class="center">Question tags are short questions added to the end of sentences – especially in spoken English. The basic rules are not difficult to learn.</h4>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 center">
+						<div class="ph-w ph-3x2 border1" style="max-width: 640px"><div class="ph"><img draggable="false" src="images/module9/a1/banking.jpg" alt="Bankers"></div></div>
+						<Br>
+						<div class="caption">“You work in an office, don’t you?”</div>
+						</div>
+					<div class="col-sm-6 center">
+						<h4 class="center">If the main part of the sentence is positive:</h4>
+						<div class="caption">“You work in an office?”</div>
+						<br>
+						<br>
+						<h4 class="center">The question tag is negative.</h4>
+						<div class="caption">“Don’t you?”</div>
+						<br>
+						<br>
+						<h4 class="center">The usual answer is:</h4>
+						<div class="caption">“Yes”</div>
+					</div>
+				</div>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a22" nexturl="#m9a22_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a22_5"> 
+	<section id="m9a22_5" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Have you noticed what happens to the negative in these questions?</h4>
+      			<div style="height:80px" class="hidden-xs"></div>
+      			<div class="visible-xs" style="height:25px"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 center">
+						<div class="info top shadow">Positive to Negative</div>
+							<div class="caption">"You work in a bank, don't you?"</div>
+							<div class="visible-xs" style="height:50px"></div>
+						</div>
+						<div class="col-sm-6 center">
+						<div class="info top shadow">Negative to Positive</div>
+							<div class="caption">"You don't work in a bank, do you?"</div>
+						</div>
+					</div>
+				</div>      			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a22_3" nexturl="#m9a22_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a22_3"> 
+	<section id="m9a22_3" class="hidden"> 
+		{{#if activeSection}} 
+<div class="content">
+			<h3 class="text-center">Decide whether the speaker expects the answer “yes” or “no”</h3>
+			<div class="container-fluid TrueFalse">
+				{{>rightwrong}} {{>welldone}}
+				<div id="0" class="row">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">1</div></div> 
+						<div class="iconright">“Great day today, isn’t it?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">2</div></div>
+						<div class="iconright">“You didn’t tell him, did you?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">3</div></div> 
+						<div class="iconright">“You’re not going out like that, are you?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">4</div></div> 
+						<div class="iconright">“He’s never been to America, has he?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="4" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">5</div></div> 
+						<div class="iconright">“She’d go out with him if he asked her, wouldn’t she?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="5" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">6</div></div> 
+						<div class="iconright">“He can’t swim very well, can he?” </div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="6" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">7</div></div> 
+						<div class="iconright">“It’s going to rain later, isn’t it?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="7" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">8</div></div> 
+						<div class="iconright">“They haven’t seen each other for years, have they?” </div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="8" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">9</div></div> 
+						<div class="iconright">“We don’t want to be late, do we?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				<div id="9" class="row hidden">
+					<div class="col-sm-8">
+						<div class="iconleft">
+						<div class="number">10</div></div> 
+						<div class="iconright">“She doesn’t drive, does she?”</div>
+					</div>
+					<div class="col-sm-4 text-center nowraptext">
+						<button class="button2 item-space" data-value="Yes">"Yes"</button>
+						<button class="button2 item-space" data-value="No">"No"</button>
+					</div>
+				</div>
+				
+				{{>blankrow}}
+				
+			</div>
+			
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a22_2" nexturl="#m9a22_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

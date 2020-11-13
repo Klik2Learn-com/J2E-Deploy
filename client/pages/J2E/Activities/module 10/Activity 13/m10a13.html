@@ -1,0 +1,216 @@
+<template name="m10a13">
+	<article class="with-tools-sidebar m1">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Felixstowe');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class='parent-level'>Module 10</div>
+				<div class='acttitle-title'>{{> activity}} 13 - {{> m10a13Title}}</div>
+			</header>
+			<section id="m10a13">
+				<div class="content">
+					<h1 class="start-page-header">{{>m10a13Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m10a13Intro}}</h3>
+					{{> m10a13Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m10a13_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m10a13_1}} {{>m10a13_2}} {{>m10a13_3}} {{>EndPage char="k" act="m10a13" nextact="m10a14" place="Felixstowe"}}
+		</div>
+	</article>
+</template>
+<template name="m10a13_1">
+	<section id="m10a13_1" class="hidden">
+		<div class="content">
+			<h4 class="center">There are three reasons why these tense patterns are used.</h4>
+			<br>
+			<br>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption capgreen">First Conditional</div>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<h4>Things that are
+							<b>always</b> true or likely.</h4>
+						<div class="caption">Scientists also believe that if we
+							<span class="correctword">take</span> no action against global warming it
+							<span class="correctword">will alter</span> the chemical structure of our planet. </div>
+						<br>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption capgreen">Second Conditional</div>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<h4>Things that are
+							<b>not certain</b>. They depend on other things happening.</h4>
+						<div class="caption">If these conditions
+							<span class="correctword">changed</span> it
+							<span class="correctword">would be</span> a disaster.</div>
+						<br>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption capgreen">Third Conditional</div>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<h4>Things in the past that
+							<b>did</b> or
+							<b>didn't</b> happen.</h4>
+						<div class="caption">If
+							<span class="correctword">we hadn’t polluted</span> our rivers and lakes so much and made them toxic to humans, we
+							<span class="correctword">wouldn’t be</span> in this situation.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a13" nexturl="#m10a13_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m10a13_2">
+	<section id="m10a13_2" class="hidden">
+		<div class="content noselect">
+			<h3 class="center">Here are three conditional sentences used in the global issues articles.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>If we hadn’t polluted our rivers and lakes so much and made them toxic to humans, we wouldn’t be in this situation.
+						<br>
+						<div class="ddseatedtarget ddwidth20 dd2lines" data-destinationid="target1">&nbsp;</div>
+						<br>
+						<div class="info bottom-left shadow hidden">Something in the past did happen – we polluted our rivers and lakes, so we have to accept the consequences.</div>
+					</li>
+					<li>Scientists also believe that if we take no action against global warming it will alter the chemical structure of our
+						planet.
+						<br>
+						<div class="ddseatedtarget ddwidth20 dd2lines" data-destinationid="target2">&nbsp;</div>
+						<br>
+						<div class="info bottom-left shadow hidden">This is true and possible – there is clear evidence for changes to the planet already.</div>
+						<div class="info bottom-left shadow hidden">This is not true at the moment – the conditions are changing but they haven’t changed enough to cause a disaster. It’s
+							a future possibility, not inevitable.</div>
+					</li>
+					<li>A disaster is not inevitable. It depends on other things changing.
+						<br>
+						<div class="ddseatedtarget ddwidth20 dd2lines" data-destinationid="target3">&nbsp;</div>
+						<br>
+						<div class="info bottom-left shadow hidden">The future is not certain. We can still influence the situation.</div>
+					</li>
+				</ol>
+			</div>
+			<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth20 dd2lines' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth20 dd2lines">
+						<div class="ddsourceseated ddwidth20 dd2lines shadow" draggable="false" data-destination="target2">Things that are ALWAYS true or likely</div>
+					</div>
+					<div class="ddseat ddwidth20 dd2lines">
+						<div class="ddsourceseated ddwidth20 dd2lines shadow" draggable="false" data-destination="target3">Things that are NOT CERTAIN. They depend on other things happening.</div>
+					</div>
+					<div class="ddseat ddwidth20 dd2lines">
+						<div class="ddsourceseated ddwidth20 dd2lines shadow" draggable="false" data-destination="target1">Things in the past that DID or DIDN’T happen</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a13_1" nexturl="#m10a13_3" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m10a13_3">
+	<section id="m10a13_3" class="hidden">
+		<div class="content noselect">
+			<h3 class="center">Here are three conditional sentences used in the global issues articles.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 3;">
+					<li>If nothing is done, the earth’s resources will be depleted.
+						<br>
+						<div class="ddseatedtarget ddwidth20 dd2lines" data-destinationid="target4">&nbsp;</div>
+						<br>
+						<div class="info bottom-left shadow hidden">This is always true. There will inevitably be serious problems if we do nothing about global warming.</div>
+					</li>
+					<li>If there were no Global Warming, oil would not be a problem.
+						<br>
+						<div class="ddseatedtarget ddwidth20 dd2lines" data-destinationid="target5">&nbsp;</div>
+						<br>
+						<div class="info bottom-left shadow hidden">This is always true. There are two negatives in this sentence which cancel each other out so it means there IS global
+							warming and oil IS therefore a problem.</div>
+					</li>
+					<li>If the markets fail, the infrastructure of modern civilisation will collapse causing our standard of living to change
+						drastically.
+						<br>
+						<div class="ddseatedtarget ddwidth20 dd2lines" data-destinationid="target6">&nbsp;</div>
+						<br>
+						<div class="info bottom-left shadow hidden">This describes something that will inevitably happen. The failure of the global markets would definitely change our
+							standard of living.</div>
+					</li>
+				</ol>
+			</div>
+			<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth20 dd2lines' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth20 dd2lines">
+						<div class="ddsourceseated ddwidth20 dd2lines shadow" draggable="false" data-destination="target4 target5 target6">Things that are ALWAYS true or likely</div>
+					</div>
+					<div class="ddseat ddwidth20 dd2lines">
+						<div class="ddsourceseated ddwidth20 dd2lines shadow" draggable="false" data-destination="">Things that are NOT CERTAIN. They depend on other things happening.</div>
+					</div>
+					<div class="ddseat ddwidth20 dd2lines">
+						<div class="ddsourceseated ddwidth20 dd2lines shadow" draggable="false" data-destination="">Things in the past that DID or DIDN’T happen</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a13_1" nexturl="#m10a13_end" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>

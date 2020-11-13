@@ -1,0 +1,219 @@
+Template.m10a22.helpers({
+	endPageSect: function () {
+		var session = Session.get('activeSection');
+		if (session == '#m10a22_end') {
+			return false;
+		}
+		return true;
+	}
+});
+
+Template.m10a22.rendered = function () {
+	document.title = "Journey 2 English";
+	
+	setStartActivity(10, 22);
+
+	var oldLocation = location.href;
+	$.locationInterval = setInterval(function () {
+		if (location.href != oldLocation) {
+			subpage = location.href.split("#")[1];
+			setLatestSubPage(10, 22, subpage);
+			oldLocation = location.href;
+		}
+	}, 500);
+
+}
+
+Template.m10a22.created = function () {
+	this.subscribe("userProgress");
+	this.subscribe("pauseConnection", 10, 22, Meteor.userId());
+	Session.set('dirty', true);
+	window.addEventListener("beforeunload", beforeUnloadConfirm);
+};
+
+Template.m10a22.destroyed = function () {
+	clearInterval($.locationInterval);
+	window.removeEventListener("beforeunload", beforeUnloadConfirm);
+	Session.set('dirty', false);
+};
+
+Template.m10a22_3.helpers({
+	activeSection: function () {
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#m10a22_3");
+	}
+});
+
+Template.m10a22_3.events({
+
+	"click .lotto-button": function (evt) {
+		if (evt.preventDefault) 
+			evt.preventDefault();
+			
+		if (!$(evt.currentTarget).hasClass('noclick')) {
+			$.k2l.m10a22_3.allowClick = false;
+			// var answer = '<div><span class="contents">' + $.k2l.m10a22_3.answer_index[$.k2l.m10a22_3.index] + "</span></div>";
+			// if ($(evt.currentTarget).html() == answer) {
+			var answer = $.k2l.m10a22_3.answer_index[$.k2l.m10a22_3.index];
+
+			var isCorrect = false;
+			var currentAns = $($($(evt.currentTarget).children().get(0)).children().get(0)).html();
+			for(var i = 0; i < answer.length; i++){
+				if(answer[i] == currentAns && currentAns != $.k2l.m10a22_3.lastAns){
+					isCorrect = true;
+					$.k2l.m10a22_3.lastAns = answer[i];
+					break;
+				}
+			}
+
+			if (isCorrect) {
+				var parentSection = $(evt.currentTarget).parents('section');
+				$.k2l.counter--;
+
+				$(".counterleft u").html($.k2l.counter);
+				$('.correctscreen').removeClass('hidden');
+
+				if ($.k2l.m10a22_3.index >= $.k2l.m10a22_3.answer_index.length - 1) {
+					setTimeout(function () {
+						$('.correctscreen').addClass('hidden');
+						$.k2l.m10a22_3.allowClick = true;
+					}, 1000);
+
+					if($.k2l.counter == 0){
+						$.k2l.m10a22_3.lastAns = '';
+						$('.lotto-button').addClass('flipOutX');
+						setTimeout(function () {
+							$('#welldonecap').removeClass('hidden');
+						}, 1000);
+						setTimeout(function () {
+							$('.noclick').each(function(button){
+								$(this).removeClass('noclick');
+								$(this).removeClass('faded');
+							});
+							setTimeout(function () {
+								$('#welldonecap').addClass('hidden');
+								shuffle($.k2l.m10a22_3.choices);
+								for (var i = 0; i < $.k2l.m10a22_3.choices.length + 1; i++) {
+									$('.lotto-button').removeClass('flipOutX');
+									var color = Math.floor(Math.random() * 8) + 1;
+									$('#lottoc' + i).addClass('flipInX lotto' + color);
+									$('#lottoc' + i).html('<div><span class="contents">' + $.k2l.m10a22_3.choices[i] + "</span></div>");
+								}
+							}, 1);
+							$.k2l.m10a22_3.index = 0;
+							$.k2l.m10a22_3.allowClick = true;
+							$.k2l.counter =  $.k2l.m10a22_3.answer_index[$.k2l.m10a22_3.index].length;
+							$(".counterleft u").html($.k2l.counter);
+							$(parentSection).addClass('hidden'); // hide this page
+							$(parentSection).next('section').removeClass('hidden');// reveal next page.
+							document.location.hash = $(parentSection).next('section').attr('id');
+							Session.set("activeSection", '#' + $(parentSection).next('section').attr('id'));
+						}, 2000);
+					}else{
+						$(evt.currentTarget).addClass('noclick');
+						$(evt.currentTarget).addClass('faded');
+					}
+
+				} else {
+					setTimeout(function () {
+						$('.correctscreen').addClass('hidden');
+						$.k2l.m10a22_3.allowClick = true; // Make the buttons clickable again
+					},1000);
+
+					if($.k2l.counter == 0){
+						$.k2l.m10a22_3.lastAns = '';
+						$('.lotto-button').addClass('flipOutX');
+						$.k2l.m10a22_3.index++;
+						setTimeout(function () {
+							$('.lotto-button').removeClass('lotto1 lotto2 lotto3 lotto4 lotto5 lotto6 lotto7 lotto8 flipInX');
+							setTimeout(function () {
+								shuffle($.k2l.m10a22_3.choices);
+								for (var i = 0; i < $.k2l.m10a22_3.choices.length + 1; i++) {
+									$('.lotto-button').removeClass('flipOutX');
+									var color = Math.floor(Math.random() * 8) + 1;
+									$('#lottoc' + i).addClass('flipInX lotto' + color);
+									$('#lottoc' + i).html('<div><span class="contents">' + $.k2l.m10a22_3.choices[i] + "</span></div>");
+									$("#questions").html($.k2l.m10a22_3.questions[$.k2l.m10a22_3.index]);
+									$.k2l.counter =  $.k2l.m10a22_3.answer_index[$.k2l.m10a22_3.index].length;
+									$(".counterleft u").html($.k2l.counter);
+									$(".number").html($.k2l.m10a22_3.index + 1);
+
+								}
+							}, 1);
+							$('.noclick').each(function(button){
+								$(this).removeClass('noclick');
+								$(this).removeClass('faded');
+							});
+						}, 1000);
+					}else{
+						$(evt.currentTarget).addClass('noclick');
+						$(evt.currentTarget).addClass('faded');
+					}
+				}
+			} else {
+				$('.incorrectscreen').removeClass('hidden');
+				setTimeout(function () {
+					$('.incorrectscreen').addClass('hidden');
+
+				}, 1000);
+				$.k2l.m10a22_3.allowClick = true; // Make the buttons clickable again
+
+			}
+		}
+	},
+
+	'click .pagination': function (evt) {
+		$.k2l.counter =  $.k2l.m10a22_3.answer_index[$.k2l.m10a22_3.index].length;
+		$(".counterleft u").html($.k2l.counter);
+		$.k2l.m10a22_3.index = 0;
+		$.k2l.m10a22_3.allowClick = true;
+	}
+
+});
+
+Template.m10a22_3.rendered = function () {
+
+	if (typeof $.k2l == 'undefined') {
+		$.k2l = {};
+	};
+
+	if (typeof $.k2l.m10a22_3 == 'undefined') {
+		$.k2l.m10a22_3 = {};
+	};
+
+	var answer_index = [["hood"], ["hood"], ["al"], ["isation", "ity"], ["isation", "ity"], ["let"], ["ness"], ["ment"], ["ment"], ["ous"], ["ship"], ["ty"], ["y"], ["wise"]];
+
+	var choices = ["hood", "al", "isation", "ity", "let", "ness", "ment", "ous", "ship", "ty", "y", "wise"];
+
+	var questions = ["Neighbour", "Child", "Comic", "Modern", "Popular", "Book", "Weak", "Move", "Ship", "Hazard", "Friend", "Loyal", "Fruit", "Clock"]
+
+
+	$.k2l.m10a22_3.answer_index = answer_index;
+	$.k2l.m10a22_3.choices = choices;
+	$.k2l.m10a22_3.questions = questions;
+	$.k2l.m10a22_3.index = 0;
+	$.k2l.counter =  $.k2l.m10a22_3.answer_index[$.k2l.m10a22_3.index].length;
+	$(".counterleft u").html($.k2l.counter);
+
+	$.k2l.m10a22_3.allowClick = true;
+
+
+}
+
+function shuffle(array) {
+	var m = array.length, t, i;
+
+	// While there remain elements to shuffle…
+	while (m) {
+
+		// Pick a remaining element…
+		i = Math.floor(Math.random() * m--);
+
+		// And swap it with the current element.
+		t = array[m];
+		array[m] = array[i];
+		array[i] = t;
+	}
+
+	return array;
+}

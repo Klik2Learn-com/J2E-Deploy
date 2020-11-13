@@ -1,0 +1,139 @@
+<template name="m10a22"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/SouthendonSea');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 22 - {{> m10a22Title}}</div>
+		</header>
+		<section id="m10a22">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a22Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m10a22Intro}}</h3>
+				{{> m10a22Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a22_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a22_1}}
+		{{>m10a22_2}}
+		{{>m10a22_3}}
+		{{>m10a22_4}}
+		{{>EndPage char="k" act="m10a22" nextact="m10a23" place="SouthendonSea"}}
+	</div>
+</article>
+</template>
+<template name="m10a22_2"> 
+	<section id="m10a22_2" class="hidden"> 
+		<div class="content">  
+      			<h2 class="center">Here are some more suffixes.</h2>
+				{{> suffixExamplesP3}}
+      			
+      			{{>gg_button gg_text="Click here to find out more about suffixes in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a22_1" nexturl="#m10a22_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a22_1"> 
+	<section id="m10a22_1" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Suffixes are letters that go after a word.</h4>
+      			<br><br>
+      			<div class="center">
+      				<div class="caption">Kind</div> <div class="caption capgreen">ness</div>
+      			</div>
+      			<br><br>
+      			<h4 class="center">A suffix can change a word - for example from an adjective to a noun.</h4>
+      			{{>gg_button gg_text="Click here to find out more about suffixes in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a22" nexturl="#m10a22_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a22_4"> 
+	<section id="m10a22_4" class="hidden"> 
+		<div class="content">  
+      			<h2 class="center">Here are the Suffixes again.</h2>
+				{{> suffixExamplesP3}}
+      			{{>gg_button gg_text="Click here to find out more about suffixes in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a22_3" nexturl="#m10a22_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a22_3"> 
+	<section id="m10a22_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the right Suffix for the word.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">ty</span></div> </div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">isation</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">hood</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">ship</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">ous</span></div></div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto6 animated flipInX" id="lottoc5"><div><span class="contents">al</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc6"><div><span class="contents">ise</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc7"><div><span class="contents">ment</span></div></div>
+					</div> 
+					 <div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto7 animated flipInX" id="lottoc8"><div><span class="contents">let</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto8 animated flipInX" id="lottoc9"><div><span class="contents">y</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc10"><div><span class="contents">ness</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc11"><div><span class="contents">wise</span></div></div> 
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="number">1</div> <h5><span id="questions">Neighbour</span> <span class="textentry-disabled"></span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="counterleft">Suffixes left to find: <u id="startClock1">1</u></div>
+			{{>rightwrong}}
+			{{>welldone}}
+			</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a22_2" nexturl="#m10a22_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

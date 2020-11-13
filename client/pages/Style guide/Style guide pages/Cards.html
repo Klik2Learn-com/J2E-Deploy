@@ -1,0 +1,121 @@
+<template name="styleCards">
+<section id="styleCards" class="hidden">
+		<div class="content">
+			<h1>Flipcards</h1>
+			
+			<h2>A useful way of revealing information</h2>
+			
+			<p>The flip card is disabled here.</p>
+			
+			<div class="flippable">
+				<div class="front noselect">
+					<div class="front-content">What is love?</div>
+				</div>
+				<div class="back noselect">
+					<div class="back-content">Baby don't hurt me. Don't hurt me no more.</div>
+				</div>
+			</div>
+			
+			<p>If you want to change the width or height of the card, make sure <span class="htmlcode">.flippable</span>, <span class="htmlcode">.front-content</span> and <span class="htmlcode">.back-content</span> are all given the same sizes.</p>
+			
+			HTML
+<pre class="htmlcode2">&lt;div class=&quot;flippable&quot;&gt;
+	&lt;div class=&quot;front noselect&quot;&gt;
+		&lt;div class=&quot;front-content&quot;&gt;Front text&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;back noselect&quot;&gt;
+		&lt;div class=&quot;back-content&quot;&gt;Reveal text&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+<br>
+<p>JS</p>
+<pre class="htmlcode2">Template.styleCards.events({
+
+	'click .flippable': function (evt) {
+
+		if (Session.get("flip-set") !== true) {
+			$(".flippable").flip({
+				trigger: 'manual'
+			});
+			Session.set("flip-set", true);
+		}
+
+		$(evt.currentTarget).flip("toggle");
+	}
+
+});
+
+Template.styleCards.rendered = function() {
+
+	Session.set("flip-set", false);
+}</pre>
+<br>
+<h5>A layout template for flip cards - 3 columns becoming 2 on xs screens</h5>
+<pre class="htmlcode2">&lt;div class=&quot;container-fluid&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-4 col-xs-6&quot;&gt;
+			&lt;div class=&quot;flippable&quot;&gt;
+				&lt;div class=&quot;front noselect&quot;&gt;
+					&lt;div class=&quot;front-content&quot;&gt;recently&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;back noselect&quot;&gt;
+					&lt;div class=&quot;back-content&quot;&gt;time&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-4 col-xs-6&quot;&gt;
+			&lt;div class=&quot;flippable&quot;&gt;
+				&lt;div class=&quot;front noselect&quot;&gt;
+					&lt;div class=&quot;front-content&quot;&gt;too much&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;back noselect&quot;&gt;
+					&lt;div class=&quot;back-content&quot;&gt;how much/degree&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-4 col-xs-6&quot;&gt;
+			&lt;div class=&quot;flippable&quot;&gt;
+				&lt;div class=&quot;front noselect&quot;&gt;
+					&lt;div class=&quot;front-content&quot;&gt;absolutely&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;back noselect&quot;&gt;
+					&lt;div class=&quot;back-content&quot;&gt;how much/degree&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-4 col-xs-6&quot;&gt;
+			&lt;div class=&quot;flippable&quot;&gt;
+				&lt;div class=&quot;front noselect&quot;&gt;
+					&lt;div class=&quot;front-content&quot;&gt;seldom&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;back noselect&quot;&gt;
+					&lt;div class=&quot;back-content&quot;&gt;how often/frequently&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-4 col-xs-6&quot;&gt;
+			&lt;div class=&quot;flippable&quot;&gt;
+				&lt;div class=&quot;front noselect&quot;&gt;
+					&lt;div class=&quot;front-content&quot;&gt;locally&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;back noselect&quot;&gt;
+					&lt;div class=&quot;back-content&quot;&gt;place&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-4 col-xs-6&quot;&gt;
+			&lt;div class=&quot;flippable&quot;&gt;
+				&lt;div class=&quot;front noselect&quot;&gt;
+					&lt;div class=&quot;front-content&quot;&gt;however&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;back noselect&quot;&gt;
+					&lt;div class=&quot;back-content&quot;&gt;connecting&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+			
+		</div>
+	</section>
+</template>

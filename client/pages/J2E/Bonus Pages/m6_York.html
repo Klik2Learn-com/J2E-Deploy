@@ -1,0 +1,148 @@
+<template name="MoreAboutYork">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="York"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m6l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m6l6}}</div>
+		</header>
+
+		<section id="moreaboutYork">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/York/York1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l6_A">
+						<p>Cold War Bunker</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/York/York2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l6_B">
+						<p>Clifford’s Tower</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/York/York3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l6_C">
+						<p>Viking Centre</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/York/York4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l6_D">
+						<p>York Minster</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/York/York5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l6_E">
+						<p>York’s Chocolate Story</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l6_A">Cold War Bunker</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/York/York1.jpg" alt="Cold War Bunker" style="max-width: 250px;">
+					</figure>
+					<p>During the 1960s, in what is called the Cold War between the USA and its allies and Russia, there was a fear of nuclear attack. York’s bunker was one of 30 built underground  in the UK to warn people and organise support. It is the only one left in its original condition.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.english-heritage.org.uk/daysout/properties/york-cold-war-bunker/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l6_B">Clifford’s Tower</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/York/York2.jpg" alt="Clifford’s Tower" style="max-width: 250px;">
+					</figure>
+					<p>The tower is the largest part left of York castle which was once the centre of government for the north of England. It’s an ideal place to start a tour of the city as you get amazing views of the area from the top of the tower.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.english-heritage.org.uk/visit/places/cliffords-tower-york/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l6_C">Viking Centre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/York/York3.jpg" alt="Viking Centre" style="max-width: 250px;">
+					</figure>
+					<p>Jorvik, the Viking Centre is built on the site where archaeologists discovered in 1976 the remains of Viking York,  with houses, workshops and yards as they were 1,000 years ago. At Jorvik, you can travel back in time and see, hear and smell what life in Viking York was like.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://jorvik-viking-centre.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l6_D">York Minster</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/York/York4.jpg" alt="York Minster" style="max-width: 250px;">
+					</figure>
+					<p>York Minster is the largest Gothic cathedral in Europe. The 800 year old building has a team of craftsmen working to keep the building in good order. There are over 250,000 objects to see from all over the world and at certain times, you can hear the York Minster choir or attend an organ concert.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.yorkminster.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l6_E">York’s Chocolate Story</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/York/York5.jpg" alt="York’s Chocolate Story" style="max-width: 250px;">
+					</figure>
+					<p>York is the home of chocolate in the UK and the city has been making chocolate for over 30 years. If you want to discover the story behind some of the world’s best chocolate makers, this is the place to go. You can learn how cocoa beans from Central America are made into chocolate.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://yorkschocolatestory.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

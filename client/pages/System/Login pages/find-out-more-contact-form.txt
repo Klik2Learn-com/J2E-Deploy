@@ -1,0 +1,45 @@
+<template name="findOutMore">
+	{{>loginBox}}
+	<article class="login-page login-page2 find-out-more">	
+		{{>loginHeaderWelcome2}}
+		<section id="registerForm" class="">{{> popovers}}
+			<div class="content-login">
+				<h1>Find Out More</h1>
+				<div class="signin-container">
+					<form id="findOutMoreForm">
+						<div class="container-fluid-no-gutter">
+							<div class="row">
+								<div class="col-xs-12 text-left">
+									<h3>Contact us now to arrange a trial</h3>
+								</div>
+								<div class="col-xs-6 col-xxs-12">
+									<label for="form-name">Your name</label>
+									<input id="form-name" class="form-control" type="text" placeholder="" required>
+								</div>
+								<div class="col-xs-6 col-xxs-12">
+									<label for="form-email">Your email</label>
+									<input id="form-email" class="form-control" type="email" placeholder="" required>
+								</div>
+								<div class="col-xs-12">
+									<label for="form-org">Your organisation</label>
+									<input id="form-org" class="form-control" type="text" placeholder="">
+								</div>
+								<div class="col-xs-12">
+									<label for="form-organisation">Tell us about your needs</label>
+									<textarea id="form-organisation" class="form-control" rows="5" placeholder=""></textarea>
+								</div>
+								{{>honeypot}}
+								<div class="col-xs-12 text-right">
+									<button id="submitReportButton" class="button1">Submit</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="text-center"><a href="/" draggable="false"><i class="fa fa-chevron-left"></i> Back</a></div>
+			</div>
+		</section>
+	
+		{{>bespokeLoginFooter}}
+	</article>
+</template>

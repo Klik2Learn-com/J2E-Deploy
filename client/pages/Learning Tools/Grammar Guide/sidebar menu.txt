@@ -1,0 +1,104 @@
+<div class="col-sm-3">
+		
+            <div class="parapaper fold hidden-xs">
+               <ul class="gg-glossary">
+                  <li><a draggable="false" href="#GGintro" class="">Home</a></li>
+                  <li>
+                     <span href="#GGAdjectives" class=""><span class="gg-glosslink ggdropdown">Adjectives...</span></span>
+                     <ul>
+                        <li class="hidden"><a draggable="false" href="#GGAdjectives">Introduction to Adjectives</a></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#adj2">Adjectives in Sentences</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#adj3">Adjectives and Meaning</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#adj4">Adjectives Comparing Things</span></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span href="#GGAdverbs" class=""><span class="gg-glosslink ggdropdown">Adverbs...</span></span>
+                     <ul>
+                        <li class="hidden"><a draggable="false" href="#GGAdverbs">Introduction to Adverbs</a></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#adv2">Adverbs in Sentences</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#adv3">Adverbs and Meaning</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#adv4">Adverbs Comparing Things</span></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span href="#GGArticles" class=""><span class="gg-glosslink ggdropdown">Articles...</span></span>
+                     <ul>
+                        <li class="hidden"><a draggable="false" href="#GGArticles" class="">Introduction to Articles</a></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#art2">Using the Articles</span></li>
+                     </ul>
+                  </li>
+                  <li><a draggable="false" href="#GGCollocation" class="">Collocation</a></li>
+                  <li>
+                     <span href="#GGConjunctions" class=""><span class="gg-glosslink ggdropdown">Conjunctions...</span></span>
+                     <ul>
+                        <li class="hidden"><a draggable="false" href="#GGConjunctions" class="">What is a Conjunction?</a></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#con2">Using Conjunctions</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#con3">Conjunctions and Meaning?</span></li>
+                     </ul>
+                  </li>
+                  <li><a draggable="false" href="#GGIntonation" class="">Intonation</a></li>
+                  <li>
+                     <span href="#GGNouns" class=""><span class="gg-glosslink ggdropdown">Nouns...</span></span>
+                     <ul>
+                        <li class="hidden"><a draggable="false" href="#GGNouns" class="">Introduction to Nouns</a></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#noun2">Countable and Uncountable</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#noun3">Plurals</span></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span href="#GGPrepositions" class=""><span class="gg-glosslink ggdropdown">Prepositions...</span></span>
+                     <ul>
+                        <li class="hidden"><a draggable="false" href="#GGPrepositions" class="">Introduction to Prepositions</a></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#prep1">Prepositions and Time/Date</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#prep2">Prepositions and Place</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#prep3">Prepositions and Movement</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#prep4">Prepositions and Manner</span></li>
+                     </ul>
+                  </li>
+                  <li><a draggable="false" href="#GGPrefixes" class="">Prefixes</a></li>
+                  <li>
+                     <span href="#GGPronouns" class=""><span class="gg-glosslink ggdropdown">Pronouns...</span></span>
+                     <ul>
+                        <li class="hidden"><a draggable="false" href="#GGPronouns" class="">Introduction to Pronouns</a></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pro2">Personal Pronouns</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pro3">Relative Pronouns</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pro4">Possessive Pronouns</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pro5">Emphasizing Pronouns</span></li>
+                     </ul>
+                  </li>
+                  <li><a draggable="false" href="#GGPunctuation" class="">Punctuation</a></li>
+                  <li><a draggable="false" href="#GGQuestionWords" class="">Question Words</a></li>
+                  <li><a draggable="false" href="#GGSpellingRules" class="">Spelling Rules</a></li>
+                  <li><a draggable="false" href="#GGStress" class="">Stress</a></li>
+                  <li><a draggable="false" href="#GGSuffixes" class="">Suffixes</a></li>
+                  <li><a draggable="false" href="#GGSyllables" class="">Syllables</a> </li>
+                  <li>
+                     <span href="#GGVerbs" class=""><span class="gg-glosslink ggdropdown">Verbs...</span></span>
+                     <ul>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#verbs">Introduction to Verbs</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#aux">Auxiliary Verbs</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#cond">Conditionals</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#directspeech">Direct/Indirect Speech</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#future">Future Tenses</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#gerunds">Gerunds</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#infinitive">Infinitive</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#irregular">Irregular Verbs</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#modalverbs">Modal Verbs</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#passive">Passive/Active</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pastcont">Past Continuous Tense</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pastparticiple">Past/Present Participles</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pastperf">Past Perfect Tense</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#pastsimp">Past Simple Tense</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#prescont">Present Continuous Tense</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#presperf">Present Perfect Tense</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#presperfcont">Present Perfect Continuous Tense</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#presimp">Present Simple Tense</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#reg">Regular Verbs</span></li>
+                        <li class="hidden"><span class="subheader gg-glosslink" data-target="#qutags">Question Tags</span></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+			
+		</div>

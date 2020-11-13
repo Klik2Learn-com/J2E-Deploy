@@ -1,0 +1,94 @@
+<template name="InitialAssessment"> 
+<article class="">
+
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" href="/Courses"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{> menu_assess}}
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">English Skills Test</div>
+		</header>
+		{{#with assessmentDoc}}
+			<section id="InitialAssessment">
+				{{#if assessmentOwner}}
+					{{#if this.completeDate}}
+						{{>AssessComplete}}
+					{{/if}}
+					<div class="content">
+						<h1>English Skills Test</h1>
+						<figure class="image imgleft-responsive"><img draggable="false" src="/images/icon-assess.png" style="margin-top: -10px; max-width: 200px; height: auto;"></figure>
+						<p class="text2">This assessment will give you a level for your <b>Reading</b>, <b>Writing</b>, <b>Listening</b> and <b>Speaking</b> skills in English, plus an overall level - from <b>A1</b> (beginner) to <b>C1+</b>(advanced). <b>To achieve an overall level you MUST attempt all sections.</b></p>
+						<p class="text2">The assessment will take about an hour. There is no time limit but your time will be recorded.</p>
+						<p class="text2">You must finish each section before continuing. When you {{>touch yes="tap" no="click"}} 'Yes. Submit.' <b>You cannot go back to that section.</b></p>
+						<div class="clear-float"></div>
+						
+						<ul class="assess-links">
+
+							<a draggable="false" data-function="link" data-target="reading"><li class="{{readingCompleted}}"><span>Section </span>1: Reading<i class="fa fa-check"></i></li></a>
+							<a draggable="false" data-function="link" data-target="writing"><li class="{{writingCompleted}}"><span>Section </span>2: Writing<i class="fa fa-check"></i></li></a>
+							<a draggable="false" data-function="link" data-target="listening"><li class="{{listeningCompleted}}"><span>Section </span>3: Listening<img draggable="false" src="/assessment/headphones.png" alt="Headphones/speakers"><i class="fa fa-check"></i></li></a>
+								
+							<!-- <a draggable="false" data-function="link" data-target="reading"><li><span>Section </span>1: Reading {{#if readingCompleted}}<i class="fa fa-check"></i>{{/if}}</li></a>
+							<a draggable="false" data-function="link" data-target="writing"><li><span>Section </span>2: Writing{{#if writingCompleted}}<i class="fa fa-check"></i>{{/if}}</li></a>
+							<a draggable="false" data-function="link" data-target="listening"><li><span>Section </span>3: Listening<img draggable="false" src="/assessment/headphones.png" alt="Headphones/speakers">{{#if listeningCompleted}}<i class="fa fa-check"></i>{{/if}}</li></a> -->
+							<a draggable="false" data-function="link" data-target="speaking">
+								<li class="{{speakingCompleted}}">										
+								<!-- <li> -->
+									<span>Section </span>4: Speaking
+									<img draggable="false" src="/assessment/headset.png" alt="Microphone/headset">
+									<i class="fa fa-check"></i>								
+									<!-- {{#if speakingCompleted}}<i class="fa fa-check"></i>{{/if}} -->
+									{{#if internetExplorer}}
+										<b style="float: right;">
+											<i class="fa fa-warning" style="color: crimson; font-size: 1.3em;"></i>
+										</b>
+									{{else}}
+										<!-- <b class="visible-ios" style="float: right;">
+											<i class="fa fa-warning" style="color: crimson; font-size: 1.3em;"></i>
+										</b> -->
+									{{/if}}
+								</li>
+							</a>
+						</ul>
+						{{#if internetExplorer}}
+							<span>
+								<h4><i class="fa fa-warning" style="color: crimson; font-size: 1.5em;"></i> Due to restrictions, the speaking assessment cannot be taken on Internet Explorer. Please use another browser to complete the assessment.</h4>
+								<div class="clear-float"></div>
+							</span>
+						{{else}}
+							<!-- <span class="visible-ios">
+								<h4><i class="fa fa-warning" style="color: crimson; font-size: 1.5em;"></i> Due to restrictions by Apple, the speaking assessment cannot be taken on an iPhone/iPad. Please use a computer or Android device to complete the assessment.</h4>
+								<div class="clear-float"></div>
+							</span> -->
+						{{/if}}						
+					</div>
+					<footer>
+						{{>footer_nav prevurl="#" nexturl="#InitialAssessment_1" prev="disabled" next="disabled"}}
+					</footer>
+				{{else}}
+					<div class="content">
+						Unauthorised Access, this is not your assessment. If you are a tutor attempting to mark a students assessment, please go to Admin > Assessments and then select the assessment you wish to mark.
+					</div>
+				{{/if}}
+			</section>
+		{{/with}}
+	</div>
+</article>
+
+</template>
+
+<template name="AssessComplete">
+	<div class="resume assess-complete fadeIn animated">
+		<div class="dialogue shadow fadeInUp animated">
+			<i class="fa fa-check"></i>
+			You have completed the English Skills Test. You will receive an email once it has been marked.<br>
+			<button class="button1 buttonsmall" data-function="exitAssessment" data-target="/">OK</button>
+		</div>
+	</div>
+</template>
+
+<template name="assess_warning">
+	<span class="incorrectword">You have <b>ONLY ONE</b> attempt at each section. You <b>CANNOT</b> go back to this section if you leave.<br> You must <b>NOT</b> {{>touch yes="tap" no="click"}} a back button.  {{>arrow direction="left"}}</span>
+</template>

@@ -1,0 +1,49 @@
+<template name="B2l">
+	<section id="B2l">
+        <div class="content">
+            <h3>Ash and Sal are discussing a trip to the cinema. Listen to their telephone conversation and then answer the questions afterwards.. <b>You can only listen to the conversation twice and you cannot pause it</b>.<br> Listen to the conversation again, take notes if you like, then answer the questions.</h3>
+
+            <button class="buttonroundc buttonroundbig buttonaudioc center-block" data-function="playAudio"></button>
+            <h4 class="center">Plays remaining: {{remainingPlays}}</h4>
+            <br>
+            <form class="assess-form-listening">
+                <div class="parapaper paraextract parasegment fold">
+                    <ol class="olcircle">
+                        <li><span><b><span data-questionFor="q1">When are they planning to go?</span></b></span><br>
+                            <label for="q1a"><input type="radio" name="q1" value="tomorrow" id="q1a" class="listeningInput"> Tomorrow</label>
+                            <label for="q1b"><input type="radio" name="q1" value="tonight" id="q1b" class="listeningInput"> Tonight</label>	
+                        </li>
+                        <li><span><b><span data-questionFor="q2">What does Ash want to see?</span></b></span><br>
+                            <label for="q2a"><input type="radio" name="q2" value="mark thorne film" id="q2a" class="listeningInput"> Mark Thorne film</label>
+                            <label for="q2b"><input type="radio" name="q2" value="french film" id="q2b" class="listeningInput"> French film</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q3">Does Sal agree?</span></b></span><br>
+                            <label for="q3a"><input type="radio" name="q3" value="yes" id="q3a" class="listeningInput"> Yes</label>
+                            <label for="q3b"><input type="radio" name="q3" value="no" id="q3b" class="listeningInput"> No</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q4">Why doesn't Sal want to see the same movie as Ash?</span></b></span><br>
+                            <label for="q4a"><input type="radio" name="q4" value="she doesn't like car chases" id="q4a" class="listeningInput"> She doesn't like car chases</label>
+                            <label for="q4b"><input type="radio" name="q4" value="she doesn't like mark thorne" id="q4b" class="listeningInput"> She doesn't like Mark Thorne</label>
+                            <label for="q4c"><input type="radio" name="q4" value="it has bad reviews" id="q4c" class="listeningInput"> It has bad reviews</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q5">What does she want to see?</span></b></span><br>
+                            <label for="q5a"><input type="radio" name="q5" value="the new mark thorme film" id="q5a" class="listeningInput"> The new Mark Thorme film</label>
+                            <label for="q5b"><input type="radio" name="q5" value="the new french film" id="q5b" class="listeningInput"> The new French film</label>
+                            <label for="q5c"><input type="radio" name="q5" value="neither of the above" id="q5c" class="listeningInput"> Neither of the above</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q6">Why doesn't Ash want to see it?</span></b></span><br>
+                            <label for="q6a"><input type="radio" name="q6" value="it has car chases" id="q6a" class="listeningInput"> It has car chases</label>
+                            <label for="q6b"><input type="radio" name="q6" value="it sounds a bit heavy" id="q6b" class="listeningInput"> It sounds a bit heavy</label>
+                            <label for="q6c"><input type="radio" name="q6" value="he doesn't like french films" id="q6c" class="listeningInput"> He doesn't like French films</label>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="assess-finish">
+                    <span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+                </div>
+                {{>finishBtn}}
+            </form>
+        </div>
+	</section>
+</template>

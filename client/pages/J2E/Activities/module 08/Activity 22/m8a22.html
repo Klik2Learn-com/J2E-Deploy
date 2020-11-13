@@ -1,0 +1,168 @@
+<template name="m8a22"> 
+<article class="with-tools-sidebar m8a22">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bristol');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 22 - {{>m8a22Title}}</div>
+		</header>
+		<section id="m8a22">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a22Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a22Intro}}</h3>
+				{{> m8a22Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a22_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a22_1}}
+		{{>m8a22_2}}
+		{{>m8a22_3}}
+		{{>EndPage char="k" act="m8a22" nextact="m8a23" place="Bristol"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a22_3"> 
+	<section id="m8a22_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h4 class="center">Here are the sentences again</h4>
+      		<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>I don’t mind <span class="correctword">doing</span> the washing up.</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>I recommend <span class="correctword">buying</span> your meat at the butcher on the High Street.</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>I really don’t like <span class="correctword">flying</span>, I’m scared of heights.</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>We suggested <span class="correctword">going</span> away for the weekend.</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>He enjoys <span class="correctword">playing</span> rugby.</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>Do you fancy <span class="correctword">seeing</span> a film tonight at the cinema?</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>They suggested <span class="correctword">staying</span> overnight at a motel.</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>He kept on <span class="correctword">running</span> to the finish line even though he was exhausted.</h4></div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="parapaper fold text-center"><h4>She avoided <span class="correctword">talking,</span> to him after the argument.</h4></div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about the Present Participle under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a22_2" nexturl="#m8a22_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a22_1"> 
+	<section id="m8a22_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Some verbs must be followed by 'ing'.<br> Drag the right verb to the space in the sentence.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}<!-- 
+				{{> welldone}} -->
+					<ol class="olcircle">
+						<li>He enjoys <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> rugby.</li>
+						<li>I don’t mind <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> the washing up.</li>
+						<li>He kept on <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> to the finish line even though he was exhausted.</li>
+						<li>She avoided <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> to him after the argument.</li>
+						<li>I recommend <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> your meat at the butcher on the High Street.</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">doing</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">buying</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">playing</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">talking</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">running</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+			{{>gg_button gg_text="Click here to find out more about the Present Participle under Verbs in the Grammar Guide"}}
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a22" nexturl="#m8a22_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a22_2"> 
+	<section id="m8a22_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Some verbs must be followed by 'ing'.<br> Drag the right verb to the space in the sentence.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle" style="counter-reset: start 5;">
+						<li>They suggested <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> overnight at the Holiday Inn.</li>
+						<li>Do you fancy <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> a film tonight at the cinema?</li>
+						<li>I really don’t like <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> , I’m scared of heights.</li>
+						<li>We suggested <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> away for the weekend.</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">going</div></div> 
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">seeing</div></div>  
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">flying</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">staying</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+			{{>gg_button gg_text="Click here to find out more about the Present Participle under Verbs in the Grammar Guide"}}
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a22_1" nexturl="#m8a22_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

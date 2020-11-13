@@ -1,0 +1,467 @@
+<template name="adminFeedbackList">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				<a draggable="false" href="/admin/"><i class="titlereturn fa fa-arrow-left"></i></a>
+				{{>menu}}
+				<div class="parent-level">Journey 2 English</div>
+				<div class="acttitle-title">User feedback forms list</div>
+			</header>
+			<section>
+				{{#if isAdmin}}
+				<div class="content-user">
+					<h1>User Feedback</h1>
+
+					<div class="text-center">
+						<h5 style="margin-top: 0px; margin-bottom: 1em;">Select unit:</h5>
+						<select class="form-control inline-block" id="unit-select" style="width: auto; margin-left: .5em; font-weight: bold">
+							<!-- <option disabled="disabled" value="defaultVal">Select unit...</option> -->
+							<option value="unit-1" selected="selected">Unit 1</option>
+							<option value="unit-2">Unit 2</option>
+						</select>
+					</div>
+
+					<ol class="user-feedback-results animated fadeIn" id="feedbackFormsListTable1">
+						<li>
+							<p>How would you rate your learning journey in Unit 1?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 1 5}}%">{{calculatePercentage 1 1 5}}%</div>
+										<span class="count">{{countU1Q1score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 1 4}}%">{{calculatePercentage 1 1 4}}%</div>
+										<span class="count">{{countU1Q1score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 1 3}}%">{{calculatePercentage 1 1 3}}%</div>
+										<span class="count">{{countU1Q1score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 1 2}}%">{{calculatePercentage 1 1 2}}%</div>
+										<span class="count">{{countU1Q1score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 1 1}}%">{{calculatePercentage 1 1 1}}%</div>
+										<span class="count">{{countU1Q1score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u1q1comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>How would you rate the end-of-module games?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 2 5}}%">{{calculatePercentage 1 2 5}}%</div>
+										<span class="count">{{countU1Q2score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 2 4}}%">{{calculatePercentage 1 2 4}}%</div>
+										<span class="count">{{countU1Q2score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 2 3}}%">{{calculatePercentage 1 2 3}}%</div>
+										<span class="count">{{countU1Q2score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 2 2}}%">{{calculatePercentage 1 2 2}}%</div>
+										<span class="count">{{countU1Q2score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 2 1}}%">{{calculatePercentage 1 2 1}}%</div>
+										<span class="count">{{countU1Q2score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u1q2comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>How would you rate the idioms/phrasal verbs?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 3 5}}%">{{calculatePercentage 1 3 5}}%</div>
+										<span class="count">{{countU1Q3score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 3 4}}%">{{calculatePercentage 1 3 4}}%</div>
+										<span class="count">{{countU1Q3score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 3 3}}%">{{calculatePercentage 1 3 3}}%</div>
+										<span class="count">{{countU1Q3score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 3 2}}%">{{calculatePercentage 1 3 2}}%</div>
+										<span class="count">{{countU1Q3score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 3 1}}%">{{calculatePercentage 1 3 1}}%</div>
+										<span class="count">{{countU1Q3score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u1q3comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>How would you rate the achievement badges/trophies?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 4 5}}%">{{calculatePercentage 1 4 5}}%</div>
+										<span class="count">{{countU1Q4score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 4 4}}%">{{calculatePercentage 1 4 4}}%</div>
+										<span class="count">{{countU1Q4score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 4 3}}%">{{calculatePercentage 1 4 3}}%</div>
+										<span class="count">{{countU1Q4score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 4 2}}%">{{calculatePercentage 1 4 2}}%</div>
+										<span class="count">{{countU1Q4score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 4 1}}%">{{calculatePercentage 1 4 1}}%</div>
+										<span class="count">{{countU1Q4score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u1q4comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>Did you find the learning tools (dictionary, notebook, voice recorder & grammar guide) helpful?</p>
+							<ul class="ulblank">
+								<li>
+									<b>Yes:</b>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 5 'yes'}}%">{{calculatePercentage 1 5 'yes'}}%</div>
+										<span class="count">{{countU1Q5Yes}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<b>No:</b>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 1 5 'no'}}%">{{calculatePercentage 1 5 'no'}}%</div>
+										<span class="count">{{countU1Q5No}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u1q5comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+					</ol>
+
+					<ol class="user-feedback-results hidden animated fadeIn" id="feedbackFormsListTable2">
+						<li>
+							<p>How would you rate your learning journey in Unit 2?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 1 5}}%">{{calculatePercentage 2 1 5}}%</div>
+										<span class="count">{{countU2Q1score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 1 4}}%">{{calculatePercentage 2 1 4}}%</div>
+										<span class="count">{{countU2Q1score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 1 3}}%">{{calculatePercentage 2 1 3}}%</div>
+										<span class="count">{{countU2Q1score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 1 2}}%">{{calculatePercentage 2 1 2}}%</div>
+										<span class="count">{{countU2Q1score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 1 1}}%">{{calculatePercentage 2 1 1}}%</div>
+										<span class="count">{{countU2Q1score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u2q1comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>How would you rate the end-of-module games?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 2 5}}%">{{calculatePercentage 2 2 5}}%</div>
+										<span class="count">{{countU2Q2score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 2 4}}%">{{calculatePercentage 2 2 4}}%</div>
+										<span class="count">{{countU2Q2score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 2 3}}%">{{calculatePercentage 2 2 3}}%</div>
+										<span class="count">{{countU2Q2score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 2 2}}%">{{calculatePercentage 2 2 2}}%</div>
+										<span class="count">{{countU2Q2score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 2 1}}%">{{calculatePercentage 2 2 1}}%</div>
+										<span class="count">{{countU2Q2score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u2q2comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>How would you rate the stress and intonation activities?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 3 5}}%">{{calculatePercentage 2 3 5}}%</div>
+										<span class="count">{{countU2Q3score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 3 4}}%">{{calculatePercentage 2 3 4}}%</div>
+										<span class="count">{{countU2Q3score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 3 3}}%">{{calculatePercentage 2 3 3}}%</div>
+										<span class="count">{{countU2Q3score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 3 2}}%">{{calculatePercentage 2 3 2}}%</div>
+										<span class="count">{{countU2Q3score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 3 1}}%">{{calculatePercentage 2 3 1}}%</div>
+										<span class="count">{{countU2Q3score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u2q3comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>Has your grammar improved?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 4 5}}%">{{calculatePercentage 2 4 5}}%</div>
+										<span class="count">{{countU2Q4score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 4 4}}%">{{calculatePercentage 2 4 4}}%</div>
+										<span class="count">{{countU2Q4score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 4 3}}%">{{calculatePercentage 2 4 3}}%</div>
+										<span class="count">{{countU2Q4score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 4 2}}%">{{calculatePercentage 2 4 2}}%</div>
+										<span class="count">{{countU2Q4score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 4 1}}%">{{calculatePercentage 2 4 1}}%</div>
+										<span class="count">{{countU2Q4score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u2q4comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>Has your vocabulary improved?</p>
+							<ul class="ulblank">
+								<li>
+									<span class="feedback-emoji excited"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 5 5}}%">{{calculatePercentage 2 5 5}}%</div>
+										<span class="count">{{countU2Q5score5}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji happy"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 5 4}}%">{{calculatePercentage 2 5 4}}%</div>
+										<span class="count">{{countU2Q5score4}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji neutral"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 5 3}}%">{{calculatePercentage 2 5 3}}%</div>
+										<span class="count">{{countU2Q5score3}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji sad"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 5 2}}%">{{calculatePercentage 2 5 2}}%</div>
+										<span class="count">{{countU2Q5score2}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<span class="feedback-emoji angry"></span>
+									<div class="poll-bar-wrapper">
+										<div class="poll-bar" style="width: {{calculatePercentage 2 5 1}}%">{{calculatePercentage 2 5 1}}%</div>
+										<span class="count">{{countU2Q5score1}} user(s)</span>
+									</div>
+								</li>
+								<li>
+									<a draggable="false" href="javascript:void(0)" id="u2q5comments" class="commentsButtons">View comments</a>
+								</li>
+							</ul>
+						</li>
+					</ol>
+
+
+
+				</div>
+				{{else}}
+				Unauthorised access.
+				{{/if}}
+			</section>			
+		</div>
+	</article>
+
+	<div class="modal fade" id="commentsModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"> Question {{questionNumber}} Comments </h4>
+				</div>
+				<div class="modal-body">
+					<ul class="feedback-comments-list">
+						{{#each comment in getComments}}
+						<li>{{comment}}</li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

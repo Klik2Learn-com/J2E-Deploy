@@ -1,0 +1,282 @@
+<template name="m8a20"> 
+<article class="with-tools-sidebar m8a2">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bristol');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 20 - {{>m8a20Title}}</div>
+		</header>
+		<section id="m8a20">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a20Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a20Intro}}</h3>
+				{{> m8a20Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a20_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a20_1}}
+		{{>m8a20_2}}
+		{{>m8a20_3}}
+		{{>m8a20_4}}
+		{{>m8a20_5}}
+		{{>m8a20_6}}
+		{{>EndPage char="tu" act="m8a20" nextact="m8a21" place="Bristol"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a20_1"> 
+	<section id="m8a20_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			{{>InstructionsRecord text="Now try yourself. Listen and try to copy the native speaker. Record your voice and play it back."}}
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/dont eat fish.png" alt="Woman saying she doesn't like fish"></div></div><br>
+						</div>
+						<div class="col-sm-6">
+						<div class="hidden-xs" style="height:70px;"></div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_surprised.m4a"></button></div>
+									<div class="iconright"><h4>She doesn't eat fish?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_no.m4a"></button></div>
+									<div class="iconright"><h4>She doesn't eat fish, does she?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_yes.m4a"></button></div>
+									<div class="iconright"><h4>She eats fish, doesn't she?</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a20" nexturl="#m8a20_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a20_3"> 
+	<section id="m8a20_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			{{>InstructionsRecord text="Now try yourself. Listen and try to copy the native speaker. Record your voice and play it back."}}
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/bank.png" alt="Man at desk counting money"></div></div><br>
+						</div>
+						<div class="col-sm-6">
+						<div class="hidden-xs" style="height:70px;"></div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_surprised.m4a"></button></div>
+									<div class="iconright"><h4>He works in a bank?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_no.m4a"></button></div>
+									<div class="iconright"><h4>He doesn't work in a bank, does he?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_yes.m4a"></button></div>
+									<div class="iconright"><h4>He works in a bank, doesn't he?</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a20_2" nexturl="#m8a20_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a20_4"> 
+	<section id="m8a20_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			{{>InstructionsRecord text="Now try yourself. Listen and try to copy the native speaker. Record your voice and play it back."}}
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/not coming.png" alt="Two people waiting with luggage"></div></div><br>
+						</div>
+						<div class="col-sm-6">
+						<div class="hidden-xs" style="height:70px;"></div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_surprised.m4a"></button></div>
+									<div class="iconright"><h4>They're not coming.</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_no.m4a"></button></div>
+									<div class="iconright"><h4>They're not coming, are they?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_yes.m4a"></button></div>
+									<div class="iconright"><h4>They're coming, aren't they?</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a20_3" nexturl="#m8a20_5" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a20footnote">
+<h3 class="text-right" style="font-size: 1em;"><span style='color: red;'>*</span> The voice recorder is currently available only on Windows devices.</h3>
+</template>
+
+<template name="m8a20_6"> 
+	<section id="m8a20_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			{{>InstructionsRecord text="Now try yourself. Listen and try to copy the native speaker. Record your voice and play it back."}}
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/hospital.png" alt="Ambulance"></div></div><br>
+						</div>
+						<div class="col-sm-6">
+						<div class="hidden-xs" style="height:70px;"></div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_surprised.m4a"></button></div>
+									<div class="iconright"><h4>She's been taken to hospital?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_no.m4a"></button></div>
+									<div class="iconright"><h4>She's not been taken to hospital, has she?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_yes.m4a"></button></div>
+									<div class="iconright"><h4>She's been taken to hospital, hasn't she?</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a20_5" nexturl="#m8a20_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a20_5"> 
+	<section id="m8a20_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			{{>InstructionsRecord text="Now try yourself. Listen and try to copy the native speaker. Record your voice and play it back."}}
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/holiday.png" alt="Beach"></div></div><br>
+						</div>
+						<div class="col-sm-6">
+						<div class="hidden-xs" style="height:70px;"></div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_surprised.m4a"></button></div>
+									<div class="iconright"><h4>They've gone away on holiday?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_no.m4a"></button></div>
+									<div class="iconright"><h4>They've not gone away on holiday, have they?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_yes.m4a"></button></div>
+									<div class="iconright"><h4>They've gone away on holiday, haven't they?</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a20_4" nexturl="#m8a20_6" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a20_2"> 
+	<section id="m8a20_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			{{>InstructionsRecord text="Now try yourself. Listen and try to copy the native speaker. Record your voice and play it back."}}
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/dont remember me.png" alt="Man trying to remember"></div></div><br>
+						</div>
+						<div class="col-sm-6">
+						<div class="hidden-xs" style="height:70px;"></div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_surprised.m4a"></button></div>
+									<div class="iconright"><h4>You don't remember me?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_no.m4a"></button></div>
+									<div class="iconright"><h4>You don't remember me, do you?</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_yes.m4a"></button></div>
+									<div class="iconright"><h4>You remember me, don't you?</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a20_1" nexturl="#m8a20_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

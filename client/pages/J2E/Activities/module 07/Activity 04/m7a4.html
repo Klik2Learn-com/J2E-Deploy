@@ -1,0 +1,356 @@
+<template name="m7a4"> 
+<article class="with-tools-sidebar m7a4">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Sheffield');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 4 - {{>m7a4Title}}</div>
+		</header>
+		<section id="m7a4">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a4Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m7a4Intro}}</h3>
+				{{> m7a4Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a4_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a4_1}}
+		{{>m7a4_2}}
+		{{>m7a4_3}}
+		{{>m7a4_4}}
+		{{>m7a4_5}}
+		{{>m7a4_6}}
+		{{>EndPage char="k" act="m7a4" nextact="m7a5" place="Sheffield"}}
+	</div>
+</article>
+
+</template>
+<template name="m7a4_1">
+<section id="m7a4_1" class="hidden">
+{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<p>The room contains a glass tank with two baby stick insects called Jim and Bob. There’s a poster on the wall with the words "Hazard Warning" in vivid red ink and tray after tray of test tubes.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> What word meaning 'bright' or 'strong' can describe a colour and a memory?</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							{{>m7a4_input}}
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#" prevurl="#" prev="disabled" next="disabled"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+</section>
+	</template>
+
+
+<template name="m7a4_2">
+	<section id="m7a4_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<p>Pupils stay at school from the age of four until they move on to university or employment. The school day begins at 8.30am and lasts until 3pm. The discipline and values taught at an early age help to shape fully-rounded young adults. Discipline is good. The children are extremely well-behaved.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>2)</b> What kind of adults is the school trying to develop? (2 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							{{>m7a4_input}}
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a4_1" nexturl="#m7a4_3" prev="disabled" next="disabled"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m7a4_3">
+	<section id="m7a4_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<p>For Sally, the day is longer. She arrives at school at 7.45am (eating her breakfast in the staff room) and usually works until 5pm, marking pupils’ work and preparing for the day ahead. She has little time to be with her three year old daughter. “You never really switch off,” she says.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>3)</b> What phrase do we use for electrical equipment, machines, and people who are always thinking about their work? (2 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							{{>m7a4_input}}
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a4_2" nexturl="#m7a4_4" prev="disabled" next="disabled"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m7a4_4">
+	<section id="m7a4_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<p>The long holidays are considered the main perk of the job, Sally disagrees. "I get 13 weeks but, like most teachers, I spend a lot of time planning for the next term." She also says it’s easier to work when she’s not well. "You have to prepare a lesson and you worry if the pupils will be disruptive. It's easier just to turn up."</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>4)</b> What phrase means to ‘go/arrive somewhere?’ (2 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							{{>m7a4_input}}
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a4_3" nexturl="#m7a4_5" prev="disabled" next="disabled"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m7a4_5">
+	<section id="m7a4_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<p>The school is in a disadvantaged area but was judged "outstanding." "Some children are dealing with a lot of problems at home,” said Sally. “Sometimes, we're the only discipline they get. You don't know what's going on in their lives.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>5)</b> What word means ‘really excellent?’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							{{>m7a4_input}}
+							<input type="submit" value="OK">
+						</form>
+
+													</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a4_4" nexturl="#m7a4_6" prev="disabled" next="disabled"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m7a4_6">
+	<section id="m7a4_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<p>At the end, the children walk away delighted when they receive a good mark. A couple of girls stay behind to discuss what to do with the stick insects over the Easter holidays.<br>
+"Why don't you take them home?" Sally says to one of the girls. Her face breaks into a broad smile. "Can I?" she asks excitedly.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>6)</b> What phrase suggests the girl smiles suddenly? (5 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							{{>m7a4_input}}
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a4_5" nexturl="#m7a4_end" prev="disabled" next="disabled"}}
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}}
+	</section>
+ </template>
+
+
+<template name="m7a4_input">
+    <input type="text" name="userText" size="15" autocomplete="off">
+</template>
+

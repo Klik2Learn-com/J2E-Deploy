@@ -1,0 +1,229 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a24">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/DunveganCastle');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 24 - {{>m1a24Title}}</div>
+		</header>
+				
+				
+		<section id="m1a24">
+			<div class="content">
+				<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m1a24Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m1a24Intro}}</h3>
+{{> m1a24Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav nexturl="#m1a24_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{> m1a24_1}}
+		{{> m1a24_2}}
+		{{> m1a24_end}}
+
+	</div>
+</article>
+
+	{{> m1a24_bios}}
+</template>
+<template name="m1a24_1">
+<section id="m1a24_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+					
+					
+					
+						<figure class="figquote">
+						
+							<div class="container-fluid">
+								<div class="row">
+						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m1_atten.jpeg" alt="Photo"></div></div>
+									</div>
+									
+										<div class="col-md-12 col-xs-6 text-left">
+										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>David Attenborough</h2>
+											Born 1926
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m1_quotes_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+
+						</figure>
+						
+						
+						
+					</div>
+
+					
+					<div class="col-md-9 col-sm-12 text-center">
+					
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m1_da.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">“I am not over-fond of animals. I am merely astounded by them.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ndMKTnSRsKM?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a24_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a24_2">
+<section id="m1a24_2" class="hidden">
+{{#if activeSection}}
+		<div class="content">
+			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+					
+					
+					
+						<figure class="figquote">
+						
+							<div class="container-fluid">
+								<div class="row">
+						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m1_burns.jpeg" alt="Photo"></div></div>
+									</div>
+									
+										<div class="col-md-12 col-xs-6 text-left">
+										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Robert Burns</h2>
+											(1759 - 1796)
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m1_quotes_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+
+						</figure>
+						
+						
+						
+					</div>
+
+					
+					<div class="col-md-9 col-sm-12 text-center">
+					
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m1_rb.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">"But pleasures are like poppies spread.
+									<br>You seize the flower, the bloom is shed.
+									<br>Or like the snow falls in the river. 
+									<br>A moment white - then melts forever.”</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qMxIBqpryG0?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a24_end" prevurl="#m1a24_1" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a24_bios">
+	<div class="modal fade" id="m1_quotes_bio1" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               		<h4 class="modal-title" id="myModalLabel">David Attenborough</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m1_atten.jpeg" alt="Photo"></figure>
+					David Attenborough is an English naturalist and broadcaster who has been a familiar face on British TV for about 60 years. He was appointed controller of BBC 2 in the early part of his career. He then made some of the most exciting and unusual wildlife programmes ever seen on TV. Programmes like <em>Life on Earth</em> and <em>The Living Planet</em> developed some new techniques for filming plants and animals. His cameramen spent many months waiting to capture animal behaviour that had not been seen before. They developed low light cameras to film animals at night. More recently he has made programmes like <em>The Frozen Planet</em> and <em>Africa</em>. During his career, Attenborough has won many awards and has collected 31 honorary degrees from universities all over Britain - more than anyone else. He has been called ‘the greatest broadcaster of our time.’
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="m1_quotes_bio2" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Robert Burns</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m1_burns.jpeg" alt="Photo"></figure>
+					Robert Burns is Scotland’s most famous poet. During the early part of his life, Burns struggled to make a living from farming. When his first book of poems was published, he moved to Edinburgh and became a popular figure in Edinburgh society. He spent the last years of his life in Dumfries and died at the young age of 37. His poems and songs have been translated into many languages and he is particularly popular in Russia where a translation of his poems sold 600,000 copies. He was voted the ‘Greatest Scot of all time’ just beating William Wallace - one of the main leaders in the 13th century battle for Scottish Independence.
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m1a24_end">
+{{>EndPage char="elle" act="m1a24" nextact="m1a25" place="DunveganCastle"}}
+</template>

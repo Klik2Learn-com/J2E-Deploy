@@ -1,0 +1,384 @@
+<template name="m3a14">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Linlithgow');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 14 - {{>m3a14Title}}</div>
+			</header>
+
+
+			<section id="m3a14">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a14Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m3a14Intro}}</h3>
+					{{> m3a14Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a14_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m3a14_1}} {{>m3a14_2}} {{>m3a14_3}} {{>m3a14_4}} {{>m3a14_5}} {{>m3a14_6}} {{>m3a14_7}} {{>EndPage char="tu" act="m3a14"
+			nextact="m3a15" place="Linlithgow"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m3a14_1">
+
+	<section id="m3a14_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			{{>InstructionsNotebook text="Use these words to make a sentence in your Notebook. You can check the answers at the end."}}
+
+			<div class="text-center">
+				<div class="parapaper fold cappad">
+					<div class="number" style="float: left;">1</div>
+					<div class="caption capgreen item-space">countryside</div>
+					<div class="caption capgreen item-space">not</div>
+					<div class="caption capgreen item-space">good place</div>
+					<div class="caption capgreen item-space">people</div>
+					<div class="caption capgreen item-space">retire to</div>
+				</div>
+			</div>
+
+			{{>m3a14_listen}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a14" nexturl="#m3a14_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>
+
+<template name="m3a14_2">
+
+	<section id="m3a14_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			{{>InstructionsNotebook text="Use these words to make a sentence in your Notebook. You can check the answers at the end."}}
+
+			<div class="text-center">
+				<div class="parapaper fold cappad">
+					<div class="number" style="float: left;">2</div>
+					<div class="caption capgreen item-space">countryside</div>
+					<div class="caption capgreen item-space">different</div>
+					<div class="caption capgreen item-space">past</div>
+					<div class="caption capgreen item-space">now</div>
+					<div class="caption capgreen item-space">factories, retail parks and industrial sites</div>
+				</div>
+			</div>
+
+			{{>m3a14_listen}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a14_1" nexturl="#m3a14_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>
+
+<template name="m3a14_3">
+
+	<section id="m3a14_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			{{>InstructionsNotebook text="Use these words to make a sentence in your Notebook. You can check the answers at the end."}}
+
+			<div class="text-center">
+				<div class="parapaper fold cappad">
+					<div class="number" style="float: left;">3</div>
+					<div class="caption capgreen item-space">city life</div>
+					<div class="caption capgreen item-space">more choice</div>
+					<div class="caption capgreen item-space">but</div>
+					<div class="caption capgreen item-space">not know</div>
+					<div class="caption capgreen item-space">any</div>
+					<div class="caption capgreen item-space">neighbours</div>
+				</div>
+			</div>
+
+			{{>m3a14_listen}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a14_2" nexturl="#m3a14_4" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>
+
+<template name="m3a14_4">
+
+	<section id="m3a14_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			{{>InstructionsNotebook text="Use these words to make a sentence in your Notebook. You can check the answers at the end."}}
+
+			<div class="text-center">
+				<div class="parapaper fold cappad">
+					<div class="number" style="float: left;">4</div>
+					<div class="caption capgreen item-space">living</div>
+					<div class="caption capgreen item-space">country</div>
+					<div class="caption capgreen item-space">bring</div>
+					<div class="caption capgreen item-space">closer</div>
+					<div class="caption capgreen item-space">nature</div>
+				</div>
+			</div>
+
+			{{>m3a14_listen}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a14_3" nexturl="#m3a14_5" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>
+
+<template name="m3a14_5">
+
+	<section id="m3a14_5" class="hidden">
+		<div class="content">
+
+			<h1>Notebook Answers</h1>
+			<div class="parapaper fold notebook-answers">
+				<ol class="olcircle">
+					<li>
+						<p>
+							<b>countryside / not / good place / people / retire to</b>
+						</p>
+						<p>The countryside is not always a good place for people to retire to.</p>
+					</li>
+					<li>
+						<p>
+							<b>countryside / different / past / now / factories, retail parks and industrial sites</b>
+						</p>
+						<p>The countryside was different in the past; now there are/could be factories, retail parks and industrial sites.</p>
+					</li>
+					<li>
+						<p>
+							<b>city life / more choice / but / not know / any / neighbours</b>
+						</p>
+						<p>City life has more choice but you may/might not know any of your neighbours.</p>
+					</li>
+					<li>
+						<p>
+							<b>living / country / bring / closer / nature</b>
+						</p>
+						<p>Living in the country brings you closer to nature.</p>
+					</li>
+				</ol>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a14_4" nexturl="#m3a14_6" prev="" next=""}}
+		</footer>
+	</section>
+
+</template>
+
+<template name="m3a14_6">
+
+	<section id="m3a14_6" class="hidden">{{> popovers}}
+		<div class="content">
+
+			<h3>Now read the article. {{>touch yes="Tap" no="Click"}} the words in red to find out more.</h3>
+
+			<div class="parapaper paraextract article-text">
+				<p>1. I stood in a field this week listening to the first sounds of spring; birds sang, lambs bleated. Spring can be a time
+					when faith in the British countryside is renewed again.</p>
+
+				<p>2. So I was surprised to read about a national
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button"
+					 tabindex="0" data-trigger="manual" data-placement="bottom" data-content="Activities/articles/publicity designed to persuade you about something.">campaign</a> to warn retirees against moving from the city to the country. Mavis Cheek, leading the campaign described
+					the countryside as ‘tough, a little bit dangerous and not for
+					<a draggable="false" href="#" title="" data-toggle="popover"
+					 role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="Someone who isn’t brave and avoids difficult and dangerous situations.">wimps</a>.’</p>
+
+				<p>3. It might have been all pastoral bliss 20 years ago with roses in cottage gardens and dancing round the maypole. Today,
+					large tracts of the British countryside could be covered in factories, motorways, retail parks and light industrial
+					sites.</p>
+
+				<p>4. I moved to a small farmhouse in the Black Mountains eight years ago, so I know a bit about rural life. It wasn’t easy.
+					The fact I rode a bike aroused suspicion. Five months after moving in, I was in the pub on a Friday night. An old boy
+					I knew led me gently to a corner of the bar. ‘I see you on the bike boy,’ he said. ‘How long you lost your licence for
+					then?’</p>
+
+				<p>5. Before the move, I lived in London for a decade. There are many things I still miss about metropolitan life. In the
+					city you can choose your community – it may be through work, clubs, your kid’s school - but it’s unlikely to include
+					your neighbours. You may not know the name of a single person who lives in your street.</p>
+
+				<p>6. I’m lucky now. I live in a place with a strong sense of community. The local pub and village hall have activities
+					every night of the week: singing, gardening, line dancing, films, quizzes and an annual pantomime.</p>
+
+				<p>7. This winter, I’ve spent a lot of time on my own in a wood near my house, filming a video diary for the BBC on British woodlands. The trees have stood here for some 8,000 years. <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-html="true" data-content="<div class='ph-w ph-16x9' style='width: 240px'><div class='ph'><img draggable='false' src='/images/module3/cavepainting.jpg' /> </div></div>The Neolithic era is also known as The New Stone age. It was a period in human history beginning about 10,200 BC and ending between 4,500 and 2,000 BC. ">Neolithic</a> man must have stood here 200 generations ago. It was a moving experience.</p>
+
+				<p>8. Standing underneath the dome of <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-html="true" data-content="<div class='ph-w' style='width: 240px'><div class='ph' style='padding-top: 76%'><img draggable='false' src='images/module3/st-pauls.jpg' /></div></div> St Paul’s Cathedral, a large church in London. It is one of the most famous buildings in London.">St Paul’s</a> in London might be a great experience but it doesn’t match standing still in an ancient wood.</p>
+			</div>
+			<div class="articlesrc">Adapted from ‘The Guardian’ March 2012</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a14_5" nexturl="#m3a14_7" prev="" next=""}}
+		</footer>
+	</section>
+
+</template>
+
+<template name="m3a14_7">
+
+	<section id="m3a14_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content ddfixed">
+
+			<h3>The article uses a number of words to link ideas together.</h3>
+			<h3>Drag these linking words into the right box. The first one is done for you.</h3>
+
+			{{> rightwrong}} {{>welldone}}
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col-sm-3 col-xs-6">
+						<div class="box2 ddwidth10 ddtarget2 block" style="height: 320px;" data-destinationid="target1">
+							<h4>Agreeing/adding
+								<br>
+								<br>
+							</h4>
+							<div class="ddsourceseated ddsourceseated2 ddwidth8 dd1line">And</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="box2 ddwidth10 ddtarget2 block" style="height: 320px;" data-destinationid="target2">
+							<h4>Disagreeing/
+								<br>contrasting</h4>
+							<div class="ddsourceseated ddsourceseated2 ddwidth8 dd1line">But</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="box2 ddwidth10 ddtarget2 block" style="height: 320px;" data-destinationid="target3">
+							<h4>Result
+								<br>
+								<br>
+							</h4>
+							<div class="ddsourceseated ddsourceseated2 ddwidth8 dd1line">So</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="box2 ddwidth10 ddtarget2 block" style="height: 320px;" data-destinationid="target4">
+							<h4>Reason
+								<br>
+								<br>
+							</h4>
+							<div class="ddsourceseated ddsourceseated2 ddwidth8 dd1line">As</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1 center-block">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Although</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Besides</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Since</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Consequently</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Also</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Despite</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">In addition</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">In spite of</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Therefore</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Because</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">As well as</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Nevertheless</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">However</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a14_6" nexturl="#m3a14_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>
+
+<template name="m3a14_listen">
+	<br>
+	<hr>
+	<br>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-sm-5 col-sm-offset-1 col-xs-6 col-xxs-12">
+				<div class="toolbuttleft">
+					<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a13/Whole_article.m4a"></button>
+					<br>&nbsp;</div>
+				<div class="toolbuttright">
+					<h5>{{>touch yes="Tap" no="Click"}} to listen to the article</h5>
+				</div>
+
+			</div>
+			<div class="col-sm-5 col-xs-6 col-xxs-12">
+				<figure>
+					<div class="ph-w ph-5x4" style="max-width: 374px">
+						<div class="ph">
+							<img draggable="false" src="images/module3/countryside.jpg" style="max-width: 100%;" alt="Countryside">
+						</div>
+					</div>
+				</figure>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,336 @@
+<template name="m4a17">
+	<article class="with-tools-sidebar m4a17">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Helensburgh');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 17 - {{>m4a17Title}}</div>
+			</header>
+
+
+			<section id="m4a17">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a17Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m4a17Intro}}</h3>
+					{{> m4a17Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a17_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a17_1}} {{>m4a17_2}} {{>m4a17_scores}} {{>m4a17_3}} {{>EndPage char="tu" act="m4a17" nextact="m4a18" place="Helensburgh"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a17_1">
+	<section id="m4a17_1" class="hidden">
+		<div class="content">
+			<h3>Read the menu below. It’s typical of the American style diners you find throughout the UK.</h3>
+
+			<div class="m4a17-menu shadowdark">
+				<h1 class="hand-font">
+					<i class="fa fa-star"></i>Mario's Diner
+					<i class="fa fa-star"></i>
+				</h1>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 col-xs-4 col-xxs-12 hidden-xxs">
+							<div class="ph-w ph-3x2 shadowsolid" style="max-width: 200px; -ms-transform: rotate(-3.7deg); -webkit-transform: rotate(-3.7deg); transform: rotate(-3.7deg);"><div class="ph"><img draggable="false" src="images/module4/a17/soup.jpg" alt="Meal"></div></div>
+							<br>	
+							<div class="ph-w ph-3x2 shadowsolid" style="max-width: 200px; -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg); transform: rotate(2deg);"><div class="ph"><img draggable="false" src="images/module4/a17/chicken.jpg" alt="Meal"></div></div>
+							<br>
+							<div class="ph-w ph-3x2 shadowsolid" style="max-width: 200px; -ms-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); transform: rotate(-2deg);"><div class="ph"><img draggable="false" src="images/module4/a17/chicken-burger.jpg" alt="Meal"></div></div>
+							<br>
+							<div class="ph-w ph-3x2 shadowsolid" style="max-width: 200px; -ms-transform: rotate(-3.7deg); -webkit-transform: rotate(-3.7deg); transform: rotate(-3.7deg);"><div class="ph"><img draggable="false" src="images/module4/a17/cheeseburger.jpg" alt="Meal"></div></div>
+							<br>
+							<div class="ph-w ph-3x2 shadowsolid" style="max-width: 200px; -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg); transform: rotate(2deg);"><div class="ph"><img draggable="false" src="images/module4/a17/wrap.jpg" alt="Meal"></div></div>
+						</div>
+						<div class="col-sm-9 col-xs-8 col-xxs-12">
+							<h2>~ Lunch Menu ~</h2>
+							<h3>Appetisers</h3>
+							<div class="m4a17-menu-sub">
+								<span style="float: right;">£3.79</span>
+								<h4>Soup</h4>
+								<p>Soup of the day served with garlic croutons.</p>
+								<span style="float: right;">£4.49</span>
+								<h4>Maryland Chicken</h4>
+								<p>Chicken breast served on honey and mustard dressed leaves.</p>
+								<span style="float: right;">£4.29</span>
+								<h4>Battered Mushrooms</h4>
+								<p>Button mushrooms fried in our own recipe batter.</p>
+							</div>
+							<h3>Mains</h3>
+							<div class="m4a17-menu-sub">
+								<span style="float: right;">£6.99</span>
+								<h4>Cheeseburger</h4>
+								<p>Our 6oz* freshly pressed corn-fed Aberdeen Angus burger.</p>
+								<span style="float: right;">£6.79</span>
+								<h4>Southern Fried Chicken Burger</h4>
+								<p>Tender southern fried chicken fillets served in a large toasted bun.</p>
+								<span style="float: right;">£5.89</span>
+								<h4>Chicken Caesar Wrap</h4>
+								<p>A soft flour tortilla stuffed full with crispy chicken, Caesar dressing, Cos lettuce and tomato.</p>
+								<span style="float: right;">£7.29</span>
+								<h4>BBQ Pulled Pork Wrap</h4>
+								<p>A soft flour tortilla loaded with BBQ flavoured pulled pork.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a17" nexturl="#m4a17_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a17_2">
+	<section id="m4a17_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				Read these statements and choose
+				<b>True</b> or
+				<b>False</b>.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+					{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module4/a17/1.m4a"></button>
+						<br>
+						<div class="number">1</div>
+						<span id="question_text">Tu likes the menu.</span>
+						<div class="row">
+							<div class="col-sm-6">
+								<button id="true" class="button2 item-space ddwidth9">True</button>
+							</div>
+							<div class="col-sm-6">
+								<button id="false" class="button2 item-space ddwidth9">False</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{> scorebox1 rightSession="m4a17_2RightScore" wrongSession="m4a17_2WrongScore"}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a17_1" nexturl="#m4a17_scores" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<!-- <template name="m4a17_bad">
+	<section id="m4a17_bad" class="hidden">
+	<div class="content">
+		<h2 class="center">You got too many questions wrong.</h2>
+		<div class="parapaper scorecontainer">
+			{{> scorebox2 rightID="m4a17RightScore" wrongID="m4a17WrongScore"}}
+			<div class="scoreright">
+				<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+				<a draggable="false" href="#m4a17_2">
+					<div class="button1" id="try_again_button">{{>touch yes="Tap" no="Click"}} to try again</div>
+				</a>
+			</div>
+			<div class="parent_expander"></div>
+		</div>
+	</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a17_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m4a17_good">
+	<section id="m4a17_good" class="hidden">
+	<div class="content">
+		<h2 class="center">Well done! You got a good score.</h2>
+		<div class="parapaper scorecontainer">
+			{{> scorebox2 rightID="m4a17RightScore" wrongID="m4a17WrongScore"}}
+			<div class="scoreright">
+				<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+			</div>
+			<div class="parent_expander"></div>
+		</div>
+	</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a17_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template> -->
+
+
+<template name="m4a17_scores">
+	<section id="m4a17_bad" class="hidden">
+		<div class="content">
+
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m4a17_2RightScore" wrongSession="m4a17_2WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m4a17_2" id="m4a17retry" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a17_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m4a17_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m4a17_2RightScore" wrongSession="m4a17_2WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a17_3" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a17_3">
+	<section id="m4a17_3" class="hidden">
+		<div class="content">
+			<h2 class="center">You can now read the conversation between K, Tu and Elle.</h2>
+
+			<ul class="speech center-block">
+
+				<li>
+					<img draggable="false" src="images/conv-pics/k.png" alt="K">
+					<div class="speech1">
+						What do you fancy then?
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						There's a good choice.
+					</div>
+					<img draggable="false" src="images/conv-pics/tu2.png" alt="Tu">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/conv-pics/elle.png" alt="Elle">
+					<div class="speech1">
+						I can't eat mushrooms.
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						You mean you don't like mushrooms?
+					</div>
+					<img draggable="false" src="images/conv-pics/k2.png" alt="K">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/conv-pics/elle.png" alt="Elle">
+					<div class="speech1">
+						I hate them.
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						Well, why don't you have the soup?
+					</div>
+					<img draggable="false" src="images/conv-pics/tu2.png" alt="Tu">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/conv-pics/k.png" alt="K">
+					<div class="speech1">
+						Yes - ask the waiter what the soup of the day is.
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						The cheeseburger sounds good. I'm starving!
+					</div>
+					<img draggable="false" src="images/conv-pics/tu2.png" alt="Tu">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/conv-pics/k.png" alt="K">
+					<div class="speech1">
+						I fancy the chicken wrap. What about you, Elle?
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						I'm going to go for the chicken burger.
+					</div>
+					<img draggable="false" src="images/conv-pics/elle2.png" alt="Elle">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/conv-pics/k.png" alt="K">
+					<div class="speech1">
+						Do you want your usual drinks? Coke?
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						I'm going to have Irn Bru. It's amazing! Scotland's national drink after whisky you know.
+					</div>
+					<img draggable="false" src="images/conv-pics/tu2.png" alt="Tu">
+				</li>
+
+				<li>
+					<img draggable="false" src="images/conv-pics/elle.png" alt="Elle">
+					<div class="speech1">
+						Me too. I love it.
+					</div>
+				</li>
+
+				<li>
+					<div class="speech2">
+						Well, I'll order some water I think. That'll do me.
+					</div>
+					<img draggable="false" src="images/conv-pics/k2.png" alt="K">
+				</li>
+
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a17_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>

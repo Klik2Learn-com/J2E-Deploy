@@ -1,0 +1,205 @@
+<template name="m9a10"> 
+<article class="with-tools-sidebar m9a1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Exeter');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 10 - {{>m9a10Title}}</div>
+		</header>
+		<section id="m9a10">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a10Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a10Intro}}</h3>
+				{{> m9a10Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a10_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a10_1}}
+		{{>m9a10_2}}
+		{{>m9a10_3}}
+		{{>EndPage char="k" act="m9a10" nextact="m9a11" place="Exeter"}}
+	</div>
+</article>
+</template>
+<template name="m9a10_2"> 
+	<section id="m9a10_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="text-center">Before you read the article about working at Amazon try this quiz. Don't worry if you get the answers wrong!</h3>
+			<div class="container-fluid TrueFalse center">
+				{{>rightwrong}}
+				<div id="0" class="row">
+					<div class="col-sm-12">
+						<div class="number">1</div> How many sick days are you allowed before you lose your job at Amazon?
+					<Br>
+						<button class="button2 item-space" data-value="1">seven</button>
+						<button class="button2 item-space" data-value="2">ten</button>
+						<button class="button2 item-space" data-value="3">three</button>
+					</div>
+				</div>
+				
+				<div id="1" class="row hidden">
+					<div class="col-sm-12">						
+						<div class="number">2</div> How far is it from one end of an Amazon warehouse to another?
+					<Br>
+						<button class="button2 item-space" data-value="1">1 mile</button>
+						<button class="button2 item-space" data-value="2"> half a mile</button>
+						<button class="button2 item-space" data-value="3">quarter of a mile</button>
+					</div>
+				</div>
+				
+				<div id="2" class="row hidden">
+					<div class="col-sm-12">						
+						<div class="number">3</div>	How many items does Amazon sell on its website?
+					<Br>
+						<button class="button2 item-space" data-value="1">10 million items</button>
+						<button class="button2 item-space" data-value="2">100 million items</button>
+						<button class="button2 item-space" data-value="3">200 million items</button>
+					</div>
+				</div>
+				
+				<div id="3" class="row hidden">
+					<div class="col-sm-12">						
+						<div class="number">4</div>	How many hours do Amazon employees work per day?
+					<Br>
+						<button class="button2 item-space" data-value="1">8 hours</button>
+						<button class="button2 item-space" data-value="2">9 hours</button>
+						<button class="button2 item-space" data-value="3">10 hours</button>
+					</div>
+				</div>
+				
+				<div id="4" class="row hidden">
+					<div class="col-sm-12">						
+						<div class="number">5</div>	During the Christmas shopping period, how many items can be packed in one warehouse by Amazon employees?
+					<Br>
+						<button class="button2 item-space" data-value="1">155,000</button>
+						<button class="button2 item-space" data-value="2">255,000</button>
+						<button class="button2 item-space" data-value="3">450,000</button>
+					</div>
+				</div>
+				
+				<div id="5" class="row hidden">
+					<div class="col-sm-12">						
+						<div class="number">6</div>	How much does Amazon pay its workers?
+					<Br>
+						<button class="button2 item-space" data-value="1">the minimum wage</button>
+						<button class="button2 item-space" data-value="2">above the minimum wage</button>
+					</div>
+				</div>				
+				
+				{{>blankrow}}
+				
+			</div>
+			
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a10_1" nexturl="#m9a10_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a10_3"> 
+	<section id="m9a10_3" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content"> 
+  			<h3 class="center">Now read the article and watch for the answers to the quiz. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.</h3>
+      			<div class="parapaper article-text">
+			
+					<div class="container-fluid-no-gutter">
+						<div class="row">
+							<div class="col-xs-5">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/1.m4a"></button>
+							</div>
+							<div class="col-xs-7">
+								{{>metametrics level="5" star="no" align="right"}}
+							</div>
+						</div>
+					</div>
+					
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-4x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module9/warehouse.jpg" alt="Warehouse"></div></div>
+					</figure>
+					
+					<p> It’s the world's biggest online business. But how does it treat its employees? What’s it really like to work at Amazon? Here’s a <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="something you experience yourself.">first hand</a> account from Gill Brown who used to work for Amazon.</p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/2.m4a"></button>
+					</div>
+					<p>For a week, I was an Amazon temporary worker. At the first interview I filled in a form, got tested for drugs and alcohol and they made sure I could read. Some people were selected for interviews. I trained with Pete who had been unemployed for the past three years. His partner Susan had also just started. It took them more than an hour to get to work. "We had to get the kids up at five," he says. After a 10½-hour shift, they get home at 9pm. Susan twisted her ankle on the first shift. The next day she phoned in to say she couldn’t come in to work.  She will receive a "point". If she receives three points, she will be "released", which is how you get sacked by Amazon.</p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/3.m4a"></button>
+					</div>
+					<p>The first item I see in Amazon's warehouse is a package of dog <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="a thick piece of paper or cloth that a baby wears on its bottom.">nappies</a>. The warehouse is 800,000 square feet, - the size of 11 football pitches. The UK's largest warehouse is the size of 14 football pitches. It’s a quarter of a mile from end to end. </p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/4.m4a"></button>
+					</div>
+					<p>There are more than 100 million items on Amazon’s UK website: if you can possibly imagine it, Amazon sells it.  I spend 10½ hours a day picking items off the shelves - a <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="hugely successful boy band created during the TV programme – the X Factor. The five boys have millions of teenage fans and the fastest selling album in 2013.">One Direction</a> charm bracelet, a dog coat, a <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="bottom" data-content="an object covered with a soft material that allows a cat to exercise its claws to prevent damage to furniture.">cat scratching post</a>, a banana slicer.</p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/5.m4a"></button>
+					</div>
+					<p>On my second day, the manager tells us that we have picked and packed 155,000 items in the past 24 hours. Tomorrow, the 2nd of December is the busiest online shopping day of the year. The figure will be close to 450,000 and this is just one of eight warehouses across the UK. 24 hours a day, four <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="a period  of working time usually around 8-9 hours – often used for times outwith a normal working day e.g. night shift.">shifts</a> will be working at least a 50-hour week, hand-picking and packing each item.</p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/6.m4a"></button>
+					</div>
+					<p>Amazon took 3.5 million orders on a single day last year. Christmas is its biggest challenge and the company takes on an extra 15,000 staff. It expects to double the number of warehouses in Britain in the next three years and it is already one of the most powerful <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="a company that trades all over the world.">multinationals</a> on the planet.</p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/7.m4a"></button>
+					</div>
+					<p>But Amazon pays its workers the minimum wage. It pushes them to the limits of European working times, and sacks them if they take three sick breaks in any three-month period. Other companies have accused Amazon of bullying. <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Member of Parliament.">MPs</a> called it ‘<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="morally wrong.">immoral</a>' because it pays <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="a very small amount.">minimal</a> tax. We may be living in a future where multinational corporations have more power than governments.</p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/8.m4a"></button>
+					</div>
+					<p>Amazon is successful for a reason. It’s brilliant at what it does. It has mastered the challenge of storing tens of millions of products and figuring out how to get them to people on time, without fail. No one else has come even close. We didn't just pick and pack more than 155,000 items on my first day. We picked and packed the right items and sent them to the right customers. "We didn't miss a single order," our section manager tells us with pride.</p>
+
+					<div class="article-header">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a10/9.m4a"></button>
+					</div>
+					<p>To work in what Amazon calls a "<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="doing something necessary or something that you have promised to do.">fulfilment</a> centre" is to be a tiny <a draggable="false" href="#" title="" data-toggle="popover" role="top" tabindex="0"  data-trigger="manual" data-placement="top" data-content="a part shaped like a tooth on the edge of a wheel in a machine, that makes another wheel turn.">cog</a> in a massive global machine. It's a new industry on an enormous scale, made possible by new technology. Whether we like it or not, Amazon is the future of shopping and being a worker in an Amazon "fulfilment centre" is the future of work for thousands of people.</p>
+					
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+				</div>
+	 	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a10_2" nexturl="#m9a10_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a10_1"> 
+	<section id="m9a10_1" class="hidden"> 
+		<div class="content">  
+			{{> dictionary_page
+				word1="temporary"
+				word2="sack"
+				word3="warehouse"
+				word4="bracelet"
+				word5="corporation"
+				word6c="hidden"
+				word7c="hidden"
+				word8c="hidden"
+				word9c="hidden"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a10" nexturl="#m9a10_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

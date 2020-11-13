@@ -1,0 +1,226 @@
+<template name="m4a27">
+	<article class="with-tools-sidebar m4a27">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Glasgow');"><i class="titlereturn fa fa-arrow-left"></i></a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 27 - {{>m4a27Title}}</div>
+			</header>
+
+
+			<section id="m4a27">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a27Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m4a27Intro}}</h3>
+					{{> m4a27Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a27_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a27_1}} {{>m4a27_2}} {{>m4a27_3}} {{>m4a27_4}} {{>m4a27_5}} {{>EndPage char="elle" act="m4a27" nextact="m4a28" place="Glasgow"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a27_1">
+	<section id="m4a27_1" class="hidden">
+		<div class="content">
+			<h1>Phrasal Verbs</h1>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 1 looked at <b>‘to get’</b> with different prepositions</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 2 looked at <b>‘to go on’</b></h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 3 looked at <b>‘to come’</b> with different prepositions</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a27" nexturl="#m4a27_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a27_2">
+	<section id="m4a27_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the right preposition into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>If you add a pinch of salt it
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target1">&nbsp;</div> the flavour.</li>
+					<li>The prolonged general strike
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target2">&nbsp;</div> the government.</li>
+					<li>Economists have calculated that the cost of
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target3">&nbsp;</div> a child to the age of 21 can be as much as £200,000.</li>
+					<li>Despite being down to ten men, they
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target4">&nbsp;</div> a famous victory.</li>
+					<li>It can take many years to
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target5">&nbsp;</div> a change in public attitudes.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">brought
+							<u>off</u>
+						</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">brought
+							<u>down</u>
+						</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target5">bring
+							<u>about</u>
+						</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">brings
+							<u>out</u>
+						</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">bringing
+							<u>up</u>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a27_1" nexturl="#m4a27_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a27_3">
+	<section id="m4a27_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b><br>To publish:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To make something fall <br>or collapse:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b><br>To raise:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid="target3">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">The defending footballer <b>brought</b> the striker <b>down</b> in the penalty box.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">Jamie Oliver is <b>bringing out</b> a new cookery book next month.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target3">If you don’t <b>bring</b> children <b>up</b> to eat healthily, it can affect them in later life.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a27_1" nexturl="#m4a27_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a27_4">
+	<section id="m4a27_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To achieve something <br>remarkable or difficult:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b><br>To make something happen:</b><br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">It’s difficult to <b>bring about</b> a change in people’s exercise habits.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">You’ve persuaded him to go to the gym….how did you <b>bring</b> that <b>off</b>!</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			{{> rightwrong}}{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a27_4_1" nexturl="#m4a27_4_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a27_5">
+	<section id="m4a27_5" class="hidden">
+		<div class="content">
+			{{> Tu_saved module="4"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a27_4" nexturl="#m4a27_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

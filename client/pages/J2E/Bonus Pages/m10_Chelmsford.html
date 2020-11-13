@@ -1,0 +1,125 @@
+<template name="MoreAboutChelmsford">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Chelmsford"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m10l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m10l4}}</div>
+		</header>
+
+		<section id="moreaboutChelmsford">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Chelmsford/Chelmsford1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l4_A">
+						<p>Chelmsford Cathedral</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Chelmsford/Chelmsford2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l4_B">
+						<p>RHS Garden Hyde Hall</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Chelmsford/Chelmsford3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l4_C">
+						<p>Cricket</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Chelmsford/Chelmsford4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l4_D">
+						<p>Hylands House and Estate</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l4_A">Chelmsford Cathedral</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chelmsford/Chelmsford1.jpg" alt="Chelmsford Cathedral" style="max-width: 250px;">
+					</figure>
+					<p>Like many cathedrals, Chelmsford dates back to medieval times but has been added to over the centuries. It has a particular connection with America. One of its curates emigrated to Massachusetts and became an important man in the area. There is now a plaque in the cathedral where he is described as the Father of American democracy. The cathedral now holds regular services and concerts throughout the year.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.chelmsfordcathedral.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l4_B">RHS Garden Hyde Hall</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chelmsford/Chelmsford2.jpg" alt="RHS Garden Hyde Hall" style="max-width: 250px;">
+					</figure>
+					<p>The garden at Hyde Hall is said to be one of the finest in England with wonderful panoramic views over the Essex countryside. Visitors can enjoy different types of gardens from winter gardens to the dry garden which has an amazing variety of plants that need very little water. Hyde Hall also has a large population of brown hares, butterflies and birds.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitessex.com/Chelmsford-RHS-Garden-Hyde-Hall/details/?dms=3&venue=0176781" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l4_C">Cricket</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chelmsford/Chelmsford3.jpg" alt="Cricket" style="max-width: 250px;">
+					</figure>
+					<p>Essex cricket club is one of the top twenty clubs in Britain. The game of cricket dates back to the 16th century in England and there are records of games being played in Essex in the 17th century. Essex has produced some of England’s finest batsmen who played for the national team.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.essexcricket.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l4_D">Hylands House and Estate</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Chelmsford/Chelmsford4.jpg" alt="Hylands House and Estate" style="max-width: 250px;">
+					</figure>
+					<p>Hylands House is over 250 years old and has been restored to a high standard. It is now a stunning white mansion open to visitors two days a week. Hyland House has been voted the best venue for weddings in the area with beautiful grounds as well as grand, spacious rooms which can hold up to 300 people. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitessex.com/Chelmsford-Hylands-House-and-Estate/details/?dms=3&venue=0172766" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

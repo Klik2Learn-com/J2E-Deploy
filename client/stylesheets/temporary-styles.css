@@ -1,0 +1,60 @@
+	/*=====
+			BETT Banner
+	 =====*/
+/*
+.bett-banner-2017 {
+	font-weight: bold;
+	text-align: right;
+	position: fixed;
+	top: 72px;
+	right: 0;
+	border-radius: 0 0 0 30px;
+	background: #00a7ac;
+	transition: background .2s;
+}
+
+.bett-banner-2017:hover {
+	background: #00c0c6;
+}
+
+.bett-banner-2017 span {
+	color: black !important;
+	display: inline-block;
+	padding: 12px 0 12px 40px;
+	vertical-align: top;
+}
+
+.bett-banner-2017 img {
+	margin: -10px 0 -9px;
+	padding: 0 10px;
+	width: 300px;
+	height: auto;
+	vertical-align: top;
+}
+
+.content-landing.first {
+	padding-top: 150px !important;
+}
+
+@media (max-width: 767px) {
+	.bett-banner-2017 {
+		text-align: center;
+		width: 100%;
+		left: 0;
+		border-radius: 0 0 20px 20px;
+	}
+	
+	.bett-banner-2017 a {
+		display: block;
+	}
+	
+	.bett-banner-2017 span {
+		display: none;
+	}
+	
+	.login-page > header .banner {
+		margin-left: 0;
+		margin-top: 3px;
+		width: 140px;
+	}
+}*/

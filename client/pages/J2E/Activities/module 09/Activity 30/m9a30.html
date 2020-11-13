@@ -1,0 +1,393 @@
+<template name="m9a30"> 
+<article class="with-tools-sidebar m9a3">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StAustell');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>{{> activity}} 30 - {{> m9a30Title}}</div>
+		</header>
+		<section id="m9a30">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a30Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m9a30Intro}}</h3>
+				{{> m9a30Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a30_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a30_1}}
+		{{>m9a30_2}}
+		{{>m9a30_3}}
+		{{>m9a30_4}}
+		{{>m9a30_5}}
+		{{>m9a30_6}}
+		{{>m9a30_7}}
+		{{>m9a30_8}}
+		{{>m9a30_9}}
+		{{>m9a30_10}}
+		
+		{{#if gameAccess}}
+			{{>EndPage char="elle" act="m9a30" nextact="m9Game" place="StAustell"}}
+		{{else}}
+			{{>EndPage2 char="all" act="m9a30" nextplace="Cambridge" nextmod="10" place="StAustell" end="finished"}}
+		{{/if}}
+	</div>
+</article>
+</template>
+
+<template name="m9a30_1"> 
+	<section id="m9a30_1" class="hidden"> 
+		{{#if activeSection}} 
+			<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 0;">
+						<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id = "target1"></div> something, you write it quickly and roughly.</li>
+						<li>You use <div class="ddseatedtarget ddwidth10 dd1line" id = "target2"></div> to refer to jobs and tasks which are boring or unpleasant but which must be done.</li>
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target3"></div> is a date when you must finish a piece of work.</li> 
+						<li><div class="ddseatedtarget ddwidth10 dd1line" id = "target4"></div> is simple medical treatment given as soon as possible to a person who is injured or unwell.</li>
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target5"></div> is a person who is skilled in a particular type of treatment to heal someone.</li>
+					</ol>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4 center">
+								<div id="submitButton" class="button1 buttonsmall">Submit</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >drudgery</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >therapist</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >scribble</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >first-aid</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >deadline</div></div>
+			</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a30" nexturl="#m9a30_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m9a30_2"> 
+	<section id="m9a30_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 5;">
+						<li>Someone who has an <div class="ddseatedtarget ddwidth10 dd1line" id = "target1"></div> works for a fixed period of time to learn a particular skill.</li>
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target2"></div> is a piece of jewellery you wear on your wrist.</li>
+						<li>An <div class="ddseatedtarget ddwidth10 dd1line" id = "target3"></div> is a person whose job is to translate into another language.</li>
+						<li>A person's <div class="ddseatedtarget ddwidth10 dd1line" id = "target4"></div> is an experienced person who gives help and advice.</li>
+						<li> To <div class="ddseatedtarget ddwidth10 dd1line" id = "target5"></div> is to stop getting upset easily.</li>
+					</ol>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4 center">
+								<div id="submitButton" class="button1 buttonsmall">Submit</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >bracelet</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >apprenticeship</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >interpreter</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >grow a thick skin</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >mentor</div></div>
+			</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a30_1" nexturl="#m9a30_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m9a30_3"> 
+	<section id="m9a30_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 10;">
+						<li>If you describe someone as  <div class="ddseatedtarget ddwidth10 dd1line" id = "target1"></div>, you mean that they are more attractive, exciting.</li>
+						<li>An <div class="ddseatedtarget ddwidth10 dd1line" id = "target2"></div> is a person who sets up businesses and business deals.</li> 
+						<li><div class="ddseatedtarget ddwidth10 dd1line" id = "target3"></div> is treating one person or group less fairly than others.</li>
+						<li><div class="ddseatedtarget ddwidth10 dd1line" id = "target4"></div> is the admiration and respect that you feel towards another person.</li>
+						<li>Something that is <div class="ddseatedtarget ddwidth10 dd1line" id = "target5"></div> is in a state of complete disorder and confusion.</li>
+
+					</ol>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4 center">
+								<div id="submitButton" class="button1 buttonsmall">Submit</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >discrimination</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >chaotic</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >glamorous</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >esteem</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >entrepreneur</div></div>
+			</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a30_2" nexturl="#m9a30_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m9a30_4"> 
+	<section id="m9a30_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 15;">
+						<li>The <div class="ddseatedtarget ddwidth10 dd1line" id = "target1"></div> is the head of a company or organisation.</li>
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target2"></div> is a period when the economy of a country is doing badly.</li>
+						<li>If your employers <div class="ddseatedtarget ddwidth10 dd1line" id = "target3"></div> you, they tell you that you can no longer work for them.</li>
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target4"></div> is a large building where raw materials or manufactured goods are stored.</li>
+						<li>Something that is <div class="ddseatedtarget ddwidth10 dd1line" id = "target5"></div> lasts for only a limited time.</li>
+					</ol>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4 center">
+								<div id="submitButton" class="button1 buttonsmall">Submit</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >warehouse</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >chairman</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >temporary</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >recession</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >sack</div></div>
+			</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a30_3" nexturl="#m9a30_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+ <template name="m9a30_5"> 
+	<section id="m9a30_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 20;">
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target1"></div> is a legal agreement between two parties.</li>
+						<li> To <div class="ddseatedtarget ddwidth10 dd1line" id = "target2"></div> is to think you are better than you really are.</li>
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target3"></div> is a large business or company.</li> 
+						<li>A <div class="ddseatedtarget ddwidth10 dd1line" id = "target4"></div> is a very tall building in a city.</li>
+						<li><div class="ddseatedtarget ddwidth10 dd1line" id = "target5"></div> is a procedure  for introducing someone to a new job.</li>
+					</ol>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4 center">
+								<div id="submitButton" class="button1 buttonsmall">Submit</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >contract</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >skyscraper</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >corporation</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >induction</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >be full of yourself</div></div>
+			</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a30_4" nexturl="#m9a30_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a30_6"> 
+	<section id="m9a30_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 25;">
+						<li>If someone is <div class="ddseatedtarget ddwidth10 dd1line" id = "target1"></div> you, they use their strength or power to hurt or frighten you.</li>
+						<li> <div class="ddseatedtarget ddwidth10 dd1line" id = "target2"></div> is the attitude a person has to work: are they hard working or lazy?</li>						
+						<li>Their father was <div class="ddseatedtarget ddwidth10 dd1line" id = "target3"></div> good-looking.</li>
+						<li><div class="ddseatedtarget ddwidth10 dd1line" id = "target4"></div> food is more sophisticated and unusual than than ordinary food.</li>
+						<li>You can refer to a task or a job as a <div class="ddseatedtarget ddwidth10 dd1line" id = "target5"></div> when you have to keep doing it even if it’s unpleasant or exhausting.</li>
+					</ol>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4 center">
+								<div id="submitButton" class="button1 buttonsmall">Submit</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >work ethic</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >bullying</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >treadmill</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >gourmet</div></div>
+				<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" >incredibly</div></div>
+			</div></div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a30_5" nexturl="#m9a30_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m9a30_7"> 
+	<section id="m9a30_bad" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m9a30_Correct" wrongSession="m9a30_Incorrect"}}
+				<h2>You didn't get enough right answers to unlock the game</h2>
+				<h4 class="text-left">Get 23 or more right answers and the game will be unlocked! <a draggable="false" href="#m9a30_1" class="pagination restart">Try again</a> and see if you can improve your score.</h4>
+				<div class="game-locked-gif shadow"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m9a30_8" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m9a30_good" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m9a30_Correct" wrongSession="m9a30_Incorrect"}}
+				<h2>Well done! You got a good score! You can now play the game in this module!</h2>
+				<div class="game-unlocked-gif shadow"></div>
+				<h4>Click continue to see the answers and finish this activity.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m9a30_8" prev="hidden" next=""}}
+		</footer>
+	</section>
+ </template>
+
+<template name="m9a30_8">
+	<section id="m9a30_8" class="hidden">
+		<div class="content noselect">
+			<h1 >Answers</h1>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle">
+						<li>If you <div class="ddwidth10 dd1line ddseatedtarget2" id="target1"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">scribble</div></div> something, you write it quickly and roughly.</li>
+						<li>You use <div class="ddwidth10 dd1line ddseatedtarget2" id="target2"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">drudgery</div></div> to refer to jobs and tasks which are boring or unpleasant but which must be done.</li>
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target3"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">deadline</div></div> is a date when you must finish a piece of work.</li> 
+						<li><div class="ddwidth10 dd1line ddseatedtarget2" id="target4"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">first-aid</div></div> is simple medical treatment given as soon as possible to a person who is injured or unwell.</li>
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target5"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">therapist</div></div> is a person who is skilled in a particular type of treatment to heal someone.</li>
+						<li>Someone who has an <div class="ddwidth10 dd1line ddseatedtarget2" id="target1"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">apprenticeship</div></div> works for a fixed period of time to learn a particular skill.</li>
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target2"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">bracelet</div></div> is a piece of jewellery you wear on your wrist.</li>
+						<li>An <div class="ddwidth10 dd1line ddseatedtarget2" id="target3"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">interpreter</div></div> is a person whose job is to translate into another language.</li>
+						<li>A person's <div class="ddwidth10 dd1line ddseatedtarget2" id="target4"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">mentor</div></div> is an experienced person who gives help and advice.</li>
+						<li> To <div class="ddwidth10 dd1line ddseatedtarget2" id="target5"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">grow a thick skin</div></div> is to stop getting upset easily.</li>
+					</ol>
+				</div>
+		</div>
+		<footer>
+				{{>footer_nav prevurl="#m9a30_8" nexturl="#m9a30_9" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m9a30_9">
+	<section id="m9a30_9" class="hidden">
+		<div class="content noselect">
+			<h1 >Answers</h1>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 10;">
+						<li>If you describe someone as  <div class="ddwidth10 dd1line ddseatedtarget2" id="target1"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">glamorous</div></div>, you mean that they are more attractive, exciting.</li>
+						<li>An <div class="ddwidth10 dd1line ddseatedtarget2" id="target2"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">entrepreneur</div></div> is a person who sets up businesses and business deals.</li> 
+						<li><div class="ddwidth10 dd1line ddseatedtarget2" id="target3"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">discrimination</div></div> is treating one person or group less fairly than others.</li>
+						<li><div class="ddwidth10 dd1line ddseatedtarget2" id="target4"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">esteem</div></div> is the admiration and respect that you feel towards another person.</li>
+						<li>Something that is <div class="ddwidth10 dd1line ddseatedtarget2" id="target5"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">chaotic</div></div> is in a state of complete disorder and confusion.</li>
+						<li>The <div class="ddwidth10 dd1line ddseatedtarget2" id="target1"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">chairman</div></div> is the head of a company or organisation.</li>
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target2"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">recession</div></div> is a period when the economy of a country is doing badly.</li>
+						<li>If your employers <div class="ddwidth10 dd1line ddseatedtarget2" id="target3"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">sack</div></div> you, they tell you that you can no longer work for them.</li>
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target4"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">warehouse</div></div> is a large building where raw materials or manufactured goods are stored.</li>
+						<li>Something that is <div class="ddwidth10 dd1line ddseatedtarget2" id="target5"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">temporary</div></div> lasts for only a limited time.</li>
+					</ol>
+				</div>
+		</div>
+		<footer>
+				{{>footer_nav prevurl="#m9a30_8" nexturl="#m9a30_10" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m9a30_10">
+	<section id="m9a30_10" class="hidden">
+		<div class="content noselect">
+			<h1 >Answers</h1>
+				<div class="parapaper parapaperdd1 fold">
+					<ol class="olcircle" style="counter-reset: start 20;">
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target1"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">contract</div></div> is a legal agreement between two parties.</li>
+						<li> To <div class="ddwidth10 dd1line ddseatedtarget2" id="target2"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">be full of yourself</div></div> is to think you are better than you really are.</li>
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target3"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">corporation</div></div> is a large business or company.</li> 
+						<li>A <div class="ddwidth10 dd1line ddseatedtarget2" id="target4"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">skyscraper</div></div> is a very tall building in a city.</li>
+						<li><div class="ddwidth10 dd1line ddseatedtarget2" id="target5"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">induction</div></div> is a procedure  for introducing someone to a new job.</li>
+						<li>If someone is <div class="ddwidth10 dd1line ddseatedtarget2" id="target1"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">bullying</div></div> you, they use their strength or power to hurt or frighten you.</li>
+						<li> <div class="ddwidth10 dd1line ddseatedtarget2" id="target2"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">work ethic</div></div> is the attitude a person has to work: are they hard working or lazy?</li>						
+						<li>Their father was <div class="ddwidth10 dd1line ddseatedtarget2" id="target3"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">incredibly</div></div> good-looking.</li>
+						<li><div class="ddwidth10 dd1line ddseatedtarget2" id="target4"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">gourmet</div></div> food is more sophisticated and unusual than than ordinary food.</li>
+						<li>You can refer to a task or a job as a <div class="ddwidth10 dd1line ddseatedtarget2" id="target5"><div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">treadmill</div></div> when you have to keep doing it even if it’s unpleasant or exhausting.</li>
+					</ol>
+				</div>
+		</div>
+		<footer>
+				{{>footer_nav prevurl="#m9a30_9" nexturl="#m9a30_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+

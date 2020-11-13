@@ -1,0 +1,186 @@
+<template name="m4a4">
+	<article class="with-tools-sidebar m4a4">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/FortWilliam');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 4 - {{>m4a4Title}}</div>
+			</header>
+
+
+			<section id="m4a4">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a4Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m4a4Intro}}</h3>
+					{{> m4a4Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a4_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a4_1}} {{>m4a4_2}} {{>m4a4_3}} {{>EndPage char="k" act="m4a4" nextact="m4a5" place="FortWilliam"}}
+
+
+		</div>
+	</article>
+
+</template>
+
+<template name="m4a4_1">
+	<section id="m4a4_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h2 class="text-left">Here are the
+				<b>adjectives</b> from the 'sleep' paragraph of the
+				<i>Top Health Trends of 2013</i> article in Activity 3.</h2>
+			<div class="text-center">
+				<span class="avoidwrap">
+					<span class="avoidwrap">
+						<button class="button1 buttonsmall ddwidth6 item-space">sleep</button>
+						<button class="button1 buttonsmall ddwidth6 item-space">lowered</button>
+					</span>
+					<span class="avoidwrap">
+						<button class="button1 buttonsmall ddwidth6 item-space">high</button>
+						<button class="button1 buttonsmall ddwidth6 item-space">blood</button>
+					</span>
+				</span>
+				<span class="avoidwrap">
+					<span class="avoidwrap">
+						<button class="button1 buttonsmall ddwidth6 item-space">world</button>
+						<button class="button1 buttonsmall ddwidth6 item-space">weight</button>
+					</span>
+					<span class="avoidwrap">
+						<button class="button1 buttonsmall ddwidth6 item-space">regular</button>
+						<button class="button1 buttonsmall ddwidth6 item-space">national</button>
+					</span>
+				</span>
+			</div>
+			<br>
+			<div class="text-center">
+				<h3 class="instruction">{{>touch yes="Tap" no="Click"}} on an adjective to see if it can be used in other ways - as a noun or verb,</h3>
+				<div class="caption capgreen hidden" style="margin-top: 21px;">Right! They can all be used in other ways!</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a4" nexturl="#m4a4_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a4_2">
+	<section id="m4a4_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose whether these words are used as
+				<b>nouns</b>,
+				<b>verbs</b> or
+				<b>adjectives</b>.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>Did you
+						<span class="grammar">sleep</span> well?
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>She
+						<span class="grammar">lowered</span> her voice.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>The standard of the competition was very
+						<span class="grammar">high</span>.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>He needed a
+						<span class="grammar">blood</span> transfusion after the accident.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="">Noun</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2">Verb</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3 target4">Adjective</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a4_1" nexturl="#m4a4_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a4_3">
+	<section id="m4a4_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose whether these words are used as
+				<b>nouns</b>,
+				<b>verbs</b> or
+				<b>adjectives</b>.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 4;">
+					<li>The population of the
+						<span class="grammar">world</span> is increasing every year.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>She's always going on a diet to lose
+						<span class="grammar">weight</span>.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>It's a good idea to take
+						<span class="grammar">regular</span> exercise.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+					<li>He was selected for the
+						<span class="grammar">national</span> team.
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target8" style="margin-left: 1em;">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5 target6">Noun</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="">Verb</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7 target8">Adjective</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a4_2" nexturl="#m4a4_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

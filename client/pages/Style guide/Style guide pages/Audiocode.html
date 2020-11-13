@@ -1,0 +1,44 @@
+<template name="audiocode">
+	<section id="audiocode" class="hidden">
+		
+		<div class="content">
+		<h3>Code to make audio buttons work</h3>
+					<h4>Javascript</h4>
+						<pre class="htmlcode2">
+Template.m1a1.helpers({ 
+	activeSection: function(){ 
+		var activeSection = Session.get("activeSection"); 
+		return (activeSection == "#m1a1"); 
+	} 
+}); 
+ 
+Template.m1a1.events({
+
+	'click .buttonaudio': function(evt) {
+		audioButtonClickSetup($.k2l.m1a1.sound, $(evt.currentTarget));
+		playPauseAudio($.k2l.m1a1.sound, $(evt.currentTarget));
+	},
+	
+	'click .pagination': function(evt) {
+		
+		$.k2l.m1a1.sound.src = {};
+	}
+
+});
+
+Template.m1a1.rendered = function() {
+
+	if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	};
+	
+	if (typeof $.k2l.m1a1 == 'undefined') {
+		$.k2l.m1a1 = {};
+	};
+	
+	$.k2l.m1a1.sound = new Audio();
+}
+						</pre>
+				</div>
+	</section>
+</template>

@@ -1,0 +1,148 @@
+<template name="MoreAboutBolton">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Bolton"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m5l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m5l3}}</div>
+		</header>
+
+		<section id="moreaboutBolton">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bolton/Bolton1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l3_A">
+						<p>Smithills Hall Ghosts</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bolton/Bolton2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l3_B">
+						<p>Swan Lane Mills</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bolton/Bolton4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l3_D">
+						<p>Bank Top Brewery</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bolton/Bolton5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l3_E">
+						<p>Rivington Pike</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bolton/Bolton3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l3_C">
+						<p>The Bolton Steam Museum</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l3_A">Smithills Hall Ghosts</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bolton/Bolton1.jpg" alt="Smithills Hall Ghosts" style="max-width: 250px;">
+					</figure>
+					<p>Smithills Hall is a large manor house near the city of Bolton and is one of the largest manor houses in the north west of England. Parts of the building date back to the 15th century. Many people have spoken about strange experiences at the house and strange sightings. Smithills Hall has  appeared on  the TV programme, ‘Great British Ghosts.’</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.hauntedhappenings.co.uk/ghost_hunts/Smithills.php" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l3_B">Swan Lane Mills</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bolton/Bolton2.jpg" alt="Swan Lane Mills" style="max-width: 250px;">
+					</figure>
+					<p>The Lancashire area of England was once famous for its cotton mills. Swan Lane Mills was built at the beginning of the 20th century and was at that time the largest spinning mill in the world. The buildings are still in good condition and are used today by a storage company.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.heritage-explorer.co.uk/web/he/searchdetail.aspx?id=8412&crit=swan/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l3_C">The Bolton Steam Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bolton/Bolton3.jpg" alt="The Bolton Steam Museum" style="max-width: 250px;">
+					</figure>
+					<p>The cotton mills of Lancashire were powered by steam engines. This museum is the place to go if you want to see a live steam engine. There are 27 engines in the museum. All of them have been restored by volunteers and some of them are unique - the only example of that type of steam engine left in the world.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nmes.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l3_D">Bank Top Brewery</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bolton/Bolton4.jpg" alt="Bank Top Brewery" style="max-width: 250px;">
+					</figure>
+					<p>The Bank Top Brewery is an award winning pub in Bolton. It doesn’t have some of the more traditional things you expect to find in a British pub. There’s no TV or fruit machines. The atmosphere is quiet and customers are invited to try something new. There can try small quantities of different beers and ciders before buying one. You can also order a drink you like and they will deliver it to your home.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.banktopbrewery.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l3_E">Rivington Pike</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bolton/Bolton5.jpg" alt="Rivington Pike" style="max-width: 250px;">
+					</figure>
+					<p>Rivington Pike is the name for the top of a hill which is a local landmark near the village of Rivington. It is 363 metres high and has great views from the top of the Lake District and the Welsh mountains. There is a tower at the top and you can enjoy different events in the summer : music festivals, country fairs and a hill race.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitnorthwest.com/walk/rivington-pike/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

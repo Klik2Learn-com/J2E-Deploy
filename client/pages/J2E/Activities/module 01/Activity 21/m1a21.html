@@ -1,0 +1,117 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a21">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Portree');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 21 - {{>m1a21Title}}</div>
+		</header>
+				
+		<section id="m1a21">
+			<div class="content">
+			<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m1a21Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m1a21Intro}}</h3>
+{{> m1a21Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav nexturl="#m1a21_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m1a21_1}}
+		{{>m1a21_2}}
+		{{>m1a21_3}}
+		{{>m1a21_4}}
+		{{>m1a21_5}}
+		{{>m1a21_6}}
+		{{>m1a21_end}}
+	</div>
+</article>
+
+</template>
+
+<template name="m1a21ggbutt">
+	{{>blankrow}}
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			{{> gg_button gg_text="You can get more information about Prepositions in the Grammar Guide"}}
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+</template>
+<template name="m1a21_1">
+	<section id="m1a21_1" class="hidden">
+		<div class="content">
+			{{>PrepIntro1}}
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m1a21" nexturl="#m1a21_2" prev="hidden" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a21_2">
+	<section id="m1a21_2" class="hidden">
+		<div class="content">
+			{{>PrepIntro2}}
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m1a21_1" nexturl="#m1a21_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a21_3">
+	<section id="m1a21_3" class="hidden">
+		<div class="content">
+			{{>PrepIntro3}}
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m1a21_2" nexturl="#m1a21_4" prev="" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a21_4">
+	<section id="m1a21_4" class="hidden">
+		<div class="content">
+			{{>PrepIntro4}}
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m1a21_3" nexturl="#m1a21_5" prev="" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a21_5">
+	<section id="m1a21_5" class="hidden">
+		<div class="content">
+			{{>PrepIntro5}}
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m1a21_4" nexturl="#m1a21_6" prev="" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a21_6">
+	<section id="m1a21_6" class="hidden">
+		<div class="content">
+			{{>PrepIntro6}}
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m1a21_5" nexturl="#m1a21_end" prev="" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a21_end">
+{{>EndPage char="elle" act="m1a21" nextact="m1a22" place="Portree"}}
+</template>

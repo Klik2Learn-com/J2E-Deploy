@@ -1,0 +1,83 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="KyleofLochalsh">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+<a draggable="false" href="ModuleSelect"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> m1l4}}<em class="titleactcount">{{>m1l4No}}</em></div>
+		</header>
+				
+	<!-- Place -->
+	<section id="KyleofLochalsh" class="mappagecontent">
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-7 col-sm-push-5">
+					{{>m1_satnav}}
+					<!--Module-->
+					{{>mapButtons module="1" location="KyleofLochalsh" class="hidden-xs"}}
+				</div>
+				
+				<div class="col-sm-5 col-sm-pull-7">
+					<div class="activity-buttons">
+						<!-- Activity links - class should match act number -->
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a15">
+								<div class="actbutton a15 {{completed '1' '15'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">15</div>
+								</div>
+							</a><br>
+							{{> m1a15Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a16">
+								<div class="actbutton a16 {{completed '1' '16'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">16</div>
+								</div>
+							</a><br>
+							{{> m1a16Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a17">
+								<div class="actbutton a17 {{completed '1' '17'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">17</div>
+								</div>
+							</a><br>
+							{{> m1a17Title}}
+						</div>
+						
+						<div class="actbuttoncont">
+							<a draggable="false" href="/m1a18">
+								<div class="actbutton a18 {{completed '1' '18'}}">
+									<i class="actCompleteTick"></i>
+									<div class="number">18</div>
+								</div>
+							</a><br>
+							{{> m1a18Title}}
+						</div>
+						<!-- Keep the empties to ensure there are 10x actbuttoncont in total -->
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+						<div class="actbuttoncont"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row"><!--Module-->{{>mapButtons module="1" location="KyleofLochalsh" class="visible-xs"}}</div>
+		</div>
+	</section>
+</div>
+</article>
+
+</template>

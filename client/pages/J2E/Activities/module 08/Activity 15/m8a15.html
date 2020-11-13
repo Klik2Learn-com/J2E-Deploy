@@ -1,0 +1,175 @@
+<template name="m8a15"> 
+<article class="with-tools-sidebar m8a15">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Cardiff');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 15 - {{>m8a15Title}}</div>
+		</header>
+		<section id="m8a15">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a15Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a15Intro}}</h3>
+				{{> m8a15Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a15_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a15_1}}
+		{{>m8a15_2}}
+		{{>m8a15_3}}
+		{{>EndPage char="elle" act="m8a15" nextact="m8a16" place="Cardiff"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a15_1"> 
+	<section id="m8a15_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right part of the verb to the sentence.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>If you’ve got a few hours sometime, I <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> tell you about it.</li> <div class="info bottom shadow hidden">Real or Likely</div>
+						<li>If I could walk out tomorrow I <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> .</li> <div class="info bottom shadow hidden">Unreal or Unlikely</div>
+						<li>If I <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> realised how awful it was going to be, I wouldn’t have taken it.</li> <div class="info bottom shadow hidden">In the past</div>
+						<li>If something <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> wrong, it’s never his fault.</li> <div class="info bottom shadow hidden">Always true</div>
+					</ol>
+				</div>
+
+	<div class="visible-xs">
+		{{>gg_button gg_text="Click here to find out more about Conditionals in the Grammar Guide"}}
+	</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">'d</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">goes</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">would</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">'ll</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+
+	<div class="hidden-xs">
+		{{>gg_button gg_text="Click here to find out more about Conditionals in the Grammar Guide"}}
+	</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a15" nexturl="#m8a15_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a15_3"> 
+	<section id="m8a15_3" class="hidden"> 
+		<div class="content">
+			  <h1 class="center">Here are the sentences again.</h1>
+			  <div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 center"><h2>Zero Conditional:</h2></div>
+					<div class="col-sm-4 center">
+						<p>If something <span class='grammar'>goes</span> wrong,</p>
+						<div class="caption capgreen">Present Simple</div>
+					</div>
+					<div class="col-sm-4 center">
+						<p><span class='grammar'>It’s</span> never his fault.</p>
+						<div class="caption capgreen">Present Simple</div>
+					</div>
+				</div>
+				<div class="row"><div class="col-sm-12 " style="margin: 2em auto 1em;"><hr></div></div>
+				<div class="row">
+					<div class="col-sm-4 center"><h2>First Conditional:</h2></div>
+					<div class="col-sm-4 center">
+						<p>If <span class='grammar'>you’ve</span> got a few hours sometime,</p>
+						<div class="caption capgreen">Present Simple</div>
+					</div>
+					<div class="col-sm-4 center">
+						<p><span class='grammar'>I’ll</span> tell you about it.</p>
+						<div class="caption capgreen">Future</div>
+					</div>
+				</div>
+				<div class="row"><div class="col-sm-12 " style="margin: 2em auto 1em;"><hr></div></div>
+				<div class="row">
+					<div class="col-sm-4 center"><h2>Second Conditional:</h2></div>
+					<div class="col-sm-4 center">
+						<p>If I <span class='grammar'>could</span> walk out tomorrow,</p>
+						<div class="caption capgreen">Present Conditional</div>
+					</div>
+					<div class="col-sm-4 center">
+						<p>I <span class='grammar'>would</span>.</p>
+						<div class="caption capgreen">Present Conditional</div>
+					</div>
+				</div>
+				<div class="row"><div class="col-sm-12 " style="margin: 2em auto 1em;"><hr></div></div>
+				<div class="row">
+					<div class="col-sm-4 center"><h2>Third Conditional:</h2></div>
+					<div class="col-sm-4 center">
+						<p>If <span class='grammar'>I’d</span> realised how awful it was going to be,</p>
+						<div class="caption capgreen">Past Perfect</div>
+					</div>
+					<div class="col-sm-4 center">
+						<p>I <span class='grammar'>wouldn’t</span> have taken it.</p>
+						<div class="caption capgreen">Past Conditional</div>
+					</div>
+				</div>
+			</div>
+		   </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a15_2" nexturl="#m8a15_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a15_2"> 
+	<section id="m8a15_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+			<h3 class="center">This sentence uses the <b><span id="conditional">zero</span> conditional</b>. {{>touch yes="Tap" no="Click"}} the right tense for the <b id="part">first</b> part of the sentence.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">Future</span></div> </div> 
+					</div>
+					<div class="col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">Present Conditional</span></div></div>
+					</div>
+					<div class="col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">Present Simple</span></div></div>
+					</div>
+					<div class="col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">Past Perfect</span></div></div>
+					</div>
+					<div class="col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto3 animated flipInX" id="lottoc4"><div><span class="contents">Past Conditional</span></div></div> 
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h5> <span id="questions">If something <span class="grammar">goes</span> wrong,</span></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Conditionals in the Grammar Guide"}}
+			{{>rightwrong}}
+			{{>welldone}}
+			</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a15_1" nexturl="#m8a15_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

@@ -1,0 +1,42 @@
+<template name="m7Game_33">
+
+	<section id="m7Game_33" class="game-section game-legacy hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg14">
+						<div class="hotspot"><img draggable="false" src="/images/game/module7/letters/L.png" alt="L" class="img-responsive animated flipInX"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_33tu1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+	</section>
+</template>
+
+<template name="m7Game_33tu1">
+	<section id="m7Game_33tu1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg23"></div>
+					<div class="game-story-text">
+						Tu: “You mean she scratched it into the glass?”
+
+						<audio autoplay  class="hidden" id="tu1">
+						  <source src="/audio/module7/Game/You_mean_she_scratched_it_into_the_glass.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_34" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>

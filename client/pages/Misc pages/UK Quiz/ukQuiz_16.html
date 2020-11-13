@@ -1,0 +1,48 @@
+<template name="ukQuiz_16">
+	<section id="ukQuiz_16" class="hidden">
+	{{#if activeSection}}
+		<div class="content noselect">
+		<h1 class="center">UK Questions</h1>
+			<h3 class="center">Drag the elected British Prime Ministers in order from newest to oldest. {{>touch yes="Tap" no="Click"}} submit when you are finished.</h3>
+			<div class="center">
+			<h4>{{>arrow direction="left"}} Newest - oldest {{>arrow direction="right"}}</h4>
+				<div class="ddpic shadow ddwidth12" >
+					<div class="number">1</div>
+					<div id="target1" class="ddseatedtarget ddwidth10" style="height:163px;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12" >
+					<div class="number">2</div>
+					<div id="target2" class="ddseatedtarget ddwidth10" style="height:163px;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12" >
+					<div class="number">3</div>
+					<div id="target3" class="ddseatedtarget ddwidth10" style="height:163px;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12" >
+					<div class="number">4</div>
+					<div id="target4" class="ddseatedtarget ddwidth10" style="height:163px;">&nbsp;</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4 center">
+					<div id="submitButton" class="button1 buttonsmall">Submit</div>
+				</div>
+			</div>
+<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+			<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+			<div class="ddseat" style="height:153px"><div class="dd-img-wrapper ddwidth10 shadow" draggable="true"  data-destination="target1"><img draggable="false" src="../images/uk-quiz/david-cameron.jpg" class="dd-img img-responsive"><b>David Cameron</b></div></div>
+			<div class="ddseat" style="height:153px"><div class="dd-img-wrapper ddwidth10 shadow" draggable="true"  data-destination="target4"><img draggable="false" src="../images/uk-quiz/john-major.jpg" class="dd-img img-responsive"><b>John Major</b></div></div>
+			<div class="ddseat" style="height:153px"><div class="dd-img-wrapper ddwidth10 shadow" draggable="true"  data-destination="target2"><img draggable="false" src="../images/uk-quiz/tony-blair.jpg" class="dd-img img-responsive"><b>Tony Blair</b></div></div>
+			<div class="ddseat" style="height:153px"><div class="dd-img-wrapper ddwidth10 shadow" draggable="true"  data-destination="target3"><img draggable="false" src="../images/uk-quiz/margaret-thatcher.jpg" class="dd-img img-responsive"><b>Margaret Thatcher</b></div></div>
+		</div>
+		</div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#ukQuiz_15" nexturl="#ukQuiz_17" prev="hidden" next="hidden"}}
+	  </footer>
+	  {{/if}}
+	</section>
+</template>

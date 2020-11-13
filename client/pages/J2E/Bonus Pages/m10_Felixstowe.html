@@ -1,0 +1,124 @@
+<template name="MoreAboutFelixstowe">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Felixstowe"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m10l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m10l3}}</div>
+		</header>
+
+		<section id="moreaboutFelixstowe">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Felixstowe/Felixstowe1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l3_A">
+						<p>Bawdsey Radar</p>
+					</div>
+					<div class="col-sm-8 col-xs-6 bonus-image" style="background-image: url('images/bonus/Felixstowe/Felixstowe2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l3_B">
+						<p>Landguard Fort</p>
+					</div>					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Felixstowe/Felixstowe3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l3_C">
+						<p>Martello Towers</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Felixstowe/Felixstowe4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m10l3_D">
+						<p>The Grove</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l3_A">Bawdsey Radar</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Felixstowe/Felixstowe1.jpg" alt="Bawdsey Radar" style="max-width: 250px;">
+					</figure>
+					<p class="">Radar was first developed and tested in Suffolk between World War 1 and World War 2. Today you can visit Bawdsey where a lot of the early development of radar took place. It was the first of many radar stations built around the coast of Britain. During the battle of Britain, these radar stations were vital in helping the Royal Air Force defeat the much larger German air force. The station closed in 1991 but is now run as a museum by volunteers.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bawdseyradar.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l3_B">Landguard Fort</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Felixstowe/Felixstowe2.jpg" alt="Landguard Fort" style="max-width: 250px;">
+					</figure>
+					<p class="">The fort is built on a peninsula between the ports of Felixstowe and Harwich. During the 17th century the British and the Dutch fought a series of wars. In 1667, the Dutch navy tried to capture Landguard Fort but were defeated. This was the last time an invasion was made by sea against Britain. Since the 17th century it has been extended and today visitors can have a guided tour of the fort and gardens.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.landguard.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l3_C">Martello Towers</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Felixstowe/Felixstowe3.jpg" alt="Martello Towers" style="max-width: 250px;">
+					</figure>
+					<p class="">Martello towers can be found all over the world. The design originally came from the island of Corsica. You can see many of these towers around the coast of Britain. There are over a hundred in England. They were built during the 19th century and were designed to hold around 20 soldiers over two floors. They were about twelve metres high and had very thick walls. The Tower near Felixstowe is situated beside a very nice beach.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.geograph.org.uk/article/Martello-Towers" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m10l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m10l3_D">The Grove</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Felixstowe/Felixstowe4.jpg" alt="The Grove" style="max-width: 250px;">
+					</figure>
+					<p class="">If you like a walk in the woods, Abbey Grove is an ideal place. The wood has a range of native broadleaved trees and meadows for visitors to enjoy. You can see a range of wildlife including butterflies and a very rare beetle which is only found in this wood. A local community group now looks after the wood for visitors to enjoy.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitfelixstowe.org.uk/things-to-do/attractions/the-grove/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

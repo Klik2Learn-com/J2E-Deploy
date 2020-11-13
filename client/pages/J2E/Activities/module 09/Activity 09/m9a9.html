@@ -1,0 +1,60 @@
+<template name="m9a9"> 
+<article class="with-tools-sidebar m9a9">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Taunton');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 9 - {{>m9a9Title}}</div>
+		</header>
+		<section id="m9a9">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a9Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m9a9Intro}}</h3>
+				{{> m9a9Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a9_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a9_1}}
+		{{>EndPage char="elle" act="m9a9" nextact="m9a10" place="Taunton"}}
+	</div>
+</article>
+</template>
+<template name="m9a9_1"> 
+	<section id="m9a9_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Here’s the second paragraph from the article about Google (Activity 8) without the prepositions. Drag the right words to the spaces.</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+			{{> welldone}}
+			
+				<p>The library looks as if Miss Scarlet, <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> the board game Cluedo, has just  stepped <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> , leaving her rope <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> the back <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> a chair. A bookcase opens <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> reveal a secret room and even more private reading areas. Next <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target6">&nbsp;</div> the Lego play station, employees can climb <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target7">&nbsp;</div> a ladder that connects the fourth and fifth floors, where a really challenging treasure hunt is in progress. Dogs stroll the corridors <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target8">&nbsp;</div> their owners, and one is sleeping <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target9">&nbsp;</div> one of the dining areas.</p>
+			</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5 target6">to</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">outside</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">up</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target8">alongside</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">from</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">out</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">over</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">of</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a9" nexturl="#m9a9_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

@@ -1,0 +1,92 @@
+<template name="m1Game">
+<article class="with-tools-sidebar game m1Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/DunveganCastle');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 28 - {{>m1GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m1Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m1Game_intro" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m1Game_intro" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m1Game_intro}}
+		{{>m1Game_map}}
+
+		<!-- {{#if hardpath}} -->
+			{{>m1Game_h_1}}
+			{{>m1Game_h_2}}
+			{{>m1Game_h_3}}
+			{{>m1Game_h_4}}
+			{{>m1Game_h_5}}
+			{{>m1Game_h_6}}
+			{{>m1Game_h_7}}
+			{{>m1Game_h_8}}
+			{{>m1Game_h_9}}
+			{{>m1Game_h_10}}
+			{{>m1Game_h_11}}
+			{{>m1Game_h_12}}
+			{{>m1Game_h_13}}
+			{{>m1Game_h_14}}
+			{{>m1Game_h_15}}
+			{{>m1Game_h_16}}
+			{{>m1Game_h_17}}
+			{{>m1Game_h_18}}
+			{{>m1Game_h_19}}
+			{{>m1Game_h_20}}
+			{{>m1Game_h_21}}
+			{{>m1Game_h_22}}
+			{{>m1Game_h_23}}
+			{{>m1Game_h_24}}
+			{{>m1Game_h_25}}
+		<!-- {{else}} -->
+			{{>m1Game_e_1}}
+			{{>m1Game_e_2}}
+			{{>m1Game_e_3}}
+			{{>m1Game_e_4}}
+			{{>m1Game_e_5}}
+			{{>m1Game_e_6}}
+			{{>m1Game_e_7}}
+			{{>m1Game_e_8}}
+			{{>m1Game_e_9}}
+			{{>m1Game_e_10}}
+			{{>m1Game_e_11}}
+			{{>m1Game_e_12}}
+			{{>m1Game_e_13}}
+			{{>m1Game_e_14}}
+			{{>m1Game_e_15}}
+			{{>m1Game_e_16}}
+			{{>m1Game_e_17}}
+			{{>m1Game_e_18}}
+			{{>m1Game_e_19}}
+			{{>m1Game_e_20}}
+			{{>m1Game_e_21}}
+			{{>m1Game_e_22}}
+			{{>m1Game_e_23}}
+			{{>m1Game_e_24}}
+			{{>m1Game_e_25}}
+		<!-- {{/if}} -->
+		
+		{{>m1Game_outcome}}
+		{{>m1Game_outcomeD}}
+		{{>m1Game_bad2}}
+		{{>m1Game_okay2}}
+		{{>m1Game_good2}}
+		{{>m1Game_excellent2}}
+		{{>m1Game_ans}}
+		{{>EndPage2 char="all" act="m1Game" nextplace="Braemar" nextmod="2" place="DunveganCastle" end="completed"}}
+		
+	</div>
+</article>
+
+</template>

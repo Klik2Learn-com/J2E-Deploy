@@ -1,0 +1,616 @@
+<template name="m8a7"> 
+<article class="with-tools-sidebar m8a7">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Gloucester');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 7 - {{>m8a7Title}}</div>
+		</header>
+		<section id="m8a7">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a7Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a7Intro}}</h3>
+				{{> m8a7Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a7_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a7_1}}
+		{{>m8a7_2}}
+		{{>m8a7_3}}
+		{{>m8a7_4}}
+		{{>m8a7_5}}
+		{{>m8a7_6}}
+		{{>m8a7_7}}
+		{{>m8a7_8}}
+		{{>m8a7_9}}
+		{{>m8a7_10}}
+		{{>m8a7_11}}
+		{{>EndPage char="k" act="m8a7" nextact="m8a8" place="Gloucester"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a7_1"> 
+	<section id="m8a7_1" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="confident"
+					word2="conform"
+					word3="introvert"
+					word4="extrovert"
+					word5c="hidden"
+					word6c="hidden"
+					word7="agreeable"
+					word8="sensitive"
+					word9="creative"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7" nexturl="#m8a7_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a7_10"> 
+	<section id="m8a7_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Now try to write in the word underneath the illustration. Use the list of words below to help you.</h3>
+      			<div class="container-fluid">
+      			{{> rightwrong}}
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 center">
+							<div class="row">
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/toughminded.png" alt="Man with arms crossed"></div></div><br>
+									<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off" autofocus><input type="submit" value="OK"></form></span>
+								</div>
+								<div class="col-xs-2 col-xxs-12">
+									<div class="hidden-xxs" style="height:80px;"></div>
+									<br><h5>Vs</h5><br>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/agreeable.png" alt="Two people shaking hands"></div></div><br>
+									<span id="entryanswer1" class="textentry-disabled"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="box1 block">
+						<span class="word">Extrovert</span>
+						<span class="word">Tough-minded</span>
+						<span class="word">Introverted</span>
+						<span class="word">Confident</span>
+						<span class="word">Unstructured</span>
+						<span class="word">Conforming</span>
+						<span class="word">Sensitive</span>
+						<span class="word">Agreeable</span>
+						<span class="word">Creative</span>
+						<span class="word">Detail-conscious</span>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_9" nexturl="#m8a7_11" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a7_11"> 
+	<section id="m8a7_11" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Now try to write in the word underneath the illustration. Use the list of words below to help you.</h3>
+      			<div class="container-fluid">
+      			{{> rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 center">
+							<div class="row">
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/conforming.png" alt="Two women dressed the same"></div></div><br>
+									<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off"><input type="submit" value="OK"></form></span>
+								</div>
+								<div class="col-xs-2 col-xxs-12">
+									<div class="hidden-xxs" style="height:80px;"></div>
+									<br><h5>Vs</h5><br>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/creative.png" alt="Woman in colourful clothing"></div></div><br>
+									<span id="entryanswer1" class="textentry-disabled"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="box1 block">
+						<span class="word">Extrovert</span>
+						<span class="word">Tough-minded</span>
+						<span class="word">Introverted</span>
+						<span class="word">Confident</span>
+						<span class="word">Unstructured</span>
+						<span class="word">Conforming</span>
+						<span class="word">Sensitive</span>
+						<span class="word">Agreeable</span>
+						<span class="word">Creative</span>
+						<span class="word">Detail-conscious</span>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_9" nexturl="#m8a7_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a7_2"> 
+	<section id="m8a7_2" class="hidden"> 
+		<div class="content">  
+      			{{>complex_words}}
+				<div class="center">
+					<div class="parapaper paradic fold">
+						<ul class="dicwords">
+							<li>Tough-minded: someone who is strong willed, determined and not willing to accept other people’s opinions.</li>
+							<li>Detail-conscious: someone who pays a lot of attention to small points and getting everything right.</li>
+							<li>Unstructured: someone or something that is not well organised or planned.</li>
+						</ul>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_1" nexturl="#m8a7_3" prev="" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a7_3"> 
+	<section id="m8a7_3" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">Some employers use tests to find out about your personality before they offer you a job. One test uses the Big Five Model to describe people. It uses two words which have opposite meanings. </h4><br>
+      			<h1>The Big 5</h1>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 center">
+							<div class="row">
+								<div class="col-xs-1 col-xxs-12 text-left">
+									<div class="number">1</div>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Tough-minded</div>
+								 </div>
+								 <div class="col-xs-1 col-xxs-12"> 
+								 	<h4 class="item-space">Vs</h4> 
+								 </div>
+								 <div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Agreeable</div>
+								 </div>
+							</div>
+							{{>blankrow}}
+							<div class="row">
+								<div class="col-xs-1 col-xxs-12 text-left">
+									<div class="number">2</div>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Detail-conscious</div>
+								 </div>
+								 <div class="col-xs-1 col-xxs-12"> 
+								 	<h4 class="item-space">Vs</h4> 
+								 </div>
+								 <div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Unstructured</div>
+								 </div>
+							</div>
+							{{>blankrow}}
+							<div class="row">
+								<div class="col-xs-1 col-xxs-12 text-left">
+									<div class="number">3</div>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Confident</div>
+								 </div>
+								 <div class="col-xs-1 col-xxs-12"> 
+								 	<h4 class="item-space">Vs</h4> 
+								 </div>
+								 <div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Sensitive</div>
+								 </div>
+							</div>
+							{{>blankrow}}
+							<div class="row">
+								<div class="col-xs-1 col-xxs-12 text-left">
+									<div class="number">4</div>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Conforming</div>
+								 </div>
+								 <div class="col-xs-1 col-xxs-12"> 
+								 	<h4 class="item-space">Vs</h4> 
+								 </div>
+								 <div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Creative</div>
+								 </div>
+							</div>
+							{{>blankrow}}
+							<div class="row">
+								<div class="col-xs-1 col-xxs-12 text-left">
+									<div class="number">5</div>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Introverted</div>
+								 </div>
+								 <div class="col-xs-1 col-xxs-12"> 
+								 	<h4 class="item-space">Vs</h4> 
+								 </div>
+								 <div class="col-xs-5 col-xxs-12">
+									 <div class="caption item-space block">Extroverted</div>
+								 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_2" nexturl="#m8a7_4" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a7_4"> 
+	<section id="m8a7_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3>Look at the illustrations and drag the word that matches the illustration best.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/agreeable.png" alt="Two people shaking hands"></div></div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/detail.png" alt="Man with a spirit level"></div></div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/creative.png" alt="Woman wearing colourful clothing"></div></div>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd2lines ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/confidence.png" alt="Confident man"></div></div>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd2lines ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/introversion.png" alt="Shy woman"></div></div>
+					</figure>
+					<div data-destinationid="target5" class="ddseatedtarget dd2lines ddwidth8">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth8 dd2lines"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target3">Creative</div></div>
+					<div class="ddseat ddwidth8 dd2lines"><div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false"  data-destination="target2">Detail-conscious</div></div>
+					<div class="ddseat ddwidth8 dd2lines"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target1">Agreeable</div></div>
+					<div class="ddseat ddwidth8 dd2lines"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target5">Introverted</div></div>
+					<div class="ddseat ddwidth8 dd2lines"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target4">Confident</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_3" nexturl="#m8a7_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a7_5"> 
+	<section id="m8a7_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3>Look at the illustrations and drag the word that matches the illustration best.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/toughminded.png" alt="Man with arms folded"></div></div>
+					</figure>
+					<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/sensitive.png" alt="Anxious man"></div></div>
+					</figure>
+					<div data-destinationid="target2" class="ddseatedtarget dd1line2high ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/conforming.png" alt="Two women dressed the same"></div></div>
+					</figure>
+					<div data-destinationid="target3" class="ddseatedtarget dd1line2high ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/unstructured.png" alt="Messy office"></div></div>
+					</figure>
+					<div data-destinationid="target4" class="ddseatedtarget dd1line2high ddwidth8">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/extraversion.png" alt="Woman with megaphone"></div></div>
+					</figure>
+					<div data-destinationid="target5" class="ddseatedtarget dd1line2high ddwidth8">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth8 dd1line2high"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target3">Conforming</div></div>
+					<div class="ddseat ddwidth8 dd1line2high"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target5">Extrovert</div></div>
+					<div class="ddseat ddwidth8 dd1line2high"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target4">Unstructured</div></div>
+					<div class="ddseat ddwidth8 dd1line2high"><div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false"  data-destination="target2">Sensitive</div></div>
+					<div class="ddseat ddwidth8 dd2lines"><div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false"  data-destination="target1">Tough-minded</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_4" nexturl="#m8a7_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a7_6"> 
+	<section id="m8a7_6" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content"> 
+		<h3 class="center">Now you can {{>touch yes="tap" no="click"}} the pictures to see the word's meaning.</h3> 
+		<div class="center">
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who is pleasant and gets on well with people.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/agreeable.png" alt="Two people shaking hands"></div></div>
+					</figure>
+					<h5>Agreeable</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who pays a lot of attention to small points and getting everything right.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/detail.png" alt="Man with a spirit level"></div></div>
+					</figure>
+					<h5>Detail-conscious</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who is good at thinking of new ideas or using imagination to create new and unusual things.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/creative.png" alt="Woman wearing colourful clothing"></div></div>
+					</figure>
+					<h5>Creative</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who is certain about his/her ability to do things well.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/confidence.png" alt="Confident man"></div></div>
+					</figure>
+					<h5>Confident</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who is quiet and shy and prefers to be alone.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/introversion.png" alt="Shy woman"></div></div>
+					</figure>
+					<h5>Introverted</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who is strong willed, determined and not willing to accept other people's opinions.">
+					<figure>
+						<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/toughminded.png" alt="Man with arms folded"></div></div>
+					</figure>
+					<h5>Tough-minded</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who is easily upset by the things people say or do.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/sensitive.png" alt="Anxious man"></div></div>
+					</figure>
+					<h5>Sensitive</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who behaves in the way that most other people behave.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/conforming.png" alt="Two women dressed the same"></div></div>
+					</figure>
+					<h5>Conforming</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Not well organised or planned.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/unstructured.png" alt="Messy office"></div></div>
+					</figure>
+					<h5>Unstructured</h5></a>
+				</div>
+				<div class="ddpic shadow ddwidth10" >
+					<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Someone who is very confident and likes being the centre of attention.">
+					<figure>
+						<div class="ph-w ph-4x5 border1" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/extraversion.png" alt="Woman with megaphone"></div></div>
+					</figure>
+					<h5>Extrovert</h5></a>
+				</div>
+			</div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_5" nexturl="#m8a7_7" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a7_7"> 
+	<section id="m8a7_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Now try to write in the word underneath the illustration. Use the list of words below to help you.</h3>
+      			<div class="container-fluid">
+      			{{> rightwrong}}
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 center">
+							<div class="row">
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/extraversion.png" alt="Woman with megaphone"></div></div><br>
+									<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off" ><input type="submit" value="OK"></form></span>
+								</div>
+								<div class="col-xs-2 col-xxs-12">
+									<div class="hidden-xxs" style="height:80px;"></div>
+									<br><h5>Vs</h5><br>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/introversion.png" alt="Shy woman"></div></div><br>
+									<span id="entryanswer1" class="textentry-disabled"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="box1 block">
+						<span class="word">Extrovert</span>
+						<span class="word">Tough-minded</span>
+						<span class="word">Introverted</span>
+						<span class="word">Confident</span>
+						<span class="word">Unstructured</span>
+						<span class="word">Conforming</span>
+						<span class="word">Sensitive</span>
+						<span class="word">Agreeable</span>
+						<span class="word">Creative</span>
+						<span class="word">Detail-conscious</span>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_6" nexturl="#m8a7_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a7_8"> 
+	<section id="m8a7_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Now try to write in the word underneath the illustration. Use the list of words below to help you.</h3>
+      			<div class="container-fluid">
+      			{{> rightwrong}}
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 center">
+							<div class="row">
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/confidence.png" alt="Confident man"></div></div><br>
+									<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off" autofocus><input type="submit" value="OK"></form></span>
+								</div>
+								<div class="col-xs-2 col-xxs-12">
+									<div class="hidden-xxs" style="height:80px;"></div>
+									<br><h5>Vs</h5><br>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/sensitive.png" alt="Anxious man"></div></div><br>
+									<span id="entryanswer1" class="textentry-disabled"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="box1 block">
+						<span class="word">Extrovert</span>
+						<span class="word">Tough-minded</span>
+						<span class="word">Introverted</span>
+						<span class="word">Confident</span>
+						<span class="word">Unstructured</span>
+						<span class="word">Conforming</span>
+						<span class="word">Sensitive</span>
+						<span class="word">Agreeable</span>
+						<span class="word">Creative</span>
+						<span class="word">Detail-conscious</span>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_7" nexturl="#m8a7_9" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a7_9"> 
+	<section id="m8a7_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3>Now try to write in the word underneath the illustration. Use the list of words below to help you.</h3>
+      			<div class="container-fluid">
+      			{{> rightwrong}}
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 center">
+							<div class="row">
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/detail.png" alt="Man with a spirit level"></div></div><br>
+									<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="14" autocomplete="off" autofocus><input type="submit" value="OK"></form></span>
+								</div>
+								<div class="col-xs-2 col-xxs-12">
+									<div class="hidden-xxs" style="height:80px;"></div>
+									<br><h5>Vs</h5><br>
+								</div>
+								<div class="col-xs-5 col-xxs-12">
+									<div class="ph-w ph-4x5" style="max-width: 142px"><div class="ph"><img draggable="false" src="../images/module8/a7/unstructured.png" alt="Messy office"></div></div><br>
+									<span id="entryanswer1" class="textentry-disabled"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="box1 block">
+						<span class="word">Extrovert</span>
+						<span class="word">Tough-minded</span>
+						<span class="word">Introverted</span>
+						<span class="word">Confident</span>
+						<span class="word">Unstructured</span>
+						<span class="word">Conforming</span>
+						<span class="word">Sensitive</span>
+						<span class="word">Agreeable</span>
+						<span class="word">Creative</span>
+						<span class="word">Detail-conscious</span>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a7_8" nexturl="#m8a7_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>

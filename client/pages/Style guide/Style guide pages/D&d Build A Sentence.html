@@ -1,0 +1,59 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="dd3">
+			
+<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="dd_3" class="hidden">
+		<div class="content">
+	<h3 class="center">Drag the words to form the sentence.</h3>
+		
+
+		<div class="parapaper parapaperdd1 fold">
+			<!-- Ensure all 'ddsource ddwidth7' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+			<ol class="olcircle" start="1">
+			<li>
+			<div class="ddsource ddwidth7" >Hello,</div>
+			<div class="ddtarget ddwidth7 target2" id = "target1">&nbsp;</div>
+			<div class="ddtarget ddwidth7 target2" id = "target2">&nbsp;</div>
+			<div class="ddtarget ddwidth7 target2" id = "target3">&nbsp;</div>
+			<div class="ddtarget ddwidth7 target2" id = "target4">&nbsp;</div>
+			<div class="ddsource ddwidth7" >today?</div>
+			</li>
+			</ol>
+		</div>
+
+	
+		<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsource ddwidth7' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddsource ddwidth7 shadow" draggable="true" data-destination="target3">you</div>
+				<div class="ddsource ddwidth7 shadow" draggable="true" data-destination="target1">how</div>
+				<div class="ddsource ddwidth7 shadow" draggable="true" data-destination="target2">are</div>
+				<div class="ddsource ddwidth7 shadow" draggable="true" data-destination="target4">doing</div>
+			</div>
+		</div>
+		<div class="dd-fixed-fade animated slideInUp"></div>
+		<div class="dd-fixed-pad"></div>
+
+
+
+<!-- Drag and drop end -->
+		<footer>
+				<nav class="navfooter">
+					<ul>
+						<li class="first" style="float: left;">
+							<a draggable="false" href="#m1a1_1" title="previous" rel="prev" class="pagination">
+								{{> prev}}
+							</a>
+						</li>					
+						<li style="float: right;">
+						<!-- Set to second page of activity -->
+							<a draggable="false" href="#dd_4" title="next" rel="next" class="disabled next" id="dd2">
+								{{> next}}
+							</a>
+						</li>
+					</ul>
+				</nav>
+		</footer>
+		</div>
+	</section>
+	</template>

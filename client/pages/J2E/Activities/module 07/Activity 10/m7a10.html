@@ -1,0 +1,152 @@
+<template name="m7a10"> 
+<article class="with-tools-sidebar m7a1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StokeonTrent');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 10 - {{>m7a10Title}}</div>
+		</header>
+		<section id="m7a10">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a10Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m7a10Intro}}</h3>
+				{{> m7a10Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a10_0" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a10_1}}
+		{{>m7a10_2}}
+		{{>m7a10_3}}
+		{{>m7a10_4}}
+		{{>EndPage char="k" act="m7a10" nextact="m7a11" place="StokeonTrent"}}
+	</div>
+</article>
+
+</template>
+<template name="m7a10_1"> 
+
+	<section id="m7a10_0" class="hidden"> 
+		<div class="content">
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-push-6 xs-12">
+						<div class="ph-w ph-16x10" style="max-width: 513px"><div class="ph"><img draggable="false" src="images/conv-pics/conversation.png" alt="Conversation2"></div></div><p>&nbsp;</p>
+					</div>
+					<div class="col-sm-6 col-sm-pull-6 xs-12">
+						<div class="caption block">
+							<p>The situations in Activity 9 are all based on <u>real/likely</u> possibilities.</p>
+							<p>The situations here are <u>unreal/unlikely</u>. We know that something is untrue.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a10" nexturl="#m7a10_1" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+
+	<section id="m7a10_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Listen to the sentence then write the missing words in the spaces.</h3>
+				<div class="parapaper linespace para-ol-space fold text-center">
+					{{> rightwrong}} {{> welldone}}
+					<div class="row">
+						<div class="col-sm-offset-1 col-sm-2 col-xs-4 col-xxs-12">
+							<button class="buttonround buttonroundbig buttonaudio item-space" data-audiosrc="/audio/module7/a10/1.m4a"></button><br>
+						</div>
+						<div class="col-sm-8 col-xs-7 col-xxs-12">
+							<div class="ph-w ph-16x10 item-space" style="max-width: 513px"><div class="ph"><img draggable="false" src="images/conv-pics/conversation2.png" alt="Conversation"></div></div>
+						</div>
+					</div>
+					
+					<ul class="ulblank inline-block text-left">
+					<li><div class="number">1</div>No if you <span id="entryanswer0"><form class="textentry textentry-span-container"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span>  to, it <span id="entryanswer1" class="textentry-disabled"><form class="textentry textentry-span-container hidden"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> stamped on your passport. </li>
+
+					<li class="hidden"><div class="number">2</div>Yes, if you <span id="entryanswer2" class="textentry-disabled"><form class="textentry textentry-span-container hidden"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> from a country within in the European Economic Area, you <span id="entryanswer3" class="textentry-disabled"><form class="textentry textentry-span-container hidden"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> need permission to work in the UK.</li>
+
+					<li class="hidden"><div class="number">3</div>It depends on whether you use buses or the underground. If you <span id="entryanswer4" class="textentry-disabled"><form class="textentry textentry-span-container hidden"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> in London, an Oyster card <span id="entryanswer5" class="textentry-disabled"><form class="textentry textentry-span-container hidden"><input type="text" name="userText" size="7" autocomplete="off" autofocus><input type="submit" value="OK"></form></span> essential.</li>
+					</ul>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about Conditionals under Verbs in the Grammar Guide"}}
+
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a10_0" nexturl="#m7a10_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="k"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a10_2"> 
+	<section id="m7a10_2" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+			<h3 class="center">Here are the Second Conditional Sentences again.</h3>
+      			<div class="parapaper paraextract article-text center fold">
+      			<p>I'm from Spain. Do I need to register with the police when I arrive?</p>
+      			<br><br>
+				<p>
+<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a10/1.m4a"></button>No. If you <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past simple">needed</a> to, it <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Future Conditional">would be</a> stamped on your passport.
+				</p>	
+				</div>
+				{{>gg_button gg_text="Click here to find out more about Conditionals under Verbs in the Grammar Guide"}}	
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m7a10_1" nexturl="#m7a10_3" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a10_3"> 
+	<section id="m7a10_3" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">  
+			<h3 class="center">Here are the Second Conditional Sentences again.</h3>
+      			<div class="parapaper paraextract article-text center fold">
+      			<p>I'm from Saudi Arabia. Do I need to get permission to get a job?</p>
+      			<br><br>
+				<p>
+<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a10/2.m4a"></button>Yes. If you <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past simple">were</a> from a country within the European Economic Area, you <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Future Conditional">wouldn't need</a> permission to work in the UK.
+				</p>	
+				</div>
+				{{>gg_button gg_text="Click here to find out more about Conditionals under Verbs in the Grammar Guide"}}	
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m7a10_2" nexturl="#m7a10_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m7a10_4"> 
+	<section id="m7a10_4" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+				<div class="content">  
+			<h3 class="center">Here are the Second Conditional Sentences again.</h3>
+      			<div class="parapaper paraextract article-text center fold">
+      			<p>I'm studying in Glasgow. Can I get a season ticket to travel around?</p>
+      			<br><br>
+				<p>
+<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a10/3.m4a"></button>It depends on whether you use buses or the underground. If you  <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Past simple">were</a> in London, an Oyster card <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Future Conditional">would be</a> essential.
+				</p>	
+				</div>
+				{{>gg_button gg_text="Click here to find out more about Conditionals under Verbs in the Grammar Guide"}}	
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m7a10_3" nexturl="#m7a10_end" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

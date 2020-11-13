@@ -1,0 +1,118 @@
+<template name="m1a25">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/DunveganCastle');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 25 - {{>m1a25Title}}</div>
+			</header>
+
+			<section id="m1a25">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m1a25Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m1a25Intro}}</h3>
+					{{> m1a25Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a25_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{> m1a25_1}} {{> m1a25_2}} {{> m1a25_3}} {{> m1a25_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m1a25_1">
+	<section id="m1a25_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			<p>{{> idiomDefinition}}</p>
+			<p>&nbsp;</p>
+			{{> mod1_idioms_AB}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a25" nexturl="#m1a25_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a25_2">
+	<section id="m1a25_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			<p>{{> idiomDefinition}}</p>
+			<p>&nbsp;</p>
+			{{> mod1_idioms}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a25_1" nexturl="#m1a25_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a25_3">
+	<!-- Change id to represent module_activity_page, so module 3 activity 10 is m3a10_1 -->
+	<section id="m1a25_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			<h3 class="center">Drag the right idiom into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<!-- Ensure all 'ddsourceseated' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<!-- Make sure there is always a space between a ddseatedtarget div and any words or punctuation. -->
+				{{> rightwrong}}
+				<ol class="olcircle">
+					<li>The neighbours all helped each other during the bad weather - they all felt they were
+						<div class="ddseatedtarget ddwidth10 dd1line"
+						data-destinationid="target1">&nbsp;</div>.</li>
+					<li>Did you understand his explanation of Einstein's theory? It's all
+						<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target2">&nbsp;</div>.</li>
+					<li>He's too much of a
+						<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target3">&nbsp;</div> to come out for a run.</li>
+					<li>He's very friendly; he doesn't keep people
+						<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target4">&nbsp;</div>.</li>
+				</ol>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth10 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth10 dd1line">
+					<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target3">couch potato</div>
+				</div>
+				<div class="ddseat ddwidth10 dd1line">
+					<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target4">at arm's length</div>
+				</div>
+				<div class="ddseat ddwidth10 dd1line">
+					<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target1">in the same boat</div>
+				</div>
+				<div class="ddseat ddwidth10 dd1line">
+					<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target2">Greek to me</div>
+				</div>
+			</div>
+			{{> welldone}}
+</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a25_2" nexturl="#m1a25_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m1a25_end">
+	{{>EndPage char="k" act="m1a25" nextact="m1a26" place="DunveganCastle"}}
+</template>

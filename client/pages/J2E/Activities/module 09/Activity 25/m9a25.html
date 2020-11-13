@@ -1,0 +1,98 @@
+<template name="m9a25"> 
+<article class="with-tools-sidebar m9a25">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StAustell');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 25 - {{> m9a25Title}}</div>
+		</header>
+		<section id="m9a25">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a25Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m9a25Intro}}</h3>
+				{{> m9a25Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a25_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a25_1}}
+		{{>m9a25_2}}
+		{{>m9a25_3}}
+		{{>EndPage char="k" act="m9a25" nextact="m9a26" place="StAustell"}}
+	</div>
+</article>
+</template>
+<template name="m9a25_3"> 
+	<section id="m9a25_3" class="hidden"> 
+		<div class="content">  
+		{{> Tu_saved module="9"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a25_2" nexturl="#m9a25_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a25_2"> 
+	<section id="m9a25_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Here are five different prepositions with the verb 'to take'. Drag the preposition to the right sentence.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>She’s a very talented singer, she takes <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> her mother.</li>
+						<li>I take <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> everything I said, I was wrong – I misunderstood you.</li>
+						<li>I’m afraid she was taken <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> by his charm; he’s not to be trusted.</li>
+						<li>His career really took <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> after he moved to Australia.</li>
+						<li>That table takes <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> too much space in the room.</li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">back</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">up</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">off</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">after</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">in</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a25_1" nexturl="#m9a25_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a25_1"> 
+	<section id="m9a25_1" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">In English, you can add different prepositions to a verb to change the meaning - for example:</h4> 
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption item-space">in</div><div class="caption item-space"> up</div><div class="caption item-space">along</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption item-space">out</div><div class="caption item-space">down</div>
+						</div>
+					</div>
+				</div>
+				<h4 class="center">Phrasal Verbs are used a lot in everyday speech.</h4>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a25" nexturl="#m9a25_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

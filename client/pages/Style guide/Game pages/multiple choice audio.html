@@ -1,0 +1,122 @@
+<template name="ssgame_audiomc">
+	<section id="ssgame_audiomc" class="game-section game-audio hidden">
+		<div class="game-container game-image-audio m1Game-bg3">
+			<h3 class="center">Listen to the messages and decide which one is correct</h3>
+			<div class="game-content">
+				<div class="game-image-audio-xs m1Game-bg3"><div class="game-audio-box-tail-top"></div></div>
+				<div class="game-audio-box">
+					
+					<div class="game-audio-box-tail-left"></div>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-3">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m4a"></button>
+							</div>
+							<div class="col-xs-9">
+								<input type="radio" name="audio1" value="msg3" id="msg1">
+								<label for="msg1"><span></span>Message 1<u>Today at 3:52pm</u></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m4a"></button>
+							</div>
+							<div class="col-xs-9">
+								<input type="radio" name="audio1" value="msg3" id="msg2">
+								<label for="msg2"><span></span>Message 2<u>Today at 4:0pm</u></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module1/game/1.m4a"></button>
+							</div>
+							<div class="col-xs-9">
+								<input type="radio" name="audio1" value="msg3" id="msg3">
+								<label for="msg3"><span></span>Message 3<u>Today at 4:10pm</u></label>
+							</div>
+						</div>
+					</div>
+					<div class="game-submit-container"><button class="button2">Submit</button></div>
+					
+				</div>
+				<div class="parent_expander"></div>
+				
+			</div>
+
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m1Game_audio2" prev="hidden" next="hidden"}}
+			</footer>
+			</div>
+		
+		<div class="content">
+					<h4>HTML</h4>
+						<pre class="htmlcode2">
+&lt;template name=&quot;m1Game_audio&quot;&gt;
+
+	&lt;section id=&quot;m1Game_audio&quot; class=&quot;game-section game-audio hidden&quot;&gt;
+	&#123;&#123;#if activeSection&#125;&#125;
+		&lt;div class=&quot;game-container game-image-audio m1Game-bg3&quot;&gt;
+			&lt;h3 class=&quot;center&quot;&gt;Listen to the messages and decide which one is correct&lt;/h3&gt;
+			&lt;div class=&quot;game-content&quot;&gt;
+				&lt;div class=&quot;game-image-audio-xs m1Game-bg3&quot;&gt;&lt;div class=&quot;game-audio-box-tail-top&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;div class=&quot;game-audio-box&quot;&gt;
+					
+					&lt;div class=&quot;game-audio-box-tail-left&quot;&gt;&lt;/div&gt;
+
+					&lt;div class=&quot;container-fluid&quot;&gt;
+						&lt;div class=&quot;row&quot;&gt;
+							&lt;div class=&quot;col-xs-3&quot;&gt;
+								&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module1/game/1.m4a&quot;&gt;&lt;/button&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;col-xs-9&quot;&gt;
+								&lt;input type=&quot;radio&quot; name=&quot;audio1&quot; value=&quot;msg3&quot; id=&quot;msg1&quot;&gt;
+								&lt;label for=&quot;msg1&quot;&gt;&lt;span&gt;&lt;/span&gt;Message 1&lt;u&gt;Today at 3:52pm&lt;/u&gt;&lt;/label&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;row&quot;&gt;
+							&lt;div class=&quot;col-xs-3&quot;&gt;
+								&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module1/game/1.m4a&quot;&gt;&lt;/button&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;col-xs-9&quot;&gt;
+								&lt;input type=&quot;radio&quot; name=&quot;audio1&quot; value=&quot;msg3&quot; id=&quot;msg2&quot;&gt;
+								&lt;label for=&quot;msg2&quot;&gt;&lt;span&gt;&lt;/span&gt;Message 2&lt;u&gt;Today at 4:0pm&lt;/u&gt;&lt;/label&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;row&quot;&gt;
+							&lt;div class=&quot;col-xs-3&quot;&gt;
+								&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;/audio/module1/game/1.m4a&quot;&gt;&lt;/button&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;col-xs-9&quot;&gt;
+								&lt;input type=&quot;radio&quot; name=&quot;audio1&quot; value=&quot;msg3&quot; id=&quot;msg3&quot;&gt;
+								&lt;label for=&quot;msg3&quot;&gt;&lt;span&gt;&lt;/span&gt;Message 3&lt;u&gt;Today at 4:10pm&lt;/u&gt;&lt;/label&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;game-submit-container&quot;&gt;&lt;button class=&quot;button2&quot;&gt;Submit&lt;/button&gt;&lt;/div&gt;
+					
+				&lt;/div&gt;
+				&lt;div class=&quot;parent_expander&quot;&gt;&lt;/div&gt;
+				
+			&lt;/div&gt;
+			&lt;footer&gt;
+				&#123;&#123;&gt;footer_nav prevurl=&quot;#&quot; nexturl=&quot;#m1Game_audio2&quot; prev=&quot;hidden&quot; next=&quot;&quot;&#125;&#125;
+			&lt;/footer&gt;
+		&lt;/div&gt;
+	&#123;&#123;/if&#125;&#125;
+	&lt;/section&gt;
+
+&lt;/template&gt;
+						</pre>
+					<h4>Javascript</h4>
+						<pre class="htmlcode2">
+Template.m1Game_audio.helpers(&#123;
+	activeSection: function()&#123;
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#m1Game_audio");
+	&#125;
+&#125;);
+						</pre>
+				</div>
+	</section>
+</template>

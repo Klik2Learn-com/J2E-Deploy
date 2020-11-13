@@ -1,0 +1,148 @@
+<template name="MoreAboutGlasgow">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Glasgow"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m4l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m4l6}}</div>
+		</header>
+
+		<section id="moreaboutGlasgow">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Glasgow/Glasgow1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l6_A">
+						<p>Charles Rennie Mackintosh</p>
+					</div>
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Glasgow/Glasgow2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l6_B">
+						<p>Glasgow Science Centre</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Glasgow/Glasgow3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l6_C">
+						<p>Shipbuilding Industry</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-9 col-xs-12 bonus-image" style="background-image: url('images/bonus/Glasgow/Glasgow4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l6_D">
+						<p>Kelvingrove Museum</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Glasgow/Glasgow5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l6_E">
+						<p>Cone on Statue of Wellington</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l6_A">Charles Rennie Mackintosh</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Glasgow/Glasgow1.jpg" alt="Charles Rennie Mackintosh" style="max-width: 250px;">
+					</figure>
+					<p>MacIntosh became famous as an architect, painter, designer and interior designer. His designs are now found in a wide range of products from furniture to tea towels. He developed his own style, using ideas from Scotland, Europe and Japan. Some of his buildings have been restored and can be visited in Glasgow - the School of Art. The Lighthouse and Miss Cranston’s tea rooms.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.crmsociety.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l6_B">Glasgow Science Centre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Glasgow/Glasgow2.jpg" alt="Glasgow Science Centre" style="max-width: 250px;">
+					</figure>
+					<p>The Glasgow science centre is great place for all ages to go to learn some hands on science facts and explore the stars at the planetarium. It’s part of the waterfront regeneration along the river Clyde and the nearby Glasgow Tower gives amazing views of the river and the city. There are three floors where you can find out for example, what a hurricane feels like or see the veins in your hand.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.glasgowsciencecentre.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l6_C">Shipbuilding Industry</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Glasgow/Glasgow3.jpg" alt="Shipbuilding Industry" style="max-width: 250px;">
+					</figure>
+					<p>The River Clyde was the home of shipbuilding for hundreds of years. The first steamship and the first diesel steamer were both built on the Clyde. The fastest ship in the world in her time, the Cutty Sark, was also built in Glasgow. After the second world war, many of the yards closed and today there are only two yards still open, owned by BAE systems. They now build ships for the Royal Navy.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://news.bbc.co.uk/local/glasgowandwestscotland/hi/people_and_places/history/newsid_9128000/9128912.stm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l6_D">Kelvingrove Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Glasgow/Glasgow4.jpg" alt="Kelvingrove Museum" style="max-width: 250px;">
+					</figure>
+					<p>Kelvingrove is one of the most popular free attractions in Glasgow and contains one of Europe’s great art collections. It has over 8,000 objects including paintings, musical instruments, animals, armour and aircraft. It has one of the oldest objects ever found in Scotland - an early leather bag dating from around the 6th century.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.glasgowlife.org.uk/museums/kelvingrove/Pages/default.aspx" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l6_E">Cone on Statue of Wellington</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Glasgow/Glasgow5.jpg" alt="Cone on Statue of Wellington" style="max-width: 250px;">
+					</figure>
+					<p>The statue of the Duke of Wellington in Glasgow’s Royal Exchange Square is famous not just because of the Duke himself but because in the 1980s someone decided for a joke to put a traffic cone on his head. It has stayed there ever since and has been described as one of the most bizarre monuments in Europe. After the Olympics, the red and white cone was replaced by a gold cone to celebrate the success of Glasgow sportsmen and women in the Olympics.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.tripadvisor.co.uk/Attraction_Review-g186534-d214111-Reviews-Duke_of_Wellington_Statue-Glasgow_Scotland.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

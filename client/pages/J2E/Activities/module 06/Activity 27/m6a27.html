@@ -1,0 +1,138 @@
+<template name="m6a27">
+	<article class="with-tools-sidebar m6a27">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/York');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 27 - {{>m6a27Title}}</div>
+			</header>
+			<section id="m6a27">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a27Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m6a27Intro}}</h3>
+					{{> m6a27Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a27_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a27_1}} {{>m6a27_2}} {{>EndPage char="elle" act="m6a27" nextact="m6a28" place="York"}}
+		</div>
+	</article>
+
+	{{>m6a27_modal}}
+</template>
+<template name="m6a27_1">
+	<section id="m6a27_1" class="hidden">
+		<div class="content noselect">
+			<h3 class="center">Drag the right idiom to the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>You would
+						<div class="ddseatedtarget ddwidth18 dd1line" data-destinationid="target1">&nbsp;</div> if you got to the supermarket checkout then realised you had left your money at home.</li>
+					<li>Even after a spell in prison he went back to his old ways - it just proves
+						<div class="ddseatedtarget ddwidth18 dd1line"
+						 data-destinationid="target2">&nbsp;</div>
+					</li>
+					<li>The interviewer tried to get him
+						<div class="ddseatedtarget ddwidth18 dd1line" data-destinationid="target3">&nbsp;</div> but he avoided the issue.</li>
+					<li>When she makes a speech in parliament, everyone pays attention, she's
+						<div class="ddseatedtarget ddwidth18 dd1line"
+						 data-destinationid="target4">&nbsp;</div>.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target3">to call a spade a spade</div>
+					</div>
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target4">a class act</div>
+					</div>
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target1">kick yourself</div>
+					</div>
+					<div class="ddseat ddwidth18 dd1line">
+						<div class="ddsourceseated ddwidth18 dd1line shadow" draggable="false" data-destination="target2">a leopard can't change its spots</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a27" nexturl="#m6a27_2" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a27_2">
+	<section id="m6a27_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>You can say silly things if you get idioms muddled up. {{>touch yes="Tap" no="Click"}} on the wrong words and type the
+				right idiom in the space.</h3>
+
+			<div class="parapaper paraclick text-center">
+				<div class="number">1</div>
+				<p id="paratext">
+					<span class="wrong">The interviewer tried to get him to </span>
+					<span class="paratext paraclick-word">kick himself</span>
+					<span class="wrong"> but he refused.</span>
+				</p>
+			</div>
+			<div class="center">
+				<button data-toggle="modal" data-target="#m6a27_modal" class="button2">Examples</button>
+			</div>
+			{{>rightwrong}} {{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a27_1" nexturl="#m6a27_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m6a27_modal">
+	<div class="modal fade" tabindex="-1" id="m6a27_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="m6a27_modal">Idiom Examples</h4>
+				</div>
+
+				<div class="content noselect">
+
+					<div class="parapaper parapaperdd1 fold">
+						<ol class="olcircle">
+							<li>You would
+								<div class="ddsourceseated ddwidth18 dd1line">kick yourself</div> if you had a winning lottery ticket and couldn't find it..</li>
+							<li>Even after a spell in prison he went back to his old ways - it just proves
+								<div class="ddsourceseated ddwidth18 dd1line">a leopard can't change its spots</div>.</li>
+							<li>The interviewer tried to get him to
+								<div class="ddsourceseated ddwidth18 dd1line">call a spade a spade</div> but he avoided the issue.</li>
+							<li>When she makes a speech in parliament, everyone pays attention, she's
+								<div class="ddsourceseated ddwidth18 dd1line">a class act</div>.</li>
+						</ol>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>

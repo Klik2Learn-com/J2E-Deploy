@@ -1,0 +1,139 @@
+<template name="GrammarGuide">
+   <div class="modal fade" id="grammarmodal" role="dialog">
+      <div class="modal-admin" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="dropdown" style="width: 75%;">
+				  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown" style="white-space: nowrap;" id="myModalLabel"><i class="fa fa-bars" style="font-size: 1.2em; margin-right: 10px; margin-left: -10px;"></i> Grammar Guide...</button>
+					<ul class="dropdown-menu dropdown-menu-scroll" style="max-height: 70vh">		
+						<li><a draggable="false" href="#GGintro" class="">Home</a></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Adjectives...</li>
+						<li><a draggable="false" href="#GGAdjectives" class="gg-sub">Introduction to Adjectives</a></li>
+						<li><span class="subheader" data-target="#adj2">Adjectives in Sentences</span></li>
+						<li><span class="subheader" data-target="#adj3">Adjectives and Meaning</span></li>
+						<li><span class="subheader" data-target="#adj4">Adjectives Comparing Things</span></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Adverbs...</li>
+						<li><a draggable="false" href="#GGAdverbs" class="gg-sub">Introduction to Adverbs</a></li>
+						<li><span class="subheader" data-target="#adv2">Adverbs in Sentences</span></li>
+						<li><span class="subheader" data-target="#adv3">Adverbs and Meaning</span></li>
+						<li><span class="subheader" data-target="#adv4">Adverbs Comparing Things</span></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Articles...</li>
+						<li><a draggable="false" href="#GGArticles" class="gg-sub">Introduction to Articles</a></li>
+						<li><span class="subheader" data-target="#art2">Using the Articles</span></li>
+						<li class="divider"></li>
+						
+						<li><a draggable="false" href="#GGCollocation" class="">Collocation</a></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Conjunctions...</li>
+						<li><a draggable="false" href="#GGConjunctions" class="gg-sub">What is a Conjunction?</a></li>
+						<li><span class="subheader" data-target="#con2">Using Conjunctions</span></li>
+						<li><span class="subheader" data-target="#con3">Conjunctions and Meaning?</span></li>
+						<li class="divider"></li>
+						
+						<li><a draggable="false" href="#GGIntonation" class="">Intonation</a></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Nouns...</li>
+						<li><a draggable="false" href="#GGNouns" class="gg-sub">Introduction to Nouns</a></li>
+						<li><span class="subheader" data-target="#noun2">Countable and Uncountable</span></li>
+						<li><span class="subheader" data-target="#noun3">Plurals</span></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Prepositions...</li>
+						<li><a draggable="false" href="#GGPrepositions" class="gg-sub">Introduction to Prepositions</a></li>
+						<li><span class="subheader" data-target="#prep1">Prepositions and Time/Date</span></li>
+						<li><span class="subheader" data-target="#prep2">Prepositions and Place</span></li>
+						<li><span class="subheader" data-target="#prep3">Prepositions and Movement</span></li>
+						<li><span class="subheader" data-target="#prep4">Prepositions and Manner</span></li>
+						<li class="divider"></li>
+
+						<li><a draggable="false" href="#GGPrefixes" class="">Prefixes</a></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Pronouns...</li>
+						<li><a draggable="false" href="#GGPronouns" class="gg-sub">Introduction to Pronouns</a></li>
+						<li><span class="subheader" data-target="#pro2">Personal Pronouns</span></li>
+						<li><span class="subheader" data-target="#pro3">Relative Pronouns</span></li>
+						<li><span class="subheader" data-target="#pro4">Possessive Pronouns</span></li>
+						<li><span class="subheader" data-target="#pro5">Emphasising Pronouns</span></li>
+						<li class="divider"></li>
+						
+						<li><a draggable="false" href="#GGPunctuation" class="">Punctuation</a></li>
+						
+						
+						<li><a draggable="false" href="#GGQuestionWords" class="">Question Words</a></li>
+						
+						<li><a draggable="false" href="#GGSpellingRules" class="">Spelling Rules</a></li>
+						
+						<li><a draggable="false" href="#GGStress" class="">Stress</a></li>
+						
+						<li><a draggable="false" href="#GGSuffixes" class="">Suffixes</a></li>
+						
+						<li><a draggable="false" href="#GGSyllables" class="">Syllables</a></li>
+						<li class="divider"></li>
+						
+						<li class="dropdown-header">Verbs...</li>
+						<li><span class="subheader" data-target="#verbs">Introduction to Verbs</span></li>
+						<li><span class="subheader" data-target="#aux">Auxiliary Verbs</span></li>
+						<li><span class="subheader" data-target="#cond">Conditionals</span></li>
+						<li><span class="subheader" data-target="#directspeech">Direct/Indirect Speech</span></li>
+						<li><span class="subheader" data-target="#future">Future Tenses</span></li>
+						<li><span class="subheader" data-target="#gerunds">Gerunds</span></li>
+						<li><span class="subheader" data-target="#infinitive">Infinitive</span></li>
+						<li><span class="subheader" data-target="#irregular">Irregular Verbs</span></li>
+						<li><span class="subheader" data-target="#modalverbs">Modal Verbs</span></li>
+						<li><span class="subheader" data-target="#passive">Passive/Active</span></li>
+						<li><span class="subheader" data-target="#pastcont">Past Continuous Tense</span></li>
+						<li><span class="subheader" data-target="#pastparticiple">Past/Present Participles</span></li>
+						<li><span class="subheader" data-target="#pastperf">Past Perfect Tense</span></li>
+						<li><span class="subheader" data-target="#pastsimp">Past Simple Tense</span></li>
+						<li><span class="subheader" data-target="#prescont">Present Continuous Tense</span></li>
+						<li><span class="subheader" data-target="#presperf">Present Perfect Tense</span></li>
+						<li><span class="subheader" data-target="#presperfcont">Present Perfect Continuous Tense</span></li>
+						<li><span class="subheader" data-target="#presimp">Present Simple Tense</span></li>
+						<li><span class="subheader" data-target="#reg">Regular Verbs</span></li>
+						<li><span class="subheader" data-target="#qutags">Question Tags</span></li>
+					</ul>
+				</div>
+            </div>
+            {{> gg_holder}}
+         </div>
+      </div>
+   </div>
+</template>
+
+
+<template name="gg_holder">
+	
+	<div class="gg-content scrollbar" style="height: 80vh; overflow-y: scroll;">
+ 		<div id="modalContent">
+            {{> GGIntro}}
+            {{> GGAdjectives}}
+            {{> GGAdverbs}}
+            {{> GGArticles}}
+            {{> GGCollocation}}
+            {{> GGConjunctions}}
+            {{> GGIntonation}}
+            {{> GGNouns}}
+            {{> GGPrefixes}}
+            {{> GGPrepositions}}
+            {{> GGPronouns}}
+            {{> GGPunctuation}}
+            {{> GGQuestionWords}}
+            {{> GGSpellingRules}}
+            {{> GGStress}}
+            {{> GGSuffixes}}
+            {{> GGSyllables}}
+            {{> GGVerbs}}
+		</div>
+
+	</div>
+</template>

@@ -1,0 +1,212 @@
+<template name="m5a22">
+	<article class="with-tools-sidebar m5a22">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Liverpool');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 22 - {{>m5a22Title}}</div>
+			</header>
+
+			<section id="m5a22" class="">
+				<div class="content">
+
+					<h1 class="start-page-header">{{> m5a22Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m5a22Intro}}</h3>
+					{{> m5a22Time}}
+					<!--{{> resumePopUp}}-->
+
+
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a22_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+
+			{{>m5a22_1}} {{>m5a22_2}} {{>m5a22_3}} {{>m5a22_4}} {{>m5a22_5}} {{>EndPage char="k" act="m5a22" nextact="m5a23" place="Liverpool"}}
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a22_1">
+	<section id="m5a22_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod5_idioms_IJ}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#idiomsSG" nexturl="#m5a22_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a22_2">
+	<section id="m5a22_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Idioms</h1>
+			{{> mod5_idioms}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a22_1" nexturl="#m5a22_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a22_3">
+	<section id="m5a22_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Idioms</h1>
+			<h3 class="center">Drag the right idiom into the space.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>I’m going to strike while the
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> is hot.</li>
+					<li>Politicians often promise
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> tomorrow.</li>
+					<li>We’re going to paint the town
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> if we win.</li>
+					<li>He’s quite shy. He doesn’t like being in the
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">kettle</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">jam</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">limelight</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">cake</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">blue</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target8">picture</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">iron</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">red</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a22_2" nexturl="#m5a22_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a22_4">
+	<section id="m5a22_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Idioms</h1>
+			<h3 class="center">Now drag the right meaning to the examples.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6" style="margin-bottom: 1.5em;">
+							<div class="iconleft">
+								<div class="number">1</div>
+							</div>
+							<div class="iconright">I’m going to strike while the iron is hot.
+								<br>
+								<div class="ddseatedtarget ddwidth16 dd2lines" data-destinationid="target1">&nbsp;</div>
+							</div>
+						</div>
+						<div class="col-sm-6" style="margin-bottom: 1.5em;">
+							<div class="iconleft">
+								<div class="number">2</div>
+							</div>
+							<div class="iconright">Politicians often promise jam tomorrow.
+								<br>
+								<div class="ddseatedtarget ddwidth16 dd1line2high" data-destinationid="target2">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6" style="margin-bottom: 1.5em;">
+							<div class="iconleft">
+								<div class="number">3</div>
+							</div>
+							<div class="iconright">We’re going to paint the town red if we win.
+								<br>
+								<div class="ddseatedtarget ddwidth16 dd2lines" data-destinationid="target3">&nbsp;</div>
+							</div>
+						</div>
+						<div class="col-sm-6" style="margin-bottom: 1.5em;">
+							<div class="iconleft">
+								<div class="number">4</div>
+							</div>
+							<div class="iconright">He’s quite shy. He doesn’t like being in the limelight.
+								<br>
+								<div class="ddseatedtarget ddwidth16 dd2lines" data-destinationid="target4">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth16 dd2lines">
+						<div class="ddsourceseated ddwidth16 dd2lines shadow" draggable="false" data-destination="target4">To be the centre of everyone’s attention</div>
+					</div>
+					<div class="ddseat ddwidth16 dd2lines">
+						<div class="ddsourceseated ddwidth16 dd2lines shadow" draggable="false" data-destination="target1">To take advantage of an opportunity at the right time</div>
+					</div>
+					<div class="ddseat ddwidth16 dd1line2high">
+						<div class="ddsourceseated ddwidth16 dd1line2high shadow" draggable="false" data-destination="target3">To have a big celebration</div>
+					</div>
+					<div class="ddseat ddwidth16 dd2lines">
+						<div class="ddsourceseated ddwidth16 dd2lines shadow" draggable="false" data-destination="target2">To suggest things will be better in the future</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a22_3" nexturl="#m5a22_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a22_5">
+	<section id="m5a22_5" class="hidden">
+		<div class="content">
+			{{> K_saved}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a22_4" nexturl="#m5a22_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>

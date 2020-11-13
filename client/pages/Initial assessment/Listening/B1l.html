@@ -1,0 +1,63 @@
+<template name="B1l">
+	<section id="B1l">
+        <div class="content">
+            <h3>Listen to this conversation and then answer the questions afterwards. <b>You can only listen to the conversation twice and you cannot pause it</b>.<br> Listen to the conversation again, take notes if you like, then answer the questions.</h3>
+
+            <button class="buttonroundc buttonroundbig buttonaudioc center-block" data-function="playAudio"></button>
+            <h4 class="center">Plays remaining: {{remainingPlays}}</h4>
+            <br>
+            <form class="assess-form-listening">
+                <div class="parapaper paraextract parasegment fold">
+                    <ol class="olcircle">
+                        <li>
+                            <span><b><span data-questionFor="q1">What does Kasia tell Claire?</span></b> <em>{{>touch yes="Tap" no="Click"}} all the correct answers.</em></span><br>
+                            <div data-group="checkbox-group">
+                                <label for="q1a"><input type="checkbox" name="q1" value="kasia was born in dundee" id="q1a" class="listeningInput"> Kasia was born in Dundee.</label>
+                                <label for="q1b"><input type="checkbox" name="q1" value="kasia has been in scotland for five years" id="q1b" class="listeningInput"> Kasia has been in Scotland for five years.</label>
+                                <label for="q1c"><input type="checkbox" name="q1" value="kasia's father couldn't find a job in poland" id="q1c" class="listeningInput"> Kasia's father couldn't find a job in Poland.</label>
+                                <label for="q1d"><input type="checkbox" name="q1" value="kasia came to scotland to study" id="q1d" class="listeningInput"> Kasia came to Scotland to study.</label>
+                                <label for="q1e"><input type="checkbox" name="q1" value="kasia was born in poland" id="q1e" class="listeningInput"> Kasia was born in Poland.</label>
+                            </div>
+                        </li>
+                        <li><span><b><span data-questionFor="q2">Kasia feels</span></b></span><br>
+                            <label for="q2a"><input type="radio" name="q2" value="polish and scottish" id="q2a" class="listeningInput"> Polish and Scottish</label>
+                            <label for="q2b"><input type="radio" name="q2" value="polish" id="q2b" class="listeningInput"> Polish</label>
+                            <label for="q2c"><input type="radio" name="q2" value="scottish" id="q2c" class="listeningInput"> Scottish</label>		
+                        </li>
+                        <li><span><b><span data-questionFor="q3">When did Farhana's grandfather come to Scotland?</span></b></span><br>
+                            <label for="q3a"><input type="radio" name="q3" value="he came in 1906" id="q3a" class="listeningInput"> He came in 1906.</label>
+                            <label for="q3b"><input type="radio" name="q3" value="he was born in scotland" id="q3b" class="listeningInput"> He was born in Scotland.</label>
+                            <label for="q3c"><input type="radio" name="q3" value="he came in the 1960s" id="q3c" class="listeningInput"> He came in the 1960s.</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q4">Why did Farhana's mother come to Scotland?</span></b></span><br>
+                            <label for="q4a"><input type="radio" name="q4" value="she was born in scotland" id="q4a" class="listeningInput"> She was born in Scotland.</label>
+                            <label for="q4b"><input type="radio" name="q4" value="she came to find work" id="q4b" class="listeningInput"> She came to find work.</label>
+                            <label for="q4c"><input type="radio" name="q4" value="she came to marry farhana's father" id="q4c" class="listeningInput"> She came to marry Farhana's father.</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q5">What three things does Murdo tell Claire?</span></b> <em>{{>touch yes="Tap" no="Click"}} all the correct answers.</em></span><br>
+                            <label for="q5a"><input type="checkbox" name="q5" value="this is his first time away from lewis" id="q5a" class="listeningInput"> This is his first time away from Lewis.</label>
+                            <label for="q5b"><input type="checkbox" name="q5" value="he doesn't have any brothers or sisters" id="q5b" class="listeningInput"> He doesn't have any brothers or sisters.</label>
+                            <label for="q5c"><input type="checkbox" name="q5" value="he has lived in several different places" id="q5c" class="listeningInput"> He has lived in several different places.</label>
+                            <label for="q5d"><input type="checkbox" name="q5" value="he speaks two languages" id="q5d" class="listeningInput"> He speaks two languages.</label>
+                            <label for="q5e"><input type="checkbox" name="q5" value="he lived in Stornoway with his mother and father" id="q5e" class="listeningInput"> He lived in Stornoway with his mother and father.</label>						
+                        </li>
+                        <li><span><b><span data-questionFor="q6">What does Murdo not understand?</span></b></span><br>
+                            <label for="q6a"><input type="radio" name="q6" value="he doesn't understand all the words people use" id="q6a" class="listeningInput"> He doesn't understand all the words people use.</label>
+                            <label for="q6b"><input type="radio" name="q6" value="he doesn't understand the glasgow dialect" id="q6b" class="listeningInput"> He doesn't understand the Glasgow dialect.</label>
+                            <label for="q6c"><input type="radio" name="q6" value="he doesn't understand english" id="q6c" class="listeningInput"> He doesn't understand English.</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q7">How do Kasia, Fahrana and Murdo feel about living in Scotland?</span></b></span><br>
+                            <label for="q7a"><input type="radio" name="q7" value="mostly happy" id="q7a" class="listeningInput"> Mostly happy.</label>
+                            <label for="q7b"><input type="radio" name="q7" value="mostly unhappy" id="q7b" class="listeningInput"> Mostly unhappy.</label>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="assess-finish">
+                    <span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+                </div>
+                {{>finishBtn}}
+            </form>
+        </div>
+	</section>
+</template>

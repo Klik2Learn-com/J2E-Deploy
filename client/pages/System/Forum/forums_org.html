@@ -1,0 +1,34 @@
+<template name="forums_org">
+	<article class="shadow">
+		<section>
+			{{#if Template.subscriptionsReady}}
+				{{#with forumDoc}}
+					<header class="acttitle">
+					{{#if isAdmin}}
+						<a draggable="false" class="forums_org_back forum-clickable" href="/forums/"><i class="titlereturn fa fa-arrow-left"></i></a>
+					{{else}}
+						<a draggable="false" href="/forums/" ><i class="titlereturn fa fa-arrow-left"></i></a>
+					{{/if}}
+					{{>menu}}
+					<div class="parent-level">Forums</div>
+					<div class="acttitle-title">{{orgName}}</div>			
+					</header>
+					<div class="content-forum">
+						<p id="forums-data"></p>
+						<div class="forum-wrapper">
+							<h4>Groups</h4>
+							{{#each group}}
+								<div class="forum-row">
+									<div class="forum-title">
+										<a draggable="false" href="{{this.id}}/">{{groupName}} forum →</a>
+									</div>
+								</div>
+							{{/each}}
+						</div>
+					</div>
+				{{/with}}
+			{{/if}}
+		</section>
+</article>
+	
+</template>

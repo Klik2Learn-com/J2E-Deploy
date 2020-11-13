@@ -1,0 +1,27 @@
+<template name="Yeti_d2_h2">
+	<section id="Yeti_d2_h2" class="hidden">
+		{{#if activeSection}}
+		<div class="journalbg">
+			<div class="content">
+				<div class="gameInfo text-center">
+				  There are six words missing words in this journal entry. For each one, write the missing word and {{>touch yes="tap" no="click"}} ‘OK’. If you get stuck, {{>touch yes="tap" no="click"}} ‘Skip’ to move onto the next one.
+				</div>
+				<div class="yetiText">
+					
+					Today we get <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="4"><input type="submit" value="OK"></form></span> to business. Spirits are high and everybody is getting <span id="entryanswer1" class="blank"></span> well. The terrain is quite easy to start <span id="entryanswer2" class="blank"></span> but I can see some difficulties <span id="entryanswer3" class="blank"></span> ahead. We need to find a way to get <span id="entryanswer4" class="blank"></span> several large crevasses. Will <span id="entryanswer5" class="blank"></span> be a bridge?
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-12 text-right">
+							<div id="skip" class="button1 buttonsmall">Skip</div>
+				  		</div>
+					</div>
+					<div class="text-center"><span class="incorrectbig hidden"><i class="fa fa-close"></i></span></div>
+				</div>	
+			</div>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+	
+	

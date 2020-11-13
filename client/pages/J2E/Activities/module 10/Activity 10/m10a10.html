@@ -1,0 +1,389 @@
+<template name="m10a10"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Felixstowe');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 10 - {{> m10a10Title}}</div>
+		</header>
+		<section id="m10a10">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a10Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m10a10Intro}}</h3>
+				{{> m10a10Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a10_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a10_1}}
+		{{>m10a10_2}}
+		{{>m10a10_3}}
+		{{>m10a10_4}}
+		{{>m10a10_5}}
+		{{>m10a10_6}}
+		{{>m10a10_7}}
+		{{>m10a10_8}}
+		{{>m10a10_9}}
+		{{>m10a10_10}}
+		{{>EndPage char="k" act="m10a10" nextact="m10a11" place="Felixstowe"}}
+	</div>
+</article>
+</template>
+<template name="m10a10_5"> 
+	<section id="m10a10_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Match the words to the meanings to help you understand the article that follows.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target1">&nbsp;</div> Really important.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target2">&nbsp;</div> Very strong and intense.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target3">&nbsp;</div> To reduce in strength or number.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target4">&nbsp;</div> Energy that can be replaced naturally.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target5">&nbsp;</div> Air that has been put under greater pressure than the surrounding atmosphere to create energy.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth8 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Decline</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Key</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Blistering</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Renewable</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">Compressed</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_4" nexturl="#m10a10_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a10_6"> 
+	<section id="m10a10_6" class="hidden"> 
+		<div class="content">  
+      			{{>energyConsumptionArticle}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_5" nexturl="#m10a10_7" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+   <Template name="energyConsumptionArticle">
+   				<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<div class="article-header">
+						<h4>Energy Consumption</h4>
+					</div>
+					
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-4x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module10/a10/wind farm.jpg" alt="Wind farm"></div></div>
+					</figure>
+					
+					<p>Oil is not just a fuel for transport and heating, it is the basis of many other products. 96% of the transport on the planet depends on oil. It is also the <span class="grammar">key</span> ingredient in plastics and fertilisers. Without it, modern life would be impossible. For the last hundred years, we have always had enough; today however, the situation appears to be changing. The developing world – led by China and India – is modernising at a <span class="grammar">blistering</span> pace, and their appetite for oil is driving up demand all over the world. At the same time, production is declining in most countries. For decades, scientists have warned us about running out of oil.</p>
+
+					<p>Even if there were no Global Warming, oil would be a problem. It is far too expensive to produce and wars are fought over it. We need to look at <span class="grammar">renewable</span> sources of energy – wind, wave, wood, plant, and nuclear. Some people have suggested we could replace oil with peanut oil!  Cars can now run on electricity, <span class="grammar">compressed air</span> and even water.</p>
+					
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+				</div>
+	</Template>
+
+<template name="m10a10_1"> 
+	<section id="m10a10_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Match the words to the meanings to help you understand the article that follows.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target1">&nbsp;</div> Urgent, really important.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target2">&nbsp;</div> Something unwelcome happens suddenly.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target3">&nbsp;</div> A secondary product or side effect made during another process.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target4">&nbsp;</div> To change slowly.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target5">&nbsp;</div> Like a disaster.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth8 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Outbreak</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">By-product</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Pressing</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">Catastrophic</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Evolve</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a10" nexturl="#m10a10_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+
+
+
+
+<template name="m10a10_4"> 
+	<section id="m10a10_4" class="hidden"> 
+		<div class="content">  
+      			{{>globalEconomyArticle}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_3" nexturl="#m10a10_5" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+  <Template name="globalEconomyArticle">
+				<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<div class="article-header">
+						<h4>Global Economy</h4>
+					</div>
+					
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-4x3 trans" style="width: 230px"><div class="ph"><img draggable="false" src="images/module10/a10/growth.png" alt="Graph showing an accelerating increase"></div></div>
+					</figure>
+					
+					<p>Countries in the modern world largely depend on each other. The global economy <span class="grammar">binds</span> us together. Today, the world economy is facing two <span class="grammar">looming</span> crises.</p>
+
+					<p>The U.S.A is the world’s largest and most powerful economy but it is in debt at all levels - individuals, organisations, and government itself.
+					The dollar is at its lowest rate in years, and the <span class="grammar">fundamental</span> <span class="grammar">driver</span> of the US economy – the housing market - is going through bad times.</p>
+
+					<p>Many experts believe we’re <span class="grammar">on the brink</span> of global economic depression. If the markets fail, the <span class="grammar">infrastructure</span> of modern civilisation will collapse and our standard of living will fall <span class="grammar">drastically</span>.</p>
+					
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+				</div>
+  </Template>
+
+<template name="m10a10_10"> 
+	<section id="m10a10_10" class="hidden"> 
+		<div class="content">  
+      			{{>globalWaterCrisisArticle}}
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_9" nexturl="#m10a10_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+ <Template name="globalWaterCrisisArticle">
+				<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<div class="article-header">
+						<h4>Global Water Crisis</h4>
+					</div>
+					
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-4x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module10/a10/aral sea.jpg" alt="A shrinking sea seen from space"></div></div>
+					</figure>
+					
+					<p>Water is the essential ingredient for life on this planet but it is becoming increasingly <span class="grammar">scarce</span>. According to the World Bank and World Health Organisation, 2 billion people lack access to clean water and 1 billion people do not have enough to even meet their daily needs. Underground reserves are being <span class="grammar">depleted</span> at an alarming rate. If we hadn’t polluted our rivers and lakes so much and made them <span class="grammar">toxic</span> to humans, we wouldn’t be in this situation. Meanwhile the world’s population continues to grow larger and larger.  When the supply of fresh water is limited, <span class="grammar">conflicts</span> can start between farmers, governments, environmentalists, and others. Creating fresh water can be expensive, especially when most of it is hidden under ice sheets in Antarctica.</p>
+					
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+				</div>
+ </Template>
+
+<template name="m10a10_2"> 
+	<section id="m10a10_2" class="hidden"> 
+		<div class="content">  
+      			{{>globalWarmingArticle}} 
+      	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_1" nexturl="#m10a10_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+ <Template name="globalWarmingArticle">
+				<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<div class="article-header">
+						<h4>Global Warming</h4>
+					</div>
+					
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-4x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module10/a10/global warming.jpg" alt="Pollution from factories"></div></div>
+					</figure>
+					
+					<p>Many people believe that global warming is the most <span class="grammar">pressing</span> danger to human civilisation today. If we don’t do something it could create <span class="grammar">catastrophic</span> weather systems, crop failures, disease <span class="grammar">outbreaks</span>, and water shortages worldwide.</p>
+
+					<p>Scientists say that greenhouse gases like carbon dioxide and methane are trapping heat in the Earths’ atmosphere, slowly increasing its temperature. This is the <span class="grammar">by-product</span> of our modern way of life.
+					To stop it would require a massive change in the way we behave. Scientists also believe that if we take no action against global warming it will alter the chemical structure of our planet.</p>
+
+					<p>They believe life on Earth <span class="grammar">evolved</span> over hundreds of millions of years. If these conditions changed it would be a disaster.</p>
+					
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+				</div>
+ </Template>
+
+<template name="m10a10_9"> 
+	<section id="m10a10_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Match the words to the meanings to help you understand the article that follows.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> Not enough, hard to find.</li>
+						<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> To use up the supply or resources you have.</li>
+						<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> Poisonous, capable of causing serious harm.</li>
+						<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> Strong disagreement or fighting between groups.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">Conflict</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">Deplete</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">Scarce</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">Toxic</div></div>
+</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_8" nexturl="#m10a10_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+
+
+
+
+
+<template name="m10a10_7"> 
+	<section id="m10a10_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Match the words to the meanings to help you understand the article that follows.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target1">&nbsp;</div> To suggest what is going to happen in the future.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target2">&nbsp;</div> To cause continual trouble or distress.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target3">&nbsp;</div> To change a country from mainly agriculture to manufacturing.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target4">&nbsp;</div> To reduce.</li>
+						<li><div class="ddseatedtarget ddwidth8 dd1line" data-destinationid = "target5">&nbsp;</div> Lack of good food.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth8 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Industrialise</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Predict</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Plague</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target5">Malnutrition</div></div>
+				<div class="ddseat ddwidth8 dd1line"><div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Deplete
+</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_6" nexturl="#m10a10_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a10_3"> 
+	<section id="m10a10_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Match the words to the meanings to help you understand the article that follows.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div> A factor which has a big impact on something else.</li>
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div> At a crucial point in a decision.</li>
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div> The services and organisations a society needs to function.</li>
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target4">&nbsp;</div> Suddenly and extremely.</li>
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target5">&nbsp;</div> To tie something together.</li>
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target6">&nbsp;</div> Something unclear that threatens the future.</li>
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target7">&nbsp;</div> A large organisation with its own rules and regulations.</li>
+						<li><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target8">&nbsp;</div> Of central importance.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth9 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">On the brink</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">Drastically</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">Driver</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">Infrastructure</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target6">Looming</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target8">Fundamental</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target7">Institution</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target5">Bind</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_2" nexturl="#m10a10_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a10_8"> 
+	<section id="m10a10_8" class="hidden"> 
+		<div class="content">  
+      			{{>globalPopulationGrowthArticle}}
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a10_7" nexturl="#m10a10_9" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+    <Template name="globalPopulationGrowthArticle">
+				<div class="parapaper article-text">{{>metametrics level="5" star="no" align="center"}}
+					<div class="article-header">
+						<h4>Global Population Growth</h4>
+					</div>
+					
+					<figure class="image imgright-responsive">
+						<div class="ph-w ph-4x3 shadow" style="width: 230px"><div class="ph"><img draggable="false" src="images/module10/a10/crowd.jpg" alt="Crowded street"></div></div>
+					</figure>
+					
+					<p>The world is currently growing at a rate of 79,000,000 people per year – more than ever before.  In 40 years, the world population could reach 10 billion. If nothing is done, the earth’s resources will be so <span class="grammar">depleted</span> that mass starvation and disease will <span class="grammar">plague</span> mankind. Countries must work together to solve this.</p>
+
+					<p>China has 20% of the world’s population and is an excellent example of the kinds of problems that arise. China has <span class="grammar">industrialised</span> and the economy has grown. This increase in wealth has increased the demand for food in China.</p>
+					
+					<p>Coping with increased demand can be difficult for any country. Globally, 40,000 children die from <span class="grammar">malnutrition</span> and related diseases. 150 million children in the world are suffering from poor health because of food shortages.</p>
+					
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+				</div>
+    </Template>

@@ -1,0 +1,70 @@
+<template name="m8Game">
+<article class="with-tools-sidebar game m8Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Stonehenge');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 35 - {{>m8GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m8Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m8Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m8Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m8Game_1}}
+		{{>m8Game_2}}
+		{{>m8Game_3}}
+		{{>m8Game_4}}
+		{{>m8Game_5}}
+		{{>m8Game_6}}
+		{{>m8Game_7}}
+		{{>m8Game_8}}
+		{{>m8Game_9}}
+		{{>m8Game_10}}
+		{{>m8Game_11}}
+		{{>m8Game_12}}
+		{{>m8Game_13}}
+		{{>m8Game_14}}
+		{{>m8Game_15}}
+		{{>m8Game_16}}
+		{{>m8Game_17}}
+		{{>m8Game_18}}
+		{{>m8Game_19}}
+		{{>m8Game_20}}
+		{{>m8Game_21}}
+		{{>m8Game_22}}
+		{{>m8Game_23}}
+		{{>m8Game_24}}
+		{{>m8Game_25}}
+		{{>m8Game_26}}
+		{{>m8Game_27}}
+		{{>m8Game_28}}
+		{{>m8Game_29}}
+		{{>m8Game_30}}
+		{{>m8Game_31}}
+		{{>m8Game_32}}
+		{{>m8Game_33}}
+		{{>m8Game_34}}
+		{{>m8Game_35}}
+		{{>m8Game_36}}
+		{{>m8Game_37}}
+		{{>m8Game_38}}
+		{{>m8Game_39}}
+		{{>m8Game_Score}}
+		{{>m8Game_40}}
+		{{>m8Game_ans}} 
+		{{>EndPage2 char="all" act="m8Game" nextplace="WestonsuperMare" nextmod="9" place="Stonehenge"  end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

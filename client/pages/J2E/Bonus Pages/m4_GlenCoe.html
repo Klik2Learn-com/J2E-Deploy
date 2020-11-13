@@ -1,0 +1,148 @@
+<template name="MoreAboutGlenCoe">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="GlenCoe"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m4l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m4l2}}</div>
+		</header>
+
+		<section id="moreaboutGlenCoe">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/GlenCoe/GlenCoe1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l2_A">
+						<p>West Highland Way</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/GlenCoe/GlenCoe2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l2_B">
+						<p>Hill Climbing</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/GlenCoe/GlenCoe3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l2_C">
+						<p>Wild Deer</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/GlenCoe/GlenCoe4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l2_D">
+						<p>The Massacre of Glencoe</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">					
+					<div class="col-sm-12 col-xs-12 bonus-image" style="background-image: url('images/bonus/GlenCoe/GlenCoe5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l2_E">
+						<p>Bidean nam Bian</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l2_A">West Highland Way</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/GlenCoe/GlenCoe1.jpg" alt="West Highland Way" style="max-width: 250px;">
+					</figure>
+					<p>The West Highland Way is one of the most popular long distance walking routes in Scotland. It runs from just outside Glasgow for over 150 kilometers to the town of Fort William. It passes through a variety of scenery from gentle hills to wild open moors and mountains. Most people take over a week to complete the walk and there is a range of accommodation along the route. Over 80,00 people use the path every year with over 15,000 walking the whole way.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.west-highland-way.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l2_B">Hill Climbing</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/GlenCoe/GlenCoe2.jpg" alt="Hill Climbing" style="max-width: 250px;">
+					</figure>
+					<p>Glencoe has some of the finest high level mountain routes in the UK and provides serious mountaineering especially in winter. On each side of the valley there are ridges which offer no easy escape routes. On one side of the valley, a steep path leads to the Lost Valley where the MacDonalds, who lived in Glencoe used to hide the cattle they had stolen. The dramatic hills of Glencoe were made famous recently in the James Bond film ‘Skyfall.’</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.glencoescotland.com/see-do/climbing" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l2_C">Wild Deer</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/GlenCoe/GlenCoe3.jpg" alt="Wild Deer" style="max-width: 250px;">
+					</figure>
+					<p>The red deer is the largest mammal in Scotland and is a symbol for the Highlands. They have lived in Scotland since the last Ice Age over 10,000 years ago, The animals roam the hills in summer and can often be seen near the road in winter as they look for food. They have no natural predators and their numbers have increased recently to around 300,000.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.glencoescotland.com/see-do/wild-glencoe/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l2_D">The Massacre of Glencoe</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/GlenCoe/GlenCoe4.jpg" alt="The Massacre of Glencoe" style="max-width: 250px;">
+					</figure>
+					<p>The massacre of Glencoe is one of the most famous stories in Scotland. The chief of the clan MacDonald was delayed in giving his loyalty to the new King William on 31st December 1691. A government official who disliked the MacDonalds saw an opportunity to punish them. Soldiers were sent to Glencoe and the MacDonalds gave them hospitality for ten days. Then they received order to kill their hosts. At 5am the killing began and thirty eight men, women and children were killed. Another forty fled to the hills and died of the cold. A memorial now marks the spot in Glencoe.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/history/scottishhistory/union/trails_union_glencoe.shtml" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l2_E">Bidean nam Bian</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/GlenCoe/GlenCoe5.jpg" alt="Bidean nam Bian" style="max-width: 250px;">
+					</figure>
+					<p>This mountain in Glencoe has a Gaelic name meaning ‘pinnacle of the mountain.’ It is the highest mountain in Glencoe at over 1,150 metres. It is a large and complicated mountain with ridges and smaller peaks and should only be attempted by experienced walkers with a good head for heights. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.walkhighlands.co.uk/fortwilliam/bideannambian.shtml" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

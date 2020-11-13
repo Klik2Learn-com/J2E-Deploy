@@ -1,0 +1,419 @@
+<template name="m1a14">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/FortAugustus');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<!-- Change module, activity number and name here -->
+			<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 14 - {{>m1a14Title}}</div>
+		</header>
+		
+				
+		<section id="m1a14">
+		  <div class="content">
+<h1 class="start-page-header">{{> m1a14Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m1a14Intro}}</h3>
+{{> m1a14Time}} <!--{{> resumePopUp}}-->
+		  </div>
+		  <footer>
+			{{>footer_nav nexturl="#m1a14_1" prev="hidden" next="" next_text="Start"}}
+		  </footer>
+		</section>
+		{{>m1a14_1}}
+		{{>m1a14_2}}
+		{{>m1a14_3}}
+		{{>m1a14_4}}
+		{{>m1a14_5}}
+		{{>m1a14_6}}
+		{{>m1a14_7}}
+		{{>m1a14_8}}
+		{{>m1a14_9}}
+		{{>m1a14_10}}
+		{{>m1a14_end}}
+
+	</div>
+</article>
+
+</template>
+<template name="m1a14_1">
+	<section id="m1a14_1" class="hidden">
+		<div class="content">
+			{{>dic_intro}}
+		</div>
+		<footer>
+		{{>footer_nav nexturl="#m1a14_2" prev="hidden" next=""}}
+	  </footer>
+	</section>
+</template>
+
+<template name="m1a14_10">
+	<section id="m1a14_10" class="hidden">
+		<div class="content">
+			<h3 class="center">
+				Here are the words you can use to describe the occupations. {{>touch yes="Tap" no="Click"}} to hear them.
+			</h3>
+			
+			<div class="container-fluid parapaper center" style="padding-top: 1em;">
+			
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14helpful" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">helpful</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14funloving" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">fun-loving</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14serious" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">serious</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14adventurous" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">adventurous</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14quickthinking" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">quick-thinking</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14creative" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">creative</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14ambitious" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">ambitious</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14talkative" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">talkative</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><div id="m1a14sensible" class="buttonround buttonaudio"></div></div> 
+						<div class="toolbuttright">sensible</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+			</div>
+		
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_9" nexturl="#m1a14_end" prev="hidden" next=""}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_2">
+	<section id="m1a14_2" class="hidden">
+		<div class="content">
+		
+		{{> dictionary_page word1="helpful" word2="serious" word3="organised" word4="talkative" word5c="hidden" word6c="hidden" word7="adventurous" word8="creative" word9="ambitious" word10="sensible" word11c="hidden" word12c="hidden"}}
+		
+		
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_1" nexturl="#m1a14_3" prev="" next=""}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_3">
+	<section id="m1a14_3" class="hidden">
+		<div class="content">
+			{{>complex_words}}
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>quick-thinking: able to make sensible decisions quickly.</li>
+						<li>fun-loving: enjoys the good or fun things in life.</li>
+						<li>kind: friendly, generous, the opposite of cruel.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_2" nexturl="#m1a14_4" prev="" next=""}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_4">
+	<section id="m1a14_4" class="hidden">
+		<div class="content">
+				<h3 class="center m1a14_instruc">
+					Choose the best word to describe what you would expect a <div class="caption capgreen m1a14_cap">hairdresser</div> to be like.
+				</h3>
+			<div class="parapaper center fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<p><figure><div class="ph-w shadow" style="max-width: 410px"><div class="ph" style="padding-top: 56.1%;"><img draggable="false" src="images/module1/m1a14_hairdresser.jpeg" alt="Hairdresser"/></div></div></figure></p>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+					<div class="row">
+					{{>rightwrong}}
+						<div class="col-sm-4">
+							<button id="helpfulbutton" class="button1" style="margin:5px 0px;">helpful</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="quickthinkingbutton" class="button1" style="margin:5px 0px;">quick-thinking</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="seriousbutton" class="button1" style="margin:5px 0px;">serious</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_3" nexturl="#m1a14_5" prev="hidden" next="hidden"}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_5">
+	<section id="m1a14_5" class="hidden">
+		<div class="content">
+			<h3 class="center m1a14_instruc">
+					Choose the best word to describe what you would expect a <div class="caption capgreen m1a14_cap">teacher</div> to be like.
+				</h3>
+			<div class="parapaper center fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<p><figure><div class="ph-w shadow" style="max-width: 410px"><div class="ph" style="padding-top: 56.1%;"><img draggable="false" src="images/module1/m1a14_teacher.jpeg" alt="Teacher"/></div></div></figure></p>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+					<div class="row">
+					{{>rightwrong}}
+						<div class="col-sm-4">
+							<button id="funlovingbutton" class="button1" style="margin:5px 0px;">fun-loving</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="organisedbutton" class="button1" style="margin:5px 0px;">organised</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="adventurousbutton" class="button1" style="margin:5px 0px;">adventurous</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_4" nexturl="#m1a14_6" prev="hidden" next="hidden"}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_6">
+	<section id="m1a14_6" class="hidden">
+		<div class="content">
+			<h3 class="center m1a14_instruc">
+					Choose the best word to describe what you would expect a <div class="caption capgreen m1a14_cap">taxi driver</div> to be like.
+				</h3>
+			<div class="parapaper center fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<p><figure><div class="ph-w shadow" style="max-width: 410px"><div class="ph" style="padding-top: 56.1%;"><img draggable="false" src="images/module1/m1a14_taxi.jpeg" alt="Taxi driver"/></div></div></figure></p>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+					<div class="row">
+					{{>rightwrong}}
+						<div class="col-sm-4">
+							<button id="creativebutton" class="button1" style="margin:5px 0px;">creative</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="responsiblebutton" class="button1" style="margin:5px 0px;">responsible</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="ambitiousbutton" class="button1" style="margin:5px 0px;">ambitious</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_5" nexturl="#m1a14_7" prev="hidden" next="hidden"}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_7">
+	<section id="m1a14_7" class="hidden">
+		<div class="content">
+			<h3 class="center m1a14_instruc">
+				Choose the best word to describe what you would expect a <div class="caption capgreen m1a14_cap">sports commentator</div> to be like.
+			</h3>
+			<div class="parapaper center fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<p><figure><div class="ph-w shadow" style="max-width: 410px"><div class="ph" style="padding-top: 56.1%;"><img draggable="false" src="images/module1/m1a14_sportscomm.jpeg" alt="Sports commentator"/></div></div></figure></p>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+					<div class="row">
+					{{>rightwrong}}
+						<div class="col-sm-4">
+							<button id="talkativebutton" class="button1" style="margin:5px 0px;">talkative</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="creativebutton" class="button1" style="margin:5px 0px;">creative</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="helpfulbutton" class="button1" style="margin:5px 0px;">helpful</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_6" nexturl="#m1a14_8" prev="hidden" next="hidden"}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_8">
+	<section id="m1a14_8" class="hidden">
+		<div class="content">
+			<h3 class="center m1a14_instruc">
+				Choose the best word to describe what you would expect a <div class="caption capgreen m1a14_cap">student</div> to be like.
+			</h3>
+			<div class="parapaper center fold">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<p><figure><div class="ph-w shadow" style="max-width: 410px"><div class="ph" style="padding-top: 56.1%;"><img draggable="false" src="images/module1/m1a14_student.jpeg" alt="Student"/></div></div></figure></p>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+					<div class="row">
+					{{>rightwrong}}
+						<div class="col-sm-4">
+							<button id="sensiblebutton" class="button1" style="margin:5px 0px;">sensible</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="helpfulbutton" class="button1" style="margin:5px 0px;">helpful</button>
+							
+						</div>
+						<div class="col-sm-4">
+							<button id="ambitiousbutton" class="button1" style="margin:5px 0px;">ambitious</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_7" nexturl="#m1a14_9" prev="hidden" next="hidden"}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_9">
+	<section id="m1a14_9" class="hidden">
+		<div class="content">
+			<h3 class="center">
+				Here are the occupations again. {{>touch yes="Tap" no="Click"}} to hear them.
+			</h3>
+			<div class="container-fluid parapaper center" style="padding-top: 1em;">
+			
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><button id="m1a14hairdresser" class="buttonround buttonaudio"></button></div> 
+						<div class="toolbuttright">Hairdresser</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><button id="m1a14sportscommentator" class="buttonround buttonaudio"></button></div> 
+						<div class="toolbuttright">Sports commentator</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><button id="m1a14teacher" class="buttonround buttonaudio"></button></div> 
+						<div class="toolbuttright">Teacher</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><button id="m1a14student" class="buttonround buttonaudio"></button></div> 
+						<div class="toolbuttright">Student</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+						<div class="toolbuttleft"><button id="m1a14taxidriver" class="buttonround buttonaudio"></button></div> 
+						<div class="toolbuttright">Taxi driver</div>
+					</div>
+					<div class="col-sm-4" style="margin-bottom: 1em;">
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a14_8" nexturl="#m1a14_10" prev="hidden" next=""}}
+		 </footer>
+	</section>
+</template>
+
+<template name="m1a14_end">
+{{>EndPage char="elle" act="m1a14" nextact="m1a15" place="FortAugustus"}}
+</template>

@@ -1,0 +1,503 @@
+<template name="styleTables">
+<section id="style-tables" class="hidden">
+	<div class="content">
+		{{>styleTablesNav}}
+		<h1>Tables</h1>
+		<div>
+		 <p>Scroll to the bottom of the page for a quick copy &amp; paste table template.</p>
+		 <h2>Simple table</h2>
+			<span class="htmlcode">&#60;table class="table1"&#62;</span>
+			<div class="mobile-table-wrapper">
+				<table class="table1">
+					<tr>
+						<th>Header1</th>
+						<th>Header2</th>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<br><br>
+		<h2>Wide table</h2>
+		<p>There are ways to rearrange tabular content for mobiles, but in some cases (such as the grammar guide) the tables need to be formatted the way they are - so use this if the table is too big for a mobile viewport.</p>
+		<span class="htmlcode">&lt;div class=&quot;mobile-table-wrapper&quot;&gt;&#60;table class="table1"&#62;</span>
+		<div class="mobile-table-wrapper">
+			<table class="table1">
+				<tr>
+					<th>Here</th>
+					<th>is</th>
+					<th>a</th>
+					<th>table</th>
+					<th>that</th>
+					<th>is</th>
+					<th>too</th>
+					<th>big</th>
+					<th>for</th>
+					<th>mobiles</th>
+				</tr>
+				<tr>
+					<td>so</td>
+					<td>we</td>
+					<td>bring</td>
+					<td>in</td>
+					<td>a</td>
+					<td colspan="2">horizontal</td>
+					<td colspan="2">scroll bar</td>
+					<td>on XS</td>
+				</tr>
+			</table>
+		</div>
+		<br><br>
+		
+		<h2>Centred content</h2>
+		<div>
+			<span class="htmlcode">&#60;table class="table1 table-center"&#62;</span>
+			<div class="mobile-table-wrapper">			
+				<table class="table1 table-center">
+					<tr>
+						<th>Header1</th>
+						<th>Header2</th>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<br><br>
+		
+		<h2>Alternate table</h2>
+		<p>This style is good for tables that have fewer than 4 lines (excluding headers).</p>
+		<div>
+			<span class="htmlcode">&#60;table class="table2 table-center"&#62;</span>
+			<div class="mobile-table-wrapper">
+				<table class="table2 table-center">
+					<tr>
+						<th>Header1</th>
+						<th>Header2</th>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+					<tr>
+						<td>word</td>
+						<td>word</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<br><br>
+
+		<h1>Quick copy and paste</h1>
+<pre class="htmlcode2">&lt;div class=&quot;mobile-table-wrapper&quot;&gt;
+	&lt;table class=&quot;table1&quot;&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Header1&lt;/th&gt;
+			&lt;th&gt;Header2&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;word&lt;/td&gt;
+			&lt;td&gt;word&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;word&lt;/td&gt;
+			&lt;td&gt;word&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;word&lt;/td&gt;
+			&lt;td&gt;word&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;word&lt;/td&gt;
+			&lt;td&gt;word&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;word&lt;/td&gt;
+			&lt;td&gt;word&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</pre>
+		<br>
+	</div>
+</section>
+
+<section id="style-tables2" class="hidden">
+	<div class="content">
+		{{>styleTablesNav}}
+		<h1>Responsive tables - version 1</h1>
+		<p>On XS view each row becomes 2 columns, with headers on the left and data on the right. The headers are then repeated for each row. To do this each <span class="htmlcode">td</span> needs to have the header set with <span class="htmlcode">data-title</span>.</p>
+		
+		<table class="table1 table-responsive">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Profession</th>
+					<th>Answer</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-title="First Name">Andrew</td>
+					<td data-title="Last Name">Jackson</td>
+					<td data-title="Profession">President</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+				<tr>
+					<td data-title="First Name">Anne</td>
+					<td data-title="Last Name">Hathaway</td>
+					<td data-title="Profession">Actor</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+				<tr>
+					<td data-title="First Name">Anthony</td>
+					<td data-title="Last Name">Hopkins</td>
+					<td data-title="Profession">Actor</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+				<tr>
+					<td data-title="First Name">Art</td>
+					<td data-title="Last Name">Garfunkel</td>
+					<td data-title="Profession">Musician</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		
+	<pre class="htmlcode2">&lt;table class=&quot;table1 table-responsive&quot;&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th&gt;Header 1&lt;/th&gt;
+				&lt;th&gt;Header 2&lt;/th&gt;
+				&lt;th&gt;Header 3&lt;/th&gt;
+				&lt;th&gt;Header 4&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;</pre>
+	<br>
+	<p>However this table still has an issue on very small screens if the headers are too long, as they don't wrap. One solution is to change the header width for the specific table but a better solution is to use <b>Responsive tables - version 2</b> (further down)</p>
+		
+		<b>Change header width in CSS:</b>
+	<pre class="htmlcode2">@media (max-width: 767px) { 
+		<span class="html-red">#table-id</span>.table-responsive td { 
+			padding-left: <span class="html-red">33%</span> !important;
+		}
+		
+		<span class="html-red">#table-id</span>.table-responsive td:before { 
+			width: <span class="html-red">33%</span>; 
+		}
+	}</pre>
+	<br>
+
+
+	<br>
+
+
+	<h1>Responsive tables - version 2</h1>
+		<p>Similar to the previous responsive table only instead of columns the headers are inline with the data. This is handy for longer headers.</p>
+		
+		<table class="table1 table-responsive table-responsive-inline">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Occupation/Profession</th>
+					<th>Answer</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-title="First Name">Andrew</td>
+					<td data-title="Last Name">Jackson</td>
+					<td data-title="Occupation/Profession">President</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+				<tr>
+					<td data-title="First Name">Anne</td>
+					<td data-title="Last Name">Hathaway</td>
+					<td data-title="Occupation/Profession">Actor</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+				<tr>
+					<td data-title="First Name">Anthony</td>
+					<td data-title="Last Name">Hopkins</td>
+					<td data-title="Occupation/Profession">Actor</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+				<tr>
+					<td data-title="First Name">Art</td>
+					<td data-title="Last Name">Garfunkel</td>
+					<td data-title="Occupation/Profession">Musician</td>
+					<td data-title="Answer"><span><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		
+	<pre class="htmlcode2">&lt;table class=&quot;table1 table-responsive table-responsive-inline&quot;&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th&gt;Header 1&lt;/th&gt;
+				&lt;th&gt;Header 2&lt;/th&gt;
+				&lt;th&gt;Header 3&lt;/th&gt;
+				&lt;th&gt;Header 4&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td data-title=&quot;Header 1&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 2&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 3&quot;&gt;Data&lt;/td&gt;
+				&lt;td data-title=&quot;Header 4&quot;&gt;Data&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;</pre>
+	</div>
+</section>
+
+<section id="style-tables3" class="hidden">
+	<div class="content">
+		{{>styleTablesNav}}
+		<h1>Responsive Fake Tables</h1>
+		<h2>Using the Bootstrap grid system to construct a table that collapses to 1 column on XS view</h2>
+		
+		<p>You basically build your table as columns rather than rows. To change the width of your table in XS view, do a custom style rule in <i>activity-styles.css</i> and set the max-width of the <span class="htmlcode">.col-table</span> in XS view - e.g.</p>
+<pre class="htmlcode2">@media (max-width: 767px) {
+	.m2a12 .col-table {
+		max-width: 300px;
+	}
+}</pre>
+		
+		<p><b>Note:</b> this method only works if the boxes all have roughly the same amount of content. If one has more lines of text than the other, give them all the same <span class="htmlcode">height</span> value to keep the table rows, e.g. <span class="htmlcode">m2a12 .td {height: 4em;}</span></p>
+		
+		<h4>Version 1:</h4>
+		<div class="container-fluid col-table">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<div class="th">First Person Command</div>
+					<div class="td">Go</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="th">Negative</div>
+					<div class="td">Don't go</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="th">Third Person Command</div>
+					<div class="td">Let him go</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+					<div class="td">something</div>
+				</div>
+			</div>
+		</div>
+		<br>
+	<pre class="htmlcode2">&lt;div class=&quot;container-fluid container-fluid-no-gutter&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+				&lt;div class=&quot;th&quot;&gt;header&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+				&lt;div class=&quot;th&quot;&gt;header&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+				&lt;div class=&quot;th&quot;&gt;header&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td&quot;&gt;cell&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</pre>
+		<br>
+		
+		<h4>Version 2 (blank backgrounds):</h4>
+		<div class="container-fluid col-table">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<div class="th">First Person Command</div>
+					<div class="td-blank">Go</div>
+					<div class="td-blank"><img draggable="false" src="../images/module2/go.png" style="max-width: 100%;"></div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="th">Negative</div>
+					<div class="td-blank">Don't go</div>
+					<div class="td-blank"><img draggable="false" src="../images/module2/dontgo.png" style="max-width: 100%;"></div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="th">Third Person Command</div>
+					<div class="td-blank">Let him go</div>
+					<div class="td-blank"><img draggable="false" src="../images/module2/lethimgo.png" style="max-width: 100%;"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+	<pre class="htmlcode2">&lt;div class=&quot;container-fluid container-fluid-no-gutter&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+				&lt;div class=&quot;th&quot;&gt;header&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+				&lt;div class=&quot;th&quot;&gt;header&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+				&lt;div class=&quot;th&quot;&gt;header&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+				&lt;div class=&quot;td-blank&quot;&gt;cell&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</pre>
+		<br>
+		<h2>Text entry example:</h2>
+		<div class="container-fluid col-table">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<div class="th">First Person Command</div>
+					<div class="td td-textentry"><span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="15" autocomplete="off"><input type="submit" value="OK"></form></span></div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="th">Negative</div>
+					<div class="td td-textentry"><span id="entryanswer1" class="textentry-disabled"></span></div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="th">Third Person Command</div>
+					<div class="td td-textentry"><span id="entryanswer2" class="textentry-disabled"></span> (him) </div>
+				</div>
+			</div>
+		</div>
+		<br>
+<pre class="htmlcode2">&lt;div class=&quot;container-fluid col-table&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+			&lt;div class=&quot;th&quot;&gt;First Person Command&lt;/div&gt;
+			&lt;div class=&quot;td td-textentry&quot;&gt;&lt;span&gt;&lt;form class=&quot;textentry&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;userText&quot; size=&quot;15&quot; autocomplete=&quot;off&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;OK&quot;&gt;&lt;/form&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+			&lt;div class=&quot;th&quot;&gt;Negative&lt;/div&gt;
+			&lt;div class=&quot;td td-textentry&quot;&gt;&lt;span class=&quot;textentry-disabled&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+			&lt;div class=&quot;th&quot;&gt;Third Person Command&lt;/div&gt;
+			&lt;div class=&quot;td td-textentry&quot;&gt;&lt;span class=&quot;textentry-disabled&quot;&gt;&lt;/span&gt; (him) &lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+	</div>
+</section>
+</template>
+
+<template name="styleTablesNav">
+<div class="text-center" style="font-size: 2em; margin-bottom: 2em;">
+	<a draggable="false" href="#style-tables" class="pagination">Normal tables</a> | 
+	<a draggable="false" href="#style-tables2" class="pagination">Responsive tables</a> | 
+	<a draggable="false" href="#style-tables3" class="pagination">Responsive fake tables</a> 
+</div>
+</template>

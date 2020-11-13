@@ -1,0 +1,148 @@
+<template name="MoreAboutLinlithgow">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Linlithgow"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m3l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m3l3}}</div>
+		</header>
+
+		<section id="moreaboutLinlithgow">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Linlithgow/Linlithgow1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l3_A">
+						<p>Linlithgow Palace</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Linlithgow/Linlithgow2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l3_B">
+						<p>Linlithgow Folk Festival</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Linlithgow/Linlithgow3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l3_C">
+						<p>Mary Queen of Scots</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Linlithgow/Linlithgow4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l3_D">
+						<p>Scotty (Star Trek)</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Linlithgow/Linlithgow5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m3l3_E">
+						<p>Crear McCartney Stained Glass Window</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l3_A">Linlithgow Palace</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Linlithgow/Linlithgow1.jpg" alt="Linlithgow Palace" style="max-width: 250px;">
+					</figure>
+					<p>Linlithgow Palace is now a ruin but it was a very important building in the 15th and 16th century. The kings and queens of Scotland lived there. The most famous of these was Mary Queen of Scots who was born in Linlithgow Palace. There is a story that the Palace is still haunted by Mary’s mother. It is now a popular visitor attraction where visitors can enjoy exploring one of Scotland’s finest medieval buildings. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.visitscotland.com/info/see-do/linlithgow-palace-p252271" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l3_B">Linlithgow Folk Festival</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Linlithgow/Linlithgow2.jpg" alt="Linlithgow Folk Festival" style="max-width: 250px;">
+					</figure>
+					<p>The folk festival has been running every September for over eighteen years at various venues around the town. It features a wide variety of music and attracts top class musicians not just from Scotland but folk musicians from Ireland, Canada and America. The four day festival also offers workshops, family events and a musical cruise on the canal.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.linlithgowfolk.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l3_C">Mary Queen of Scots</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Linlithgow/Linlithgow3.jpg" alt="Mary Queen of Scots" style="max-width: 250px;">
+					</figure>
+					<p>Mary Queen of Scots was born at Linlithgow Palace in 1542. When she was only six days old her father died and she became Queen of Scotland. Her mother was French and she was sent to live as a member of the French royal family. She married the French heir to the throne and also became Queen of France before she was eighteen. She returned to Britain and became a rival for the English throne. Her cousin Elizabeth 1 imprisoned her for over eighteen years in various palaces and castles. She was finally beheaded in London. Her body now lies in Westminster Cathedral.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=LohK1LZpFsI" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l3_D">Scotty (Star Trek)</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Linlithgow/Linlithgow4.jpg" alt="Scotty (Star Trek)" style="max-width: 250px;">
+					</figure>
+					<p>Captain Scott  - ‘Scotty’ is a character from the famous science fiction series ‘Star Trek.’ He was the Chief engineer on the starship ‘Enterprise.’ Linlithgow claims to be the birthplace of the character ‘Scotty’ is Linlithgow. The character was famous for solving difficult mechanical problems with the spaceship at the last minute. Captain Scott is famous for the phrase ‘Beam me up Scotty’ when characters entered the transporter machine and  were taken instantly to other places.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.scotsman.com/lifestyle/culture/farewell-linlithgow-new-star-trek-star-pegg-beams-scotty-to-glasgow-1-1352173" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m3l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m3l3_E">Crear McCartney Stained Glass Window</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Linlithgow/Linlithgow5.jpg" alt="Crear McCartney Stained Glass Window" style="max-width: 250px;">
+					</figure>
+					<p>St Michael’s church lies just to the south of Linlithgow Palace and is the place where the kings and queens of Scotland worshipped. The church had a magnificent stone crown  on the top of the tower for over 400 years. In 1820 it became unsafe and had to be removed. Late last century it was replaced by a much lighter  aluminium one and a beautiful new stained glass window was added.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=F3jNrAHqi-0" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

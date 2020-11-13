@@ -1,0 +1,448 @@
+<template name="m8a19"> 
+<article class="with-tools-sidebar m8a19">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bristol');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 19 - {{>m8a19Title}}</div>
+		</header>
+		<section id="m8a19">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a19Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a19Intro}}</h3>
+				{{> m8a19Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a19_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a19_1}}
+		{{>m8a19_2}}
+		{{>m8a19_3}}
+		{{>m8a19_4}}
+		{{>m8a19_5}}
+		{{>m8a19_6}}
+		{{>m8a19_7}}
+		{{>m8a19_8}}
+		{{>EndPage char="k" act="m8a19" nextact="m8a20" place="Bristol"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a19_2"> 
+	<section id="m8a19_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Choose whether the speaker is surprised, expects 'yes' or expects 'no'.<br> Drag the right one beside each question.</h3>
+				
+				{{> rightwrong}}<!-- 
+				{{> welldone}} -->
+					<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/dont eat fish.png" alt="Woman saying she doesn't like fish"></div></div><br>
+				<div class="parapaper parapaperdd1 fold">
+					<div class="container-fluid">
+						<div class="row center">
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_surprised.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_no.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_yes.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">expects 'yes'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">expects 'no'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">is surprised</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a19_1" nexturl="#m8a19_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a19_6"> 
+	<section id="m8a19_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Choose whether the speaker is surprised, expects 'yes' or expects 'no'.<br> Drag the right one beside each question.</h3>
+				
+				{{> rightwrong}}
+				
+					<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/holiday.png" alt="Beach"></div></div><br>
+				<div class="parapaper parapaperdd1 fold">
+					<div class="container-fluid">
+						<div class="row center">
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_surprised.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_no.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_yes.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">expects 'yes'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">expects 'no'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">is surprised</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a19_5" nexturl="#m8a19_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a19_3"> 
+	<section id="m8a19_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Choose whether the speaker is surprised, expects 'yes' or expects 'no'.<br> Drag the right one beside each question.</h3>
+				
+				{{> rightwrong}}
+				<!-- {{> welldone}} -->
+					<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/dont remember me.png" alt="Man trying to remember"></div></div><br>
+				<div class="parapaper parapaperdd1 fold">
+					<div class="container-fluid">
+						<div class="row center">
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_no.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_yes.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_surprised.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">expects 'yes'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">expects 'no'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">is surprised</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a19_2" nexturl="#m8a19_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a19_5"> 
+	<section id="m8a19_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Choose whether the speaker is surprised, expects 'yes' or expects 'no'.<br> Drag the right one beside each question.</h3>
+				
+				{{> rightwrong}}
+				<!-- {{> welldone}} -->
+					<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/not coming.png" alt="Two people waiting with luggage"></div></div><br>
+				<div class="parapaper parapaperdd1 fold">
+					<div class="container-fluid">
+						<div class="row center">
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_yes.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_surprised.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_no.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">expects 'yes'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">expects 'no'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">is surprised</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m8a19_4" nexturl="#m8a19_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a19_1"> 
+	<section id="m8a19_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			<h4 class="center">Here's the same question asked in 3 different ways.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/dont eat fish.png" alt="Woman saying she doesn't like fish"></div></div><br>
+						</div>
+						<div class="col-sm-6">
+						<div class="hidden-xs" style="height:70px;"></div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_surprised.m4a"></button></div>
+									<div class="iconright"><h4>The speaker is surprised.</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_no.m4a"></button></div>
+									<div class="iconright"><h4>The speaker expects the answer 'NO'.</h4></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="parapaper fold">
+									<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_yes.m4a"></button></div>
+									<div class="iconright"><h4>The speaker expects the answer 'YES'.</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a19" nexturl="#m8a19_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m8a19_7"> 
+	<section id="m8a19_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Choose whether the speaker is surprised, expects 'yes' or expects 'no'.<br> Drag the right one beside each question.</h3>
+				
+				{{> rightwrong}}
+				{{> welldone}}
+					<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/hospital.png" alt="Ambulance"></div></div><br>
+				<div class="parapaper parapaperdd1 fold">
+					<div class="container-fluid">
+						<div class="row center">
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_no.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_yes.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_surprised.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">expects 'yes'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">expects 'no'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">is surprised</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a19_6" nexturl="#m8a19_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a19_8"> 
+	<section id="m8a19_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="parapaper ">
+								<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/dont eat fish.png" alt="Woman saying she doesn't like fish"></div></div>
+								<hr>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_surprised.m4a"></button></div>
+										<div class="iconright"><h4>The speaker is surprised.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_no.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'NO'.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/1_yes.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'YES'.</h4></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="parapaper ">
+								<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/dont remember me.png" alt="Man trying to remember"></div></div>
+								<hr>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_surprised.m4a"></button></div>
+										<div class="iconright"><h4>The speaker is surprised.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_no.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'NO'.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/2_yes.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'YES'.</h4></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="parapaper ">
+								<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/bank.png" alt="Man at desk counting money"></div></div>
+								<hr>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_surprised.m4a"></button></div>
+										<div class="iconright"><h4>The speaker is surprised.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_no.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'NO'.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_yes.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'YES'.</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="parapaper ">
+								<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/not coming.png" alt="Two people waiting with luggage"></div></div>
+								<hr>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_surprised.m4a"></button></div>
+										<div class="iconright"><h4>The speaker is surprised.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_no.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'NO'.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/4_yes.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'YES'.</h4></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="parapaper ">
+								<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/holiday.png" alt="Beach"></div></div>
+								<hr>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_surprised.m4a"></button></div>
+										<div class="iconright"><h4>The speaker is surprised.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_no.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'NO'.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/5_yes.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'YES'.</h4></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="parapaper ">
+								<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/hospital.png" alt="Ambulance"></div></div>
+								<hr>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_surprised.m4a"></button></div>
+										<div class="iconright"><h4>The speaker is surprised.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_no.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'NO'.</h4></div>
+								</div>
+								<div class="row">
+										<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/6_yes.m4a"></button></div>
+										<div class="iconright"><h4>The speaker expects the answer 'YES'.</h4></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a19_6" nexturl="#m8a19_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a19_4"> 
+	<section id="m8a19_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Choose whether the speaker is surprised, expects 'yes' or expects 'no'.<br> Drag the right one beside each question.</h3>
+				
+				{{> rightwrong}}
+				<!-- {{> welldone}} -->
+					<div class="ph-w ph-1x1 border1" style="max-width: 316px"><div class="ph"><img draggable="false" src="images/module8/a19/bank.png" alt="Man at desk counting money"></div></div><br>
+				<div class="parapaper parapaperdd1 fold">
+					<div class="container-fluid">
+						<div class="row center">
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_no.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_surprised.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div>
+							</div>
+							<div class="col-sm-4">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module8/a19/3_yes.m4a"></button> <div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target3">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">expects 'yes'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">expects 'no'</div></div>
+				<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">is surprised</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a19_3" nexturl="#m8a19_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

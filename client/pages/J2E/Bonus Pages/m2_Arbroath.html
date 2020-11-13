@@ -1,0 +1,146 @@
+<template name="MoreAboutArbroath">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Arbroath"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m2l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m2l3}}</div>
+		</header>
+
+		<section id="moreaboutArbroath">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-5 bonus-image" style="background-image: url('images/bonus/Arbroath/Arbroath3.jpg'); background-position: right top;" data-toggle="modal" data-target="#bonus_modal_m2l3_C">
+						<p>45 Commando</p>
+					</div>
+					<div class="col-sm-4 col-xs-7 bonus-image" style="background-image: url('images/bonus/Arbroath/Arbroath1.jpg'); background-position: center 50%;" data-toggle="modal" data-target="#bonus_modal_m2l3_A">
+						<p>The Declaration of Arbroath</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Arbroath/Arbroath2.jpg'); background-position: left" data-toggle="modal" data-target="#bonus_modal_m2l3_B">
+						<p>Arbroath Abbey</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-7 bonus-image" style="background-image: url('images/bonus/Arbroath/Arbroath5.jpg'); background-position: right;" data-toggle="modal" data-target="#bonus_modal_m2l3_E">
+						<p>Miniature Railway</p>
+					</div>				
+					<div class="col-sm-6 col-xs-5 bonus-image" style="background-image: url('images/bonus/Arbroath/Arbroath6.jpg'); background-position: left center;" data-toggle="modal" data-target="#bonus_modal_m2l3_F">
+						<p>Arbroath Smokie</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+		<div class="modal fade" tabindex="-1" id="bonus_modal_m2l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l3_C">45 Commando</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Arbroath/Arbroath3.jpg" alt="Royal marines" style="max-width: 250px;">
+					</figure>
+					<p>45 Commando Royal Marines is a unit of the British Royal Marines. Their barracks are located in Arbroath. They are capable of a wide range of operational tasks.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=O6YBFvm6v6A" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l3_A">The Declaration of Arbroath</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Arbroath/Arbroath1.jpg" alt="Parchment" style="max-width: 250px;">
+					</figure>
+					<p>The Declaration of Arbroath is a declaration of Scottish independence, made in 1320. It is written in Latin and was sent to Pope John XXII to confirm Scotland's status as an independent, sovereign state.</p>
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/history/scottishhistory/independence/features_independence_arbroath.shtml" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l3_B">Arbroath Abbey</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Arbroath/Arbroath2.jpg" alt="Arbroath Abbey" style="max-width: 250px;">
+					</figure>
+					<p>Arbroath Abbey was founded in 1178 by King William the Lion for a group of monks. It was consecrated in 1197 with a dedication to the deceased Saint Thomas Becket. After his death William was buried before the high altar of the church in 1214.</p>
+					<p>The Abbey fell into ruin after the Reformation. From 1590 onward, its stones were raided for buildings in the town of Arbroath. This continued until 1815 when steps were taken to preserve the remaining ruins. It is now a tourist attraction open all year round.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.historicenvironment.scot/visit-a-place/places/arbroath-abbey/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l3_E">Miniature Railway</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Arbroath/Arbroath5.jpg" alt="Miniature train" style="max-width: 250px;">
+					</figure>
+					<p>Arbroath is home to Scotland's oldest miniature railway. It was opened by Matthew Kerr in 1935 as a commercial business, but since 1979 is has been a non-profit concern. It is currently run with the help of volunteers. It has 6 miniature trains (two of which are steam trains), 2 miniature buses and a miniature fire engine.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.kerrsminiaturerailway.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l3_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l3_F">Arbroath Smokie</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Arbroath/Arbroath6.jpg" alt="Smoked fish" style="max-width: 250px;">
+					</figure>
+					<p>A speciality of Arbroath is the <i>Arbroath Smokie</i>, type of smoked haddock. Arbroath smokies are prepared using traditional methods dating back to the late 1800s and are sold all over the UK.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.arbroathsmokies.net/media-gallery.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

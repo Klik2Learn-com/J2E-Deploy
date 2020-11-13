@@ -1,0 +1,38 @@
+<template name="m1Game_h_3">
+
+	<section id="m1Game_h_3" class="game-section game-dd hidden">
+	{{#if activeSection}}
+		<div class="game-container content">
+			<h3 class="center">Drag and drop the correct answer into the space to complete the sentence.</h3>
+			<div class="game-content elle">
+				<div class="game-image-dd m1Game-bg-elle-kitchen2"></div>
+				<!-- add k, tu or elle to change bubble colour accordingly -->
+				<div class="game-speech-container">
+					<div class="game-speech-tail" style="background-position: 70%;"></div>
+					<div class="game-speech center">
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> in all the cupboards.
+					</div>
+					
+				</div>
+				
+				{{>rightwrong}}
+				<!-- add k, tu or elle to change bubble colour accordingly -->
+				<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target2">I look</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target1">I'm looking</div></div>
+						<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true" data-destination="target3">I do look</div></div>
+					</div>
+				</div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_h_4" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>

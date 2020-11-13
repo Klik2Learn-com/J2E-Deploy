@@ -1,0 +1,33 @@
+<template name="InitialWriting"> 
+<article class="">
+
+		<div class="main">
+		<header class="acttitle" >	
+			{{#unless assessmentStarted}}
+				<a draggable="false" data-function="return"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/unless}}	
+			{{> menu_assess}}
+			<div class="parent-level">English Skills Test</div>
+			<div class="acttitle-title">Writing</div>
+		</header>
+		<section id="InitialWriting">
+			<div class="content">
+				<h1>Section 2: Writing</h1>
+				<div class="assess-intro">
+					{{> StartPageAvatarSmall char="tu"}}
+					{{#if sectionComplete}}
+						You have already attempted this section and it is now completed.
+					{{else}}
+						{{>assess_warning}}
+						<h4>This section will test your English writing skills. When you're ready to start, {{>touch yes="tap" no="click"}} begin.</h4>
+						<div class="assess-begin"><a draggable="false" href="#InitialWriting_1" class="pagination"><button class="button1 buttonbig">Begin</button></a></div>
+						<div class="clear-float"></div>
+					{{/if}}
+				</div>
+			</div>
+		</section>
+		{{>InitialWriting_1}}
+	</div>
+</article>
+
+</template>

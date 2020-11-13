@@ -1,0 +1,246 @@
+<template name="m1a11">
+	<article class="with-tools-sidebar m1a11">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/FortAugustus');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 11 - {{>m1a11Title}}</div>
+			</header>
+
+
+			<section id="m1a11">
+				<div class="content">
+					<h1 class="start-page-header">{{>m1a11Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{>m1a11Intro}}</h3>
+					{{>m1a11Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a11_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{> m1a11_1}} {{> m1a11_2}} {{> m1a11_3}} {{> m1a11_4}} {{> m1a11_5}} {{> m1a11_6}} {{> m1a11_7}} {{> m1a11_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m1a11_1">
+	<section id="m1a11_1" class="hidden">
+		<div class="content">
+			<h3 class="center">Listen to the conversation Talking about Possessions again.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5 col-sm-push-7">
+						<div class="parapaper">
+							<p>
+								<b>This time it has some mistakes. The mistakes might be:</b>
+								<br>
+								<br> - a wrong word
+								<br>
+								<br> - a missing word
+								<br>
+								<br> - a word that shouldn’t be there
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-7 col-sm-pull-5">
+						<figure>
+							<div class="ph-w ph-16x9 shadow" style="max-width: 513px"><div class="ph"><img draggable="false" src="/images/conv-pics/m1a10.png" alt="Conversation"></div></div>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a11" nexturl="#m1a11_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a11_2">
+	<section id="m1a11_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-5">
+						<h3>When you find a mistake, {{>touch yes="tap" no="click"}} on the word.</h3>
+						<h3>If a word is missing, {{>touch yes="tap" no="click"}} in the space the word should be.</h3>
+						<h3>Write the correct word in the space.</h3>
+					</div>
+					<div class="col-sm-7">
+						<figure>
+							<div class="ph-w ph-16x9 shadow" style="max-width: 513px"><div class="ph"><img draggable="false" src="/images/conv-pics/m1a10.png" alt="Conversation"></div></div>
+						</figure>
+					</div>
+				</div>
+				<br> {{>m1a11_2_questions}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a11_1" nexturl="#m1a11_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckId="stuckbtn" stuckchar="tu" stuckurl="#"}} {{> stuck stuckId="stuckbtn2" stuckchar="tu" stuckurl="#"}} {{/if}}
+	</section>
+</template>
+
+<template name="m1a11_2_questions">
+	{{#if activeSection}}
+	<div class="row">
+		<div class="col-sm-2">
+		</div>
+		<div class="col-sm-8">
+			{{> rightwrong}}
+			<div class="parapaper noselect" id="m1a11_q2_bg">
+				<button type="button" class="buttonround buttonaudio button-block-xxs"></button>
+				<span id="questionDisplay" style="font-weight: 700;font-size: 1.08em;">
+				</span>
+
+			</div>
+		</div>
+		<div class="col-sm-2">
+		</div>
+	</div>
+	{{> welldone}} {{/if}}
+</template>
+
+<template name="m1a11_3">
+	<section id="m1a11_3" class="hidden">
+		<div class="content">
+			<h1>Questions?</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="text-center">Here are two questions from the conversation.</h3>
+					</div>
+				</div>
+				<div class="parapaper text-center">
+					<div class="caption capgreen text-center item-space" style="min-width: 200px">Have you got a camera?</div>
+					<div class="caption capgreen text-center item-space" style="min-width: 200px">Do you have a camera?</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a11_2" nexturl="#m1a11_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a11_4">
+	<section id="m1a11_4" class="hidden">
+		<div class="content">
+			<h3 class="center">If someone asks you the following question you can reply like this.</h3>
+			<div class="parapaper text-center">
+				<div class="container-fluid">
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6 center">
+							<div class="caption capred text-center item-space" style="min-width: 200px">"Do you have a brother?"</div>
+						</div>
+						<div class="col-sm-3"></div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-sm-offset-2 text-center">
+							<div class="caption capgreen item-space" style="min-width: 200px">Yes I have (got a brother)</div>
+						</div>
+						<div class="col-sm-2 center"></div>
+						<div class="col-sm-3 text-center ">
+							<div class="caption capgreen item-space" style="min-width: 200px">No I haven't (got a brother)</div>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-3 col-sm-offset-2 text-center">
+							<div class="caption capgreen item-space" style="min-width: 200px">Yes I do (have a brother)</div>
+						</div>
+						<div class="col-sm-2 center"></div>
+						<div class="col-sm-3 text-center ">
+							<div class="caption capgreen item-space" style="min-width: 200px">No I don't (have a brother)</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a11_3" nexturl="#m1a11_5" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a11_5">
+	<section id="m1a11_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Which sounds better?</h1>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the sentence that sounds better</h3>
+			<div class="parapaper text-center">
+				{{>blankrow}} {{> rightwrong}}
+
+				<button id="incorrect" class="button2 item-space ddwidth14">I haven't a brother</button>
+
+				<button id="correct" class="button2 item-space ddwidth14">I haven't a clue</button>
+
+				{{>blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a11_4" nexturl="#m1a11_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a11_6">
+	<section id="m1a11_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Which sounds better?</h1>
+			<h3 class="text-center">Why?</h3>
+			<div class="parapaper text-center">
+				<div class="caption capgreen item-space" style="min-width: 200px">BROTHER is a CONCRETE NOUN</div>
+				<div class="caption capgreen item-space" style="min-width: 200px">CLUE is an ABSTRACT NOUN</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a11_5" nexturl="#m1a11_7" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a11_7">
+	<section id="m1a11_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">With an ABSTRACT NOUN you can either use:</h3>
+			<div class="parapaper text-center">
+				<div class="caption capgreen item-space" style="min-width: 200px">"I don't have a clue."</div>
+				<div class="caption capgreen item-space" style="min-width: 200px">"I haven't a clue."</div>
+			</div>
+			<br> {{> gg_button gg_text="You can find out more about ABSTRACT and CONCRETE NOUNS words in under ARTICLES in the Grammar Guide."}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a11_6" nexturl="#m1a11_end" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a11_end">
+	{{>EndPage char="tu" act="m1a11" nextact="m1a12" place="Inverness"}}
+</template>

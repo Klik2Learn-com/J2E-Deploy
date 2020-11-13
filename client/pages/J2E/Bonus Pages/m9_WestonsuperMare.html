@@ -1,0 +1,148 @@
+<template name="MoreAboutWestonsuperMare">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="WestonsuperMare"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m9l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m9l1}}</div>
+		</header>
+
+		<section id="moreaboutWestonsuperMare">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/WestonsuperMare/WestonsuperMare1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l1_A">
+						<p>Grand Pier</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/WestonsuperMare/WestonsuperMare2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l1_B">
+						<p>Wookey Hole Caves</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/WestonsuperMare/WestonsuperMare3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l1_C">
+						<p>Sand Sculptures</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/WestonsuperMare/WestonsuperMare4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l1_D">
+						<p>Weston Carnival</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/WestonsuperMare/WestonsuperMare5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m9l1_E">
+						<p>Helicopter Museum</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l1_A">Grand Pier</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/WestonsuperMare/WestonsuperMare1.jpg" alt="Grand Pier" style="max-width: 250px;">
+					</figure>
+					<p>The Grand Pier offers visitors a fun day of entertainment with a large indoor theme park, exciting rides, cafes and shops. The pier was originally built in the early 20th century but has been damaged several times by fire. The last one was in 2008 and it took two years to rebuild the pier as it is today.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.grandpier.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l1_B">Wookey Hole Caves</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/WestonsuperMare/WestonsuperMare2.jpg" alt="Wookey Hole Caves" style="max-width: 250px;">
+					</figure>
+					<p>Wookey Hole has a river running through it and is the UK’s largest cave system. For many years these limestone caves have been a popular tourist attraction. Archaeologists have found evidence that people lived in and around the caves for over 50,000 years. Visitors can explore on foot but cave divers have set a world record by diving to over 76 metres at Wookey Hole.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=uL-Hw7NGHoc" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l1_C">Sand Sculptures</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/WestonsuperMare/WestonsuperMare3.jpg" alt="Sand Sculptures" style="max-width: 250px;">
+					</figure>
+					<p>During the Easter holidays, Weston-Super-Mare holds a popular sand sculpture festival. For over a week, world class sculptors create giant displays using more than 5,000 tonnes of sand. You can see a wide variety of creations:  castles, rockets, men on horseback and visitors can vote for their favourite sculpture.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.weston-super-mare.com/SandSculpture" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l1_D">Weston Carnival</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/WestonsuperMare/WestonsuperMare4.jpg" alt="Weston Carnival" style="max-width: 250px;">
+					</figure>
+					<p>Every year in November Weston - Super -Mare holds a carnival which attracts thousands of visitors. The event is popular with families who can watch over 140 decorated lorries drive through the town along with entertainers, people in fancy dress and marching bands. The carnival also raises thousands of pounds for charity.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.weston-super-mare.com/WestonCarnival" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m9l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m9l1_E">Helicopter Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/WestonsuperMare/WestonsuperMare5.jpg" alt="Helicopter Museum" style="max-width: 250px;">
+					</figure>
+					<p>If you are interested in helicopters, this museum is the place to visit. There are over 80 different helicopters from all over the world: both civilian and military. You can see the Queen’s Royal helicopter, the world’s fastest helicopter, a Russian gunship helicopter and the famous Royal Air Force helicopters used in search and rescue.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.helicoptermuseum.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

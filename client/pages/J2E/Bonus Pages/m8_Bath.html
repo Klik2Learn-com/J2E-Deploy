@@ -1,0 +1,171 @@
+<template name="MoreAboutBath">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Bath"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m8l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m8l5}}</div>
+		</header>
+
+		<section id="moreaboutBath">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bath/Bath1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l5_A">
+						<p>Jane Austen</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bath/Bath2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l5_B">
+						<p>Bath Abbey</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bath/Bath3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l5_C">
+						<p>Theatre Royal</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Bath/Bath4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l5_D">
+						<p>Holburne Museum</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bath/Bath5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l5_E">
+						<p>Roman Baths</p>
+					</div>				
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Bath/Bath6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m8l5_F">
+						<p>Pump Room Restaurant</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l5_A">Jane Austen</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bath/Bath1.jpg" alt="Jane Austen" style="max-width: 250px;">
+					</figure>
+					<p>Jane Austen, one of England’s most famous authors lived in Bath after the death of her father. He is buried in the town. Jane Austen used Bath as the setting for several of her novels. There is a Jane Austen exhibition in Bath and a festival every year in September when you can see people walking around in period costume.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.janeausten.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l5_B">Bath Abbey</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bath/Bath2.jpg" alt="Bath Abbey" style="max-width: 250px;">
+					</figure>
+					<p>Bath Abbey has existed since the 7th century and was restored to its present condition in the 19th century. It has a splendid display of stained glass windows which cover around 80% of the wall space. The abbey is well known for its music and has a choir, two organs and ten bells. In the abbey cellars you can visit a heritage museum which tells the history of the building.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bathabbey.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l5_C">Theatre Royal</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bath/Bath3.jpg" alt="Theatre Royal" style="max-width: 250px;">
+					</figure>
+					<p>Some of the UK’s finest actors have performed at the Theatre Royal in Bath since it opened in the 19th century. The modern theatre was restored  in 1979 after a fire and a new children’s theatre was opened in 2005. The theatre is said to be haunted by a ghost - a grey lady who appears in one of the boxes and leaves the scent of her perfume.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://visitbath.co.uk/things-to-do/theatre-royal-bath-p26221" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l5_D">Holburne Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bath/Bath4.jpg" alt="Holburne Museum" style="max-width: 250px;">
+					</figure>
+					<p>The Holburne Museum is one of Bath’s most beautiful buildings. It  was originally a hotel but it is now  a museum for paintings and fine objects collected by Sir William Holburne. He was a Commander in the Royal Navy in the 18th century who had an interest in other cultures and their art as he travelled the world. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.holburne.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l5_E">Roman Baths</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bath/Bath5.jpg" alt="Roman Baths" style="max-width: 250px;">
+					</figure>
+					<p>The Roman baths in Bath are one of Europe’s finest historic sites. They were in use for four hundred years and had a range of experiences similar to modern spas including changing rooms, saunas and swimming pools. Today you can talk to guides in Roman costume and have a drink at the famous spa fountain which contains over 43 minerals.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.romanbaths.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m8l5_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m8l5_F">Pump Room Restaurant</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Bath/Bath6.jpg" alt="Pump Room Restaurant" style="max-width: 250px;">
+					</figure>
+					<p>The Pump Room Restaurant is one of the best places to eat in Bath. It is situated beside the Roman Baths and you will find the famous speciality of the region- Bath Buns- on the menu.  You can also taste the special mineral water which comes from the Roman Baths fountain.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://visitbath.co.uk/eating-and-drinking/the-pump-room-restaurant-p30351" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

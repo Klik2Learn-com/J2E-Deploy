@@ -1,0 +1,596 @@
+<template name="m5a4">
+<article class="with-tools-sidebar m5a4">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Belfast');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 4 - {{>m5a4Title}}</div>
+		</header>
+		
+		
+		<section id="m5a4">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a4Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m5a4Intro}}</h3>
+{{> m5a4Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a4_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a4_1}}
+		{{>m5a4_2}}
+		{{>m5a4_3}}
+		{{>m5a4_4}}
+		{{>m5a4_5}}
+		{{>m5a4_6}}
+		{{>m5a4_7}}
+		{{>m5a4_8}}
+		{{>m5a4_9}}
+		{{>m5a4_10}}
+		{{>m5a4_11}}
+		{{>m5a4_12}}
+		{{>m5a4_13}}
+		{{>m5a4_14}}
+		{{>m5a4_15}}
+
+		{{>EndPage char="k" act="m5a4" nextact="m5a5" place="Belfast"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m5a4_1">
+	<section id="m5a4_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			<h3 class="text-center">Listen to this report on British TV habits.</h3>
+			{{>metametrics level="6" star="no" align="center"}}
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+						<br>
+					</div>
+					<div class="col-sm-5 text-center">
+						<ul class="olblank inline-block text-left">
+							<li>
+								<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a4/part1.m4a"></button></div>
+								<div class="iconright"><h4>British TV habits</h4><p><i>Paragraphs 1-5</i></p></div>
+							</li>
+							<li>
+								<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a4/part2.m4a"></button></div>
+								<div class="iconright"><h4>UK TV trends are changing</h4><p><i>Paragraph 6</i></p></div>
+							</li>
+							<li>
+								<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a4/part3.m4a"></button></div>
+								<div class="iconright"><h4>How are we watching?</h4><p><i>Paragraph 7</i></p></div>
+							</li>
+							<li>
+								<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a4/part4.m4a"></button></div>
+								<div class="iconright"><h4>What are we watching?</h4><p><i>Paragraph 8</i></p></div>
+							</li>
+							<li>
+								<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a4/part5.m4a"></button></div>
+								<div class="iconright"><h4>When are we watching?</h4><p><i>Paragraph 9</i></p></div>
+							</li>
+							<li>
+								<div class="iconleft"><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a4/part6.m4a"></button></div>
+								<div class="iconright"><h4>Where are we watching?</h4><p><i>Paragraphs 10-15</i></p></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4" nexturl="#m5a4_2" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_10">
+	<section id="m5a4_10" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">9</div></div>
+							<div class="iconright"><h4>How has TV changed Britain's eating habits?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/10.m4a">Paragraph 10</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_9" nexturl="#m5a4_11" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_11">
+	<section id="m5a4_11" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">10</div></div>
+							<div class="iconright"><h4>What's the connection between Iain Logie Baird and TV?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/11.m4a">Paragraph 11</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_10" nexturl="#m5a4_12" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_12">
+	<section id="m5a4_12" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">11</div></div>
+							<div class="iconright"><h4>Mobile devices are having an impact on TV. Find two examples.</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/13.m4a">Paragraph 13</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_11" nexturl="#m5a4_13" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_13">
+	<section id="m5a4_13" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">12</div></div>
+							<div class="iconright"><h4>Despite all the changes, people still watch TV for one main reason. What is it?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/14.m4a">Paragraph 14</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_12" nexturl="#m5a4_14" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_14">
+	<section id="m5a4_14" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">13</div></div>
+							<div class="iconright"><h4>How much does a colour TV licence cost?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/15.m4a">Paragraph 15</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>	
+			<br>
+			<h3 class="text-center">Continue when you're ready to see the answers.</h3>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_13" nexturl="#m5a4_15" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_15">
+	<section id="m5a4_15" class="hidden">
+		<div class="content">
+		<h1>Notebook Answers</h1>		
+			<div class="parapaper fold notebook-answers">
+				<ol class="olcircle">
+					<li>
+						<p><b>There’s a difference between what people say about TV and what they do. What is it?</b></p>
+						<p>People say they watch an hour less TV than they actually do.</p>
+					</li>
+					<li>
+						<p><b>Which age group watches most TV?</b></p>
+						<p>People over 65 watch more TV than any other age group.</p>
+					</li>
+					<li>
+						<p><b>Give an example of the ‘nation’s love affair with television.’</b></p>
+						<p>People now have more TVs in their house than they used to.</p>
+					</li>
+					<li>
+						<p><b>TV is not just for entertainment. Find three other reasons why people watch TV.</b></p>
+						<p>Education, information and debate.</p>
+					</li>
+					<li>
+						<p><b>How do we know that flat screen TVs are very popular?</b></p>
+						<p>Sales of flat screen TVs have doubled.</p>
+					</li>
+					<li>
+						<p><b>If you were selling flat screen TVs, would you prefer to work in Britain, France or Germany?</b></p>
+						<p>Britain sells more flat screen TVs than France or Germany.</p>
+					</li>
+					<li>
+						<p><b>People still prefer live TV to catch-up TV. How do we know this?</b></p>
+						<p>More than 17 million people watched the final of X factor and England’s world cup game with Germany on live TV.</p>
+					</li>
+					<li>
+						<p><b>Living rooms and bedrooms are the most popular places for TVs. What two other places do some people use for watching TV?</b></p>
+						<p>Some people have a dedicated cinema room and some people have TVs in their bathrooms.</p>
+					</li>
+					<li>
+						<p><b>How has TV changed Britain’s eating habits?</b></p>
+						<p>70% of people eat meals in front of the TV.</p>
+					</li>
+					<li>
+						<p><b>What’s the connection between Ian Logie Baird and TV?</b></p>
+						<p>Ian Logie Baird is the grandson of the inventor of TV, John Logie Baird.</p>
+					</li>
+					<li>
+						<p><b>Mobile devices are having an impact on TV. Find two examples.</b></p>
+						<p>People watch TV on mobile devices and chat to others while they’re watching.</p>
+					</li>
+					<li>
+						<p><b>Despite all the changes, people still watch TV for one main reason. What is it?</b></p>
+						<p>The main reason people watch TV is to chill out after a hard day at work.</p>
+					</li>
+					<li>
+						<p><b>How much does a colour TV licence cost?</b></p>
+						<p>£145.</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_14" nexturl="#m5a4_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a4_2">
+	<section id="m5a4_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">1</div></div>
+							<div class="iconright"><h4>There's a difference between what people say about TV and what they do. What is it?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/1.m4a">Paragraph 1</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_1" nexturl="#m5a4_3" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_3">
+	<section id="m5a4_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">2</div></div>
+							<div class="iconright"><h4>Which age group watches the most TV?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/3.m4a">Paragraph 3</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_2" nexturl="#m5a4_4" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_4">
+	<section id="m5a4_4" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">3</div></div>
+							<div class="iconright"><h4>Give an example of the ‘nation’s love affair with television.’</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/4.m4a">Paragraph 4</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_3" nexturl="#m5a4_5" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_5">
+	<section id="m5a4_5" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">4</div></div>
+							<div class="iconright"><h4><p>TV is not just for entertainment.</p><p>Find three other reasons why people watch TV.</p></h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/6.m4a">Paragraph 6</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_4" nexturl="#m5a4_6" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_6">
+	<section id="m5a4_6" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">5</div></div>
+							<div class="iconright"><h4>How do we know that flat screen TVs are very popular?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/7.m4a">Paragraph 7</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_5" nexturl="#m5a4_7" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_7">
+	<section id="m5a4_7" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">6</div></div>
+							<div class="iconright"><h4>If you were selling flat screen TVs, would you prefer to work in Britain, France or Germany?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/7.m4a">Paragraph 7</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_6" nexturl="#m5a4_8" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_8">
+	<section id="m5a4_8" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">7</div></div>
+							<div class="iconright"><h4>People still prefer live TV to catch-up TV. How do we know this?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/8.m4a">Paragraph 8</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_7" nexturl="#m5a4_9" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a4_9">
+	<section id="m5a4_9" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>British TV Habits</h1>
+			{{>InstructionsNotebook text="Write the answers to these questions in your notebook. Check the answers at the end. Each question tells you where to find the answer."}}
+			<br>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper">
+							<div class="iconleft"><div class="number">8</div></div>
+							<div class="iconright"><h4>Living rooms and bedrooms are the most popular places for TVs. What two other places do some people use for watching TV?</h4></div>
+							<div class="text-center">
+								<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module5/a4/10.m4a">Paragraph 10</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 hidden-xs">
+						<div class="ph-w ph-3x2" style="max-width: 526px;"><div class="ph"><img draggable="false" src="images/module5/watching-tv.jpg" alt="TV"></div></div>
+					</div>
+				</div>
+			</div>			
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a4_8" nexturl="#m5a4_10" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>

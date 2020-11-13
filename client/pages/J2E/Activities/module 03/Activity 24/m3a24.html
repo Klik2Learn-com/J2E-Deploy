@@ -1,0 +1,111 @@
+<template name="m3a24">
+<article class="with-tools-sidebar m3a24">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Edinburgh');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 24 - {{>m3a24Title}}</div>
+		</header>
+		
+		
+		<section id="m3a24">
+			<div class="content">
+<h1 class="start-page-header">{{> m3a24Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m3a24Intro}}</h3>
+{{> m3a24Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a24_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m3a24_1}}
+		{{>m3a24_2}}
+		{{>m3a24_3}}
+
+		{{>EndPage char="elle" act="m3a24" nextact="m3a25" place="Edinburgh"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m3a24_1">
+	<section id="m3a24_1" class="hidden">
+		<div class="content">
+			
+			{{>PrepIntro1}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a24" nexturl="#m3a24_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a24_2">
+	<section id="m3a24_2" class="hidden">
+		<div class="content">
+			<h2>Here are the six prepositions from the article by Rob Penn in Activity 13.</h2>
+			<div class="text-center">
+			
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 text-center">
+							<div class="caption cappad item-space ddwidth10 text-center">of</div>
+							<div class="caption cappad item-space ddwidth10 text-center">on</div>
+							<div class="caption cappad item-space ddwidth10 text-center">about</div>
+							<div class="caption cappad item-space ddwidth10 text-center">against</div>
+							<div class="caption cappad item-space ddwidth10 text-center">through</div>
+							<div class="caption cappad item-space ddwidth10 text-center">underneath</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a24_1" nexturl="#m3a24_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a24_3">
+<section id="m3a24_3" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Prepositions</h1>
+			<h3>Without reading the article again, write the six prepositions in the spaces. Choose from the words in the box below.</h3>
+			
+			<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>I stood in a field this week listening to the first sounds  <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> spring.</li>
+					<li>There are many things I still miss <span id="entryanswer1" class="textentry-disabled"></span> London.</li>
+					<li>There was a national campaign to warn retirees <span id="entryanswer2" class="textentry-disabled"></span> moving to the countryside.</li>
+					<li>Standing <span id="entryanswer3" class="textentry-disabled"></span> the dome of St. Paul’s in London might be a great experience.</li>
+					<li>In the city, you can choose your community – it may be <span id="entryanswer4" class="textentry-disabled"></span> work, clubs or your kids’ school.</li>
+					<li>I was filming a video diary for the BBC <span id="entryanswer5" class="textentry-disabled"></span> British woodlands.</li>
+				</ol>
+			</div>
+			
+			<div class="box1 block">
+				<span class="word">of</span>
+				<span class="word">on</span>
+				<span class="word">about</span>
+				<span class="word">against</span>
+				<span class="word">through</span>
+				<span class="word">underneath</span>
+			</div>
+			
+		</div>
+	<footer>
+		{{>footer_nav prevurl="#m3a24_2" nexturl="#m3a24_end" prev="disabled" next="hidden"}}
+	</footer>
+	{{> stuck stuckchar="elle"}}
+{{/if}}
+</section>
+</template>

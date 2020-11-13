@@ -1,0 +1,229 @@
+<template name="m5a7">
+	<article class="with-tools-sidebar m5a7">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Blackpool');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 7 - {{>m5a7Title}}</div>
+			</header>
+
+
+			<section id="m5a7">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a7Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m5a7Intro}}</h3>
+					{{> m5a7Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a7_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a7_1}} {{>m5a7_2}} {{>m5a7_3}} {{>m5a7_4}} {{>m5a7_5}} {{>EndPage char="elle" act="m5a7" nextact="m5a8" place="Blackpool"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a7_1">
+	<section id="m5a7_1" class="hidden">
+		<div class="content center">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<h4>With an ACTIVE VERB, the person performs the action.</h4>
+						<div class="ph-w ph-2x3" style="max-width: 208px">
+							<div class="ph">
+								<img draggable="false" src="/images/module5/haircut1.jpg" alt="Woman cutting her own hair">
+							</div>
+						</div>
+						<br>
+						<div class="caption">I cut my hair.</div>
+					</div>
+					<div class="col-sm-6">
+						<h4>With a PASSIVE VERB, the action is done to the person by something or someone else</h4>
+						<div class="ph-w ph-2x3" style="max-width: 208px">
+							<div class="ph">
+								<img draggable="false" src="/images/module5/haircut2.jpg" alt="Woman having her hair cut by a hairdresser">
+							</div>
+						</div>
+						<br>
+						<div class="caption">My hair was cut by the hairdresser.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a7" nexturl="#m5a7_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a7_2">
+	<section id="m5a7_2" class="hidden">
+		<div class="content">
+			<h1>Storms Sweep Across Italy</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="caption ">Five verbs you found in Activity 6 are ACTIVE VERBS.</div>
+						<br>
+						<br>
+						<div class="caption">BUT... two verbs in the article are PASSIVE VERBS.</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="ph-w ph-3x2 shadow" style="max-width: 331px">
+							<div class="ph">
+								<img draggable="false" src="images/module5/flooded-venice.jpg" alt="Storm in Venice">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a7_1" nexturl="#m5a7_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a7_3">
+	<section id="m5a7_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Storms Sweep Across Italy</h1>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the
+				<b>Passive Tense</b> verb from the article</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper paraclick">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a6/1.m4a" style="margin-bottom: 0.5em;"></button>
+							<br>
+							<p>
+								<span class="wrong">The lagoon city of Venice continues to suffer from high waters which reached five feet above sea level on Sunday
+									after continuous rain pounded many regions of Italy over the weekend. Some 70 percent of the city
+									<span class="paraclick-word">was covered</span> by the flood waters and proved a bizarre spectacle for tourists on the massive Concordia cruise
+									ship as it sailed past the city on Sunday.</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 331px">
+							<div class="ph">
+								<img draggable="false" src="images/module5/flooded-venice.jpg" alt="Storm in Venice">
+							</div>
+						</div>
+						<br class="hidden-xs">
+						<div class="counterleft">Passive Tense left to find:
+							<u>1</u>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a7_2" nexturl="#m5a7_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+<template name="m5a7_4">
+	<section id="m5a7_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Storms Sweep Across Italy</h1>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the
+				<b>Passive Tense</b> verb from the article.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="parapaper paraclick">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a6/2.m4a" style="margin-bottom: 0.5em;"></button>
+							<br>
+							<p>
+								<span class="wrong">Tourists waded through almost waist-deep water, desperately trying to keep themselves and their belongings dry. Many
+									shops, houses and other buildings
+									<span class="paraclick-word">were flooded</span> and remain closed. While the canal city is used to the high waters, the flood is putting the
+									foundations under heavy stress. According to Ansa news agency this is one of the worst floods in Venice since 1872.</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="ph-w ph-3x2 shadow hidden-xs" style="max-width: 331px">
+							<div class="ph">
+								<img draggable="false" src="images/module5/flooded-venice.jpg" alt="Storm in Venice">
+							</div>
+						</div>
+						<br class="hidden-xs">
+						<div class="counterleft">Passive Tense left to find:
+							<u>1</u>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			{{>rightwrong}}{{>welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a7_3" nexturl="#m5a7_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+<template name="m5a7_5">
+	<section id="m5a7_5" class="hidden">
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the right verb to the spaces to make a
+				<b>Passive Tense</b>.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>Some 70 percent of the city
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>by the flood waters and proved a bizarre spectacle for tourists on the massive Concordia cruise ship as
+						it sailed past the city on Sunday.</li>
+					<li>Many shops, houses and other buildings
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> and remain closed.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">were</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">was</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">flooded</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">covered</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a7_5" nexturl="#m5a7_end" prev="disabled" next="hidden"}}
+		</footer>
+	</section>
+</template>

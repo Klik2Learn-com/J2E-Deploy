@@ -1,0 +1,301 @@
+<template name="m6a12"> 
+<article class="with-tools-sidebar m6a12">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Whitby');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 12 - {{>m6a12Title}}</div>
+		</header>
+		<section id="m6a12">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a12Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m6a12Intro}}</h3>
+				{{> m6a12Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m6a12_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a12_1}}
+		{{>m6a12_2}}
+		{{>m6a12_3}}
+		{{>m6a12_4}}
+		{{>m6a12_5}}
+		{{>EndPage char="elle" act="m6a12" nextact="m6a13" place="Whitby"}}
+	</div>
+</article>
+
+</template>
+<template name="m6a12_1"> 
+	<section id="m6a12_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Here are some questions about the article 'How Laws are Made' from Activity 10. Type the right word in the space.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> {{>m6a10_para1}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> Find a word that means 'agreement.'</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m6a12" nexturl="#m6a12_2" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a12_2"> 
+	<section id="m6a12_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Here are some questions about the article 'How Laws are Made' from Activity 10. Type the right word in the space.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>2.</b> {{>m6a10_para2}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>2)</b> Find a word that describes something that people disagree about.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m6a12_1" nexturl="#m6a12_3" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="elle"}} 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a12_3"> 
+	<section id="m6a12_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Here are some questions about the article 'How Laws are Made' from Activity 10. Type the right word in the space.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>3.</b> {{>m6a10_para3}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>3)</b> What do the letters MP stand for? (3 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="17" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m6a12_2" nexturl="#m6a12_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a12_4"> 
+	<section id="m6a12_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Here are some questions about the article 'How Laws are Made' from Activity 10. Type the right word in the space.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>4.</b> {{>m6a10_para4}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>4)</b> Find a word that links two opposite ideas together.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m6a12_3" nexturl="#m6a12_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m6a12_5"> 
+	<section id="m6a12_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Here are some questions about the article 'How Laws are Made' from Activity 10. Type the right word in the space.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>5.</b> {{>m6a10_para5}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>5)</b> Find a word which means to examine something very closely.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m6a12_4" nexturl="#m6a12_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="elle"}}
+		{{/if}} 
+	</section> 
+ </template>

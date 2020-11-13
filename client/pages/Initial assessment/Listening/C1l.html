@@ -1,0 +1,52 @@
+<template name="C1l">
+	<section id="C1l">
+        <div class="content">
+            <h3>Listen to a conversation with a researcher of future holiday destinations and then answer the questions afterwards. <b>You can only listen to the conversation twice and you cannot pause it</b>.<br> Listen to the conversation again, take notes if you like, then answer the questions.</h3>
+
+            <button class="buttonroundc buttonroundbig buttonaudioc center-block" data-function="playAudio"></button>
+            <h4 class="center">Plays remaining: {{remainingPlays}}</h4>
+            <br>
+            <form class="assess-form-listening">
+                <div class="parapaper paraextract parasegment fold">
+                    <ol class="olcircle">
+                        <li><span><b><span data-questionFor="q1">The aviation industry is more positive about the future of space tourism than the space industry. True or False?</span></b></span><br>
+                            <label for="q1a"><input type="radio" name="q1" value="true" id="q1a" class="listeningInput"> True</label>
+                            <label for="q1b"><input type="radio" name="q1" value="false" id="q1b" class="listeningInput"> False</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q2">Space hotels circle the earth every one and half hours. True or False</span></b></span><br>
+                            <label for="q2a"><input type="radio" name="q2" value="true" id="q2a" class="listeningInput"> True</label>
+                            <label for="q2b"><input type="radio" name="q2" value="false" id="q2b" class="listeningInput"> False</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q3">The main topic in this recording is...</span></b></span><br>
+                            <label for="q3a"><input type="radio" name="q3" value="effects of living in space" id="q3a" class="listeningInput"> effects of living in space</label>
+                            <label for="q3b"><input type="radio" name="q3" value="space tourism" id="q3b" class="listeningInput"> space tourism</label>
+                            <label for="q3c"><input type="radio" name="q3" value="reasons for space exploration" id="q3c" class="listeningInput"> reasons for space exploration</label>
+                            <label for="q3d"><input type="radio" name="q3" value="funding for the space programme" id="q3d" class="listeningInput"> funding for the space programme</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q4">Where has this recording come from?</span></b></span><br>
+                            <label for="q4a"><input type="radio" name="q4" value="an academic lecture" id="q4a" class="listeningInput"> An academic lecture</label>
+                            <label for="q4b"><input type="radio" name="q4" value="a conversation" id="q4b" class="listeningInput"> A conversation</label>
+                            <label for="q4c"><input type="radio" name="q4" value="a medical programme" id="q4c" class="listeningInput"> A medical programme</label>
+                            <label for="q4d"><input type="radio" name="q4" value="a radio interview" id="q4d" class="listeningInput"> A radio interview</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q5">The man's attitude to space tourism is:</span></b></span><br>
+                            <label for="q5a"><input type="radio" name="q5" value="positive" id="q5a" class="listeningInput"> positive</label>
+                            <label for="q5b"><input type="radio" name="q5" value="negative" id="q5b" class="listeningInput"> negative</label>
+                            <label for="q5c"><input type="radio" name="q5" value="neutral" id="q5c" class="listeningInput"> neutral</label>
+                        </li>
+                        <li><span><b><span data-questionFor="q6">The woman's attitude to space tourism is:</span></b></span><br>
+                            <label for="q6a"><input type="radio" name="q6" value="positive" id="q6a" class="listeningInput"> positive</label>
+                            <label for="q6b"><input type="radio" name="q6" value="negative" id="q6b" class="listeningInput"> negative</label>
+                            <label for="q6c"><input type="radio" name="q6" value="neutral" id="q6c" class="listeningInput"> neutral</label>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="assess-finish">
+                    <span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+                </div>
+                {{>finishBtn}}
+            </form>
+        </div>
+	</section>
+</template>

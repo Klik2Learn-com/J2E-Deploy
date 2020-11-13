@@ -1,0 +1,225 @@
+<template name="m9a5"> 
+<article class="with-tools-sidebar m9a5">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Taunton');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 5 - {{>m9a5Title}}</div>
+		</header>
+		<section id="m9a5">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a5Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a5Intro}}</h3>
+				{{> m9a5Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a5_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a5_1}}
+		{{>m9a5_2}}
+		{{>m9a5_3}}
+		{{>m9a5_4}}
+		{{>m9a5_5}}
+		{{>EndPage char="tu" act="m9a5" nextact="m9a6" place="Taunton"}}
+	</div>
+</article>
+	{{>m9a5_modal}}
+</template>
+
+<template name="m9a5_modal">
+	<div class="modal fade" tabindex="-1" id="m9a5_modal" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m9a5_modal">Examples</h4>
+				</div>
+				
+				<div class="content">
+
+					{{>m9a5_1content}}
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m9a5_1"> 
+	<section id="m9a5_1" class="hidden"> 
+		<div class="content">  
+      			{{>m9a5_1content}}
+      			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a5" nexturl="#m9a5_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a5_1content">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6 center">
+			<h4>If you know who does something use an <b>Active Verb</b>.</h4>
+			<div class="ph-w ph-3x2 border1" style="max-width: 318px"><div class="ph"><img draggable="false" src="images/module9/a5/he makes.png" alt="Man holding a jacket"></div></div><br>
+			<div class="caption">He makes Harris Tweed at his house on the Island of Harris</div>
+			<p>&nbsp;</p>
+		</div>
+		<div class="col-sm-6 center">
+			<h4>If you don’t know or don’t want to explain who does something use a <b>Passive Verb</b></h4>
+			<div class="ph-w ph-3x2 border1" style="max-width: 318px"><div class="ph"><img draggable="false" src="images/module9/a5/is made.png" alt="Cottage"></div></div><br>
+			<div class="caption">Harris Tweed is made on the Island of Harris in the Hebrides.</div>
+		</div>
+	</div>
+</div>
+</template>
+
+<template name="m9a5_4"> 
+	<section id="m9a5_4" class="hidden"> 
+	{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the right word beside these sentences. Choose whether you perform the action yourself (<span class="grammar">Active</span>) or whether the person isn't mentioned  or someone else does it (<span class="grammar">Passive</span>).</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+			<!-- {{> welldone}} -->
+			
+				<ol class="olcircle" style="counter-reset: start 6;">
+					<li>You'll be told about what you will be doing on a day to day basis… <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+					<li>If you do have any worries or concerns, it’s a good idea to raise them at the end of this conversation. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div></li>
+					<li>You should be told about any risks you may come across in your place of work. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div></li>
+					<li>You should be told where the fire exits are. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div></li>
+					<li>You should be told where you can find the first aid kit. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div></li>
+					<li>You should be told whether you need any special clothing or protection. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target6">&nbsp;</div></li>
+				</ol>
+			</div>
+
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">Active</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target3 target4 target5 target6">Passive</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+			<div class="center">
+			<button data-toggle="modal" data-target="#m9a5_modal" class="button2">Examples</button>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+		</div> 
+		<!-- <footer> 
+			{{>footer_nav prevurl="#m9a5_3" nexturl="#m9a5_5" prev="disabled" next=""}} 
+		</footer>  -->
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a5_3"> 
+	<section id="m9a5_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right word beside these sentences. Choose whether you perform the action yourself (<span class="grammar">Active</span>) or whether the person isn't mentioned or someone else does it (<span class="grammar">Passive</span>).</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+			<!-- {{> welldone}} -->
+				<ol class="olcircle">
+					<li>The amount of notice time you have to give if you want to leave... <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+					<li>The amount of notice time you must be given if they want to end your employment. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div></li>
+					<li>If you’ve paid too much tax, you will need these details to claim it back. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> </li>
+					<li>If you’re not given a pay slip… <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div></li>
+					<li>During an induction, you will be introduced to the people you will be working with. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div></li>
+					<li>You'll be shown around your place of work. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target6">&nbsp;</div></li>
+				</ol>
+			</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target3">Active</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2 target4 target5 target6">Passive</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+			<div class="center">
+			<button data-toggle="modal" data-target="#m9a5_modal" class="button2">Examples</button>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+		</div>
+		<!-- <footer> 
+			{{>footer_nav prevurl="#m9a5_2" nexturl="#m9a5_4" prev="disabled" next=""}} 
+		</footer>  -->
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a5_2"> 
+	<section id="m9a5_2" class="hidden"> 
+		<div class="content">  
+      			<h4 class="center">The article in Activity 3 talked about:</h4>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 center">
+							<div class="caption">actions you take – <Br><b>Active Verbs</b></div>
+						</div>
+						<div class="col-sm-6 center">
+							<div class="caption">the person isn't mentioned – <br><b>Passive Verbs</b></div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a5_1" nexturl="#m9a5_3" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a5_5"> 
+	<section id="m9a5_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the right word beside these sentences. Choose whether you perform the action yourself (<span class="grammar">Active</span>) or whether the person isn't mentioned or someone else does it (<span class="grammar">Passive</span>).</h3>
+			<div class="parapaper parapaperdd1 fold">
+			{{> rightwrong}}
+			{{> welldone}}
+			
+				<ol class="olcircle" style="counter-reset: start 12;">
+					<li>If you’re working in a kitchen or a workshop, you may use dangerous equipment. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div></li>
+					<li>Don’t try to use any piece of equipment… <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div></li>
+					<li>…before you have been given this training. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div></li>
+					<li>Make the most of every training opportunity that comes along while you're at work. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div></li>
+					<li>You might be paid to do a training course. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div></li> 
+					<li>You should be told how your new company deals with bullying and bad behaviour in the workplace. <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target6">&nbsp;</div></li>
+				</ol>
+			</div>
+
+
+
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2 target4">Active</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3 target5 target6">Passive</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+			<div class="center">
+			<button data-toggle="modal" data-target="#m9a5_modal" class="button2">Examples</button>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+		</div> 
+		<!-- <footer> 
+			{{>footer_nav prevurl="#m9a5_4" nexturl="#m9a5_end" prev="disabled" next="hidden"}} 
+		</footer>  -->
+		{{/if}} 
+	</section> 
+ </template>

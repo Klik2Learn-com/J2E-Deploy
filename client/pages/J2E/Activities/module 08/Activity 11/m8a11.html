@@ -1,0 +1,417 @@
+<template name="m8a11"> 
+<article class="with-tools-sidebar m8a11">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Gloucester');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 11 - {{>m8a11Title}}</div>
+		</header>
+		<section id="m8a11">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a11Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a11Intro}}</h3>
+				{{> m8a11Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a11_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a11_1}}
+		{{>m8a11_2}}
+		{{>m8a11_3}}
+		{{>m8a11_4}}
+		{{>m8a11_5}}
+		{{>m8a11_6}}
+		{{>m8a11_7}}
+		{{>EndPage char="tu" act="m8a11" nextact="m8a12" place="Gloucester"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a11_1"> 
+	<section id="m8a11_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> The number of unusual jobs is increasing, from badger consultants to dog psychologists.
+						One insurance company said there had been a steady increase in the number of firms wanting insurance cover for unusual occupations such as preparing kitchens for celebrity chef programmes on TV and checking for noise problems on construction sites. If people doing those jobs make mistakes, the company could face an expensive court case.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> Find a word that means ‘an expert who gives advice.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a11" nexturl="#m8a11_2" prev="disabled" next="hidden"}} 
+		</footer>
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a11_2"> 
+	<section id="m8a11_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> The number of unusual jobs is increasing, from badger consultants to dog psychologists.
+						One insurance company said there had been a steady increase in the number of firms wanting insurance cover for unusual occupations such as preparing kitchens for celebrity chef programmes on TV and checking for noise problems on construction sites. If people doing those jobs make mistakes, the company could face an expensive court case.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>2)</b> Find a word that means ‘gradual, not sudden.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m8a11_1" nexturl="#m8a11_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a11_3"> 
+	<section id="m8a11_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>2.</b> One director said, “The difficulty with unusual jobs is that they don’t fit the normal rules. The more unconventional the job, the more you need to think about the hidden risks. In today’s compensation culture, it’s very easy to imagine a customer suing their dog psychologist if their dog continues to eat their slippers.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>3)</b> Find a word that is similar to ‘unusual.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m8a11_2" nexturl="#m8a11_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a11_4"> 
+	<section id="m8a11_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>2.</b> One director said, “The difficulty with unusual jobs is that they don’t fit the normal rules. The more unconventional the job, the more you need to think about the hidden risks. In today’s compensation culture, it’s very easy to imagine a customer suing their dog psychologist if their dog continues to eat their slippers.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>4)</b> Which words are used twice in a sentence to link two ideas together? (2 words)</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>    
+		<footer> 
+			{{>footer_nav prevurl="#m8a11_3" nexturl="#m8a11_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a11_5"> 
+	<section id="m8a11_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>2.</b> One director said, “The difficulty with unusual jobs is that they don’t fit the normal rules. The more unconventional the job, the more you need to think about the hidden risks. In today’s compensation culture, it’s very easy to imagine a customer suing their dog psychologist if their dog continues to eat their slippers.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>5)</b> When someone sues a company, what are they hoping to get?</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m8a11_4" nexturl="#m8a11_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a11_6"> 
+	<section id="m8a11_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>3.</b> One of the UK’s most peculiar jobs is the Ravenmaster, the man who looks after the famous ravens at the Tower of London.
+						Derrick Coyle, 64, starts each day at dawn. He greets each of the ravens by name and lets them out of the cages where they spend the night.
+						He said in a recent interview: “Getting up in the morning is the worst part and I don’t have a social life. Even in the summer I always have to get back to put the ravens to bed. The fact it’s an unusual job does give me a bit of a boost. There’s no one else in the world who can say ‘I’m a Ravenmaster Yeoman.’</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>6)</b> Find another word similar to ‘unusual.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m8a11_5" nexturl="#m8a11_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a11_7"> 
+	<section id="m8a11_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>3.</b> One of the UK’s most peculiar jobs is the Ravenmaster, the man who looks after the famous ravens at the Tower of London.
+						Derrick Coyle, 64, starts each day at dawn. He greets each of the ravens by name and lets them out of the cages where they spend the night.
+						He said in a recent interview: “Getting up in the morning is the worst part and I don’t have a social life. Even in the summer I always have to get back to put the ravens to bed. The fact it’s an unusual job does give me a bit of a boost. There’s no one else in the world who can say ‘I’m a Ravenmaster Yeoman.’</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>7)</b> Find a word that means ‘improving someone’s mood/reputation/situation.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a11_6" nexturl="#m8a11_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>

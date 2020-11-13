@@ -1,0 +1,37 @@
+<template name="forums">
+	<article class="shadow">
+		<section>
+			{{#if Template.subscriptionsReady}}
+				<header class="acttitle">
+					<a draggable="false" class="forums_org_back forum-clickable"><i class="titlereturn fa fa-arrow-left"></i></a>
+					{{>menu}}
+					<div class="parent-level">Journey 2 English</div>
+					<div class="acttitle-title">Forums</div>
+				</header>
+				<div class="content-forum">
+					<p id="forums-data"></p>
+					<div class="forum-wrapper">
+						<h4>Choose an organisation!</h4>
+						{{#each forumList}}
+							<div class="forum-row">
+								<div class="forum-title">
+									<a draggable="false" href="/{{forumLink}}">{{orgIdName}} forums →</a>
+								</div>
+							</div>
+						{{/each}}
+					</div>
+				</div>
+			{{/if}}
+		</section>
+	</article>
+
+	<article class="hidden" >
+		<section>
+			<h1>Forum - closed for maintenance</h1>
+			<div class="content-forum">
+				<h3>We are making some changes to the forum to improve it. In the meantime this option will be disabled and we would like to apologise for any inconvenience this may cause.</h3>					
+			</div>
+		</section>
+	</article>
+	
+</template>

@@ -1,0 +1,945 @@
+<template name="UserGuide">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+	<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{#if hasCourse}}
+				{{>menu}}
+			{{else}}
+				{{>menu_assess}}
+			{{/if}}
+			<div class="parent-level">Journey 2 English</div> <div class="acttitle-title">User Guide</div>
+		</header>
+		
+		<section id="ughome">
+			<div class="content">
+				<figure class="imgleft-responsive hidden-xs" style="margin-top: 0; margin-right: 10px;"><img draggable="false" src="/images/welcome/9.png" style="width: 100px; height: auto;"></figure>
+		
+				<h1>A Guide to Journey 2 English</h1>
+				
+				<img draggable="false" src="/images/welcome/9.png" class="img-responsive center-block visible-xs" style="width: 100px; height: auto;">
+				
+				<h3>The Journey 2 English platform offers tutors a variety of ways to support learners and encourage peer-to-peer learning. Click on a feature to find out more.</h3>
+				<div class="clear-float"></div>
+				
+				<ul class="user-guide-links">
+					{{#if isAdminModOrTutor}}
+						<li><a draggable="false" href="ugroles"><i class="icon-user-roles"></i>Quick Guide to User Roles</a></li>
+						<li><a draggable="false" href="ugtest"><i class="icon-assess-list"></i>English Skills Test</a></li>
+					{{else}} 
+						{{#if hasGroup}}
+						<li><a draggable="false" href="ugroles"><i class="icon-user-roles"></i>Quick Guide to User Roles</a></li>
+						<li><a draggable="false" href="ugtest"><i class="icon-assess-list"></i>English Skills Test</a></li>
+						{{/if}}
+					{{/if}}
+					<li><a draggable="false" href="ugcourse"><i class="fas fa-arrow-alt-circle-right"></i>Accessing the course</a></li>
+					<li><a draggable="false" href="uglearningtools"><i class="icon-tools"></i>Learning Tools</a></li>
+					{{#if isStudent}}
+						<li><a draggable="false" href="ugprogress"><i class="fas fa-chart-line"></i>Your progress</a></li>
+					{{/if}}
+					{{#if isTutor}}
+						<li><a draggable="false" href="ugtools"><i class="icon-user-tutor"></i>Tutor tools</a></li>
+					{{/if}}
+					{{#if isMod}}
+						<li><a draggable="false" href="ugtools"><i class="icon-user-mod"></i>Moderator tools</a></li>
+					{{/if}}
+					{{#if isAdmin}}
+						<li><a draggable="false" href="ugprogress"><i class="icon-user-student"></i>Student progress</a></li>
+						<li><a draggable="false" href="ugtools"><i class="icon-user-tutor"></i>Tutor/Mod tools</a></li>
+					{{/if}}
+				</ul>
+				<div class="center"><h3 class="inline-block" style="margin: 2em .5em 1em;">Or search for something specific:</h3> {{>ugnav direction="up" menuClass="dropdown-menu-scroll"}}</div>
+				{{#if isAdmin}}
+					<aside style="position: relative; padding-left: 40px; padding: 6px 10px 6px 40px; background: silver; border-radius: 6px; background: #eee; border: 1px solid silver; margin: 1em auto;"><i class="fas fa-info-circle" style="color: #2653ff; font-size: 22px; vertical-align: middle; top: 10px; left: 10px; position: absolute;"></i> Note: you are currently viewing the guide with an admin account. This means you will see all content as the highest user level each section is available to (moderator, tutor, student.)</aside>
+				{{/if}}
+					
+			</div>
+		</section>
+	
+	</div>
+	<span class="ug-image-preload"></span>
+</article>
+</template>
+
+<template name="ugnav">
+	<div class="btn-group">
+		<div class="drop{{direction}}">
+			<button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">User Guide contents<span class="caret"></span></button>
+			<ul class="dropdown-menu {{menuClass}}">
+				<li><a draggable="false" href="UserGuide">Home</a></li>
+				<li class="divider"></li>
+				{{#if isAdminModOrTutor}}
+					<li><a draggable="false" href="ugroles">Quick Guide to User Roles</a></li>
+					<li><a draggable="false" href="ugtest">English Skills Test</a></li>
+					<li class="divider"></li>
+				{{else}} 
+					{{#if hasGroup}}
+					<li><a draggable="false" href="ugroles">Quick Guide to User Roles</a></li>
+					<li><a draggable="false" href="ugtest">English Skills Test</a></li>
+					<li class="divider"></li>
+					{{/if}}
+				{{/if}}
+				<li><a draggable="false" href="ugcourse">Accessing the course</a></li>
+				<li class="divider"></li>
+				<li><a draggable="false" href="uglearningtools">Learning tools</a>
+				<li class="subitem"><a draggable="false" href="uglearningtools#ug-notebook"><i class="fas fa-level-up-alt"></i> Notebook</a></li>
+				<li class="subitem"><a draggable="false" href="uglearningtools#ug-voice"><i class="fas fa-level-up-alt"></i> Voice recorder</a></li>
+				{{#if isAdminModOrTutor}}
+					<li class="subitem"><a draggable="false" href="uglearningtools#ug-messaging"><i class="fas fa-level-up-alt"></i> Messaging</a></li>
+					<li class="subitem"><a draggable="false" href="uglearningtools#ug-forum"><i class="fas fa-level-up-alt"></i> Forum</a></li>
+				{{else}} 
+					{{#if hasGroup}}
+					<li class="subitem"><a draggable="false" href="uglearningtools#ug-messaging"><i class="fas fa-level-up-alt"></i> Messaging</a></li>
+					<li class="subitem"><a draggable="false" href="uglearningtools#ug-forum"><i class="fas fa-level-up-alt"></i> Forum</a></li>
+					{{/if}}
+				{{/if}}
+				</li>
+				{{#if isStudent}}
+					<li class="divider"></li>
+					<li><a draggable="false" href="ugprogress">Your progress</a></li>
+				{{/if}}
+				{{#if isAdmin}}
+					<li class="divider"></li>
+					<li><a draggable="false" href="ugprogress">Student progress</a></li>
+				{{/if}}
+				{{#if isAdminModOrTutor}}
+					<li class="divider"></li>
+					<li>
+						<a draggable="false" href="ugtools">
+							{{#if isTutor}}
+								Tutor tools
+							{{else}}
+								{{#if isMod}}
+									Moderator tools
+								{{/if}}
+								Tutor/Mod tools
+							{{/if}}
+						</a>
+					</li>
+					{{#if isAdminOrTutor}}<li class="subitem"><a draggable="false" href="ugtools#ug-test2"><i class="fas fa-level-up-alt"></i> Marking the English Skills Test</a></li>{{/if}}
+					<li class="subitem"><a draggable="false" href="ugtools#ug-users"><i class="fas fa-level-up-alt"></i> Users &amp; progress tracking</a></li>
+					{{#if isAdminOrMod}}<li class="subitem"><a draggable="false" href="ugtools#ug-groups"><i class="fas fa-level-up-alt"></i> Groups</a></li>{{/if}}
+					<li class="subitem"><a draggable="false" href="ugtools#ug-subgroups"><i class="fas fa-level-up-alt"></i> Sub-groups</a></li>
+					{{#if isAdminOrTutor}}<li class="subitem"><a draggable="false" href="ugtools#ug-notebook-tut"><i class="fas fa-level-up-alt"></i> Notebook: reading and commenting</a></li>{{/if}}
+					{{#if isAdminOrTutor}}<li class="subitem"><a draggable="false" href="ugtools#ug-voice-tut"><i class="fas fa-level-up-alt"></i> Voice recorder: listening and commenting</a></li>{{/if}}
+					<li class="subitem"><a draggable="false" href="ugtools#ug-announce"><i class="fas fa-level-up-alt"></i> Announcements</a></li>
+				{{/if}}
+			</ul>
+		</div>
+	</div>
+</template>
+
+<template name="ugFooter">
+<div class="text-center" style="padding: 2em;"><a href="#" class="gototop"><i class="fas fa-arrow-up"></i> Back to top</a></div>
+</template>
+
+<template name="ugroles">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				<a draggable="false" href="/UserGuide"><i class="titlereturn fa fa-arrow-left"></i></a>
+				{{#if hasCourse}}
+					{{>menu}}
+				{{else}}
+					{{>menu_assess}}
+				{{/if}}
+				<div class="parent-level">User Guide</div> <div class="acttitle-title">Quick Guide to User Roles</div>
+			</header>
+			
+			<section id="ugroles">
+				<div class="content ug-content">
+					
+					<div class="text-center">{{>ugnav direction="down"}}</div>
+
+					<h2>Quick Guide to User Roles</h2>
+					
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6">
+								<p>The Journey 2 English platform has three user levels.</p>
+								<p><b>Students can:</b></p>
+								<ul>
+									<li>access the course</li>
+									<li>view their progress</li>
+									<li>communicate with other students and tutors within their group</li>
+								</ul>
+								<p><b>Tutors can:</b></p>
+								<ul>
+									<li>manage the students within their group</li>
+									<li>see progress reports for each student</li>
+									<li>sub-divide students together into sub-groups (like classes).</li>
+								</ul>
+								<p><b>Moderators can:</b></p>
+								<ul>
+									<li>manage all users and groups within their organisation.</li>
+									<li>communicate with tutors within their organisation</li>
+								</ul>
+								<p>&nbsp;</p>
+							</div>
+							<div class="col-sm-6">
+								<img draggable="false" src="images/ug/userroles.svg" class="center-block img-responsive" style="max-width: 400px" alt="User roles diagram">
+								<p>&nbsp;</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<p>See the table below for more information</p>
+							</div>
+						</div>
+					</div>
+
+					<table class="user-roles-table">
+						<thead>
+							<tr class="user-role-header">
+								<th>&nbsp;</th>
+								<th colspan="4">User role</th>
+							</tr>
+							<tr>
+								<th>&nbsp;</th>
+								<th title="Administrator" data-small-title="Admin" data-x-small-title="A" class="hidden"></th>
+								<th title="Moderator" data-small-title="Mod" data-x-small-title="M"></th>
+								<th title="Tutor" data-small-title="Tutor" data-x-small-title="T"></th>
+								<th title="Student" data-small-title="Stu…" data-x-small-title="S"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Access course</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td><i class="fa fa-check"></i></td>
+								<!--student--><td><i class="fa fa-check"></i></td>
+							</tr>
+							<tr class="hidden">
+								<td>Manage super moderators</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td></td>
+								<!--tutor--><td></td>
+								<!--student--><td></td>
+							</tr>
+							<tr class="hidden">
+								<td>Create access codes</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td></td>
+								<!--tutor--><td></td>
+								<!--student--><td></td>
+							</tr>
+							<tr class="hidden">
+								<td>Manage organisations</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td></td>
+								<!--tutor--><td></td>
+								<!--student--><td></td>
+							</tr>
+							<tr class="hidden">
+								<td>Manage moderators</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td></td>
+								<!--tutor--><td></td>
+								<!--student--><td></td>
+							</tr>
+							<tr>
+								<td>Manage groups</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td></td>
+								<!--student--><td></td>
+							</tr>
+							<tr>
+								<td>Manage tutors</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td></td>
+								<!--student--><td></td>
+							</tr>
+							<tr>
+								<td>Manage students</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td><i class="fa fa-check"></i></td>
+								<!--student--><td></td>
+							</tr>
+							<tr>
+								<td>Manage sub-groups</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td><i class="fa fa-check"></i></td>
+								<!--student--><td></td>
+							</tr>
+							<tr>
+								<td>See own progress</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td><i class="fa fa-check"></i></td>
+								<!--student--><td><i class="fa fa-check"></i></td>
+							</tr>
+							<tr>
+								<td>See students' progress within a group</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td><i class="fa fa-check"></i></td>
+								<!--student--><td></td>
+							</tr>
+							<tr>
+								<td>See students' progress within an organisation</td>
+								<!--admin--><td class="hidden"><i class="fa fa-check"></i></td>
+								<!--mod--><td><i class="fa fa-check"></i></td>
+								<!--tutor--><td></td>
+								<!--student--><td></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					{{>ugFooter}}
+				</div>
+			</section>
+		</div>
+	</article>
+</template>
+
+<template name="ugtest">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+	<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/UserGuide"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{#if hasCourse}}
+				{{>menu}}
+			{{else}}
+				{{>menu_assess}}
+			{{/if}}
+			<div class="parent-level">User Guide</div> <div class="acttitle-title">English Skills Test</div>
+		</header>
+		
+		<section id="ugtest">
+			<div class="content ug-content">				
+				<div class="text-center">{{>ugnav direction="down"}}</div>
+				<h2>English Skills Test</h2>
+				{{#if isStudent}}<p>The English Skills Test will assess your level of English from A1 - C1+.</p>{{/if}}
+				{{#if isTutor}}<p>The English Skills Test will assess your students' level of English from A1 - C1+.</p>{{/if}}
+				{{#if isAdminOrMod}}<p>The English Skills Test is designed to assess levels of English using the Common European Framework (CEFR) of reference.</p>{{/if}}
+				
+				<h4>Let's get started</h4>
+				<ol>
+					<li>
+						<p>You can access the English Skills Test from the home page. 'How to' will take you to this guide. 'Start' will take you to the assessment.</p>
+						<figure><img draggable="false" src="images/ug/test01.png" alt="Screenshot"></figure>
+					</li>
+					<li>
+					
+						{{#if isStudent}}
+							<p>From here you can access the 4 sections of the test. You can do the sections in any order, but you must complete each section in one sitting. Once you have started a section, you cannot leave and then come back.</p>
+						{{else}}
+							<p>From here students can access the 4 sections of the test. They can be done in any order, but each must be completed in one sitting. Once students have started a section, they cannot leave and then come back.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test02.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>You must attempt all 4 sections to complete the test and have it marked by your tutor.</p>
+						{{else}}
+							<p>Students must attempt all 4 sections to complete the test, at which point it can be marked by a tutor.</p>
+						{{/if}}
+						{{#if isAdminOrTutor}}<aside>See also: <a draggable="false" href="ugtools#ug-test2">How to mark the English Skills Test</a></aside>{{/if}}
+						
+					</li>
+					<li>
+						<h5>Reading</h5>
+						
+						{{#if isStudent}}
+							<p>In the reading section you will be given a passage to read. There will be questions to answer. Type your answers in the boxes.</p>
+						{{else}}
+							<p>In the reading section students will be given a passage to read. There will then be questions to answer.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test03.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>Once you have answered all the questions, click 'Submit'.</p>
+						{{else}}
+							<p>Once all the questions have been answered, students should click 'Submit' to submit their answers.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test04.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>If you did well enough, you will be given a more difficult passage to attempt. There are up to 5 passages.</p>
+							<p>Once you have completed all the passages, you will be taken back to the main page and the reading section will be marked as complete.</p>
+						{{else}}
+							<p>If students do well enough, they will be given a more difficult passage to attempt. There are up to 5 passages.</p>
+							<p>Once students have completed all the passages, they will be taken back to the main page and the reading section will be marked as complete.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test05.png" alt="Screenshot"></figure>
+					</li>
+					<li>
+						<h5>Writing</h5>
+						
+						{{#if isStudent}}
+							<p>In the writing section there is a choice of 4 different topics. Choose one topic and write 150 words. Each one has some ideas to help you.</p>
+						{{else}}
+							<p>In the writing section there is a choice of 4 different topics. Students choose one topic and write 150 words. Each one has some ideas to help them.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test06.png" alt="Screenshot"></figure>
+						<figure><img draggable="false" src="images/ug/test07.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>Click 'submit' when you have finished. You will be taken back to the main page and the writing section will be marked as complete.</p>
+						{{else}}
+							<p>Students should click 'submit' when they have finished. They will then be taken back to the main page and the writing section will be marked as complete.</p>
+						{{/if}}	
+						
+						<figure><img draggable="false" src="images/ug/test08.png" alt="Screenshot"></figure>
+					</li>
+					<li>
+						<h5>Listening</h5>
+						
+						{{#if isStudent}}
+							<p>For this section you will need a computer/device with speakers or headphones. In the listening section there is a conversation to listen to, and then some questions to answer about the conversation. These may be true or false, or multiple choice. To help, you can listen to the conversation a second time.</p>
+						{{else}}
+							<p>For this section students will need a computer/device with speakers or headphones. In the listening section there is a conversation to listen to, and then some questions to answer about the conversation. These may be true or false, or multiple choice. To help, students can listen to the conversation a second time.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test09.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>Once you have answered all the questions, click 'submit'.</p>
+						{{else}}
+							<p>Once all the questions have been answered, students should click 'submit'.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test04.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>If you did well enough, you will be given a more difficult conversation to attempt. There are up to 4 conversations.</p>
+							<p>Once you have completed all the questions you will be taken back to the main page and the listening section will be marked as complete.</p>
+						{{else}}
+							<p>If students do well enough, they will be given a more difficult conversation to attempt. There are up to 4 conversations.</p>
+							<p>Once students have completed all the questions they will be taken back to the main page and the listening section will be marked as complete.</p>
+						{{/if}}
+						
+						<figure><img draggable="false" src="images/ug/test10.png" alt="Screenshot"></figure>
+					</li>
+					<li>
+						<h5>Speaking</h5>
+						
+						{{#if isStudent}}
+							<p>For this section you will need a computer/device with speakers or headphones, and a microphone. In the speaking section you will hear a series of questions. For each one you should record your answer.</p>
+						{{else}}
+							<p>For this section students will need a computer/device with speakers or headphones, and a microphone. In the speaking section students will hear a series of questions, and record an answer for each one.</p>
+						{{/if}}
+						
+						<p><sup style="color: #999; font-style: italic;">Note: Due to certain restrictions, we currently cannot offer the speaking test in Internet Explorer or on Apple devices.</sup></p>
+						<figure><img draggable="false" src="images/ug/test11.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>Note: your browser may ask you for permission before you can record your answers.</p>
+						{{else}}
+							<p>Note: students' browsers may ask them for permission before they can record your answers.</p>
+						{{/if}}
+						
+						<figure style="max-width: 360px;"><img draggable="false" src="images/ug/test12.png" alt="Screenshot"></figure>
+						
+						{{#if isStudent}}
+							<p>You have up to 2 minutes to record your response to each question. Once you have recorded all your answers, click 'Return to the English Skills Test Menu'.</p>
+						{{else}}
+							<p>Students have up to 2 minutes to record their responses to each question. Once students have recorded all their answers, they should click 'Return to the English Skills Test Menu'.</p>
+						{{/if}}
+						
+						<figure style="max-width: 360px;"><img draggable="false" src="images/ug/test13.png" alt="Screenshot"></figure>
+						<p>The speaking section will be marked as complete.</p>
+						<figure><img draggable="false" src="images/ug/test14.png" alt="Screenshot"></figure>
+					</li>
+					<li>
+						<p>Once all 4 sections have been attempted, the test is complete and is ready to be marked by tutor. {{#if isStudent}}When this is done you will receive a report explaining your results for each skill and an overall level.{{/if}}</p>
+						<figure><img draggable="false" src="images/ug/test15.png" alt="Screenshot"></figure>
+						
+						{{#if isAdminOrTutor}}<aside>See also: <a draggable="false" href="ugtools#ug-test2">How to mark the English Skills Test</a></aside>{{/if}}
+					</li>
+				</ol>
+				{{>ugFooter}}
+			</div>
+		</section>
+	</div>
+</article>
+</template>
+
+<template name="ugcourse">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+	<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/UserGuide"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{#if hasCourse}}
+				{{>menu}}
+			{{else}}
+				{{>menu_assess}}
+			{{/if}}
+			<div class="parent-level">User Guide</div> <div class="acttitle-title">Accessing the course</div>
+		</header>
+		
+		<section id="ugcourse">
+			<div class="content ug-content">
+				<div class="text-center">{{>ugnav direction="down"}}</div>
+				<h2>Accessing the course</h2>
+			
+				<p>You can access the course from the home page.</p>
+				<figure><img draggable="false" src="images/ug/j2e01.png" alt="Screenshot"></figure>
+				<p>From this panel you can get a quick look at your progress, see an overview of the course content, and access the activities. Click 'Start' to begin learning.</p>
+				
+				<div class="section">
+					<h4>Overview</h4>
+					<p>The 'Overview' contains details about the topics covered and where to find them, the grammar points, the learning outcomes, and how long each activity takes.</p>
+					<figure><img draggable="false" src="images/ug/j2e02.png" alt="Screenshot"></figure>
+					<figure>
+						<img draggable="false" src="images/ug/j2e03.png" alt="Screenshot">
+						<figcaption>The Module Description highlights the main language skill(s) in each activity.</figcaption>
+					</figure>
+				</div>
+				
+				<div class="section">
+					<h4>Navigating the course</h4>
+					<p>Clicking 'Start' on the home page will take you to the course.</p>
+					<figure><img draggable="false" src="images/ug/j2e01.png" alt="Screenshot"></figure>
+					<p>The course is designed around a journey through the UK. It is divided into 2 units - <em>English for Everyday Use</em> and <em>English for Work and Study</em>. Each unit has 5 modules, each of which covers a specific topic. There approximately 30 activities per module. Vocabulary, idioms and phrasal verbs are collected under the 'My Words' button for revision. 'Find out more...' has information on each part of the UK.</p>
+					<figure><img draggable="false" src="images/ug/j2e04.png" alt="Screenshot"></figure>
+					<figure>
+						<img draggable="false" src="images/ug/j2e05.png" alt="Screenshot">
+						<figcaption>Here you can select activities, learn mode about where you are, and see the word and phrases you will learn in this module.</figcaption>
+					</figure>
+					<p>If you need to go back at any point, just click the arrow in the top-left corner.</p>
+					<figure><img draggable="false" src="images/ug/back.png" alt="Screenshot"></figure>
+				</div>
+				{{>ugFooter}}
+			</div>
+		</section>
+	</div>
+</article>
+</template>
+
+<template name="uglearningtools">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+	<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/UserGuide"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{#if hasCourse}}
+				{{>menu}}
+			{{else}}
+				{{>menu_assess}}
+			{{/if}}
+			<div class="parent-level">User Guide</div> <div class="acttitle-title">Learning Tools</div>
+		</header>
+		
+		<section id="uglearningtools">
+			<div class="content ug-content">
+				<div class="text-center">{{>ugnav direction="down"}}</div>
+				<h2>Learning tools</h2>
+				<ul class="ug-jump-links">
+					<span>Jump to:</span><li><a draggable="false" href="#ug-notebook">Notebook</a></li><li><a draggable="false" href="#ug-voice">Voice recorder</a></li>{{#if isAdminModOrTutor}}<li><a draggable="false" href="#ug-messaging">Messaging</a></li><li><a draggable="false" href="#ug-forum">Forum</a></li>{{else}}{{#if hasGroup}}<li><a draggable="false" href="#ug-messaging">Messaging</a></li><li><a draggable="false" href="#ug-forum">Forum</a></li>{{/if}}{{/if}}
+				</ul>
+				<p>Journey 2 English comes with a suite of learning tools: a notebook, the learner's dictionary, a grammar guide and a voice recorder
+					
+				{{#if isAdminModOrTutor}},as well as Messaging and Forum for communicating with students and other tutors{{else}}{{#if hasGroup}}, as well as Messaging and Forum for communicating with students and other tutors{{/if}}{{/if}}.
+				The tools can be accessed from the tool panel on the right-hand side of the page on computers, or in the main menu if you are using a smaller device (such as a smartphone.)</p>
+
+				{{#if isAdminModOrTutor}}
+					{{>ugToolsFigures version="full"}}
+				{{else}}
+					{{#if hasGroup}}
+						{{>ugToolsFigures version="full"}}
+					{{else}}
+						{{>ugToolsFigures version="selfstudy"}}
+					{{/if}}
+				{{/if}}
+				
+				<div class="section" id="ug-notebook">
+					<h3>Notebook</h3>
+					
+					{{#if isStudent}}
+						<p>The function of the notebook is to practise writing skills. For some activities you need to type your answers to questions and check that against sample answers. Just give your note a title, some content, and then click 'Save' to finish. {{#if hasGroup}}Your tutor can read your notes and add comments.{{/if}}</p>
+					{{/if}}
+					{{#if isTutor}}
+						<p>The function of the notebook is to practise writing skills. For some activities students need to type their answers to questions and check that against sample answers.</p>
+					{{/if}}
+					{{#if isAdminOrMod}}
+						<p>The function of the notebook is to practise writing skills. For some activities students need to type their answers to questions and check that against sample answers.{{#if hasGroup}} Tutors can read the notes and add comments.{{/if}}</p>
+					{{/if}}
+					<figure><img draggable="false" src="images/ug/tools03.png" alt="Screenshot"></figure>
+					<p>You can open the notebook at any point to see your saved notes or make new notes. You can also move the notebook around by dragging on the blue title bar of the notebook window.</p>
+					{{#if isAdminOrTutor}}<aside>See also: <a draggable="false" href="ugtools#ug-notebook-tut">How to access student notebooks as a tutor</a></aside>{{/if}}
+				</div>
+				
+				<div class="section" id="ug-voice">
+					<h3>Voice recorder</h3>
+					
+					{{#if isStudent}}
+						<p>The voice recorder enables speaking to be practised. Some activities invite you to record your speech, play it back and compare it with a native speaker. {{#if hasGroup}}Your tutor can listen to your audio file and send an audio file back with their comments.{{/if}}</p>
+					{{/if}}
+					{{#if isTutor}}
+						<p>The voice recorder enables speaking to be practised. Some activities invite students to record their speech, play it back and compare it with a native speaker.</p>
+					{{/if}}
+					{{#if isAdminOrMod}}
+						<p>The voice recorder enables speaking to be practised. Some activities invite students to record their speech, play it back and compare it with a native speaker. {{#if hasGroup}}Tutors can listen to audio files and send audio files back with their comments.{{/if}}</p>
+					{{/if}}
+					
+					<p><sup style="color: #999; font-style: italic;">Note: Due to certain restrictions, we currently cannot offer the speaking test in Internet Explorer or on Apple devices.</sup></p>
+					<figure><img draggable="false" src="images/ug/tools04.png" alt="Screenshot"></figure>
+					<p>Note: your browser may ask you for permission before you can record your answers.</p>
+					<figure style="max-width: 360px;"><img draggable="false" src="images/ug/test12.png" alt="Screenshot"></figure>
+					<p>Once you have finished your recording, give it a name and click 'Save'.</p>
+					<figure><img draggable="false" src="images/ug/tools05.png" alt="Screenshot"></figure>
+					{{#if isAdminOrTutor}}<aside>See also: <a draggable="false" href="ugtools#ug-voice-tut">How to access student recordings as a tutor</a></aside>{{/if}}
+				</div>
+				
+				{{#if isAdminModOrTutor}}
+					{{>ugMessagingForumSections}}
+				{{else}}
+					{{#if hasGroup}}
+						{{>ugMessagingForumSections}}
+					{{/if}}
+				{{/if}}
+				{{>ugFooter}}
+			</div>
+		</section>
+	</div>
+</article>
+</template>
+
+<template name="ugprogress">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+	<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/UserGuide"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{#if hasCourse}}
+				{{>menu}}
+			{{else}}
+				{{>menu_assess}}
+			{{/if}}
+			<div class="parent-level">User Guide</div>
+			<div class="acttitle-title">
+				{{#if isStudent}}
+					Your progress
+				{{else}}
+					Student progress
+				{{/if}}
+			</div>
+		</header>
+		
+		<section id="ugprogress">
+			<div class="content ug-content">
+				<div class="text-center">{{>ugnav direction="down"}}</div>
+				{{#if isStudent}}
+					<h2>Your progress</h2>
+				{{else}}
+					<h2>Student progress</h2>
+				{{/if}}
+				
+				<!--{{#if isStudent}}
+					<p>You can see your progress at any time throughout the course by selecting 'Account' at the top of the page. On mobile devices, this is located in the main menu.</p>
+				{{else}}
+					<p>Students can see their progress at any time throughout the course by selecting 'Account' at the top of the page. On mobile devices, this is located in the main menu.</p>
+				{{/if}}
+				
+				<figure style="max-width: 360px;">
+					<img draggable="false" src="images/ug/progress01.png?v=2" alt="Screenshot">
+					<figcaption>Desktop/laptop/large tablet</figcaption>
+				</figure>
+				<figure>
+					<img draggable="false" src="images/ug/progress02.png?v=2" alt="Screenshot">
+					<figcaption>Tablet/smartphone</figcaption>
+				</figure>
+				
+				{{/if}}-->
+				
+				{{#if isStudent}}
+					<p>You can see your progress by selecting the progress chart on the home page of the course.</p>
+				{{else}}
+					<p>Students can see their progress selecting the progress chart on the home page of the course.</p>
+				{{/if}}
+				
+				<figure>
+					<img draggable="false" src="images/ug/progress03.png?v=2" alt="Screenshot">
+				</figure>
+				
+				{{#if isStudent}}
+					<p>From here you can see all your account information, including your progress through the course.</p>
+				{{else}}
+					<p>From here students can see all their account information, including progress through the course.</p>
+				{{/if}}
+				
+				<figure>
+					<img draggable="false" src="images/ug/progress04.png" alt="Screenshot">
+					<figcaption>Account overview</figcaption>
+				</figure>
+				<figure>
+					<img draggable="false" src="images/ug/progress05.png" alt="Screenshot">
+					<figcaption>Detailed information on module and activity completion</figcaption>
+				</figure>
+			</div>
+			{{>ugFooter}}
+		</section>
+	</div>
+</article>
+</template>
+
+<template name="ugtools">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+	<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/UserGuide"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{#if hasCourse}}
+				{{>menu}}
+			{{else}}
+				{{>menu_assess}}
+			{{/if}}
+			<div class="parent-level">User Guide</div>
+			<div class="acttitle-title">
+				{{#if isTutor}}
+					Tutor tools
+					{{else}}
+						{{#if isMod}}
+							Moderator tools
+						{{/if}}
+					Tutor &amp; Moderator tools					
+				{{/if}}
+			</div>
+		</header>
+		
+		<section id="ugtest-tut">
+			<div class="content ug-content">
+				<div class="text-center">{{>ugnav direction="down"}}</div>
+				<h2>
+					{{#if isTutor}}
+						Tutor tools
+					{{else}}
+						{{#if isMod}}
+							Moderator tools
+						{{/if}}
+						Tutor/Moderator tools
+					{{/if}}
+				</h2>
+				
+				<ul class="ug-jump-links">
+					<span>Jump to:</span>
+					{{#if isAdminOrTutor}}<li><a draggable="false" href="#ug-test2">Marking the English Skills Test</a></li>{{/if}}<!-- remove space
+					--><li><a draggable="false" href="#ug-users">Users &amp; progress tracking</a></li><!-- remove space
+					-->{{#if isAdminOrMod}}<li><a draggable="false" href="#ug-groups">Groups</a></li>{{/if}}<!-- remove space
+					--><li><a draggable="false" href="#ug-subgroups">Sub-groups</a></li><!-- remove space
+					-->{{#if isAdminOrTutor}}<li><a draggable="false" href="#ug-notebook-tut">Notebook: reading and commenting</a></li>{{/if}}<!-- remove space
+					-->{{#if isAdminOrTutor}}<li><a draggable="false" href="#ug-voice-tut">Voice recorder: listening and commenting</a></li>{{/if}}<!-- remove space
+					--><li><a draggable="false" href="#ug-announce">Announcements</a></li>
+				</ul>
+			
+				{{#if isTutor}}
+					<p>Tutors can oversee all the students within their group. They can see each individual user's progress throughout the course, post comments on students' notebook entries and voice recordings, and mark students' English Skills Tests. You can access all this on the home page below 'Start'. Click on 'Users' to access data on your students' progress.</p>
+					<figure><img draggable="false" src="images/ug/tutor_dash.png" alt="Screenshot"></figure>
+				{{/if}}
+				
+				{{#if isAdminOrMod}}
+					<p>Moderators can oversee all the students and tutors within their organisation. This includes creating and managing groups, and tracking user progress. You can access these tools on the home page below 'Start'.</p>
+					<figure><img draggable="false" src="images/ug/mod_dash.png" alt="Screenshot"></figure>
+				{{/if}}
+				
+				{{#if isAdminOrTutor}}
+					<div class="section" id="ug-test2">
+						<h3>Marking the English Skills Test</h3>
+						<p>As a tutor you can mark the English Skills Tests taken by your students. You can access the assessment list from the home page. The notification badge will tell you if there are completed assessments ready to be marked. There is also a link to the English Skills Test marking guidelines.</p>
+						<figure style="max-width: 300px;"><img draggable="false" src="images/ug/mark01.png" alt="Screenshot"></figure>
+						<p>Here you will see a list of every test assigned to a student in your group. Once a test has been completed you click on the username to review the test.</p>
+						<figure><img draggable="false" src="images/ug/mark02.png" alt="Screenshot"></figure>
+						
+						<p>Then you can assign a mark for each of the 4 sections of the test (reading, writing, listening and speaking.)</p>
+						<figure><img draggable="false" src="images/ug/mark03.png" alt="Screenshot"></figure>
+						
+						<p>The reading and listening sections are marked automatically, however you can change the mark if required.</p>
+						<figure><img draggable="false" src="images/ug/mark04.png" alt="Screenshot"></figure>
+						<figure><img draggable="false" src="images/ug/mark05.png" alt="Screenshot"></figure>
+						
+						<p>Once all 4 sections have been marked you can then assign an overall mark for the test. Once you have done this, the marking process is complete.</p>
+						<figure><img draggable="false" src="images/ug/mark06.png" alt="Screenshot"></figure>
+						
+						<h4>Generating reports</h4>
+						<p>From the assessment list you can generate a report for completed assessments and save it as a PDF file. To do so, first click on 'Assessment Report.'</p>
+						<figure>
+							<img draggable="false" src="images/ug/mark07.png" alt="Screenshot">
+							<figcaption>Note: information such as 'date started' and which sections have been attempted will not be shown in this table until the student has completed the test.</figcaption>
+						</figure>
+						
+						<p>Next, select the name of the student you want the report for and click the PDF icon.</p>
+						<figure><img draggable="false" src="images/ug/mark08.png" alt="Screenshot"></figure>
+						
+						<p>You will now have a copy of the report on your computer/device. Note: if any sections of the test haven't been marked, these sections may be labelled as "not attempted" in the report.</p>					
+					</div>
+				{{/if}}
+				
+				<div class="section" id="ug-users">
+					<h3>Users &amp; progress tracking</h3>
+					{{#if isTutor}}<p>You can view all the students in your group and track their progress by selecting 'Users' on the home page.</p>{{/if}}
+					{{#if isAdminOrMod}}<p>You can view and manage all the users in your organisation by selecting 'Users' on the home page.</p>{{/if}}
+					<figure><img draggable="false" src="images/ug/users01.png" alt="Screenshot"></figure>
+					<figure><img draggable="false" src="images/ug/users02.png" alt="Screenshot"></figure>
+					
+					<p>Click a user's name to open their profile. Here you can see detailed information about their progress through the course. {{#if isAdminOrTutor}}You can also see your students' <a draggable="false" href="#notebook_tut">notebook</a> entries and listen to the <a draggable="false" href="#voice_tut">voice recordings</a>, and give feedback accordingly.{{/if}}</p>
+					<figure>
+						<img draggable="false" src="images/ug/progress04.png" alt="Screenshot">
+						<figcaption>Account overview</figcaption>
+					</figure>
+					<figure>
+						<img draggable="false" src="images/ug/progress05.png" alt="Screenshot">
+						<figcaption>Detailed information on module and activity completion</figcaption>
+					</figure>
+				</div>
+				
+				{{#if isAdminOrMod}}
+					<div class="section" id="ug-groups">
+						<h3>Groups</h3>
+						<p>To begin with every student and tutor in your organisation will be in one large 'default' group. Moderators have the responsibility of creating the required number of groups and moving students and tutors into these from the 'default' group. The name of the group should be shared with the tutor responsible for it.</p>
+						<p>Typically groups will contain at least one tutor who can manage the students within that group. Tutors will not be able to see students in other groups.</p>
+						<p>Tutors can divide students into sub-groups if they wish.</p>
+						<h4>Making a group</h4>	
+						<p>To make a group, click on 'Add group' on the home page. Then simply enter a name for your group and click 'Create group.'</p>
+						<figure><img draggable="false" src="images/ug/group01.png" alt="Screenshot"></figure>
+						<figure><img draggable="false" src="images/ug/group02.png" alt="Screenshot"></figure>
+						<p>Then see 'Managing groups' below to see how to add users to a group.</p>
+						<h4>Managing Groups</h4>
+						<p>To view and edit groups, click 'Groups' on the home page.</p>
+						<figure><img draggable="false" src="images/ug/group03.png" alt="Screenshot"></figure>
+						<p>You can then select a group by clicking on its name.</p>
+						<figure><img draggable="false" src="images/ug/group04.png" alt="Screenshot"></figure>
+						<p>The group editor page will show you:</p>
+						<ol>
+							<li>Any sub-groups in this group <i>(<a draggable="false" href="#subgroups">learn more</a>)</i></li>
+							<li>The tutors currently in this group</li>
+							<li>All the students in the group</li>
+							<li>A list of all the users you can add to the group</li>
+						</ol>
+						<p>Simply use the 'Add' and 'Remove' buttons to edit the members of the group.</p>
+						<figure><img draggable="false" src="images/ug/group05.png" alt="Screenshot"></figure>
+							
+					</div>
+				{{/if}}
+				
+				<div class="section" id="ug-subgroups">
+					<h3>Sub-groups</h3>
+					
+					{{#if isTutor}}
+						<p>Sub-groups allow you to divide up students within your group. This can help you teach them more effectively by 'streaming' them if required. For example, if you have several classes of students, you can make a sub-group for each class. Sub-groups will also have their own forum only accessible to you and the students within the sub-group.</p>
+					{{/if}}
+					{{#if isAdminOrMod}}
+						<p>Sub-groups allows tutors to divide up students within their group. This can make it easier for tutors to manage their students. For example, if a tutor manages several classes, he/she can make a sub-group for each class. Sub-groups will also have their own forum only accessible to the tutor and the students within the sub-group.</p>
+					{{/if}}
+					
+					<h4>Creating sub-groups</h4>
+					<p>To create a new sub-group, click 'Create sub-group' on the home page.</p>
+					<figure><img draggable="false" src="images/ug/subgroup01.png" alt="Screenshot"></figure>
+					
+					{{#if isAdminOrMod}}
+						<p>Then, select a group, choose a name for your new sub-group, and click 'Create Sub-group.'</p>
+					{{/if}}
+					{{#if isTutor}}
+						<p>Then, select your group, choose a name for your new sub-group, and click 'Create Sub-group.'</p>
+					{{/if}}
+					
+					<figure><img draggable="false" src="images/ug/subgroup02.png" alt="Screenshot"></figure>
+					<p>Next, see 'Managing sub-groups' below to see how to add users to a sub-group.</p>
+					
+					<h4>Managing sub-groups</h4>
+					<p>To view and edit a sub-group, go to the home page and click on 'Groups.'</p>
+					{{#if isTutor}}<figure><img draggable="false" src="images/ug/subgroup03.png" alt="Screenshot"></figure>{{/if}}
+					{{#if isAdminOrMod}}<figure><img draggable="false" src="images/ug/group03.png" alt="Screenshot"></figure>{{/if}}				
+					<p>Select the group you made the sub-group in by clicking its name.</p>
+					<figure><img draggable="false" src="images/ug/group04.png" alt="Screenshot"></figure>					
+					<p>Next, select the sub-group you made.</p>
+					<figure><img draggable="false" src="images/ug/subgroup04.png" alt="Screenshot"></figure>		
+					<p>Then use the 'Add' and 'Remove' buttons to edit the members of this sub-group.</p>
+					<figure><img draggable="false" src="images/ug/subgroup05.png" alt="Screenshot"></figure>
+				</div>
+				
+				{{#if isAdminOrTutor}}
+					<div class="section" id="ug-notebook-tut">
+						<h3>Notebook</h3>
+						<p>You can see a students' entries in the notebook by going to their profile <i>(<a draggable="false" href="#user">see how</a>)</i> and selecting the 'Notebook' tab. Click on the entry title to view the note.</p>
+						<figure><img draggable="false" src="images/ug/notebook_tut01.png" alt="Screenshot"></figure>
+						<p>After viewing the note you have the option to leave a comment. Students can then reply to your comments if they want.</p>
+						<figure><img draggable="false" src="images/ug/notebook_tut02.png" alt="Screenshot"></figure>	
+						<figure><img draggable="false" src="images/ug/notebook_tut03.png" alt="Screenshot"></figure>
+						<figure><img draggable="false" src="images/ug/notebook_tut04.png" alt="Screenshot"></figure>
+					</div>
+					
+					<div class="section" id="ug-voice-tut">
+						<h3>Voice recorder</h3>
+						<p>You can listen to your students audio files from the voice recorder by going to their profile <i>(<a draggable="false" href="#user">see how</a>)</i> and selecting the 'Recordings' tab. Click on the recording title to listen.</p>
+						<figure><img draggable="false" src="images/ug/voice_tut01.png" alt="Screenshot"></figure>
+						<p>Like the <a draggable="false" href="#notebook_tut">notebook</a>, you can then send the student some feedback, however this time you have the option to either type a comment or record audio feedback.</p>
+						<figure><img draggable="false" src="images/ug/voice_tut02.png" alt="Screenshot"></figure>
+					</div>
+				{{/if}}
+				
+				<div class="section" id="ug-announce">
+					<h3>Announcements</h3>
+					<p>Announcements are a great way of alerting your users to important information. To make an announcement, find the link on the home page.</p>
+					<figure><img draggable="false" src="images/ug/announce01.png" alt="Screenshot"></figure>
+					<p>Here you can enter a title, your message and set how long the announcement will be displayed on the website.</p>
+					<figure><img draggable="false" src="images/ug/announce02.png" alt="Screenshot"></figure>
+					<p>Once your announcement has been posted, your users will see a notification at the top of the screen. They can click this to see the message.</p>
+					<figure><img draggable="false" src="images/ug/announce03.png" alt="Screenshot"></figure>
+					<figure>
+						<img draggable="false" src="images/ug/announce04.png" alt="Screenshot">
+						<figcaption>Marking all notifications as 'read' will remove the notification badge from your page.</figcaption>
+					</figure>
+				</div>
+				{{>ugFooter}}
+			</div>
+		</section>
+	</div>
+</article>
+</template>
+
+<template name="ugMessagingForumSections">
+<div class="section" id="ug-messaging">
+	<h3>Messaging</h3>
+	
+	{{#if isStudent}}
+		<p>Journey 2 English also gives you access to the messaging system. This allows you send and receive messages to and from your tutor, and other students in your group.</p>
+	{{/if}}
+	{{#if isAdminModOrTutor }}
+		<p>If students are using the tutor-supported version of Journey 2 English then they will have access to the messaging system. This allows them to send and receive messages to and from their tutor, and other students in their group.</p>
+	{{/if}}
+	
+	<figure><img draggable="false" src="images/ug/tools06.png" alt="Screenshot"></figure>
+</div>
+
+<div class="section" id="ug-forum">
+	<h3>Forum</h3>
+	
+	{{#if isStudent}}
+		<p>Journey 2 English also offers you access to the forums. This allows you to have discussions with your tutor and other students in your group. You can reply to current topics, or start a topic of your own. You tutor may also divide students into sub-groups, to discuss with a smaller number of other students. Your tutor may post assignments here.</p>
+	{{/if}}
+	{{#if isTutor}}
+		<p>The forums allow you and your students to have discussions. You can reply to current topics, or start a topic of your own. You can also divide students into sub-groups, to discuss with a smaller number of other students. You may want to post assignments here.</p>
+	{{/if}}
+	{{#if isAdminOrMod}}
+		<p>The forums allow students and tutors to have discussions within their groups They can reply to current topics, or start a topic of their own. Tutor may also divide students into sub-groups, to discuss with a smaller number of other students. They may also post assignments here.</p>
+	{{/if}}
+	
+	<figure><img draggable="false" src="images/ug/tools07.png" alt="Screenshot"></figure>
+</div>
+</template>
+
+<template name="ugToolsFigures">
+	<figure style="float: left; width: 50%;">
+		<img draggable="false" src="images/ug/tools01-{{version}}.png?v=2" style="height: 342px;">
+		<figcaption>Desktop/laptop</figcaption>
+	</figure>
+	<figure style="float: left; width: 50%;">
+		<img draggable="false" src="images/ug/tools02-{{version}}.png?v=2" alt="Screenshot">
+		<figcaption>Tablet/smartphone</figcaption>
+	</figure>
+	<div style="clear: both;"></div>
+</template>

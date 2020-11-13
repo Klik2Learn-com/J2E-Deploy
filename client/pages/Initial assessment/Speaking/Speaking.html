@@ -1,0 +1,44 @@
+<template name="InitialSpeaking"> 
+<article class="">
+		<div class="main">
+		<header class="acttitle" >
+			{{#unless assessmentStarted}}
+				<a draggable="false" data-function="return"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/unless}}	
+			{{> menu_assess}}
+			<div class="parent-level">English Skills Test</div>
+			<div class="acttitle-title">Speaking</div>
+		</header>
+		<section id="InitialSpeaking">
+			<div class="content">
+				<h1>Section 4: Speaking</h1>
+				<div class="assess-intro">
+					{{> StartPageAvatarSpeaking}}
+					{{#if sectionComplete}}
+						You have already attempted this section and it is now completed.
+					{{else}}
+						{{>assess_warning}}
+						<h4>This section will test your English speaking skills. When you're ready to start, {{>touch yes="tap" no="click"}} begin.</h4>
+						<!-- <div class="assess-begin hidden-ios"><a draggable="false" href="#InitialSpeaking_1" class="pagination"><button class="button1 buttonbig">Begin</button></a></div> -->
+						<div class="assess-begin"><a draggable="false" href="#InitialSpeaking_1" class="pagination"><button class="button1 buttonbig">Begin</button></a></div>
+
+						{{#if internetExplorer}}
+							<span>
+								<h4><i class="fa fa-warning" style="color: crimson; font-size: 1.5em;"></i> Due to restrictions, the speaking assessment cannot be taken on Internet Explorer. Please use another browser to complete the assessment.</h4>
+								<div class="clear-float"></div>
+							</span>
+						{{else}}
+							<!-- <span class="visible-ios">
+								<h4><i class="fa fa-warning" style="color: crimson; font-size: 1.5em;"></i> Due to restrictions by Apple, the speaking assessment cannot be taken on an iPhone/iPad. Please use a computer or Android device to complete the assessment.</h4>
+								<div class="clear-float"></div>
+							</span> -->
+						{{/if}}	
+					{{/if}}
+				</div>
+			</div>
+		</section>
+		{{>InitialSpeaking_1}}
+	</div>
+</article>
+
+</template>

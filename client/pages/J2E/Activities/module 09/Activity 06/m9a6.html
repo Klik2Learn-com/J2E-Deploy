@@ -1,0 +1,461 @@
+<template name="m9a6">
+	<article class="with-tools-sidebar m9a6">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Taunton');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 9</div>
+				<div class="acttitle-title">{{> activity}} 6 - {{>m9a6Title}}</div>
+			</header>
+			<section id="m9a6">
+				<div class="content">
+					<h1 class="start-page-header">{{>m9a6Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m9a6Intro}}</h3>
+					{{> m9a6Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m9a6_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m9a6_1}} {{>m9a6_2}} {{>m9a6_3}} {{>m9a6_4}} {{>m9a6_5}} {{>m9a6_6}} {{>m9a6_7}} {{>m9a6_8}} {{>m9a6_9}} {{>m9a6_10}}
+			{{>EndPage char="elle" act="m9a6" nextact="m9a7" place="Taunton"}}
+		</div>
+	</article>
+</template>
+<template name="m9a6_10">
+	<section id="m9a6_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h4 class="center">Here are the sentences again.</h4>
+			<div class="container-fluid" style="max-width: 760px;">
+				<div class="row">
+					<div class="col-sm-5 center">
+						<h1>Active</h1>
+					</div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5 center">
+						<h1>Passive</h1>
+					</div>
+				</div>
+				{{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="caption">My boss is
+							<b>bullying</b> me at work.</div>
+					</div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption">I am
+							<b>being bullied</b> at work by my boss.</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="caption">People
+							<b>have written</b> great reviews about his latest film.</div>
+					</div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption">Great reviews
+							<b>have been written</b> about his latest film.</div>
+					</div>
+				</div>
+				{{>blankrow}} {{>blankrowxs}}
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="caption">The forest fire
+							<b>destroyed</b> the area.</div>
+					</div>
+					<div class="col-sm-2 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+					<div class="col-sm-5">
+						<div class="caption">The area
+							<b>was destroyed</b> by the forest fire.</div>
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a6_9" nexturl="#m9a6_end" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_3">
+	<section id="m9a6_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are three examples of how you change from an Active sentence to a Passive sentence:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 center">
+						{{>popovers}}
+						<h1>Active</h1>
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a6/People_have_written_great_reviews.m4a"></button>
+						<div class="caption">People
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="top" data-content="Present Perfect of ‘to write’">have written</a> great reviews
+							<br>about his latest film.</div>
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 283px"><div class="ph"><img draggable="false" src="images/module9/a6/review1.png" alt="Woman at computer"></div></div>
+					</div>
+
+				</div>
+
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the
+				<span class="a-color">red</span> verb for an explanation about how to form Active and Passive sentences.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a6_2" nexturl="#m9a6_4" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_9">
+	<section id="m9a6_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Drag the right words to the spaces to complete the sentences.</h3>
+			<div class="container-fluid">
+				{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>
+
+						<div class="parapaper inline-block"><b>The forest fire</b>
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target1">&nbsp;</div><b> the area.</b></div>
+							<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a6/fire1.png" alt="Trees on fire"></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>
+
+						<div class="parapaper inline-block"><b>The area</b>
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target2">&nbsp;</div><b> by the forest fire.</b></div>
+							<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a6/fire2.png" alt="Burnt trees"></div></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target1">destroyed</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target2">was destroyed</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+		</div>
+		<!-- <footer> 
+			{{>footer_nav prevurl="#m9a6_8" nexturl="#m9a6_10" prev="disabled" next=""}} 
+		</footer>  -->
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_5">
+	<section id="m9a6_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are three examples of how you change from an Active sentence to a Passive sentence:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>
+						{{>popovers}}
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a6/The_forest_fire_destroyed.m4a"></button>
+						<div class="caption">The forest fire
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="top" data-content="Past Simple of 'to destroy'">destroyed</a> the area.</div>
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 283px"><div class="ph"><img draggable="false" src="images/module9/a6/fire1.png" alt="Trees on fire"></div></div>
+					</div>
+
+				</div>
+
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the
+				<span class="a-color">red</span> verb for an explanation about how to form Active and Passive sentences.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a6_4" nexturl="#m9a6_6" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_7">
+	<section id="m9a6_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Drag the right words to the spaces to complete the sentences.</h3>
+			<div class="container-fluid">
+				{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>
+
+						<div class="parapaper inline-block"><b>My boss is</b>
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target1">&nbsp;</div> <b>me at work.</b></div>
+							<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a6/boss1.png" alt="Boss yelling at employee"></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>
+
+						<div class="parapaper inline-block"><b>I am</b>
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target2">&nbsp;</div> <b>at work by my boss.</b></div>
+							<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a6/boss2.png" alt="Frightened employee in boss's shadow"></div></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target2">being bullied</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target1">bullying</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+		</div>
+		<!-- <footer> 
+			{{>footer_nav prevurl="#m9a6_6" nexturl="#m9a6_8" prev="disabled" next=""}} 
+		</footer>  -->
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_8">
+	<section id="m9a6_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Drag the right words to the spaces to complete the sentences.</h3>
+			<div class="container-fluid">
+				{{>rightwrong}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Active</h1>
+
+						<div class="parapaper inline-block"><b>People have</b>
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target1">&nbsp;</div><b> great reviews about his latest film.</b></div>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a6/review1.png" alt="Woman at computer"></div></div>
+					</div>
+
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>
+
+						<div class="parapaper inline-block"><b>Great reviews have</b>
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target2">&nbsp;</div> <b>about his latest film.</b></div>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 172px"><div class="ph"><img draggable="false" src="images/module9/a6/review2.png" alt="Online reviews"></div></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target2">been written</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target1">written</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			{{>gg_button gg_text="Click here to find out more about Passive and Active Verbs under Verbs in the Grammar Guide"}}
+		</div>
+		<!-- <footer> 
+			{{>footer_nav prevurl="#m9a6_7" nexturl="#m9a6_9" prev="disabled" next=""}} 
+		</footer>  -->
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_2">
+	<section id="m9a6_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are three examples of how you change from an Active sentence to a Passive sentence:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 center">
+						{{>popovers}}
+						<h1>Passive</h1>
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a6/I_am_being_bullied.m4a"></button>
+						<div class="caption">I
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top"
+							 data-content="‘Present Continuous of ‘to be’">am being</a>
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="bottom" data-content="Past Participle of ‘to bully’">bullied</a> at work by my boss.</div>
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 283px"><div class="ph"><img draggable="false" src="images/module9/a6/boss2.png" alt="Frightened employee in boss's shadow"></div></div>
+					</div>
+
+				</div>
+
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the
+				<span class="a-color">red</span> verb for an explanation about how to form Active and Passive sentences.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a6_1" nexturl="#m9a6_3" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_6">
+	<section id="m9a6_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are three examples of how you change from an Active sentence to a Passive sentence:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>
+						{{>popovers}}
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a6/The_area_was_destroyed.m4a"></button>
+						<div class="caption">The area
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="top" data-content="Past simple of 'to be'">was</a>
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="top" data-content="Past Participle of 'to destroy'">destroyed</a> by the forest fire.</div>
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 283px"><div class="ph"><img draggable="false" src="images/module9/a6/fire2.png" alt="Burnt trees"></div></div>
+					</div>
+
+				</div>
+
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the
+				<span class="a-color">red</span> verb for an explanation about how to form Active and Passive sentences.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a6_5" nexturl="#m9a6_7" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m9a6_1">
+	<section id="m9a6_1" class="hidden">
+		<div class="content">
+			<h3 class="center">Here are three examples of how you change from an Active sentence to a Passive sentence:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 center">
+						{{>popovers}}
+						<h1>Active</h1>
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a6/My_boss_is_bullying_me.m4a"></button>
+						<div class="caption">My boss
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="bottom" data-content="Present Continuous of 'To bully'">is bullying</a> me at work.</div>
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 283px"><div class="ph"><img draggable="false" src="images/module9/a6/boss1.png" alt="Boss yelling at employee"></div></div>
+					</div>
+
+				</div>
+
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the
+				<span class="a-color">red</span> verb for an explanation about how to form Active and Passive sentences.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a6" nexturl="#m9a6_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m9a6_4">
+	<section id="m9a6_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are three examples of how you change from an Active sentence to a Passive sentence:</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 center">
+						<h1>Passive</h1>
+						{{>popovers}}
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a6/Great_reviews_have_been_written.m4a"></button>
+						<div class="caption">Great reviews
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="top" data-content="Present Perfect">have been</a>
+							<a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual"
+							 data-placement="top" data-content="Present Perfect of ‘to be’ and ‘written’ Past Participle of ‘to write’">written</a> about his latest film.</div>
+						<Br>
+					</div>
+					<div class="col-sm-4">
+						<div class="ph-w ph-6x7 border1" style="max-width: 283px"><div class="ph"><img draggable="false" src="images/module9/a6/review2.png" alt="Online reviews"></div></div>
+					</div>
+
+				</div>
+
+			</div>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} the
+				<span class="a-color">red</span> verb for an explanation about how to form Active and Passive sentences.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a6_3" nexturl="#m9a6_5" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

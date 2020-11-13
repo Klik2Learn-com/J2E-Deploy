@@ -1,0 +1,42 @@
+<template name="m7Game_35">
+
+	<section id="m7Game_35" class="game-section game-legacy hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg3">
+						<div class="hotspot"><img draggable="false" src="/images/game/module7/letters/E.png" alt="E" class="img-responsive animated flipInX"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_35k1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+	</section>
+</template>
+
+<template name="m7Game_35k1">
+	<section id="m7Game_35k1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg15"></div>
+					<div class="game-story-text">
+						K: “So what did she write?”
+
+						<audio autoplay  class="hidden" id="k1">
+						  <source src="/audio/module7/Game/So_what_did_she_write.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_36" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>

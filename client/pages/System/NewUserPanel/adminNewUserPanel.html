@@ -1,0 +1,144 @@
+<template name="adminNewUserPanel">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			{{>menu}}
+			{{> adminNav}}
+		</header>
+		<section>
+			<div class="content">
+				<h1>Add User</h1>
+					{{#if isAdmin}}
+			    <form id="add-user-form">
+					<fieldset>
+						<legend>User details</legend>
+						<div class="form-group">
+						  <label for="emailAddress">Email Address</label>
+						  <input id="email" type="email" class="form-control" name="emailAddress">
+						</div>
+						<div class="form-group">
+							<label for="username">Username</label>
+							<input id="username" type="text" class="form-control" name="username">
+						</div>
+						
+						<div class="container-fluid-no-gutter first-sur-name">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="firstname">First Name</label>
+										<input id="firstname" type="text" class="form-control" name="firstname">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="surname">Surname</label>
+										<input id="surname" type="text" class="form-control" name="surname">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+					
+					<fieldset>
+						<legend>Account details</legend>
+						
+						<div class="form-group">
+						  <label for="organisationSelector">Organisation:</label>
+						  <select class="form-control" id="organisationSelector">
+								<option disabled selected value>Select an organisation...</option>
+							{{#each organisation}}
+								<option value="{{this._id}}">{{this.name}}</option>
+							{{/each}}
+						  </select>
+						</div>
+						<div class="form-group">
+						  <label for="roles">User Role</label>
+						  <select id="roles" name="roles" class="form-control">
+							<option value="">Select a role...</option>
+							 {{#if isInRole 'admin'}}
+							<option value="admin">Admin</option>
+							<option value="tutor">Tutor</option>
+							<option value="moderator">Moderator</option>
+							<option value="student">Student</option>
+							 {{/if}}
+							 {{#if isInRole 'moderator'}}
+							<option value="tutor">Tutor</option>
+							<option value="student">Student</option>
+							 {{/if}}
+							 {{#if isInRole 'tutor'}}
+							<option value="student">Student</option>
+							 {{/if}}
+						  </select>
+						</div>
+						<div class="form-group">
+						  <label for="expiry">Account expiry after this number of days:</label><br />
+						  <label style="font-size:90%" for="expiry"><span class="note">(e.g. 0.5 to access the course for 12 hours, blank for unlimited access)</span></label>
+						  <input id="expiry" type="number" class="form-control numbers" name="expiry">
+						</div>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Products</legend>
+						<div class="form-group radio-buttons">
+							<input type="radio" name="setInitialAssessment" value="setCourse" checked="checked" id="NewUserRadio2"><label class="radio-label" for="NewUserRadio2"><i>Journey 2 English</i></label>
+						</div>
+						<div class="form-group radio-buttons">
+							<input type="radio" name="setInitialAssessment" value="setBoth" id="NewUserRadio3"><label class="radio-label" for="NewUserRadio3"><i>Journey 2 English</i> with <i>English Skills Test</i></label>
+						</div>
+						<div class="form-group radio-buttons">
+							<input type="radio" name="setInitialAssessment" value="setInitAssessment" id="NewUserRadio1"><label class="radio-label" for="NewUserRadio1"><i>English Skills Test</i> only</label>
+						</div>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Password</legend>
+						<div class="form-group radio-buttons">
+							<input type="radio" name="setPassword" value="userSet" id="NewUserRadio5">
+							<label class="radio-label" for="NewUserRadio5">Request user to set password <span class="note">(requires valid email address)</span></label>
+						</div>
+						<div class="form-group radio-buttons">
+							<input type="radio" name="setPassword" value="manualSet" checked="checked" id="NewUserRadio4">
+							<label class="radio-label" for="NewUserRadio4">Manually set password</label>
+						</div>
+						{{#if setPasswordManually}}
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input id="password" type="text" class="form-control" name="password">
+								<!-- <input style="display: inline-block" name="welcomeEmailCheckbox" type="checkbox" class="checkbox-inline">
+								<label class="checkbox" style="display: inline-block; margin-right: auto; margin-left: auto;">
+									Send Welcome Email
+								</label> -->
+							</div>
+						{{else}}
+							<p>The user will be sent an enrolment email which will provide a link to set a password.</p>
+						{{/if}}
+					</fieldset>
+					
+					<div class="text-right">
+						<button type="button" class="button1 item-space" data-function="clear-form">Clear Form</button>
+						<button type="submit" class="button2 item-space" data-function="add-user">Add User</button>
+					</div>
+			    </form>
+				
+			    <br>
+			    <hr>
+			    <h2>Bulk Add Users</h2>
+			    {{> userCSVUploader}}
+				{{/if}}
+				{{#if isMod}}
+					If you would like to add users to your organisation, please contact Klik2learn. You will be asked for your students' and tutors' details.
+				{{/if}}
+				{{#if isTutor}}
+					You cannot add users as a tutor.
+				{{/if}}
+				{{#if isStudent}}
+					You cannot add users as a student.
+				{{/if}}
+			</div>
+		</section>
+	</div>
+</article>
+
+</template>

@@ -1,0 +1,133 @@
+<template name="m3a18">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Peebles');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 18 - {{>m3a18Title}}</div>
+			</header>
+
+
+			<section id="m3a18">
+				<div class="content">
+					<h1 class="start-page-header">{{> m3a18Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m3a18Intro}}</h3>
+					{{> m3a18Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a18_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m3a18_1}} {{>m3a18_2}} {{>EndPage char="elle" act="m3a18" nextact="m3a19" place="Peebles"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m3a18_1">
+	<section id="m3a18_1" class="hidden">
+		<div class="content">
+			<h2>Here are the 8 examples of
+				<b>modal verbs</b> from the article in Activity 13.</h2>
+			<div class="parapaper paraextract article-text">
+				<h5>
+					<ul class="list-space">
+						<li> Neolithic man
+							<span class="grammar">must have stood</span> here...</li>
+						<li>Spring
+							<span class="grammar">can be</span> a time when...</li>
+						<li>In the city you
+							<span class="grammar">can choose</span> your community...</li>
+						<li>St Paul's in London
+							<span class="grammar">might be</span> a great experience...</li>
+						<li>It
+							<span class="grammar">may be</span> the name...</li>
+						<li>You
+							<span class="grammar">may not know</span> the name...</li>
+						<li>It
+							<span class="grammar">might have been</span> all pastoral bliss...</li>
+						<li>The British countryside
+							<span class="grammar">could be</span> covered in factories...</li>
+					</ul>
+				</h5>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a18" nexturl="#m3a18_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a18_2">
+	<section id="m3a18_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Now drag and drop them into the right box.</h3>
+			<div class="container-fluid">
+				{{>welldone}} {{> rightwrong}}
+				<div class="row text-center">
+					<div class="col-sm-5 col-sm-offset-1 col-xs-6">
+						<div data-destinationid="target1" class="box2 ddwidth14 ddtarget2" style="height: 350px;">
+							<h5>Probability</h5>
+							<br>
+						</div>
+					</div>
+					<div class="col-sm-5 col-xs-6">
+						<div data-destinationid="target2" class="box2 ddwidth14 ddtarget2" style="height: 350px;">
+							<h5>Possibility</h5>
+							<br>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12">
+
+					<div class="dd-fixed-source-container animated slideInUp">
+						<div class="box1 box1dd1 center-block">
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">must have stood</div>
+							</div>
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">can be</div>
+							</div>
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">can choose</div>
+							</div>
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">might be</div>
+							</div>
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">may be</div>
+							</div>
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">may not know</div>
+							</div>
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">might have been</div>
+							</div>
+							<div class="ddseat ddwidth11 dd1line">
+								<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">could be</div>
+							</div>
+						</div>
+					</div>
+					<div class="dd-fixed-fade animated slideInUp"></div>
+					<div class="dd-fixed-pad"></div>
+
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a18_1" nexturl="#m3a18_end" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

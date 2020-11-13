@@ -1,0 +1,573 @@
+<template name="m1a7">
+    <article class="with-tools-sidebar m1a7">
+        {{>ToolsSidebar}}
+        <div class="main">
+            <header class="acttitle">
+                {{#if endPageSect}}
+                <a draggable="false" onclick="safeLeave('/LochNess');">
+                    <i class="titlereturn fa fa-arrow-left"></i>
+                </a>
+                {{/if}} {{>menu}}
+                <div class='parent-level'>Module 1</div>
+                <div class='acttitle-title'>{{> activity}} 7 - {{> m1a7Title}}</div>
+            </header>
+            {{> rightwrong}}
+            <section id="m1a7">
+                <div class="content">
+                    <h1 class="start-page-header">{{>m1a7Title}}</h1>
+                    {{> StartPageAvatar char="k"}}
+                    <h3>{{> m1a7Intro}}</h3>
+                    {{> m1a7Time}}
+                    <!--{{> resumePopUp}}-->
+                </div>
+                <footer>
+                    {{>footer_nav prevurl="#" nexturl="#m1a7_1" prev="disabled" next="" next_text="Start"}}
+                </footer>
+            </section>
+            {{> Template.dynamic template=activeSection}} {{>EndPage char="k" act="m1a7" nextact="m1a8" place="LochNess"}}
+        </div>
+    </article>
+</template>
+
+<template name="m1a7_1">
+    <section id="m1a7_1">
+        <div class="content">
+            <h3 class="center">Listen to this conversation.</h3>
+            <div class="parapaper fold center">
+                <p>
+                    <div class="videoplayer">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video class="embed-responsive-item" id="video-id" controls poster="/video/module1/a7_conversation.png">
+                                <source src="/video/module1/a7_conversation.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7" nexturl="#m1a7_2" prev="disabled" next=""}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_2">
+    <section id="m1a7_2">
+        <div class="content">
+            <h3 class="center">Now practice speaking each sentence yourself.</h3>
+            <div class="transcript shadow fold container-fluid">
+                <ul class="speech center-block">
+                    <li>
+                        <img draggable="false" src="/images/conv-pics/woman_portrait.png" alt="Maria">
+                        <div class="speech1">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_hi_my_names_maria.m4a"></button> Hi, my name's Maria. What's yours?</div>
+                    </li>
+
+                    <li>
+                        <div class="speech2">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_hello_im_hassan.m4a"></button>Hello, I'm Hassan.</div>
+                        <img draggable="false" src="/images/conv-pics/man_portrait.png" alt="Hassan">
+                    </li>
+
+                    <li>
+                        <img draggable="false" src="/images/conv-pics/woman_portrait.png" alt="Maria">
+                        <div class="speech1">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_hassan_how_do_you.m4a"></button>Hassan? How do you spell that?</div>
+                    </li>
+
+                    <li>
+                        <div class="speech2">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_h_a_s_s_a_n.m4a"></button>H-A-S-S-A-N.</div>
+                        <img draggable="false" src="/images/conv-pics/man_portrait.png" alt="Hassan">
+                    </li>
+
+                    <li>
+                        <img draggable="false" src="/images/conv-pics/woman_portrait.png" alt="Maria">
+                        <div class="speech1">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_where_are_you_from.m4a"></button>Where are you from?</div>
+                    </li>
+
+                    <li>
+                        <div class="speech2">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_im_from_turkey.m4a"></button> I'm from Turkey. </div>
+                        <img draggable="false" src="/images/conv-pics/man_portrait.png" alt="Hassan">
+                    </li>
+
+                    <li>
+                        <img draggable="false" src="/images/conv-pics/woman_portrait.png" alt="Maria">
+                        <div class="speech1">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_so_you_speak_turkish.m4a"></button>So you speak Turkish?</div>
+                    </li>
+
+                    <li>
+                        <div class="speech2">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_yes_turkish_is.m4a"></button>Yes, Turkish is my first language. And you?</div>
+                        <img draggable="false" src="/images/conv-pics/man_portrait.png" alt="Hassan">
+                    </li>
+
+                    <li>
+                        <img draggable="false" src="/images/conv-pics/woman_portrait.png" alt="Maria">
+                        <div class="speech1">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_i_speak_italian.m4a"></button>I speak Italian.</div>
+                    </li>
+
+                    <li>
+                        <div class="speech2">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_how_long_have.m4a"></button> How long have you been in Scotland? </div>
+                        <img draggable="false" src="/images/conv-pics/man_portrait.png" alt="Hassan">
+                    </li>
+
+                    <li>
+                        <img draggable="false" src="/images/conv-pics/woman_portrait.png" alt="Maria">
+                        <div class="speech1">
+                            <button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/act_7_ive_been_here_for_about_six.m4a"></button>I've been here for about six months. </div>
+                    </li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-xs-12 text-center" style="padding-top: 1.4em;">
+                        <p>
+                            <button type="button" class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module1/a7/m1a7_whole_conv.m4a"></button>
+                            <br class="visible-xxs">{{>touch yes="Tap" no="Click"}} to listen to the whole conversation again. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_1" nexturl="#m1a7_3" prev="" next=""}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_3">
+    <section id="m1a7_3">
+        <div class="content">
+            <div class="container-fluid" style="max-width: 760px;">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="caption text-left block">To Be
+                            <br>
+                            <b>The Present Tense</b>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-center">{{>arrowresponsive_big direction="right" directionxs="down"}}</div>
+                    <div class="col-sm-5">
+                        <div class="caption text-left block">He
+                            <span class="grammar">is</span> Canadian</div>
+                    </div>
+                </div>
+                {{>blankrow}}
+                <div class="row visible-xs" style="height: 4em;">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="caption text-left block">'To be' is also used as an
+                            <span class="grammar">Auxiliary</span> Verb</div>
+                    </div>
+                    <div class="col-sm-2 text-center">{{>arrowresponsive_big direction="right" directionxs="down"}}</div>
+                    <div class="col-sm-5">
+                        <div class="caption text-left block">He
+                            <span class="grammar">is</span> moving to Canada.</div>
+                    </div>
+                </div>
+            </div>
+            <br> {{>gg_button gg_text="Click here to find out more about the Present Tense of 'To be' in the Grammar Guide"}}
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_2" nexturl="#m1a7_4" prev="" next=""}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_4">
+    <section id="m1a7_4">
+        <div class="content">
+            <h1 class="center">Questions?</h1>
+            <h3 class="center">Drag the word to the right box to form a question.</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">1</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+                        <div class="ddsourceseated ddwidth7 dd1line">?</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+                <div class="box1 box1dd1">
+                    <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">he</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">is</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">Canadian</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_3" nexturl="#m1a7_5" prev="disabled" next="hidden"}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_5">
+    <section id="m1a7_5">
+        <div class="content">
+            <h1 class="center">Questions?</h1>
+            <h3 class="center">Drag the word to the right box to form a question.</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">2</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div>
+                        <div class="ddsourceseated ddwidth7 dd1line">?</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+                <div class="box1 box1dd1">
+                    <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">Canada</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">to</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">is</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">moving</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">he</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_4" nexturl="#m1a7_6" prev="disabled" next="hidden"}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_6">
+    <section id="m1a7_6">
+        <div class="content">
+            <h1 class="center">Questions?</h1>
+            <h3 class="center">Drag the word to the right box to form a question.</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">3</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a77" data-destinationid="target1">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a77" data-destinationid="target2">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a77" data-destinationid="target3">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a77" data-destinationid="target4">&nbsp;</div>
+                        <div class="ddsourceseated ddwidth7 dd1line ">?</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+                <div class="box1 box1dd1">
+                    <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">from</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">where</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">you</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">are</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_5" nexturl="#m1a7_7" prev="disabled" next="hidden"}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_7">
+    <section id="m1a7_7">
+        <div class="content">
+            <h1 class="center">Questions?</h1>
+            <h3 class="center">Drag the word to the right box to form a question.</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">4</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a78" data-destinationid="target1">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a78" data-destinationid="target2">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a78" data-destinationid="target3">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a78" data-destinationid="target4">&nbsp;</div>
+                        <div class="ddsourceseated ddwidth7 dd1line ">?</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+                <div class="box1 box1dd1">
+                    <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">speak</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">Turkish</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">you</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">so</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_6" nexturl="#m1a7_8" prev="disabled" next="hidden"}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_8">
+    <section id="m1a7_8">
+        <div class="content">
+            <h1 class="center">Questions?</h1>
+            <h3 class="center">Drag the word to the right box to form a question.</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">5</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a79" data-destinationid="target1">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a79" data-destinationid="target2">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a79" data-destinationid="target3">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a79" data-destinationid="target4">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a79" data-destinationid="target5">&nbsp;</div>
+                        <div class="ddsourceseated ddwidth7 dd1line ">?</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+                <div class="box1 box1dd1">
+                    <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">that</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">spell</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">do</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">you</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">how</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_7" nexturl="#m1a7_9" prev="disabled" next="hidden"}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_9">
+    <section id="m1a7_9">
+        <div class="content">
+            <h1 class="center">Questions?</h1>
+            <h3 class="center">Drag the word to the right box to form a question.</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">6</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a710" data-destinationid="target1">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a710" data-destinationid="target2">&nbsp;</div>
+                        <div class="ddsourceseated ddwidth7 dd1line ">?</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+                <div class="box1 box1dd1">
+                    <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">yours</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">what’s</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_8" nexturl="#m1a7_10" prev="disabled" next="hidden"}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_10">
+    <section id="m1a7_10">
+        <div class="content">
+            <h1 class="center">Questions?</h1>
+            <h3 class="center">Drag the word to the right box to form a question.</h3>
+            <div class="parapaper parapaperdd1 fold">
+                <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                <ol class="olblank">
+                    <li>
+                        <span class="number">7</span>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a711" data-destinationid="target1">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a711" data-destinationid="target2">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a711" data-destinationid="target3">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a711" data-destinationid="target4">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a711" data-destinationid="target5">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a711" data-destinationid="target6">&nbsp;</div>
+                        <div class="ddseatedtarget ddwidth7 dd1line targetm1a711" data-destinationid="target7">&nbsp;</div>
+                        <div class="ddsourceseated ddwidth7 dd1line ">?</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="dd-fixed-source-container animated slideInUp">
+                <div class="box1 box1dd1">
+                    <!-- Ensure all 'ddsourceseated ddwidth7' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">have</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">been</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">how</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">long</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">you</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7">Scotland</div>
+                    </div>
+                    <div class="ddseat ddwidth7 dd1line">
+                        <div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">in</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-fixed-fade animated slideInUp"></div>
+            <div class="dd-fixed-pad"></div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_9" nexturl="#m1a7_11" prev="disabled" next="hidden"}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_11">
+    <section id="m1a7_11">
+        <div class="content">
+            <h1>Here are two other ways of forming a question</h1>
+            <div class="transcript shadow fold container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img draggable="false" src="../images/conv-pics/woman_portrait.png" class="center-block" width="62" height="62">
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="speech1">Hassan? How do you spell that?
+                            <button type="button" data-audiosrc="audio/module1/a7/act_7_hassan_how_do_you.m4a" class="buttonround buttonroundsmall buttonaudio"></button>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="info shadow">This question uses the AUXILIARY verb ‘TO DO’ to form a question in the PRESENT SIMPLE tense</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img draggable="false" src="../images/conv-pics/woman_portrait.png" class="center-block" width="62" height="62">
+                    </div>
+                    <div class="col-sm-5">
+                        <p class="speech1">So you speak Turkish?
+                            <button type="button" data-audiosrc="audio/module1/a7/act_7_so_you_speak_turkish.m4a" class="buttonround buttonroundsmall buttonaudio"></button>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="info shadow">This question is formed by raising your voice at the end of the sentence.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_10" nexturl="#m1a7_12" prev="disabled" next=""}}
+        </footer>
+    </section>
+</template>
+
+<template name="m1a7_12">
+    <section id="m1a7_12">
+        <div class="content">
+            <h1>Here are two other ways of forming a question</h1>
+            <div class="transcript shadow fold container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img draggable="false" src="../images/conv-pics/woman_portrait.png" class="center-block" width="62" height="62">
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="speech1">Hassan? How do you spell that?
+                            <button type="button" data-audiosrc="audio/module1/a7/act_7_hassan_how_do_you.m4a" class="buttonround buttonroundsmall buttonaudio"></button>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="info shadow">Use this question when you don’t know the answer.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img draggable="false" src="../images/conv-pics/woman_portrait.png" class="center-block" width="62" height="62">
+                    </div>
+                    <div class="col-sm-5">
+                        <p class="speech1">So you speak Turkish?
+                            <button type="button" data-audiosrc="audio/module1/a7/act_7_so_you_speak_turkish.m4a" class="buttonround buttonroundsmall buttonaudio"></button>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="info shadow">Use this question when you think you know the answer.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            {{>footer_nav prevurl="#m1a7_11" nexturl="#m1a7_end" prev="" next=""}}
+        </footer>
+    </section>
+</template>

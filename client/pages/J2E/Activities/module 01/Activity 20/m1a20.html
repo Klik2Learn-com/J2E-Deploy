@@ -1,0 +1,628 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m1a20">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Portree');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 1</div> <div class="acttitle-title">{{> activity}} 20 - {{>m1a20Title}}</div>
+		</header>
+				
+		<section id="m1a20">
+			<div class="content">
+			<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m1a20Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m1a20Intro}}</h3>
+{{> m1a20Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav nexturl="#m1a20_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{> m1a20_1}}
+		{{> m1a20_2}}
+		{{> m1a20_3}}
+		{{> m1a20_4}}
+		{{> m1a20_5}}
+		{{> m1a20_6}}
+		{{> m1a20_7}}
+		{{> m1a20_8}}
+		{{> m1a20_9}}
+		{{> m1a20_10}}
+		{{> m1a20_end}}
+	</div>
+</article>
+
+</template>
+	
+<template name="m1a20_1">
+<section id="m1a20_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> Each country has an identity that is supposed to be 'typical'. But a new study in the American journal 'Science' proves that these stereotypes are inaccurate. The survey found 'national myths' in almost every country.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> Find a word which means 'a story/fiction/not true'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a20_2" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+						{{> stuck stuckchar="tu"}}
+		{{/if}}
+</section>
+</template>
+
+<template name="m1a20_2">
+<section id="m1a20_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+					{{> rightwrong}}
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> Each country has an identity that is supposed to be 'typical'. But a new study in the American journal 'Science' proves that these stereotypes are inaccurate. The survey found 'national myths' in almost every country.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<div class="question text-center">
+							<h5 class="text-left">There are three sets of speech marks ‘...’ round words in Paragraph 1. Here are two reasons why they’re used:</h5>
+						  <div class="row">
+								<div class="col-sm-6">
+								  <div class="caption capgreen">A. To show that something isn’t really true </div>
+								</div>
+								<div class="col-sm-6">
+									<div class="caption capgreen">B. To show the word is a name or title </div>
+								</div>
+						  </div>
+					   </div>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+							<h3>{{>touch yes="Tap" no="Click"}} on either <b>A</b> or <b>B</b> for these examples in Paragraph 1.</h3>							
+							<div class="caption text-center">
+								‘typical’<br>
+								<span id="a1" class="button1 buttonsmall" style="margin: 1em;">A. isn't really true</span>
+								<span id="b1" class="button1 buttonsmall" style="margin: 1em;">B. name/title</span>
+							</div>
+							<br><br>
+							<div id="captionScience" class="caption" style="visibility:hidden">
+								‘Science’<br>
+								<span id="a2" class="button1 buttonsmall" style="margin: 1em;">A. isn't really true</span>
+								<span id="b2" class="button1 buttonsmall" style="margin: 1em;">B. name/title</span>
+								
+							</div>
+							<br><br>
+							<div id="captionMyths" class="caption" style="visibility:hidden">
+								‘national myths’<br>
+								<span id="a3" class="button1 buttonsmall" style="margin: 1em;">A. isn't really true</span>
+								<span id="b3" class="button1 buttonsmall" style="margin: 1em;">B. name/title</span>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m1a20_3" prevurl="#m1a20_1" prev="hidden" nextID="nextArrow" next="hidden"}}
+		</footer>
+						{{> stuck stuckchar="tu"}}
+		{{/if}}
+</section>
+</template>
+
+<template name="m1a20_3">
+<section id="m1a20_3" class="hidden">
+{{#if activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>2.</b> They looked at national stereotypes in 49 countries to see if Germans really are ‘no nonsense,’ Americans ‘brash’ or Italians ‘happy – go – lucky.’ The researchers tried to find out if the stereotypes matched real people.  In almost every case, they found there was no such thing as a ‘typical citizen.’ For example, Canadians are far more independent than the stereotype suggests. </p>
+					<p>So if you think, ‘There’s a group of Canadians visiting next week. They’re all going to conform and not ask any awkward questions,’ you may get a big surprise!</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>2)</b> Find a phrase which means 'cheerful/carefree/optimistic'. The phrase has 3 words</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+						<div class="text-center">
+						<form id="1" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15"  autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						
+                          </div>
+					</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_2" nexturl="#m1a20_4" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_4">
+<section id="m1a20_4" class="hidden">
+{{#if activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>3.</b>Researchers asked 4,000 people to choose words like, ‘imaginative,’ ‘artistic,’ ‘mean,’ ‘copes well with a crisis,’ to describe ‘typical’ characteristics of their own nationality and culture.</p>
+					<p>They then asked 12,000 people to do the same thing for people they actually knew from these countries. They found that the data from the two surveys simply did not match.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>3) </b>Find a phrase which describes someone who is calm and confident in an emergency. The phrase has 5 words.</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+						<div class="text-center">
+						<form id="2" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15"  autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						
+                          </div>
+					</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_3" nexturl="#m1a20_5" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_5">
+<section id="m1a20_5" class="hidden">
+{{#if  activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>3.</b>Researchers asked 4,000 people to choose words like, ‘imaginative,’ ‘artistic,’ ‘mean,’ ‘copes well with a crisis,’ to describe ‘typical’ characteristics of their own nationality and culture.</p>
+					<p>They then asked 12,000 people to do the same thing for people they actually knew from these countries. They found that the data from the two surveys simply did not match.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>4) </b>Find a word that means 'information'.</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+						<div class="text-center">
+						<form id="3" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15"  autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						
+                          </div>
+					</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_4" nexturl="#m1a20_6" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_6">
+<section id="m1a20_6" class="hidden">
+{{#if  activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>4.</b> ‘This shows,’ said Robert McRae, the author of the study, ‘that national stereotypes cannot be taken seriously.’  He explained why. ‘They are often unfounded. They exaggerate characteristics. People need to remember that their beliefs about ‘typical Americans,’ or ‘typical Italians,’ are not a very good guide when it comes to interacting with real people from these countries.’</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>5) </b>Find a word which means that there's no basis or evidence for something.</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+						<div class="text-center">
+						<form id="4" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15"  autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						
+                          </div>
+					</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_5" nexturl="#m1a20_7" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_7">
+<section id="m1a20_7" class="hidden">
+{{#if  activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>4.</b> ‘This shows,’ said Robert McRae, the author of the study, ‘that national stereotypes cannot be taken seriously.’  He explained why. ‘They are often unfounded. They exaggerate characteristics. People need to remember that their beliefs about ‘typical Americans,’ or ‘typical Italians,’ are not a very good guide when it comes to interacting with real people from these countries.’</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>6) </b>If you describe something/someone as bigger/better/more important than they really are, what are you doing?</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+						<div class="text-center">
+							<form id="5" class="textentry textentry-big text-center">
+								<input type="text" name="userText" size="15"  autocomplete="off">
+								<input type="submit" value="OK">
+							</form>
+							<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+							<span class="correct hidden"><i class="fa fa-check"></i></span>
+                        </div>
+					</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_6" nexturl="#m1a20_8" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_8">
+<section id="m1a20_8" class="hidden">
+{{#if  activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>5.</b> Nevertheless, experts say national identities are real and do serve a purpose.
+					Often a group will promote themselves by choosing a few characteristics that are positive and ignore others 
+					that might not show them in a good light. They might say for example, ‘we are warm, friendly and relaxed,’ 
+					but not mention that their industrial output figures are not very good!</p></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>7) </b>What word shows that an opposite argument is being introduced?</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div class="text-center">
+						<form id="6" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15"  autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						
+                    </div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_7" nexturl="#m1a20_9" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_9">
+<section id="m1a20_9" class="hidden">
+{{#if  activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>5.</b> Nevertheless, experts say national identities are real and do serve a purpose.
+					Often a group will promote themselves by choosing a few characteristics that are positive and ignore others 
+					that might not show them in a good light. They might say for example, ‘we are warm, friendly and relaxed,’ 
+					but not mention that their industrial output figures are not very good!</p></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>8) </b>The word 'positive' is used in the last paragraph. What phrase also in this paragraph has a similar meaning? The phrase has 4 words.</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div class="text-center">
+						<form id="7" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15"  autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						
+                    </div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_8" nexturl="#m1a20_10" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_10">
+<section id="m1a20_10" class="hidden">
+{{#if  activeSection}}
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h3>Read the article extract then try to answer the question below.</h3>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+			{{> rightwrong}}
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parapaper paraextract fold">		
+					<p><b>5.</b> Nevertheless, experts say national identities are real and do serve a purpose.
+					Often a group will promote themselves by choosing a few characteristics that are positive and ignore others 
+					that might not show them in a good light. They might say for example, ‘we are warm, friendly and relaxed,’ 
+					but not mention that their industrial output figures are not very good!</p></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div >
+						<h3><b>9) </b>Find a phrase in the last paragraph which means that things are 'useful/worthwhile'. The phrase has 3 words.</h3>
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<div class="text-center">
+						<form id="8" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15">
+							<input type="submit" value="OK">
+						</form>
+						
+                    </div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+  	<footer>
+		{{>footer_nav prevurl="#m1a20_end" nexturl="#m1a20_end" prev="hidden" next="hidden"}}
+	</footer>
+					{{> stuck stuckchar="tu"}}
+	{{/if}}
+</section>
+</template>
+
+<template name="m1a20_end">
+{{>EndPage char="tu" act="m1a20" nextact="m1a21" place="Portree"}}
+</template>

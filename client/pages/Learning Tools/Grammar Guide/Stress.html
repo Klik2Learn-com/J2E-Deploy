@@ -1,0 +1,31 @@
+<template name="GGStress">
+<section id="GGStress" class="hidden">
+<span id="stress"></span>
+<h1>Stress</h1><a draggable="false" name="stress1" id="stress1"></a>
+
+<p>English is a <strong>stress-timed</strong> language - words have their own patterns of stress which are not regular. There is always <strong>one</strong> syllable in a word which is more important (slightly louder and longer) than the others. If you get the stress in the wrong place, people can misunderstand you.</p>
+
+<p>The stressed syllable is in <span class="gg-boldblue">blue</span>:</p>
+<div class="container-fluid-no-gutter">
+<div class="row">
+{{> GGStressAudioSy2}}
+{{> GGStressAudioSy3}}
+{{> GGStressAudioSy4}}
+<div class="clearfix visible-sm-block"></div>
+{{> GGStressAudioSy5}}
+{{> GGStressAudioSy6}}
+<div class="col-lg-9 col-sm-4 col-xs-6 gg-stress-box"></div>
+</div>
+</div>
+<div class="parent_expander"></div>
+
+<p>Sometimes <strong>stress</strong> can  change a word's meaning:</p>
+<div class="gg-dottedbox">
+	<p><em>I gave him a  <span class="gg-boldblue">pre</span>/sent on his birthday.<span class="gg-faded"> (present is a </span><strong class="gg-faded">noun</strong><span class="gg-faded">)</span></em></p>
+	<p><em>You need to get a  lawyer to pre/<span class="gg-boldblue">sent</span> your case.<span class="gg-faded"> (present is a </span><strong class="gg-faded">verb</strong></em><span class="gg-faded">)</span> </p>
+	<p><em>You  need to pro/<span class="gg-boldblue">ject</span> your voice more.<span class="gg-faded"> (project is a </span><strong class="gg-faded">verb</strong><span class="gg-faded">)</span></em></p>
+	<p><em>What <span class="gg-boldblue">pro</span>/ject is he  working on now?<span class="gg-faded"> (project is a </span><strong class="gg-faded">noun</strong><span class="gg-faded">)</span></em></p>
+</div>
+
+</section>
+</template>

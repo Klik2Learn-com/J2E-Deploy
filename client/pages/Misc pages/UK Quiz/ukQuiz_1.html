@@ -1,0 +1,39 @@
+<template name="ukQuiz_1">
+	<section id="ukQuiz_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content"> 
+		<h1>Language Questions</h1>
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the word to finish the sentence.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto5 animated flipInX" id="lottoc0"><div><span class="contents">to</span></div></div> 
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto2 animated flipInX" id="lottoc1"><div><span class="contents">at</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto4 animated flipInX" id="lottoc2"><div><span class="contents">for</span></div></div>
+					</div>
+					<div class="col-sm-3 col-xs-4 col-xxs-6 center">
+						<div class="lotto-button lotto1 animated flipInX" id="lottoc3"><div><span class="contents">on</span></div></div>
+					</div>
+				</div>
+			</div>
+			<div class="parapaper lottocaption">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h4 id="questions">I’m looking forward <span class="textentry-disabled"></span> my holiday.</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- {{>rightwrong}} -->
+			</div> 
+		<footer>
+			{{>footer_nav prevurl="#ukQuiz" nexturl="#ukQuiz_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

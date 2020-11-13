@@ -1,0 +1,169 @@
+<template name="MoreAboutDundee">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Dundee"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m2l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m2l2}}</div>
+		</header>
+
+		<section id="moreaboutDundee">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-8 bonus-image" style="background-image: url('images/bonus/Dundee/Dundee1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l2_A">
+						<p>Comics</p>
+					</div>
+					<div class="col-sm-2 col-xs-4 bonus-image" style="background-image: url('images/bonus/Dundee/Dundee2.jpg'); background-position: 20% 50%;" data-toggle="modal" data-target="#bonus_modal_m2l2_B">
+						<p>Discovery</p>
+					</div>
+					<div class="col-sm-3 col-xs-5 bonus-image" style="background-image: url('images/bonus/Dundee/Dundee3.jpg'); background-position: left;" data-toggle="modal" data-target="#bonus_modal_m2l2_C">
+						<p>V&amp;A Museum</p>
+					</div>
+					<div class="col-sm-3 col-xs-7 bonus-image" style="background-image: url('images/bonus/Dundee/Dundee4.jpg');  background-position: 50% 10%;" data-toggle="modal" data-target="#bonus_modal_m2l2_D">
+						<p>Women's Trail</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					
+					<div class="col-xs-7 bonus-image" style="background-image: url('images/bonus/Dundee/Dundee5.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m2l2_E">
+						<p>Tay Bridge</p>
+					</div>				
+					<div class="col-xs-5 bonus-image" style="background-image: url('images/bonus/Dundee/Dundee6.jpg'); background-position: right;" data-toggle="modal" data-target="#bonus_modal_m2l2_F">
+						<p>Computer Games</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l2_A">Comics</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dundee/Dundee1.jpg" alt="Comic" style="max-width: 250px;">
+					</figure>
+					<p>Dundee-based publisher DC Thomson is perhaps best known for its weekly comic <i>The Beano</i>, which has been running since 1938. It features characters such as Dennis the Menace, Minnie the Minx and Roger the Dodger. The comics are popular throughout the UK and have been made into cartoons for TV. Other comics published by DC Thomson include <i>Oor Wullie</i>, <i>The Broons</i> and <i>The Dandy</i>.</p>
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://britishcomics.wikia.com/wiki/DC_Thomson" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l2_B">Discovery</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dundee/Dundee2.jpg" alt="Ship" style="max-width: 250px;">
+					</figure>
+					<p>RRS Discovery was the last traditional wooden three-masted ship to be built in Britain. Designed for Antarctic research, it was launched as a Royal Research Ship (RRS) in 1901. Its first mission was the British National Antarctic Expedition, carrying Robert Falcon Scott and Ernest Shackleton on their first, successful journey to the Antarctic, known as the Discovery Expedition. It is now a visitor attraction in its home, Dundee.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.rrsdiscovery.com/index.php?pageID=102" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l2_C">V&amp;A Museum</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dundee/Dundee3.jpg" alt="Statue" style="max-width: 250px;">
+					</figure>
+					<p>V&amp;A Dundee will be an international centre of design for Scotland at the heart of Dundee’s waterfront. It is currently under construction and is due to open in 2018.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.vandadundee.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l2_D">Women's Trail</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dundee/Dundee4.jpg" alt="Frances Wright" style="max-width: 250px;">
+					</figure>
+					<p>The Dundee Women’s Trail celebrates some of the women who have had an impact on the city.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.dundeewomenstrail.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l2_E">Pay Bridge</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dundee/Dundee5.jpg" alt="Bridge" style="max-width: 250px;">
+					</figure>
+					<p>The Tay Bridge is a railway bridge that crosses the water between Dundee and Fife. It is the second bridge to be built here after the first bridge collapsed in 1878 - just one year after it was opened. Known as "the Tay Bridge disaster", it is still considered to be one of the great engineering disasters of history.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.mcgonagall-online.org.uk/gems/the-tay-bridge-disaster" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l2_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l2_F">Computer Games</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Dundee/Dundee6.jpg" alt="Game console controller" style="max-width: 250px;">
+					</figure>
+					<p>Dundee is home to many video game companies producing games for consoles and mobile devices. The University of Abertay in Dundee offers a course in video game development. In 1997 Dundee-based games company DMA launched the very first Grand Theft Auto game, which has since turned into a series of games that is still going today.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.talentscotland.com/games" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

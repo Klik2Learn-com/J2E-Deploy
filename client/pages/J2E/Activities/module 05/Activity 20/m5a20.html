@@ -1,0 +1,227 @@
+<template name="m5a20">
+	<article class="with-tools-sidebar m5a2">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/StHelens');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 20 - {{>m5a20Title}}</div>
+			</header>
+
+
+			<section id="m5a20">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a20Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m5a20Intro}}</h3>
+					{{> m5a20Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a20_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a20_1}} {{>m5a20_2}} {{>m5a20_3}} {{>EndPage char="tu" act="m5a20" nextact="m5a21" place="StHelens"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a20_1">
+	<section id="m5a20_1" class="hidden">
+		<div class="content">
+			<h2>In Module 3 you learned that stress and intonation can be 'neutral' or express emotion. You can:</h2>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="caption">Put the stress on different words</div>
+						<br>
+						<br>
+						<div class="ph-w ph-7x3" style="max-width: 300px;">
+							<div class="ph">
+								<img draggable="false" src="/images/module5/stress.png" alt="Stressing a word">
+							</div>
+						</div>
+					</div>
+					{{>blankrowxs}} {{>blankrowxs}}
+					<div class="col-sm-6">
+						<div class="caption">Change your intonation</div>
+						<br>
+						<br>
+						<div class="ph-w ph-10x16" style="max-width: 147px;">
+							<div class="ph">
+								<img draggable="false" src="/images/module2/emote.png" alt="Angry person">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a20" nexturl="#m5a20_2" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m5a20_2">
+	<section id="m5a20_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Now listen to these sentences. Some are neutral, some express emotion.</h3>
+			<h3 class="center">Drag either 'neutral' or 'express emotion' beside the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-2">
+							<ol class="olcircle">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/How_much_question.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target1">&nbsp;</div>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/They_filled_eighteen_bags_with_rubbish2.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target2">&nbsp;</div>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/My_eighty_year_old_uncle_has_just_bought_a_motor_bike.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target3">&nbsp;</div>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/Those_children_get_up_at_6_oclock_to_go_to_school2.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target4">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+						<div class="col-sm-4">
+							<ol class="olcircle" style="counter-reset: start 4;">
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/My_eighty_year_old_uncle_has_just_bought_a_motor_bike2.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target5">&nbsp;</div>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/Those_children_get_up_at_6_oclock_to_go_to_school.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target6">&nbsp;</div>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/They_filled_eighteen_bags_with_rubbish.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target7">&nbsp;</div>
+								</li>
+								<li>
+									<button class="buttonround buttonaudio" data-audiosrc="/audio/module3/a11/How_much_astonished.m4a"></button>
+									<div class="ddseatedtarget ddwidth7 dd2lines" data-destinationid="target8">&nbsp;</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line2high' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line2high">
+						<div class="ddsourceseated ddwidth7 dd1line2high shadow" draggable="false" data-destination="target1 target3 target6 target7">neutral</div>
+					</div>
+					<div class="ddseat ddwidth7 dd2lines">
+						<div class="ddsourceseated ddwidth7 dd2lines shadow" draggable="false" data-destination="target2 target4 target5 target8">express emotion</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a26" nexturl="#m5a20_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a20_3">
+	<section id="m5a20_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Here are the sentences again.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="parapaper fold">
+							<div class="iconleft">
+								<div class="number">1</div>
+							</div>
+							<div class="iconright">
+								<h5>"How much did she pay?"</h5>
+							</div>
+							<hr>
+							<div class="center">
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/How_much_question.m4a">Neutral</button>
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/How_much_astonished.m4a">Express emotion</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="parapaper fold">
+							<div class="iconleft">
+								<div class="number">2</div>
+							</div>
+							<div class="iconright">
+								<h5>"They filled eighteen bags with rubbish."</h5>
+							</div>
+							<hr>
+							<div class="center">
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/They_filled_eighteen_bags_with_rubbish.m4a">Neutral</button>
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/They_filled_eighteen_bags_with_rubbish2.m4a">Express emotion</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="parapaper fold">
+							<div class="iconleft">
+								<div class="number">3</div>
+							</div>
+							<div class="iconright">
+								<h5>"My eighty year old uncle has just bought a motorbike"</h5>
+							</div>
+							<hr>
+							<div class="center">
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/My_eighty_year_old_uncle_has_just_bought_a_motor_bike.m4a">Neutral</button>
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/My_eighty_year_old_uncle_has_just_bought_a_motor_bike2.m4a">Express emotion</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="parapaper fold">
+							<div class="iconleft">
+								<div class="number">4</div>
+							</div>
+							<div class="iconright">
+								<h5>"Those children get up at six o'clock to go to school."</h5>
+							</div>
+							<hr>
+							<div class="center">
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/Those_children_get_up_at_6_o’clock_to_go_to_school.m4a">Neutral</button>
+								<button class="button1 buttonsmall buttonsmall-icon audio" data-audiosrc="/audio/module3/a11/Those_children_get_up_at_6_o’clock_to_go_to_school2.m4a">Express emotion</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a1" nexturl="#m5a20_end" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

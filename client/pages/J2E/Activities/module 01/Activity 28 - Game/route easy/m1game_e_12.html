@@ -1,0 +1,32 @@
+<template name="m1Game_e_12">
+
+	<section id="m1Game_e_12" class="game-section game-dd-simple hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content">
+				<div class="game-dd-simple-bg book-bg m1Game-bg-tu-music-phone">
+					<h3 class="center">Listen to Tu, then answer the questions below</h3>
+					
+
+					<div class="text-entry book linespace2">
+					<div class="center"><button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module1/Game/TuE.m4a"></button></div>
+					<br>
+						The flag is <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> 1700 years old. It’s made <span id="entryanswer1" class="textentry-disabled"></span> silk and comes <span id="entryanswer2" class="textentry-disabled"></span> the Middle East. <span id="entryanswer3" class="textentry-disabled"></span> are many stories <span id="entryanswer4" class="textentry-disabled"></span> the flag. It helps <span id="entryanswer5" class="textentry-disabled"></span> times of danger. Some soldiers carried photos <span id="entryanswer6" class="textentry-disabled"></span> the flag <span id="entryanswer7" class="textentry-disabled"></span> the Second World War. People come <span id="entryanswer8" class="textentry-disabled"></span> all <span id="entryanswer9" class="textentry-disabled"></span> the world to see the flag.
+						{{> rightwrong}}	
+						<br>	
+						<br>
+						<div class="center">
+							<button class="button1">Skip</button>	
+						</div>				
+					</div>
+					
+				</div>				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_e_13" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>

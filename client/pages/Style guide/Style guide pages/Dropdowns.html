@@ -1,0 +1,151 @@
+<template name="styleDropdowns">
+<section id="style-dropdowns" class="hidden">
+	<div class="content">
+		<h1>Dropdown menus</h1>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="dropdown">
+					  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Dropdown menu<span class="caret-fa"></span></button>
+						<ul class="dropdown-menu">
+							<li><a draggable="false" href="#">Leisure pool</a></li>
+							<li><a draggable="false" href="#">Ice rink</a></li>
+							<li><a draggable="false" href="#">Public library</a></li>	
+							<li><a draggable="false" href="#">Golf course</a></li>
+							<li><a draggable="false" href="#">Public parks</a></li>
+							<li><a draggable="false" href="#">Putting green</a></li>		
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="dropup">
+					  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Dropup menu<span class="caret-fa"></span></button>
+						<ul class="dropdown-menu">		
+							<li><a draggable="false" href="#">Skatepark</a></li>
+							<li><a draggable="false" href="#">Tennis courts</a></li>	
+							<li><a draggable="false" href="#">Riverside walks</a></li>
+							<li><a draggable="false" href="#">Museum/Art gallery</a></li>
+							<li><a draggable="false" href="#">Theatre</a></li>
+							<li><a draggable="false" href="#">Concert hall</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="dropdown">
+					  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Other features<span class="caret-fa"></span></button>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Header</li>
+							<li><a draggable="false" href="#">Normal list item</a></li>	
+							<li class="disabled"><a draggable="false" href="#">Disabled list item</a></li>
+							<li class="divider"></li>
+							<li><a draggable="false" href="#">Normal list item</a></li>
+							<li><a draggable="false" href="#">Normal list item</a></li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<p>Simple menus. If you need to position the menu somewhere (e.g. center, float right) then put it in a new <span class="htmlcode">div</span> and apply the positioning to this new div. If you add the positioning to <span class="htmlcode">&lt;div class=&quot;dropdown&quot;&gt;</span> it only moves the button, not the menu.</p>
+		<p>You can include headers, dividers and a disabled class to list items.</p>
+		
+		
+		
+
+		<p>Dropdown HTML</p>
+				
+<pre class="htmlcode2">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;dropdown-button dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown menu&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;ul class=&quot;dropdown-menu&quot;&gt;
+		&lt;li class=&quot;dropdown-header&quot;&gt;Header&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;	
+		&lt;li class=&quot;disabled&quot;&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Disabled list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;							
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+	<br>
+
+	<p>Dropup HTML</p>
+				
+<pre class="htmlcode2">&lt;div class=&quot;dropup&quot;&gt;
+  &lt;button class=&quot;dropdown-button dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropup menu&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;ul class=&quot;dropdown-menu&quot;&gt;		
+		&lt;li class=&quot;dropdown-header&quot;&gt;Header&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;	
+		&lt;li class=&quot;disabled&quot;&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Disabled list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;	
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+		<br>
+		<hr>
+		<p>If your menu is going to have a lot of items, add <span class="htmlcode">.dropdown-menu-scroll</span> to the menu.</p>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4">
+					<div class="dropdown">
+					  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Dropdown with scroll<span class="caret-fa"></span></button>
+						<ul class="dropdown-menu dropdown-menu-scroll">
+							<li><a draggable="false" href="#">Leisure pool</a></li>
+							<li><a draggable="false" href="#">Ice rink</a></li>
+							<li><a draggable="false" href="#">Public library</a></li>	
+							<li><a draggable="false" href="#">Golf course</a></li>
+							<li><a draggable="false" href="#">Public parks</a></li>
+							<li><a draggable="false" href="#">Putting green</a></li>
+							<li><a draggable="false" href="#">Leisure pool</a></li>
+							<li><a draggable="false" href="#">Ice rink</a></li>
+							<li><a draggable="false" href="#">Public library</a></li>	
+							<li><a draggable="false" href="#">Golf course</a></li>
+							<li><a draggable="false" href="#">Public parks</a></li>
+							<li><a draggable="false" href="#">Putting green</a></li>	
+							<li><a draggable="false" href="#">Leisure pool</a></li>
+							<li><a draggable="false" href="#">Ice rink</a></li>
+							<li><a draggable="false" href="#">Public library</a></li>	
+							<li><a draggable="false" href="#">Golf course</a></li>
+							<li><a draggable="false" href="#">Public parks</a></li>
+							<li><a draggable="false" href="#">Putting green</a></li>								
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-4"></div>
+			</div>
+		</div>
+		<br>
+		<p>Dropdown scroll HTML</p>
+				
+<pre class="htmlcode2">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;dropdown-button dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropup menu&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;ul class=&quot;dropdown-menu <span class="html-red">dropdown-menu-scroll</span>&quot;&gt;		
+		&lt;li class=&quot;dropdown-header&quot;&gt;Header&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;	
+		&lt;li class=&quot;disabled&quot;&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Disabled list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a draggable="false" href=&quot;#&quot;&gt;Normal list item&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+	</div>
+</section>
+</template>

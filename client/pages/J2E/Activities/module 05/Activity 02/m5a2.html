@@ -1,0 +1,360 @@
+<template name="m5a2">
+<article class="with-tools-sidebar m5a2">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Belfast');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 2 - {{>m5a2Title}}</div>
+		</header>
+		<section id="m5a2">
+			<div class="content">
+				<h1 class="start-page-header">{{> m5a2Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m5a2Intro}}</h3>
+				{{> m5a2Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a2_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m5a2_1}}
+		{{>m5a2_2}}
+		{{>m5a2_good}}
+		{{>m5a2_bad}}
+		{{>m5a2_end}}
+	</div>
+</article>
+
+
+	<div class="modal fade" tabindex="-1" id="m5a2_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m5a2_modal">Types of programmes</h4>
+				</div>
+				<div class="content">
+					{{>m5_tv}}
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m5_tv">
+	<div class="m5-tv">
+		<div class="m5-tv-top">
+			<div class="m5-tv-content">
+				<div class="text-center">
+					<div class="dropdown">
+					  <button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Programmes<span class="caret-fa"></span></button>
+						<ul class="dropdown-menu dropdown-menu-center">
+							<li><a draggable="false" href="#m5_tvDocumentary" class='tvshow'>Documentary</a></li>
+							<li><a draggable="false" href="#m5_tvRealityTV" class='tvshow'>Reality TV</a></li>
+							<li><a draggable="false" href="#m5_tvSoap" class='tvshow'>Soap</a></li>
+							<li><a draggable="false" href="#m5_tvChatShow" class='tvshow'>Chat Show</a></li>
+							<li><a draggable="false" href="#m5_tvSitcom" class='tvshow'>Sitcom</a></li>
+							<li><a draggable="false" href="#m5_tvComedy" class='tvshow'>Comedy</a></li>
+							<li><a draggable="false" href="#m5_tvMakeover" class='tvshow'>Makeover</a></li>
+							<li><a draggable="false" href="#m5_tvCartoon" class='tvshow'>Cartoon</a></li>
+							<li><a draggable="false" href="#m5_tvGameShow" class='tvshow'>Game Show</a></li>
+							<li><a draggable="false" href="#m5_tvPeriodDrama" class='tvshow'>Period Drama</a></li>
+							<li><a draggable="false" href="#m5_tvDrama" class='tvshow'>Drama</a></li>
+							<li><a draggable="false" href="#m5_tvSports" class='tvshow'>Sports</a></li>
+						</ul>
+					</div>
+				</div>
+				<br>
+
+				<div id='m5_tvDocumentary' class="programme hidden">
+					<h4>Documentary</h4>
+					<p>A programme that investigates real life events.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Panorama</li>
+						<li>Newsnight</li>
+						<li>Life on Earth</li>
+						<li>The World About Us</li>
+						<li>Stephen Fry in America</li>
+					</ul>
+				</div>
+
+
+				<div id='m5_tvRealityTV' class="programme hidden">
+					<h4>Reality TV</h4>
+					<p>A programme or competition which observes how real people behave.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Britain’s Got Talent</li>
+						<li>I’m a Celebrity Get Me Out of Here</li>
+						<li>The X Factor</li>
+						<li>Strictly Come Dancing</li>
+						<li>Come Dine with Me</li>
+					</ul>
+				</div>
+
+
+				<div id ='m5_tvSoap' class="programme hidden">
+					<h4>Soap</h4>
+					<p>A fictional TV story featuring actors which is on every day or every week.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Hollyoaks</li>
+						<li>Emmerdale</li>
+						<li>Coronation Street</li>
+						<li>Eastenders</li>
+					</ul>
+				</div>
+
+
+				<div id = 'm5_tvChatShow' class="programme hidden">
+					<h4>Chat Show</h4>
+					<p>A programme where a presenter interviews people.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>The Late Show</li>
+						<li>Alan Carr Chatty Man</li>
+						<li>The Jonathan Ross Show</li>
+						<li>The Graham Norton Show</li>
+						<li>Richard and Judy</li>
+					</ul>
+				</div>
+
+				<div id = 'm5_tvSitcom' class="programme hidden">
+					<h4>Sitcom</h4>
+					<p>An amusing series about the lives of fictional characters.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Blackadder</li>
+						<li>Father Ted</li>
+						<li>Dad’s Army</li>
+						<li>Fawlty Towers</li>
+						<li>The Vicar of Dibley</li>
+						<li>Peep Show</li>
+						<li>Outnumbered</li>
+					</ul>
+				</div>
+
+
+				<div id = 'm5_tvComedy' class="programme hidden">
+					<h4>Comedy</h4>
+					<p>A programme with stand up comedians or sketches.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Live at the Apollo</li>
+						<li>Harry and Paul</li>
+						<li>That Mitchell and Webb Look</li>
+						<li>Mock the Week</li>
+						<li>French and Saunders</li>
+					</ul>
+				</div>
+
+
+				<div id = 'm5_tvMakeover' class="programme hidden">
+					<h4>Makeover</h4>
+					<p>A programme which helps people change their image or their surroundings.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Extreme Makeover</li>
+						<li>Gok’s Fashion Fix</li>
+						<li>Wife Swap</li>
+						<li>How to Look Good Naked</li>
+						<li>How Clean is Your House</li>
+					</ul>
+				</div>
+
+
+				<div id='m5_tvCartoon' class="programme hidden">
+					<h4>Cartoon</h4>
+					<p>A programme with animated characters.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>The Simpsons</li>
+						<li>South Park</li>
+						<li>Family Guy</li>
+						<li>The Flintstones</li>
+						<li>Scooby Doo</li>
+						<li>Looney Tunes</li>
+					</ul>
+				</div>
+
+
+				<div id='m5_tvGameShow' class="programme hidden">
+					<h4>Game Show</h4>
+					<p>A programme where people compete or answer questions to win prizes.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Who Wants to Be a Millionaire</li>
+						<li>The Weakest Link</li>
+						<li>University Challenge</li>
+						<li>Catchphrase</li>
+						<li>Mastermind</li>
+					</ul>
+				</div>
+
+
+				<div id = 'm5_tvPeriodDrama' class="programme hidden">
+					<h4>Period Drama</h4>
+					<p>An adaptation of a novel or play set in the past.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Downton Abbey</li>
+						<li>Call the Midwife</li>
+						<li>The Paradise</li>
+						<li>The Tudors</li>
+						<li>Mr Selfridge</li>
+					</ul>
+				</div>
+
+
+				<div id='m5_tvDrama' class="programme hidden">
+					<h4>Drama</h4>
+					<p>A serious programme with fictional characters set in the past, present or future.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Holby City</li>
+						<li>Casualty</li>
+						<li>The Bill</li>
+						<li>Doctor Who</li>
+						<li>Waterloo Road</li>
+						<li>Game of Thrones</li>
+					</ul>
+				</div>
+
+
+				<div id='m5_tvSports' class="programme hidden">
+					<h4>Sports</h4>
+					<p>A programme which features highlights of sporting events.</p>
+					<p>Here are some examples:</p>
+					<ul>
+						<li>Sportscene</li>
+						<li>Match of the Day</li>
+						<li>A Question of Sport</li>
+						<li>The F1 Show</li>
+						<li>WWE: Late Night RAW/smackdown</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="text-center" style="padding: 0 20px;">
+		<div class="ph-w trans" style="max-width: 286px"><div class="ph" style="padding-top: 31.12%"><img draggable="false" src="images/module5/tv-base.png"></div></div>
+	</div>
+
+</template>
+
+
+<template name="m5a2_1">
+	<section id="m5a2_1" class="hidden">
+		<div class="content">
+		{{#if activeSection}}
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on each type of programme to see some real examples.</h3>
+			{{>m5_tv}}
+			{{/if}}
+		</div>
+
+		<footer>
+			{{>footer_nav prevurl="#m5a2" nexturl="#m5a2_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a2_2">
+   <section id="m5a2_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				Now test your knowledge of types of programme, choose <span class="avoidwrap"><b>True</b> or <b>False</b>.</span>
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">
+						<div class="number">1</div><span id="question_text"><i>Emmerdale</i> is a documentary.</span>
+						<div class="row">
+							<div class="col-sm-6">
+								<button id="true" class="button2 item-space ddwidth9">True</button>
+							</div>
+							<div class="col-sm-6">
+								<button id="false" class="button2 item-space ddwidth9">False</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m5a2_2RightScore" wrongSession="m5a2_2WrongScore"}}
+					</div>
+				</div>
+				<div class="row text-center">
+					<button data-toggle="modal" data-target="#m5a2_modal" class="button2 item-space">Type of programmes</button>
+				</div>
+			</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#m5a2_2_1" nexturl="#m5a2_2_3" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>
+
+
+<template name='m5a2_end'>
+  {{>EndPage char="tu" act="m5a2" nextact="m5a3" place="Belfast"}}
+</template>
+
+
+<template name="m5a2_bad">
+	<section id="m5a2_bad" class="hidden">
+			{{#if activeSection}}
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m5a2_2RightScore" wrongSession="m5a2_2WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m5a2_2" class="pagination restart">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a2_end" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+<template name='m5a2_good'>
+	<section id="m5a2_good" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{> scorebox2 rightSession="m5a2_2RightScore" wrongSession="m5a2_2WrongScore" }}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a2_end" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+

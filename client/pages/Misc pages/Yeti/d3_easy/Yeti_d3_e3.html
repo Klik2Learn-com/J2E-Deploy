@@ -1,0 +1,34 @@
+<template name="Yeti_d3_e3">
+	<section id="Yeti_d3_e3" class="hidden">
+		{{#if activeSection}}
+		<div class="phone1bg">
+			<div class="content container-fluid">
+				<div class="gameInfo text-center">
+				 Is this information true?
+				</div>
+				<div class="yetiMsg">
+					<div class="speech1">Scientists did tests on the bones of an animal.</div>
+				</div>
+				{{> blankrow}}
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-3 text-center button2">
+						<div id="true" class="answer">True</div> 
+					</div>
+					<div class="col-sm-2 text-center">
+						<span class="incorrectbig hidden"><i class="fa fa-close"></i></span> <span class="correctbig hidden"><i class="fa fa-check"></i></span>
+					</div>
+					<div class="col-sm-3 text-center button2">
+						<div id="false" class="answer">False</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+	
+	

@@ -1,0 +1,148 @@
+<template name="MoreAboutSheffield">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Sheffield"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m7l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m7l1}}</div>
+		</header>
+
+		<section id="moreaboutSheffield">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Sheffield/Sheffield1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l1_A">
+						<p>Industrial Museums</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Sheffield/Sheffield2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l1_B">
+						<p>Chatsworth</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Sheffield/Sheffield3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l1_C">
+						<p>Magna</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-8 col-xs-6 bonus-image" style="background-image: url('images/bonus/Sheffield/Sheffield4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l1_D">
+						<p>Moor Market</p>
+					</div>
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/Sheffield/Sheffield5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m7l1_E">
+						<p>Winter Garden</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l1_A">Industrial Museums</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Sheffield/Sheffield1.jpg" alt="Industrial Museums" style="max-width: 250px;">
+					</figure>
+					<p>These three museums tell the story of Sheffield from its beginning to the present day. Sheffield has a long history of metal work, going back more than 500 years. The city is famous for making cutlery and silver goods. During your visit you can see a huge steam engine working.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.simt.co.uk/kelham-island-museum/what-to-see" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l1_B">Chatsworth</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Sheffield/Sheffield2.jpg" alt="Chatsworth" style="max-width: 250px;">
+					</figure>
+					<p>Chatsworth House has been voted Britain’s most popular country house. It has important collections of furniture and paintings. The gardens are developing every year with sculptures, waterfalls, ponds and a maze. Visitors can also enjoy the parks surrounding the estate where you can see typical farm animals and a deer farm.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.chatsworth.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l1_C">Magna</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Sheffield/Sheffield3.jpg" alt="Magna" style="max-width: 250px;">
+					</figure>
+					<p>The Magna Science Adventure centre is a great place for children to explore the world of science. There are four main areas covering Earth, Fire, Air and Water. The museum is in an old steel works and most displays have exciting, hands -on activities on architecture, flight, and steelmaking. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.visitmagna.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l1_D">Moor Market</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Sheffield/Sheffield4.jpg" alt="Moor Market" style="max-width: 250px;">
+					</figure>
+					<p>At Moor market in Sheffield, you can find a wide variety of things to buy from fresh fruit, vegetables from many countries to clothing and furniture. There are over 90 different traders at the market and you can even join an art or music  workshop. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://sheffieldmarkets.com/markets/moor-market/about-us" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m7l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m7l1_E">Winter Garden</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Sheffield/Sheffield5.jpg" alt="Winter Garden" style="max-width: 250px;">
+					</figure>
+					<p>Sheffield’s winter garden has won many award. It has the largest glass house in Europe with over 2,500 plants. Sheffield is famous for producing steel and you can learn about the history of steel as you wander round the plants and trees in the Winter Gardens.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.prsarchitects.com/projects/arts-civic/sheffield-winter-garden" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

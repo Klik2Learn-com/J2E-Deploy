@@ -1,0 +1,248 @@
+<template name="textEntryBigSG">
+<section id="textEntryBigSG" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the article extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> Each country has an identity that is supposed to be 'typical'. But a new study in the American journal 'Science' proves that these stereotypes are inaccurate. The survey found 'national myths' in almost every country.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> Find a word which means 'a story/fiction/not true'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="14" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+						<span class="incorrect" style="visibility: hidden;"><i class="fa fa-close"></i></span>
+						<!-- <span class="correct hidden"><i class="fa fa-check"></i></span> -->
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		
+		
+		<h5>HTML</h5>
+		<pre class="htmlcode2">
+		&#00060;template name="textEntryBigSG"&#00062;
+		&#00060;section id="textEntryBigSG" class="hidden"&#00062;
+	&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&#00060;div class="content"&#00062;
+			&#00060;div class="container-fluid"&#00062;
+				&#00060;div class="row"&#00062;
+					&#00060;div class="col-sm-1"&#00062;&#00060;/div&#00062;
+					&#00060;div class="col-sm-10"&#00062;
+						&#00060;h3&#00062;Read the article extract then try to answer the question below.&#00060;/h3&#00062;
+					&#00060;/div&#00062;
+					&#00060;div class="col-sm-1"&#00062;&#00060;/div&#00062;
+				&#00060;/div&#00062;
+				&#00123;&#00123;&#00062; rightwrong&#00125;&#00125;
+				&#00060;div class="row"&#00062;
+					&#00060;div class="col-sm-12"&#00062;
+						&#00060;div class="parapaper paraextract fold"&#00062;		
+						&#00060;p&#00062;&#00060;b&#00062;1.&#00060;/b&#00062; Each country has an identity that is supposed to be 'typical'. But a new study in the American journal 'Science' proves that these stereotypes are inaccurate. The survey found 'national myths' in almost every country.&#00060;/p&#00062;
+						&#00060;/div&#00062;
+					&#00060;/div&#00062;
+				&#00060;/div&#00062;
+				&#00060;div class="row"&#00062;
+					&#00060;div class="col-sm-2"&#00062;&#00060;/div&#00062;
+					&#00060;div class="col-sm-8"&#00062;
+						&#00060;div &#00062;
+							&#00060;h3&#00062;&#00060;b&#00062;1&#00041;&#00060;/b&#00062; Find a word which means 'a story/fiction/not true'.&#00060;/h3&#00062;
+						&#00060;/div&#00062;
+					&#00060;/div&#00062;
+					&#00060;div class="col-sm-2"&#00062;&#00060;/div&#00062;
+				&#00060;/div&#00062;
+				&#00060;div class="row"&#00062;
+					&#00060;div class="col-sm-2"&#00062;&#00060;/div&#00062;
+					&#00060;div class="col-sm-8"&#00062;
+						&#00060;div class="text-center"&#00062;
+						&#00060;form id="0" class="textentry textentry-big text-center"&#00062;
+							&#00060;input type="text" name="userText" size="14" autocomplete="off"&#00062;
+							&#00060;input type="submit" value="OK"&#00062;
+						&#00060;/form&#00062;
+
+						&#00060;span class="incorrect" style="visibility: hidden;"&#00062;&#00060;i class="fa fa-close"&#00062;&#00060;/i&#00062;&#00060;/span&#00062;
+						&#00060;!-- &#00060;span class="correct hidden"&#00062;&#00060;i class="fa fa-check"&#00062;&#00060;/i&#00062;&#00060;/span&#00062; --&#00062;
+                          &#00060;/div&#00062;
+					&#00060;/div&#00062;
+					&#00060;div class="col-sm-2"&#00062;&#00060;/div&#00062;
+				&#00060;/div&#00062;
+			&#00060;/div&#00062;
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+			&#00123;&#00123;&#00062;footer_nav nexturl="#m1a20_2" prevurl="#m1a20" prev="hidden" next="hidden"&#00125;&#00125;
+		&#00060;/footer&#00062;
+		&#00123;&#00123;&#00062;stuck stuckchar="tu"&#00125;&#00125;
+		&#00123;&#00123;/if&#00125;&#00125;
+&#00060;/section&#00062;
+	&#00060;/template&#00062;</pre>
+
+	<h5>JAVASCRIPT</h5>
+	<pre class="htmlcode2">// This code works over multiple slides, only one this one .js page is needed. Set the Template. functions to the base activity
+	//GIVE ALL activeSection PAGES A HELPER CLASS
+// i.e. m1a20 and not the sub sections such as m1a20_2
+Template.textEntryBigSG.events&#00040;&#00123;
+	"click .stuck-button": function&#00040;evt&#00041; &#00123;
+		
+			var currentSection = $&#00040;evt.currentTarget&#00041;.parents&#00040;'section'&#00041;;
+			var nextSection = $&#00040;evt.currentTarget&#00041;.parents&#00040;'section'&#00041;.next&#00040;'section'&#00041;;
+			
+			$&#00040;'form'&#00041;.parent&#00040;&#00041;.html&#00040;'&#00060;h4 class="text-center caption"&#00062; ' + $.k2l.textEntryBigSG.displayAnswers[$.k2l.textEntryBigSG.index] + ' &#00060;/h4&#00062;'&#00041;;
+			$&#00040;'.incorrectscreen'&#00041;.addClass&#00040;"hidden"&#00041;; // Remove a cross if there is one.
+			
+			
+			$.k2l.textEntryBigSG.index++; //increment the counter
+			$&#00040;".stuck"&#00041;.addClass&#00040;'hidden'&#00041;; // Hide the stuck button if it is visible
+			
+			setTimeout&#00040;function&#00040;&#00041;&#00123;
+				$&#00040;'.correctscreen'&#00041;.addClass&#00040;"hidden"&#00041;;
+				$&#00040;'.incorrectscreen'&#00041;.addClass&#00040;"hidden"&#00041;;
+				currentSection.addClass&#00040;'hidden'&#00041;; // hide this page
+				nextSection.removeClass&#00040;'hidden'&#00041;;// reveal next page
+				document.location.hash = nextSection.attr&#00040;'id'&#00041;; // change the hash
+				Session.set&#00040;"activeSection", '#' + nextSection.attr&#00040;'id'&#00041;&#00041;; // set the active Section
+			&#00125;, 1500&#00041;;
+			
+			$.k2l.textEntryBigSG.wrongCount = 0; // reset the wrongCount
+		
+		
+	&#00125;,
+
+	"submit form": function&#00040;evt&#00041; &#00123;
+		if &#00040;evt.preventDefault&#00041;&#00123;
+			evt.preventDefault&#00040;&#00041;;
+		&#00125;
+		var isCorrect = false;
+		
+		// Tidy up the user's input
+		var userText = evt.target.userText.value;
+		if &#00040;userText.charAt&#00040;userText.length - 1&#00041; == '.'&#00041; &#00123;
+			userText = userText.substr&#00040;0, userText.length - 1&#00041;;
+		&#00125;
+		userText = $.trim&#00040;userText&#00041;;
+		userText = userText.toLowerCase&#00040;&#00041;;
+		
+		// Check if the answer is correct
+		for &#00040;var i = 0; i &#00060; $.k2l.textEntryBigSG.correctAnswers[$.k2l.textEntryBigSG.index].length; i++&#00041; &#00123;
+			if &#00040;userText == $.k2l.textEntryBigSG.correctAnswers[$.k2l.textEntryBigSG.index][i]&#00041;&#00123; 
+				isCorrect = true;
+				break;
+			&#00125;
+		&#00125;
+		
+		if &#00040;isCorrect&#00041; &#00123;
+			
+			var currentSection = $&#00040;evt.currentTarget&#00041;.parents&#00040;'section'&#00041;;
+			var nextSection = $&#00040;evt.currentTarget&#00041;.parents&#00040;'section'&#00041;.next&#00040;'section'&#00041;;
+			
+			$&#00040;evt.currentTarget&#00041;.parent&#00040;&#00041;.html&#00040;'&#00060;h4 class="text-center caption"&#00062;' + $.k2l.textEntryBigSG.displayAnswers[$.k2l.textEntryBigSG.index] + ' &#00060;/h4&#00062;'&#00041;;
+			$&#00040;'.incorrectscreen'&#00041;.addClass&#00040;"hidden"&#00041;; // Remove a cross if there is one.
+			$&#00040;'.correctscreen'&#00041;.removeClass&#00040;"hidden"&#00041;;
+			
+			$.k2l.textEntryBigSG.index++; //increment the counter
+			$&#00040;".stuck"&#00041;.addClass&#00040;'hidden'&#00041;; // Hide the stuck button if it is visible
+			
+			setTimeout&#00040;function&#00040;&#00041;&#00123;
+				$&#00040;'.correctscreen'&#00041;.addClass&#00040;"hidden"&#00041;;
+				$&#00040;'.incorrectscreen'&#00041;.addClass&#00040;"hidden"&#00041;;
+				currentSection.addClass&#00040;'hidden'&#00041;; // hide this page
+				nextSection.removeClass&#00040;'hidden'&#00041;;// reveal next page
+				document.location.hash = nextSection.attr&#00040;'id'&#00041;; // change the hash
+				Session.set&#00040;"activeSection", '#' + nextSection.attr&#00040;'id'&#00041;&#00041;; // set the active Section
+			&#00125;, 1500&#00041;;
+			
+			$.k2l.textEntryBigSG.wrongCount = 0; // reset the wrongCount
+		&#00125; else &#00123;
+			
+			// Incorrect Answer
+			$&#00040;'.incorrectscreen'&#00041;.removeClass&#00040;"hidden"&#00041;;
+			setTimeout&#00040;function&#00040;&#00041;&#00123;
+				$&#00040;'.incorrectscreen'&#00041;.addClass&#00040;"hidden"&#00041;;
+			&#00125;, 1000&#00041;
+			$.k2l.textEntryBigSG.wrongCount++;
+			
+			if &#00040;$.k2l.textEntryBigSG.wrongCount &#00062; 2&#00041; &#00123;
+				$&#00040;".stuck"&#00041;.removeClass&#00040;'hidden'&#00041;;
+				
+				$.k2l.textEntryBigSG.wrongCount = 0;
+			&#00125;
+		&#00125;
+	&#00125;,
+	
+	'click a[data-function="restart"]': function&#00040;evt&#00041;&#00123;
+	// When clicking to restart the activity this should reset the variables to
+	// initial values.
+	
+	
+		if&#00040;typeof $.k2l != 'undefined'&#00041;&#00123;
+		  if&#00040;typeof $.k2l.textEntryBigSG != 'undefined'&#00041;&#00123;
+			if&#00040;typeof $.k2l.textEntryBigSG.index != 'undefined'&#00041;&#00123;
+				$.k2l.textEntryBigSG.index = 0;
+			&#00125;
+			if &#00040;typeof $.k2l.textEntryBigSG.wrongCount != 'undefined'&#00041;&#00123;
+				$.k2l.textEntryBigSG.wrongCount = 0;
+			&#00125;
+		  &#00125;
+		&#00125;
+	&#00125;
+		
+&#00125;&#00041;
+
+Template.textEntryBigSG.rendered = function &#00040;&#00041;&#00123;
+	if&#00040;typeof $.k2l == 'undefined'&#00041;&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if &#00040;typeof $.k2l.textEntryBigSG == 'undefined'&#00041; &#00123;
+		$.k2l.textEntryBigSG = &#00123;&#00125;;
+	&#00125;;
+		
+		// the actual answers in acceptable form &#00040;after lowercase and trimming&#00041;
+		var correctAnswers = [
+			["myth", "myths"], // Possible answers for Q1.
+			["happy go lucky", "happy-go-lucky", "happy–go–lucky", "happy - go - lucky", "happy – go – lucky"],   // Possible answers for Q2.
+			["copes well with a crisis"], // etc.
+			["data"],
+			["unfounded"],
+			["exaggerate", "exaggerating"],
+			["nevertheless"],
+			["in a good light"],
+			["serve a purpose"]
+		]
+		
+		// The answers as they should be displayed
+		var displayAnswers = ["myth", "happy-go-lucky", "copes well with a crisis", "data", "unfounded", 
+							"exaggerate", "nevertheless", "in a good light", "serve a purpose"];
+		
+	$.k2l.textEntryBigSG.index = 0;
+	$.k2l.textEntryBigSG.correctAnswers = correctAnswers;
+	$.k2l.textEntryBigSG.displayAnswers = displayAnswers;
+	$.k2l.textEntryBigSG.wrongCount = 0;
+&#00125;</pre>
+</div>
+		
+</section>
+</template>

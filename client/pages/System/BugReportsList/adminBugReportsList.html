@@ -1,0 +1,54 @@
+<template name="adminBugReportsList">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/admin/"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">Bug reports list</div>
+		</header>
+		<section>
+			{{#if isAdmin}}
+			<div class="content-user">
+			    <h1>Bug Reports</h1>
+
+				<div class="table-wrapper scrollbar">
+					<table class="table4 userlist-table" id="adminBugReportsListTable">
+					  <thead>
+						<tr>
+						  <th>Bug ID ({{>touch yes="Tap" no="Click"}} to see details)</th>
+						  <th>Submitted by</th>
+						  <th>Date</th>
+						  <th>Status</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						{{#each bug_reports}}
+						  <tr>
+							<td data-function="goUserPage">
+								<a draggable="false" href="/bugReport/{{_id}}">{{_id}}</a>
+							</td>
+							<td data-function="goUserPage">
+								<a draggable="false" href="/user/{{userId}}">{{userIdToName userId}} ({{userId}})</a>
+							</td>
+							<td>
+								{{date}}
+							</td>
+							<td>
+								{{status}}
+							</td>
+						  </tr>
+						{{/each}}
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			{{else}}
+				Unauthorised access.
+			{{/if}}
+		</section>
+	</div>
+</article>
+
+</template>

@@ -1,0 +1,608 @@
+<template name="m4a8">
+	<article class="with-tools-sidebar m4a8">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/GlenCoe');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 8 - {{>m4a8Title}}</div>
+			</header>
+
+
+			<section id="m4a8">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a8Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m4a8Intro}}</h3>
+					{{> m4a8Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a8_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a8_1}} {{>m4a8_2}} {{>m4a8_3}} {{>m4a8_4}} {{>m4a8_5}} {{>m4a8_6}} {{>m4a8_7}} {{>m4a8_8}} {{>m4a8_9}} {{>m4a8_10}}
+			{{>EndPage char="tu" act="m4a8" nextact="m4a9" place="GlenCoe"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a8_1">
+	<section id="m4a8_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>6.</b> Experts believe that asking people to take vitamin pills won’t work. They say you need to add it to food at
+								quite a high level - higher than the small amounts we used to add to food to prevent rickets. If people had to buy
+								and take pills, most people would not do it.
+								<br> If we hadn’t fortified table salt, many people would be walking around with goitre.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>1)</b> Find a word meaning ‘to make something stronger/better.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_2" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_10">
+	<section id="m4a8_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>10.</b> People with darker skins are at greater risk of vitamin D deficiency and so are those who stay fully covered
+								because of their religious beliefs. Over-exposure to the sun is harmful but all of us need about 10 to 15 minutes
+								a day to maintain adequate vitamin D levels.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>10)</b> Now find the word meaning ‘just enough of something.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_end" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_2">
+	<section id="m4a8_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>2.</b> Professor George Ebers at Oxford University believes the evidence is now good enough to justify dosing the
+								entire population with vitamin D. This month his team published evidence of a link between a lack of vitamin D and
+								MS.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>2)</b> Find a word meaning ‘to give a good reason for something.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_3" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_3">
+	<section id="m4a8_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>2.</b> Professor George Ebers at Oxford University believes the evidence is now good enough to justify dosing the
+								entire population with vitamin D. This month his team published evidence of a link between a lack of vitamin D and
+								MS.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>3)</b> Find a word meaning ‘to give medication.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_4" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_4">
+	<section id="m4a8_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>4.</b> Shine on Scotland is a campaign launched by 13-year-old Ryan McLaughlin in response to his mother's diagnosis
+								with MS. They marched on the Scottish parliament last year and organised an international conference in Glasgow involving
+								scientists and Scottish health secretary at the time Nicola Sturgeon.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>4)</b> Find a verb that is used for ships, rockets and campaigns.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_5" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_5">
+	<section id="m4a8_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>4.</b> Shine on Scotland is a campaign launched by 13-year-old Ryan McLaughlin in response to his mother's diagnosis
+								with MS. They marched on the Scottish parliament last year and organised an international conference in Glasgow involving
+								scientists and Scottish health secretary at the time Nicola Sturgeon.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>5)</b> Find a word that means a large meeting where people discuss a subject.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_6" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_6">
+	<section id="m4a8_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>6.</b> Experts believe that asking people to take vitamin pills won’t work. They say you need to add it to food at
+								quite a high level - higher than the small amounts we used to add to food to prevent rickets. If people had to buy
+								and take pills, most people would not do it.
+								<br> If we hadn’t fortified table salt, many people would be walking around with goitre.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>6)</b> Find a word meaning ‘to stop something happening.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_7" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_7">
+	<section id="m4a8_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Now look at this conditional sentence.</h3>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="caption ">
+						‘If we hadn’t fortified table salt, many people would be walking around with goitre.’
+					</div>
+				</div>
+			</div>
+
+			<h3 class="center">Now drag the right word to the spaces in this sentence. It refers to something in the future.</h3>
+
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+
+				<p>‘If we
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> food with Vitamin D
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> people
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>
+					<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> Multiple Sclerosis.’</p>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">fewer</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">get</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">will</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">fortify</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a8_7" nexturl="#m4a8_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_8">
+	<section id="m4a8_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>7.</b> Vitamin D is vital for the gut to absorb calcium. Low levels can cause the bone disease rickets. In Victorian
+								times, when rickets was rife among the poor, children suffered softening of the bones and ended up with bow legs
+								because their diet was so bad.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>8)</b> Find a word meaning ‘very common.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_8" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_9">
+	<section id="m4a8_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 text-center">
+						<h3>Read the article below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+							<p>
+								<b>10.</b> People with darker skins are at greater risk of vitamin D deficiency and so are those who stay fully covered
+								because of their religious beliefs. Over-exposure to the sun is harmful but all of us need about 10 to 15 minutes
+								a day to maintain adequate vitamin D levels.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div>
+							<h3>
+								<b>9)</b> Find the word meaning ‘lacking in something.’</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+							<form id="0" class="textentry textentry-big text-center">
+								{{>m4a8_input}}
+								<input type="submit" value="OK">
+							</form>
+
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a3_9" prevurl="#m1a20" prev="hidden" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="tu"}} {{/if}}
+	</section>
+</template>
+
+
+<template name="m4a8_input">
+	<input type="text" name="userText" size="15" autocomplete="off">
+</template>

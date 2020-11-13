@@ -1,0 +1,85 @@
+/* ASPIRE ENGLISH */
+.course-header img[alt="Aspire English"],
+.course-header img[src="/images/logos/ae-logo2.png"] {
+	width: 100px;
+	height: auto;
+}	
+
+/* English Master */
+.header-custom.header-custom-english-master > nav,
+.header-custom-english-master .user-links > li,
+.header-custom-english-master .user-links > li > a,
+.header-custom-english-master .user-links > li > .inactive,
+.header-custom-english-master #login-buttons > div > a {
+	height: 60px;
+}
+
+.header-custom.header-custom .user-links {
+	margin-right: 0;
+}
+
+.header-custom-english-master > nav {
+	background: #f2f2f2;
+	box-shadow: 0 0 16px rgba(0,0,0,.5);
+}
+
+.header-custom.header-custom-english-master .banner {
+	width: auto;
+    max-width: 100%;
+    max-height: 40px;
+    margin-top: 4px;
+}
+
+.header-custom.header-custom-english-master .brand {
+	width: 76px;
+}
+
+.header-custom-english-master .user-links > li.announcements > a {
+	background-color: #ddd;
+}
+
+.header-custom-english-master .user-links > li.announcements > a i {
+	margin: 0;
+}
+
+.header-custom-english-master .user-links > li > a,
+.header-custom-english-master .user-links > li > .inactive,
+.header-custom-english-master #login-buttons > div > a  {
+	font-size: 12px;
+	color: #666;
+	padding: 6px 8px;
+	transition: color .1s, background-color .1s;
+}
+
+.header-custom-english-master .user-links > li > a:hover,
+.header-custom-english-master #login-buttons > div > a:hover,
+.header-custom-english-master .user-links > li.announcements > a :hover  {
+	color: white;
+	background-color: #a1c441;
+}
+
+.header-custom-english-master .user-links > li > a  i,
+.header-custom-english-master .user-links > li > .inactive  i,
+.header-custom-english-master #login-buttons > div > a  i {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+@media (max-width: 1000px) {
+	.header-custom-english-master .user-links > li > a,
+	.header-custom-english-master .user-links > li > .inactive,
+	.header-custom-english-master #login-buttons > div > a  {
+		padding: 8px 0 0;
+	}
+	
+	.header-custom-english-master .user-links > li.announcements > a   {
+		padding: 0;
+	}	
+	
+	.header-custom-english-master .user-links > li > a > span,
+	.header-custom-english-master .user-links > li > .inactive > span,
+	.header-custom-english-master #login-buttons > div > a > span  {
+		display: none;
+	}
+}

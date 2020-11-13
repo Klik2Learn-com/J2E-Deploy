@@ -1,0 +1,24 @@
+<template name="Yeti_d3_e2">
+	<section id="Yeti_d3_e2" class="hidden">
+		{{#if activeSection}}
+		<div class="journalfbg">
+			<div class="content">
+				<div class="gameInfo text-center">
+				  One of these sentences is right and the rest are wrong. {{>touch yes="Tap" no="Click"}} the right one.
+				</div>
+				<div class="yetiSelect">
+					<ol>
+						<li id="answer1" class="pointer"><span id="qu1">No-one is not sure which way to go.</span><span id="incorrect1" class="incorrect hidden"><i class="fa fa-close"></i></span><span id="correct1" class="correct hidden"><i class="fa fa-check"></i></span></li>
+						<li id="answer2" class="pointer"><span id="qu2">There is no such thing that we cannot do it </span><span id="incorrect2" class="incorrect hidden"><i class="fa fa-close"></i></span><span id="correct2" class="correct hidden"><i class="fa fa-check"></i></span></li>
+						<li id="answer3" class="pointer"><span id="qu3">The wind is getting stronger and stronger.</span><span id="incorrect3" class="incorrect hidden"><i class="fa fa-close"></i></span><span id="correct3" class="correct hidden"><i class="fa fa-check"></i></span></li>
+					</ol>
+				</div>
+				
+			</div>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+	
+	

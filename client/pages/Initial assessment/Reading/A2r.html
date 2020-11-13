@@ -1,0 +1,50 @@
+<template name="A2r">
+	<section id="A2r">
+	{{#if activeSection}}
+			<div class="content">
+			<h3 class="center">Read the text and answer each question with up to four words.</h3>
+				<div class="parapaper paraextract article-text noselect">
+					<p>
+						&emsp;During World War 2 thousands of Polish soldiers and airmen came to live in Britain after they escaped from Poland. They fought through the war, but when it ended in 1945 the Soviet Union controlled Poland and many didn't want to return home. The British Government allowed them to stay and over 100,000 did. Most of them married local women. 
+						<br><br>
+						&emsp;In 2004 Poland became a member of the European Union. Poles were allowed to move to other countries and thousands of young people came to Britain to find work. At first, many of them worked on farms, picking crops, then went on to get jobs in bars and restaurants. Since then, some have started businesses and others have found new and better work. Some have returned to Poland and many have decided to stay here and make this country their home.
+					</p>
+				</div>
+				<br>
+				<hr>
+				<h3 class="center"> Type your answers in the boxes. Look back at the text before you answer.</h3>
+				<div class="parapaper linespace paraextract parasegment para-ol-space fold">
+					<ol class="olcircle">
+						<li><b><span data-questionFor="answer1">When did thousand of Polish soldiers and airmen come to Britain?</span></b><br>
+						During <form class="textentry"><input id="answer1" type="text" name="userText" data-function="answerBox" size="11" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer2">Who controlled Poland after the war?</span></b><br>
+						The <form class="textentry"><input id="answer2" type="text" name="userText" data-function="answerBox" size="12" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer3">Who did most Polish soldiers and sailors in Britain marry?</span></b><br>
+						<form class="textentry"><input id="answer3" type="text" name="userText" data-function="answerBox" size="11" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer4">When did Poland become a member of the European Union?</span></b><br>
+						In <form class="textentry"><input id="answer4" type="text" name="userText" data-function="answerBox" size="4" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer5">Why did thousands of young people come to Britain?</span></b><br>
+						To <form class="textentry"><input id="answer5" type="text" name="userText" data-function="answerBox" size="9" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer6">What work did many Poles do at first?</span></b><br>
+						They worked <form class="textentry"><input id="answer6" type="text" name="userText" data-function="answerBox" size="12" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer7">Where did they work after this?</span></b><br>
+						In <form class="textentry"><input id="answer7" type="text" name="userText" data-function="answerBox" size="18" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer8">Have they all returned to Poland?</span></b><br>
+						<form class="textentry"><input id="answer8" type="text" name="userText" data-function="answerBox" size="2" autocomplete="off"></form></li>
+					</ol>
+				</div>
+				<div class="assess-finish">
+					<span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+				</div>
+				{{>finishBtn}}
+			</div>
+	{{/if}}
+	</section>
+</template>

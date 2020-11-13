@@ -1,0 +1,33 @@
+<template name="ukQuiz_8">
+   <section id="ukQuiz_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Language Questions</h1>
+			<h3 class="center">Listen to each word, then decide if the <b>stress</b> comes on the first, second or third syllable.</h3>
+			<div class="parapaper paraextract" style="padding-top: 1em;">
+				<div class="container-fluid">
+					<div class="row text-center">
+						<div class="number animated rubberBand" style="float: left;">1</div>
+						<button type="button" class="buttonround buttonroundbig buttonaudio animated rubberBand" data-audiosrc='audio/syllables/reply.m4a'></button>
+						<h4>Click to listen</h4>
+					</div>
+					<div class="row text-center" style="margin-top: 3em;">
+						<b>Syllables: </b>
+						<span class="avoidwrap">
+							<span class="avoidwrap">
+								<button type="button" class="button1 item-space">first</button>
+								<button type="button" class="button1 item-space">second</button>
+								<button type="button" class="button1 item-space">third</button>
+							</span>
+							
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	  <footer>
+		{{>footer_nav prevurl="#ukQuiz_7" nexturl="#ukQuiz_10" prev="hidden" next="hidden"}}
+	  </footer>
+		{{/if}}
+   </section>
+</template>

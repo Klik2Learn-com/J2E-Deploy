@@ -1,0 +1,75 @@
+<template name="m8a31"> 
+<article class="with-tools-sidebar m8a31">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Stonehenge');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 31 - {{>m8a31Title}}</div>
+		</header>
+		<section id="m8a31">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a31Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m8a31Intro}}</h3>
+				{{> m8a31Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a31_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a31_1}}
+		{{>m8a31_2}}
+		{{>EndPage char="k" act="m8a31" nextact="m8a32" place="Stonehenge"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a31_1"> 
+	<section id="m8a31_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag the meanings to the right sentences.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+
+					<ol class="olcircle">
+						<li>She has to <span class="grammar">put up</span> with a lot of criticism from her boss.<br> <div class="ddseatedtarget ddwidth12 dd1line2high"  data-destinationid = "target1">&nbsp;</div> </li>
+						<li>He <span class="grammar">put off</span> applying for the job and missed the deadline.<br> <div class="ddseatedtarget ddwidth12 dd1line2high"  data-destinationid = "target2">&nbsp;</div> </li>
+						<li>Don’t <span class="grammar">put yourself down</span> – I’m sure you could do a good job.<br> <div class="ddseatedtarget ddwidth12 dd1line2high"  data-destinationid = "target3">&nbsp;</div> </li>
+						<li>The strike happened because the management failed to <span class="grammar">put their message across</span>.<br> <div class="ddseatedtarget ddwidth12 dd1line2high"  data-destinationid = "target4">&nbsp;</div> </li>
+						<li>You have to <span class="grammar">put on</span> safety goggles when you use that machine.<br> <div class="ddseatedtarget ddwidth12 dd1line2high"  data-destinationid = "target5">&nbsp;</div> </li>
+					</ol>
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<div class="ddseat ddwidth12 dd1line2high"><div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target2">To postpone</div></div>
+				<div class="ddseat ddwidth12 dd1line2high"><div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target4">To communicate</div></div>
+				<div class="ddseat ddwidth12 dd2lines"><div class="ddsourceseated ddwidth12 dd2lines shadow" draggable="false" data-destination="target3">To speak negatively or criticise</div></div>
+				<div class="ddseat ddwidth12 dd1line2high"><div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target5">To wear</div></div>
+				<div class="ddseat ddwidth12 dd1line2high"><div class="ddsourceseated ddwidth12 dd1line2high shadow" draggable="false" data-destination="target1">To tolerate</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a31" nexturl="#m8a31_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a31_2"> 
+	<section id="m8a31_2" class="hidden"> 
+		<div class="content">  
+      			{{> Tu_saved module="8"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a31_1" nexturl="#m8a31_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

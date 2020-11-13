@@ -1,0 +1,156 @@
+<template name="m10a12"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Felixstowe');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 12 - {{> m10a12Title}}</div>
+		</header>
+		<section id="m10a12">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a12Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a12Intro}}</h3>
+				{{> m10a12Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a12_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a12_1}}
+		{{>m10a12_2}}
+		{{>m10a12_3}}
+		{{>EndPage char="elle" act="m10a12" nextact="m10a13" place="Felixstowe"}}
+	</div>
+</article>
+</template>
+<template name="m10a12_1"> 
+	<section id="m10a12_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h4 class="center">Here are the three conditional sentences used in the Global Issues articles. They all have different tenses.</h4>
+      			<h3 class="center">{{>touch yes="Tap" no="Click"}} the verbs in <a href="">red</a> to see what tense is used.</h3>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">First Conditional</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption">Scientists also believe that if we <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Present Simple">take</a> no action against global warming it <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Future">will alter</a> the chemical structure of our planet. </div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">Second Conditional</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption">If these conditions <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past Simple">changed</a> it <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Would + Be">would be</a> a disaster.</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">Third Conditional</div><br><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption">If <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="top" data-content="Past Perfect">we hadn’t polluted</a> our rivers and lakes so much and made them toxic to humans, we <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Would + Be">wouldn’t be</a> in this situation.</div>
+						</div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+				{{> popovers}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a12" nexturl="#m10a12_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a12_2"> 
+	<section id="m10a12_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the right pattern underneath the sentence.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>If we <span class="grammar">hadn’t polluted</span> our rivers and lakes so much and made them toxic to humans, we <span class="grammar">wouldn’t be</span> in this situation.<br>  <div class="ddseatedtarget ddwidth13 dd2lines" data-destinationid = "target1">&nbsp;</div></li>
+						<li>Scientists also believe that if we <span class="grammar">take</span> no action against global warming it <span class="grammar">will alter</span> the chemical structure of our planet.<br>  <div class="ddseatedtarget ddwidth13 dd2lines" data-destinationid = "target2">&nbsp;</div></li>
+						<li>If these conditions <span class="grammar">changed</span> it <span class="grammar">would be</span> a disaster.<br> <div class="ddseatedtarget ddwidth13 dd2lines" data-destinationid = "target3">&nbsp;</div></li>			
+					</ol>
+				</div>
+				<div class="visible-xs">
+					{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth13 dd2lines' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="">PRESENT CONDITIONAL + WOULD + BE</div></div>
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="target2">PRESENT SIMPLE + FUTURE</div></div>
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="target3">PAST SIMPLE + WOULD + BE</div></div>
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="target1">PAST PERFECT + WOULD + BE</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+
+	<div class="hidden-xs">
+		{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+	</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a12_1" nexturl="#m10a12_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a12_3"> 
+	<section id="m10a12_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Now drag the right pattern underneath the sentence.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle" style="counter-reset: start 3;">
+						<li>If nothing <span class="grammar">is done</span>, the earth’s resources <span class="grammar">will be</span> depleted.<br> <div class="ddseatedtarget ddwidth13 dd2lines" data-destinationid = "target4">&nbsp;</div></li>
+						<li>If there <span class="grammar">were</span> no Global Warming, oil <span class="grammar">would not be</span> a problem.<br>  <div class="ddseatedtarget ddwidth13 dd2lines" data-destinationid = "target5">&nbsp;</div></li>
+						<li>If the markets <span class="grammar">fail</span>, the infrastructure of modern civilisation <span class="grammar">will collapse</span> causing our standard of living to change drastically.<br> <div class="ddseatedtarget ddwidth13 dd2lines" data-destinationid = "target6">&nbsp;</div></li>
+					</ol>
+				</div>
+				<div class="visible-xs">
+					{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth13 dd2lines' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="">PRESENT CONDITIONAL + WOULD + BE</div></div>
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="target4 target6">PRESENT SIMPLE + FUTURE</div></div>
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="target5">PAST SIMPLE + WOULD + BE</div></div>
+				<div class="ddseat ddwidth13 dd2lines"><div class="ddsourceseated ddwidth13 dd2lines shadow" draggable="false" data-destination="">PAST PERFECT + WOULD + BE</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+
+	<div class="hidden-xs">
+		{{>gg_button gg_text="Click here to find out more about Conditionals in Verbs in the Grammar Guide"}}
+	</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a12_2" nexturl="#m10a12_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

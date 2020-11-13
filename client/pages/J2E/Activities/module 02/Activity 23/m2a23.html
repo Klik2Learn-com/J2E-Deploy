@@ -1,0 +1,492 @@
+<template name="m2a23">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Stonehaven');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 23 - {{>m2a23Title}}</div>
+		</header>
+		
+		<section id="m2a23">
+			<div class="content">
+<h1 class="start-page-header">{{> m2a23Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m2a23Intro}}</h3>
+{{> m2a23Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m2a23_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m2a23_1}}
+		{{>m2a23_2}}
+		{{>m2a23_3}}
+		{{>m2a23_4}}
+		{{>m2a23_5}}
+		{{>m2a23_end}}
+	</div>
+</article>
+	{{>m2a24_modal}}
+
+		
+		{{>timetablehint_modal}}
+		{{>timetableanswer_modal}}
+		{{>timetable_modal}}
+</template>
+<template name="m2a23_1">
+	<section id="m2a23_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h4>K, Tu and Elle have decided to go to London for the weekend. K is on the phone to make the booking. </h4>
+			<h3 class="text-center">Watch the video to hear the conversation</h3>
+			<div class="parapaper fold center">
+					<p>
+						<div class="videoplayer" style="max-width: 506px">
+							<div class="embed-responsive embed-responsive-16by9">
+								<video class="embed-responsive-item" controls poster="/video/module2/a24.png">
+									<source src="video/module2/a24.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</p>
+				</div>
+			</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a23" nexturl="#m2a23_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a23_2">
+	<section id="m2a23_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3>Listen carefully to the conversation between K and a rail employee. The rail employee makes a mistake with the timetable. See if you can spot it.</h3>
+			<div class="container-fluid">
+				<div class="row text-center">
+					<a draggable="false" href="#" id="m2a23hearagain" data-toggle="modal" data-target="#m2a24_modal">
+						<div class="buttonround buttonroundbig buttonvid"> </div>
+					</a>
+					<h3>{{>touch yes="Tap" no="Click"}} to hear the conversation again</h3>
+
+				</div>
+				{{>m2a23_timetable}}
+			</div>
+			{{>InstructionsNotebook text="When you find it, write two short sentences to explain it in your Notebook."}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a23_1" nexturl="#m2a23_3" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a23_timetable">
+<div class="row">
+							<div class="parapaper">
+								<div class="row">
+									<div class="col-sm-6 center">
+									<div class="caption capgreen center">Edinburgh Waverley - <br/>London King’s Cross</div>
+									<table class="table1">
+										<tr>
+											<th>DEP</th>
+											<th>ARR</th>
+											<th>CH</th>
+											<th>DUR</th>
+										</tr>
+										<tr>
+											<td>9:00</td>
+											<td>14:10</td>
+											<td>0</td>
+											<td>5:10hrs</td>
+										</tr>
+										<tr>
+											<td>9:30</td>
+											<td>13:55</td>
+											<td>1 <div class="lettercir lettercirsmall">b</div></td>
+											<td>4:25hrs</td>
+										</tr>
+										<tr>
+											<td>10:00</td>
+											<td>15:05</td>
+											<td>0</td>
+											<td>5:05hrs</td>
+										</tr>
+										<tr>
+											<td>10:30</td>
+											<td>15:17</td>
+											<td>0</td>
+											<td>4:47hrs</td>
+										</tr>
+										<tr>
+											<td>11:00</td>
+											<td>16:04</td>
+											<td>0</td>
+											<td>5:04hrs</td>
+										</tr>
+										<tr>
+											<td>11:30</td>
+											<td>17:23</td>
+											<td>1 <div class="lettercir lettercirsmall">a</div></td>
+											<td>5:53hrs</td>
+										</tr>
+										<tr>
+											<td>12:00</td>
+											<td>17:10</td>
+											<td>0</td>
+											<td>5:10hrs</td>
+										</tr>
+										
+									</table>
+									<h4><div class="lettercir lettercirsmall">a</div> changes at Leeds</h4>
+									</div>
+									<div class="col-sm-6 center">
+									<div class="caption capgreen">London King’s Cross - <br/>Edinburgh Waverley </div>
+									<table class="table1">
+										<tr>
+											<th>DEP</th>
+											<th>ARR</th>
+											<th>CH</th>
+											<th>DUR</th>
+										</tr>
+										<tr>
+											<td>17:47</td>
+											<td>22:02</td>
+											<td>0</td>
+											<td>4:15hrs</td>
+										</tr>
+										<tr>
+											<td>18:16</td>
+											<td>22:34</td>
+											<td>0</td>
+											<td>4:18hrs</td>
+										</tr>
+										<tr>
+											<td>18:30</td>
+											<td>23:04</td>
+											<td>1 <div class="lettercir lettercirsmall">b</div></td>
+											<td>4:34hrs</td>
+										</tr>
+										<tr>
+											<td>19:13</td>
+											<td>23:38</td>
+											<td>0</td>
+											<td>4:25hrs</td>
+										</tr>
+										<tr>
+											<td>19:47</td>
+											<td>00:14</td>
+											<td>0</td>
+											<td>4:27hrs</td>
+										</tr>
+										<tr>
+											<td>20:47</td>
+											<td>01:08</td>
+											<td>0</td>
+											<td>4:21hrs</td>
+										</tr>
+										<tr>
+											<td>21:08</td>
+											<td>01:36</td>
+											<td>0</td>
+											<td>4:28hrs</td>
+										</tr>
+										
+									</table>
+									<h4><div class="lettercir lettercirsmall">b</div> changes at York</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 center">
+									<h4>DEP = time of departure <br/>
+									CH = number of changes</h4>
+									</div>
+									<div class="col-sm-6 center">
+									<h4>ARR = time of arrival  <br/>
+									DUR = duration of journey</h4>
+									</div>
+								</div>
+					</div>
+				</div>
+</template>
+
+<template name="m2a23_3">
+	<section id="m2a23_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3>Listen carefully to the conversation between K and a rail employee. The rail employee makes a mistake with the timetable. See if you can spot it.</h3>
+				
+			<div class="parapaper fold center">
+					<h4><div class="number">1</div>K wants a <span class="blank"></span> from <span class="blank"></span> to <span class="blank"></span>
+					<br/>BUT<br/>
+					<div class="number">2</div>The Employee <span class="blank"></span></h4>
+			</div>
+			<div class="center">
+			<div data-toggle="modal" data-target="#timetablehint_modal" class="button2" id="hint">Help</div>
+			<div data-toggle="modal" data-target="#timetableanswer_modal" class="button2 hidden" id="stuck">Stuck?</div>
+			</div>
+			{{>InstructionsNotebook text="When you find the mistake, finish the two sentence above and write them in your Notebook."}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a23_2" nexturl="#m2a23_4" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="timetablehint_modal">
+   <div class="modal fade" tabindex="-1" id="timetablehint_modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="timetablehint_modal"></h4>
+            </div>
+            <div class="content">
+               <div class="row">
+							<div class="parapaper">
+								<div class="row">
+									<div class="col-sm-6 center">
+									<div class="caption capgreen center">Edinburgh Waverley - <br/>London King’s Cross</div>
+									<table class="table1">
+										<tr>
+											<th>DEP</th>
+											<th>ARR</th>
+											<th>CH</th>
+											<th>DUR</th>
+										</tr>
+										<tr>
+											<td>9:00</td>
+											<td>14:10</td>
+											<td>0</td>
+											<td>5:10hrs</td>
+										</tr>
+										<tr>
+											<td>9:30</td>
+											<td>13:55</td>
+											<td>1 <div class="lettercir lettercirsmall">b</div></td>
+											<td>4:25hrs</td>
+										</tr>
+										<tr>
+											<td>10:00</td>
+											<td>15:05</td>
+											<td>0</td>
+											<td>5:05hrs</td>
+										</tr>
+										<tr>
+											<td>10:30</td>
+											<td>15:17</td>
+											<td>0</td>
+											<td>4:47hrs</td>
+										</tr>
+										<tr>
+											<td>11:00</td>
+											<td>16:04</td>
+											<td>0</td>
+											<td>5:04hrs</td>
+										</tr>
+										<tr>
+											<td>11:30</td>
+											<td>17:23</td>
+											<td>1 <div class="lettercir lettercirsmall">a</div></td>
+											<td>5:53hrs</td>
+										</tr>
+										<tr>
+											<td>12:00</td>
+											<td>17:10</td>
+											<td>0</td>
+											<td>5:10hrs</td>
+										</tr>
+										
+									</table>
+									<h4><div class="lettercir lettercirsmall">a</div> changes at Leeds</h4>
+									</div>
+									<div class="col-sm-6 center">
+									<div class="caption capgreen">London King’s Cross - <br/>Edinburgh Waverley </div>
+									<table class="table1">
+										<tr>
+											<th>DEP</th>
+											<th>ARR</th>
+											<th>CH</th>
+											<th>DUR</th>
+										</tr>
+										<tr>
+											<td>17:47</td>
+											<td>22:02</td>
+											<td>0</td>
+											<td>4:15hrs</td>
+										</tr>
+										<tr>
+											<td>18:16</td>
+											<td>22:34</td>
+											<td>0</td>
+											<td>4:18hrs</td>
+										</tr>
+										<tr>
+											<td>18:30</td>
+											<td>23:04</td>
+											<td style="border: 2px red solid">1 <div class="lettercir lettercirsmall">b</div></td>
+											<td>4:34hrs</td>
+										</tr>
+										<tr>
+											<td>19:13</td>
+											<td>23:38</td>
+											<td>0</td>
+											<td>4:25hrs</td>
+										</tr>
+										<tr>
+											<td>19:47</td>
+											<td>00:14</td>
+											<td>0</td>
+											<td>4:27hrs</td>
+										</tr>
+										<tr>
+											<td>20:47</td>
+											<td>01:08</td>
+											<td>0</td>
+											<td>4:21hrs</td>
+										</tr>
+										<tr>
+											<td>21:08</td>
+											<td>01:36</td>
+											<td>0</td>
+											<td>4:28hrs</td>
+										</tr>
+										
+									</table>
+									<h4><div class="lettercir lettercirsmall">b</div> changes at York</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 center">
+									<h4>DEP = time of departure <br/>
+									CH = number of changes</h4>
+									</div>
+									<div class="col-sm-6 center">
+									<h4>ARR = time of arrival  <br/>
+									DUR = duration of journey</h4>
+									</div>
+								</div>
+					</div>
+				</div>
+            
+			</div>
+      </div>
+   </div>
+   </div>
+</template>
+
+<template name="timetableanswer_modal">
+   <div class="modal fade" tabindex="-1" id="timetableanswer_modal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="timetableanswer_modal"></h4>
+            </div>
+            <div class="content">
+               <div class="parapaper paraextract">
+				<h4>K asked for a direct train but the employee tells him about a train that isn’t direct. It involves changing trains at York.</h4>
+			   </div>
+            
+			</div>
+      </div>
+   </div>
+   </div>
+</template>
+
+<template name="m2a23_4">
+	<section id="m2a23_4" class="hidden">
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+		<h3 class="text-center">Now you can read the conversation. Learn the phrases in red for the next activity.</h3>
+			<ul class="speech center-block">
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart1.m4a"></button>Hello, East Coast rail enquiries. How can I help you? </div></li>
+				
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart1.m4a"></button>Hello, I’d like to <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="buy tickets in advance.">book tickets</a> from Edinburgh to London. </div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+				
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart2.m4a"></button>When do you want to travel?</div></li>
+				
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart2.m4a"></button>Next week.</div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+				
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart3.m4a"></button>Do you have <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="the date you want to travel.">a particular date</a> in mind?</div></li>
+				
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart3.m4a"></button>Yes, Tuesday 26th April. </div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+				
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart4.m4a"></button>What time of day – morning or afternoon? </div></li>
+				
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart4.m4a"></button>Around 9 o’clock in the morning.</div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+				
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart5.m4a"></button>Is this <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="a trip from one place to another and back, usually over the same route.">a round trip</a>? What about the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="the journey back from a destination.">return journey</a>? </div></li>
+				
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart5.m4a"></button>We’re coming back on 30th. I want a train that leaves after 6 pm. -  a <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="a train which takes you all the way to your destination without changing trains at another station">direct train</a>.</div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+				
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart6.m4a"></button>Right, for the <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="the journey leaving from a location.">outward journey</a> you could take the 9.30 from Edinburgh Waverley. That <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="arrives.">gets in to</a> London King’s Cross at 13.55.</div></li>
+				
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart6.m4a"></button>OK. <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="used when asking for information or an opinion on something.">What about</a> the return?</div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+				
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart7.m4a"></button>There’s a train leaving King’s Cross at 18.30 getting in to Edinburgh Waverley at 23.04.</div></li>
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart7.m4a"></button>Right. Can you <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="asking for the cost of something.">give me a price</a> for those tickets?</div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+				
+				<li><img draggable="false" src="images/module2/a23-24/operator_thumb.png" alt="Operator"><div class="speech1"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/RPart8.m4a"></button>Well, for the outward journey you could get a Super <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="at a time when demand is less.">Off Peak</a> single for £60 but you need to book it on the internet. You can only use it for that train on that date. For the return journey, that ticket’s not available and you’ll have to book an Anytime single at £152. It’s <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="legally or officially acceptable.">valid</a> for one day and you can use it on any train. Do you want me to go ahead and book that ticket?</div></li>
+				
+				<li><div class="speech2"><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module2/a23/KPart8.m4a"></button>Well, no, I’ll do it online myself but thanks for your help</div><img draggable="false" src="images/module2/a23-24/k_thumb.png" alt="K"></li>
+			</ul>
+			<div class="center">
+			<div data-toggle="modal" data-target="#timetable_modal" class="button2">{{>touch yes="Tap" no="Click"}} to see the timetable</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a23_3" nexturl="#m2a23_5" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="timetable_modal">
+   <div class="modal fade" tabindex="-1" id="timetable_modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="timetable_modal"></h4>
+            </div>
+            <div class="content">
+              {{>m2a23_timetable}}
+			 </div>
+            
+			</div>
+      </div>
+   </div>
+</template>
+
+<template name="m2a23_5">
+	<section id="m2a23_5" class="hidden">
+		<div class="content">
+			<div class="center">
+			<h4>In the next activity you can try out some of the words and phrases you have learned here.</h4>
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>round trip</li>
+						<li>book</li>
+						<li>valid</li>
+						<li>return journey</li>
+						<li>off peak</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a23_4" nexturl="#m2a23_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a23_end">
+{{>EndPage char="tu" act="m2a23" nextact="m2a24" place="Stonehaven"}}
+</template>

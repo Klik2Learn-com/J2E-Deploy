@@ -1,0 +1,13 @@
+<template name="finishBtnExit">
+    <div class="finish hidden animated">
+        <div class="dialogue shadow fadeInUp animated">
+            Are you sure? Once you have submitted this section you cannot come back to it.<br>
+            <button class="button1 buttonsmall finishYesButton">Yes. Finish and submit.</button><button class="button2 buttonsmall finishNoButton">No</button>
+        </div>
+    </div>
+    <div class="sectionFinishDialog hidden animated">
+        <div class="dialogue shadow fadeInUp animated">
+            Thank you. You have now finished the {{Section}} Section.{{>touch yes="Tap" no="Click"}} on this message to continue.<br>
+        </div>
+    </div>
+</template>

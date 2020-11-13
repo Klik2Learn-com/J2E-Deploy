@@ -1,0 +1,205 @@
+<template name="styleDDBig">
+	<section id="styleDDBig" class="hidden">
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+			
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To find by accident:</b><br>
+					<div class="ddtarget dd4lines" id = "target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To accompany:</b><br>
+					<div class="ddtarget dd4lines" id = "target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To agree finally:</b><br>
+					<div class="ddtarget dd4lines" id = "target3">&nbsp;</div>
+				</div>
+			</div>
+		
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="true" data-destination="target2">He asked me to <b>come along</b> on the trip to Perth but I couldn’t make it.</div></div>
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="true" data-destination="target3">She finally <b>came round</b> to the idea of moving to the country.</div></div>
+					<div class="ddseat dd4lines"><div class="ddsourceseated dd4lines shadow" draggable="true" data-destination="target1">When you wander through the back streets of any city, you always <b>come across</b> interesting buildings.</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		
+			{{> rightwrong}}{{>welldone}}
+			
+<br><hr><br>
+<p>Never have more boxes this big than this in one section - we don't want small screen users to have to scroll and drag at the same time.</p>
+<p>You can add ddwidths to the boxes if you need them bigger, which might be better than having more lines of text - however remember again to make sure they don't make the page too big.</p>
+<p><b>General rule of thumb:</b> at full page width there should only be one row of drag targets and one row of drag sources. If you need more, spread them across several pages.</p>
+<b>HTML</b>
+<pre class="htmlcode2">&#60;template name="styleDDBig"&#62;
+	&#60;section id="styleDDBig" class="hidden"&#62;
+	&#123;&#123;#if activeSection&#125;&#125;
+		&#60;div class="content noselect"&#62;
+			&#60;h3 class="text-center"&#62;Drag these sentences to the right meaning.&#60;/h3&#62;
+			
+			&#60;div class="parapaper parapaperdd1 fold text-center"&#62;
+				&#60;div class="dd-big-target-wrapper"&#62;
+					&#60;b&#62;To find by accident:&#60;/b&#62;&#60;br&#62;
+					&#60;div class="ddtarget dd4lines" id = "target1"&#62;&amp;nbsp;&#60;/div&#62;
+				&#60;/div&#62;
+				&#60;div class="dd-big-target-wrapper"&#62;
+					&#60;b&#62;To accompany:&#60;/b&#62;&#60;br&#62;
+					&#60;div class="ddtarget dd4lines" id = "target2"&#62;&amp;nbsp;&#60;/div&#62;
+				&#60;/div&#62;
+				&#60;div class="dd-big-target-wrapper"&#62;
+					&#60;b&#62;To agree finally:&#60;/b&#62;&#60;br&#62;
+					&#60;div class="ddtarget dd4lines" id = "target3"&#62;&amp;nbsp;&#60;/div&#62;
+				&#60;/div&#62;
+			&#60;/div&#62;
+		
+			&lt;div class=&quot;dd-fixed-source-container animated slideInUp&quot;&gt;
+				&lt;div class=&quot;box1 box1dd1&quot;&gt;
+					&lt;div class=&quot;ddseat dd4lines&quot;&gt;&lt;div class=&quot;ddsourceseated dd4lines shadow&quot; draggable=&quot;true&quot; data-destination=&quot;target2&quot;&gt;He asked me to &lt;b&gt;come along&lt;/b&gt; on the trip to Perth but I couldn’t make it.&lt;/div&gt;&lt;/div&gt;
+					&lt;div class=&quot;ddseat dd4lines&quot;&gt;&lt;div class=&quot;ddsourceseated dd4lines shadow&quot; draggable=&quot;true&quot; data-destination=&quot;target3&quot;&gt;She finally &lt;b&gt;came round&lt;/b&gt; to the idea of moving to the country.&lt;/div&gt;&lt;/div&gt;
+					&lt;div class=&quot;ddseat dd4lines&quot;&gt;&lt;div class=&quot;ddsourceseated dd4lines shadow&quot; draggable=&quot;true&quot; data-destination=&quot;target1&quot;&gt;When you wander through the back streets of any city, you always &lt;b&gt;come across&lt;/b&gt; interesting buildings.&lt;/div&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;dd-fixed-fade animated slideInUp&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;dd-fixed-pad&quot;&gt;&lt;/div&gt;
+		
+			&#123;&#123;&#62; rightwrong&#125;&#125;&#123;&#123;&#62;welldone&#125;&#125;
+			
+		&#60;/div&#62;
+		&#60;footer&#62;
+			&#123;&#123;&#62;footer_nav prevurl="#styleDDBig_1" nexturl="#styleDDBig_3" prev="disabled" next="hidden"&#125;&#125;
+		&#60;/footer&#62;
+	&#123;&#123;/if&#125;&#125;
+	&#60;/section&#62;
+&#60;/template&#62;</pre>
+<br>
+<b>JS</b>
+<pre class="htmlcode2">Template.styleDDBig.helpers({
+	activeSection: function(){
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#styleDDBig");
+	}
+});
+
+
+Template.styleDDBig.events({
+	"dragstart .ddsourceseated": function(evt) {
+		evt.currentTarget.style.opacity = '1.0';
+		evt.originalEvent.dataTransfer.effectAllowed = 'move';
+		evt.originalEvent.dataTransfer.setData('text/html', $(evt.currentTarget).html());
+		
+		$.k2l.styleDDBig.draggedElement = evt.currentTarget;
+	},
+	
+	"dragend .ddsourceseated": function(evt) {
+		
+	},
+	
+	"dragenter .target": function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+	},
+	
+	"dragover .ddtarget": function(evt) {
+		if (evt.preventDefault) {
+			evt.preventDefault();
+		}
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	},
+	
+	"dragleave .target": function(evt) {
+		
+	},
+	
+	"drop .ddtarget": function(evt) {
+		
+		if (evt.stopPropagation) {
+			evt.stopPropagation();
+		};
+
+		var destination = $.k2l.styleDDBig.draggedElement.dataset.destination;
+		if ($(evt.currentTarget).attr('id') == destination) {
+			$.k2l.styleDDBig.counter++;
+			$.k2l.styleDDBig.draggedElement.draggable = false;
+			var parentSection = $(evt.currentTarget).parents('section');
+					
+			$('.correctscreen').removeClass('hidden');
+			setTimeout( function() {
+				$('.correctscreen').addClass('hidden');
+			}, 1000);
+			
+			$($.k2l.styleDDBig.draggedElement).html('');
+			$($.k2l.styleDDBig.draggedElement).removeClass('shadow');
+			$($.k2l.styleDDBig.draggedElement).removeClass('ddsourceseated');
+			$($.k2l.styleDDBig.draggedElement).addClass('ddsourceseated2');
+			
+			$(evt.currentTarget).removeClass('dd4lines');
+			$(evt.currentTarget).removeClass('ddtarget');
+			$(evt.currentTarget).addClass('ddseatedtarget2');
+			$(evt.currentTarget).html('');
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated');
+			$(listItem).addClass('dd4lines');
+			$(evt.currentTarget).append(listItem);
+
+			if ($.k2l.styleDDBig.counter == $.k2l.styleDDBig.max) {
+				
+				// Load the next page automatically
+				setTimeout( function() {
+				$('#welldonecap').removeClass('hidden');
+				}, 1000);
+			setTimeout( function() {
+				$('#welldonecap').addClass('hidden');
+			}, 2000);
+				setTimeout(function() {
+					$.k2l.styleDDBig.counter = 0;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					}, 2000);
+			// $('.pagination').removeClass('hidden');
+			};
+		} else {
+		$('.incorrectscreen').removeClass('hidden');
+		setTimeout( function() {
+			$('.incorrectscreen').addClass('hidden');
+		}, 1000);
+		};
+	},
+	
+	"dragend .target": function(evt) {
+	},
+	
+	"click .pagination": function(evt){
+		$.k2l.styleDDBig.draggedElement = {};
+		$.k2l.styleDDBig.counter = 0;
+	}
+});
+
+Template.styleDDBig.rendered = function() {
+	
+	if(typeof $.k2l == 'undefined'){
+		$.k2l = {};
+	};
+	
+	if (typeof $.k2l.styleDDBig == 'undefined') {
+		$.k2l.styleDDBig = {};
+	};
+	
+	$.k2l.styleDDBig.draggedElement = {};
+	$.k2l.styleDDBig.counter = 0;
+
+	$.k2l.styleDDBig.max = 3; // number of drag spaces on this page.
+}</pre>
+			
+		</div>
+	</section>
+</template>

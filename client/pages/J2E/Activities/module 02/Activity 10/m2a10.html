@@ -1,0 +1,315 @@
+<template name="m2a10">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Arbroath');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 10 - {{>m2a10Title}}</div>
+			</header>
+
+			<section id="m2a10">
+				<div class="content">
+					<!-- Change avatar here - k, tu, elle -->
+					<h1 class="start-page-header">{{> m2a10Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m2a10Intro}}</h3>
+					{{> m2a10Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m2a10_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{> m2a10_1}} {{> m2a10_2}} {{> m2a10_3}} {{> m2a10_4}} {{> m2a10_5}} {{> m2a10_6}} {{> m2a10_7}} {{> m2a10_end}}
+		</div>
+	</article>
+
+</template>
+
+
+<template name="m2a10_1">
+	<section id="m2a10_1" class="hidden">
+		{{#if activeSection}}	
+		<div class="content container-fluid">
+			<div class="parapaper fold">Sometimes you can use the difference between the
+				<b>Present Simple</b> and
+				<b>Present Continuous</b> tenses to show that something irritates or annoys you. One of these sentences is spoken by a neighbour
+				who is angry about noise.</div>
+			<h3 class="text-center">Drag the picture of the angry neighbour into the right box.</h3>
+			<div class="row">
+				{{>rightwrong}}
+				<div class="col-sm-4 text-center">
+					<div class="box1 ddwidth14 ddtarget" style="height: 14em;"></div>
+					<h4 class="text-center">He always plays his music at full volume.
+						<br>PRESENT SIMPLE</h4>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="box1 ddwidth14" style="height: 14em;">
+						<div class="ddseat">
+							<div class="dd-img-wrapper shadow ddsourceseated" draggable="true" data-destination="target1">
+								<img draggable="false" src="/images/module2/Angry_Neighbour.jpg" class="dd-img" alt="Item" width="168" height="168">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-4 text-center">
+					<h4 class="text-center visible-xs">He’s always playing his music at full volume.
+						<br>PRESENT CONTINUOUS</h4>
+					<div class="box1 ddwidth14 ddtarget" data-destinationid="target1" style="height: 14em;"></div>
+					<h4 class="text-center hidden-xs">He’s always playing his music at full volume.
+						<br>PRESENT CONTINUOUS</h4>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a10_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>
+
+
+
+<template name="m2a10_2">
+	<section id="m2a10_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content container-fluid">
+			<div class="parapaper fold">You can also use the difference between two tenses to show that something is
+				<b>ACCIDENTAL</b>, not a
+				<b>DELIBERATE</b> action. One of these sentences describes an accidental action – losing keys.</div>
+			<h3 class="center">‘Drag the picture of the keys to the sentence that describes an
+				<b>ACCIDENTAL</b> action.’</h3>
+			<div class="row">
+				{{>rightwrong}}
+				<div class="col-sm-4 text-center">
+					<div class="box1 ddwidth14 ddtarget" style="height: 14em;"></div>
+					<h4 class="text-center">He always does that.
+						<br>PRESENT SIMPLE</h4>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="box1 ddwidth14" style="height: 14em;">
+						<div class="ddseat">
+							<div class="dd-img-wrapper shadow ddsourceseated" draggable="true" data-destination="target1">
+								<img draggable="false" src="/images/module2/Keys.png" class="dd-img" alt="Item" width="168" height="168">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<h4 class="text-center visible-xs">He’s always doing that.
+						<br>PRESENT CONTINUOUS</h4>
+					<div class="box1 ddwidth14 ddtarget" data-destinationid="target1" style="height: 14em;"></div>
+					<h4 class="text-center hidden-xs">He’s always doing that.
+						<br>PRESENT CONTINUOUS</h4>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a10_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>
+
+
+
+<template name="m2a10_3">
+	<section id="m2a10_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Some of these sentences express feelings or intentions. Drag the right tense to the space.</h3>
+			<div class="container-fluid">
+				{{> rightwrong}}
+				<div class="row">
+					<h2 class="text-center">You're annoyed.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">1</span> He
+								<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target1">&nbsp;</div> music at full volume. </li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth10 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target2">always keeps</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target1">is always playing</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target3">always plays</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target4">is always losing</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a10_4" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a10_4">
+	<section id="m2a10_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Some of these sentences express feelings or intentions. Drag the right tense to the space.</h3>
+			<div class="container-fluid">
+				{{> rightwrong}}
+				<div class="row">
+					<h2 class="text-center">You're not annoyed.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">2</span> He
+								<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target3">&nbsp;</div> music at full volume. </li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth10 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target2">always keeps</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target1">is always playing</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target3">always plays</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target4">is always losing</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a10_4" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a10_5">
+	<section id="m2a10_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Some of these sentences express feelings or intentions. Drag the right tense to the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					{{> rightwrong}}
+					<h2 class="text-center">Accidental.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">3</span> He
+								<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target4">&nbsp;</div> his keys.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth10 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target2">always keeps</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target1">is always playing</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target3">always plays</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target4">is always losing</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a10_5" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a10_6">
+	<section id="m2a10_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Some of these sentences express feelings or intentions. Drag the right tense to the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					{{> rightwrong}}
+					<h2 class="text-center">Deliberate.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">4</span> He
+								<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target2">&nbsp;</div> his keys in the same place. </li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth10 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target2">always keeps</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target1">is always playing</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target3">always plays</div>
+				<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="true" data-destination="target4">is always losing</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a10_6" prev="hidden" next="hidden"}}
+			</footer>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a10_7">
+	<section id="m2a10_7" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<h2 class="text-center">You're annoyed.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">1</span> He
+								<div class="ddsourceseated ddwidth10 dd1line">is always playing</div> music at full volume. </li>
+						</ol>
+					</div>
+				</div>
+				<div class="row">
+					<h2 class="text-center">You're not annoyed.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">2</span> He
+								<div class="ddsourceseated ddwidth10 dd1line">always plays</div> music at full volume. </li>
+						</ol>
+					</div>
+				</div>
+				<div class="row">
+					<h2 class="text-center">Accidental.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">3</span> He
+								<div class="ddsourceseated ddwidth10 dd1line">is always losing</div> his keys. </li>
+						</ol>
+					</div>
+				</div>
+				<div class="row">
+					<h2 class="text-center">Deliberate.</h2>
+					<div class="parapaper parapaperdd1 fold text-center">
+						<ol class="olblank">
+							<li>
+								<span class="number">4</span> He
+								<div class="ddsourceseated ddwidth10 dd1line">always keeps</div> his keys in the same place. </li>
+						</ol>
+					</div>
+				</div>
+
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a10_2" nexturl="#m2a10_end" prev="hidden" next=""}}
+			</footer>
+		</div>
+	</section>
+</template>
+
+<template name="m2a10_end">
+	{{>EndPage char="k" act="m2a10" nextact="m2a11" place="Arbroath"}}
+</template>

@@ -1,0 +1,200 @@
+<template name="m4a2">
+<article class="with-tools-sidebar m4a2">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/FortWilliam');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 2 - {{>m4a2Title}}</div>
+		</header>
+		
+		
+		<section id="m4a2">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a2Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m4a2Intro}}</h3>
+{{> m4a2Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a2_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m4a2_1}}
+		{{>m4a2_2}}
+		{{>m4a2_scores1}}
+		{{>m4a2_scores2}}
+		{{>m4a2_3}} 
+
+		{{>EndPage char="tu" act="m4a2" nextact="m4a3" place="FortWilliam"}}
+
+		
+	</div>
+</article>
+
+</template>
+
+<template name="m4a2_1">
+	<section id="m4a2_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3 class="text-center">Listen to these articles about the Top Health Trends</h3>
+
+				<div class="parapaper fold text-center paraextract article-text">
+					{{>metametrics level="7" star="no" align="center"}}
+					<br>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-xs-7 col-xxs-12">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a2/energy_drinks.m4a"></button>
+								<h5>Energy Drinks</h5>
+							</div>
+							<div class="col-sm-6 col-xs-5 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 280px;"><div class="ph"><img draggable="false" src="/images/module4/a3/energy-drinks.jpg"></div></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-7 col-xxs-12">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a2/diy_health_apps.m4a"></button>
+								<h5>DIY Health Apps</h5>
+							</div>
+							<div class="col-sm-6 col-xs-5 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 280px;"><div class="ph"><img draggable="false" src="/images/module4/a3/health-app.jpg"></div></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-7 col-xxs-12">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a2/online_motivation.m4a"></button>
+								<h5>Online Motivation</h5>
+							</div>
+							<div class="col-sm-6 col-xs-5 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 280px;"><div class="ph"><img draggable="false" src="/images/module4/a3/health-website.jpg"></div></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-7 col-xxs-12">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a2/sleep.m4a"></button>
+								<h5>Sleep</h5>
+							</div>
+							<div class="col-sm-6 col-xs-5 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 280px;"><div class="ph"><img draggable="false" src="/images/module4/a3/sleep.jpg"></div></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-7 col-xxs-12">
+								<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a2/flexitarians.m4a"></button>
+								<h5>Flexitarians</h5>
+							</div>
+							<div class="col-sm-6 col-xs-5 col-xxs-12">
+								<div class="ph-w ph-3x2 shadow" style="max-width: 280px;"><div class="ph"><img draggable="false" src="/images/module4/a3/veg.jpg"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a1" nexturl="#m4a2_2" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m4a2_2">
+   <section id="m4a2_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+		<h1>Now see how well you understood the articles.</h1>
+			<h3 class="center">
+				Read these statements and choose <b>True</b> or <b>False</b>.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module4/a2/energy_drinks.m4a"></button><br>
+						<div class="number">1</div><span id="question_text">Grain can be an ingredient for energy drinks</span>
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="true" class="button2 item-space ddwidth9">True</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="false" class="button2 item-space ddwidth9">False</button>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m4a2_2RightScore" wrongSession="m4a2_2WrongScore"}}
+					</div>
+				</div>
+			</div>
+      </div>
+	  <footer>
+		{{>footer_nav prevurl="#m4a2_2" nexturl="#m4a2_3" prev="hidden" next="hidden"}}
+	  </footer>
+      {{/if}}
+   </section>
+</template>
+
+
+<template name="m4a2_3">
+	<section id="m4a2_3" class="hidden">
+		<div class="content">
+			{{> health_trends_article}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a1" nexturl="#m4a2_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a2_scores1">
+	<section id="m4a2_2_bad" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m4a2_2RightScore" wrongSession="m4a2_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m4a2_2" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a2_3" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+	</template>
+	<template name="m4a2_scores2">
+	<section id="m4a2_2_good" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m4a2_2RightScore" wrongSession="m4a2_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m4a2_3" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

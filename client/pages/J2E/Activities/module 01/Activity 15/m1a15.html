@@ -1,0 +1,791 @@
+<template name="m1a15">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/KyleofLochalsh');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<!-- Change module, activity number and name here -->
+				<div class="parent-level">Module 1</div>
+				<div class="acttitle-title">{{> activity}} 15 - {{>m1a15Title}}</div>
+			</header>
+
+
+			<section id="m1a15">
+				<div class="content">
+					<h1 class="start-page-header">{{> m1a15Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m1a15Intro}}</h3>
+					{{> m1a15Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav nexturl="#m1a15_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m1a15_1}} {{>m1a15_2}} {{>m1a15_3}} {{>m1a15_4}} {{>m1a15_5}} {{>m1a15_6}} {{>m1a15_7}} {{>m1a15_end}}
+		</div>
+	</article>
+
+</template>
+<template name="m1a15_1">
+	<section id="m1a15_1" class="hidden">
+		<div class="content">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the audio button to hear the name of the famous object.</h3>
+
+			{{>blankrow}}
+			<div class="parapaper center">
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/tajmahal.jpeg" alt="Taj Mahal">
+						</div>
+					</div>
+					<button id="taj_mahal" class=" buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/eiffel.jpeg" alt="Eiffel Tower">
+						</div>
+					</div>
+					<button id="eiffel_tower" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/greatwallofchina.jpeg" alt="Great Wall Of China">
+						</div>
+					</div>
+					<button id="great_wall_of_china" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/ferrari.jpeg" alt="Ferrari">
+						</div>
+					</div>
+					<button id="ferrari" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/pyramids.jpeg" alt="Great Pyramid">
+						</div>
+					</div>
+					<button id="pyramids" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+			</div>
+
+			{{>blankrow}}
+
+			<audio src="../audio/module1/a15/taj_mahal.m4a" preload="auto" id="tajmahalaudio"></audio>
+			<audio src="../audio/module1/a15/eiffel_tower.m4a" preload="auto" id="eiffeltoweraudio"></audio>
+			<audio src="../audio/module1/a15/great_wall_of_china.m4a" preload="auto" id="greatwallaudio"></audio>
+			<audio src="../audio/module1/a15/ferrari.m4a" preload="auto" id="ferrariaudio"></audio>
+			<audio src="../audio/module1/a15/pyramids.m4a" preload="auto" id="pyramidaudio"></audio>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a15" nexturl="#m1a15_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a15_2">
+	<section id="m1a15_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Matching</h1>
+			<h3 class="center">Drag the words to the right pictures</h3>
+			<div class="center">
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/tajmahal.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="tajmahal" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/eiffel.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="eiffeltower" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/greatwallofchina.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="greatwall" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/ferrari.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="ferrari" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/pyramids.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="pyramids" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+			</div>
+
+
+
+
+			{{> rightwrong}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false" style="width: 8em;" data-destination="greatwall">Great Wall of China</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false" style="width: 8em;" data-destination="tajmahal">Taj Mahal</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false" style="width: 8em;" data-destination="eiffeltower">Eiffel Tower</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false" style="width: 8em;" data-destination="pyramids">Pyramids</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false" style="width: 8em;" data-destination="ferrari">Ferrari</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a15_1" nexturl="#m1a15_3" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a15_3">
+	<section id="m1a15_3" class="hidden">
+		<div class="content">
+			<h3 class="center">{{>touch yes="Tap" no="Click"}} on the audio button to hear the name of five more famous objects.</h3>
+			<div class="parapaper center">
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/statueofliberty.jpeg" alt="Statue of Liberty">
+						</div>
+					</div>
+					<button id="statue" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/sydney.jpeg" alt="Sydney Opera House">
+						</div>
+					</div>
+					<button id="sydney_opera_house" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/housesofparliament.jpeg" alt="Houses of Parliament">
+						</div>
+					</div>
+					<button id="houses_of_parliament" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/mercedesbenz.jpeg" alt="Mercedes Benz">
+						</div>
+					</div>
+					<button id="mercedez_benz" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+				<div class="m1a15-pic-audio">
+					<div class="ph-w ph-1x1 border1" style="width: 140px;">
+						<div class="ph">
+							<img draggable="false" src="../images/module1/whisky.jpeg" alt="Whisky">
+						</div>
+					</div>
+					<button id="bottle_of_whisky" class="buttonroundc buttonaudioc center-block"></button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a15_2" nexturl="#m1a15_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a15_4">
+	<section id="m1a15_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Matching</h1>
+			<h3 class="center">Drag the words to the right pictures</h3>
+			<div class="center">
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/statueofliberty.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="statueliberty" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/sydney.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="sydneyopera" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/housesofparliament.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="houseparliament" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/mercedesbenz.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="mercbenz" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow" style="width: 10em;">
+					<figure>
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/whisky.jpeg">
+							</div>
+						</div>
+					</figure>
+					<div data-destinationid="whisky" class="ddseatedtarget dd2lines" style="width: 8em;">&nbsp;</div>
+				</div>
+			</div>
+
+
+
+
+			{{> rightwrong}}
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false" style="width: 8em;" data-destination="statueliberty">Statue of Liberty</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd1line2high" draggable="false" style="width: 8em;" data-destination="whisky">Whisky</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false" style="width: 8em;" data-destination="houseparliament">Houses of Parliament</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false" style="width: 8em;" data-destination="sydneyopera">Sydney Opera House</div>
+					</div>
+					<div class="ddseat ddwidth8 dd2lines">
+						<div class="ddsourceseated shadow ddwidth8 dd2lines" draggable="false" style="width: 8em;" data-destination="mercbenz">Mercedes- Benz</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a15_3" nexturl="#m1a15_5" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m1a15_5">
+	<section id="m1a15_5" class="hidden">
+		<div class="content">
+			<h3 class="center">Read the examples below.</h3>
+			<div class="parapaper container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 center">
+						<div class="ph-w ph-1x1 border1" style="max-width:140px">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/gaudi.jpeg" alt="Barcelona Cathedral" />
+							</div>
+						</div>
+						<br>
+						<div class="caption capgreen">
+							It's in Spain. It's Spanish.
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 center">
+						<div class="ph-w ph-1x1 border1" style="max-width:140px">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/samsung.jpg" alt="Samsung Phone" />
+							</div>
+						</div>
+						<br>
+						<div class="caption capgreen">
+							It's from Korea. It's Korean.
+						</div>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{>blankrow}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a15_4" nexturl="#m1a15_6" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1a15_6">
+	<section id="m1a15_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen to the audio and type the correct sentence. Try and use
+				<b>capital letters</b>,
+				<b>apostrophes(')</b> and
+				<b>full stops(.)</b> where appropriate!</h3>
+
+			<div class="parapaper container-fluid">
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+
+					</div>
+					<div class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/gaudi.jpeg" alt="Barcelona Cathedral" />
+							</div>
+						</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<h4>It's in Spain.</h4>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<h4>It's Spanish.</h4>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="tm" class="buttonround buttonaudio"></button>
+					</div>
+					<div id="tajMahalImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Taj Mahal</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 formClass m1a15-row">
+						<form id="1" class="textentry">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div2" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="2" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="eiffelaudio" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="eiffelTowerImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Eiffel Tower</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div3" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="3" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div4" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="4" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="greatwallchinaaudio" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="greatWallImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">The Great Wall of China</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div5" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="5" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div6" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="6" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="fr" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="ferrariImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Ferrari</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div7" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="7" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div8" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="8" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="greatpyramidsaudio" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="greatPyramidsImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Great Pyramids</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div9" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="9" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div10" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="10" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+						<span class="correct hidden">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="incorrect hidden">
+							<i class="fa fa-close"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m1a15_5" nexturl="#m1a15_7" prev="hidden" next="hidden" nextID="m1a15_6_next"}}
+			</footer>
+			{{> rightwrong}}
+		</div>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m1a15_7">
+	<section id="m1a15_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">Listen to the audio and type the correct sentence. Try and use
+				<b>capital letters</b>,
+				<b>apostrophes(')</b> and
+				<b>full stops(.)</b> where appropriate!</h3>
+
+			<div class="parapaper container-fluid">
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+
+					</div>
+					<div class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="ph-w ph-1x1 border1">
+							<div class="ph">
+								<img draggable="false" src="../images/module1/samsung.jpg" alt="Samsung Pic" />
+							</div>
+						</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<h4>It's from Korea.</h4>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<h4>It's Korean.</h4>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="statuelibertyaudio" class="buttonround buttonaudio"></button>
+					</div>
+					<div id="statuelibertyImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Statue of Liberty</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<form id="11" class="textentry">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div12" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="12" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="sydoperaaud" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="sydneyoperaImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Sydney Opera House</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div13" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="13" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div14" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="14" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="housesparliamentaudio" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="housesparliamentImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Houses of Parliament</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div15" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="15" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div16" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="16" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="ma" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="mercBenzImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Mercedes-Benz</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div17" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="17" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div18" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="18" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-xs-1 col-xxs-12 m1a15-row">
+						<button id="bottlewhiskyaudio" class="buttonround buttonaudio hidden"></button>
+					</div>
+					<div id="bottleWhiskyImage" class="col-sm-3 col-xs-11 col-xxs-12 m1a15-row">
+						<div class="captionsmall capgreen">Whisky</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div19" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="19" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xxs-12 m1a15-row">
+						<div id="div20" class="textentry-disabled2 ddwidth13">&nbsp;</div>
+						<form id="20" class="textentry hidden">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m1a15_6" nexturl="#m1a15_end" prev="hidden" next="hidden" nextID="m1a15_7_next"}}
+			</footer>
+		</div>
+		{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m1a15_end">
+	{{>EndPage char="elle" act="m1a15" nextact="m1a16" place="FortAugustus"}}
+</template>

@@ -1,0 +1,792 @@
+<template name="m10a15"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Chelmsford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 15 - {{> m10a15Title}}</div>
+		</header>
+		<section id="m10a15">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a15Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m10a15Intro}}</h3>
+				{{> m10a15Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a15_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a15_1}}
+		{{>m10a15_2}}
+		{{>m10a15_3}}
+		<!-- {{>m10a15_4}} -->
+		{{>m10a15_5}}
+		{{>m10a15_6}}
+		{{>m10a15_7}}
+		{{>m10a15_8}}
+		{{>m10a15_9}}
+		{{>m10a15_10}}
+		{{>m10a15_11}}
+		{{>m10a15_12}}
+		{{>m10a15_13}}
+		{{>m10a15_14}}
+		{{>m10a15_15}}
+		{{>m10a15_16}}
+		{{>m10a15_17}}
+		{{>m10a15_18}}
+		{{>m10a15_19}}
+		{{>m10a15_20}}
+		{{>m10a15_21}}
+		{{>m10a15_22}}
+		{{>m10a15_23}}
+		{{>EndPage char="elle" act="m10a15" nextact="m10a16" place="Chelmsford"}}
+	</div>
+</article>
+</template>
+<template name="m10a15_23"> 
+	<section id="m10a15_23" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h4 class="center">Here are the sentences in written form.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 1</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence1.m4a"></button> I’d like a tea, an Americano and two pieces of chocolate cake.</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 2</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence2.m4a"></button> Has he never been to the cinema or the theatre or a museum?</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 3</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence3.m4a"></button> She’s been to Brazil, Mexico, Argentina and Paraguay.</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 4</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence4.m4a"></button> He takes exercise, eats well, yet he still had a heart attack.</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 5</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence5.m4a"></button> She doesn’t eat meat, or fish, or eggs or cheese?</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 6</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence6.m4a"></button> Haven’t you heard of Bob Dylan or Joni Mitchell or Joan Baez? They were really famous in the seventies.</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_22" nexturl="#m10a15_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_9"> 
+	<section id="m10a15_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">Listen to sentence 2. What happened to the voice for the first two items in sentence 2?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_8" nexturl="#m10a15_10" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_7"> 
+	<section id="m10a15_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">Listen to sentence 1. What happened to the voice for the last item in sentence 1?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_6" nexturl="#m10a15_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_21"> 
+	<section id="m10a15_21" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 6. What happened to the voice for the first two items in sentence 6?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_20" nexturl="#m10a15_22" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_11"> 
+	<section id="m10a15_11" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">Listen to sentence 3. How many countries were listed in sentence 3?</h3>
+						<div class="row">
+							<div class="col-sm-4 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">2 countries</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">3 countries</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="3" class="button2 item-space ddwidth10 dd1lines">4 countries</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_10" nexturl="#m10a15_12" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_14"> 
+	<section id="m10a15_14" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 4. How many things were in the list in sentence 4?</h3>
+						<div class="row">
+							<div class="col-sm-4 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">2 things</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">3 things</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="3" class="button2 item-space ddwidth10 dd1lines">4 things</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_13" nexturl="#m10a15_15" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_4"> 
+	<section id="m10a15_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h4 class="center">Here are the sentences in written form.</h4>
+      			<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 2</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence2.m4a"></button> Has he never been to the cinema or the theatre or a museum?</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 5</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence5.m4a"></button> She doesn’t eat meat, or fish, or eggs or cheese?</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2 center">
+							<div class="caption capgreen">sentence 6</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 center">
+							<div class="parapaper paraextract"><button class="buttonround buttonaudio" data-audiosrc="/audio/module10/a15/sentence6.m4a"></button> Haven’t you heard of Bob Dylan or Joni Mitchell or Joan Baez? They were really famous in the seventies.</div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_3" nexturl="#m10a15_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_17"> 
+	<section id="m10a15_17" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 5. How many items of food were on the list in sentence 5?</h3>
+						<div class="row">
+							<div class="col-sm-4 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">2 items</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">3 items</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="3" class="button2 item-space ddwidth10 dd1lines">4 items</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_16" nexturl="#m10a15_18" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_22"> 
+	<section id="m10a15_22" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 6. What happened to the voice for the last item in sentence 6?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_21" nexturl="#m10a15_23" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_2"> 
+	<section id="m10a15_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Listen to the sentences again and choose the right answer.</h3>
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">How many of the sentences are questions?</h3>
+						<div class="row">
+							<div class="col-sm-4 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">2 sentences</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">3 sentences</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="3" class="button2 item-space ddwidth10 dd1lines">4 sentences</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_1" nexturl="#m10a15_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15audio">
+	<div class="row center">
+		<button class="button1 buttonsmall buttonsmall-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence1.m4a">Sentence 1</button>					
+		<button class="button1 buttonsmall buttonsmall-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence2.m4a">Sentence 2</button>					
+		<button class="button1 buttonsmall buttonsmall-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence3.m4a">Sentence 3</button>					
+		<button class="button1 buttonsmall buttonsmall-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence4.m4a">Sentence 4</button>					
+		<button class="button1 buttonsmall buttonsmall-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence5.m4a">Sentence 5</button>					
+		<button class="button1 buttonsmall buttonsmall-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence6.m4a">Sentence 6</button>
+	</div>
+ </template>
+
+<template name="m10a15_19"> 
+	<section id="m10a15_19" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 5. What happened to the voice for the last item in sentence 5?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_18" nexturl="#m10a15_20" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_5"> 
+	<section id="m10a15_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">Listen to sentence 1. How many different items were listed?</h3>
+						<div class="row">
+							<div class="col-sm-4 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">2 items</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">3 items</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="3" class="button2 item-space ddwidth10 dd1lines">4 items</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_4" nexturl="#m10a15_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_1"> 
+	<section id="m10a15_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h3 class="center">Listen carefully to the intonation in these six sentences. They all contain a list of items. </h3>
+      			<div class="container-fluid center">
+					<div class="row">
+						<div class="col-sm-6">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence1.m4a">Sentence 1</button>
+						</div>
+						<div class="col-sm-6">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence2.m4a">Sentence 2</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence3.m4a">Sentence 3</button>
+						</div>
+						<div class="col-sm-6">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence4.m4a">Sentence 4</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence5.m4a">Sentence 5</button>
+						</div>
+						<div class="col-sm-6">
+							<button class="button1 button-icon audio item-space" data-audiosrc="/audio/module10/a15/sentence6.m4a">Sentence 6</button>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15" nexturl="#m10a15_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_18"> 
+	<section id="m10a15_18" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 5. What happened to the voice for the first item in sentence 5?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_17" nexturl="#m10a15_19" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_16"> 
+	<section id="m10a15_16" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 4. What happened to the voice for the last item in sentence 4?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_15" nexturl="#m10a15_17" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_8"> 
+	<section id="m10a15_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">Listen to sentence 2. How many items were listed in sentence 2?</h3>
+						<div class="row">
+								<div class="col-sm-4 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">2 items</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">3 items</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="3" class="button2 item-space ddwidth10 dd1lines">4 items</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_7" nexturl="#m10a15_9" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_15"> 
+	<section id="m10a15_15" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 4. What happened to the voice for the first two items in sentence 4?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_14" nexturl="#m10a15_16" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_13"> 
+	<section id="m10a15_13" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 3. What happened to the voice for the last item in sentence 3?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>    
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_12" nexturl="#m10a15_14" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_10"> 
+	<section id="m10a15_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">Listen to sentence 2. What happened to the voice for the last item in sentence 2?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_9" nexturl="#m10a15_11" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_3"> 
+	<section id="m10a15_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+						<h3 class="center">Now listen again and try to choose which of the sentences are questions.</h3>
+						<div class="row center">
+							<button class="button1 buttonsmall false item-space ddwidth10 dd1lines">sentence 1</button>
+							<button class="button1 buttonsmall true item-space ddwidth10 dd1lines">sentence 2</button>
+							<button class="button1 buttonsmall false item-space ddwidth10 dd1lines">sentence 3</button>
+							<br>
+							<button class="button1 buttonsmall false item-space ddwidth10 dd1lines">sentence 4</button>
+							<button class="button1 buttonsmall true item-space ddwidth10 dd1lines">sentence 5</button>
+							<button class="button1 buttonsmall true item-space ddwidth10 dd1lines">sentence 6</button>
+						</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_2" nexturl="#m10a15_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_12"> 
+	<section id="m10a15_12" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 3. What happened to the voice for the first three items in sentence 3?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>   
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_11" nexturl="#m10a15_13" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_20"> 
+	<section id="m10a15_20" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+					
+						<h3 class="center">Listen to sentence 6. How many famous people were in the list in sentence 6?</h3>
+						<div class="row">
+							<div class="col-sm-4 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">2 famous people</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">3 famous people</button>
+							</div>
+							<div class="col-sm-4 center">
+								<button id="3" class="button2 item-space ddwidth10 dd1lines">4 famous people</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_19" nexturl="#m10a15_21" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m10a15_6"> 
+	<section id="m10a15_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			{{>rightwrong}} {{>welldone}}
+      			<div class="container-fluid">
+					{{>m10a15audio}}
+
+											<h3 class="center">‘Listen to sentence 1. What happened to the voice for the first two items in sentence 1?</h3>
+						<div class="row">
+							<div class="col-sm-6 center">
+								<button id="1" class="button2 item-space ddwidth10 dd1lines">it went up</button>
+							</div>
+							<div class="col-sm-6 center">
+								<button id="2" class="button2 item-space ddwidth10 dd1lines">it went down</button>
+							</div>
+						</div>
+				</div>
+
+	  	</div>  
+		<footer> 
+			{{>footer_nav prevurl="#m10a15_5" nexturl="#m10a15_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

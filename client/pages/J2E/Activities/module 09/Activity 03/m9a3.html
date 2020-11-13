@@ -1,0 +1,504 @@
+<template name="m9a3"> 
+<article class="with-tools-sidebar m9a3">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/WestonsuperMare');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 9</div> <div class="acttitle-title">{{> activity}} 3 - {{>m9a3Title}}</div>
+		</header>
+		<section id="m9a3">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a3Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m9a3Intro}}</h3>
+				{{> m9a3Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a3_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a3_1}}
+		{{>m9a3_2}}
+		{{>m9a3_3}}
+		{{>m9a3_4}}
+		{{>m9a3_5}}
+		{{>m9a3_6}}
+		{{>m9a3_7}}
+		{{>m9a3_8}}
+		{{>EndPage char="tu" act="m9a3" nextact="m9a4" place="WestonsuperMare"}}
+	</div>
+</article>
+
+</template>
+<template name="m9a3_4"> 
+	<section id="m9a3_4" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">
+				Read the paragraph and {{>touch yes="tap" no="click"}} the 'Heading' below that goes with it. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="row">
+						<div class="col-sm-2">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a3/pay_slips.m4a"></button> <h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper paraextract">
+								<p>It doesn’t matter how much or how often you get paid, you must receive a written pay statement every time. This will tell you:</p>
+								<ul>
+									<li>how much you’ve been paid</li>
+									<li>how much tax and National Insurance has been deducted</li>
+									<li>your <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A tax code is made up of some numbers and a letter e.g. 117L.  It tells you how much you’re allowed to earn before tax is taken off and the rate of tax you pay – either 20% or 40% if you earn more.">tax code</a></li>
+									<li>your employee number</li>
+								</ul>
+								<p>Keep every pay slip in a safe place somewhere at home. If you’ve paid too much tax, you will need these details to claim it back. If you’re not given a pay slip, tell your manager.</p>
+							</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-md-4 col-sm-6 center">
+							<button id="1" class="button2 item-space ddwidth14 dd2lines">Pay Slips</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="2" class="button2 item-space ddwidth14 dd2lines">Health and Safety Information</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="3" class="button2 item-space ddwidth14 dd2lines">National Insurance</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="4" class="button2 item-space ddwidth14 dd2lines">Induction</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="5" class="button2 item-space ddwidth14 dd2lines">Contracts of Employment</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="6" class="button2 item-space ddwidth14 dd2lines">Other Training Opportunities</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 center">
+							<button id="7" class="button2 item-space ddwidth14 dd2lines" style="text-align:center;">Harassment, Bullying, and Discrimination</button>
+						</div>
+					</div>					
+				</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a3_3" nexturl="#m9a3_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a3_6"> 
+	<section id="m9a3_6" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">
+				Read the paragraph and {{>touch yes="tap" no="click"}} the 'Heading' below that goes with it. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="row">
+						<div class="col-sm-2">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a3/health_and_safety.m4a"></button> <h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper paraextract">
+								<p>An employer has a responsibility to look after your health and safety at work, so you should be told about any risks you may come across in your place of work and where all the safety equipment is. You should be told:</p>
+								<ul>
+									<li>where the fire exits are</li>
+									<li>where you can find the first-aid kit</li>
+									<li>whether you need any special clothing or protection to do certain parts of your job</li>
+								</ul>
+								<p>If you’re working in a kitchen or a workshop, your may be asked to use dangerous equipment. Your employer should make sure you’re fully trained on how to use it safely. Don’t try to use any piece of equipment before you have been given this training.</p>
+							</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-md-4 col-sm-6 center">
+							<button id="1" class="button2 item-space ddwidth14 dd2lines">Pay Slips</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="2" class="button2 item-space ddwidth14 dd2lines">Health and Safety Information</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="3" class="button2 item-space ddwidth14 dd2lines">National Insurance</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="4" class="button2 item-space ddwidth14 dd2lines">Induction</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="5" class="button2 item-space ddwidth14 dd2lines">Contracts of Employment</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="6" class="button2 item-space ddwidth14 dd2lines">Other Training Opportunities</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 center">
+							<button id="7" class="button2 item-space ddwidth14 dd2lines" style="text-align:center;">Harassment, Bullying, and Discrimination</button>
+						</div>
+					</div>					
+				</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a3_5" nexturl="#m9a3_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a3_1"> 
+	<section id="m9a3_1" class="hidden"> 
+		<div class="content">  
+      			{{> dictionary_page
+					word1="contract"
+					word2="induction"
+					word3="apprenticeship"
+					word4="discrimination"
+					word5="bullying"
+					word6="first-aid"
+					word7c="hidden"
+					word8c="hidden"
+					word9c="hidden"
+					word10c="hidden"
+					word11c="hidden"
+					word12c="hidden"
+				}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a3" nexturl="#m9a3_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m9a3_7"> 
+	<section id="m9a3_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Read the paragraph and {{>touch yes="tap" no="click"}} the 'Heading' below that goes with it. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="row">
+						<div class="col-sm-2">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a3/training.m4a"></button> <h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper paraextract">
+								<p>Working is a great way of learning new skills. Make the most of every training opportunity that comes along while you're at work. You might not feel it’s useful at the moment, but you never know when it will be in the future.</p>
+
+								<p>You might be paid to do a training course. Talk to your manager to find out about the training support available from your company. You may also be entitled to time off work if you’re studying for qualifications in your spare time especially if you’re doing one of these:</p>
+								<ul>
+									<li>Skills for work if you're under 19</li>
+									<li>Apprenticeships</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-md-4 col-sm-6 center">
+							<button id="1" class="button2 item-space ddwidth14 dd2lines">Pay Slips</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="2" class="button2 item-space ddwidth14 dd2lines">Health and Safety Information</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="3" class="button2 item-space ddwidth14 dd2lines">National Insurance</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="4" class="button2 item-space ddwidth14 dd2lines">Induction</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="5" class="button2 item-space ddwidth14 dd2lines">Contracts of Employment</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="6" class="button2 item-space ddwidth14 dd2lines">Other Training Opportunities</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 center">
+							<button id="7" class="button2 item-space ddwidth14 dd2lines" style="text-align:center;">Harassment, Bullying, and Discrimination</button>
+						</div>
+					</div>					
+				</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a3_6" nexturl="#m9a3_8" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a3_5"> 
+	<section id="m9a3_5" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">
+				Read the paragraph and {{>touch yes="tap" no="click"}} the 'Heading' below that goes with it. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="row">
+						<div class="col-sm-2">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a3/induction.m4a"></button> <h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper paraextract">
+								<p>To ease you into your new job, most companies will give you an induction during your first few days. During an induction, you will:</p>
+								<ul>
+									<li>be introduced to the people you will be working with</li>
+									<li>be shown around your place of work</li>
+									<li>be told about what you will be doing on a day to day basis </li>
+									<li>get all the training you need to do your job</li>
+								</ul>
+								<p>This is the best opportunity to ask questions about the job and your employer. If you do have any worries or concerns, it’s a good idea to raise them at the end of this conversation.</p>
+							</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-md-4 col-sm-6 center">
+							<button id="1" class="button2 item-space ddwidth14 dd2lines">Pay Slips</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="2" class="button2 item-space ddwidth14 dd2lines">Health and Safety Information</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="3" class="button2 item-space ddwidth14 dd2lines">National Insurance</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="4" class="button2 item-space ddwidth14 dd2lines">Induction</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="5" class="button2 item-space ddwidth14 dd2lines">Contracts of Employment</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="6" class="button2 item-space ddwidth14 dd2lines">Other Training Opportunities</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 center">
+							<button id="7" class="button2 item-space ddwidth14 dd2lines" style="text-align:center;">Harassment, Bullying, and Discrimination</button>
+						</div>
+					</div>					
+				</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a3_4" nexturl="#m9a3_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a3_2"> 
+	<section id="m9a3_2" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">
+				Read the paragraph and {{>touch yes="tap" no="click"}} the 'Heading' below that goes with it. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="row">
+						<div class="col-sm-2">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a3/national_insurance.m4a"></button> <h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper paraextract">
+								<p>When you start working you’ll need to give your employer your <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A number that is used by the UK government for a UK citizen’s tax and benefits. Non UK citizens can get one of these if they have a work permit, a visa or a letter stating their immigration status.">National Insurance</a> number .  You can start work without one or you can apply to <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Her Majesty’s Revenue and Customs is one of the biggest businesses in the UK. They employ 66,000 people to collect taxes, give out benefits and deal with a range of financial matters for the country.">HM Revenue & Customs (HMRC)</a> to get one.</p>
+
+								<p>If you have a British passport, you get a card with a National Insurance number on it when you reach the age of 16.</p>
+							</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-md-4 col-sm-6 center">
+							<button id="1" class="button2 item-space ddwidth14 dd2lines">Pay Slips</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="2" class="button2 item-space ddwidth14 dd2lines">Health and Safety Information</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="3" class="button2 item-space ddwidth14 dd2lines">National Insurance</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="4" class="button2 item-space ddwidth14 dd2lines">Induction</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="5" class="button2 item-space ddwidth14 dd2lines">Contracts of Employment</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="6" class="button2 item-space ddwidth14 dd2lines">Other Training Opportunities</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 center">
+							<button id="7" class="button2 item-space ddwidth14 dd2lines" style="text-align:center;">Harassment, Bullying, and Discrimination</button>
+						</div>
+					</div>					
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a3_1" nexturl="#m9a3_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a3_3"> 
+	<section id="m9a3_3" class="hidden"> 
+		{{#if activeSection}} {{> popovers}}
+		<div class="content">
+			<h3 class="center">
+				Read the paragraph and {{>touch yes="tap" no="click"}} the 'Heading' below that goes with it. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} <!-- {{>welldone}} -->
+					<div class="row">
+						<div class="col-sm-2">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a3/contracts.m4a"></button> <h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper paraextract">
+								<p>When you accept a job and become employed by someone, there is always a contract between you and your employer. Although it doesn’t always have to be in writing or signed, this contract covers your basic rights at work.</p>
+
+								<p>However, you should receive a written statement of employment within two months of your start date if you are an employee. This will cover things like:</p>
+									<ul>
+										<li>your rate of pay</li>
+										<li>your holidays</li>
+										<li>your hours of work</li>
+										<li>the amount of notice time you have to give if you want to leave</li>
+										<li>the amount of notice time you must be given if they want to end your employment.</li>
+									</ul>
+								<p>If you don’t get one, ask your employer about it. </p>
+							</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-md-4 col-sm-6 center">
+							<button id="1" class="button2 item-space ddwidth14 dd2lines">Pay Slips</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="2" class="button2 item-space ddwidth14 dd2lines">Health and Safety Information</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="3" class="button2 item-space ddwidth14 dd2lines">National Insurance</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="4" class="button2 item-space ddwidth14 dd2lines">Induction</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="5" class="button2 item-space ddwidth14 dd2lines">Contracts of Employment</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="6" class="button2 item-space ddwidth14 dd2lines">Other Training Opportunities</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 center">
+							<button id="7" class="button2 item-space ddwidth14 dd2lines" style="text-align:center;">Harassment, Bullying, and Discrimination</button>
+						</div>
+					</div>					
+				</div>
+      </div>  
+		<footer> 
+			{{>footer_nav prevurl="#m9a3_2" nexturl="#m9a3_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a3_8"> 
+	<section id="m9a3_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Read the paragraph and {{>touch yes="tap" no="click"}} the 'Heading' below that goes with it. {{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-2">
+						<button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a3/harassment.m4a"></button> <h4>{{>touch yes="Tap" no="Click"}} to listen</h4>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper paraextract">
+								<p>All employees are entitled to work in a place that is free from discrimination and bullying, no matter how long you’ve been working there. There are laws that are there to protect you, regardless of your age, gender, race, religion and sexuality.</p>
+
+								<p>During your first few days, you should be told how your new company deals with bullying and bad behaviour in the workplace. You should be told how to complain. If you are being discriminated against at work, tell your manager as soon as possible.</p>
+							</div>
+						</div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-md-4 col-sm-6 center">
+							<button id="1" class="button2 item-space ddwidth14 dd2lines">Pay Slips</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="2" class="button2 item-space ddwidth14 dd2lines">Health and Safety Information</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="3" class="button2 item-space ddwidth14 dd2lines">National Insurance</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="4" class="button2 item-space ddwidth14 dd2lines">Induction</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="5" class="button2 item-space ddwidth14 dd2lines">Contracts of Employment</button>
+						</div>
+						<div class="col-md-4 col-sm-6 center">
+							<button id="6" class="button2 item-space ddwidth14 dd2lines">Other Training Opportunities</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 center">
+							<button id="7" class="button2 item-space ddwidth14 dd2lines" style="text-align:center;">Harassment, Bullying, and Discrimination</button>
+						</div>
+					</div>					
+				</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a3_7" nexturl="#m9a3_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>

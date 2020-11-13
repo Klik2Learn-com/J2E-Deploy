@@ -1,0 +1,52 @@
+<template name="adminContactForm">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			<a draggable="false" href="/admin/contactFormList/"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<div class="parent-level">Journey 2 English</div>
+			<div class="acttitle-title">Contact Form Details</div>
+		</header>
+
+		<section>
+			{{#if isAdmin}}
+			<div class="content">
+			    <h1>Contact Form ({{_id}})</h1>
+			    <div style="border:1px solid black; border-radius:10px;" class="col-md-6 col-md-offset-3">
+					<h4>Date</h4>
+						{{date}}
+					<h4>Status</h4>
+						{{status}}
+					<h4>Name</h4>
+						{{{name}}}
+					<h4>Email</h4>
+						{{email}}
+					<h4>Message</h4>
+						{{organisation}}
+					<h4>Change status</h4>
+					<div class="dropup">
+						<button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown">Select<span class="caret"></span></button>
+						<ul class="status dropdown-menu dropdown-menu-scroll">
+							<li class="dropdown-header">Select bug status</li>
+							<li><a draggable="false" href="#">Unread</a></li>
+							<li><a draggable="false" href="#">Read</a></li>
+							<li><a draggable="false" href="#">Replied</a></li>
+							<li><a draggable="false" href="#">Spam</a></li>
+							<li><a draggable="false" href="#">Duplicate</a></li>
+						</ul>
+						<h5 id="form-status" class="faded">Select from the list</h5>
+						<button id="saveStatusButton" class="button2 item-space no-border">Save</button>
+
+					</div>
+				</div>
+			</div>
+			{{else}}
+				Unauthorised access.
+			{{/if}}
+		</section>
+
+	</div>
+</article>
+
+</template>

@@ -1,0 +1,107 @@
+<template name="contactForm">
+	<div class="contact text-center">
+		<form id="contactFormB2B">
+			<div class="container-fluid-no-gutter">
+				<div class="row">
+					<div class="col-xs-12 text-left">
+						<h3>Contact us now to arrange a trial</h3>
+					</div>
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-name" type="text" placeholder="Name" required>
+					</div>
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-email" type="email" placeholder="Email" required>
+					</div>
+					<div class="col-xs-12 hidden">
+						<textarea id="form-organisation" rows="5" placeholder="Tell us about your needs"></textarea>
+					</div>
+					{{>honeypot}}
+					<div class="col-xs-12 text-right">
+						<button id="submitReportButton">Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
+<template name="contactForm2">
+	<div class="contact text-center">
+		<form id="contactFormB2B2">
+			<div class="container-fluid-no-gutter">
+				<div class="row">
+					<div class="col-xs-12 text-left">
+						<h3>Contact us now to demo</h3>
+					</div>
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-name2" type="text" placeholder="Name" required>
+					</div>
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-email2" type="email" placeholder="Email" required>
+					</div>
+					<div class="col-xs-12 hidden">
+						<textarea id="form-organisation2" rows="5" placeholder="Tell us about your organisation"></textarea>
+					</div>
+					{{>honeypot}}
+					<div class="col-xs-12 text-right">
+						<button id="submitReportButton2">Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
+<template name="contactForm3">
+	<div class="contact text-center">
+		<form id="contactFormB2B3">
+			<div class="container-fluid-no-gutter">
+				<div class="row">
+					<div class="col-xs-12 text-left">
+						<h3>Contact us now to demo</h3>
+					</div>
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-name3" type="text" placeholder="Name" required>
+					</div>
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-email3" type="email" placeholder="Email" required>
+					</div>
+					<div class="col-xs-12 hidden">
+						<textarea id="form-organisation3" rows="5" placeholder="Tell us about your organisation"></textarea>
+					</div>
+					{{>honeypot}}
+					<div class="col-xs-12 text-right">
+						<button id="submitReportButton3">Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
+<template name="contactFormB2C">
+	<div class="contact text-center">
+		<form id="contactFormB2C">
+			<div class="container-fluid-no-gutter">
+				<div class="row">
+					<div class="col-xs-12"><h3>Get in touch</h3></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-name" type="text" placeholder="Your name" required>
+					</div>
+					<div class="col-xs-6 col-xxs-12">
+						<input id="form-email" type="email" placeholder="Your email" required>
+					</div>
+					<div class="col-xs-12">
+						<textarea id="form-message" rows="5" placeholder="Your message..." required></textarea>
+					</div>
+					{{>honeypot}}
+					<div class="col-xs-12 text-right">
+						<button id="submitReportButton">Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>

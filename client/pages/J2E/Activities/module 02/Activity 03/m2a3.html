@@ -1,0 +1,293 @@
+<template name="m2a3">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Braemar');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<!-- Change module, activity number and name here -->
+			<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 3 - {{>m2a3Title}}</div>
+		</header>
+		
+				
+		<section id="m2a3">
+		  <div class="content">
+<h1 class="start-page-header">{{> m2a3Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m2a3Intro}}</h3>
+{{> m2a3Time}} <!--{{> resumePopUp}}-->
+		  </div>
+		  <footer>
+			{{>footer_nav nexturl="#m2a3_1" prev="disabled" next="" next_text="Start"}}
+		  </footer>
+		</section>
+		{{>m2a3_1}}
+		{{>m2a3_2}}
+		{{>m2a3_3}}
+		{{>m2a3_end}}
+	</div>
+</article>
+
+	
+	{{> m2a3_modal}}
+	{{> m2a3_modal2}}
+</template>
+<template name="m2a3_1">
+	<section id="m2a3_1" class="hidden">
+		<div class="content">
+			<h1>Ordering online</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
+						<div class="parapaper">Amazon is the world's largest online retailer. They will deliver everything to anyone, anywhere in the world. Amazon is very popular because you can buy almost anything you want at a good price.</div>
+						<br>
+						<br>
+						<div type="button" class="button1" data-toggle="modal" data-target="#AmazonForm">{{>touch yes="Tap" no="Click"}} here to see an Amazon form.</div>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-6 center-block">
+						<div class="ph-w ph-10x16" style="max-width: 212px"><div class="ph"><img draggable="false" src="/images/module2/fulfilmentCenter.jpg" alt="Amazon fulfillment center"></div></div>
+					</div>
+				</div>
+	
+
+</div>
+		</div>
+		<footer>
+		{{>footer_nav nexturl="#m2a3_2" prevurl="#m2a3" next="" prev="disabled"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a3_modal">
+<div id="AmazonForm" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+<!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Amazon Order Form</h4>
+      </div>
+      <div class="modal-body">
+      <div class="ph-w ph-1x1" style="max-width: 906px"><div class="ph"><img draggable="false" src="/images/module2/AmazonOrderForm.png" alt="Amazon order form"></div></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+	  </div>
+</div>
+</template>
+
+<template name="m2a3_2">
+	<section id="m2a3_2" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Writing an Address</h1>
+			<h3 class="text-center">Fill in the address in the boxes provided.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3"></div>
+					<div class="col-sm-6">
+						<div class="parapaper noselect">
+							<p>Alex Hunter</p>
+							<p>106 Abbottsfield Road</p>
+							<p>Braemar, Aberdeenshire</p>
+							<p>AB35 4TG</p>
+							<p>United Kingdom</p>
+						</div>
+					</div>
+					<div class="col-sm-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
+					<p>Full Name:</p>
+					<span id="entryanswer0">
+							<form class="textentry">
+								<input type="text" name="userText" size="15">
+								<input type="submit" value="OK">
+							</form>
+						</span>
+						
+					</div>
+					<div class="col-sm-6"></div>
+				</div>
+
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
+					<p>Address Line 1:</p>
+					<span id="entryanswer1" class="textentry-disabled ddwidth11"></span>
+					
+					</div>
+					<div class="col-sm-6"></div>
+				</div>
+
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
+					<p>Town/City:</p>
+					<span id="entryanswer2" class="textentry-disabled ddwidth11"></span>
+					
+					</div>
+					<div class="col-sm-6">
+					<p>Post Code:</p>
+					<span id="entryanswer4" class="textentry-disabled ddwidth11"></span>
+					
+					</div>
+				</div>
+
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
+					
+					<p>County:</p>
+					<span id="entryanswer3" class="textentry-disabled ddwidth11"></span>
+					
+					</div>
+					<div class="col-sm-6">
+					<p>Country:</p>
+					<span id="entryanswer5" class="textentry-disabled ddwidth11"></span>
+					
+					</div>
+				</div>
+
+				{{>blankrow}}
+				{{> rightwrong}}
+			</div>
+		</div>
+		<footer>
+		{{>footer_nav  prevurl="#m2a3_1" nexturl="#m2a3_3"  prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a3_3">
+	<section id="m2a3_3" class="hidden">
+		<div class="content">
+			<div class="container-fluid">
+				<h1>Writing Practice</h1>
+
+				{{>InstructionsNotebook text="Use the notepad to write a 100-150 word letter of complaint. You can check your letter against the sample when you're finished."}}
+				
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<h3>Use these headings to write your letter of complaint:</h3>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<div class="parapaper">
+								<ol class="olcircle">
+									<li>What you bought.</li>
+									<li>When you bought it. (Date)</li>
+									<li>Why you bought it.</li>
+									<li>Say what's wrong by choosing a reason from the Amazon Return List.</li>
+									<li>Decide if you want a refund or an item exchange.</li>
+									<li>Ask what to do about posting the item back.</li>
+									<li>Say you hope to hear from them soon.</li>
+								</ol>
+							</div>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+					{{>blankrow}}
+					<div class="row text-center">
+						<div type="button" class="button1 item-space text-center" data-toggle="modal" data-target="#myModal">Amazon Return Reasons</div>
+						<div type="button" class="button1 item-space" data-toggle="modal" data-target="#myModal2">See a sample letter</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a3_2" nexturl="#m2a3_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a3_modal2">
+<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Amazon Return Reasons</h4>
+				  </div>
+				  <div class="modal-body">
+					<p>Accidental order.</p>
+					<p>Better price available.</p>
+					<p>Performance or quality not adequate.</p>
+					<p>Incompatible or not used for intended purpose.</p>
+					<p>The shipping box or envelope isn't damaged but the item is damaged.</p>
+					<p>Missed estimated delivery date.</p>
+					<p>Missing parts or accessories.</p>
+					<p>The shipping box/envelope and item are both damaged.</p>
+					<p>Different from what was ordered.</p>
+					<p>Defective/Does not work properly.</p>
+					<p>Arrived in addition to what was ordered.</p>
+					<p>No longer needed/wanted.</p>
+					<p>Unauthorised purchase.</p>
+					<p>Different from website description.</p>
+				</div>
+				  <div class="modal-footer">
+					<button type="button" class="button1 buttonsmall" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+<!-- Modal -->
+			<div id="myModal2" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Sample letter</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="container-fluid">
+						<h1>Sample Letter</h1>				
+						<div class="parapaper">
+							<p>Dear Sir</p>
+							<p>I bought a remote control helicopter on 17th April for a friend's birthday.</p>
+							<p>Unfortunately it doesn't work properly.</p>
+							<p>I would like to send it back and get a full refund of my money. Could you please let me know how I can post the item back to you.</p>
+							<p>I look forward to hearing from you soon.</p>
+						</div>
+					</div>
+				</div>
+				  <div class="modal-footer">
+					<button type="button" class="button1 buttonsmall" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+</template>
+
+<template name="m2a3_end">
+{{>EndPage char="elle" act="m2a3" nextact="m2a4" place="Braemar"}}
+</template>

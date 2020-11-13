@@ -1,0 +1,125 @@
+<template name="MoreAboutStHelens">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="StHelens"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m5l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m5l5}}</div>
+		</header>
+
+		<section id="moreaboutStHelens">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-6 bonus-image" style="background-image: url('images/bonus/StHelens/StHelens1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l5_A">
+						<p>St Helen’s Rugby Club</p>
+					</div>
+					<div class="col-sm-6 col-xs-6 bonus-image" style="background-image: url('images/bonus/StHelens/StHelens2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l5_B">
+						<p>Haydock Park</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/StHelens/StHelens4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l5_D">
+						<p>Dream</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/StHelens/StHelens3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m5l5_C">
+						<p>Darkstar Laser Tag</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l5_A">St Helen’s Rugby Club</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StHelens/StHelens1.jpg" alt="St Helen’s Rugby Club" style="max-width: 250px;">
+					</figure>
+					<p>St. Helen’s rugby club is one of the oldest and most successful rugby league clubs in the UK. The club’s biggest rival is the nearby town of Wigan. The two teams play each other on Boxing Day, 26th December, every year. Over the years, the teams have won and lost almost the same number of games. The club has fans all over the world even from far away countries such as Singapore and Japan.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.saintsrlfc.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l5_B">Haydock Park</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StHelens/StHelens2.jpg" alt="Haydock Park" style="max-width: 250px;">
+					</figure>
+					<p>Horse racing has been going on around Haydock since the 19th century and Haydock Park was opened in 1899. It now has  over 30 races a year for both flat racing and jump racing. Like many racecourses, it holds special events and parties and has twice been voted racecourse of the year.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://haydock.thejockeyclub.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l5_C">Darkstar Laser Tag</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StHelens/StHelens3.jpg" alt="Darkstar Laser Tag" style="max-width: 250px;">
+					</figure>
+					<p>Darkstar Laser is described as the most exciting place in the UK to play laser games. Up to 40 people can play at once using the most advanced equipment. When the game begins, players have to find their way around a complicated area in the dark and try to tag other players with their laser. It’s a popular day out for families with children. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.darkstarlaser.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m5l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m5l5_D">Dream</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/StHelens/StHelens4.jpg" alt="Dream" style="max-width: 250px;">
+					</figure>
+					<p>The Dream is a large sculpture built on a hill near an old mine just outside St. Helens. The  coal mine was closed in 1993 and the area is now being turned into a forest park to make it an attractive place for people to visit. The Dream sculpture is made of white concrete mixed with marble in contrast to the blackness of the coal that used to be mined in the area.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.dreamsthelens.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

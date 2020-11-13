@@ -1,0 +1,19 @@
+<template name="Yeti_s_ok">
+	<section id="Yeti_s_ok" style="background: none;">
+		<div class="scoreok">
+			<div class="content">
+			<div class=" gameInfo text-center">
+					You scored <span>{{userScore}}%</span> and caught a glimpse of the yeti!
+				</div>
+				<div class="scoreinfo gameInfo text-center">
+					Right answers and faster routes will give you a better score and a better yeti sighting. {{>touch yes="Tap" no="Click"}} <a draggable="false" href="#Yeti" class="restart">here</a> to try again, or {{>touch yes="tap" no="click"}} next to see the answers.
+				</div>
+			</div>
+		</div>
+		<footer>
+			 {{>game_footer_nav nexturl="#Yeti_ans_d1" prevurl="#Yeti" prev="hidden" next=""}} 
+		</footer>
+	</section>
+</template>
+	
+	

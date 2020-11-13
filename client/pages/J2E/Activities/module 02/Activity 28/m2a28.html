@@ -1,0 +1,534 @@
+<template name="m2a28">
+	<article class="with-tools-sidebar m2a28">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Aberdeen');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 28 - {{>m2a28Title}}</div>
+			</header>
+
+
+			<section id="m2a28">
+				<div class="content">
+					<h1 class="start-page-header">1 - {{>m2a28Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m2a28Intro}}</h3>
+					{{> m2a28Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m2a28_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m2a28_1}} {{>m2a28_2}} {{>m2a28_3}} {{>m2a28_4}} {{>m2a28_5}} {{>m2a28_6}} {{>m2a28_7}} {{>m2a28_scores}} {{>m2a28_8}}
+			{{>m2a28_9}} {{>m2a28_10}} {{#if gameAccess}} {{>EndPage char="k" act="m2a28" nextact="m2Game" place="Aberdeen"}} {{else}}
+			{{>EndPage2 char="all" act="m2a28" nextplace="Stirling" nextmod="3" place="Aberdeen" end="finished"}} {{/if}}
+
+		</div>
+	</article>
+
+</template>
+<template name="m2a28_1">
+	<section id="m2a28_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>You use <div class="ddseatedtarget ddwidth11 dd1line" id="target1"></div> when there is no doubt about something.</li>
+					<li>Something that is <div class="ddseatedtarget ddwidth11 dd1line" id="target2"></div> is impossible to understand.</li>
+					<li>To <div class="ddseatedtarget ddwidth11 dd1line" id="target3"></div> an activity or process means to control it, especially by means of rules.</li>
+					<li>When you buy an <div class="ddseatedtarget ddwidth11 dd1line" id="target4"></div> policy, you protect yourself against loss or damage.</li>
+					<li>If you <div class="ddseatedtarget ddwidth11 dd1line" id="target5"></div> someone, you know what they mean.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-answer="incomprehensible">incomprehensible</div></div>
+					<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-answer="understand">understand</div></div>
+					<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-answer="insurance">insurance</div></div>
+					<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-answer="obviously">obviously</div></div>
+					<div class="ddseat ddwidth11 dd1line"><div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-answer="regulate">regulate</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_1" nexturl="#m2a28_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a28_2">
+	<section id="m2a28_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>When you <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> to something that someone has said or written to you, you say or write an answer to them.</li>
+					<li>An <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a building with a large telescope which scientists use to study the stars.</li>
+					<li>You use <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> to describe someone who never gets tired of doing something.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> means how far or how clearly you can see in particular weather conditions.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is a sweet fizzy drink. </li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="lemonade">lemonade</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="visibility">visibility</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="observatory">observatory</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="reply">reply</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="indefatigable">indefatigable</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_2" nexturl="#m2a28_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a28_3">
+	<section id="m2a28_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>Things that are <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> are exactly the same.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a large container which is kept cool inside, usually by electricity, so that the food and drink in
+						it stays fresh.</li>
+					<li>An <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is a substance or device that can cause an explosion.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is a building by a railway line where trains stop so that people can get on or off.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> means involving complicated rules and procedures.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="explosive">explosive</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="bureaucratic">bureaucratic</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="station">station</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="refrigerator">refrigerator</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="identical">identical</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_3" nexturl="#m2a28_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a28_4">
+	<section id="m2a28_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 15;">
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> means between or involving different countries. </li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> of something is the recognition and enjoyment of its good qualities.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is the embarrassment and shame you feel when someone makes you appear stupid.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is one of the sections in an organisation such as a government, business, or university.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is a person who is kept in a prison as a punishment for a crime that they have committed.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="prisoner">prisoner</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="international">international</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="humiliation">humiliation</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="department">department</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="appreciation">appreciation</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_4" nexturl="#m2a28_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a28_5">
+	<section id="m2a28_5" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 20;">
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is a glass or plastic container in which drinks and other liquids are kept.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is an economic and political system in which property, business, and industry are owned by private individuals
+						and not by the state.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is a reduction in the usual price of something.</li>
+					<li>The <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> of some countries, for example Britain, is the group of people who make or change its laws, and decide
+						what policies the country should follow.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="capitalism">capitalism</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="discount">discount</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="parliament">parliament</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="bottle">bottle</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_5" nexturl="#m2a28_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a28_6">
+	<section id="m2a28_6" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 24;">
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is a game in which two teams of five players each try to score goals by throwing a large ball through
+						a circular net.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is the study of the way in which money, industry, and trade are organised in a society.</li>
+					<li>An <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> piece of writing relates to events in the life of the person who has written it.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is a form of energy that can be carried by wires and is used for heating, lighting and power.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> means relating to a person's work, especially work that requires special training.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="electricity">electricity</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="basketball">basketball</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="economics">economics</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="professional">professional</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="autobiographical">autobiographical</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_6" nexturl="#m2a28_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a28_7">
+	<section id="m2a28_7" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 29;">
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is a system of government where the state controls everything and every aspect of an individual’s life.</li>
+					<li>An <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a crime that breaks a particular law and requires a particular punishment.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="offence">offence</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="totalitarianism">totalitarianism</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_7" nexturl="#m2a28_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a28_scores">
+	<section id="m2a28_bad" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m2a28_Correct" wrongSession="m2a28_Incorrect"}}
+				<h2>You didn't get enough right answers to unlock the game</h2>
+				<h4 class="text-left">Get 24 or more right answers and the game will be unlocked!
+					<a draggable="false" href="#m2a28_1" class="pagination restart">Try again</a> and see if you can improve your score.</h4>
+				<div class="game-locked-gif shadow"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a28_8" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m2a28_good" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m2a28_Correct" wrongSession="m2a28_Incorrect"}}
+				<h2>Well done! You got a good score! You can now play the game in this module!</h2>
+				<div class="game-unlocked-gif shadow"></div>
+				<h4>Click continue to see the answers and finish this activity.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m2a28_8" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a28_8">
+	<section id="m2a28_8" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>You use
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="obviously">obviously</div>
+						</div> when there is no doubt about something.</li>
+					<li>Something that is
+						<div class="ddwidth11 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth11 dd1line" draggable="False" data-answer="incomprehensible">incomprehensible</div>
+						</div> is impossible to understand.</li>
+					<li>To
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="regulate">regulate</div>
+						</div> an activity or process means to control it, especially by means of rules.</li>
+					<li>When you buy an
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="insurance">insurance</div>
+						</div> policy, you protect yourself against loss or damage.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="understand">understand</div>
+						</div> someone, you know what they mean.</li>
+					<li>When you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="reply">reply</div>
+						</div> to something that someone has said or written to you, you say or write an answer to them.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="observatory">observatory</div>
+						</div> is a building with a large telescope which scientists use to study the stars.</li>
+					<li>You use
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="indefatigable">indefatigable</div>
+						</div> to describe someone who never gets tired of doing something.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="visibility">visibility</div>
+						</div> means how far or how clearly you can see in particular weather conditions.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="lemonade">lemonade</div>
+						</div> is a sweet fizzy drink. </li>
+
+				</ol>
+
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_8" nexturl="#m2a28_9" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m2a28_9">
+	<section id="m2a28_9" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>Things that are
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="identical">identical</div>
+						</div> are exactly the same.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="refrigerator">refrigerator</div>
+						</div> is a large container which is kept cool inside, usually by electricity, so that the food and drink in it stays fresh.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="explosive">explosive</div>
+						</div> is a substance or device that can cause an explosion.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="station">station</div>
+						</div> is a building by a railway line where trains stop so that people can get on or off.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="bureaucratic">bureaucratic</div>
+						</div> means involving complicated rules and procedures.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="international">international</div>
+						</div> means between or involving different countries. </li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="appreciation">appreciation</div>
+						</div> of something is the recognition and enjoyment of its good qualities.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="humiliation">humiliation</div>
+						</div> is the embarrassment and shame you feel when someone makes you appear stupid.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="department">department</div>
+						</div> is one of the sections in an organisation such as a government, business, or university.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="prisoner">prisoner</div>
+						</div> is a person who is kept in a prison as a punishment for a crime that they have committed.</li>
+				</ol>
+
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_8" nexturl="#m2a28_10" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m2a28_10">
+	<section id="m2a28_10" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 20;">
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="bottle">bottle</div>
+						</div> is a glass or plastic container in which drinks and other liquids are kept.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="capitalism">capitalism</div>
+						</div> is an economic and political system in which property, business, and industry are owned by private individuals and
+						not by the state.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="discount">discount</div>
+						</div> is a reduction in the usual price of something.</li>
+					<li>The
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="parliament">parliament</div>
+						</div> of some countries, for example Britain, is the group of people who make or change its laws, and decide what policies
+						the country should follow.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="basketball">basketball</div>
+						</div> is a game in which two teams of five players each try to score goals by throwing a large ball through a circular net.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="economics">economics</div>
+						</div> is the study of the way in which money, industry, and trade are organised in a society.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="autobiographical">autobiographical</div>
+						</div> piece of writing relates to events in the life of the person who has written it.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="electricity">electricity</div>
+						</div> is a form of energy that can be carried by wires and is used for heating, lighting and power.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="professional">professional</div>
+						</div> means relating to a person's work, especially work that requires special training.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">totalitarianism</div>
+						</div> is a system of government where the state controls everything and every aspect of an individual’s life.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">offence</div>
+						</div> is a crime that breaks a particular law and requires a particular punishment.</li>
+				</ol>
+
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a28_9" nexturl="#m2a28_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

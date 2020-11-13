@@ -1,0 +1,168 @@
+<template name="m8a5"> 
+<article class="with-tools-sidebar m8a5">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Oxford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 5 - {{>m8a5Title}}</div>
+		</header>
+		<section id="m8a5">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a5Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a5Intro}}</h3>
+				{{> m8a5Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a5_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a5_1}}
+		{{>m8a5_2}}
+		{{>m8a5_scores}}
+		{{>EndPage char="tu" act="m8a5" nextact="m8a6" place="Oxford"}}
+	</div>
+</article>
+
+	{{>m8a5_modal}}
+</template>
+<template name="m8a5_1"> 
+	<section id="m8a5_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+		<h3 class="center">Watch the video of Rob Yeung talking about his ideal job.</h3>
+      			<div class="videoplayer">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2s6zRuWkEwE?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a5" nexturl="#m8a5_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a5_2"> 
+	<section id="m8a5_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Read these statements and choose <b>True</b> or <b>False</b>. <br>
+				{{>touch yes="Tap" no="Click"}} to read a transcript if you need help.
+			</h3>
+			<div class="center">
+			<button data-toggle="modal" data-target="#m8a5_modal" class="button1">Transcript</button>
+			
+			</div>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">						
+						<div class="number">1</div><span id="question_text">Rob Yeung asks people to think about their schooldays.</span>
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="true" class="button2 item-space ddwidth9">True</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="false" class="button2 item-space ddwidth9">False</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m8a5_2RightScore" wrongSession="m8a5_2WrongScore"}}
+					</div>
+				</div>
+			</div>
+      </div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a5_1" nexturl="#m8a5_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m8a5_modal">
+	<div class="modal fade" tabindex="-1" id="m8a5_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m8a5_modal">An Ideal Job</h4>
+				</div>
+				
+				<div class="content">
+
+					<div class="parapaper paraextract article-text">{{>metametrics level="10" star="no" align="center"}}
+
+	<p>One of the really important things I suggest people do if they want to enjoy their life more, enjoy their career more, is just to ask themselves, ‘well, what have been the highlights of my career so far?’</p>
+
+	<p>So think back to when you were actually at school because sometimes some of the things you do when you’re not at work are actually some of the most fun things and try and come up with perhaps a handful or a half dozen of highlights.</p>
+	
+	<p>For example when I was about nineteen – between my first and second year at University, I had a job at an air freight shipping company and I had such a great time – I loved the work, I loved the people and analysing that example really helped me to understand what kind of environment I should be in. So I was in a team of eight people – so I enjoy working in a team, but I don’t enjoy working in such a huge organisation where you get flooded, where you don’t get to know people - so for me it’s about working in a small team.</p>
+	
+	<p>I was also working with computers and despite the fact that I’m a psychologist, trained in human behaviour I’m actually a bit of a techie and a geek. I like computers so I was learning how to use the software, I was learning how to reboot the hardware, how things plug into each other and that really fired me up. </p>
+	
+	<p>So if you look back on your highlights – when you were happiest, when you had the most buzz in your life, and you put six of them down on paper – look at the patterns and themes and you’ll start to get a picture of what your ideal job might be.</p>
+</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="m8a5_scores"> 
+	<section id="m8a5_bad" class="hidden"> 
+		
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a5_2RightScore" wrongSession="m8a5_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m8a5_2" id="m8a5restart" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a5_2" nexturl="#m8a5_end" prev="disabled" next=""}} 
+		</footer> 
+		 
+	</section> 
+	<section id="m8a5_good" class="hidden"> 
+		
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a5_2RightScore" wrongSession="m8a5_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a5_2" nexturl="#m8a5_end" prev="disabled" next=""}} 
+		</footer> 
+		 
+	</section> 
+ </template>

@@ -1,0 +1,11 @@
+<template name="Yeti_d1_result">
+	<section id="Yeti_d1_result" class="hidden">
+		{{#if activeSection}}
+			{{#if highScore}}
+				{{> Yeti_d1_good}}
+			{{else}}
+				{{> Yeti_d1_ok}}
+			{{/if}}
+		{{/if}}
+	</section>
+</template>

@@ -1,0 +1,147 @@
+<template name="MoreAboutFortAugustus">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="FortAugustus"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m1l3}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m1l3}}</div>
+		</header>
+
+		<section id="moreaboutFortAugustus">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-4 bonus-image" style="background-image: url('images/bonus/FortAugustus/FortAugustus2.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l3_B">
+						<p>Jacobite Rising</p>
+					</div>
+					<div class="col-sm-9 col-xs-8 bonus-image" style="background-image: url('images/bonus/FortAugustus/FortAugustus1.jpg'); background-position: left top;" data-toggle="modal" data-target="#bonus_modal_m1l3_A">
+						<p>Glenfinnan Viaduct</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-color: #fff; background-image: url('images/bonus/FortAugustus/FortAugustus3.jpg'); background-position: center top; background-size: contain;" data-toggle="modal" data-target="#bonus_modal_m1l3_C">
+						<p>Gaelic</p>
+					</div>
+					<div class="col-sm-4 col-xs-7 bonus-image" style="background-image: url('images/bonus/FortAugustus/FortAugustus4.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l3_D">
+						<p>Midges</p>
+					</div>
+					<div class="col-sm-3 col-xs-5 bonus-image" style="background-image: url('images/bonus/FortAugustus/FortAugustus5.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l3_E">
+						<p>Fort Augustus</p>
+					</div>				
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l3_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l3_A">Glenfinnan Viaduct</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortAugustus/FortAugustus1.jpg" alt="Glenfinnan Viaduct" style="max-width: 250px;">
+					</figure>
+					<p>Glenfinnan Viaduct is a railway viaduct in Scotland. Construction started in 1897 and took 4 years to complete. It has since become famous around the world after being featured in the Harry Potter films.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.visitscotland.com/info/towns-villages/glenfinnan-p236571" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l3_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l3_B">Jacobite Rebellion</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortAugustus/FortAugustus2.jpg" alt="Bonnie Prince Charlie" style="max-width: 150px;">
+					</figure>
+					<p>The Jacobite rising of 1745 was the attempt by Charles Edward Stuart (also known as Bonnie Prince Charlie) to regain the British throne for the exiled House of Stuart.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Jacobite-Revolts-Chronology/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l3_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l3_C">Gaelic</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortAugustus/FortAugustus3.jpg" alt="Gaelic speech bubble" style="max-width: 250px;">
+					</figure>
+					<p>Gaelic is a language native to Scotland, and still spoken in some parts of the country. It is one of the several languages that come from Old Irish. Failte means welcome.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/alba/foghlam/beag_air_bheag/songs/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l3_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l3_D">Midges</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortAugustus/FortAugustus4.jpg" alt="Swarm of midges" style="max-width: 250px;">
+					</figure>
+					<p>Midges are small flying insects that feed on the blood of animals. They are common throughout Scotland and gather in swarms in the spring and summer, usually near water or bogs. Their bites can be itchy, so they many people find them quite annoying.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.theguardian.com/lifeandstyle/shortcuts/2013/jun/23/how-to-beat-midges-summer" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l3_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l3_E">Fort Augustus</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/FortAugustus/FortAugustus5.jpg" alt="Fort gate" style="max-width: 150px;">
+					</figure>
+					<p>The village of Fort Augustus takes its name from a fort that was built in the 1700s during the Jacobite rising. Over the years the settlement grew into the town that is there today.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.historic-uk.com/HistoryMagazine/DestinationsUK/Highland-Forts-of-Scotland/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</template>

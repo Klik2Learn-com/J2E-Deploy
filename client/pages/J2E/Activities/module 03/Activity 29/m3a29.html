@@ -1,0 +1,270 @@
+<template name="m3a29">
+	<article class="with-tools-sidebar m3a29">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Edinburgh');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 3</div>
+				<div class="acttitle-title">{{> activity}} 29 - {{>m3a29Title}}</div>
+			</header>
+
+
+			<section id="m3a29">
+				<div class="content">
+					<h1 class="start-page-header">1 - {{>m3a29Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m3a29Intro}}</h3>
+					{{> m3a29Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m3a29_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m3a29_1}} {{>m3a29_2}} {{>m3a29_3}} {{>m3a29_scores}} {{>m3a29_4}} {{>m3a29_5}} {{#if gameAccess}} {{>EndPage char="tu"
+			act="m3a29" nextact="m3Game" place="Edinburgh"}} {{else}} {{>EndPage2 char="all" act="m3a29" nextplace="FortWilliam" nextmod="4"
+			place="Edinburgh" end="finished"}} {{/if}}
+
+		</div>
+	</article>
+
+</template>
+<template name="m3a29_1">
+	<section id="m3a29_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 0;">
+					<li>If you describe something as <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div>, you mean that it makes a person seem less attractive than they really are.</li>
+					<li>If you <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> something that is valuable or important, you give it up.</li>
+					<li>If something is <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div>, it has never happened before.</li>
+					<li>When people are <div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div>, they are talking casually for a long time about unimportant things.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is the quality of allowing other people to say and do as they like, even if you do not agree with it.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="unprecedented">unprecedented</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="nattering">nattering</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="sacrifice">sacrifice</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="unflattering">unflattering</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="tolerance">tolerance</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a29_1" nexturl="#m1a27_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a29_2">
+	<section id="m3a29_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>An <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is something that you can choose to do in preference to something else.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a survey in which people are asked their opinions about something.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is to attach keywords to something so that other people can find it on the internet.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is an informal word meaning to send a short message via the social media website twitter.</li>
+					<li>A <div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is a long period of time during which no rain falls.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="tagging">tagging</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="poll">poll</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="option">option</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="drought">drought</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="tweeting">tweeting</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a29_2" nexturl="#m1a27_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a29_3">
+	<section id="m3a29_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>Something, especially something bad, that is <div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is present or felt everywhere.</li>
+					<li><div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a set of customs and rules for polite behaviour.</li>
+					<li>The <div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is the way of behaving that is considered normal in a particular society.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="etiquette">etiquette</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="pervasive">pervasive</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-answer="norm">norm</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a29_3" nexturl="#m1a27_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a29_scores">
+	<section id="m3a29_bad" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m3a29_Correct" wrongSession="m3a29_Incorrect"}}
+				<h2>You didn't get enough right answers to unlock the game</h2>
+				<h4 class="text-left">Get 10 or more right answers and the game will be unlocked!
+					<a draggable="false" href="#m3a29_1" class="pagination restart">Try again</a> and see if you can improve your score.</h4>
+				<div class="game-locked-gif shadow"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m3a29_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m3a29_good" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m3a29_Correct" wrongSession="m3a29_Incorrect"}}
+				<h2>Well done! You got a good score! You can now play the game in this module!</h2>
+				<div class="game-unlocked-gif shadow"></div>
+				<h4>Click continue to see the answers and finish this activity.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m3a29_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m3a29_4">
+	<section id="m3a29_4" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>If you describe something as
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="unflattering">unflattering</div>
+						</div>, you mean that it makes a person seem less attractive than they really are.</li>
+					<li>If you
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="sacrifice">sacrifice</div>
+						</div> something that is valuable or important, you give it up.</li>
+					<li>If something is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="unprecedented">unprecedented</div>
+						</div>, it has never happened before.</li>
+					<li>When people are
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="nattering">nattering</div>
+						</div>, they are talking casually for a long time about unimportant things.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="tolerance">tolerance</div>
+						</div> is the quality of allowing other people to say and do as they like, even if you do not agree with it.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="option">option</div>
+						</div> is something that you can choose to do in preference to something else.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="poll">poll</div>
+						</div> is a survey in which people are asked their opinions about something.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="tagging">tagging</div>
+						</div> is to attach keywords to something so that other people can find it on the internet.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="tweeting">tweeting</div>
+						</div> is an informal word meaning to send a short message via the social media website twitter.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="drought">drought</div>
+						</div> is a long period of time during which no rain falls.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a29_4" nexturl="#m3a29_5" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m3a29_5">
+	<section id="m3a29_5" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>Something, especially something bad, that is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="pervasive">pervasive</div>
+						</div> is present or felt everywhere.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="etiquette">etiquette</div>
+						</div> is a set of customs and rules for polite behaviour.</li>
+					<li>The
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False" data-answer="norm">norm</div>
+						</div> is the way of behaving that is considered normal in a particular society.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a29_4" nexturl="#m3a29_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

@@ -1,0 +1,30 @@
+<template name="m9Game_5">
+
+	<section id="m9Game_5" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m9Game-q1b">{{>m9Game_seeds}}</div>
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="a">I was planning to visiting that part of England anyway.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="b">I was planning visiting that part of England anyway.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">I was planning to visit that part of England anyway.</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+
+</template>

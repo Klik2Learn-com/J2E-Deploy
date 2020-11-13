@@ -1,0 +1,35 @@
+/* Internet Explorer 10+ styles */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	
+}
+
+/* IE 10+ on view ports desktop and larger */
+@media (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	
+	#m9a26_1 .col-sm-5 {
+		position: fixed;
+		position: -webkit-sticky;
+		position: sticky;
+		top: auto;
+		bottom: 5%;
+		right: 15%;
+		max-width: 18em;
+	}
+	
+	#m9a26_1 .col-sm-5 .box1dd1 {
+		background: rgba(225,225,225,.5);
+		box-shadow: -2px 5px 20px rgba(0,0,0,0.2);
+	}
+	
+	#m9a26_1 h3.center {
+		text-align: left;
+	}
+		
+}
+
+
+
+/* IE 10+ on view ports small tablets and smaller */
+@media (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	
+}

@@ -1,0 +1,334 @@
+<template name="m4a10">
+<article class="with-tools-sidebar m4a10">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/GlenCoe');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 10 - {{>m4a10Title}}</div>
+		</header>
+		
+		
+		<section id="m4a10">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a10Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m4a10Intro}}</h3>
+{{> m4a10Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a10_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m4a10_1}}
+		{{>m4a10_2}}
+		{{>m4a10_3}}
+		{{>m4a10_4}}
+		{{>m4a10_4b}}
+		{{>m4a10_5}}
+		{{>m4a10_6}}
+		{{>m4a10_6b}}
+		{{>m4a10_7}}
+		{{>m4a10_8}}
+		{{>m4a10_9}}
+		{{>m4a10_10}}
+		
+
+		{{>EndPage char="k" act="m4a10" nextact="m4a11" place="GlenCoe"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m4a10_1">
+	<section id="m4a10_1" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/2.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">1</div> The old lady <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="c" placeholder="c" autofocus><input type="submit" value="OK"></form></span> in the street.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_10">
+	<section id="m4a10_10" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/1.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">10</div> The footballer <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="b" placeholder="b" autofocus><input type="submit" value="OK"></form></span> his leg in a tackle.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_2">
+	<section id="m4a10_2" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/3.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">2</div> I <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="c" placeholder="c" autofocus><input type="submit" value="OK"></form></span> myself when I was chopping onions.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_3">
+	<section id="m4a10_3" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/4.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">3</div> I <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="w" placeholder="w" autofocus><input type="submit" value="OK"></form></span> up this morning with a temperature.							
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_4">
+	<section id="m4a10_4" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/5.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">4</div> I <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="f" placeholder="f" autofocus><input type="submit" value="OK"></form></span> down some steps and <span class="textentry-disabled" style="width:20%"></span> my ankle.							
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_4b">
+	<section id="m4a10_4b" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img src="/images/module4/injuries/5.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">4</div> I <span class="correctword">fell</span> down some steps and <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="t" placeholder="t" autofocus><input type="submit" value="OK"></form></span> my ankle.							
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_5">
+	<section id="m4a10_5" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/6.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">5</div> I <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="b" placeholder="b" autofocus><input type="submit" value="OK"></form></span> my hand on the cooker.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_6">
+	<section id="m4a10_6" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/7.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">6</div> I had a stomach <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="u" placeholder="u" autofocus><input type="submit" value="OK"></form></span> and was <span class="textentry-disabled" style="width:20%"></span> last night.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_6b">
+	<section id="m4a10_6b" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/7.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">6</div> I had a stomach <span class="correctword">upset</span> and was <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="s" placeholder="s" autofocus><input type="submit" value="OK"></form></span> last night.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_7">
+	<section id="m4a10_7" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/scald.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">7</div> I got <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="s" placeholder="s" autofocus><input type="submit" value="OK"></form></span> with hot water.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_8">
+	<section id="m4a10_8" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/9.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">8</div>  I woke up with a bad <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="h" placeholder="h" autofocus><input type="submit" value="OK"></form></span>.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+
+<template name="m4a10_9">
+	<section id="m4a10_9" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3 class="center">Complete the sentence by typing a word in the space. The first letter is there to help you.</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="ph-w ph-5x4" style="max-width: 145px"><div class="ph"><img draggable="false" src="/images/module4/injuries/10.png" alt="Injury" /></div></div>
+						</div>
+						<div class="col-sm-8">
+							<div class="parapaper linespace2 fold">
+								<div class="number">9</div>  I caught a <span id="entryanswer"><form class="textentry"><input type="text" name="userText" size="8" autocomplete="off" value="c" placeholder="c" autofocus><input type="submit" value="OK"></form></span> from some friends.								
+								{{> rightwrong}} {{> welldone}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{> stuck stuckchar="k"}}{{/if}}
+	</section>
+</template>
+
+

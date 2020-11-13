@@ -1,0 +1,26 @@
+<template name="Yeti_d4_h3">
+	<section id="Yeti_d4_h3" class="hidden">
+		{{#if activeSection}}
+		<div class="journalbg">
+			<div class="content">
+				<div class="gameInfo text-center">
+				  There are six words missing words in this journal entry. For each one, write the missing word and {{>touch yes="tap" no="click"}} ‘OK’. If you get stuck, {{>touch yes="tap" no="click"}} ‘Skip’ to move onto the next one.
+				</div>
+				<div class="yetiText">
+					The route in <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="4"><input type="submit" value="OK"></form></span> of us is getting steeper. I’m nervous <span id="entryanswer1" class="blank"></span> rock climbing but there could be a yeti up there. I’ve <span id="entryanswer2" class="blank"></span>  to get a photo <span id="entryanswer3" class="blank"></span> daylight. We’ll be famous all <span id="entryanswer4" class="blank"></span> the world if we <span id="entryanswer5" class="blank"></span> a good photo.
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-sm-12 text-right">
+							<div id="skip" class="button1 buttonsmall">Skip</div>
+				  		</div>
+					</div>
+					<div class="text-center"><span class="incorrectbig hidden"><i class="fa fa-close"></i></span></div>
+				</div>	
+			</div>
+		</div>
+		{{/if}}
+	</section>
+</template>
+
+	
+	

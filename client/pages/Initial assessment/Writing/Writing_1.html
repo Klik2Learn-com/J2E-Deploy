@@ -1,0 +1,91 @@
+<template name="InitialWriting_1">
+	<section id="InitialWriting_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1 class="writing-title">Writing Tasks (choose one)</h1>
+			<div class="container-fluid">
+				<div class="row qnum-1">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="iconleft"><div class="number">1</div></div>
+						<div class="iconright">
+							<p>You would like to organise a day trip for your friends at work. Write an email to your boss asking him/her for permission to do this. You may include the following but you can add your own ideas.</p>
+							<ul>
+								<li>Where you would like to go</li>
+								<li>Why you would like to organise this</li>
+								<li>Number of employees going</li>
+								<li>Possible date and times</li>
+								<li>Ask if you can use the minibus</li>
+							</ul>	
+						</div>
+					</div>
+					<br>
+					<span class="select-button" style="clear: both; display: block; width: 100%; text-align: center;"><button class="select-question button2" style="font-size: 1.3em;" data-qnum="1">Select question 1</button></span>						
+				</div>
+				{{>blankrow}}
+				<div class="row qnum-2">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="iconleft"><div class="number">2</div></div><div class="iconright"><p>Write an email to your new class mate to tell them about yourself. You may include the following but you can add your own ideas:</p>
+						<ul>
+							<li>Where you come from</li>
+							<li>Your family</li>
+							<li>Where you spent your childhood</li>
+							<li>What countries you would like to visit and why</li>
+							<li>Any plans you have for the future</li>
+						</ul>
+						</div>
+					</div>
+					<br>
+					<span class="select-button" style="clear: both; display: block; width: 100%; text-align: center;"><button class="select-question button2" style="font-size: 1.3em;" data-qnum="2">Select question 2</button></span>
+				</div>
+				{{>blankrow}}
+				<div class="row qnum-3">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="iconleft"><div class="number">3</div></div><div class="iconright"><p>You need to write a personal statement for your university course. You should include the following:</p>
+						<ul>
+							<li>The course you would like to study</li>
+							<li>Why you have chosen this course</li>
+							<li>Why you want to study at this university</li>
+							<li>Personal qualities you would bring to the course</li>
+							<li>Any experience you have of the subject</li>
+						</ul>
+						</div>
+					</div>
+					<br>
+					<span class="select-button" style="clear: both; display: block; width: 100%; text-align: center;"><button class="select-question button2" style="font-size: 1.3em;" data-qnum="3">Select question 3</button></span>
+				</div>
+				{{>blankrow}}
+				<div class="row qnum-4">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="iconleft"><div class="number">4</div></div><div class="iconright"><p>You have just returned from your summer holidays. Write an email telling your friends about this. You may include the following but you can add some of your own ideas:</p>
+						<ul>
+							<li>Where you went</li>
+							<li>Why you went there</li>
+							<li>Who you went with</li>
+							<li>How long you went for</li>
+							<li>What you did there</li>
+						</ul>
+						</div>
+					</div>
+					<br>
+					<span class="select-button" style="clear: both; display: block; width: 100%; text-align: center;"><button class="select-question button2" style="font-size: 1.3em;" data-qnum="4">Select question 4</button></span>
+				</div>
+			</div>
+			<span class="writing-text-area hidden" style="clear: both; display: block;">
+				<br>
+				<hr>
+				<br>
+				<h3>Type your answer in the box. You should write around 150 words.</h3>
+				<div class="text-center" style="max-width: 500px; margin: 0 auto;">
+					<textarea id="answerBox" rows="8" class="textarea-responsive scrollbar" placeholder="Type your answer here..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea><br>
+					<div style="float: right; font-size: 0.9em; {{wordCountStyle}}">Word count: {{wordCountValue}}</div>
+				</div>
+				
+				<div class="assess-finish">
+					<span class="instruction">When you are finished, {{>touch yes="tap" no="click"}} here: </span>{{>finishBtn}}<!-- <a draggable="false" href="/InitialAssessment"> --><button id="assess_finish" class="button1">Submit</button><!-- </a> -->
+				</div>
+			</span>
+		</div>
+	{{/if}}
+	</section>
+</template>
+

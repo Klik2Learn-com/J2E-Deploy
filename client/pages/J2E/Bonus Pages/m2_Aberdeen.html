@@ -1,0 +1,167 @@
+<template name="MoreAboutAberdeen">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Aberdeen"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m2l6}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m2l6}}</div>
+		</header>
+
+		<section id="moreaboutAberdeen">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-5 bonus-image" style="background-image: url('images/bonus/Aberdeen/Aberdeen1.jpg'); background-position: center bottom;" data-toggle="modal" data-target="#bonus_modal_m2l6_A">
+						<p>North Sea Oil</p>
+					</div>
+					<div class="col-sm-5 col-xs-7 bonus-image" style="background-image: url('images/bonus/Aberdeen/Aberdeen2.jpg'); background-position: left;" data-toggle="modal" data-target="#bonus_modal_m2l6_B">
+						<p>Youth Festival</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Aberdeen/Aberdeen3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l6_C">
+						<p>Annie Lennox</p>
+					</div>
+
+					
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Aberdeen/Aberdeen4.jpg');  background-position: left top;" data-toggle="modal" data-target="#bonus_modal_m2l6_D">
+						<p>Whisky</p>
+					</div>
+					<div class="col-sm-5 col-xs-7 bonus-image" style="background-image: url('images/bonus/Aberdeen/Aberdeen5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l6_E">
+						<p>Growth</p>
+					</div>				
+					<div class="col-sm-4 col-xs-5 bonus-image" style="background-image: url('images/bonus/Aberdeen/Aberdeen6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m2l6_F">
+						<p>Wildlife</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l6_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l6_A">North Sea Oil</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Aberdeen/Aberdeen1.jpg" alt="Oil rig" style="max-width: 250px;">
+					</figure>
+					<p>The petroleum industry in Aberdeen began with the discovery of significant oil deposits in the North Sea during the mid-20th century. Aberdeen became the centre of Europe's petroleum industry. With the largest heliport in the world and an important service ship harbour port serving offshore oil rigs, Aberdeen is often called the "Oil Capital of Europe". The number of jobs created by the energy industry in and around Aberdeen has been estimated at half a million.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.sath.org.uk/edscot/www.educationscotland.gov.uk/scotlandshistory/20thand21stcenturies/northseaoil/index.html" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l6_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l6_B">Youth Festival</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Aberdeen/Aberdeen2.jpg" alt="Microphone" style="max-width: 250px;">
+					</figure>
+					<p>Aberdeen International Youth Festival is a Festival of Youth Arts, and one of Scotland's major international cultural events. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.aberdeeninternationalyouthfestival40th.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l6_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l6_C">Annie Lennox</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Aberdeen/Aberdeen3.jpg" alt="Annie Lennox" style="max-width: 250px;">
+					</figure>
+					<p>Aberdeen is the birthplace of Scottish singer-songwriter Annie Lennox, known for her solo career as well as being part of the music duo <a draggable="false" href="https://en.wikipedia.org/wiki/Eurythmics">Eurythmics</a>.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=qeMFqkcPYcg" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l6_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l6_D">Whisky</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Aberdeen/Aberdeen4.jpg" alt="Whisky" style="max-width: 250px;">
+					</figure>
+					<p>Aberdeen is home to many of Scotland's Whisky distilleries, some of them being the oldest in Scotland. Visitors can get tours and take part in whisky tastings.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.visitabdn.com/attractions-and-activities/whisky-distilleries-in-aberdeenshire/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l6_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l6_E">Growth</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Aberdeen/Aberdeen5.jpg" alt="Economy" style="max-width: 250px;">
+					</figure>
+					<p>Aberdeen recently ranked second place on the 'Top 10 cities on Good Growth Index' and has been described as one of the best places to live and work in the UK.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/news/uk-scotland-12261716" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m2l6_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m2l6_F">Wildlife</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Aberdeen/Aberdeen6.jpg" alt="Eagle" style="max-width: 250px;">
+					</figure>
+					<p>Aberdeen &amp; Aberdeenshire has several nature reserves, home to deer, mountain hares, grouse, red squirrels, golden eagles and more.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.snh.gov.uk/docs/A883027.pdf" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

@@ -1,0 +1,298 @@
+<template name="m5a16">
+<article class="with-tools-sidebar m5a16">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Manchester');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 16 - {{>m5a16Title}}</div>
+		</header>
+		
+		
+		<section id="m5a16">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a16Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m5a16Intro}}</h3>
+{{> m5a16Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a16_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a16_1}}
+		{{>m5a16_2}}
+		{{>m5a16_4}}
+		{{>m5a16_5}}
+		{{>m5a16_6}}
+		{{>m5a16_7}}
+		{{>m5a16_8}}
+		{{>m5a16_9}}
+
+		{{>EndPage char="k" act="m5a16" nextact="m5a17" place="Manchester"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m5a16_1">
+	<section id="m5a16_1" class="hidden">
+		<div class="content">
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 3 looked at the Modal Verbs ‘Can’, ‘Could’ and ‘Might’ to express <b>probability</b> or <b>possibility</b>.</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 4 looked at the Modal Verbs ‘Ought to’, ‘Need to’ and ‘Should’ to express <b>obligations</b> or <b>necessity</b>.</h4>
+						</div>
+					</div>
+				</div>	
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>This module looks at the Modal Verbs ‘Would’ and ‘Will’ to express <b>desire</b> or <b>willingness</b> or <b>intention</b>.</h4>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m1a1" nexturl="#m5a16_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a16_2">
+	<section id="m5a16_2" class="hidden">
+		<div class="content">
+			{{> dictionary_page
+				word1="adulation"
+				word2="abuse"
+				word3="worthy"
+				word4="chop"
+				word5="dub"
+				word6="overcome"
+				word7="meagre"
+				word8="diabetes"
+				word9="wholesome"
+				word10c="hidden"
+				word11c="hidden"
+				word12c="hidden"
+			}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_1" nexturl="#m5a16_3" prev="" next=""}}
+		</footer>
+	</section>
+	<section id="m5a16_3" class="hidden">
+		<div class="content">
+			{{>complex_words}}
+			<div class="center">
+				<div class="parapaper paradic fold">
+					<ul class="dicwords">
+						<li>to buckle: to give up because of stress</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_2" nexturl="#m5a16_4" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a16_4">
+	<section id="m5a16_4" class="hidden">
+	{{#if activeSection}}{{> popovers}}
+		<div class="content">
+			<h3 class="text-center">Read these short articles about celebrities who are regarded as good <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="A role model is a person who sets a good example for others to follow.">role models</a>.</h3>
+			
+			<div class="parapaper paraextract article-text">
+				<div class="article-header">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a16/intro.m4a"></button>
+					<h4>Top 10 Celebrity Role Models</h4>
+				</div>
+				
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-3x2 shadow" style="width: 220px"><div class="ph"><img draggable="false" src="images/module5/a16/mag.jpg" alt="Current events magazine"></div></div>
+				</figure>
+				
+				<p>Celebrities sometimes look as if they’re just having fun, enjoying expensive lifestyles and the adulation of their fans.  But not all of them abuse their status.  Many stars are worthy idols, and contribute a lot to charity work. <i>Kidzworld</i> lists the top 5 celebrity role models.</p>
+				
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_3" nexturl="#m5a16_5" prev="" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+<template name="m5a16_5">
+	<section id="m5a16_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the Modal verbs in the article.</h3>
+
+			<div class="parapaper paraclick">
+
+				<h2><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a16/Justin_Bieber.m4a"></button>Justin Bieber</h2>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-3x2 shadow" style="width: 220px"><div class="ph"><img draggable="false" src="images/module5/a16/Justin_Bieber.jpg" alt="Justin Bieber"></div></div>
+				</figure>
+				<p>
+					<span class="wrong">Unlike some, singer-songwriter Justin Bieber doesn’t spend all his time having fun. He</span><span class="paraclick-word"> would </span><span class="wrong">rather spend time with adoring fans or sick children and give them a day to remember. He also supports many charities.</span>
+				</p>
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+			<div class="counterleft">Modal verbs to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_4" nexturl="#m5a16_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a16_6">
+	<section id="m5a16_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the Modal verbs in the article.</h3>
+
+			<div class="parapaper paraclick">
+
+				<h2><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a16/Dakota_Fanning.m4a"></button>Dakota Fanning</h2>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-3x2 shadow" style="width: 220px"><div class="ph"><img draggable="false" src="images/module5/a16/Dakota_Fanning.jpg" alt="Dakota Fanning"></div></div>
+				</figure>
+				<p>
+					<span class="wrong">In 2001, Dakota Fanning became the youngest person ever to be nominated for a Screen Actors Guild Award. She was 7-years-old. Now, the 18-year-old beauty has become a role model.  Even as a busy actress, she graduated from her high school and says she</span><span class="paraclick-word"> will </span><span class="wrong">now study at New York University.</span>
+				</p>
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+			<div class="counterleft">Modal verbs to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_5" nexturl="#m5a16_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a16_7">
+	<section id="m5a16_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the Modal verbs in the article.</h3>
+
+			<div class="parapaper paraclick">
+
+				<h2><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a16/Emma_Watson.m4a"></button>Emma Watson</h2>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-3x2 shadow" style="width: 220px"><div class="ph"><img draggable="false" src="images/module5/a16/Emma_Watson.jpg" alt="Emma Watson"></div></div>
+				</figure>
+				<p>
+					<span class="wrong">After all the fame and fortune that came with being part of Harry Potter, you</span><span class="paraclick-word"> would </span><span class="wrong">think Emma Watson</span><span class="paraclick-word"> would </span><span class="wrong">have buckled under the pressure of her star status. Instead, she used her earnings to return to university. She also did something few female celebrities do - she chopped off her hair. This brave and confident girl is definitely a role model.</span>
+				</p>
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+			<div class="counterleft">Modal verbs to find: <u id="startClock1">2</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_6" nexturl="#m5a16_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a16_8">
+	<section id="m5a16_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the Modal verbs in the article.</h3>
+
+			<div class="parapaper paraclick">
+
+				<h2><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a16/Jennifer_Lawrence.m4a"></button>Jennifer Lawrence</h2>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-3x2 shadow" style="width: 220px"><div class="ph"><img draggable="false" src="images/module5/a16/Jennifer_Lawrence.jpg" alt="Jennifer Lawrence"></div></div>
+				</figure>
+				<p>
+					<span class="wrong">Since landing a role in The Hunger Games, Jennifer Lawrence has been dubbed a role model. While many people have called Jennifer fat, she fights against the pressure to be too thin. She’s a normal, healthy weight and</span><span class="paraclick-word"> wouldn't </span><span class="wrong">want to be any different.</span>
+				</p>
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+			<div class="counterleft">Modal verbs to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_7" nexturl="#m5a16_9" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a16_9">
+	<section id="m5a16_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">	
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the Modal verbs in the article.</h3>
+
+			<div class="parapaper paraclick">
+
+				<h2><button class="buttonround buttonaudio" data-audiosrc="/audio/module5/a16/Jonas_Brothers.m4a"></button>The Jonas Brothers</h2>
+				<figure class="image imgright-responsive">
+					<div class="ph-w ph-3x2 shadow" style="width: 220px"><div class="ph"><img draggable="false" src="images/module5/a16/Jonas_Brothers.jpg" alt="The Jonas Brothers"></div></div>
+				</figure>
+				<p>
+					<span class="wrong">The Jonas Brothers have overcome a lot. They lived quite meagrely until they hit the big time. And even though Nick has diabetes, he</span><span class="paraclick-word"> won't </span><span class="wrong">let that get in the way of his dreams. They’re a band with wholesome values and have started their own foundation - Change for the Children.</span>
+				</p>
+				<!-- fixes image floats -->
+				<div class="parent_expander"></div>
+			</div>
+			<div class="counterleft">Modal verbs to find: <u id="startClock1">1</u></div>
+			<div class="clearfix"></div>
+
+			{{>rightwrong}}{{> welldone}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a16_8" nexturl="#m5a16_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="k"}}
+		{{/if}}
+	</section>
+</template>

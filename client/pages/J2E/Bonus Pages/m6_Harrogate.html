@@ -1,0 +1,148 @@
+<template name="MoreAboutHarrogate">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Harrogate"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m6l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m6l5}}</div>
+		</header>
+
+		<section id="moreaboutHarrogate">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Harrogate/Harrogate1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l5_A">
+						<p>Turkish Baths & Health Spa</p>
+					</div>
+					<div class="col-sm-4 col-xs-12 bonus-image" style="background-image: url('images/bonus/Harrogate/Harrogate3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l5_C">
+						<p>Flower Show</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Harrogate/Harrogate4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l5_D">
+						<p>Fountains Abbey and Studley Royal Water Garden</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Harrogate/Harrogate5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l5_E">
+						<p>Hackfall</p>
+					</div>				
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Harrogate/Harrogate6.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l5_F">
+						<p>Harrogate Theatre</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l5_A">Turkish Baths & Health Spa</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Harrogate/Harrogate1.jpg" alt="Turkish Baths & Health Spa" style="max-width: 250px;">
+					</figure>
+					<p>The Royal Turkish baths in Harrogate first opened at the end of the 19th century. It is one of only seven Turkish baths still in existence. Many wealthy people from Europe came to ‘the English spa’ In those days, there were doctors to advise on special treatments. Now, you can  experience a more hot/cold routine. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.turkishbathsharrogate.co.uk/Pages/home.aspx" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l5_C">Flower Show</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Harrogate/Harrogate3.jpg" alt="Flower Show" style="max-width: 250px;">
+					</figure>
+					<p>Britain’s top gardening event takes place in Harrogate at the end of April. The Spring flower show is not just about gardens. There are fashion and exhibitions too with some of the UK’s famous designers showing their latest styles. For keen gardeners, there are talks and demonstrations by experts.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.flowershow.org.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l5_D">Fountains Abbey and Studley Royal Water Garden</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Harrogate/Harrogate4.jpg" alt="Fountains Abbey and Studley Royal Water Garden" style="max-width: 250px;">
+					</figure>
+					<p>Fountains Abbey is one of the most spectacular ruins in the UK of a 12th century monastery. It stands in a large area of beautiful parkland and is now a World Heritage Site. The Royal Water Garden is a fine example of an 18th century water park with lakes, canals, temples and waterfalls.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.nationaltrust.org.uk/fountains-abbey-and-studley-royal-water-garden" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l5_E">Hackfall</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Harrogate/Harrogate5.jpg" alt="Hackfall" style="max-width: 250px;">
+					</figure>
+					<p>Hackfall is an ancient wood which has been restored by the woodland trust. It is a great place for a walk and has some surprises such as caves, waterfalls, fountains  and temples. In spring the woodland is covered in bluebells.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.woodlandtrust.org.uk/visiting-woods/wood/4375/hackfall/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l5_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l5_F">Harrogate Theatre</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Harrogate/Harrogate6.jpg" alt="Harrogate Theatre" style="max-width: 250px;">
+					</figure>
+					<p>Harrogate theatre has been in business for over 100 years. It has a large space which can seat 500 people and small studio for which only holds 70 people. In 2009 it was completely refurbished and restored to its original state. Many famous actors have played there over the years, including Charlie Chaplin.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.harrogatetheatre.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

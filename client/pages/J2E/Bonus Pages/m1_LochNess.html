@@ -1,0 +1,146 @@
+<template name="MoreAboutLochNess">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="LochNess"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m1l2}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m1l2}}</div>
+		</header>
+
+		<section id="moreaboutLochNess">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-xs-5 bonus-image" style="background-image: url('images/bonus/LochNess/LochNess2.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l2_B">
+						<p>Urquhart Castle</p>
+					</div>
+					<div class="col-xs-7 bonus-image" style="background-image: url('images/bonus/LochNess/LochNess4.jpg'); background-position: right top;" data-toggle="modal" data-target="#bonus_modal_m1l2_D">
+						<p>Loch Ness Monster</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-4 col-xs-6 bonus-image" style="background-image: url('images/bonus/LochNess/LochNess5.jpg');" data-toggle="modal" data-target="#bonus_modal_m1l2_E">
+						<p>Wolves</p>
+					</div>
+					<div class="col-sm-5 col-xs-6 bonus-image" style="background-image: url('images/bonus/LochNess/LochNess1.jpg');" data-toggle="modal" data-target="#bonus_modal_m1l2_A">
+						<p>Great Glen Canoe Trail</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-color: #fff; background-image: url('images/bonus/LochNess/LochNess3.jpg'); background-position: center; background-size: contain;" data-toggle="modal" data-target="#bonus_modal_m1l2_C">
+						<p>Year of Natural Scotland</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l2_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l2_A">Great Glen Canoe Trail</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochNess/LochNess1.jpg" alt="Canoe" style="max-width: 250px;">
+					</figure>
+					<p>Great Glen Canoe Trail offers visitors a chance to travel across parts of Scotland in a canoe. It is 60 miles long and runs from Inverness to Fort William, crossing the entire length of Loch Ness. It can take 3-5 days to complete, and offers the chance to see some amazing Scottish scenery.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=5WBPpIrXTWs" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l2_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l2_B">Urquhart Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochNess/LochNess2.jpg" alt="Urquhart Castle" style="max-width: 250px;">
+					</figure>
+					<p>The ruins of Urquhart Castle sit beside Loch Ness. It is one of the biggest castles in Scotland. It was built between the 13th and 16th centuries on the site of a medieval fort, and played a role in the Wars of Scottish Independence in the 14th century. Today it is one of the most visited castles in Scotland.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.urquhart-castle.co.uk" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l2_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l2_C">Year of Natural Scotland</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochNess/LochNess3.jpg" alt="Natural Scotland" style="max-width: 250px;">
+					</figure>
+					<p>Scotland is well known for its beautiful scenery, wildlife and unique heritage. The Year of Natural Scotland, 2013, was a celebration of Scotland’s natural resources.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.youtube.com/watch?v=xquV3vaedfo" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l2_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l2_D">Loch Ness Monster</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochNess/LochNess4.jpg" alt="Loch Ness Monster" style="max-width: 250px;">
+					</figure>
+					<p>The Loch Ness Monster, commonly known as "Nessie", is a mythical animal said to live in the waters of Loch Ness. Some people claim to have photographed the monster, but there is little evidence it actually exists. Many believers think it may be similar to creatures that lived around the time of the dinosaurs.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.scotland.org/features/scottish-myths-folklore-and-legends/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l2_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l2_E">Wolves</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochNess/LochNess5.jpg" alt="Wolf" style="max-width: 250px;">
+					</figure>
+					<p>A long time ago wolves were common in the UK, but by 1680 they were wiped out through deforestation and hunting. There are now charity groups trying to reintroduce wolves to parts of Scotland.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.wolvesandhumans.org/wolves/wolf_reintroduction_to_scotland.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

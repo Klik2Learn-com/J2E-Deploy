@@ -1,0 +1,19 @@
+<template name="Yeti_map2">
+	<section id="Yeti_map2" class="hidden" style="background: none;">
+		<div class="">
+			<img draggable="false" src="../Yeti/map2.jpg" width="823" height="540" usemap="#Map2">
+            <map name="Map2" class="yetimap">
+              <area id="d2_e1" shape="poly" coords="348,458,319,425,237,387,270,338,195,222,252,156,525,193,637,146,630,127,525,116,252,69,132,95,95,209,195,339,173,414,294,471,335,475">
+              <area id="d2_h1" shape="poly" coords="350,444,369,464,417,401,531,413,665,257,690,185,665,145,648,149,579,214,576,253,513,332,400,321,339,362">
+            </map>
+            <div class="map gameInfo text-center">
+ {{>touch yes="Tap" no="Click"}} the route you want to take. The first route is easier and avoids a dangerous crevasse, but will take longer. The second route crosses the crevasse so it is quicker, but more difficult.
+</div>
+	  </div>
+		<footer>
+			<!-- {{>game_footer_nav nexturl="#Yeti_map3" prevurl="#Yeti_map1" prev="" next=""}} -->
+		</footer>
+	</section>
+</template>
+	
+	

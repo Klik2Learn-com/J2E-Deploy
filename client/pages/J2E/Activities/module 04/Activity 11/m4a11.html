@@ -1,0 +1,97 @@
+<template name="m4a11">
+<article class="with-tools-sidebar m4a11">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Crianlarich');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 4</div> <div class="acttitle-title">{{> activity}} 11 - {{>m4a11Title}}</div>
+		</header>
+		
+		
+		<section id="m4a11">
+			<div class="content">
+<h1 class="start-page-header">{{> m4a11Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m4a11Intro}}</h3>
+{{> m4a11Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m4a11_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m4a11_1}}
+
+		{{>EndPage char="tu" act="m4a11" nextact="m4a12" place="Crianlarich"}}
+
+		
+	</div>
+</article>
+
+</template>
+<template name="m4a11_1">
+	<section id="m4a11_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h3>Listen to someone reporting a problem then {{>touch yes="tap" no="click"}} on the illustration that matches it.</h3>
+			
+			<div class="text-center">
+				<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module4/a11/report1.m4a"></button>
+				<div class="caption" id="report">Report 1</div>
+			</div>
+			<br>
+			<div class="snapshots snapshots-links">
+				<figure class="m4a11-pic" id="1">
+					<div class="number">1</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/1.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="2">
+					<div class="number">2</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/2.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="3">
+					<div class="number">3</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/3.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="4">
+					<div class="number">4</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/4.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="5">
+					<div class="number">5</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/5.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="6">
+					<div class="number">6</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/6.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="7">
+					<div class="number">7</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/7.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="8">
+					<div class="number">8</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/8.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="9">
+					<div class="number">9</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/9.png" alt="Injury"></div></div>
+				</figure>
+				<figure class="m4a11-pic" id="10">
+					<div class="number">10</div>
+					<div class="ph-w ph-5x4"><div class="ph"><img draggable="false" src="images/module4/injuries/10.png" alt="Injury"></div></div>
+				</figure>
+			</div>
+			
+			{{>rightwrong}} {{> welldone}}
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a11" nexturl="#m4a11_2" prev="hidden" next="hidden"}}
+		</footer>
+	{{/if}}
+	</section>
+</template>

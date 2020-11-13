@@ -1,0 +1,111 @@
+
+<template name="adminNav">
+	{{#if isStudent}}
+	{{else}}
+	<a draggable="false" href="#" class="back-link"><i class="titlereturn fa fa-arrow-left"></i></a>
+	{{#if isAdmin}}
+	<div class="dropdown admin-nav-wrapper">
+	  	<button class="dropdown-button dropdown-toggle" type="button" data-toggle="dropdown" style="white-space: nowrap;" id="myModalLabel">
+				<!-- {{#if isAdmin}} -->Admin<!-- {{/if}} -->
+				<!-- {{#if isMod}}Moderator{{/if}}
+				{{#if isTutor}}Tutor{{/if}} -->
+				<!-- {{#if isStudent}}Student{{/if}} Tasks -->
+				<span class="caret-fa"></span></button>
+		<ul class="dropdown-menu titlemenu-dropdown-menu">
+			{{>adminNavItems}}
+		</ul>
+	</div>
+	{{/if}}
+	<div class="clear-float"></div>
+	{{/if}}
+</template>
+
+<template name="adminNavItems">
+	{{#if isStudent}}
+
+	{{else}}
+		{{#if isAdmin}}
+			<li class="hide-admin-home"><a draggable="false" href="/admin" class="admin-nav"><i class="fa icon-user-admin"></i> <span>Admin home</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> <span>Assessment list</span>
+			{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}
+			</a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>Users</span></a></li>
+			<li><a draggable="false" href="/admin/addnewuser" class="admin-nav"><i class="fa fa-user-plus"></i> <span>Add users</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>Groups</span></a></li>
+			<li><a draggable="false" href="/admin/groupcreator" class="admin-nav"><i class="fa icon-group-plus"></i> <span>Add group</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/subgroupcreator" class="admin-nav"><i class="fa icon-sub-group-plus"></i> <span>Create<br>sub-group</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/viewOrg" class="admin-nav"><i class="fa icon-building"></i> <span>Organisations</span></a></li>
+			<li><a draggable="false" href="/admin/orgcreator" class="admin-nav"><i class="fa icon-building-plus"></i> <span>Add organisation</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/addVoucher" class="admin-nav"><i class="fa icon-voucher-plus"></i> <span>Add voucher</span></a></li>
+			<li><a draggable="false" href="/admin/voucherList" class="admin-nav"><i class="fa icon-voucher-list"></i> <span>Voucher list</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/contactFormList" class="admin-nav"><i class="fa fa-inbox"></i> <span>Contact form list</span>
+				{{#if unmarkedCountContactForm}}<div class="notification">{{unmarkedCountContactForm}}</div>{{/if}}
+			</a></li>
+			<li><a draggable="false" href="/admin/bugReportsList" class="admin-nav"><i class="fa fa-bug"></i> <span>Bug reports</span>
+				{{#if unmarkedCountBug}}<div class="notification">{{unmarkedCountBug}}</div>{{/if}}
+			</a></li>
+			<li><a draggable="false" href="/admin/feedbackList" class="admin-nav"><i class="fa fa-comment-alt"></i> <span>User feedback</span></a></li>
+
+			<!-- TEMPORARY BUTTON FOR TESTING SCORM STUFF, REMOVE WHEN DONE -->
+			<!-- <li><a draggable="false" href="/scormFrame" class="admin-nav"><i class="fa fa-wrench"></i> <span>Test Page</span> -->
+			<!-- </a></li> -->
+			<!-- TEMPORARY BUTTON FOR TESTING SCORM STUFF, REMOVE WHEN DONE -->
+
+
+			<li class="divider"></li>
+			<li class="hide-admin-home"><a draggable="false" href="../"><i class="fa fa-home"></i> <span>Return to course</span></a></li>
+		{{/if}}
+		
+		<!-- {{#if isMod}} -->
+			<!-- <li class="hide-admin-home"><a draggable="false" href="/admin" class="admin-nav"><i class="fa fa-home"></i> <span>Moderator Home</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>User List</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> <span>Assessment List</span>
+			{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}
+			</a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>View Groups</span></a></li>
+			<li><a draggable="false" href="/admin/groupcreator" class="admin-nav"><i class="fa icon-group-plus"></i> <span>Add Group</span></a></li>
+			<li><a draggable="false" href="/admin/updates" class="admin-nav"><i class="fa fa-bullhorn"></i>Announcements</a></li>
+			<li class="divider"></li>
+			<li class="hide-admin-home"><a draggable="false" href="../"><i class="fa fa-arrow-left"></i> <span>Return to course</span></a></li> -->
+		<!-- {{/if}} -->
+		<!-- {{#if isTutor}} -->
+			<!-- <li class="hide-admin-home"><a draggable="false" href="/admin" class="admin-nav"><i class="fa fa-home"></i> <span>Tutor Home</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>User List</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> <span>Assessment List</span>
+			{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}
+			</a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>My Groups</span></a></li>
+			<li><a draggable="false" href="/admin/updates" class="admin-nav"><i class="fa fa-bullhorn"></i>Announcements</a></li>
+			<li class="divider"></li>
+			<li class="hide-admin-home"><a draggable="false" href="../"><i class="fa fa-arrow-left"></i> <span>Return to course</span></a></li> -->
+		<!-- {{/if}} -->
+		<!-- {{#if isStudent}}
+			<li class="hide-admin-home"><a draggable="false" href="/admin" class="admin-nav"><i class="fa fa-home"></i> <span>Student Home</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/userlist" class="admin-nav"><i class="fa fa-user"></i> <span>User List</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/assessmentlist" class="admin-nav"><i class="fa icon-assess-list"></i> <span>Assessment List</span>
+			{{#if unmarkedCount}}<div class="notification">{{unmarkedCount}}</div>{{/if}}
+			</a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/viewGroups" class="admin-nav"><i class="fa icon-group"></i> <span>My Group</span></a></li>
+			<li class="divider"></li>
+			<li><a draggable="false" href="/admin/viewOrg" class="admin-nav"><i class="fa icon-building"></i> <span>My Organisation</span></a></li>
+			<li class="divider"></li>
+			<li class="hide-admin-home"><a draggable="false" href="../"><i class="fa fa-arrow-left"></i> <span>Return to course</span></a></li>
+		{{/if}} -->
+	{{/if}}
+</template>

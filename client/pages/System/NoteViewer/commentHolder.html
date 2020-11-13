@@ -1,0 +1,11 @@
+<template name="commentHolder">
+ 	{{#if isTutorNote}}		
+		<div class="notebook-comment tutor shadow" data-identifier="{{this._id}}">
+		  <div class="note-content">
+			 <p style="white-space: pre-wrap; word-wrap: break-word;">{{{this.comment}}}</p>
+		  </div>
+		</div>
+   	{{else}}
+   		{{> studentCommentHolder}}
+   	{{/if}}
+</template>

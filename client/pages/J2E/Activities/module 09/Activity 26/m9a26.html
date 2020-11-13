@@ -1,0 +1,82 @@
+<template name="m9a26"> 
+<article class="with-tools-sidebar m9a26">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/StAustell');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 26 - {{> m9a26Title}}</div>
+		</header>
+		<section id="m9a26">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a26Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a26Intro}}</h3>
+				{{> m9a26Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a26_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a26_1}}
+		{{>m9a26_2}}
+		{{>EndPage char="tu" act="m9a26" nextact="m9a27" place="StAustell"}}
+	</div>
+</article>
+</template>
+<template name="m9a26_1"> 
+	<section id="m9a26_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">Drag these meanings to the right sentences.</h3>
+			
+			<div class="container-fluid-no-gutter">
+				<div class="row">
+					<div class="col-md-8 col-sm-7">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}}
+							{{> welldone}}
+							<ol class="olcircle">
+								<li>He’s taking after his father and training to be a chef. <br><div class="ddseatedtarget ddwidth14 dd2lines" data-destinationid = "target1">&nbsp;</div></li>
+								<li>The boss asked him to take back the personal remark he’d made about his colleague’s weight. <br><div class="ddseatedtarget ddwidth14 dd2lines" data-destinationid = "target2">&nbsp;</div></li>
+								<li>Don’t be taken in by someone’s CV– they can be deceptive. <br><div class="ddseatedtarget ddwidth14 dd2lines" data-destinationid = "target3">&nbsp;</div></li>
+								<li>His career took off when he moved to Australia. <br><div class="ddseatedtarget ddwidth14 dd2lines" data-destinationid = "target4">&nbsp;</div></li>
+								<li>The job takes up so much of his time he hardly sees his family. <br><div class="ddseatedtarget ddwidth14 dd2lines" data-destinationid = "target5">&nbsp;</div></li>						
+							</ol>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-5">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1" style="margin-top: 0;">
+								<div class="ddseat ddwidth14 dd1line2high"><div class="ddsourceseated ddwidth14 dd1line2high shadow" draggable="false" data-destination="target5">To occupy/fill</div></div>
+								<div class="ddseat ddwidth14 dd1line2high"><div class="ddsourceseated ddwidth14 dd1line2high shadow" draggable="false" data-destination="target4">To become successful</div></div>
+								<div class="ddseat ddwidth14 dd2lines"><div class="ddsourceseated ddwidth14 dd2lines shadow" draggable="false" data-destination="target2">To withdraw a remark/<wbr>admit wrongdoing</div></div>
+								<div class="ddseat ddwidth14 dd2lines"><div class="ddsourceseated ddwidth14 dd2lines shadow" draggable="false" data-destination="target1">To be like/resemble someone else </div></div>
+								<div class="ddseat ddwidth14 dd2lines"><div class="ddsourceseated ddwidth14 dd2lines shadow" draggable="false" data-destination="target3">To be deceived/fooled by someone</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a26" nexturl="#m9a26_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m9a26_2"> 
+	<section id="m9a26_2" class="hidden"> 
+		<div class="content">  
+      			{{> Tu_saved module="9"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m9a26_1" nexturl="#m9a26_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>

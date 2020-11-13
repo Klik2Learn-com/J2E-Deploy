@@ -1,0 +1,322 @@
+<template name="loginHeader">
+		{{#if currentUser}}
+			{{else}}
+				<header>
+					<a draggable="false" href="/">
+						<img draggable="false" src="/landing/logo-klik2learn.png" alt="Klik2learn">
+						<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+					</a>
+					<span class="desktop-nav">
+						{{>SignUpSignIn}}
+					</span>
+					
+					<div class="dropdown mobile-nav">
+					  <button type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+						<div class="dropdown-menu dropdown-menu-right">
+							{{>SignUpSignIn}}						
+						</div>
+					</div>
+					
+				</header>
+		{{/if}}
+</template>
+
+
+<template name="bespokeLoginHeader">
+		{{#if currentUser}}
+		{{else}}
+				<header>
+					<img draggable="false" src="{{logoSrc}}" alt="{{logoAlt}}" class="custom-logo" style="{{style}}">
+					<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+					 <!-- <span class="desktop-nav">
+						<ul class="login-menu">
+							<a href="#" class="call-login-box"><li>Sign in</li></a>
+						</ul>
+					</span> -->
+					
+				</header>
+		{{/if}}
+</template>
+
+
+<template name="loginHeaderB2B">
+		{{#if currentUser}}
+			{{else}}
+				<header>
+					<a draggable="false" href="/">
+						<img draggable="false" src="/landing/logo-klik2learn.png" alt="Klik2learn">
+						<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+					</a>
+					<span class="desktop-nav">
+						{{>SignUpSignInB2B}}
+					</span>
+					
+					<div class="dropdown mobile-nav">
+					  <button type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+						<div class="dropdown-menu dropdown-menu-right">
+							{{>SignUpSignInB2B}}						
+						</div>
+					</div>
+					
+				</header>
+		{{/if}}
+</template>
+
+
+<template name="loginHeaderWelcome">
+		{{#if currentUser}}
+			{{else}}
+				<header>
+					<a draggable="false" href="/">
+						<img draggable="false" src="/landing/logo-klik2learn.png" alt="Klik2learn">
+						<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+					</a>
+					<span class="desktop-nav">
+						{{>accessOrSignIn}}
+					</span>
+					
+					<div class="dropdown mobile-nav">
+					  <button type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+						<div class="dropdown-menu dropdown-menu-right">
+							{{>accessOrSignIn}}						
+						</div>
+					</div>
+					
+				</header>
+		{{/if}}
+</template>
+
+
+<template name="loginHeaderWelcome2">
+		{{#if currentUser}}
+			{{else}}
+				<header>
+					<a draggable="false" href="/">
+						<img class="custom-logo" draggable="false" src="/landing/logo-klik2learn.png" alt="Klik2learn">
+						<img draggable="false" src="/landing/logo-journey.png" class="banner" alt="Journey 2 English">
+					</a>
+					<span class="desktop-nav">
+						{{>homeOrSignIn}} 
+					</span>
+					
+					<div class="dropdown mobile-nav">
+					  <button type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+						<div class="dropdown-menu dropdown-menu-right">
+							{{>homeOrSignIn}}						
+						</div>
+					</div>
+					
+				</header>
+		{{/if}}
+</template>
+
+
+
+<template name="loginFooter">
+	<img src="/landing/landing-footer.png" draggable="false" class="footer-scene">
+	<div>
+		{{>LandingFooter1}}
+	</div>
+</template>
+
+<template name="bespokeLoginFooter">
+	<img src="/landing/landing-footer.png" draggable="false" class="footer-scene">
+	<div>
+		{{>LandingFooter3}}
+	</div>
+</template>
+
+
+
+<template name="loginBox">
+	<div id="login-box" class="fadeIn animated hidden">
+		<div class="dialogue shadow fadeInDown animated">
+			<a data-target="close"><i class="fa fa-times"></i></a>
+			<form id="login-form" method="post" action="action">
+				<p>Sign in using your username or email address</p>
+				<fieldset class="loginfield">
+					<input type="text" id="login-email" class="form-control"  placeholder="User name/email" autocorrect="off" autocapitalize="off"/>
+					<br>
+					<input type="password" class="form-control"  id="login-password" placeholder="Password"/>
+					<br>
+					<span class="hidden" id="sign-in-spinner"><i class="fa fa-spinner fa-spin" style="font-size: 1.52em;"></i> Signing in...</span>
+					<input type="submit" class="button2 no-border buttonsmall" id="login-button" value="Sign In"/><br>
+					<br>
+					<div id="loginerror" class="log-reg-error"></div>
+				</fieldset>
+				<!--<p class="center"><a draggable="false" href="#registerPage" class="pagination">Don't have an account? Register here <i class="fa fa-caret-right"></i></a></p>
+				<p class="center"><a draggable="false" href="#">Forgot your password?</a></p>-->
+				<a draggable="false" id="reset-form-show-button">Forgot/reset password</a>
+			</form>
+			{{> ForgotPassword}}
+		</div>
+	</div>
+</template>
+
+
+
+<template name="StartJourney">
+	<button class="join call-to-action pricing" href="#pricing">Start Now <i class="fa fa-chevron-down"></i></button>
+</template>
+
+
+
+<template name="SignUpSignIn">
+	<ul class="login-menu">
+		<a href="/commercial" draggable="false"><li>Commercial opportunities</li></a>
+		<a href="#" data-href="#pricing" class="pricing"><li>New account</li></a>
+		<a href="#" class="call-login-box"><li>Sign in</li></a>
+	</ul>
+	<!-- <button class="join" data-href="#pricing"><i class="far fa-edit"></i> New Account</button>
+	<button class="call-login-box"><i class="fa fa-sign-in-alt"></i> Sign in</button> -->
+</template>
+
+<template name="SignUpSignInB2B">
+	<ul class="login-menu">
+		<a href="/" draggable="false"><li>For individuals</li></a>
+		<a href="#" class="call-login-box"><li>Sign in</li></a>
+	</ul>
+	<!-- <button class="join" data-href="#pricing"><i class="far fa-edit"></i> New Account</button>
+	<button class="call-login-box"><i class="fa fa-sign-in-alt"></i> Sign in</button> -->
+</template>
+
+<template name="accessOrSignIn">
+	<ul class="login-menu login-menu2">
+		<a href="/find-out-more" draggable="false"><li><i class="fa fa-chevron-circle-right"></i> Find out more</li></a><a href="/signup" draggable="false"><li><i class="fa fa-user-plus"></i> New account</li></a><a href="#" class="call-login-box"><li><i class="fa fa-sign-in-alt"></i> Sign in</li></a>
+	</ul>
+	<!-- <button class="join" data-href="#pricing"><i class="far fa-edit"></i> New Account</button>
+	<button class="call-login-box"><i class="fa fa-sign-in-alt"></i> Sign in</button> -->
+</template>
+
+<template name="homeOrSignIn">
+	<ul class="login-menu login-menu2">
+		<a href="/" draggable="false"><li><i class="fa fa-home"></i> Home</li></a><a href="#" class="call-login-box"><li><i class="fa fa-sign-in-alt"></i> Sign in</li></a>
+	</ul>
+</template>
+
+
+
+<template name="ForgotPassword">
+	<div id="forgot-password-container" class="hidden">
+		<p>Enter the email address you use to sign in and {{>touch yes="tap" no="click"}} 'Reset password'. You will receive an email with instructions on how to reset your password. If you do not see the email, please check your spam/junk email folder.</p>
+	    <form action="/forgot" id="forgot-password-form" method="post"><br>
+	      <input id="forgotPasswordEmail" class="form-control"  type="text" name="email" placeholder="Email Address"><br>
+	      <input type="submit" class="btn-submit button2 buttonsmall no-border" value="Reset password"/>
+	      <div class="forgot-password-error"></div>
+	    </form>
+		<p>&nbsp;</p>
+		<a draggable="false" id="reset-cancel">Cancel</a>
+    </div>
+</template>
+
+
+
+<template name="screenshots_b2c">
+			<p class="text-center"><i class="fa fa-arrows-alt-h"></i> Swipe to see more</p>
+				<div class="screenshots">
+					<div class="item">						
+						<img draggable="false" src="/landing/screenshots/01.png" alt="Screenshot">
+						<span>Navigate your way around hundreds of interactive activities</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/13.png" alt="Screenshot">
+						<span>Learning is broken down into short, manageable activities</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/02b.png" alt="Screenshot">
+						<span>Access your learning tools at any point</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/10.png" alt="Screenshot">
+						<span>Practise your writing skills/take notes</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/14.png" alt="Screenshot">
+						<span>Practise your speaking skills: listen, record, playback</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/15.png" alt="Screenshot">
+						<span>Access the Oxford Learner's dictionary</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/11.png" alt="Screenshot">
+						<span>Learn English grammar and access our simple grammar guide</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/03.png" alt="Screenshot">
+						<span>Practise your reading/listening skills</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/04.png" alt="Screenshot">
+						<span>Increase your vocabulary</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/16.jpg" alt="Screenshot">
+						<span>Learn about life &amp; culture</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/09.png" alt="Screenshot">
+						<span>Learn idioms with animated content</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/07.png" alt="Screenshot">
+						<span>A revision game at the end of each module</span>
+					</div>
+					
+				</div>
+</template>
+
+<template name="screenshots_b2b">
+			<p class="text-center"><i class="fa fa-arrows-alt-h"></i> Swipe to see more</p>
+				<div class="screenshots">
+					<div class="item">						
+						<img draggable="false" src="/landing/screenshots/01.png" alt="Screenshot">
+						<span>Navigate your way around hundreds of interactive activities</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/13.png" alt="Screenshot">
+						<span>Learning is broken down into short, manageable activities</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/02.png" alt="Screenshot">
+						<span>Access the learning tools at any point</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/10.png" alt="Screenshot">
+						<span>Practise your writing skills/take notes</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/14.png" alt="Screenshot">
+						<span>Practise your speaking skills: listen, record, playback</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/15.png" alt="Screenshot">
+						<span>Access the Oxford Learner's dictionary</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/11.png" alt="Screenshot">
+						<span>Learn English grammar and access our simple grammar guide</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/03.png" alt="Screenshot">
+						<span>Practise your reading/listening skills</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/04.png" alt="Screenshot">
+						<span>Increase your vocabulary</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/16.jpg" alt="Screenshot">
+						<span>Learn about life &amp; culture</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/09.png" alt="Screenshot">
+						<span>Learn idioms with animated content</span>
+					</div>
+					<div class="item">
+						<img draggable="false" src="/landing/screenshots/07.png" alt="Screenshot">
+						<span>A revision game at the end of each module</span>
+					</div>
+					
+				</div>
+</template>

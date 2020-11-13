@@ -1,0 +1,318 @@
+<template name="m7a26">
+	<article class="with-tools-sidebar m7a26">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Bangor');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 26 - {{>m7a26Title}}</div>
+			</header>
+			<section id="m7a26">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a26Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m7a26Intro}}</h3>
+					{{> m7a26Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a26_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a26_1}} {{>m7a26_2}} {{>m7a26_3}} {{>m7a26_scores}} {{>m7a26_4}} {{>m7a26_5}} {{#if gameAccess}} {{>EndPage char="tu"
+			act="m7a26" nextact="m7Game" place="Bangor"}} {{else}} {{>EndPage2 char="all" act="m7a26" nextplace="Oxford" nextmod="8"
+			place="Bangor" end="finished"}} {{/if}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a26_1">
+	<section id="m7a26_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 0;">
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> student is a student with a first degree from a university who is studying or doing research at a more
+						advanced level.</li>
+					<li>An
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a student at a university or college who is studying for his or her first degree.</li>
+					<li>An
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is a piece of writing on one particular subject written by a student.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is a detailed document produced by a college, school, or company, which gives details about it.</li>
+					<li>
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is the practice of using or copying someone else's idea or work and pretending that you thought of it
+						or created it.</li>
+					<li>When someone is
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target6"></div>, they do not obey a set of rules.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">cheating</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">plagiarism</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">prospectus</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">post graduate</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">essay</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">undergraduate</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a26" nexturl="#m7a26_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a26_2">
+	<section id="m7a26_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 6;">
+					<li>
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is work that students do during a course, rather than in exams, especially work that counts towards a
+						student's final grade.</li>
+					<li>In a university or college, a
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is a regular meeting between a tutor and one or several students.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> is a talk someone gives in order to teach people about a particular subject.</li>
+					<li>In Britain, a
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is a person who has successfully completed a degree at a university or college.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is the qualification you get when you pass a course of study at a university.</li>
+					<li>
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target6"></div> are buildings with rooms or flats, usually built by universities or colleges, where students live.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">lecture</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">course work</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">degree</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">graduate</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">tutorial</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">Halls of residence</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a26_1" nexturl="#m7a26_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a26_3">
+	<section id="m7a26_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the correct word to its meaning. You can change your answer before submitting. Your score will appear at the end.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 12;">
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target1"></div> is a meeting where a group of people discuss a problem or topic.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target2"></div> is an area of knowledge or study, especially one that you study at school, college, or university.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target3"></div> in a British university is the most senior teacher in a department.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target4"></div> is one of the periods of time that a school, college, or university divides the year into.</li>
+					<li>A
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target5"></div> is an area of land that contains the main buildings of a university or college.</li>
+					<li>You can refer to the subjects that are studied in a particular course as the
+						<div class="ddseatedtarget ddwidth10 dd1line" id="target6"></div>.</li>
+				</ol>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4 center">
+							<div id="submitButton" class="button1 buttonsmall">Submit</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">term</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">syllabus</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">campus</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">seminar</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">professor</div></div>
+					<div class="ddseat ddwidth10 dd1line"><div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false">subject</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a26_2" nexturl="#m7a26_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a26_scores">
+	<section id="m7a26_bad" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m7a26_Correct" wrongSession="m7a26_Incorrect"}}
+				<h2>You didn't get enough right answers to unlock the game</h2>
+				<h4 class="text-left">Get 13 or more right answers and the game will be unlocked!
+					<a draggable="false" href="#m7a26_1" class="pagination restart">Try again</a> and see if you can improve your score.</h4>
+				<div class="game-locked-gif shadow"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m7a26_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m7a26_good" class="hidden">
+		<div class="content">
+			<h1>Results</h1>
+			<div class="text-center">
+				{{>scorebox1 rightSession="m7a26_Correct" wrongSession="m7a26_Incorrect"}}
+				<h2>Well done! You got a good score! You can now play the game in this module!</h2>
+				<div class="game-unlocked-gif shadow"></div>
+				<h4>Click continue to see the answers and finish this activity.</h4>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m7a26_4" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m7a26_4">
+	<section id="m7a26_4" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle">
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">post graduate</div>
+						</div> student is a student with a first degree from a university who is studying or doing research at a more advanced level.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">undergraduate</div>
+						</div> is a student at a university or college who is studying for his or her first degree.</li>
+					<li>An
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">essay</div>
+						</div> is a piece of writing on one particular subject written by a student.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">prospectus</div>
+						</div> is a detailed document produced by a college, school, or company, which gives details about it.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">plagiarism</div>
+						</div> is the practice of using or copying someone else's idea or work and pretending that you thought of it or created it.</li>
+					<li>When someone is
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target6">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">cheating</div>
+						</div>, they do not obey a set of rules.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">course work</div>
+						</div> is work that students do during a course, rather than in exams, especially work that counts towards a student's final
+						grade.
+					</li>
+					<li>In a university or college, a
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">tutorial</div>
+						</div> is a regular meeting between a tutor and one or several students.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">lecture</div>
+						</div> is a talk someone gives in order to teach people about a particular subject.</li>
+					<li>In Britain, a
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">graduate</div>
+						</div> is a person who has successfully completed a degree at a university or college.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a26_4" nexturl="#m7a26_5" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+<template name="m7a26_5">
+	<section id="m7a26_5" class="hidden">
+		<div class="content noselect">
+			<h1>Answers</h1>
+			<div class="parapaper parapaperdd1 fold">
+				<ol class="olcircle" style="counter-reset: start 10;">
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">degree</div>
+						</div> is the qualification you get when you pass a course of study at a university.</li>
+					<li>
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target6">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">Halls of residence</div>
+						</div> are buildings with rooms or flats, usually built by universities or colleges, where students live.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target1">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">seminar</div>
+						</div> is a meeting where a group of people discuss a problem or topic.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target2">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">subject</div>
+						</div> is an area of knowledge or study, especially one that you study at school, college, or university.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target3">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">professor</div>
+						</div> in a British university is the most senior teacher in a department.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target4">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">term</div>
+						</div> is one of the periods of time that a school, college, or university divides the year into.</li>
+					<li>A
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target5">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">campus</div>
+						</div> is an area of land that contains the main buildings of a university or college.</li>
+					<li>You can refer to the subjects that are studied in a particular course as the
+						<div class="ddwidth10 dd1line ddseatedtarget2" id="target6">
+							<div class="ddsourceseatedTest ddwidth10 dd1line" draggable="False">syllabus</div>
+						</div>.</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a26_4" nexturl="#m7a26_end" prev="" next=""}}
+		</footer>
+	</section>
+</template>

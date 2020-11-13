@@ -1,0 +1,430 @@
+<template name="m5a18">
+<article class="with-tools-sidebar m5a18">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/StHelens');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 18 - {{>m5a18Title}}</div>
+		</header>
+		
+		
+		<section id="m5a18">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a18Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m5a18Intro}}</h3>
+{{> m5a18Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a18_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a18_1}}
+		{{>m5a18_2}}
+		{{>m5a18_3}}
+		{{>m5a18_4}}
+		{{>m5a18_5}}
+		{{>m5a18_6}}
+		{{>m5a18_7}}
+		{{>m5a18_8}}
+
+		{{>EndPage char="elle" act="m5a18" nextact="m5a19" place="StHelens"}}
+
+		
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="m5a18_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="m5a18_modal">Examples</h4>
+				</div>
+				
+				<div class="content">
+					<table class="table1 table-center">
+						<tr><th>Long form</th><th>Short form</th></tr>
+						<tr><td>I will</td><td>I'll</td></tr>
+						<tr><td>I would</td><td>I'd</td></tr>
+						<tr><td>I will not</td><td>I won't</td></tr>
+					</table>
+				
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>	
+	
+</template>
+<template name="m5a18_1">
+	<section id="m5a18_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">
+			<h1>Celebrity Role Models</h1>
+			<h3 class="text-center">Listen to this short radio report about celebrity role models.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-2 text-center">
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module5/a18/report.m4a" style="margin: 0 0 1em 0;"></button>
+					</div>
+					<div class="col-sm-3 text-center">
+						<div class="ph-w ph-4x5 shadow" style="max-width: 240px"><div class="ph"><img draggable="false" src="images/module5/a18/David_Beckham.jpg" alt="David Beckham"></div></div>
+						<div class="caption block" style="margin: 0.3em auto 1em auto; max-width: 240px;">David Beckham</div>
+					</div>
+					<div class="col-sm-3 text-center">
+						<div class="ph-w ph-4x5 shadow" style="max-width: 240px"><div class="ph"><img draggable="false" src="images/module5/a18/Cheryl_Cole.jpg" alt="Cheryl Cole"></div></div>
+						<div class="caption block" style="margin: 0.3em auto 1em auto; max-width: 240px;">Cheryl Cole</div>
+					</div>
+					<div class="col-sm-3 text-center">
+						<div class="ph-w ph-4x5" style="max-width: 240px"><div class="ph"><img draggable="false" src="images/module5/a18/Homer_Simpson.png" alt="Homer Simpson"></div></div>
+						<div class="caption block" style="margin: 0.3em auto 1em auto; max-width: 240px;">Homer Simpson</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a18" nexturl="#m5a18_2" prev="hidden" next=""}}
+		</footer>
+	{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a18_2">
+	<section id="m5a18_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">1</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/1.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"Who <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> you like most to meet?"
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}}
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a18_modal" class="button2">Examples</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a18_3">
+	<section id="m5a18_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">2</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/2.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"I<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> choose Cheryl Cole. She's gorgeous."
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}}
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a18_modal" class="button2">Examples</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a18_4">
+	<section id="m5a18_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">3</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/3.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"I<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> rather meet David Beckham any day!"
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}}
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a18_modal" class="button2">Examples</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a18_5">
+	<section id="m5a18_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">4</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/4.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"<span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> you not like to meet Homer Simpson? I <span id="entryanswer1" class="textentry-disabled"></span> !"
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}}
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a18_modal" class="button2">Examples</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a18_6">
+	<section id="m5a18_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">5</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/5.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"Yeah, but I've watched lots of episodes. I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> be watching any more Simpsons."
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}}
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a18_modal" class="button2">Examples</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a18_7">
+	<section id="m5a18_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">6</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/6.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"Well I <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span>. Homer always makes me laugh."
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}}
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a18_modal" class="button2">Examples</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a18_8">
+	<section id="m5a18_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content"> 
+			<h3>Now listen to these people discussing the radio report. Write the correct form of <u>will</u>, <u>would</u> or <u>won't</u> in the space.</h3>
+
+			
+			<div class="parapaper parasegment fold">
+				<div class="container-fluid">
+				
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-4">
+							<div class="ph-w ph-16x10 conversation shadow" style="max-width: 513px"><div class="ph"><img src="images/conv-pics/conversation.png" alt="Two people having coffee together"></div></div>
+						</div>
+						
+						<div class="col-sm-1 col-sm-pull-8 col-xs-2">
+							<div class="number">7</div>
+						</div>
+						
+						<div class="col-sm-2 col-sm-pull-8 col-xs-8 text-center">
+							<div class="hidden-xs" style="height: 3em;"></div>
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc='audio/module5/a18/7.m4a' style="margin: 1em 1em 0 1em;"></button>
+						</div>
+					</div>
+					{{>blankrow}}
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="linespace2 text-center">
+								<span class="inline-block text-left text2">
+									"Well, we <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> argue about the guy. He's just a cartoon character!"
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{> rightwrong}} {{> welldone}}
+			<div class="text-center"><button data-toggle="modal" data-target="#m5a18_modal" class="button2">Examples</button></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="" nexturl="" prev="disabled" next="hidden"}}
+		</footer>
+		{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>

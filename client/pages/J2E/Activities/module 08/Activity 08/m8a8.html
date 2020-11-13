@@ -1,0 +1,177 @@
+<template name="m8a8"> 
+<article class="with-tools-sidebar m8a8">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Gloucester');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 8</div> <div class='acttitle-title'>{{> activity}} 8 - {{> m8a8Title}}</div>
+		</header>
+		<section id="m8a8">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a8Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a8Intro}}</h3>
+				{{> m8a8Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a8_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a8_1}}
+		{{>m8a8_2}}
+		{{>m8a8_3}}
+		{{>m8a8_4}}
+		{{>EndPage char="tu" act="m8a8" nextact="m8a9" place="Gloucester"}}
+	</div>
+</article>
+</template>
+<template name="m8a8_2"> 
+	<section id="m8a8_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			<h3 class="center">Listen to these interviews from the BBC programme ‘The Apprentice.’ The selected candidates are about to have their job interview. {{>touch yes="Tap" no="Click"}} to watch the conversations.</h3>
+			{{>metametrics level="2" star="yes" align="center"}}
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<h1>Conversation 1</h1>
+						<div class="videoplayer">
+							<div class="embed-responsive embed-responsive-16by9" style="padding-bottom: 37.5%;">
+								<video class="embed-responsive-item" id="m8a8vid1" controls poster="/video/module8/a8/Lorraine.jpg">
+									<source src="/video/module8/a8/Lorraine.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+						<span>Lorraine</span>
+						<span>Keith</span>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<h1>Conversation 2</h1>
+						<div class="videoplayer">
+							<div class="embed-responsive embed-responsive-16by9" style="padding-bottom: 37.5%;">
+								<video class="embed-responsive-item" id="m8a8vid2" controls poster="/video/module8/a8/Debra.jpg">
+									<source src="/video/module8/a8/Debra.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+						<span>Debra</span>
+						<span>Claude</span>
+					</div>
+				</div>
+			</div>
+      			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a8_1" nexturl="#m8a8_3" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a8_3"> 
+	<section id="m8a8_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				There are two possible answers to these questions.<br> Choose the best answer – <b>A</b> or <b>B</b>. 
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}}
+					<div class="col-sm-12 text-center parapaper">						
+						<button class="buttonround  buttonaudio" id="questions_audio" data-audiosrc="/audio/module8/a8/Conversation1.m4a"></button>
+						<div class="number">1</div><span id="question_text">Keith seems very pleasant to start with because:</span>
+						<br><br>
+							<div class="row">
+								<div class="col-sm-12">
+									<button id="A" class="button2 ">A) he is deliberately setting a trap for Lorraine.</button>
+									<br><br>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<button id="B" class="button2">B) he is just a very friendly person.</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m8a8_CorrectScore" wrongSession="m8a8_IncorrectScore"}}
+					</div>
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a8_2" nexturl="#m8a8_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a8_1"> 
+	<section id="m8a8_1" class="hidden"> 
+		<div class="content">  
+      			<div class="container-fluid">
+      			<h3 class="center">{{>touch yes="Tap" no="Click"}} the <span class="a-color">red</span> words for more information.</h3>
+					<div class="row">
+						<div class="col-sm-8">
+						{{>popovers}}
+							<h4>These conversations are from a well known TV series called ‘The Apprentice.’ The businessman <a draggable="false" href="#" title="" data-toggle="popover" role="button" tabindex="0"  data-trigger="manual" data-placement="bottom" data-content="Sir Alan Sugar - the founder of Amstrad computers has a fortune of about £770 million and stars in the BBC series ‘The Apprentice.’">Sir Alan Sugar</a> chooses 12 people to compete for a well paid job. He gives them different challenges to see how well they perform. Finally they go through several interviews. Here you see two women facing some tough questions.</h4>					
+						</div>
+						<div class="col-sm-4">
+							<div class="ph-w ph-3x4 border1" style="max-width: 239px"><div class="ph"><img src="images/module8/a8/Alan Sugar.jpg" draggable="false"></div></div>
+						</div>
+					</div>
+				</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a8" nexturl="#m8a8_2" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m8a8_4"> 
+		<section id="m8a8_bad" class="hidden">
+		<div class="content">
+			<h1>Bad score page</h1>
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a8_CorrectScore" wrongSession="m8a8_IncorrectScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m8a8_1" id="m8a8restart" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m8a8_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+	<section id="m8a8_good" class="hidden">
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a8_CorrectScore" wrongSession="m8a8_IncorrectScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m8a8_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+ </template>

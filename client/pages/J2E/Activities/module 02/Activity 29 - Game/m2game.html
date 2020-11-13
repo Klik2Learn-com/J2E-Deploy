@@ -1,0 +1,57 @@
+<template name="m2Game">
+<article class="with-tools-sidebar game m2Game">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Aberdeen');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 29 - {{>m2GameTitle}}</div>
+		</header>
+		
+		
+		<section id="m2Game" class="game-section">
+			<div class="game-content width">
+				<a drabbale="false" href="#m2Game_1" class="pagination game-begin"><div class="game-title"></div></a>
+			</div>
+			<footer class="invisible">
+				{{>footer_nav prevurl="#" nexturl="#m2Game_1" prev="hidden" next="game-begin" next_text="Begin"}}
+			</footer>
+		</section>
+		
+		{{>m2Game_1}}
+		{{>m2Game_2}}
+		{{>m2Game_3}}
+		{{>m2Game_4}}
+		{{>m2Game_5}}
+		{{>m2Game_6}}
+		{{>m2Game_7}}
+		{{>m2Game_8}}
+		{{>m2Game_9}}
+		{{>m2Game_10}}
+		{{>m2Game_11}}
+		{{>m2Game_12}}
+		{{>m2Game_13}}
+		{{>m2Game_14}}
+		{{>m2Game_15}}
+		{{>m2Game_16}}
+		{{>m2Game_17}}
+		{{>m2Game_18}}
+		{{>m2Game_19}}
+		{{>m2Game_20}}
+		{{>m2Game_21}}
+		{{>m2Game_22}}
+		{{>m2Game_23}}
+		{{>m2Game_24}}
+		{{>m2Game_25}}
+		{{>m2Game_26}}
+		{{>m2Game_27}}
+		{{>m2Game_Score}}
+		{{>m2Game_ans}}
+		{{>EndPage2 char="all" act="m2Game" nextplace="Stirling" nextmod="3" place="Aberdeen" end="completed"}}
+		
+		</div>
+	</article>
+
+</template>

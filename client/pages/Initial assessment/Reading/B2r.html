@@ -1,0 +1,60 @@
+<template name="B2r">
+	<section id="B2r">
+	{{#if activeSection}}
+			<div class="content">
+			<h3 class="center">Read the text and answer each question in no more than four words.</h3>
+				<div class="parapaper paraextract article-text noselect">
+					<p>
+						&emsp;Only 12 miles of sea separate Scotland from Ireland so it isn't surprising that the two countries have a fair amount of common history. In fact the name ‘Scot’ comes from those people who crossed from Ireland into the West Highlands in the 5th century, and later conquered the whole country north of the River Forth. 
+						<br><br>
+						&emsp;When Scotland changed from a Roman Catholic to a Protestant country in 1560, this new form of Christianity didn’t make much progress in the Highlands, and the close links between the Catholics there and their counterparts in Ireland continued. In 1603, when the Scottish king, James VI, became king of England as well, he settled thousands of Protestants in Northern Ireland. One of the reasons was to break up the western Catholic fringe.
+						<br><br>
+						&emsp;In the 1840s there was famine in Ireland. Over a million people died and another million emigrated.
+						<br><br>
+						&emsp;Large numbers of these came to Glasgow. Relationships between the Irish Catholic immigrants and the native Scots were difficult. The Irish took the lowest-paid jobs and were accused of working for lower rates of pay. Today, although there are still tensions, especially in and around Glasgow, the two communities live side by side in relative harmony. 
+					</p>
+				</div>
+				<br>
+				<hr>
+				<h3 class="center"> Type your answers in the boxes. Look back at the text before you answer.</h3>
+				<div class="parapaper linespace paraextract parasegment para-ol-space fold">
+					<ol class="olcircle">
+						<li><b><span data-questionFor="answer1">Why do Scotland and Ireland have a great deal of common history?</span></b><br>
+						They are only <form class="textentry"><input id="answer1" type="text" name="userText" data-function="answerBox" size="14" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer2">When did the ‘Scots’ first arrive in Scotland?</span></b><br>
+						They arrived in <form class="textentry"><input id="answer2" type="text" name="userText" data-function="answerBox" size="11" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer3">Was Scotland a Protestant country before 1560?</span></b><br>
+						<form class="textentry"><input id="answer3" type="text" name="userText" data-function="answerBox" size="2" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer4">Which word in paragraph 2 means ‘connections’?</span></b><br>
+						<form class="textentry"><input id="answer4" type="text" name="userText" data-function="answerBox" size="5" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer5">What caused large scale Irish emigration in the 1840s?</span></b><br>
+						<form class="textentry"><input id="answer5" type="text" name="userText" data-function="answerBox" size="6" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer6">How many people emigrated?</span></b><br>
+						<form class="textentry"><input id="answer6" type="text" name="userText" data-function="answerBox" size="12" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer7">In which Scottish city did many Irish immigrants settle?</span></b><br>
+						<form class="textentry"><input id="answer7" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer8">What issue caused difficulty between the Irish Catholics and the native Scots?</span></b><br>
+						<form class="textentry"><input id="answer8" type="text" name="userText" data-function="answerBox" size="10" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer9">Have relationships between Protestants and Catholics improved since the 19th century?</span></b><br>
+						<form class="textentry"><input id="answer9" type="text" name="userText" data-function="answerBox" size="3" autocomplete="off"></form></li>
+						
+						<li><b><span data-questionFor="answer10">Which word in paragraph 4 means ‘peacefulness’?</span></b><br>
+						<form class="textentry"><input id="answer10" type="text" name="userText" data-function="answerBox" size="8" autocomplete="off"></form></li>
+					</ol>
+				</div>
+				<div class="assess-finish">
+					<span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+				</div>
+				{{>finishBtn}}
+			</div>
+	{{/if}}
+	</section>
+</template>

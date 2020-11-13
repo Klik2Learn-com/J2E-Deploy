@@ -1,0 +1,237 @@
+<template name="DDwords2picsSG">
+	<section id="DDwords2picsSG" class="hidden">
+		<div class="content">
+			<h3>Here are pictures of different types of houses you can find in cities and the countryside. Drag the right name underneath each picture.</h3>
+			{{>welldone}} {{>rightwrong}}
+			<div class="center">
+				<div class="ddpic shadow ddwidth12" >
+					<figure>
+						<img draggable="false" src="../images/module3/semi-detached.jpg" class="img-responsive border1">
+					</figure>
+					<div id="target1" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12" >
+					<figure>
+						<img draggable="false" src="../images/module3/Detached House.jpg" class="img-responsive border1">
+					</figure>
+					<div id="target2" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12" >
+					<figure>
+						<img draggable="false" src="../images/module3/Tenement House.jpg" class="img-responsive border1">
+					</figure>
+					<div id="target3" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+				<div class="ddpic shadow ddwidth12" >
+					<figure>
+						<img draggable="false" src="../images/module3/Bungalow.jpg" class="img-responsive border1">
+					</figure>
+					<div id="target4" class="ddseatedtarget dd2lines ddwidth10">&nbsp;</div>
+				</div>
+			</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+			<!-- Ensure all 'ddsource' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+			<div class="ddseat ddwidth10 dd2lines"><div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="true"  data-destination="target3">Tenement</div></div>
+			<div class="ddseat ddwidth10 dd2lines"><div class="ddsourceseated shadow ddwidth10 dd2lines" draggable="true"  data-destination="target1">Semi-detached house</div></div>
+			<div class="ddseat ddwidth10 dd2lines"><div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="true"  data-destination="target4">Bungalow</div></div>
+			<div class="ddseat ddwidth10 dd2lines"><div class="ddsourceseated shadow ddwidth10 dd1line2high" draggable="true"  data-destination="target2">Detached house</div></div>
+		</div>
+		</div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+		{{>footer_nav prevurl="#m3a20" nexturl="#m3a20_2" prev="hidden" next="hidden"}}
+	  </footer>
+	  
+	  <div class="content">
+		<h4>HTML</h4>
+		<pre class="htmlcode2">
+		&#00060;template name="m3a20_1"&#00062;
+	&#00060;section id="m3a20_1" class="hidden"&#00062;
+	&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&#00060;div class="content noselect"&#00062;
+			&#00060;h3&#00062;Here are pictures of different types of houses you can find in cities and the countryside. Drag the right name underneath each picture.&#00060;/h3&#00062;
+			&#00123;&#00123;&#00062;welldone&#00125;&#00125; &#00123;&#00123;&#00062;rightwrong&#00125;&#00125;
+			&#00060;div class="center"&#00062;
+				&#00060;div class="ddpic shadow ddwidth12" &#00062;
+					&#00060;figure&#00062;
+						&#00060;img draggable="false" src="../images/module3/a20/semi-detached.jpg" class="img-responsive border1"&#00062;
+					&#00060;/figure&#00062;
+					&#00060;div id="target1" class="ddseatedtarget dd2lines ddwidth10"&#00062;&amp;nbsp;&#00060;/div&#00062;
+				&#00060;/div&#00062;
+				&#00060;div class="ddpic shadow ddwidth12" &#00062;
+					&#00060;figure&#00062;
+						&#00060;img draggable="false" src="../images/module3/a20/detached.jpg" class="img-responsive border1"&#00062;
+					&#00060;/figure&#00062;
+					&#00060;div id="target2" class="ddseatedtarget dd2lines ddwidth10"&#00062;&amp;nbsp;&#00060;/div&#00062;
+				&#00060;/div&#00062;
+				&#00060;div class="ddpic shadow ddwidth12" &#00062;
+					&#00060;figure&#00062;
+						&#00060;img draggable="false" src="../images/module3/a20/tenement.jpg" class="img-responsive border1"&#00062;
+					&#00060;/figure&#00062;
+					&#00060;div id="target3" class="ddseatedtarget dd2lines ddwidth10"&#00062;&amp;nbsp;&#00060;/div&#00062;
+				&#00060;/div&#00062;
+				&#00060;div class="ddpic shadow ddwidth12" &#00062;
+					&#00060;figure&#00062;
+						&#00060;img draggable="false" src="../images/module3/a20/bungalow.jpg" class="img-responsive border1"&#00062;
+					&#00060;/figure&#00062;
+					&#00060;div id="target4" class="ddseatedtarget dd2lines ddwidth10"&#00062;&amp;nbsp;&#00060;/div&#00062;
+				&#00060;/div&#00062;
+			&#00060;/div&#00062;
+&lt;div class=&quot;dd-fixed-source-container animated slideInUp&quot;&gt;
+		&lt;div class=&quot;box1 box1dd1&quot;&gt;
+			&lt;!-- Ensure all &#39;ddsource&#39; and &#39;ddseatedtargets&#39; are the same width within an activity. Use &#39;em&#39; in case the text size changes --&gt;
+			&lt;div class=&quot;ddseat ddwidth10 dd2lines&quot;&gt;&lt;div class=&quot;ddsourceseated shadow ddwidth10 dd1line2high&quot; draggable=&quot;true&quot;  data-destination=&quot;target3&quot;&gt;Tenement&lt;/div&gt;&lt;/div&gt;
+			&lt;div class=&quot;ddseat ddwidth10 dd2lines&quot;&gt;&lt;div class=&quot;ddsourceseated shadow ddwidth10 dd2lines&quot; draggable=&quot;true&quot;  data-destination=&quot;target1&quot;&gt;Semi-detached house&lt;/div&gt;&lt;/div&gt;
+			&lt;div class=&quot;ddseat ddwidth10 dd2lines&quot;&gt;&lt;div class=&quot;ddsourceseated shadow ddwidth10 dd1line2high&quot; draggable=&quot;true&quot;  data-destination=&quot;target4&quot;&gt;Bungalow&lt;/div&gt;&lt;/div&gt;
+			&lt;div class=&quot;ddseat ddwidth10 dd2lines&quot;&gt;&lt;div class=&quot;ddsourceseated shadow ddwidth10 dd1line2high&quot; draggable=&quot;true&quot;  data-destination=&quot;target2&quot;&gt;Detached house&lt;/div&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;div class=&quot;dd-fixed-fade animated slideInUp&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;dd-fixed-pad&quot;&gt;&lt;/div&gt;
+		&#00060;/div&#00062;
+		&#00060;footer&#00062;
+		&#00123;&#00123;&#00062;footer_nav prevurl="#m3a20" nexturl="#m3a20_2" prev="hidden" next="hidden"&#00125;&#00125;
+	  &#00060;/footer&#00062;
+	  &#00123;&#00123;/if&#00125;&#00125;
+	&#00060;/section&#00062;
+&#00060;/template&#00062;
+		</pre>
+		
+		<h4>JAVASCRIPT</h4><pre class="htmlcode2">
+			Template.m3a20_1.helpers(&#00123;
+	activeSection: function()&#00123;
+		var activeSection = Session.get("activeSection");
+		return (activeSection == "#m3a20_1");
+	&#00125;
+&#00125;);
+
+
+Template.m3a20_1.events(&#00123;
+	"dragstart .ddsourceseated": function(evt) &#00123;
+		evt.currentTarget.style.opacity = '1.0';
+		evt.originalEvent.dataTransfer.effectAllowed = 'move';
+		evt.originalEvent.dataTransfer.setData('text/html', $(evt.currentTarget).html());
+		
+		$.k2l.m3a20_1.draggedElement = evt.currentTarget;
+	&#00125;,
+	
+	"dragend .ddsourceseated": function(evt) &#00123;
+		
+	&#00125;,
+	
+	"dragenter .target": function(evt) &#00123;
+		if (evt.preventDefault) &#00123;
+			evt.preventDefault();
+		&#00125;
+	&#00125;,
+	
+	"dragover .ddseatedtarget": function(evt) &#00123;
+		if (evt.preventDefault) &#00123;
+			evt.preventDefault();
+		&#00125;
+		evt.originalEvent.dataTransfer.dropEffect = 'move';
+		return false;
+	&#00125;,
+	
+	"dragleave .target": function(evt) &#00123;
+		
+	&#00125;,
+	
+	"drop .ddseatedtarget": function(evt) &#00123;
+		
+		if (evt.stopPropagation) &#00123;
+			evt.stopPropagation();
+		&#00125;;
+
+		var destination = $.k2l.m3a20_1.draggedElement.dataset.destination;
+		if ($(evt.currentTarget).attr('id') == destination) &#00123;
+			$.k2l.m3a20_1.counter++;
+			$.k2l.m3a20_1.draggedElement.draggable = false;
+			var parentSection = $(evt.currentTarget).parents('section');
+					
+			$('.correctscreen').removeClass('hidden');
+			setTimeout( function() &#00123;
+				$('.correctscreen').addClass('hidden');
+			&#00125;, 1000);
+			
+			$($.k2l.m3a20_1.draggedElement).html('');
+			$($.k2l.m3a20_1.draggedElement).removeClass('shadow');
+			$($.k2l.m3a20_1.draggedElement).removeClass('ddsourceseated');
+			$($.k2l.m3a20_1.draggedElement).addClass('ddsourceseated2');
+			
+			$(evt.currentTarget).removeClass('ddwidth10 dd1line');
+			$(evt.currentTarget).removeClass('ddseatedtarget');
+			$(evt.currentTarget).addClass('ddseatedtarget2');
+			$(evt.currentTarget).html('');
+			
+			var listItem = document.createElement('div');
+			$(listItem).html(evt.originalEvent.dataTransfer.getData('text/html'));
+			$(listItem).addClass('ddsourceseated');
+			//$(listItem).addClass('ddwidth10 dd1line');
+			
+			if($($.k2l.m3a20_1.draggedElement).hasClass("dd2lines"))&#00123;
+				$(listItem).addClass('ddwidth10 dd2lines"');
+				&#00125; else &#00123;
+				$(listItem).addClass('ddwidth10 dd1line2high');
+				&#00125;;
+				
+			$(evt.currentTarget).append(listItem);
+
+			if ($.k2l.m3a20_1.counter == $.k2l.m3a20_1.max) &#00123;
+				
+				// Load the next page automatically
+				setTimeout( function() &#00123;
+				$('#welldonecap').removeClass('hidden');
+				&#00125;, 1000);
+			setTimeout( function() &#00123;
+				$('#welldonecap').addClass('hidden');
+			&#00125;, 2000);
+				setTimeout(function() &#00123;
+					$.k2l.m3a20_1.counter = 0;
+					$(parentSection).addClass('hidden'); // hide this page
+					$(parentSection).next('section').removeClass('hidden');// reveal next page.
+					document.location.hash = $(parentSection).next('section').attr('id');
+					Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+					&#00125;, 2000);
+			// $('.pagination').removeClass('hidden');
+			&#00125;;
+		&#00125; else &#00123;
+		$('.incorrectscreen').removeClass('hidden');
+		setTimeout( function() &#00123;
+			$('.incorrectscreen').addClass('hidden');
+		&#00125;, 1000);
+		&#00125;;
+	&#00125;,
+	
+	"dragend .target": function(evt) &#00123;
+	&#00125;,
+	
+	"click .pagination": function(evt)&#00123;
+		$.k2l.m3a20_1.draggedElement = &#00123;&#00125;;
+		$.k2l.m3a20_1.counter = 0;
+	&#00125;
+&#00125;);
+
+Template.m3a20_1.rendered = function() &#00123;
+	
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.m3a20_1 == 'undefined') &#00123;
+		$.k2l.m3a20_1 = &#00123;&#00125;;
+	&#00125;;
+	
+	$.k2l.m3a20_1.draggedElement = &#00123;&#00125;;
+	$.k2l.m3a20_1.counter = 0;
+
+	$.k2l.m3a20_1.max = 4; // number of drag spaces on this page.
+&#00125;
+		</pre>
+	  </div>
+	</section>
+</template>

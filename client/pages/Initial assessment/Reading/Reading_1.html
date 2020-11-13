@@ -1,0 +1,56 @@
+<template name="InitialReading_1">
+	<section id="InitialReading_1" class="hidden">
+	{{#if activeSection}}
+		{{#if isComplete}}
+			<div class="content">
+				This section is now complete.
+			</div>	
+		{{else}}
+			<div class="content">
+			<h3 class="center">Read this short passage twice, then answer the questions below.</h3>
+				<div class="parapaper paraextract article-text noselect">
+					<p>Twelve years ago we were living in Lahore. I was four years old and my dad was a chef in a hotel there. One day a letter arrived from my uncle Asif – he’s married to one of dad’s sisters. He was running a restaurant in Dundee and wondered if dad might be interested in coming to be a chef there. Asif knew that dad was a first rate chef so it made sense for both of them. He decided to go and after a couple of years, the rest of the family joined him. It was quite tough at first. I don’t remember much because I was only six at the time but I thought it was very cold. Now I’ve lived here for most of my life and things are different. I think of this as my home but I’m still Pakistani in some ways.</p>
+				</div>
+				<br>
+				<hr>
+				<h3 class="center"> Type your answers in the boxes. Look back at the passage before you answer.</h3>
+				<div class="parapaper linespace paraextract parasegment para-ol-space fold">
+					<ol class="olcircle">
+						<li><b><span data-questionFor="answer1">How old is Saima now?</span></b><br>
+						She is <form class="textentry"><input id="answer1" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form> years old.</li>
+						<li><b><span data-questionFor="answer2">Where did she live before she moved to Dundee?</span></b><br>
+						She lived in <form class="textentry"><input id="answer2" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form>.</li>
+						<li><b><span data-questionFor="answer3">Where did her father's brother-in-law live?</span></b><br>
+						He lived in <form class="textentry"><input id="answer3" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form>.</li>
+						<li><b><span data-questionFor="answer4">Why did Asif invite Saima's dad to come to Dundee?</span></b><br>
+						He knew he was a <form class="textentry"><input id="answer4" type="text" name="userText" data-function="answerBox" size="12" autocomplete="off"></form>.</li>
+						<li><b><span data-questionFor="answer5">How long was Saima's father separated from his family?</span></b><br>
+						He was separated from them for <form class="textentry"><input id="answer5" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form>.</li>
+						<li><b><span data-questionFor="answer6">Why does Saima not remember much about moving to Dundee?</span></b><br>
+						She was only <form class="textentry"><input id="answer6" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form> old.</li>
+						<li><b><span data-questionFor="answer7">What does she remember?</span></b><br>
+						It was <form class="textentry"><input id="answer7" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form>.</li>
+						<li><b><span data-questionFor="answer8">Does she still feel that Dundee is strange?</span></b><br>
+						<form class="textentry"><input id="answer8" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form></li>
+						<li><b><span data-questionFor="answer9">Does she feel completely Scottish?</span></b><br>
+						<form class="textentry"><input id="answer9" type="text" name="userText" data-function="answerBox" size="7" autocomplete="off"></form></li>
+					</ol>
+				</div>
+				<div class="assess-finish">
+					<span class="instruction">Have you finished?: </span><button id="assess-finish" class="button1">Submit</button>
+				</div>
+				{{>finishBtnReading}}
+			</div>
+		{{/if}}
+	{{/if}}
+	</section>
+</template>
+
+<!--<template name="finishBtnReading">
+		<div class="finish hidden animated">
+			<div class="dialogue shadow fadeInUp animated">
+				Are you sure? Once you have submitted this section you cannot come back to it.<br>
+				<button class="button1 buttonsmall finishYesButton">Yes. Finish and submit</button><button class="button2 buttonsmall finishNoButton">No</button>
+			</div>
+		</div>
+</template>-->

@@ -1,0 +1,820 @@
+<template name="m2a24">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Stonehaven');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 2</div>
+				<div class="acttitle-title">{{> activity}} 24 - {{>m2a24Title}}</div>
+			</header>
+
+			<section id="m2a24">
+				<div class="content">
+					<h1 class="start-page-header">{{> m2a24Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m2a24Intro}}</h3>
+					{{> m2a24Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m2a24_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m2a24_1}} {{>m2a24_2}} {{>m2a24_3}} {{>m2a24_4}} {{>m2a24_5}} {{>m2a24_6}} {{>m2a24_7}} {{>m2a24_8}} {{>m2a24_9}} {{>m2a24_10}}
+			{{>m2a24_11}} {{>m2a24_12}} {{>m2a24_13}} {{>m2a24_14}} {{>m2a24_15}} {{>m2a24_16}} {{>m2a24_17}} {{>m2a24_18}} {{>m2a24_19}}
+			{{>m2a24_20}} {{>m2a24_21}} {{>m2a24_22}}
+			<!-- 		{{> welldone}} -->
+			{{>m2a24_end}}
+		</div>
+	</article>
+
+	{{>m2a24_modal}}
+</template>
+<template name="m2a24_1">
+	<section id="m2a24_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<h3>Listen to this conversation again.</h3>
+			<div class="parapaper fold center">
+				<p>
+					<div class="videoplayer" style="max-width: 506px">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video class="embed-responsive-item" controls poster="/video/module2/a24.png">
+								<source src="video/module2/a24.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</p>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24" nexturl="#m2a24_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a24_10">
+	<section id="m2a24_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_10.m4a"></button>
+							<b>Is this a
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								trip?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_9" nexturl="#m2a24_11" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_11">
+	<section id="m2a24_11" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_11.m4a"></button>
+							<b>What about the
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								journey</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_10" nexturl="#m2a24_12" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_12">
+	<section id="m2a24_12" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_12.m4a"></button>
+							<b>We’re coming back on the 30th. I want a train that leaves after 6pm - a
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								train.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_11" nexturl="#m2a24_13" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_13">
+	<section id="m2a24_13" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_13.m4a"></button>
+							<b>Right, for the
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								journey you could take the 9:30 from Edinburgh Waverley.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_12" nexturl="#m2a24_14" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_14">
+	<section id="m2a24_14" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_14.m4a"></button>
+							<b>That
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								in to London King’s Cross at 13:55.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_13" nexturl="#m2a24_15" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_15">
+	<section id="m2a24_15" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_15.m4a"></button>
+							<b>Okay. What
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								the return?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_14" nexturl="#m2a24_16" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_16">
+	<section id="m2a24_16" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/RPart7.m4a"></button>
+							<b>There’s a train leaving King’s Cross at 18:30 getting in to Edinburgh Waverley at 23:04.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_15" nexturl="#m2a24_17" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_17">
+	<section id="m2a24_17" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_17.m4a"></button>
+							<b>Right. Can you give me a
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								for those tickets?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_16" nexturl="#m2a24_18" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_18">
+	<section id="m2a24_18" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_18.m4a"></button>
+							<b>Well, for the outward journey you could get a Super Off
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								single for £60 but you need to book it on the internet.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_17" nexturl="#m2a24_19" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_19">
+	<section id="m2a24_19" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_19.m4a"></button>
+							<b>You can only use it for that train on that date. For the return journey, that ticket’s not available and you’ll have
+								to book an Anytime single at £152.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_18" nexturl="#m2a24_20" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_2">
+	<section id="m2a24_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/RPart1.m4a"></button>
+							<b>Hello, East Coast rail enquiries. How can I help you?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_1" nexturl="#m2a24_3" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_20">
+	<section id="m2a24_20" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_20.m4a"></button>
+							<b>It's
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								for one day and you can use it on any train.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_19" nexturl="#m2a24_21" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_21">
+	<section id="m2a24_21" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_21.m4a"></button>
+							<b>Do you want me to go ahead and book that ticket?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_20" nexturl="#m2a24_22" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_22">
+	<section id="m2a24_22" class="hidden">
+
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/KPart8.m4a"></button>
+							<b>Well, no, I’ll do it online myself but thanks for your help.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_21" prev="disabled" next="enabled" nexturl="" }}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a24_3">
+	<section id="m2a24_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_3.m4a"></button>
+							<b>Hello, I’d like to
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								tickets from Edinburgh to London.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_2" nexturl="#m2a24_4" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_4">
+	<section id="m2a24_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/RPart2.m4a"></button>
+							<b>When do you want to travel?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_3" nexturl="#m2a24_5" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_5">
+	<section id="m2a24_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/KPart2.m4a"></button>
+							<b>Next week.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_4" nexturl="#m2a24_6" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_6">
+	<section id="m2a24_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a24/m2a24_6.m4a"></button>
+							<b>Do you have a particular
+								<span>
+									<form id="0" class="textentry">
+										<input type="text" name="userText" size="8" autocomplete="off">
+										<input type="submit" value="OK">
+									</form>
+								</span>
+								in mind?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_5" nexturl="#m2a24_7" prev="disabled" next="hidden"}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_7">
+	<section id="m2a24_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/KPart3.m4a"></button>
+							<b>Yes, Tuesday 26th April.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_6" nexturl="#m2a24_8" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_8">
+	<section id="m2a24_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24r}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/RPart4.m4a"></button>
+							<b>What time of day - morning or afternoon?</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_7" nexturl="#m2a24_9" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_9">
+	<section id="m2a24_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h1>Booking a ticket</h1>
+			<div class="container-fluid">
+				{{>m2a24k}}
+				<div class="row">
+					<div class="parapaper parasegment fold text-center">
+						<span class="avoidwrap text-left">
+							<button class="buttonround buttonaudio" data-audiosrc="audio/module2/a23/KPart4.m4a"></button>
+							<b>Around 9 o'clock in the morning.</b>
+						</span>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row text-center">
+					{{>m2a24hearagain}}
+				</div>
+			</div>
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m2a24_8" nexturl="#m2a24_10" prev="disabled" next=""}}
+		</footer>{{> stuck stuckchar="elle"}} {{/if}}
+	</section>
+</template>
+
+<template name="m2a24_end">
+	{{>EndPage char="elle" act="m2a24" nextact="m2a25" place="Stonehaven"}}
+</template>
+
+<template name="m2a24instructions">
+	<h3>Listen to the conversation again.</h3>
+	<h3>Some sentences have a missing word.</h3>
+	<h3>When you see a space, type in the missing word.</h3>
+</template>
+
+<template name="m2a24hearagain">
+	<p>
+		<a draggable="false" href="#" id="m2a24hearagain" data-toggle="modal" data-target="#m2a24_modal">{{>touch yes="Tap" no="Click"}} here to hear the whole conversation again</a>
+	</p>
+</template>
+
+<template name="m2a24r">
+	<div class="row">
+		<div class="col-sm-7 col-xs-8">
+			{{>m2a24instructions}}
+		</div>
+		<div class="col-sm-5 col-xs-4 text-right">
+			<div class="ph-w ph-1x1" style="max-width: 250px">
+				<div class="ph">
+					<img draggable="false" src="images/module2/a23-24/operator_thumb3.png" alt="Call center">
+				</div>
+			</div>
+		</div>
+	</div>
+	{{>blankrow}}
+</template>
+
+<template name="m2a24k">
+	<div class="row">
+		<div class="col-sm-7 col-xs-8">
+			{{>m2a24instructions}}
+		</div>
+		<div class="col-sm-5 col-xs-4 text-right">
+			<div class="ph-w ph-1x1" style="max-width: 250px">
+				<div class="ph">
+					<img draggable="false" src="images/module2/a23-24/k_thumb3.png" alt="K on phone">
+				</div>
+			</div>
+		</div>
+	</div>
+	{{>blankrow}}
+</template>
+
+<template name="m2a24_modal">
+	<div class="modal fade" tabindex="-1" id="m2a24_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content" id="modal-content-id">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="m2a24_modal">Booking a ticket</h4>
+				</div>
+				<div class="content">
+					<div class="videoplayer">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video class="embed-responsive-item" controls poster="/video/poster.png">
+								<source src="video/module2/a24.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

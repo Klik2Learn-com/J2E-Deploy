@@ -1,0 +1,170 @@
+<template name="m8a26"> 
+<article class="with-tools-sidebar m8a26">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Bath');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 8</div> <div class="acttitle-title">{{> activity}} 26 - {{>m8a26Title}}</div>
+		</header>
+		<section id="m8a26">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a26Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m8a26Intro}}</h3>
+				{{> m8a26Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a26_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a26_1}}
+		{{>m8a26_2}}
+		{{>m8a26_3}}
+		{{>EndPage char="tu" act="m8a26" nextact="m8a27" place="Bath"}}
+	</div>
+</article>
+
+</template>
+<template name="m8a26_2"> 
+	<section id="m8a26_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Listen to each paragraph from the ‘Working Life Then and Now’ article and decide if the sentences below are <b>True</b> or <b>False</b>. 
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}}
+					<div class="col-sm-8 col-sm-offset-2 text-center parapaper">						
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module8/a26/Para_1.m4a"></button>
+						<div class="number">1</div><span id="question_text">“People are happier now than they were in the 1950s.”</span>
+							<div class="row">
+								<div class="col-sm-6">
+									<button id="true" class="button2 item-space ddwidth9">True</button>
+								</div>
+								<div class="col-sm-6">
+									<button id="false" class="button2 item-space ddwidth9">False</button>
+								</div>
+							</div>						
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 center">
+						{{>scorebox1 rightSession="m8a26_2RightScore" wrongSession="m8a26_2WrongScore"}}
+					</div>
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a26_1" nexturl="#m8a26_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a26_1"> 
+	<section id="m8a26_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      			<h1>Working Life Then and Now</h1>
+      			<h4 class="center">This article explains about what working life was like in the 1950's compared to nowadays.</h4>
+      			<h3 class="center">Listen to each paragraph below.</h3>
+				{{>metametrics level="5" star="no" align="center"}}
+				<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-7 center">
+						<div class="row">
+							<div class="col-sm-6">
+								<button class="button1 button-icon item-space audio" data-audiosrc="/audio/module8/a26/Para_1.m4a">Paragraph 1</button>
+							</div>
+							<div class="col-sm-6">
+								<button class="button1 button-icon item-space audio" data-audiosrc="/audio/module8/a26/Para_2.m4a">Paragraph 2</button>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-6">
+								<button class="button1 button-icon item-space audio" data-audiosrc="/audio/module8/a26/Para_3.m4a">Paragraph 3</button>
+							</div>
+							<div class="col-sm-6">
+								<button class="button1 button-icon item-space audio" data-audiosrc="/audio/module8/a26/Para_4.m4a">Paragraph 4</button>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-6">
+								<button class="button1 button-icon item-space audio" data-audiosrc="/audio/module8/a26/Para_5.m4a">Paragraph 5</button>
+							</div>
+							<div class="col-sm-6">
+								<button class="button1 button-icon item-space audio" data-audiosrc="/audio/module8/a26/Para_6.m4a">Paragraph 6</button>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<button class="button1 button-icon item-space audio" data-audiosrc="/audio/module8/a26/Para_7.m4a">Paragraph 7</button>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-sm-5">
+						<div class="ph-w ph-3x4 shadow item-space" style="max-width: 270px"><div class="ph"><img draggable="false" src="images/module8/a26/we-can-do-it.jpg" alt="WOrld War II poster of a strong woman saying 'we can do it!'"></div></div>
+					</div>
+				</div>
+			</div>     			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a26" nexturl="#m8a26_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+<template name="m8a26_3"> 
+	<section id="m8a26_bad" class="hidden"> 
+		<!-- {{#if activeSection}}  -->
+		<div class="content">
+			
+			<h2 class="center">You got too many questions wrong.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a26_2RightScore" wrongSession="m8a26_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_wrong.jpg" alt="K, Tu and Elle"></div></div>
+					<a draggable="false" href="#m8a26_2" id="m8a26restart" class="pagination">
+						<div class="button1">{{>touch yes="Tap" no="Click"}} to try again</div>
+					</a>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a26_2" nexturl="#m8a26_end" prev="disabled" next=""}} 
+		</footer> 
+		<!-- {{/if}}  -->
+	</section>  
+	<section id="m8a26_good" class="hidden"> 
+		<!-- {{#if activeSection}}  -->
+		<div class="content">
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					{{>scorebox2 rightSession="m8a26_2RightScore" wrongSession="m8a26_2WrongScore"}}
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m8a26_2" nexturl="#m8a26_end" prev="disabled" next=""}} 
+		</footer> 
+		<!-- {{/if}}  -->
+	</section> 
+ </template>

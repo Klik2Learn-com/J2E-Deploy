@@ -1,0 +1,119 @@
+<template name="styleArticle">
+<section id="style-article" class="hidden">
+	<div class="content">
+		<h1>Article</h1>
+		
+		<p><b>You can have a header and/or audio button. Keep them inside <span class="htmlcode">article-header</span>.</b></p>
+		<p><b>If you want neither, delete <span class="htmlcode">article-header</span>.</b></p>
+		<br>
+		<div class="parapaper paraextract article-text">
+			<div class="article-header">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module2/a23/RPart1.m4a"></button>
+				<h4>Optional heading</h4>
+			</div>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus elit, tristique sed nibh ut, volutpat fermentum nibh. Sed purus augue, faucibus et purus vel, imperdiet commodo ligula. Nullam ac massa quis magna dapibus pulvinar. Pellentesque pulvinar metus id felis lacinia laoreet.</p>
+
+			<p>Mauris ac lorem eget magna consequat suscipit. Morbi fringilla nunc tellus, luctus molestie massa porta vel. Nunc elementum pharetra lectus, sit amet faucibus ipsum condimentum vel. Vestibulum volutpat a nisl et placerat. Integer at tellus tempor, malesuada nulla vehicula, dapibus leo.</p>
+			
+			<p>Mauris ac lorem eget magna consequat suscipit. Morbi fringilla nunc tellus, luctus molestie massa porta vel. Nunc elementum pharetra lectus, sit amet faucibus ipsum condimentum vel. Vestibulum volutpat a nisl et placerat. Integer at tellus tempor, malesuada nulla vehicula, dapibus leo.</p>
+			
+			<p>Mauris ac lorem eget magna consequat suscipit. Morbi fringilla nunc tellus, luctus molestie massa porta vel. Nunc elementum pharetra lectus, sit amet faucibus ipsum condimentum vel. Vestibulum volutpat a nisl et placerat. Integer at tellus tempor, malesuada nulla vehicula, dapibus leo.</p>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus elit, tristique sed nibh ut, volutpat fermentum nibh. Sed purus augue, faucibus et purus vel, imperdiet commodo ligula. Nullam ac massa quis magna dapibus pulvinar. Pellentesque pulvinar metus id felis lacinia laoreet.</p>
+		</div>
+		<div class="articlesrc paraextract">Article source, 2009</div>
+		
+		<br>
+		<h4>HTML</h4>
+<pre class="htmlcode2">&lt;div class=&quot;parapaper paraextract article-text&quot;&gt;
+	<span style="color: blue;">&lt;div class=&quot;article-header&quot;&gt;
+		&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;<span class="html-red">/audio/module2/a23/RPart1.m4a</span>&quot;&gt;&lt;/button&gt;
+		&lt;h4&gt;<span class="html-red">Optional heading</span>&lt;/h4&gt;
+	&lt;/div&gt;</span>
+
+	&lt;p&gt;<span class="html-red">Paragraph 1</span>&lt;/p&gt;
+
+	&lt;p&gt;<span class="html-red">Paragraph 2</span>&lt;/p&gt;
+	
+	&lt;p&gt;<span class="html-red">Paragraph 3</span>&lt;/p&gt;
+	
+	&lt;p&gt;<span class="html-red">Paragraph 4</span>&lt;/p&gt;
+	
+	&lt;p&gt;<span class="html-red">Paragraph 5</span>&lt;/p&gt;
+&lt;/div&gt;
+<span style="color: blue;">&lt;div class=&quot;articlesrc paraextract&quot;&gt;<span class="html-red">Article source, 2009</span>&lt;/div&gt;</span></pre>
+		<br>
+		<hr>
+		<br>
+		
+		<h1>Article with Responsive Images</h1>
+		<p><b>You can have images floated left or right to suit. If there's an image at the very start, it usually looks best floated right. These images cease to float and become block elements on mobile/XS view.</b></p>
+		<p><b>For the sake of a keeping the page layout from changing as images load in, all floating images should be given a fixed width. <span class="htmlcode">230px</span> is a good value that works amongst text and on mobile screens.</b></p>
+		<p><b>Delete the <span class="htmlcode">figcaption</span> if the image doesn't have a caption.</b></p>
+		<br>
+		<div class="parapaper article-text">
+			<div class="article-header">
+				<button class="buttonround buttonaudio" data-audiosrc="/audio/module2/a23/RPart1.m4a"></button>
+				<h4>Optional heading</h4>
+			</div>
+			
+			<figure class="image imgright-responsive">
+				<div class="ph-w ph-3x2 shadow" style="width: 230px;"><div class="ph"><img draggable="false" src="images/module3/a19/Edinburgh.jpg" alt="Description"></div></div>
+			</figure>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus elit, tristique sed nibh ut, volutpat fermentum nibh. Sed purus augue, faucibus et purus vel, imperdiet commodo ligula. Nullam ac massa quis magna dapibus pulvinar. Pellentesque pulvinar metus id felis lacinia laoreet.</p>
+
+			<p>Mauris ac lorem eget magna consequat suscipit. Morbi fringilla nunc tellus, luctus molestie massa porta vel. Nunc elementum pharetra lectus, sit amet faucibus ipsum condimentum vel. Vestibulum volutpat a nisl et placerat. Integer at tellus tempor, malesuada nulla vehicula, dapibus leo.</p>
+			
+			<figure class="image imgleft-responsive ">
+				<div class="ph-w ph-3x2" style="width: 230px;"><div class="ph"><img draggable="false" src="images/module3/a19/Glasgow.jpg" alt="Description"></div></div>
+				<figcaption>Optional caption</figcaption>
+			</figure>
+			
+			<p>Mauris ac lorem eget magna consequat suscipit. Morbi fringilla nunc tellus, luctus molestie massa porta vel. Nunc elementum pharetra lectus, sit amet faucibus ipsum condimentum vel. Vestibulum volutpat a nisl et placerat. Integer at tellus tempor, malesuada nulla vehicula, dapibus leo.</p>
+			
+			<p>Mauris ac lorem eget magna consequat suscipit. Morbi fringilla nunc tellus, luctus molestie massa porta vel. Nunc elementum pharetra lectus, sit amet faucibus ipsum condimentum vel. Vestibulum volutpat a nisl et placerat. Integer at tellus tempor, malesuada nulla vehicula, dapibus leo.</p>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus elit, tristique sed nibh ut, volutpat fermentum nibh. Sed purus augue, faucibus et purus vel, imperdiet commodo ligula. Nullam ac massa quis magna dapibus pulvinar. Pellentesque pulvinar metus id felis lacinia laoreet.</p>
+			
+			<!-- fixes image floats -->
+			<div class="parent_expander"></div>
+		</div>
+		<div class="articlesrc">Article source, 2009</div>
+		
+		<br>
+		<h4>HTML</h4>
+<pre class="htmlcode2">&lt;div class=&quot;parapaper article-text&quot;&gt;
+	<span style="color: blue;">&lt;div class=&quot;article-header&quot;&gt;
+		&lt;button class=&quot;buttonround buttonaudio&quot; data-audiosrc=&quot;<span class="html-red">/audio/module2/a23/RPart1.m4a</span>&quot;&gt;&lt;/button&gt;
+		&lt;h4&gt;<span class="html-red">Optional heading</span>&lt;/h4&gt;
+	&lt;/div&gt;</span>
+	
+	<span style="color: blue;">&lt;figure class=&quot;image img<span class="html-red">right</span>-responsive&quot;&gt;
+		&lt;div class=&quot;ph-w <span class="html-red">ph-3x2 shadow</span>&quot; style=&quot;width: <span class="html-red">230px</span>;&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;<span class="html-red">images/module3/a19/Edinburgh.jpg</span>&quot; alt=&quot;<span class="html-red">Description</span>&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;/figure&gt;</span>
+	
+	&lt;p&gt;<span class="html-red">Paragraph 1</span>&lt;/p&gt;
+
+	&lt;p&gt;<span class="html-red">Paragraph 2</span>&lt;/p&gt;
+	
+	<span style="color: blue;">&lt;figure class=&quot;image img<span class="html-red">left</span>-responsive&quot;&gt;
+		&lt;div class=&quot;ph-w <span class="html-red">ph-3x2</span>&quot; style=&quot;width: <span class="html-red">230px</span>;&quot;&gt;&lt;div class=&quot;ph&quot;&gt;&lt;img draggable=&quot;false&quot; src=&quot;<span class="html-red">images/module3/a19/Glasgow.jpg</span>&quot; alt=&quot;<span class="html-red">Description</span>&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;figcaption&gt;<span class="html-red">Optional caption</span>&lt;/figcaption&gt;
+	&lt;/figure&gt;</span>
+	
+	&lt;p&gt;<span class="html-red">Paragraph 3</span>&lt;/p&gt;
+
+	&lt;p&gt;<span class="html-red">Paragraph 4</span>&lt;/p&gt;
+
+	&lt;p&gt;<span class="html-red">Paragraph 5</span>&lt;/p&gt;
+	
+	<i>&lt;!-- fixes image floats --&gt;</i>
+	&lt;div class=&quot;parent_expander&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+<span style="color: blue;">&lt;div class=&quot;articlesrc&quot;&gt;<span class="html-red">Article source, 2009</span>&lt;/div&gt;</span></pre>
+
+	</div>
+</section>
+</template>

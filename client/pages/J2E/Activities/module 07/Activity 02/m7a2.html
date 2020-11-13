@@ -1,0 +1,404 @@
+<template name="m7a2">
+	<article class="with-tools-sidebar m7a2">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Sheffield');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 2 - {{>m7a2Title}}</div>
+			</header>
+			<section id="m7a2">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a2Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m7a2Intro}}</h3>
+					{{> m7a2Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a2_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a2_1}} {{>m7a2_2}} {{>m7a2_3}} {{>m7a2_4}} {{>m7a2_5}} {{>EndPage char="tu" act="m7a2" nextact="m7a3" place="Sheffield"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a2_1">
+	<section id="m7a2_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content center">
+			<h3>Here are pictures of the words you've looked up in the dictionary in Activity 1.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="ph-w trans inline-block item-space">
+							<img draggable="false" src="/images/module7/a2/1_paperclip.png" alt="paperclip" width="113" height="113">
+						</div>
+						<div class="ph-w trans inline-block item-space">
+							<img draggable="false" src="/images/module7/a2/2_hazard.png" alt="hazard sign" width="113" height="113">
+						</div>
+						<div class="ph-w trans inline-block item-space">
+							<img draggable="false" src="/images/module7/a2/3_perk.png" alt="perks" width="113" height="113">
+						</div>
+						<div class="ph-w trans inline-block item-space">
+							<img draggable="false" src="/images/module7/a2/4_disruptive.png" alt="disruptive behaviour" width="113" height="113">
+						</div>
+						<div class="ph-w trans inline-block item-space">
+							<img draggable="false" src="/images/module7/a2/5_marking.png" alt="marking" width="113" height="113">
+						</div>
+						<div class="ph-w trans inline-block item-space">
+							<img draggable="false" src="/images/module7/a2/6_tube.png" alt="test tube" width="113" height="113">
+						</div>
+						<div class="ph-w ph-1x1 trans inline-block item-space" style="max-width: 113px">
+							<img draggable="false" src="/images/module7/a2/7_discipline.png" alt="discipline" width="113" height="113">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a2" nexturl="#m7a2_2" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a2_2">
+	<section id="m7a2_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="content noselect">
+				<h3 class="text-center">Drag the meanings to the spaces below the pictures.</h3>
+
+				<div class="center">
+					<div class="ddpic shadow">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/2_hazard.png">
+								</div>
+							</div>
+						</figure>
+						<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/6_tube.png">
+								</div>
+							</div>
+						</figure>
+						<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/7_discipline.png">
+								</div>
+							</div>
+						</figure>
+						<div data-destinationid="target3" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div>
+					<!-- <div class="ddpic shadow" >
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px"><div class="ph"><img draggable="false" src="/images/module7/a2/5_marking.png"></div></div>
+						</figure>
+						<div id="target4" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div> -->
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<div class="ddseat dd2lines ddwidth16">
+							<div class="ddsourceseated dd2lines ddwidth16 shadow" draggable="false" data-destination="target2">A small glass container used by scientists to hold liquids</div>
+						</div>
+						<div class="ddseat dd2lines ddwidth16">
+							<div class="ddsourceseated dd2lines ddwidth16 shadow" draggable="false" data-destination="target1">Something dangerous or harmful</div>
+						</div>
+						<div class="ddseat dd2lines ddwidth16">
+							<div class="ddsourceseated dd2lines ddwidth16 shadow" draggable="false" data-destination="target3">Setting boundaries and rules for behaviour</div>
+						</div>
+					</div>
+				</div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<!--{{>welldone}}-->
+				{{>rightwrong}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a2_1" nexturl="#m7a2_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a2_3">
+	<section id="m7a2_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="content noselect">
+				<h3 class="text-center">Drag the meanings to the spaces below the pictures.</h3>
+
+				<div class="center">
+					<div class="ddpic shadow">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/3_perk.png">
+								</div>
+							</div>
+						</figure>
+						<div data-destinationid="target1" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/4_disruptive.png">
+								</div>
+							</div>
+						</figure>
+						<div data-destinationid="target2" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div>
+					<br>
+					<div class="ddpic shadow">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/5_marking.png">
+								</div>
+							</div>
+						</figure>
+						<div data-destinationid="target3" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/1_paperclip.png">
+								</div>
+							</div>
+						</figure>
+						<div data-destinationid="target4" class="ddseatedtarget dd2lines ddwidth16">&nbsp;</div>
+					</div>
+					<!-- <div class="ddpic shadow ddwidth12" >
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px"><div class="ph"><img draggable="false" src="/images/module7/a2/5_marking.png"></div></div>
+						</figure>
+						<div id="target4" class="ddseatedtarget dd4lines ddwidth12">&nbsp;</div>
+					</div> -->
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<div class="ddseat dd2lines ddwidth16">
+							<div class="ddsourceseated dd2lines ddwidth16 shadow" draggable="false" data-destination="target3">Writing comments and corrections on people's work</div>
+						</div>
+						<div class="ddseat dd2lines ddwidth16">
+							<div class="ddsourceseated dd1line2high ddwidth16 shadow" draggable="false" data-destination="target1">An advantage or bonus</div>
+						</div>
+						<div class="ddseat dd2lines ddwidth16">
+							<div class="ddsourceseated dd2lines ddwidth16 shadow" draggable="false" data-destination="target4">A small metal clip for holding paper</div>
+						</div>
+						<div class="ddseat dd2lines ddwidth16">
+							<div class="ddsourceseated dd2lines ddwidth16 shadow" draggable="false" data-destination="target2">Bad behaviour, bringing disorder</div>
+						</div>
+					</div>
+				</div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<!--{{>welldone}}-->
+				{{>rightwrong}}
+
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a2_2" nexturl="#m7a2_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a2_4">
+	<section id="m7a2_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="content noselect">
+				<h3 class="text-center">Now drag the words to the spaces below the meanings.</h3>
+
+				<div class="center">
+					<div class="ddpic shadow ddwidth16">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/2_hazard.png">
+								</div>
+							</div>
+							<b>Something dangerous or harmful</b>
+						</figure>
+						<br>
+						<div data-destinationid="target1" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow ddwidth16">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/6_tube.png">
+								</div>
+							</div>
+							<b>A small glass container used by scientists to hold liquids</b>
+						</figure>
+						<div data-destinationid="target2" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow ddwidth16">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/7_discipline.png">
+								</div>
+							</div>
+							<b>Setting boundaries and rules for behaviour</b>
+						</figure>
+						<br>
+						<div data-destinationid="target3" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div>
+					<!-- <div class="ddpic shadow ddwidth8" >
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px"><div class="ph"><img draggable="false" src="/images/module7/a2/5_marking.png"></div></div>
+						</figure>
+						<div id="target4" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div> -->
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<div class="ddseat ddwidth8 dd1line">
+							<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Discipline</div>
+						</div>
+						<div class="ddseat ddwidth8 dd1line">
+							<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Test Tube</div>
+						</div>
+						<div class="ddseat ddwidth8 dd1line">
+							<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Hazard</div>
+						</div>
+					</div>
+				</div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				<!--{{>welldone}}-->
+				{{>rightwrong}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a2_3" nexturl="#m7a2_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m7a2_5">
+	<section id="m7a2_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="content noselect">
+				<h3 class="text-center">Now drag the words to the spaces below the meanings.</h3>
+
+				<div class="center">
+					<div class="ddpic shadow ddwidth13">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/3_perk.png">
+								</div>
+							</div>
+							<b>An advantage or bonus</b>
+						</figure>
+						<br>
+						<div data-destinationid="target1" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow ddwidth13">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/4_disruptive.png">
+								</div>
+							</div>
+							<b>Bad behaviour, bringing disorder</b>
+						</figure>
+						<br>
+						<div data-destinationid="target2" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow ddwidth13">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/5_marking.png">
+								</div>
+							</div>
+							<b>Writing comments and corrections on people's work</b>
+						</figure>
+						<div data-destinationid="target3" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div>
+					<div class="ddpic shadow ddwidth13">
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px">
+								<div class="ph">
+									<img draggable="false" src="/images/module7/a2/1_paperclip.png">
+								</div>
+							</div>
+							<b>A small metal clip for holding paper</b>
+						</figure>
+						<br>
+						<div data-destinationid="target4" class="ddseatedtarget dd1line ddwidth8">&nbsp;</div>
+					</div>
+					<!-- <div class="ddpic shadow ddwidth12" >
+						<figure>
+							<div class="ph-w ph-1x1 trans" style="max-width: 113px"><div class="ph"><img draggable="false" src="/images/module7/a2/5_marking.png"></div></div>
+						</figure>
+						<div id="target4" class="ddseatedtarget dd1line ddwidth12">&nbsp;</div>
+					</div> -->
+				</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+					<div class="box1 box1dd1">
+						<div class="ddseat ddwidth8 dd1line">
+							<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target2">Disruptive</div>
+						</div>
+						<div class="ddseat ddwidth8 dd1line">
+							<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target1">Perk</div>
+						</div>
+						<div class="ddseat ddwidth8 dd1line">
+							<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target4">Paperclip</div>
+						</div>
+						<div class="ddseat ddwidth8 dd1line">
+							<div class="ddsourceseated ddwidth8 dd1line shadow" draggable="false" data-destination="target3">Marking</div>
+						</div>
+					</div>
+				</div>
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>
+
+				{{>welldone}} {{>rightwrong}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a2_3" nexturl="#m7a2_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

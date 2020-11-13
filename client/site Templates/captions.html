@@ -1,0 +1,100 @@
+<template name="capcorrect">
+<div class="correct {{class}}"><i class="fa fa-check"></i></div>
+</template>
+
+<template name="capcorrectbig">
+<div class="correctbig {{class}}"><i class="fa fa-check"></i></div>
+</template>
+
+<template name="capincorrect">
+<div class="incorrect {{class}}"><i class="fa fa-close"></i></div>
+</template>
+
+<template name="capincorrectbig">
+<div class="incorrectbig {{class}}"><i class="fa fa-close"></i></div>
+</template>
+
+<template name="boxcorrect">
+<div class="caption capright fold">
+{{text}}
+<div class="correct noshadow" style="margin: 0px -5px 0px 20px;"><i class="fa fa-check"></i></div>
+</div>
+</template>
+
+<template name="boxcorrecthtml">
+<div class="caption capright fold {{class}}">
+{{{text}}}
+<div class="correct" style="margin: 0px -5px 0px 20px;"><i class="fa fa-check"></i></div>
+</div>
+</template>
+
+<template name="boxincorrect">
+<div class="caption capwrong fold">
+{{text}}
+<div class="incorrect noshadow" style="margin: 0px -5px 0px 20px;"><i class="fa fa-close"></i></div>
+</div>
+</template>
+
+<template name="boxcorrectscreen">
+<div class="fixed-center ">
+	<div class="caption capright hidden">
+	{{text}}
+	<div class="correct noshadow" style="margin: 0px -5px 0px 20px;"><i class="fa fa-check"></i></div>
+	</div>
+</div>
+</template>
+
+<template name="boxincorrectscreen">
+<div class="fixed-center ">
+	<div class="caption capwrong hidden">
+	{{text}}
+	<div class="incorrect noshadow" style="margin: 0px -5px 0px 20px;"><i class="fa fa-close"></i></div>
+	</div>
+</div>
+</template>
+
+<template name="scorebox1">
+<div class="scorebox">
+	<div class="correct noshadow" alt="correct"><i class="fa fa-check"></i></div>
+	<b>
+		<!-- Total correct answers -->
+		<span id="{{rightID}}">{{rightDisplay}}</span>
+	</b>
+	<div class="scoreboxspace"></div>
+	<div class="incorrect noshadow" alt="incorrect"><i class="fa fa-close"></i></div>
+	<b>
+		<!-- Total incorrect answers -->
+		<span id="{{wrongID}}">{{wrongDisplay}}</span>
+	</b>
+</div>
+</template>
+
+<template name="scorebox2">
+<div class="scorebox">
+	<ol class="olblank">
+		<li>
+			<div class="correct noshadow"><i class="fa fa-check"></i></div>
+			<b>
+				<!-- Total correct answers -->
+				<span id="{{rightID}}">{{rightDisplay}}</span>
+			</b>
+		</li>
+		<li><div class="scoreboxvspace"></div></li>
+		<li>
+			<div class="incorrect noshadow"><i class="fa fa-close"></i></div>
+			<b>
+				<!-- Total incorrect answers -->
+				<span id="{{wrongID}}">{{wrongDisplay}}</span>
+			</b>
+		</li>
+	</ol>
+</div>
+</template>
+
+<template name="rightwrong">
+<div class="incorrectscreen hidden animated bounceIn"><i class="fa fa-close"></i></div><div class="correctscreen hidden animated bounceIn"><i class="fa fa-check"></i></div>
+</template>
+
+<template name="wrongonly">
+<div class="incorrectscreen hidden animated bounceIn"><i class="fa fa-close"></i></div>
+</template>

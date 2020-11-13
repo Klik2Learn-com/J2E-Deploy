@@ -1,0 +1,147 @@
+<template name="MoreAboutNewcastle">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Newcastle"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m6l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m6l1}}</div>
+		</header>
+
+		<section id="moreaboutNewcastle">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newcastle/Newcastle1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l1_A">
+						<p>The Angel of the North</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newcastle/Newcastle2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l1_B">
+						<p>Newcastle Castle</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newcastle/Newcastle3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l1_C">
+						<p>Tyne Bridge</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newcastle/Newcastle4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l1_D">
+						<p>Ant and Dec</p>
+					</div>
+					<div class="col-sm-5 col-xs-12 bonus-image" style="background-image: url('images/bonus/Newcastle/Newcastle5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m6l1_E">
+						<p>The Victoria Tunnel</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l1_A">The Angel of the North</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newcastle/Newcastle1.jpg" alt="The Angel of the North" style="max-width: 250px;">
+					</figure>
+					<p>The Angel of the North is one of the most famous pieces of public art in Britain and  stands on a hill where miners used to work underground in a coal mine. Its wingspan is a big as a jumbo jet. The sculptor, Antony Gormley has won many awards and has sculptures in many countries. </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.newcastlegateshead.com/things-to-do/the-angel-of-the-north-p26491/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l1_B">Newcastle Castle</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newcastle/Newcastle2.jpg" alt="Newcastle Castle" style="max-width: 250px;">
+					</figure>
+					<p>A tour of the castle will explain how Newcastle began, from ancient Celtic Britons to Roman soldiers and the present day. From the top you can see wonderful views of the River Tyne, the cathedral and the main railway station. The castle was once a prison and is supposed to be haunted.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.newcastlecastle.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l1_C">Tyne Bridge</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newcastle/Newcastle3.jpg" alt="Tyne Bridge" style="max-width: 250px;">
+					</figure>
+					<p>There has been a bridge over the River Tyne in north-east England from the time that the  Romans lived there. The modern bridge was built in 1928 and is the most famous of the seven bridges which cross the river. Every year over 50,000 runners cross the Tyne bridge in the Great North Run.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.newcastlegateshead.com/things-to-do/tyne-bridge-p603151" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l1_D">Ant and Dec</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newcastle/Newcastle4.jpg" alt="Ant and Dec" style="max-width: 250px;">
+					</figure>
+					<p>The two presenters were born in Newcastle and have introduced some of the UK’s most popular TV shows. They started their career in children’s television. They have also recorded a number of pop songs and have their own TV show on Saturday night. In 2016 they were both given OBE awards by the Queen.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.officialantanddec.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m6l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m6l1_E">The Victoria Tunnel</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Newcastle/Newcastle5.jpg" alt="The Victoria Tunnel" style="max-width: 250px;">
+					</figure>
+					<p>The tunnel was built under the city to carry coal from the mines to the river. The coal was then loaded onto boats.It’s over two miles long and was used in the Second World War as an air raid shelter.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.newcastlegateshead.com/things-to-do/the-victoria-tunnel-p360881/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,100 @@
+<template name="m9a17"> 
+<article class="with-tools-sidebar m9a17">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Torquay');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 9</div> <div class='acttitle-title'>Activity 17 - {{> m9a17Title}}</div>
+		</header>
+		<section id="m9a17">
+			<div class="content">
+				<h1 class="start-page-header">{{>m9a17Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m9a17Intro}}</h3>
+				{{> m9a17Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m9a17_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m9a17_1}}
+		{{>m9a17_2}}
+		{{>EndPage char="tu" act="m9a17" nextact="m9a18" place="Torquay"}}
+	</div>
+</article>
+</template>
+<template name="m9a17_2"> 
+	<section id="m9a17_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h3 class="center">They both use the <b>Present Perfect</b> and the <b>Present Perfect Continuous</b>. Try to complete these sentences from the conversation. </h3>
+			<div class="parapaper parapaperdd1 fold">{{>metametrics level="2" star="yes" align="center"}}
+			{{> rightwrong}}
+			{{> welldone}}
+				<ol class="olcircle">
+					<li>Since the children were born, <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> from home.</li>
+
+					<li>How <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target6">&nbsp;</div> to write with small children around?</li>
+
+					<li><div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target7">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target8">&nbsp;</div> ever <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target9">&nbsp;</div> to get a job?</li>
+
+					<li>Since I left, <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target10">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target11">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target12">&nbsp;</div> <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target13">&nbsp;</div> two lively toddlers.</li>
+				</ol>
+			</div>
+
+				<div class="dd-fixed-source-container animated slideInUp">
+	<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target10">I've</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5 target8">you</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">working</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4 target7">have</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2 target11">been</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">managed</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target13">after</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">wanted</div></div>
+				 <div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target12">looking</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+			<div class="center">
+			<h3><button class="buttonround buttonaudio" data-audiosrc="/audio/module9/a17/whole.m4a"></button> Listen to the conversation again.</h3>
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m9a17_1" nexturl="#m9a17_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+<template name="m9a17_1"> 
+	<section id="m9a17_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content"> 
+		<h3 class="center">Listen to this conversation between Lydia - a writer who works from home and Helen who is a housewife.</h3>
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 center">
+		<div class="hidden-xs" style="height:60px;"></div>
+			<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module9/a17/whole.m4a"></button>
+			<p>&nbsp;</p>
+		</div>
+		<div class="col-sm-8 ">
+			<div class="ph-w ph-7x3 border1" style="max-width: 513px"><div class="ph"><img draggable="false" src="images/module9/a17/conv.jpg" alt="Two women having a conversation"></div></div>
+		</div>		
+	</div>
+</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m9a17" nexturl="#m9a17_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+

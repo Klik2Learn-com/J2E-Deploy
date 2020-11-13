@@ -1,0 +1,173 @@
+<template name="MoreAboutInverness">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Inverness"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m1l1}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m1l1}}</div>
+		</header>
+
+		<section id="moreaboutinverness">
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-2 col-xs-6 bonus-image" style="background-image: url('images/bonus/Inverness/inverness1.jpg');" data-toggle="modal" data-target="#bonus_modal_m1l1_A">
+						<p>Highland Games</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Inverness/inverness2.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l1_B">
+						<p>Golf at Castle Stuart</p>
+					</div>
+					<div class="col-sm-7 col-xs-12 bonus-image" style="background-image: url('images/bonus/Inverness/inverness3.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l1_C">
+						<p>Clanadonia</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/Inverness/inverness4.jpg'); background-position: center top;" data-toggle="modal" data-target="#bonus_modal_m1l1_D">
+						<p>Rockness</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Inverness/inverness5.jpg');" data-toggle="modal" data-target="#bonus_modal_m1l1_E">
+						<p>Pictish Symbol Stones</p>
+					</div>				
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Inverness/inverness6.jpg');" data-toggle="modal" data-target="#bonus_modal_m1l1_F">
+						<p>Red Deer</p>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l1_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l1_A">Highland Games</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Inverness/inverness1.jpg" alt="Highland Games" style="max-width: 250px;">
+					</figure>
+					<p>Every year Inverness hosts the Highland games. Highland games are events held in spring and summer in Scotland (as well as other countries) as a way of celebrating Scottish and Celtic culture. Perhaps the best known event is the the caber toss. The main events are competitions in piping and drumming, dancing, and Scottish heavy athletics, but also include entertainment and exhibits related to other aspects of Scottish and Gaelic culture.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center">
+						<!-- <iframe style="width: 90%;" src="http://invernesshighlandgames.com"></iframe> -->
+						 <a draggable="false" href="http://invernesshighlandgames.com" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a> 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l1_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l1_B">Castle Stuart Golf Links</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Inverness/inverness2.jpg" alt="Golfer" style="max-width: 250px;">
+					</figure>
+					<p>Scotland is the home of golf, and Castle Stuart is one of the best know courses in the Highlands. 2016 will be the fourth year it has hosted the Scottish Open, a PGA European Tour golf tournament.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.castlestuartgolf.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l1_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l1_C">Clanadonia</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Inverness/inverness3.jpg" alt="Drummers" style="max-width: 250px;">
+					</figure>
+					<p>Clanadonia are a Scottish pipe and drum band that perform anywhere from the city streets of Glasgow to international music festivals. Their music is energetic and they aim to share Scottish culture with the world.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.clanadonia.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l1_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l1_D">Rockness</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Inverness/inverness4.jpg" alt="Rockness logo" style="max-width: 250px;">
+					</figure>
+					<p>RockNess was an annual music festival which took place in Scotland on the banks of Loch Ness near Inverness in the Scottish Highlands. The first Rockness festival took place on 24 June 2006 and continued to grow in size every year until 2013, which was the last running year of the festival. The festival was known as "the most beautiful festival in the world" and "the only festival with its own monster" due to its scenic location at Loch Ness which is the alleged home of the mythical Loch Ness Monster. Despite the festival's name it was not just a rock festival but presented music from all genres, especially mainstream and electronic music.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.facebook.com/OfficialRockNess/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l1_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l1_E">Pictish Symbol Stones</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Inverness/inverness5.jpg" alt="Pictish symbol carving" style="max-width: 250px;">
+					</figure>
+					<p>Centuries ago Inverness was a Pictish settlement. The Picts were an ancient tribe in Scotland. They were great craftspeople and carved symbols in stones. Many of these carvings still exist today, although their meanings have been lost.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.orkneyjar.com/history/picts/symbolstones.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m1l1_F" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m1l1_F">Red Deer</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Inverness/inverness6.jpg" alt="Deer" style="max-width: 250px;">
+					</figure>
+					<p>The UK's largest wild animal is the Red Deer, standing 4ft high at the shoulder. They can be found in the mountains and moorlands in the Scottish Highlands. With no natural predators their population has thrived, and are hunted and farmed for their meat - known as Vension.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://scottishwildlifetrust.org.uk/species/red-deer/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

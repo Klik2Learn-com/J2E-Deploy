@@ -1,0 +1,291 @@
+<template name="m5a21">
+	<article class="with-tools-sidebar m5a21">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Liverpool');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 21 - {{>m5a21Title}}</div>
+			</header>
+
+
+			<section id="m5a21">
+				<div class="content">
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m5a21Intro}}</h3>
+					{{> m5a21Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a21_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a21_1}} {{>m5a21_2}} {{>m5a21_3}} {{>m5a21_4}} {{>m5a21_5}} {{>m5a21_6}} {{>EndPage char="elle" act="m5a21" nextact="m5a22"
+			place="Liverpool"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m5a21_1">
+	<section id="m5a21_1" class="hidden">
+		<div class="content">
+			<h1>Phrasal Verbs</h1>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 1 you looked at the verb '
+								<b>to get</b>' used with different prepositions</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 2 you looked at different meanings when the preposition '
+								<b>on</b>' is used with the verb '
+								<b>to go</b>'</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 3 you looked at five different prepositions you can use with the verb '
+								<b>to come</b>' </h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 4 you looked at different prepositions with the verb '
+								<b>to bring</b>'</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a21_1" nexturl="#m5a21_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m5a21_2">
+	<section id="m5a21_2" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Here are five different prepositions with the verb 'to give'.</h3>
+			<h3 class="center">Drag the preposition to the right sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>He was accused of giving
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> valuable information to a rival company.</li>
+					<li>After failing to contact them for weeks, he just gave
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div>.</li>
+					<li>After months of being surrounded by the army, the rebels decided to give
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div>.</li>
+					<li>After running 22 miles of the race, her legs finally gave
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div>.</li>
+					<li>Bill Gates is a successful business man who tries to give something
+						<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> to society.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">out</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">in</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">away</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">back</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">up</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a21_2" nexturl="#m5a21_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m5a21_3">
+	<section id="m5a21_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To offer something free:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To stop doing something:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To benefit others:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target3">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target3">Bill Gates is a successful business man who tries to give something back to society.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">I tried for ages to work out the answer to the crossword puzzle but had to give in.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">They're giving away samples of food at the farmers' market on Saturday.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a21_2" nexturl="#m5a21_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a21_4">
+	<section id="m5a21_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To lose strength/
+						<br>weaken/stop working:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<br>
+					<b>To benefit others:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<br>
+					<b>To stop doing something:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target3">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">My old TV finally gave out at the weekend.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target3">The doctor encouraged all his patients to give up smoking.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">The Jonas brothers try to give something back to society.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a21_3" nexturl="#m5a21_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a21_5">
+	<section id="m5a21_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To stop doing something:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To offer something free:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">I decided to give up watching Doctor Who when my favourite actor left the series.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">Some celebrities give away large amounts of money to charities.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a21_4" nexturl="#m5a21_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a21_6">
+	<section id="m5a21_6" class="hidden">
+		<div class="content">
+			{{> Tu_saved}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a21_5" nexturl="#m5a21_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

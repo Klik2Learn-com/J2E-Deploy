@@ -1,0 +1,683 @@
+<template name="userPage">
+   <article class="with-tools-sidebar ">
+     {{>ToolsSidebar}}
+     <div class="main">
+       <header class="acttitle">
+         {{#if isStudent}}
+         <a draggable="false" href="/"><i class="titlereturn fa fa-arrow-left"></i></a>
+         {{else}}
+         <a draggable="false" href="../admin/userlist"><i class="titlereturn fa fa-arrow-left"></i></a>
+         {{/if}}
+         
+         {{#if hasCourse}}
+         {{>menu}}
+         {{else}}
+         {{>menu_assess}}
+         {{/if}}
+         {{#if isScormSession}}
+         <div class="parent-level">User list</div> <div class="acttitle-title">{{username}}</div>
+         {{else}}
+         <div class="parent-level">User list</div> <div class="acttitle-title">{{getScormID}}</div>
+         {{/if}}         
+      </header>
+      <section>
+         <div class="content-user text-center">
+            <h1>User Page</h1>
+            <table class="user-info">
+               {{#if isScormSession}}
+               <tr>
+                  <td>User name:</td>
+                  <td>{{this.username}}</td>
+               </tr>
+               <tr>
+                  <td>Full name:</td>
+                  <td>{{this.profile.firstname}} {{this.profile.surname}}</td>
+               </tr>
+               <tr>
+                  <td>Email:</td>
+                  <td class="td-email"><a draggable="false" href="mailto:{{this.emails.[0].address}}">{{this.emails.[0].address}}</a></td>
+               </tr>
+               {{else}}
+               <tr>
+                  <td>User ID: </td>
+                  <td>{{getScormID}}</td>
+               </tr>
+               <tr>
+                  <td>Full name:</td>
+                  <td>{{this.profile.firstname}} {{this.profile.surname}}</td>
+               </tr>              
+               {{/if}}
+               {{#if isAdmin}}
+               <tr>
+                  <td>User type:</td>
+                  <td>{{roles}}</td>
+               </tr>               
+               <tr>
+                  <td>Organisation:</td>
+                  <td>{{orgName}}</td>
+               </tr>
+               <tr>
+                  <td>Date Created:</td>
+                  <td>{{formatDate(this.createdAt)}}</td>
+               </tr>
+               {{/if}}
+               <tr>
+                  <td>Days remaining:</td>
+                  <td>{{daysRemaining}}</td>
+               </tr>
+               <tr>
+                  <td>Total time spent:</td>
+                  <td>{{totalTimeCount}}</td>
+               </tr>
+               <tr>
+                  <td class="user-completion">Completion:</td>
+                  <td class="user-completion">
+                     <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{progressBarPercentage}}" aria-valuemin="0" aria-valuemax="100" style="width:{{progressBarPercentage}}%">
+                           {{progressBarPercentage}}%
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                 <td>Achievements:</td>
+                 <td class="user-page-trophies">
+                     {{#if mod1Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod1" title="Completed module 1"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod2Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod2" title="Completed module 2"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod3Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod3" title="Completed module 3"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod4Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod4" title="Completed module 4"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod5Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod5" title="Completed module 5"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod6Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod6" title="Completed module 6"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod7Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod7" title="Completed module 7"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod8Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod8" title="Completed module 8"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod9Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod9" title="Completed module 9"></div>
+                    </div>
+                    {{/if}}
+                    {{#if mod10Trophy}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs mod10" title="Completed module 10"></div>
+                    </div>
+                    {{/if}}
+                    {{#if trophy1}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs per30 t1" title="Completed 1/3 of the course"></div>
+                    </div>
+                    {{/if}}
+                    {{#if trophy2}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs per60 t2" title="Completed 2/3 of the course"></div>
+                    </div>
+                    {{/if}}
+                    {{#if trophy3}}
+                    <div class="trophy-wrapper">
+                        <div class="trophy trophy-xxs per100 t3" title="Completed the course"></div>
+                    </div>
+                    {{/if}}
+                 </td>
+               </tr>
+            </table>
+         </div>
+         {{#if isStudent}}
+         {{#if isMe}}
+         <div class="content-userpage">
+            <div class="container-fluid container-fluid-no-gutter">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <ul id="tabs" class="nav nav-tabs userpage-nav-tabs userpage-nav-tabs-resize" data-tabs="tabs">
+                        <li class="active"><a draggable="false" href="#progress" data-toggle="tab">Progress</a></li>
+                        <li><a draggable="false" href="#notes" data-toggle="tab">Notebook</a></li>
+                        <li><a draggable="false" href="#recordings" data-toggle="tab">Recordings</a></li>
+                        <li><a draggable="false" href="#assessments" data-toggle="tab">Assessments</a></li>
+                        <!-- <li><a draggable="false" href="#certificate" data-toggle="tab">Certificate</a></li> -->
+                     </ul>
+                     <div class="tab-content userpage-tab-content">
+                        <div class="tab-pane active" id="progress">
+                           <ul class="nav nav-tabs userpage-nav-tabs2">
+                              <li class="active"><a draggable="false" href="#overview" role="tab" data-toggle="tab">Overview</a></li>
+                              {{#each progressTest.modules}}
+                              <li><a draggable="false" href="#module{{arrayIndexNumberFix(@index)}}" role="tab" data-toggle="tab">M{{arrayIndexNumberFix(@index)}}</a></li>
+                              {{/each}}
+                           </ul>
+                           <div class="tab-content userpage-tab-content2">
+                              <div class="tab-pane active" id="overview">
+                                 <h2>Overview</h2>
+                                 <div class="table-wrapper scrollbar"><table class="table table-responsive table-striped">
+                                    <thead>
+                                       <tr>
+                                          <th>Module</th>
+                                          <th>Status</th>
+                                          <th>Activities completed</th>
+                                          <th>Time spent</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       {{#each progressTest.modules}}
+                                       <tr>
+                                          <td data-title="Module">{{arrayIndexNumberFix(@index)}}</td>
+                                          <td data-title="Status">{{isModuleFinished }}</td>
+                                          <td data-title="Completed activities">{{completedCount(this.activities)}}</td>
+                                          <td data-title="Time spent">{{timeCount(this.activities)}}</td>
+                                       </tr>
+                                       {{/each}}
+                                    </tbody>
+                                 </table></div>
+                                 <!-- <div class="container-fluid container-fluid-no-gutter admin-overview">
+                                    {{#each progressTest.modules}}
+                                    <div class="row">
+                                    	<div class="col-sm-4">
+                                    		Module {{arrayIndexNumberFix(@index)}}: {{isModuleFinished }}
+                                    	</div>
+                                    	<div class="col-sm-8">
+                                    		{{completedCount(this.activities)}} | {{timeCount(this.activities)}}
+                                    	</div>
+                                    </div>
+                                    {{/each}}
+                                 </div> -->
+                              </div>
+                              {{#each progressTest.modules}}
+                              <div class="tab-pane" id="module{{arrayIndexNumberFix(@index)}}">
+                                 <h2>
+                                    Module {{arrayIndexNumberFix(@index)}}:
+                                    {{isModuleFinished (@index)}}
+                                 </h2>
+                                 <div class="table-wrapper scrollbar"><table class="table table-responsive table-striped">
+                                    <thead>
+                                       <tr>
+                                          <th width="100">Activity</th>
+                                          <th>Status</th>
+                                          <th>Date Started</th>
+                                          <th>Date Stopped<br>(latest)</th>
+                                          <th>Date Resumed<br>(latest)</th>
+                                          <th>Date Completed</th>
+                                          <th width="100">Time Taken (hh:mm:ss)</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       {{#each this.activities}}
+                                       <tr>
+                                          <td data-title="Activity">
+                                             {{arrayIndexNumberFix(@index)}}
+                                          </td>
+                                          <td data-title="Status">
+                                             {{isActivityCompleted this.completed}}
+                                          </td>
+                                          <td data-title="Started">
+                                             {{#if isActivityStarted}}
+                                             {{formatDate(dateStarted)}}
+                                             {{else}}
+                                             Not Started
+                                             {{/if}}
+                                          </td>
+                                          <td data-title="Paused">
+                                             {{formatDate datePaused}}
+                                          </td>
+                                          <td data-title="Date Resumed">
+                                             {{formatDate dateResumed}}
+                                          </td>
+                                          <td data-title="Date Ended">
+                                             {{#if isActivityEnded}}
+                                             {{formatDate dateEnded}}
+                                             {{else}}
+                                             Not Finished
+                                             {{/if}}
+                                          </td>
+                                          <td data-title="Time taken">
+                                             {{timeTaken (this)}}
+                                          </td>
+                                       </tr>
+                                       {{/each}}
+                                    </tbody>
+                                 </table></div>
+                              </div>
+                              {{/each}}
+                           </div>
+                        </div>
+                        <div class="tab-pane" id="notes">
+                           <div class="table-wrapper scrollbar"><table id="notes-table" class="table table-responsive table-striped">
+                              <thead>
+                                 <tr>
+                                    <th>Note Title</th>
+                                    <th>Note Date</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 {{#each userNote}}
+                                 <tr>
+                                    <td data-id="{{_id}}" data-function="viewNote" data-title="Note Title">
+                                       <a>{{noteTitle}}</a>
+                                    </td>
+                                    <td data-title="Note Date">
+                                       {{noteDate}}
+                                    </td>
+                                 </tr>
+                                 {{/each}}
+                              </tbody>
+                           </table></div>
+                        </div>
+                        <div class="tab-pane" id="recordings">
+                           <div class="table-wrapper scrollbar"><table id="recordings-table" class="table table-responsive table-striped">
+
+                              <thead>
+                                 <tr>
+                                    <th class="">Name</th>
+                                    <th class="">Duration</th>
+                                    <th class="">Recorded date</th>
+                                    <th class="text-center">Delete</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 {{#each userRecordings}}
+                                 <tr>
+                                    <td class="text-left text-middle" data-title="Name">
+                                       <a><button class="buttonround buttonroundsmall buttonaudio"></button> {{name}}</a>
+                                    </td>
+                                    <td class="text-left text-middle" data-title="Duration">
+                                       {{metadata.duration}} sec
+                                    </td>
+                                    <td class="text-left text-middle" data-title="Date recorded">
+                                       {{formatuploadDate}}
+                                    </td>
+                                    <!-- <td class="center">
+                                       <div class="user-edit"><a draggable="false" href="#"><i class="far fa-file-audio"></i></a></div>
+                                    </td> -->
+                                    <td class="center" data-title="Delete">
+                                       <div class="user-edit"><a draggable="false" data-function="deleteAudio" href="#"><i class="fa fa-trash-alt"></i></a></div>
+                                    </td>
+                                 </tr>
+                                 {{/each}}
+                              </tbody>
+                           </table></div>
+                        </div>
+                        <div class="tab-pane" id="assessments">
+                           <br>
+                           {{#if tutorView}}
+                           {{#if isAdmin}}
+                           <div class="form-group" style="display:inline-block">
+                              <label for="sel1">Assign Assessment:</label>
+                              <select class="form-control assessment-select" id="sel1">
+                                 <option>English Skills Test</option>
+                              </select>
+                              <button id="assignAssessment" class="button2 buttonsmall noshadow">Assign</button>
+                           </div>
+                           <br>
+                           <hr>
+                           {{/if}}
+                           {{/if}}
+                           <h4>{{>touch yes="Tap" no="Click"}} on an assessment to see details and review</h4>
+                           <ol class="assessment-list">
+                              {{#each progressTest.assessments}}
+                              {{#with assessmentDoc}}
+                              <li>
+                                 <a draggable="false" data-toggle="collapse" data-target="#{{this._id}}" class="collapsed">{{this.name}} <span style="font-weight: normal;">{{#if notMarked}} (Not Marked) {{else}} - {{{passOrFail}}} {{/if}}</span></a>
+                                 <div id="{{this._id}}" class="collapse">
+                                    <div class="table-wrapper scrollbar"><table id="assessments-table" class="table table-responsive table-striped">
+                                       <thead>
+                                          <tr>
+                                             <th>Section</th>
+                                             <th>Date Started</th>
+                                             <th>Date Completed</th>
+                                             <th>Mark</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          {{#each this.sections}}
+                                          <tr>
+                                             <td class="text-left text-middle" data-title="Section">
+                                                {{this.name}}
+                                             </td>
+                                             <td class="text-left text-middle" data-title="Started">
+                                                {{formatDate this.startDate}}
+                                             </td>
+                                             <td class="text-left text-middle" data-title="Completed">
+                                                {{formatDate this.completeDate}}
+                                             </td>
+                                             <td class="text-left text-middle" data-title="Mark">
+                                                {{{passOrFail this.pass}}}
+                                             </td>
+                                          </tr>
+                                          {{/each}}
+                                       </tbody>
+                                    </table></div>
+                                    {{#if isAdmin}}
+                                    <button class="button1 buttonsmall" data-function="reviewAssessment">
+                                       Review Assessment
+                                    </button>
+                                    {{else}}
+                                    <button class="button1 buttonsmall" data-function="goToAssessment">
+                                       Go To Assessment
+                                    </button>
+                                    {{/if}}
+                                    <div class="clear-float"></div>
+                                 </div>
+                              </li>
+                              {{/with}}
+                              {{/each}}
+                           </ol>
+                        </div>
+                        <!-- Used for the certificate/non-certificate version of the course -
+                        uncomment if needed, but keep in mind it is nnot fully implemented yet -->
+                        <!-- <div class="tab-pane" id="certificate">
+                            <br>
+                            {{#if tutorView}}
+                            {{#if isAdmin}}
+                            <div class="form-group" style="display:inline-block">
+                               <label for="sel1">Add Certificate:
+                                  <input type="checkbox" class="addCertificate">
+                                  <span class="slider"></span>
+                               </label>
+                            </div>
+                            <br>
+                            <hr>
+                            {{/if}}
+                           {{/if}}
+                       </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         {{/if}}
+         {{else}}
+         <div class="content-userpage">
+            <div class="container-fluid container-fluid-no-gutter">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <ul id="tabs" class="nav nav-tabs userpage-nav-tabs userpage-nav-tabs-resize" data-tabs="tabs">
+                        <li class="active"><a draggable="false" href="#progress" data-toggle="tab">Progress</a></li>
+                        <li><a draggable="false" href="#notes" data-toggle="tab">Notebook</a></li>
+                        <li><a draggable="false" href="#recordings" data-toggle="tab">Recordings</a></li>
+                        <li><a draggable="false" href="#assessments" data-toggle="tab">Assessments</a></li>
+                        <!-- <li><a draggable="false" href="#certificate" data-toggle="tab">Certificate</a></li> -->
+                     </ul>
+                     <div class="tab-content userpage-tab-content">
+                        <div class="tab-pane active" id="progress">
+                           <ul class="nav nav-tabs userpage-nav-tabs2">
+                              <li class="active"><a draggable="false" href="#overview" role="tab" data-toggle="tab">Overview</a></li>
+                              {{#each progressTest.modules}}
+                              <li><a draggable="false" href="#module{{arrayIndexNumberFix(@index)}}" role="tab" data-toggle="tab">M{{arrayIndexNumberFix(@index)}}</a></li>
+                              {{/each}}
+                           </ul>
+                           <div class="tab-content userpage-tab-content2">
+                              <div class="tab-pane active" id="overview">
+                                 <h2>Overview</h2>
+                                 <div class="table-wrapper scrollbar"><table class="table table-responsive table-striped">
+                                    <thead>
+                                       <tr>
+                                          <th>Module</th>
+                                          <th>Status</th>
+                                          <th>Activities completed</th>
+                                          <th>Time spent</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       {{#each progressTest.modules}}
+                                       <tr>
+                                          <td data-title="Module">{{arrayIndexNumberFix(@index)}}</td>
+                                          <td data-title="Status">{{isModuleFinished }}</td>
+                                          <td data-title="Completed activities">{{completedCount(this.activities)}}</td>
+                                          <td data-title="Time spent">{{timeCount(this.activities)}}</td>
+                                       </tr>
+                                       {{/each}}
+                                    </tbody>
+                                 </table></div>
+                                 <!-- <div class="container-fluid container-fluid-no-gutter admin-overview">
+                                    {{#each progressTest.modules}}
+                                    <div class="row">
+                                    	<div class="col-sm-4">
+                                    		Module {{arrayIndexNumberFix(@index)}}: {{isModuleFinished }}
+                                    	</div>
+                                    	<div class="col-sm-8">
+                                    		{{completedCount(this.activities)}} | {{timeCount(this.activities)}}
+                                    	</div>
+                                    </div>
+                                    {{/each}}
+                                 </div> -->
+                              </div>
+                              {{#each progressTest.modules}}
+                              <div class="tab-pane" id="module{{arrayIndexNumberFix(@index)}}">
+                                 <h2>
+                                    Module {{arrayIndexNumberFix(@index)}}:
+                                    {{isModuleFinished (@index)}}
+                                 </h2>
+                                 <div class="table-wrapper scrollbar"><table class="table table-responsive table-striped">
+                                    <thead>
+                                       <tr>
+                                          <th width="100">Activity</th>
+                                          <th>Status</th>
+                                          <th>Date Started</th>
+                                          <th>Date Stopped<br>(latest)</th>
+                                          <th>Date Resumed<br>(latest)</th>
+                                          <th>Date Completed</th>
+                                          <th width="100">Time Taken (hh:mm:ss)</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       {{#each this.activities}}
+                                       <tr>
+                                          <td data-title="Activity">
+                                             {{arrayIndexNumberFix(@index)}}
+                                          </td>
+                                          <td data-title="Status">
+                                             {{isActivityCompleted this.completed}}
+                                          </td>
+                                          <td data-title="Paused">
+                                             {{#if isActivityStarted}}
+                                             {{formatDate dateStarted}}
+                                             {{else}}
+                                             Not Started
+                                             {{/if}}
+                                          </td>
+                                          <td data-title="Paused">
+                                             {{formatDate datePaused}}
+                                          </td>
+                                          <td data-title="Date Resumed">
+                                             {{formatDate dateResumed}}
+                                          </td>
+                                          <td data-title="Date Ended">
+                                             {{#if isActivityEnded}}
+                                             {{formatDate dateEnded}}
+                                             {{else}}
+                                             Not Finished
+                                             {{/if}}
+                                          </td>
+                                          <td data-title="Time Taken">
+                                             {{timeTaken (this)}}&nbsp;
+                                          </td>
+                                       </tr>
+                                       {{/each}}
+                                    </tbody>
+                                 </table></div>
+                              </div>
+                              {{/each}}
+                           </div>
+                        </div>
+                        <div class="tab-pane" id="notes">
+                           <div class="table-wrapper scrollbar"><table id="notes-table" class="table table-responsive table-striped">
+                              <thead>
+                                 <tr>
+                                    <th>Note Title</th>
+                                    <th>Note Date</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 {{#each userNote}}
+                                 <tr>
+                                    <td data-id="{{_id}}" data-function="viewNote" data-title="Note Title">
+                                       <a>{{noteTitle}}</a>
+                                    </td>
+                                    <td data-title="Note Date">
+                                       {{noteDate}}
+                                    </td>
+                                 </tr>
+                                 {{/each}}
+                              </tbody>
+                           </table></div>
+                        </div>
+                        <div class="tab-pane" id="recordings">
+                           <div class="table-wrapper scrollbar"><table id="recordings-table" class="table table-responsive table-striped">
+
+                              <thead>
+                                 <tr>
+                                    <th class="">Name</th>
+                                    <th class="">Duration</th>
+                                    <th class="">Recorded date</th>
+                                    <th class="text-center">Delete</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 {{#each userRecordings}}
+                                 <tr>
+                                    <td class="text-left text-middle" data-title="Name">
+                                       {{#if audioName}}
+                                       <a><button class="buttonround buttonroundsmall buttonaudio"></button>  {{name}}</a>
+                                       {{else}}                                       
+                                       <a>Play</a>
+                                       {{/if}}
+                                       
+                                    </td>
+                                    <td class="text-left text-middle" data-title="Duration">
+                                       {{metadata.duration}} sec
+                                    </td>
+                                    <td class="text-left text-middle" data-title="Date recorded">
+                                       {{formatuploadDate}}
+                                    </td>
+                                    <!-- <td class="center">
+                                       <div class="user-edit"><a draggable="false" href="#"><i class="far fa-file-audio"></i></a></div>
+                                    </td> -->
+                                    <td class="center" data-title="Delete">
+                                       <div class="user-edit"><a draggable="false" href="#"><i class="fa fa-trash-alt"></i></a></div>
+                                    </td>
+                                 </tr>
+                                 {{/each}}
+                              </tbody>
+                           </table></div>
+                        </div>
+                        <div class="tab-pane" id="assessments">
+                           <br>
+                           {{#if tutorView}}
+                           {{#if isAdmin}}
+                           <div class="form-group" style="display:inline-block">
+                              <label for="sel1">Assign Assessment:</label>
+                              <select class="form-control assessment-select" id="sel1">
+                                 <option>English Skills Test</option>
+                              </select>
+                              <button id="assignAssessment" class="button2 buttonsmall noshadow">Assign</button>
+                           </div>
+                           <br>
+                           <hr>
+                           {{/if}}
+                           {{/if}}
+                           <h4>{{>touch yes="Tap" no="Click"}} on an assessment to see details and review</h4>
+                           <ol class="assessment-list">
+                              {{#each progressTest.assessments}}
+                              {{#with assessmentDoc}}
+                              <li>
+                                 <a draggable="false" data-toggle="collapse" data-target="#{{this._id}}" class="collapsed">{{this.name}} <span style="font-weight: normal;">{{#if notMarked}} (Not Marked) {{else}} - {{{passOrFail}}} {{/if}}</span></a>
+                                 <div id="{{this._id}}" class="collapse">
+                                    <div class="table-wrapper scrollbar"><table id="assessments-table" class="table table-responsive table-striped">
+                                       <thead>
+                                          <tr>
+                                             <th>Section</th>
+                                             <th>Date Started</th>
+                                             <th>Date Completed</th>
+                                             <th>Mark</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          {{#each this.sections}}
+                                          <tr>
+                                             <td class="text-left text-middle" data-title="Section">
+                                                {{this.name}}
+                                             </td>
+                                             <td class="text-left text-middle" data-title="Started">
+                                                {{formatDate this.startDate}}
+                                             </td>
+                                             <td class="text-left text-middle" data-title="Completed">
+                                                {{formatDate this.completeDate}}
+                                             </td>
+                                             <td class="text-left text-middle" data-title="Mark">
+                                                {{{passOrFail this.pass}}}
+                                             </td>
+                                          </tr>
+                                          {{/each}}
+                                       </tbody>
+                                    </table></div>
+                                    {{#if isAdmin}}
+                                    <button class="button1 buttonsmall" data-function="reviewAssessment">
+                                       Review Assessment
+                                    </button>
+                                    {{else}}
+                                    <button class="button1 buttonsmall" data-function="goToAssessment">
+                                       Go To Assessment
+                                    </button>
+                                    {{/if}}
+                                    <div class="clear-float"></div>
+                                 </div>
+                              </li>
+                              {{/with}}
+                              {{/each}}
+                           </ol>
+                        </div>
+                        <!-- Used for the certificate/non-certificate version of the course -
+                        uncomment if needed, but keep in mind it is nnot fully implemented yet -->
+                        <!-- <div class="tab-pane" id="certificate">
+                            <br>
+                            {{#if tutorView}}
+                            {{#if isAdmin}}
+                            <div class="form-group" style="display:inline-block">
+                               <label for="sel1">Add Certificate:
+                                  <input type="checkbox" class="addCertificate">
+                                  <span class="slider"></span>
+                               </label>
+                            </div>
+                            <br>
+                            <hr>
+                            {{/if}}
+                           {{/if}}
+                       </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         {{/if}}
+
+      </section>
+   </div>
+</article>
+
+</template>

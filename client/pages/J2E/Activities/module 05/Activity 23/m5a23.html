@@ -1,0 +1,183 @@
+<template name="m5a23">
+<article class="with-tools-sidebar m5a23">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Liverpool');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 5</div> <div class="acttitle-title">{{> activity}} 23 - {{>m5a23Title}}</div>
+		</header>
+		
+		
+		<section id="m5a23">
+			<div class="content">
+<h1 class="start-page-header">{{> m5a23Title}}</h1>
+{{> StartPageAvatar char="tu"}}
+<h3>{{> m5a23Intro}}</h3>
+{{> m5a23Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m5a23_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		
+		{{>m5a23_1}}
+		{{>m5a23_2}}
+
+		{{>EndPage char="tu" act="m5a23" nextact="m5a24" place="Liverpool"}}
+
+		
+	</div>
+</article>
+
+	 {{>m5a23_bios}}
+</template>
+		<template name="m5a23_1">
+<section id="m5a23_1" class="hidden">
+	{{#if activeSection}}
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m5_jeremy.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Jeremy Irons</h2>
+											Born 1948
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m5a23_bio1">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>					
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m5_ji.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">"We all have our time machines.  Some take us back - they're called memories.  Some take us forward - they're called dreams".</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" id="m5_jivid" src="https://www.youtube.com/embed/5Pcvx0MWbp0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a23_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a23_2">
+<section id="m5a23_2" class="hidden">
+	{{# if activeSection}}
+		<div class="content">			
+			<h2>Each module has two quotations by famous British people. They're in alphabetical order.</h2>
+			<div class="container-fluid">
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-md-3 col-sm-12 text-center">	
+						<figure class="figquote">						
+							<div class="container-fluid">
+								<div class="row">						
+									<div class="col-md-12 col-xs-6 text-right">
+										<div class="ph-w ph-4x5 shadow" style="max-width: 153px"><div class="ph"><img draggable="false" src="images/quote/m5_elton.jpg" alt="Photo"></div></div>
+									</div>									
+										<div class="col-md-12 col-xs-6 text-left">										
+										<!-- <div style="display: inline-block;"> -->
+										<figcaption>
+											<h2>Sir Elton John</h2>
+											Born 1947
+										</figcaption>
+										<br>
+											<div class="button1 buttonsmall" data-toggle="modal" data-target="#m5a23_bio2">Find out more</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+						</figure>
+					</div>
+					<div class="col-md-9 col-sm-12 text-center">					
+						<div class="parapaper quotation fold">
+							<h5>
+								<div class="toolbuttleft">
+									<button type="button" data-audiosrc="/audio/quotes/m5_ej.m4a" class="buttonround buttonaudio"></button> 
+								</div>
+								<div class="toolbuttright">"I loathe celebrity. I can't stand it."</div>
+							</h5>
+							<hr>
+							<div class="videoplayer">
+								<div class="embed-responsive embed-responsive-4by3">
+									<iframe class="embed-responsive-item" id="m5_ejvid" src="https://www.youtube.com/embed/Xw_c3F2FXrI?rel=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a23_end" prevurl="#m5a23_1" prev="" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a23_bios">
+	<div class="modal fade" id="m5a23_bio1" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Jeremy Irons</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m5_jeremy.jpg" alt="Photo"></figure>
+					Jeremy Irons trained to be an actor at The Old Vic in Bristol and went on to have a very successful career in films, TV and the theatre. He was a member of the Royal Shakespeare Company and appeared on stage in Broadway, New York. He has starred in Roald Dahl films such as <i>Danny Champion of the World</i> and more recently in <i>The Borgias</i> TV series.
+					His son Max, is also a film actor. Jeremy Irons now lives in a castle in the south of Ireland with his family.
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="m5a23_bio2" role="dialog" style="z-index: 1060;">
+      	<div class="modal-dialog" role="document">
+         	<div class="modal-content">
+         		<div class="modal-header">
+               		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               		<h4 class="modal-title" id="myModalLabel">Elton John</h4>
+            	</div>
+				
+				<div class="quote_bio">
+					<figure class="image imgleft"><img draggable="false" src="images/quote/m5_elton.jpg" alt="Photo"></figure>
+					Elton John's career has lasted over five decades. He has sold over 250 million records and is one of the most successful artists of all time. His single 'Candle in the Wind' is the best selling UK single of all time. He performed the song in Westminster Abbey at the funeral of Princess Diana in 1997. Elton John is known for his extravagant stage costumes and novelty glasses but he also has a serious side and has raised over £200 million for AIDS charities.
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</template>

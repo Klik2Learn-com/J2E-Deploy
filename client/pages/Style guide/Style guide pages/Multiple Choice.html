@@ -1,0 +1,162 @@
+<template name="SGmultichoice">
+   <section id="SGmultichoice" class="hidden">
+		<div class="content">
+			<h4 class="center">You can divide ADVERBS into different groups. Here are some common examples.</h4>
+			<h3 class="center">
+				Click the right heading for these words.
+			</h3>
+				<div class="container-fluid">
+				{{>rightwrong}} {{>welldone}}
+					<div class="row">
+						<div class="col-sm-1 center">
+							<div class="numberBig">1</div>
+						</div>
+						<div class="col-sm-10 text-center">	
+							<div class="caption item-space">always</div> <div class="caption item-space">frequently</div> <div class="caption item-space">usually</div> <div class="caption item-space">sometimes</div> <div class="caption item-space">occasionally</div> <div class="caption item-space">seldom</div> <div class="caption item-space">never</div>
+						</div>
+						<div class="col-sm-1"></div>
+					</div>
+					
+					<br>
+						<hr>
+					<br>
+					
+					<div class="row">
+						<div class="col-sm-4 center">
+							<button id="1" class="button2 item-space ddwidth10 dd1line2high">Time</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="2" class="button2 item-space ddwidth10 dd2lines">Degree/<br>how much</button>
+						</div>
+						<div class="col-sm-4 center">
+							<button id="3" class="button2 item-space ddwidth10 dd2lines">Frequency/<br>how often</button>
+						</div>
+					</div>
+					{{>gg_button gg_text="You can get more information about ADVERBS in the Grammar Guide."}}
+				</div>
+      </div>
+	  	<div class="content">
+		<h4>HTML</h4>
+			<pre class="htmlcode2">
+&lt;template name=&quot;SGmultichoice&quot;&gt;
+   &lt;section id=&quot;SGmultichoice&quot; class=&quot;hidden&quot;&gt;
+		&#00123;&#00123;#if activeSection&#00125;&#00125;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;h4 class=&quot;center&quot;&gt;You can divide ADVERBS into different groups. Here are some common examples.&lt;/h4&gt;
+			&lt;h3 class=&quot;center&quot;&gt;
+				Click the right heading for these words.
+			&lt;/h3&gt;
+				&lt;div class=&quot;container-fluid&quot;&gt;
+				&#00123;&#00123;&gt;rightwrong&#00125;&#00125; &#00123;&#00123;&gt;welldone&#00125;&#00125;
+					&lt;div class=&quot;row&quot;&gt;
+						&lt;div class=&quot;col-sm-1 center&quot;&gt;
+							&lt;div class=&quot;numberBig&quot;&gt;1&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;col-sm-10 text-center&quot;&gt;	
+							&lt;div class=&quot;caption item-space&quot;&gt;always&lt;/div&gt; &lt;div class=&quot;caption item-space&quot;&gt;frequently&lt;/div&gt; &lt;div class=&quot;caption item-space&quot;&gt;usually&lt;/div&gt; &lt;div class=&quot;caption item-space&quot;&gt;sometimes&lt;/div&gt; &lt;div class=&quot;caption item-space&quot;&gt;occasionally&lt;/div&gt; &lt;div class=&quot;caption item-space&quot;&gt;seldom&lt;/div&gt; &lt;div class=&quot;caption item-space&quot;&gt;never&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					
+					&lt;br&gt;
+						&lt;hr&gt;
+					&lt;br&gt;
+					
+					&lt;div class=&quot;row&quot;&gt;
+						&lt;div class=&quot;col-sm-4 center&quot;&gt;
+							&lt;button id=&quot;1&quot; class=&quot;button2 item-space ddwidth10 dd1line2high&quot;&gt;Time&lt;/button&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;col-sm-4 center&quot;&gt;
+							&lt;button id=&quot;2&quot; class=&quot;button2 item-space ddwidth10 dd2lines&quot;&gt;Degree/&lt;br&gt;how much&lt;/button&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;col-sm-4 center&quot;&gt;
+							&lt;button id=&quot;3&quot; class=&quot;button2 item-space ddwidth10 dd2lines&quot;&gt;Frequency/&lt;br&gt;how often&lt;/button&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&#00123;&#00123;&gt;gg_button gg_text=&quot;You can get more information about ADVERBS in the Grammar Guide.&quot;&#00125;&#00125;
+				&lt;/div&gt;
+      &lt;/div&gt;
+	  &lt;footer&gt;
+		&#00123;&#00123;&gt;footer_nav prevurl=&quot;#SGmultichoice&quot; nexturl=&quot;#SGmultichoice_2&quot; prev=&quot;hidden&quot; next=&quot;hidden&quot;&#00125;&#00125;
+	  &lt;/footer&gt;
+		&#00123;&#00123;/if&#00125;&#00125;
+   &lt;/section&gt;
+&lt;/template&gt;
+			</pre>
+		<h3>Set up seperate activeSection helper .js page</h3>
+		<h4>Javascript</h4>
+			<pre class="htmlcode2">
+Template.SGmultichoice.events(&#00123;
+	
+	&quot;click .button2&quot;: function(evt)&#00123;
+		
+		if ($.k2l.SGmultichoice.allowClick == true) &#00123;
+			$.k2l.SGmultichoice.allowClick = false;
+			if ($(evt.currentTarget).attr('id') == $.k2l.SGmultichoice.answer_index[$.k2l.SGmultichoice.index]) &#00123;
+				var parentSection = $(evt.currentTarget).parents('section');
+				$.k2l.SGmultichoice.index++
+				// Correct
+				$('.correctscreen').removeClass('hidden');
+				setTimeout( function() &#00123;
+					$('.correctscreen').addClass('hidden');
+				&#00125;, 1000);
+					setTimeout(function() &#00123;
+						$('.incorrectscreen').addClass('hidden');
+						$('.correctscreen').addClass('hidden');
+					&#00125;, 1000);				
+					setTimeout (function() &#00123;
+						$('#welldonecap').removeClass('hidden');
+					&#00125;, 1000);
+					
+					setTimeout(function() &#00123;
+						if ($.k2l.SGmultichoice.index &gt; $.k2l.SGmultichoice.answer_index.length) &#00123;
+							$.k2l.SGmultichoice.index = 0;
+						&#00125;
+						$('#welldonecap').addClass('hidden');
+						$.k2l.SGmultichoice.allowClick = true; // Make the buttons clickable again
+						$(parentSection).addClass('hidden'); // hide this page
+						$(parentSection).next('section').removeClass('hidden');// reveal next page.
+						document.location.hash = $(parentSection).next('section').attr('id');
+						Session.set(&quot;activeSection&quot;, '#'+$(parentSection).next('section').attr('id'));
+					&#00125;, 2000);
+					// $('.pagination').removeClass('hidden');
+				&#00125; else &#00123;				
+				$('.incorrectscreen').removeClass('hidden');
+				setTimeout( function() &#00123;
+					$.k2l.SGmultichoice.allowClick = true; // Make the buttons clickable again
+					$('.incorrectscreen').addClass('hidden');
+				&#00125;, 1000);
+		&#00125;
+		&#00125;
+			
+	&#00125;,
+	
+	'click .pagination': function(evt) &#00123;
+		$.k2l.SGmultichoice.index = 0;
+		$.k2l.SGmultichoice.allowClick = true;
+	&#00125;
+
+&#00125;);
+
+Template.SGmultichoice.rendered = function() &#00123;
+
+	if(typeof $.k2l == 'undefined')&#00123;
+		$.k2l = &#00123;&#00125;;
+	&#00125;;
+	
+	if (typeof $.k2l.SGmultichoice == 'undefined') &#00123;
+		$.k2l.SGmultichoice = &#00123;&#00125;;
+	&#00125;;
+	
+	var answer_index = [&quot;3&quot;,&quot;3&quot;,&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,&quot;1&quot;];
+	
+	$.k2l.SGmultichoice.answer_index = answer_index;
+	$.k2l.SGmultichoice.index = 0;
+
+	$.k2l.SGmultichoice.allowClick = true;
+&#00125;
+				
+			</pre>
+	</div>
+   </section>
+</template>

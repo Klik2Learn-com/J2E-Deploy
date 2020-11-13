@@ -1,0 +1,488 @@
+<!-- Change template name to activity number m1a1, m1a2 etc -->
+<template name="m2a6">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Dundee');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 6 - {{>m2a6Title}}</div>
+		</header>
+				
+			<section id="m2a6">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a6Title}}</h1>
+{{> StartPageAvatar char="elle"}}
+<h3>{{> m2a6Intro}}</h3>
+{{> m2a6Time}} <!--{{> resumePopUp}}-->
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a6_1" prev="hidden" next="" next_text="Start"}}
+	</footer>
+		</section>
+		{{> m2a6_1}}
+		{{> m2a6_2}}
+		{{> m2a6_3}}
+		{{> m2a6_4}}
+		{{> m2a6_5}}
+		{{> m2a6_6}}
+		{{> m2a6_7}}
+		{{> m2a6_8}}
+		{{> m2a6_end}}
+	</div>
+</article>
+
+</template>
+<template name="m2a6_1">
+	<section class="hidden" id="m2a6_1">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> Sue Brown and Sylvia Jones pause for a few moments to admire their morning’s work; eight large boxes overflowing with delicious oranges, green beans, bananas, grapes, potatoes and apples. 
+								They’ve got quite a bargain. The two women and their friends have pooled their money to buy all this produce from wholesale fruit and vegetable stores for only £35.90 – a cost far below the retail prices being charged in all the supermarkets in town.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>1)</b> Find a word that means 'shared'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a6" nexturl="#m2a6_2" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+			{{/if}}
+	</section>
+</template>
+
+<template name="m2a6_2">
+	<section class="hidden" id="m2a6_2">
+		{{#if activeSection}}
+		
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> Sue Brown and Sylvia Jones pause for a few moments to admire their morning’s work; eight large boxes overflowing with delicious oranges, green beans, bananas, grapes, potatoes and apples. 
+								They’ve got quite a bargain. The two women and their friends have pooled their money to buy all this produce from wholesale fruit and vegetable stores for only £35.90 – a cost far below the retail prices being charged in all the supermarkets in town.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>2)</b> What phrase means 'the prices charged in the shops'?</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row text-center">{{> hint hintchar="elle" hint="The phrase has 2 words."}}</div>
+			</div>
+		</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a6_1" nexturl="#m2a6_3" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+		{{/if}}
+	</section>
+</template>
+
+<template name="m2a6_3">
+	<section class="hidden" id="m2a6_3">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>1.</b> Sue Brown and Sylvia Jones pause for a few moments to admire their morning’s work; eight large boxes overflowing with delicious oranges, green beans, bananas, grapes, potatoes and apples. 
+								They’ve got quite a bargain. The two women and their friends have pooled their money to buy all this produce from wholesale fruit and vegetable stores for only £35.90 – a cost far below the retail prices being charged in all the supermarkets in town.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>3)</b> What word tells you that the wholesalers were generous with the quantity of fruit and veg?</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a6_2" nexturl="#m2a6_4" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+			{{/if}}
+	</section>
+</template>
+
+<template name="m2a6_4">
+	<section class="hidden" id="m2a6_4">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>3.</b> They are astonished at how interested the children are; they often want to go on the early morning trips to the wholesaler and help to divide the produce afterwards.</p>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>4)</b> Find a word which means 'food'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+
+			<footer>
+				{{>footer_nav prevurl="#m2a6_3" nexturl="#m2a6_5" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+			{{/if}}
+	</section>
+</template>
+
+<template name="m2a6_5">
+	<section class="hidden" id="m2a6_5">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>5.</b> The savings they make are reduced a bit of course, by the cost of the 20 mile journey to pick up the food and the small bags they need to divide it into eight shares. 
+								However, they all take turns to order, collect and deliver the food and are getting more efficient at buying. 
+								‘We made some mistakes at first,’ admitted Sue. ‘We ordered some very strange things and had a ‘freak of the week’ award!’</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>5)</b> Find a phrasal verb which means 'collect'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row text-center">{{> hint hintchar="elle" hint="The phrase has 2 words."}}</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						{{>gg_button gg_text="Click here to find out more about Phrasal Verbs in the Grammar Guide"}}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<footer>
+				{{>footer_nav prevurl="#m2a6_4" nexturl="#m2a6_6" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+			{{/if}}
+	</section>
+</template>
+
+<template name="m2a6_6">
+	<section class="hidden" id="m2a6_6">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">
+						<p><b>5.</b> The savings they make are reduced a bit of course, by the cost of the 20 mile journey to pick up the food and the small bags they need to divide it into eight shares.
+								However, they all take turns to order, collect and deliver the food and are getting more efficient at buying.
+								‘We made some mistakes at first,’ admitted Sue. ‘We ordered some very strange things and had a ‘freak of the week’ award!’</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>6)</b> Find a phrase which means 'one after the other'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row text-center">{{> hint hintchar="elle" hint="The phrase has 2 words."}}</div>
+			</div>
+		</div>
+			<footer>
+				{{>footer_nav prevurl="#m2a6_5" nexturl="#m2a6_7" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+			{{/if}}
+	</section>
+</template>
+
+
+<template name="m2a6_7">
+	<section class="hidden" id="m2a6_7">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>6.</b> ‘We made some mistakes at first,’ admitted Sue. ‘We ordered some very strange things and had a ‘freak of the week’ award!’</p>
+								<p>Overall, though, they wouldn’t go back to buying their fruit and vegetables from supermarkets. ‘Our lives have changed,’ says Sue. ‘It’s unusual, but we all eat more healthily and it’s always fun to get a bargain.’</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>7)</b> Find a word which means; 'taking everything into consideration'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+
+			<footer>
+				{{>footer_nav prevurl="#m2a6_6" nexturl="#m2a6_8" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+			{{/if}}
+	</section>
+</template>
+
+<template name="m2a6_8">
+	<section class="hidden" id="m2a6_8">
+		{{#if activeSection}}
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<h3>Read the extract then try to answer the question below.</h3>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				{{> rightwrong}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="parapaper paraextract fold">		
+						<p><b>6.</b> ‘We made some mistakes at first,’ admitted Sue. ‘We ordered some very strange things and had a ‘freak of the week’ award!’</p>
+								<p>Overall, though, they wouldn’t go back to buying their fruit and vegetables from supermarkets. ‘Our lives have changed,’ says Sue. ‘It’s unusual, but we all eat more healthily and it’s always fun to get a bargain.’</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div >
+							<h3><b>8)</b> Find a phrasal verb which means; 'to return'.</h3>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<div class="text-center">
+						<form id="0" class="textentry textentry-big text-center">
+							<input type="text" name="userText" size="15" autocomplete="off">
+							<input type="submit" value="OK">
+						</form>
+
+                          </div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row text-center">{{> hint hintchar="elle" hint="The phrase has 2 words."}}</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						{{>gg_button gg_text="Click here to find out more about Phrasal Verbs in the Grammar Guide"}}
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<footer>
+				{{>footer_nav prevurl="#m2a6_7" nexturl="#m2a6_end" prev="hidden" next="hidden"}}
+			</footer>
+			{{> stuck stuckchar="elle"}}
+			{{/if}}
+	</section>
+</template>
+
+<template name="m2a6_end">
+{{>EndPage char="elle" act="m2a6" nextact="m2a7" place="Dundee"}}
+</template>

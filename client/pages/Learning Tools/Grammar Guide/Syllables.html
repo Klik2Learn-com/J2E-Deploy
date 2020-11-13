@@ -1,0 +1,41 @@
+<template name="GGSyllables">
+<section id="GGSyllables" class="hidden">
+<span id="syllables"></span>
+<h1>Syllables</h1><a draggable="false" name="syl1" id="syl1"></a>
+
+<p>Syllables are the individual sound units that make up a word. A syllable can be:</p>
+<ul class="gg-ulspacing">
+  <li>
+    <p>a <strong>vowel</strong> (a/e/i/o/u/)</p>
+  </li><li>
+    <p>a <strong>consonant</strong> </p>
+  </li><li>
+    <p>a <strong>vowel</strong> plus a <strong>consonant/s</strong></p>
+</li></ul>
+<br>
+<p>Here are examples of words from one to seven syllables. The stressed syllable is in <span class="gg-boldblue">blue</span>:</p>
+
+<div class="container-fluid-no-gutter">
+<div class="row">
+{{> GGStressAudioSy1}}
+<div class="clearfix visible-xxs"></div>
+{{> GGStressAudioSy2}}
+<div class="clearfix visible-xxs"></div>
+{{> GGStressAudioSy3}}
+<div class="clearfix visible-xxs"></div>
+<div class="clearfix visible-sm-block"></div>
+{{> GGStressAudioSy4}}
+<div class="clearfix visible-xxs"></div>
+{{> GGStressAudioSy5}}
+<div class="clearfix visible-xxs"></div>
+{{> GGStressAudioSy6}}
+<div class="clearfix visible-xxs"></div>
+<div class="clearfix visible-sm-block"></div>
+{{> GGStressAudioSy7}}
+<div class="col-lg-3 col-sm-4 col-xs-6 gg-stress-box"></div>
+</div>
+</div>
+<div class="parent_expander"></div>
+
+</section>
+</template>

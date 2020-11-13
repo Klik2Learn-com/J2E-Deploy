@@ -1,0 +1,135 @@
+<template name="m6a25">
+	<article class="with-tools-sidebar m6a25">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/York');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 25 - {{>m6a25Title}}</div>
+			</header>
+			<section id="m6a25">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a25Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m6a25Intro}}</h3>
+					{{> m6a25Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a25_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a25_1}} {{>m6a25_2}} {{>m6a25_3}} {{>EndPage char="k" act="m6a25" nextact="m6a26" place="York"}}
+		</div>
+	</article>
+
+</template>
+<template name="m6a25_1">
+	<section id="m6a25_1" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To win/be successful:</b>
+					<br>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To let your emotions
+						<br>take control:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To conduct:</b>
+					<br>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target3">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target3">The magazine carried out a survey to find the most influential women in Britain.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">Bradley Wiggins carried off three major awards in 2012.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">Some young fans got carried away and fainted during the concert.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a25" nexturl="#m6a25_2" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a25_2">
+	<section id="m6a25_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="text-center">Drag these sentences to the right meaning.</h3>
+
+			<div class="parapaper parapaperdd1 fold text-center">
+				<div class="dd-big-target-wrapper">
+					<b>To sustain/give strength:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target1">&nbsp;</div>
+				</div>
+				<div class="dd-big-target-wrapper">
+					<b>To continue:</b>
+					<br>
+					<div class="ddtarget dd4lines" data-destinationid="target2">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target1">J K Rowling's determination carried her through difficult times.</div>
+					</div>
+					<div class="ddseat dd4lines">
+						<div class="ddsourceseated dd4lines shadow" draggable="false" data-destination="target2">Despite getting stuck on the zipwire, Boris Johnson carried on as if nothing had happened.</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			{{> rightwrong}}{{>welldone}}
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a25_1" nexturl="#m6a25_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a25_3">
+	<section id="m6a25_3" class="hidden">
+		<div class="content">
+			{{> Tu_saved module="6"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a25_2" nexturl="#m6a25_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

@@ -1,0 +1,188 @@
+<template name="notebook">
+      <div class="modal" id="notebookmodal" role="dialog">
+            <div id="notebookContainer" style="position: absolute; z-index: 1050;">
+                  <div class="modal-dialog" style="cursor: move;">
+                        <div class="modal-content">
+                              <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">Notebook</h4>
+                              </div>
+                              {{> notebook_holder}}
+
+                        </div>
+                  </div>
+            </div>
+      </div>
+</template>
+
+<template name="notebook_holder">
+      {{> notebookwrite}} {{> notebookread}}
+</template>
+
+<template name="notebookwrite">
+      <section id="note_write">
+            <nav class="notebooknav">
+                  <div class="tooltab_active tooltab-note">
+                        <i class="far fa-file"></i> New</div>
+                  <!--
+         -->
+                  <div class="tooltab tooltab-note nbTab" data-target="#note_read">
+                        <i class="far fa-folder-open"></i> Saved</div>
+                  <!--
+      -->
+            </nav>
+            <div class="notebookmain" style="cursor: default; z-index: 1051;">
+                  <form id="formnotebookwrite">
+                        <div class="content">
+                              <div class="row">
+                                    <div class="col-sm-1">
+                                          <span class="notebooklabel">Title</span>
+                                    </div>
+                                    <div class="col-sm-11 notebookbox">
+                                          <input draggable="false" id="notetitle" type="text" style="width: 100%;" placeholder="Enter a title for your note...">
+                                    </div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-sm-1">
+                                          <span class="notebooklabel">Note</span>
+                                    </div>
+                                    <div class="col-sm-11 notebookbox">
+                                          <textarea draggable="false" id="notebody" style="margin: 0px; height: 180px; width: 100%;" placeholder="Type your note here..."></textarea>
+                                    </div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-sm-12 notebookbox text-right">
+                                          <input type="submit" value="Save" class="button1 buttonsmall">
+                                    </div>
+                              </div>
+                        </div>
+                  </form>
+            </div>
+      </section>
+</template>
+
+
+<!-- ********************************************* -->
+<!-- *************** NOTEBOOK READ *************** -->
+<!-- ********************************************* -->
+<template name="notebookread">
+      <section id="note_read" class="hidden">
+            <nav class="notebooknav">
+                  <div class="tooltab tooltab-note nbTab" data-target="#note_write">
+                        <i class="far fa-file"></i> New</div>
+                  <!--
+            -->
+                  <div class="tooltab_active tooltab-note">
+                        <i class="far fa-folder-open"></i> Saved</div>
+                  <!--
+      -->
+            </nav>
+            <div class="notebookmain" style="cursor: default; z-index: 1051;">
+                  <div class="content">
+                        <h4 class="text-center">{{>touch yes="Tap" no="Click"}} on a note to view it</h4>
+                        {{#if notStudent}}
+                        <div class="text-center">(Comments can be left on notes in the students profile page.)</div>
+                        {{/if}} {{#each savedNotes}}
+                        <div class="parapaper fold note-container">
+                              <div class="note-titlebar open-note" data-toggle="collapse" data-target="#{{_id}}">
+                                    <div class="note-title">{{noteTitle}}</div>
+                                    <div class="note-date">{{noteDate}}</div>
+                                    {{#if notStudent}}
+                                    <div class="">{{getFullnameFromId this.noteAuthor}}</div>
+                                    {{/if}}
+                                    <div class="parent_expander"></div>
+                              </div>
+                              <div id="{{_id}}" class="collapse">
+                                    <div class="note-content">
+                                          <p style="white-space: pre-wrap; word-wrap: break-word;">{{{noteBody}}}</p>
+                                          <div class="note-footer">
+                                                <a draggable="false" href="#" class="nbEdit">
+                                                      <i class="fas fa-pencil-alt"></i> Edit</a>
+                                                <a draggable="false" href="#" class="nbDelete">
+                                                      <i class="fa fa-trash-alt"></i> Delete</a>
+                                          </div>
+                                    </div>
+                                    {{#if comments}}
+                                    <div class="comments-header">Comments</div>
+                                    {{/if}}
+                                    <div class="comments">
+                                          {{#each this.comments}} {{#if isTutorNote}}
+                                          <div class="notebook-comment tutor shadow">
+                                                <div class="note-content">
+                                                      <b>{{getFullnameFromId this.author}}</b>
+                                                      <p style="white-space: pre-wrap; word-wrap: break-word;">{{{this.comment}}}</p>
+                                                </div>
+                                          </div>
+                                          {{else}}
+                                          <div class="notebook-comment student shadow">
+                                                <div class="note-content">
+                                                      <p style="white-space: pre-wrap; word-wrap: break-word;">{{{this.comment}}}</p>
+                                                </div>
+                                          </div>
+                                          {{/if}} {{/each}}
+                                    </div>
+
+                                    {{#if lastCommentIsTutor}} {{#if isStudent}} {{#if addComment}}
+                                    <textarea id="{{_id}}-comment" name="comment" style="margin: 0px; height: 180px; width: 100%;" placeholder="Type your comment here..."></textarea>
+                                    <div class="note-footer">
+                                          <button class="button2 buttonsmall" data-function="confirm-comment">
+                                                <i class="fas fa-pencil-alt"></i> Confirm</button>
+                                          <button class="button1 buttonsmall" data-function="cancel-comment">
+                                                <i class="fa fa-times"></i> Cancel</button>
+                                    </div>
+                                    {{else}}
+                                    <button class="button2" data-function="addComment">Comment</button>
+                                    {{/if}} {{/if}} {{/if}}
+                              </div>
+                        </div>
+                        {{/each}}
+
+                  </div>
+            </div>
+      </section>
+</template>
+
+<template name="note">
+      <div class="parapaper fold note-container">
+            <div class="note-titlebar">
+                  <div id="{{_id}}" class="noteId"></div>
+                  <div class="note-title">{{noteTitle}}</div>
+                  <div class="note-date">{{noteDate}}</div>
+                  <div class="parent_expander"></div>
+            </div>
+            <div class="note-content">
+                  <p style="white-space: pre-wrap; word-wrap: break-word;">{{{noteBody}}}</p>
+                  <div class="note-footer">
+                        <a draggable="false" href="#" class="nbEdit">
+                              <i class="fas fa-pencil-alt"></i> Edit</a>
+                        <a draggable="false" href="#" class="nbDelete">
+                              <i class="fa fa-trash-alt"></i> Delete</a>
+                  </div>
+            </div>
+      </div>
+</template>
+
+<!--<template name="note">
+	<div class="parapaper fold note-container">
+		<div class="note-titlebar">
+			<div id="{{_id}}" class="noteId"></div>
+			<div class="note-title">{{noteTitle}}</div>
+			<div class="note-date">{{noteDate}}</div>
+			<div class="parent_expander"></div>
+		</div>
+		<div class="note-content">
+			<p style="white-space: pre-wrap; word-wrap: break-word;">{{{noteBody}}}</p>
+			{{> notefooter}}
+		</div>
+	</div>
+</template>-->
+
+
+<!--<template name="notefooter">
+   <div class="note-footer">
+      <a draggable="false" href="#" class="nbEdit"><i class="fas fa-pencil-alt"></i> Edit</a>
+      <a draggable="false" href="#" class="nbDelete"><i class="fa fa-trash-alt"></i> Delete</a>
+   </div>
+</template>-->

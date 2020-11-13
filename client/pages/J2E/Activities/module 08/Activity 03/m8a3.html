@@ -1,0 +1,342 @@
+<template name="m8a3"> 
+<article class="with-tools-sidebar m8a3">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Oxford');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 8</div> <div class='acttitle-title'>{{> activity}} 3 - {{> m8a3Title}}</div>
+		</header>
+		<section id="m8a3">
+			<div class="content">
+				<h1 class="start-page-header">{{>m8a3Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m8a3Intro}}</h3>
+				{{> m8a3Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m8a3_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m8a3_1}}
+		{{>m8a3_2}}
+		{{>m8a3_3}}
+		{{>m8a3_4}}
+		{{>m8a3_5}}
+		{{>m8a3_6}}
+		{{>m8a3_7}}
+		{{>EndPage char="elle" act="m8a3" nextact="m8a4" place="Oxford"}}
+	</div>
+</article>
+</template>
+<template name="m8a3_1"> 
+	<section id="m8a3_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+      		<h1>Here’s how to set out a covering letter.</h1>
+			
+			<div class="parapaper paraextract fold cover-letter noshadow">
+				<p class="text-right">
+					<span style="float: left;">1.</span>
+					<em>Your Address</em><br>
+					<em>Your Email</em><br>
+					Date
+				</p>
+
+				<p>
+					Name of recipient<br>
+					Address of recipient<br>
+					Phone number/<br>email address of recipient
+				</p>
+
+				<p>2. Dear...  <em>(Use a name if you know one  or ‘Sir/Madam’.)</em></p>
+
+				<p>3. Introduce yourself. Say what you’re applying for.</p>
+
+				<p>4. Write about your background and experience for the job.</p>
+
+				<p>5. Write about the skills and personal qualities which make you a good candidate for the job.</p>
+
+				<p>6. Explain why you would like the job.</p>
+
+				<p>7. Yours sincerely,</p>
+
+				<p><em>(Your name)</em></p>
+			</div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a3" nexturl="#m8a3_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a3_2"> 
+	<section id="m8a3_2" class="hidden noselect"> 
+			{{#if activeSection}} 
+		<div class="content"> 
+			<h3 class="text-center">Drag these words to the right places on the form.</h3>
+			{{> rightwrong}}
+      		<div class="parapaper paraextract fold cover-letter noshadow  cover-letter-fade-out">
+				<p class="text-right">
+					<em>Your Address</em><br>
+					<em>Your Email</em><br>
+					<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target1">&nbsp;</div>
+				</p>
+
+				<p>
+					Harry Allan<br>
+					Resourcing Team<br>
+					Carnival House - 4 Pacific West<br>
+					Hampshire, SO15 1ST<br>
+					jobs@cunard.com<br>
+				</p>
+
+				<p><div class="ddseatedtarget ddwidth9 dd1line" data-destinationid = "target2">&nbsp;</div></p>
+
+				<p>&nbsp;</p>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth9 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">Dear Mr. Allan,</div></div>
+					<div class="ddseat ddwidth9 dd1line"><div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">12/06/14</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a3_1" nexturl="#m8a3_3" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a3_3"> 
+	<section id="m8a3_3" class="hidden noselect"> 
+			{{#if activeSection}} 
+		<div class="content" style="overflow: hidden">  
+      		<h3 class="text-center">Now drag the paragraphs to the right places on the form.</h3>
+			{{> rightwrong}}
+      		<div class="parapaper paraextract fold cover-letter noshadow  cover-letter-fade-out">
+				<p class="text-right">
+					<em>Your Address</em><br>
+					<em>Your Email</em><br>
+					12/06/14
+				</p>
+
+				<p>
+					Harry Allan<br>
+					Resourcing Team<br>
+					Carnival House - 4 Pacific West<br>
+					Hampshire, SO15 1ST<br>
+					jobs@cunard.com<br>
+				</p>
+				
+				<p>Dear Mr. Allan,</p>
+
+				<p><div class="ddseatedtarget dd5lines" data-destinationid = "target1"><em>Introduce yourself. Say what you’re applying for.</em></div></p>
+				
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target2">I studied catering in Wolverhampton College and have a Level 3 City and Guilds qualification.</div></div>
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target1">I am applying for the job you advertised online for a pastry chef with the Cunard Line.</div></div>
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target4">I would really like the chance to progress my career by working for a big company with a first class reputation.</div></div>
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target3">I am hard working and have always enjoyed baking and cooking. While I was at college I also worked part time for a local baker.</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a3_2" nexturl="#m8a3_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a3_4"> 
+	<section id="m8a3_4" class="hidden noselect"> 
+			{{#if activeSection}} 
+		<div class="content" style="overflow: hidden">  
+      		<h3 class="text-center">Now drag the paragraphs to the right places on the form.</h3>
+			{{> rightwrong}}
+      		<div class="parapaper paraextract fold cover-letter noshadow  cover-letter-fade-out">
+				<p class="text-right">
+					<em>Your Address</em><br>
+					<em>Your Email</em><br>
+					12/06/14
+				</p>
+
+				<p>
+					Harry Allan<br>
+					Resourcing Team<br>
+					Carnival House - 4 Pacific West<br>
+					Hampshire, SO15 1ST<br>
+					jobs@cunard.com<br>
+				</p>
+				
+				<p>Dear Mr. Allan,</p>
+
+				<p>I am applying for the job you advertised online for a pastry chef with the Cunard Line.</p>
+
+				<p><div class="ddseatedtarget dd5lines" data-destinationid = "target2"><em>Write about your background and experience for the job.</em></div></p>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target2">I studied catering in Wolverhampton College and have a Level 3 City and Guilds qualification.</div></div>
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target4">I would really like the chance to progress my career by working for a big company with a first class reputation.</div></div>
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target3">I am hard working and have always enjoyed baking and cooking. While I was at college I also worked part time for a local baker.</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a3_3" nexturl="#m8a3_5" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a3_5"> 
+	<section id="m8a3_5" class="hidden noselect"> 
+			{{#if activeSection}} 
+		<div class="content" style="overflow: hidden">  
+      		<h3 class="text-center">Now drag the paragraphs to the right places on the form.</h3>
+			{{> rightwrong}}
+      		<div class="parapaper paraextract fold cover-letter noshadow  cover-letter-fade-out">
+				<p class="text-right">
+					<em>Your Address</em><br>
+					<em>Your Email</em><br>
+					12/06/14
+				</p>
+
+				<p>
+					Harry Allan<br>
+					Resourcing Team<br>
+					Carnival House - 4 Pacific West<br>
+					Hampshire, SO15 1ST<br>
+					jobs@cunard.com<br>
+				</p>
+				
+				<p>Dear Mr. Allan,</p>
+
+				<p>I am applying for the job you advertised online for a pastry chef with the Cunard Line.</p>
+
+				<p>I studied catering in Wolverhampton College and have a Level 3 City and Guilds qualification.</p>
+
+				<p><div class="ddseatedtarget dd5lines" data-destinationid = "target3"><em>Write about the skills and personal qualities which make you a good candidate for the job.</em></div></p>
+				
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target4">I would really like the chance to progress my career by working for a big company with a first class reputation.</div></div>
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target3">I am hard working and have always enjoyed baking and cooking. While I was at college I also worked part time for a local baker.</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a3_4" nexturl="#m8a3_6" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a3_6"> 
+	<section id="m8a3_6" class="hidden noselect"> 
+			{{#if activeSection}} 
+		<div class="content" style="overflow: hidden">  
+      		<h3 class="text-center">Now drag the paragraphs to the right places on the form.</h3>
+			{{> rightwrong}}
+			{{> welldone}}
+      		<div class="parapaper paraextract fold cover-letter noshadow  cover-letter-fade-out">
+				<p class="text-right">
+					<em>Your Address</em><br>
+					<em>Your Email</em><br>
+					12/06/14
+				</p>
+
+				<p>
+					Harry Allan<br>
+					Resourcing Team<br>
+					Carnival House - 4 Pacific West<br>
+					Hampshire, SO15 1ST<br>
+					jobs@cunard.com<br>
+				</p>
+				
+				<p>Dear Mr. Allan,</p>
+
+				<p>I am applying for the job you advertised online for a pastry chef with the Cunard Line.</p>
+
+				<p>I studied catering in Wolverhampton College and have a Level 3 City and Guilds qualification.</p>
+
+				<p>I am hard working and have always enjoyed baking and cooking. While I was at college I also worked part time for a local baker.</p>
+
+				<p><div class="ddseatedtarget dd5lines" data-destinationid = "target4"><em>Explain why you would like the job.</em></div></p>
+				
+				<p class="letter-end hidden">Yours sincerely,</p>
+				
+				<p class="letter-end hidden"><em>Your name</em></p>
+				
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat dd5lines"><div class="ddsourceseated dd5lines shadow" draggable="false" data-destination="target4">I would really like the chance to progress my career by working for a big company with a first class reputation.</div></div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div> 
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a3_5" nexturl="#m8a3_7" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}}
+	</section> 
+ </template>
+
+<template name="m8a3_7"> 
+	<section id="m8a3_7" class="hidden"> 
+		<div class="content" style="overflow: hidden">
+      		<div class="parapaper paraextract fold cover-letter">
+				<p class="text-right">
+					<em>Your Address</em><br>
+					<em>Your Email</em><br>
+					12/06/14
+				</p>
+
+				<p>
+					Harry Allan<br>
+					Resourcing Team<br>
+					Carnival House - 4 Pacific West<br>
+					Hampshire, SO15 1ST<br>
+					jobs@cunard.com<br>
+				</p>
+				
+				<p>Dear Mr. Allan,</p>
+
+				<p>I am applying for the job you advertised online for a pastry chef with the Cunard Line.</p>
+
+				<p>I studied catering in Wolverhampton College and have a Level 3 City and Guilds qualification.</p>
+
+				<p>I am hard working and have always enjoyed baking and cooking. While I was at college I also worked part time for a local baker.</p>
+
+				<p>I would really like the chance to progress my career by working for a big company with a first class reputation.</p>
+				
+				<p>Yours sincerely,</p>
+				
+				<p><em>Your name</em></p>
+			</div>
+			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m8a3_6" nexturl="#m8a3_end" prev="disabled" next=""}} 
+		</footer>
+	</section> 
+ </template>

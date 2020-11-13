@@ -1,0 +1,927 @@
+<template name="m4a14">
+	<article class="with-tools-sidebar m4a14">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Crianlarich');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 14 - {{>m4a14Title}}</div>
+			</header>
+
+
+			<section id="m4a14">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a14Title}}</h1>
+					{{> StartPageAvatar char="tu"}}
+					<h3>{{> m4a14Intro}}</h3>
+					{{> m4a14Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a14_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m4a14_1}} {{>m4a14_2}} {{>m4a14_3}} {{>m4a14_4}} {{>m4a14_5}} {{>m4a14_6}} {{>m4a14_7}} {{>m4a14_8}} {{>m4a14_9}} {{>m4a14_10}}
+			{{>m4a14_11}} {{>m4a14_12}} {{>m4a14_13}} {{>m4a14_14}} {{>m4a14_15}} {{>m4a14_16}} {{>m4a14_17}} {{>EndPage char="tu"
+			act="m4a14" nextact="m4a15" place="Crianlarich"}}
+
+
+		</div>
+	</article>
+
+</template>
+<template name="m4a14_1">
+	<section id="m4a14_1" class="hidden">{{> popovers}}
+		<div class="content">
+			<h4>Stress and intonation can change the meaning of a sentence. This sentence can mean different things if you stress a different
+				word.</h4>
+			<h3 class="text-center">{{>touch yes="Tap" no="Click"}} the sentences to see the differences in meaning.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper article-text text-center m4a14-sentences">
+							<p title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top" data-content="It's my personal opinion that he couldn't get the job.">
+								<b>I</b> don't think he could get that job.</p>
+							<p title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top" data-content="I strongly feel he couldn't get the job.">I
+								<b>don't</b> think he could get that job.</p>
+							<p title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top" data-content="I'm not completely sure he could get that job.">I don't
+								<b>think</b> he could get that job.</p>
+							<p title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top" data-content="I think someone else could get the job.">I don't think
+								<b>he</b> could get that job.</p>
+							<p title="" data-toggle="popover" role="button" tabindex="0" data-trigger="manual" data-placement="top" data-content="I think he could get a different job.">I don't think he could get
+								<b>that</b> job.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14" nexturl="#m4a14_2" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a14_10">
+	<section id="m4a14_10" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Now choose why she stresses it.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/4.m4a"></button>
+					<h5>Conversation 4</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I'm pleased we're going to New Lanark.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							I'm not just pleased - I'm
+							<span class="correctword">delighted</span>.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<hr>
+					<button class="button1 item-space ddwidth10" id="emphasise">To emphasise</button>
+					<button class="button1 item-space ddwidth10" id="contradict">To contradict</button>
+					<button class="button1 item-space ddwidth10" id="clarify">To clarify</button>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_9" nexturl="#m4a14_11" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_11">
+	<section id="m4a14_11" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Listen to this short conversation then {{>touch yes="tap" no="click"}} the word that Jane stresses.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/5.m4a"></button>
+					<h5>Conversation 5</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							We’re getting up at 6 am tomorrow.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							<span class="clickable">
+								<span class="clk-word">Are</span>
+								<span class="clk-word">you</span>
+								<span class="clk-word">sure</span>?</span>
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_10" nexturl="#m4a14_12" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_12">
+	<section id="m4a14_12" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Now choose why she stresses it.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/5.m4a"></button>
+					<h5>Conversation 5</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							We’re getting up at 6 am tomorrow.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							Are you
+							<span class="correctword">sure</span>?
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<hr>
+					<button class="button1 item-space ddwidth10" id="emphasise">To emphasise</button>
+					<button class="button1 item-space ddwidth10" id="contradict">To contradict</button>
+					<button class="button1 item-space ddwidth10" id="clarify">To clarify</button>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_11" nexturl="#m4a14_13" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_13">
+	<section id="m4a14_13" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Listen to this short conversation then {{>touch yes="tap" no="click"}} the word that Jane stresses.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/6.m4a"></button>
+					<h5>Conversation 6</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							Do you want this cake?
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							<span class="clickable">
+								<span class="clk-word">No</span>,
+								<span class="clk-word">I</span>
+								<span class="clk-word">want</span>
+								<span class="clk-word">that</span>
+								<span class="clk-word">one</span>.</span>
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_12" nexturl="#m4a14_14" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_14">
+	<section id="m4a14_14" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Now choose why she stresses it.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/6.m4a"></button>
+					<h5>Conversation 6</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							Do you want this cake?
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							No, I want
+							<span class="correctword">that</span> one.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<hr>
+					<button class="button1 item-space ddwidth10" id="emphasise">To emphasise</button>
+					<button class="button1 item-space ddwidth10" id="contradict">To contradict</button>
+					<button class="button1 item-space ddwidth10" id="clarify">To clarify</button>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_13" nexturl="#m4a14_15" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_15">
+	<section id="m4a14_15" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Listen to this short conversation then {{>touch yes="tap" no="click"}} the word that Jane stresses.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/7.m4a"></button>
+					<h5>Conversation 7</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							What did K say when you lost the keys?
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							<span class="clickable">
+								<span class="clk-word">Well</span>,
+								<span class="clk-word">he</span>
+								<span class="clk-word">was</span>
+								<span class="clk-word">very</span>
+								<span class="clk-word">annoyed</span>.</span>
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_14" nexturl="#m4a14_16" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_16">
+	<section id="m4a14_16" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Now choose why she stresses it.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/7.m4a"></button>
+					<h5>Conversation 7</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							What did K say when you lost the keys?
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							Well, he was
+							<span class="correctword">very</span> annoyed.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<hr>
+					<button class="button1 item-space ddwidth10" id="emphasise">To emphasise</button>
+					<button class="button1 item-space ddwidth10" id="contradict">To contradict</button>
+					<button class="button1 item-space ddwidth10" id="clarify">To clarify</button>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_15" nexturl="#m4a14_17" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_17">
+	<section id="m4a14_17" class="hidden">
+		<div class="content">
+
+			<h3 class="text-center">Here are the conversations again.</h3>
+
+			<div class="parapaper m4a14-answers">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/1.m4a"></button>
+					<h5>Conversation 1</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I thought the show was great.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							It was
+							<span class="correctword">awful</span>.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<div class="caption capgreen">To contradict</div>
+				</div>
+				<hr>
+
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/2.m4a"></button>
+					<h5>Conversation 2</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							We've been invited for lunch.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							Are you sure it's not
+							<span class="correctword">dinner</span>?
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<div class="caption capgreen">To clarify</div>
+				</div>
+				<hr>
+
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/3.m4a"></button>
+					<h5>Conversation 3</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I bought the black shoes.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							I thought you bought the
+							<span class="correctword">red</span> ones.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<div class="caption capgreen">To contradict</div>
+				</div>
+				<hr>
+
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/4.m4a"></button>
+					<h5>Conversation 4</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I'm pleased we're going to New Lanark.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							I'm not just pleased - I'm
+							<span class="correctword">delighted</span>.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<div class="caption capgreen">To emphasise</div>
+				</div>
+				<hr>
+
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/5.m4a"></button>
+					<h5>Conversation 5</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							We’re getting up at 6 am tomorrow.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							Are you
+							<span class="correctword">sure</span>?
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<div class="caption capgreen">To clarify</div>
+				</div>
+				<hr>
+
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/6.m4a"></button>
+					<h5>Conversation 6</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							Do you want this cake?
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							No, I want
+							<span class="correctword">that</span> one.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<div class="caption capgreen">To contradict</div>
+				</div>
+				<hr>
+
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/7.m4a"></button>
+					<h5>Conversation 7</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							What did K say when you lost the keys?
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							Well, he was
+							<span class="correctword">very</span> annoyed.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<div class="caption capgreen">To emphasise</div>
+				</div>
+
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_16" nexturl="#m4a14_end" prev="hidden" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a14_2">
+	<section id="m4a14_2" class="hidden">
+		<div class="content">
+			<h4 class="text-center">You can use stress and intonation to:</h4>
+			<br>
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col-xs-4 col-xxs-12">
+						<figure>
+							<div class="ph-w border2" style="max-width: 202px;"><div class="ph" style="padding-top: 95.54%"><img draggable="false" src="images/module4/a14/emphasis.jpg" alt="Emphasis"></div></div>
+							<br>
+							<h4>
+								<b>Emphasise</b> something.
+								<br>&nbsp;</h4>
+						</figure>
+					</div>
+					<div class="col-xs-4 col-xxs-12">
+						<figure>
+							<div class="ph-w border2" style="max-width: 202px;"><div class="ph" style="padding-top: 95.54%"><img  draggable="false" src="images/module4/a14/contradict.jpg" alt="Contradict"></div></div>
+							<br>
+							<h4>
+								<b>Contradict</b> someone.
+								<br>&nbsp;</h4>
+						</figure>
+					</div>
+					<div class="col-xs-4 col-xxs-12">
+						<figure>
+							<div class="ph-w border2" style="max-width: 202px;"><div class="ph" style="padding-top: 95.54%"><img  draggable="false" src="images/module4/a14/clarify.jpg" alt="Clarify"></div></div>
+							<br>
+							<h4>
+								<b>Clarify</b> something to make sure you really understand.
+								<br>&nbsp;</h4>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_1" nexturl="#m4a14_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m4a14_3">
+	<section id="m4a14_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Listen to this short conversation then {{>touch yes="tap" no="click"}} the word that Jane stresses.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/1.m4a"></button>
+					<h5>Conversation 1</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I thought the show was great.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							<span class="clickable">
+								<span class="clk-word">It</span>
+								<span class="clk-word">was</span>
+								<span class="clk-word">awful</span>.</span>
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_2" nexturl="#m4a14_4" prev="hidden" next="hidden"}}
+
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_tim_avatar">
+	<figure>
+		<img draggable="false" src="images/module4/a14/tim.png" alt="Tim" id="timAvatar">
+		<figcaption style="left: 20px;">Timothy</figcaption>
+	</figure>
+</template>
+
+<template name="m4a14_jane_avatar">
+	<figure class="hidden-xs">
+		<img draggable="false" src="images/module4/a14/jane.png" alt="Jane" id="janeAvatar">
+		<figcaption style="right: 50px;">Jane</figcaption>
+	</figure>
+</template>
+
+<template name="m4a14_jane_avatar_xs">
+	<figure class="visible-xs">
+		<img draggable="false" src="images/module4/a14/jane.png" alt="Jane" id="janeAvatarXS">
+		<figcaption style="right: 50px;">Jane</figcaption>
+	</figure>
+</template>
+
+<template name="m4a14_4">
+	<section id="m4a14_4" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Now choose why she stresses it.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/1.m4a"></button>
+					<h5>Conversation 1</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I thought the show was great.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							It was
+							<span class="correctword">awful</span>.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<hr>
+					<button class="button1 item-space ddwidth10" id="emphasise">To emphasise</button>
+					<button class="button1 item-space ddwidth10" id="contradict">To contradict</button>
+					<button class="button1 item-space ddwidth10" id="clarify">To clarify</button>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_3" nexturl="#m4a14_5" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_5">
+	<section id="m4a14_5" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Listen to this short conversation then {{>touch yes="tap" no="click"}} the word that Jane stresses.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/2.m4a"></button>
+					<h5>Conversation 2</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							We've been invited for lunch.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							<span class="clickable">
+								<span class="clk-word">Are</span>
+								<span class="clk-word">you</span>
+								<span class="clk-word">sure</span>
+								<span class="clk-word">it's</span>
+								<span class="clk-word">not</span>
+								<span class="clk-word">dinner</span>?</span>
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_4" nexturl="#m4a14_6" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_6">
+	<section id="m4a14_6" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Now choose why she stresses it.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/2.m4a"></button>
+					<h5>Conversation 2</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							We've been invited for lunch.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							Are you sure it's not
+							<span class="correctword">dinner</span>?
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<hr>
+					<button class="button1 item-space ddwidth10" id="emphasise">To emphasise</button>
+					<button class="button1 item-space ddwidth10" id="contradict">To contradict</button>
+					<button class="button1 item-space ddwidth10" id="clarify">To clarify</button>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_5" nexturl="#m4a14_7" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_7">
+	<section id="m4a14_7" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Listen to this short conversation then {{>touch yes="tap" no="click"}} the word that Jane stresses.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/3.m4a"></button>
+					<h5>Conversation 3</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I bought the black shoes.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							<span class="clickable">
+								<span class="clk-word">I</span>
+								<span class="clk-word">thought</span>
+								<span class="clk-word">you</span>
+								<span class="clk-word">bought</span>
+								<span class="clk-word">the</span>
+								<span class="clk-word">red</span>
+								<span class="clk-word">ones</span>.</span>
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_6" nexturl="#m4a14_8" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_8">
+	<section id="m4a14_8" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Now choose why she stresses it.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/3.m4a"></button>
+					<h5>Conversation 3</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I bought the black shoes.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							I thought you bought the
+							<span class="correctword">red</span> ones.
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+				<div class="text-center">
+					<hr>
+					<button class="button1 item-space ddwidth10" id="emphasise">To emphasise</button>
+					<button class="button1 item-space ddwidth10" id="contradict">To contradict</button>
+					<button class="button1 item-space ddwidth10" id="clarify">To clarify</button>
+				</div>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_7" nexturl="#m4a14_9" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a14_9">
+	<section id="m4a14_9" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+
+			<h3 class="text-center">Listen to this short conversation then {{>touch yes="tap" no="click"}} the word that Jane stresses.</h3>
+
+			<div class="parapaper">
+				<div class="text-center">
+					<button class="buttonround buttonaudio" data-audiosrc="/audio/module4/a14/4.m4a"></button>
+					<h5>Conversation 4</h5>
+				</div>
+				<ul class="speech speech-responsive speechclick center-block">
+					<li>
+						{{>m4a14_tim_avatar}}
+						<div class="speech1">
+							I'm pleased we're going to New Lanark.
+						</div>
+					</li>
+					<li>
+						{{>m4a14_jane_avatar_xs}}
+						<div class="speech2">
+							<span class="clickable">
+								<span class="clk-word">I'm</span>
+								<span class="clk-word">not</span>
+								<span class="clk-word">just</span>
+								<span class="clk-word">pleased</span> -
+								<span class="clk-word">I'm</span>
+								<span class="clk-word">delighted</span>.</span>
+						</div>
+						{{>m4a14_jane_avatar}}
+					</li>
+				</ul>
+			</div>
+			{{>rightwrong}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a14_8" nexturl="#m4a14_10" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

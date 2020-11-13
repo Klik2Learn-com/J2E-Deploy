@@ -1,0 +1,226 @@
+<!-- Change template name to activity number m2a12, m1a2 etc -->
+<template name="m2a13">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Arbroath');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+				<!-- Change module, activity number and name here -->
+					<div class="parent-level">Module 2</div> <div class="acttitle-title">{{> activity}} 13 - {{>m2a13Title}}</div>
+		</header>
+				
+			<section id="m2a13">
+		<div class="content">
+		<!-- Change avatar here - k, tu, elle -->
+<h1 class="start-page-header">{{> m2a13Title}}</h1>
+{{> StartPageAvatar char="k"}}
+<h3>{{> m2a13Intro}}</h3>
+{{> m2a13Time}} <!--{{> resumePopUp}}-->
+		</div>
+  	<footer>
+		{{>footer_nav nexturl="#m2a13_1" prev="hidden" next="" next_text="Start"}}
+	</footer>
+		</section>
+		
+		{{> m2a13_1}}
+		{{> m2a13_end}}
+	</div>
+</article>
+
+	{{>m2a13_moment_modal}}
+	{{>m2a13_boxes_modal}}
+	{{>m2a13_family_modal}}
+	{{>m2a13_life_modal}}
+</template>
+	
+<template name="m2a13_1">
+<section id="m2a13_1" class="hidden">
+	<div class="content">
+		<div class="container-fluid">
+		<h1>Grammar Point 3</h1>
+			<div class="row">
+				<div class="col-as-12">
+					<p class="text-center">There are <b>FOUR</b> different ways of forming the plural in the article about buying fruit and vegetables.</p>
+					<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on the images to see an example of forming the plural.</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-sx-6">
+					<div class="box1 block pointer" style="margin-bottom: 30px;" data-toggle="modal" data-target="#m2a13_moment_modal">
+						{{>m2a13_moment}}
+					</div>
+				</div>
+				<div class="col-sm-6 col-sx-6">
+					<div class="box1 block pointer" style="margin-bottom: 30px;" data-toggle="modal" data-target="#m2a13_boxes_modal">
+						{{>m2a13_boxes}}
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-sx-6">
+					<div class="box1 block pointer" style="margin-bottom: 30px;" data-toggle="modal" data-target="#m2a13_family_modal">
+						{{>m2a13_family}}
+					</div>
+				</div>
+				<div class="col-sm-6 col-sx-6">
+					<div class="box1 block pointer" style="margin-bottom: 30px;" data-toggle="modal" data-target="#m2a13_life_modal">
+						{{>m2a13_life}}
+					</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Plurals in Nouns in the Grammar Guide"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m2a13_end" prev="hidden" next=""}}
+		</footer>
+	</div>
+</section>
+</template>
+
+<template name="m2a13_moment">
+					<div class="container-fluid-no-gutter clearfix">
+						<div class="col-sm-6 center">
+							<div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/moment.png" alt="Moment" /></div></div> 
+							<h5 style="font-size:1.2em">Moment</h5>
+						</div>
+						<div class="col-sm-6 center">
+							 <div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/moments.png" alt="Moments" /></div></div>
+							<h5 style="font-size:1.2em">Moment<span class="grammar">s</span></h5>
+						</div>
+					</div>
+</template>
+<template name="m2a13_boxes">
+					<div class="container-fluid-no-gutter clearfix">
+						<div class="col-sm-6 center">
+							 <div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/box.jpg" alt="Box" /></div></div> 
+							<h5 style="font-size:1.2em">Box</h5>
+						</div>
+						<div class="col-sm-6 center">
+							<div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/boxes.jpg" alt="Boxes" /></div></div>
+							<h5 style="font-size:1.2em">Box<span class="grammar">es</span></h5>
+						</div>
+					</div>
+</template>
+<template name="m2a13_family">
+					<div class="container-fluid-no-gutter clearfix">
+						<div class="col-sm-6 center">
+							<div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/family.png" alt="Family" /></div></div> 
+							<h5 style="font-size:1.2em">Family</h5>
+						</div>
+						<div class="col-sm-6 center">
+							<div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/families.png" alt="Families" /></div></div>
+							<h5 style="font-size:1.2em">Famil<span class="grammar">ies</span></h5>
+						</div>
+					</div>
+
+</template>
+<template name="m2a13_life">
+					<div class="container-fluid-no-gutter clearfix">
+						<div class="col-sm-6 center">
+							 <div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/life.png" alt="Life" /></div></div> 
+							<h5 style="font-size:1.2em">Life</h5>
+						</div>
+						<div class="col-sm-6 center">
+							 <div class="ph-w" style="max-width: 150px"><div class="ph" style="padding-top: 88%"><img draggable="false" src="images/module2/lives.jpg" alt="Lives" /></div></div>
+							<h5 style="font-size:1.2em">Liv<span class="grammar">es</span></h5>
+						</div>
+					</div>
+</template>
+
+<!-- MODALS -->
+
+<template name="m2a13_moment_modal">
+   <div class="modal fade" tabindex="-1" id="m2a13_moment_modal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m2a13_moment_modal">Grammar Point 3</h4>
+            </div>
+            <div class="content center">
+               {{>m2a13_moment}}
+			   {{>blankrow}}
+			   <hr>
+			   <h4 class="center">Sue Brown and Sylvia Jones pause for a few <span class="grammar">moments</span> to admire their morning’s work.</h4>
+			   <div class="caption">You just add ‘s’</div>
+            
+			</div>
+      </div>
+   </div>
+   </div>
+</template>
+
+<template name="m2a13_boxes_modal">
+   <div class="modal fade" tabindex="-1" id="m2a13_boxes_modal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m2a13_boxes_modal">Grammar Point 3</h4>
+            </div>
+            <div class="content center">
+               {{>m2a13_boxes}}
+			   {{>blankrow}}
+			   <hr>
+			   <h4 class="center">They have eight large <span class="grammar">boxes</span> overflowing with delicious oranges, green beans, bananas, grapes, potatoes and apples.</h4>
+			   <div class="caption">You add ‘es’ to the word ‘box.’<br>
+				There’s another example of an ‘es’ plural; ‘potatoes’<br>
+				You use ‘es’ when words end in ‘x’, ‘o’ and also ‘ss’ ‘sh’ and ‘ch’</div>
+            
+			</div>
+      </div>
+   </div>
+   </div>
+</template>
+
+<template name="m2a13_family_modal">
+   <div class="modal fade" tabindex="-1" id="m2a13_family_modal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m2a13_family_modal">Grammar Point 3</h4>
+            </div>
+            <div class="content center">
+               {{>m2a13_family}}
+			   {{>blankrow}}
+			   <hr>
+			   <h4 class="center">Sue leads the small co-operative food-buying group of eight <span class="grammar">families</span>.</h4>
+			   <div class="caption">You take away the ‘y’ and add ‘ies.’<br>
+			   <br>
+NOTE; The word “family’s”, is pronounced in exactly the same way as the plural but it means something quite different.
+The apostrophe followed by ‘s’ means – “belonging to the family.”</div>
+            
+			</div>
+      </div>
+   </div>
+   </div>
+</template>
+
+<template name="m2a13_life_modal">
+   <div class="modal fade" tabindex="-1" id="m2a13_life_modal" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+               <h4 class="modal-title" id="m2a13_life_modal">Grammar Point 3</h4>
+            </div>
+            <div class="content center">
+               {{>m2a13_life}}
+			   {{>blankrow}}
+			   <hr>
+			   <h4 class="center">‘Our <span class="grammar">lives</span> have changed,’ says Sue.</h4>
+			   <div class="caption">Change the ‘fe’ of the word ‘life’ to ‘ves’.</div>
+            
+			</div>
+      </div>
+   </div>
+   </div>
+</template>
+
+<template name="m2a13_end">
+{{>EndPage char="k" act="m2a13" nextact="m2a14" place="Arbroath"}}
+</template>

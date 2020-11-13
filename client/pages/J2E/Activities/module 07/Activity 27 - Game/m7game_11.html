@@ -1,0 +1,67 @@
+<template name="m7Game_11">
+
+	<section id="m7Game_11" class="game-section game-legacy hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg4">
+						<div class="hotspot"><img draggable="false" src="/images/game/module7/letters/E.png" alt="E" class="img-responsive animated flipInX"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_11k1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+	</section>
+</template>
+
+<template name="m7Game_11k1">
+	<section id="m7Game_11k1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg2"></div>
+					<div class="game-story-text">
+						K: “Wales is famous for its slate mines.”
+
+						<audio autoplay  class="hidden" id="k1">
+						  <source src="/audio/module7/Game/Wales_is_famous_for_its_slate_mines.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_11tu1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>
+
+<template name="m7Game_11tu1">
+	<section id="m7Game_11tu1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg5"></div>
+					<div class="game-story-text">
+						Tu: “So what’s sad about the story then Elle?”
+
+						<audio autoplay  class="hidden" id="tu1">
+						  <source src="/audio/module7/Game/So_what_s_sad_about_the_story_then_Elle.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_12" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>

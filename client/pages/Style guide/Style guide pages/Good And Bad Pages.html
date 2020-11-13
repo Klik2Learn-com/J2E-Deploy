@@ -1,0 +1,120 @@
+<template name="SGscores">
+	<section id="SGscores" class="hidden">		
+		<div class="content">
+			<h1>Score pages</h1>
+			<h2 class="center">Well done! You got a good score.</h2>
+			<div class="parapaper scorecontainer">
+				<div class="scoreleft">
+					<div class="scorebox">
+						<ol class="olblank">
+							<li>
+								<div class="correct noshadow"><i class="fa fa-check"></i></div>
+								<b>
+									<!-- Total correct answers -->
+									<span>6</span>
+								</b>
+							</li>
+							<li><div class="scoreboxvspace"></div></li>
+							<li>
+								<div class="incorrect noshadow"><i class="fa fa-close"></i></div>
+								<b>
+									<!-- Total incorrect answers -->
+									<span>2</span>
+								</b>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<div class="scoreright">
+					<div class="ph-w ph-16x9 shadow" style="max-width: 700px"><div class="ph"><img draggable="false" src="images/right-wrong_right.jpg" alt="K, Tu and Elle"></div></div>
+				</div>
+				<div class="parent_expander"></div>
+			</div>
+
+			<h4>HTML</h4>
+<pre class="htmlcode2">&lt;template name=&quot;<span class="html-red">SGscores</span>_scores&quot;&gt;
+	&lt;section id=&quot;<span class="html-red">SGscores</span>_scores&quot; class=&quot;hidden&quot;&gt;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;h1&gt;Bad score page&lt;/h1&gt;
+			&lt;h2 class=&quot;center&quot;&gt;You got too many questions wrong.&lt;/h2&gt;
+			&lt;div class=&quot;parapaper scorecontainer&quot;&gt;
+				&lt;div class=&quot;scoreleft&quot;&gt;
+					&#123;&#123;&gt;scorebox2 rightSession="SGscoresCorrectScore" wrongSession="SGscoresIncorrectScore"&#125;&#125;
+				&lt;/div&gt;
+				&lt;div class=&quot;scoreright&quot;&gt;
+					&lt;img draggable="false" class=&quot;imgresize shadow&quot; src=&quot;images/right-wrong_wrong.jpg&quot;&gt;
+					&lt;a draggable="false" href=&quot;<span class="html-red">#SGscores_1</span>&quot; class=&quot;pagination&quot;&gt;
+						&lt;div class=&quot;button1&quot;&gt;Click to try again&lt;/div&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;parent_expander&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav nexturl=&quot;<span class="html-red">#SGscores_end</span>&quot; prev=&quot;hidden&quot; next=&quot;&quot;&#125;&#125;
+		&lt;/footer&gt;
+	&lt;/section&gt;
+	&lt;section id=&quot;<span class="html-red">SGscores</span>_good&quot; class=&quot;hidden&quot;&gt;
+		&lt;div class=&quot;content&quot;&gt;
+			&lt;h2 class=&quot;center&quot;&gt;Well done! You got a good score.&lt;/h2&gt;
+			&lt;div class=&quot;parapaper scorecontainer&quot;&gt;
+				&lt;div class=&quot;scoreleft&quot;&gt;
+					&#123;&#123;&gt;scorebox2 rightSession="SGscoresCorrectScore" wrongSession="SGscoresIncorrectScore"&#125;&#125;
+				&lt;/div&gt;
+				&lt;div class=&quot;scoreright&quot;&gt;
+					&lt;img draggable="false" class=&quot;imgresize shadow&quot; src=&quot;images/right-wrong_right.jpg&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;parent_expander&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;footer&gt;
+			&#123;&#123;&gt;footer_nav nexturl=&quot;<span class="html-red">#SGscores_end</span>&quot; prev=&quot;hidden&quot; next=&quot;&quot;&#125;&#125;
+		&lt;/footer&gt;
+	&lt;/section&gt;
+&lt;/template&gt;</pre>
+
+			<br>
+			<h4>Javascript</h4>
+			<small>This should not be used - outdated code.. Same as most of this bible...</small>
+<pre class="htmlcode2">
+
+Template.SGscores_scores.helpers({
+  activeSection: function(){
+    var activeSection = Session.get('activeSection');
+    return (activeSection == "#SGscores_scores");
+  }
+  });
+
+
+Template.SGscores_scores.events({
+
+  "click .pagination": function(evt){
+    if(typeof $.k2l != 'undefined'){
+      if(typeof $.k2l.SGscores_1 != 'undefined'){
+        if(typeof $.k2l.SGscores_1.index != 'undefined'){
+          $.k2l.SGscores_1.index=0;
+        }
+        if(typeof $.k2l.SGscores_1.CorrectScore != 'undefined') {
+          $.k2l.SGscores_1.CorrectScore = 0;
+        }
+        if(typeof $.k2l.SGscores_1.IncorrectScore != 'undefined') {
+          $.k2l.SGscores_1.IncorrectScore = 0;
+        }
+      }
+    }
+    Session.set('SGscoresCorrectScore', 0);
+    Session.set('SGscoresIncorrectScore', 0);
+   // $('#SGscoresCorrectScore').html(Session.get('SGscoresCorrectScore'));
+   // $('#SGscoresIncorrectScore').html(Session.get('SGscoresIncorrectScore'));
+    $.k2l.SGscores_1.allowClick = true;
+},
+
+"click #SGscoresrestart":function(evt){
+    Session.set("activeSection", "#SGscores_1");	
+    }
+});
+
+</pre>
+	  </div>
+	</section>
+</template>

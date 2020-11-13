@@ -1,0 +1,383 @@
+.gameInfo{
+
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0em 4.75em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.625em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.gameInfo2{
+    margin-right: auto;
+    margin-left: auto;
+    margin: 10em 0em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.625em;
+    font-weight: 600;
+    border-radius: 10px;
+	cursor:default;
+}
+
+.gameInfo3{
+    margin-right: auto;
+    margin-left: auto;
+    margin: 13em 0em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.625em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.yetiText {
+    margin: 80px 160px 0px 220px;
+    font-weight: 700;
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+
+.yetiSelect {
+    margin: 130px 220px 0px 140px;
+    font-weight: 700;
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+
+.yetiMsg{
+    margin: 100px 120px 0px 140px;
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+
+.yetiScramble{
+    margin: 140px 100px 0px 100px;
+    line-height: 1.7em;
+    font-size: 1.2em;
+	cursor:pointer;
+}
+
+.scramble {
+    padding: 0px 5px;
+    display: inline-block;
+	border: 1px solid;
+    margin: 2px 0px;
+}
+
+.yetiSelect ol li {
+    list-style-type: disc;
+	padding: 10px 0px;
+    margin: 10px;
+}
+
+.yetiDrag {
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.yetidd {
+	background-image: url('/Yeti/journal%20fragment.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #664433;
+    padding: 10px;
+    font-family: 'Architects Daughter', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+	display:inline-block;
+}
+
+.ddsourceyeti {
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    background-image: url('../Yeti/journal fragment.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 3px 2px 3px 2px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: default;
+	font-family: 'Architects Daughter', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+	color: #664433;
+}
+
+.Yetibox {
+	border: 2px dashed #cccccc;
+    font-weight: bold;
+    margin: 0px 50px;
+    vertical-align: top;
+
+}
+
+.phoneMsg {
+    padding-top: 100px;
+}
+
+.phoneMsgaudio {
+    padding-top: 140px;
+}
+
+.phoneMsg2audio {
+    padding-top: 140px;
+	padding-right:230px;
+}
+
+.yetibuttonaudio {
+	background-color: #59e551 !important;
+	background-image: url('../images/icons/yetiaudio.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 0.5em;
+	cursor:pointer;
+}
+
+.phoneMsgaudio1 {
+    padding-right: 10px;
+}
+
+.phoneMsgaudio2 {
+    padding-top: 30px;
+    padding-left: 35px;
+}
+
+.phoneMsgaudio3 {
+    padding-top: 35px;
+    padding-left: 75px;
+	z-index: 1;
+    position: inherit;
+}
+
+.map1bg {
+    background: url('../Yeti/basecamp.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.basecampbg {
+    background: url('../Yeti/basecamp.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.journal2bg {
+    background: url('../Yeti/journal2.png') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.journalbg {
+    background: url('../Yeti/journal.png') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.journalfbg {
+    background: url('../Yeti/journalf.png') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.phone1bg {
+    background: url('../Yeti/phone messages1.png') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.phone1bbg {
+    background: url('../Yeti/phone messages1b.png') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.radio1bg {
+    background: url('../Yeti/day2_q1.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.radio2bg {
+    background: url('../Yeti/day3_q4easy.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.radio3bg {
+    background: url('../Yeti/day3_q3hard.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.radio4bg {
+    background: url('../Yeti/day4_q2.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.progressinfo {
+		position:absolute;
+		bottom:0;
+		right:0;
+}
+
+.day1ok {
+    background: url('../Yeti/day1_ok.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.day1good {
+    background: url('../Yeti/day1_good.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.day2bad {
+    background: url('../Yeti/day2_bad.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.day2okday3bad {
+    background: url('../Yeti/day2_ok-day3_bad.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.day2good {
+    background: url('../Yeti/day2_good.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.day3terrible {
+    background: url('../Yeti/day3_terr.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.day3ok {
+    background: url('../Yeti/day3_ok.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.day3good {
+    background: url('../Yeti/day3_good.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.photobg {
+    background: url('../Yeti/photo.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.scorebad {
+    background: url('../Yeti/photo_bad.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.scoreok {
+    background: url('../Yeti/photo_ok.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.scoregood {
+    background: url('../Yeti/photo_good.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.scoreperfect {
+    background: url('../Yeti/photo_amazing-perfect.jpg') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.answersbg {
+    background: url('../Yeti/journal2.png') no-repeat;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.scoreinfo {
+		position:absolute;
+		bottom:0;
+		right:0;
+		left:0;
+		z-index:1;		
+}
+
+.yetih1 {
+    color: #6C4500;
+    border: none;
+    text-decoration: underline;
+    font-size: 2em;
+    padding-top: .5em;
+}
+
+.map{
+	position:absolute;
+	top:10px;
+}
+
+.ansjournal {
+	padding: 0em 3em;
+}
+
+.yetianswer {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 2em 1.2em;
+	background-color: #fefbdf;
+}
+
+.tfanswer {
+    padding-top: 4em;
+}
+
+.blankli {
+    list-style-type: none;
+}
+
+.Yeti_ans {
+	background-color: #fefbdf;
+}
+
+.Yeti_ans_navfooter {
+    color: #B7B7B7;
+    padding-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 5em;
+}
+
+.Yeti_ans_navfooter li {
+    list-style: none;
+	color: #B5B3B3;
+    padding: 0;
+    display: inline;
+}
+
+.Yeti_ans_navfooter ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.Yeti_ans_navfooter  i {
+	font-size: 3em;
+	cursor:pointer;
+}
+ 

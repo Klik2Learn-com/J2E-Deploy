@@ -1,0 +1,206 @@
+<template name="m7a22">
+	<article class="with-tools-sidebar m7a22">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Bangor');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 7</div>
+				<div class="acttitle-title">{{> activity}} 22 - {{>m7a22Title}}</div>
+			</header>
+			<section id="m7a22">
+				<div class="content">
+					<h1 class="start-page-header">{{>m7a22Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m7a22Intro}}</h3>
+					{{> m7a22Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m7a22_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m7a22_1}} {{>m7a22_2}} {{>m7a22_3}} {{>m7a22_4}} {{>EndPage char="k" act="m7a22" nextact="m7a23" place="Bangor"}}
+		</div>
+	</article>
+
+</template>
+<template name="m7a22_1">
+	<section id="m7a22_1" class="hidden">
+		<div class="content">
+			<h4 class="center">In English, you can add different prepositions to a verb to change the meaning - for example:</h4>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption item-space">in</div>
+						<div class="caption item-space">up</div>
+						<div class="caption item-space">along</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 center">
+						<div class="caption item-space">out</div>
+						<div class="caption item-space">down</div>
+					</div>
+				</div>
+			</div>
+			<h4 class="center">Phrasal Verbs are used a lot in everyday speech.</h4>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a22" nexturl="#m7a22_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m7a22_2">
+	<section id="m7a22_2" class="hidden">
+		<div class="content">
+			<h1>Phrasal Verbs</h1>
+			<div class="container-fluid center">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 1 looked at the verb ‘
+								<b>to get</b>’ used with different prepositions</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>Module 2 looked at different meanings when the preposition ‘on’ is used with the verb ‘
+								<b>to go</b>’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 3 you looked at five different prepositions you can use with the verb ‘
+								<b>to come</b>’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 4 you looked at different prepositions with the verb ‘
+								<b>to bring</b>’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 5 you looked at five different prepositions you can use with the verb ‘
+								<b>to give</b>’</h4>
+						</div>
+					</div>
+				</div>
+				{{>blankrow}}
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="parapaper fold">
+							<h4>In Module 6 you looked at five different prepositions you can use with the verb ‘
+								<b>to carry</b>’</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a22_1" nexturl="#m7a22_3" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m7a22_3">
+	<section id="m7a22_3" class="hidden">
+		{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Here are five different prepositions with the verb 'to make.' Drag the preposition to the right sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a22/01.m4a"></button>
+						</div>
+						<div class="iconright">The fog was so bad they could hardly make
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> the car in front.</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a22/02.m4a"></button>
+						</div>
+						<div class="iconright">I really don’t know what to make
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> her – she says some very strange things.</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a22/03.m4a"></button>
+						</div>
+						<div class="iconright">The thieves made
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> over a million pounds worth of jewellery.</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a22/04.m4a"></button>
+						</div>
+						<div class="iconright">She had a huge row with her family and didn’t speak to them for a week but they’ve made
+							<div class="ddseatedtarget ddwidth7 dd1line"
+							data-destinationid="target4">&nbsp;</div> now.</div>
+					</li>
+					<li>
+						<div class="iconleft">
+							<button class="buttonround buttonaudio" data-audiosrc="/audio/module7/a22/05.m4a"></button>
+						</div>
+						<div class="iconright">You can’t always believe what he says – he makes
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> stories.</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">off with</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4 target5">up</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">of</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">out</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m7a22_2" nexturl="#m7a22_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m7a22_4">
+	<section id="m7a22_4" class="hidden">
+		<div class="content">
+			{{> Tu_saved module="7"}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m7a22_3" nexturl="#m7a22_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>

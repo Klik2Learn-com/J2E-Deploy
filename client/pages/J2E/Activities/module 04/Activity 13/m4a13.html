@@ -1,0 +1,1420 @@
+<template name="m4a13">
+	<article class="with-tools-sidebar m4a13">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				<a draggable="false" onclick="safeLeave('/Crianlarich');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{>menu}}
+				<div class="parent-level">Module 4</div>
+				<div class="acttitle-title">{{> activity}} 13 - {{>m4a13Title}}</div>
+			</header>
+
+
+			<section id="m4a13">
+				<div class="content">
+					<h1 class="start-page-header">{{> m4a13Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m4a13Intro}}</h3>
+					{{> m4a13Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m4a13_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			<div class="hidden">
+				<img draggable="false" src="images/module4/hospital_scene.png" width="1" height="1">
+				<img draggable="false" src="images/module4/hospital_scenes.png" width="1" height="1">
+			</div>
+
+			{{>m4a13_1}}
+
+			<!-- conversation 1 -->
+			{{>m4a13_2}} {{>m4a13_3}} {{>m4a13_4}} {{>m4a13_5}} {{>m4a13_6}} {{>m4a13_7}} {{>m4a13_8}} {{>m4a13_9}} {{>m4a13_10}}
+
+			<!-- conversation 2 -->
+			{{>m4a13_11}} {{>m4a13_12}} {{>m4a13_13}} {{>m4a13_14}} {{>m4a13_15}} {{>m4a13_16}} {{>m4a13_17}} {{>m4a13_18}} {{>m4a13_19}}
+			{{>m4a13_20}} {{>m4a13_21}}
+
+			<!-- conversation 3 -->
+			{{>m4a13_22}} {{>m4a13_23}} {{>m4a13_24}} {{>m4a13_25}} {{>m4a13_26}} {{>m4a13_27}} {{>m4a13_28}} {{>m4a13_29}} {{>m4a13_30}}
+			{{>m4a13_31}} {{>m4a13_32}} {{>EndPage char="k" act="m4a13" nextact="m4a14" place="Crianlarich"}}
+
+
+		</div>
+	</article>
+
+	{{>m4a13_dept}}
+</template>
+
+<template name="m4a13_1">
+	<section id="m4a13_1" class="hidden">
+		<div class="content">
+
+			<h3>You'll now hear the three conversations between a hospital porter and a paramedic.</h3>
+			<div class="text-center">
+				<div class="ph-w ph-7x3 shadow" style="max-width: 700px">
+					<div class="ph">
+						<img draggable="false" src="images/module4/hospital_scene.png" alt="Hospital">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13" nexturl="#m4a13_2" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_2">
+	<section id="m4a13_2" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 1</h1>
+
+			<h3 class="center">Listen to this conversation.</h3>
+			<div class="videoplayer" style="max-width: 656px;">
+				<div class="embed-responsive embed-responsive-16by9" style="padding-bottom: 37.5%;">
+					<video class="embed-responsive-item" id="m4a13_vid1" controls poster="/video/module4/a13/Conversation1.png">
+						<source src="video/module4/a13/Conversation1.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_1" nexturl="#m4a13_3" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_3">
+	<section id="m4a13_3" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+			<div class="text-center">
+				<div class="ph-w ph-7x3 shadow" style="max-width: 700px">
+					<div class="ph">
+						<img draggable="false" src="images/module4/hospital_scene.png" alt="Hospital">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_2" nexturl="#m4a13_4" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_4">
+	<section id="m4a13_4" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-child.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I’ve got a child who’s being admitted overnight for observation.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-paediatrics.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK I’ll get him to Paediatrics.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_3" nexturl="#m4a13_5" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_5">
+	<section id="m4a13_5" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-bringing-in-a-girl.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We’re bringing in a girl with severe stomach pains.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="audio/module4/a13/full/port-AE.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Right, I’ll take her to A&amp;E.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_4" nexturl="#m4a13_6" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_6">
+	<section id="m4a13_6" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-chemotherapy.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This lady’s coming in for chemotherapy.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-oncology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I’ll take her to Oncology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_5" nexturl="#m4a13_7" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_7">
+	<section id="m4a13_7" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Now listen to the conversation again. Drag the missing word/phrase to the space.</h3>
+			<div class="text-center">
+				<div class="ph-w ph-7x3 shadow" style="max-width: 700px">
+					<div class="ph">
+						<img draggable="false" src="images/module4/hospital_scene.png" alt="Hospital">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_6" nexturl="#m4a13_8" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_8">
+	<section id="m4a13_8" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/1.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I’ve got a
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> who’s being admitted overnight for observation.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-paediatrics.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK I’ll get him to Paediatrics.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">child</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">man</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">woman</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_9">
+	<section id="m4a13_9" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/2.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We're bringing in a girl with severe
+							<div class="ddseatedtarget ddwidth11 dd1line" data-destinationid="target1">&nbsp;</div>.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-AE.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Right, I'll take her to A&amp;E.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target3">hearing problems</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">arthritis</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">stomach pains</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_10">
+	<section id="m4a13_10" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 1</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/3.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This lady's coming in for
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target1">&nbsp;</div>.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-oncology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I'll take her to Oncology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target1">chemotherapy</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target2">an eye test</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target3">an X-ray</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_11">
+	<section id="m4a13_11" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 2</h1>
+
+			<h3 class="center">Now listen to the second conversation.</h3>
+			<div class="videoplayer" style="max-width: 656px;">
+				<div class="embed-responsive embed-responsive-16by9" style="padding-bottom: 37.5%;">
+					<video class="embed-responsive-item" id="m4a13_vid2" controls poster="/video/module4/a13/Conversation2.png">
+						<source src="video/module4/a13/Conversation2.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_10" nexturl="#m4a13_12" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_12">
+	<section id="m4a13_12" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+			<div class="text-center">
+				<div class="ph-w ph-7x3 shadow" style="max-width: 700px">
+					<div class="ph">
+						<img draggable="false" src="images/module4/hospital_scene.png" alt="Hospital">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_11" nexturl="#m4a13_13" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+<template name="m4a13_13">
+	<section id="m4a13_13" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-55-year-old.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I’ve got a 55 year old male coming in for a heart operation.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-cardiology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK I’ll take him to Cardiology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_12" nexturl="#m4a13_14" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_14">
+	<section id="m4a13_14" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-collected-a-woman.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I've just collected a woman who's gone into labour.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-maternity.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I'll get her to the Maternity Ward.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_13" nexturl="#m4a13_15" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_15">
+	<section id="m4a13_15" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-brain-operation.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This chap's having a brain operation tomorrow.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-neurology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Right, I'll get him to Neurology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_14" nexturl="#m4a13_16" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_16">
+	<section id="m4a13_16" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-disabled-elderly.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We've got a disabled elderly lady arriving for a cataract operation.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-ophthalmology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							No problem. I'll get her to Ophthalmology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_15" nexturl="#m4a13_17" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_17">
+	<section id="m4a13_17" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Now listen to the conversation again. Drag the missing word/phrase to the space.</h3>
+			<div class="text-center">
+				<div class="ph-w ph-7x3 shadow" style="max-width: 700px">
+					<div class="ph">
+						<img draggable="false" src="images/module4/hospital_scene.png" alt="Hospital">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_23" nexturl="#m4a13_18" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_18">
+	<section id="m4a13_18" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/4.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I’ve got a 55 year old male coming in for a
+							<div class="ddseatedtarget ddwidth11 dd1line" data-destinationid="target1">&nbsp;</div>.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-cardiology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK I’ll take him to Cardiology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">leg operation</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">heart operation</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target3">kidney operation</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_19">
+	<section id="m4a13_19" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/5.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I’ve just collected a woman who's gone into
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div>.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-maternity.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I'll get her to the Maternity Ward.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">labour</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">shock</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_20">
+	<section id="m4a13_20" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/6.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This chap's having a
+							<div class="ddseatedtarget ddwidth11 dd1line" data-destinationid="target1">&nbsp;</div> tomorrow.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-neurology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Right, I'll get him to Neurology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target3">heart operation</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target2">stomach operation</div>
+					</div>
+					<div class="ddseat ddwidth11 dd1line">
+						<div class="ddsourceseated ddwidth11 dd1line shadow" draggable="false" data-destination="target1">brain operation</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_21">
+	<section id="m4a13_21" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 2</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/7.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We've got a disabled elderly lady arriving for a
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> operation.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-ophthalmology.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							No problem. I'll get her to Ophthalmology.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">ear</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">wrist</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">cataract</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_22">
+	<section id="m4a13_22" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 3</h1>
+
+			<h3 class="center">Now listen to the third conversation.</h3>
+			<div class="videoplayer" style="max-width: 656px;">
+				<div class="embed-responsive embed-responsive-16by9" style="padding-bottom: 37.5%;">
+					<video class="embed-responsive-item" id="m4a13_vid3" controls poster="/video/module4/a13/Conversation3.png">
+						<source src="video/module4/a13/Conversation3.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_38" nexturl="#m4a13_23" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_23">
+	<section id="m4a13_23" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+			<div class="text-center">
+				<div class="ph-w ph-7x3 shadow" style="max-width: 700px">
+					<div class="ph">
+						<img draggable="false" src="images/module4/hospital_scene.png" alt="Hospital">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_22" nexturl="#m4a13_24" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_24">
+	<section id="m4a13_24" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-footballer.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We're bringing in a footballer with a broken leg.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-orthopaedics.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK, I’ll get him to Orthopaedics.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_23" nexturl="#m4a13_25" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_25">
+	<section id="m4a13_25" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-old-chap-doesnt-know-where.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This old chap doesn't know where to collect his medication.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-pharmacy.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK, I’ll show him how to get to the pharmacy.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_24" nexturl="#m4a13_26" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_26">
+	<section id="m4a13_26" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-weekly-treatment.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We've got a lady who's getting weekly treatment for a back problem.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-physiotherapy.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Right, I'll direct her to Physiotherapy.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_25" nexturl="#m4a13_27" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_27">
+	<section id="m4a13_27" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Listen again. This time you can read the words.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/para-overnight-kidney.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This chap's coming in for overnight kidney treatment.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-renal.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I'll take him to the Renal Unit.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_26" nexturl="#m4a13_28" prev="" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_28">
+	<section id="m4a13_28" class="hidden">
+
+		<div class="content">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Now listen to the conversation again. Drag the missing word/phrase to the space.</h3>
+			<div class="text-center">
+				<div class="ph-w ph-7x3 shadow" style="max-width: 700px">
+					<div class="ph">
+						<img draggable="false" src="images/module4/hospital_scene.png" alt="Hospital">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m4a13_27" nexturl="#m4a13_29" prev="hidden" next=""}}
+		</footer>
+
+	</section>
+</template>
+
+<template name="m4a13_29">
+	<section id="m4a13_29" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/8.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We're bringing in a footballer with a
+							<div class="ddseatedtarget ddwidth10 dd1line" data-destinationid="target1">&nbsp;</div>.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-orthopaedics.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK, I’ll get him to Orthopaedics.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target1">broken leg</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target2">cut to the head</div>
+					</div>
+					<div class="ddseat ddwidth10 dd1line">
+						<div class="ddsourceseated ddwidth10 dd1line shadow" draggable="false" data-destination="target3">hand injury</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_30">
+	<section id="m4a13_30" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/9.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This old chap doesn't know where to collect his
+							<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target1">&nbsp;</div>.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-pharmacy.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							OK, I'll show him how to get to the Pharmacy.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">medication</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">crutches</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">hospital notes</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_31">
+	<section id="m4a13_31" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/10.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							We've got a lady who's getting weekly
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> for a back problem.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-physiotherapy.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							Right, I'll direct her to Physiotherapy.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">medication</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">treatment</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">injections</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_32">
+	<section id="m4a13_32" class="hidden">
+		{{#if activeSection}}
+
+		<div class="content noselect">
+			<h1>Conversation 3</h1>
+			<h3 class="text-center">Drag the missing word to the space.</h3>
+
+			<ul class="speech speech-audio center-block">
+				<li>
+					<img draggable="false" src="images/module4/para.png" alt="Paramedic">
+					<div class="speech1">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/missingwords/11.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							This chap's coming in for overnight
+							<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> treatment.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="speech2">
+						<div class="toolbuttleft">
+							<button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module4/a13/full/port-renal.m4a"></button>
+						</div>
+						<div class="toolbuttright">
+							I'll take him to the Renal Unit.
+						</div>
+					</div>
+					<img draggable="false" src="images/module4/porter.png" alt="Porter">
+				</li>
+			</ul>
+
+			<div class="text-center visible-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">heart</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">liver</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">kidney</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="text-center hidden-xs">
+				<button data-toggle="modal" data-target="#m4a13_dept" class="button2 item-space">Show departments</button>
+			</div>
+			{{>rightwrong}} {{>welldone}}
+
+		</div>
+
+
+		{{/if}}
+	</section>
+</template>
+
+<template name="m4a13_dept">
+	<div class="modal fade" tabindex="-1" id="m4a13_dept" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="m4a13_dept">Hospital Departments</h4>
+				</div>
+
+				<div class="content">
+					<h3 class="text-center">{{>touch yes="Tap" no="Click"}} on a department to find out what it is</h3>
+					{{>hospitalwards}}
+
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>

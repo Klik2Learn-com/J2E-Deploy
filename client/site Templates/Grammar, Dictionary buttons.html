@@ -1,0 +1,104 @@
+<template name="gg_button">
+	<div class="center">
+		<div id="gg_button" data-toggle="modal" data-target="#grammarmodal" data-subsect="{{gg_subsect}}" class="tool">
+			<i class="icon-grammarguide toolicon"></i>
+			<div class="tooltext">{{gg_text}}</div>
+		</div>
+	</div>
+</template>
+
+<template name="dic_button">
+	<div class="center">
+		<div data-toggle="modal" data-target="#dictionarymodal" class="tool">
+			<i class="icon-dictionary toolicon"></i>
+			<div class="tooltext" style="max-width: 15em;">Check any words you don't know in the dictionary</div>
+		</div>
+	</div>
+</template>
+
+<template name="dic_intro">
+	<h3>
+		<div class="toolbuttleft"><a draggable="false" href="#">{{> ToolIconDic}}</a></div> 
+		<div class="toolbuttright">
+			<p>You'll need to use the dictionary to find the meanings of the following words.</p>
+			
+			<p class="hidden-xs">You can access the dictionary from the menu on the <span class="avoidwrap">right <i class="fa fa-long-arrow-alt-right"></i></span></p>
+			<p class="visible-xs">You can access the dictionary from the menu (<i class="fa fa-bars"></i>) at the top of the screen.</p>
+		</div>
+	</h3>
+</template>
+<template name="note_intro">
+	<h3>
+		<div class="toolbuttleft"><a draggable="false" href="#">{{> ToolIconNote}}</a></div> 
+		<div class="toolbuttright">
+			<p>You’ll need to use the Notebook to complete this activity.</p>
+			<p class="hidden-xs">You can access the Notebook from the menu on the <span class="avoidwrap">right <i class="fa fa-long-arrow-alt-right"></i></span></p>
+			<p class="visible-xs">You can access the Notebook from the menu (<i class="fa fa-bars"></i>) at the top of the screen.</p>	
+		</div>
+	</h3>
+</template>
+
+<template name="ToolIconNote">
+	<a draggable="false" data-toggle="modal" data-target="#notebookmodal" class="toolbutt"><i class="icon-notebook"></i></a>
+</template>
+
+<template name="ToolIconDic">
+	<a draggable="false" data-toggle="modal" data-target="#dictionarymodal" class="toolbutt"><i class="icon-dictionary"></i></a>
+</template>
+
+<template name="ToolIconRec">
+	<a draggable="false" data-toggle="modal" data-target="#voicerecordermodal" class="toolbutt"><i class="icon-recording"></i></a>
+</template>
+
+<template name="ToolIconForum">
+	<i class="toolbutt"><i class="icon-forum"></i></i>
+</template>
+
+<template name="ToolIconEmail">
+	<i class="toolbutt"><i class="icon-email"></i></i>
+</template>
+
+<template name="ToolIconGG">
+	<a draggable="false" data-toggle="modal" data-target="#grammarmodal" class="toolbutt"><i class="icon-grammarguide"></i></a>
+</template>
+
+<template name="ToolIconEportfolio">
+	<i class="toolbutt"><i class="icon-eportfolio"></i></i>
+</template>
+
+<template name="ToolIconUserGuide">
+	<i class="toolbutt"><i class="icon-userguide"></i></i>
+</template>
+
+<template name="InstructionsNotebook">
+	<h3><div class="toolbuttleft">{{>ToolIconNote}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>
+<template name="InstructionsDictionary">
+	<h3><div class="toolbuttleft">{{>ToolIconDic}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>
+<template name="InstructionsRecord">
+	<h3><div class="toolbuttleft">{{>ToolIconRec}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>
+<template name="InstructionsForum">
+	<h3><div class="toolbuttleft">{{>ToolIconForum}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>
+<template name="InstructionsEmail">
+	<h3><div class="toolbuttleft">{{>ToolIconEmail}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>
+<template name="InstructionsGrammar">
+	<h3><div class="toolbuttleft">{{>ToolIconGG}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>
+<template name="InstructionsEPortfolio">
+	<h3><div class="toolbuttleft">{{>ToolIconEportfolio}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>
+<template name="InstructionsUserGuide">
+	<h3><div class="toolbuttleft">{{>ToolIconUserGuide}}</div> 
+	<div class="toolbuttright">{{text}}</div></h3>
+</template>

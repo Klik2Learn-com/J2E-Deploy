@@ -1,0 +1,415 @@
+<template name="m10a7">
+	<article class="with-tools-sidebar m1">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Newmarket');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class='parent-level'>Module 10</div>
+				<div class='acttitle-title'>{{> activity}} 7 - {{> m10a7Title}}</div>
+			</header>
+			<section id="m10a7">
+				<div class="content">
+					<h1 class="start-page-header">{{>m10a7Title}}</h1>
+					{{> StartPageAvatar char="k"}}
+					<h3>{{> m10a7Intro}}</h3>
+					{{> m10a7Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m10a7_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m10a7_1}} {{>m10a7_2}} {{>m10a7_3}} {{>m10a7_4}} {{>m10a7_5}} {{>m10a7_6}} {{>m10a7_7}} {{>m10a7_8}} {{>EndPage char="k"
+			act="m10a7" nextact="m10a8" place="Newmarket"}}
+		</div>
+	</article>
+</template>
+<template name="m10a7_1">
+	<section id="m10a7_1" class="hidden">
+		<div class="content">
+			{{> dictionary_page word1="admiration" word2="excitement" word3="trouble" word4="wealth" word5="wisdom" word6="commitment"
+			word7="pride" word8="skill" word9="evidence" word10="fun" word11c="hidden" word12c="hidden" }}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7" nexturl="#m10a7_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m10a7_2">
+	<section id="m10a7_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose one of these
+				<span class="grammar">adjectives</span> to go with the following
+				<span class="grammar">nouns</span>. Drag the correct
+				<span class="grammar">adjective</span> into the space.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}}
+							<ol class="olcircle">
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> admiration</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> excitement</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> trouble</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> wealth</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> wisdom</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2 target4 target5">great</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">deep</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="">strong</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7_1" nexturl="#m10a7_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a7_3">
+	<section id="m10a7_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose one of these
+				<span class="grammar">adjectives</span> to go with the following
+				<span class="grammar">nouns</span>. Drag the correct
+				<span class="grammar">adjective</span> into the space.</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}} {{> welldone}}
+							<ol class="olcircle" style="counter-reset: start 5;">
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div> commitment</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div> pride</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target8">&nbsp;</div> skill</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target9">&nbsp;</div> evidence</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target10">&nbsp;</div> fun</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7 target8 target10">great</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">deep</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">strong</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7_2" nexturl="#m10a7_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a7_4">
+	<section id="m10a7_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content">
+			<h1>Here are the phrases again.</h1>
+			<div class="answer-blocks">
+				<ol class="olcircle">
+					<li>
+						<div class="info block shadow">Great admiration</div>
+						<div class="caption block">To admire someone a lot.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Great excitement</div>
+						<div class="caption block">To be very excited.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Deep trouble</div>
+						<div class="caption block">To be in a very difficult situation.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Great wealth</div>
+						<div class="caption block">To have a lot money.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Great wisdom</div>
+						<div class="caption block">To be very wise.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Deep commitment</div>
+						<div class="caption block">To be very dedicated.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Great pride</div>
+						<div class="caption block">To be very proud of something.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Great skill</div>
+						<div class="caption block">To be very good at something.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Strong evidence</div>
+						<div class="caption block">Information that proves something.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Great fun</div>
+						<div class="caption block">To have a lot of fun.</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7_2" nexturl="#m10a7_5" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a7_5">
+	<section id="m10a7_5" class="hidden">
+		<div class="content">
+			{{> dictionary_page word1="mistake" word2="failure" word3="disappointment" word4="meal" word5="rain" word6="workload" word7="improvement"
+			word8="surprise" word9="quantity" word10="contrast" word11c="hidden" word12c="hidden" }}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7_4" nexturl="#m10a7_6" prev="" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m10a7_6">
+	<section id="m10a7_6" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose one of these
+				<span class="grammar">adjectives</span> to go with the following
+				<span class="grammar">nouns</span>. Drag the correct
+				<span class="grammar">adjective</span> into the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}}
+							<ol class="olcircle">
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target1">&nbsp;</div> mistake</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target2">&nbsp;</div> failure</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target3">&nbsp;</div> disappointment</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target4">&nbsp;</div> meal</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target5">&nbsp;</div> rain</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4 target5">heavy</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="">large</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1 target2 target3">big</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7_5" nexturl="#m10a7_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a7_7">
+	<section id="m10a7_7" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Choose one of these
+				<span class="grammar">adjectives</span> to go with the following
+				<span class="grammar">nouns</span>. Drag the correct
+				<span class="grammar">adjective</span> into the space.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="parapaper parapaperdd1 fold">
+							{{> rightwrong}} {{> welldone}}
+							<ol class="olcircle" style="counter-reset: start 5;">
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target6">&nbsp;</div> workload</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target7">&nbsp;</div> improvement</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target8">&nbsp;</div> surprise</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target9">&nbsp;</div> quantity</li>
+								<li>
+									<div class="ddseatedtarget ddwidth7 dd1line" data-destinationid="target10">&nbsp;</div> contrast</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="visible-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddseatedtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target6">heavy</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target9">large</div>
+					</div>
+					<div class="ddseat ddwidth7 dd1line">
+						<div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target7 target8 target10">big</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="hidden-xs">
+				{{>gg_button gg_text="Click here to find out more about collocations in the Grammar Guide"}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7_6" nexturl="#m10a7_8" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m10a7_8">
+	<section id="m10a7_8" class="hidden">
+			{{#if activeSection}}
+		<div class="content">
+			<h1>Here are the phrases again.</h1>
+			<div class="answer-blocks">
+				<ol class="olcircle">
+					<li>
+						<div class="info block shadow">Big mistake</div>
+						<div class="caption block">To get something badly wrong.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Big improvement</div>
+						<div class="caption block">To make something much better.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Heavy rain</div>
+						<div class="caption block">A lot of rain.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Heavy meal</div>
+						<div class="caption block">A large amount of food that is hard to digest.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Big surprise</div>
+						<div class="caption block">Very surprising.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Heavy workload</div>
+						<div class="caption block">A lot of work that needs to be done.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Big contrast</div>
+						<div class="caption block">A big difference between two things.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Large quantity</div>
+						<div class="caption block">A lot of something.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Big disappointment</div>
+						<div class="caption block">Something that is much worse than expected.</div>
+					</li>
+					<li>
+						<div class="info block shadow">Big failure</div>
+						<div class="caption block">Not succeeding at something important.</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m10a7_7" nexturl="#m10a7_end" prev="disabled" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

@@ -1,0 +1,77 @@
+<template name="m10a23"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/London');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 23 - {{> m10a23Title}}</div>
+		</header>
+		<section id="m10a23">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a23Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m10a23Intro}}</h3>
+				{{> m10a23Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a23_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a23_1}}
+		{{>m10a23_2}}
+		{{>EndPage char="tu" act="m10a23" nextact="m10a24" place="London"}}
+	</div>
+</article>
+</template>
+<template name="m10a23_2"> 
+	<section id="m10a23_2" class="hidden"> 
+		<div class="content">  
+      			{{> Tu_saved module="10"}}
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a23_1" nexturl="#m10a23_end" prev="disabled" next=""}} 
+		</footer> 
+	</section> 
+ </template>
+
+<template name="m10a23_1"> 
+	<section id="m10a23_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content noselect">
+			<h1>Statements</h1>
+			<h3 class="center">Drag the right preposition into the space.</h3>
+				<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}}
+				{{> welldone}}
+					<ol class="olcircle">
+						<li>The manager promised to look <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target1">&nbsp;</div> my complaint.</li>
+						<li>She’ll always look <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target2">&nbsp;</div> to her father – he achieved such a lot in his life.</li>
+						<li>Look <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target3">&nbsp;</div> – there’s a broken bottle near your foot.</li>
+						<li>I’ll look <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target4">&nbsp;</div> my emails to see if I can find that information.</li>
+						<li>Sorry, I can’t join you, I have to look <div class="ddseatedtarget ddwidth7 dd1line" data-destinationid = "target5">&nbsp;</div> my son tonight.</li>
+					</ol>
+				</div>
+
+	<div class="dd-fixed-source-container animated slideInUp">
+		<div class="box1 box1dd1">
+				<!-- Ensure all 'ddsourceseated ddwidth7 dd1line' and 'ddtargets' are the same width within an activity. Use 'em' in case the text size changes -->
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target5">after</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target1">into</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target3">out</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target4">through</div></div>
+				<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="false" data-destination="target2">up</div></div>
+			</div></div>
+	<div class="dd-fixed-fade animated slideInUp"></div>
+	<div class="dd-fixed-pad"></div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m10a23" nexturl="#m10a23_2" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+

@@ -1,0 +1,60 @@
+<template name="m10a5"> 
+<article class="with-tools-sidebar m1">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Newmarket');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class='parent-level'>Module 10</div> <div class='acttitle-title'>{{> activity}} 5 - {{> m10a5Title}}</div>
+		</header>
+		<section id="m10a5">
+			<div class="content">
+				<h1 class="start-page-header">{{>m10a5Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m10a5Intro}}</h3>
+				{{> m10a5Time}}<!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m10a5_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m10a5_1}}
+		{{>EndPage char="tu" act="m10a5" nextact="m10a6" place="Newmarket"}}
+	</div>
+</article>
+</template>
+<template name="m10a5_1"> 
+	<section id="m10a5_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">Complete these sentences by typing in a word from the list below.</h3>
+				<div class="parapaper linespace para-ol-space fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence1.m4a"></button> Any <span id="entryanswer0"><form class="textentry"><input type="text" name="userText" size="7" autocomplete="off"><input type="submit" value="OK"></form></span> you could turn the volume <span id="entryanswer1" class="textentry-disabled"></span> a bit?</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence2.m4a"></button> We’re just having a flat <span id="entryanswer2" class="textentry-disabled"></span> party.</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence3.m4a"></button> I know you’ve just moved <span id="entryanswer3" class="textentry-disabled"></span>...</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence4.m4a"></button> You’ve no <span id="entryanswer4" class="textentry-disabled"></span> what it sounds <span id="entryanswer5" class="textentry-disabled"></span> up there.</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence5.m4a"></button> It’s <span id="entryanswer6" class="textentry-disabled"></span> my wife crazy!</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence6.m4a"></button> <span id="entryanswer7" class="textentry-disabled"></span> out man!</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence7.m4a"></button> <span id="entryanswer8" class="textentry-disabled"></span> me a favour and turn <span id="entryanswer9" class="textentry-disabled"></span> down.</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence8.m4a"></button> If the <span id="entryanswer10" class="textentry-disabled"></span> comes to the worst,...</li>
+					<li><button class="buttonround buttonroundsmall buttonaudio" data-audiosrc="/audio/module10/a5/sentence9.m4a"></button> I don’t want to cause any <span id="entryanswer11" class="textentry-disabled"></span>.</li>
+				</ol>
+			</div>
+
+			
+			<div class="box1 box1dd1">
+				<h4 style="height:1em;">do  in  down  chance  bother  driving  like  it  idea  worst  chill  warming</h4>
+			</div>
+
+		</div> 
+		<footer> 
+			{{>footer_nav prevurl="#m10a5" nexturl="#m10a5_end" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{> stuck stuckchar="tu"}}
+		{{/if}} 
+	</section> 
+ </template>

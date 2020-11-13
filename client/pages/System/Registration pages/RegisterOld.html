@@ -1,0 +1,43 @@
+<template name="RegisterOld">
+
+	{{>loginBox}}
+	<article class="login-page login-page2 register-page">	
+		{{>loginHeader}}		
+		<section id="loginRegister" class="">
+			<div class="content-login buy text-center hero-panel">
+				<h1>Register to start your journey</h1>	
+				<div id="register-container">
+					<form id="user-register-form" autocomplete="off">
+						<label for="registerFName" class="text-input-label">First name</label>
+						<input id="registerFName" class="form-control"  type="text" name="text" placeholder="" style="text-transform: capitalize;" required><br>						
+						<label for="registerLName" class="text-input-label">Last name</label>
+						<input id="registerLName" class="form-control"  type="text" name="text" placeholder="" style="text-transform: capitalize;" required><br>
+						<label for="registerEmail" class="text-input-label">Email address</label>
+						<input id="registerEmail" class="form-control"  type="email" name="email" placeholder=""><br>
+						<label for="registerEmailConfirm" class="text-input-label">Confirm email</label>
+						<input id="registerEmailConfirm" class="form-control"  type="email" name="email" placeholder=""><br>
+						<label for="registerPassword" class="text-input-label">Password</label>
+						<input id="registerPassword" class="form-control"  type="password" name="password" placeholder=""><br>
+						<label for="registerPasswordConfirm" class="text-input-label">Confirm password</label>
+						<input id="registerPasswordConfirm" class="form-control"  type="password" name="password" placeholder=""><br>
+						{{> honeypot }}
+						<div class="text-center">
+							<label class="form-check-inline">
+								<input class="form-check-input" type="checkbox" id="tcCheck" value="yes"> I agree with the <a href="#" class="terms_activate">Terms &amp; Conditions</a>
+							</label>
+							
+							<input type="submit" id="register-button" value="Register"/>
+							
+							<div class="registrationErrors"></div>
+						</div>
+					</form>
+				</div>
+				<p>Already have an account? <a class="call-login-box">Sign in here</a>.</p>
+			{{>TermsConditions}}
+			</div>
+		</section>
+			
+		
+		{{>loginFooter}}
+</article>
+</template>

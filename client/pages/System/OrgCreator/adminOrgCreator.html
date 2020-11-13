@@ -1,0 +1,26 @@
+<template name="adminOrgCreator">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle">
+			{{>menu}}
+			{{> adminNav}}
+		</header>
+		<section>
+			<div class="content-user">
+				{{#if isAdmin}}
+				<h1>Add Organisation</h1>
+				<br>
+				<p>Use this Panel to Create a new organisation.</p>
+				<label for="orgName">New organisation name:</label>
+				<input id="orgName" type="text" class="form-control" placeholder="New organisation name...">
+				<div class="text-center"><button class="button2 buttonsmall item-space" data-function="createOrg">Create Organisation</button></div>
+			{{else}}
+				Unauthorised access.
+			{{/if}}
+			</div>
+		</section>
+	</div>
+</article>
+
+</template>

@@ -1,0 +1,19 @@
+<template name="Yeti_s_bad">
+	<section id="Yeti_s_bad" style="background: none;">
+		<div class="scorebad">
+			<div class="content">
+			<div class=" gameInfo text-center">
+					You scored <span>{{userScore}}%</span> and didn’t manage to get a photo of the yeti.
+				</div>
+				<div class="scoreinfo gameInfo text-center">
+					Right answers and faster routes will give you a better score and a chance of finding the yeti. {{>touch yes="Tap" no="Click"}} <a draggable="false" href="#Yeti" class="restart">here</a> to try again, or {{>touch yes="tap" no="click"}} next to see the answers.
+				</div>
+			</div>
+		</div>
+		<footer>
+			 {{>game_footer_nav nexturl="#Yeti_ans_d1" prevurl="#Yeti" prev="hidden" next=""}} 
+		</footer>
+	</section>
+</template>
+	
+	

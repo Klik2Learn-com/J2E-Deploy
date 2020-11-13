@@ -1,0 +1,12 @@
+<template name="studentNoteHolder">
+	<div class="parapaper fold note-container">
+       <div class="note-titlebar">
+          <div class="note-title">{{noteTitle}}</div>
+          <div class="note-date">{{noteDate}}</div>
+          <div class="parent_expander"></div>
+       </div>
+       <div class="note-content">
+          <p style="white-space: pre-wrap; word-wrap: break-word;" data-identifier="{{_id}}">{{{noteBody}}}</p>
+       </div>
+    </div>
+</template>

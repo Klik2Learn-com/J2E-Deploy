@@ -1,0 +1,90 @@
+<template name="styleAchievements">
+<section id="styleAchievements" class="hidden">
+	<div class="content">
+		<h1>Achievements</h1>
+
+		<div class="text-center">
+			<div class="trophy mod1"></div>
+			<div class="trophy mod2"></div>
+			<div class="trophy mod3"></div>
+			<div class="trophy mod4"></div>
+			<div class="trophy mod5"></div>
+			<div class="trophy mod6"></div>
+			<div class="trophy mod7"></div>
+			<div class="trophy mod8"></div>
+			<div class="trophy mod9"></div>
+			<div class="trophy mod10"></div>
+		</div>
+		<br>
+		<p>Choose a class between <span class="html">mod1</span> and <span class="html">mod10</span>.</p>
+		<pre class="htmlcode2">&lt;div class="trophy mod<span class="html-red">1</span>"&gt;&lt;/div&gt;</pre>
+		
+		<p>&nbsp;</p>
+		<div class="text-center">
+			<div class="trophy per30"></div>
+			<div class="trophy per60"></div>
+			<div class="trophy per100"></div>
+		</div>
+		<br>
+		<p>Choose either <span class="html">per30</span>, <span class="html">per60</span> or <span class="html">per100</span>.</p>
+		<pre class="htmlcode2">&lt;div class="trophy <span class="html-red">per30</span>"&gt;&lt;/div&gt;</pre>
+		<p>&nbsp;</p>
+		<h2>Additional classes</h2>
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="trophy locked"></div>
+					<br>
+					<pre>locked</pre>
+				</div>
+				<div class="col-sm-4">
+					<div class="trophy per30 locked"></div>
+					<br>
+					<pre>per30 locked</pre>
+				</div>
+				<div class="col-sm-4">
+					<div class="trophy per100 sparkle"></div>
+					<br>
+					<pre>sparkle</pre>
+				</div>
+			</div>
+			{{>blankrow}}
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="trophy mod1 trophy-xxs"></div>
+					<br>
+					<pre>trophy-xxs</pre>
+				</div>
+				<div class="col-sm-4">
+					<div class="trophy mod1 trophy-xs"></div>
+					<br>
+					<pre>trophy-xs</pre>
+				</div>
+				<div class="col-sm-4">
+					<div class="trophy mod1 trophy-sm"></div>
+					<br>
+					<pre>trophy-sm</pre>
+				</div>
+			</div>
+			{{>blankrow}}
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="trophy mod1 trophy-lg"></div>
+					<br>
+					<pre>trophy-lg</pre>
+				</div>
+				<div class="col-sm-4">
+					<div class="trophy mod1 trophy-xl"></div>
+					<br>
+					<pre>trophy-xl</pre>
+				</div>
+				<div class="col-sm-4">
+					<div class="trophy mod1 trophy-xl locked"></div>
+					<br>
+					<pre>trophy-xl locked</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</template>

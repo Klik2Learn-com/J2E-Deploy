@@ -1,0 +1,147 @@
+<template name="MoreAboutLochLomond">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="LochLomond"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m4l5}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m4l5}}</div>
+		</header>
+
+		<section id="moreaboutLochLomond">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 bonus-image" style="background-image: url('images/bonus/LochLomond/LochLomond1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l5_A">
+						<p>Cruises</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/LochLomond/LochLomond2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l5_B">
+						<p>Luss Beach</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/LochLomond/LochLomond3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l5_C">
+						<p>Golf at Loch Lomond</p>
+					</div>
+					
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-7 col-sm-offset-1 col-xs-12 bonus-image" style="background-image: url('images/bonus/LochLomond/LochLomond4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l5_D">
+						<p>Luss Village</p>
+					</div>
+					<div class="col-sm-3 col-xs-12 bonus-image" style="background-image: url('images/bonus/LochLomond/LochLomond5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l5_E">
+						<p>Loch Lomond and the Trossachs</p>
+					</div>	
+				</div>
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l5_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l5_A">Cruises</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochLomond/LochLomond1.jpg" alt="Cruises" style="max-width: 250px;">
+					</figure>
+					<p>Loch Lomond and the surrounding area is a National Park. One of the best ways to see the area is by taking a trip on one of the boats which sail up the loch. You can also hire a boat for a special occasion like a party or wedding.  If you like the outdoors, you can also use the boat service for an adventure like climbing Ben Lomond, or accessing some of the area’s cycle tracks.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.cruiselochlomond.co.uk/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l5_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l5_B">Luss Beach</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochLomond/LochLomond2.jpg" alt="Luss Beach" style="max-width: 250px;">
+					</figure>
+					<p>Loch Lomond has many beaches along its shores which are popular for family picnics/ One of the largest is the beach at Luss. As well as relaxing, it offers watersports like canoeing and sailing. You can even take a canoe to one of the islands in Loch Lomond and abseil down a rock face before paddling back to the beach.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.visitscotland.com/info/towns-villages/beach-at-luss-p662951" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l5_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l5_C">Golf at Loch Lomond</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochLomond/LochLomond3.jpg" alt="Golf at Loch Lomond" style="max-width: 250px;">
+					</figure>
+					<p>The Loch Lomond golf club, on the south west of the loch, opened in 1993. Many international events have been held there and golfers from all over the world have competed in the Scottish Open. It is a beautiful course and has made a special effort to protect wildlife, plants and trees.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.lochlomond.com/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l5_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l5_D">Luss Village</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochLomond/LochLomond4.jpg" alt="Luss Village" style="max-width: 250px;">
+					</figure>
+					<p>Luss is a pretty conservation village on the western shore of Loch Lomond. Many people come here to be married in the church and have their wedding photographs taken in such a beautiful place. The pier in Luss is the starting point for boat trips on the Loch.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.explorelochlomond.co.uk/luss.htm" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l5_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l5_E">Loch Lomond and the Trossachs</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/LochLomond/LochLomond5.jpg" alt="Loch Lomond and the Trossachs" style="max-width: 250px;">
+					</figure>
+					<p>Loch Lomond was voted one of the natural wonders of Great Britain. It’s the largest area of inland water in Britain. It’s surrounded by mountains and has over thirty  islands. It’s a popular destination for tourists not just because of the scenery. You can enjoy every kind of watersport : canoeing, wind surfing, jetskiing water-skiing and sailing. Loch Lomond has featured in films, TV programmes and has a famous song written about it, ‘The bonnie, bonnie banks of Loch Lomond.’ Bonnie is a Scottish word meaning ‘beautiful.’</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.lochlomond-trossachs.org/" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

@@ -1,0 +1,458 @@
+<template name="m7a3"> 
+<article class="with-tools-sidebar m7a3 para-select">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Sheffield');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 3 - {{>m7a3Title}}</div>
+		</header>
+		<section id="m7a3">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a3Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m7a3Intro}}</h3>
+				{{> m7a3Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a3_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a3_1}}
+		{{>m7a3_2}}
+		{{>m7a3_3}}
+		{{>m7a3_4}}
+		{{>m7a3_5}}
+		{{>m7a3_6}}
+		{{>m7a3_7}}
+		{{>m7a3_8}}
+		{{>m7a3_9}}
+		{{>m7a3_10}}
+		{{>EndPage char="elle" act="m7a3" nextact="m7a4" place="Sheffield"}}
+	</div>
+</article>
+
+</template>
+
+<template name="m7a3_1"> 
+	<section id="m7a3_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">1</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>What good qualities does Sally have?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 2				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m7a3" nexturl="#m7a3_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_10"> 
+	<section id="m7a3_10" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h1>Notebook Answers</h1>		
+				<div class="parapaper fold notebook-answers">
+					<ol class="olcircle">
+<li><p><b> What good qualities does Sally have?</b></p><p>
+She is calm and friendly.</p></li>
+
+<li><p><b>How do you know the school isn’t very modern?</b></p><p>
+The equipment has not changed much in 20 years.</p></li>
+
+<li><p><b>What does Sally not like about teaching?</b></p><p>
+She doesn’t have much time to spend with her 3 year old daughter. She never switches off.</p></li>
+
+<li><p><b>What does Sally do during the long summer holidays?</b></p><p>
+She spends a lot of time planning for the next term.</p></li>
+
+<li><p><b>Why does she go in to work when she’s not well?</b></p><p>
+She worries that the pupils will be disruptive. She has to plan the lessons so it’s easier to go into school.</p></li>
+
+<li><p><b>How does she encourage the pupils to do their best?</b></p><p>
+She encourages competition.</p></li>
+
+<li><p><b>How do you know this is a good school?</b></p><p>
+It was judged outstanding.</p></li>
+
+<li><p><b>What makes the children happy at the end of the lesson?</b></p><p>
+They are happy when they get a good mark.</p></li>
+
+<li><p><b>What will happen to the stick insects over the holidays?</b></p><p>
+Two of the girls will take them home.</p></li>
+
+					</ol>
+				</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="m7a3_9" nexturl="#m7a3_end" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+
+<template name="m7a3_2"> 
+	<section id="m7a3_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">2</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>How do you know the school isn’t very modern?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 2				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_1" nexturl="#m7a3_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_3"> 
+	<section id="m7a3_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">3</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>What does Sally not like about teaching? </p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 4				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_2" nexturl="#m7a3_4" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_4"> 
+	<section id="m7a3_4" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">4</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>What does Sally do during the long summer holidays?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 5				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_3" nexturl="#m7a3_5" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_5"> 
+	<section id="m7a3_5" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">5</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>Why does she go in to work when she’s not well?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 5				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_4" nexturl="#m7a3_6" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_6"> 
+	<section id="m7a3_6" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">6</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>How does she encourage the pupils to do their best?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 6				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_5" nexturl="#m7a3_7" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_7"> 
+	<section id="m7a3_7" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">7</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>How do you know this is a good school?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 7				
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_6" nexturl="#m7a3_8" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_8"> 
+	<section id="m7a3_8" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">8</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>What makes the children happy at the end of the lesson?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 9					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_7" nexturl="#m7a3_9" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3_9"> 
+	<section id="m7a3_9" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			{{>m7a3paragraphselect}}
+			<div class="container-fluid">
+				{{> blankrow}}
+				<div class="row">
+					<div class="col-sm-3 col-xs-2">
+						<div id="m7a3Q" class="number pull-right">9</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="row">
+							<div id="m7a3Quest" class="caption">
+							<p>What will happen to the stick insects over the holidays?</p>
+							</div>
+						</div>
+						{{> blankrow}}
+						<div class="row center">
+							<div id="m7a3P" class="captionsmall capgreen">
+							Paragraph 9					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-1"></div>
+					{{> blankrow}}
+					<div class="col-xs-12">
+						<h3 class="center">Continue when you’re ready to see the answers.</h3>
+					</div>
+				</div>
+				{{> blankrow}}
+			</div>
+		</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a3_8" nexturl="#m7a3_10" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a3paragraphselect">
+<div style="clear: both; display:block; position:relative; background-color: #FFFFFF;">
+	{{>InstructionsNotebook text="Write the answers to these questions in your Notebook. Click the paragraph number you want to read. Check the answers at the end."}}
+	<br>
+	<div class="container-fluid">
+		{{> blankrow}}
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div id="m7a3textDisplay" class="parapaper fold">
+					<p><b>1.</b> The room contains a glass tank with two baby stick insects called Jim and Bob. There’s a poster on the wall with the words "Hazard Warning" in vivid red ink and tray after tray of test tubes.</p>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 text-right">
+				<span class="paragraph-label">Select a paragraph:</span>
+				<a><div id="0" class="numbutt">1</div></a>
+				<a><div id="1" class="numbutt">2</div></a>
+				<a><div id="2" class="numbutt">3</div></a>
+				<a><div id="3" class="numbutt">4</div></a>
+				<a><div id="4" class="numbutt">5</div></a>
+				<a><div id="5" class="numbutt">6</div></a>
+				<a><div id="6" class="numbutt">7</div></a>
+				<a><div id="7" class="numbutt">8</div></a>
+				<a><div id="8" class="numbutt">9</div></a>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+</div>
+</template>
+

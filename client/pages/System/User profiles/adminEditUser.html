@@ -1,0 +1,185 @@
+<template name="adminUserControls">
+	<article class="with-tools-sidebar">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				<a draggable="false" href="../userlist">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a> {{>menu}}
+				<div class="parent-level">User list</div>
+				<div class="acttitle-title">Edit user</div>
+			</header>
+			<section>
+				<div class="content-user content-user-edit">
+					{{#unless editMulti}}
+					<h2>User Profile Details</h2>
+					{{/unless}}
+					<form id="edit-user-form">
+						{{#unless editMulti}}
+						<div class="form-group">
+							<label for="emailAddress">Email Address</label>
+							<input type="email" class="form-control" name="editEmailAddress" data-original="{{emails.[0].address}}" value="{{emails.[0].address}}">
+						</div>
+						<div class="form-group">
+							<label for="firstname">First Name</label>
+							<input type="text" class="form-control" name="editFirstname" data-original="{{profile.firstname}}" value="{{profile.firstname}}">
+						</div>
+						<div class="form-group">
+							<label for="surname">Surname</label>
+							<input type="text" class="form-control" name="editSurname" data-original="{{profile.surname}}" value="{{profile.surname}}">
+						</div>
+						{{/unless}} {{#unless isMod}}
+						
+						<div class="divider"></div>
+
+						<h2>Certificate Management</h2>
+
+						<div class="form-group">
+							{{#unless editMulti}}
+								
+								<label>Certificate: {{getCertificateStatus _id}}</label>
+								<br>
+								<button id="setCertificateTrue" class="button4 buttonsmall">Enable certificate <i class="fas fa-check"></i></button>
+								<button id="setCertificateFalse" class="button1 buttonsmall">Disable certificate <i class="fas fa-ban"></i></button>
+							{{/unless}}
+						</div>
+
+						<div class="divider"></div>
+						
+						<h2>Organisation Management</h2>
+
+						<div class="form-group">
+							{{#unless editMulti}}
+								
+								{{#if editMod}}
+								
+								<p>This user is currently a member of these organisations:</p>
+								
+								<div class="org-memberships">
+									{{#each modOrgs}}
+										<div class="org">{{this.name}} <span><a draggable="false" href="#" class="remove-org" data-orgId="{{this._id}}" title="Remove user from this organisation"><i class="fas fa-times-circle"></i></a></span></div>
+									{{/each}}
+								</div>
+								
+								<div class="add-org-box"><a class="button2 buttonsmall open-add-org-box" draggable="false" href="#"><i class="fas fa-plus"></i> &nbsp;Add another...</a></div>
+								
+								<div class="parapaper inline-block text-center fold add-org-box hidden">
+									<select id="selectOrg" name="orgSelect" class="form-control item-space inline-block" style="width: auto">
+										<option selected="true" disabled="disabled" value="">
+											<i>Choose from the list...</i>
+										</option>
+										{{#each organisations}}
+											<option value="{{_id}}">{{name}}</option>
+										{{/each}}
+									</select>
+									<button type="button" class="button1 buttonsmall add-org item-space">Add &nbsp;<i class="fas fa-check"></i></button>
+									<button type="button" class="button2 buttonsmall open-add-org-box item-space">Cancel &nbsp;<i class="fas fa-times"></i></button>
+								</div>
+
+								
+								{{else}}
+								<label>Current organisation: {{getUserOrg}}</label>
+								<br> 
+								{{/if}} 
+							{{/unless}} 
+							{{#unless editMod}}
+							<label>Change organisation:</label>
+							<select name="changeOrg" class="form-control">
+								<option selected="true" disabled="disabled" value="">
+									<i>Choose from the list</i>
+								</option>
+								{{#each organisations}}
+								<option data-userId="{{../_id}}" value="{{_id}}">{{name}}</option>
+								{{/each}}
+							</select>
+							{{/unless}}
+						</div>
+
+						{{#if orgIsSelected}}
+						<select name="changeGroup" class="form-control">
+							<option selected="true" disabled="disabled" value="">
+								<i>Choose from the list</i>
+							</option>
+							{{#each groups}}
+							<option data-userId="{{../_id}}" value="{{_id}}">{{name}}</option>
+							{{/each}}
+						</select>
+						{{/if}}
+
+						<div class="divider"></div>
+						
+						<h2>Subscriptions Management</h2>
+						{{#unless editMulti}}
+						<label>Active Subscription: {{{activeSubscription _id}}}</label>
+						<br>{{/unless}}
+						<div class="form-group">
+							<label>Days remaining:</label>
+							<input type="text" class="form-control" name="daysRemaining" data-original="{{daysRemaining _id}}" value="{{daysRemaining _id}}">
+							<!-- <button type="submit" class="button2 buttonsmall">Update</button> -->
+
+						</div>
+						{{/unless}}
+						<div class="form-group">
+							<button type="submit" class="button2 buttonsmall">Update</button>
+							<!-- <button type="button" class="button1 buttonsmall" data-function="cancel">Cancel</button> -->
+						</div>
+					</form>
+					{{#unless isMod}}
+					<div id="add-subscription" class="form-group">
+						<label>Add a subscription package:</label>
+						<br>
+						<!-- <div> -->
+						<button value="7" class="button1">Add 7 days</button>
+						<!-- </div> -->
+						<!-- <div> -->
+						<button value="30" class="button1">Add 30 days</button>
+						<!-- </div> -->
+						<!-- <div> -->
+						<button value="365" class="button1">Add 365 days</button>
+						<!-- </div> -->
+					</div>
+					<div id="remove-subscription" class="form-group">
+						<label>Remove subscription (if violated ToS, etc):</label>
+						<div>
+							<button value="0" class="button1">Set days to 0</button>
+						</div>
+					</div>
+					<div id="unlimited-subscription" class="form-group">
+						<label>Set unlimited subscription:</label>
+						<div>
+							<!-- This bit needs to be finished -->
+							<button class="button1">Remove expiry</button>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div id="add-J2E" class="form-group">
+						<h2>Add J2E course:</h2>
+						<div>
+							<button class="button2">Add J2E</button>
+						</div>
+					</div>
+					{{/unless}} {{#if editMulti}} {{else}}
+					
+					<div class="divider"></div>
+					
+					<h2>Password Management</h2>
+					<button class="button2 buttonsmall" data-function="sendResetPassword">Send Reset Password Email</button>
+					<button class="button2 buttonsmall" data-function="defaultPassword">Change password to 'journey001'</button>
+					{{/if}} {{#unless isMod}}
+					
+					<div class="divider"></div>
+					
+					<h2>Trial Management</h2>
+					<button class="button2 buttonsmall" data-function="setTrial">Send account to Trial</button>
+					<br>
+					<br>
+					<hr>
+					<div class="form-group">
+
+					</div>
+					{{/unless}}
+				</div>
+			</section>
+		</div>
+	</article>
+</template>

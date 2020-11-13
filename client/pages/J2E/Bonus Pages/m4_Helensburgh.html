@@ -1,0 +1,147 @@
+<template name="MoreAboutHelensburgh">
+<article class="with-tools-sidebar">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			<!-- SET PLACE LINK -->
+			<a draggable="false" href="Helensburgh"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{>menu}}
+			<!-- SET PLACE NAME -->
+			<div class="parent-level">{{> m4l4}}</div> <div class="acttitle-title">{{> BonusTitle}} {{> m4l4}}</div>
+		</header>
+
+		<section id="moreaboutHelensburgh">
+			<!-- {{>BonusPlaceHolder}} -->
+			<div class="bonuscontent">
+				
+				<!-- Top row of images -->
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Helensburgh/Helensburgh1.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l4_A">
+						<p>HMNB Clyde</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Helensburgh/Helensburgh2.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l4_B">
+						<p>Hill House</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Helensburgh/Helensburgh3.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l4_C">
+						<p>John Logie Baird</p>
+					</div>					
+					<div class="col-sm-3 col-xs-6 bonus-image" style="background-image: url('images/bonus/Helensburgh/Helensburgh5.jpg'); background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l4_E">
+						<p>Ardencaple Castle and the Clan MacAulay</p>
+					</div>
+				</div>
+				
+				<!-- Bottom row of images -->
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 col-xs-12 bonus-image" style="background-image: url('images/bonus/Helensburgh/Helensburgh4.jpg');  background-position: center;" data-toggle="modal" data-target="#bonus_modal_m4l4_D">
+						<p>The Waverly</p>
+					</div>	
+				</div>
+			
+			</div>
+		</section>
+	</div>
+</article>
+
+	
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l4_A" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l4_A">HMNB Clyde</h4>
+				</div>
+				<div class="content">	
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Helensburgh/Helensburgh1.jpg" alt="HMNB Clyde" style="max-width: 250px;">
+					</figure>
+					<p>Near Helensburgh is one of three Royal Naval bases in the UK. It is close to very deep water and has been  home to the submarine fleet since the 1970s. The base contributes a lot to the local economy with over 3,000 military personnel . It employs over 4,000 local people.  </p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://en.wikipedia.org/wiki/HMNB_Clyde" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l4_B" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l4_B">Hill House</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Helensburgh/Helensburgh2.jpg" alt="Hill House" style="max-width: 250px;">
+					</figure>
+					<p>One of the most famous artists, designers and architects Scotland has produced is Charles Rennie MacIntosh. His distinctive style won him fame in Europe and he has left his mark in Glasgow, where he studied. He designed Glasgow School of Art and one of his finest houses is Hill House in Helensburgh. It is a wonderful mix of artistic styles and MacIntosh designed everything from the building itself, the gardens and all the interiors and furniture.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://www.nts.org.uk/visit/places/the-hill-house" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l4_C" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l4_C">John Logie Baird</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Helensburgh/Helensburgh3.jpg" alt="John Logie Baird" style="max-width: 250px;">
+					</figure>
+					<p>John Logie Baird was born in Helensburgh in 1888 and for the first years of his life he suffered ill health. As a boy, however, he showed his engineering talent and set up a telephone system from his room to speak to his friends.  In the 1920s, he began working on television and by 1926, he demonstrated his invention in London to 50 other scientists. Two years later, he transmitted signals between London and New York but by 1937, the system developed by Marconi proved to be superior.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.bbc.co.uk/history/historic_figures/baird_logie.shtml" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l4_D" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l4_D">The Waverly</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Helensburgh/Helensburgh4.jpg" alt="The Waverly" style="max-width: 250px;">
+					</figure>
+					<p>One of the interesting things you can do in Helensburgh during the summer is take a trip on the paddle steamer, the Waverley. The Waverley is the last seagoing paddle steamer in the world. She is named after the novel of the same name written by Sir Walter Scott and was built in 1946. In the 1970s she was restored to her original condition and is now regarded as a vessel of national importance. She has been used in a number of films, including ‘Sherlock Holmes.’</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="https://en.wikipedia.org/wiki/PS_Waverley" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="bonus_modal_m4l4_E" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="bonus_modal_m4l4_E">Ardencaple Castle and the Clan MacAulay</h4>
+				</div>
+				<div class="content">
+					<figure class="image imgleft-responsive">
+						<img draggable="false" src="images/bonus/Helensburgh/Helensburgh5.jpg" alt="Ardencaple Castle and the Clan MacAulay" style="max-width: 250px;">
+					</figure>
+					<p>Only one tower of Ardencaple Castle in Helensburgh is still standing after the rest of the castle was demolished in the 1950s. It was still the family home of the clan MacAulay until then and was used by the Royal navy in World War Two. The tower is still  used as marker for ships in the Clyde and the members of the clan MacAulay still regard it as their family home.</p>
+					<!-- fixes image floats -->
+					<div class="parent_expander"></div>
+					<br>
+					<p class="text-center"><a draggable="false" href="http://www.helensburgh-heritage.co.uk/index.php?option=com_content&view=article&id=546:ardencaple-castle-and-the-clan-macaulay&catid=89:places&Itemid=463" target="_blank" class="moreInfo" onclick="askToRedirect(event)">{{>touch yes="Tap" no="Click"}} here to learn more</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</template>

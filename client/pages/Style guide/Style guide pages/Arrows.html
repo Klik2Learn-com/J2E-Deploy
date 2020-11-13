@@ -1,0 +1,145 @@
+<template name="styleArrows">
+<section id="style-arrows" class="hidden">
+	<div class="content">
+		<h1>Arrows</h1>
+		<p>{{>arrow direction="right"}} <span class="htmlcode">&#123;&#123;&#62;arrow direction="<span style="color: red;">right</span>"&#125;&#125;</span> - choose from right, left, up, down</p>
+		<br>
+		<p>{{>arrow_big direction="right"}} <span class="htmlcode">&#123;&#123;&#62;arrow_big direction="<span style="color: red;">right</span>"&#125;&#125;</span></p>
+		<br>
+		<hr>
+		<br>
+		<h4>Useful for single words</h4>
+		<br>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-5 text-right"><div class="caption text-left">adjective</div></div>
+				<div class="col-xs-2 text-center">{{>arrow_big direction="right"}}</div>
+				<div class="col-xs-5 text-left"><div class="caption text-left">adverb</div></div>
+			</div>
+		</div>
+		<br>
+		<b>HTML</b>
+<pre class="htmlcode2">&lt;div class=&quot;container-fluid&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-xs-5 text-right&quot;&gt;&lt;div class=&quot;caption text-left&quot;&gt;adjective&lt;/div&gt;&lt;/div&gt;
+		&lt;div class=&quot;col-xs-2 text-center&quot;&gt;&#123;&#123;&gt;arrow_big direction=&quot;right&quot;&#125;&#125;&lt;/div&gt;
+		&lt;div class=&quot;col-xs-5 text-left&quot;&gt;&lt;div class=&quot;caption text-left&quot;&gt;adverb&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+		<br>
+		<br>
+		<h1>Arrows - Responsive</h1>
+		
+		<p>{{>arrowresponsive direction="right" directionxs="down"}} <span class="htmlcode">&#123;&#123;&#62;arrowresponsive direction="<span style="color: red;">right</span>" directionxs="<span style="color: red;">down</span>"&#125;&#125;</span> - an arrow that points a different direction on extra-small screen sizes (see example below)</p>
+		<br>
+		<p>{{>arrowresponsive_big direction="right" directionxs="down"}} <span class="htmlcode">&#123;&#123;&#62;arrowresponsive_big direction="<span style="color: red;">right</span>" directionxs="<span style="color: red;">down</span>"&#125;&#125;</span></p>
+		<br>
+		<hr>
+		<br>
+		<div class="container-fluid" style="max-width: 760px;">
+			<div class="row">
+				<div class="col-sm-6"><b>I’m reading a couple of Dan Brown’s novels. They're not very good and I wish I hadn't started now.</b></div>
+				<div class="col-sm-1 text-center">{{>arrowresponsive direction="right" directionxs="down"}}</div>
+				<div class="col-sm-5"><div class="caption capgreen text-left block">This is something Elle has been doing over a period of time</div></div>
+			</div>
+		</div>
+		<br>
+		<b>HTML</b>
+<pre class="htmlcode2">&lt;div class=&quot;container-fluid&quot; style=&quot;max-width: 760px;&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-6&quot;&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/div&gt;
+		&lt;div class=&quot;col-sm-1 text-center&quot;&gt;&#123;&#123;&gt;arrowresponsive direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/div&gt;
+		&lt;div class=&quot;col-sm-5&quot;&gt;&lt;div class=&quot;caption capgreen text-left block&quot;&gt;Explanation&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+<br>
+		<hr>
+		<br>
+		<div class="container-fluid" style="max-width: 760px;">
+			<div class="row">
+				<div class="col-sm-5"><div class="caption text-left block">the sentences then changes from this...</div></div>
+				<div class="col-sm-2 text-center">{{>arrowresponsive_big direction="right" directionxs="down"}}</div>
+				<div class="col-sm-5"><div class="caption text-left block">to this, which is something something something something something</div></div>
+			</div>
+		</div>
+		<br>
+		<b>HTML</b>
+<pre class="htmlcode2">&lt;div class=&quot;container-fluid&quot; style=&quot;max-width: 760px;&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-5&quot;&gt;&lt;div class=&quot;caption text-left block&quot;&gt;from this...&lt;/div&gt;&lt;/div&gt;
+		&lt;div class=&quot;col-sm-2 text-center&quot;&gt;&#123;&#123;&gt;arrowresponsive_big direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/div&gt;
+		&lt;div class=&quot;col-sm-5&quot;&gt;&lt;div class=&quot;caption text-left block&quot;&gt;to this&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+		<br>
+		<hr>
+		<br>
+		<p><b>Very responsive</b></p>
+		<table class="table-responsive arrows table-responsive-inline">
+			<tr class="hidden-xs">
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>The Short Form</th>
+			</tr>
+			<tr>
+				<td>To ‘HAVE’<br><b>The Present Tense</b></td>
+				<td>{{>arrowresponsive direction="right" directionxs="down"}}</td>
+				<td>He has a Canadian passport.</td>
+				<td>{{>arrowresponsive direction="right" directionxs="down"}}</td>
+				<td><b class="visible-xs">The Short Form:</b> He has a Canadian passport.</td>
+			</tr>
+			<tr>
+				<td>‘HAVE GOT’ is more informal</td>
+				<td>{{>arrowresponsive direction="right" directionxs="down"}}</td>
+				<td>He has got relatives in Canada.</td>
+				<td>{{>arrowresponsive direction="right" directionxs="down"}}</td>
+				<td><b class="visible-xs">The Short Form:</b> He's got relatives in Canada.</td>
+			</tr>
+			<tr>
+				<td>‘HAS’ is also an <span class="grammar">AUXILIARY</span> verb</td>
+				<td>{{>arrowresponsive direction="right" directionxs="down"}}</td>
+				<td>He <span class="grammar">has</span> decided to move to Canada.</td>
+				<td>{{>arrowresponsive direction="right" directionxs="down"}}</td>
+				<td><b class="visible-xs">The Short Form:</b> He<span class="grammar">'s</span> decided to move to Canada.</td>
+			</tr>
+		</table>
+		<br>
+		<b>HTML</b>
+<pre class="htmlcode2">&lt;table class=&quot;table-responsive arrows table-responsive-inline&quot;&gt;
+	&lt;tr class=&quot;hidden-xs&quot;&gt;
+		&lt;th&gt;&amp;nbsp;&lt;/th&gt;
+		&lt;th&gt;&amp;nbsp;&lt;/th&gt;
+		&lt;th&gt;&amp;nbsp;&lt;/th&gt;
+		&lt;th&gt;&amp;nbsp;&lt;/th&gt;
+		&lt;th&gt;The Short Form&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;To &lsquo;HAVE&rsquo;&lt;br&gt;&lt;b&gt;The Present Tense&lt;/b&gt;&lt;/td&gt;
+		&lt;td&gt;&#123;&#123;&gt;arrowresponsive direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/td&gt;
+		&lt;td&gt;He has a Canadian passport.&lt;/td&gt;
+		&lt;td&gt;&#123;&#123;&gt;arrowresponsive direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/td&gt;
+		&lt;td&gt;&lt;b class=&quot;visible-xs&quot;&gt;The Short Form:&lt;/b&gt; He has a Canadian passport.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lsquo;HAVE GOT&rsquo; is more informal&lt;/td&gt;
+		&lt;td&gt;&#123;&#123;&gt;arrowresponsive direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/td&gt;
+		&lt;td&gt;He has got relatives in Canada.&lt;/td&gt;
+		&lt;td&gt;&#123;&#123;&gt;arrowresponsive direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/td&gt;
+		&lt;td&gt;&lt;b class=&quot;visible-xs&quot;&gt;The Short Form:&lt;/b&gt; He's got relatives in Canada.&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lsquo;HAS&rsquo; is also an &lt;span class=&quot;grammar&quot;&gt;AUXILIARY&lt;/span&gt; verb&lt;/td&gt;
+		&lt;td&gt;&#123;&#123;&gt;arrowresponsive direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/td&gt;
+		&lt;td&gt;He &lt;span class=&quot;grammar&quot;&gt;has&lt;/span&gt; decided to move to Canada.&lt;/td&gt;
+		&lt;td&gt;&#123;&#123;&gt;arrowresponsive direction=&quot;right&quot; directionxs=&quot;down&quot;&#125;&#125;&lt;/td&gt;
+		&lt;td&gt;&lt;b class=&quot;visible-xs&quot;&gt;The Short Form:&lt;/b&gt; He&lt;span class=&quot;grammar&quot;&gt;'s&lt;/span&gt; decided to move to Canada.&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+
+
+	</div>
+</section>
+</template>

@@ -1,0 +1,280 @@
+<template name="m3a7">
+<article class="with-tools-sidebar m3a7">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+{{#if endPageSect}}
+<a draggable="false" onclick="safeLeave('/Dunfermline');"><i class="titlereturn fa fa-arrow-left"></i></a>
+{{/if}}
+{{>menu}}
+			<div class="parent-level">Module 3</div> <div class="acttitle-title">{{> activity}} 7 - {{>m3a7Title}}</div>
+		</header>
+		
+		<section id="m3a7">
+			<div class="content">
+				<h1 class="start-page-header">{{> m3a7Title}}</h1>
+				{{> StartPageAvatar char="k"}}
+				<h3>{{> m3a7Intro}}</h3>
+				{{> m3a7Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m3a7_1" prev="hidden" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m3a7_1}}
+		{{>m3a7_2}}
+		{{>m3a7_3}}
+		{{>m3a7_4}}
+		{{>m3a7_5}}
+		{{>m3a7_6}}
+		{{>m3a7_end}}
+	</div>
+</article>
+
+</template>
+<template name="m3a7_1">
+	<section id="m3a7_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			
+			<h3>This activity involves a simple game. Watch the video of Prince Charles reading the weather forecast for the BBC.</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="videoplayer">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZQTPdEKGEBs?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a7" nexturl="#m3a7_2" prev="hidden" next=""}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m3a7_2">
+	<section id="m3a7_2" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3>Here are 10 sentences from the video. Some of them have missing words. Decide what word is missing.</h3>
+				<div class="parapaper paraextract" style="padding-top: 1em;">
+					{{>rightwrong}}
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-4">
+								<div class="numberBig" style="float: left;">1</div>
+							</div>
+							<div class="col-xs-8 text-right">
+								{{> scorebox1 rightSession="m3a7_2RightScore" wrongSession="m3a7_2WrongScore"}}
+							</div>
+						</div>
+						{{>blankrow}}
+						<div class="row text-center">
+							<button type="button" class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module3/a7/1.m4a"></button>
+						</div>
+						<div class="row text-center" style="margin-top: 3em;">
+							<button type="button" class="button1 buttonbig item-space ddwidth4" id='a'>a</button>
+							<button type="button" class="button1 buttonbig item-space ddwidth4" id='the'>the</button><br>
+							<button type="button" class="button2 item-space ddwidth14" id='no'>There is no missing word</button>
+						</div>
+						{{>blankrow}}
+					</div>
+				</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m3a7_1" nexturl="#" nextID="m3a7_2nextQuestion" prev="disabled" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m3a7_3">
+	<section id="m3a7_3" class="hidden">
+		<div class="content">
+			<h3 style="margin: 10em 3em;">Now try the same 10 sentences again but this time the sentences are written down with the missing word.</h3>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m3a7_2" nexturl="#m3a7_4" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m3a7_4">
+	<section id="m3a7_4" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h3>Now try the same 10 sentences again but this time the sentences are written down with the missing word.</h3>
+				<div class="parapaper paraextract" style="padding-top: 1em;">
+					{{>rightwrong}}
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-4">
+								<div class="numberBig" style="float: left;">1</div>
+							</div>
+							<div class="col-xs-8 text-right">
+								{{>scorebox1 rightSession="m3a7_4RightScore" wrongSession="m3a7_4WrongScore" }}
+							</div>
+						</div>
+						{{>blankrow}}
+						<div class="row">
+							<div class="col-sm-2 col-xs-3">
+								<button type="button" class="buttonround buttonaudio" data-audiosrc="/audio/module3/a7/1.m4a"></button>
+							</div>
+							<div class="col-sm-10 col-xs-9">
+								<h5 class='m3a7_4questions'>Well it’s an unsettled picture as we head towards <span class="blankpart"></span> end of the week.</h5>
+							</div>
+						</div>
+						<div class="row text-center" style="margin-top: 3em;">
+							<button type="button" class="button1 buttonbig item-space ddwidth4">a</button>
+							<button type="button" class="button1 buttonbig item-space ddwidth4">the</button><br>
+							<button type="button" class="button2 item-space ddwidth14">There is no missing word</button>
+						</div>
+						{{>blankrow}}
+					</div>
+				</div>
+
+				<!-- Wrong answer caption -->
+				<div class="fixed-center">
+					<div class="caption capwrong pointer hidden">
+						<div class="wrongcaptions"></div>
+						<div class="incorrect noshadow" style="margin: 0px -5px 0px 20px;"><i class="fa fa-close"></i></div>
+					</div>
+				</div>
+
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m3a7_1" nexturl="#m3a7_6" prev="disabled" next="hidden"}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m3a7_5">
+	<section id="m3a7_5" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+				<h2>How did you compare between the two sections? Is your listening better or your reading?</h2>
+
+				<div class="text-center">
+					<h4>Listening</h4>
+					<div class="scorebox">
+						<div class="correct noshadow" alt="correct"><i class="fa fa-check"></i></div>
+						<b>
+							<span id="{{rightID}}">{{{listeningRightScore}}}</span>
+						</b>
+						<div class="scoreboxspace"></div>
+						<div class="incorrect noshadow" alt="incorrect"><i class="fa fa-close"></i></div>
+						<b>
+							<span id="{{wrongID}}">{{{listeningWrongScore}}}</span>
+						</b>
+					</div>
+
+					<p>&nbsp;</p>
+
+					<h4>Reading</h4>
+					<div class="scorebox">
+						<div class="correct noshadow" alt="correct"><i class="fa fa-check"></i></div>
+						<b>
+							<span id="{{rightID}}">{{{readingRightScore}}}</span>
+						</b>
+						<div class="scoreboxspace"></div>
+						<div class="incorrect noshadow" alt="incorrect"><i class="fa fa-close"></i></div>
+						<b>
+							<span id="{{wrongID}}">{{{readingWrongScore}}}</span>
+						</b>
+					</div>
+				</div>
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#m3a7_4" nexturl="#m3a7_6" prev="disabled" next=""}}
+			</footer>
+		{{/if}}
+	</section>
+</template>
+
+
+<template name="m3a7_6">
+	<section id="m3a7_6" class="hidden">
+		{{#if activeSection}}
+			<div class="content">
+
+				<h1>Answers</h1>
+				<div class="text-center" style="margin-bottom: 1em;">					
+				<h4>Your score</h4>
+					<div class="scorebox">
+						<div class="correct noshadow" alt="correct"><i class="fa fa-check"></i></div>
+						<b>
+							<span id="{{rightID}}">{{{readingRightScore}}}</span>
+						</b>
+						<div class="scoreboxspace"></div>
+						<div class="incorrect noshadow" alt="incorrect"><i class="fa fa-close"></i></div>
+						<b>
+							<span id="{{wrongID}}">{{{readingWrongScore}}}</span>
+						</b>
+					</div>
+				</div>
+				<div class="parapaper fold notebook-answers">
+					<ol class="olcircle">
+						<li>
+							<strong>"Well it’s an unsettled picture as we head towards <span class="correctword">the</span> end of the week."</strong><br><br>
+							The missing word was '<b>the</b>'.
+						</li>
+						<li>
+							<strong>"We’re under the influence of low pressure..."</strong><br><br>
+							There was no missing word.
+						</li>
+						<li>
+							<strong>"This weather front pushing northwards is bringing cloud and outbreaks of rain."</strong><br><br>
+							There was no missing word.
+						</li>
+						<li>
+							<strong>"<span class="correctword">The</span> rain of course will be heaviest over the borders."</strong><br><br>
+							The missing word was '<b>the</b>'.
+						</li>
+						<li>
+							<strong>"In the west, rain’ll be lighter and patchier though with maybe a few drier interludes over Dumfries House in Ayrshire."</strong><br><br>
+							There was no missing word.
+						</li>
+						<li>
+							<strong>"There’ll be snow for the higher ground of the Highlands and Aberdeenshire..."</strong><br><br>
+							There was no missing word.
+						</li>
+						<li>
+							<strong>"The potential for <span class="correctword">a</span> few flurries over Balmoral."</strong><br><br>
+							The missing word was '<b>a</b>'.
+						</li>
+						<li>
+							<strong>"The best of <span class="correctword">the</span> drier and brighter weather will of course be over the northern isles and the far north of the mainland."</strong><br><br>
+							The missing word was '<b>the</b>'.
+						</li>
+						<li>
+							<strong>"So <span class="correctword">a</span> little hazy sunshine for the Castle of Mey in Caithness."</strong><br><br>
+							The missing word was '<b>a</b>'.
+						</li>
+						<li>
+							<strong>"But a cold day everywhere with temperatures of just 8 Celsius and <span class="correctword">a</span> brisk north easterly wind."</strong><br><br>
+							The missing word was '<b>a</b>'.
+						</li>
+					</ol>
+				</div>
+			</div>
+		{{/if}}
+		<footer>
+			{{>footer_nav prevurl="#m3a7_4" nexturl="#m3a7_end" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+
+<template name="m3a7_end">
+{{>EndPage char="k" act="m3a7" nextact="m3a8" place="Dunfermline"}}
+</template>

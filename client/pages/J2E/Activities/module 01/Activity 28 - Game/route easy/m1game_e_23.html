@@ -1,0 +1,46 @@
+<template name="m1Game_e_23">
+
+	<section id="m1Game_e_23" class="game-section game-dd-simple hidden">
+	{{#if activeSection}}
+		<div class="game-container content">
+			<div class="game-content k">
+				<div class="game-dd-simple-bg m1Game-bg-k-garden6">
+					<h3 class="center">Listen to K, then answer the questions below</h3>
+					
+					<div class="text-entry linespace2">
+						<div class="text-center"><button class="buttonround buttonaudio" data-audiosrc="/audio/module1/Game/Kboatprices.m4a"></button></div>
+
+						<span>Every morning at </span><div class="ddseatedtarget ddwidth7 dd1line" id = "target1"></div><span>. Every afternoon at </span><div class="ddseatedtarget ddwidth7 dd1line" id = "target2"></div><span>. Sunday trips at </span><div class="ddseatedtarget ddwidth7 dd1line" id = "target3"></div><span>. Adult price - </span><div class="ddseatedtarget ddwidth7 dd1line" id = "target4"></div><span> children </span><div class="ddseatedtarget ddwidth7 dd1line" id = "target5"></div><span> Family ticket for four people, </span><div class="ddseatedtarget ddwidth7 dd1line" id = "target6"></div><span>. Senior citizens </span><div class="ddseatedtarget ddwidth7 dd1line" id = "target7"></div><span>.</span>
+
+						
+						<br>	
+						<div class="center">
+							<button class="button1" id="submitButton">Submit</button>	
+						</div>
+					</div>
+					
+					<div class="dd-fixed-source-container animated slideInUp">
+						<div class="box1 box1dd1">
+							<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true">£5</div></div>
+							<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true">2 pm</div></div>
+							<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true">£12</div></div>
+							<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true">£2.50</div></div>
+							<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true">10.30 am</div></div>
+							<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true">12 pm</div></div>
+							<div class="ddseat ddwidth7 dd1line"><div class="ddsourceseated ddwidth7 dd1line shadow" draggable="true">£3.50</div></div>
+						</div>
+					</div>
+					
+				</div>		
+				
+				<div class="dd-fixed-fade animated slideInUp"></div>
+				<div class="dd-fixed-pad"></div>		
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_e_24" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+
+</template>

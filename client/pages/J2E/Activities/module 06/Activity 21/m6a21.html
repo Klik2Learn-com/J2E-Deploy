@@ -1,0 +1,94 @@
+<template name="m6a21">
+<article class="with-tools-sidebar m6a21">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/Harrogate');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 6</div> <div class="acttitle-title">{{> activity}} 21 - {{>m6a21Title}}</div>
+		</header>
+		<section id="m6a21">
+			<div class="content">
+				<h1 class="start-page-header">{{>m6a21Title}}</h1>
+				{{> StartPageAvatar char="elle"}}
+				<h3>{{> m6a21Intro}}</h3>
+				{{> m6a21Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="m6a21" nexturl="#m6a21_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m6a21_1}}
+		{{>EndPage char="elle" act="m6a21" nextact="m6a22" place="Harrogate"}}
+	</div>
+</article>
+
+</template>
+
+<template name="m6a21_1">
+	<section id="m6a21_1" class="hidden">
+		{{#if activeSection}}
+		<div class="content">
+			<h3 class="center">
+				Listen to these sentences from the article (Activity 20). There is a mistake with the preposition. {{>touch yes="Tap" no="Click"}} the right preposition.
+			</h3>
+			<div class="container-fluid">
+				<div class="row">
+				{{>rightwrong}} {{>welldone}}
+					<div class="col-sm-12 text-center ">
+						<button class="buttonround buttonroundbig buttonaudio" id="questions_audio" data-audiosrc="/audio/module6/a21/police1.m4a"></button>
+						<span class="number">1</span>
+						<div class="parapaper" style="display:inline-block;"> <span id="question_text">The police were attacked by petrol bombs.</span></div>
+						<hr>
+					</div>
+
+					<div class="col-sm-12 text-center ">
+				<div class="row">
+					<button class="button2 item-space ddwidth7 ">through</button>
+						<button class="button2 item-space ddwidth7 ">by</button>
+						<button class="button2 item-space ddwidth7 ">up</button>
+						<button class="button2 item-space ddwidth7 ">at</button>
+						<button class="button2 item-space ddwidth7 ">with</button>
+						<button class="button2 item-space ddwidth7 ">after</button>
+						<button class="button2 item-space ddwidth7 ">over</button>
+						<button class="button2 item-space ddwidth7 ">from</button>
+						<button class="button2 item-space ddwidth7 ">for</button>
+						<button class="button2 item-space ddwidth7 ">on</button>
+						<button class="button2 item-space ddwidth7 ">off</button>
+						<button class="button2 item-space ddwidth7 ">to</button>
+					
+				</div>
+
+</div>
+				</div>
+			</div>
+			{{>gg_button gg_text="Click here to find out more about Prepositions in the Grammar Guide"}}
+	  	</div>
+			<footer>
+				<nav class="navfooter">
+			    <ul>
+			      <li class="first" style="float: left;">
+			        <a draggable="false" href="m6a21" title="previous" rel="prev" class="pagination previous disabled">
+			          <i class="fa fa-chevron-circle-left"></i>
+			        </a>
+			      </li>
+			      <li style="float: right;">
+			        <a draggable="false" href="#m6a21_end" title="next" rel="next" class="pagination next hidden">
+			          <i class="fa fa-chevron-circle-right"></i>
+			        </a>
+			      </li>
+			      <li style="float: right;">
+			        <a draggable="false" href="#" title="next" rel="next" class="next_question_button hidden">
+			          <i class="fa fa-chevron-circle-right"></i>
+			        </a>
+			      </li>
+			    </ul>
+			</nav>
+		</footer>
+
+		{{/if}}
+	</section>
+ </template>
+

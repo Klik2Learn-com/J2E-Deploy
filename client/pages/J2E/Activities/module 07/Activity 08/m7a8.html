@@ -1,0 +1,156 @@
+<template name="m7a8"> 
+<article class="with-tools-sidebar m7a8">
+	{{>ToolsSidebar}}
+		<div class="main">
+		<header class="acttitle" >
+			{{#if endPageSect}}
+			<a draggable="false" onclick="safeLeave('/PeakDistrict');"><i class="titlereturn fa fa-arrow-left"></i></a>
+			{{/if}}
+			{{>menu}}
+			<div class="parent-level">Module 7</div> <div class="acttitle-title">{{> activity}} 8 - {{>m7a8Title}}</div>
+		</header>
+		<section id="m7a8">
+			<div class="content">
+				<h1 class="start-page-header">{{>m7a8Title}}</h1>
+				{{> StartPageAvatar char="tu"}}
+				<h3>{{> m7a8Intro}}</h3>
+				{{> m7a8Time}} <!--{{> resumePopUp}}-->
+			</div>
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7a8_1" prev="disabled" next="" next_text="Start"}}
+			</footer>
+		</section>
+		{{>m7a8_1}}
+		{{>m7a8_2}}
+		{{>m7a8_3}}
+		{{>EndPage char="tu" act="m7a8" nextact="m7a9" place="PeakDistrict"}}
+	</div>
+</article>
+
+	{{>m7a8Article_modal}}
+</template>
+<template name="m7a8_1"> 
+	<section id="m7a8_1" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content center">  
+			<h3 class="center">Listen to this student at Birmingham City University taking a light hearted look at student life.</h3> 
+
+			<div class="container-fluid" style="max-width: 600px">
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<p>&nbsp;</p>
+						<button class="buttonround buttonroundbig buttonaudio" data-audiosrc="/audio/module7/a8/article.m4a"></button>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-sm-9 text-center">
+						<div class="ph-w ph-16x10 shadow" style="max-width: 342px"><div class="ph"><img draggable="false" src="/images/module7/a8/freshers_week.jpg" alt="Fresher's Week"></div></div>
+					</div>
+				</div>
+			</div>
+			
+	  	</div> 
+		<footer> 
+			{{>footer_nav prevurl="m7a8" nexturl="#m7a8_2" prev="disabled" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a8_2"> 
+	<section id="m7a8_2" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">  
+			<h3 class="center">Now you can read the text.</h3>
+			{{>m7a8Article}}
+	  	</div>
+		<footer> 
+			{{>footer_nav prevurl="#m7a8_1" nexturl="#m7a8_3" prev="" next=""}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+ <template name="m7a8Article">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8">
+      			<div class="parapaper paraextract article-text">
+      			<p>1. So you’re going to Birmingham City University, but where are you going to live? Most likely The Coppice or Oscott Gardens or Hamstead. As you enter your first year, you’re hit with Freshers’ week – where all the different societies are trying to get you to join. It's a time to go out, have a good time and meet new people. By the end of October, your bank balance will be at an all time low. Cheap squash and pasta become your new best friends.</p> 
+
+      			<p>2. As everyone knows, first year doesn’t really count. Staying up all night and revising for that all important 40% is the norm. After months of poverty, student loan day finally arrives. Instead of buying the books you told your parents you’d buy, you go shopping and buy things you don't really need. Congratulations, you’ve now made it through your first year, and welcome to second year. You’ll move into a house, live in a garage converted bedroom where mice and humans co-exist side by side.</p>
+
+      			<p>3. Having lost all civilisation in Halls, you won’t bother gardening and stacking pizza boxes is considered tidying. You can’t reference Wikipedia and books are boring so you turn to your old acquaintance from first year. Towards the end of the year, you spend more time in the shops buying revision essentials than actually revising. If you’ve made it this far – well done you.</p>
+
+      			<p>4. You should have now learned that orange squash doesn’t count as one of your five a day and that chips and pizza is not a balanced meal. You’ll stay up all night revising for your finals and if you haven’t died of boredom yet, you’ll graduate but now what?</p>
+      			</div>
+					</div>
+				<div class="col-xs-12 col-sm-4">
+
+					<div class="ph-w ph-16x10 shadow" style="max-width: 342px"><div class="ph"><img draggable="false" src="/images/module7/a8/freshers_week.jpg" alt="Fresher's Week"></div></div>
+					<Br>
+					<div class="ph-w ph-16x10 shadow" style="max-width: 342px"><div class="ph"><img draggable="false" src="/images/module7/a8/students_25off.jpg" alt="Dancing in a club"></div></div>
+					
+				</div>			
+			</div> 
+	  	</div> 
+ </template>
+
+
+<template name="m7a8_3"> 
+	<section id="m7a8_3" class="hidden"> 
+		{{#if activeSection}} 
+		<div class="content">
+			<h3 class="center">
+				Read these statements and choose the correct one. 
+			</h3>
+			{{>rightwrong}} {{>welldone}}
+			<div class="text-center parapaper" style="padding-top: 2em; padding-bottom: 2em;">						
+				<div class="ph-w ph-16x10 shadow" style="max-width: 342px"><div class="ph"><img draggable="false" src="/images/module7/a8/students_25off.jpg" alt="Dancing in a club"></div></div><br>
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2 text-center">
+							<div class="number">1</div>
+						</div>
+						<div class="col-sm-5">
+							<button id="1" class="button2 item-space dd4lines ddwidth14">Freshers’ week is all about social life.</button>
+						</div>
+						<div class="col-sm-5">
+							<button id="2" class="button2 item-space dd4lines ddwidth14">Freshers’ week helps students with their studies.</button>
+						</div>
+					</div>
+				</div>											
+				<div class="text-center" style="margin-top: 2em;">
+					<button data-toggle="modal" data-target="#m7a8Article_modal" class="button1">Read Article</button>
+				</div>
+			</div>
+      </div>
+		<footer> 
+			{{>footer_nav prevurl="m7a8_2" nexturl="#m7a8_4" prev="disabled" next="hidden"}} 
+		</footer> 
+		{{/if}} 
+	</section> 
+ </template>
+
+
+<template name="m7a8Article_modal">
+	<div class="modal fade" tabindex="-1" id="m7a8Article_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+				
+				<div class="content">
+
+					{{>m7a8Article}}
+
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</template>

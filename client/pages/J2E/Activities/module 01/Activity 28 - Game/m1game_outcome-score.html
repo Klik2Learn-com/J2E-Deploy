@@ -1,0 +1,262 @@
+<template name="m1Game_outcome">
+
+	<section id="m1Game_finish" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/finish.jpg');"></div>
+					<div class="game-story-text">K, Tu and Elle meet up and share the clues they found.</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_outcomeD" nextID="m1game_end" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1Game_outcomeD">
+		<section id="m1Game_outcomeD" class="hidden">
+		{{#if activeSection}}
+			{{#if excellentScore}}
+				{{> m1Game_excellent}}
+			{{/if}}
+		
+			{{#if goodScore}}
+				{{> m1Game_good}}
+			{{/if}}
+		
+			{{#if okayScore}}
+				{{> m1Game_okay}}
+			{{/if}}
+		
+			{{#if badScore}}
+				{{> m1Game_bad}}
+			{{/if}}
+		{{/if}}
+		</section>
+
+</template>
+	
+<!-- bad -->
+<template name="m1Game_bad">
+	<section id="m1Game_outcome1" class="game-section">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/outcome1.jpg');"></div>
+					<div class="game-story-text">
+						<p>"Hmm. I guess it's still a mystery."</p>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_result1" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1Game_bad2">
+	<section id="m1Game_result1" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/result1.jpg');"></div>
+					<div class="game-story-text">
+						<p>You didn't find enough clues to find the thief or the flag.</p>				
+						<div class="score-container score5">Your score: <span>{{percentage}}%</span></div>
+						<p>More right answers will give you more clues.</p>
+					</div>
+					<div class="outcome-buttons">
+						<div class="item-space inline-block continue"><a draggable="false" href="#m1Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+						<div class="item-space inline-block start-again"><a draggable="false" href="#m1Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+		</footer>
+	</section>
+</template>	
+
+<template name="m1Game_okay">
+	<section id="m1Game_outcome2" class="game-section">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/outcome2.jpg');"></div>
+					<div class="game-story-text">
+						<p>"Well, it's still a mystery, but maybe these clues will help the police."</p>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_result2" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1Game_okay2">	
+	<section id="m1Game_result2" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/result2.jpg');"></div>
+					<div class="game-story-text">
+						<p>"Thank you. The thief must still be nearby. If we search again quickly, we might find him."</p>		
+						<div class="score-container {{medal}}">Your score: <span>{{percentage}}%</span></div>
+						<p>More right answers will give you more clues.</p>
+					</div>
+					<div class="outcome-buttons">
+						<div class="item-space inline-block continue"><a draggable="false" href="#m1Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+						<div class="item-space inline-block start-again"><a draggable="false" href="#m1Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1Game_good">
+	<section id="m1Game_outcome3" class="game-section">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/outcome3.jpg');"></div>
+					<div class="game-story-text">
+						<p>"Wait a minute - I know who stole the flag! It was the tour guide!"</p>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_result3" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1Game_good2">
+	<section id="m1Game_result3" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/result3.jpg');"></div>
+					<div class="game-story-text">
+						<p>Well done! You caught the thief! But we don't know where he hid the flag. More right answers will help you find more clues. {{#if hardpath}}Or maybe the flag is hidden in the hard route.{{/if}}</p>			
+						<div class="score-container {{medal}}">Your score: <span>{{percentage}}%</span></div>
+						<p>More right answers will give you more clues.</p>
+					</div>
+					<div class="outcome-buttons">
+						<div class="item-space inline-block continue"><a draggable="false" href="#m1Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+						<div class="item-space inline-block start-again"><a draggable="false" href="#m1Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1Game_excellent">
+	<section id="m1Game_outcome4" class="game-section">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/outcome3.jpg');"></div>
+					<div class="game-story-text">
+						<p>"Wait a minute - I know who stole the flag! It was the tour guide!"</p>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_outcome4a" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+</template>
+
+<template name="m1Game_excellent2">	
+	<section id="m1Game_outcome4a" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/outcome4a.jpg');"></div>
+					<div class="game-story-text">
+						<p>"And I think I know where he might have hidden it..."</p>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_outcome4b" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+	
+	<section id="m1Game_outcome4b" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/outcome4b.jpg');"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_outcome4c" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+	
+	<section id="m1Game_outcome4c" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/outcome4c.jpg');"></div>
+					<div class="game-story-text">
+						<p>"I found it!"</p>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_result4" prev="hidden" next="" next_text="Next"}}
+		</footer>
+	</section>
+	
+	<section id="m1Game_result4" class="game-section hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image" style="background-image: url('/images/game/module1/result4.jpg');"></div>
+					<div class="game-story-text">
+						<p>Well done! You caught the thief and found the Fairy Flag!</p>			
+						<div class="score-container {{medal}}">Your score: <span>{{percentage}}%</span></div>
+					</div>
+					<div class="outcome-buttons">
+						<div class="item-space inline-block continue"><a draggable="false" href="#m1Game_ans1" class="pagination"><div class="button2">Continue <i class="fa fa-angle-right"></i></div></a></div>
+						<div class="item-space inline-block start-again"><a draggable="false" href="#m1Game" class="pagination"><div class="button2"><i class="fa fa-angle-left"></i> Start again</div></a></div>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#" nexturl="#m1Game_ans1" prev="hidden" next="hidden" next_text="See answers"}}
+		</footer>
+	</section>
+</template>

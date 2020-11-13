@@ -1,0 +1,42 @@
+<template name="m7Game_6">
+
+	<section id="m7Game_6" class="game-section game-legacy hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg22">
+						<div class="hotspot"><img draggable="false" src="/images/game/module7/letters/O.png" alt="O" class="img-responsive animated flipInX"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_6tu1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+	</section>
+</template>
+
+<template name="m7Game_6tu1">
+	<section id="m7Game_6tu1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg23"></div>
+					<div class="game-story-text">
+						Tu: “Did it really happen or is it just a story?”
+
+						<audio autoplay class="hidden" id="tu1">
+						  <source src="/audio/module7/Game/Did_it_really_happen_or_is_it_just_a_story.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_7" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>

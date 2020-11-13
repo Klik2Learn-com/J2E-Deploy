@@ -1,0 +1,51 @@
+<template name="styleRW">
+<section id="style-RW" class="hidden">
+	<div class="content">
+		<h1>Right and Wrong Captions</h1>
+		<h5>HTML</h5>
+<pre class="htmlcode2">
+&#00123;&#00123;&#00062; rightwrong&#00125;&#00125;
+</pre>
+<br>
+	<h5>JAVASCRIPT</h5><br>
+CORRECT SCREEN CAPTION
+<pre class="htmlcode2">
+$('.correctscreen').removeClass('hidden');
+	setTimeout( function() &#00123;
+		$('.correctscreen').addClass('hidden');
+	&#00125;, 1000);
+</pre>
+<br>
+INCORRECT SCREEN CAPTION
+<pre class="htmlcode2">
+$('.incorrectscreen').removeClass('hidden');
+	setTimeout( function() &#00123;
+		$('.incorrectscreen').addClass('hidden');
+	&#00125;, 1000);
+</pre><br>
+<h1>Well Done Caption</h1>
+
+		<h5>HTML</h5>
+<pre class="htmlcode2">
+&#00123;&#00123;&#00062; welldone&#00125;&#00125;
+</pre><br>
+	<h5>JAVASCRIPT</h5><br>
+	CORRECT SCREEN CAPTION - this includes automatic section advance and turn on pagination buttons
+<pre class="htmlcode2">
+setTimeout( function() &#00123;
+		$('#welldonecap').removeClass('hidden');
+		&#00125;, 1000);
+	setTimeout( function() &#00123;
+		$('#welldonecap').addClass('hidden');
+	&#00125;, 2000);
+		setTimeout(function() &#00123;
+			$(parentSection).addClass('hidden'); &#00047;&#00047; hide this page
+			$(parentSection).next('section').removeClass('hidden');&#00047;&#00047; reveal next page.
+			document.location.hash = $(parentSection).next('section').attr('id');
+			Session.set("activeSection", '#'+$(parentSection).next('section').attr('id'));
+			&#00125;, 2000);
+	&#00047;&#00047; $('.pagination').removeClass('hidden');
+</pre>
+	</div>
+</section>
+</template>

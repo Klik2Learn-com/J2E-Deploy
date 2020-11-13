@@ -1,0 +1,30 @@
+<template name="m10Game_11">
+
+	<section id="m10Game_11" class="game-section game-legacy hidden">
+	{{#if activeSection}}
+		<div class="game-container">
+		{{> rightwrong}}
+			<div class="game-content">
+				<div class="game-image-legacy m10Game-4"></div>
+				<div class="sub-question">
+					<div class="instruction">Which sentence is right?</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="a">If we join this queue, we’ll see the Crown Jewels.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="b">If we’ll join this queue we’ll see the Crown Jewels.</button>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<button class="button1" id="c">If we join this queue, we’ll see Crown Jewels.</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+	</section>
+
+</template>

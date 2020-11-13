@@ -1,0 +1,206 @@
+<template name="m6a9">
+	<article class="with-tools-sidebar m6a9">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Durham');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 6</div>
+				<div class="acttitle-title">{{> activity}} 9 - {{>m6a9Title}}</div>
+			</header>
+			<section id="m6a9">
+				<div class="content">
+					<h1 class="start-page-header">{{>m6a9Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m6a9Intro}}</h3>
+					{{> m6a9Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m6a9_1" prev="disabled" next="" next_text="Start"}}
+				</footer>
+			</section>
+			{{>m6a9_1}} {{>m6a9_2}} {{>m6a9_3}} {{>EndPage char="elle" act="m6a9" nextact="m6a10" place="Durham"}}
+		</div>
+	</article>
+
+	{{>m6a9_table_modal}}
+</template>
+
+
+<template name="m6a9_table_modal">
+	<div class="modal fade" tabindex="-1" id="m6a9_table_modal" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="m6a9_table_modal">Examples</h4>
+				</div>
+
+				<div class="content">
+
+					{{>m6a9_table}}
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+<template name="m6a9_1">
+	<section id="m6a9_1" class="hidden">
+		<div class="content">
+			{{>m6a9_table}}
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m6a9" nexturl="#m6a9_2" prev="disabled" next=""}}
+		</footer>
+	</section>
+</template>
+
+<template name="m6a9_table">
+	<h4 class="text-center">This table shows some of the main ways to use 'will' and 'would.'</h4>
+	<div class="mobile-table-wrapper">
+		<table class="table1">
+			<tr>
+				<th>WILLINGNESS</th>
+				<th>REQUESTS</th>
+				<th>HABITS</th>
+				<th>PREFERENCES</th>
+			</tr>
+			<tr>
+				<td>He
+					<b>will</b> lend me some money if I ask him.</td>
+				<td>
+					<b>Would</b> you open the door for me please?</td>
+				<td>He
+					<b>would</b> always get up at 6.30am.</td>
+				<td>
+					<b>I’d</b> rather have tea please.</td>
+			</tr>
+			<tr>
+				<td>She
+					<b>won’t</b> listen to a word I say.</td>
+				<td>
+					<b>Would</b> she mind if I didn’t go to her party?</td>
+				<td>They
+					<b>would</b> spend their holidays every year with their grandparents.</td>
+				<td>
+					<b>I’d</b> like to go to Australia one day.</td>
+			</tr>
+		</table>
+	</div>
+</template>
+
+<template name="m6a9_2">
+	<section id="m6a9_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Now drag the right word to the sentences below.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>I'll help you.
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target1">&nbsp;</div>
+					</li>
+					<li>Would you get me a drink please?
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target2">&nbsp;</div>
+					</li>
+					<li>He would always eat too much as a child.
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target3">&nbsp;</div>
+					</li>
+					<li>I'd love to see that film.
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target4">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">HABITS</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">WILLINGNESS</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">PREFERENCES</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">REQUESTS</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br>
+			<div class="center">
+				<button data-toggle="modal" data-target="#m6a9_table_modal" class="button2">Examples</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a9_1" nexturl="#m6a9_3" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m6a9_3">
+	<section id="m6a9_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Now drag the right word to the sentences below.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 4;">
+					<li>They won't answer my calls.
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target1">&nbsp;</div>
+					</li>
+					<li>She would wear the most outrageous clothes when she was a teenager.
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target2">&nbsp;</div>
+					</li>
+					<li>I'd rather walk - it's a nice day.
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target3">&nbsp;</div>
+					</li>
+					<li>Would you do me a favour?
+						<div class="ddseatedtarget ddwidth9 dd1line" data-destinationid="target4">&nbsp;</div>
+					</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target2">HABITS</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target1">WILLINGNESS</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target3">PREFERENCES</div>
+					</div>
+					<div class="ddseat ddwidth9 dd1line">
+						<div class="ddsourceseated ddwidth9 dd1line shadow" draggable="false" data-destination="target4">REQUESTS</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<br>
+			<div class="center">
+				<button data-toggle="modal" data-target="#m6a9_table_modal" class="button2">Examples</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="m6a9_2" nexturl="#m6a9_end" prev="disabled" next="disabled"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>

@@ -1,0 +1,67 @@
+<template name="m7Game_14">
+
+	<section id="m7Game_14" class="game-section game-legacy hidden">
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg18">
+						<div class="hotspot"><img draggable="false" src="/images/game/module7/letters/L.png" alt="L" class="img-responsive animated flipInX"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_14k1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+	</section>
+</template>
+
+<template name="m7Game_14k1">
+	<section id="m7Game_14k1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg9"></div>
+					<div class="game-story-text">
+						K: “If you were a girl in those days you had to obey your father.”
+
+						<audio autoplay  class="hidden" id="k1">
+						  <source src="/audio/module7/Game/If_you_were_a_girl_in_those_days_you_had_had_to_obey_your_father.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_14tu1" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>
+
+<template name="m7Game_14tu1">
+	<section id="m7Game_14tu1" class="game-section game-legacy hidden">
+		{{#if activeSection}}
+		<div class="game-container">
+			<div class="game-content width">
+				<div class="game-story">
+					<div class="game-image-legacy m7Game-bg11"></div>
+					<div class="game-story-text">
+						Tu: “If you’d been a girl in those days Elle, you’d have been in trouble!”
+
+						<audio autoplay  class="hidden" id="tu1">
+						  <source src="/audio/module7/Game/If_you_d_been_a_girl_in_those_days_Elle_you_d_have_been_in_trouble.m4a" >
+						  Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>		
+			<footer>
+				{{>footer_nav prevurl="#" nexturl="#m7Game_15" prev="hidden" next="" next_text="Continue"}}
+			</footer>
+			{{/if}}
+	</section>
+</template>

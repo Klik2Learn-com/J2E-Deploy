@@ -1,0 +1,425 @@
+<template name="m5a15">
+	<article class="with-tools-sidebar m5a15">
+		{{>ToolsSidebar}}
+		<div class="main">
+			<header class="acttitle">
+				{{#if endPageSect}}
+				<a draggable="false" onclick="safeLeave('/Manchester');">
+					<i class="titlereturn fa fa-arrow-left"></i>
+				</a>
+				{{/if}} {{>menu}}
+				<div class="parent-level">Module 5</div>
+				<div class="acttitle-title">{{> activity}} 15 - {{>m5a15Title}}</div>
+			</header>
+
+
+			<section id="m5a15">
+				<div class="content">
+					<h1 class="start-page-header">{{> m5a15Title}}</h1>
+					{{> StartPageAvatar char="elle"}}
+					<h3>{{> m5a15Intro}}</h3>
+					{{> m5a15Time}}
+					<!--{{> resumePopUp}}-->
+				</div>
+				<footer>
+					{{>footer_nav prevurl="#" nexturl="#m5a15_1" prev="hidden" next="" next_text="Start"}}
+				</footer>
+			</section>
+
+			{{>m5a15_1}} {{>m5a15_2}} {{>m5a15_3}} {{>m5a15_4}} {{>m5a15_5}} {{>m5a15_6}} {{>m5a15_7}} {{>EndPage char="elle" act="m5a15"
+			nextact="m5a16" place="Manchester"}}
+
+
+		</div>
+	</article>
+
+
+	{{>paperdecline_modal}}
+</template>
+<template name="m5a15_1">
+	<section id="m5a15_1" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			{{> rightwrong}} {{> welldone}}
+			<h3>Here are some of the adverbs from the newspaper article. Drag them to the right box..</h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:160px" data-destinationid="target1">
+							<h4>Time</h4>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:160px" data-destinationid="target2">
+							<h4>Manner</h4>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="box2 ddtarget2 box2dd1 target" style="height:160px" data-destinationid="target3">
+							<h4>Degree</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="dd-fixed-source-container animated slideInUp">
+							<div class="box1 box1dd1">
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">successfully</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target3">almost</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">soon</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target1">already</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target3">as much as</div>
+								</div>
+								<div class="ddseat ddwidth8 dd1line">
+									<div class="ddsourceseated shadow dd1line ddwidth8" draggable="false" data-destination="target2">hard</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-fixed-fade animated slideInUp"></div>
+						<div class="dd-fixed-pad"></div>
+					</div>
+				</div>
+				{{>gg_button gg_text="Remember: you can get more information about ADVERBS in the Grammar Guide"}}
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav nexturl="#m5a15_2" prev="hidden" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a15_2">
+	<section id="m5a15_2" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the letters into the spaces to make the right adverb and complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle">
+					<li>Papers like The Guardian are
+						<span class="ddsourceseatedTest ddwidth3 dd1line">a</span>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target5">&nbsp;</div>
+						<span class="ddsourceseatedTest ddwidth3 dd1line">y</span> losing millions.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target4">a</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target5">d</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target1">l</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target3">e</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target2">r</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+
+			<div class="center">
+				<br>
+				<button data-toggle="modal" data-target="#paperdecline_modal" class="button2">Read the article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a15_2" nexturl="#m5a15_3" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a15_3">
+	<section id="m5a15_3" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the letters into the spaces to make the right adverb and complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 1;">
+					<li>There will
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target4">&nbsp;</div> come a time when costs are too great.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target2 target3">o</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target4">n</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target1">s</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<br>
+				<button data-toggle="modal" data-target="#paperdecline_modal" class="button2">Read the article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a15_3" nexturl="#m5a15_4" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a15_4">
+	<section id="m5a15_4" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the letters into the spaces to make the right adverb and complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 2;">
+					<li>Delivering newspapers
+						<span class="ddsourceseatedTest ddwidth3 dd1line">s</span>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddsourceseatedTest ddwidth3 dd1line">c</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddsourceseatedTest ddwidth3 dd1line">s</div>
+						<div class="ddsourceseatedTest ddwidth3 dd1line">f</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target5">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target6">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target7">&nbsp;</div>
+						<span class="ddsourceseatedTest ddwidth3 dd1line">y</span> all round the country is costly.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target6 target7">l</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target1 target5">u</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target3">e</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target2">c</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target4">s</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<br>
+				<button data-toggle="modal" data-target="#paperdecline_modal" class="button2">Read the article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a15_4" nexturl="#m5a15_5" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a15_5">
+	<section id="m5a15_5" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the letters into the spaces to make the right adverb and complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 3;">
+					<li>It's
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target4">&nbsp;</div> to predict what fuel prices will be from year to year.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target3">r</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target1">h</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target2">a</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target4">d</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<br>
+				<button data-toggle="modal" data-target="#paperdecline_modal" class="button2">Read the article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a15_5" nexturl="#m5a15_6" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a15_6">
+	<section id="m5a15_6" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the letters into the spaces to make the right adverb and complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 4;">
+					<li>The dailies are down
+						<span class="ddsourceseatedTest ddwidth3 dd1line">a</span>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target1">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target4">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target5">&nbsp;</div> 8 per cent.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target4">s</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target5">t</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target3">o</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target2">m</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target1">l</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<br>
+				<button data-toggle="modal" data-target="#paperdecline_modal" class="button2">Read the article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a15_6" nexturl="#m5a15_7" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="m5a15_7">
+	<section id="m5a15_7" class="hidden">
+			{{#if activeSection}}
+		<div class="content noselect">
+			<h3 class="center">Drag the letters into the spaces to make the right adverb and complete the sentence.</h3>
+			<div class="parapaper parapaperdd1 fold">
+				{{> rightwrong}} {{> welldone}}
+				<ol class="olcircle" style="counter-reset: start 5;">
+					<li>The Sunday papers are down by
+						<span class="ddsourceseatedTest ddwidth3 dd1line">a</span>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target1">&nbsp;</div>
+						<span style="display: inline-block; width: 1em;"></span>
+						<div class="ddsourceseatedTest ddwidth3 dd1line">m</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target2">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target3">&nbsp;</div>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target4">&nbsp;</div>
+						<span style="display: inline-block; width: 1em;"></span>
+						<div class="ddseatedtarget ddwidth3 dd1line" data-destinationid="target5">&nbsp;</div>
+						<span class="ddsourceseatedTest ddwidth3 dd1line">s</span> 11 per cent.</li>
+				</ol>
+			</div>
+
+			<div class="dd-fixed-source-container animated slideInUp">
+				<div class="box1 box1dd1">
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target2">u</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target1">s</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target3">c</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target4">h</div>
+					</div>
+					<div class="ddseat ddwidth3 dd1line">
+						<div class="ddsourceseated ddwidth3 dd1line shadow" draggable="false" data-destination="target5">a</div>
+					</div>
+				</div>
+			</div>
+			<div class="dd-fixed-fade animated slideInUp"></div>
+			<div class="dd-fixed-pad"></div>
+			<div class="center">
+				<br>
+				<button data-toggle="modal" data-target="#paperdecline_modal" class="button2">Read the article</button>
+			</div>
+		</div>
+		<footer>
+			{{>footer_nav prevurl="#m5a15_6" nexturl="#m5a15_end" prev="disabled" next="hidden"}}
+		</footer>
+		{{/if}}
+	</section>
+</template>
+
+<template name="paperdecline_modal">
+	<div class="modal fade" tabindex="-1" id="paperdecline_modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="content">
+					{{> Paperdecline_article}}
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
