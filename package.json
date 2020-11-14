@@ -6,9 +6,5 @@
   "engines": {
     "node": "4.8.4",
     "npm": "2.15.11"
-  },
-  "scripts": {
-    "heroku-prebuild": "cd bundle/programs/server && npm install -q",
-    "start": "cd bundle && node main.js"
   }
 }
