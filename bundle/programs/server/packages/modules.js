@@ -181,6 +181,7 @@ install("accounts-ui");
 install("dynamic-import", "meteor/dynamic-import/server.js");
 install("cfs:filesystem");
 install("cfs:ejson-file");
+install("cfs:s3");
 install("hot-code-push");
 install("launch-screen");
 install("cfs:tempstore");

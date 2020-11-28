@@ -419,6 +419,10 @@
       "path": "packages/cfs_ejson-file.js"
     },
     {
+      "node_modules": "npm/node_modules/meteor/cfs_s3/node_modules",
+      "path": "packages/cfs_s3.js"
+    },
+    {
       "path": "packages/hot-code-push.js"
     },
     {

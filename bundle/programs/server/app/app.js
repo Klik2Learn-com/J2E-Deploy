@@ -7649,33 +7649,57 @@ toolRecs.allow({                                                                
                                                                        * - audioRecordings collection is used to hold each student's Voice Recorder
                                                                        *   entry.                                      //
                                                                        *                                               //
-                                                                       */                                              //
-var audioStore = new FS.Store.FileSystem("audio-recordings", {                                                         // 59
-    maxTries: 5,                                                                                                       // 60
-    // optional, default 5                                                                                             // 60
-    path: "cfs/audioRecs/files" //chunkSize: 1024 * 1024,  // optional, default GridFS chunk size in bytes (can be overridden per file).
-    // Default: 2MB. Reasonable range: 512KB - 4MB                                                                     // 63
+                                                                       */ // var audioStore = new FS.Store.FileSystem("audio-recordings", {
+//     maxTries: 5, // optional, default 5                                                                             // 60
+//     path: "cfs/audioRecs/files"                                                                                     // 61
+//     //chunkSize: 1024 * 1024,  // optional, default GridFS chunk size in bytes (can be overridden per file).        // 62
+//     // Default: 2MB. Reasonable range: 512KB - 4MB                                                                  // 63
+// });                                                                                                                 // 64
+// audioRecordings = new FS.Collection("audioRecordings", {                                                            // 66
+//     stores: [audioStore]                                                                                            // 67
+// });                                                                                                                 // 68
+// audioRecordings.allow({                                                                                             // 70
+//     insert: function (userId, doc) {                                                                                // 71
+//         if (userId) {                                                                                               // 72
+//             return true;                                                                                            // 73
+//         }                                                                                                           // 74
+//     },                                                                                                              // 75
+//     update: function () {                                                                                           // 76
+//         return true;                                                                                                // 77
+//     },                                                                                                              // 78
+//     remove: function () {                                                                                           // 79
+//         return true;                                                                                                // 80
+//     },                                                                                                              // 81
+//     download: function () {                                                                                         // 82
+//         return true;                                                                                                // 83
+//     }                                                                                                               // 84
+// })                                                                                                                  // 85
                                                                                                                        //
-});                                                                                                                    // 59
-audioRecordings = new FS.Collection("audioRecordings", {                                                               // 66
-    stores: [audioStore]                                                                                               // 67
-});                                                                                                                    // 66
-audioRecordings.allow({                                                                                                // 70
-    insert: function (userId, doc) {                                                                                   // 71
-        if (userId) {                                                                                                  // 72
-            return true;                                                                                               // 73
-        }                                                                                                              // 74
-    },                                                                                                                 // 75
-    update: function () {                                                                                              // 76
-        return true;                                                                                                   // 77
-    },                                                                                                                 // 78
-    remove: function () {                                                                                              // 79
-        return true;                                                                                                   // 80
-    },                                                                                                                 // 81
-    download: function () {                                                                                            // 82
-        return true;                                                                                                   // 83
-    }                                                                                                                  // 84
-}); /*********************************************************************                                             // 70
+var audioStore = new FS.Store.S3("audio-recordings", {                                                                 // 87
+    region: "eu-west-2",                                                                                               // 88
+    accessKeyId: "AKIAJWTNAETF776YKCFQ",                                                                               // 89
+    secretAccessKey: "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",                                                       // 90
+    bucket: "j2e-recordings"                                                                                           // 91
+});                                                                                                                    // 87
+audioRecordings = new FS.Collection("audioRecordings", {                                                               // 94
+    stores: [audioStore]                                                                                               // 95
+});                                                                                                                    // 94
+audioRecordings.allow({                                                                                                // 98
+    insert: function (userId, doc) {                                                                                   // 99
+        if (userId) {                                                                                                  // 100
+            return true;                                                                                               // 101
+        }                                                                                                              // 102
+    },                                                                                                                 // 103
+    update: function () {                                                                                              // 104
+        return true;                                                                                                   // 105
+    },                                                                                                                 // 106
+    remove: function () {                                                                                              // 107
+        return true;                                                                                                   // 108
+    },                                                                                                                 // 109
+    download: function () {                                                                                            // 110
+        return true;                                                                                                   // 111
+    }                                                                                                                  // 112
+}); /*********************************************************************                                             // 98
     **********************************************************************                                             //
     **********************************************************************                                             //
     **********************************************************************/ /****************************************************************
@@ -7687,33 +7711,57 @@ audioRecordings.allow({                                                         
                                                                             *****************************************************************/ /*
                                                                                                                                                * - commentAudioRecordings collection is used to hold audio replies to audioRecordings.
                                                                                                                                                *
-                                                                                                                                               */
-var commentStore = new FS.Store.FileSystem("comment-recordings", {                                                     // 103
-    maxTries: 5,                                                                                                       // 104
-    // optional, default 5                                                                                             // 104
-    path: "cfs/commentRecs/files" //chunkSize: 1024 * 1024  // optional, default GridFS chunk size in bytes (can be overridden per file).
-    // Default: 2MB. Reasonable range: 512KB - 4MB                                                                     // 107
+                                                                                                                                               */ // var commentStore = new FS.Store.FileSystem("comment-recordings", {
+//     maxTries: 5, // optional, default 5                                                                             // 132
+//     path: "cfs/commentRecs/files"                                                                                   // 133
+//     //chunkSize: 1024 * 1024  // optional, default GridFS chunk size in bytes (can be overridden per file).         // 134
+//     // Default: 2MB. Reasonable range: 512KB - 4MB                                                                  // 135
+// });                                                                                                                 // 136
+// commentRecordings = new FS.Collection("commentRecordings", {                                                        // 138
+//     stores: [commentStore]                                                                                          // 139
+// });                                                                                                                 // 140
+// commentRecordings.allow({                                                                                           // 142
+//     insert: function (userId, doc) {                                                                                // 143
+//         if (userId) {                                                                                               // 144
+//             return true;                                                                                            // 145
+//         }                                                                                                           // 146
+//     },                                                                                                              // 147
+//     update: function () {                                                                                           // 148
+//         return true;                                                                                                // 149
+//     },                                                                                                              // 150
+//     remove: function () {                                                                                           // 151
+//         return true;                                                                                                // 152
+//     },                                                                                                              // 153
+//     download: function () {                                                                                         // 154
+//         return true;                                                                                                // 155
+//     }                                                                                                               // 156
+// })                                                                                                                  // 157
                                                                                                                        //
-});                                                                                                                    // 103
-commentRecordings = new FS.Collection("commentRecordings", {                                                           // 110
-    stores: [commentStore]                                                                                             // 111
-});                                                                                                                    // 110
-commentRecordings.allow({                                                                                              // 114
-    insert: function (userId, doc) {                                                                                   // 115
-        if (userId) {                                                                                                  // 116
-            return true;                                                                                               // 117
-        }                                                                                                              // 118
-    },                                                                                                                 // 119
-    update: function () {                                                                                              // 120
-        return true;                                                                                                   // 121
-    },                                                                                                                 // 122
-    remove: function () {                                                                                              // 123
-        return true;                                                                                                   // 124
-    },                                                                                                                 // 125
-    download: function () {                                                                                            // 126
-        return true;                                                                                                   // 127
-    }                                                                                                                  // 128
-}); /*********************************************************************                                             // 114
+var commentStore = new FS.Store.S3("comment-recordings", {                                                             // 159
+    region: "eu-west-2",                                                                                               // 160
+    accessKeyId: "AKIAJWTNAETF776YKCFQ",                                                                               // 161
+    secretAccessKey: "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",                                                       // 162
+    bucket: "j2e-recordings"                                                                                           // 163
+});                                                                                                                    // 159
+commentRecordings = new FS.Collection("commentRecordings", {                                                           // 166
+    stores: [commentStore]                                                                                             // 167
+});                                                                                                                    // 166
+commentRecordings.allow({                                                                                              // 170
+    insert: function (userId, doc) {                                                                                   // 171
+        if (userId) {                                                                                                  // 172
+            return true;                                                                                               // 173
+        }                                                                                                              // 174
+    },                                                                                                                 // 175
+    update: function () {                                                                                              // 176
+        return true;                                                                                                   // 177
+    },                                                                                                                 // 178
+    remove: function () {                                                                                              // 179
+        return true;                                                                                                   // 180
+    },                                                                                                                 // 181
+    download: function () {                                                                                            // 182
+        return true;                                                                                                   // 183
+    }                                                                                                                  // 184
+}); /*********************************************************************                                             // 170
     **********************************************************************                                             //
     **********************************************************************                                             //
     **********************************************************************/ /****************************************************************
@@ -7725,89 +7773,113 @@ commentRecordings.allow({                                                       
                                                                             *****************************************************************/ /*
                                                                                                                                                * - assessmentRecordings collection is used to hold recordings used in assessments.
                                                                                                                                                *
-                                                                                                                                               */
-var assessmentStore = new FS.Store.FileSystem("assessment-recordings", {                                               // 148
-    maxTries: 5,                                                                                                       // 149
-    // optional, default 5                                                                                             // 149
-    path: "cfs/assessmentRecs/files" //chunkSize: 1024 * 1024  // optional, default GridFS chunk size in bytes (can be overridden per file).
-    // Default: 2MB. Reasonable range: 512KB - 4MB                                                                     // 152
+                                                                                                                                               */ // var assessmentStore = new FS.Store.FileSystem("assessment-recordings", {
+//     maxTries: 5, // optional, default 5                                                                             // 205
+//     path: "cfs/assessmentRecs/files"                                                                                // 206
+//     //chunkSize: 1024 * 1024  // optional, default GridFS chunk size in bytes (can be overridden per file).         // 207
+//     // Default: 2MB. Reasonable range: 512KB - 4MB                                                                  // 208
+// });                                                                                                                 // 209
+// assessmentRecordings = new FS.Collection("assessmentRecordings", {                                                  // 211
+//     stores: [assessmentStore]                                                                                       // 212
+// });                                                                                                                 // 213
+// assessmentRecordings.allow({                                                                                        // 215
+//     insert: function (userId, doc) {                                                                                // 216
+//         if (userId) {                                                                                               // 217
+//             return true;                                                                                            // 218
+//         }                                                                                                           // 219
+//     },                                                                                                              // 220
+//     update: function () {                                                                                           // 221
+//         return true;                                                                                                // 222
+//     },                                                                                                              // 223
+//     remove: function () {                                                                                           // 224
+//         return true;                                                                                                // 225
+//     },                                                                                                              // 226
+//     download: function () {                                                                                         // 227
+//         return true;                                                                                                // 228
+//     }                                                                                                               // 229
+// })                                                                                                                  // 230
                                                                                                                        //
-});                                                                                                                    // 148
-assessmentRecordings = new FS.Collection("assessmentRecordings", {                                                     // 155
-    stores: [assessmentStore]                                                                                          // 156
-});                                                                                                                    // 155
-assessmentRecordings.allow({                                                                                           // 159
-    insert: function (userId, doc) {                                                                                   // 160
-        if (userId) {                                                                                                  // 161
-            return true;                                                                                               // 162
-        }                                                                                                              // 163
-    },                                                                                                                 // 164
-    update: function () {                                                                                              // 165
-        return true;                                                                                                   // 166
-    },                                                                                                                 // 167
-    remove: function () {                                                                                              // 168
-        return true;                                                                                                   // 169
-    },                                                                                                                 // 170
-    download: function () {                                                                                            // 171
-        return true;                                                                                                   // 172
-    }                                                                                                                  // 173
-}); /****************************************************************                                                  // 159
+var assessmentStore = new FS.Store.S3("assessment-recordings", {                                                       // 232
+    region: "eu-west-2",                                                                                               // 233
+    accessKeyId: "AKIAJWTNAETF776YKCFQ",                                                                               // 234
+    secretAccessKey: "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",                                                       // 235
+    bucket: "j2e-recordings"                                                                                           // 236
+});                                                                                                                    // 232
+assessmentRecordings = new FS.Collection("assessmentRecordings", {                                                     // 239
+    stores: [assessmentStore]                                                                                          // 240
+});                                                                                                                    // 239
+assessmentRecordings.allow({                                                                                           // 243
+    insert: function (userId, doc) {                                                                                   // 244
+        if (userId) {                                                                                                  // 245
+            return true;                                                                                               // 246
+        }                                                                                                              // 247
+    },                                                                                                                 // 248
+    update: function () {                                                                                              // 249
+        return true;                                                                                                   // 250
+    },                                                                                                                 // 251
+    remove: function () {                                                                                              // 252
+        return true;                                                                                                   // 253
+    },                                                                                                                 // 254
+    download: function () {                                                                                            // 255
+        return true;                                                                                                   // 256
+    }                                                                                                                  // 257
+}); /****************************************************************                                                  // 243
     *****************************************************************                                                  //
     *                                                                                                                  //
     *                custom organisations logos                                                                        //
     *                                                                                                                  //
     *****************************************************************                                                  //
     *****************************************************************/ // Orglogos = new FS.Collection("orglogos", {   //
-//     stores: [                                                                                                       // 184
-//         new FS.Store.GridFS("original", { path: "/public/images/logos" }),                                          // 185
-//         new FS.Store.GridFS("thumb", { path: "/public/images/logos" })                                              // 186
-//     ],                                                                                                              // 187
-//     filter: {                                                                                                       // 188
-//         maxSize: 32000000, //32Mb                                                                                   // 189
-//         allow: { contentTypes: ['image/*'] }                                                                        // 190
-//     },                                                                                                              // 191
-//     onInvalid: function (message) {                                                                                 // 192
-//         //throw new Meteor.Error(403, message);                                                                     // 193
-//     }                                                                                                               // 194
-// });                                                                                                                 // 195
+//     stores: [                                                                                                       // 268
+//         new FS.Store.GridFS("original", { path: "/public/images/logos" }),                                          // 269
+//         new FS.Store.GridFS("thumb", { path: "/public/images/logos" })                                              // 270
+//     ],                                                                                                              // 271
+//     filter: {                                                                                                       // 272
+//         maxSize: 32000000, //32Mb                                                                                   // 273
+//         allow: { contentTypes: ['image/*'] }                                                                        // 274
+//     },                                                                                                              // 275
+//     onInvalid: function (message) {                                                                                 // 276
+//         //throw new Meteor.Error(403, message);                                                                     // 277
+//     }                                                                                                               // 278
+// });                                                                                                                 // 279
                                                                                                                        //
-Orglogos = new FS.Collection("Orglogos", {                                                                             // 197
-    stores: [new FS.Store.FileSystem("OrgLogosOriginals", {                                                            // 198
-        path: "cfs/orgLogosOrig/files"                                                                                 // 199
-    }), new FS.Store.FileSystem("OrgLogosThumbs", {                                                                    // 199
-        path: "cfs/orgLogosThumbs/files"                                                                               // 200
-    })],                                                                                                               // 200
-    filter: {                                                                                                          // 202
-        allow: {                                                                                                       // 203
-            contentTypes: ['image/*']                                                                                  // 203
-        }                                                                                                              // 203
-    },                                                                                                                 // 202
-    onInvalid: function (message) {                                                                                    // 205
-        alert(message);                                                                                                // 206
-    }                                                                                                                  // 207
-});                                                                                                                    // 197
-Orglogos.allow({                                                                                                       // 210
-    insert: function (userId, doc) {                                                                                   // 211
-        if (userId) {                                                                                                  // 212
-            return true;                                                                                               // 213
-        }                                                                                                              // 214
-    },                                                                                                                 // 215
-    update: function (userId, doc, fields, modifiers) {                                                                // 216
-        return true;                                                                                                   // 217
-    },                                                                                                                 // 218
-    download: function () {                                                                                            // 219
-        return true;                                                                                                   // 220
-    }                                                                                                                  // 221
-});                                                                                                                    // 210
-LogoURLs = new Mongo.Collection("LogoURLs");                                                                           // 224
-LogoURLs.allow({                                                                                                       // 226
-    insert: function () {                                                                                              // 227
-        return true;                                                                                                   // 228
-    },                                                                                                                 // 229
-    update: function (userId, doc, fields, modifiers) {                                                                // 230
-        return true;                                                                                                   // 231
-    }                                                                                                                  // 232
-});                                                                                                                    // 226
+Orglogos = new FS.Collection("Orglogos", {                                                                             // 281
+    stores: [new FS.Store.FileSystem("OrgLogosOriginals", {                                                            // 282
+        path: "cfs/orgLogosOrig/files"                                                                                 // 283
+    }), new FS.Store.FileSystem("OrgLogosThumbs", {                                                                    // 283
+        path: "cfs/orgLogosThumbs/files"                                                                               // 284
+    })],                                                                                                               // 284
+    filter: {                                                                                                          // 286
+        allow: {                                                                                                       // 287
+            contentTypes: ['image/*']                                                                                  // 287
+        }                                                                                                              // 287
+    },                                                                                                                 // 286
+    onInvalid: function (message) {                                                                                    // 289
+        alert(message);                                                                                                // 290
+    }                                                                                                                  // 291
+});                                                                                                                    // 281
+Orglogos.allow({                                                                                                       // 294
+    insert: function (userId, doc) {                                                                                   // 295
+        if (userId) {                                                                                                  // 296
+            return true;                                                                                               // 297
+        }                                                                                                              // 298
+    },                                                                                                                 // 299
+    update: function (userId, doc, fields, modifiers) {                                                                // 300
+        return true;                                                                                                   // 301
+    },                                                                                                                 // 302
+    download: function () {                                                                                            // 303
+        return true;                                                                                                   // 304
+    }                                                                                                                  // 305
+});                                                                                                                    // 294
+LogoURLs = new Mongo.Collection("LogoURLs");                                                                           // 308
+LogoURLs.allow({                                                                                                       // 310
+    insert: function () {                                                                                              // 311
+        return true;                                                                                                   // 312
+    },                                                                                                                 // 313
+    update: function (userId, doc, fields, modifiers) {                                                                // 314
+        return true;                                                                                                   // 315
+    }                                                                                                                  // 316
+});                                                                                                                    // 310
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 },"mailchimp.js":function(){
