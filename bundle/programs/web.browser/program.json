@@ -2,6 +2,7 @@
   "format": "web-program-pre1",
   "manifest": [
     {
+<<<<<<< HEAD
       "path": "6d2a6c2d0fc1e85e2d51fff9983c27ad747888e4.js",
       "where": "client",
       "type": "js",
@@ -18,6 +19,24 @@
       "url": "/6d2a6c2d0fc1e85e2d51fff9983c27ad747888e4.stats.json?meteor_js_resource=true",
       "size": 153635,
       "hash": "678461614bf29f597598c62d69e6848689404ff4"
+=======
+      "path": "adb024f4d4caa782d402a15856e4f3a369db892d.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/adb024f4d4caa782d402a15856e4f3a369db892d.js?meteor_js_resource=true",
+      "size": 17183096,
+      "hash": "adb024f4d4caa782d402a15856e4f3a369db892d"
+    },
+    {
+      "path": "adb024f4d4caa782d402a15856e4f3a369db892d.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/adb024f4d4caa782d402a15856e4f3a369db892d.stats.json?meteor_js_resource=true",
+      "size": 152771,
+      "hash": "e333306b8270599a635e3d19f6a450c62a00ff55"
+>>>>>>> parent of a85fd183... Latest build - s3 recordings
     },
     {
       "path": "1a56fe77d0777828dbba05534701a21b39ae57ce.css",

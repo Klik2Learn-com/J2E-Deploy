@@ -412,6 +412,7 @@
       "path": "packages/cfs_ejson-file.js"
     },
     {
+<<<<<<< HEAD
       "path": "packages/jspdf_core.js"
     },
     {
@@ -435,6 +436,8 @@
       "path": "packages/ostrio_files.js"
     },
     {
+=======
+>>>>>>> parent of a85fd183... Latest build - s3 recordings
       "path": "packages/hot-code-push.js"
     },
     {
