@@ -2,22 +2,22 @@
   "format": "web-program-pre1",
   "manifest": [
     {
-      "path": "a3103ebf87bfbfe0b3a4af7b563e2f66dfb17e85.js",
+      "path": "6d2a6c2d0fc1e85e2d51fff9983c27ad747888e4.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/a3103ebf87bfbfe0b3a4af7b563e2f66dfb17e85.js?meteor_js_resource=true",
-      "size": 17183545,
-      "hash": "a3103ebf87bfbfe0b3a4af7b563e2f66dfb17e85"
+      "url": "/6d2a6c2d0fc1e85e2d51fff9983c27ad747888e4.js?meteor_js_resource=true",
+      "size": 18399170,
+      "hash": "6d2a6c2d0fc1e85e2d51fff9983c27ad747888e4"
     },
     {
-      "path": "a3103ebf87bfbfe0b3a4af7b563e2f66dfb17e85.stats.json",
+      "path": "6d2a6c2d0fc1e85e2d51fff9983c27ad747888e4.stats.json",
       "where": "client",
       "type": "json",
       "cacheable": true,
-      "url": "/a3103ebf87bfbfe0b3a4af7b563e2f66dfb17e85.stats.json?meteor_js_resource=true",
-      "size": 152802,
-      "hash": "b09b866bb42d7b7725b1d1f9eba7872e53f6f5d9"
+      "url": "/6d2a6c2d0fc1e85e2d51fff9983c27ad747888e4.stats.json?meteor_js_resource=true",
+      "size": 153635,
+      "hash": "678461614bf29f597598c62d69e6848689404ff4"
     },
     {
       "path": "1a56fe77d0777828dbba05534701a21b39ae57ce.css",
@@ -153,6 +153,15 @@
       "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
       "size": 18028,
       "hash": "b3253b854b958bb4f2e4c2dae5ff45c8237dc1d6"
+    },
+    {
+      "path": "packages/ostrio_files/worker.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/ostrio_files/worker.min.js",
+      "size": 625,
+      "hash": "6d127a96f8f989baa5999b29fe802006d746b553"
     },
     {
       "path": "app/West-College-Scotland.jpg",
@@ -2963,6 +2972,15 @@
       "hash": "6a90cb7900b0f1b9f997907a89cefe3c42ed374a"
     },
     {
+      "path": "app/third_party/svgToPdf.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/third_party/svgToPdf.js",
+      "size": 153927,
+      "hash": "627dff1e4464c283f89f979bdab31b05871e4806"
+    },
+    {
       "path": "app/third_party/xepOnline.jqPlugin.js",
       "where": "client",
       "type": "asset",
@@ -2970,6 +2988,51 @@
       "url": "/third_party/xepOnline.jqPlugin.js",
       "size": 42466,
       "hash": "74743ba78ef438b3878e1fa828b3c04076b12f12"
+    },
+    {
+      "path": "app/video/course.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/course.jpg",
+      "size": 44635,
+      "hash": "f62aae787c130a552765e627290051e48ab7fdcf"
+    },
+    {
+      "path": "app/video/course.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/course.mp4",
+      "size": 9205858,
+      "hash": "561b0505c3fcc811bb5b21b4933ee8b6969500c5"
+    },
+    {
+      "path": "app/video/poster.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/poster.png",
+      "size": 17774,
+      "hash": "e84896e04dd2476233c82c9b3c605e20537e5771"
+    },
+    {
+      "path": "app/video/testimonials.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/testimonials.jpg",
+      "size": 18455,
+      "hash": "1eed7d5fe55236b7ee5b4ced3e1df0495777bcfa"
+    },
+    {
+      "path": "app/video/testimonials.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/testimonials.mp4",
+      "size": 11006577,
+      "hash": "7df16cfa9cda99f224797a073027f3eaf91e0165"
     },
     {
       "path": "app/webfonts/fa-brands-400.eot",
@@ -4237,8 +4300,8 @@
       "type": "asset",
       "cacheable": false,
       "url": "/images/bonus/Module 4 Links.txt",
-      "size": 2028,
-      "hash": "1b981773d71861ba40edbdc3fc70657dcbfa67ca"
+      "size": 1969,
+      "hash": "d883cc50745ec36a290ac790ed866f59f4019260"
     },
     {
       "path": "app/images/bonus/Module 5 Links.txt",
@@ -9909,6 +9972,717 @@
       "url": "/mappage/India/mod1.svg",
       "size": 87414,
       "hash": "e261418572da67db7cf11ebed291bf65270fc0fb"
+    },
+    {
+      "path": "app/video/games/m10intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m10intro.jpg",
+      "size": 24763,
+      "hash": "a8cf3cde2bcb54e7a08c1eb7e357601057dab193"
+    },
+    {
+      "path": "app/video/games/m10intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m10intro.mp4",
+      "size": 7649464,
+      "hash": "d264aa9a812aaea84bea962d88ebd35940470947"
+    },
+    {
+      "path": "app/video/games/m1intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m1intro.jpg",
+      "size": 23124,
+      "hash": "83e9260905e95f7a4f565ed4f4cc8e1ab38e0ca5"
+    },
+    {
+      "path": "app/video/games/m1intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m1intro.mp4",
+      "size": 9740183,
+      "hash": "91d428521a3ac1dcb19da77291ac54aab02144c1"
+    },
+    {
+      "path": "app/video/games/m2intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m2intro.jpg",
+      "size": 33029,
+      "hash": "b1b41959d6834dcd668435a588d948b0c9a71a11"
+    },
+    {
+      "path": "app/video/games/m2intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m2intro.mp4",
+      "size": 7997067,
+      "hash": "c9b2416df8bde81efb8cae0aee5cb4a4884694e5"
+    },
+    {
+      "path": "app/video/games/m3intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m3intro.jpg",
+      "size": 30981,
+      "hash": "f5f4a1b51afa8e7ddee1930290b6881263376c75"
+    },
+    {
+      "path": "app/video/games/m3intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m3intro.mp4",
+      "size": 11616789,
+      "hash": "0f05773958da68d551d01678a002e793b740df24"
+    },
+    {
+      "path": "app/video/games/m4intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m4intro.jpg",
+      "size": 51002,
+      "hash": "128201b51ecc76f2e320ff8aa4de0b7226883c34"
+    },
+    {
+      "path": "app/video/games/m4intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m4intro.mp4",
+      "size": 7011530,
+      "hash": "c0512e8e5a10fa8e4eb0c2588fac3a0610d500e0"
+    },
+    {
+      "path": "app/video/games/m5intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m5intro.jpg",
+      "size": 107231,
+      "hash": "f22f7cd91740d1a4096b1221199fa3031cca34f2"
+    },
+    {
+      "path": "app/video/games/m5intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m5intro.mp4",
+      "size": 31378429,
+      "hash": "acc0d446bf260e65524568caf505edd7cca6c4a8"
+    },
+    {
+      "path": "app/video/games/m6intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m6intro.jpg",
+      "size": 57794,
+      "hash": "b36b6ad6c8f6c5a1a6e64eacb6c17cffcc689a33"
+    },
+    {
+      "path": "app/video/games/m6intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m6intro.mp4",
+      "size": 19041113,
+      "hash": "42fae22eeb082c5e5f72e4f45dd1d996e21413f6"
+    },
+    {
+      "path": "app/video/games/m7intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m7intro.jpg",
+      "size": 53242,
+      "hash": "30634169566f50a3dda678cd605b59feac30ee7c"
+    },
+    {
+      "path": "app/video/games/m7intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m7intro.mp4",
+      "size": 11670754,
+      "hash": "faa581badd10eaefdfa9832962ed79fbda93040b"
+    },
+    {
+      "path": "app/video/games/m8intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m8intro.jpg",
+      "size": 39467,
+      "hash": "63b7d37f6af176b2708b782cab083583e95e3628"
+    },
+    {
+      "path": "app/video/games/m8intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m8intro.mp4",
+      "size": 14329148,
+      "hash": "33267e6f413861871a9a5ea5681d32a1fc54ba73"
+    },
+    {
+      "path": "app/video/games/m9intro.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m9intro.jpg",
+      "size": 21829,
+      "hash": "e48d5eba682aec54121ae7b73b4e28c6fd51bf5e"
+    },
+    {
+      "path": "app/video/games/m9intro.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/games/m9intro.mp4",
+      "size": 10870136,
+      "hash": "134b91246ed5994962d59020a6a9297911379ece"
+    },
+    {
+      "path": "app/video/guide/forum.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/forum.png",
+      "size": 38114,
+      "hash": "52a2d74a4453d72efefa055a18a219af337072d3"
+    },
+    {
+      "path": "app/video/guide/messages.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/messages.png",
+      "size": 11753,
+      "hash": "6af949becd17908b408b7d0c4c34bc74b4a52d34"
+    },
+    {
+      "path": "app/video/guide/voice.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/voice.png",
+      "size": 28699,
+      "hash": "14fa634bc5b09443a4d2019bb7403de461a6875b"
+    },
+    {
+      "path": "app/video/idioms/arms.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/arms.mp4",
+      "size": 2789597,
+      "hash": "57837708abce7f708cc1fe634b3a256d092c0b77"
+    },
+    {
+      "path": "app/video/idioms/arms.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/arms.png",
+      "size": 75799,
+      "hash": "b3403d1507cc3bb6af592e84d51fcb7e09f7e143"
+    },
+    {
+      "path": "app/video/idioms/boat.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/boat.mp4",
+      "size": 4411770,
+      "hash": "37ccb4397b2898ae3e15e7b2e464ee4a01cfe323"
+    },
+    {
+      "path": "app/video/idioms/boat.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/boat.png",
+      "size": 67961,
+      "hash": "6af44e8902052327334871ddbcfcdc2a9723b75b"
+    },
+    {
+      "path": "app/video/idioms/cake.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/cake.mp4",
+      "size": 2520240,
+      "hash": "ca35330b8bc9e73bc6cf6731d1831a2c9c70ce17"
+    },
+    {
+      "path": "app/video/idioms/cake.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/cake.png",
+      "size": 78077,
+      "hash": "f4d9a3c249bbded5d7cb56a746e887a4f3cc2a44"
+    },
+    {
+      "path": "app/video/idioms/dogs.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/dogs.mp4",
+      "size": 2246274,
+      "hash": "0253d3aee6200571d2dfb71c919d0b73b4c0d37d"
+    },
+    {
+      "path": "app/video/idioms/dogs.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/dogs.png",
+      "size": 85317,
+      "hash": "193940cb91491f7be291e45a6147f1c0d08a5bca"
+    },
+    {
+      "path": "app/video/idioms/drop.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/drop.mp4",
+      "size": 1881049,
+      "hash": "fad27777cd309550297034381495522b0bafafc6"
+    },
+    {
+      "path": "app/video/idioms/drop.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/drop.png",
+      "size": 36071,
+      "hash": "8931c57229c5bc78a057a6b534a163eef6bb9059"
+    },
+    {
+      "path": "app/video/idioms/dutch.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/dutch.mp4",
+      "size": 4605131,
+      "hash": "a6e09a136310c4a25761f8da8161244a99895ba6"
+    },
+    {
+      "path": "app/video/idioms/dutch.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/dutch.png",
+      "size": 81186,
+      "hash": "0cdd3c7fc8182c218ba1c791d69f300baa968e01"
+    },
+    {
+      "path": "app/video/idioms/elephant.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/elephant.mp4",
+      "size": 4244226,
+      "hash": "0b755de9e6f3c10851e55c42d72b25b99f715586"
+    },
+    {
+      "path": "app/video/idioms/elephant.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/elephant.png",
+      "size": 96848,
+      "hash": "30c71101c48efa61a2bfa69139f5c565c49d73d5"
+    },
+    {
+      "path": "app/video/idioms/facevalue.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/facevalue.mp4",
+      "size": 3427573,
+      "hash": "3a0bb7e44373b9581941361052f2ed83dac24a71"
+    },
+    {
+      "path": "app/video/idioms/facevalue.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/facevalue.png",
+      "size": 111182,
+      "hash": "9eab6b5a0712d22e8c86f8d1a028917bcd9e4999"
+    },
+    {
+      "path": "app/video/idioms/gab.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/gab.mp4",
+      "size": 3423852,
+      "hash": "b8115e015d5c5996b095953741ee08859155e677"
+    },
+    {
+      "path": "app/video/idioms/gab.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/gab.png",
+      "size": 321999,
+      "hash": "179e47f65d75c96582c1aae83697494a0fa7df20"
+    },
+    {
+      "path": "app/video/idioms/greek.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/greek.mp4",
+      "size": 4234449,
+      "hash": "6d53f906317f908d5ba82cd0d196b7f62e0ba0e9"
+    },
+    {
+      "path": "app/video/idioms/greek.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/greek.png",
+      "size": 69180,
+      "hash": "1d3f48fecf62c4a6bd37ce890294f3252260f36b"
+    },
+    {
+      "path": "app/video/idioms/hammer.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/hammer.mp4",
+      "size": 3283500,
+      "hash": "284508712564aba979b6294cdc986ae9a1539938"
+    },
+    {
+      "path": "app/video/idioms/hammer.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/hammer.png",
+      "size": 78254,
+      "hash": "bd7303c0a26232d78df255b1f3f90436423f20fd"
+    },
+    {
+      "path": "app/video/idioms/home.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/home.mp4",
+      "size": 1817069,
+      "hash": "7eff21cefdd94f793991cb9564e5a5f0d596db7f"
+    },
+    {
+      "path": "app/video/idioms/home.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/home.png",
+      "size": 65327,
+      "hash": "6d6d8e5a147fda749030bed8edd731d33ddebb64"
+    },
+    {
+      "path": "app/video/idioms/molehill.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/molehill.mp4",
+      "size": 4419566,
+      "hash": "de1b1e50a915758507cd4b4cbbb25f0b4d90291a"
+    },
+    {
+      "path": "app/video/idioms/molehill.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/molehill.png",
+      "size": 56632,
+      "hash": "66e87feac67ce9df20f8bbd2c3fcd82137cf1338"
+    },
+    {
+      "path": "app/video/idioms/nose.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/nose.mp4",
+      "size": 4166068,
+      "hash": "ac6ad6ae136f8bbe21051d24563d80dc3d5c4044"
+    },
+    {
+      "path": "app/video/idioms/nose.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/nose.png",
+      "size": 93172,
+      "hash": "c6df9ccc945544f0e99b7b43c15d6e2b73064c81"
+    },
+    {
+      "path": "app/video/idioms/ships.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/ships.mp4",
+      "size": 3187563,
+      "hash": "7a176386ec4778db0392edf8f07befa53879683d"
+    },
+    {
+      "path": "app/video/idioms/ships.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/ships.png",
+      "size": 67287,
+      "hash": "899b973123a82f0691a99bf398e0f11f0768d833"
+    },
+    {
+      "path": "app/video/idioms/sticks.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/sticks.mp4",
+      "size": 2971664,
+      "hash": "50c3cd78580351ecc138e3f05ce4fbc5b705c147"
+    },
+    {
+      "path": "app/video/idioms/sticks.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/sticks.png",
+      "size": 42915,
+      "hash": "617413b1037f5c0531adaa3dbfb33907eb17614f"
+    },
+    {
+      "path": "app/video/idioms/weather.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/weather.mp4",
+      "size": 3264672,
+      "hash": "45f27c2ff4076945f0e4f4aa1da2d459a835be7d"
+    },
+    {
+      "path": "app/video/idioms/weather.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/idioms/weather.png",
+      "size": 45847,
+      "hash": "889a72e18321f44d80ba6ee5f95dfbb45c076654"
+    },
+    {
+      "path": "app/video/module1/a10_cafe_conversation.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module1/a10_cafe_conversation.mp4",
+      "size": 1843292,
+      "hash": "c32d51c93e776c0667fe916fbba402686443e3a4"
+    },
+    {
+      "path": "app/video/module1/a10_cafe_conversation.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module1/a10_cafe_conversation.png",
+      "size": 54424,
+      "hash": "fce7e8042726143f3f987fa532f0aec498c18021"
+    },
+    {
+      "path": "app/video/module1/a22.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module1/a22.mp4",
+      "size": 4223960,
+      "hash": "4989c200cd6d4887cb7b62115433c8f392506c67"
+    },
+    {
+      "path": "app/video/module1/a22.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module1/a22.png",
+      "size": 203197,
+      "hash": "9c27fe6b2f645097dad9e1e70728d553cd37173c"
+    },
+    {
+      "path": "app/video/module1/a7_conversation.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module1/a7_conversation.mp4",
+      "size": 3734836,
+      "hash": "ec1773acce89a7054c34b03899ce8b96ff214f4f"
+    },
+    {
+      "path": "app/video/module1/a7_conversation.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module1/a7_conversation.png",
+      "size": 44273,
+      "hash": "fa6bba84e8955a769b9b9bbfe2d4018e4302ff80"
+    },
+    {
+      "path": "app/video/module2/a24.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module2/a24.mp4",
+      "size": 3582594,
+      "hash": "3e1117082067b75a7e4923c2e8c056efa98cc160"
+    },
+    {
+      "path": "app/video/module2/a24.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module2/a24.png",
+      "size": 28128,
+      "hash": "0d4f37db0418d9beb075f3dae33b9a3a75d2771e"
+    },
+    {
+      "path": "app/video/module9/m9a1.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module9/m9a1.jpg",
+      "size": 48433,
+      "hash": "0b65db11e67a81334f7b441b999fb9fb8249666e"
+    },
+    {
+      "path": "app/video/module9/m9a1.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module9/m9a1.mp4",
+      "size": 7120428,
+      "hash": "5c11ed11b06b043edf13b40d5bf7a8e371afe7c4"
+    },
+    {
+      "path": "app/video/phrasalverbs/bring.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/bring.mp4",
+      "size": 7097418,
+      "hash": "cb262f50f9f24d0eec5653b35e60fed175506496"
+    },
+    {
+      "path": "app/video/phrasalverbs/bring.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/bring.png",
+      "size": 61961,
+      "hash": "509e8747ecf41ffa184c228f45e3dfb3ac34e426"
+    },
+    {
+      "path": "app/video/phrasalverbs/came.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/came.mp4",
+      "size": 3293079,
+      "hash": "97b9b8acc44686b881ea39dea1185bdbf5e743d3"
+    },
+    {
+      "path": "app/video/phrasalverbs/came.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/came.png",
+      "size": 75905,
+      "hash": "412fb14d293f32ea614db92453ef3165415ae674"
+    },
+    {
+      "path": "app/video/phrasalverbs/carry.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/carry.mp4",
+      "size": 3927873,
+      "hash": "a6bbfffc542c2730aa7fb3ddd10f6047225388b3"
+    },
+    {
+      "path": "app/video/phrasalverbs/carry.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/carry.png",
+      "size": 128044,
+      "hash": "7cf3e1a629b92754c998b1b3d62a1b571662167f"
+    },
+    {
+      "path": "app/video/phrasalverbs/go.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/go.mp4",
+      "size": 8121874,
+      "hash": "91f00ebc85fd3175e15b05e0ca3c6ab0df899f84"
+    },
+    {
+      "path": "app/video/phrasalverbs/go.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/go.png",
+      "size": 74958,
+      "hash": "15bf73c0d848f07b1c89ee4cbc374a95c12324c6"
+    },
+    {
+      "path": "app/video/phrasalverbs/put.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/put.mp4",
+      "size": 2998750,
+      "hash": "06bda22b65bd32c51da6f0b30decbc72aa42c496"
+    },
+    {
+      "path": "app/video/phrasalverbs/put.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/phrasalverbs/put.png",
+      "size": 62535,
+      "hash": "d0a8d5f5739e3b76694a0c837efce832085738ad"
+    },
+    {
+      "path": "app/video/quotes/thatcher.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/quotes/thatcher.jpg",
+      "size": 65573,
+      "hash": "1a93480a7c22190b5355adc74cf793993bdb7f66"
+    },
+    {
+      "path": "app/video/quotes/thatcher.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/quotes/thatcher.mp4",
+      "size": 57020296,
+      "hash": "48c56d43cfa8e246fb33400d632b3e84e58ee872"
     },
     {
       "path": "app/audio/initial/Old/1N2a.m4a",
@@ -29828,6 +30602,276 @@
       "hash": "ec3a01c30792d4504b4888d8110ff4ac19af45a2"
     },
     {
+      "path": "app/video/guide/student/forum.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/forum.mp4",
+      "size": 2698869,
+      "hash": "94ebec755ab16790bb74d4f34975be4ec7715257"
+    },
+    {
+      "path": "app/video/guide/student/initial-assess.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/initial-assess.mp4",
+      "size": 10661706,
+      "hash": "039b444f41d7bde45091989c4614aa6a98e93882"
+    },
+    {
+      "path": "app/video/guide/student/initial-assess.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/initial-assess.png",
+      "size": 83228,
+      "hash": "de83ce9bea28283d6c55b422d3d9ada542dba9e9"
+    },
+    {
+      "path": "app/video/guide/student/messages.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/messages.mp4",
+      "size": 3190850,
+      "hash": "f309fa3f5e3a104ac5c8a497aa1989f435003004"
+    },
+    {
+      "path": "app/video/guide/student/notebook.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/notebook.mp4",
+      "size": 2715652,
+      "hash": "dd8625be757648741e70a32a55f6b66e7b2091a7"
+    },
+    {
+      "path": "app/video/guide/student/notebook.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/notebook.png",
+      "size": 27945,
+      "hash": "4c547163896592f998a36317b3ff91ddb8216997"
+    },
+    {
+      "path": "app/video/guide/student/progress.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/progress.mp4",
+      "size": 2713372,
+      "hash": "4a97a74187adc5884bc32bc71f1208352cf9838b"
+    },
+    {
+      "path": "app/video/guide/student/progress.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/progress.png",
+      "size": 31004,
+      "hash": "ca28a4f0e6bfa211a3e128b0d4c3334a630df4ab"
+    },
+    {
+      "path": "app/video/guide/student/voice.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/student/voice.mp4",
+      "size": 3402731,
+      "hash": "da211db7807f2916487221f62422755acfaaa5db"
+    },
+    {
+      "path": "app/video/guide/tutor/forum.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/forum.mp4",
+      "size": 3188101,
+      "hash": "ae53784e15ed37a3ecb96bdadabf5dd007a84639"
+    },
+    {
+      "path": "app/video/guide/tutor/initial-assess.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/initial-assess.mp4",
+      "size": 16640732,
+      "hash": "db178b7357008ea9e79967437dc6e5a6cbb4c869"
+    },
+    {
+      "path": "app/video/guide/tutor/initial-assess.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/initial-assess.png",
+      "size": 21946,
+      "hash": "00947727ee0051aab944550606588e892df4e5af"
+    },
+    {
+      "path": "app/video/guide/tutor/messages.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/messages.mp4",
+      "size": 3272382,
+      "hash": "1cde877bf32f1408c3cc755a3f4c0722a0eb7303"
+    },
+    {
+      "path": "app/video/guide/tutor/notebook.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/notebook.mp4",
+      "size": 4208357,
+      "hash": "7a433a5b44ca3478a4abca1564d20e6c950dc3e9"
+    },
+    {
+      "path": "app/video/guide/tutor/notebook.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/notebook.png",
+      "size": 51366,
+      "hash": "2bcad6de7f92bfa881e15451f154ea418090af65"
+    },
+    {
+      "path": "app/video/guide/tutor/progress.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/progress.mp4",
+      "size": 3398143,
+      "hash": "497d803d17b4f2252421d4abf53c43046f1b68de"
+    },
+    {
+      "path": "app/video/guide/tutor/progress.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/progress.png",
+      "size": 40800,
+      "hash": "c520e5378441fd1b0f646dfe4e17a2a54e8906e4"
+    },
+    {
+      "path": "app/video/guide/tutor/voice.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/guide/tutor/voice.mp4",
+      "size": 3873671,
+      "hash": "c0f12c42c43784de2d2d82e57f33b59ef01ea309"
+    },
+    {
+      "path": "app/video/module10/a14/technology.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module10/a14/technology.mp4",
+      "size": 9648481,
+      "hash": "ab340c7d5c953aaab8e0a4e4bced57afeb33dcad"
+    },
+    {
+      "path": "app/video/module10/a14/technology.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module10/a14/technology.png",
+      "size": 46611,
+      "hash": "e360a4d43983f99136c855b7033ac2d4b1b187b3"
+    },
+    {
+      "path": "app/video/module4/a13/Conversation1.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module4/a13/Conversation1.mp4",
+      "size": 786924,
+      "hash": "8413c25985c11a6cbce90a28189782a098ca5ac8"
+    },
+    {
+      "path": "app/video/module4/a13/Conversation1.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module4/a13/Conversation1.png",
+      "size": 33224,
+      "hash": "3252bf17dff776258b748241be366af7df94812b"
+    },
+    {
+      "path": "app/video/module4/a13/Conversation2.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module4/a13/Conversation2.mp4",
+      "size": 1193070,
+      "hash": "53e6949b6a10b3f4384c4bea4d9f8992bfbaf064"
+    },
+    {
+      "path": "app/video/module4/a13/Conversation2.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module4/a13/Conversation2.png",
+      "size": 35952,
+      "hash": "6d51a31831c0dfdacd71d2433c208bd20d6011af"
+    },
+    {
+      "path": "app/video/module4/a13/Conversation3.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module4/a13/Conversation3.mp4",
+      "size": 1150925,
+      "hash": "808b750bc7aba23b9518fe56d6be91b82cdc70a4"
+    },
+    {
+      "path": "app/video/module4/a13/Conversation3.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module4/a13/Conversation3.png",
+      "size": 37284,
+      "hash": "4aa287d6bf9db33358baf6fb884bd4d70c0a0ea9"
+    },
+    {
+      "path": "app/video/module8/a8/Debra.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module8/a8/Debra.jpg",
+      "size": 22701,
+      "hash": "7a89a2610222469c18106754a0bbda51b05564be"
+    },
+    {
+      "path": "app/video/module8/a8/Debra.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module8/a8/Debra.mp4",
+      "size": 2234321,
+      "hash": "c0e766ddcf7ef215e6096a26663af80f5fec5082"
+    },
+    {
+      "path": "app/video/module8/a8/Lorraine.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module8/a8/Lorraine.jpg",
+      "size": 24307,
+      "hash": "6a97e410e6d1c9a198f9df75e84dd592027ba610"
+    },
+    {
+      "path": "app/video/module8/a8/Lorraine.mp4",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/video/module8/a8/Lorraine.mp4",
+      "size": 6069663,
+      "hash": "1c55fcf72df93390fc6fc3a4bdd42cd44c017535"
+    },
+    {
       "path": "app/audio/module1/a3/old/1.m4a",
       "where": "client",
       "type": "asset",
@@ -31631,7 +32675,7 @@
       "path": "head.html",
       "where": "internal",
       "type": "head",
-      "hash": "1928bcb8f01461c49346e010dc84cced1044d12b"
+      "hash": "018ac824d01177d33a9f0fdc8595c0b6d799a5aa"
     }
   ]
 }
