@@ -179,15 +179,12 @@ install("accounts-ui");
 install("dynamic-import", "meteor/dynamic-import/server.js");
 install("cfs:filesystem");
 install("cfs:ejson-file");
-<<<<<<< HEAD
 install("jspdf:core");
 install("ongoworks:pdf");
 install("pascoual:pdfkit");
 install("pascoual:pdfkitx");
 install("ostrio:cookies", "meteor/ostrio:cookies/cookies.js");
 install("ostrio:files", "meteor/ostrio:files/server.js");
-=======
->>>>>>> parent of a85fd183... Latest build - s3 recordings
 install("hot-code-push");
 install("launch-screen");
 install("cfs:tempstore");
